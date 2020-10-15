@@ -1,4 +1,4 @@
-//初始化地图
+// (T) Initialize the map
 t = L.latLngBounds([0, 0], [-66.5, 90]);
 var map = L.map("map", {
 	//crs: L.CRS.Simple,
@@ -13,7 +13,8 @@ var map = L.map("map", {
 	zoomControl: false
 });
 L.control.attribution({
-	prefix: "<a href='https://bbs.mihoyo.com/ys/article/1328298' target='_blank'>使用说明/米游社空荧酒馆</a>"
+	// EDIT: Replaced with an English link.
+	prefix: "<a href='https://github.com/GenshinMap/genshinmap.github.io' target='_blank'>Info/Attribution</a>"
 }).addTo(map);
 L.control.zoom({
 	zoomInTitle: '+',
@@ -31,7 +32,7 @@ L.tileLayer.t = function () {
 	return new L.TileLayer.T();
 }
 map.addLayer(L.tileLayer.t());
-//水印
+// (T) Watermark
 // L.TileLayer.T1 = L.TileLayer.extend({
 // 	getTileUrl: function (coords) {
 // 		x = coords.x
@@ -50,7 +51,7 @@ map.addLayer(L.tileLayer.t());
 // 	return new L.TileLayer.T1();
 // }
 // map.addLayer(L.tileLayer.t1());
-//各个坐标的分类类别的初始化
+// (T) Initialization of the classification category of each coordinate
 var LayerMap = {
 	Layer_FST: L.layerGroup(),
 	Layer_YST: L.layerGroup(),
@@ -171,10 +172,10 @@ var LayerMap = {
 	Layer_QQSM_LY: L.markerClusterGroup(),
 }
 
-//定义各个坐标使用的图标
+// (T) Define the icons used for each coordinate
 function getIconInfo(Name) {
 	switch (Name) {
-		case "ST": { //神瞳
+		case "ST": { // (T) God Hitomi
 			var icon_base = L.Icon.extend({
 				options: {
 					iconSize: [24, 24], // size of the icon
@@ -186,7 +187,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "DLK": { //地灵龛
+		case "DLK": { // (T) Niche
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind.svg",
@@ -199,7 +200,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "TC": { //特产
+		case "TC": { // (T) Specialty
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind_black.svg",
@@ -212,7 +213,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "KW": { //矿物
+		case "KW": { // (T) Mineral
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_stonenot.svg",
@@ -225,7 +226,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "JYG": { //精英怪
+		case "JYG": { // (T) Elite Monster
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind.svg",
@@ -238,7 +239,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "PTG": { //普通怪
+		case "PTG": { // (T) Ordinary monster
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind.svg",
@@ -251,7 +252,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		case "BX": { // 宝箱
+		case "BX": { // (T) Treasure chest
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind.svg",
@@ -264,7 +265,7 @@ function getIconInfo(Name) {
 			});
 			return icon_base;
 		}
-		default: { //默认
+		default: { // (T) default
 			var icon_base = L.Icon.extend({
 				options: {
 					shadowUrl: "./imgs/loc_notfind.svg",
@@ -310,7 +311,7 @@ function change() {
 	}
 };
 
-//添加坐标点击信息
+// (T) Add coordinate click information
 function onEachFeature(feature, layer) {
 	// var layerNumber = localStorage.getItem("layerNumber");
 	// var key = layerNumber + "_" + feature.id;
@@ -335,7 +336,8 @@ function closePop() {
 	$(".leaflet-popup-close-button")[0].click();
 }
 
-//定义分类的数组，分别对应 物品层，物品Json名，物品icon类型，新增时在对应数组后增加对象即可
+// (T) Define an array of categories, corresponding to the item layer, item Json name, item icon type,
+// and add objects after the corresponding array when adding
 var typearray = [
 	[LayerMap["Layer_FST"], JS_FST, "ST"],
 	[LayerMap["Layer_YST"], JS_YST, "ST"],
@@ -436,7 +438,7 @@ var typearray = [
 	[LayerMap["Layer_QQSM_LY"], JS_QQSM_LY, "GW"],
 ];
 
-//标记方法
+// (T) Marking method
 var markers = {};
 
 function MarkPoint(element) {
@@ -483,13 +485,12 @@ function MarkPoint(element) {
 		that.addClass("myPopSwitchTodo");
 		that.removeClass("myPopSwitchDone");
 		setTimeout(function () {
-			// that.find(".switchButton p").html("未完成");
-			that.find(".switchButton p").html("Todo");
+			that.find(".switchButton p").html("TO-DO");
 		}, 100);
 	}
 }
 
-//初始化各个坐标
+// (T) Initialize each coordinate
 for (let i = 0; i < typearray.length; i++) {
 	localStorage.setItem("layerNumber", i);
 	var currentIcon = getIconInfo(typearray[i][2]);
@@ -538,7 +539,7 @@ function dealIcon(target, key) {
 	return target
 }
 
-//定义筛选器项目
+// (T) Define filter items
 // var overlays = {
 // 	"<span class='Layer_FST map-opts'>风神瞳</span>": Layer_FST,
 // 	"<span class='Layer_YST map-opts'>岩神瞳</span>": Layer_YST,
@@ -569,7 +570,7 @@ function dealIcon(target, key) {
 // 	"<span class='Layer_BX_MD map-opts'>宝箱—蒙德</span>": Layer_BX_MD,
 // 	"<span class='Layer_BX_LY map-opts'>宝箱—璃月</span>": Layer_BX_LY,
 // };
-// //添加筛选器
+// // (T) Add filter
 // L.control.layers(null, overlays, {
 // 	collapsed: false,
 // }).addTo(map);
@@ -581,8 +582,7 @@ map.on('popupopen', function (e) {
 	var key = className.split(' ')[0].substring(5, className.length);
 	var markedFlag = localStorage.getItem(key);
 	var switchClass = (!markedFlag) ? "myPopSwitchTodo" : "myPopSwitchDone";
-	// var switchText = (!markedFlag) ? "未完成" : "已完成";
-	var switchText = (!markedFlag) ? "Todo" : "Done";
+	var switchText = (!markedFlag) ? "TODO" : "Done";
 	popupHtml = `
 	<div class="myPopContainer">
 		<div class="myPopTitle">
