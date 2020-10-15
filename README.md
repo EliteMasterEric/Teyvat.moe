@@ -1,0 +1,1 @@
+genshinmap.github.io
