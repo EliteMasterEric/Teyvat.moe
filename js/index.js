@@ -53,7 +53,7 @@ map.addLayer(L.tileLayer.t());
 // map.addLayer(L.tileLayer.t1());
 // (T) Initialization of the classification category of each coordinate
 var LayerMap = {
-	Layer_FST: L.layerGroup(),
+	Layer_ANEMOCULUS: L.layerGroup(),
 	Layer_YST: L.layerGroup(),
 	Layer_DLK_MD: L.markerClusterGroup(),
 	Layer_DLK_LY: L.markerClusterGroup(),
@@ -339,7 +339,7 @@ function closePop() {
 // (T) Define an array of categories, corresponding to the item layer, item Json name, item icon type,
 // and add objects after the corresponding array when adding
 var typearray = [
-	[LayerMap["Layer_FST"], JS_FST, "ST"],
+	[LayerMap["Layer_ANEMOCULUS"], JS_ANEMOCULUS, "ST"],
 	[LayerMap["Layer_YST"], JS_YST, "ST"],
 	[LayerMap["Layer_DLK_MD"], JS_DLK_MD, "DLK"],
 	[LayerMap["Layer_DLK_LY"], JS_DLK_LY, "DLK"],
@@ -446,6 +446,7 @@ function MarkPoint(element) {
 	var key = that.attr("data-key");
 	var layerNumber = key.split('_')[0];
 	var currentIcon = getIconInfo(typearray[layerNumber][2]);
+	console.log("currentIcon",layerNumber);
 	var oldValue = localStorage.getItem(key);
 	var newValue = !oldValue;
 	localStorage.setItem(key, newValue ? "1" : "");
@@ -541,7 +542,7 @@ function dealIcon(target, key) {
 
 // (T) Define filter items
 // var overlays = {
-// 	"<span class='Layer_FST map-opts'>风神瞳</span>": Layer_FST,
+// 	"<span class='Layer_ANEMOCULUS map-opts'>风神瞳</span>": Layer_ANEMOCULUS,
 // 	"<span class='Layer_YST map-opts'>岩神瞳</span>": Layer_YST,
 // 	"<span class='Layer_DLK_MD map-opts'>蒙德</span>": Layer_DLK_MD,
 // 	"<span class='Layer_DLK_LY map-opts'>璃月</span>": Layer_DLK_LY,

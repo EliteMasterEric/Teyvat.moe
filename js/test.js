@@ -80,7 +80,7 @@ var LayerMap = {
 	Layer_BX_MD:L.layerGroup(),
 	Layer_BX_LY:L.layerGroup()
 }
-// var Layer_FST = L.layerGroup();
+// var Layer_ANEMOCULUS = L.layerGroup();
 // var Layer_YST = L.layerGroup();
 // var Layer_DLK_MD = L.layerGroup();
 // var Layer_DLK_LY = L.layerGroup();
@@ -253,12 +253,12 @@ function MarkPoint(element) {
 
 }
 //定义分类的三个数组，分别对应坐标的组别，坐标的位置和坐标的名称，新增时在对应数组后增加对象即可
-//var typearray1 = [Layer_FST, Layer_YST, Layer_DLK_MD, Layer_DLK_LY, Layer_JYJJ, Layer_NSH, Layer_LLBH, Layer_GGG, Layer_DDL, Layer_SXLYH, Layer_MFMG, Layer_LLM, Layer_FCJ, Layer_PGYZ, Layer_YPS, Layer_SP, Layer_SJK_LY, Layer_BTK_LY, Layer_SJK_MD, Layer_BTK_MD, Layer_YJSW_LY, Layer_YJLZ_LY, Layer_LYSS_LY, Layer_ZWCLR_LY, Layer_SYFS_LY, Layer_DXQQR_LY, Layer_BX_MD, Layer_BX_LY];
+//var typearray1 = [Layer_ANEMOCULUS, Layer_YST, Layer_DLK_MD, Layer_DLK_LY, Layer_JYJJ, Layer_NSH, Layer_LLBH, Layer_GGG, Layer_DDL, Layer_SXLYH, Layer_MFMG, Layer_LLM, Layer_FCJ, Layer_PGYZ, Layer_YPS, Layer_SP, Layer_SJK_LY, Layer_BTK_LY, Layer_SJK_MD, Layer_BTK_MD, Layer_YJSW_LY, Layer_YJLZ_LY, Layer_LYSS_LY, Layer_ZWCLR_LY, Layer_SYFS_LY, Layer_DXQQR_LY, Layer_BX_MD, Layer_BX_LY];
 var typearray1 = [];
 for(let k in LayerMap){
 	typearray1.push(LayerMap[k]);
 }
-var typearray2 = [JS_FST, JS_YST, JS_DLK_MD, JS_DLK_LY, JS_JYJJ, JS_NSH, JS_LLBH, JS_GGG, JS_DDL, JS_SXLYH, JS_MFMG, JS_LLM, JS_FCJ, JS_PGYZ, JS_YPS, JS_SP, JS_SJK_LY, JS_BTK_LY, JS_SJK_MD, JS_BTK_MD, JS_YJSW_LY, JS_YJLZ_LY, JS_LYSS_LY, JS_ZWCLR_LY, JS_SYFS_LY, JS_DXQQR_LY, JS_BX_MD, JS_BX_LY];
+var typearray2 = [JS_ANEMOCULUS, JS_YST, JS_DLK_MD, JS_DLK_LY, JS_JYJJ, JS_NSH, JS_LLBH, JS_GGG, JS_DDL, JS_SXLYH, JS_MFMG, JS_LLM, JS_FCJ, JS_PGYZ, JS_YPS, JS_SP, JS_SJK_LY, JS_BTK_LY, JS_SJK_MD, JS_BTK_MD, JS_YJSW_LY, JS_YJLZ_LY, JS_LYSS_LY, JS_ZWCLR_LY, JS_SYFS_LY, JS_DXQQR_LY, JS_BX_MD, JS_BX_LY];
 //var typearray3=[FST,YST,DLK_MD,DLK_LY,JYJJ,NSH,LLBH,GGG,DDL,SXLYH,MFMG,LLM,FCJ,PGYZ,YPS,SP,SJK,BTK,SJK,BTK,YJSW,YJLZ,LYSS,ZWCLR,SYFS,DXQQR,BX_MD];
 
 //初始化各个坐标
@@ -302,7 +302,7 @@ function dealIcon(target, key) {
 
 // //定义筛选器项目
 // var overlays = {
-// 	"<span class='Layer_FST map-opts'>风神瞳</span>": Layer_FST,
+// 	"<span class='Layer_ANEMOCULUS map-opts'>风神瞳</span>": Layer_ANEMOCULUS,
 // 	"<span class='Layer_YST map-opts'>岩神瞳</span>": Layer_YST,
 // 	"<span class='Layer_DLK_MD map-opts'>蒙德</span>": Layer_DLK_MD,
 // 	"<span class='Layer_DLK_LY map-opts'>璃月</span>": Layer_DLK_LY,

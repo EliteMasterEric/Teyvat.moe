@@ -47,7 +47,7 @@ L.tileLayer.t1 = function () {
     return new L.TileLayer.T1();
 }
 map.addLayer(L.tileLayer.t1());
-var Layer_FST = L.layerGroup();
+var Layer_ANEMOCULUS = L.layerGroup();
 var Layer_YST = L.layerGroup();
 var Layer_DLY_MD = L.layerGroup();
 var Layer_DLY_LY = L.layerGroup();
@@ -214,14 +214,14 @@ function onEachFeature(feature, layer) {
 
     layer.bindPopup(popupContent);
 }
-L.geoJSON(JS_FST, {
+L.geoJSON(JS_ANEMOCULUS, {
     pointToLayer: function (feature, latlng) {
         return L.marker([latlng.lng, latlng.lat], {
             icon: FST
         });
     },
     onEachFeature: onEachFeature
-}).addTo(Layer_FST);
+}).addTo(Layer_ANEMOCULUS);
 
 L.geoJSON(JS_YST, {
     pointToLayer: function (feature, latlng) {
@@ -449,7 +449,7 @@ L.geoJSON(JS_ZWCLR_LY, {
 }).addTo(Layer_ZWCLR_LY);
 
 var overlays = {
-    "<span class='ST-OPT map-opts'>风神瞳</span>": Layer_FST,
+    "<span class='ST-OPT map-opts'>风神瞳</span>": Layer_ANEMOCULUS,
     "<span class='ST-OPT map-opts'>岩神瞳</span>": Layer_YST,
     "<span class='DLK-OPT map-opts'>蒙德</span>": Layer_DLY_MD,
     "<span class='DLK-OPT map-opts'>璃月</span>": Layer_DLY_LY,
