@@ -206,7 +206,7 @@ function onEachFeature(feature, layer) {
 	popupHtml += '<div class="myPopClose" onclick="closePop()"></div>';
 	popupHtml += '<div class="myPopComment">' + feature.properties.popupContent + '</div>';
 	popupHtml += '<div class="myPopPicture">';
-	popupHtml += '<img src=./comment_png/' + key + '.png onerror="this.src=\'./imgs/Icon_51.png\'">';
+	popupHtml += '<img src=./comment_png/' + key + '.png onerror="this.src=\'./imgs/icon_51.png\'">';
 	popupHtml += '</div>';
 	popupHtml += '</div>';
 	layer.bindPopup(popupHtml);
@@ -351,7 +351,7 @@ map.on('popupopen', function(e) {
 	popupHtml += '<div class="myPopClose" onclick="closePop()"></div>';
 	popupHtml += '<div class="myPopComment">' + marker.feature.properties.popupContent + '</div>';
 	popupHtml += '<div class="myPopPicture">';
-	popupHtml += '<img src=./comment_png/' + key + '.png onerror="this.src=\'./imgs/Icon_51.png\'">';
+	popupHtml += '<img src=./comment_png/' + key + '.png onerror="this.src=\'./imgs/icon_51.png\'">';
 	popupHtml += '</div>';
 	popupHtml += '</div>';
 	marker.bindPopup(popupHtml);
