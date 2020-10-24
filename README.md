@@ -1,34 +1,70 @@
-# GenshinMap.github.io
+# Getting Started with Create React App
 
-[Instructions for use (untranslated)](https://bbs.mihoyo.com/ys/article/1328298)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To-Do status is saved to local storage.
+## Available Scripts
 
-## Credits
+In the project directory, you can run:
 
-This map is not my creation; it was originally developed and filled out by the Chinese community, at http://www.yuanshen.site/.
-/u/gbdematos downloaded the map and translated parts of it into English, and I uploaded it for public viewing on GitHub.
+### `yarn start`
 
-That said, I am open to pull requests to expand this map or add/remove features to it. If you have any concerns, [message me](https://reddit.com/message/compose/?to=EliteMasterEric).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## To-Do
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-I looked through the code, and it appears there are several obstacles to further development of this map:
+### `yarn test`
 
-- [ ] ALL of the location data appears to be [on one line of JavaScript](https://github.com/GenshinMap/genshinmap.github.io/blob/master/js/Item_Json.js#L205). It should ideally be moved out.
-- [ ] Large parts of the code, such as those referring to categories, appear to be untranslated (for example, Anemoculus are on the layer Layer_FST). It would be useful for future development for these to be translated.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Here is a list of features yet to be developed:
+### `yarn build`
 
-- [ ] Make it easy to make pull requests to add new markers (I noticed some were missing, for example several Electro Crystal nodes)
-- [ ] Make it easy to clear To-Do status of all markers of a certain subcategory (For example, you could mark all the Elite Enemies or White Iron then reset them for the next day)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Other Maps
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Here is a list of other Genshin Impact maps that are available for you to cross-reference.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* [AppSample](https://genshin-impact-map.appsample.com/#/)
-* [MapGenie](https://mapgenie.io/genshin-impact/maps/teyvat)
-* [Yuanshen.site](http://www.yuanshen.site/) (Chinese)
-* [GameWith.net](https://gamewith.net/genshin-impact/article/show/22639)
-* [Genshin.gg](https://genshin.gg/map)
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
