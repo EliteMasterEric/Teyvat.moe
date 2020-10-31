@@ -71,6 +71,41 @@ const createMarkerMapIcon = ({ key, done = false, svg = false, ...options }) => 
  * khaenriah
  */
 
+export const MapRegions = {
+  mondstadt: {
+    name: 'Mondstadt',
+    enabled: true,
+  },
+  liyue: {
+    name: 'Liyue',
+    enabled: true,
+  },
+  inazuma: {
+    name: 'Inazuma',
+    enabled: false,
+  },
+  sumeru: {
+    name: 'Sumeru',
+    enabled: false,
+  },
+  fontaine: {
+    name: 'Fontaine',
+    enabled: false,
+  },
+  natlan: {
+    name: 'Natlan',
+    enabled: false,
+  },
+  snezhnaya: {
+    name: 'Snezhnaya',
+    enabled: false,
+  },
+  // khaenriah: {
+  //   name: 'Khaenriah',
+  //   enabled: false,
+  // },
+};
+
 /**
  * Metadata regarding the map categories.
  */

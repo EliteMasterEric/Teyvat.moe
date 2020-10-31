@@ -4,7 +4,7 @@ import L from 'leaflet';
 import { AttributionControl, Map, TileLayer, ZoomControl } from 'react-leaflet';
 
 import { MapFeatures } from '../MapFeatures';
-import FeatureLayer from './FeatureLayer';
+import { FeatureLayer, EditorLayer } from './MapLayer';
 
 import './LeafletMap.css';
 
@@ -16,9 +16,50 @@ const MAP_CENTER = [-35, 45];
 const ATTRIBUTION =
   "<a href='https://github.com/GenshinMap/genshinmap.github.io' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
 
-const LeafletMap = ({ mapPreferences }) => {
+const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
+  const [lastClick, setLastClick] = React.useState(0);
+
+  const updateData = (func) => {
+    setMapPreferences((old) => ({
+      ...old,
+      editor: {
+        ...old.editor,
+        feature: {
+          ...old.editor.feature,
+          data: func(old.editor.feature.data),
+        },
+      },
+    }));
+  };
+
+  const onClick = (e) => {
+    // Debouncing.
+    if (lastClick - Date.now() > 20) return;
+    setLastClick(Date.now());
+
+    // Ignore clicks if not in editor mode.
+    if (!mapPreferences?.editor?.enabled) return;
+
+    // Add a marker on click.
+    updateData((oldData) => {
+      const newData = oldData;
+
+      // Create a marker.
+      const id = mapPreferences?.editor?.feature?.data.length ?? 1;
+      newData.push({
+        id,
+        geometry: { type: 'Point', coordinates: [e?.latlng?.lat, e?.latlng?.lng] },
+        type: 'Feature',
+        properties: { popupTitle: '', popupContent: '' },
+      });
+
+      return newData;
+    });
+  };
+
   return (
     <Map
+      onClick={onClick}
       maxBounds={MAP_BOUNDS}
       center={MAP_CENTER}
       zoom={4}
@@ -35,14 +76,19 @@ const LeafletMap = ({ mapPreferences }) => {
       <AttributionControl prefix={ATTRIBUTION} />
       {/* Controls the zoom buttons in the top left corner. */}
       <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
-      {Object.keys(mapPreferences?.displayed).map((key) => {
-        const shouldDisplay = mapPreferences?.displayed[key];
 
-        if (!shouldDisplay) return null;
+      {mapPreferences?.editor?.enabled ? (
+        <EditorLayer mapPreferences={mapPreferences} updateData={updateData} />
+      ) : (
+        Object.keys(mapPreferences?.displayed).map((key) => {
+          const shouldDisplay = mapPreferences?.displayed[key];
 
-        const feature = MapFeatures[key];
-        return <FeatureLayer key={key} mapFeature={feature} />;
-      })}
+          if (!shouldDisplay) return null;
+
+          const feature = MapFeatures[key];
+          return <FeatureLayer key={key} mapFeature={feature} />;
+        })
+      )}
     </Map>
   );
 };

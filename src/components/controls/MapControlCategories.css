@@ -1,10 +1,12 @@
 .map-controls-category-container {
-  border: 0;
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  box-sizing: border-box;
 
   width: auto;
   height: auto;
 
-  z-index: 300;
   margin: 0 12px 12px 0px;
 
   display: flex;

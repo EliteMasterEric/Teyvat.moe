@@ -1,0 +1,26 @@
+.map-controls-options-container {
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  box-sizing: border-box;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.map-controls-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.map-controls-option-label {
+  flex-grow: 1;
+}

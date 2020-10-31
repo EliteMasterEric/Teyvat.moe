@@ -6,7 +6,7 @@ import localStorage from 'local-storage';
 
 import { toBase64, fromBase64 } from './Util';
 
-export const LOCAL_STORAGE_KEY = 'genshinmap-preferences';
+const LOCAL_STORAGE_KEY = 'genshinmap-preferences';
 const GENSHINMAP_DATA_VERSION = 'GM_001';
 const PREFERENCES_PREFIX = `${GENSHINMAP_DATA_VERSION}~`;
 
@@ -32,7 +32,17 @@ export const DEFAULT_MAP_PREFERENCES = {
   /**
    * Store information from the last editor draft.
    */
-  editor: {},
+  editor: {
+    enabled: false,
+
+    feature: {
+      name: 'New Feature',
+      region: 'mondstadt',
+      category: 'special',
+      cluster: false,
+      data: [],
+    },
+  },
 };
 
 export const importData = (input, setMapPreferences) => {
@@ -57,7 +67,10 @@ export const exportData = (mapPreferences) => {
  * @param {*} localStorageKey The key to store the value in.
  * @param {*} defaultValue The default value. Defaults to an empty JSON object.
  */
-export const useStateStored = (localStorageKey, defaultValue = {}) => {
+export const useStateStored = (
+  localStorageKey = 'genshinmap-preferences',
+  defaultValue = DEFAULT_MAP_PREFERENCES
+) => {
   const [value, setValue] = React.useState(defaultValue);
 
   // Load once.
@@ -73,6 +86,6 @@ export const useStateStored = (localStorageKey, defaultValue = {}) => {
   return [value, setValue];
 };
 
-export const resetLocalStorage = (localStorageKey) => {
+export const resetLocalStorage = (localStorageKey = LOCAL_STORAGE_KEY) => {
   localStorage(localStorageKey, JSON.stringify(DEFAULT_MAP_PREFERENCES));
 };
