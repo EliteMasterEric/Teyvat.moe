@@ -1,0 +1,46 @@
+.map-controls-main {
+  /* Position and size the element */
+  position: fixed;
+  top: 0;
+
+  margin: 12px 12px 12px 12px;
+  padding: 12px 0 0 12px;
+
+  /* Border image. */
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/control_border.png') 32 round;
+
+  /* Background color. Padding-box prevents extending beyond the border. */
+  background-color: #f0e9e2;
+  background-clip: padding-box;
+
+  box-sizing: border-box;
+
+  width: 20vw;
+  height: 90vh;
+  max-height: 960px;
+  z-index: 200;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map-controls-main-closed {
+  right: -20vw;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.map-controls-main-open {
+  right: -32px;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
