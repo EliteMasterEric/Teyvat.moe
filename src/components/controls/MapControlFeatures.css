@@ -1,0 +1,61 @@
+.map-controls-features-box {
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  width: calc(100% - 16px);
+  margin: 0px 0px 12px 0px;
+
+  box-sizing: border-box;
+
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.map-controls-feature {
+  position: relative;
+  display: block;
+
+  width: calc(100% - 43px);
+  height: 74px;
+  background: linear-gradient(270deg, #ffffff -95.11%, rgba(255, 255, 255, 0) 100%), #f0e9e2;
+  margin: 0 0 10px 37px;
+  border-radius: 2px;
+
+  line-height: 74px;
+  text-indent: 53px;
+  font-size: 18px;
+  border: 1px solid #d2c6bb;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #78583d;
+}
+
+.map-controls-feature-border {
+  position: absolute;
+  top: -1px;
+  left: -37px;
+  width: 79px;
+  height: 79px;
+  /* This URL MUST start with a '/' to indicate it is an absolute URL. */
+  background: url('../../images/controls/filter_border.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.map-controls-feature-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 2px;
+  left: 2px;
+}
+
+.map-controls-feature-active {
+  background: linear-gradient(
+      270deg,
+      rgba(171, 143, 119, 0.5) -46.99%,
+      rgba(143, 110, 76, 0.5) 198.5%
+    ),
+    #ab8f77;
+  color: #f2f0ee;
+}

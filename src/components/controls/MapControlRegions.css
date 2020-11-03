@@ -1,0 +1,51 @@
+.map-control-regions {
+  position: absolute;
+  top: 192px;
+  left: -130px;
+
+  z-index: -100;
+}
+
+.map-control-regions-on {
+  opacity: 1;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.map-control-regions-off {
+  opacity: 0;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.map-control-region {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  margin-left: 64px;
+
+  cursor: pointer;
+}
+
+.map-control-region-img {
+  width: 117px;
+  height: 51px;
+}
+
+.map-control-region-active {
+  margin-left: 40px;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}

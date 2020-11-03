@@ -1,0 +1,84 @@
+.map-controls-main {
+  /* Position and size the element */
+  position: relative;
+  top: 0;
+
+  margin: 12px 12px 12px 12px;
+  padding: 12px 0 0 12px;
+
+  /* Border image. */
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/control_border.png') 32 round;
+
+  /* Background color. Padding-box prevents extending beyond the border. */
+  background-color: #f0e9e2;
+  background-clip: padding-box;
+
+  box-sizing: border-box;
+
+  min-height: 680px; /* Needed to fit region tabs. */
+  height: 90vh;
+  max-height: 1000px;
+
+  width: 20vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map-controls-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.map-controls-main-closed {
+  right: -20vw;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.map-controls-main-open {
+  right: -32px;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.map-controls-tab-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 12px 6px 0px;
+}
+
+.map-controls-tab {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  margin: 4px 4px 4px 4px;
+  padding: 8px 4px 8px 4px;
+
+  flex-grow: 1;
+
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.map-controls-tab-active,
+.map-controls-tab:hover {
+  background-color: #607d8b;
+}

@@ -1,0 +1,8 @@
+/*
+ * A voodoo magic hack which eliminates white lines between tiles on certain browers.
+ * https://github.com/Leaflet/Leaflet/issues/3575#issuecomment-688644225
+ */
+.leaflet-tile-container img {
+  width: 256.5px !important;
+  height: 256.5px !important;
+}

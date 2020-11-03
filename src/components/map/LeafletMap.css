@@ -1,0 +1,10 @@
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.leaflet-map-route-text {
+  color: #d32f2f;
+  font-size: 20px;
+}
