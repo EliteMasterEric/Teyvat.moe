@@ -41,26 +41,24 @@ generate_tiles() {
 mkdir output
 
 # generate_tile BASE_SIZE CROP_SIZE XPOS YPOS
-# generate_size 256
-## generate_size 512
-## generate_size 768
-## generate_size 1024
-## generate_size 1536
-## generate_size 2048
-## generate_size 3072
-## generate_size 4096
-## generate_size 6144 # Current original size.
-## generate_size 8192 
+generate_size 512
+generate_size 768
+generate_size 1024
+generate_size 1536
+generate_size 2048
+generate_size 3072
+generate_size 4096
+generate_size 6144 # Current original size.
+generate_size 8192 
 generate_size 16384 # Blurry, but we need this for the highest zoom level.
 
 # At each zoom level, each tile is divided in four, and its size (length of the edge, given by the tileSize option) doubles, quadrupling the area.
 
 # Zoom level 2 breaks and starts repeating itself, so just block it.
 # generate_tiles 256 Map_2
-#generate_tiles 512 Map_3
-#generate_tiles 1024 Map_4
-#generate_tiles 2048 Map_5
-#generate_tiles 4096 Map_6
-#generate_tiles 8192 Map_7
+generate_tiles 512 Map_3
+generate_tiles 1024 Map_4
+generate_tiles 2048 Map_5
+generate_tiles 4096 Map_6
+generate_tiles 8192 Map_7
 generate_tiles 16384 Map_8
-# generate_tiles 8192 32 32

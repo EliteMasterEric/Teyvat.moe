@@ -1,0 +1,63 @@
+.popup-submit-editor-data-content {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.popup-submit-editor-data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-submit-editor-data-header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.popup-submit-editor-data-content {
+  text-align: center;
+  font-size: 16px;
+}
+
+.popup-submit-editor-data-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.popup-submit-editor-data-button {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  margin: 4px 4px 4px 4px;
+  padding: 16px 80px 16px 80px;
+
+  font-size: 24px;
+
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.popup-submit-editor-data-button-confirm {
+  background-color: #387002;
+  color: #fff;
+}
+
+.popup-submit-editor-data-button-confirm:hover {
+  background-color: #689f38;
+}
+
+.popup-submit-editor-data-button-cancel {
+  background-color: #ac0800;
+  color: #fff;
+}
+
+.popup-submit-editor-data-button-cancel:hover {
+  background-color: #e64a19;
+}

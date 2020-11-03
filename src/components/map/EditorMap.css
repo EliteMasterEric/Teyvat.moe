@@ -1,0 +1,42 @@
+.map-editor-control-button-image {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  color: black;
+
+  cursor: pointer;
+
+  background-image: url('../../images/controls/editor.svg');
+  background-image: linear-gradient(transparent, transparent),
+    url('../../images/controls/editor.svg');
+  background-repeat: no-repeat;
+  background-size: 300px 30px;
+  background-clip: padding-box;
+}
+
+.map-editor-control-toolbar {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+
+.map-editor-control-toolbar > div:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.map-editor-control-toolbar > div:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.map-editor-control-button-image-marker {
+  background-position: -120px -1px;
+}
+
+.map-editor-control-button-image-route {
+  background-position: 0px 0px;
+}

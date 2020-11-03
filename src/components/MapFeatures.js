@@ -20,7 +20,8 @@ export const createGeoJSONLayer = (dataJSON) => {
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
 
 // eslint-disable-next-line import/no-dynamic-require
-const getData = (key) => require(`../data/${key}.json`);
+const getFeatureData = (key) => require(`../data/features/${key}.json`);
+const getRouteData = (key) => require(`../data/routes/${key}.json`);
 
 const iconsContext = require.context('../images/icons', true);
 const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
@@ -211,7 +212,7 @@ export const MapFeatures = {
     // A lowercase alphanumeric key for the feature's category.
     category: 'special',
     // The GeoJSON data listing all the markers.
-    data: getData('anemoculus'),
+    data: getFeatureData('anemoculus'),
     icons: {
       // The icon used by the Filter control.
       filter: getFilterIconURL('anemoculus'),
@@ -244,7 +245,7 @@ export const MapFeatures = {
     name: 'Geoculus',
     region: 'liyue',
     category: 'special',
-    data: getData('geoculus'),
+    data: getFeatureData('geoculus'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -275,7 +276,7 @@ export const MapFeatures = {
     name: 'Statue of the Seven',
     region: 'mondstadt',
     category: 'special',
-    data: getData('mondstadt-statue'),
+    data: getFeatureData('mondstadt-statue'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -294,7 +295,7 @@ export const MapFeatures = {
     name: 'Statue of the Seven',
     region: 'liyue',
     category: 'special',
-    data: getData('liyue-statue'),
+    data: getFeatureData('liyue-statue'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -313,7 +314,7 @@ export const MapFeatures = {
     name: 'Teleporter',
     region: 'mondstadt',
     category: 'special',
-    data: getData('mondstadt-teleporter'),
+    data: getFeatureData('mondstadt-teleporter'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -332,7 +333,7 @@ export const MapFeatures = {
     name: 'Teleporter',
     region: 'liyue',
     category: 'special',
-    data: getData('liyue-teleporter'),
+    data: getFeatureData('liyue-teleporter'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -350,7 +351,7 @@ export const MapFeatures = {
     name: 'Shrine',
     region: 'mondstadt',
     category: 'special',
-    data: getData('mondstadt-shrine'),
+    data: getFeatureData('mondstadt-shrine'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -368,7 +369,7 @@ export const MapFeatures = {
     name: 'Shrine',
     region: 'liyue',
     category: 'special',
-    data: getData('liyue-shrine'),
+    data: getFeatureData('liyue-shrine'),
     cluster: false,
     icons: {
       // The icon used by the Filter control.
@@ -381,6 +382,18 @@ export const MapFeatures = {
         key: 'liyue-shrine',
       }),
     },
+  },
+};
+
+/**
+ * Metadata regarding the map features.
+ */
+export const MapRoutes = {
+  cecilia: {
+    name: 'Shrine',
+    region: 'mondstadt',
+    category: 'plant',
+    data: getRouteData('cecilia'),
   },
 };
 

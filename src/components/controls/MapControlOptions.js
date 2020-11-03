@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import './MapControlOptions.css';
 import ReactSwitch from 'react-switch';
 import { resetLocalStorage } from '../Preferences';
+import ClearMapDataPopup from '../popups/ClearMapDataPopup';
 
 const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
   return (
@@ -20,10 +21,11 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
         />
       </div>
       <div className={clsx('map-controls-option')}>
-        <span className={clsx('map-controls-option-label')}>Clear Data</span>
-        <button type="button" onClick={() => resetLocalStorage()}>
-          Clear
-        </button>
+        <span className={clsx('map-controls-option-label')}>Clear Local Storage</span>
+        <ClearMapDataPopup
+          trigger={<button type="button">Clear</button>}
+          onConfirm={resetLocalStorage}
+        />
       </div>
     </div>
   );

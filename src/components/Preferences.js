@@ -5,6 +5,7 @@ import React from 'react';
 import localStorage from 'local-storage';
 
 import { toBase64, fromBase64 } from './Util';
+import { DEFAULT_ZOOM, MAP_CENTER } from './map/EditorMap';
 
 const LOCAL_STORAGE_KEY = 'genshinmap-preferences';
 const GENSHINMAP_DATA_VERSION = 'GM_001';
@@ -17,7 +18,10 @@ export const DEFAULT_MAP_PREFERENCES = {
    * and each value is a boolean for whether it is currently displayed.
    */
   displayed: {
-    anemoculus: false,
+    features: {
+      anemoculus: false,
+    },
+    routes: {},
   },
 
   /**
@@ -30,10 +34,24 @@ export const DEFAULT_MAP_PREFERENCES = {
   },
 
   /**
+   * The current position on the map.
+   * Modify this to reorient the map location.
+   */
+  position: {
+    latlng: {
+      lat: MAP_CENTER[0], // Default latitude
+      lng: MAP_CENTER[1], // Default longitude
+    },
+    zoom: DEFAULT_ZOOM, // Default zoom level
+  },
+
+  /**
    * Store information from the last editor draft.
    */
   editor: {
     enabled: false,
+
+    highlighted: -1,
 
     feature: {
       name: 'New Feature',

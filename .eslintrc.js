@@ -4,7 +4,7 @@ module.exports = {
     node: true,
   },
   parser: '@babel/eslint-parser',
-  extends: ['airbnb', 'prettier'],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['@babel', 'prettier'],
   rules: {
     'prettier/prettier': ['warn'], // Utilize Prettier to maintain code style.

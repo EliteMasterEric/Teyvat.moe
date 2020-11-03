@@ -1,0 +1,63 @@
+.popup-clear-map-data-content {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.popup-clear-map-data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-clear-map-data-header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.popup-clear-map-data-content {
+  text-align: center;
+  font-size: 16px;
+}
+
+.popup-clear-map-data-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.popup-clear-map-data-button {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  margin: 4px 4px 4px 4px;
+  padding: 16px 80px 16px 80px;
+
+  font-size: 24px;
+
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.popup-clear-map-data-button-confirm {
+  background-color: #387002;
+  color: #fff;
+}
+
+.popup-clear-map-data-button-confirm:hover {
+  background-color: #689f38;
+}
+
+.popup-clear-map-data-button-cancel {
+  background-color: #ac0800;
+  color: #fff;
+}
+
+.popup-clear-map-data-button-cancel:hover {
+  background-color: #e64a19;
+}

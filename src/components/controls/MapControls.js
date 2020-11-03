@@ -11,23 +11,58 @@ import MapControlRegions from './MapControlRegions';
 // CSS
 import './MapControls.css';
 
-const MapControlTabs = ({ tab, setTab }) => {
+const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
   return (
     <div className={clsx('map-controls-tab-container')}>
-      <div
-        onClick={() => setTab('features')}
-        onKeyDown={() => setTab('features')}
-        role="button"
-        aria-label="Features"
-        tabIndex={0}
-        className={clsx(
-          'map-controls-tab',
-          tab === 'features' ? 'map-controls-tab-active' : '',
-          'noselect'
-        )}
-      >
-        Features
-      </div>
+      {!mapPreferences?.editor?.enabled ? (
+        <>
+          <div
+            onClick={() => setTab('features')}
+            onKeyDown={() => setTab('features')}
+            role="button"
+            aria-label="Features"
+            tabIndex={0}
+            className={clsx(
+              'map-controls-tab',
+              tab === 'features' ? 'map-controls-tab-active' : '',
+              'noselect'
+            )}
+          >
+            Features
+          </div>
+          <div
+            onClick={() => setTab('routes')}
+            onKeyDown={() => setTab('routes')}
+            role="button"
+            aria-label="Routes"
+            tabIndex={0}
+            className={clsx(
+              'map-controls-tab',
+              tab === 'routes' ? 'map-controls-tab-active' : '',
+              'noselect'
+            )}
+          >
+            Routes
+          </div>
+        </>
+      ) : null}
+      {mapPreferences?.editor?.enabled ? (
+        <div
+          onClick={() => setTab('elements')}
+          onKeyDown={() => setTab('elements')}
+          role="button"
+          aria-label="Markers"
+          tabIndex={0}
+          className={clsx(
+            'map-controls-tab',
+            tab === 'elements' ? 'map-controls-tab-active' : '',
+            'noselect'
+          )}
+        >
+          Elements
+        </div>
+      ) : null}
+
       <div
         onClick={() => setTab('options')}
         onKeyDown={() => setTab('options')}
@@ -53,6 +88,8 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
 
   const [tab, setTab] = React.useState('features');
 
+  const editorActive = mapPreferences?.editor?.enabled;
+
   return (
     <div className={clsx('map-controls-wrapper')}>
       <div
@@ -63,13 +100,13 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
       >
         <MapControlFoldButton isOpen={isOpen} setOpen={setOpen} />
         <MapControlRegions
-          isOpen={isOpen}
+          isOpen={isOpen && !editorActive}
           currentRegion={currentRegion}
           setCurrentRegion={setCurrentRegion}
         />
-        <MapControlTabs tab={tab} setTab={setTab} />
+        <MapControlTabs mapPreferences={mapPreferences} tab={tab} setTab={setTab} />
 
-        {tab === 'features' && !mapPreferences?.editor?.enabled ? (
+        {tab === 'features' ? (
           <>
             <MapControlCategories
               currentCategory={currentCategory}
@@ -84,8 +121,12 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
           </>
         ) : null}
 
-        {tab === 'features' && mapPreferences?.editor?.enabled ? (
-          <MapControlEditor mapPreferences={mapPreferences} setMapPreferences={setMapPreferences} />
+        {tab === 'elements' ? (
+          <MapControlEditor
+            setTab={setTab}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
         ) : null}
 
         {tab === 'options' ? (

@@ -1,0 +1,108 @@
+.map-controls-editor-container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.map-controls-editor-element-container {
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  box-sizing: border-box;
+
+  flex-grow: 1;
+
+  margin: 0 12px 12px 0px;
+
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map-controls-editor-button {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  margin: 4px 12px 4px 4px;
+  padding: 8px 4px 8px 4px;
+
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.map-controls-editor-button:hover {
+  background-color: #607d8b;
+}
+
+.map-controls-editor-element {
+  width: calc(100% - 24px);
+  border: 2px solid #d2c6bb;
+  border-radius: 12px 0 0 12px;
+
+  padding: 8px 8px 8px 8px;
+  margin: 4px 4px 4px 0px;
+}
+
+.map-controls-editor-element-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  margin: 4px 0px 4px 0px;
+
+  align-items: center;
+}
+
+.map-controls-editor-element-label {
+  flex-grow: 1;
+
+  font-size: 16px;
+}
+
+.map-controls-editor-element-button {
+  /* Size the button properly. */
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  font-size: 24px;
+
+  /* Align the icon in the center. */
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.map-controls-editor-element-highlight {
+  background-color: #2196f3;
+  color: #fafafa;
+
+  margin: 0px 8px 0 0;
+}
+
+.map-controls-editor-element-highlight.nf-mdi-crosshairs_gps::before {
+  margin: 0 0 0 -4px;
+}
+
+.map-controls-editor-element-trash {
+  background-color: #f44336;
+  color: #fafafa;
+}
+
+.map-controls-editor-element-trash.nf-fa-trash::before {
+  margin: 0 0 0 -2px;
+}

@@ -26,7 +26,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
     });
   };
 
-  const active = mapPreferences?.displayed[featureKey] ?? false;
+  const active = mapPreferences?.displayed?.features[featureKey] ?? false;
 
   return (
     <div

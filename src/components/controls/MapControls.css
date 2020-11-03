@@ -78,6 +78,7 @@
   background-color: #9e9e9e;
 }
 
-.map-controls-tab-active {
+.map-controls-tab-active,
+.map-controls-tab:hover {
   background-color: #607d8b;
 }

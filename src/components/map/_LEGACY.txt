@@ -1,0 +1,63 @@
+// Last clicked time for marker placement debounce.
+const [lastClick, setLastClick] = React.useState(0);
+
+/**
+ * Event called when the map is clicked.
+ */
+const onClick = (e) => {
+  // Debouncing.
+  if (lastClick - Date.now() > 20) return;
+  setLastClick(Date.now());
+
+  // Ignore clicks if not in editor mode.
+  if (!mapPreferences?.editor?.enabled) return;
+
+  // Add a marker on click.
+  setEditorMarkerData((oldData) => {
+    const newData = oldData;
+
+    // Create a marker.
+    const id = (mapPreferences?.editor?.feature?.data.length ?? 1) + 1;
+    newData.push({
+      id,
+      geometry: { type: 'Point', coordinates: [e?.latlng?.lat, e?.latlng?.lng] },
+      type: 'Feature',
+      properties: { popupTitle: '', popupContent: '' },
+    });
+
+    return newData;
+  });
+};
+
+const onDragEnd = (feature) => (event) => {
+  // Update the marker to the new location.
+  const dest = event.target.getLatLng();
+
+  setEditorMarkerData((oldData) => {
+    const index = oldData.indexOf(feature);
+    console.log(`Dragged marker ${index} to ${dest}`);
+
+    // Update the marker.
+    const oldMarker = oldData[index];
+    const newData = oldData;
+    newData[index] = {
+      ...oldMarker,
+      geometry: {
+        type: 'Point',
+        coordinates: [dest?.lat, dest?.lng],
+      },
+    };
+
+    return newData;
+  });
+};
+
+const onEachFeature = (feature, layer) => {
+  // Define popups and drag events here.
+  // eslint-disable-next-line no-param-reassign
+  layer.options.draggable = true;
+  // Event listener.
+  layer.on('dragend', onDragEnd(feature));
+};
+
+onEachFeature = { onEachFeature };

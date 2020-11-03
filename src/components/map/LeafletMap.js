@@ -1,25 +1,18 @@
 import React from 'react';
 
-import L from 'leaflet';
-import { AttributionControl, Map, TileLayer, ZoomControl } from 'react-leaflet';
-
-import { MapFeatures } from '../MapFeatures';
-import { FeatureLayer, EditorLayer } from './MapLayer';
+import { MapFeatures, MapRoutes } from '../MapFeatures';
+import { FeatureLayer, RouteLayer, EditorLayer } from './MapLayer';
+import EditorMap, { EditorControls } from './EditorMap';
 
 import './LeafletMap.css';
 
-// Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
-const TILE_URL = 'tiles/Map_{z}_{x}_{y}.png';
-const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
-const MAP_CENTER = [-35, 45];
-// A link back to the main repository.
-const ATTRIBUTION =
-  "<a href='https://github.com/GenshinMap/genshinmap.github.io' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
-
 const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
-  const [lastClick, setLastClick] = React.useState(0);
+  // Reference to the map.
+  const mapRef = React.useRef(null);
+  const editRef = React.useRef(null);
 
-  const updateData = (func) => {
+  const setEditorData = (func) => {
+    console.log('Edit data!');
     setMapPreferences((old) => ({
       ...old,
       editor: {
@@ -32,64 +25,75 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
     }));
   };
 
-  const onClick = (e) => {
-    // Debouncing.
-    if (lastClick - Date.now() > 20) return;
-    setLastClick(Date.now());
+  /**
+   * Every time the requested position changes in the mapPreferences object,
+   * move the map to that position.
+   *
+   * The !== check prevents an infinite loop with onDragEnd.
+   */
+  React.useEffect(() => {
+    if (mapRef.current.leafletElement == null) return;
 
-    // Ignore clicks if not in editor mode.
-    if (!mapPreferences?.editor?.enabled) return;
+    if (
+      mapPreferences.position.latlng !== mapRef.current.leafletElement.getCenter() ||
+      mapPreferences.position.zoom !== mapRef.current.leafletElement.getZoom()
+    ) {
+      mapRef.current.leafletElement.setView(
+        [mapPreferences.position.latlng.lat, mapPreferences.position.latlng.lng],
+        mapPreferences.position.zoom
+      );
+    }
+  }, [mapPreferences.position]);
 
-    // Add a marker on click.
-    updateData((oldData) => {
-      const newData = oldData;
+  /**
+   * Every time the user drags or zooms to a position on the map,
+   * update the state in setMapPreferences.
+   */
+  const onChangeMapPos = () => {
+    if (mapRef.current.leafletElement == null) return;
 
-      // Create a marker.
-      const id = mapPreferences?.editor?.feature?.data.length ?? 1;
-      newData.push({
-        id,
-        geometry: { type: 'Point', coordinates: [e?.latlng?.lat, e?.latlng?.lng] },
-        type: 'Feature',
-        properties: { popupTitle: '', popupContent: '' },
-      });
-
-      return newData;
-    });
+    setMapPreferences((old) => ({
+      ...old,
+      position: {
+        latlng: mapRef.current.leafletElement.getCenter(),
+        zoom: mapRef.current.leafletElement.getZoom(),
+      },
+    }));
   };
 
   return (
-    <Map
-      onClick={onClick}
-      maxBounds={MAP_BOUNDS}
-      center={MAP_CENTER}
-      zoom={4}
-      zoomDelta={0.5}
-      zoomSnap={0.5}
-      maxZoom={8}
-      minZoom={3}
-      attributionControl={false} // Override the Leaflet attribution with our own AttributionControl.
-      zoomControl={false}
+    <EditorMap
+      ref={editRef}
+      mapRef={mapRef}
+      onChangeMapPos={onChangeMapPos}
+      setEditorData={setEditorData}
+      editorEnabled={mapPreferences?.editor?.enabled}
     >
-      {/* Controls the actual map image. */}
-      <TileLayer url={TILE_URL} reuseTiles />
-      {/* Controls the attribution link in the bottom right corner. */}
-      <AttributionControl prefix={ATTRIBUTION} />
-      {/* Controls the zoom buttons in the top left corner. */}
-      <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
-
       {mapPreferences?.editor?.enabled ? (
-        <EditorLayer mapPreferences={mapPreferences} updateData={updateData} />
+        <>
+          <EditorLayer mapPreferences={mapPreferences} mapRef={mapRef} />
+        </>
       ) : (
-        Object.keys(mapPreferences?.displayed).map((key) => {
-          const shouldDisplay = mapPreferences?.displayed[key];
+        [
+          ...Object.keys(mapPreferences?.displayed?.features).map((key) => {
+            const shouldDisplay = mapPreferences?.displayed?.features[key];
 
-          if (!shouldDisplay) return null;
+            if (!shouldDisplay) return null;
 
-          const feature = MapFeatures[key];
-          return <FeatureLayer key={key} mapFeature={feature} />;
-        })
+            const feature = MapFeatures[key];
+            return <FeatureLayer key={key} mapFeature={feature} />;
+          }),
+          ...Object.keys(mapPreferences?.displayed?.routes).map((key) => {
+            const shouldDisplay = mapPreferences?.displayed?.routes[key];
+
+            if (!shouldDisplay) return null;
+
+            const route = MapRoutes[key];
+            return <RouteLayer key={key} mapFeature={route} />;
+          }),
+        ]
       )}
-    </Map>
+    </EditorMap>
   );
 };
 
