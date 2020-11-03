@@ -4,15 +4,23 @@ GenshinMap is a free open-source interactive map for [Genshin Impact](https://ge
 
 The map includes a full, high-resolution in-game map, with options to display markers for the locations as well as routes to assist navigation between them. It includes features to mark items as completed (saving the data in local storage), as well as a powerful and user-friendly editor to submit new marker collections and routes for the site.
 
+There are easy tools available to allow users to contribute their own markers or routes to the map. See [Contributing](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing) for more information.
+
 This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.github.io/issues) and [pull requests](https://github.com/GenshinMap/genshinmap.github.io/pulls) are welcome and highly appreciated.
+
+## Why GenshinMap?
+
+There are numerous other interactive maps available, but this map has the edge in the following ways:
+
+- **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
+- **Track collected Oculus and others for free**: Other sites require a premium subscription to allow you to track your progress.
+- **Community routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
+- **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor. Other sites have no submission functionality available, or may only have an email.
+- **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can simply fork it. All other interactive map websites are closed source.
 
 ## Credits
 
-This map was originally a translated mirror of [a Chinese language map](http://www.yuanshen.site/), but later the source code was completely rewritten to facilitate expansion and feature enhancements.
-
-## To-Do
-
-- [ ] Make it easy to clear To-Do status of all markers of a certain subcategory (For example, you could mark all the Elite Enemies or White Iron then reset them for the next day)
+This project was originally a translated mirror of [a Chinese language map](http://www.yuanshen.site/), but later the source code was completely rewritten to facilitate expansion and feature enhancements.
 
 ## Other Maps
 
