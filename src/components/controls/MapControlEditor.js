@@ -193,7 +193,6 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
   };
 
   const highlightRoute = (route) => {
-    console.log(route);
     setMapPreferences((old) => {
       return {
         ...old,
@@ -237,7 +236,6 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
 
   const deleteElement = (marker) => {
     const index = mapPreferences?.editor?.feature?.data.indexOf(marker);
-    console.log(index);
     setElementData((old) => {
       const newMarkerData = old;
       newMarkerData.splice(index, 1);
@@ -261,7 +259,6 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
   };
 
   const clearEditorData = () => {
-    console.log('Cleared editor data.');
     setMapPreferences((old) => {
       return {
         ...old,
@@ -275,7 +272,6 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
     <div className={clsx('map-controls-editor-container')}>
       <div className={clsx('map-controls-editor-element-container')}>
         {mapPreferences?.editor?.feature?.data.map((element) => {
-          console.log(element);
           const isRoute = element?.geometry?.type === 'LineString';
 
           return isRoute ? (

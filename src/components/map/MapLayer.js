@@ -85,24 +85,15 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
   const lineToLayer = (feature, latLngs) => {
     const highlighted = feature?.id === mapPreferences?.editor?.highlighted;
 
-    console.log('lineToLayer');
     const line = L.polyline(latLngs, highlighted ? linePropertiesHighlight : lineProperties);
     line.setText('  ►  ', highlighted ? lineTextPropertiesHighlight : lineTextProperties);
     return line;
   };
 
-  const style = (feature) => {
+  const style = () => {
+    // (feature)
     // Tack on additional styles here.
-    console.log(feature);
     return {};
-  };
-
-  const onClickFeature = (event) => {
-    console.log('SingleClick');
-  };
-
-  const onDoubleClickFeature = (event) => {
-    console.log('DoubleClick');
   };
 
   const onEachFeature = (feature, layer) => {
@@ -110,8 +101,8 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
     layer.enableEdit(mapRef.current.leafletElement);
 
     // Define popups and drag events here.
-    layer.on('click', onClickFeature);
-    layer.on('dblclick', onDoubleClickFeature);
+    // layer.on('click', onClickFeature);
+    // layer.on('dblclick', onDoubleClickFeature);
 
     // Build a popup.
     const text = buildPopup(feature);
@@ -141,20 +132,14 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
     });
   };
 
-  const onClickFeature = (feature) => (event) => {
-    console.log('SingleClick');
-  };
-
-  const onDoubleClickFeature = (feature) => (event) => {
-    console.log('DoubleClick');
-    console.log(`KEY: ${featureKey}`);
-    console.log(feature.id);
+  const onDoubleClickFeature = (feature) => () => {
+    // (event)
     markFeature(featureKey, feature.id);
   };
 
   const onEachFeature = (feature, layer) => {
     // Define popups and drag events here.
-    layer.on('click', onClickFeature(feature));
+    // layer.on('click', onClickFeature(feature));
     layer.on('dblclick', onDoubleClickFeature(feature));
 
     // Build a popup.
@@ -180,32 +165,11 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
 
 export const RouteLayer = ({ mapRoute }) => {
   const lineToLayer = (feature, latLngs) => {
-    console.log('lineToLayer');
     const line = L.polyline(latLngs, lineProperties);
     line.setText('  ►  ', lineTextProperties);
 
     return line;
   };
 
-  const onClickFeature = (event) => {
-    console.log('SingleClick');
-  };
-
-  const onDoubleClickFeature = (event) => {
-    console.log('DoubleClick');
-  };
-
-  const onEachFeature = (feature, layer) => {
-    // Define popups and drag events here.
-    console.log('ROUTE FEATURE');
-  };
-
-  return (
-    <GeoJSON
-      key={hashObject(mapRoute)}
-      data={mapRoute.data}
-      lineToLayer={lineToLayer}
-      onEachFeature={onEachFeature}
-    />
-  );
+  return <GeoJSON key={hashObject(mapRoute)} data={mapRoute.data} lineToLayer={lineToLayer} />;
 };

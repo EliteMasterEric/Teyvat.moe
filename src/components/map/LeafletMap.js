@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MapFeatures, MapRoutes } from '../MapFeatures';
 import { FeatureLayer, RouteLayer, EditorLayer } from './MapLayer';
-import EditorMap, { EditorControls } from './EditorMap';
+import EditorMap from './EditorMap';
 
 import './LeafletMap.css';
 
@@ -12,7 +12,6 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
   const editRef = React.useRef(null);
 
   const setEditorData = (func) => {
-    console.log('Edit data!');
     setMapPreferences((old) => ({
       ...old,
       editor: {
@@ -93,7 +92,6 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
         },
       };
     });
-    console.log(mapPreferences);
   };
 
   return (
@@ -128,7 +126,6 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
           }),
           ...Object.keys(mapPreferences?.displayed?.routes).map((key) => {
             const shouldDisplay = mapPreferences?.displayed?.routes[key];
-            console.log(`ROUTE: ${key} : ${shouldDisplay}`);
 
             if (!shouldDisplay) return null;
 

@@ -140,9 +140,6 @@ const EditorMap = React.forwardRef(
     };
 
     const onDragStart = (event) => {
-      console.log('onDragStart');
-      console.log(event);
-
       const isMarker = event.layer.feature.geometry.type === 'Point';
       // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
 
@@ -153,7 +150,7 @@ const EditorMap = React.forwardRef(
       }
     };
 
-    const onDragEnd = (event, map) => {
+    const onDragEnd = (event) => {
       // If the current mode is 'dragMarker', call our override function,
       // and cancel the event that would occur.
 
@@ -193,11 +190,8 @@ const EditorMap = React.forwardRef(
       if (editorState === 'createMarker') {
         map.removeLayer(currentEditable);
         placeMarker(currentEditable);
-        return;
+        // return;
       }
-
-      console.log('OnDrawingCommit');
-      console.log(event);
     };
 
     return (

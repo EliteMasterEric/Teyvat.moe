@@ -67,8 +67,8 @@ export const DEFAULT_MAP_PREFERENCES = {
 
 export const importData = (input, setMapPreferences) => {
   const decodedData = fromBase64(input);
-  const versionCode = input.substring(0, PREFERENCES_PREFIX.length);
-  const jsonData = JSON.parse(input.substring(PREFERENCES_PREFIX.length));
+  // const versionCode = decodedData.substring(0, PREFERENCES_PREFIX.length);
+  const jsonData = JSON.parse(decodedData.substring(PREFERENCES_PREFIX.length));
 
   setMapPreferences((old) => ({ ...old, ...jsonData }));
 };

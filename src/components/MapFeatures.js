@@ -1,7 +1,8 @@
 /**
- *
+ * The file lists all the Map features, regions, routes, and categories.
+ * It directs how they are rendered on the map, how they display in the filter list,
+ * and where the data for them is loaded from.
  */
-import clsx from 'clsx';
 import L from 'leaflet';
 
 /**
@@ -10,8 +11,8 @@ import L from 'leaflet';
  */
 export const createGeoJSONLayer = (dataJSON) => {
   return L.geoJSON(dataJSON, {
-    style: (feature) => {
-      // Style a feature based on its properties.
+    style: () => {
+      // Style a (feature) based on its properties.
       return {};
     },
   });
@@ -25,6 +26,7 @@ const getRouteData = (key) => require(`../data/routes/${key}.json`);
 
 const iconsContext = require.context('../images/icons', true);
 const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
+
 const createMapIcon = ({ key, done = false, svg = false, ...options }) => {
   const iconUrl = iconsContext(
     `./map_${done ? 'done' : 'base'}/${key}.${svg ? 'svg' : 'png'}`,
@@ -44,7 +46,10 @@ const createMarkerMapIcon = ({ key, done = false, svg = false, ...options }) => 
   // This part is a little complex.
   // As a neat hack, the marker's shadow is offset and used to implement the frame.
   // That way, the marker can be a separate icon from the image representing the item.
-  const shadowUrl = iconsContext(`./map_${done ? 'done' : 'base'}/marker.png`, false).default;
+  const shadowUrl = iconsContext(
+    `./map_${done ? 'done' : 'base'}/marker.${svg ? 'svg' : 'png'}`,
+    false
+  ).default;
 
   return L.icon({
     className: `map-marker-${key}`,
