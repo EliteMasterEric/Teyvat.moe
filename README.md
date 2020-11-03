@@ -1,4 +1,4 @@
-# GenshinMap.github.io
+# GenshinMap.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
 
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
