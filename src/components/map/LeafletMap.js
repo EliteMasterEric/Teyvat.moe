@@ -61,6 +61,41 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
     }));
   };
 
+  const markFeature = (featureKey, id) => {
+    setMapPreferences((old) => {
+      const currentValues = old?.marked?.features[featureKey];
+      let newValues = null;
+
+      if (currentValues == null || currentValues === []) {
+        // Create a new mark group with one element.
+        newValues = [id];
+      } else {
+        // Check the mark group if the element is in the list.
+        const alreadyMarked = currentValues.includes(id);
+
+        // Copy the array.
+        newValues = [...currentValues];
+        if (alreadyMarked) {
+          newValues.splice(currentValues.indexOf(id), 1);
+        } else {
+          newValues = [...newValues, id];
+        }
+      }
+
+      return {
+        ...old,
+        marked: {
+          ...old.marked,
+          features: {
+            ...old.marked.features,
+            [featureKey]: newValues,
+          },
+        },
+      };
+    });
+    console.log(mapPreferences);
+  };
+
   return (
     <EditorMap
       ref={editRef}
@@ -81,15 +116,24 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
             if (!shouldDisplay) return null;
 
             const feature = MapFeatures[key];
-            return <FeatureLayer key={key} mapFeature={feature} />;
+            return (
+              <FeatureLayer
+                key={key}
+                featureKey={key}
+                mapFeature={feature}
+                markFeature={markFeature}
+                markedIds={mapPreferences?.marked?.features[key]}
+              />
+            );
           }),
           ...Object.keys(mapPreferences?.displayed?.routes).map((key) => {
             const shouldDisplay = mapPreferences?.displayed?.routes[key];
+            console.log(`ROUTE: ${key} : ${shouldDisplay}`);
 
             if (!shouldDisplay) return null;
 
             const route = MapRoutes[key];
-            return <RouteLayer key={key} mapFeature={route} />;
+            return <RouteLayer key={key} mapRoute={route} />;
           }),
         ]
       )}

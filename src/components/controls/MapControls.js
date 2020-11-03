@@ -4,6 +4,7 @@ import React from 'react';
 import MapControlCategories from './MapControlCategories';
 import MapControlEditor from './MapControlEditor';
 import MapControlFeatures from './MapControlFeatures';
+import MapControlRoutes from './MapControlRoutes';
 import MapControlFoldButton from './MapControlFoldButton';
 import MapControlOptions from './MapControlOptions';
 import MapControlRegions from './MapControlRegions';
@@ -106,19 +107,29 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
         />
         <MapControlTabs mapPreferences={mapPreferences} tab={tab} setTab={setTab} />
 
+        {tab === 'features' || tab === 'routes' ? (
+          <MapControlCategories
+            currentCategory={currentCategory}
+            setCurrentCategory={setCurrentCategory}
+          />
+        ) : null}
+
         {tab === 'features' ? (
-          <>
-            <MapControlCategories
-              currentCategory={currentCategory}
-              setCurrentCategory={setCurrentCategory}
-            />
-            <MapControlFeatures
-              currentRegion={currentRegion}
-              currentCategory={currentCategory}
-              mapPreferences={mapPreferences}
-              setMapPreferences={setMapPreferences}
-            />
-          </>
+          <MapControlFeatures
+            currentRegion={currentRegion}
+            currentCategory={currentCategory}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
+        ) : null}
+
+        {tab === 'routes' ? (
+          <MapControlRoutes
+            currentRegion={currentRegion}
+            currentCategory={currentCategory}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
         ) : null}
 
         {tab === 'elements' ? (

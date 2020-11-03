@@ -390,16 +390,29 @@ export const MapFeatures = {
  */
 export const MapRoutes = {
   cecilia: {
-    name: 'Shrine',
+    name: 'Cecilia',
     region: 'mondstadt',
     category: 'plant',
     data: getRouteData('cecilia'),
+    icons: {
+      // The icon used by the Filter control.
+      filter: getFilterIconURL('cecilia'),
+    },
   },
 };
 
 export const getFeatureKeysByFilter = (region, category) => {
   return Object.keys(MapFeatures).filter((key) => {
     const feature = MapFeatures[key];
+    return (
+      (feature?.region ?? 'mondstadt') === region && (feature?.category ?? 'special') === category
+    );
+  });
+};
+
+export const getRouteKeysByFilter = (region, category) => {
+  return Object.keys(MapRoutes).filter((key) => {
+    const feature = MapRoutes[key];
     return (
       (feature?.region ?? 'mondstadt') === region && (feature?.category ?? 'special') === category
     );

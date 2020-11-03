@@ -30,7 +30,9 @@ export const DEFAULT_MAP_PREFERENCES = {
    * and each value is an array of marker IDs marked as "done".
    */
   marked: {
-    anemoculus: [],
+    features: {
+      anemoculus: [],
+    },
   },
 
   /**

@@ -131,36 +131,46 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
   );
 };
 
-export const FeatureLayer = ({ mapFeature }) => {
+export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds }) => {
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
+    const marked = (markedIds ?? []).includes(feature?.id);
     return L.marker([latLng.lng, latLng.lat], {
-      icon: mapFeature.icons.base,
+      icon: marked ? mapFeature.icons.done : mapFeature.icons.base,
       alt: `${latLng.lng},${latLng.lat}`,
     });
   };
 
-  const onClickFeature = (event) => {
+  const onClickFeature = (feature) => (event) => {
     console.log('SingleClick');
   };
 
-  const onDoubleClickFeature = (event) => {
+  const onDoubleClickFeature = (feature) => (event) => {
     console.log('DoubleClick');
+    console.log(`KEY: ${featureKey}`);
+    console.log(feature.id);
+    markFeature(featureKey, feature.id);
   };
 
   const onEachFeature = (feature, layer) => {
     // Define popups and drag events here.
-    layer.on('click', onClickFeature);
-    layer.on('dblclick', onDoubleClickFeature);
+    layer.on('click', onClickFeature(feature));
+    layer.on('dblclick', onDoubleClickFeature(feature));
 
     // Build a popup.
     const text = buildPopup(feature);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 
+  // If any of these values change, update the map.
+  const hashValue = {
+    mapFeature,
+    markedIds: markedIds ?? [],
+  };
+
   return (
     <GeoJSON
-      key={hashObject(mapFeature)}
+      key={hashObject(hashValue)}
       data={mapFeature.data}
       pointToLayer={pointToLayer}
       onEachFeature={onEachFeature}
@@ -187,12 +197,7 @@ export const RouteLayer = ({ mapRoute }) => {
 
   const onEachFeature = (feature, layer) => {
     // Define popups and drag events here.
-    layer.on('click', onClickFeature);
-    layer.on('dblclick', onDoubleClickFeature);
-
-    // Build a popup.
-    const text = buildPopup(feature);
-    if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+    console.log('ROUTE FEATURE');
   };
 
   return (

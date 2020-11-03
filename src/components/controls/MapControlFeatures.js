@@ -15,12 +15,15 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
 
   const toggleFeature = () => {
     setMapPreferences((old) => {
-      const previousValue = old?.displayed[featureKey] ?? false;
+      const previousValue = old?.displayed?.features[featureKey] ?? false;
       return {
         ...old,
         displayed: {
           ...old?.displayed,
-          [featureKey]: !previousValue,
+          features: {
+            ...old?.displayed?.features,
+            [featureKey]: !previousValue,
+          },
         },
       };
     });

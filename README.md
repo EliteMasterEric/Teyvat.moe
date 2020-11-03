@@ -2,7 +2,7 @@
 
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
-The map includes a full, high-resolution in-game map, with options to display markers for the locations
+The map includes a full, high-resolution in-game map, with options to display markers for the locations as well as routes to assist navigation between them. It includes features to mark items as completed (saving the data in local storage), as well as a powerful and user-friendly editor to submit new marker collections and routes for the site.
 
 This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.github.io/issues) and [pull requests](https://github.com/GenshinMap/genshinmap.github.io/pulls) are welcome and highly appreciated.
 
@@ -12,7 +12,6 @@ This map was originally a translated mirror of [a Chinese language map](http://w
 
 ## To-Do
 
-- [ ] Make it easy to make pull requests to add new markers (I noticed some were missing, for example several Electro Crystal nodes)
 - [ ] Make it easy to clear To-Do status of all markers of a certain subcategory (For example, you could mark all the Elite Enemies or White Iron then reset them for the next day)
 
 ## Other Maps
