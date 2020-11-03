@@ -11,7 +11,8 @@
     "build": "npx react-scripts build",
     "eject": "npx react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\""
   },
   "eslintConfig": {
     "extends": [
