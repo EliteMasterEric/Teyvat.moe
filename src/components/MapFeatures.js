@@ -140,7 +140,7 @@ export const MapCategories = {
     },
   },
   plant: {
-    name: 'Plant',
+    name: 'Plants/Animals',
     style: {
       width: '33%',
       disabled: {
