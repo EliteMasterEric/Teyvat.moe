@@ -32,3 +32,4 @@ Here is a list of other Genshin Impact maps that are available for you to cross-
 * [Yuanshen.site](http://www.yuanshen.site/) (Chinese)
 * [GameWith.net](https://gamewith.net/genshin-impact/article/show/22639)
 * [Genshin.gg](https://genshin.gg/map)
+* [GenshinMap.com](https://genshinmap.com)
