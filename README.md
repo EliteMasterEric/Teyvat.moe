@@ -18,11 +18,12 @@ This map was originally a translated mirror of [a Chinese language map](http://w
 
 Here is a list of other Genshin Impact maps that are available for you to cross-reference.
 
-- [AppSample](https://genshin-impact-map.appsample.com/#/)
-- [MapGenie](https://mapgenie.io/genshin-impact/maps/teyvat)
-- [Yuanshen.site](http://www.yuanshen.site/) (Chinese)
-- [GameWith.net](https://gamewith.net/genshin-impact/article/show/22639)
-- [Genshin.gg](https://genshin.gg/map)
+* [AppSample](https://genshin-impact-map.appsample.com/#/)
+* [MapGenie](https://mapgenie.io/genshin-impact/maps/teyvat)
+* [Yuanshen.site](http://www.yuanshen.site/) (Chinese)
+* [GameWith.net](https://gamewith.net/genshin-impact/article/show/22639)
+* [Genshin.gg](https://genshin.gg/map)
+* [GenshinMap.com](https://genshinmap.com)
 
 ## Licensing
 
