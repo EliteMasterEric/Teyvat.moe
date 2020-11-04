@@ -26,7 +26,7 @@ const getFeatureData = (key) => require(`../data/features/${key}.json`);
 const getRouteData = (key) => require(`../data/routes/${key}.json`);
 
 const iconsContext = require.context('../images/icons', true);
-const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
+export const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
 
 export const createMapIcon = ({ key, marker = false, done = false, svg = false, ...options }) => {
   if (marker) {
@@ -212,8 +212,12 @@ export const MapCategories = {
 const featuresContext = require.context('../data/features/', true, /.json$/);
 export const MapFeatures = Object.fromEntries(
   featuresContext.keys().map((relativePath) => {
-    const [_dot, featureRegion, _featureCategory, featureName] = relativePath.split('/');
-    const featureData = featuresContext(relativePath);
+    const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
+    const featureData = {
+      ...featuresContext(relativePath),
+      region: featureRegion,
+      category: featureCategory,
+    };
 
     // crystal-chunk -> CrystalChunk
     const correctedName = featureName
@@ -247,8 +251,12 @@ export const getFeatureKeysByFilter = (region, category) => {
 const routesContext = require.context('../data/routes/', true, /.json$/);
 export const MapRoutes = Object.fromEntries(
   routesContext.keys().map((relativePath) => {
-    const [_dot, routeRegion, _routeCategory, routeName] = relativePath.split('/');
-    const routeData = routesContext(relativePath);
+    const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
+    const routeData = {
+      ...routesContext(relativePath),
+      region: routeRegion,
+      category: routeCategory,
+    };
 
     // crystal-chunk -> CrystalChunk
     const correctedName = routeName

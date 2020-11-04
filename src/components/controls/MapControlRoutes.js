@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { getRouteKeysByFilter, MapRoutes } from '../MapFeatures';
+import { getRouteKeysByFilter, MapRoutes, getFilterIconURL } from '../MapFeatures';
 
 import './MapControlRoutes.css';
 
@@ -43,7 +43,7 @@ const MapControlRouteButton = ({ routeKey, mapPreferences, setMapPreferences }) 
       <div className={clsx('map-controls-route-border')}>
         <img
           className={clsx('map-controls-route-icon')}
-          src={mapRoute.icons.filter}
+          src={getFilterIconURL(mapRoute.icons.filter)}
           alt={mapRoute.name}
         />
       </div>

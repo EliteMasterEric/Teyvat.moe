@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { getFeatureKeysByFilter, MapFeatures } from '../MapFeatures';
+import { getFeatureKeysByFilter, MapFeatures, getFilterIconURL } from '../MapFeatures';
 
 import './MapControlFeatures.css';
 
@@ -47,7 +47,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
       <div className={clsx('map-controls-feature-border')}>
         <img
           className={clsx('map-controls-feature-icon')}
-          src={mapFeature.icons.filter}
+          src={getFilterIconURL(mapFeature.icons.filter)}
           alt={mapFeature.name}
         />
       </div>

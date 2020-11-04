@@ -8,6 +8,7 @@ import { GeoJSON } from 'react-leaflet';
 import { hashObject } from '../Util';
 
 import './MapLayer.css';
+import { createMapIcon } from '../MapFeatures';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
@@ -127,8 +128,18 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
     // Generate the feature here.
     const marked = (markedIds ?? []).includes(feature?.id);
     // Note that GeoJSON reverses these.
+    const icon = marked
+      ? createMapIcon({
+          ...mapFeature.icons.done,
+          done: true,
+        })
+      : createMapIcon({
+          ...mapFeature.icons.base,
+          done: false,
+        });
+
     return L.marker([latLng.lng, latLng.lat], {
-      icon: marked ? mapFeature.icons.done : mapFeature.icons.base,
+      icon,
       alt: `${latLng.lng},${latLng.lat}`,
     });
   };
