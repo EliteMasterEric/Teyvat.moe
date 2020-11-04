@@ -39,6 +39,7 @@ const MapControlRegions = ({ isOpen, currentRegion, setCurrentRegion }) => {
     >
       {Object.keys(MapRegions).map((key) => (
         <MapControlRegion
+          key={key}
           regionKey={key}
           currentRegion={currentRegion}
           setCurrentRegion={setCurrentRegion}

@@ -46,6 +46,7 @@ const MapControlCategories = ({ currentCategory, setCurrentCategory }) => {
       {Object.keys(MapCategories).map((key) => {
         return (
           <MapControlCategoryButton
+            key={key}
             categoryKey={key}
             currentCategory={currentCategory}
             setCurrentCategory={setCurrentCategory}

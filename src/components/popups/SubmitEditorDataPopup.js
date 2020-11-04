@@ -5,6 +5,15 @@ import Popup from 'reactjs-popup';
 import './SubmitEditorDataPopup.css';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
+  const [submissionName, setSubmissionName] = React.useState('');
+
+  const onClickConfirm = (closePopup) => () => {
+    if (submissionName !== '') {
+      onConfirm(submissionName);
+      closePopup();
+    }
+  };
+
   // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
   return (
     <Popup
@@ -19,7 +28,16 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         <div className={clsx('popup-submit-editor-data-container')}>
           <span className={clsx('popup-submit-editor-data-header')}>Submit Editor Data</span>
           <span className={clsx('popup-submit-editor-data-content')}>
-            Are you sure? If you clear the Editor data, it cannot be recovered.
+            Specify a name for your submission, then click &quot;Confirm&quot; below to be
+            redirected to GitHub.
+            <div className={clsx('popup-submit-editor-data-field-container')}>
+              <span>Submission Name</span>
+              <input
+                type="text"
+                value={submissionName}
+                onChange={(event) => setSubmissionName(event.target.value)}
+              />
+            </div>
           </span>
           <div className={clsx('popup-submit-editor-data-button-container')}>
             <div
@@ -39,14 +57,8 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               role="button"
               aria-label="Confirm Clear Data"
               tabIndex={0}
-              onClick={() => {
-                onConfirm();
-                closePopup();
-              }}
-              onKeyDown={() => {
-                onConfirm();
-                closePopup();
-              }}
+              onClick={onClickConfirm(closePopup)}
+              onKeyDown={onClickConfirm(closePopup)}
               className={clsx(
                 'popup-submit-editor-data-button',
                 'popup-submit-editor-data-button-confirm'

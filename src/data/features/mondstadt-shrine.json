@@ -1,68 +1,132 @@
 [
   {
-    "geometry": { "type": "Point", "coordinates": ["-19.30077482585895", "52.86621093750001"] },
-    "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 1
-  },
-  {
-    "geometry": { "type": "Point", "coordinates": ["-27.498526722798296", "48.988037109375"] },
-    "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 2
-  },
-  {
+    "id": 1,
     "geometry": {
       "type": "Point",
-      "coordinates": ["-34.651285198954135", "47.95532226562501"]
+      "coordinates": [62.56164550781251, -17.675427818339383]
     },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 3
+    "properties": {
+      "popupTitle": "Shrine #1",
+      "popupContent": "This shrine is located past the hillichurl tower, nearby to the Anemo Hypostasis arena.",
+      "popupImage": "mondstadt-shrine/1.png"
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-29.55434512574828", "54.15161132812501"] },
-    "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 4
-  },
-  {
+    "id": 2,
     "geometry": {
       "type": "Point",
-      "coordinates": ["-29.563901551414432", "59.55688476562501"]
+      "coordinates": [69.57641601562501, -21.514406720030294]
     },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 5
+    "properties": {
+      "popupTitle": "Shrine #2",
+      "popupContent": "This shrine is located below Starsnatch Cliff.",
+      "popupImage": "mondstadt-shrine/2.png"
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-32.96258644191747", "62.43530273437501"] },
+    "id": 3,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [59.70520019531251, -29.568679425235146]
+    },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 6
+    "properties": {
+      "popupTitle": "Shrine #3",
+      "popupContent": "This shrine is nestled within the cliff near Springvale.",
+      "popupImage": "mondstadt-shrine/3.png"
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-37.01132594307014", "63.89648437500001"] },
+    "id": 4,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [53.93737792968751, -29.219302076779446]
+    },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 7
+    "properties": {
+      "popupTitle": "Shrine #4",
+      "popupContent": "This shrine is located in the middle of a field near Springvale, by the cliff with an Anemoculus under it.",
+      "popupImage": "mondstadt-shrine/4.png"
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-34.44315867450577", "67.09350585937501"] },
+    "id": 5,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [62.457275390625, -33.06392419812064]
+    },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 8
+    "properties": {
+      "popupTitle": "Shrine #5",
+      "popupContent": "This shrine is located by a cliff near a river gorge, south of the large tree by the Statue of the Seven.",
+      "popupImage": ""
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-21.46329344189928", "69.54345703125001"] },
+    "id": 6,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [64.03930664062501, -37.02448395075963]
+    },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 9
+    "properties": {
+      "popupTitle": "Shrine #6",
+      "popupContent": "This shrine is located far up the cliffs near the world border.",
+      "popupImage": ""
+    }
   },
   {
-    "geometry": { "type": "Point", "coordinates": ["-17.54977183258917", "62.66601562500001"] },
+    "id": 7,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [67.18139648437501, -34.43862840686651]
+    },
     "type": "Feature",
-    "properties": { "popupTitle": "", "popupContent": "" },
-    "id": 10
+    "properties": {
+      "popupTitle": "Shrine #7",
+      "popupContent": "This shrine is located up at the top of a cliff near Dadaupa Gorge.",
+      "popupImage": ""
+    }
+  },
+  {
+    "id": 8,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [48.988037109375, -27.571590861376308]
+    },
+    "type": "Feature",
+    "properties": {
+      "popupTitle": "Shrine #8",
+      "popupContent": "This shrine is located in the plain to the north of Andrius' arena.",
+      "popupImage": "mondstadt-shrine/8.png"
+    }
+  },
+  {
+    "id": 9,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [47.92236328125001, -34.6015631772409]
+    },
+    "type": "Feature",
+    "properties": {
+      "popupTitle": "Shrine #9",
+      "popupContent": "This shrine is located across the water near the border to Liyue.",
+      "popupImage": ""
+    }
+  },
+  {
+    "id": 10,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [52.60803222656251, -19.26966529650232]
+    },
+    "type": "Feature",
+    "properties": {
+      "popupTitle": "Shrine #10",
+      "popupContent": "This shrine is located at the top of a far cliff to the east of Stormterror's lair.",
+      "popupImage": "mondstadt-shrine/10.png"
+    }
   }
 ]

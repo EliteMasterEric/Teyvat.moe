@@ -144,8 +144,8 @@ export const MapCategories = {
       },
     },
   },
-  plant: {
-    name: 'Plants/Animals',
+  nature: {
+    name: 'Nature',
     style: {
       width: '33%',
       disabled: {
@@ -397,7 +397,7 @@ export const MapRoutes = {
   cecilia: {
     name: 'Cecilia',
     region: 'mondstadt',
-    category: 'plant',
+    category: 'nature',
     data: getRouteData('cecilia'),
     icons: {
       // The icon used by the Filter control.
