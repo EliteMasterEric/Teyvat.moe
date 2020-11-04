@@ -1,0 +1,57 @@
+{
+  "name": "Electro Crystal",
+  "cluster": false,
+  "icons": {
+    "filter": "electro-crystal",
+    "base": {
+      "marker": true,
+      "key": "electro-crystal"
+    },
+    "done": {
+      "marker": true,
+      "key": "electro-crystal",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-24.53712939907993", "48.988037109375"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-23.387640227334956", "69.47204589843751"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-23.37755614917645", "69.54895019531251"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
+    }
+  ]
+}

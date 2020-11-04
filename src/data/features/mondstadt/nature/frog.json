@@ -1,0 +1,44 @@
+{
+  "name": "Frog",
+  "cluster": false,
+  "icons": {
+    "filter": "frog",
+    "base": {
+      "marker": true,
+      "key": "frog"
+    },
+    "done": {
+      "marker": true,
+      "key": "frog",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-37.81826477241256", "42.69162671755568"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-37.42605056502682", "42.45559133251983"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    }
+  ]
+}

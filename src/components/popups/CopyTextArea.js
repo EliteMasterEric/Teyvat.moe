@@ -11,7 +11,6 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
   const textAreaRef = React.useRef(null);
 
   const copyText = () => {
-    console.log('Copying text.');
     textAreaRef.current.select();
     document.execCommand('copy');
   };

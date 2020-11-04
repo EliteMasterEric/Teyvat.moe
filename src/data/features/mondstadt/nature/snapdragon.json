@@ -1,0 +1,70 @@
+{
+  "name": "Snapdragon",
+  "cluster": false,
+  "icons": {
+    "filter": "snapdragon",
+    "base": {
+      "marker": true,
+      "key": "snapdragon"
+    },
+    "done": {
+      "marker": true,
+      "key": "snapdragon",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-30.90693797089463", "62.874758019750324"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-30.88336587261745", "62.924197576500525"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-30.943696463517075", "62.241099814759224"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-31.394747064777885", "62.296020653507554"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
+    }
+  ]
+}

@@ -91,8 +91,8 @@ const EditorMap = React.forwardRef(
     const placeMarker = (editable) => {
       const { _latlng: latlng } = editable;
 
-      // Note this is reversed because GeoJSON stores them that way.
-      const latlngFormatted = [latlng?.lng, latlng?.lat];
+      // Note this is not reversed because it corresponds to direct map coordinates.
+      const latlngFormatted = [latlng?.lat, latlng?.lng];
 
       // Append a new marker to the data.
       setEditorData((oldData) => {
@@ -116,8 +116,8 @@ const EditorMap = React.forwardRef(
 
     const placeRoute = (editable) => {
       const { _latlngs: latlngs } = editable;
-      // GeoJSON is dumb, why is this reversed?
-      const latlngsFormatted = latlngs.map((latlng) => [latlng?.lng, latlng?.lat]);
+      // Note this is not reversed because it corresponds to direct map coordinates.
+      const latlngsFormatted = latlngs.map((latlng) => [latlng?.lat, latlng?.lng]);
 
       // Append a new marker to the data.
       setEditorData((oldData) => {
@@ -171,8 +171,8 @@ const EditorMap = React.forwardRef(
             ...marker,
             geometry: {
               ...marker.geometry,
-              // Reversed because GeoJSON.
-              coordinates: [latlng.lng, latlng.lat],
+              // Not reversed.
+              coordinates: [latlng.lat, latlng.lng],
             },
           };
           return newData;

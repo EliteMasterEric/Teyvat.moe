@@ -1,0 +1,31 @@
+{
+  "name": "Samachurl",
+  "cluster": false,
+  "icons": {
+    "filter": "samachurl",
+    "base": {
+      "marker": true,
+      "key": "samachurl"
+    },
+    "done": {
+      "marker": true,
+      "key": "samachurl",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-41.67992310424453", "42.78513904895076"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Hillichurl",
+  "cluster": false,
+  "icons": {
+    "filter": "hillichurl",
+    "base": {
+      "marker": true,
+      "key": "hillichurl"
+    },
+    "done": {
+      "marker": true,
+      "key": "hillichurl",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-41.733810082655665", "42.63121811568323"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-37.430519681377234", "40.505757891994776"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    }
+  ]
+}

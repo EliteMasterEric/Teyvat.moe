@@ -1,0 +1,83 @@
+{
+  "name": "Ruin Hunter",
+  "cluster": false,
+  "icons": {
+    "filter": "ruin-hunter",
+    "base": {
+      "marker": true,
+      "key": "ruin-hunter"
+    },
+    "done": {
+      "marker": true,
+      "key": "ruin-hunter",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-55.549717538066616", "36.38030418585611"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-56.77293303049224", "30.88149357264467"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-54.00381766278086", "27.58562970115009"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-47.987634945980005", "28.855042878185596"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-48.12880937113145", "47.64612584375341"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 5
+    }
+  ]
+}

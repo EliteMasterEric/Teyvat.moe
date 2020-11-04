@@ -1,0 +1,96 @@
+{
+  "name": "Ruin Guard",
+  "cluster": false,
+  "icons": {
+    "filter": "ruin-guard",
+    "base": {
+      "marker": true,
+      "key": "ruin-guard"
+    },
+    "done": {
+      "marker": true,
+      "key": "ruin-guard",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-24.70691524106633", "70.44433593750001"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-20.26460584400348", "42.28518226556345"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-22.377582735353506", "44.9276890708595"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-17.871608427165853", "70.43237852066085"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-19.99399846948549", "79.2279052734375"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 5
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-19.84513064270123", "50.36026305995868"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 6
+    }
+  ]
+}

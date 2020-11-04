@@ -14,13 +14,28 @@ const PREFERENCES_PREFIX = `${GENSHINMAP_DATA_VERSION}~`;
 
 export const DEFAULT_MAP_PREFERENCES = {
   /**
+   * Store the version; if it's outdated, the app can migrate as necessary.
+   */
+  version: GENSHINMAP_DATA_VERSION,
+
+  /**
    * Store of currently displayed marker layers.
    * Each key is the internal name of the feature,
    * and each value is a boolean for whether it is currently displayed.
    */
   displayed: {
     features: {
-      anemoculus: false,
+      // These features will be displayed to new users when they first open the site.
+      anemoculus: true,
+      geoculus: true,
+
+      // mondstadtTeleporter: true,
+      // mondstadtStatue: true,
+      // mondstadtDomain: true,
+
+      // liyueTeleporter: true,
+      // liyueStatue: true,
+      // liyueDomain: true,
     },
     routes: {},
   },

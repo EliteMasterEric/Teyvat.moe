@@ -1,0 +1,31 @@
+{
+  "name": "Pinecone",
+  "cluster": false,
+  "icons": {
+    "filter": "pinecone",
+    "base": {
+      "marker": true,
+      "key": "pinecone"
+    },
+    "done": {
+      "marker": true,
+      "key": "pinecone",
+      "done": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-17.763079799722295", "71.52043655653765"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
+    }
+  ]
+}

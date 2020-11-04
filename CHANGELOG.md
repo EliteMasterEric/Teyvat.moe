@@ -13,3 +13,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Added exporters for revised and legacy data.
 - Fixed bug where local storage data was being stored improperly.
 - Added data for Shrines.
+
+# 0.2.2
+
+- Fixed issue with exporter switching latitude and longitude.

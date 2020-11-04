@@ -36,7 +36,7 @@ const MapControlRouteButton = ({ routeKey, mapPreferences, setMapPreferences }) 
       onClick={toggleRoute}
       onKeyDown={toggleRoute}
       role="button"
-      aria-label={active ? `Show ${mapRoute.name}` : `Hide ${mapRoute.name}`}
+      aria-label={active ? `Hide ${mapRoute.name}` : `Show ${mapRoute.name}`}
       tabIndex={0}
       className={clsx('map-controls-route', active ? 'map-controls-route-active' : '', 'noselect')}
     >
@@ -47,7 +47,7 @@ const MapControlRouteButton = ({ routeKey, mapPreferences, setMapPreferences }) 
           alt={mapRoute.name}
         />
       </div>
-      {mapRoute.name}
+      <div className={clsx('map-controls-route-label')}>{mapRoute.name}</div>
     </div>
   );
 };
@@ -60,13 +60,21 @@ const MapControlRoutes = ({
 }) => {
   return (
     <div className={clsx('map-controls-routes-box')}>
-      {getRouteKeysByFilter(currentRegion, currentCategory).map((key) => (
-        <MapControlRouteButton
-          routeKey={key}
-          mapPreferences={mapPreferences}
-          setMapPreferences={setMapPreferences}
-        />
-      ))}
+      {getRouteKeysByFilter(currentRegion, currentCategory)
+        .sort((a, b) => {
+          const textA = MapRoutes[a].name;
+          const textB = MapRoutes[b].name;
+
+          if (textA < textB) return -1;
+          return textA > textB ? 1 : 0;
+        })
+        .map((key) => (
+          <MapControlRouteButton
+            routeKey={key}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
+        ))}
     </div>
   );
 };

@@ -75,8 +75,8 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
     const highlighted = feature?.id === mapPreferences?.editor?.highlighted;
 
     // Generate the feature here.
-    // Note that lng are NOT reversed here. GeoJSON reverses them but this doesn't.
-    return L.marker([latLng.lat, latLng.lng], {
+    // Note that GeoJSON reverses these.
+    return L.marker([latLng.lng, latLng.lat], {
       icon: highlighted ? mapFeature.icons.done : mapFeature.icons.base,
       alt: `${latLng.lng},${latLng.lat}`,
     });
@@ -126,6 +126,7 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
     const marked = (markedIds ?? []).includes(feature?.id);
+    // Note that GeoJSON reverses these.
     return L.marker([latLng.lng, latLng.lat], {
       icon: marked ? mapFeature.icons.done : mapFeature.icons.base,
       alt: `${latLng.lng},${latLng.lat}`,

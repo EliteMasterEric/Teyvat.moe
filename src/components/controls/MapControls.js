@@ -11,10 +11,25 @@ import MapControlRegions from './MapControlRegions';
 
 // CSS
 import './MapControls.css';
+import MapControlAbout from './MapControlAbout';
 
 const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
   return (
     <div className={clsx('map-controls-tab-container')}>
+      <div
+        onClick={() => setTab('about')}
+        onKeyDown={() => setTab('about')}
+        role="button"
+        aria-label="about"
+        tabIndex={0}
+        className={clsx(
+          'map-controls-tab',
+          tab === 'about' ? 'map-controls-tab-active' : '',
+          'noselect'
+        )}
+      >
+        About
+      </div>
       {!mapPreferences?.editor?.enabled ? (
         <>
           <div
@@ -106,6 +121,8 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
           setCurrentRegion={setCurrentRegion}
         />
         <MapControlTabs mapPreferences={mapPreferences} tab={tab} setTab={setTab} />
+
+        {tab === 'about' ? <MapControlAbout /> : null}
 
         {tab === 'features' || tab === 'routes' ? (
           <MapControlCategories

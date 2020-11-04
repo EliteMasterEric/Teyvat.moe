@@ -36,7 +36,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
       onClick={toggleFeature}
       onKeyDown={toggleFeature}
       role="button"
-      aria-label={active ? `Show ${mapFeature.name}` : `Hide ${mapFeature.name}`}
+      aria-label={active ? `Hide ${mapFeature.name}` : `Show ${mapFeature.name}`}
       tabIndex={0}
       className={clsx(
         'map-controls-feature',
@@ -51,7 +51,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
           alt={mapFeature.name}
         />
       </div>
-      {mapFeature.name}
+      <div className={clsx('map-controls-feature-label')}>{mapFeature.name}</div>
     </div>
   );
 };
@@ -64,14 +64,22 @@ const MapControlFeatures = ({
 }) => {
   return (
     <div className={clsx('map-controls-features-box')}>
-      {getFeatureKeysByFilter(currentRegion, currentCategory).map((key) => (
-        <MapControlFeatureButton
-          key={key}
-          featureKey={key}
-          mapPreferences={mapPreferences}
-          setMapPreferences={setMapPreferences}
-        />
-      ))}
+      {getFeatureKeysByFilter(currentRegion, currentCategory)
+        .sort((a, b) => {
+          const textA = MapFeatures[a].name;
+          const textB = MapFeatures[b].name;
+
+          if (textA < textB) return -1;
+          return textA > textB ? 1 : 0;
+        })
+        .map((key) => (
+          <MapControlFeatureButton
+            key={key}
+            featureKey={key}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
+        ))}
     </div>
   );
 };

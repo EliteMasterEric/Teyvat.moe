@@ -1,0 +1,31 @@
+.map-controls-about-container {
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  box-sizing: border-box;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.map-control-about-header {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+
+  margin: 0 0 16px 0;
+}
+
+.map-control-about-content {
+  width: 100%;
+  font-size: 16px;
+
+  margin: 0 0 8px 0;
+}
