@@ -1,5 +1,9 @@
 # GenshinMap.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md) [![Jenkins](https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master)](https://travis-ci.org/github/GenshinMap/genshinmap.github.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
 
+## [View the site here](https://genshinmap.github.io/)
+
+### The site has currently been reverted to a legacy state, pending completion of a rewrite.
+
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
 The map includes a full, high-resolution in-game map, with options to display markers for the locations as well as routes to assist navigation between them. It includes features to mark items as completed (saving the data in local storage), as well as a powerful and user-friendly editor to submit new marker collections and routes for the site.
