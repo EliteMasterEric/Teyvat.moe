@@ -1,93 +1,109 @@
-[
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-26.259082062991208", "68.13693698433282"]
+{
+  "name": "Abyss Mage",
+  "cluster": false,
+  "icons": {
+    "filter": "hydro-abyss-mage",
+    "base": {
+      "marker": true,
+      "key": "hydro-abyss-mage"
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 1
+    "done": {
+      "marker": true,
+      "key": "hydro-abyss-mage",
+      "done": true
+    }
   },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-34.390666153251054", "63.286381700489514"]
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-26.259082062991208", "68.13693698433282"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-34.390666153251054", "63.286381700489514"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
     },
-    "id": 2
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-37.164694188702214", "65.12145996093751"]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-37.164694188702214", "65.12145996093751"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-17.590996460305924", "46.45984544847884"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
     },
-    "id": 3
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-17.590996460305924", "46.45984544847884"]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-19.553820485951093", "40.307891646227255"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 5
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-26.57329888568923", "48.26763975943869"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 6
     },
-    "id": 4
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-19.553820485951093", "40.307891646227255"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 5
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-26.57329888568923", "48.26763975943869"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 6
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-19.517498565771213", "68.15273379791373"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 7
-  }
-]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-19.517498565771213", "68.15273379791373"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 7
+    }
+  ]
+}

@@ -1,67 +1,83 @@
-[
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-19.043939270712", "38.32491991017419"]
+{
+  "name": "Fatui Skirmisher",
+  "cluster": false,
+  "icons": {
+    "filter": "fatui-skirmisher",
+    "base": {
+      "marker": true,
+      "key": "fatui-skirmisher"
     },
-    "type": "Feature",
-    "properties": {
-      "popupTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 1
+    "done": {
+      "marker": true,
+      "key": "fatui-skirmisher",
+      "done": true
+    }
   },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-35.20757430587283", "64.01068393931935"]
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-19.043939270712", "38.32491991017419"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
     },
-    "type": "Feature",
-    "properties": {
-      "popupTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-35.20757430587283", "64.01068393931935"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
     },
-    "id": 2
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-38.94413827031217", "71.54177298225079"]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-38.94413827031217", "71.54177298225079"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
     },
-    "type": "Feature",
-    "properties": {
-      "popupTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-32.53292067518786", "45.90087890625"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
     },
-    "id": 3
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-32.53292067518786", "45.90087890625"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popupTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 4
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-36.79611687361767", "63.74780924281884"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popupTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 5
-  }
-]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-36.79611687361767", "63.74780924281884"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 5
+    }
+  ]
+}

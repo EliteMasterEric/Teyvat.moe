@@ -1,54 +1,70 @@
-[
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-20.488773287109822", "51.009512842873654"]
+{
+  "name": "Fatui Electro Cicin Mage",
+  "cluster": false,
+  "icons": {
+    "filter": "fatui-electro-cicin-mage",
+    "base": {
+      "marker": true,
+      "key": "fatui-electro-cicin-mage"
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 1
+    "done": {
+      "marker": true,
+      "key": "fatui-electro-cicin-mage",
+      "done": true
+    }
   },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-30.81265102029497", "56.72241210937501"]
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-20.488773287109822", "51.009512842873654"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 1
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-30.81265102029497", "56.72241210937501"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 2
     },
-    "id": 2
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-35.99579514101276", "61.984866521813025"]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-35.99579514101276", "61.984866521813025"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 3
     },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 3
-  },
-  {
-    "geometry": {
-      "type": "Point",
-      "coordinates": ["-16.878146994732155", "70.62560711099948"]
-    },
-    "type": "Feature",
-    "properties": {
-      "popTitle": "",
-      "popupContent": "",
-      "popupImage": ""
-    },
-    "id": 4
-  }
-]
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-16.878146994732155", "70.62560711099948"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popTitle": "",
+        "popupContent": "",
+        "popupImage": ""
+      },
+      "id": 4
+    }
+  ]
+}
