@@ -4,10 +4,13 @@ import clsx from 'clsx';
 import Tooltip from 'react-tooltip';
 import newGithubIssueUrl from 'new-github-issue-url';
 
-import './MapControlEditor.css';
 import ClearEditorDataPopup from '../popups/ClearEditorDataPopup';
+import SubmitEditorDataPopup from '../popups/SubmitEditorDataPopup';
+
 import { DEFAULT_MAP_PREFERENCES } from '../Preferences';
 import { generatePrettyJSON, openURLInWindow } from '../Util';
+
+import './MapControlEditor.css';
 
 const HIGHLIGHT_ZOOM_LEVEL = 8;
 
@@ -307,16 +310,21 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
         onConfirm={clearEditorData}
       />
 
-      <div
-        onClick={submitEditorData}
-        onKeyDown={submitEditorData}
-        role="button"
-        aria-label="Submit"
-        tabIndex={0}
-        className={clsx('map-controls-editor-button')}
-      >
-        Submit Editor Data
-      </div>
+      <SubmitEditorDataPopup
+        trigger={
+          <div
+            onClick={submitEditorData}
+            onKeyDown={submitEditorData}
+            role="button"
+            aria-label="Submit"
+            tabIndex={0}
+            className={clsx('map-controls-editor-button')}
+          >
+            Submit Editor Data
+          </div>
+        }
+        onConfirm={submitEditorData}
+      />
     </div>
   );
 };

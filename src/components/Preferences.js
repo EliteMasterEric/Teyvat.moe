@@ -2,8 +2,9 @@
  * Handle data stored in Local browser Storage.
  */
 import React from 'react';
-import localStorage from 'local-storage';
+import _ from 'lodash';
 
+import localStorage from './local-storage';
 import { toBase64, fromBase64 } from './Util';
 import { DEFAULT_ZOOM, MAP_CENTER } from './map/EditorMap';
 
@@ -73,7 +74,7 @@ export const importData = (input, setMapPreferences) => {
   setMapPreferences((old) => ({ ...old, ...jsonData }));
 };
 
-export const exportData = (mapPreferences) => {
+export const exportDataJSON = (mapPreferences = localStorage.get(LOCAL_STORAGE_KEY)) => {
   // Create a JSON string of the current preferences.
   const jsonData = JSON.stringify(mapPreferences);
   // Prepend a version for backwards compatibility between releases.
@@ -82,30 +83,57 @@ export const exportData = (mapPreferences) => {
   return base64Data;
 };
 
+const loadPreferences = (key = LOCAL_STORAGE_KEY, defaultValue = DEFAULT_MAP_PREFERENCES) => {
+  const value = localStorage.get(key) ?? defaultValue;
+
+  if (typeof value === 'string' || value instanceof String) {
+    return JSON.parse(value);
+  }
+  return value;
+};
+
 /**
  * Store a value in local storage. Behaves similar to useState.
  * @param {*} localStorageKey The key to store the value in.
  * @param {*} defaultValue The default value. Defaults to an empty JSON object.
  */
 export const useStateStored = (
-  localStorageKey = 'genshinmap-preferences',
+  localStorageKey = LOCAL_STORAGE_KEY,
   defaultValue = DEFAULT_MAP_PREFERENCES
 ) => {
   const [value, setValue] = React.useState(defaultValue);
 
   // Load once.
   React.useEffect(() => {
-    setValue(JSON.parse(localStorage(localStorageKey)) ?? defaultValue);
+    // Get local storage.
+    setValue(loadPreferences(localStorageKey, defaultValue));
   }, []);
 
   // Save on change.
   React.useEffect(() => {
-    localStorage(localStorageKey, JSON.stringify(value));
+    // Set local storage.
+    localStorage.set(localStorageKey, value);
   }, [value]);
 
   return [value, setValue];
 };
 
+/**
+ * Resets the local storage.
+ * Only touches one key; legacy values are not interfered with.
+ * @param {*} localStorageKey The key to alter, defaults to the local storage key.
+ */
 export const resetLocalStorage = (localStorageKey = LOCAL_STORAGE_KEY) => {
-  localStorage(localStorageKey, JSON.stringify(DEFAULT_MAP_PREFERENCES));
+  localStorage.set(localStorageKey, DEFAULT_MAP_PREFERENCES);
+};
+
+export const fetchLegacyData = (excludedKeys = [LOCAL_STORAGE_KEY]) => {
+  const localStorageData = localStorage.all();
+  const includedKeys = Object.keys(localStorageData).filter((key) => !excludedKeys.includes(key));
+  return _.pick(localStorageData, includedKeys);
+};
+
+const EXCLUDED_KEYS = [LOCAL_STORAGE_KEY, 'preferences', 'prefs', 'ally-supports-cache'];
+export const exportLegacyDataJSON = (excludedKeys = EXCLUDED_KEYS) => {
+  return JSON.stringify(fetchLegacyData(excludedKeys));
 };

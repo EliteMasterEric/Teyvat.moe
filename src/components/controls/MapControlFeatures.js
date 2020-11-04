@@ -66,6 +66,7 @@ const MapControlFeatures = ({
     <div className={clsx('map-controls-features-box')}>
       {getFeatureKeysByFilter(currentRegion, currentCategory).map((key) => (
         <MapControlFeatureButton
+          key={key}
           featureKey={key}
           mapPreferences={mapPreferences}
           setMapPreferences={setMapPreferences}

@@ -19,6 +19,10 @@
   font-size: 16px;
 }
 
+.popup-submit-editor-data-field-container {
+  padding: 12px 0 0 0;
+}
+
 .popup-submit-editor-data-button-container {
   display: flex;
   flex-direction: row;
@@ -45,6 +49,11 @@
 }
 
 .popup-submit-editor-data-button-confirm {
+  background-color: #387002;
+  color: #fff;
+}
+
+.popup-submit-editor-data-button-confirm:disabled {
   background-color: #387002;
   color: #fff;
 }

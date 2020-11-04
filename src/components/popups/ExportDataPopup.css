@@ -1,0 +1,24 @@
+.popup-export-data-content {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.popup-export-data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-export-data-header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.popup-export-data-content {
+  text-align: center;
+  font-size: 16px;
+}
+
+.popup-export-data-textarea {
+  width: 90%;
+}
