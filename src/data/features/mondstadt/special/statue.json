@@ -4,14 +4,74 @@
   "icons": {
     "filter": "mondstadt-statue",
     "base": {
-      "marker": true,
-      "key": "mondstadt-statue"
+      "key": "statue",
+      "iconSize": [30, 46],
+      "shadowSize": [50, 64],
+      "iconAnchor": [15, 40],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -35]
     },
     "done": {
-      "marker": true,
-      "key": "mondstadt-statue",
-      "done": true
+      "key": "statue",
+      "iconSize": [30, 46],
+      "shadowSize": [50, 64],
+      "iconAnchor": [15, 40],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -35]
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-21.870414069992147, 64.39772956367817]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Anemo",
+        "popupContent": "Starfell Valley, Mondstadt",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-30.318385244367025, 63.50372716588123]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Anemo",
+        "popupContent": "Galesong Hill, Mondstadt",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-31.12819177556202, 53.42376306849378]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Anemo",
+        "popupContent": "Windwail Highland, Mondstadt",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.792066100825625, 42.40584321810945]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Anemo",
+        "popupContent": "Brightcrown Mountains, Mondstadt",
+        "popupImage": ""
+      }
+    }
+  ]
 }

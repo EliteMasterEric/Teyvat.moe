@@ -4,14 +4,87 @@
   "icons": {
     "filter": "liyue-statue",
     "base": {
-      "key": "liyue-statue",
-      "marker": true
+      "key": "statue",
+      "iconSize": [30, 46],
+      "shadowSize": [50, 64],
+      "iconAnchor": [15, 40],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -35]
     },
     "done": {
-      "key": "liyue-statue",
-      "marker": true,
-      "done": true
+      "key": "statue",
+      "iconSize": [30, 46],
+      "shadowSize": [50, 64],
+      "iconAnchor": [15, 40],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -35]
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.31958007812501, -38.06539235133248]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Geo",
+        "popupContent": "Bishui Plain, Liyue",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.228480595843585, 48.76831054687501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Geo",
+        "popupContent": "Qiongji Estuary, Liyue",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.782992628905795, 23.444824218750004]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Geo",
+        "popupContent": "Minlin, Liyue",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.419763826697356, 41.39099121093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Geo",
+        "popupContent": "Sea of Clouds, Liyue",
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.39655031438517, 30.558471679687504]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "Statue of The Seven - Geo",
+        "popupContent": "Lisha, Liyue",
+        "popupImage": ""
+      }
+    }
+  ]
 }
