@@ -183,7 +183,6 @@ export const FeatureLayer = ({
 
   const createClusterIcon = (cluster) => {
     const childMarkers = cluster.getAllChildMarkers();
-    console.log(childMarkers);
     const childCount = childMarkers.length;
     // For each element, check if done = true; if so, add to the count.
     const childDoneCount = childMarkers.reduce(
@@ -192,7 +191,7 @@ export const FeatureLayer = ({
     );
     const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
 
-    const svgTipFill = childDoneCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
+    // const svgTipFill = childDoneCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
     const iconHTML = `<img class='map-marker-cluster-marker' src="${
       require('../../images/icons/map_base/marker_cluster.png').default
     }"/><b class="map-marker-cluster-label">${childDoneCount}/${childCount}</b><img class='map-marker-cluster-img' src='${iconUrl}'/>`;
@@ -236,10 +235,8 @@ export const FeatureLayer = ({
 };
 
 export const RouteLayer = ({ mapPreferences, mapRoute }) => {
-  const lineToLayer = (feature, latLngs) => {
+  const lineToLayer = (_feature, latLngs) => {
     const latlngsFormatted = latLngs.map((latlng) => [latlng?.lng, latlng?.lat]);
-
-    const renderer = L.canvas({});
 
     const line = L.polyline(latlngsFormatted, lineProperties);
     line.setText('  ►  ', lineTextProperties);
