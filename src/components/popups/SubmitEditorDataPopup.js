@@ -30,8 +30,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   });
 
   const onClickConfirm = (closePopup) => () => {
-    console.log('onClickConfirm');
-
     if (!isValid) return;
 
     onConfirm({
