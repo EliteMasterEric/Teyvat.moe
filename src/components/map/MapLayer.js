@@ -1,10 +1,12 @@
 import React from 'react';
 
 import L from 'leaflet';
-import 'leaflet-editable'; // Its very presence changes the behavior of L.
+// Its very presence changes the behavior of L.
+import 'leaflet-editable';
 import 'leaflet-textpath';
 
 import { GeoJSON } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { hashObject } from '../Util';
 
 import './MapLayer.css';
@@ -86,7 +88,12 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
   const lineToLayer = (feature, latLngs) => {
     const highlighted = feature?.id === mapPreferences?.editor?.highlighted;
 
-    const line = L.polyline(latLngs, highlighted ? linePropertiesHighlight : lineProperties);
+    const latlngsFormatted = latLngs.map((latlng) => [latlng?.lng, latlng?.lat]);
+
+    const line = L.polyline(
+      latlngsFormatted,
+      highlighted ? linePropertiesHighlight : lineProperties
+    );
     line.setText('  ►  ', highlighted ? lineTextPropertiesHighlight : lineTextProperties);
     return line;
   };
@@ -123,7 +130,13 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
   );
 };
 
-export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds }) => {
+export const FeatureLayer = ({
+  mapPreferences,
+  featureKey,
+  mapFeature,
+  markFeature,
+  markedIds,
+}) => {
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
     const marked = (markedIds ?? []).includes(feature?.id);
@@ -138,9 +151,15 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
           done: false,
         });
 
+    const iconUrl = icon?.options?.iconUrl;
+
     return L.marker([latLng.lng, latLng.lat], {
       icon,
       alt: `${latLng.lng},${latLng.lat}`,
+      properties: {
+        done: marked,
+        iconUrl,
+      },
     });
   };
 
@@ -155,17 +174,44 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
     layer.on('dblclick', onDoubleClickFeature(feature));
 
     // Build a popup.
+    const marked = (markedIds ?? []).includes(feature?.id);
     const text = buildPopup(feature);
+    // Set opacity if marked.
+    layer.setOpacity(marked ? mapPreferences?.options?.markedAlpha : 1);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+  };
+
+  const createClusterIcon = (cluster) => {
+    const childMarkers = cluster.getAllChildMarkers();
+    console.log(childMarkers);
+    const childCount = childMarkers.length;
+    // For each element, check if done = true; if so, add to the count.
+    const childDoneCount = childMarkers.reduce(
+      (prev, marker) => prev + (marker?.options?.properties?.done ? 1 : 0),
+      0
+    );
+    const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
+
+    const svgTipFill = childDoneCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
+    const iconHTML = `<img class='map-marker-cluster-marker' src="${
+      require('../../images/icons/map_base/marker_cluster.png').default
+    }"/><b class="map-marker-cluster-label">${childDoneCount}/${childCount}</b><img class='map-marker-cluster-img' src='${iconUrl}'/>`;
+
+    return L.divIcon({
+      html: iconHTML,
+      className: 'map-marker-cluster',
+      iconSize: new L.Point(40, 40),
+    });
   };
 
   // If any of these values change, update the map.
   const hashValue = {
     mapFeature,
     markedIds: markedIds ?? [],
+    options: mapPreferences?.options,
   };
 
-  return (
+  const inner = (
     <GeoJSON
       key={hashObject(hashValue)}
       data={mapFeature.data}
@@ -173,15 +219,39 @@ export const FeatureLayer = ({ featureKey, mapFeature, markFeature, markedIds })
       onEachFeature={onEachFeature}
     />
   );
+
+  // Cluster if enabled by the user and the feature type supports it.
+  return (mapFeature?.cluster ?? false) && mapPreferences?.options?.clusterMarkers ? (
+    <MarkerClusterGroup
+      iconCreateFunction={createClusterIcon}
+      maxClusterRadius={(_zoom) => 80}
+      zoomToBoundsOnClick={false}
+      showCoverageOnHover={false}
+    >
+      {inner}
+    </MarkerClusterGroup>
+  ) : (
+    inner
+  );
 };
 
-export const RouteLayer = ({ mapRoute }) => {
+export const RouteLayer = ({ mapPreferences, mapRoute }) => {
   const lineToLayer = (feature, latLngs) => {
-    const line = L.polyline(latLngs, lineProperties);
+    const latlngsFormatted = latLngs.map((latlng) => [latlng?.lng, latlng?.lat]);
+
+    const renderer = L.canvas({});
+
+    const line = L.polyline(latlngsFormatted, lineProperties);
     line.setText('  ►  ', lineTextProperties);
 
     return line;
   };
 
-  return <GeoJSON key={hashObject(mapRoute)} data={mapRoute.data} lineToLayer={lineToLayer} />;
+  // If any of these values change, update the map.
+  const hashValue = {
+    mapRoute,
+    options: mapPreferences?.options,
+  };
+
+  return <GeoJSON key={hashObject(hashValue)} data={mapRoute.data} lineToLayer={lineToLayer} />;
 };

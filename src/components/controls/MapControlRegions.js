@@ -37,14 +37,16 @@ const MapControlRegions = ({ isOpen, currentRegion, setCurrentRegion }) => {
         isOpen ? 'map-control-regions-on' : 'map-control-regions-off'
       )}
     >
-      {Object.keys(MapRegions).map((key) => (
-        <MapControlRegion
-          key={key}
-          regionKey={key}
-          currentRegion={currentRegion}
-          setCurrentRegion={setCurrentRegion}
-        />
-      ))}
+      {Object.keys(MapRegions).map((key) =>
+        MapRegions[key]?.enabled ? (
+          <MapControlRegion
+            key={key}
+            regionKey={key}
+            currentRegion={currentRegion}
+            setCurrentRegion={setCurrentRegion}
+          />
+        ) : null
+      )}
     </div>
   );
 };

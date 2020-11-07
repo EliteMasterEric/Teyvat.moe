@@ -20,11 +20,6 @@ export const createGeoJSONLayer = (dataJSON) => {
 };
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
-
-// eslint-disable-next-line import/no-dynamic-require
-const getFeatureData = (key) => require(`../data/features/${key}.json`);
-const getRouteData = (key) => require(`../data/routes/${key}.json`);
-
 const iconsContext = require.context('../images/icons', true);
 export const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
 
@@ -228,8 +223,6 @@ export const MapFeatures = Object.fromEntries(
 
     // CrystalChunk -> mondstadtCrystalChunk
     const fullName = `${featureRegion}${correctedName}`; // Prefix with region.
-    console.log(fullName);
-    console.log(featureData);
 
     return [fullName, featureData];
   })
@@ -267,9 +260,6 @@ export const MapRoutes = Object.fromEntries(
 
     // CrystalChunk -> mondstadtCrystalChunk
     const fullName = `${routeRegion}${correctedName}`; // Prefix with region.
-    console.log(fullName);
-    console.log(routeData);
-
     return [fullName, routeData];
   })
 );

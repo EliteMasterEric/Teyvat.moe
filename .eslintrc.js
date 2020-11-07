@@ -11,13 +11,13 @@ module.exports = {
 
     // Style overrides.
     'react/jsx-filename-extension': ['off'], // Allow JSX in .js files.
-    'no-unused-vars': ['warn'], // This is a hassle when testing
     'react/prop-types': ['off'], // IDGAF about validating prop types.
 
     'no-unused-vars': [
       'warn',
       {
         varsIgnorePattern: '_.*', // Prefix variables you know will be unused with an underscore.
+        argsIgnorePattern: '_.*', // Prefix arguments you know will be unused with an underscore.
       },
     ],
 

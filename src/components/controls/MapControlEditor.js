@@ -150,10 +150,6 @@ const MapEditorRoute = ({
           onChange={updateRouteProp('popupContent')}
         />
       </div>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>Image Path</span>
-        <input value={route?.properties?.popupImage} onChange={updateRouteProp('popupImage')} />
-      </div>
     </div>
   );
 };

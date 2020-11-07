@@ -118,6 +118,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
               <FeatureLayer
                 key={key}
                 featureKey={key}
+                mapPreferences={mapPreferences}
                 mapFeature={feature}
                 markFeature={markFeature}
                 markedIds={mapPreferences?.marked?.features[key]}
@@ -130,7 +131,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
             if (!shouldDisplay) return null;
 
             const route = MapRoutes[key];
-            return <RouteLayer key={key} mapRoute={route} />;
+            return <RouteLayer key={key} mapPreferences={mapPreferences} mapRoute={route} />;
           }),
         ]
       )}

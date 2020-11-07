@@ -13,5 +13,45 @@
       "done": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-26.149349018818473", "55.99754379180605"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "#216: Knight of Favonius Roof",
+        "popupContent": "This Luxurious Chest is located on the roof of the Knight of Favonius headquarters, within sight of the Teleporter.",
+        "popupImage": "mondstadt/luxurious-chest/26_216.jpg"
+      },
+      "id": 216
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-24.46758726988156", "54.51242291574116"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "#159: Church Bell",
+        "popupContent": "This Luxurious Chest is located on the roof of the Church, in the highest bell tower.",
+        "popupImage": "mondstadt/luxurious-chest/26_159.jpg"
+      },
+      "id": 159
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": ["-24.580101343884373", "56.07440795441187"]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": "#208: Plaza Challenge",
+        "popupContent": "This Luxurious Chest is hidden; jump onto the top of the railing, and follow the rings that appear without falling to reveal the chest.",
+        "popupImage": "mondstadt/luxurious-chest/26_208.jpg"
+      },
+      "id": 208
+    }
+  ]
 }

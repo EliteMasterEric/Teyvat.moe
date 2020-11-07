@@ -18,6 +18,11 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   version: GENSHINMAP_DATA_VERSION,
 
+  options: {
+    markedAlpha: 0.5, // Make 'Done' markers transparent.
+    clusterMarkers: true,
+  },
+
   /**
    * Store of currently displayed marker layers.
    * Each key is the internal name of the feature,
@@ -26,8 +31,8 @@ export const DEFAULT_MAP_PREFERENCES = {
   displayed: {
     features: {
       // These features will be displayed to new users when they first open the site.
-      anemoculus: true,
-      geoculus: true,
+      mondstadtAnemoculus: true,
+      liyueGeoculus: true,
 
       // mondstadtTeleporter: true,
       // mondstadtStatue: true,

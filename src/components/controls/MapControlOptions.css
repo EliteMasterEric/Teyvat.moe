@@ -21,6 +21,10 @@
   width: 100%;
 }
 
+.map-controls-option-slider > .rc-slider-rail {
+  background-color: #ccc;
+}
+
 .map-controls-option-label {
   flex-grow: 1;
 }

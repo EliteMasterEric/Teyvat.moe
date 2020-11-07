@@ -1,15 +1,15 @@
 {
-  "name": "Challenge Chests",
+  "name": "Challenge and Time Trial",
   "cluster": false,
   "icons": {
-    "filter": "oceanid",
+    "filter": "challenge",
     "base": {
       "marker": true,
-      "key": "oceanid"
+      "key": "challenge"
     },
     "done": {
       "marker": true,
-      "key": "oceanid",
+      "key": "challenge",
       "done": true
     }
   },
