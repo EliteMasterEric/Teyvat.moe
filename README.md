@@ -1,6 +1,6 @@
 # GenshinMap.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md) [![Jenkins](https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master)](https://travis-ci.org/github/GenshinMap/genshinmap.github.io/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
 
-## [View the site here](https://genshinmap.github.io/)
+### [Current Site](https://genshinmap.github.io/) &middot; [Beta Site](https://genshin-map-beta.netlify.app/)
 
 ### The site has currently been reverted to a legacy state, pending completion of a rewrite.
 
