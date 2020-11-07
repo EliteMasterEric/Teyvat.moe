@@ -34,13 +34,13 @@ export const DEFAULT_MAP_PREFERENCES = {
       mondstadtAnemoculus: true,
       liyueGeoculus: true,
 
-      // mondstadtTeleporter: true,
-      // mondstadtStatue: true,
-      // mondstadtDomain: true,
+      mondstadtTeleporter: true,
+      mondstadtStatue: true,
+      mondstadtDomain: true,
 
-      // liyueTeleporter: true,
-      // liyueStatue: true,
-      // liyueDomain: true,
+      liyueTeleporter: true,
+      liyueStatue: true,
+      liyueDomain: true,
     },
     routes: {},
   },
@@ -77,10 +77,6 @@ export const DEFAULT_MAP_PREFERENCES = {
     highlighted: -1,
 
     feature: {
-      name: 'New Feature',
-      region: 'mondstadt',
-      category: 'special',
-      cluster: false,
       data: [],
     },
   },
