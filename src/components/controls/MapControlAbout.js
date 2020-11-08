@@ -2,43 +2,41 @@ import React from 'react';
 import clsx from 'clsx';
 
 import './MapControlAbout.css';
+import { f, t } from '../Localization';
 
 const MapControlAbout = () => {
   return (
     <div className={clsx('map-controls-about-container')}>
       <span className={clsx('map-control-about-header')}>GenshinMap</span>
+      <span className={clsx('map-control-about-content')}>{t('about-a')}</span>
+
+      <span className={clsx('map-control-about-content')}>{t('about-b')}</span>
+
+      <span className={clsx('map-control-about-content')}>{t('about-c')}</span>
+
+      <span className={clsx('map-control-about-content')}>{t('about-d')}</span>
+
       <span className={clsx('map-control-about-content')}>
-        This interactive map was developed by the community.
+        {f('about-e', {
+          link: (
+            <a href="https://github.com/GenshinMap/genshinmap.github.io/issues/10">
+              {t('click-here')}
+            </a>
+          ),
+        })}
       </span>
 
       <span className={clsx('map-control-about-content')}>
-        Click the Features tab above to filter the map to display Oculi, ores, plants, monsters, and
-        more.
+        {f('about-f', {
+          link: (
+            <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing">
+              {t('click-here')}
+            </a>
+          ),
+        })}
       </span>
 
-      <span className={clsx('map-control-about-content')}>
-        Double-click a feature marker to flag it as done. For some features such as chests, a single
-        click will display a popup with more information, including an image or comment.
-      </span>
-
-      <span className={clsx('map-control-about-content')}>
-        Click the Routes tab above to filter the map to display community made farming routes, such
-        as ones to efficiently collect regional specialties or fight monsters.
-      </span>
-
-      <span className={clsx('map-control-about-content')}>
-        <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing">
-          Click here
-        </a>{' '}
-        to learn how you can help make the Chest display better.
-      </span>
-
-      <span className={clsx('map-control-about-content')}>
-        <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing">
-          Click here
-        </a>{' '}
-        to learn how to contribute new markers or routes to the site.
-      </span>
+      <span className={clsx('map-control-about-content')}>{t('about-g')}</span>
     </div>
   );
 };

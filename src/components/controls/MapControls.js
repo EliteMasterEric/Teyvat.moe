@@ -12,6 +12,7 @@ import MapControlRegions from './MapControlRegions';
 // CSS
 import './MapControls.css';
 import MapControlAbout from './MapControlAbout';
+import { t } from '../Localization';
 
 const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
   return (
@@ -28,7 +29,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
           'noselect'
         )}
       >
-        About
+        {t('tab-about')}
       </div>
       {!mapPreferences?.editor?.enabled ? (
         <>
@@ -44,7 +45,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
               'noselect'
             )}
           >
-            Features
+            {t('tab-features')}
           </div>
           <div
             onClick={() => setTab('routes')}
@@ -58,7 +59,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
               'noselect'
             )}
           >
-            Routes
+            {t('tab-routes')}
           </div>
         </>
       ) : null}
@@ -75,7 +76,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
             'noselect'
           )}
         >
-          Elements
+          {t('tab-elements')}
         </div>
       ) : null}
 
@@ -91,7 +92,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
           'noselect'
         )}
       >
-        Options
+        {t('tab-options')}
       </div>
     </div>
   );

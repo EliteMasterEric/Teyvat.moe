@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import './MapControlRegions.css';
 import { MapRegions } from '../MapFeatures';
+import { t } from '../Localization';
 
 const controlsContext = require.context('../../images/controls', true);
 
@@ -16,12 +17,12 @@ const MapControlRegion = ({ regionKey, currentRegion, setCurrentRegion }) => {
       onClick={() => setCurrentRegion(regionKey)}
       onKeyDown={() => setCurrentRegion(regionKey)}
       role="button"
-      aria-label={region?.name}
+      aria-label={t(region?.nameKey)}
       tabIndex={0}
       className={clsx('map-control-region', active ? 'map-control-region-active' : '')}
     >
       <img
-        alt={region.name}
+        alt={t(region?.nameKey)}
         className={clsx('map-control-region-img')}
         src={controlsContext(`./${regionKey}-${active ? 'on' : 'off'}.png`).default}
       />

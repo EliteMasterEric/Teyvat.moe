@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { getFeatureKeysByFilter, MapFeatures, getFilterIconURL } from '../MapFeatures';
 
 import './MapControlFeatures.css';
+import { f, t } from '../Localization';
 
 /**
  * A button in the Filters, with the icon of a Map feature on it.
@@ -36,7 +37,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
       onClick={toggleFeature}
       onKeyDown={toggleFeature}
       role="button"
-      aria-label={active ? `Hide ${mapFeature.name}` : `Show ${mapFeature.name}`}
+      aria-label={f(active ? 'hide-feature' : 'show-feature', { feature: mapFeature?.name })}
       tabIndex={0}
       className={clsx(
         'map-controls-feature',

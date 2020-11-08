@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { MapCategories } from '../MapFeatures';
 
 import './MapControlCategories.css';
+import { t } from '../Localization';
 
 const MapControlCategoryButton = ({ categoryKey, currentCategory, setCurrentCategory }) => {
   const category = MapCategories[categoryKey];
@@ -28,14 +29,14 @@ const MapControlCategoryButton = ({ categoryKey, currentCategory, setCurrentCate
         'noselect'
       )}
       style={{
-        width: `calc(${category?.style?.width ?? '33%'} - 8px)`,
+        minWidth: `calc(${category?.style?.width ?? '33%'} - 8px)`,
         backgroundColor: active
           ? category?.style?.enabled?.bg
           : category?.style?.disabled?.bg ?? '#FFF',
         color: active ? category?.style?.enabled?.text : category?.style?.disabled?.text ?? '#000',
       }}
     >
-      {category.name}
+      {t(category.nameKey)}
     </div>
   );
 };

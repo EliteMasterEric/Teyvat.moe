@@ -9,13 +9,14 @@ import ClearMapDataPopup from '../popups/ClearMapDataPopup';
 import ExportDataPopup from '../popups/ExportDataPopup';
 
 import './MapControlOptions.css';
+import { t } from '../Localization';
 
 const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
   return (
     <>
       <div className={clsx('map-controls-options-container')}>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Enable Editor</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-editor')}</span>
           <ReactSwitch
             onChange={(enabled) => {
               setMapPreferences((old) => {
@@ -28,7 +29,7 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
       </div>
       <div className={clsx('map-controls-options-container')}>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Marked Opacity</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-marked-opacity')}</span>
           <ReactSlider
             className={clsx('map-controls-option-slider')}
             min={0.1}
@@ -47,7 +48,7 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
           />
         </div>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Cluster Markers</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-cluster-markers')}</span>
           <ReactSwitch
             onChange={(clusterMarkers) => {
               setMapPreferences((old) => {
@@ -60,7 +61,7 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
       </div>
       <div className={clsx('map-controls-options-container')}>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Export Data</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-export-new')}</span>
           <ExportDataPopup
             title="Export Data"
             message="Below is exported data for the new version of GenshinMap."
@@ -70,14 +71,14 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
           />
         </div>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Clear Data</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-clear-data')}</span>
           <ClearMapDataPopup
             trigger={<button type="button">Clear</button>}
             onConfirm={resetLocalStorage}
           />
         </div>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>Export Legacy Data</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-export-old')}</span>
           <ExportDataPopup
             title="Export Legacy Data"
             message="Below is exported data for the old version of GenshinMap, compatible with other sites.."

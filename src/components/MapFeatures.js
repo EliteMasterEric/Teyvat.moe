@@ -77,37 +77,37 @@ export const createMapIcon = ({ key, marker = false, done = false, svg = false, 
 
 export const MapRegions = {
   mondstadt: {
-    name: 'Mondstadt',
+    nameKey: 'region-mondstadt',
     enabled: true,
   },
   liyue: {
-    name: 'Liyue',
+    nameKey: 'region-liyue',
     enabled: true,
   },
   inazuma: {
-    name: 'Inazuma',
+    nameKey: 'region-inazuma',
     enabled: false,
   },
   sumeru: {
-    name: 'Sumeru',
+    nameKey: 'region-sumeru',
     enabled: false,
   },
   fontaine: {
-    name: 'Fontaine',
+    nameKey: 'region-fontaine',
     enabled: false,
   },
   natlan: {
-    name: 'Natlan',
+    nameKey: 'region-natlan',
     enabled: false,
   },
   snezhnaya: {
-    name: 'Snezhnaya',
+    nameKey: 'region-snezhnaya',
     enabled: false,
   },
-  // khaenriah: {
-  //   name: "Khaenriah",
-  //   enabled: false,
-  // },
+  khaenriah: {
+    nameKey: 'region-khaenriah',
+    enabled: false,
+  },
 };
 
 /**
@@ -115,7 +115,7 @@ export const MapRegions = {
  */
 export const MapCategories = {
   monster: {
-    name: 'Monster',
+    nameKey: 'category-monster',
     style: {
       width: '33%',
       disabled: {
@@ -129,7 +129,7 @@ export const MapCategories = {
     },
   },
   boss: {
-    name: 'Boss',
+    nameKey: 'category-boss',
     style: {
       width: '33%',
       disabled: {
@@ -143,7 +143,7 @@ export const MapCategories = {
     },
   },
   nature: {
-    name: 'Nature',
+    nameKey: 'category-nature',
     style: {
       width: '33%',
       disabled: {
@@ -157,7 +157,7 @@ export const MapCategories = {
     },
   },
   special: {
-    name: 'Special',
+    nameKey: 'category-special',
     style: {
       width: '33%',
       disabled: {
@@ -171,7 +171,7 @@ export const MapCategories = {
     },
   },
   ore: {
-    name: 'Ore',
+    nameKey: 'category-ore',
     style: {
       width: '33%',
       disabled: {
@@ -185,7 +185,7 @@ export const MapCategories = {
     },
   },
   chest: {
-    name: 'Chest',
+    nameKey: 'category-chest',
     style: {
       width: '33%',
       disabled: {
