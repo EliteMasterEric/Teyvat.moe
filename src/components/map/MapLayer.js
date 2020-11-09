@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 
 import L from 'leaflet';
@@ -11,6 +12,7 @@ import { hashObject } from '../Util';
 
 import './MapLayer.css';
 import { createMapIcon } from '../MapFeaturesData';
+import { displayUnixTimestamp, f } from '../Localization';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
@@ -50,7 +52,7 @@ export const lineTextPropertiesHighlight = {
   attributes: { y: 4, fill: '#f57c00', class: 'leaflet-map-route-text' },
 };
 
-const buildPopup = (feature) => {
+const buildPopup = (feature, completionTime = -1) => {
   let text = '';
   if (feature.properties.popupTitle)
     text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
@@ -60,6 +62,12 @@ const buildPopup = (feature) => {
 
   if (feature.properties.popupContent)
     text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;
+
+  if (completionTime !== -1)
+    text = `${text}<span class="map-marker-popup-completion-time">${f('popup-completed', {
+      time: displayUnixTimestamp(completionTime),
+    })}</span>`;
+
   return text;
 };
 
@@ -139,7 +147,7 @@ export const FeatureLayer = ({
 }) => {
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
-    const completed = (completedIds ?? []).includes(feature?.id);
+    const completed = _.has(completedIds, feature?.id);
     // Note that GeoJSON reverses these.
     const icon = completed
       ? createMapIcon({
@@ -176,10 +184,12 @@ export const FeatureLayer = ({
     layer.on('dblclick', onDoubleClickFeature(feature));
 
     // Build a popup.
-    const completed = (completedIds ?? []).includes(feature?.id);
-    const text = buildPopup(feature);
+    const completed = _.has(completedIds, feature?.id);
     // Set opacity if completed.
     layer.setOpacity(completed ? mapPreferences?.options?.completedAlpha : 1);
+
+    const completionTime = _.get(completedIds, feature?.id, -1);
+    const text = buildPopup(feature, completionTime);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 

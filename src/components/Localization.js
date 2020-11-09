@@ -24,7 +24,7 @@ const i18nData = [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
 });
 
 const localizedStrings = new LocalizedStrings(i18nData, {
-  pseudo: true, // Enable while testing to find unlocalized strings.
+  pseudo: false, // Enable while testing to find unlocalized strings.
 });
 
 /**
@@ -55,7 +55,7 @@ export const f = (key, ...options) => {
  * @returns {String} The current locale in BCP-47 format.
  */
 export const getLocale = () => {
-  return localizedStrings.getLanguage();
+  return localizedStrings.getInterfaceLanguage();
 };
 
 /**
@@ -82,7 +82,14 @@ export const localizeField = (field) => {
  * @returns {String} The resulting string.
  */
 export const formatDateTime = (input) => {
-  const dateFormatter = new Intl.DateTimeFormat(getLocale());
+  const dateFormatter = new Intl.DateTimeFormat(getLocale(), {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+  });
   return dateFormatter.format(input);
 };
 
@@ -125,4 +132,15 @@ export const formatPlural = (input) => {
 export const formatCollator = () => {
   const collator = new Intl.Collator(getLocale());
   return collator.compare;
+};
+
+/**
+ * Convert a Unix Timestamp into a Date display.
+ * @param {*} timestamp The timestamp to display, in seconds.
+ * @returns {String} A date string.
+ */
+export const displayUnixTimestamp = (timestamp) => {
+  console.log(timestamp);
+  const dateTime = new Date(timestamp * 1000);
+  return formatDateTime(dateTime);
 };

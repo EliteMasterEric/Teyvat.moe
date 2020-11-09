@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 
 import { MapFeatures, MapRoutes } from '../MapFeatures';
@@ -5,6 +6,7 @@ import { FeatureLayer, RouteLayer, EditorLayer } from './MapLayer';
 import EditorMap from './EditorMap';
 
 import './LeafletMap.css';
+import { getUnixTimestamp } from '../Util';
 
 const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
   // Reference to the map.
@@ -60,6 +62,11 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
     }));
   };
 
+  /**
+   * Mark a feature marker as completed.
+   * @param {*} featureKey The feature key of the marker.
+   * @param {*} id The ID of the marker.
+   */
   const markFeature = (featureKey, id) => {
     setMapPreferences((old) => {
       const currentValues = old?.completed?.features[featureKey];
@@ -67,17 +74,17 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
 
       if (currentValues == null || currentValues === []) {
         // Create a new mark group with one element.
-        newValues = [id];
+        newValues = { [id]: getUnixTimestamp() };
       } else {
         // Check the mark group if the element is in the list.
-        const alreadyCompleted = currentValues.includes(id);
+        const alreadyCompleted = _.has(currentValues, id);
 
         // Copy the array.
-        newValues = [...currentValues];
+        newValues = { ...currentValues };
         if (alreadyCompleted) {
-          newValues.splice(currentValues.indexOf(id), 1);
+          newValues = _.omit(newValues, id);
         } else {
-          newValues = [...newValues, id];
+          newValues = { ...newValues, [id]: getUnixTimestamp() };
         }
       }
 
