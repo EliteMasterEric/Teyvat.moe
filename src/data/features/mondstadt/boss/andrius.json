@@ -1,16 +1,13 @@
 {
-  "name": "Andrius (Lupus Boreas)",
+  "name": { "en": "Andrius (Lupus Boreas)" },
   "cluster": false,
   "icons": {
     "filter": "andrius",
     "base": {
-      "marker": true,
-      "key": "andrius"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "andrius",
-      "done": true
+      "marker": true
     }
   },
   "data": []

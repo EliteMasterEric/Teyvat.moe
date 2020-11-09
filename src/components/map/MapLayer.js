@@ -10,7 +10,7 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { hashObject } from '../Util';
 
 import './MapLayer.css';
-import { createMapIcon } from '../MapFeatures';
+import { createMapIcon } from '../MapFeaturesData';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
@@ -135,19 +135,21 @@ export const FeatureLayer = ({
   featureKey,
   mapFeature,
   markFeature,
-  markedIds,
+  completedIds,
 }) => {
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
-    const marked = (markedIds ?? []).includes(feature?.id);
+    const completed = (completedIds ?? []).includes(feature?.id);
     // Note that GeoJSON reverses these.
-    const icon = marked
+    const icon = completed
       ? createMapIcon({
           ...mapFeature.icons.done,
+          key: mapFeature.icons.done.key ?? mapFeature.icons.filter,
           done: true,
         })
       : createMapIcon({
           ...mapFeature.icons.base,
+          key: mapFeature.icons.base.key ?? mapFeature.icons.filter,
           done: false,
         });
 
@@ -157,7 +159,7 @@ export const FeatureLayer = ({
       icon,
       alt: `${latLng.lng},${latLng.lat}`,
       properties: {
-        done: marked,
+        done: completed,
         iconUrl,
       },
     });
@@ -174,10 +176,10 @@ export const FeatureLayer = ({
     layer.on('dblclick', onDoubleClickFeature(feature));
 
     // Build a popup.
-    const marked = (markedIds ?? []).includes(feature?.id);
+    const completed = (completedIds ?? []).includes(feature?.id);
     const text = buildPopup(feature);
-    // Set opacity if marked.
-    layer.setOpacity(marked ? mapPreferences?.options?.markedAlpha : 1);
+    // Set opacity if completed.
+    layer.setOpacity(completed ? mapPreferences?.options?.completedAlpha : 1);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 
@@ -206,7 +208,7 @@ export const FeatureLayer = ({
   // If any of these values change, update the map.
   const hashValue = {
     mapFeature,
-    markedIds: markedIds ?? [],
+    completedIds: completedIds ?? [],
     options: mapPreferences?.options,
   };
 

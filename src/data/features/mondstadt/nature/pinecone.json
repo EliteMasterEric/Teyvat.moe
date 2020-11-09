@@ -1,28 +1,25 @@
 {
-  "name": "Pinecone",
+  "name": { "en": "Pinecone" },
   "cluster": false,
   "icons": {
     "filter": "pinecone",
     "base": {
-      "marker": true,
-      "key": "pinecone"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "pinecone",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-17.763079799722295", "71.52043655653765"]
+        "coordinates": ["-17.7630797997", "71.5204365565"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1

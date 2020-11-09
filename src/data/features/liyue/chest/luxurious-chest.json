@@ -1,28 +1,27 @@
 {
-  "name": "Luxurious Chest",
+  "name": { "en": "Luxurious Chest" },
   "cluster": true,
   "icons": {
     "filter": "luxurious-chest",
     "base": {
-      "marker": true,
-      "key": "luxurious-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "luxurious-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-57.44494943583983", "43.736572265625"]
+        "coordinates": ["-57.4449494358", "43.7365722656"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#735: Liyue Port Tower",
-        "popupContent": "This Luxurious Chest is located atop a tower at the port of Liyue Harbor.",
+        "popupTitle": { "en": "#735: Liyue Port Tower" },
+        "popupContent": {
+          "en": "This Luxurious Chest is located atop a tower at the port of Liyue Harbor."
+        },
         "popupImage": "liyue/chest/27_735.jpg"
       },
       "id": 735

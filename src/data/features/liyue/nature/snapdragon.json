@@ -1,28 +1,25 @@
 {
-  "name": "Snapdragon",
+  "name": { "en": "Snapdragon" },
   "cluster": false,
   "icons": {
     "filter": "snapdragon",
     "base": {
-      "marker": true,
-      "key": "snapdragon"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "snapdragon",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.87838834374999", "40.30259939707109"]
+        "coordinates": ["-37.8783883437", "40.3025993970"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.48636137936982", "42.954754976750586"]
+        "coordinates": ["-41.4863613793", "42.9547549767"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.99526762410595", "42.56570845787197"]
+        "coordinates": ["-41.9952676241", "42.5657084578"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.47840417049793", "42.96117630342825"]
+        "coordinates": ["-37.4784041704", "42.9611763034"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.64422455140279", "27.343598864785797"]
+        "coordinates": ["-45.6442245514", "27.3435988647"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.62886672607714", "27.409503871283764"]
+        "coordinates": ["-45.6288667260", "27.4095038712"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6

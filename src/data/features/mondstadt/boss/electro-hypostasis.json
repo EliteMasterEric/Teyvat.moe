@@ -1,16 +1,13 @@
 {
-  "name": "Electro Hypostasis",
+  "name": { "en": "Electro Hypostasis" },
   "cluster": false,
   "icons": {
     "filter": "electro-hypostasis",
     "base": {
-      "marker": true,
-      "key": "electro-hypostasis"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "electro-hypostasis",
-      "done": true
+      "marker": true
     }
   },
   "data": []

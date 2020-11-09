@@ -1,16 +1,13 @@
 {
-  "name": "Apple",
+  "name": { "en": "Apple" },
   "cluster": true,
   "icons": {
     "filter": "apple",
     "base": {
-      "marker": true,
-      "key": "apple"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "apple",
-      "done": true
+      "marker": true
     }
   },
   "data": []

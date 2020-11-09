@@ -1,16 +1,13 @@
 {
-  "name": "Crate",
+  "name": { "en": "Crate" },
   "cluster": true,
   "icons": {
     "filter": "liyue-crate",
     "base": {
-      "marker": true,
-      "key": "liyue-crate"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "liyue-crate",
-      "done": true
+      "marker": true
     }
   },
   "data": []

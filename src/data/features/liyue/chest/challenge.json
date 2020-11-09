@@ -1,16 +1,13 @@
 {
-  "name": "Challenge and Time Trial",
+  "name": { "en": "Challenge and Time Trial" },
   "cluster": false,
   "icons": {
     "filter": "challenge",
     "base": {
-      "marker": true,
-      "key": "challenge"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "challenge",
-      "done": true
+      "marker": true
     }
   },
   "data": []

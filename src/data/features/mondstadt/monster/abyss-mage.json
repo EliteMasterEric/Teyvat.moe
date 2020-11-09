@@ -1,28 +1,25 @@
 {
-  "name": "Abyss Mage",
+  "name": { "en": "Abyss Mage" },
   "cluster": false,
   "icons": {
     "filter": "pyro-abyss-mage",
     "base": {
-      "marker": true,
-      "key": "pyro-abyss-mage"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "pyro-abyss-mage",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-26.259082062991208", "68.13693698433282"]
+        "coordinates": ["-26.2590820629", "68.1369369843"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-34.390666153251054", "63.286381700489514"]
+        "coordinates": ["-34.3906661532", "63.2863817004"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.164694188702214", "65.12145996093751"]
+        "coordinates": ["-37.1646941887", "65.1214599609"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-17.590996460305924", "46.45984544847884"]
+        "coordinates": ["-17.5909964603", "46.4598454484"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.553820485951093", "40.307891646227255"]
+        "coordinates": ["-19.5538204859", "40.3078916462"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-26.57329888568923", "48.26763975943869"]
+        "coordinates": ["-26.5732988856", "48.2676397594"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6
@@ -95,12 +92,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.517498565771213", "68.15273379791373"]
+        "coordinates": ["-19.5174985657", "68.1527337979"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 7

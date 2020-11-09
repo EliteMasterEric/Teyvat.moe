@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { getFeatureKeysByFilter, MapFeatures, getFilterIconURL } from '../MapFeatures';
+import { getFeatureKeysByFilter, MapFeatures } from '../MapFeatures';
+import { getFilterIconURL } from '../MapFeaturesData';
 
 import './MapControlFeatures.css';
-import { f, t } from '../Localization';
+import { f } from '../Localization';
 
 /**
  * A button in the Filters, with the icon of a Map feature on it.
@@ -13,6 +14,9 @@ import { f, t } from '../Localization';
  */
 const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences }) => {
   const mapFeature = MapFeatures[featureKey];
+
+  // Hide button if feature is not enabled.
+  if (!mapFeature?.enabled) return null;
 
   const toggleFeature = () => {
     setMapPreferences((old) => {

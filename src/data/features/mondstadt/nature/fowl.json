@@ -1,28 +1,25 @@
 {
-  "name": "Fowl",
+  "name": { "en": "Fowl" },
   "cluster": false,
   "icons": {
     "filter": "fowl",
     "base": {
-      "marker": true,
-      "key": "fowl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fowl",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.080549718325077", "64.94567871093751"]
+        "coordinates": ["-22.0805497183", "64.9456787109"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.070368801349243", "64.95666503906251"]
+        "coordinates": ["-22.0703688013", "64.9566650390"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.12126604542578", "64.95117187500001"]
+        "coordinates": ["-22.1212660454", "64.9511718750"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.238259929564308", "64.89624023437501"]
+        "coordinates": ["-22.2382599295", "64.8962402343"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.25859674097572", "64.84680175781251"]
+        "coordinates": ["-22.2585967409", "64.8468017578"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.792870062966173", "62.83973695711582"]
+        "coordinates": ["-30.7928700629", "62.8397369571"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6
@@ -95,12 +92,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.703204715250028", "62.96056280236212"]
+        "coordinates": ["-30.7032047152", "62.9605628023"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 7
@@ -108,12 +105,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.665425924104756", "62.713419027994725"]
+        "coordinates": ["-30.6654259241", "62.7134190279"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 8
@@ -121,12 +118,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.585096945537067", "62.834244873241026"]
+        "coordinates": ["-30.5850969455", "62.8342448732"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 9

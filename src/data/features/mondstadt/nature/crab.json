@@ -1,16 +1,13 @@
 {
-  "name": "Crab",
+  "name": { "en": "Crab" },
   "cluster": false,
   "icons": {
     "filter": "crab",
     "base": {
-      "marker": true,
-      "key": "crab"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "crab",
-      "done": true
+      "marker": true
     }
   },
   "data": []

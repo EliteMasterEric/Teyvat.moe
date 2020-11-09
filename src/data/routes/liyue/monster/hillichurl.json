@@ -1,5 +1,5 @@
 {
-  "name": "Hillichurl Camps",
+  "name": { "en": "Hillichurl Camps" },
   "icons": {
     "filter": "hillichurl"
   },
@@ -9,14 +9,14 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-52.70301871296325, 51.08642578125001],
-          [-52.69636107827448, 53.04199218750001]
+          [-52.7030187129, 51.0864257812],
+          [-52.6963610782, 53.0419921875]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       }
     }

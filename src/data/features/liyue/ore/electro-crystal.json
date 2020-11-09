@@ -1,28 +1,25 @@
 {
-  "name": "Electro Crystal",
+  "name": { "en": "Electro Crystal" },
   "cluster": false,
   "icons": {
     "filter": "electro-crystal",
     "base": {
-      "marker": true,
-      "key": "electro-crystal"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "electro-crystal",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.34546040860478", "35.96374511718751"]
+        "coordinates": ["-50.3454604086", "35.9637451171"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.369992582877174", "36.07360839843751"]
+        "coordinates": ["-50.3699925828", "36.0736083984"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.45400666628736", "36.00219726562501"]
+        "coordinates": ["-50.4540066662", "36.0021972656"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.43454191900893", "24.949951171875"]
+        "coordinates": ["-36.4345419190", "24.9499511718"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.5008053176048", "24.977416992187504"]
+        "coordinates": ["-36.5008053176", "24.9774169921"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5

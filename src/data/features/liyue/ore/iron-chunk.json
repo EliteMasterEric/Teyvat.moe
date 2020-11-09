@@ -1,16 +1,13 @@
 {
-  "name": "Iron Chunk",
+  "name": { "en": "Iron Chunk" },
   "cluster": false,
   "icons": {
     "filter": "iron-chunk",
     "base": {
-      "marker": true,
-      "key": "iron-chunk"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "iron-chunk",
-      "done": true
+      "marker": true
     }
   },
   "data": []

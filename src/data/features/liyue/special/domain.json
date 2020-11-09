@@ -1,16 +1,13 @@
 {
-  "name": "Domain",
+  "name": { "en": "Domain" },
   "cluster": false,
   "icons": {
     "filter": "domain",
     "base": {
-      "marker": true,
-      "key": "domain"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "domain",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -2,7 +2,6 @@
  * Relies on locales in BCP-47 format.
  */
 import LocalizedStrings from 'react-localization';
-import { getInterfaceLanguage } from 'localized-strings';
 
 /**
  * The require context referencing all the localization files.
@@ -25,7 +24,7 @@ const i18nData = [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
 });
 
 const localizedStrings = new LocalizedStrings(i18nData, {
-  pseudo: false, // Enable while testing to find unlocalized strings.
+  pseudo: true, // Enable while testing to find unlocalized strings.
 });
 
 /**
@@ -56,7 +55,25 @@ export const f = (key, ...options) => {
  * @returns {String} The current locale in BCP-47 format.
  */
 export const getLocale = () => {
-  return getInterfaceLanguage();
+  return localizedStrings.getLanguage();
+};
+
+/**
+ * Given a dict, fetch the appropriate key from 'field'
+ * @param {*} field A dictionary containing {'locale': 'value'} fields.
+ * @returns {value} The value from 'field' whose key matches the current locale, or the default locale.
+ */
+export const localizeField = (field) => {
+  const currentLanguage = getLocale();
+  if (field[currentLanguage]) {
+    return field[currentLanguage];
+  }
+  // Else, fall back to default locale.
+  if (field[DEFAULT_LOCALE_CODE]) {
+    return field[DEFAULT_LOCALE_CODE];
+  }
+  // Else, return null.
+  return null;
 };
 
 /**

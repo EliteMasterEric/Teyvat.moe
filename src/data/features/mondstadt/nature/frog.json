@@ -1,28 +1,25 @@
 {
-  "name": "Frog",
+  "name": { "en": "Frog" },
   "cluster": false,
   "icons": {
     "filter": "frog",
     "base": {
-      "marker": true,
-      "key": "frog"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "frog",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.81826477241256", "42.69162671755568"]
+        "coordinates": ["-37.8182647724", "42.6916267175"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.42605056502682", "42.45559133251983"]
+        "coordinates": ["-37.4260505650", "42.4555913325"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2

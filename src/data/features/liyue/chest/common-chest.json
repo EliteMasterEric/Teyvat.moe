@@ -1,16 +1,13 @@
 {
-  "name": "Common Chest",
+  "name": { "en": "Common Chest" },
   "cluster": true,
   "icons": {
     "filter": "common-chest",
     "base": {
-      "marker": true,
-      "key": "common-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "common-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -1,16 +1,13 @@
 {
-  "name": "Carrot",
+  "name": { "en": "Carrot" },
   "cluster": false,
   "icons": {
     "filter": "carrot",
     "base": {
-      "marker": true,
-      "key": "carrot"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "carrot",
-      "done": true
+      "marker": true
     }
   },
   "data": []

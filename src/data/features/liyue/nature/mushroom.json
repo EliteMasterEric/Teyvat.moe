@@ -1,16 +1,13 @@
 {
-  "name": "Mushroom",
+  "name": { "en": "Mushroom" },
   "cluster": false,
   "icons": {
     "filter": "mushroom",
     "base": {
-      "marker": true,
-      "key": "mushroom"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "mushroom",
-      "done": true
+      "marker": true
     }
   },
   "data": []

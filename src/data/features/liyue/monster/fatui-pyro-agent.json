@@ -1,28 +1,25 @@
 {
-  "name": "Fatui Pyro Agent",
+  "name": { "en": "Fatui Pyro Agent" },
   "cluster": false,
   "icons": {
     "filter": "fatui-pyro-agent",
     "base": {
-      "marker": true,
-      "key": "fatui-pyro-agent"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fatui-pyro-agent",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.70967533219884", "51.96533203125001"]
+        "coordinates": ["-52.7096753321", "51.9653320312"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-58.76250326278713", "30.157470703125"]
+        "coordinates": ["-58.7625032627", "30.1574707031"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-55.54106495611103", "29.871826171875004"]
+        "coordinates": ["-55.5410649561", "29.8718261718"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.73629165591091", "26.685791015625004"]
+        "coordinates": ["-52.7362916559", "26.6857910156"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.42252295423906", "31.431884765625004"]
+        "coordinates": ["-52.4225229542", "31.4318847656"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-46.76996843356982", "49.95483398437501"]
+        "coordinates": ["-46.7699684335", "49.9548339843"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 7
@@ -95,12 +92,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.418120700666414", "37.47436523437501"]
+        "coordinates": ["-49.4181207006", "37.4743652343"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 9
@@ -108,12 +105,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.785668357197196", "48.47819867248219"]
+        "coordinates": ["-41.7856683571", "48.4781986724"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 10

@@ -1,16 +1,13 @@
 {
-  "name": "Frog",
+  "name": { "en": "Frog" },
   "cluster": false,
   "icons": {
     "filter": "frog",
     "base": {
-      "marker": true,
-      "key": "frog"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "frog",
-      "done": true
+      "marker": true
     }
   },
   "data": []

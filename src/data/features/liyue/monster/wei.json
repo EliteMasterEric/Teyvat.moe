@@ -1,16 +1,13 @@
 {
-  "name": "Wei",
+  "name": { "en": "Wei" },
   "cluster": false,
   "icons": {
     "filter": "wei",
     "base": {
-      "marker": true,
-      "key": "wei"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "wei",
-      "done": true
+      "marker": true
     }
   },
   "data": [
@@ -22,8 +19,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#4: Cuijue Slope",
-        "popupContent": "Wei can appear outside the temple at Cuijue Slope.",
+        "popupTitle": { "en": "#4: Cuijue Slope" },
+        "popupContent": { "en": "Wei can appear outside the temple at Cuijue Slope." },
         "popupImage": "liyue/wei/4.png"
       }
     },
@@ -35,8 +32,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#5: Linju Pass",
-        "popupContent": "Wei can appear on a cliff overlooking Linju Pass.",
+        "popupTitle": { "en": "#5: Linju Pass" },
+        "popupContent": { "en": "Wei can appear on a cliff overlooking Linju Pass." },
         "popupImage": "liyue/wei/5.png"
       }
     },
@@ -48,8 +45,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#6: Liyue Harbor",
-        "popupContent": "Wei can appear on this cliff, which overlooks Liyue Harbor and the Guyun Stone Forest.",
+        "popupTitle": { "en": "#6: Liyue Harbor" },
+        "popupContent": {
+          "en": "Wei can appear on this cliff, which overlooks Liyue Harbor and the Guyun Stone Forest."
+        },
         "popupImage": "liyue/wei/6.png"
       }
     }

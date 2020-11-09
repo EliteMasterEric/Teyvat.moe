@@ -1,16 +1,13 @@
 {
-  "name": "Samachurl",
+  "name": { "en": "Samachurl" },
   "cluster": false,
   "icons": {
     "filter": "samachurl",
     "base": {
-      "marker": true,
-      "key": "samachurl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "samachurl",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -1,28 +1,25 @@
 {
-  "name": "Fatui Electro Cicin Mage",
+  "name": { "en": "Fatui Electro Cicin Mage" },
   "cluster": false,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
     "base": {
-      "marker": true,
-      "key": "fatui-electro-cicin-mage"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fatui-electro-cicin-mage",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-34.74161249883172", "38.12255859375001"]
+        "coordinates": ["-34.7416124988", "38.1225585937"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-40.56389453066509", "46.01074218750001"]
+        "coordinates": ["-40.5638945306", "46.0107421875"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.48751300895657", "51.24023437500001"]
+        "coordinates": ["-47.4875130089", "51.2402343750"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.53377818425781", "57.99682617187501"]
+        "coordinates": ["-53.5337781842", "57.9968261718"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.34876318198809", "45.86791992187501"]
+        "coordinates": ["-52.3487631819", "45.8679199218"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.31740811261869", "45.12084960937501"]
+        "coordinates": ["-50.3174081126", "45.1208496093"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6
@@ -95,12 +92,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.20603255157843", "26.718750000000004"]
+        "coordinates": ["-53.2060325515", "26.7187500000"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 8
@@ -108,12 +105,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.07478084027105", "29.185209829129544"]
+        "coordinates": ["-50.0747808402", "29.1852098291"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 9
@@ -121,12 +118,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-33.56886118255556", "41.03393554687501"]
+        "coordinates": ["-33.5688611825", "41.0339355468"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 10

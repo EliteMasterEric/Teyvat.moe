@@ -1,28 +1,25 @@
 {
-  "name": "Cor Lapis",
+  "name": { "en": "Cor Lapis" },
   "cluster": false,
   "icons": {
     "filter": "cor-lapis",
     "base": {
-      "marker": true,
-      "key": "cor-lapis"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "cor-lapis",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-58.85328697242355", "27.341691632736463"]
+        "coordinates": ["-58.8532869724", "27.3416916327"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-58.319117910658804", "27.74567766943936"]
+        "coordinates": ["-58.3191179106", "27.7456776694"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-59.26049169350205", "29.40823558971667"]
+        "coordinates": ["-59.2604916935", "29.4082355897"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-58.74065916449006", "32.67119973231702"]
+        "coordinates": ["-58.7406591644", "32.6711997323"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-57.36037391178495", "34.02299916282287"]
+        "coordinates": ["-57.3603739117", "34.0229991628"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-57.27652515655866", "32.04968275277409"]
+        "coordinates": ["-57.2765251565", "32.0496827527"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6
@@ -95,12 +92,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-57.343619460437765", "32.14291029970552"]
+        "coordinates": ["-57.3436194604", "32.1429102997"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 7
@@ -108,12 +105,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-56.803427836148934", "32.06522067726266"]
+        "coordinates": ["-56.8034278361", "32.0652206772"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 8
@@ -121,12 +118,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-55.6467467034236", "32.82657897720272"]
+        "coordinates": ["-55.6467467034", "32.8265789772"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 9
@@ -134,12 +131,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-57.33523936696983", "27.062008991942147"]
+        "coordinates": ["-57.3352393669", "27.0620089919"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 10
@@ -147,12 +144,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.989338555451944", "30.527178241963423"]
+        "coordinates": ["-53.9893385554", "30.5271782419"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 11
@@ -160,12 +157,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-54.41622851336012", "28.678165227823214"]
+        "coordinates": ["-54.4162285133", "28.6781652278"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 12
@@ -173,12 +170,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.55802728609031", "26.81361428919443"]
+        "coordinates": ["-53.5580272860", "26.8136142891"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 13
@@ -186,12 +183,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.691470138403915", "32.78017729280648"]
+        "coordinates": ["-52.6914701384", "32.7801772928"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 14
@@ -199,12 +196,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.22116195867346", "28.77139277475464"]
+        "coordinates": ["-49.2211619586", "28.7713927747"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 15
@@ -212,12 +209,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.29210677990133", "28.755854850266072"]
+        "coordinates": ["-49.2921067799", "28.7558548502"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 16
@@ -225,12 +222,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.05581068030127", "26.642697119820152"]
+        "coordinates": ["-50.0558106803", "26.6426971198"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 17
@@ -238,12 +235,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.504329670983005", "26.114407687208647"]
+        "coordinates": ["-49.5043296709", "26.1144076872"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 18
@@ -251,12 +248,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.47522417436403", "28.118799946234574"]
+        "coordinates": ["-48.4752241743", "28.1187999462"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 19
@@ -264,12 +261,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.43402953414475", "27.82357938095168"]
+        "coordinates": ["-48.4340295341", "27.8235793809"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 20
@@ -277,12 +274,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.57806457092606", "31.35068823985777"]
+        "coordinates": ["-48.5780645709", "31.3506882398"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 21
@@ -290,12 +287,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.017900344814535", "31.56821918269777"]
+        "coordinates": ["-49.0179003448", "31.5682191826"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 22
@@ -303,12 +300,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.241442313324974", "31.226384843949205"]
+        "coordinates": ["-49.2414423133", "31.2263848439"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 23
@@ -316,12 +313,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.30441103102577", "33.370618423372264"]
+        "coordinates": ["-50.3044110310", "33.3706184233"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 24
@@ -329,12 +326,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.33415616327588", "33.49492181928083"]
+        "coordinates": ["-50.3341561632", "33.4949218192"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 25
@@ -342,12 +339,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.37378738956898", "33.40169427234941"]
+        "coordinates": ["-50.3737873895", "33.4016942723"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 26
@@ -355,12 +352,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.96599770668171", "34.271818043709516"]
+        "coordinates": ["-49.9659977066", "34.2718180437"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 27
@@ -368,12 +365,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-50.30441103102577", "34.302893892686654"]
+        "coordinates": ["-50.3044110310", "34.3028938926"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 28
@@ -381,12 +378,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.165449339706335", "26.207635234140117"]
+        "coordinates": ["-48.1654493397", "26.2076352341"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 29
@@ -394,12 +391,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.58714338092746", "25.291164393594762"]
+        "coordinates": ["-47.5871433809", "25.2911643935"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 30
@@ -407,12 +404,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.408792094847996", "27.435397973017864"]
+        "coordinates": ["-47.4087920948", "27.4353979730"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 31
@@ -420,12 +417,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.46131124621306", "29.20672136471521"]
+        "coordinates": ["-47.4613112462", "29.2067213647"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 32
@@ -433,12 +430,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-46.82761995989932", "29.113493817783745"]
+        "coordinates": ["-46.8276199598", "29.1134938177"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 33
@@ -446,12 +443,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.50328882964138", "30.72943796459535"]
+        "coordinates": ["-47.5032888296", "30.7294379645"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 34
@@ -459,12 +456,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.566192318693986", "30.65174834215249"]
+        "coordinates": ["-47.5661923186", "30.6517483421"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 35
@@ -472,12 +469,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-46.18636898839588", "28.693969856592286"]
+        "coordinates": ["-46.1863689883", "28.6939698565"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 36
@@ -485,12 +482,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-46.18636898839588", "28.833811176989464"]
+        "coordinates": ["-46.1863689883", "28.8338111769"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 37
@@ -498,12 +495,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.15557392647951", "30.60513456868674"]
+        "coordinates": ["-45.1555739264", "30.6051345686"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 38
@@ -511,12 +508,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.92515135512463", "30.9935826809011"]
+        "coordinates": ["-44.9251513551", "30.9935826809"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 39
@@ -524,12 +521,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.9581256806997", "32.3143062624298"]
+        "coordinates": ["-44.9581256806", "32.3143062624"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 40
@@ -537,12 +534,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.489343990998414", "31.77047890532974"]
+        "coordinates": ["-43.4893439909", "31.7704789053"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 41
@@ -550,12 +547,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.45553677983141", "32.06569947061263"]
+        "coordinates": ["-43.4555367798", "32.0656994706"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 42
@@ -563,12 +560,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.51187162509014", "33.27765758072133"]
+        "coordinates": ["-43.5118716250", "33.2776575807"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 43
@@ -576,12 +573,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-42.48981252847354", "33.58841607049276"]
+        "coordinates": ["-42.4898125284", "33.5884160704"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 44
@@ -589,12 +586,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.29802673102316", "30.107920985052424"]
+        "coordinates": ["-39.2980267310", "30.1079209850"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 45
@@ -602,12 +599,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.16571642530939", "31.04019645436681"]
+        "coordinates": ["-39.1657164253", "31.0401964543"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 46
@@ -615,12 +612,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.2138581272442", "30.93143098294681"]
+        "coordinates": ["-39.2138581272", "30.9314309829"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 47
@@ -628,12 +625,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.561898342253265", "25.44654363848051"]
+        "coordinates": ["-39.5618983422", "25.4465436384"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 48
@@ -641,12 +638,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.27595701020839", "22.820634399911665"]
+        "coordinates": ["-41.2759570102", "22.8206343999"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 49
@@ -654,12 +651,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.334282215723725", "22.75848270195738"]
+        "coordinates": ["-41.3342822157", "22.7584827019"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 50
@@ -667,12 +664,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-40.4893724123695", "20.707476669465745"]
+        "coordinates": ["-40.4893724123", "20.7074766694"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 51
@@ -680,12 +677,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-40.56019372093617", "20.769628367420033"]
+        "coordinates": ["-40.5601937209", "20.7696283674"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 52
@@ -693,12 +690,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-40.61915430526432", "20.800704216397172"]
+        "coordinates": ["-40.6191543052", "20.8007042163"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 53
@@ -706,12 +703,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.52313228999983", "18.37678799617979"]
+        "coordinates": ["-43.5231322899", "18.3767879961"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 54
@@ -719,12 +716,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.613141952426155", "18.392325920668362"]
+        "coordinates": ["-43.6131419524", "18.3923259206"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 55
@@ -732,12 +729,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.027686587377495", "18.609856863508398"]
+        "coordinates": ["-44.0276865873", "18.6098568635"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 56
@@ -745,12 +742,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.03885054522733", "18.703084410439825"]
+        "coordinates": ["-44.0388505452", "18.7030844104"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 57
@@ -758,12 +755,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.317265920096276", "18.190332902316896"]
+        "coordinates": ["-44.3172659200", "18.1903329023"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 58
@@ -771,12 +768,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.94713634311411", "18.407863845156932"]
+        "coordinates": ["-44.9471363431", "18.4078638451"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 59
@@ -784,12 +781,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.88115612792933", "18.0815674308969"]
+        "coordinates": ["-44.8811561279", "18.0815674308"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 60
@@ -797,12 +794,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.826114748149166", "18.221408751294078"]
+        "coordinates": ["-44.8261147481", "18.2214087512"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 61
@@ -810,12 +807,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.96911291401063", "18.09710535538547"]
+        "coordinates": ["-44.9691129140", "18.0971053553"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 62
@@ -823,12 +820,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.94713634311411", "18.221408751294078"]
+        "coordinates": ["-44.9471363431", "18.2214087512"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 63
@@ -836,12 +833,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.286827325659", "18.36125007169122"]
+        "coordinates": ["-45.2868273256", "18.3612500716"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 64
@@ -849,12 +846,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.26497280117489", "17.289133281979687"]
+        "coordinates": ["-45.2649728011", "17.2891332819"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 65
@@ -862,12 +859,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.29504107028928", "17.25805743300255"]
+        "coordinates": ["-44.2950410702", "17.2580574330"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 66
@@ -875,12 +872,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-43.96065867690402", "17.56881592277397"]
+        "coordinates": ["-43.9606586769", "17.5688159227"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 67
@@ -888,12 +885,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.19360884896889", "23.285498696808798"]
+        "coordinates": ["-45.1936088489", "23.2854986968"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 68
@@ -901,12 +898,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-45.205263456162385", "23.351441509875162"]
+        "coordinates": ["-45.2052634561", "23.3514415098"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 69
@@ -914,12 +911,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.83457362589026", "24.793933515143628"]
+        "coordinates": ["-38.8345736258", "24.7939335151"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 70
@@ -927,12 +924,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.774067796595325", "23.67520295196634"]
+        "coordinates": ["-38.7740677965", "23.6752029519"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 71
@@ -940,12 +937,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.056226306780914", "29.29993161682982"]
+        "coordinates": ["-38.0562263067", "29.2999316168"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 72
@@ -953,12 +950,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.03176784533993", "29.377621239272678"]
+        "coordinates": ["-38.0317678453", "29.3776212392"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 73
@@ -966,12 +963,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.01256653815488", "27.202311810872434"]
+        "coordinates": ["-35.0125665381", "27.2023118108"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 74
@@ -979,12 +976,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-34.32276018118756", "32.90433504815232"]
+        "coordinates": ["-34.3227601811", "32.9043350481"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 75
@@ -992,12 +989,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-34.43810161539412", "32.9354108971295"]
+        "coordinates": ["-34.4381016153", "32.9354108971"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 76
@@ -1005,12 +1002,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-31.94342492043858", "33.572465801161"]
+        "coordinates": ["-31.9434249204", "33.5724658011"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 77
@@ -1018,12 +1015,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.009286197077124", "33.681231272581"]
+        "coordinates": ["-32.0092861970", "33.6812312725"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 78
@@ -1031,12 +1028,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-31.615981337352355", "37.44688321124745"]
+        "coordinates": ["-31.6159813373", "37.4468832112"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 79
@@ -1044,12 +1041,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-31.564394090836913", "37.52385988069627"]
+        "coordinates": ["-31.5643940908", "37.5238598806"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 80
@@ -1057,12 +1054,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-31.639354075674703", "37.518323509127036"]
+        "coordinates": ["-31.6393540756", "37.5183235091"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 81
@@ -1070,12 +1067,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.468988069088816", "39.24380823949015"]
+        "coordinates": ["-32.4689880690", "39.2438082394"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 82
@@ -1083,12 +1080,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.32476111705671", "39.35257371091016"]
+        "coordinates": ["-32.3247611170", "39.3525737109"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 83
@@ -1096,12 +1093,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.71756378779117", "37.81431918654141"]
+        "coordinates": ["-32.7175637877", "37.8143191865"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 84
@@ -1109,12 +1106,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.71756378779117", "37.92308465796145"]
+        "coordinates": ["-32.7175637877", "37.9230846579"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 85
@@ -1122,12 +1119,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.77194116923027", "38.26491899671005"]
+        "coordinates": ["-35.7719411692", "38.2649189967"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 86
@@ -1135,12 +1132,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.86008525448322", "38.2183052232443"]
+        "coordinates": ["-35.8600852544", "38.2183052232"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 87
@@ -1148,12 +1145,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.885313594421426", "48.19365274490823"]
+        "coordinates": ["-36.8853135944", "48.1936527449"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 88
@@ -1161,12 +1158,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.997013921406825", "48.19365274490823"]
+        "coordinates": ["-36.9970139214", "48.1936527449"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 89
@@ -1174,12 +1171,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.73612528450253", "48.41118368774822"]
+        "coordinates": ["-36.7361252845", "48.4111836877"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 90
@@ -1187,12 +1184,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.58664647942606", "49.20361783666547"]
+        "coordinates": ["-36.5866464794", "49.2036178366"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 91
@@ -1200,12 +1197,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.72367980651384", "49.18807991217686"]
+        "coordinates": ["-36.7236798065", "49.1880799121"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 92
@@ -1213,12 +1210,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.72367980651384", "49.296845383596896"]
+        "coordinates": ["-36.7236798065", "49.2968453835"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 93
@@ -1226,12 +1223,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-44.161404522716865", "50.21273457214481"]
+        "coordinates": ["-44.1614045227", "50.2127345721"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 94
@@ -1239,12 +1236,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-51.622516006615584", "54.67217260532277"]
+        "coordinates": ["-51.6225160066", "54.6721726053"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 95
@@ -1252,12 +1249,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.91477540207562", "58.618805425420334"]
+        "coordinates": ["-52.9147754020", "58.6188054254"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 96
@@ -1265,12 +1262,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-54.41430206070817", "56.21042712969152"]
+        "coordinates": ["-54.4143020607", "56.2104271296"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 97
@@ -1278,12 +1275,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.70339464418163", "59.14709485803179"]
+        "coordinates": ["-53.7033946441", "59.1470948580"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 98
@@ -1291,12 +1288,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.68500603168298", "58.88295014172608"]
+        "coordinates": ["-53.6850060316", "58.8829501417"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 99
@@ -1304,12 +1301,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-53.80438849069063", "58.8674122172375"]
+        "coordinates": ["-53.8043884906", "58.8674122172"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 100
@@ -1317,12 +1314,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-42.72115526181967", "46.91220037554106"]
+        "coordinates": ["-42.7211552618", "46.9122003755"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 101
@@ -1330,12 +1327,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.29829523793801", "37.123098168088454"]
+        "coordinates": ["-39.2982952379", "37.1230981680"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 102
@@ -1343,12 +1340,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.20940962636566", "33.31476649780114"]
+        "coordinates": ["-49.2094096263", "33.3147664978"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 103
@@ -1356,12 +1353,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.2345147053275", "33.21590898805416"]
+        "coordinates": ["-49.2345147053", "33.2159089880"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 104

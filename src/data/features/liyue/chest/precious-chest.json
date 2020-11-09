@@ -1,16 +1,13 @@
 {
-  "name": "Precious Chest",
+  "name": { "en": "Precious Chest" },
   "cluster": true,
   "icons": {
     "filter": "precious-chest",
     "base": {
-      "marker": true,
-      "key": "precious-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "precious-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -1,16 +1,13 @@
 {
-  "name": "Teleporter",
+  "name": { "en": "Teleporter" },
   "cluster": false,
   "icons": {
     "filter": "teleporter",
     "base": {
-      "marker": true,
-      "key": "teleporter"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "teleporter",
-      "done": true
+      "marker": true
     }
   },
   "data": []

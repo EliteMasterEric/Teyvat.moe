@@ -1,16 +1,14 @@
 {
-  "name": "Slime",
-  "cluster": false,
+  "name": { "en": "Slime" },
+  "cluster": true,
   "icons": {
     "filter": "slime",
     "base": {
-      "marker": true,
-      "key": "slime"
+      "marker": true
     },
     "done": {
       "marker": true,
-      "key": "slime",
-      "done": true
+      "key": "slime"
     }
   },
   "data": []

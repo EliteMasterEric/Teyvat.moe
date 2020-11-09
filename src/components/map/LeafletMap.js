@@ -62,7 +62,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
 
   const markFeature = (featureKey, id) => {
     setMapPreferences((old) => {
-      const currentValues = old?.marked?.features[featureKey];
+      const currentValues = old?.completed?.features[featureKey];
       let newValues = null;
 
       if (currentValues == null || currentValues === []) {
@@ -70,11 +70,11 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
         newValues = [id];
       } else {
         // Check the mark group if the element is in the list.
-        const alreadyMarked = currentValues.includes(id);
+        const alreadyCompleted = currentValues.includes(id);
 
         // Copy the array.
         newValues = [...currentValues];
-        if (alreadyMarked) {
+        if (alreadyCompleted) {
           newValues.splice(currentValues.indexOf(id), 1);
         } else {
           newValues = [...newValues, id];
@@ -83,10 +83,10 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
 
       return {
         ...old,
-        marked: {
-          ...old.marked,
+        completed: {
+          ...old.completed,
           features: {
-            ...old.marked.features,
+            ...old.completed.features,
             [featureKey]: newValues,
           },
         },
@@ -114,6 +114,11 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
             if (!shouldDisplay) return null;
 
             const feature = MapFeatures[key];
+            if (!feature) {
+              console.error(`ERROR: Feature '${key}' is not defined.`);
+              return null;
+            }
+
             return (
               <FeatureLayer
                 key={key}
@@ -121,7 +126,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
                 mapPreferences={mapPreferences}
                 mapFeature={feature}
                 markFeature={markFeature}
-                markedIds={mapPreferences?.marked?.features[key]}
+                completedIds={mapPreferences?.completed?.features[key]}
               />
             );
           }),
@@ -131,6 +136,11 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
             if (!shouldDisplay) return null;
 
             const route = MapRoutes[key];
+            if (!route) {
+              console.error(`ERROR: Route '${key}' is not defined.`);
+              return null;
+            }
+
             return <RouteLayer key={key} mapPreferences={mapPreferences} mapRoute={route} />;
           }),
         ]

@@ -1,28 +1,25 @@
 {
-  "name": "Samachurl",
+  "name": { "en": "Samachurl" },
   "cluster": false,
   "icons": {
     "filter": "samachurl",
     "base": {
-      "marker": true,
-      "key": "samachurl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "samachurl",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.67992310424453", "42.78513904895076"]
+        "coordinates": ["-41.6799231042", "42.7851390489"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1

@@ -1,28 +1,27 @@
 {
-  "name": "Luxurious Chest",
+  "name": { "en": "Luxurious Chest" },
   "cluster": false,
   "icons": {
     "filter": "luxurious-chest",
     "base": {
-      "marker": true,
-      "key": "luxurious-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "luxurious-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-26.149349018818473", "55.99754379180605"]
+        "coordinates": ["-26.1493490188", "55.9975437918"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#216: Knight of Favonius Roof",
-        "popupContent": "This Luxurious Chest is located on the roof of the Knight of Favonius headquarters, within sight of the Teleporter.",
+        "popupTitle": { "en": "#216: Knight of Favonius Roof" },
+        "popupContent": {
+          "en": "This Luxurious Chest is located on the roof of the Knight of Favonius headquarters, within sight of the Teleporter."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_216.jpg"
       },
       "id": 216
@@ -30,12 +29,14 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-24.46758726988156", "54.51242291574116"]
+        "coordinates": ["-24.4675872698", "54.5124229157"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#159: Church Bell",
-        "popupContent": "This Luxurious Chest is located on the roof of the Church, in the highest bell tower.",
+        "popupTitle": { "en": "#159: Church Bell" },
+        "popupContent": {
+          "en": "This Luxurious Chest is located on the roof of the Church, in the highest bell tower."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_159.jpg"
       },
       "id": 159
@@ -43,52 +44,62 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-24.580101343884373", "56.07440795441187"]
+        "coordinates": ["-24.5801013438", "56.0744079544"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#208: Plaza Challenge",
-        "popupContent": "This Luxurious Chest is hidden; jump onto the top of the railing, and follow the rings that appear without falling to reveal the chest.",
+        "popupTitle": { "en": "#208: Plaza Challenge" },
+        "popupContent": {
+          "en": "This Luxurious Chest is hidden; jump onto the top of the railing, and follow the rings that appear without falling to reveal the chest."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_208.jpg"
       },
       "id": 208
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.9362573230613", "46.7083740234375"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.9362573230", "46.7083740234"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#6: Eye of the Storm Boss",
-        "popupContent": "This Luxurious Chest is near the edge of the cliff face, under a piece of ruin. It is locked by an Eye of the Storm, which you must defeat to open it.",
+        "popupTitle": { "en": "#6: Eye of the Storm Boss" },
+        "popupContent": {
+          "en": "This Luxurious Chest is near the edge of the cliff face, under a piece of ruin. It is locked by an Eye of the Storm, which you must defeat to open it."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_103.jpg"
       },
       "id": 103
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.71683748174288", "46.822354436663815"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.7168374817", "46.8223544366"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#12: Triple Seelie",
-        "popupContent": "This Luxurious Chest is revealed after returning three Seelies to their gardens. This chest is not included in the Seelie category.",
+        "popupTitle": { "en": "#12: Triple Seelie" },
+        "popupContent": {
+          "en": "This Luxurious Chest is revealed after returning three Seelies to their gardens. This chest is not included in the Seelie category."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_124.jpg"
       },
       "id": 124
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-16.446244368822022", "65.86294537390259"] },
+      "geometry": { "type": "Point", "coordinates": ["-16.4462443688", "65.8629453739"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#5: Waterfall Pedestal",
-        "popupContent": "This Luxurious Chest is located on a pedestal northeast of the Anemo Hypostasis arena.",
+        "popupTitle": { "en": "#5: Waterfall Pedestal" },
+        "popupContent": {
+          "en": "This Luxurious Chest is located on a pedestal northeast of the Anemo Hypostasis arena."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_327.jpg"
       },
       "id": 327
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.723269085826093", "80.14225014624321"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.7232690858", "80.1422501462"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#11: Nameless Island",
-        "popupContent": "This Luxurious Chest is located off the back side of the Nameless Island. Take care if you are low level as there are Ruin Guards nearby.",
+        "popupTitle": { "en": "#11: Nameless Island" },
+        "popupContent": {
+          "en": "This Luxurious Chest is located off the back side of the Nameless Island. Take care if you are low level as there are Ruin Guards nearby."
+        },
         "popupImage": "mondstadt/luxurious-chest/26_496.jpg"
       },
       "id": 496

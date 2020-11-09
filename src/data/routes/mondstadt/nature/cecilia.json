@@ -1,5 +1,5 @@
 {
-  "name": "Cecilia",
+  "name": { "en": "Cecilia" },
   "icons": {
     "filter": "cecilia"
   },
@@ -28,8 +28,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "Cecilias",
-        "popupContent": "Cecilias are located around Starsnatch Cliff to the north of the Temple of Thousand Winds.",
+        "popupTitle": { "en": "Cecilias" },
+        "popupContent": {
+          "en": "Cecilias are located around Starsnatch Cliff to the north of the Temple of Thousand Winds."
+        },
         "popupImage": ""
       }
     }

@@ -1,105 +1,102 @@
 {
-  "name": "Precious Chest",
+  "name": { "en": "Precious Chest" },
   "cluster": false,
   "icons": {
     "filter": "precious-chest",
     "base": {
-      "marker": true,
-      "key": "precious-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "precious-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.35802628396185", "49.977695328014"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.3580262839", "49.9776953280"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#158",
-        "popupContent": "",
+        "popupTitle": { "en": "#158" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_158.jpg"
       },
       "id": 158
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.717760117895875", "52.55787706662177"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.7177601178", "52.5578770666"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#171",
-        "popupContent": "",
+        "popupTitle": { "en": "#171" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_171.jpg"
       },
       "id": 171
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-38.46486558713765", "66.6099755521334"] },
+      "geometry": { "type": "Point", "coordinates": ["-38.4648655871", "66.6099755521"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#408",
-        "popupContent": "",
+        "popupTitle": { "en": "#408" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_408.jpg"
       },
       "id": 408
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.959157579482955", "70.38868761349677"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.9591575794", "70.3886876134"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#419",
-        "popupContent": "",
+        "popupTitle": { "en": "#419" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_419.jpg"
       },
       "id": 419
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.120306170134203", "71.20190523342781"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.1203061701", "71.2019052334"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#424",
-        "popupContent": "",
+        "popupTitle": { "en": "#424" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_424.jpg"
       },
       "id": 424
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-38.27337445481584", "69.69807404385067"] },
+      "geometry": { "type": "Point", "coordinates": ["-38.2733744548", "69.6980740438"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#457",
-        "popupContent": "",
+        "popupTitle": { "en": "#457" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_457.jpg"
       },
       "id": 457
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-38.856820134743614", "69.77416992187501"] },
+      "geometry": { "type": "Point", "coordinates": ["-38.8568201347", "69.7741699218"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#472",
-        "popupContent": "",
+        "popupTitle": { "en": "#472" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_472.jpg"
       },
       "id": 472
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.059777695718765", "59.3664300151889"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.0597776957", "59.3664300151"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#497",
-        "popupContent": "",
+        "popupTitle": { "en": "#497" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_497.jpg"
       },
       "id": 497
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.072452878478575", "43.49438570217781"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.0724528784", "43.4943857021"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#60",
-        "popupContent": "",
+        "popupTitle": { "en": "#60" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/precious-chest/26_60.jpg"
       },
       "id": 60

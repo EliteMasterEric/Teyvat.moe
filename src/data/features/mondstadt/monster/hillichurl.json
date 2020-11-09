@@ -1,16 +1,13 @@
 {
-  "name": "Hillichurl",
-  "cluster": false,
+  "name": { "en": "Hillichurl" },
+  "cluster": true,
   "icons": {
     "filter": "hillichurl",
     "base": {
-      "marker": true,
-      "key": "hillichurl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "hillichurl",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -1,28 +1,25 @@
 {
-  "name": "Fatui Skirmisher",
+  "name": { "en": "Fatui Skirmisher" },
   "cluster": false,
   "icons": {
     "filter": "fatui-skirmisher",
     "base": {
-      "marker": true,
-      "key": "fatui-skirmisher"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fatui-skirmisher",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.043939270712", "38.32491991017419"]
+        "coordinates": ["-19.0439392707", "38.3249199101"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.20757430587283", "64.01068393931935"]
+        "coordinates": ["-35.2075743058", "64.0106839393"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.94413827031217", "71.54177298225079"]
+        "coordinates": ["-38.9441382703", "71.5417729822"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.53292067518786", "45.90087890625"]
+        "coordinates": ["-32.5329206751", "45.9008789062"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.79611687361767", "63.74780924281884"]
+        "coordinates": ["-36.7961168736", "63.7478092428"]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5

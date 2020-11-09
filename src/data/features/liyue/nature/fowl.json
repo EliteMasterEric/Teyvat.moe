@@ -1,28 +1,25 @@
 {
-  "name": "Fowl",
+  "name": { "en": "Fowl" },
   "cluster": false,
   "icons": {
     "filter": "fowl",
     "base": {
-      "marker": true,
-      "key": "fowl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fowl",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.11728815820459", "40.53406733887652"]
+        "coordinates": ["-39.1172881582", "40.5340673388"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.402241234854756", "41.781010180125676"]
+        "coordinates": ["-39.4022412348", "41.7810101801"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.14285027045131", "40.6549147878762"]
+        "coordinates": ["-39.1428502704", "40.6549147878"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.13404857523225", "38.875124230687824"]
+        "coordinates": ["-37.1340485752", "38.8751242306"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.18658019611984", "38.781740441625324"]
+        "coordinates": ["-37.1865801961", "38.7817404416"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5
@@ -82,12 +79,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.09460547197145", "38.759766705187666"]
+        "coordinates": ["-37.0946054719", "38.7597667051"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 6

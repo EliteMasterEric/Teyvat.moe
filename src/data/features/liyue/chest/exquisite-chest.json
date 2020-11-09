@@ -1,16 +1,13 @@
 {
-  "name": "Exquisite Chest",
+  "name": { "en": "Exquisite Chest" },
   "cluster": true,
   "icons": {
     "filter": "exquisite-chest",
     "base": {
-      "marker": true,
-      "key": "exquisite-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "exquisite-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": []

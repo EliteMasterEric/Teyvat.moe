@@ -1,16 +1,13 @@
 {
-  "name": "Hillichurl Shooter",
-  "cluster": false,
+  "name": { "en": "Hillichurl Shooter" },
+  "cluster": true,
   "icons": {
     "filter": "hillichurl-shooter",
     "base": {
-      "marker": true,
-      "key": "hillichurl-shooter"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "hillichurl-shooter",
-      "done": true
+      "marker": true
     }
   },
   "data": []

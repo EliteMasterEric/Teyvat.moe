@@ -1,16 +1,13 @@
 {
-  "name": "Radish",
+  "name": { "en": "Radish" },
   "cluster": false,
   "icons": {
     "filter": "radish",
     "base": {
-      "marker": true,
-      "key": "radish"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "radish",
-      "done": true
+      "marker": true
     }
   },
   "data": []

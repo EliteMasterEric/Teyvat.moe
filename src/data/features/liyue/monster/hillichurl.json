@@ -1,28 +1,25 @@
 {
-  "name": "Hillichurl",
+  "name": { "en": "Hillichurl" },
   "cluster": true,
   "icons": {
     "filter": "hillichurl",
     "base": {
-      "marker": true,
-      "key": "hillichurl"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "hillichurl",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.733810082655665", "42.63121811568323"]
+        "coordinates": ["-41.7338100826", "42.6312181156"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.430519681377234", "40.505757891994776"]
+        "coordinates": ["-37.4305196813", "40.5057578919"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2

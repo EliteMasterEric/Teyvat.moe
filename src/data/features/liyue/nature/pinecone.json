@@ -1,16 +1,13 @@
 {
-  "name": "Pinecone",
+  "name": { "en": "Pinecone" },
   "cluster": false,
   "icons": {
     "filter": "pinecone",
     "base": {
-      "marker": true,
-      "key": "pinecone"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "pinecone",
-      "done": true
+      "marker": true
     }
   },
   "data": []

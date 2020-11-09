@@ -1,16 +1,13 @@
 {
-  "name": "Dandy",
+  "name": { "en": "Dandy" },
   "cluster": false,
   "icons": {
     "filter": "dandy",
     "base": {
-      "marker": true,
-      "key": "dandy"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "dandy",
-      "done": true
+      "marker": true
     }
   },
   "data": []

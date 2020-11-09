@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { getRouteKeysByFilter, MapRoutes, getFilterIconURL } from '../MapFeatures';
+import { getRouteKeysByFilter, MapRoutes } from '../MapFeatures';
+import { getFilterIconURL } from '../MapFeaturesData';
 
 import './MapControlRoutes.css';
 
@@ -70,6 +71,7 @@ const MapControlRoutes = ({
         })
         .map((key) => (
           <MapControlRouteButton
+            key={key}
             routeKey={key}
             mapPreferences={mapPreferences}
             setMapPreferences={setMapPreferences}

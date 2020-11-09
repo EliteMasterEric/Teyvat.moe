@@ -1,285 +1,282 @@
 {
-  "name": "Seelie",
+  "name": { "en": "Seelie" },
   "cluster": false,
   "icons": {
     "filter": "seelie",
     "base": {
-      "marker": true,
-      "key": "seelie"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "seelie",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.11655272480256", "50.12044305856769"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.1165527248", "50.1204430585"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#140",
-        "popupContent": "",
+        "popupTitle": { "en": "#140" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_140.jpg"
       },
       "id": 140
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.93675953017729", "51.295366686970915"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.9367595301", "51.2953666869"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#157",
-        "popupContent": "",
+        "popupTitle": { "en": "#157" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_157.jpg"
       },
       "id": 157
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.59758379039866", "50.77902073202995"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.5975837903", "50.7790207320"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#160",
-        "popupContent": "",
+        "popupTitle": { "en": "#160" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_160.jpg"
       },
       "id": 160
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.889814589606363", "52.72258598649137"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.8898145896", "52.7225859864"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#182",
-        "popupContent": "",
+        "popupTitle": { "en": "#182" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_182.jpg"
       },
       "id": 182
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.118966938762362", "39.59478258578286"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.1189669387", "39.5947825857"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#21",
-        "popupContent": "",
+        "popupTitle": { "en": "#21" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_21.jpg"
       },
       "id": 21
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.908834180186417", "59.10588343273145"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.9088341801", "59.1058834327"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#227",
-        "popupContent": "",
+        "popupTitle": { "en": "#227" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_227.jpg"
       },
       "id": 227
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.50728954218869", "57.777231479116615"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.5072895421", "57.7772314791"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#230",
-        "popupContent": "",
+        "popupTitle": { "en": "#230" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_230.jpg"
       },
       "id": 230
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.64001442943605", "58.105835166538135"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.6400144294", "58.1058351665"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#237",
-        "popupContent": "",
+        "popupTitle": { "en": "#237" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_237.jpg"
       },
       "id": 237
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.864691501091755", "64.07121066706725"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.8646915010", "64.0712106670"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#290",
-        "popupContent": "",
+        "popupTitle": { "en": "#290" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_290.jpg"
       },
       "id": 290
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.818246105822258", "62.23745135918557"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.8182461058", "62.2374513591"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#298",
-        "popupContent": "",
+        "popupTitle": { "en": "#298" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_298.jpg"
       },
       "id": 298
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.827359542219977", "64.0935445317399"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.8273595422", "64.0935445317"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#301",
-        "popupContent": "",
+        "popupTitle": { "en": "#301" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_301.jpg"
       },
       "id": 301
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.63161865693551", "60.94211386490132"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.6316186569", "60.9421138649"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#307",
-        "popupContent": "",
+        "popupTitle": { "en": "#307" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_307.jpg"
       },
       "id": 307
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.219588682591738", "40.769678858238365"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.2195886825", "40.7696788582"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#31",
-        "popupContent": "",
+        "popupTitle": { "en": "#31" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_31.jpg"
       },
       "id": 31
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.00713506435885", "64.05578613281251"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.0071350643", "64.0557861328"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#318",
-        "popupContent": "",
+        "popupTitle": { "en": "#318" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_318.jpg"
       },
       "id": 318
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.320857637273825", "65.49969706280045"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.3208576372", "65.4996970628"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#352",
-        "popupContent": "",
+        "popupTitle": { "en": "#352" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_352.jpg"
       },
       "id": 352
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-25.334561201694246", "66.64240705754206"] },
+      "geometry": { "type": "Point", "coordinates": ["-25.3345612016", "66.6424070575"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#365",
-        "popupContent": "",
+        "popupTitle": { "en": "#365" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_365.jpg"
       },
       "id": 365
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.640841536645162", "67.89422351588624"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.6408415366", "67.8942235158"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#383",
-        "popupContent": "",
+        "popupTitle": { "en": "#383" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_383.jpg"
       },
       "id": 383
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.848683627855316", "67.08265366443837"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.8486836278", "67.0826536644"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#402",
-        "popupContent": "",
+        "popupTitle": { "en": "#402" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_402.jpg"
       },
       "id": 402
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.23620596616009", "70.44359058678667"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.2362059661", "70.4435905867"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#413",
-        "popupContent": "",
+        "popupTitle": { "en": "#413" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_413.jpg"
       },
       "id": 413
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.613759191127727", "71.28909637545067"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.6137591911", "71.2890963754"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#416",
-        "popupContent": "",
+        "popupTitle": { "en": "#416" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_416.jpg"
       },
       "id": 416
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-37.62328638602003", "70.40083210196099"] },
+      "geometry": { "type": "Point", "coordinates": ["-37.6232863860", "70.4008321019"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#455",
-        "popupContent": "",
+        "popupTitle": { "en": "#455" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_455.jpg"
       },
       "id": 455
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.936417939888955", "42.736409330091185"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.9364179398", "42.7364093300"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#50",
-        "popupContent": "",
+        "popupTitle": { "en": "#50" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_50.jpg"
       },
       "id": 50
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.343484273651505", "44.3185151151625"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.3434842736", "44.3185151151"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#69",
-        "popupContent": "",
+        "popupTitle": { "en": "#69" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_69.jpg"
       },
       "id": 69
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.026051696338055", "44.69195280247306"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.0260516963", "44.6919528024"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#76",
-        "popupContent": "",
+        "popupTitle": { "en": "#76" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_76.jpg"
       },
       "id": 76
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.119148683026292", "45.95533466911185"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.1191486830", "45.9553346691"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#93",
-        "popupContent": "",
+        "popupTitle": { "en": "#93" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_93.jpg"
       },
       "id": 93
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.964203453539756", "48.997848076759716"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.9642034535", "48.9978480767"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#95",
-        "popupContent": "",
+        "popupTitle": { "en": "#95" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_95.jpg"
       },
       "id": 95
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.329059041207504", "47.62527374451296"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.3290590412", "47.6252737445"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#99",
-        "popupContent": "",
+        "popupTitle": { "en": "#99" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/seelie/26_99.jpg"
       },
       "id": 99

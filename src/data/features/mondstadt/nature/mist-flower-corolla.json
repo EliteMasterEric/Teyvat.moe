@@ -1,28 +1,25 @@
 {
-  "name": "Mist Flower Corolla",
+  "name": { "en": "Mist Flower Corolla" },
   "cluster": false,
   "icons": {
     "filter": "mist-flower-corolla",
     "base": {
-      "marker": true,
-      "key": "mist-flower-corolla"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "mist-flower-corolla",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.727825134583263", "49.15542295284056"]
+        "coordinates": ["-22.7278251345", "49.1554229528"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.87744046489713", "49.39453125000001"]
+        "coordinates": ["-22.8774404648", "49.3945312500"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-33.27543541298163", "67.87353515625001"]
+        "coordinates": ["-33.2754354129", "67.8735351562"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-33.33052824902809", "67.92846679687501"]
+        "coordinates": ["-33.3305282490", "67.9284667968"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4

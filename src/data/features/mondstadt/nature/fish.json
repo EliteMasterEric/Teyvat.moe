@@ -1,16 +1,13 @@
 {
-  "name": "Fish",
+  "name": { "en": "Fish" },
   "cluster": false,
   "icons": {
     "filter": "fish",
     "base": {
-      "marker": true,
-      "key": "fish"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "fish",
-      "done": true
+      "marker": true
     }
   },
   "data": []

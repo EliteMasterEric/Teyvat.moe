@@ -1,16 +1,13 @@
 {
-  "name": "Dvalin (Stormterror)",
+  "name": { "en": "Dvalin (Stormterror)" },
   "cluster": false,
   "icons": {
     "filter": "dvalin",
     "base": {
-      "marker": true,
-      "key": "dvalin"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "dvalin",
-      "done": true
+      "marker": true
     }
   },
   "data": []

@@ -1,16 +1,13 @@
 {
-  "name": "Pyro Regisvine",
+  "name": { "en": "Pyro Regisvine" },
   "cluster": false,
   "icons": {
     "filter": "pyro-regisvine",
     "base": {
-      "marker": true,
-      "key": "pyro-regisvine"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "pyro-regisvine",
-      "done": true
+      "marker": true
     }
   },
   "data": []

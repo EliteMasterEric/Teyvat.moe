@@ -1,28 +1,25 @@
 {
-  "name": "Ruin Hunter",
+  "name": { "en": "Ruin Hunter" },
   "cluster": false,
   "icons": {
     "filter": "ruin-hunter",
     "base": {
-      "marker": true,
-      "key": "ruin-hunter"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "ruin-hunter",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-55.549717538066616", "36.38030418585611"]
+        "coordinates": ["-55.5497175380", "36.3803041858"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 1
@@ -30,12 +27,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-56.77293303049224", "30.88149357264467"]
+        "coordinates": ["-56.7729330304", "30.8814935726"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 2
@@ -43,12 +40,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-54.00381766278086", "27.58562970115009"]
+        "coordinates": ["-54.0038176627", "27.5856297011"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 3
@@ -56,12 +53,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.987634945980005", "28.855042878185596"]
+        "coordinates": ["-47.9876349459", "28.8550428781"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 4
@@ -69,12 +66,12 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.12880937113145", "47.64612584375341"]
+        "coordinates": ["-48.1288093711", "47.6461258437"]
       },
       "type": "Feature",
       "properties": {
-        "popTitle": "",
-        "popupContent": "",
+        "popupTitle": { "en": "" },
+        "popupContent": { "en": "" },
         "popupImage": ""
       },
       "id": 5

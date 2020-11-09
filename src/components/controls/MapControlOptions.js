@@ -29,19 +29,19 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
       </div>
       <div className={clsx('map-controls-options-container')}>
         <div className={clsx('map-controls-option')}>
-          <span className={clsx('map-controls-option-label')}>{t('option-marked-opacity')}</span>
+          <span className={clsx('map-controls-option-label')}>{t('option-completed-opacity')}</span>
           <ReactSlider
             className={clsx('map-controls-option-slider')}
             min={0.1}
             max={1}
-            value={mapPreferences?.options?.markedAlpha}
+            value={mapPreferences?.options?.completedAlpha}
             step={0.1}
-            onChange={(markedAlpha) => {
+            onChange={(completedAlpha) => {
               setMapPreferences((old) => ({
                 ...old,
                 options: {
                   ...old.options,
-                  markedAlpha,
+                  completedAlpha,
                 },
               }));
             }}

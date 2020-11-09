@@ -1,16 +1,13 @@
 {
-  "name": "Cryo Regisvine",
+  "name": { "en": "Cryo Regisvine" },
   "cluster": false,
   "icons": {
     "filter": "cryo-regisvine",
     "base": {
-      "marker": true,
-      "key": "cryo-regisvine"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "cryo-regisvine",
-      "done": true
+      "marker": true
     }
   },
   "data": []

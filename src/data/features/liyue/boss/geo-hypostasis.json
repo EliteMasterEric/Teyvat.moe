@@ -1,16 +1,13 @@
 {
-  "name": "Geo Hypostasis",
+  "name": { "en": "Geo Hypostasis" },
   "cluster": false,
   "icons": {
     "filter": "geo-hypostasis",
     "base": {
-      "marker": true,
-      "key": "geo-hypostasis"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "geo-hypostasis",
-      "done": true
+      "marker": true
     }
   },
   "data": []

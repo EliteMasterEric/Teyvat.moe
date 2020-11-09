@@ -19,7 +19,7 @@ export const DEFAULT_MAP_PREFERENCES = {
   version: GENSHINMAP_DATA_VERSION,
 
   options: {
-    markedAlpha: 0.5, // Make 'Done' markers transparent.
+    completedAlpha: 0.5, // Make 'Done' markers transparent.
     clusterMarkers: true,
   },
 
@@ -46,11 +46,11 @@ export const DEFAULT_MAP_PREFERENCES = {
   },
 
   /**
-   * Store of "done" markers.
+   * Store of completed markers.
    * Each key is the internal name of the feature,
-   * and each value is an array of marker IDs marked as "done".
+   * and each value is an array of marker IDs marked as completed.
    */
-  marked: {
+  completed: {
     features: {
       anemoculus: [],
     },

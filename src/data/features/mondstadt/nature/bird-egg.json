@@ -1,16 +1,13 @@
 {
-  "name": "Bird Egg",
+  "name": { "en": "Bird Egg" },
   "cluster": false,
   "icons": {
     "filter": "bird-egg",
     "base": {
-      "marker": true,
-      "key": "bird-egg"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "bird-egg",
-      "done": true
+      "marker": true
     }
   },
   "data": []

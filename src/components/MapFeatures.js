@@ -4,77 +4,18 @@
  * and where the data for them is loaded from.
  */
 import _ from 'lodash';
-import L from 'leaflet';
-
-/**
- * Converts JSON data into a Map feature layer object.
- * @param {*} dataJSON The imported JSON, brought in using require()
- */
-export const createGeoJSONLayer = (dataJSON) => {
-  return L.geoJSON(dataJSON, {
-    style: () => {
-      // Style a (feature) based on its properties.
-      return {};
-    },
-  });
-};
-
-// https://github.com/cyrilwanner/next-optimized-images/issues/16
-const iconsContext = require.context('../images/icons', true);
-export const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
-
-export const createMapIcon = ({ key, marker = false, done = false, svg = false, ...options }) => {
-  if (marker) {
-    // Use the marker image.
-    const iconUrl = getFilterIconURL(key);
-
-    // This part is a little complex.
-    // As a neat hack, the marker"s shadow is offset and used to implement the frame.
-    // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(
-      `./map_${done ? 'done' : 'base'}/marker.${svg ? 'svg' : 'png'}`,
-      true
-    ).default;
-
-    return L.icon({
-      className: `map-marker-${key}`,
-      iconUrl,
-      shadowUrl, // Default value. Use options to override.
-      iconSize: [24, 23], // size of the icon
-      shadowSize: [40, 40], // size of the shadow
-      iconAnchor: [12, 34.5], // point of the icon which will correspond to marker"s location
-      shadowAnchor: [20, 40], // the same for the shadow
-      popupAnchor: [0, -34.5], // point from which the popup should open relative to the iconAnchor
-      ...options,
-    });
-  }
-  // Else, don"t use the marker image.
-  const iconUrl = iconsContext(
-    `./map_${done ? 'done' : 'base'}/${key}.${svg ? 'svg' : 'png'}`,
-    true
-  ).default;
-
-  return L.icon({
-    className: `map-marker-${key}`,
-    iconUrl,
-    shadowUrl: '',
-    ...options,
-  });
-};
+import {
+  listFeatureKeys,
+  listRouteKeys,
+  loadFeature,
+  loadRoute,
+  localizeFeature,
+  localizeRoute,
+} from './MapFeaturesData';
 
 /*
- * List of Regions:
- * mondstadt
- * liyue
- * POSSIBLE FUTURE REGIONS:
- * inazuma
- * sumeru
- * fontaine
- * natlan
- * snezhnaya
- * khaenriah
+ * List of ingame regions.
  */
-
 export const MapRegions = {
   mondstadt: {
     nameKey: 'region-mondstadt',
@@ -204,28 +145,31 @@ export const MapCategories = {
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.
  */
-const featuresContext = require.context('../data/features/', true, /.json$/);
 export const MapFeatures = Object.fromEntries(
-  featuresContext.keys().map((relativePath) => {
-    const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
-    const featureData = {
-      ...featuresContext(relativePath),
-      region: featureRegion,
-      category: featureCategory,
-    };
+  listFeatureKeys()
+    .map((relativePath) => {
+      const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
+      const baseFeatureData = loadFeature(relativePath);
+      if (baseFeatureData == null) return null; // Validation failed.
+      const featureData = localizeFeature({
+        ...baseFeatureData,
+        region: featureRegion,
+        category: featureCategory,
+      });
 
-    // crystal-chunk -> CrystalChunk
-    const correctedName = featureName
-      .split('.')[0] // Remove file extension.
-      .split('-') // Break by words.
-      .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
-      .join(''); // Rejoin.
+      // crystal-chunk -> CrystalChunk
+      const correctedName = featureName
+        .split('.')[0] // Remove file extension.
+        .split('-') // Break by words.
+        .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
+        .join(''); // Rejoin.
 
-    // CrystalChunk -> mondstadtCrystalChunk
-    const fullName = `${featureRegion}${correctedName}`; // Prefix with region.
+      // CrystalChunk -> mondstadtCrystalChunk
+      const fullName = `${featureRegion}${correctedName}`; // Prefix with region.
 
-    return [fullName, featureData];
-  })
+      return [fullName, featureData];
+    })
+    .filter((value) => value) // Filter out nullable values
 );
 
 export const getFeatureKeysByFilter = (region, category) => {
@@ -241,27 +185,30 @@ export const getFeatureKeysByFilter = (region, category) => {
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.
  */
-const routesContext = require.context('../data/routes/', true, /.json$/);
 export const MapRoutes = Object.fromEntries(
-  routesContext.keys().map((relativePath) => {
-    const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
-    const routeData = {
-      ...routesContext(relativePath),
-      region: routeRegion,
-      category: routeCategory,
-    };
+  listRouteKeys()
+    .map((relativePath) => {
+      const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
+      const baseRouteData = loadRoute(relativePath);
+      if (baseRouteData == null) return null; // Validation failed.
+      const routeData = localizeRoute({
+        ...baseRouteData,
+        region: routeRegion,
+        category: routeCategory,
+      });
 
-    // crystal-chunk -> CrystalChunk
-    const correctedName = routeName
-      .split('.')[0] // Remove file extension.
-      .split('-') // Break by words.
-      .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
-      .join(''); // Rejoin.
+      // crystal-chunk -> CrystalChunk
+      const correctedName = routeName
+        .split('.')[0] // Remove file extension.
+        .split('-') // Break by words.
+        .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
+        .join(''); // Rejoin.
 
-    // CrystalChunk -> mondstadtCrystalChunk
-    const fullName = `${routeRegion}${correctedName}`; // Prefix with region.
-    return [fullName, routeData];
-  })
+      // CrystalChunk -> mondstadtCrystalChunk
+      const fullName = `${routeRegion}${correctedName}`; // Prefix with region.
+      return [fullName, routeData];
+    })
+    .filter((value) => value) // Filter out nullable values
 );
 
 export const getRouteKeysByFilter = (region, category) => {

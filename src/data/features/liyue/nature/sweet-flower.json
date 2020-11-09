@@ -1,16 +1,13 @@
 {
-  "name": "Sweet Flower",
+  "name": { "en": "Sweet Flower" },
   "cluster": false,
   "icons": {
     "filter": "sweet-flower",
     "base": {
-      "marker": true,
-      "key": "sweet-flower"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "sweet-flower",
-      "done": true
+      "marker": true
     }
   },
   "data": []

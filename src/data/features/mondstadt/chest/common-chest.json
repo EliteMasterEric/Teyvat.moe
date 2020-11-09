@@ -1,2055 +1,2052 @@
 {
-  "name": "Common Chest",
-  "cluster": false,
+  "name": { "en": "Common Chest" },
+  "cluster": true,
   "icons": {
     "filter": "common-chest",
     "base": {
-      "marker": true,
-      "key": "common-chest"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "common-chest",
-      "done": true
+      "marker": true
     }
   },
   "data": [
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.429178265406986", "47.85586623233039"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.4291782654", "47.8558662323"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#100",
-        "popupContent": "",
+        "popupTitle": { "en": "#100" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_100.jpg"
       },
       "id": 100
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.787092266199185", "49.09533753086444"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.7870922661", "49.0953375308"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#102",
-        "popupContent": "",
+        "popupTitle": { "en": "#102" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_102.jpg"
       },
       "id": 102
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.186094379946468", "46.86627681529568"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.1860943799", "46.8662768152"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#108",
-        "popupContent": "",
+        "popupTitle": { "en": "#108" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_108.jpg"
       },
       "id": 108
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.23540331786452", "49.402794181287724"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.2354033178", "49.4027941812"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#114",
-        "popupContent": "",
+        "popupTitle": { "en": "#114" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_114.jpg"
       },
       "id": 114
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.412742207003323", "48.95258980031078"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.4127422070", "48.9525898003"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#116",
-        "popupContent": "",
+        "popupTitle": { "en": "#116" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_116.jpg"
       },
       "id": 116
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.294546446950058", "45.52664426702287"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.2945464469", "45.5266442670"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#117",
-        "popupContent": "",
+        "popupTitle": { "en": "#117" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_117.jpg"
       },
       "id": 117
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.49051872126676", "45.878023296078034"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.4905187212", "45.8780232960"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#118",
-        "popupContent": "",
+        "popupTitle": { "en": "#118" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_118.jpg"
       },
       "id": 118
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.280871479833696", "39.441054260571235"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.2808714798", "39.4410542605"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#12",
-        "popupContent": "",
+        "popupTitle": { "en": "#12" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_12.jpg"
       },
       "id": 12
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.692927014290454", "45.976848647999795"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.6929270142", "45.9768486479"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#121",
-        "popupContent": "",
+        "popupTitle": { "en": "#121" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_121.jpg"
       },
       "id": 121
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.260269009711028", "46.09763518923749"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.2602690097", "46.0976351892"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#122",
-        "popupContent": "",
+        "popupTitle": { "en": "#122" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_122.jpg"
       },
       "id": 122
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.787191779991964", "45.74707031250001"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.7871917799", "45.7470703125"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#128",
-        "popupContent": "",
+        "popupTitle": { "en": "#128" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_128.jpg"
       },
       "id": 128
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.298366633202065", "46.24038291979117"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.2983666332", "46.2403829197"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#131",
-        "popupContent": "",
+        "popupTitle": { "en": "#131" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_131.jpg"
       },
       "id": 131
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.20315586667109", "45.74625616018232"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.2031558666", "45.7462561601"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#132",
-        "popupContent": "",
+        "popupTitle": { "en": "#132" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_132.jpg"
       },
       "id": 132
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.30309709971253", "45.38389653646918"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.3030970997", "45.3838965364"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#133",
-        "popupContent": "",
+        "popupTitle": { "en": "#133" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_133.jpg"
       },
       "id": 133
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.43012320651626", "46.0097904319737"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.4301232065", "46.0097904319"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#134",
-        "popupContent": "",
+        "popupTitle": { "en": "#134" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_134.jpg"
       },
       "id": 134
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.713500403588796", "50.12044305856769"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.7135004035", "50.1204430585"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#137",
-        "popupContent": "",
+        "popupTitle": { "en": "#137" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_137.jpg"
       },
       "id": 137
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.816944944755427", "50.95496825257372"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.8169449447", "50.9549682525"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#138",
-        "popupContent": "",
+        "popupTitle": { "en": "#138" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_138.jpg"
       },
       "id": 138
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.002975432793736", "51.30634728162889"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.0029754327", "51.3063472816"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#139",
-        "popupContent": "",
+        "popupTitle": { "en": "#139" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_139.jpg"
       },
       "id": 139
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.335562616209156", "39.408112476597296"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.3355626162", "39.4081124765"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#14",
-        "popupContent": "",
+        "popupTitle": { "en": "#14" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_14.jpg"
       },
       "id": 14
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.18878630266329", "50.49378327693881"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.1887863026", "50.4937832769"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#141",
-        "popupContent": "",
+        "popupTitle": { "en": "#141" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_141.jpg"
       },
       "id": 141
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.27129797366995", "50.35103554638513"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.2712979736", "50.3510355463"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#142",
-        "popupContent": "",
+        "popupTitle": { "en": "#142" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_142.jpg"
       },
       "id": 142
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.394983189579595", "50.90006527928382"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.3949831895", "50.9000652792"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#144",
-        "popupContent": "",
+        "popupTitle": { "en": "#144" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_144.jpg"
       },
       "id": 144
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.518569214953384", "50.29613257309528"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.5185692149", "50.2961325730"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#145",
-        "popupContent": "",
+        "popupTitle": { "en": "#145" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_145.jpg"
       },
       "id": 145
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.539157207535997", "51.47105620149849"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.5391572075", "51.4710562014"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#146",
-        "popupContent": "",
+        "popupTitle": { "en": "#146" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_146.jpg"
       },
       "id": 146
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.806548090273548", "52.096950097003045"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.8065480902", "52.0969500970"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#147",
-        "popupContent": "",
+        "popupTitle": { "en": "#147" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_147.jpg"
       },
       "id": 147
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.406194092792234", "39.58380199112488"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4061940927", "39.5838019911"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#15",
-        "popupContent": "",
+        "popupTitle": { "en": "#15" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_15.jpg"
       },
       "id": 15
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.674900042370894", "51.32830847094484"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.6749000423", "51.3283084709"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#150",
-        "popupContent": "",
+        "popupTitle": { "en": "#150" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_150.jpg"
       },
       "id": 150
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.46670537941809", "39.68262734304665"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4667053794", "39.6826273430"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#16",
-        "popupContent": "",
+        "popupTitle": { "en": "#16" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_16.jpg"
       },
       "id": 16
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-25.672290926419056", "51.931983171117245"] },
+      "geometry": { "type": "Point", "coordinates": ["-25.6722909264", "51.9319831711"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#164",
-        "popupContent": "",
+        "popupTitle": { "en": "#164" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_164.jpg"
       },
       "id": 164
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.156739902424437", "51.437856411508406"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.1567399024", "51.4378564115"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#166",
-        "popupContent": "",
+        "popupTitle": { "en": "#166" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_166.jpg"
       },
       "id": 166
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.452354222128022", "51.866099603169424"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.4523542221", "51.8660996031"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#168",
-        "popupContent": "",
+        "popupTitle": { "en": "#168" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_168.jpg"
       },
       "id": 168
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.472034996257683", "50.95471024655753"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.4720349962", "50.9547102465"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#169",
-        "popupContent": "",
+        "popupTitle": { "en": "#169" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_169.jpg"
       },
       "id": 169
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.537266827990393", "39.78145269496842"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.5372668279", "39.7814526949"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#17",
-        "popupContent": "",
+        "popupTitle": { "en": "#17" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_17.jpg"
       },
       "id": 17
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.75702710618483", "51.21824451834894"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.7570271061", "51.2182445183"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#172",
-        "popupContent": "",
+        "popupTitle": { "en": "#172" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_172.jpg"
       },
       "id": 172
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.051096226778565", "51.591584736720066"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.0510962267", "51.5915847367"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#173",
-        "popupContent": "",
+        "popupTitle": { "en": "#173" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_173.jpg"
       },
       "id": 173
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.432236017404694", "51.800216035221545"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.4322360174", "51.8002160352"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#177",
-        "popupContent": "",
+        "popupTitle": { "en": "#177" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_177.jpg"
       },
       "id": 177
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.558991773641655", "51.273147491638795"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.5589917736", "51.2731474916"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#178",
-        "popupContent": "",
+        "popupTitle": { "en": "#178" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_178.jpg"
       },
       "id": 178
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.81206430613688", "52.76650836512328"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.8120643061", "52.7665083651"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#181",
-        "popupContent": "",
+        "popupTitle": { "en": "#181" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_181.jpg"
       },
       "id": 181
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.219629548691174", "53.69985891105109"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.2196295486", "53.6998589110"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#184",
-        "popupContent": "",
+        "popupTitle": { "en": "#184" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_184.jpg"
       },
       "id": 184
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.664231691272274", "51.60256533137801"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.6642316912", "51.6025653313"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#186",
-        "popupContent": "",
+        "popupTitle": { "en": "#186" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_186.jpg"
       },
       "id": 186
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.905076777683522", "50.46058348694872"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.9050767776", "50.4605834869"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#187",
-        "popupContent": "",
+        "popupTitle": { "en": "#187" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_187.jpg"
       },
       "id": 187
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.442541614828354", "52.94219787965087"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.4425416148", "52.9421978796"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#188",
-        "popupContent": "",
+        "popupTitle": { "en": "#188" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_188.jpg"
       },
       "id": 188
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.805639663643444", "51.6904100886418"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.8056396636", "51.6904100886"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#190",
-        "popupContent": "",
+        "popupTitle": { "en": "#190" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_190.jpg"
       },
       "id": 190
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.081857720566802", "53.1398485834944"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.0818577205", "53.1398485834"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#193",
-        "popupContent": "",
+        "popupTitle": { "en": "#193" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_193.jpg"
       },
       "id": 193
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.45210982130575", "54.3806557798455"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.4521098213", "54.3806557798"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#195",
-        "popupContent": "",
+        "popupTitle": { "en": "#195" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_195.jpg"
       },
       "id": 195
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.671619366445974", "52.821411338413135"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.6716193664", "52.8214113384"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#203",
-        "popupContent": "",
+        "popupTitle": { "en": "#203" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_203.jpg"
       },
       "id": 203
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.464664196609018", "58.8085760242474"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.4646641966", "58.8085760242"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#219",
-        "popupContent": "",
+        "popupTitle": { "en": "#219" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_219.jpg"
       },
       "id": 219
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.84009488478144", "39.66066615373074"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.8400948847", "39.6606661537"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#22",
-        "popupContent": "",
+        "popupTitle": { "en": "#22" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_22.jpg"
       },
       "id": 22
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.83601044130691", "59.91844743742157"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.8360104413", "59.9184474374"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#226",
-        "popupContent": "",
+        "popupTitle": { "en": "#226" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_226.jpg"
       },
       "id": 226
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.045742140929317", "39.83635566825832"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.0457421409", "39.8363556682"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#23",
-        "popupContent": "",
+        "popupTitle": { "en": "#23" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_23.jpg"
       },
       "id": 23
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.781541204480664", "56.679172013319175"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.7815412044", "56.6791720133"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#231",
-        "popupContent": "",
+        "popupTitle": { "en": "#231" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_231.jpg"
       },
       "id": 231
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.290135871647156", "57.05251223169029"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.2901358716", "57.0525122316"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#233",
-        "popupContent": "",
+        "popupTitle": { "en": "#233" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_233.jpg"
       },
       "id": 233
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.066258334950867", "39.93518102018008"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.0662583349", "39.9351810201"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#24",
-        "popupContent": "",
+        "popupTitle": { "en": "#24" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_24.jpg"
       },
       "id": 24
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.02792543335743", "55.83285207233751"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.0279254333", "55.8328520723"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#240",
-        "popupContent": "",
+        "popupTitle": { "en": "#240" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_240.jpg"
       },
       "id": 240
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.53333204682995", "55.37166709670261"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.5333320468", "55.3716670967"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#241",
-        "popupContent": "",
+        "popupTitle": { "en": "#241" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_241.jpg"
       },
       "id": 241
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.935543480225", "56.0854057494709"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.9355434802", "56.0854057494"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#242",
-        "popupContent": "",
+        "popupTitle": { "en": "#242" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_242.jpg"
       },
       "id": 242
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.02023699161651", "64.4781806854554"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.0202369916", "64.4781806854"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#245",
-        "popupContent": "",
+        "popupTitle": { "en": "#245" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_245.jpg"
       },
       "id": 245
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.65292345492095", "62.743246729495496"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.6529234549", "62.7432467294"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#249",
-        "popupContent": "",
+        "popupTitle": { "en": "#249" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_249.jpg"
       },
       "id": 249
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.260638320269567", "39.88027804689018"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.2606383202", "39.8802780468"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#25",
-        "popupContent": "",
+        "popupTitle": { "en": "#25" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_25.jpg"
       },
       "id": 25
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.901171734680442", "61.8867603461735"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.9011717346", "61.8867603461"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#251",
-        "popupContent": "",
+        "popupTitle": { "en": "#251" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_251.jpg"
       },
       "id": 251
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.98380878824573", "62.91893624402308"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.9838087882", "62.9189362440"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#252",
-        "popupContent": "",
+        "popupTitle": { "en": "#252" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_252.jpg"
       },
       "id": 252
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.025125218190823", "64.28052998161186"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.0251252181", "64.2805299816"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#253",
-        "popupContent": "",
+        "popupTitle": { "en": "#253" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_253.jpg"
       },
       "id": 253
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.33465112750264", "63.94013154721467"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.3346511275", "63.9401315472"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#258",
-        "popupContent": "",
+        "popupTitle": { "en": "#258" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_258.jpg"
       },
       "id": 258
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.190230384154354", "39.93518102018008"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.1902303841", "39.9351810201"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#26",
-        "popupContent": "",
+        "popupTitle": { "en": "#26" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_26.jpg"
       },
       "id": 26
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.478885375959315", "60.821642664349994"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.4788853759", "60.8216426643"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#261",
-        "popupContent": "",
+        "popupTitle": { "en": "#261" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_261.jpg"
       },
       "id": 261
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.530364816654547", "64.39033592819159"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.5303648166", "64.3903359281"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#262",
-        "popupContent": "",
+        "popupTitle": { "en": "#262" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_262.jpg"
       },
       "id": 262
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.643558585011366", "62.72128554017954"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.6435585850", "62.7212855401"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#263",
-        "popupContent": "",
+        "popupTitle": { "en": "#263" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_263.jpg"
       },
       "id": 263
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.643558585011366", "61.42557537053859"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.6435585850", "61.4255753705"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#264",
-        "popupContent": "",
+        "popupTitle": { "en": "#264" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_264.jpg"
       },
       "id": 264
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.371819793680295", "61.985585698095264"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.3718197936", "61.9855856980"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#269",
-        "popupContent": "",
+        "popupTitle": { "en": "#269" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_269.jpg"
       },
       "id": 269
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.74761699054796", "39.99008399346994"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.7476169905", "39.9900839934"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#27",
-        "popupContent": "",
+        "popupTitle": { "en": "#27" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_27.jpg"
       },
       "id": 27
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.80657772778509", "61.627645166992735"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.8065777277", "61.6276451669"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#271",
-        "popupContent": "",
+        "popupTitle": { "en": "#271" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_271.jpg"
       },
       "id": 271
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.898117101034135", "63.841306195292894"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.8981171010", "63.8413061952"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#276",
-        "popupContent": "",
+        "popupTitle": { "en": "#276" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_276.jpg"
       },
       "id": 276
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.978491423514388", "62.39186770044029"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.9784914235", "62.3918677004"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#278",
-        "popupContent": "",
+        "popupTitle": { "en": "#278" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_278.jpg"
       },
       "id": 278
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.520962828225056", "62.25941254850153"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.5209628282", "62.2594125485"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#288",
-        "popupContent": "",
+        "popupTitle": { "en": "#288" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_288.jpg"
       },
       "id": 288
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.623285305574782", "40.41829982918321"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.6232853055", "40.4182998291"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#29",
-        "popupContent": "",
+        "popupTitle": { "en": "#29" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_29.jpg"
       },
       "id": 29
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.374277408268526", "63.61002569143232"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.3742774082", "63.6100256914"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#296",
-        "popupContent": "",
+        "popupTitle": { "en": "#296" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_296.jpg"
       },
       "id": 296
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.862662536401544", "62.06176184465798"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.8626625364", "62.0617618446"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#299",
-        "popupContent": "",
+        "popupTitle": { "en": "#299" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_299.jpg"
       },
       "id": 299
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-16.65710687363915", "40.71477588494851"] },
+      "geometry": { "type": "Point", "coordinates": ["-16.6571068736", "40.7147758849"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#30",
-        "popupContent": "",
+        "popupTitle": { "en": "#30" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_30.jpg"
       },
       "id": 30
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.912273223994244", "63.24803874307588"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.9122732239", "63.2480387430"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#302",
-        "popupContent": "",
+        "popupTitle": { "en": "#302" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_302.jpg"
       },
       "id": 302
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.82265139639439", "63.4896118255513"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.8226513963", "63.4896118255"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#304",
-        "popupContent": "",
+        "popupTitle": { "en": "#304" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_304.jpg"
       },
       "id": 304
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.47411139919983", "61.897425600145034"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.4741113991", "61.8974256001"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#306",
-        "popupContent": "",
+        "popupTitle": { "en": "#306" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_306.jpg"
       },
       "id": 306
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.79817097797956", "61.974834442118336"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.7981709779", "61.9748344421"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#309",
-        "popupContent": "",
+        "popupTitle": { "en": "#309" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_309.jpg"
       },
       "id": 309
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.96433044220306", "64.62115775469009"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.9643304422", "64.6211577546"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#311",
-        "popupContent": "",
+        "popupTitle": { "en": "#311" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_311.jpg"
       },
       "id": 311
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.130177991263245", "64.75292489058579"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.1301779912", "64.7529248905"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#312",
-        "popupContent": "",
+        "popupTitle": { "en": "#312" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_312.jpg"
       },
       "id": 312
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.38754120400719", "64.5333129974263"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.3875412040", "64.5333129974"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#314",
-        "popupContent": "",
+        "popupTitle": { "en": "#314" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_314.jpg"
       },
       "id": 314
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.580065250704735", "62.853282014756246"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.5800652507", "62.8532820147"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#317",
-        "popupContent": "",
+        "popupTitle": { "en": "#317" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_317.jpg"
       },
       "id": 317
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.47001355313557", "40.89046539947609"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.4700135531", "40.8904653994"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#32",
-        "popupContent": "",
+        "popupTitle": { "en": "#32" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_32.jpg"
       },
       "id": 32
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.832431754994786", "62.17166526017718"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.8324317549", "62.1716652601"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#322",
-        "popupContent": "",
+        "popupTitle": { "en": "#322" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_322.jpg"
       },
       "id": 322
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.87753215121264", "62.39127715333663"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.8775321512", "62.3912771533"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#323",
-        "popupContent": "",
+        "popupTitle": { "en": "#323" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_323.jpg"
       },
       "id": 323
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-35.13862629554284", "63.93954100011101"] },
+      "geometry": { "type": "Point", "coordinates": ["-35.1386262955", "63.9395410001"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#324",
-        "popupContent": "",
+        "popupTitle": { "en": "#324" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_324.jpg"
       },
       "id": 324
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.0357062712818", "67.90533598028578"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.0357062712", "67.9053359802"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#329",
-        "popupContent": "",
+        "popupTitle": { "en": "#329" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_329.jpg"
       },
       "id": 329
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.371713574710068", "68.25671500934098"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.3717135747", "68.2567150093"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#330",
-        "popupContent": "",
+        "popupTitle": { "en": "#330" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_330.jpg"
       },
       "id": 330
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.56044794563312", "66.12647964569395"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.5604479456", "66.1264796456"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#332",
-        "popupContent": "",
+        "popupTitle": { "en": "#332" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_332.jpg"
       },
       "id": 332
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.769922216208826", "67.87239419631187"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.7699222162", "67.8723941963"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#334",
-        "popupContent": "",
+        "popupTitle": { "en": "#334" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_334.jpg"
       },
       "id": 334
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.292529880651568", "66.12647964569395"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.2925298806", "66.1264796456"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#335",
-        "popupContent": "",
+        "popupTitle": { "en": "#335" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_335.jpg"
       },
       "id": 335
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.370175474285645", "67.91198838487517"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.3701754742", "67.9119883848"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#338",
-        "popupContent": "",
+        "popupTitle": { "en": "#338" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_338.jpg"
       },
       "id": 338
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.427501971948598", "68.14819335937501"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.4275019719", "68.1481933593"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#339",
-        "popupContent": "",
+        "popupTitle": { "en": "#339" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_339.jpg"
       },
       "id": 339
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.218859842368257", "67.14767494888555"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.2188598423", "67.1476749488"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#341",
-        "popupContent": "",
+        "popupTitle": { "en": "#341" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_341.jpg"
       },
       "id": 341
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.529946465473728", "65.26999326237197"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.5299464654", "65.2699932623"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#342",
-        "popupContent": "",
+        "popupTitle": { "en": "#342" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_342.jpg"
       },
       "id": 342
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.63350952064271", "68.03710311618148"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.6335095206", "68.0371031161"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#344",
-        "popupContent": "",
+        "popupTitle": { "en": "#344" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_344.jpg"
       },
       "id": 344
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.87145079884938", "65.47862456087348"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.8714507988", "65.4786245608"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#345",
-        "popupContent": "",
+        "popupTitle": { "en": "#345" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_345.jpg"
       },
       "id": 345
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.71683652554589", "67.91631657494375"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.7168365255", "67.9163165749"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#349",
-        "popupContent": "",
+        "popupTitle": { "en": "#349" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_349.jpg"
       },
       "id": 349
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.078094673262914", "41.41753394305884"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.0780946732", "41.4175339430"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#35",
-        "popupContent": "",
+        "popupTitle": { "en": "#35" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_35.jpg"
       },
       "id": 35
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.811536847259497", "67.32247577602413"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.8115368472", "67.3224757760"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#354",
-        "popupContent": "",
+        "popupTitle": { "en": "#354" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_354.jpg"
       },
       "id": 354
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.534251458510177", "66.09264917433106"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.5342514585", "66.0926491743"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#356",
-        "popupContent": "",
+        "popupTitle": { "en": "#356" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_356.jpg"
       },
       "id": 356
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.233003575102284", "67.1248250721806"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.2330035751", "67.1248250721"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#359",
-        "popupContent": "",
+        "popupTitle": { "en": "#359" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_359.jpg"
       },
       "id": 359
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.647352189234294", "41.571262268270466"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.6473521892", "41.5712622682"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#36",
-        "popupContent": "",
+        "popupTitle": { "en": "#36" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_36.jpg"
       },
       "id": 36
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.404604387777812", "67.33345637068211"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4046043877", "67.3334563706"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#361",
-        "popupContent": "",
+        "popupTitle": { "en": "#361" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_361.jpg"
       },
       "id": 361
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.465116402016392", "67.98131145550259"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4651164020", "67.9813114555"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#362",
-        "popupContent": "",
+        "popupTitle": { "en": "#362" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_362.jpg"
       },
       "id": 362
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.49953666502092", "67.26757280273429"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.4995366650", "67.2675728027"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#363",
-        "popupContent": "",
+        "popupTitle": { "en": "#363" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_363.jpg"
       },
       "id": 363
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.88902140472785", "65.63146419869616"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.8890214047", "65.6314641986"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#364",
-        "popupContent": "",
+        "popupTitle": { "en": "#364" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_364.jpg"
       },
       "id": 364
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.245088456484098", "68.12478733636857"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.2450884564", "68.1247873363"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#368",
-        "popupContent": "",
+        "popupTitle": { "en": "#368" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_368.jpg"
       },
       "id": 368
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.467905938334948", "41.63714583621834"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.4679059383", "41.6371458362"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#37",
-        "popupContent": "",
+        "popupTitle": { "en": "#37" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_37.jpg"
       },
       "id": 37
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.491298421734857", "66.21416386588105"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.4912984217", "66.2141638658"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#370",
-        "popupContent": "",
+        "popupTitle": { "en": "#370" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_370.jpg"
       },
       "id": 370
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.668243985765287", "66.74123240946383"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.6682439857", "66.7412324094"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#371",
-        "popupContent": "",
+        "popupTitle": { "en": "#371" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_371.jpg"
       },
       "id": 371
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.246304370340326", "67.46595165689011"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.2463043703", "67.4659516568"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#373",
-        "popupContent": "",
+        "popupTitle": { "en": "#373" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_373.jpg"
       },
       "id": 373
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.743577741874837", "67.93811722718301"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.7435777418", "67.9381172271"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#375",
-        "popupContent": "",
+        "popupTitle": { "en": "#375" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_375.jpg"
       },
       "id": 375
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.190161287411833", "67.45497106223213"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.1901612874", "67.4549710622"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#378",
-        "popupContent": "",
+        "popupTitle": { "en": "#378" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_378.jpg"
       },
       "id": 378
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.171817553872213", "65.85038234234548"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.1718175538", "65.8503823423"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#379",
-        "popupContent": "",
+        "popupTitle": { "en": "#379" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_379.jpg"
       },
       "id": 379
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.334850817502396", "64.94997358039159"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.3348508175", "64.9499735803"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#380",
-        "popupContent": "",
+        "popupTitle": { "en": "#380" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_380.jpg"
       },
       "id": 380
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-29.39214080427072", "68.0259906517819"] },
+      "geometry": { "type": "Point", "coordinates": ["-29.3921408042", "68.0259906517"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#381",
-        "popupContent": "",
+        "popupTitle": { "en": "#381" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_381.jpg"
       },
       "id": 381
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.136401598360628", "67.82833994793836"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.1364015983", "67.8283399479"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#387",
-        "popupContent": "",
+        "popupTitle": { "en": "#387" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_387.jpg"
       },
       "id": 387
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.959963423444727", "67.79539816396445"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.9599634234", "67.7953981639"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#388",
-        "popupContent": "",
+        "popupTitle": { "en": "#388" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_388.jpg"
       },
       "id": 388
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.43859747723961", "67.13637901354117"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.4385974772", "67.1363790135"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#390",
-        "popupContent": "",
+        "popupTitle": { "en": "#390" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_390.jpg"
       },
       "id": 390
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.42740540312975", "65.15987197510582"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.4274054031", "65.1598719751"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#392",
-        "popupContent": "",
+        "popupTitle": { "en": "#392" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_392.jpg"
       },
       "id": 392
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.015029443943256", "67.87274393780045"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.0150294439", "67.8727439378"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#399",
-        "popupContent": "",
+        "popupTitle": { "en": "#399" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_399.jpg"
       },
       "id": 399
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.076528303229413", "41.978438691471545"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.0765283032", "41.9784386914"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#40",
-        "popupContent": "",
+        "popupTitle": { "en": "#40" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_40.jpg"
       },
       "id": 40
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.0594721595678", "67.45548134079742"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.0594721595", "67.4554813407"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#400",
-        "popupContent": "",
+        "popupTitle": { "en": "#400" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_400.jpg"
       },
       "id": 400
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-37.738290441217764", "66.8295874452929"] },
+      "geometry": { "type": "Point", "coordinates": ["-37.7382904412", "66.8295874452"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#405",
-        "popupContent": "",
+        "popupTitle": { "en": "#405" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_405.jpg"
       },
       "id": 405
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.47510476186177", "42.01138047544548"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4751047618", "42.0113804754"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#41",
-        "popupContent": "",
+        "popupTitle": { "en": "#41" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_41.jpg"
       },
       "id": 41
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-16.63683751053136", "70.5863383173403"] },
+      "geometry": { "type": "Point", "coordinates": ["-16.6368375105", "70.5863383173"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#410",
-        "popupContent": "",
+        "popupTitle": { "en": "#410" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_410.jpg"
       },
       "id": 410
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-16.973560283791397", "71.75028135108558"] },
+      "geometry": { "type": "Point", "coordinates": ["-16.9735602837", "71.7502813510"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#412",
-        "popupContent": "",
+        "popupTitle": { "en": "#412" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_412.jpg"
       },
       "id": 412
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.032381127736063", "72.11329459003966"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.0323811277", "72.1132945900"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#421",
-        "popupContent": "",
+        "popupTitle": { "en": "#421" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_421.jpg"
       },
       "id": 421
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.871921724814506", "69.70854435994333"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.8719217248", "69.7085443599"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#425",
-        "popupContent": "",
+        "popupTitle": { "en": "#425" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_425.jpg"
       },
       "id": 425
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.07890431042373", "69.30226235759831"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.0789043104", "69.3022623575"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#426",
-        "popupContent": "",
+        "popupTitle": { "en": "#426" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_426.jpg"
       },
       "id": 426
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.445120826383707", "69.80736971186509"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.4451208263", "69.8073697118"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#427",
-        "popupContent": "",
+        "popupTitle": { "en": "#427" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_427.jpg"
       },
       "id": 427
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.427036495114635", "68.64342667811987"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.4270364951", "68.6434266781"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#429",
-        "popupContent": "",
+        "popupTitle": { "en": "#429" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_429.jpg"
       },
       "id": 429
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.080985468141993", "71.21288582808579"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.0809854681", "71.2128858280"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#430",
-        "popupContent": "",
+        "popupTitle": { "en": "#430" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_430.jpg"
       },
       "id": 430
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.671698279255132", "70.51012776997547"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.6716982792", "70.5101277699"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#433",
-        "popupContent": "",
+        "popupTitle": { "en": "#433" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_433.jpg"
       },
       "id": 433
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-25.030768579266326", "70.8724873936886"] },
+      "geometry": { "type": "Point", "coordinates": ["-25.0307685792", "70.8724873936"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#435",
-        "popupContent": "",
+        "popupTitle": { "en": "#435" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_435.jpg"
       },
       "id": 435
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-25.06064396253071", "68.9179415445692"] },
+      "geometry": { "type": "Point", "coordinates": ["-25.0606439625", "68.9179415445"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#436",
-        "popupContent": "",
+        "popupTitle": { "en": "#436" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_436.jpg"
       },
       "id": 436
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.348164224994964", "70.8724873936886"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.3481642249", "70.8724873936"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#439",
-        "popupContent": "",
+        "popupTitle": { "en": "#439" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_439.jpg"
       },
       "id": 439
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.849424579568037", "70.43326360736961"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.8494245795", "70.4332636073"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#440",
-        "popupContent": "",
+        "popupTitle": { "en": "#440" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_440.jpg"
       },
       "id": 440
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.12368834684826", "70.77366204176684"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.1236883468", "70.7736620417"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#441",
-        "popupContent": "",
+        "popupTitle": { "en": "#441" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_441.jpg"
       },
       "id": 441
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.4460661889636", "70.56503074326531"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.4460661889", "70.5650307432"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#443",
-        "popupContent": "",
+        "popupTitle": { "en": "#443" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_443.jpg"
       },
       "id": 443
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.042141356603466", "68.54364957067177"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.0421413566", "68.5436495706"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#447",
-        "popupContent": "",
+        "popupTitle": { "en": "#447" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_447.jpg"
       },
       "id": 447
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-15.133201072940054", "42.428643072448516"] },
+      "geometry": { "type": "Point", "coordinates": ["-15.1332010729", "42.4286430724"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#45",
-        "popupContent": "",
+        "popupTitle": { "en": "#45" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_45.jpg"
       },
       "id": 45
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.58243851658078", "72.00253688793363"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.5824385165", "72.0025368879"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#450",
-        "popupContent": "",
+        "popupTitle": { "en": "#450" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_450.jpg"
       },
       "id": 450
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-38.46297421863267", "70.20318139811745"] },
+      "geometry": { "type": "Point", "coordinates": ["-38.4629742186", "70.2031813981"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#459",
-        "popupContent": "",
+        "popupTitle": { "en": "#459" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_459.jpg"
       },
       "id": 459
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.632588427324656", "76.03637695312501"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.6325884273", "76.0363769531"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#467",
-        "popupContent": "",
+        "popupTitle": { "en": "#467" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_467.jpg"
       },
       "id": 467
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.664307318944186", "42.264174958193955"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.6643073189", "42.2641749581"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#47",
-        "popupContent": "",
+        "popupTitle": { "en": "#47" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_47.jpg"
       },
       "id": 47
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-36.49924184775611", "73.83911132812501"] },
+      "geometry": { "type": "Point", "coordinates": ["-36.4992418477", "73.8391113281"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#471",
-        "popupContent": "",
+        "popupTitle": { "en": "#471" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_471.jpg"
       },
       "id": 471
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-25.055745117015306", "47.7685546875"] },
+      "geometry": { "type": "Point", "coordinates": ["-25.0557451170", "47.7685546875"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#475",
-        "popupContent": "",
+        "popupTitle": { "en": "#475" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_475.jpg"
       },
       "id": 475
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.70012955398594", "65.68725585937501"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.7001295539", "65.6872558593"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#478",
-        "popupContent": "",
+        "popupTitle": { "en": "#478" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_478.jpg"
       },
       "id": 478
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.786734541988892", "48.32885742187501"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.7867345419", "48.3288574218"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#479",
-        "popupContent": "",
+        "popupTitle": { "en": "#479" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_479.jpg"
       },
       "id": 479
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.964203747387167", "42.49476744601144"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.9642037473", "42.4947674460"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#48",
-        "popupContent": "",
+        "popupTitle": { "en": "#48" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_48.jpg"
       },
       "id": 48
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.182779056431826", "69.33471679687501"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.1827790564", "69.3347167968"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#482",
-        "popupContent": "",
+        "popupTitle": { "en": "#482" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_482.jpg"
       },
       "id": 482
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.51860780892289", "61.792764989257286"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.5186078089", "61.7927649892"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#484",
-        "popupContent": "",
+        "popupTitle": { "en": "#484" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_484.jpg"
       },
       "id": 484
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-18.688403399935062", "42.68143755519699"] },
+      "geometry": { "type": "Point", "coordinates": ["-18.6884033999", "42.6814375551"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#49",
-        "popupContent": "",
+        "popupTitle": { "en": "#49" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_49.jpg"
       },
       "id": 49
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-15.33716713155869", "42.528076171875"] },
+      "geometry": { "type": "Point", "coordinates": ["-15.3371671315", "42.5280761718"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#490",
-        "popupContent": "",
+        "popupTitle": { "en": "#490" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_490.jpg"
       },
       "id": 490
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-33.3488847922017", "69.67529296875001"] },
+      "geometry": { "type": "Point", "coordinates": ["-33.3488847922", "69.6752929687"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#491",
-        "popupContent": "",
+        "popupTitle": { "en": "#491" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_491.jpg"
       },
       "id": 491
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.045794944762697", "43.656869056219584"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.0457949447", "43.6568690562"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#492",
-        "popupContent": "",
+        "popupTitle": { "en": "#492" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_492.jpg"
       },
       "id": 492
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.627525316067366", "79.4586882113942"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.6275253160", "79.4586882113"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#494",
-        "popupContent": "",
+        "popupTitle": { "en": "#494" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_494.jpg"
       },
       "id": 494
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.58127520828512", "79.93097214905589"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.5812752082", "79.9309721490"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#495",
-        "popupContent": "",
+        "popupTitle": { "en": "#495" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_495.jpg"
       },
       "id": 495
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.280249001178266", "62.47248657899814"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.2802490011", "62.4724865789"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#499",
-        "popupContent": "",
+        "popupTitle": { "en": "#499" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_499.jpg"
       },
       "id": 499
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.579566952162295", "38.409054623052555"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.5795669521", "38.4090546230"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#5",
-        "popupContent": "",
+        "popupTitle": { "en": "#5" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_5.jpg"
       },
       "id": 5
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-26.252195093183712", "66.17355123855839"] },
+      "geometry": { "type": "Point", "coordinates": ["-26.2521950931", "66.1735512385"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#501",
-        "popupContent": "",
+        "popupTitle": { "en": "#501" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_501.jpg"
       },
       "id": 501
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.80344751670639", "66.2792954757422"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.8034475167", "66.2792954757"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#502",
-        "popupContent": "",
+        "popupTitle": { "en": "#502" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_502.jpg"
       },
       "id": 502
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.394310841932068", "65.81799488546798"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.3943108419", "65.8179948854"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#503",
-        "popupContent": "",
+        "popupTitle": { "en": "#503" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_503.jpg"
       },
       "id": 503
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.789946665221127", "62.51749899553"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.7899466652", "62.5174989955"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#504",
-        "popupContent": "",
+        "popupTitle": { "en": "#504" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_504.jpg"
       },
       "id": 504
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-34.47881937844878", "67.59664438072322"] },
+      "geometry": { "type": "Point", "coordinates": ["-34.4788193784", "67.5966443807"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#508",
-        "popupContent": "",
+        "popupTitle": { "en": "#508" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_508.jpg"
       },
       "id": 508
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.944475663813154", "42.76966645475153"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.9444756638", "42.7696664547"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#51",
-        "popupContent": "",
+        "popupTitle": { "en": "#51" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_51.jpg"
       },
       "id": 51
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-37.60337039365333", "72.29751706256506"] },
+      "geometry": { "type": "Point", "coordinates": ["-37.6033703936", "72.2975170625"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#510",
-        "popupContent": "",
+        "popupTitle": { "en": "#510" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_510.jpg"
       },
       "id": 510
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-32.58471631931175", "58.833398198004076"] },
+      "geometry": { "type": "Point", "coordinates": ["-32.5847163193", "58.8333981980"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#512",
-        "popupContent": "",
+        "popupTitle": { "en": "#512" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_512.jpg"
       },
       "id": 512
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.738977271433978", "52.80354048227706"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.7389772714", "52.8035404822"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#513",
-        "popupContent": "",
+        "popupTitle": { "en": "#513" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_513.jpg"
       },
       "id": 513
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.20031868945243", "50.68924611018698"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.2003186894", "50.6892461101"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#514",
-        "popupContent": "",
+        "popupTitle": { "en": "#514" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_514.jpg"
       },
       "id": 514
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-27.385236675413793", "45.16462237428408"] },
+      "geometry": { "type": "Point", "coordinates": ["-27.3852366754", "45.1646223742"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#515",
-        "popupContent": "",
+        "popupTitle": { "en": "#515" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_515.jpg"
       },
       "id": 515
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.99493350454066", "51.15054670046115"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.9949335045", "51.1505467004"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#517",
-        "popupContent": "",
+        "popupTitle": { "en": "#517" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_517.jpg"
       },
       "id": 517
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.351908685458877", "42.7806470494095"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.3519086854", "42.7806470494"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#52",
-        "popupContent": "",
+        "popupTitle": { "en": "#52" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_52.jpg"
       },
       "id": 52
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-30.822063696500962", "63.35815429687501"] },
+      "geometry": { "type": "Point", "coordinates": ["-30.8220636965", "63.3581542968"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#523",
-        "popupContent": "",
+        "popupTitle": { "en": "#523" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_523.jpg"
       },
       "id": 523
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-31.690781806136822", "51.45446777343751"] },
+      "geometry": { "type": "Point", "coordinates": ["-31.6907818061", "51.4544677734"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#525",
-        "popupContent": "",
+        "popupTitle": { "en": "#525" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_525.jpg"
       },
       "id": 525
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.50240745949774", "39.06738281250001"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.5024074594", "39.0673828125"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#526",
-        "popupContent": "",
+        "popupTitle": { "en": "#526" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_526.jpg"
       },
       "id": 526
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.358419176400297", "63.63281250000001"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.3584191764", "63.6328125000"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#527",
-        "popupContent": "",
+        "popupTitle": { "en": "#527" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_527.jpg"
       },
       "id": 527
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-24.731864277701714", "46.29089355468751"] },
+      "geometry": { "type": "Point", "coordinates": ["-24.7318642777", "46.2908935546"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#530",
-        "popupContent": "",
+        "popupTitle": { "en": "#530" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_530.jpg"
       },
       "id": 530
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-22.141605555548843", "67.73455770683945"] },
+      "geometry": { "type": "Point", "coordinates": ["-22.1416055555", "67.7345577068"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#535",
-        "popupContent": "",
+        "popupTitle": { "en": "#535" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_535.jpg"
       },
       "id": 535
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.99518355034844", "51.28821974202197"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.9951835503", "51.2882197420"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#536",
-        "popupContent": "",
+        "popupTitle": { "en": "#536" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_536.jpg"
       },
       "id": 536
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-28.023967068668608", "47.89891610147049"] },
+      "geometry": { "type": "Point", "coordinates": ["-28.0239670686", "47.8989161014"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#538",
-        "popupContent": "",
+        "popupTitle": { "en": "#538" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_538.jpg"
       },
       "id": 538
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.767214434192283", "42.86849180667329"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.7672144341", "42.8684918066"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#56",
-        "popupContent": "",
+        "popupTitle": { "en": "#56" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_56.jpg"
       },
       "id": 56
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.530639035725457", "43.09908429449073"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.5306390357", "43.0990842944"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#57",
-        "popupContent": "",
+        "popupTitle": { "en": "#57" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_57.jpg"
       },
       "id": 57
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.6871348095689", "38.69484674729834"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.6871348095", "38.6948467472"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#6",
-        "popupContent": "",
+        "popupTitle": { "en": "#6" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_6.jpg"
       },
       "id": 6
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.118332941531897", "43.56026927012564"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.1183329415", "43.5602692701"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#61",
-        "popupContent": "",
+        "popupTitle": { "en": "#61" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_61.jpg"
       },
       "id": 61
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.200881930676303", "43.472424512861856"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.2008819306", "43.4724245128"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#62",
-        "popupContent": "",
+        "popupTitle": { "en": "#62" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_62.jpg"
       },
       "id": 62
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.569887622570462", "43.73595878465323"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.5698876225", "43.7359587846"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#65",
-        "popupContent": "",
+        "popupTitle": { "en": "#65" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_65.jpg"
       },
       "id": 65
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.1424656463039", "44.032973786318955"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.1424656463", "44.0329737863"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#66",
-        "popupContent": "",
+        "popupTitle": { "en": "#66" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_66.jpg"
       },
       "id": 66
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-15.917442535517004", "44.241605084820485"] },
+      "geometry": { "type": "Point", "coordinates": ["-15.9174425355", "44.2416050848"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#67",
-        "popupContent": "",
+        "popupTitle": { "en": "#67" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_67.jpg"
       },
       "id": 67
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.281361628976864", "44.26361214187265"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.2813616289", "44.2636121418"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#68",
-        "popupContent": "",
+        "popupTitle": { "en": "#68" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_68.jpg"
       },
       "id": 68
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-21.32247131060163", "39.045752852884156"] },
+      "geometry": { "type": "Point", "coordinates": ["-21.3224713106", "39.0457528528"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#7",
-        "popupContent": "",
+        "popupTitle": { "en": "#7" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_7.jpg"
       },
       "id": 7
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.898921296988348", "45.03235123687029"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.8989212969", "45.0323512368"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#82",
-        "popupContent": "",
+        "popupTitle": { "en": "#82" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_82.jpg"
       },
       "id": 82
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-20.91726579529455", "45.109616742167894"] },
+      "geometry": { "type": "Point", "coordinates": ["-20.9172657952", "45.1096167421"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#84",
-        "popupContent": "",
+        "popupTitle": { "en": "#84" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_84.jpg"
       },
       "id": 84
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.43656449566367", "45.812586938558205"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.4365644956", "45.8125869385"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#87",
-        "popupContent": "",
+        "popupTitle": { "en": "#87" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_87.jpg"
       },
       "id": 87
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-17.656656957150165", "46.471422618036655"] },
+      "geometry": { "type": "Point", "coordinates": ["-17.6566569571", "46.4714226180"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#88",
-        "popupContent": "",
+        "popupTitle": { "en": "#88" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_88.jpg"
       },
       "id": 88
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.146453968137894", "39.16653939412188"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.1464539681", "39.1665393941"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#9",
-        "popupContent": "",
+        "popupTitle": { "en": "#9" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_9.jpg"
       },
       "id": 9
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-19.064994653338587", "47.30594781204269"] },
+      "geometry": { "type": "Point", "coordinates": ["-19.0649946533", "47.3059478120"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#90",
-        "popupContent": "",
+        "popupTitle": { "en": "#90" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_90.jpg"
       },
       "id": 90
     },
     {
-      "geometry": { "type": "Point", "coordinates": ["-23.040627258722836", "45.94524276184291"] },
+      "geometry": { "type": "Point", "coordinates": ["-23.0406272587", "45.9452427618"] },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#97",
-        "popupContent": "",
+        "popupTitle": { "en": "#97" },
+        "popupContent": { "en": "" },
         "popupImage": "mondstadt/common-chest/26_97.jpg"
       },
       "id": 97

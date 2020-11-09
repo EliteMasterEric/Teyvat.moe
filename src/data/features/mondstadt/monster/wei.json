@@ -1,16 +1,16 @@
 {
-  "name": "Wei",
+  "name": {
+    "en": "Wei"
+  },
+  "enabled": false,
   "cluster": false,
   "icons": {
     "filter": "wei",
     "base": {
-      "marker": true,
-      "key": "wei"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "wei",
-      "done": true
+      "marker": true
     }
   },
   "data": [
@@ -22,8 +22,12 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#1: Windrise Tree",
-        "popupContent": "Wei can appear at the base of the tree by the Statue of the Seven at Windrise.",
+        "popupTitle": {
+          "en": "#1: Windrise Tree"
+        },
+        "popupContent": {
+          "en": "Wei can appear at the base of the tree by the Statue of the Seven at Windrise."
+        },
         "popupImage": "mondstadt/wei/1.png"
       }
     },
@@ -35,8 +39,12 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#2: Cape Oath",
-        "popupContent": "Wei can appear sitting at the edge of the cliff at Cape Oath, north of the portal to Musk Reef.",
+        "popupTitle": {
+          "en": "#2: Cape Oath"
+        },
+        "popupContent": {
+          "en": "Wei can appear sitting at the edge of the cliff at Cape Oath, north of the portal to Musk Reef."
+        },
         "popupImage": "mondstadt/wei/2.png"
       }
     },
@@ -48,21 +56,29 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#3: Stormterror's Lair",
-        "popupContent": "Wei can appear at the middle of the southwest bridge at Stormterror's Lair.",
+        "popupTitle": {
+          "en": "#3: Stormterror's Lair"
+        },
+        "popupContent": {
+          "en": "Wei can appear at the middle of the southwest bridge at Stormterror's Lair."
+        },
         "popupImage": "mondstadt/wei/3.png"
       }
     },
     {
-      "id": 1,
+      "id": 7,
       "geometry": {
         "type": "Point",
         "coordinates": [-29.22889003019423, 49.59777832031251]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": "#7: Wolfendom",
-        "popupContent": "Wei can appear near Andrius' arena at Wolfendom.",
+        "popupTitle": {
+          "en": "#7: Wolfendom"
+        },
+        "popupContent": {
+          "en": "Wei can appear near Andrius' arena at Wolfendom."
+        },
         "popupImage": "mondstadt/wei/7.png"
       }
     }

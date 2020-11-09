@@ -1,16 +1,13 @@
 {
-  "name": "Seelie",
+  "name": { "en": "Seelie" },
   "cluster": false,
   "icons": {
     "filter": "seelie",
     "base": {
-      "marker": true,
-      "key": "seelie"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "seelie",
-      "done": true
+      "marker": true
     }
   },
   "data": []

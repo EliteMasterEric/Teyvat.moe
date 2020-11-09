@@ -1,16 +1,13 @@
 {
-  "name": "Anemo Hypostasis",
+  "name": { "en": "Anemo Hypostasis" },
   "cluster": false,
   "icons": {
     "filter": "anemo-hypostasis",
     "base": {
-      "marker": true,
-      "key": "anemo-hypostasis"
+      "marker": true
     },
     "done": {
-      "marker": true,
-      "key": "anemo-hypostasis",
-      "done": true
+      "marker": true
     }
   },
   "data": []
