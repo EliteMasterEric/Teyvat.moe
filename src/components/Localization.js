@@ -140,7 +140,6 @@ export const formatCollator = () => {
  * @returns {String} A date string.
  */
 export const displayUnixTimestamp = (timestamp) => {
-  console.log(timestamp);
   const dateTime = new Date(timestamp * 1000);
   return formatDateTime(dateTime);
 };

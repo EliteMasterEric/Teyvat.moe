@@ -1,5 +1,4 @@
 import hash from 'object-hash';
-import { formatDateTime } from './Localization';
 
 export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
