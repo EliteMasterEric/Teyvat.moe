@@ -2,7 +2,7 @@
 name: Chest change
 about: Contribute a change to chest data
 title: "[CHEST] Chest Change"
-labels: ''
+labels: mapping
 assignees: ''
 
 ---
