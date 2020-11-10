@@ -85,6 +85,7 @@ const MAP_FEATURE_SCHEMA = Joi.object({
   name: localizedField.required(),
   cluster: Joi.boolean(),
   enabled: Joi.boolean().optional().default(true),
+  respawn: Joi.number().integer().positive().optional().default(-1),
   icons: {
     filter: Joi.string()
       .regex(/[-a-zA-Z0-9]+/)

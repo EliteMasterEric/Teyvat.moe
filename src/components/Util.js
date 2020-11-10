@@ -59,3 +59,10 @@ export const openURLInWindow = (url) => {
 export const getUnixTimestamp = () => {
   return Math.floor(Date.now() / 1000);
 };
+
+/**
+ * Reload the browser window.
+ */
+export const reloadWindow = () => {
+  window.location.reload();
+};

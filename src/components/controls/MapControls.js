@@ -18,14 +18,14 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
   return (
     <div className={clsx('map-controls-tab-container')}>
       <div
-        onClick={() => setTab('about')}
-        onKeyDown={() => setTab('about')}
+        onClick={() => setTab('help')}
+        onKeyDown={() => setTab('help')}
         role="button"
-        aria-label="about"
+        aria-label={t('tab-about')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
-          tab === 'about' ? 'map-controls-tab-active' : '',
+          tab === 'help' || tab === 'summary' ? 'map-controls-tab-active' : '',
           'noselect'
         )}
       >
@@ -37,7 +37,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
             onClick={() => setTab('features')}
             onKeyDown={() => setTab('features')}
             role="button"
-            aria-label="Features"
+            aria-label={t('tab-features')}
             tabIndex={0}
             className={clsx(
               'map-controls-tab',
@@ -51,7 +51,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
             onClick={() => setTab('routes')}
             onKeyDown={() => setTab('routes')}
             role="button"
-            aria-label="Routes"
+            aria-label={t('tab-routes')}
             tabIndex={0}
             className={clsx(
               'map-controls-tab',
@@ -68,7 +68,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
           onClick={() => setTab('elements')}
           onKeyDown={() => setTab('elements')}
           role="button"
-          aria-label="Markers"
+          aria-label={t('tab-elements')}
           tabIndex={0}
           className={clsx(
             'map-controls-tab',
@@ -84,7 +84,7 @@ const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
         onClick={() => setTab('options')}
         onKeyDown={() => setTab('options')}
         role="button"
-        aria-label="Options"
+        aria-label={t('tab-options')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -103,7 +103,7 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
   const [currentRegion, setCurrentRegion] = React.useState('mondstadt');
   const [currentCategory, setCurrentCategory] = React.useState('special');
 
-  const [tab, setTab] = React.useState('features');
+  const [tab, setTab] = React.useState('help');
 
   const editorActive = mapPreferences?.editor?.enabled;
 
@@ -123,7 +123,14 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
         />
         <MapControlTabs mapPreferences={mapPreferences} tab={tab} setTab={setTab} />
 
-        {tab === 'about' ? <MapControlAbout /> : null}
+        {tab === 'help' || tab === 'summary' ? (
+          <MapControlAbout
+            tab={tab}
+            setTab={setTab}
+            mapPreferences={mapPreferences}
+            setMapPreferences={setMapPreferences}
+          />
+        ) : null}
 
         {tab === 'features' || tab === 'routes' ? (
           <MapControlCategories

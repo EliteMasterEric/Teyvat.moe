@@ -36,7 +36,7 @@ f('currentDate', {
 
 Below is a description of the localization keys, as needed.
 
-### about-g
+### about-translator-attribution
 
 This string is blank on the English version, but is displayed at the bottom of the 'About' tab. Use this for translation attribution.
 

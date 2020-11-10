@@ -22,6 +22,7 @@ Below is documentation on the data format for features:
   },
   "enabled": true, // Specify false to hide this feature from the Map controls. Defaults to true if not specified.
   "cluster": false, // If this is true, markers that are very close will be combined into a single marker.
+  "respawn": 259200, // If this feature respawns on a regular timer, specify it here in seconds. This is used for the "Clear Expired" button.
   "icons": {
     "filter": "slime",
     "base": {

@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Popup from 'reactjs-popup';
 
 import './ClearMapDataPopup.css';
+import { t } from '../Localization';
 
 const ClearMapDataPopup = ({ trigger, onConfirm }) => {
   // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
@@ -17,9 +18,11 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
     >
       {(closePopup) => (
         <div className={clsx('popup-clear-map-data-container')}>
-          <span className={clsx('popup-clear-map-data-header')}>Clear Map Data?</span>
+          <span className={clsx('popup-clear-map-data-header')}>
+            {t('popup-clear-map-data-title')}
+          </span>
           <span className={clsx('popup-clear-map-data-content')}>
-            Are you sure? If you clear the map preferences data, it cannot be recovered.
+            {t('popup-clear-map-data-content')}
           </span>
           <div className={clsx('popup-clear-map-data-button-container')}>
             <div
@@ -30,7 +33,7 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
               onKeyDown={closePopup}
               className={clsx('popup-clear-map-data-button', 'popup-clear-map-data-button-cancel')}
             >
-              Cancel
+              {t('cancel')}
             </div>
             <div
               role="button"
@@ -46,7 +49,7 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
               }}
               className={clsx('popup-clear-map-data-button', 'popup-clear-map-data-button-confirm')}
             >
-              Confirm
+              {t('confirm')}
             </div>
           </div>
         </div>

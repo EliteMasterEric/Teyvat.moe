@@ -28,3 +28,11 @@ First major release of the rework, featuring a new interface developed in React.
   - @Lapis256: Added Mondstadt and Liyue Statues of the Seven.
   - @EliteMasterEric: Added Wei, and stubs for Geo Sigils and Crates.
   - @EliteMasterEric: Imported most chest data from Yuanshen.site.
+
+# 0.4.0
+
+- Added 'respawn' parameter to feature data JSON to track respawn time.
+- Added new Summary subtab under the About tab.
+  - This tab displays a progress bar for all features which are currently displayed and have at least one marker complete.
+  - It includes an options menu, allowing users to pan to a random uncompleted marker, clear all markers of the feature, or clear the markers which are expired (if the respawn time is configured for that feature).
+- Added missing localization for popups.

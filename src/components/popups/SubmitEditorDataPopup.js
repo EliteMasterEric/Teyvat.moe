@@ -8,6 +8,7 @@ import ReactSwitch from 'react-switch';
 
 import './SubmitEditorDataPopup.css';
 import { MapCategories, MapRegions } from '../MapFeatures';
+import { t } from '../Localization';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
@@ -64,12 +65,12 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
     >
       {(closePopup) => (
         <div className={clsx('popup-submit-editor-data-container')}>
-          <span className={clsx('popup-submit-editor-data-header')}>Submit Editor Data</span>
+          <span className={clsx('popup-submit-editor-data-header')}>
+            {t('popup-submit-editor-data-title')}
+          </span>
           <span className={clsx('popup-submit-editor-data-form-content')}>
-            Fill in the following form, then click &quot;Confirm&quot; below to be redirected to
-            GitHub.
             <div className={clsx('popup-submit-editor-data-field-container', 'margin-bottom')}>
-              <span>Feature Name</span>
+              <span>{t('feature-name')}</span>
               <input
                 type="text"
                 value={submissionName}
@@ -77,7 +78,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>Category</span>
+              <span>{t('category')}</span>
               <Select
                 className={clsx('popup-submit-editor-data-field-dropdown')}
                 options={categoryOptions}
@@ -86,7 +87,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>Region</span>
+              <span>{t('region')}</span>
               <Select
                 className={clsx('popup-submit-editor-data-field-dropdown')}
                 options={regionOptions}
@@ -95,24 +96,23 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <span className={clsx('popup-submit-editor-data-field-subtitle', 'margin-bottom')}>
-              A feature can only be in one category and one region.
+              {t('popup-clear-map-data-subtitle-a')}
             </span>
             <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>Cluster Markers?</span>
+              <span>{t('popup-submit-editor-data-cluster-markers')}</span>
               <ReactSwitch
                 onChange={(value) => setClusterMarkers(value)}
                 checked={clusterMarkers}
               />
             </div>
             <span className={clsx('popup-submit-editor-data-field-subtitle')}>
-              Enable marker clustering for common features like Carrots, and disable for uncommon
-              ones like Statues.
+              {t('popup-clear-map-data-subtitle-b')}
             </span>
           </span>
           <div className={clsx('popup-submit-editor-data-button-container')}>
             <div
               role="button"
-              aria-label="Cancel Clear Data"
+              aria-label={t('cancel')}
               tabIndex={0}
               onClick={closePopup}
               className={clsx(
@@ -120,11 +120,11 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                 'popup-submit-editor-data-button-cancel'
               )}
             >
-              Cancel
+              {t('cancel')}
             </div>
             <div
               role="button"
-              aria-label="Confirm Clear Data"
+              aria-label={t('confirm')}
               tabIndex={0}
               onClick={onClickConfirm(closePopup)}
               className={clsx(
@@ -134,7 +134,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                   : 'popup-submit-editor-data-button-confirm-disabled'
               )}
             >
-              Confirm
+              {t('confirm')}
             </div>
           </div>
         </div>

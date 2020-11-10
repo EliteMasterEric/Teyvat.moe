@@ -5,7 +5,7 @@ import React from 'react';
 import _ from 'lodash';
 
 import localStorage from './local-storage';
-import { toBase64, fromBase64 } from './Util';
+import { toBase64, fromBase64, reloadWindow } from './Util';
 import { DEFAULT_ZOOM, MAP_CENTER } from './map/EditorMap';
 
 const LOCAL_STORAGE_KEY = 'genshinmap-preferences';
@@ -52,7 +52,8 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   completed: {
     features: {
-      anemoculus: [],
+      mondstadtAnemoculus: {},
+      liyueGeoculus: {},
     },
   },
 
@@ -141,6 +142,7 @@ export const useStateStored = (
  */
 export const resetLocalStorage = (localStorageKey = LOCAL_STORAGE_KEY) => {
   localStorage.set(localStorageKey, DEFAULT_MAP_PREFERENCES);
+  reloadWindow();
 };
 
 export const fetchLegacyData = (excludedKeys = [LOCAL_STORAGE_KEY]) => {

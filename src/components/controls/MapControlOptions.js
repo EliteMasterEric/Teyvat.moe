@@ -63,27 +63,27 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-export-new')}</span>
           <ExportDataPopup
-            title="Export Data"
-            message="Below is exported data for the new version of GenshinMap."
+            title={t('option-export-new')}
+            message={t('popup-export-new-content')}
             fetchData={exportDataJSON}
-            trigger={<button type="button">Export</button>}
+            trigger={<button type="button">{t('export')}</button>}
             onConfirm={resetLocalStorage}
           />
         </div>
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-clear-data')}</span>
           <ClearMapDataPopup
-            trigger={<button type="button">Clear</button>}
+            trigger={<button type="button">{t('clear')}</button>}
             onConfirm={resetLocalStorage}
           />
         </div>
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-export-old')}</span>
           <ExportDataPopup
-            title="Export Legacy Data"
-            message="Below is exported data for the old version of GenshinMap, compatible with other sites.."
+            title={t('option-export-old')}
+            message={t('popup-export-old-content')}
             fetchData={exportLegacyDataJSON}
-            trigger={<button type="button">Export</button>}
+            trigger={<button type="button">{t('export')}</button>}
             onConfirm={resetLocalStorage}
           />
         </div>

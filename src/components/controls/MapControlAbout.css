@@ -1,4 +1,37 @@
-.map-controls-about-container {
+.map-controls-about-help-container {
+  border: 16px solid transparent;
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+
+  box-sizing: border-box;
+
+  width: auto;
+  min-height: 0; /* Force to fit the parent. */
+
+  overflow-y: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.map-control-about-help-header {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+
+  margin: 0 0 16px 0;
+}
+
+.map-control-about-help-content {
+  width: 100%;
+  font-size: 16px;
+
+  margin: 0 0 8px 0;
+}
+
+.map-controls-about-tab-container {
   border: 16px solid transparent;
   border-image: url('../../images/controls/filter_container.png') 32 round;
 
@@ -12,20 +45,33 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
-.map-control-about-header {
+.map-controls-about-tab {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
   text-align: center;
-  width: 100%;
-  font-size: 24px;
 
-  margin: 0 0 16px 0;
+  cursor: pointer;
+
+  margin: 4px 4px 4px 4px;
+  padding: 8px 4px 8px 4px;
+
+  flex-grow: 1;
+
+  /*
+  Two tabs per row.
+  flex: 0 calc(50% - 8px);
+  */
+
+  color: #000;
+  background-color: #9e9e9e;
 }
 
-.map-control-about-content {
-  width: 100%;
-  font-size: 16px;
-
-  margin: 0 0 8px 0;
+.map-controls-about-tab-active,
+.map-controls-about-tab:hover {
+  background-color: #607d8b;
 }
