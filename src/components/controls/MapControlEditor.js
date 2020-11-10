@@ -7,7 +7,7 @@ import newGithubIssueUrl from 'new-github-issue-url';
 import ClearEditorDataPopup from '../popups/ClearEditorDataPopup';
 import SubmitEditorDataPopup from '../popups/SubmitEditorDataPopup';
 
-import { DEFAULT_MAP_PREFERENCES } from '../Preferences';
+import { DEFAULT_MAP_PREFERENCES } from '../preferences/DefaultPreferences';
 import { generatePrettyJSON, openURLInWindow } from '../Util';
 
 import './MapControlEditor.css';

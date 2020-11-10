@@ -19,7 +19,8 @@ export const toBase64 = (input) => {
  * @returns {String} The decoded string.
  */
 export const fromBase64 = (input) => {
-  return atob(input);
+  // Can't have newlines in it.
+  return atob(input.replace(/[ \t\r\n\f]/g, ''));
 };
 
 /**

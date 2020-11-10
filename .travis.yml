@@ -12,5 +12,6 @@ deploy:
   skip_cleanup: true
   github_token: $github_token
   local_dir: build
+  # Push the build artifacts to the gh-pages branch if the deployment is on 'master'.
   on:
     branch: master

@@ -256,11 +256,23 @@ export const RouteLayer = ({ mapPreferences, mapRoute }) => {
     return line;
   };
 
+  const onEachFeature = (route, layer) => {
+    const text = buildPopup(route);
+    if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+  };
+
   // If any of these values change, update the map.
   const hashValue = {
     mapRoute,
     options: mapPreferences?.options,
   };
 
-  return <GeoJSON key={hashObject(hashValue)} data={mapRoute.data} lineToLayer={lineToLayer} />;
+  return (
+    <GeoJSON
+      key={hashObject(hashValue)}
+      data={mapRoute.data}
+      lineToLayer={lineToLayer}
+      onEachFeature={onEachFeature}
+    />
+  );
 };
