@@ -27,6 +27,8 @@ export const DEFAULT_MAP_PREFERENCES = {
   options: {
     completedAlpha: 0.5, // Make 'Done' markers transparent.
     clusterMarkers: true,
+    worldBorderEnabled: true,
+    regionLabelsEnabled: true,
   },
 
   /**

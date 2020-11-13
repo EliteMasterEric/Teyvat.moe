@@ -1,10 +1,13 @@
 import _ from 'lodash';
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import clsx from 'clsx';
 
 import L from 'leaflet';
 // Its very presence changes the behavior of L.
 import 'leaflet-editable';
 import 'leaflet-textpath';
+import 'leaflet.pattern';
 
 import { GeoJSON } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
@@ -12,7 +15,7 @@ import { hashObject } from '../Util';
 
 import './MapLayer.css';
 import { createMapIcon } from '../MapFeaturesData';
-import { displayUnixTimestamp, f } from '../Localization';
+import { displayUnixTimestamp, f, localizeField } from '../Localization';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
@@ -54,6 +57,8 @@ export const lineTextPropertiesHighlight = {
 
 const buildPopup = (feature, completionTime = -1) => {
   let text = '';
+  if (!feature) return text;
+
   if (feature.properties.popupTitle)
     text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
 
@@ -69,6 +74,114 @@ const buildPopup = (feature, completionTime = -1) => {
     })}</span>`;
 
   return text;
+};
+
+const worldBorderData = require('../../data/core/world-border.json');
+
+/**
+ * Adds a striped pattern outside the world border.
+ * Looks great but TANKS performance.
+ */
+const worldBorderPattern = new L.StripePattern({
+  patternContentUnits: 'objectBoundingBox',
+  patternUnits: 'objectBoundingBox',
+
+  color: 'red',
+  opacity: 0.4,
+  spaceColor: 'red',
+  spaceOpacity: 0.2,
+
+  // Angle in degrees.
+  angle: 45,
+  // weight + spaceWeight = height
+  weight: 0.025,
+  spaceWeight: 0.025,
+  height: 0.05,
+});
+
+export const WorldBorderLayer = ({ mapRef }) => {
+  const zoomLevel = mapRef.current.leafletElement.getZoom();
+
+  const polygonToLayer = (geoJsonData, latLngs) => {
+    return new L.Polygon(latLngs, {
+      // fillPattern: worldBorderPattern,
+      stroke: false,
+      fillOpacity: 0.3,
+      color: 'red',
+    });
+  };
+
+  // Do once.
+  React.useEffect(() => {
+    worldBorderPattern.addTo(mapRef.current.leafletElement);
+  }, []);
+
+  return (
+    <GeoJSON
+      key={hashObject({ worldBorderData, zoomLevel })}
+      polygonToLayer={polygonToLayer}
+      data={worldBorderData.data}
+    />
+  );
+};
+
+const regionLabelData = require('../../data/core/map-labels.json');
+
+const RegionLabel = ({ featureData, zoomLevel }) => {
+  const name = localizeField(featureData?.properties?.label);
+  /**
+   * Dynamically style based on zoom level.
+   * Currently used to scale text, but if needed,
+   * a switch/case structure could be used for
+   * finer tuning.
+   */
+  const style = {
+    fontSize: `${zoomLevel * 0.25}em`,
+    '-webkit-text-stroke': `${zoomLevel * 0.125}px black`,
+    textStroke: `${zoomLevel * 0.125}px black`,
+    top: `-${zoomLevel * 2}px`,
+  };
+  return (
+    <h1 className={clsx('map-region-label-text')} style={style}>
+      {name}
+    </h1>
+  );
+};
+
+export const RegionLabelLayer = ({ mapRef }) => {
+  const [zoomLevel, storeZoomLevel] = React.useState(
+    mapRef?.current?.leafletElement?.getZoom() ?? 4
+  );
+
+  const pointToLayer = (featureData, latLng) => {
+    const html = ReactDOMServer.renderToString(
+      <RegionLabel featureData={featureData} zoomLevel={zoomLevel} />
+    );
+
+    return L.marker([latLng.lng, latLng.lat], {
+      icon: L.divIcon({
+        html,
+        className: 'map-region-label-marker',
+      }),
+    });
+  };
+
+  /**
+   * Update whenever the zoom level changes.
+   */
+  React.useEffect(() => {
+    mapRef.current.leafletElement.on('zoomend', () => {
+      storeZoomLevel(mapRef.current.leafletElement.getZoom());
+    });
+  }, [mapRef.current.leafletElement]);
+
+  return (
+    <GeoJSON
+      key={hashObject({ regionLabelData, zoomLevel })}
+      pointToLayer={pointToLayer}
+      data={regionLabelData.data}
+    />
+  );
 };
 
 export const EditorLayer = ({ mapRef, mapPreferences }) => {
@@ -121,7 +234,15 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
     // layer.on('dblclick', onDoubleClickFeature);
 
     // Build a popup.
-    const text = buildPopup(feature);
+    const translatedFeature = {
+      ...feature,
+      properties: {
+        ...feature.properties,
+        popupTitle: localizeField(feature?.properties?.popupTitle) ?? '',
+        popupContent: localizeField(feature?.properties?.popupContent) ?? '',
+      },
+    };
+    const text = buildPopup(translatedFeature);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 

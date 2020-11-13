@@ -55,3 +55,31 @@ First major release of the rework, featuring a new interface developed in React.
   - liyueBambooShoot
   - liyueGoldenLoach
 - Renamed Wei to [Unusual Hillichurl](https://genshin.mihoyo.com/en/news/detail/6526).
+
+# 0.4.10
+
+- Added world border graphic.
+  - The boundaries were drawn by hand so they may be slightly off, but not enough to matter.
+  - Added option to disable world border graphic.
+- Added world region labels for Mondstadt.
+  - Liyue labels in progress.
+  - Added option to disable world region labels.
+- Reworked the editor submission; the data is now put into your clipboard, and you have to paste it in.
+  - This is done to prevent a 411 error. There are limits to URL lengths but not to clipboard size (AFAIK).
+- Reworked translator rendering to allow simple, safe HTML from some keys.
+- Simplified the Help menu's text to include only one contribution link, and bolded it.
+- Re-enabled Wei (Mondstadt) in the Feature view.
+- Reworked the world map graphic generator to be much faster and create smaller images.
+  - Replaced the current world map graphic in `public/tiles`.
+- Added a WebP check to the Leaflet map, allowing for use of performant web images.
+- Added new world features (seeking contributions!):
+  - Magical Crystal Chunk (Mondstadt Ore)
+  - Magical Crystal Chunk (Liyue Ore)
+  - Loach Pearl (Liyue Nature)
+  - Bamboo Shoot (Liyue Nature)
+- Map contributions:
+  - @EliteMasterEric: Added several Magical Crystal Chunk locations for Mondstadt and Liyue.
+- Fixed the Bishu Plain Liyue Statue of the Seven rendering off the map.
+- Fixed a bug where the Submit Editor Data form had missing text in the dropdowns.
+- Fixed bug where panning far enough could display parallel universes.
+- Fixed ESLint issues preventing the map from building.

@@ -1,0 +1,75 @@
+{
+  "name": { "en": "Magical Crystal Chunk" },
+  "cluster": false,
+  "icons": {
+    "filter": "magical-crystal-chunk",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.08123240531224, 36.56250000000001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "Mt. Tianheng" },
+        "popupContent": {
+          "en": "This Rich Ore Reserve is located on Mt. Tianheng, near the teleporter."
+        },
+        "popupImage": "liyue/magical-crystal-chunk/tianheng-1.png"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.901101814728264, 57.12341308593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "Guyun Stone Pillars Boat" },
+        "popupContent": {
+          "en": "This Rich Ore Reserve is located at the Guyun Stone Pillars, on a boat to the west of the Domain."
+        },
+        "popupImage": "liyue/magical-crystal-chunk/guyun-1.png"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-54.52745749948722, 56.14562988281251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "Guyun Stone Pillars" },
+        "popupContent": {
+          "en": "This Rich Ore Reserve is located at a rock on the shoreline of Guyun Stone Pillars."
+        },
+        "popupImage": "liyue/magical-crystal-chunk/guyun-2.png"
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55.297883605105554, 57.13989257812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "Guyun Stone Pillars Island" },
+        "popupContent": {
+          "en": "This Rich Ore Reserve is located at a small island to the south of Guyun Stone Pillars."
+        },
+        "popupImage": "liyue/magical-crystal-chunk/guyun-3.png"
+      }
+    }
+  ]
+}

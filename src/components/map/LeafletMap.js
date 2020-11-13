@@ -2,8 +2,14 @@ import _ from 'lodash';
 import React from 'react';
 
 import { MapFeatures, MapRoutes } from '../MapFeatures';
-import { FeatureLayer, RouteLayer, EditorLayer } from './MapLayer';
-import EditorMap from './EditorMap';
+import {
+  FeatureLayer,
+  RouteLayer,
+  EditorLayer,
+  WorldBorderLayer,
+  RegionLabelLayer,
+} from './MapLayer';
+import EditorMap, { MAXIMUM_ZOOM, MINIMUM_ZOOM, MAP_BOUNDS, TILE_URL } from './EditorMap';
 
 import './LeafletMap.css';
 import { getUnixTimestamp } from '../Util';
@@ -109,6 +115,12 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
       setEditorData={setEditorData}
       editorEnabled={mapPreferences?.editor?.enabled}
     >
+      {mapPreferences?.options?.regionLabelsEnabled ?? true ? (
+        <RegionLabelLayer mapRef={mapRef} />
+      ) : null}
+      {mapPreferences?.options?.worldBorderEnabled ?? true ? (
+        <WorldBorderLayer mapRef={mapRef} />
+      ) : null}
       {mapPreferences?.editor?.enabled ? (
         <>
           <EditorLayer mapPreferences={mapPreferences} mapRef={mapRef} />

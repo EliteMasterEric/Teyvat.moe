@@ -60,7 +60,29 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
                 return { ...old, options: { ...old.options, clusterMarkers } };
               });
             }}
-            checked={mapPreferences?.options?.clusterMarkers}
+            checked={mapPreferences?.options?.clusterMarkers ?? true}
+          />
+        </div>
+        <div className={clsx('map-controls-option')}>
+          <span className={clsx('map-controls-option-label')}>{t('option-world-border')}</span>
+          <ReactSwitch
+            onChange={(worldBorderEnabled) => {
+              setMapPreferences((old) => {
+                return { ...old, options: { ...old.options, worldBorderEnabled } };
+              });
+            }}
+            checked={mapPreferences?.options?.worldBorderEnabled ?? true}
+          />
+        </div>
+        <div className={clsx('map-controls-option')}>
+          <span className={clsx('map-controls-option-label')}>{t('option-region-labels')}</span>
+          <ReactSwitch
+            onChange={(regionLabelsEnabled) => {
+              setMapPreferences((old) => {
+                return { ...old, options: { ...old.options, regionLabelsEnabled } };
+              });
+            }}
+            checked={mapPreferences?.options?.regionLabelsEnabled ?? true}
           />
         </div>
       </div>

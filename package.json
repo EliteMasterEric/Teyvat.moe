@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
     "joi": "^17.3.0",
     "leaflet": "github:MasterEric/Leaflet#dist",
@@ -40,6 +41,7 @@
     "leaflet-editable": "^1.2.0",
     "leaflet-textpath": "^1.2.3",
     "leaflet.markercluster": "^1.4.1",
+    "leaflet.pattern": "^0.1.0",
     "localized-strings": "^0.2.4",
     "lodash": "^4.17.20",
     "new-github-issue-url": "^0.2.1",
@@ -59,6 +61,7 @@
     "react-switch": "^5.0.1",
     "react-tooltip": "^4.2.10",
     "reactjs-popup": "^2.0.4",
+    "sanitize-html": "^2.1.2",
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {

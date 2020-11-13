@@ -24,6 +24,8 @@ Formatting is done like so:
 }
 ```
 
+In code, certain strings in brackets will be replaced with their intended values, like so:
+
 ```
 f('currentDate', {
   month: t('january'),
@@ -42,9 +44,9 @@ This string is blank on the English version, but is displayed at the bottom of t
 
 Example: `French localization provided by CoolBoy83 and TheDarkestOne.` (fake names and obviously not in French, but you get the idea)
 
-### about-e / about-f
+### about-a / about-b / about-c / about-d / about-e / about-f
 
-These two strings contain a {link} placeholder, which is replaced with a link (using the text of `click-here`) linking to English web pages.
+These strings are used to provide info the user about how to use the app. As seen here, simple HTML can be for many translated strings. Only certain tags such as `<b>, <i>, <em>, and <a>` are allowed.
 
 ### page-title
 

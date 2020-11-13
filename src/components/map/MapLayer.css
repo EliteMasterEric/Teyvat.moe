@@ -12,6 +12,27 @@
 .map-marker-popup-content {
 }
 
+.map-region-label-marker {
+  background-color: transparent;
+  /* margin: 0% 50% 0% -50% !important; */
+  /* position: relative; */
+  width: auto !important;
+  /* height: auto !important; */
+}
+
+.map-region-label-text {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap;
+  color: white;
+  font-size: 1.75em;
+  font-weight: bold;
+
+  width: auto !important;
+  position: relative;
+  left: -50%;
+}
+
 .map-marker-popup-completion-time {
   text-align: center;
   font-size: 10px;

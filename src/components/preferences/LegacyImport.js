@@ -2,7 +2,7 @@
  * Handles the importing of data from the legacy Yuanshen.site.
  */
 
-import _, { split } from 'lodash';
+import _ from 'lodash';
 
 import { getFeatureKeysByFilter, MapFeatures } from '../MapFeatures';
 
@@ -149,17 +149,14 @@ const parseLegacyEntry = (element) => {
   let featureKey = null;
   switch (splitElement[1]) {
     case MONDSTADT_CHEST_ID:
-      console.log('MONDSTADT CHEST');
       featureKey = MONDSTADT_CHEST_LIST[splitElement[2]];
       break;
     case LIYUE_CHEST_ID:
-      console.log('LIYUE CHEST');
       featureKey = LIYUE_CHEST_LIST[splitElement[2]];
       break;
     default:
       featureKey = LEGACY_MAPPING[splitElement[1]];
   }
-  console.log(featureKey);
   const markerId = splitElement[2];
 
   if (featureKey === undefined) return null;

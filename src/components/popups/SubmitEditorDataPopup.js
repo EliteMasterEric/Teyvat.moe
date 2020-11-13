@@ -9,6 +9,7 @@ import ReactSwitch from 'react-switch';
 import './SubmitEditorDataPopup.css';
 import { MapCategories, MapRegions } from '../MapFeatures';
 import { t } from '../Localization';
+import { SafeHTML } from '../Util';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
@@ -22,23 +23,25 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
 
   const regionOptions = Object.keys(MapRegions).map((key) => {
     const value = MapRegions[key];
-    return { value: key, label: value.name };
+    return { value: key, label: t(value.nameKey) };
   });
 
   const categoryOptions = Object.keys(MapCategories).map((key) => {
     const value = MapCategories[key];
-    return { value: key, label: value.name };
+    return { value: key, label: t(value.nameKey) };
   });
 
   const onClickConfirm = (closePopup) => () => {
     if (!isValid) return;
 
     onConfirm({
-      name: submissionName,
-      region: submissionRegion,
-      category: submissionCategory,
+      name: {
+        en: submissionName,
+      },
+      region: submissionRegion.value,
+      category: submissionCategory.value,
       cluster: clusterMarkers,
-      icon: {
+      icons: {
         filter: 'none',
         base: {
           marker: true,
@@ -46,7 +49,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         },
         done: {
           marker: true,
-          done: true,
           key: 'none',
         },
       },
@@ -68,6 +70,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
           <span className={clsx('popup-submit-editor-data-header')}>
             {t('popup-submit-editor-data-title')}
           </span>
+          <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
           <span className={clsx('popup-submit-editor-data-form-content')}>
             <div className={clsx('popup-submit-editor-data-field-container', 'margin-bottom')}>
               <span>{t('feature-name')}</span>

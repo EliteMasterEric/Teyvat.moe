@@ -48,7 +48,7 @@ const markerStyle = Joi.object({
 
   // Specify these style keys if the simple marker style is not used.
   key: Joi.string()
-    .token()
+    .regex(/[-a-z]+/)
     .when('marker', { is: true, then: Joi.optional(), otherwise: Joi.required() }), // Optional but allowed if marker = true. Required if marker = false.
   svg: Joi.boolean().when('marker', {
     is: true,

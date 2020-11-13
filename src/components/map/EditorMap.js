@@ -8,20 +8,24 @@ import ReactLeafletEditable from 'react-leaflet-editable';
 
 import clsx from 'clsx';
 import { editorMarkerHighlight, lineProperties, lineTextProperties } from './MapLayer';
+import { supportsWebP } from '../Util';
 
 import './EditorMap.css';
 
 // Center of the map.
 export const MAP_CENTER = [-35, 45];
 
-// Default zoom level.
+// Zoom levels.
+export const MINIMUM_ZOOM = 3;
 export const DEFAULT_ZOOM = 4;
+export const MAXIMUM_ZOOM = 8;
 
 // Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
-const TILE_URL = 'tiles/Map_{z}_{x}_{y}.png';
+export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
+export const TILE_BLANK_URL = 'tiles/blank.png';
 
 // Observable bounds of the map.
-const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
+export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
 
 // A link back to the main repository.
 const ATTRIBUTION =
@@ -73,6 +77,14 @@ const EditorMap = React.forwardRef(
     const [editorState, setEditorState] = React.useState('none');
     const [currentEditable, setCurrentEditable] = React.useState(null);
 
+    // Check for WebP support.
+    const [tileUrl, setTileUrl] = React.useState(TILE_BLANK_URL);
+    React.useEffect(async () => {
+      // Needs to be in an effect since it's async.
+      const useWebP = await supportsWebP();
+      setTileUrl(TILE_URL.replace('{ext}', useWebP ? 'webp' : 'png'));
+    }, []);
+
     const startEditorMarker = () => {
       setEditorState('createMarker');
       const editable = editRef.current.startMarker(null, {
@@ -102,7 +114,7 @@ const EditorMap = React.forwardRef(
           id,
           geometry: { type: 'Point', coordinates: latlngFormatted },
           type: 'Feature',
-          properties: { popupTitle: '', popupContent: '', popupImage: '' },
+          properties: { popupTitle: { en: '' }, popupContent: { en: '' }, popupImage: '' },
         };
 
         // Append the marker.
@@ -212,13 +224,14 @@ const EditorMap = React.forwardRef(
           zoomDelta={0.5}
           editable
           zoomSnap={0.5}
-          maxZoom={8}
-          minZoom={3}
+          maxZoom={MAXIMUM_ZOOM}
+          preferCanvas
+          minZoom={MINIMUM_ZOOM}
           attributionControl={false} // Override the Leaflet attribution with our own AttributionControl.
           zoomControl={false}
         >
           {/* Controls the actual map image. */}
-          <TileLayer url={TILE_URL} reuseTiles />
+          <TileLayer url={tileUrl} noWrap bounds={MAP_BOUNDS} errorTileUrl={TILE_BLANK_URL} />
           {/* Controls the attribution link in the bottom right corner. */}
           <AttributionControl prefix={ATTRIBUTION} />
           {/* Controls the zoom buttons in the top left corner. */}
