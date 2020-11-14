@@ -16,11 +16,12 @@ import { hashObject } from '../Util';
 import './MapLayer.css';
 import { createMapIcon } from '../MapFeaturesData';
 import { displayUnixTimestamp, f, localizeField } from '../Localization';
+import { useImageExtension } from '../Image';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
-  shadowUrl: require('../../images/icons/map_base/marker.png').default, // Default value. Use options to override.
+  shadowUrl: require('../../images/icons/map_base/marker.svg').default, // Default value. Use options to override.
   iconSize: [24, 23], // size of the icon
   shadowSize: [40, 40], // size of the shadow
   iconAnchor: [12, 34.5], // point of the icon which will correspond to marker's location
@@ -55,7 +56,7 @@ export const lineTextPropertiesHighlight = {
   attributes: { y: 4, fill: '#f57c00', class: 'leaflet-map-route-text' },
 };
 
-const buildPopup = (feature, completionTime = -1) => {
+const buildPopup = (feature, imgExt = 'png', completionTime = -1) => {
   let text = '';
   if (!feature) return text;
 
@@ -63,7 +64,7 @@ const buildPopup = (feature, completionTime = -1) => {
     text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
 
   if (feature.properties.popupImage)
-    text = `${text}<img class="map-marker-popup-image" src="/comments/${feature.properties.popupImage}"/>`;
+    text = `${text}<img class="map-marker-popup-image" src="/comments/${feature.properties.popupImage}.${imgExt}"/>`;
 
   if (feature.properties.popupContent)
     text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;
@@ -159,6 +160,7 @@ export const RegionLabelLayer = ({ mapRef }) => {
     );
 
     return L.marker([latLng.lng, latLng.lat], {
+      interactive: false, // Allow clicks to pass through.
       icon: L.divIcon({
         html,
         className: 'map-region-label-marker',
@@ -185,6 +187,8 @@ export const RegionLabelLayer = ({ mapRef }) => {
 };
 
 export const EditorLayer = ({ mapRef, mapPreferences }) => {
+  const ext = useImageExtension();
+
   const mapFeature = {
     ...mapPreferences?.editor?.feature,
     highlighted: mapPreferences?.editor?.highlighted,
@@ -242,7 +246,7 @@ export const EditorLayer = ({ mapRef, mapPreferences }) => {
         popupContent: localizeField(feature?.properties?.popupContent) ?? '',
       },
     };
-    const text = buildPopup(translatedFeature);
+    const text = buildPopup(translatedFeature, ext);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 
@@ -266,6 +270,10 @@ export const FeatureLayer = ({
   markFeature,
   completedIds,
 }) => {
+  // Prevent attempting to display the map until we know if the browser supports WebP.
+  const ext = useImageExtension(true);
+  if (ext == null) return null;
+
   const pointToLayer = (feature, latLng) => {
     // Generate the feature here.
     const completed = _.has(completedIds, feature?.id);
@@ -273,11 +281,13 @@ export const FeatureLayer = ({
     const icon = completed
       ? createMapIcon({
           ...mapFeature.icons.done,
+          ext: mapFeature?.icons?.done?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.done.key ?? mapFeature.icons.filter,
           done: true,
         })
       : createMapIcon({
           ...mapFeature.icons.base,
+          ext: mapFeature?.icons?.base?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.base.key ?? mapFeature.icons.filter,
           done: false,
         });
@@ -310,7 +320,7 @@ export const FeatureLayer = ({
     layer.setOpacity(completed ? mapPreferences?.options?.completedAlpha : 1);
 
     const completionTime = _.get(completedIds, feature?.id, -1);
-    const text = buildPopup(feature, completionTime);
+    const text = buildPopup(feature, ext, completionTime);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 
@@ -368,17 +378,21 @@ export const FeatureLayer = ({
 };
 
 export const RouteLayer = ({ mapPreferences, mapRoute }) => {
+  const ext = useImageExtension();
+
   const lineToLayer = (_feature, latLngs) => {
     const latlngsFormatted = latLngs.map((latlng) => [latlng?.lng, latlng?.lat]);
 
     const line = L.polyline(latlngsFormatted, lineProperties);
     line.setText('  ►  ', lineTextProperties);
 
+    console.log(line);
+
     return line;
   };
 
   const onEachFeature = (route, layer) => {
-    const text = buildPopup(route);
+    const text = buildPopup(route, ext);
     if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
   };
 

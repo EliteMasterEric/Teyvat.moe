@@ -5,6 +5,7 @@ import { MapCategories } from '../MapFeatures';
 
 import './MapControlCategories.css';
 import { t } from '../Localization';
+import { useImageExtension } from '../Image';
 
 const MapControlCategoryButton = ({ categoryKey, currentCategory, setCurrentCategory }) => {
   const category = MapCategories[categoryKey];
@@ -42,8 +43,12 @@ const MapControlCategoryButton = ({ categoryKey, currentCategory, setCurrentCate
 };
 
 const MapControlCategories = ({ currentCategory, setCurrentCategory }) => {
+  const ext = useImageExtension();
+
   return (
-    <div className={clsx('map-controls-category-container')}>
+    <div
+      className={clsx('map-controls-category-container', `map-controls-category-container-${ext}`)}
+    >
       {Object.keys(MapCategories).map((key) => {
         return (
           <MapControlCategoryButton

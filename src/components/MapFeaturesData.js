@@ -10,8 +10,8 @@ import { localizeField } from './Localization';
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
 const imagePath = Joi.string()
-  .regex(/([-a-zA-Z0-9]+\/)*[-_a-zA-Z0-9]+\.(jpg|png|webp)/)
-  .allow('');
+  .regex(/([-a-zA-Z0-9]+\/)*[-_a-zA-Z0-9]+/)
+  .allow(''); // Exclude the file extension.
 
 const geoJSONCoordinate = Joi.array().items(Joi.number().required()).length(2);
 
@@ -172,21 +172,18 @@ export const createGeoJSONLayer = (dataJSON) => {
 };
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
-const iconsContext = require.context('../images/icons', true);
-export const getFilterIconURL = (key) => iconsContext(`./filter/${key}.png`).default;
+const iconsContext = require.context('../images/icons', true, /\.(png|webp|svg)/);
+export const getFilterIconURL = (key, ext) => iconsContext(`./filter/${key}.${ext}`).default;
 
-export const createMapIcon = ({ key, marker = false, done = false, svg = false, ...options }) => {
+export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', ...options }) => {
   if (marker) {
     // Use the marker image.
-    const iconUrl = getFilterIconURL(key);
+    const iconUrl = getFilterIconURL(key, ext);
 
     // This part is a little complex.
     // As a neat hack, the marker"s shadow is offset and used to implement the frame.
     // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(
-      `./map_${done ? 'done' : 'base'}/marker.${svg ? 'svg' : 'png'}`,
-      true
-    ).default;
+    const shadowUrl = iconsContext(`./map_${done ? 'done' : 'base'}/marker.${ext}`, true).default;
 
     return L.icon({
       className: `map-marker-${key}`,
@@ -200,11 +197,9 @@ export const createMapIcon = ({ key, marker = false, done = false, svg = false, 
       ...options,
     });
   }
-  // Else, don"t use the marker image.
-  const iconUrl = iconsContext(
-    `./map_${done ? 'done' : 'base'}/${key}.${svg ? 'svg' : 'png'}`,
-    true
-  ).default;
+
+  // Else, don't use the marker image.
+  const iconUrl = iconsContext(`./map_${done ? 'done' : 'base'}/${key}.${ext}`, true).default;
 
   return L.icon({
     className: `map-marker-${key}`,

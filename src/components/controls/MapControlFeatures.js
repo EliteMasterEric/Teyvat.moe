@@ -6,6 +6,7 @@ import { getFilterIconURL } from '../MapFeaturesData';
 
 import './MapControlFeatures.css';
 import { f } from '../Localization';
+import { useImageExtension } from '../Image';
 
 /**
  * A button in the Filters, with the icon of a Map feature on it.
@@ -14,6 +15,9 @@ import { f } from '../Localization';
  */
 const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences }) => {
   const mapFeature = MapFeatures[featureKey];
+
+  const ext = useImageExtension(true);
+  if (ext == null) return null;
 
   // Hide button if feature is not enabled.
   if (!mapFeature?.enabled) return null;
@@ -52,7 +56,7 @@ const MapControlFeatureButton = ({ featureKey, mapPreferences, setMapPreferences
       <div className={clsx('map-controls-feature-border')}>
         <img
           className={clsx('map-controls-feature-icon')}
-          src={getFilterIconURL(mapFeature.icons.filter)}
+          src={getFilterIconURL(mapFeature.icons.filter, ext)}
           alt={mapFeature.name}
         />
       </div>
@@ -67,8 +71,10 @@ const MapControlFeatures = ({
   mapPreferences,
   setMapPreferences,
 }) => {
+  const ext = useImageExtension();
+
   return (
-    <div className={clsx('map-controls-features-box')}>
+    <div className={clsx('map-controls-features-box', `map-controls-features-box-${ext}`)}>
       {getFeatureKeysByFilter(currentRegion, currentCategory)
         .sort((a, b) => {
           const textA = MapFeatures[a].name;

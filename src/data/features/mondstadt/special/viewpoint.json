@@ -1,0 +1,189 @@
+{
+  "name": {
+    "en": "Viewpoint"
+  },
+  "cluster": false,
+  "icons": {
+    "filter": "viewpoint",
+    "base": {
+      "marker": true,
+      "key": "viewpoint"
+    },
+    "done": {
+      "marker": true,
+      "key": "viewpoint"
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-24.046463999666567, 62.95166015625001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "The City of Wind"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/city-of-wind"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-22.857194700969636, 65.76416015625001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "The Marsh of Celestial Guardians"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/marsh-of-celestial-guardians"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.748396571187392, 61.11694335937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Windswept Wilderness"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/windswept-wilderness"
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-29.07537517955836, 56.99707031250001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Land of Clear Springs"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/land-of-clear-springs"
+      }
+    },
+    {
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-30.911651004518244, 49.8779296875]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Manor of Daybreak"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/manor-of-daybreak"
+      }
+    },
+    {
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-24.686952411999144, 54.89868164062501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Favonius Cathedral"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/favonius-cathedral"
+      }
+    },
+    {
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-26.15543796871355, 56.22802734375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Knights of Favonius - Library"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/knights-of-favonius-library"
+      }
+    },
+    {
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.946096014998382, 70.80688476562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Ancient Thousand Winds Temple"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/ancient-thousand-winds-temple"
+      }
+    },
+    {
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.5096361573305, 66.36840820312501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Forgotten Sword Cemetery"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/forgotten-sword-cemetery"
+      }
+    },
+    {
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-19.81839009384496, 47.94433593750001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Ancient Capital of Howling Winds"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/viewpoint/ancient-capital-of-howling-winds"
+      }
+    }
+  ]
+}

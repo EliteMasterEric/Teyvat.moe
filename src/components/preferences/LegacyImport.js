@@ -149,10 +149,19 @@ const parseLegacyEntry = (element) => {
   let featureKey = null;
   switch (splitElement[1]) {
     case MONDSTADT_CHEST_ID:
-      featureKey = MONDSTADT_CHEST_LIST[splitElement[2]];
+      if (splitElement[2] in MONDSTADT_CHEST_LIST) {
+        featureKey = MONDSTADT_CHEST_LIST[splitElement[2]];
+      } else {
+        console.error(`[ERROR]: Missing Mondstadt Chest ID ${splitElement[2]}`);
+      }
+
       break;
     case LIYUE_CHEST_ID:
-      featureKey = LIYUE_CHEST_LIST[splitElement[2]];
+      if (splitElement[2] in LIYUE_CHEST_LIST) {
+        featureKey = LIYUE_CHEST_LIST[splitElement[2]];
+      } else {
+        console.error(`[ERROR]: Missing Liyue Chest ID ${splitElement[2]}`);
+      }
       break;
     default:
       featureKey = LEGACY_MAPPING[splitElement[1]];

@@ -1,14 +1,163 @@
 {
-  "name": { "en": "Domain" },
+  "name": {
+    "en": "Domain"
+  },
   "cluster": false,
   "icons": {
     "filter": "domain",
     "base": {
-      "marker": true
+      "key": "domain",
+      "iconSize": [36, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [18, 27],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -27]
     },
     "done": {
-      "marker": true
+      "key": "domain",
+      "iconSize": [36, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [18, 27],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -27]
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.68382032669381, 72.19116210937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Eagle's Gate"
+        },
+        "popupContent": {
+          "en": "This is a one-time domain."
+        },
+        "popupImage": "mondstadt/domain/eagles-gate"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.7243396617476, 65.89599609375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Temple of the Lion"
+        },
+        "popupContent": {
+          "en": "This is a one-time domain."
+        },
+        "popupImage": "mondstadt/domain/temple-of-the-lion"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.410785702577023, 62.08374023437501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Temple of the Falcon"
+        },
+        "popupContent": {
+          "en": "This is a one-time domain."
+        },
+        "popupImage": "mondstadt/domain/temple-of-the-falcon"
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.352252938063845, 68.69750976562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Temple of the Wolf"
+        },
+        "popupContent": {
+          "en": "This is a one-time domain."
+        },
+        "popupImage": "mondstadt/domain/temple-of-the-wolf"
+      }
+    },
+    {
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-22.695120184965695, 68.00537109375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Midsummer Courtyard"
+        },
+        "popupContent": {
+          "en": "This Artifact domain drops the Thunderfury, Thundersoother, and Resolution of Sojourner sets."
+        },
+        "popupImage": "mondstadt/domain/midsummer-courtyard"
+      }
+    },
+    {
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.09614359735856, 54.75585937500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Valley of Remembrance"
+        },
+        "popupContent": {
+          "en": "This Artifact domain drops the Viridescent Venerer, Maiden Beloved, and Tiny Miracle sets."
+        },
+        "popupImage": "mondstadt/domain/valley-of-remembrance"
+      }
+    },
+    {
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.325938508744734, 57.8759765625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Forsaken Rift"
+        },
+        "popupContent": {
+          "en": "This domain drops Talent level-up materials."
+        },
+        "popupImage": "mondstadt/domain/forsaken-rift"
+      }
+    },
+    {
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-26.13571361317392, 48.27392578125001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Cecilia Garden"
+        },
+        "popupContent": {
+          "en": "This domain drops Weapon ascension materials. Guide the four Seelies in this area to their gardens to unlock the Anemo pillar, then activate that to open the domain."
+        },
+        "popupImage": "mondstadt/domain/cecilia-garden"
+      }
+    }
+  ]
 }

@@ -1,14 +1,384 @@
 {
-  "name": { "en": "Teleporter" },
+  "name": {
+    "en": "Teleporter"
+  },
   "cluster": false,
   "icons": {
     "filter": "teleporter",
     "base": {
-      "marker": true
+      "key": "teleporter",
+      "iconSize": [22, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 36],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -36]
     },
     "done": {
-      "marker": true
+      "key": "teleporter",
+      "iconSize": [22, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 36],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -36]
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-18.521283325496277, 68.91723632812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Stormbearer Point"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/stormbearer-point"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.200346006493735, 63.50097656250001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Stormbearer Mountains"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/stormbearer-mountains"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.540221355754714, 69.09301757812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Starting Beach"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/starting-beach"
+      }
+    },
+    {
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-25.839449402063185, 67.23632812500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Starsnatch Cliff"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/starsnatch"
+      }
+    },
+    {
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.068909095463365, 61.39160156250001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Mondstadt City Limits"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/mondstadt-city-limits"
+      }
+    },
+    {
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-25.720735134412106, 57.81005859375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Central Mondstadt"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/central-mondstadt"
+      }
+    },
+    {
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-26.13571361317392, 55.99731445312501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Knights of Favonius HQ"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/kof-hq"
+      }
+    },
+    {
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-29.878755346037977, 67.50000000000001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Falcon Coast"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/falcon-coast"
+      }
+    },
+    {
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.24427318493909, 65.93994140625001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Dadaupa Gorge"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/dadaupa-gorge"
+      }
+    },
+    {
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.456636011596196, 74.44335937500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Cape Oath"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/cape-oath"
+      }
+    },
+    {
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-29.530450107491063, 57.68371582031251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Springvale"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/springvale"
+      }
+    },
+    {
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-32.036020039737565, 58.35388183593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Springvale Pond"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/springvale-pond"
+      }
+    },
+    {
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-31.170509824703437, 47.97729492187501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "North Stone Gate"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/north-stone-gate"
+      }
+    },
+    {
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.147144835991796, 52.74536132812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Wolvendom"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/wolvendom"
+      }
+    },
+    {
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-25.66628476656516, 50.70739746093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "North Wolvendom"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/north-wolvendom"
+      }
+    },
+    {
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-21.820707853875017, 51.43798828125]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Brightcrown Canyon"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/brightcrown-canyon"
+      }
+    },
+    {
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-24.597080137096412, 44.59350585937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Stormterror's Lair Entrance"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/south-stormterror"
+      }
+    },
+    {
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.67390526467283, 43.14880371093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Contront Stormterror"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/confront-stormterror"
+      }
+    },
+    {
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-21.886987120681574, 39.9957275390625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "West Stormterror's Lair"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/west-stormterror"
+      }
+    },
+    {
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-17.16703442146408, 41.04492187500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "North Stormterror's Lair"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/north-stormterror"
+      }
+    },
+    {
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-18.994608853186367, 46.263427734375]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "East Stormterror's Lair"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": "mondstadt/teleporter/east-stormterror"
+      }
+    }
+  ]
 }

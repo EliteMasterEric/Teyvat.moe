@@ -83,3 +83,47 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where the Submit Editor Data form had missing text in the dropdowns.
 - Fixed bug where panning far enough could display parallel universes.
 - Fixed ESLint issues preventing the map from building.
+
+# 0.5.0
+
+- Imported Liyue chest data from yuanshen.site, mostly manually.
+- Added region labels for Liyue.
+- Added new features:
+  - Viewpoints (Mondstadt Special)
+  - Viewpoints (Liyue Special)
+- Added markers and revised existing markers for various features:
+
+  - @EliteMasterEric: Mondstadt Teleporters
+  - @EliteMasterEric: Mondstadt Domains
+  - @EliteMasterEric: Mondstadt Luxurious Chests (full review with descriptions)
+  - @EliteMasterEric: Mondstadt Viewpoints
+  - @EliteMasterEric: Liyue Teleporters
+  - @EliteMasterEric: Liyue Domains
+  - @EliteMasterEric: Liyue Viewpoints
+  - @EliteMasterEric: Liyue Luxurious Chests (full review with descriptions)
+  - @WenshiTakahashi: Liyue Common Chest
+
+- Added various routes:
+
+  - @birth23: Liyue Artifact Route
+
+- Added pictures for various features:
+
+  - @EliteMasterEric: Mondstadt Statues
+  - @EliteMasterEric: Mondstadt Teleporters
+  - @EliteMasterEric: Mondstadt Viewpoints
+  - @EliteMasterEric: Liyue Statues
+  - @EliteMasterEric: Liyue Teleporters
+  - @EliteMasterEric: Liyue Viewpoints
+  - Genshin Impact Wiki: Mondstadt Domains
+  - Genshin Impact Wiki: Liyue Domains
+  - @EliteMasterEric and bbs.mihoyo.com: Mondstadt Luxurious Chests
+  - @EliteMasterEric and bbs.mihoyo.com: Liyue Luxurious Chests
+  - @WenshiTakahashi: Liyue Common Chest
+
+- Replaced all JPG images with PNGs.
+- Removed file extensions from popup images in data files; PNG or WebP will be selected accordingly.
+- Added WebP versions of all images for web performance.
+  - Sadly despite living in 2020 we still have to go in and add WebP handlers to every place images are referenced and include fallbacks and detection code, turning every image tag into a mess of spaghetti code.
+- Optimized all filter and comment images using PNGQuant for better web performance.
+- Fixed a bug where region labels could prevent clicking a marker.

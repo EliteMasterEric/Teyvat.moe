@@ -39,7 +39,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
    * The !== check prevents an infinite loop with onDragEnd.
    */
   React.useEffect(() => {
-    if (mapRef.current.leafletElement == null) return;
+    if (mapRef?.current?.leafletElement == null) return;
 
     if (
       mapPreferences.position.latlng !== mapRef.current.leafletElement.getCenter() ||

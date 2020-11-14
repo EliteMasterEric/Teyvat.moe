@@ -10,6 +10,7 @@ import './SubmitEditorDataPopup.css';
 import { MapCategories, MapRegions } from '../MapFeatures';
 import { t } from '../Localization';
 import { SafeHTML } from '../Util';
+import { useImageExtension } from '../Image';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
@@ -56,6 +57,8 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
     closePopup();
   };
 
+  const ext = useImageExtension();
+
   // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
   return (
     <Popup
@@ -71,7 +74,12 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             {t('popup-submit-editor-data-title')}
           </span>
           <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
-          <span className={clsx('popup-submit-editor-data-form-content')}>
+          <span
+            className={clsx(
+              'popup-submit-editor-data-form-content',
+              `popup-submit-editor-data-form-content-${ext}`
+            )}
+          >
             <div className={clsx('popup-submit-editor-data-field-container', 'margin-bottom')}>
               <span>{t('feature-name')}</span>
               <input
@@ -99,7 +107,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <span className={clsx('popup-submit-editor-data-field-subtitle', 'margin-bottom')}>
-              {t('popup-clear-map-data-subtitle-a')}
+              {t('popup-submit-editor-data-subtitle-a')}
             </span>
             <div className={clsx('popup-submit-editor-data-field-container')}>
               <span>{t('popup-submit-editor-data-cluster-markers')}</span>
@@ -109,7 +117,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <span className={clsx('popup-submit-editor-data-field-subtitle')}>
-              {t('popup-clear-map-data-subtitle-b')}
+              {t('popup-submit-editor-data-subtitle-b')}
             </span>
           </span>
           <div className={clsx('popup-submit-editor-data-button-container')}>

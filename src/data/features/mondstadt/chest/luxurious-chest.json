@@ -18,11 +18,11 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#216: Knight of Favonius Roof" },
+        "popupTitle": { "en": "#1: Knight of Favonius Roof" },
         "popupContent": {
           "en": "This Luxurious Chest is located on the roof of the Knight of Favonius headquarters, within sight of the Teleporter."
         },
-        "popupImage": "mondstadt/luxurious-chest/26_216.jpg"
+        "popupImage": "mondstadt/luxurious-chest/26_216"
       },
       "id": 216
     },
@@ -33,11 +33,11 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#159: Church Bell" },
+        "popupTitle": { "en": "#2: Church Bell" },
         "popupContent": {
           "en": "This Luxurious Chest is located on the roof of the Church, in the highest bell tower."
         },
-        "popupImage": "mondstadt/luxurious-chest/26_159.jpg"
+        "popupImage": "mondstadt/luxurious-chest/26_159"
       },
       "id": 159
     },
@@ -48,37 +48,13 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#208: Plaza Challenge" },
+        "popupTitle": { "en": "#3: Plaza Challenge" },
         "popupContent": {
           "en": "This Luxurious Chest is hidden; jump onto the top of the railing, and follow the rings that appear without falling to reveal the chest."
         },
-        "popupImage": "mondstadt/luxurious-chest/26_208.jpg"
+        "popupImage": "mondstadt/luxurious-chest/26_208"
       },
       "id": 208
-    },
-    {
-      "geometry": { "type": "Point", "coordinates": ["-24.9362573230", "46.7083740234"] },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#6: Eye of the Storm Boss" },
-        "popupContent": {
-          "en": "This Luxurious Chest is near the edge of the cliff face, under a piece of ruin. It is locked by an Eye of the Storm, which you must defeat to open it."
-        },
-        "popupImage": "mondstadt/luxurious-chest/26_103.jpg"
-      },
-      "id": 103
-    },
-    {
-      "geometry": { "type": "Point", "coordinates": ["-30.7168374817", "46.8223544366"] },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "#12: Triple Seelie" },
-        "popupContent": {
-          "en": "This Luxurious Chest is revealed after returning three Seelies to their gardens. This chest is not included in the Seelie category."
-        },
-        "popupImage": "mondstadt/luxurious-chest/26_124.jpg"
-      },
-      "id": 124
     },
     {
       "geometry": { "type": "Point", "coordinates": ["-16.4462443688", "65.8629453739"] },
@@ -88,9 +64,36 @@
         "popupContent": {
           "en": "This Luxurious Chest is located on a pedestal northeast of the Anemo Hypostasis arena."
         },
-        "popupImage": "mondstadt/luxurious-chest/26_327.jpg"
+        "popupImage": "mondstadt/luxurious-chest/26_327"
       },
       "id": 327
+    },
+    {
+      "geometry": { "type": "Point", "coordinates": ["-24.9362573230", "46.7083740234"] },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#6: Eye of the Storm Boss" },
+        "popupContent": {
+          "en": "This Luxurious Chest is near the edge of the cliff face, under a piece of ruin. It is locked by an Eye of the Storm, which you must defeat to open it."
+        },
+        "popupImage": "mondstadt/luxurious-chest/26_103"
+      },
+      "id": 103
+    },
+    {
+      "id": 2001,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.648205934292623, 43.07739257812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#9: Stormterror's Lair Peak" },
+        "popupContent": {
+          "en": "This Luxurious Chest can be found by using the wind gust to glide up to the top of Stormterror's Lair."
+        },
+        "popupImage": ""
+      }
     },
     {
       "geometry": { "type": "Point", "coordinates": ["-20.7232690858", "80.1422501462"] },
@@ -100,9 +103,36 @@
         "popupContent": {
           "en": "This Luxurious Chest is located off the back side of the Nameless Island. Take care if you are low level as there are Ruin Guards nearby."
         },
-        "popupImage": "mondstadt/luxurious-chest/26_496.jpg"
+        "popupImage": "mondstadt/luxurious-chest/26_496"
       },
       "id": 496
+    },
+    {
+      "geometry": { "type": "Point", "coordinates": ["-30.7168374817", "46.8223544366"] },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#12: Triple Seelie" },
+        "popupContent": {
+          "en": "This Luxurious Chest is revealed after returning three Seelies to their gardens. This chest is not included in the Seelie category."
+        },
+        "popupImage": "mondstadt/luxurious-chest/26_124"
+      },
+      "id": 124
+    },
+    {
+      "id": 2002,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.01132594307014, 68.00537109375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#15: Dadaupa Gorge" },
+        "popupContent": {
+          "en": "This Luxurious Chest can be accessed by completing the 'Break the Sword Cemetery Seal' world quest from Dr. Livingstone."
+        },
+        "popupImage": "mondstadt/luxurious-chest/2002"
+      }
     }
   ]
 }

@@ -10,7 +10,6 @@
 
 .map-controls-editor-element-container {
   border: 16px solid transparent;
-  border-image: url('../../images/controls/filter_container.png') 32 round;
 
   box-sizing: border-box;
 
@@ -22,6 +21,14 @@
 
   display: flex;
   flex-direction: column;
+}
+
+.map-controls-editor-element-container-png {
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-editor-element-container-webp {
+  border-image: url('../../images/controls/filter_container.webp') 32 round;
 }
 
 .map-controls-editor-button {

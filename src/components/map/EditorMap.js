@@ -8,7 +8,7 @@ import ReactLeafletEditable from 'react-leaflet-editable';
 
 import clsx from 'clsx';
 import { editorMarkerHighlight, lineProperties, lineTextProperties } from './MapLayer';
-import { supportsWebP } from '../Util';
+import { useImageExtension } from '../Image';
 
 import './EditorMap.css';
 
@@ -22,7 +22,6 @@ export const MAXIMUM_ZOOM = 8;
 
 // Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
 export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
-export const TILE_BLANK_URL = 'tiles/blank.png';
 
 // Observable bounds of the map.
 export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
@@ -78,12 +77,12 @@ const EditorMap = React.forwardRef(
     const [currentEditable, setCurrentEditable] = React.useState(null);
 
     // Check for WebP support.
-    const [tileUrl, setTileUrl] = React.useState(TILE_BLANK_URL);
-    React.useEffect(async () => {
-      // Needs to be in an effect since it's async.
-      const useWebP = await supportsWebP();
-      setTileUrl(TILE_URL.replace('{ext}', useWebP ? 'webp' : 'png'));
-    }, []);
+    const ext = useImageExtension(true);
+
+    // Wait until we get confirmation of WebP support.
+    if (ext == null) return null;
+
+    const tileUrl = TILE_URL.replace('{ext}', ext);
 
     const startEditorMarker = () => {
       setEditorState('createMarker');
@@ -225,13 +224,12 @@ const EditorMap = React.forwardRef(
           editable
           zoomSnap={0.5}
           maxZoom={MAXIMUM_ZOOM}
-          preferCanvas
           minZoom={MINIMUM_ZOOM}
           attributionControl={false} // Override the Leaflet attribution with our own AttributionControl.
           zoomControl={false}
         >
           {/* Controls the actual map image. */}
-          <TileLayer url={tileUrl} noWrap bounds={MAP_BOUNDS} errorTileUrl={TILE_BLANK_URL} />
+          <TileLayer url={tileUrl} noWrap bounds={MAP_BOUNDS} errorTileUrl={`tiles/blank.${ext}`} />
           {/* Controls the attribution link in the bottom right corner. */}
           <AttributionControl prefix={ATTRIBUTION} />
           {/* Controls the zoom buttons in the top left corner. */}

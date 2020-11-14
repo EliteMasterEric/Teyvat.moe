@@ -71,42 +71,6 @@ export const reloadWindow = () => {
   window.location.reload();
 };
 
-// Cache the result of supportsWebP.
-let support;
-/**
- * Calculates whether the browser supports webp images, which are more web performant.
- *
- * NOTE: Only one method works: https://codesandbox.io/s/react-webp-test-kf8rw?file=/src/index.js:412-950
- */
-export const supportsWebP = async () => {
-  if (typeof support !== 'undefined') return support;
-
-  // If the browser doesn't has the method createImageBitmap, you can't display webp format
-  if (!window.createImageBitmap) {
-    support = false;
-    return support;
-  }
-
-  // Base64 representation of a white point image
-  const webpData =
-    'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
-
-  // Retrieve the Image in Blob Format
-  const blob = await fetch(webpData).then((r) => r.blob());
-
-  // If the createImageBitmap method succeeds, return true, otherwise false
-  return createImageBitmap(blob).then(
-    () => {
-      support = true;
-      return support;
-    },
-    () => {
-      support = false;
-      return support;
-    }
-  );
-};
-
 /**
  * Put the provided text into the clipboard.
  * @param {*} text The text to copy.

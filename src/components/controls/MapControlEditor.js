@@ -10,6 +10,7 @@ import SubmitEditorDataPopup from '../popups/SubmitEditorDataPopup';
 
 import { DEFAULT_MAP_PREFERENCES } from '../preferences/DefaultPreferences';
 import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from '../Util';
+import { useImageExtension } from '../Image';
 
 import './MapControlEditor.css';
 
@@ -159,6 +160,8 @@ const MapEditorRoute = ({
 };
 
 const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
+  const ext = useImageExtension();
+
   const setElementData = (func) => {
     setMapPreferences((old) => {
       return {
@@ -181,9 +184,9 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
         ...old,
         position: {
           latlng: {
-            // REVERSED by GeoJSON.
-            lat: marker.geometry.coordinates[1],
-            lng: marker.geometry.coordinates[0],
+            // NOT REVERSED by GeoJSON.
+            lat: marker.geometry.coordinates[0],
+            lng: marker.geometry.coordinates[1],
           },
           zoom: HIGHLIGHT_ZOOM_LEVEL,
         },
@@ -273,7 +276,12 @@ const MapControlEditor = ({ mapPreferences, setMapPreferences, setTab }) => {
 
   return (
     <div className={clsx('map-controls-editor-container')}>
-      <div className={clsx('map-controls-editor-element-container')}>
+      <div
+        className={clsx(
+          'map-controls-editor-element-container',
+          `map-controls-editor-element-container-${ext}`
+        )}
+      >
         {mapPreferences?.editor?.feature?.data.map((element) => {
           const isRoute = element?.geometry?.type === 'LineString';
 

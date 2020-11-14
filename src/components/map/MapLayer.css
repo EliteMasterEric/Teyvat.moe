@@ -43,6 +43,7 @@
   margin: 4px 0 4px 0;
   width: 192px;
   height: 192px;
+  /* TODOL Is there some way to clip off the sides instead of squashing the image? */
 }
 
 .map-marker-cluster {

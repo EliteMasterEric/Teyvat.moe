@@ -9,6 +9,7 @@ import { t } from '../Localization';
 import { getFilterIconURL } from '../MapFeaturesData';
 import { MapFeatures } from '../MapFeatures';
 import { getUnixTimestamp } from '../Util';
+import { useImageExtension } from '../Image';
 
 import './MapControlSummary.css';
 
@@ -119,6 +120,8 @@ const MapControlSummaryFeature = ({
 
   if (completedCount === 0) return null;
 
+  const ext = useImageExtension();
+
   const locateFeature = () => {
     const unlocatedFeatures = mapFeature.data.filter((element) => {
       return !_.has(completedIds, element.id);
@@ -166,7 +169,7 @@ const MapControlSummaryFeature = ({
       <div className={clsx('map-controls-about-summary-feature-border')}>
         <img
           className={clsx('map-controls-about-summary-feature-icon')}
-          src={getFilterIconURL(mapFeature.icons.filter)}
+          src={getFilterIconURL(mapFeature.icons.filter, ext)}
           alt={mapFeature.name}
         />
       </div>
@@ -211,8 +214,15 @@ const MapControlSummary = ({ mapPreferences, setMapPreferences }) => {
     });
   };
 
+  const ext = useImageExtension();
+
   return (
-    <div className={clsx('map-controls-about-summary-container')}>
+    <div
+      className={clsx(
+        'map-controls-about-summary-container',
+        `map-controls-about-summary-container-${ext}`
+      )}
+    >
       <span className={clsx('map-controls-about-summary-header')}>{t('tab-summary')}</span>
       <span className={clsx('map-controls-about-summary-subtitle')}>{t('summary-subtitle')}</span>
       <div className={clsx('map-controls-about-summary-feature-container')}>

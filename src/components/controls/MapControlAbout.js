@@ -5,12 +5,19 @@ import './MapControlAbout.css';
 import { t } from '../Localization';
 import MapControlSummary from './MapControlSummary';
 import { SafeHTML } from '../Util';
+import { useImageExtension } from '../Image';
 
 const MapControlHelp = () => {
+  const ext = useImageExtension();
   const translatorAttribution = t('about-translator-attribution');
 
   return (
-    <div className={clsx('map-controls-about-help-container')}>
+    <div
+      className={clsx(
+        'map-controls-about-help-container',
+        `map-controls-about-help-container-${ext}`
+      )}
+    >
       <SafeHTML className={clsx('map-control-about-help-header')}>{t('short-title')}</SafeHTML>
       <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-a')}</SafeHTML>
 
@@ -34,8 +41,15 @@ const MapControlHelp = () => {
 };
 
 const MapControlAboutTabs = ({ tab, setTab }) => {
+  const ext = useImageExtension();
+
   return (
-    <div className={clsx('map-controls-about-tab-container')}>
+    <div
+      className={clsx(
+        'map-controls-about-tab-container',
+        `map-controls-about-tab-container-${ext}`
+      )}
+    >
       <div
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}

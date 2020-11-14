@@ -27,7 +27,6 @@
   text-align: center;
   font-size: 16px;
   border: 16px solid transparent;
-  border-image: url('../../images/controls/filter_container.png') 32 round;
 
   box-sizing: border-box;
 
@@ -38,6 +37,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.popup-submit-editor-data-form-content-png {
+  border-image: url('../../images/controls/filter_container.png') 32 round;
+}
+
+.popup-submit-editor-data-form-content-webp {
+  border-image: url('../../images/controls/filter_container.webp') 32 round;
 }
 
 .popup-submit-editor-data-field-container {

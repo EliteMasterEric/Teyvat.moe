@@ -13,6 +13,7 @@ import MapControlRegions from './MapControlRegions';
 import './MapControls.css';
 import MapControlAbout from './MapControlAbout';
 import { t } from '../Localization';
+import { useImageExtension } from '../Image';
 
 const MapControlTabs = ({ mapPreferences, tab, setTab }) => {
   return (
@@ -107,11 +108,14 @@ const MapControls = ({ mapPreferences, setMapPreferences }) => {
 
   const editorActive = mapPreferences?.editor?.enabled;
 
+  const ext = useImageExtension();
+
   return (
     <div className={clsx('map-controls-wrapper')}>
       <div
         className={clsx(
           'map-controls-main',
+          `map-controls-main-${ext}`,
           isOpen ? 'map-controls-main-open' : 'map-controls-main-closed'
         )}
       >

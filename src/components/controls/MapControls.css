@@ -8,7 +8,6 @@
 
   /* Border image. */
   border: 16px solid transparent;
-  border-image: url('../../images/controls/control_border.png') 32 round;
 
   /* Background color. Padding-box prevents extending beyond the border. */
   background-color: #f0e9e2;
@@ -26,6 +25,14 @@
 
   display: flex;
   flex-direction: column;
+}
+
+.map-controls-main-png {
+  border-image: url('../../images/controls/control_border.png') 32 round;
+}
+
+.map-controls-main-webp {
+  border-image: url('../../images/controls/control_border.webp') 32 round;
 }
 
 .map-controls-wrapper {

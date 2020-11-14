@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import { getRouteKeysByFilter, MapRoutes } from '../MapFeatures';
 import { getFilterIconURL } from '../MapFeaturesData';
+import { useImageExtension } from '../Image';
 
 import './MapControlRoutes.css';
 
@@ -13,6 +14,9 @@ import './MapControlRoutes.css';
  */
 const MapControlRouteButton = ({ routeKey, mapPreferences, setMapPreferences }) => {
   const mapRoute = MapRoutes[routeKey];
+
+  const ext = useImageExtension(true);
+  if (ext == null) return null;
 
   const toggleRoute = () => {
     setMapPreferences((old) => {
@@ -44,7 +48,7 @@ const MapControlRouteButton = ({ routeKey, mapPreferences, setMapPreferences }) 
       <div className={clsx('map-controls-route-border')}>
         <img
           className={clsx('map-controls-route-icon')}
-          src={getFilterIconURL(mapRoute.icons.filter)}
+          src={getFilterIconURL(mapRoute.icons.filter, ext)}
           alt={mapRoute.name}
         />
       </div>
@@ -59,8 +63,10 @@ const MapControlRoutes = ({
   mapPreferences,
   setMapPreferences,
 }) => {
+  const ext = useImageExtension();
+
   return (
-    <div className={clsx('map-controls-routes-box')}>
+    <div className={clsx('map-controls-routes-box', `map-controls-routes-box-${ext}`)}>
       {getRouteKeysByFilter(currentRegion, currentCategory)
         .sort((a, b) => {
           const textA = MapRoutes[a].name;

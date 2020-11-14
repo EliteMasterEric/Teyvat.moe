@@ -15,11 +15,16 @@ import './MapControlOptions.css';
 import { t } from '../Localization';
 import { exportDataJSON } from '../preferences/DataExport';
 import { exportLegacyDataJSON } from '../preferences/LegacyExport';
+import { useImageExtension } from '../Image';
 
 const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
+  const ext = useImageExtension();
+
   return (
     <>
-      <div className={clsx('map-controls-options-container')}>
+      <div
+        className={clsx('map-controls-options-container', `map-controls-options-container-${ext}`)}
+      >
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-editor')}</span>
           <ReactSwitch
@@ -32,7 +37,9 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
           />
         </div>
       </div>
-      <div className={clsx('map-controls-options-container')}>
+      <div
+        className={clsx('map-controls-options-container', `map-controls-options-container-${ext}`)}
+      >
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-completed-opacity')}</span>
           <ReactSlider
@@ -86,7 +93,9 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
           />
         </div>
       </div>
-      <div className={clsx('map-controls-options-container')}>
+      <div
+        className={clsx('map-controls-options-container', `map-controls-options-container-${ext}`)}
+      >
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('option-import-new')}</span>
           <ImportDataPopup

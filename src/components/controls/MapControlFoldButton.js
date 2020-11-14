@@ -1,7 +1,12 @@
 import React from 'react';
+import clsx from 'clsx';
 
-import imgFoldOpen from '../../images/controls/fold_open.png';
-import imgFoldClose from '../../images/controls/fold_close.png';
+import imgFoldOpenPNG from '../../images/controls/fold_open.png';
+import imgFoldOpenWebP from '../../images/controls/fold_open.webp';
+import imgFoldClosePNG from '../../images/controls/fold_close.png';
+import imgFoldCloseWebP from '../../images/controls/fold_close.webp';
+
+import { Image } from '../Image';
 
 // CSS
 import './MapControlFoldButton.css';
@@ -24,7 +29,11 @@ const MapControlFoldButton = ({ isOpen, setOpen }) => {
       aria-label={isOpen ? 'Close Filter Window' : 'Open Filter Window'}
       tabIndex={0}
     >
-      <img className="map-controls-fold" alt="" src={isOpen ? imgFoldClose : imgFoldOpen} />
+      <Image
+        srcPNG={isOpen ? imgFoldClosePNG : imgFoldOpenPNG}
+        srcWebP={isOpen ? imgFoldCloseWebP : imgFoldOpenWebP}
+        className={clsx('map-controls-fold')}
+      />
     </div>
   );
 };
