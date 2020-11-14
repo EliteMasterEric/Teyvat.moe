@@ -386,8 +386,6 @@ export const RouteLayer = ({ mapPreferences, mapRoute }) => {
     const line = L.polyline(latlngsFormatted, lineProperties);
     line.setText('  ►  ', lineTextProperties);
 
-    console.log(line);
-
     return line;
   };
 

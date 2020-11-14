@@ -2,7 +2,7 @@ import React from 'react';
 
 import MainView from './components/views/MainView';
 
-import { resetLocalStorage, useStateStored } from './components/preferences/Preferences';
+import { useStateStored } from './components/preferences/Preferences';
 
 import './App.css';
 import './NerdFonts.css';
@@ -21,8 +21,6 @@ const App = () => {
       },
     }));
   }, []);
-
-  // resetLocalStorage();
 
   return <MainView mapPreferences={mapPreferences} setMapPreferences={setMapPreferences} />;
 };
