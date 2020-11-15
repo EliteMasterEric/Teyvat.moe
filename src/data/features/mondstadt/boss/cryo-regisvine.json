@@ -4,11 +4,31 @@
   "icons": {
     "filter": "cryo-regisvine",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "cryo-regisvine"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "cryo-regisvine"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.04289477256162, 69.46655273437501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Cryo Regisvine"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }

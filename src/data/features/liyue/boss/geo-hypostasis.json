@@ -4,11 +4,31 @@
   "icons": {
     "filter": "geo-hypostasis",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "geo-hypostasis"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "geo-hypostasis"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-50.897015170100225, 57.49879959706563]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Geo Hypostasis"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }

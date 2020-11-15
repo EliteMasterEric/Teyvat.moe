@@ -36,6 +36,32 @@ const MapControlOptions = ({ mapPreferences, setMapPreferences }) => {
             checked={mapPreferences?.editor?.enabled}
           />
         </div>
+        <div className={clsx('map-controls-option')}>
+          <span className={clsx('map-controls-option-label')}>
+            {t('option-editor-hide-features')}
+          </span>
+          <ReactSwitch
+            onChange={(hideFeaturesInEditor) => {
+              setMapPreferences((old) => {
+                return { ...old, options: { ...old.options, hideFeaturesInEditor } };
+              });
+            }}
+            checked={mapPreferences?.options?.hideFeaturesInEditor}
+          />
+        </div>
+        <div className={clsx('map-controls-option')}>
+          <span className={clsx('map-controls-option-label')}>
+            {t('option-editor-hide-routes')}
+          </span>
+          <ReactSwitch
+            onChange={(hideRoutesInEditor) => {
+              setMapPreferences((old) => {
+                return { ...old, options: { ...old.options, hideRoutesInEditor } };
+              });
+            }}
+            checked={mapPreferences?.options?.hideRoutesInEditor}
+          />
+        </div>
       </div>
       <div
         className={clsx('map-controls-options-container', `map-controls-options-container-${ext}`)}

@@ -4,11 +4,31 @@
   "icons": {
     "filter": "anemo-hypostasis",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "anemo-hypostasis"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "anemo-hypostasis"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-17.161785912715136, 64.03930664062501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Anemo Hypostasis"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }

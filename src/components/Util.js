@@ -32,7 +32,15 @@ export const fromBase64 = (input) => {
  * @param {*} input The object to hash.
  * @returns {String} The hashed object.
  */
-export const hashObject = (input) => hash(input);
+export const hashObject = (input) => {
+  try {
+    return hash(input);
+  } catch (err) {
+    console.error('COULD NOT HASH OBJECT');
+    console.error(input);
+    throw err;
+  }
+};
 
 /**
  * Generate prettified JSON of an object.

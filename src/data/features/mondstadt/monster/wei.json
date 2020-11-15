@@ -68,17 +68,68 @@
       "id": 7,
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.22889003019423, 49.59777832031251]
+        "coordinates": [-29.535229562948455, 49.59228515625]
       },
       "type": "Feature",
       "properties": {
         "popupTitle": {
-          "en": "#7: Wolfendom"
+          "en": "#7: Andrius Arena"
         },
         "popupContent": {
           "en": "Wei can appear near Andrius' arena at Wolfendom."
         },
         "popupImage": "mondstadt/wei/7"
+      }
+    },
+    {
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.211058276488192, 39.81445312500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#10: Southwest Stormterror"
+        },
+        "popupContent": {
+          "en": "Wei is known to appear somewhere in this area. *PICTURE NEEDED*"
+        },
+        "popupImage": ""
+      }
+    },
+    {
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-17.26672782352052, 62.49023437500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#11: Anemo Hypostasis Shrine"
+        },
+        "popupContent": {
+          "en": "Wei can appear west of the Anemo Hypostasis, inspecting the shrine."
+        },
+        "popupImage": "mondstadt/wei/11"
+      }
+    },
+    {
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.911298488227466, 67.55493164062501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#18: Dadaupa Gorge"
+        },
+        "popupContent": {
+          "en": "Wei can be found on the northern cliff overlooking Dadaupa Gorge."
+        },
+        "popupImage": "mondstadt/wei/18"
       }
     }
   ]

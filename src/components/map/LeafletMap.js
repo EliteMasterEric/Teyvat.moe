@@ -125,9 +125,13 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
         <>
           <EditorLayer mapPreferences={mapPreferences} mapRef={mapRef} />
         </>
-      ) : (
-        [
-          ...Object.keys(mapPreferences?.displayed?.features).map((key) => {
+      ) : null}
+
+      {!(
+        (mapPreferences?.options?.hideFeaturesInEditor ?? false) &&
+        (mapPreferences?.editor?.enabled ?? false)
+      )
+        ? Object.keys(mapPreferences?.displayed?.features).map((key) => {
             const shouldDisplay = mapPreferences?.displayed?.features[key];
 
             if (!shouldDisplay) return null;
@@ -140,7 +144,7 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
 
             return (
               <FeatureLayer
-                key={key}
+                key={`Feature:${key}`}
                 featureKey={key}
                 mapPreferences={mapPreferences}
                 mapFeature={feature}
@@ -148,8 +152,14 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
                 completedIds={mapPreferences?.completed?.features[key]}
               />
             );
-          }),
-          ...Object.keys(mapPreferences?.displayed?.routes).map((key) => {
+          })
+        : null}
+
+      {!(
+        (mapPreferences?.options?.hideRoutesInEditor ?? false) &&
+        (mapPreferences?.editor?.enabled ?? false)
+      )
+        ? Object.keys(mapPreferences?.displayed?.routes).map((key) => {
             const shouldDisplay = mapPreferences?.displayed?.routes[key];
 
             if (!shouldDisplay) return null;
@@ -160,10 +170,11 @@ const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
               return null;
             }
 
-            return <RouteLayer key={key} mapPreferences={mapPreferences} mapRoute={route} />;
-          }),
-        ]
-      )}
+            return (
+              <RouteLayer key={`Route:${key}`} mapPreferences={mapPreferences} mapRoute={route} />
+            );
+          })
+        : null}
     </EditorMap>
   );
 };

@@ -4,11 +4,31 @@
   "icons": {
     "filter": "dvalin",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "dvalin"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "dvalin"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.653346148076054, 43.07739257812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Dvalin"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }

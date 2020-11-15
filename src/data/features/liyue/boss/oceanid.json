@@ -4,11 +4,31 @@
   "icons": {
     "filter": "oceanid",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "oceanid"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "oceanid"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-32.02504144466066, 40.76543526591035]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Oceanid"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }

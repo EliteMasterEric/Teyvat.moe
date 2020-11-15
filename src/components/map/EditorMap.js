@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 
 import L from 'leaflet';
@@ -122,6 +123,7 @@ const EditorMap = React.forwardRef(
         return newData;
       });
 
+      setEditorState('none');
       setCurrentEditable(null);
     };
 
@@ -147,10 +149,13 @@ const EditorMap = React.forwardRef(
         return newData;
       });
 
+      setEditorState('none');
       setCurrentEditable(null);
     };
 
     const onDragStart = (event) => {
+      // Called when starting to drag a marker.
+
       const isMarker = event.layer.feature.geometry.type === 'Point';
       // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
 
@@ -188,6 +193,51 @@ const EditorMap = React.forwardRef(
           };
           return newData;
         });
+
+        setEditorState('none');
+        setCurrentEditable(null);
+      }
+    };
+
+    const onVertexMarkerDragStart = (event) => {
+      const isRoute = event.layer.feature.geometry.type === 'LineString';
+      // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
+      if (isRoute) {
+        setCurrentEditable(event.layer);
+        setEditorState('dragRoute');
+        // return;
+      }
+    };
+
+    const onVertexMarkerDragEnd = (event) => {
+      // If the current mode is 'dragMarker', call our override function,
+      // and cancel the event that would occur.
+
+      if (editorState === 'dragRoute') {
+        const route = event.layer.feature;
+        const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [vertex.lat, vertex.lng]);
+
+        // Modify the route in the data.
+        setEditorData((oldData) => {
+          // Construct a new marker.
+          const id = oldData.indexOf(route);
+
+          // Append the marker.
+          const newData = _.cloneDeep(oldData);
+          newData[id] = {
+            ...route,
+            geometry: {
+              ...route.geometry,
+              // Not reversed.
+              coordinates: newRouteLatLngs,
+            },
+          };
+
+          return newData;
+        });
+
+        setEditorState('none');
+        setCurrentEditable(null);
       }
     };
 
@@ -210,6 +260,8 @@ const EditorMap = React.forwardRef(
         ref={editRef}
         onDragStart={onDragStart}
         onDragEnd={onDragEnd}
+        onVertexMarkerDragStart={onVertexMarkerDragStart}
+        onVertexMarkerDragEnd={onVertexMarkerDragEnd}
         onDrawingCommit={onDrawingCommit}
       >
         <Map

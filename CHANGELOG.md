@@ -127,3 +127,29 @@ First major release of the rework, featuring a new interface developed in React.
   - Sadly despite living in 2020 we still have to go in and add WebP handlers to every place images are referenced and include fallbacks and detection code, turning every image tag into a mess of spaghetti code.
 - Optimized all filter and comment images using PNGQuant for better web performance.
 - Fixed a bug where region labels could prevent clicking a marker.
+
+# 0.5.1
+
+- Added markers for all 5 world bosses and 3 weekly bosses.
+- Revised world border to add the Golden House.
+- Added new options to show/hide features or routes while the editor is enabled.
+  - Turn this on to hide clutter while mapping, and turn it off to use markers as a reference.
+- Fixed issue where route vertexes could not be dragged properly.
+- Added new features:
+  - Childe (Liyue Boss)
+- Added new markers and revised existing markers for the following features:
+  - @EliteMasterEric: Unusual Hillichurl (Wei) Mondstadt (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+    - Total of 7 markers
+  - @EliteMasterEric: Unusual Hillichurl (Wei) Liyue (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+    - Total of 12 markers
+  - @EliteMasterEric: Loach Pearl (Liyue) (Credit to [Juzzex](https://www.youtube.com/watch?v=4orUPwiOuaM&t=23s))
+    - Total of 12 markers
+  - @EliteMasterEric: Bamboo Shoot (Liyue) (Credit to [taka gg](https://www.youtube.com/watch?v=DSp3IC6lQDw))
+    - Total of 12 markers
+- Added new routes:
+  - @EliteMasterEric: Loach Pearls (Liyue Nature)
+  - @EliteMasterEric: Bamboo Shoots (Liyue Nature)
+- Added pictures for various features:
+  - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Mondstadt
+  - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Liyue
+  - @EliteMasterEric: Loach Pearl (Liyue)

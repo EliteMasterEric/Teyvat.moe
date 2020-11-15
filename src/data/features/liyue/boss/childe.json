@@ -1,0 +1,34 @@
+{
+  "name": { "en": "Childe" },
+  "cluster": false,
+  "icons": {
+    "filter": "childe",
+    "base": {
+      "marker": true,
+      "key": "childe"
+    },
+    "done": {
+      "marker": true,
+      "key": "childe"
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.92827765143785, 41.386915835312585]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Childe"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
+}

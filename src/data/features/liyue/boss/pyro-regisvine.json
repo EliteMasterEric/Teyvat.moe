@@ -4,11 +4,31 @@
   "icons": {
     "filter": "pyro-regisvine",
     "base": {
-      "marker": true
+      "marker": true,
+      "key": "pyro-regisvine"
     },
     "done": {
-      "marker": true
+      "marker": true,
+      "key": "pyro-regisvine"
     }
   },
-  "data": []
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.373480573412145, 30.946042269354955]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Pyro Regisvine"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupImage": ""
+      }
+    }
+  ]
 }
