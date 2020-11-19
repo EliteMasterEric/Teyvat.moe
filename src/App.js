@@ -1,28 +1,19 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
 import MainView from './components/views/MainView';
 
-import { useStateStored } from './components/preferences/Preferences';
+import store from './redux';
 
 import './App.css';
 import './NerdFonts.css';
 
 const App = () => {
-  const [mapPreferences, setMapPreferences] = useStateStored();
-
-  // Call this function once when the app initializes.
-  React.useEffect(() => {
-    // Fix a bug where the app would start with the Editor enabled.
-    setMapPreferences((old) => ({
-      ...old,
-      editor: {
-        ...old?.editor,
-        enabled: false,
-      },
-    }));
-  }, []);
-
-  return <MainView mapPreferences={mapPreferences} setMapPreferences={setMapPreferences} />;
+  return (
+    <Provider store={store}>
+      <MainView />
+    </Provider>
+  );
 };
 
 export default App;

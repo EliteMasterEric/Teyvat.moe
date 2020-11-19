@@ -1,0 +1,21 @@
+.map-marker-cluster-marker {
+  width: 40px;
+  height: 40px;
+}
+
+.map-marker-container {
+  position: relative;
+}
+
+.map-marker-shadow {
+  width: 40px;
+  height: 40px;
+}
+
+.map-marker-img {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}

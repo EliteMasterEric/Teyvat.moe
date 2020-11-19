@@ -1,0 +1,22 @@
+.map-controls-category-container {
+  border: 16px solid transparent;
+
+  box-sizing: border-box;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.map-controls-category-container-png {
+  border-image: url('../../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-category-container-webp {
+  border-image: url('../../../images/controls/filter_container.webp') 32 round;
+}

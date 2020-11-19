@@ -1,0 +1,20 @@
+.map-controls-routes-box {
+  border: 16px solid transparent;
+
+  width: calc(100% - 16px);
+  margin: 0px 0px 12px 0px;
+
+  box-sizing: border-box;
+
+  flex-grow: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.map-controls-routes-box-png {
+  border-image: url('../../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-routes-box-webp {
+  border-image: url('../../../images/controls/filter_container.webp') 32 round;
+}

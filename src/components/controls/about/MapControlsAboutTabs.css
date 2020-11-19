@@ -1,0 +1,51 @@
+.map-controls-about-tab-container {
+  border: 16px solid transparent;
+
+  box-sizing: border-box;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.map-controls-about-tab-container-png {
+  border-image: url('../../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-about-tab-container-webp {
+  border-image: url('../../../images/controls/filter_container.webp') 32 round;
+}
+
+.map-controls-about-tab {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  margin: 4px 4px 4px 4px;
+  padding: 8px 4px 8px 4px;
+
+  flex-grow: 1;
+
+  /*
+  Two tabs per row.
+  flex: 0 calc(50% - 8px);
+  */
+
+  color: #000;
+  background-color: #9e9e9e;
+}
+
+.map-controls-about-tab-active,
+.map-controls-about-tab:hover {
+  background-color: #607d8b;
+}

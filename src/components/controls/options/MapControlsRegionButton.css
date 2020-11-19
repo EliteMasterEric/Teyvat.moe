@@ -1,0 +1,23 @@
+.map-control-region {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  margin-left: 64px;
+
+  cursor: pointer;
+}
+
+.map-control-region-img {
+  width: 117px;
+  height: 51px;
+}
+
+.map-control-region-active {
+  margin-left: 40px;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}

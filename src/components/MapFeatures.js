@@ -55,10 +55,23 @@ export const MapRegions = {
  * Metadata regarding the map categories.
  */
 export const MapCategories = {
+  event: {
+    nameKey: 'category-event',
+    style: {
+      fullWidth: true,
+      disabled: {
+        bg: '#9e9e9e',
+        text: '#000',
+      },
+      enabled: {
+        bg: '#947F17',
+        text: '#FFF',
+      },
+    },
+  },
   monster: {
     nameKey: 'category-monster',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -72,7 +85,6 @@ export const MapCategories = {
   boss: {
     nameKey: 'category-boss',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -86,7 +98,6 @@ export const MapCategories = {
   nature: {
     nameKey: 'category-nature',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -100,7 +111,6 @@ export const MapCategories = {
   special: {
     nameKey: 'category-special',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -114,7 +124,6 @@ export const MapCategories = {
   ore: {
     nameKey: 'category-ore',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -128,7 +137,6 @@ export const MapCategories = {
   chest: {
     nameKey: 'category-chest',
     style: {
-      width: '33%',
       disabled: {
         bg: '#9e9e9e',
         text: '#000',
@@ -172,11 +180,32 @@ export const MapFeatures = Object.fromEntries(
     .filter((value) => value) // Filter out nullable values
 );
 
+/**
+ * For a given region, returns a map of a category key and a boolean value,
+ * false if it contains at least one valid displayed route.
+ * @param {*} region
+ */
+export const getEmptyFeatureCategories = (region) =>
+  Object.fromEntries(
+    _.keys(MapCategories).map((categoryKey) => {
+      const firstMatching = _.find(MapFeatures, (mapFeature) => {
+        return (
+          mapFeature.category === categoryKey &&
+          mapFeature.region === region &&
+          (mapFeature.enabled ?? true)
+        );
+      });
+      return [categoryKey, firstMatching === undefined];
+    })
+  );
+
 export const getFeatureKeysByFilter = (region, category) => {
-  return Object.keys(MapFeatures).filter((key) => {
+  return _.keys(MapFeatures).filter((key) => {
     const feature = MapFeatures[key];
     return (
-      (feature?.region ?? 'mondstadt') === region && (feature?.category ?? 'special') === category
+      (feature?.region ?? 'mondstadt') === region &&
+      (feature?.category ?? 'special') === category &&
+      (feature?.enabled ?? true)
     );
   });
 };
@@ -211,9 +240,32 @@ export const MapRoutes = Object.fromEntries(
     .filter((value) => value) // Filter out nullable values
 );
 
+/**
+ * For a given region, returns a map of a category key and a boolean value,
+ * false if it contains at least one valid displayed route.
+ * @param {*} region
+ */
+export const getEmptyRouteCategories = (region) =>
+  Object.fromEntries(
+    _.keys(MapCategories).map((categoryKey) => {
+      const firstMatching = _.find(MapRoutes, (mapRoute) => {
+        return (
+          mapRoute.category === categoryKey &&
+          mapRoute.region === region &&
+          (mapRoute.enabled ?? true)
+        );
+      });
+      return [categoryKey, firstMatching === undefined];
+    })
+  );
+
 export const getRouteKeysByFilter = (region, category) => {
   return Object.keys(MapRoutes).filter((key) => {
     const route = MapRoutes[key];
-    return (route?.region ?? 'mondstadt') === region && (route?.category ?? 'special') === category;
+    return (
+      (route?.region ?? 'mondstadt') === region &&
+      (route?.category ?? 'special') === category &&
+      (route?.enabled ?? true)
+    );
   });
 };

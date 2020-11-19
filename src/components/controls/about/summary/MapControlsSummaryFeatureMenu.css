@@ -1,0 +1,45 @@
+.map-controls-about-summary-feature-button {
+  /* Size the button properly. */
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  font-size: 24px;
+
+  /* Align the icon in the center. */
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.map-controls-about-summary-feature-button-menu {
+  background-color: #313131;
+  color: #1976d2;
+}
+
+.map-controls-about-summary-feature-menu-arrow {
+  color: #f0e9e2;
+  stroke: #f0e9e2;
+}
+.map-controls-about-summary-feature-menu-overlay {
+}
+.map-controls-about-summary-feature-menu-content {
+  background-color: #f0e9e2;
+  padding: 8px 8px 8px 8px !important;
+  border-radius: 16px !important;
+}
+
+.map-controls-about-summary-feature-menu-content {
+}
+
+.map-controls-about-summary-feature-menu-item {
+  cursor: pointer;
+  padding: 4px 0 4px 4px;
+}
+
+.map-controls-about-summary-feature-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

@@ -15,3 +15,11 @@ body {
   user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+
+/* A convenience class, used in various places. */
+.display-none {
+  display: none !important;
+}
+.flex-grow {
+  flex-grow: 1;
+}

@@ -5,7 +5,6 @@
 First major release of the rework, featuring a new interface developed in React.
 
 - Most resource types unavailable as markers currently.
-- Added support
 
 # 0.2.1
 
@@ -153,3 +152,24 @@ First major release of the rework, featuring a new interface developed in React.
   - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Mondstadt
   - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Liyue
   - @EliteMasterEric: Loach Pearl (Liyue)
+
+# 0.6.0
+
+- Reworked state to use React Redux to improve major performance issues.
+  - The implementation might not be the best since this is my first project using it, but it's definitely a great learning experience.
+  - Seriously that was a big rework, it was like the code equivalent of your basement flooding and having to renovate the entire thing.
+  - But it's also the code equivalent of putting a sauna in your basement.
+- Reworked preferences handling to use Redux.
+  - This updates locks in GenshinMap Data Version 2. Previous versions must be migrated to this one; any future breaking changes (structural changes count, addition of new options does not since defaults will be loaded) require creating a new version.
+  - Users won't have to do anything, as migration can be done from local storage.
+- Images in the Feature and Route menus now use an intelligent Image component, with lazy loading and placeholder support, for improved page performance.
+- Moved attribution element so it is never hidden.
+- The Summary feature menu will now close when you click an option.
+- Marker background is no longer handled by a shadow. This makes markers that are closer together look cleaner (the markers don't overlap).
+- Fixed rendering of route arrows to be browser compatible.
+- Will no longer display feature/route categories that contain no elements.
+- Will redirect the user to a different feature/route category if they switch tabs or regions and the current category would be empty.
+- Revised existing markers:
+  - Removed 2 redundant Wei locations in Liyue (2 markers at same spot)
+
+# 0.6.1

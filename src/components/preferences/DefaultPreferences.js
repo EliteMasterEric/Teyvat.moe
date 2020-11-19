@@ -1,18 +1,45 @@
 /**
  * Contains static codes and values,
  */
-import { DEFAULT_ZOOM, MAP_CENTER } from '../map/EditorMap';
+import L from 'leaflet';
 
-// The data version.
-// Whenever the structure of mapPreferences changes, increment this.
-export const GENSHINMAP_DATA_VERSION = 'GM_001';
+// Center of the map.
+export const MAP_CENTER = [-35, 45];
 
-// The location to store the application data.
+// Zoom levels.
+export const MINIMUM_ZOOM = 3;
+export const DEFAULT_ZOOM = 4;
+export const MAXIMUM_ZOOM = 8;
+
+// Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
+export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
+
+// Observable bounds of the map.
+export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
+
+/**
+ * The data version.
+ * Whenever the structure of mapPreferences changes, increment this.
+ */
+export const GENSHINMAP_DATA_VERSION = 'GM_002';
+
+/**
+ * The location to store the application data.
+ */
 export const LOCAL_STORAGE_KEY = 'genshinmap-preferences';
-// The location to store application data. Replace %COUNTER% with the lowest unused value.
+/**
+ * The location to store application data. Replace %COUNTER% with the lowest unused value.
+ */
 export const LOCAL_STORAGE_KEY_RECOVERY = 'genshinmap-preferences-recovery-%COUNTER%';
-// The prefix used on the data.
+/**
+ * The prefix used on the data.
+ */
 export const PREFERENCES_PREFIX = `${GENSHINMAP_DATA_VERSION}~`;
+/**
+ * The names of the keys which are persistent (stored in local storage).
+ * Keys not in this list will be reset to their default values on page load.
+ */
+export const PERSISTENT_KEYS = ['version', 'options', 'displayed', 'completed', 'editor'];
 
 /**
  * The default preferences stored by the app.
@@ -24,13 +51,56 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   version: GENSHINMAP_DATA_VERSION,
 
+  /**
+   * Whether the editor is currently enabled.
+   * Not saved in local storage.
+   */
+  editorEnabled: false,
+  /**
+   * The ID of the marker currently highlighted in the editor.
+   * Not saved in local storage.
+   */
+  editorHighlight: -1,
+  /**
+   * The current position on the map. Modify this to reorient the map location.
+   * Not saved in local storage.
+   */
+  position: {
+    latlng: {
+      lat: MAP_CENTER[0], // Default latitude
+      lng: MAP_CENTER[1], // Default longitude
+    },
+    zoom: DEFAULT_ZOOM, // Default zoom level
+  },
+  /**
+   * The current tab of the controls view.
+   * Not saved in local storage.
+   */
+  controlsTab: 'help',
+  /**
+   * The current category of the controls view.
+   */
+  controlsCategory: 'special',
+  /**
+   * The current region of the controls view.
+   */
+  controlsRegion: 'mondstadt',
+  /**
+   * Whether the controls drawer is currently open.
+   */
+  controlsOpen: true,
+
+  /**
+   * The user preferences, as seen in the Options menu.
+   */
   options: {
     completedAlpha: 0.5, // Make 'Done' markers transparent.
     clusterMarkers: true,
     worldBorderEnabled: true,
     regionLabelsEnabled: true,
+    hideFeaturesInEditor: false,
+    hideRoutesInEditor: false,
   },
-
   /**
    * Store of currently displayed marker layers.
    * Each key is the internal name of the feature,
@@ -52,7 +122,6 @@ export const DEFAULT_MAP_PREFERENCES = {
     },
     routes: {},
   },
-
   /**
    * Store of completed markers.
    * Each key is the internal name of the feature,
@@ -64,28 +133,14 @@ export const DEFAULT_MAP_PREFERENCES = {
       liyueGeoculus: {},
     },
   },
-
   /**
-   * The current position on the map.
-   * Modify this to reorient the map location.
-   */
-  position: {
-    latlng: {
-      lat: MAP_CENTER[0], // Default latitude
-      lng: MAP_CENTER[1], // Default longitude
-    },
-    zoom: DEFAULT_ZOOM, // Default zoom level
-  },
-
-  /**
-   * Store information from the last editor draft.
+   * Store information from the current editor draft.
    */
   editor: {
-    enabled: false,
-
-    highlighted: -1,
-
     feature: {
+      name: '',
+      category: '',
+      region: '',
       data: [],
     },
   },

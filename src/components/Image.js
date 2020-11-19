@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 // Cache the result of supportsWebP.
 let support;
@@ -40,19 +41,18 @@ export const supportsWebP = async () => {
  * Returns the image extension to use.
  * Built on a React state, so only valid in component body.
  * @param {boolean} block If true, useImageExtension will be null until the value is determined.
- *  Else, the value will be the default extension.
+ *   Else, the value will be the default extension.
  */
 export const useImageExtension = (block = false) => {
   const defaultValue = 'png';
   const [value, setValue] = React.useState(block ? null : defaultValue);
 
-  // Load once.
+  // // Load once.
   React.useEffect(async () => {
     let mounted = true;
     // Fetch the preferences from local storage, by key.
     const result = await supportsWebP();
     if (mounted) setValue(result ? 'webp' : defaultValue);
-
     return () => {
       mounted = false;
     };
@@ -61,12 +61,30 @@ export const useImageExtension = (block = false) => {
   return value;
 };
 
-export const Image = ({ srcPNG, srcWebP, className = '' }) => {
+/**
+ * React still has no standard solution for everything you need.
+ * This component handles lazy loading, placeholdering, and more.
+ * @param {*} scrollPosition Call trackWindowScroll on the higher order component to add a 'scrollPosition'
+ *   property you can pass to this to reduce performance issues.
+ */
+// The current placeholder is an empty span.
+const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
+export const Image = ({
+  srcPNG,
+  srcWebP,
+  className = '',
+  alt = '',
+  scrollPosition = undefined,
+  placeholder = defaultPlaceholder,
+  ...others
+}) => {
   return (
-    <picture>
-      <source srcSet={srcWebP} type="image/webp" />
-      <source srcSet={srcPNG} />
-      <img alt="" className={className} src={srcPNG} />
-    </picture>
+    <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
+      <picture>
+        <source srcSet={srcWebP} type="image/webp" />
+        <source srcSet={srcPNG} />
+        <img {...others} alt={alt} className={className} src={srcPNG} />
+      </picture>
+    </LazyLoadComponent>
   );
 };

@@ -1,0 +1,101 @@
+.map-controls-about-summary-container {
+  border: 16px solid transparent;
+
+  box-sizing: border-box;
+
+  width: auto;
+  min-height: 0;
+
+  margin: 0 12px 12px 0px;
+
+  overflow-y: auto;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.map-controls-about-summary-container-png {
+  border-image: url('../../../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-about-summary-container-webp {
+  border-image: url('../../../../images/controls/filter_container.webp') 32 round;
+}
+
+.map-controls-about-summary-header-container {
+  flex-grow: 0;
+}
+
+.map-controls-about-summary-header {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+
+  margin: 0 0 0 0;
+}
+
+.map-controls-about-summary-subtitle {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+
+  margin: 0 0 8px 0;
+}
+
+.map-controls-about-summary-feature {
+  position: relative;
+  display: block;
+
+  width: calc(100% - 43px);
+  height: 74px;
+  background: linear-gradient(270deg, #ffffff -95.11%, rgba(255, 255, 255, 0) 100%), #f0e9e2;
+  margin: 0 0 10px 37px;
+  border-radius: 2px;
+
+  padding: 8px 8px 8px 48px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+
+  font-size: 14px;
+  border: 1px solid #d2c6bb;
+  box-sizing: border-box;
+  color: #78583d;
+}
+
+.map-controls-about-summary-feature-subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-controls-about-summary-feature-border {
+  position: absolute;
+  top: -1px;
+  left: -37px;
+  width: 79px;
+  height: 79px;
+  /* This URL MUST start with a '/' to indicate it is an absolute URL. */
+  background: url('../../../../images/controls/filter_border.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.map-controls-about-summary-feature-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 2px;
+  left: 2px;
+}
+
+.map-controls-about-summary-feature-button-clock.nf-mdi-menu::before {
+  margin: 0 0 0 -2px;
+}
+
+.popup-content {
+}

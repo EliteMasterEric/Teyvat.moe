@@ -185,15 +185,21 @@ export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', 
     // That way, the marker can be a separate icon from the image representing the item.
     const shadowUrl = iconsContext(`./map_${done ? 'done' : 'base'}/marker.${ext}`, true).default;
 
-    return L.icon({
+    /*
+     */
+
+    const iconHTML = `<div class='map-marker-container'>
+      <img class='map-marker-shadow' src="${shadowUrl}"/>
+      <img class='map-marker-img' src='${iconUrl}'/>
+    </div>`;
+
+    return L.divIcon({
       className: `map-marker-${key}`,
-      iconUrl,
-      shadowUrl, // Default value. Use options to override.
-      iconSize: [24, 23], // size of the icon
-      shadowSize: [40, 40], // size of the shadow
-      iconAnchor: [12, 34.5], // point of the icon which will correspond to marker"s location
-      shadowAnchor: [20, 40], // the same for the shadow
-      popupAnchor: [0, -34.5], // point from which the popup should open relative to the iconAnchor
+      html: iconHTML,
+      clusterIconUrl: iconUrl,
+      // iconSize: [24, 23], // size of the icon,
+      iconAnchor: [12, 34.5], // point of the icon which will correspond to marker"s location,
+      popupAnchor: [0, -34.5], // point from which the popup should open relative to the iconAnchor,
       ...options,
     });
   }

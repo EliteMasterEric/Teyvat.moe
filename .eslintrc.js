@@ -21,9 +21,15 @@ module.exports = {
       },
     ],
 
-    'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-underscore-dangle': ['off'], // Allow dangling underscores in identifier names.
+    /*
+     * Allow variable declarations in case blocks.
+     */
+    'no-case-declarations': ['off'],
 
-    'import/prefer-default-export': ['off'],
+    'no-console': ['warn', { allow: ['warn', 'error'] }], // Allow the use of console calls in the event of an error.
+
+    'import/prefer-default-export': ['off'], // Allow single exports in file that will have multipl efiles later.
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.
     'global-require': ['off'], // Local requires are used to reference images.
     'react/jsx-props-no-spreading': ['off'], // I don't mind passing properties.

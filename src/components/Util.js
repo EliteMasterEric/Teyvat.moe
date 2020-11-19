@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 import hash from 'object-hash';
 import sanitizeHTML from 'sanitize-html';
@@ -125,4 +126,41 @@ export const SafeHTML = ({ children, ...other }) => {
   // Never fear, no danger here! We sanitized this text before rendering it.
   // eslint-disable-next-line react/no-danger
   return <span dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />;
+};
+
+/**
+ * A React state which attaches to a debounced callback.
+ * @param {*} defaultValue The default state value.
+ * @param {*} onStateChanged The default state value.
+ * @param {*} debounce Only call onStateChanged if the value has not changed in x milliseconds.
+ *
+ * @returns [stateValue, setStateValue] The getter and setter of the state.
+ *   When setStateValue is called, and hasn't been called again after 300 milliseconds,
+ *   onStateChanged will be called with the new value.
+ */
+export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) => {
+  // Create an internal local state, that is always correct.
+  // The value will be committed to the state once it has been unchanged for <debounce> milliseconds.
+  const [stateValue, setStateValue] = React.useState(defaultValue);
+
+  // This web of references creates a reference that updates every render,
+  // to call the onStateChanged, preventing stale data.
+  // However, the debouncer calls a wrapper function.
+  // The result is a function that never changes, that calls a function that constantly changes.
+  // This allows the debounce function to hook onto the former and prevent repeated calls.
+  // Thanks to: https://stackoverflow.com/questions/59183495/cant-get-lodash-debounce-to-work-properly-executed-multiple-times-reac
+  const onStateChangedRef = React.useRef();
+  onStateChangedRef.current = (newValue) => onStateChanged(newValue);
+  const onStateChangedDebounced = React.useCallback(
+    _.debounce((...args) => onStateChangedRef.current(...args), debounce),
+    [debounce]
+  );
+
+  // Call the debounced function whenever stateValue changes.
+  React.useEffect(() => {
+    onStateChangedDebounced(stateValue);
+  }, [stateValue]);
+
+  // Pass the reference to the state getter and setter.
+  return [stateValue, setStateValue];
 };

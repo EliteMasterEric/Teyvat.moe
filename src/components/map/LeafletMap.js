@@ -1,182 +1,57 @@
 import _ from 'lodash';
 import React from 'react';
+import { connect } from 'react-redux';
 
 import { MapFeatures, MapRoutes } from '../MapFeatures';
-import {
-  FeatureLayer,
-  RouteLayer,
-  EditorLayer,
-  WorldBorderLayer,
-  RegionLabelLayer,
-} from './MapLayer';
-import EditorMap, { MAXIMUM_ZOOM, MINIMUM_ZOOM, MAP_BOUNDS, TILE_URL } from './EditorMap';
+import FeatureLayer from './FeatureLayer';
+import RouteLayer from './RouteLayer';
+import EditorLayer from './EditorLayer';
+import WorldBorderLayer from './WorldBorderLayer';
+import RegionLabelLayer from './RegionLabelLayer';
+import MapEditor from './MapEditor';
 
 import './LeafletMap.css';
-import { getUnixTimestamp } from '../Util';
 
-const LeafletMap = ({ mapPreferences, setMapPreferences }) => {
+const _LeafletMap = () => {
   // Reference to the map.
   const mapRef = React.useRef(null);
   const editRef = React.useRef(null);
 
-  const setEditorData = (func) => {
-    setMapPreferences((old) => ({
-      ...old,
-      editor: {
-        ...old.editor,
-        feature: {
-          ...old.editor.feature,
-          data: func(old.editor.feature.data),
-        },
-      },
-    }));
-  };
-
-  /**
-   * Every time the requested position changes in the mapPreferences object,
-   * move the map to that position.
-   *
-   * The !== check prevents an infinite loop with onDragEnd.
-   */
-  React.useEffect(() => {
-    if (mapRef?.current?.leafletElement == null) return;
-
-    if (
-      mapPreferences.position.latlng !== mapRef.current.leafletElement.getCenter() ||
-      mapPreferences.position.zoom !== mapRef.current.leafletElement.getZoom()
-    ) {
-      mapRef.current.leafletElement.setView(
-        [mapPreferences.position.latlng.lat, mapPreferences.position.latlng.lng],
-        mapPreferences.position.zoom
-      );
-    }
-  }, [mapPreferences.position]);
-
-  /**
-   * Every time the user drags or zooms to a position on the map,
-   * update the state in setMapPreferences.
-   */
-  const onChangeMapPos = () => {
-    if (mapRef.current.leafletElement == null) return;
-
-    setMapPreferences((old) => ({
-      ...old,
-      position: {
-        latlng: mapRef.current.leafletElement.getCenter(),
-        zoom: mapRef.current.leafletElement.getZoom(),
-      },
-    }));
-  };
-
-  /**
-   * Mark a feature marker as completed.
-   * @param {*} featureKey The feature key of the marker.
-   * @param {*} id The ID of the marker.
-   */
-  const markFeature = (featureKey, id) => {
-    setMapPreferences((old) => {
-      const currentValues = old?.completed?.features[featureKey];
-      let newValues = null;
-
-      if (currentValues == null || currentValues === []) {
-        // Create a new mark group with one element.
-        newValues = { [id]: getUnixTimestamp() };
-      } else {
-        // Check the mark group if the element is in the list.
-        const alreadyCompleted = _.has(currentValues, id);
-
-        // Copy the array.
-        newValues = { ...currentValues };
-        if (alreadyCompleted) {
-          newValues = _.omit(newValues, id);
-        } else {
-          newValues = { ...newValues, [id]: getUnixTimestamp() };
-        }
-      }
-
-      return {
-        ...old,
-        completed: {
-          ...old.completed,
-          features: {
-            ...old.completed.features,
-            [featureKey]: newValues,
-          },
-        },
-      };
-    });
-  };
-
   return (
-    <EditorMap
-      ref={editRef}
-      mapRef={mapRef}
-      onChangeMapPos={onChangeMapPos}
-      setEditorData={setEditorData}
-      editorEnabled={mapPreferences?.editor?.enabled}
-    >
-      {mapPreferences?.options?.regionLabelsEnabled ?? true ? (
-        <RegionLabelLayer mapRef={mapRef} />
-      ) : null}
-      {mapPreferences?.options?.worldBorderEnabled ?? true ? (
-        <WorldBorderLayer mapRef={mapRef} />
-      ) : null}
-      {mapPreferences?.editor?.enabled ? (
-        <>
-          <EditorLayer mapPreferences={mapPreferences} mapRef={mapRef} />
-        </>
-      ) : null}
+    <MapEditor ref={editRef} mapRef={mapRef}>
+      <RegionLabelLayer mapRef={mapRef} />
+      <WorldBorderLayer mapRef={mapRef} />
+      <EditorLayer mapRef={mapRef} />
 
-      {!(
-        (mapPreferences?.options?.hideFeaturesInEditor ?? false) &&
-        (mapPreferences?.editor?.enabled ?? false)
-      )
-        ? Object.keys(mapPreferences?.displayed?.features).map((key) => {
-            const shouldDisplay = mapPreferences?.displayed?.features[key];
+      {_.keys(MapFeatures).map((key) => {
+        const feature = MapFeatures[key];
+        if (!feature) {
+          console.error(`ERROR: Feature '${key}' is not defined.`);
+          return null;
+        }
 
-            if (!shouldDisplay) return null;
+        return <FeatureLayer key={`Feature:${key}`} mapFeature={feature} featureKey={key} />;
+      })}
 
-            const feature = MapFeatures[key];
-            if (!feature) {
-              console.error(`ERROR: Feature '${key}' is not defined.`);
-              return null;
-            }
+      {_.keys(MapRoutes).map((key) => {
+        const route = MapRoutes[key];
+        if (!route) {
+          console.error(`ERROR: Route '${key}' is not defined.`);
+          return null;
+        }
 
-            return (
-              <FeatureLayer
-                key={`Feature:${key}`}
-                featureKey={key}
-                mapPreferences={mapPreferences}
-                mapFeature={feature}
-                markFeature={markFeature}
-                completedIds={mapPreferences?.completed?.features[key]}
-              />
-            );
-          })
-        : null}
-
-      {!(
-        (mapPreferences?.options?.hideRoutesInEditor ?? false) &&
-        (mapPreferences?.editor?.enabled ?? false)
-      )
-        ? Object.keys(mapPreferences?.displayed?.routes).map((key) => {
-            const shouldDisplay = mapPreferences?.displayed?.routes[key];
-
-            if (!shouldDisplay) return null;
-
-            const route = MapRoutes[key];
-            if (!route) {
-              console.error(`ERROR: Route '${key}' is not defined.`);
-              return null;
-            }
-
-            return (
-              <RouteLayer key={`Route:${key}`} mapPreferences={mapPreferences} mapRoute={route} />
-            );
-          })
-        : null}
-    </EditorMap>
+        return <RouteLayer key={`Route:${key}`} routeKey={key} mapRoute={route} />;
+      })}
+    </MapEditor>
   );
 };
+
+const mapStateToProps = (state, { mapFeature, featureKey }) => ({
+  clusterMarkers: state.options.clusterMarkers && (mapFeature?.cluster ?? false),
+  completedIds: state.completed.features[featureKey],
+  completedAlpha: state.options.completedAlpha,
+});
+const mapDispatchToProps = (_dispatch) => ({});
+const LeafletMap = connect(mapStateToProps, mapDispatchToProps)(_LeafletMap);
 
 export default LeafletMap;

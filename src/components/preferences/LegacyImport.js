@@ -173,6 +173,34 @@ const parseLegacyEntry = (element) => {
   return `${featureKey}.${markerId}`;
 };
 
+export const parseLegacyDataFromString = (input) => {
+  const jsonData = JSON.parse(input);
+
+  const importedData = {
+    completed: {
+      features: {},
+    },
+  };
+
+  const currentTime = getUnixTimestamp();
+
+  if (Array.isArray(jsonData)) {
+    jsonData.forEach((jsonDataElement) => {
+      const entry = parseLegacyEntry(jsonDataElement);
+
+      if (entry == null) return;
+
+      const fullPath = `completed.features.${entry}`;
+
+      _.setWith(importedData, fullPath, currentTime, Object);
+    });
+  } else {
+    console.error('Could not import legacy data, did not match expected format.');
+  }
+
+  return importedData;
+};
+
 /**
  * Import data from a current or former version of GenshinMap.
  * @param {*} input The input JSON string.

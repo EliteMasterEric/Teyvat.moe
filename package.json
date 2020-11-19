@@ -7,7 +7,8 @@
     "url": "https://github.com/GenshinMap/genshinmap.github.io/issues"
   },
   "scripts": {
-    "start": "npx react-scripts start",
+    "start:dev": "npx react-scripts start",
+    "start:prod": "npx serve -s build",
     "build": "npx react-scripts build",
     "eject": "npx react-scripts eject",
     "predeploy": "npm run build",
@@ -33,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
     "joi": "^17.3.0",
@@ -50,19 +52,23 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "^2.8.0",
     "react-leaflet-control": "^2.1.2",
     "react-leaflet-draw": "^0.19.0",
     "react-leaflet-editable": "github:mastereric/react-leaflet-editable#dist",
     "react-leaflet-markercluster": "^2.0.0",
     "react-localization": "^1.0.15",
+    "react-placeholder": "^4.0.3",
+    "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
     "react-select": "^3.1.0",
     "react-switch": "^5.0.1",
     "react-tooltip": "^4.2.10",
     "reactjs-popup": "^2.0.4",
-    "sanitize-html": "^2.1.2",
-    "web-vitals": "^0.2.4"
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sanitize-html": "^2.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",
@@ -79,6 +85,6 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "gh-pages": "^3.1.0",
     "prettier": "^2.1.2",
-    "react-app-rewired": "^2.1.6"
+    "serve": "^11.3.2"
   }
 }

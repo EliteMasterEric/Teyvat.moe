@@ -1,0 +1,37 @@
+.map-controls-options-container {
+  border: 16px solid transparent;
+
+  box-sizing: border-box;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 12px 12px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.map-controls-options-container-png {
+  border-image: url('../../../images/controls/filter_container.png') 32 round;
+}
+
+.map-controls-options-container-webp {
+  border-image: url('../../../images/controls/filter_container.webp') 32 round;
+}
+
+.map-controls-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.map-controls-option-slider > .rc-slider-rail {
+  background-color: #ccc;
+}
+
+.map-controls-option-label {
+  flex-grow: 1;
+}

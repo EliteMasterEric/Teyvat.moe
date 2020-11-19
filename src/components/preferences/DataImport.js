@@ -9,7 +9,12 @@ import localStorage from './local-storage';
 
 import { fromBase64, getUnixTimestamp, reloadWindow } from '../Util';
 
-import { LOCAL_STORAGE_KEY_RECOVERY, PREFERENCES_PREFIX } from './DefaultPreferences';
+import {
+  DEFAULT_MAP_PREFERENCES,
+  GENSHINMAP_DATA_VERSION,
+  LOCAL_STORAGE_KEY_RECOVERY,
+  PREFERENCES_PREFIX,
+} from './DefaultPreferences';
 
 /**
  * When attempting to import data, via string or via local storage,
@@ -47,6 +52,7 @@ export const migrateData = (input, version) => {
   // eslint-disable-next-line prefer-const
   let output = input;
 
+  /* eslint-disable no-fallthrough */
   switch (version) {
     default:
       console.error(`[ERROR] Could not identify preferences prefix ${version}`);
@@ -55,20 +61,60 @@ export const migrateData = (input, version) => {
     // Make it look like:
     // case GM_001: <code to mutate output> from 001 to 002, fallthrough, GM_002: Return
     case 'GM_001':
+      output = {
+        options: {
+          ...DEFAULT_MAP_PREFERENCES.options,
+          ...output.options,
+        },
+        displayed: {
+          ...DEFAULT_MAP_PREFERENCES.displayed,
+          ...output.displayed,
+        },
+        completed: {
+          ...DEFAULT_MAP_PREFERENCES.completed,
+          ...output.completed,
+        },
+        editor: {
+          feature: {
+            ...DEFAULT_MAP_PREFERENCES.editor.feature,
+            data: output.editor.feature.data,
+          },
+        },
+      };
+    case 'GM_002':
+      // No change needed.
       return output;
   }
+  /* eslint-enable no-fallthrough */
+};
+
+/**
+ * Parse and migrate data from a current or former version of GenshinMap via string.
+ * @param {*} input The input string.
+ * @returns The newest data format.
+ */
+export const parseDataFromString = (input) => {
+  const decodedData = fromBase64(input);
+
+  const versionPrefix = decodedData.substring(0, GENSHINMAP_DATA_VERSION.length);
+
+  const jsonData = JSON.parse(decodedData.substring(PREFERENCES_PREFIX.length));
+
+  const migratedData = migrateData(jsonData, versionPrefix);
+
+  return migratedData;
 };
 
 /**
  * Import data from a current or former version of GenshinMap via string.
  * @param {*} input The input string.
- * @param {*} setMapPreferences The function to set the map preferences state.
+ * @param {*} setMapPreferences The function to set the map preferences state once data has been migrated.
  */
 export const importDataFromString = (input, setMapPreferences) => {
   try {
     const decodedData = fromBase64(input);
 
-    const versionPrefix = decodedData.substring(0, PREFERENCES_PREFIX.length);
+    const versionPrefix = decodedData.substring(0, GENSHINMAP_DATA_VERSION.length);
 
     const jsonData = JSON.parse(decodedData.substring(PREFERENCES_PREFIX.length));
 
