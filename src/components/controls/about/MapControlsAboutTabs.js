@@ -8,10 +8,8 @@ import './MapControlsAboutTabs.css';
 import { t } from '../../Localization';
 import { setControlsTab } from '../../../redux/ducks/ui';
 
-const _MapControlsAboutTabs = ({ tab, setTab }) => {
+const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
   const ext = useImageExtension();
-
-  const displayed = tab === 'help' || tab === 'summary';
 
   return (
     <div
@@ -53,8 +51,15 @@ const _MapControlsAboutTabs = ({ tab, setTab }) => {
   );
 };
 
-const mapStateToProps = (state) => ({ tab: state.controlsTab });
+const mapStateToProps = (state) => ({
+  tab: state.controlsTab,
+  displayed:
+    (state.controlsTab === 'help' || state.controlsTab === 'summary') && !state.editorEnabled,
+});
 const mapDispatchToProps = (dispatch) => ({ setTab: (tab) => dispatch(setControlsTab(tab)) });
-const MapControlsAboutTabs = connect(mapStateToProps, mapDispatchToProps)(_MapControlsAboutTabs);
+const MapControlsAboutTabs = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(React.memo(_MapControlsAboutTabs));
 
 export default MapControlsAboutTabs;

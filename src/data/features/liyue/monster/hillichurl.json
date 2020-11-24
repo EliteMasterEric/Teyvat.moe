@@ -1,6 +1,7 @@
 {
   "name": { "en": "Hillichurl" },
   "cluster": true,
+  "respawn": 86400,
   "icons": {
     "filter": "hillichurl",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.7338100826", "42.6312181156"]
+        "coordinates": [-41.7338100826, 42.6312181156]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.4305196813", "40.5057578919"]
+        "coordinates": [-37.4305196813, 40.5057578919]
       },
       "type": "Feature",
       "properties": {

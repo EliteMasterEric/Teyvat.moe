@@ -1,6 +1,7 @@
 {
   "name": { "en": "Snapdragon" },
   "cluster": false,
+  "respawn": 172800,
   "icons": {
     "filter": "snapdragon",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.9069379708", "62.8747580197"]
+        "coordinates": [-30.9069379708, 62.8747580197]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.8833658726", "62.9241975765"]
+        "coordinates": [-30.8833658726, 62.9241975765]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.9436964635", "62.2410998147"]
+        "coordinates": [-30.9436964635, 62.2410998147]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-31.3947470647", "62.2960206535"]
+        "coordinates": [-31.3947470647, 62.2960206535]
       },
       "type": "Feature",
       "properties": {

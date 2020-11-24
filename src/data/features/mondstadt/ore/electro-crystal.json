@@ -1,6 +1,7 @@
 {
   "name": { "en": "Electro Crystal" },
   "cluster": false,
+  "respawn": 172800,
   "icons": {
     "filter": "electro-crystal",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-24.5371293990", "48.9880371093"]
+        "coordinates": [-24.537129399, 48.9880371093]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-23.3876402273", "69.4720458984"]
+        "coordinates": [-23.3876402273, 69.4720458984]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-23.3775561491", "69.5489501953"]
+        "coordinates": [-23.3775561491, 69.5489501953]
       },
       "type": "Feature",
       "properties": {

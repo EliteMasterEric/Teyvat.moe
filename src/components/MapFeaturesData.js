@@ -93,7 +93,9 @@ const MAP_FEATURE_SCHEMA = Joi.object({
     base: markerStyle.required(),
     done: markerStyle.required(),
   },
-  data: Joi.array().items(geoJSONMarker), // Array can be empty.
+  data: Joi.array()
+    .items(geoJSONMarker) // Array can be empty.
+    .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
 
 const MAP_ROUTE_SCHEMA = Joi.object({
@@ -103,7 +105,9 @@ const MAP_ROUTE_SCHEMA = Joi.object({
       .regex(/[-a-zA-Z0-9]+/)
       .required(),
   },
-  data: Joi.array().items(geoJSONRoute), // Array can be empty.
+  data: Joi.array()
+    .items(geoJSONRoute) // Array can be empty.
+    .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
 
 const VALIDATION_OPTIONS = {

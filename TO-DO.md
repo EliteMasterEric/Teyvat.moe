@@ -39,12 +39,14 @@ Do these before releasing v0.5.1.
 
 Do these before releasing v0.6.1
 
-- [ ] Meteorite Shard Markers
-- [ ] Meteorite Shard Pictures
-- [ ] Meteorite Shard Routes
+- [x] Meteorite Shard Markers
+- [x] Meteorite Shard Pictures
+- [x] Meteorite Shard Routes
 
 Do these before releasing v0.7
 
+- [ ] Fix Netlify site
+- [ ] Add debouncing to state update on editor element fields. A state update every character typed!
 - [ ] Progressive web app and offline mode
 
 - [ ] Golden House Chest

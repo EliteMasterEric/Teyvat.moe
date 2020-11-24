@@ -1,6 +1,7 @@
 {
   "name": { "en": "Ruin Guard" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "ruin-guard",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-24.7069152410", "70.4443359375"]
+        "coordinates": [-24.706915241, 70.4443359375]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-20.2646058440", "42.2851822655"]
+        "coordinates": [-20.264605844, 42.2851822655]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-22.3775827353", "44.9276890708"]
+        "coordinates": [-22.3775827353, 44.9276890708]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-17.8716084271", "70.4323785206"]
+        "coordinates": [-17.8716084271, 70.4323785206]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.9939984694", "79.2279052734"]
+        "coordinates": [-19.9939984694, 79.2279052734]
       },
       "type": "Feature",
       "properties": {
@@ -79,7 +80,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.8451306427", "50.3602630599"]
+        "coordinates": [-19.8451306427, 50.3602630599]
       },
       "type": "Feature",
       "properties": {

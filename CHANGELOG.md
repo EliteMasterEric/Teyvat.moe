@@ -173,3 +173,96 @@ First major release of the rework, featuring a new interface developed in React.
   - Removed 2 redundant Wei locations in Liyue (2 markers at same spot)
 
 # 0.6.1
+
+- Fixed localization not using the proper files.
+- Disabled service worker for now.
+- Memoized many components (as long as their inputs don't change, they don't need to be rerendered).
+- Added the new "Event" category for limited time event items.
+- Added respawn times for the following items:
+
+  - 3 minutes = 180 seconds
+    - Anemo Hypostasis (Mondstadt Boss)
+    - Cryo Regisvine (Mondstadt Boss)
+    - Electro Hypostasis (Mondstadt Boss)
+    - Geo Hypostasis (Liyue Boss)
+    - Oceanid (Liyue Boss)
+    - Pyro Regisvine (Liyue Boss)
+  - 12 hours = 43,200 seconds
+    - Unusual Hillichurl (Wei) (Liyue Monster)
+    - Unusual Hillichurl (Wei) (Mondstadt Monster)
+  - 24 hours = 86,400 seconds
+    - Abyss Mage (Liyue Monster)
+    - Abyss Mage (Mondstadt Monster)
+    - Fatui Electro Cicin Mage (Liyue Monster)
+    - Fatui Electro Cicin Mage (Mondstadt Monster)
+    - Fatui Pyro Agent (Liyue Monster)
+    - Fatui Skirmisher (Liyue Monster)
+    - Fatui Skirmisher (Mondstadt Monster)
+    - Fowl (Liyue Nature)
+    - Fowl (Mondstadt Nature)
+    - Geovishap Hatchling (Liyue Monster)
+    - Hillichurl (Liyue Monster)
+    - Hillichurl (Mondstadt Monster)
+    - Hillichurl Shooter (Liyue Monster)
+    - Hillichurl Shooter (Mondstadt Monster)
+    - Mitachurl (Liyue Monster)
+    - Mitachurl (Mondstadt Monster)
+    - Raw Meat (Liyue Nature)
+    - Raw Meat (Mondstadt Nature)
+    - Ruin Guard (Liyue Monster)
+    - Ruin Guard (Mondstadt Monster)
+    - Ruin Hunter (Liyue Monster)
+    - Samachurl (Liyue Monster)
+    - Samachurl (Mondstadt Monster)
+    - Slime (Liyue Monster)
+    - Slime (Mondstadt Monster)
+    - Stonehide Lawachurl (Liyue Monster)
+    - Treasure Hoarder (Liyue Monster)
+    - Whopperflower (Liyue Monster)
+    - Whopperflower (Mondstadt Monster)
+  - 48 hours = 172,800 seconds
+    - Bamboo Shoot (Liyue Nature)
+    - Calla Lily (Mondstadt Nature)
+    - Cecilia (Mondstadt Nature)
+    - Dandelion Seed (Mondstadt Nature)
+    - Electro Crystal (Liyue Ore)
+    - Electro Crystal (Mondstadt Ore)
+    - Flaming Flower Stamen (Liyue Nature)
+    - Flaming Flower Stamen (Mondstadt Nature)
+    - Glaze Lily (Liyue Nature)
+    - Horsetail (Liyue Nature)
+    - Jueyun Chili (Liyue Nature)
+    - Loach Pearl (Liyue Nature)
+    - Lotus Head (Liyue Nature)
+    - Mist Flower Corolla (Liyue Nature)
+    - Mist Flower Corolla (Mondstadt Nature)
+    - Noctilucous Jade (Liyue Ore)
+    - Philanemo Mushroom (Mondstadt Nature)
+    - Qingxin (Liyue Nature)
+    - Silk Flower (Liyue Nature)
+    - Small Lamp Grass (Mondstadt Nature)
+    - Snapdragon (Liyue Nature)
+    - Snapdragon (Mondstadt Nature)
+    - Starconch (Liyue Nature)
+    - Valberry (Mondstadt Nature)
+    - Violetgrass (Liyue Nature)
+    - White Iron Chunk (Liyue Ore)
+    - White Iron Chunk (Mondstadt Ore)
+    - Windwheel Aster (Mondstadt Nature)
+    - Wolfhook (Mondstadt Nature)
+  - 72 hours = 259,200 seconds
+    - Crystal Chunk (Liyue Ore)
+    - Crystal Chunk (Mondstadt Ore)
+    - Magical Crystal Chunk (Liyue Ore)
+    - Magical Crystal Chunk (Mondstadt Ore)
+
+- Added new features:
+  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (41 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
+  - @EliteMasterEric: Meteorite Shards (Liyue Event) (77 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
+- Added new routes:
+  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (2 total routes)
+  - @EliteMasterEric: Meteorite Shards (Liyue Event) (4 total routes)
+- Added images for features:
+  - @EliteMasterEric: Wolfhook (Mondstadt Nature) (30 total images)
+  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (41 total images)
+  - @EliteMasterEric: Meteorite Shards (Liyue Event) (77 total images)

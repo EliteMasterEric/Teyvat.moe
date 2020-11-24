@@ -124,6 +124,6 @@ const mapDispatchToProps = (dispatch, { marker }) => ({
 const MapControlsEditorMarker = connect(
   mapStateToProps,
   mapDispatchToProps
-)(_MapControlsEditorMarker);
+)(React.memo(_MapControlsEditorMarker));
 
 export default MapControlsEditorMarker;

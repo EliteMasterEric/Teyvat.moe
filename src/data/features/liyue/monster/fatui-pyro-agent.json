@@ -1,6 +1,7 @@
 {
   "name": { "en": "Fatui Pyro Agent" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "fatui-pyro-agent",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.7096753321", "51.9653320312"]
+        "coordinates": [-52.7096753321, 51.9653320312]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-58.7625032627", "30.1574707031"]
+        "coordinates": [-58.7625032627, 30.1574707031]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-55.5410649561", "29.8718261718"]
+        "coordinates": [-55.5410649561, 29.8718261718]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.7362916559", "26.6857910156"]
+        "coordinates": [-52.7362916559, 26.6857910156]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-52.4225229542", "31.4318847656"]
+        "coordinates": [-52.4225229542, 31.4318847656]
       },
       "type": "Feature",
       "properties": {
@@ -79,7 +80,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-46.7699684335", "49.9548339843"]
+        "coordinates": [-46.7699684335, 49.9548339843]
       },
       "type": "Feature",
       "properties": {
@@ -92,7 +93,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-49.4181207006", "37.4743652343"]
+        "coordinates": [-49.4181207006, 37.4743652343]
       },
       "type": "Feature",
       "properties": {
@@ -105,7 +106,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-41.7856683571", "48.4781986724"]
+        "coordinates": [-41.7856683571, 48.4781986724]
       },
       "type": "Feature",
       "properties": {

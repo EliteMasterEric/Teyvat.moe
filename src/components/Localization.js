@@ -16,12 +16,17 @@ const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
  */
 const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
 
+// ex [./en-US.json, en-US].
+const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)\.json/)[1];
+
 /**
- * A list of JSON data objects, including the default locale (it must be moved to the front).
+ * A map of locales and JSON data objects, including the default locale (it must be moved to the front).
  */
-const i18nData = [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
-  return i18nContext(filePath);
-});
+const i18nData = Object.fromEntries(
+  [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
+    return [getLocaleFromI18nFilePath(filePath), i18nContext(filePath)];
+  })
+);
 
 const localizedStrings = new LocalizedStrings(i18nData, {
   pseudo: false, // Enable while testing to find unlocalized strings.

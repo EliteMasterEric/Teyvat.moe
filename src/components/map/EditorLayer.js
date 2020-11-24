@@ -8,7 +8,6 @@ import 'leaflet-textpath';
 import { GeoJSON } from 'react-leaflet';
 import { connect } from 'react-redux';
 
-import { useImageExtension } from '../Image';
 import { localizeField } from '../Localization';
 import {
   buildPopup,
@@ -22,7 +21,8 @@ import {
 import { hashObject } from '../Util';
 
 const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
-  const ext = useImageExtension();
+  // Use PNG for the editor since we can assume WebP hasn't been built yet.
+  const ext = 'png';
 
   const mapFeature = {
     data: editorData,

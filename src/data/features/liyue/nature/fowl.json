@@ -1,6 +1,7 @@
 {
   "name": { "en": "Fowl" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "fowl",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.1172881582", "40.5340673388"]
+        "coordinates": [-39.1172881582, 40.5340673388]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.4022412348", "41.7810101801"]
+        "coordinates": [-39.4022412348, 41.7810101801]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-39.1428502704", "40.6549147878"]
+        "coordinates": [-39.1428502704, 40.6549147878]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.1340485752", "38.8751242306"]
+        "coordinates": [-37.1340485752, 38.8751242306]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.1865801961", "38.7817404416"]
+        "coordinates": [-37.1865801961, 38.7817404416]
       },
       "type": "Feature",
       "properties": {
@@ -79,7 +80,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.0946054719", "38.7597667051"]
+        "coordinates": [-37.0946054719, 38.7597667051]
       },
       "type": "Feature",
       "properties": {

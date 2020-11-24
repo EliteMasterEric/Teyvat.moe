@@ -1,6 +1,7 @@
 {
   "name": { "en": "Ruin Hunter" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "ruin-hunter",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-55.5497175380", "36.3803041858"]
+        "coordinates": [-55.549717538, 36.3803041858]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-56.7729330304", "30.8814935726"]
+        "coordinates": [-56.7729330304, 30.8814935726]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-54.0038176627", "27.5856297011"]
+        "coordinates": [-54.0038176627, 27.5856297011]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-47.9876349459", "28.8550428781"]
+        "coordinates": [-47.9876349459, 28.8550428781]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-48.1288093711", "47.6461258437"]
+        "coordinates": [-48.1288093711, 47.6461258437]
       },
       "type": "Feature",
       "properties": {

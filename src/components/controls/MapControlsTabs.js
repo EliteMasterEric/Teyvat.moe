@@ -17,10 +17,26 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
         className={clsx(
           'map-controls-tab',
           tab === 'help' || tab === 'summary' ? 'map-controls-tab-active' : '',
-          'noselect'
+          'noselect',
+          !editorEnabled ? '' : 'display-none'
         )}
       >
         {t('tab-about')}
+      </div>
+      <div
+        onClick={() => setTab('help')}
+        onKeyDown={() => setTab('help')}
+        role="button"
+        aria-label={t('tab-about')}
+        tabIndex={0}
+        className={clsx(
+          'map-controls-tab',
+          tab === 'help' ? 'map-controls-tab-active' : '',
+          'noselect',
+          editorEnabled ? '' : 'display-none'
+        )}
+      >
+        {t('tab-editor-help')}
       </div>
       <div
         onClick={() => setTab('features')}

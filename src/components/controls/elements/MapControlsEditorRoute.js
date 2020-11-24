@@ -64,7 +64,7 @@ const _MapControlsEditorRoute = ({
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('route-name')}</span>
+        <span className={clsx('map-controls-editor-element-label')}>{t('route-title')}</span>
         <input value={routeTitle} onChange={(event) => setRouteTitle(event.target.value)} />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
@@ -86,13 +86,13 @@ const _MapControlsEditorRoute = ({
 const mapStateToProps = (state, { route }) => ({
   highlighted: state.editorHighlight === route.id,
   routeId: route.id,
-  routeTitle: route.properties.popupTitle,
-  routeContent: route.properties.popupTitle,
-  routeImage: route.properties.popupTitle,
+  routeTitle: route.properties.popupTitle.en,
+  routeContent: route.properties.popupContent.en,
+  routeImage: route.properties.popupImage,
 });
 const mapDispatchToProps = (dispatch, { route }) => ({
   setRouteTitle: (value) => {
-    dispatch(setElementProperty(route, 'properties.popupName.en', value));
+    dispatch(setElementProperty(route, 'properties.popupTitle.en', value));
   },
   setRouteContent: (value) => {
     dispatch(setElementProperty(route, 'properties.popupContent.en', value));
@@ -121,6 +121,6 @@ const mapDispatchToProps = (dispatch, { route }) => ({
 const MapControlsEditorRoute = connect(
   mapStateToProps,
   mapDispatchToProps
-)(_MapControlsEditorRoute);
+)(React.memo(_MapControlsEditorRoute));
 
 export default MapControlsEditorRoute;

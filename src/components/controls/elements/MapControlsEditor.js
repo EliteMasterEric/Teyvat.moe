@@ -28,7 +28,7 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
   const submitEditorData = (formData) => {
     const jsonData = generatePrettyJSON({
       ...formData,
-      data: editorData,
+      data: editorData.feature.data,
     });
 
     setBrowserClipboard(jsonData);

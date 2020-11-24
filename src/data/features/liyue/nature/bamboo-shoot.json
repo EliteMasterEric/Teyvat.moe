@@ -1,7 +1,8 @@
 {
   "name": { "en": "Bamboo Shoot" },
   "enabled": false,
-  "cluster": false,
+  "cluster": true,
+  "respawn": 172800,
   "icons": {
     "filter": "bamboo-shoot",
     "base": {

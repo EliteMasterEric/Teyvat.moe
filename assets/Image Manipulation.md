@@ -10,12 +10,14 @@ Replace all JPGs with PNGs.
 for file in **/**/*.jpg; do echo ${file}; vips copy ${file%.jpg}.jpg ${file%.jpg}.png; rm ${file}; done
 ```
 
-Create WebPs for all PNGs;
+Create WebPs for all PNGs that don't already have them;
 ```
 shopt -s globstar
 for file in **/*.png; do
-    echo ${file}
-    vips copy ${file%.png}.png ${file%.png}.webp
+    if [ ! -f ${file%.webp}.webp ]; then
+        echo ${file}
+        vips copy ${file%.png}.png ${file%.png}.webp
+    fi
 done
 ```
 
@@ -32,3 +34,9 @@ Create smart thumbnails:
 ```
 vipsthumbnail --size=170x170 --smartcrop attention *.webp
 ```
+
+shopt -s globstar
+for file in **/*.jpg; do
+    echo ${file}
+    vips copy ${file%.jpg}.jpg ${file%.jpg}.png
+done

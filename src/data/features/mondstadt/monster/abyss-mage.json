@@ -1,6 +1,7 @@
 {
   "name": { "en": "Abyss Mage" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "pyro-abyss-mage",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-26.2590820629", "68.1369369843"]
+        "coordinates": [-26.2590820629, 68.1369369843]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-34.3906661532", "63.2863817004"]
+        "coordinates": [-34.3906661532, 63.2863817004]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-37.1646941887", "65.1214599609"]
+        "coordinates": [-37.1646941887, 65.1214599609]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-17.5909964603", "46.4598454484"]
+        "coordinates": [-17.5909964603, 46.4598454484]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.5538204859", "40.3078916462"]
+        "coordinates": [-19.5538204859, 40.3078916462]
       },
       "type": "Feature",
       "properties": {
@@ -79,7 +80,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-26.5732988856", "48.2676397594"]
+        "coordinates": [-26.5732988856, 48.2676397594]
       },
       "type": "Feature",
       "properties": {
@@ -92,7 +93,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.5174985657", "68.1527337979"]
+        "coordinates": [-19.5174985657, 68.1527337979]
       },
       "type": "Feature",
       "properties": {

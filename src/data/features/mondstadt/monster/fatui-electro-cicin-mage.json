@@ -1,6 +1,7 @@
 {
   "name": { "en": "Fatui Electro Cicin Mage" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-20.4887732871", "51.0095128428"]
+        "coordinates": [-20.4887732871, 51.0095128428]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-30.8126510202", "56.7224121093"]
+        "coordinates": [-30.8126510202, 56.7224121093]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.9957951410", "61.9848665218"]
+        "coordinates": [-35.995795141, 61.9848665218]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-16.8781469947", "70.6256071109"]
+        "coordinates": [-16.8781469947, 70.6256071109]
       },
       "type": "Feature",
       "properties": {

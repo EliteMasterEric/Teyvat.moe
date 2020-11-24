@@ -42,8 +42,10 @@ const _MapControlsHelp = ({ displayed }) => {
   );
 };
 
-const mapStateToProps = (state) => ({ displayed: state.controlsTab === 'help' });
+const mapStateToProps = (state) => ({
+  displayed: state.controlsTab === 'help' && !state.editorEnabled,
+});
 const mapDispatchToProps = (_dispatch) => ({});
-const MapControlsHelp = connect(mapStateToProps, mapDispatchToProps)(_MapControlsHelp);
+const MapControlsHelp = connect(mapStateToProps, mapDispatchToProps)(React.memo(_MapControlsHelp));
 
 export default MapControlsHelp;

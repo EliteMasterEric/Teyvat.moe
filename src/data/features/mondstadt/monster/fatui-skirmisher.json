@@ -1,6 +1,7 @@
 {
   "name": { "en": "Fatui Skirmisher" },
   "cluster": false,
+  "respawn": 86400,
   "icons": {
     "filter": "fatui-skirmisher",
     "base": {
@@ -14,7 +15,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-19.0439392707", "38.3249199101"]
+        "coordinates": [-19.0439392707, 38.3249199101]
       },
       "type": "Feature",
       "properties": {
@@ -27,7 +28,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-35.2075743058", "64.0106839393"]
+        "coordinates": [-35.2075743058, 64.0106839393]
       },
       "type": "Feature",
       "properties": {
@@ -40,7 +41,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-38.9441382703", "71.5417729822"]
+        "coordinates": [-38.9441382703, 71.5417729822]
       },
       "type": "Feature",
       "properties": {
@@ -53,7 +54,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-32.5329206751", "45.9008789062"]
+        "coordinates": [-32.5329206751, 45.9008789062]
       },
       "type": "Feature",
       "properties": {
@@ -66,7 +67,7 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": ["-36.7961168736", "63.7478092428"]
+        "coordinates": [-36.7961168736, 63.7478092428]
       },
       "type": "Feature",
       "properties": {
