@@ -178,6 +178,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Disabled service worker for now.
 - Memoized many components (as long as their inputs don't change, they don't need to be rerendered).
 - Added the new "Event" category for limited time event items.
+- Added schema validation to disallow duplicate markers.
 - Added respawn times for the following items:
 
   - 3 minutes = 180 seconds
@@ -266,3 +267,10 @@ First major release of the rework, featuring a new interface developed in React.
   - @EliteMasterEric: Wolfhook (Mondstadt Nature) (30 total images)
   - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (41 total images)
   - @EliteMasterEric: Meteorite Shards (Liyue Event) (77 total images)
+
+# 0.6.2
+
+- Fixed major bug where site would not load for new users.
+- Fixed duplicate markers for the following features:
+  - Challenges (Liyue)
+  - Seelies (Liyue)

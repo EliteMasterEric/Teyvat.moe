@@ -80,9 +80,13 @@ const all = () => {
   const lsKeys = keys();
   let i = lsKeys.length;
 
+  // Never thought the difference between -- and -= 1 would be relevant,
+  // but this code previously broke the program completely
+  // if i = 0 (aka a new user) because it used some weird language trick with i--.
   // eslint-disable-next-line no-cond-assign
-  while ((i -= 1)) {
+  while (i > 0) {
     archive[lsKeys[i]] = ls.getItem(lsKeys[i]);
+    i -= 1;
   }
 
   return archive;
