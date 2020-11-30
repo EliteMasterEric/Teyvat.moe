@@ -274,3 +274,12 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed duplicate markers for the following features:
   - Challenges (Liyue)
   - Seelies (Liyue)
+
+# 0.7.0
+
+- Added image uploader to Editor tool.
+  - The Image field takes a URL; you can also click or drag to upload an image; this will post the image on Imgur and insert the URL.
+- Reworked interface to be responsive for mobile devices.
+  - Added media queries to rearrange the layout for mobile devices, and tested in Chrome and Firefox using the Device Toolbar / Responsive Design Mode. If you have any suggestions or improvements to improve layout on smaller devices (rearranging the interface based on screen size is an option), please submit an issue.
+- Added header with logo to the controls view.
+- With this update, the repository will be switching the displayed branch for users from gh-pages-legacy to gh-pages, as it is considered feature complete for the purposes of early testing.

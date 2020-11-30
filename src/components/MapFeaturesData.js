@@ -193,8 +193,8 @@ export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', 
      */
 
     const iconHTML = `<div class='map-marker-container'>
-      <img class='map-marker-shadow' src="${shadowUrl}"/>
-      <img class='map-marker-img' src='${iconUrl}'/>
+      <img style='width: 23px; height: 23px;' class='map-marker-shadow' alt="" src="${shadowUrl}"/>
+      <img style='width: 40px; height: 40px;' class='map-marker-img' alt="" src='${iconUrl}'/>
     </div>`;
 
     return L.divIcon({

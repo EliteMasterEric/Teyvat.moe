@@ -4,10 +4,15 @@ import { connect } from 'react-redux';
 
 import { t } from '../Localization';
 import { setControlsTab } from '../../redux/ducks/ui';
+import MapControlsFoldButtonSmall from './options/MapControlsFoldButtonSmall';
+import { isSmallScreen } from '../MediaQuery';
 
 const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
+  const small = isSmallScreen();
+
   return (
     <div className={clsx('map-controls-tab-container', displayed ? '' : 'display-none')}>
+      {small ? <MapControlsFoldButtonSmall /> : null}
       <div
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}

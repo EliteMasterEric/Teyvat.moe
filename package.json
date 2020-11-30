@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -34,9 +34,12 @@
     ]
   },
   "dependencies": {
+    "@react-hook/media-query": "^1.1.1",
     "@reduxjs/toolkit": "^1.4.0",
+    "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
+    "form-data": "^3.0.0",
     "joi": "^17.3.0",
     "leaflet": "github:MasterEric/Leaflet#dist",
     "leaflet-draw": "^1.0.4",
@@ -51,6 +54,7 @@
     "rc-slider": "^9.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^11.2.4",
     "react-helmet": "^6.1.0",
     "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "^2.8.0",

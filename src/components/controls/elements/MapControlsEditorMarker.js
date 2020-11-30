@@ -9,6 +9,7 @@ import './MapControlsEditor.css';
 import { removeElement, setElementProperty } from '../../../redux/ducks/editor';
 import { setEditorHighlight, setPositionAndZoom } from '../../../redux/ducks/ui';
 import { f, t } from '../../Localization';
+import MapControlsEditorImageUploader from './MapControlsEditorImageUploader';
 
 const _MapControlsEditorMarker = ({
   markerId,
@@ -65,23 +66,21 @@ const _MapControlsEditorMarker = ({
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>{t('marker-title')}</span>
-        <input value={markerTitle} onChange={(event) => setMarkerTitle(event.target.value)} />
+        <input
+          placeholder={t('editor-title-placeholder')}
+          value={markerTitle}
+          onChange={(event) => setMarkerTitle(event.target.value)}
+        />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>{t('marker-content')}</span>
         <textarea
+          placeholder={t('editor-content-placeholder')}
           value={markerContent}
           onChange={(event) => setMarkerContent(event.target.value)}
         />
       </div>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('marker-image')}</span>
-        <input
-          placeholder="none"
-          value={markerImage}
-          onChange={(event) => setMarkerImage(event.target.value)}
-        />
-      </div>
+      <MapControlsEditorImageUploader markerImage={markerImage} setMarkerImage={setMarkerImage} />
     </div>
   );
 };
@@ -124,6 +123,6 @@ const mapDispatchToProps = (dispatch, { marker }) => ({
 const MapControlsEditorMarker = connect(
   mapStateToProps,
   mapDispatchToProps
-)(React.memo(_MapControlsEditorMarker));
+)(_MapControlsEditorMarker);
 
 export default MapControlsEditorMarker;

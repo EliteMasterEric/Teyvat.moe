@@ -11,11 +11,44 @@ import MapControlsOptions from './options/MapControlsOptions';
 import MapControlsRegions from './options/MapControlsRegions';
 import MapControlsRoutes from './features/MapControlsRoutes';
 
-import { useImageExtension } from '../Image';
+import { Image, useImageExtension } from '../Image';
+
+import logoPNG from '../../images/controls/logo.png';
+import logoWebP from '../../images/controls/logo.webp';
 
 // CSS
 import './MapControls.css';
 import MapControlsTabs from './MapControlsTabs';
+import { SafeHTML } from '../Util';
+import { t } from '../Localization';
+
+const MapControlsChildren = () => {
+  return (
+    <>
+      <MapControlsFoldButton />
+      <MapControlsRegions />
+
+      <div className={clsx('map-control-header')}>
+        <Image srcPNG={logoPNG} srcWebP={logoWebP} className={clsx('map-controls-fold-small')} />
+        <SafeHTML className={clsx('map-control-header-text')}>{t('short-title')}</SafeHTML>
+      </div>
+
+      <MapControlsTabs />
+
+      <MapControlsAbout />
+
+      <MapControlsCategories />
+
+      <MapControlsFeatures />
+
+      <MapControlsRoutes />
+
+      <MapControlsEditor />
+
+      <MapControlsOptions />
+    </>
+  );
+};
 
 const _MapControls = ({ open }) => {
   const ext = useImageExtension();
@@ -29,21 +62,7 @@ const _MapControls = ({ open }) => {
           open ? 'map-controls-main-open' : 'map-controls-main-closed'
         )}
       >
-        <MapControlsFoldButton />
-        <MapControlsRegions />
-        <MapControlsTabs />
-
-        <MapControlsAbout />
-
-        <MapControlsCategories />
-
-        <MapControlsFeatures />
-
-        <MapControlsRoutes />
-
-        <MapControlsEditor />
-
-        <MapControlsOptions />
+        <MapControlsChildren />
       </div>
     </div>
   );

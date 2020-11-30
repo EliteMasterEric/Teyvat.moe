@@ -20,7 +20,6 @@ const _MapControlsHelp = ({ displayed }) => {
         displayed ? '' : 'display-none'
       )}
     >
-      <SafeHTML className={clsx('map-control-about-help-header')}>{t('short-title')}</SafeHTML>
       <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-a')}</SafeHTML>
 
       <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-b')}</SafeHTML>

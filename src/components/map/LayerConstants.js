@@ -55,8 +55,11 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1) => {
   if (feature.properties.popupTitle)
     text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
 
-  if (feature.properties.popupImage)
-    text = `${text}<img class="map-marker-popup-image" src="/comments/${feature.properties.popupImage}.${imgExt}"/>`;
+  if (feature.properties.popupImage) {
+    text = feature.properties.popupImage.startsWith('http')
+      ? `${text}<img class="map-marker-popup-image" src="${feature.properties.popupImage}.${imgExt}"/>`
+      : `${text}<img class="map-marker-popup-image" src="/comments/${feature.properties.popupImage}.${imgExt}"/>`;
+  }
 
   if (feature.properties.popupContent)
     text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;

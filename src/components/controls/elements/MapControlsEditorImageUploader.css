@@ -1,0 +1,90 @@
+.map-controls-editor-element-image {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 4px 0px 4px 0px;
+
+  align-items: center;
+}
+
+.map-controls-editor-element-image-upload-button {
+  background-color: #313131;
+  color: #1bb76e;
+  margin: 0 0 0 4px;
+}
+
+.map-controls-editor-element-image-url {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  width: auto;
+}
+
+.map-controls-editor-hidden > .map-controls-editor-element-image-url {
+  width: 0px;
+}
+
+.map-controls-editor-hidden > .map-controls-editor-element-image-upload-label {
+  width: 0px;
+}
+
+.map-controls-editor-element-image-upload-dropzone-inactive {
+  font-size: 0px;
+}
+
+.map-controls-editor-element-image-upload-dropzone-active {
+  flex-grow: 1;
+  border-radius: 8px;
+  border-style: dashed;
+  border-width: 2px;
+  padding: 20px;
+  border-color: #1bb76e;
+  font-size: 10px;
+}
+
+.map-controls-editor-animation {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.map-controls-editor-element-image-error,
+.map-controls-editor-element-image-progress,
+.map-controls-editor-element-image-success {
+  flex-grow: 1;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.map-controls-editor-element-image-error {
+  color: red;
+}
+
+.map-controls-editor-element-image-progress {
+  color: orangered;
+}
+
+.map-controls-editor-element-image-success {
+  color: green;
+}
+
+.map-controls-editor-animation-disabled {
+  -webkit-transition: all 0s !important;
+  -moz-transition: all 0s !important;
+  -o-transition: all 0s !important;
+  transition: all 0s !important;
+}
+
+.map-controls-editor-hidden {
+  flex-grow: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.map-controls-editor-element-image-upload-button.nf-mdi-cloud_upload::before {
+  margin: 3px 0 0 -6px;
+  font-size: 24px;
+}

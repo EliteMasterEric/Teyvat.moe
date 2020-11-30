@@ -23,7 +23,7 @@ import EditorControls from './EditorControls';
 
 // A link back to the main repository.
 const ATTRIBUTION =
-  "<a href='https://github.com/GenshinMap/genshinmap.github.io' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
+  "<a href='https://github.com/GenshinMap/genshinmap.github.io' rel='noreferrer' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
 
 /**
  * A wrapper which handles editing events.

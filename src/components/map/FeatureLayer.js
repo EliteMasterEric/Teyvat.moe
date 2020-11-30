@@ -107,7 +107,7 @@ const _FeatureLayer = ({
     const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
 
     // const svgTipFill = childCompletedCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
-    const iconHTML = `<img class='map-marker-cluster-marker' src="${
+    const iconHTML = `<img class='map-marker-cluster-marker' alt="" src="${
       require('../../images/icons/map_base/marker_cluster.png').default
     }"/><b class="map-marker-cluster-label">${childCompletedCount}/${childCount}</b><img class='map-marker-cluster-img' src='${iconUrl}'/>`;
 

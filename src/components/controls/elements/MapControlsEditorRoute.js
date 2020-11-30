@@ -65,16 +65,24 @@ const _MapControlsEditorRoute = ({
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>{t('route-title')}</span>
-        <input value={routeTitle} onChange={(event) => setRouteTitle(event.target.value)} />
+        <input
+          placeholder={t('editor-title-placeholder')}
+          value={routeTitle}
+          onChange={(event) => setRouteTitle(event.target.value)}
+        />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>{t('route-content')}</span>
-        <textarea value={routeContent} onChange={(event) => setRouteContent(event.target.value)} />
+        <textarea
+          placeholder={t('editor-content-placeholder')}
+          value={routeContent}
+          onChange={(event) => setRouteContent(event.target.value)}
+        />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>{t('route-image')}</span>
         <input
-          placeholder="none"
+          placeholder={t('editor-image-placeholder')}
           value={routeImage}
           onChange={(event) => setRouteImage(event.target.value)}
         />
@@ -121,6 +129,6 @@ const mapDispatchToProps = (dispatch, { route }) => ({
 const MapControlsEditorRoute = connect(
   mapStateToProps,
   mapDispatchToProps
-)(React.memo(_MapControlsEditorRoute));
+)(_MapControlsEditorRoute);
 
 export default MapControlsEditorRoute;

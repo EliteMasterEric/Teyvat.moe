@@ -2,17 +2,16 @@ import React from 'react';
 import clsx from 'clsx';
 import { connect } from 'react-redux';
 
-import imgFoldOpenPNG from '../../../images/controls/fold_open.png';
-import imgFoldOpenWebP from '../../../images/controls/fold_open.webp';
-import imgFoldClosePNG from '../../../images/controls/fold_close.png';
-import imgFoldCloseWebP from '../../../images/controls/fold_close.webp';
+import imgFoldOpenPNG from '../../../images/controls/fold_open_small.png';
+import imgFoldOpenWebP from '../../../images/controls/fold_open_small.webp';
+import imgFoldClosePNG from '../../../images/controls/fold_close_small.png';
+import imgFoldCloseWebP from '../../../images/controls/fold_close_small.webp';
 
 import { Image } from '../../Image';
 
 // CSS
-import './MapControlsFoldButton.css';
+import './MapControlsFoldButtonSmall.css';
 import { setControlsOpen } from '../../../redux/ducks/ui';
-import { isSmallScreen } from '../../MediaQuery';
 
 /**
  * The button next to the Map Controls.
@@ -20,12 +19,9 @@ import { isSmallScreen } from '../../MediaQuery';
  * @param {*} isOpen The state of the Map Controls. True means they are open.
  * @param {*} setOpen The function to change the state of the Map Controls.
  */
-const _MapControlsFoldButton = ({ open, setOpen }) => {
+const _MapControlsFoldButtonSmall = ({ open, setOpen }) => {
   // Toggle isOpen.
   const toggleOpen = () => setOpen(!open);
-
-  const smallScreen = isSmallScreen();
-  const hide = smallScreen && open;
 
   return (
     <div
@@ -38,7 +34,7 @@ const _MapControlsFoldButton = ({ open, setOpen }) => {
       <Image
         srcPNG={open ? imgFoldClosePNG : imgFoldOpenPNG}
         srcWebP={open ? imgFoldCloseWebP : imgFoldOpenWebP}
-        className={clsx('map-controls-fold', hide ? 'map-control-fold-off' : '')}
+        className={clsx('map-controls-fold-small')}
       />
     </div>
   );
@@ -48,6 +44,9 @@ const mapStateToProps = (state) => ({
   open: state.controlsOpen,
 });
 const mapDispatchToProps = (dispatch) => ({ setOpen: (open) => dispatch(setControlsOpen(open)) });
-const MapControlsFoldButton = connect(mapStateToProps, mapDispatchToProps)(_MapControlsFoldButton);
+const MapControlsFoldButtonSmall = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(_MapControlsFoldButtonSmall);
 
-export default MapControlsFoldButton;
+export default MapControlsFoldButtonSmall;
