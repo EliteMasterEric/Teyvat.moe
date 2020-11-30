@@ -10,20 +10,6 @@ const IMGUR_UPLOAD_URL = 'https://api.imgur.com/3/image';
  */
 const CLIENT_ID = '0c84ca5aba54552';
 
-const readFileData = (file) => {
-  const reader = new FileReader();
-  return new Promise((resolve, reject) => {
-    reader.onerror = () => {
-      reader.abort();
-      reject(new Error(`ERROR reading file ${file.name}`));
-    };
-    reader.onload = () => {
-      resolve(reader.result);
-    };
-    reader.readAsText(file);
-  });
-};
-
 const createFormData = async (file) => {
   const formData = new FormData();
 
