@@ -282,4 +282,16 @@ First major release of the rework, featuring a new interface developed in React.
 - Reworked interface to be responsive for mobile devices.
   - Added media queries to rearrange the layout for mobile devices, and tested in Chrome and Firefox using the Device Toolbar / Responsive Design Mode. If you have any suggestions or improvements to improve layout on smaller devices (rearranging the interface based on screen size is an option), please submit an issue.
 - Added header with logo to the controls view.
-- With this update, the repository will be switching the displayed branch for users from gh-pages-legacy to gh-pages, as it is considered feature complete for the purposes of early testing.
+
+# 0.7.1
+
+- Fixed a bug with the rendering of markers.
+- Performance and security improvements.
+  - Tested the page with the following tools and implemented changes as suggested:
+    - Chrome Lighthouse (https://developers.google.com/web/tools/lighthouse)
+    - Mozilla Observatory (https://observatory.mozilla.org/)
+    - SecurityHeaders.com (https://securityheaders.com/)
+    - https://www.whatismyip.org/website-reviewer/
+  - Added several alt tags to images.
+  - Added Content Security policy header to prevent XSS attacks.
+- Note that until the site is considered ready for the public, version numbers will likely extend to v0.10.0, etc.
