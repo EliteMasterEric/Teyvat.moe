@@ -317,6 +317,7 @@ First major release of the rework, featuring a new interface developed in React.
 
 # 0.8.1
 
+- Fixed a bug where the Region tabs were not visible.
 - Fixed a bug where all languages displayed as English.
 - Fixed a bug where embeds would not load due to the content security policy.
 - Fixed a bug where popups would not render at the correct width.

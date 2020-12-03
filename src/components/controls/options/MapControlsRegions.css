@@ -1,7 +1,7 @@
 .map-control-regions {
-  position: absolute;
+  position: fixed;
   top: 192px;
-  left: -130px;
+  right: calc(20vw - 64px);
 
   z-index: -100;
 }
