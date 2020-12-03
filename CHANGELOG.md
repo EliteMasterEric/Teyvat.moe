@@ -25,8 +25,8 @@ First major release of the rework, featuring a new interface developed in React.
 - Various bug fixes I think.
 - Feature data:
   - @Lapis256: Added Mondstadt and Liyue Statues of the Seven.
-  - @EliteMasterEric: Added Wei, and stubs for Geo Sigils and Crates.
-  - @EliteMasterEric: Imported most chest data from Yuanshen.site.
+  - @MasterEric: Added Wei, and stubs for Geo Sigils and Crates.
+  - @MasterEric: Imported most chest data from Yuanshen.site.
 
 # 0.4.0
 
@@ -77,7 +77,7 @@ First major release of the rework, featuring a new interface developed in React.
   - Loach Pearl (Liyue Nature)
   - Bamboo Shoot (Liyue Nature)
 - Map contributions:
-  - @EliteMasterEric: Added several Magical Crystal Chunk locations for Mondstadt and Liyue.
+  - @MasterEric: Added several Magical Crystal Chunk locations for Mondstadt and Liyue.
 - Fixed the Bishu Plain Liyue Statue of the Seven rendering off the map.
 - Fixed a bug where the Submit Editor Data form had missing text in the dropdowns.
 - Fixed bug where panning far enough could display parallel universes.
@@ -92,14 +92,14 @@ First major release of the rework, featuring a new interface developed in React.
   - Viewpoints (Liyue Special)
 - Added markers and revised existing markers for various features:
 
-  - @EliteMasterEric: Mondstadt Teleporters
-  - @EliteMasterEric: Mondstadt Domains
-  - @EliteMasterEric: Mondstadt Luxurious Chests (full review with descriptions)
-  - @EliteMasterEric: Mondstadt Viewpoints
-  - @EliteMasterEric: Liyue Teleporters
-  - @EliteMasterEric: Liyue Domains
-  - @EliteMasterEric: Liyue Viewpoints
-  - @EliteMasterEric: Liyue Luxurious Chests (full review with descriptions)
+  - @MasterEric: Mondstadt Teleporters
+  - @MasterEric: Mondstadt Domains
+  - @MasterEric: Mondstadt Luxurious Chests (full review with descriptions)
+  - @MasterEric: Mondstadt Viewpoints
+  - @MasterEric: Liyue Teleporters
+  - @MasterEric: Liyue Domains
+  - @MasterEric: Liyue Viewpoints
+  - @MasterEric: Liyue Luxurious Chests (full review with descriptions)
   - @WenshiTakahashi: Liyue Common Chest
 
 - Added various routes:
@@ -108,16 +108,16 @@ First major release of the rework, featuring a new interface developed in React.
 
 - Added pictures for various features:
 
-  - @EliteMasterEric: Mondstadt Statues
-  - @EliteMasterEric: Mondstadt Teleporters
-  - @EliteMasterEric: Mondstadt Viewpoints
-  - @EliteMasterEric: Liyue Statues
-  - @EliteMasterEric: Liyue Teleporters
-  - @EliteMasterEric: Liyue Viewpoints
+  - @MasterEric: Mondstadt Statues
+  - @MasterEric: Mondstadt Teleporters
+  - @MasterEric: Mondstadt Viewpoints
+  - @MasterEric: Liyue Statues
+  - @MasterEric: Liyue Teleporters
+  - @MasterEric: Liyue Viewpoints
   - Genshin Impact Wiki: Mondstadt Domains
   - Genshin Impact Wiki: Liyue Domains
-  - @EliteMasterEric and bbs.mihoyo.com: Mondstadt Luxurious Chests
-  - @EliteMasterEric and bbs.mihoyo.com: Liyue Luxurious Chests
+  - @MasterEric and bbs.mihoyo.com: Mondstadt Luxurious Chests
+  - @MasterEric and bbs.mihoyo.com: Liyue Luxurious Chests
   - @WenshiTakahashi: Liyue Common Chest
 
 - Replaced all JPG images with PNGs.
@@ -137,21 +137,21 @@ First major release of the rework, featuring a new interface developed in React.
 - Added new features:
   - Childe (Liyue Boss)
 - Added new markers and revised existing markers for the following features:
-  - @EliteMasterEric: Unusual Hillichurl (Wei) Mondstadt (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+  - @MasterEric: Unusual Hillichurl (Wei) Mondstadt (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
     - Total of 7 markers
-  - @EliteMasterEric: Unusual Hillichurl (Wei) Liyue (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+  - @MasterEric: Unusual Hillichurl (Wei) Liyue (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
     - Total of 12 markers
-  - @EliteMasterEric: Loach Pearl (Liyue) (Credit to [Juzzex](https://www.youtube.com/watch?v=4orUPwiOuaM&t=23s))
+  - @MasterEric: Loach Pearl (Liyue) (Credit to [Juzzex](https://www.youtube.com/watch?v=4orUPwiOuaM&t=23s))
     - Total of 12 markers
-  - @EliteMasterEric: Bamboo Shoot (Liyue) (Credit to [taka gg](https://www.youtube.com/watch?v=DSp3IC6lQDw))
+  - @MasterEric: Bamboo Shoot (Liyue) (Credit to [taka gg](https://www.youtube.com/watch?v=DSp3IC6lQDw))
     - Total of 12 markers
 - Added new routes:
-  - @EliteMasterEric: Loach Pearls (Liyue Nature)
-  - @EliteMasterEric: Bamboo Shoots (Liyue Nature)
+  - @MasterEric: Loach Pearls (Liyue Nature)
+  - @MasterEric: Bamboo Shoots (Liyue Nature)
 - Added pictures for various features:
-  - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Mondstadt
-  - @EliteMasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Liyue
-  - @EliteMasterEric: Loach Pearl (Liyue)
+  - @MasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Mondstadt
+  - @MasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Liyue
+  - @MasterEric: Loach Pearl (Liyue)
 
 # 0.6.0
 
@@ -258,15 +258,15 @@ First major release of the rework, featuring a new interface developed in React.
     - Magical Crystal Chunk (Mondstadt Ore)
 
 - Added new features:
-  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (41 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
-  - @EliteMasterEric: Meteorite Shards (Liyue Event) (77 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
+  - @MasterEric: Meteorite Shards (Mondstadt Event) (41 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
+  - @MasterEric: Meteorite Shards (Liyue Event) (77 total markers) (Credit to Shukaaa and Lyralei13 on Reddit for locations)
 - Added new routes:
-  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (2 total routes)
-  - @EliteMasterEric: Meteorite Shards (Liyue Event) (4 total routes)
+  - @MasterEric: Meteorite Shards (Mondstadt Event) (2 total routes)
+  - @MasterEric: Meteorite Shards (Liyue Event) (4 total routes)
 - Added images for features:
-  - @EliteMasterEric: Wolfhook (Mondstadt Nature) (30 total images)
-  - @EliteMasterEric: Meteorite Shards (Mondstadt Event) (41 total images)
-  - @EliteMasterEric: Meteorite Shards (Liyue Event) (77 total images)
+  - @MasterEric: Wolfhook (Mondstadt Nature) (30 total images)
+  - @MasterEric: Meteorite Shards (Mondstadt Event) (41 total images)
+  - @MasterEric: Meteorite Shards (Liyue Event) (77 total images)
 
 # 0.6.2
 
@@ -314,3 +314,9 @@ First major release of the rework, featuring a new interface developed in React.
 - Added an additional region for Dragonspine internally, currently hidden.
   - For ease of browsing, features and routes in Dragonspine will be in their own region.
 - With this update, the repository will be switching the displayed branch for users from gh-pages-legacy to gh-pages, as it is considered feature complete for the purposes of early testing.
+
+# 0.8.1
+
+- Fixed a bug where all languages displayed as English.
+- Fixed a bug where embeds would not load due to the content security policy.
+- Fixed a bug where popups would not render at the correct width.
