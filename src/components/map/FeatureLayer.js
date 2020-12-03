@@ -13,7 +13,7 @@ import store from '../../redux';
 import { createMapIcon } from '../MapFeaturesData';
 import { useImageExtension } from '../Image';
 import { hashObject } from '../Util';
-import { buildPopup } from './MapPopup';
+import { buildPopup, POPUP_WIDTH } from './MapPopup';
 import {
   clearFeatureMarkerCompleted,
   setFeatureMarkerCompleted,
@@ -93,7 +93,10 @@ const _FeatureLayer = ({
 
     const completionTime = _.get(completedIds, feature?.id, -1);
     const text = buildPopup(feature, ext, completionTime);
-    if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+    if (text)
+      layer.bindPopup(`<div class="map-marker-popup">${text}</div>`, {
+        maxWidth: POPUP_WIDTH,
+      });
   };
 
   const createClusterIcon = (cluster) => {

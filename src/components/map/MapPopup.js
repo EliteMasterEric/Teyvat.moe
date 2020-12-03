@@ -3,6 +3,8 @@ import { displayUnixTimestamp, f } from '../Localization';
 // Capture group 1 is the video ID.
 const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([-_a-zA-Z0-9]+)(?:&.+)?$/;
 
+export const POPUP_WIDTH = 560;
+
 /**
  * @param {*} id The YouTube video ID.
  * @param {*} width Size of the popup. Recommend a 16:9 ratio.

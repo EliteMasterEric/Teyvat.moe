@@ -8,7 +8,7 @@ import 'leaflet-textpath';
 
 import { useImageExtension } from '../Image';
 import { lineProperties, lineTextProperties } from './LayerConstants';
-import { buildPopup } from './MapPopup';
+import { buildPopup, POPUP_WIDTH } from './MapPopup';
 import { hashObject } from '../Util';
 
 const _RouteLayer = ({ mapRoute, displayed }) => {
@@ -28,7 +28,10 @@ const _RouteLayer = ({ mapRoute, displayed }) => {
 
   const onEachFeature = (route, layer) => {
     const text = buildPopup(route, ext);
-    if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+    if (text)
+      layer.bindPopup(`<div class="map-marker-popup">${text}</div>`, {
+        maxWidth: POPUP_WIDTH,
+      });
   };
 
   return (

@@ -17,7 +17,7 @@ import {
   lineTextProperties,
   lineTextPropertiesHighlight,
 } from './LayerConstants';
-import { buildPopup } from './MapPopup';
+import { buildPopup, POPUP_WIDTH } from './MapPopup';
 import { hashObject } from '../Util';
 
 const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
@@ -86,7 +86,7 @@ const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
       const text = buildPopup(translatedFeature, ext, -1, true);
       if (text) {
         layer.bindPopup(`<div class="map-marker-popup">${text}</div>`, {
-          maxWidth: 560,
+          maxWidth: POPUP_WIDTH,
         });
       }
     } catch (e) {
