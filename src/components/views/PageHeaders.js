@@ -6,7 +6,10 @@ import { isDev } from '../Util';
 
 // The site connects to these external APIs.
 const CONNECT_HOSTS = ['https://api.imgur.com'];
+// This site fetches style data from these domains.
 const STYLE_HOSTS = ['https://cdnjs.cloudflare.com'];
+// This site imports iframes from these domains.
+const FRAME_HOSTS = ['https://www.youtube.com'];
 
 // The base Content Security Policy.
 // <HOST> is replaced with a list of valid web hosts.
@@ -20,7 +23,7 @@ const CSP_BASE = `
   connect-src 'self' data: <CONNECT>;
   font-src 'self';
   form-action 'self';
-  frame-src 'none';
+  frame-src <FRAME>;
   img-src 'self' data: ;
   media-src 'none';
   object-src 'self';
@@ -28,17 +31,17 @@ const CSP_BASE = `
   style-src 'unsafe-inline' 'self' <STYLE>;
 `
   .replace(/<CONNECT>/g, CONNECT_HOSTS.join(' '))
-  .replace(/<STYLE>/g, STYLE_HOSTS.join(' '));
-
-// Replace this with the URL this site will be hosted on during local testing.
-const LOCALHOST_URL = 'localhost:3000';
-const CSP_LOCALHOST = CSP_BASE.replace(/<HOST>/g, LOCALHOST_URL);
+  .replace(/<STYLE>/g, STYLE_HOSTS.join(' '))
+  .replace(/<FRAME>/g, FRAME_HOSTS.join(' '));
 
 // Edit, append, or replace this with any pages this site will be hosted on.
 const VALID_HOSTS = ['genshinmap.github.io', 'genshin-map-beta.netlify.app'];
 const CSP_HOSTS = CSP_BASE.replace(/<HOST>/g, VALID_HOSTS.join(' '));
 
 const PERMISSIONS_POLICY = `
+  clipboard-write 'self';
+  layout-animations 'self';
+
   accelerometer 'none';
   ambient-light-sensor 'none';
   autoplay 'none';
@@ -52,7 +55,6 @@ const PERMISSIONS_POLICY = `
   fullscreen 'none';
   geolocation 'none';
   gyroscope 'none';
-  layout-animations 'none';
   legacy-image-formats 'none';
   magnetometer 'none';
   microphone 'none';
@@ -62,11 +64,11 @@ const PERMISSIONS_POLICY = `
   payment 'none';
   picture-in-picture 'none';
   publickey-credentials-get 'none';
+  screen-wake-lock 'none';
   sync-xhr 'none';
   usb 'none';
   vr  'none';
   wake-lock 'none';
-  screen-wake-lock 'none';
   web-share 'none';
   xr-spatial-tracking 'none';
 `;
