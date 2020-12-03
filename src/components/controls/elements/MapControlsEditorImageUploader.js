@@ -13,7 +13,7 @@ import { uploadImage } from '../../api/imgur';
  *  * Allows users to enter an image URL into the box.
  *  * Dragging
  */
-const MapControlsEditorImageUploader = ({ markerImage, setMarkerImage }) => {
+const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
   const [errorMsg, setErrorMsg] = React.useState('');
 
   const onDropAccepted = React.useCallback((acceptedFiles) => {
@@ -21,7 +21,7 @@ const MapControlsEditorImageUploader = ({ markerImage, setMarkerImage }) => {
 
     uploadImage(acceptedFiles[0])
       .then((imageUrl) => {
-        setMarkerImage(imageUrl);
+        setElementMedia(imageUrl);
         setErrorMsg('success');
       })
       .catch((error) => {
@@ -48,7 +48,7 @@ const MapControlsEditorImageUploader = ({ markerImage, setMarkerImage }) => {
     onDropRejected,
   });
 
-  const uploadMarkerImage = () => {
+  const uploadElementMedia = () => {
     open();
   };
 
@@ -85,16 +85,22 @@ const MapControlsEditorImageUploader = ({ markerImage, setMarkerImage }) => {
           isDragActive ? 'map-controls-editor-hidden' : 'map-controls-editor-animation-disabled'
         )}
       >
+        <Tooltip />
         <span
-          className={clsx('map-controls-editor-element-label', 'map-controls-editor-animation')}
+          data-tip={t('editor-elements-media-tooltip')}
+          className={clsx(
+            'map-controls-editor-element-label',
+            'map-controls-editor-animation',
+            'label-tooltip'
+          )}
         >
-          {t('marker-image')}
+          {t('editor-elements-media')}
         </span>
         <input
-          placeholder={t('editor-image-placeholder')}
-          value={markerImage}
+          placeholder={t('editor-elements-media-placeholder')}
+          value={elementMedia}
           className={clsx('map-controls-editor-image-url', 'map-controls-editor-animation')}
-          onChange={(event) => setMarkerImage(event.target.value)}
+          onChange={(event) => setElementMedia(event.target.value)}
         />
       </div>
 
@@ -104,8 +110,8 @@ const MapControlsEditorImageUploader = ({ markerImage, setMarkerImage }) => {
       <input {...getInputProps()} />
       <div
         data-tip={t('editor-image-upload-tooltip')}
-        onClick={uploadMarkerImage}
-        onKeyDown={uploadMarkerImage}
+        onClick={uploadElementMedia}
+        onKeyDown={uploadElementMedia}
         role="button"
         aria-label="Upload"
         tabIndex={0}

@@ -9,17 +9,18 @@ import './MapControlsEditor.css';
 import { removeElement, setElementProperty } from '../../../redux/ducks/editor';
 import { setEditorHighlight, setPositionAndZoom } from '../../../redux/ducks/ui';
 import { f, t } from '../../Localization';
+import MapControlsEditorImageUploader from './MapControlsEditorImageUploader';
 
 const _MapControlsEditorRoute = ({
   routeId,
   routeTitle,
   routeContent,
-  routeImage,
+  routeMedia,
   highlighted,
   highlightRoute,
   setRouteTitle,
   setRouteContent,
-  setRouteImage,
+  setRouteMedia,
   deleteRoute,
 }) => {
   return (
@@ -43,7 +44,7 @@ const _MapControlsEditorRoute = ({
         />
 
         <span className={clsx('map-controls-editor-element-label')}>
-          {f('route-id', { id: routeId })}
+          {f('editor-elements-route-id', { id: routeId })}
         </span>
 
         <Tooltip />
@@ -64,29 +65,26 @@ const _MapControlsEditorRoute = ({
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('route-title')}</span>
+        <span className={clsx('map-controls-editor-element-label')}>
+          {t('editor-elements-title')}
+        </span>
         <input
-          placeholder={t('editor-title-placeholder')}
+          placeholder={t('editor-elements-title-placeholder')}
           value={routeTitle}
           onChange={(event) => setRouteTitle(event.target.value)}
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('route-content')}</span>
+        <span className={clsx('map-controls-editor-element-label')}>
+          {t('editor-elements-content')}
+        </span>
         <textarea
-          placeholder={t('editor-content-placeholder')}
+          placeholder={t('editor-elements-content-placeholder')}
           value={routeContent}
           onChange={(event) => setRouteContent(event.target.value)}
         />
       </div>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('route-image')}</span>
-        <input
-          placeholder={t('editor-image-placeholder')}
-          value={routeImage}
-          onChange={(event) => setRouteImage(event.target.value)}
-        />
-      </div>
+      <MapControlsEditorImageUploader elementMedia={routeMedia} setElementMedia={setRouteMedia} />
     </div>
   );
 };
@@ -96,7 +94,7 @@ const mapStateToProps = (state, { route }) => ({
   routeId: route.id,
   routeTitle: route.properties.popupTitle.en,
   routeContent: route.properties.popupContent.en,
-  routeImage: route.properties.popupImage,
+  routeMedia: route.properties.popupMedia,
 });
 const mapDispatchToProps = (dispatch, { route }) => ({
   setRouteTitle: (value) => {
@@ -105,8 +103,8 @@ const mapDispatchToProps = (dispatch, { route }) => ({
   setRouteContent: (value) => {
     dispatch(setElementProperty(route, 'properties.popupContent.en', value));
   },
-  setRouteImage: (value) => {
-    dispatch(setElementProperty(route, 'properties.popupImage', value));
+  setRouteMedia: (value) => {
+    dispatch(setElementProperty(route, 'properties.popupMedia', value));
   },
 
   deleteMarker: () => dispatch(removeElement(route)),

@@ -25,8 +25,12 @@ const _MapControlSummary = ({ displayed, displayedFeatures }) => {
         displayed ? '' : 'display-none'
       )}
     >
-      <span className={clsx('map-controls-about-summary-header')}>{t('tab-summary')}</span>
-      <span className={clsx('map-controls-about-summary-subtitle')}>{t('summary-subtitle')}</span>
+      <span className={clsx('map-controls-about-summary-header')}>
+        {t('map-controls-tab-summary')}
+      </span>
+      <span className={clsx('map-controls-about-summary-subtitle')}>
+        {t('map-summary-subtitle')}
+      </span>
       <div className={clsx('map-controls-about-summary-feature-container')}>
         {displayedFeatures.map((featureKey) => (
           <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />

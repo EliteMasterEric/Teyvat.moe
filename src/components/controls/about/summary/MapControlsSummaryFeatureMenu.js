@@ -17,10 +17,12 @@ import { setEditorHighlight, setPositionAndZoom } from '../../../../redux/ducks/
 
 import './MapControlsSummaryFeatureMenu.css';
 import { MapFeatures } from '../../../MapFeatures';
+import { setFeatureDisplayed } from '../../../../redux/ducks/displayed';
 
 const _MapControlSummaryFeatureMenu = ({
   featureKey,
 
+  hideFeature,
   clearAllFeature,
   clearExpiredFeature,
   locateFeature,
@@ -34,8 +36,8 @@ const _MapControlSummaryFeatureMenu = ({
       <Popup
         trigger={
           <div
-            data-tip={t('open-menu')}
-            aria-label={t('open-menu')}
+            data-tip={t('map-summary-menu-open')}
+            aria-label={t('map-summary-menu-open')}
             className={clsx(
               'nf',
               'nf-mdi-menu',
@@ -68,7 +70,7 @@ const _MapControlSummaryFeatureMenu = ({
               }}
               className={clsx('map-controls-about-summary-feature-menu-item')}
             >
-              {t('locate')}
+              {t('map-summary-menu-locate')}
             </div>
             {doesExpire ? (
               <div
@@ -84,9 +86,25 @@ const _MapControlSummaryFeatureMenu = ({
                 }}
                 className={clsx('map-controls-about-summary-feature-menu-item')}
               >
-                {t('clear-expired')}
+                {t('map-summary-menu-clear-expired')}
               </div>
             ) : null}
+
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={() => {
+                hideFeature();
+                closePopup();
+              }}
+              onKeyDown={() => {
+                hideFeature();
+                closePopup();
+              }}
+              className={clsx('map-controls-about-summary-feature-menu-item')}
+            >
+              {t('map-summary-menu-hide-feature')}
+            </div>
 
             <div
               role="button"
@@ -101,7 +119,7 @@ const _MapControlSummaryFeatureMenu = ({
               }}
               className={clsx('map-controls-about-summary-feature-menu-item')}
             >
-              {t('clear-all')}
+              {t('map-summary-menu-clear-all')}
             </div>
           </div>
         )}
@@ -144,6 +162,9 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
           HIGHLIGHT_ZOOM_LEVEL
         )
       );
+    },
+    hideFeature: () => {
+      dispatch(setFeatureDisplayed(featureKey, false));
     },
   };
 };

@@ -27,7 +27,11 @@ module.exports = {
      */
     'no-case-declarations': ['off'],
 
-    'no-console': ['warn', { allow: ['warn', 'error'] }], // Allow the use of console calls in the event of an error.
+    /*
+     * Allow use of console commands at specific log levels.
+     * Instances of console.log and console.info should be stripped.
+     */
+    'no-console': ['warn', { allow: ['warn', 'error', 'debug'] }],
 
     'import/prefer-default-export': ['off'], // Allow single exports in file that will have multipl efiles later.
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.

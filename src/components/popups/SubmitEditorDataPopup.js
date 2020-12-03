@@ -3,7 +3,7 @@ import React from 'react';
 import clsx from 'clsx';
 
 import Popup from 'reactjs-popup';
-import Select from 'react-select';
+import Select from 'react-select-oss';
 import ReactSwitch from 'react-switch';
 
 import './SubmitEditorDataPopup.css';
@@ -14,8 +14,8 @@ import { useImageExtension } from '../Image';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
-  const [submissionRegion, setSubmissionRegion] = React.useState('');
-  const [submissionCategory, setSubmissionCategory] = React.useState('');
+  const [submissionRegion, setSubmissionRegion] = React.useState(null);
+  const [submissionCategory, setSubmissionCategory] = React.useState(null);
   const [clusterMarkers, setClusterMarkers] = React.useState(false);
 
   const isValid = () => {
@@ -81,7 +81,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             )}
           >
             <div className={clsx('popup-submit-editor-data-field-container', 'margin-bottom')}>
-              <span>{t('feature-name')}</span>
+              <span>{t('popup-submit-editor-data-feature-name')}</span>
               <input
                 type="text"
                 value={submissionName}
@@ -89,7 +89,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>{t('category')}</span>
+              <span>{t('popup-submit-editor-data-category')}</span>
               <Select
                 className={clsx('popup-submit-editor-data-field-dropdown')}
                 options={categoryOptions}
@@ -98,7 +98,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               />
             </div>
             <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>{t('region')}</span>
+              <span>{t('popup-submit-editor-data-region')}</span>
               <Select
                 className={clsx('popup-submit-editor-data-field-dropdown')}
                 options={regionOptions}
@@ -123,7 +123,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
           <div className={clsx('popup-submit-editor-data-button-container')}>
             <div
               role="button"
-              aria-label={t('cancel')}
+              aria-label={t('popup-cancel')}
               tabIndex={0}
               onClick={closePopup}
               className={clsx(
@@ -131,11 +131,11 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                 'popup-submit-editor-data-button-cancel'
               )}
             >
-              {t('cancel')}
+              {t('popup-cancel')}
             </div>
             <div
               role="button"
-              aria-label={t('confirm')}
+              aria-label={t('popup-confirm')}
               tabIndex={0}
               onClick={onClickConfirm(closePopup)}
               className={clsx(
@@ -145,7 +145,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                   : 'popup-submit-editor-data-button-confirm-disabled'
               )}
             >
-              {t('confirm')}
+              {t('popup-confirm')}
             </div>
           </div>
         </div>

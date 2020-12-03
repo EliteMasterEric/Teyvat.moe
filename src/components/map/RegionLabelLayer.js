@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import L from 'leaflet';
 
 import { GeoJSON } from 'react-leaflet';
-import { localizeField } from '../Localization';
+import { localizeField } from '../FeatureLocalization';
 import { hashObject } from '../Util';
 
 const regionLabelData = require('../../data/core/map-labels.json');

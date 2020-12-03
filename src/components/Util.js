@@ -8,6 +8,21 @@ export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
 };
 
+let dev;
+export const isDev = () => {
+  // Cache the result.
+  if (typeof dev !== 'undefined') return dev;
+
+  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    console.debug('Running in development environment.');
+    dev = true;
+  } else {
+    dev = false;
+  }
+
+  return dev;
+};
+
 /**
  * Encode an input string in base64.
  * @param {String} input The string to encode.

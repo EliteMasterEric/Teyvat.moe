@@ -1,8 +1,8 @@
-# data/i18n
+### data/i18n
 
-This folder contains JSON files which describe how the site should be translated for users. The website fetches the
+This folder contains JSON files which describe how the site should be translated for users. The website fetches the data from the appropriate JSON file as it loads.
 
-Since the files in this folder are loaded dynamically, you can simply create a new JSON file, whose name is [the BCP-47 locale](https://www.freecodecamp.org/news/how-to-get-started-with-internationalization-in-javascript-c09a0d2cd834/) to provide the translations for, and the site will pick it up and use it.
+Since the files in this folder are loaded dynamically, you can simply create a new JSON file, whose name is a 2-letter language code to provide the translations for, and the site will pick it up and use it.
 
 ## Formatting
 
@@ -34,20 +34,12 @@ f('currentDate', {
 });
 ```
 
-## Localization Keys
+## HTML Tags
 
-Below is a description of the localization keys, as needed.
+Simple HTML can be for many translated strings. Only certain simple tags such as `<b>, <i>, <em>, and <a>` are allowed.
 
-### about-translator-attribution
-
-This string is blank on the English version, but is displayed at the bottom of the 'About' tab. Use this for translation attribution.
-
-Example: `French localization provided by CoolBoy83 and TheDarkestOne.` (fake names and obviously not in French, but you get the idea)
-
-### about-a / about-b / about-c / about-d / about-e / about-f
-
-These strings are used to provide info the user about how to use the app. As seen here, simple HTML can be for many translated strings. Only certain tags such as `<b>, <i>, <em>, and <a>` are allowed.
-
-### page-title
-
-The title of the webpage as seen by the browser.
+```
+{
+  "contribute": "Click to learn <a href=\"https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing\">how to contribute.</a>",
+}
+```

@@ -78,7 +78,7 @@ const _MapEditor = ({
     const newMarker = {
       geometry: { type: 'Point', coordinates: latlngFormatted },
       type: 'Feature',
-      properties: { popupTitle: { en: '' }, popupContent: { en: '' }, popupImage: '' },
+      properties: { popupTitle: { en: '' }, popupContent: { en: '' }, popupMedia: '' },
     };
 
     appendMarker(newMarker);
@@ -94,7 +94,7 @@ const _MapEditor = ({
     const newRoute = {
       geometry: { type: 'LineString', coordinates: latlngsFormatted },
       type: 'Feature',
-      properties: { popupTitle: '', popupContent: '', popupImage: '' },
+      properties: { popupTitle: '', popupContent: '', popupMedia: '' },
     };
     appendRoute(newRoute);
     setEditorState('none');

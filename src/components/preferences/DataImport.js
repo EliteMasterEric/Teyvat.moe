@@ -82,8 +82,34 @@ export const migrateData = (input, version) => {
         },
       };
     case 'GM_002':
-      // No change needed.
-      return output;
+      /*
+       * This update makes the following changes:
+       * - Rename editor.feature.data[#].properties.popupImage to popupMedia.
+       */
+      output = {
+        ...output,
+        editor: {
+          ...output.editor,
+          feature: {
+            ...output.editor.feature,
+            data: output.editor.feature.data.map((element) => {
+              return {
+                ...element,
+                properties: {
+                  popupTitle: element.properties.popupTitle,
+                  popupContent: element.properties.popupContent,
+                  popupMedia: element.properties.popupImage,
+                },
+              };
+            }),
+          },
+        },
+      };
+    case 'GM_003':
+      // Migration is done.
+      return {
+        ...output,
+      };
   }
   /* eslint-enable no-fallthrough */
 };

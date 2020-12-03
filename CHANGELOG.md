@@ -294,4 +294,23 @@ First major release of the rework, featuring a new interface developed in React.
     - https://www.whatismyip.org/website-reviewer/
   - Added several alt tags to images.
   - Added Content Security policy header to prevent XSS attacks.
-- Note that until the site is considered ready for the public, version numbers will likely extend to v0.10.0, etc.
+- Note that until the site is considered ready to leave Beta, version numbers will likely extend to v0.10.0, etc.
+
+# 0.8.0
+
+- Rename Image in Editor to Media.
+  - This triggered a breaking change to how editor data was stored, triggering a Preferences version update to GM_003.
+  - Added migration for GM_003.
+- Added support for YouTube embeds in popups.
+  - By using a YouTube URL instead of an image, you can display a tutorial video instead of a picture.
+- Added a language override to the Options menu, defaulting to whatever your browser reports.
+- Added a hover tooltip explaining the Media field.
+- Redid localization.
+  - Localization services are now hosted through POEditor.
+  - Reorganized the i18n keys.
+  - Rewrote the i18n `README.md` file to match the changes to the i18n file.
+- Fixed a bug where dropdown selectors would display a console error.
+- Added validation for popup Media.
+- Added an additional region for Dragonspine internally, currently hidden.
+  - For ease of browsing, features and routes in Dragonspine will be in their own region.
+- With this update, the repository will be switching the displayed branch for users from gh-pages-legacy to gh-pages, as it is considered feature complete for the purposes of early testing.

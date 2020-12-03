@@ -91,3 +91,11 @@ export const setHideFeaturesInEditor = (value) => {
 export const setHideRoutesInEditor = (value) => {
   return setNamedOption('hideRoutesInEditor', value);
 };
+/**
+ * Set whether to override the displayed language.
+ * @param {*} value The desired value.
+ * @returns An action to be dispatched.
+ */
+export const setOverrideLang = (value) => {
+  return setNamedOption('overrideLang', value);
+};

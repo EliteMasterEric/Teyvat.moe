@@ -32,7 +32,7 @@ const ImportDataPopup = ({ title, content, onConfirm, trigger }) => {
           <div className={clsx('popup-import-data-button-container')}>
             <div
               role="button"
-              aria-label="Cancel Clear Data"
+              aria-label={t('popup-cancel')}
               tabIndex={0}
               onClick={closePopup}
               onKeyDown={closePopup}
@@ -41,11 +41,11 @@ const ImportDataPopup = ({ title, content, onConfirm, trigger }) => {
                 'popup-clear-editor-data-button-cancel'
               )}
             >
-              {t('cancel')}
+              {t('popup-cancel')}
             </div>
             <div
               role="button"
-              aria-label="Confirm Clear Data"
+              aria-label={t('popup-confirm')}
               tabIndex={0}
               onClick={() => {
                 onConfirm(textarea);
@@ -60,7 +60,7 @@ const ImportDataPopup = ({ title, content, onConfirm, trigger }) => {
                 'popup-clear-editor-data-button-confirm'
               )}
             >
-              {t('confirm')}
+              {t('popup-confirm')}
             </div>
           </div>
         </div>

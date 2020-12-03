@@ -23,7 +23,7 @@ const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}
         role="button"
-        aria-label={t('tab-help')}
+        aria-label={t('map-controls-tab-help')}
         tabIndex={0}
         className={clsx(
           'map-controls-about-tab',
@@ -31,13 +31,13 @@ const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
           'noselect'
         )}
       >
-        {t('tab-help')}
+        {t('map-controls-tab-help')}
       </div>
       <div
         onClick={() => setTab('summary')}
         onKeyDown={() => setTab('summary')}
         role="button"
-        aria-label={t('tab-summary')}
+        aria-label={t('map-controls-tab-summary')}
         tabIndex={0}
         className={clsx(
           'map-controls-about-tab',
@@ -45,7 +45,7 @@ const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
           'noselect'
         )}
       >
-        {t('tab-summary')}
+        {t('map-controls-tab-summary')}
       </div>
     </div>
   );

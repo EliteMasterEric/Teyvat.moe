@@ -8,9 +8,8 @@ import 'leaflet-textpath';
 import { GeoJSON } from 'react-leaflet';
 import { connect } from 'react-redux';
 
-import { localizeField } from '../Localization';
+import { localizeField } from '../FeatureLocalization';
 import {
-  buildPopup,
   editorMarker,
   editorMarkerHighlight,
   lineProperties,
@@ -18,6 +17,7 @@ import {
   lineTextProperties,
   lineTextPropertiesHighlight,
 } from './LayerConstants';
+import { buildPopup } from './MapPopup';
 import { hashObject } from '../Util';
 
 const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
@@ -81,8 +81,18 @@ const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
         popupContent: localizeField(feature?.properties?.popupContent) ?? '',
       },
     };
-    const text = buildPopup(translatedFeature, ext);
-    if (text) layer.bindPopup(`<div class="map-marker-popup">${text}</div>`);
+
+    try {
+      const text = buildPopup(translatedFeature, ext, -1, true);
+      if (text) {
+        layer.bindPopup(`<div class="map-marker-popup">${text}</div>`, {
+          maxWidth: 560,
+        });
+      }
+    } catch (e) {
+      // Print the error and don't add the popup to the marker.
+      console.error(e);
+    }
   };
 
   // TODO: We hide by destroying. Is there a better way?

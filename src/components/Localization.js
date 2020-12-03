@@ -2,14 +2,12 @@
  * Relies on locales in BCP-47 format.
  */
 import LocalizedStrings from 'react-localization';
+import { DEFAULT_LOCALE_FILE } from './preferences/DefaultPreferences';
 
 /**
  * The require context referencing all the localization files.
  */
 const i18nContext = require.context('../data/i18n', true, /.json$/);
-
-const DEFAULT_LOCALE_CODE = 'en';
-const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * A list of JSON file paths, excluding the default locale.
@@ -38,11 +36,8 @@ const localizedStrings = new LocalizedStrings(i18nData, {
  * @returns {String} The localized string.
  */
 export const t = (key, locale = null) => {
-  // If specified, use a specific locale.
-  if (locale !== null) localizedStrings.getString(key, locale);
-
-  // Else use the current locale.
-  return localizedStrings[key];
+  // Use the current locale.
+  return localizedStrings.getString(key, locale);
 };
 
 /**
@@ -60,25 +55,33 @@ export const f = (key, ...options) => {
  * @returns {String} The current locale in BCP-47 format.
  */
 export const getLocale = () => {
-  return localizedStrings.getInterfaceLanguage();
+  return localizedStrings.getLanguage();
 };
 
 /**
- * Given a dict, fetch the appropriate key from 'field'
- * @param {*} field A dictionary containing {'locale': 'value'} fields.
- * @returns {value} The value from 'field' whose key matches the current locale, or the default locale.
+ * Retrieves a shortened form of the current locale.
  */
-export const localizeField = (field) => {
-  const currentLanguage = getLocale();
-  if (field[currentLanguage]) {
-    return field[currentLanguage];
-  }
-  // Else, fall back to default locale.
-  if (field[DEFAULT_LOCALE_CODE]) {
-    return field[DEFAULT_LOCALE_CODE];
-  }
-  // Else, return null.
-  return null;
+export const getShortLocale = () => {
+  const language = getLocale();
+  const idx = language.indexOf('-');
+  const auxLang = idx >= 0 ? language.substring(0, idx) : language;
+  return auxLang;
+};
+
+/**
+ * Retrieve the list of available languges
+ * @returns {String} A list of locale strings.
+ */
+export const getAvailableLanguages = () => {
+  return localizedStrings.getAvailableLanguages();
+};
+
+/**
+ * Replace the currently selected locale with the specified one.
+ * @param {String} lang The new locale code.
+ */
+export const overrideLocale = (lang) => {
+  localizedStrings.setLanguage(lang);
 };
 
 /**

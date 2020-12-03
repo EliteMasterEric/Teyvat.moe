@@ -9,8 +9,12 @@ import stub from './stub';
 
 let ls = 'localStorage' in global && global.localStorage ? global.localStorage : stub;
 
+const has = (key) => {
+  return key in ls && ls.getItem(key) !== undefined;
+};
+
 const get = (key) => {
-  return JSON.parse(ls.getItem(key));
+  return has(key) ? JSON.parse(ls.getItem(key)) : null;
 };
 
 const remove = (key) => {

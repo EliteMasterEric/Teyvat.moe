@@ -14,7 +14,7 @@ Create WebPs for all PNGs that don't already have them;
 ```
 shopt -s globstar
 for file in **/*.png; do
-    if [ ! -f ${file%.webp}.webp ]; then
+    if [ ! -f ${file%.png}.webp ]; then
         echo ${file}
         vips copy ${file%.png}.png ${file%.png}.webp
     fi
@@ -25,8 +25,10 @@ Create PNGS for all WebPs;
 ```
 shopt -s globstar
 for file in **/*.webp; do
-    echo ${file}
-    vips copy ${file%.webp}.webp ${file%.webp}.png
+    if [ ! -f ${file%.webp}.png ]; then
+        echo ${file}
+        vips copy ${file%.webp}.webp ${file%.webp}.png
+    fi
 done
 ```
 

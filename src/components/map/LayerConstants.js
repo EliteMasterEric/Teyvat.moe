@@ -6,8 +6,6 @@ import 'leaflet-editable';
 import 'leaflet-textpath';
 import 'leaflet.pattern';
 
-import { displayUnixTimestamp, f } from '../Localization';
-
 import './MapLayers.css';
 
 export const editorMarker = L.icon({
@@ -46,28 +44,4 @@ export const linePropertiesHighlight = {
 export const lineTextPropertiesHighlight = {
   repeat: true,
   attributes: { dy: 6, fill: '#f57c00', class: 'leaflet-map-route-text' },
-};
-
-export const buildPopup = (feature, imgExt = 'png', completionTime = -1) => {
-  let text = '';
-  if (!feature) return text;
-
-  if (feature.properties.popupTitle)
-    text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
-
-  if (feature.properties.popupImage) {
-    text = feature.properties.popupImage.startsWith('http')
-      ? `${text}<img class="map-marker-popup-image" src="${feature.properties.popupImage}.${imgExt}"/>`
-      : `${text}<img class="map-marker-popup-image" src="/comments/${feature.properties.popupImage}.${imgExt}"/>`;
-  }
-
-  if (feature.properties.popupContent)
-    text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;
-
-  if (completionTime !== -1)
-    text = `${text}<span class="map-marker-popup-completion-time">${f('popup-completed', {
-      time: displayUnixTimestamp(completionTime),
-    })}</span>`;
-
-  return text;
 };

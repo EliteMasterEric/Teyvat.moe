@@ -4,14 +4,8 @@
  * and where the data for them is loaded from.
  */
 import _ from 'lodash';
-import {
-  listFeatureKeys,
-  listRouteKeys,
-  loadFeature,
-  loadRoute,
-  localizeFeature,
-  localizeRoute,
-} from './MapFeaturesData';
+import { listFeatureKeys, listRouteKeys, loadFeature, loadRoute } from './MapFeaturesData';
+import { localizeFeature, localizeRoute } from './FeatureLocalization';
 
 /*
  * List of ingame regions.
@@ -24,6 +18,10 @@ export const MapRegions = {
   liyue: {
     nameKey: 'region-liyue',
     enabled: true,
+  },
+  dragonspine: {
+    nameKey: 'region-dragonspine',
+    enabled: false,
   },
   inazuma: {
     nameKey: 'region-inazuma',

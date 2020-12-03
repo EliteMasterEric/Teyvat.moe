@@ -24,3 +24,15 @@ body > textarea {
 .flex-grow {
   flex-grow: 1;
 }
+
+/** Firefox workaround for https://github.com/Leaflet/Leaflet/issues/4686 */
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated {
+  will-change: auto !important;
+}
+
+.label-tooltip {
+  /* text-decoration-style: dotted; */
+  text-decoration: black underline dotted;
+  cursor: pointer;
+}

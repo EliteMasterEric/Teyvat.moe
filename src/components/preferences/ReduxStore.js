@@ -8,13 +8,13 @@ import { migrateData } from './DataImport';
 
 import { LOCAL_STORAGE_KEY, DEFAULT_MAP_PREFERENCES, PERSISTENT_KEYS } from './DefaultPreferences';
 
-export const saveStoreToLocalStorage = (currentStore, key = LOCAL_STORAGE_KEY) => {
+export const saveStateToLocalStorage = (currentStore, key = LOCAL_STORAGE_KEY) => {
   const persistentStore = _.pick(currentStore, PERSISTENT_KEYS);
 
   localStorage.set(key, persistentStore);
 };
 
-export const loadStoreFromLocalStorage = (
+export const loadStateFromLocalStorage = (
   key = LOCAL_STORAGE_KEY,
   defaultValue = DEFAULT_MAP_PREFERENCES
 ) => {

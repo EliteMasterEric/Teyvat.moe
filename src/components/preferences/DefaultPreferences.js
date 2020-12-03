@@ -21,7 +21,16 @@ export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
  * The data version.
  * Whenever the structure of mapPreferences changes, increment this.
  */
-export const GENSHINMAP_DATA_VERSION = 'GM_002';
+export const GENSHINMAP_DATA_VERSION = 'GM_003';
+
+/**
+ * The default locale code if not specified by the browser or by the user.
+ */
+export const DEFAULT_LOCALE_CODE = 'en';
+/**
+ * The path, relative to ./data/i18n/, of the default locale code's language file.
+ */
+export const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * The location to store the application data.
@@ -100,6 +109,7 @@ export const DEFAULT_MAP_PREFERENCES = {
     regionLabelsEnabled: true,
     hideFeaturesInEditor: false,
     hideRoutesInEditor: false,
+    overrideLang: '', // Override the current language.
   },
   /**
    * Store of currently displayed marker layers.

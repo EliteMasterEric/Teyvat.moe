@@ -30,7 +30,9 @@ const MapControlsChildren = () => {
 
       <div className={clsx('map-control-header')}>
         <Image srcPNG={logoPNG} srcWebP={logoWebP} className={clsx('map-controls-fold-small')} />
-        <SafeHTML className={clsx('map-control-header-text')}>{t('short-title')}</SafeHTML>
+        <SafeHTML className={clsx('map-control-header-text')}>
+          {t('meta-page-title-short')}
+        </SafeHTML>
       </div>
 
       <MapControlsTabs />

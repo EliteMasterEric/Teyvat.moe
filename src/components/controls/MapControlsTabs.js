@@ -17,7 +17,7 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}
         role="button"
-        aria-label={t('tab-about')}
+        aria-label={t('map-controls-tab-about')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -26,13 +26,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           !editorEnabled ? '' : 'display-none'
         )}
       >
-        {t('tab-about')}
+        {t('map-controls-tab-about')}
       </div>
       <div
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}
         role="button"
-        aria-label={t('tab-about')}
+        aria-label={t('map-controls-tab-editor-help')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -41,13 +41,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           editorEnabled ? '' : 'display-none'
         )}
       >
-        {t('tab-editor-help')}
+        {t('map-controls-tab-editor-help')}
       </div>
       <div
         onClick={() => setTab('features')}
         onKeyDown={() => setTab('features')}
         role="button"
-        aria-label={t('tab-features')}
+        aria-label={t('map-controls-tab-features')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -56,13 +56,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           editorEnabled ? 'display-none' : ''
         )}
       >
-        {t('tab-features')}
+        {t('map-controls-tab-features')}
       </div>
       <div
         onClick={() => setTab('routes')}
         onKeyDown={() => setTab('routes')}
         role="button"
-        aria-label={t('tab-routes')}
+        aria-label={t('map-controls-tab-routes')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -71,13 +71,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           editorEnabled ? 'display-none' : ''
         )}
       >
-        {t('tab-routes')}
+        {t('map-controls-tab-routes')}
       </div>
       <div
         onClick={() => setTab('elements')}
         onKeyDown={() => setTab('elements')}
         role="button"
-        aria-label={t('tab-elements')}
+        aria-label={t('map-controls-tab-editor-elements')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -86,13 +86,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           editorEnabled ? '' : 'display-none'
         )}
       >
-        {t('tab-elements')}
+        {t('map-controls-tab-editor-elements')}
       </div>
       <div
         onClick={() => setTab('options')}
         onKeyDown={() => setTab('options')}
         role="button"
-        aria-label={t('tab-options')}
+        aria-label={t('map-controls-tab-options')}
         tabIndex={0}
         className={clsx(
           'map-controls-tab',
@@ -100,7 +100,7 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
           'noselect'
         )}
       >
-        {t('tab-options')}
+        {t('map-controls-tab-options')}
       </div>
     </div>
   );

@@ -4,10 +4,8 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './ducks/index';
 import { rootMiddleware } from './middleware';
-import {
-  loadStoreFromLocalStorage,
-  saveStoreToLocalStorage,
-} from '../components/preferences/ReduxStore';
+import { loadStateFromLocalStorage } from '../components/preferences/ReduxStore';
+import watchers from './watchers';
 
 /**
  * The store in Redux holds ALL the application's state.
@@ -17,7 +15,7 @@ import {
  * The state is immutable and cannot be changed in place; it must be changed by calling an action.
  */
 
-const persistedStore = loadStoreFromLocalStorage();
+const persistedStore = loadStateFromLocalStorage();
 
 const ENABLE_REDUX_DEBUG = true;
 
@@ -29,10 +27,16 @@ const store = createStore(rootReducer, persistedStore, fullMiddleware);
 
 export default store;
 
-// Ensure the current store is always saved, whenever it changes.
-store.subscribe(() => {
-  const currentStore = store.getState();
-  saveStoreToLocalStorage(currentStore);
+// Call these functions whenever the store changes.
+watchers.forEach((watcherFunction) => {
+  const listen = () => {
+    const currentStore = store.getState();
+    watcherFunction(currentStore);
+  };
+  // Call once as the app initializes.
+  listen();
+  // Call every time the store changes.
+  store.subscribe(listen);
 });
 
 /**

@@ -10,7 +10,7 @@ import './MapControlsHelp.css';
 
 const _MapControlsHelp = ({ displayed }) => {
   const ext = useImageExtension();
-  const translatorAttribution = t('about-translator-attribution');
+  const translatorAttribution = t('map-about-help-content-translator-attribution');
 
   return (
     <div
@@ -20,17 +20,24 @@ const _MapControlsHelp = ({ displayed }) => {
         displayed ? '' : 'display-none'
       )}
     >
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-a')}</SafeHTML>
-
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-b')}</SafeHTML>
-
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-c')}</SafeHTML>
-
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-d')}</SafeHTML>
-
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-e')}</SafeHTML>
-
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-f')}</SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-a')}
+      </SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-b')}
+      </SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-c')}
+      </SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-d')}
+      </SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-e')}
+      </SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-about-help-content-f')}
+      </SafeHTML>
 
       {translatorAttribution !== '' ? (
         <SafeHTML className={clsx('map-control-about-help-content')}>

@@ -27,17 +27,17 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
           <div className={clsx('popup-clear-map-data-button-container')}>
             <div
               role="button"
-              aria-label="Cancel Clear Data"
+              aria-label={t('popup-cancel')}
               tabIndex={0}
               onClick={closePopup}
               onKeyDown={closePopup}
               className={clsx('popup-clear-map-data-button', 'popup-clear-map-data-button-cancel')}
             >
-              {t('cancel')}
+              {t('popup-cancel')}
             </div>
             <div
               role="button"
-              aria-label="Confirm Clear Data"
+              aria-label={t('popup-confirm')}
               tabIndex={0}
               onClick={() => {
                 onConfirm();
@@ -49,7 +49,7 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
               }}
               className={clsx('popup-clear-map-data-button', 'popup-clear-map-data-button-confirm')}
             >
-              {t('confirm')}
+              {t('popup-confirm')}
             </div>
           </div>
         </div>

@@ -15,12 +15,12 @@ const _MapControlsEditorMarker = ({
   markerId,
   markerTitle,
   markerContent,
-  markerImage,
+  markerMedia,
   highlighted,
   highlightMarker,
   setMarkerTitle,
   setMarkerContent,
-  setMarkerImage,
+  setMarkerMedia,
   deleteMarker,
 }) => {
   return (
@@ -44,7 +44,7 @@ const _MapControlsEditorMarker = ({
         />
 
         <span className={clsx('map-controls-editor-element-label')}>
-          {f('marker-id', { id: markerId })}
+          {f('editor-elements-marker-id', { id: markerId })}
         </span>
 
         <Tooltip />
@@ -65,22 +65,26 @@ const _MapControlsEditorMarker = ({
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('marker-title')}</span>
+        <span className={clsx('map-controls-editor-element-label')}>
+          {t('editor-elements-title')}
+        </span>
         <input
-          placeholder={t('editor-title-placeholder')}
+          placeholder={t('editor-elements-title-placeholder')}
           value={markerTitle}
           onChange={(event) => setMarkerTitle(event.target.value)}
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>{t('marker-content')}</span>
+        <span className={clsx('map-controls-editor-element-label')}>
+          {t('editor-elements-content')}
+        </span>
         <textarea
-          placeholder={t('editor-content-placeholder')}
+          placeholder={t('editor-elements-content-placeholder')}
           value={markerContent}
           onChange={(event) => setMarkerContent(event.target.value)}
         />
       </div>
-      <MapControlsEditorImageUploader markerImage={markerImage} setMarkerImage={setMarkerImage} />
+      <MapControlsEditorImageUploader elementMedia={markerMedia} setElementMedia={setMarkerMedia} />
     </div>
   );
 };
@@ -90,7 +94,7 @@ const mapStateToProps = (state, { marker }) => ({
   markerId: marker.id,
   markerTitle: marker.properties.popupTitle.en,
   markerContent: marker.properties.popupContent.en,
-  markerImage: marker.properties.popupImage,
+  markerMedia: marker.properties.popupMedia,
 });
 const mapDispatchToProps = (dispatch, { marker }) => ({
   setMarkerTitle: (value) => {
@@ -99,8 +103,8 @@ const mapDispatchToProps = (dispatch, { marker }) => ({
   setMarkerContent: (value) => {
     dispatch(setElementProperty(marker, 'properties.popupContent.en', value));
   },
-  setMarkerImage: (value) => {
-    dispatch(setElementProperty(marker, 'properties.popupImage', value));
+  setMarkerMedia: (value) => {
+    dispatch(setElementProperty(marker, 'properties.popupMedia', value));
   },
 
   deleteMarker: () => dispatch(removeElement(marker)),

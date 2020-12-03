@@ -10,7 +10,6 @@ import './MapControlsHelp.css';
 
 const _MapControlsHelpEditor = ({ displayed }) => {
   const ext = useImageExtension();
-  const translatorAttribution = t('about-translator-attribution');
 
   return (
     <div
@@ -20,24 +19,29 @@ const _MapControlsHelpEditor = ({ displayed }) => {
         displayed ? '' : 'display-none'
       )}
     >
-      <SafeHTML className={clsx('map-control-about-help-header')}>
-        {t('about-editor-title')}
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-a')}
       </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-editor-a')}</SafeHTML>
 
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-editor-b')}</SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-b')}
+      </SafeHTML>
 
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-editor-c')}</SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-c')}
+      </SafeHTML>
 
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-editor-d')}</SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-d')}
+      </SafeHTML>
 
-      <SafeHTML className={clsx('map-control-about-help-content')}>{t('about-editor-e')}</SafeHTML>
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-e')}
+      </SafeHTML>
 
-      {translatorAttribution !== '' ? (
-        <SafeHTML className={clsx('map-control-about-help-content')}>
-          {translatorAttribution}
-        </SafeHTML>
-      ) : null}
+      <SafeHTML className={clsx('map-control-about-help-content')}>
+        {t('map-editor-help-content-f')}
+      </SafeHTML>
     </div>
   );
 };

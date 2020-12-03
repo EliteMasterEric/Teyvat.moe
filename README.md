@@ -1,8 +1,13 @@
-# GenshinMap.github.io &middot; [![GitHub license](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md) [![Jenkins](https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master)](https://travis-ci.org/github/GenshinMap/genshinmap.github.io/) [![Netlify](https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)](https://genshin-map-beta.netlify.app/)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
+# GenshinMap.github.io
 
-### [Current Site](https://genshinmap.github.io/) &middot; [Beta Site](https://genshin-map-beta.netlify.app/)
+[![Travis](https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master)](https://travis-ci.org/github/GenshinMap/genshinmap.github.io/)
+[![Software License](https://img.shields.io/badge/license-GPLv3-green.svg)](https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md)
+[![Netlify](https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)](https://genshin-map-beta.netlify.app/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
 
-### The site has currently been reverted to a legacy state, pending completion of a rewrite.
+### [Current Site](https://genshinmap.github.io/)
+
+#### [Beta Site](https://genshin-map-beta.netlify.app/)
 
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
@@ -17,8 +22,8 @@ This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.g
 There are numerous other interactive maps available, but this map has the edge in the following ways:
 
 - **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
-- **Track collected Oculus and others for free**: Other sites require a premium subscription to allow you to track your progress.
-- **Newest features**: Bamboo shoots, loach pearls, magical crystal chunks, and more before other maps.
+- **Track collected Oculus and others for free**: Other sites may require a 'pro' subscription to allow you to track your progress.
+- **Newest features**: Bamboo shoots, loach pearls, magical crystal chunks, meteorites, and more before other maps.
 - **Community routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
 - **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor. Other sites have no submission functionality available, or may only have an email.
 - **Localized**: The site will display the proper language based on your browser. If yours isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site).

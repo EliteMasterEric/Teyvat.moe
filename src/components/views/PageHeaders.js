@@ -1,29 +1,40 @@
 import React from 'react';
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async'; // Thread safe variant prevents warnings.
 import { t } from '../Localization';
+import { isDev } from '../Util';
 
-// The base Content Security Policy. {HOST} is replaced with a list of valid hosts.
+// The site connects to these external APIs.
+const CONNECT_HOSTS = ['https://api.imgur.com'];
+const STYLE_HOSTS = ['https://cdnjs.cloudflare.com'];
+
+// The base Content Security Policy.
+// <HOST> is replaced with a list of valid web hosts.
+// <CONNECT> is replaced with a list of domains the host connects to.
+// 'frame-ancestors' is not supported when delivered via meta element.
 const CSP_BASE = `
   default-src 'none';
   base-uri 'self';
   block-all-mixed-content;
-  child-src <HOST>;
-  connect-src 'self' data: <HOST>;
-  font-src <HOST>;
-  frame-ancestors 'none';
-  form-action 'self' <HOST>;
-  frame-src <HOST>;
-  img-src 'self' data: <HOST>;
+  child-src 'none';
+  connect-src 'self' data: <CONNECT>;
+  font-src 'self';
+  form-action 'self';
+  frame-src 'none';
+  img-src 'self' data: ;
   media-src 'none';
-  object-src <HOST>;
-  script-src <HOST>;
-  style-src 'unsafe-inline' <HOST>;
-`;
+  object-src 'self';
+  script-src 'self';
+  style-src 'unsafe-inline' 'self' <STYLE>;
+`
+  .replace(/<CONNECT>/g, CONNECT_HOSTS.join(' '))
+  .replace(/<STYLE>/g, STYLE_HOSTS.join(' '));
 
+// Replace this with the URL this site will be hosted on during local testing.
 const LOCALHOST_URL = 'localhost:3000';
 const CSP_LOCALHOST = CSP_BASE.replace(/<HOST>/g, LOCALHOST_URL);
 
+// Edit, append, or replace this with any pages this site will be hosted on.
 const VALID_HOSTS = ['genshinmap.github.io', 'genshin-map-beta.netlify.app'];
 const CSP_HOSTS = CSP_BASE.replace(/<HOST>/g, VALID_HOSTS.join(' '));
 
@@ -61,21 +72,17 @@ const PERMISSIONS_POLICY = `
 `;
 
 const PageHeaders = () => {
-  const debugCSP = true;
+  const debugCSP = isDev();
 
   return (
     <Helmet>
       {/* DISPLAY */}
       {/* The title of the webpage as displayed in the tab name. */}
-      <title>{t('page-title')}</title>
-
-      {/* ANALYSIS */}
-      {/* Verify ownership to enable the Google Search Console. */}
-      <meta name="google-site-verification" content="9b8zWzUcVmznKSwxvRUYv23icg5g8jeMBP858kYEjNs" />
+      <title>{t('meta-page-title-full')}</title>
 
       {/* SECURITY */}
       {/* Dictates how scripts can be loaded and from where. Prevents cross-site scripting attacks. */}
-      <meta httpEquiv="Content-Security-Policy" content={debugCSP ? CSP_LOCALHOST : CSP_HOSTS} />
+      <meta httpEquiv="Content-Security-Policy" content={debugCSP ? '' : CSP_HOSTS} />
       {/* States that sites should not attempt to load CSS files as JavaScript. */}
       <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
       {/* Prevent sites from loading this page in an iframe. Prevents clickjacking attacks. */}

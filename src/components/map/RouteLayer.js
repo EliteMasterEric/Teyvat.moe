@@ -7,7 +7,8 @@ import L from 'leaflet';
 import 'leaflet-textpath';
 
 import { useImageExtension } from '../Image';
-import { buildPopup, lineProperties, lineTextProperties } from './LayerConstants';
+import { lineProperties, lineTextProperties } from './LayerConstants';
+import { buildPopup } from './MapPopup';
 import { hashObject } from '../Util';
 
 const _RouteLayer = ({ mapRoute, displayed }) => {

@@ -5,8 +5,6 @@ import Joi from 'joi';
 import _ from 'lodash';
 import L from 'leaflet';
 
-import { localizeField } from './Localization';
-
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
 const imagePath = Joi.string()
@@ -25,7 +23,7 @@ const geoJSONMarker = Joi.object({
   properties: {
     popupTitle: localizedField.required(),
     popupContent: localizedField.required(),
-    popupImage: imagePath.required(),
+    popupMedia: imagePath.required(),
   },
 });
 
@@ -39,7 +37,7 @@ const geoJSONRoute = Joi.object({
   properties: {
     popupTitle: localizedField.required(),
     popupContent: localizedField.required(),
-    popupImage: imagePath.required(),
+    popupMedia: imagePath.required(),
   },
 });
 
@@ -217,56 +215,4 @@ export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', 
     shadowUrl: '',
     ...options,
   });
-};
-
-const FEATURE_TO_LOCALIZE = ['name'];
-const FEATURE_DATA_KEY = 'data';
-const FEATURE_TO_LOCALIZE_DATA = ['properties.popupTitle', 'properties.popupContent'];
-export const localizeFeature = (feature) => {
-  const newFeature = _.cloneDeep(feature);
-
-  FEATURE_TO_LOCALIZE.forEach((field) => {
-    const unlocalized = _.get(newFeature, field);
-    const localized = localizeField(unlocalized);
-    _.set(newFeature, field, localized);
-  });
-
-  newFeature[FEATURE_DATA_KEY] = newFeature[FEATURE_DATA_KEY].map((data) => {
-    const newData = _.cloneDeep(data);
-    FEATURE_TO_LOCALIZE_DATA.forEach((field) => {
-      const unlocalized = _.get(data, field);
-      const localized = localizeField(unlocalized);
-      _.set(newData, field, localized);
-    });
-
-    return newData;
-  });
-
-  return newFeature;
-};
-
-const ROUTE_TO_LOCALIZE = ['name'];
-const ROUTE_DATA_KEY = 'data';
-const ROUTE_TO_LOCALIZE_DATA = ['properties.popupTitle', 'properties.popupContent'];
-export const localizeRoute = (route) => {
-  const newRoute = _.cloneDeep(route);
-
-  ROUTE_TO_LOCALIZE.forEach((field) => {
-    const unlocalized = _.get(newRoute, field);
-    const localized = localizeField(unlocalized);
-    _.set(newRoute, field, localized);
-  });
-
-  newRoute[ROUTE_DATA_KEY] = newRoute[ROUTE_DATA_KEY].map((data) => {
-    const newData = _.cloneDeep(data);
-    ROUTE_TO_LOCALIZE_DATA.forEach((field) => {
-      const unlocalized = _.get(data, field);
-      const localized = localizeField(unlocalized);
-      _.set(newData, field, localized);
-    });
-
-    return newData;
-  });
-
-  return newRoute;
 };

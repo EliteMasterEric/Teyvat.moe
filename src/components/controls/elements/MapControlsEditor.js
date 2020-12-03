@@ -69,7 +69,7 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
             tabIndex={0}
             className={clsx('map-controls-editor-button')}
           >
-            {t('clear-editor-data')}
+            {t('map-editor-button-clear')}
           </div>
         }
         onConfirm={() => {
@@ -88,7 +88,7 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
             tabIndex={0}
             className={clsx('map-controls-editor-button')}
           >
-            {t('submit-editor-data')}
+            {t('map-editor-button-submit')}
           </div>
         }
         onConfirm={submitEditorData}

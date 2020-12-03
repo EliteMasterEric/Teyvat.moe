@@ -54,9 +54,10 @@ export const uploadImage = async (file) => {
         }
       }
 
-      return {
+      const newErr = {
         ...error,
         localizedString,
       };
+      throw newErr;
     });
 };

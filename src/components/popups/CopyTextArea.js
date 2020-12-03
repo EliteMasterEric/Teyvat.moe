@@ -20,7 +20,7 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
     <>
       <Tooltip />
       <textarea
-        data-tip={t('click-to-copy')}
+        data-tip={t('popup-click-to-copy')}
         readOnly
         style={{ cursor: 'pointer' }}
         ref={textAreaRef}

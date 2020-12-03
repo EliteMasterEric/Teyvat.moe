@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '../../MapFeatures';
 import { getFilterIconURL } from '../../MapFeaturesData';
-import { f } from '../../Localization';
 import { Image } from '../../Image';
 import { setFeatureDisplayed } from '../../../redux/ducks/displayed';
 
@@ -33,7 +32,7 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
       onClick={toggleFeature}
       onKeyDown={() => {}}
       role="button"
-      aria-label={f(active ? 'hide-feature' : 'show-feature', { feature: mapFeature?.name })}
+      aria-label={mapFeature?.name}
       tabIndex={0}
       className={clsx(
         'map-controls-feature',

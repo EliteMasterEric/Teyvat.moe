@@ -13,7 +13,7 @@ import store from '../../redux';
 import { createMapIcon } from '../MapFeaturesData';
 import { useImageExtension } from '../Image';
 import { hashObject } from '../Util';
-import { buildPopup } from './LayerConstants';
+import { buildPopup } from './MapPopup';
 import {
   clearFeatureMarkerCompleted,
   setFeatureMarkerCompleted,
