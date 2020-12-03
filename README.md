@@ -5,6 +5,16 @@
 [![Netlify](https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)](https://genshin-map-beta.netlify.app/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing)
 
+__Translation__
+
+![POEditor - Chinese](https://img.shields.io/poeditor/progress/394831/zh-CN?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - Japanese](https://img.shields.io/poeditor/progress/394831/ja?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - Korean](https://img.shields.io/poeditor/progress/394831/ko?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - French](https://img.shields.io/poeditor/progress/394831/fr?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - German](https://img.shields.io/poeditor/progress/394831/de?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - Spanish](https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1)
+![POEditor - Russian](https://img.shields.io/poeditor/progress/394831/ru?token=1362c61f5ab09d3fb015f19e77e437f1)
+
 ### [Current Site](https://genshinmap.github.io/)
 
 #### [Beta Site](https://genshin-map-beta.netlify.app/)
