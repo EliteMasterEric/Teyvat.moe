@@ -16,7 +16,9 @@ __Translation__
 ![POEditor - Spanish](https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1)
 ![POEditor - Russian](https://img.shields.io/poeditor/progress/394831/ru?token=1362c61f5ab09d3fb015f19e77e437f1)
 
-__[Beta Site](https://genshin-map-beta.netlify.app/)__
+__Important Links__
+
+[Beta Site](https://genshin-map-beta.netlify.app/) **|** [Wiki](https://github.com/GenshinMap/genshinmap.github.io/wiki/index) **|** [Where's my old data?](https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap)
 
 GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
