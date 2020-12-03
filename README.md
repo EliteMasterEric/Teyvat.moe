@@ -1,17 +1,25 @@
-# [GenshinMap](https://genshinmap.github.io/)
-
-<p align='center'>
-<a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
-<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)" alt="Netlify"/></a>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
-</p>
+<p align='center'><img src="https://raw.githubusercontent.com/GenshinMap/genshinmap.github.io/master/assets/Social.png"></p>
 
 ---
 
 <p align='center'>
+<a href="https://genshinmap.github.io/"><b>GenshinMap</b></a>
+  <b>|</b>
+<a href="https://genshin-map-beta.netlify.app/">Beta Site</a>
+  <b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/index">Wiki</a>
+  <b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/CHANGELOG.md">Changelog</a>
+  <b>|</b>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
+  <br/><br/>
+<a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
+<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)" alt="Netlify"/></a>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <br/><br/>
 <b>Translation</b>
-<br/>
+  <br/>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/zh-CN?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Chinese"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ja?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Japanese"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ko?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Korean"/></a>
@@ -19,20 +27,6 @@
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/de?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - German"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Spanish"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ru?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Russian"/></a>
-</p>
-
----
-
-<p align='center'>
-<b>Important Links</b>
-<br/>
-<a href="https://genshin-map-beta.netlify.app/">Beta Site</a>
-**|**
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/index">Wiki</a>
-**|**
-<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/CHANGELOG.md">Changelog</a>
-**|**
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
 </p>
 
 ---
