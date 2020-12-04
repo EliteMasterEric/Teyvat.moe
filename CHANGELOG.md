@@ -321,3 +321,22 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where all languages displayed as English.
 - Fixed a bug where embeds would not load due to the content security policy.
 - Fixed a bug where popups would not render at the correct width.
+
+# 0.8.2
+
+- Added region tab buttons to the small screen view.
+- Added media for the following features:
+  - @MasterEric: Anemoculus
+    - Video guides for most markers by Jasilo
+    - Screenshots for remaining markers by @MasterEric
+  - @MasterEric: Geoculus
+    - Video guides for all markers by: Jasilo, Ultima Kira, Jonooit, dslockhart, HardcoreTeam
+  - @MasterEric: Statues (Mondstadt)
+    - Screenshots by @MasterEric had bad URLs.
+  - @MasterEric: Shrines (Liyue)
+    - Existing images weren't being referenced.
+- Markers now always appear above the world border and region labels.
+- Fixed a bug where the Region tabs were not visible on larger resolutions.
+- Fixed a bug which caused the legacy importer to not load data properly, or to crash the app.
+- Fixed a bug where the page would not update the export dialog until the page is refreshed.
+- Fixed a bug where the Language dropdown would display as blank rather than the current language.

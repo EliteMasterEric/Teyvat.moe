@@ -21,8 +21,12 @@ import './MapControls.css';
 import MapControlsTabs from './MapControlsTabs';
 import { SafeHTML } from '../Util';
 import { t } from '../Localization';
+import { isSmallScreen } from '../MediaQuery';
+import MapControlsNavigationSmall from './options/MapControlsNavigationSmall';
 
 const MapControlsChildren = () => {
+  const small = isSmallScreen();
+
   return (
     <>
       <MapControlsFoldButton />
@@ -34,6 +38,8 @@ const MapControlsChildren = () => {
           {t('meta-page-title-short')}
         </SafeHTML>
       </div>
+
+      {small ? <MapControlsNavigationSmall /> : null}
 
       <MapControlsTabs />
 

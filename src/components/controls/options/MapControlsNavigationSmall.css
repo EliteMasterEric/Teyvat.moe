@@ -1,0 +1,12 @@
+.map-controls-navigation-small-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* The fold button. */
+.map-controls-fold-small {
+  width: 40px;
+  height: 40px;
+}

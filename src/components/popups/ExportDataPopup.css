@@ -20,5 +20,6 @@
 }
 
 .popup-export-data-textarea {
-  width: 100%;
+  width: calc(100% - 24px);
+  margin: 0 0 8px 8px;
 }

@@ -58,7 +58,8 @@ const _MapControlsOptionsLanguage = ({ options, setOverrideLang }) => {
   const ext = useImageExtension();
 
   const langOptions = getLanguageOptions();
-  const currentLangCode = options.overrideLang !== '' ? options.overrideLang : getShortLocale();
+  const currentLangCode =
+    (options?.overrideLang ?? '') !== '' ? options.overrideLang : getShortLocale();
   const currentLang = langOptions.filter((langOption) => langOption.value === currentLangCode)[0];
 
   return (

@@ -1,7 +1,6 @@
 .map-control-regions {
   position: fixed;
   top: 192px;
-  right: calc(20vw - 64px);
 
   z-index: -100;
 }
@@ -24,4 +23,53 @@
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+/* Media queries: XXS (0px - 479px) */
+@media screen and (max-width: 479px) {
+  .map-control-regions {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    min-height: auto;
+    max-height: auto;
+  }
+}
+
+/* Media queries: XS (480px - 599px) */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  .map-control-regions {
+    width: 100%;
+    height: 100vh;
+    min-height: auto;
+    max-height: auto;
+  }
+}
+
+/* Media queries: SM (600px - 959px) */
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .map-control-regions {
+    right: calc(60vw - 64px);
+  }
+}
+
+/* Media queries: MD (960px - 1279px) */
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .map-control-regions {
+    right: calc(40vw - 64px);
+  }
+}
+
+/* Media queries: LG (1280px - 1919px) */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .map-control-regions {
+    right: calc(30vw - 64px);
+  }
+}
+
+/* Media queries: xl (1920px+) */
+@media screen and (min-width: 1920px) {
+  .map-control-regions {
+    right: calc(20vw - 64px);
+  }
 }

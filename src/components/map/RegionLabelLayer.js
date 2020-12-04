@@ -48,6 +48,7 @@ const _RegionLabelLayer = ({ mapRef, displayed }) => {
         html,
         className: 'map-region-label-marker',
       }),
+      zIndexOffset: -900,
     });
   };
 

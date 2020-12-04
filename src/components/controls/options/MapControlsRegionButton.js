@@ -10,7 +10,7 @@ import './MapControlsRegionButton.css';
 
 const controlsContext = require.context('../../../images/controls', true);
 
-const _MapControlsRegionButton = ({ regionKey, active, enableRegion }) => {
+const _MapControlsRegionButton = ({ regionKey, active, enableRegion, small = false }) => {
   const region = MapRegions[regionKey];
 
   return (
@@ -20,12 +20,19 @@ const _MapControlsRegionButton = ({ regionKey, active, enableRegion }) => {
       role="button"
       aria-label={t(region?.nameKey)}
       tabIndex={0}
-      className={clsx('map-control-region', active ? 'map-control-region-active' : '')}
+      className={clsx(
+        'map-control-region',
+        active ? 'map-control-region-active' : '',
+        small ? 'map-controls-region-small' : ''
+      )}
     >
       <img
         alt={t(region?.nameKey)}
-        className={clsx('map-control-region-img')}
-        src={controlsContext(`./${regionKey}-${active ? 'on' : 'off'}.png`).default}
+        className={clsx(small ? 'map-control-region-img-small' : 'map-control-region-img')}
+        src={
+          controlsContext(`./${regionKey}-${active ? 'on' : 'off'}${small ? '-small' : ''}.png`)
+            .default
+        }
       />
     </div>
   );

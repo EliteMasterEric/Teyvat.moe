@@ -1,4 +1,5 @@
 import { migrateData, parseDataFromString } from '../../components/preferences/DataImport';
+import { parseLegacyDataFromString } from '../../components/preferences/LegacyImport';
 
 import { SET_STATE } from './index';
 
@@ -39,7 +40,7 @@ export const importNewDataFromString = (dataString) => {
   };
 };
 export const importLegacyDataFromString = (dataString) => {
-  const importedData = parseDataFromString(dataString);
+  const importedData = parseLegacyDataFromString(dataString);
   return {
     type: SET_STATE,
     payload: importedData,

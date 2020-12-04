@@ -40,6 +40,7 @@ const _WorldBorderLayer = ({ mapRef, displayed }) => {
       stroke: false,
       fillOpacity: 0.3,
       color: 'red',
+      zIndexOffset: -1000,
     });
   };
 
