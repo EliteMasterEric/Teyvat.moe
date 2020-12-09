@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.8.1",
+  "version": "0.8.3",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -9,7 +9,8 @@
   "scripts": {
     "start:dev": "npx react-scripts start",
     "start:prod": "npx serve -s build",
-    "build": "npx react-scripts build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "build": "npx react-scripts build && npx copyfiles legacy/**/* build/legacy",
     "eject": "npx react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

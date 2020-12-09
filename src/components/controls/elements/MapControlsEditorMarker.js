@@ -10,6 +10,7 @@ import { removeElement, setElementProperty } from '../../../redux/ducks/editor';
 import { setEditorHighlight, setPositionAndZoom } from '../../../redux/ducks/ui';
 import { f, t } from '../../Localization';
 import MapControlsEditorImageUploader from './MapControlsEditorImageUploader';
+import { InputTextArea, InputTextField } from '../../Input';
 
 const _MapControlsEditorMarker = ({
   markerId,
@@ -68,20 +69,20 @@ const _MapControlsEditorMarker = ({
         <span className={clsx('map-controls-editor-element-label')}>
           {t('editor-elements-title')}
         </span>
-        <input
+        <InputTextField
           placeholder={t('editor-elements-title-placeholder')}
           value={markerTitle}
-          onChange={(event) => setMarkerTitle(event.target.value)}
+          onChange={(value) => setMarkerTitle(value)}
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
         <span className={clsx('map-controls-editor-element-label')}>
           {t('editor-elements-content')}
         </span>
-        <textarea
+        <InputTextArea
           placeholder={t('editor-elements-content-placeholder')}
           value={markerContent}
-          onChange={(event) => setMarkerContent(event.target.value)}
+          onChange={(value) => setMarkerContent(value)}
         />
       </div>
       <MapControlsEditorImageUploader elementMedia={markerMedia} setElementMedia={setMarkerMedia} />

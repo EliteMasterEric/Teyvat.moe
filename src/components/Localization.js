@@ -1,6 +1,7 @@
 /**
  * Relies on locales in BCP-47 format.
  */
+import _ from 'lodash';
 import LocalizedStrings from 'react-localization';
 import { DEFAULT_LOCALE_FILE } from './preferences/DefaultPreferences';
 
@@ -20,7 +21,7 @@ const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)
 /**
  * A map of locales and JSON data objects, including the default locale (it must be moved to the front).
  */
-const i18nData = Object.fromEntries(
+const i18nData = _.fromPairs(
   [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
     return [getLocaleFromI18nFilePath(filePath), i18nContext(filePath)];
   })

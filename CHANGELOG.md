@@ -340,3 +340,16 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug which caused the legacy importer to not load data properly, or to crash the app.
 - Fixed a bug where the page would not update the export dialog until the page is refreshed.
 - Fixed a bug where the Language dropdown would display as blank rather than the current language.
+
+# 0.8.3
+
+- Added translations for French and Russian. Thanks to the following POEditor users for contributing:
+  - French: Joshua, kevin, Lapis128.256
+  - Russian: iDevi, Rin, Juila, SnK
+- [Legacy site has been rehosted and is available here.](https://genshinmap.github.io/legacy)
+  - It is highly recommended that you simply report any issues you have, rather than sticking with the "legacy" site, which will NOT receive any maintenance or new markers.
+- Added error status messages to the import popups to help users diagnose issues more easily.
+- Fixed a bug which caused the clipboard to not be populated on Google Chrome when submitting editor data.
+- Fixed a bug where Editor field performance would dip if the user had a lot of markers.
+- Fixed a bug where importing legacy data containing invalid keys would break completely. Now, the invalid keys will be ignored.
+- Fixed a bug where browsers which did not support Object.fromEntries would crash.

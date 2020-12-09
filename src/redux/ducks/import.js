@@ -1,12 +1,43 @@
+import { t } from '../../components/Localization';
 import { migrateData, parseDataFromString } from '../../components/preferences/DataImport';
 import { parseLegacyDataFromString } from '../../components/preferences/LegacyImport';
+import { isValidJSON } from '../../components/Util';
 
-import { SET_STATE } from './index';
+/**
+ * This action sets one or more attributes of the state directly.
+ */
+export const SET_STATE = 'genshinmap/prefs/SET_STATE';
+/**
+ * This action sets error text to display on the Import popup.
+ */
+export const SET_IMPORT_ERROR = 'genshinmap/editor/SET_IMPORT_ERROR';
+
+/**
+ * The reducer.
+ * @param {*} state The current state.
+ * @param {*} action An action to perform.
+ * @returns {*} The modified state.
+ */
+const importReducer = (state, action) => {
+  switch (action.type) {
+    case SET_IMPORT_ERROR:
+      return {
+        ...state,
+        importError: action.payload.value,
+      };
+    default:
+      console.error(`IMPORT REDUCER ERROR: Unknown action '${action.type}'`);
+  }
+  // Default to returning the initial state.
+  return state;
+};
+
+// Export the reducer as default.
+export default importReducer;
 
 /**
  * The action creators.
  */
-
 export const importFromLocalStorage = (localStorageData) => {
   let storedData = localStorageData;
   // If the stored data is a string instead of a JSON blob...
@@ -32,17 +63,64 @@ export const importFromLocalStorage = (localStorageData) => {
     },
   };
 };
-export const importNewDataFromString = (dataString) => {
-  const importedData = parseDataFromString(dataString);
+export const displayImportError = (errorString) => {
   return {
-    type: SET_STATE,
-    payload: importedData,
+    type: SET_IMPORT_ERROR,
+    payload: {
+      value: errorString,
+    },
   };
 };
-export const importLegacyDataFromString = (dataString) => {
-  const importedData = parseLegacyDataFromString(dataString);
+export const clearImportError = () => {
   return {
-    type: SET_STATE,
-    payload: importedData,
+    type: SET_IMPORT_ERROR,
+    payload: {
+      value: '',
+    },
   };
+};
+export const importNewDataFromString = (dataString) => {
+  try {
+    const importedData = parseDataFromString(dataString);
+    return {
+      type: SET_STATE,
+      payload: importedData,
+    };
+  } catch (err) {
+    switch (err.name) {
+      case 'InvalidCharacterError':
+        if (isValidJSON(dataString)) {
+          return displayImportError(t('popup-import-error-malformed-json'));
+        }
+        return displayImportError(t('popup-import-error-malformed-not-json'));
+      default:
+        console.error(err);
+        console.error(err.name);
+        return displayImportError(t('popup-import-error-generic'));
+    }
+  }
+};
+
+export const importLegacyDataFromString = (dataString) => {
+  try {
+    const importedData = parseLegacyDataFromString(dataString);
+    return {
+      type: SET_STATE,
+      payload: importedData,
+    };
+  } catch (err) {
+    switch (err.name) {
+      case 'InvalidCharacterError':
+        if (isValidJSON(dataString)) {
+          return displayImportError(t('popup-import-error-malformed-json'));
+        }
+        return displayImportError(t('popup-import-error-malformed-not-json'));
+      case 'SyntaxError':
+        return displayImportError(t('popup-import-error-malformed-not-json'));
+      default:
+        console.error(err);
+        console.error(err.name);
+        return displayImportError(t('popup-import-error-generic'));
+    }
+  }
 };

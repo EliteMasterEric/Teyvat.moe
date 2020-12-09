@@ -115,7 +115,7 @@ const LEGACY_MAPPING = {
 };
 
 const processChestFeatures = (featureKeys) => {
-  return Object.fromEntries(
+  return _.fromPairs(
     _.flatten(
       featureKeys.map((featureKey) => {
         const feature = MapFeatures[featureKey];
@@ -143,8 +143,9 @@ const parseLegacyEntry = (element) => {
   if (typeof element !== 'string' && !(element instanceof String)) return null;
 
   // Is it in the format 12_34?
+  // Returns null if no match is found.
   const splitElement = LEGACY_ENTRY_REGEX.exec(element);
-  if (splitElement.length !== 3) return null;
+  if (splitElement == null || splitElement.length !== 3) return null;
 
   let featureKey = null;
   switch (splitElement[1]) {

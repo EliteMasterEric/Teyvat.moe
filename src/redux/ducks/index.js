@@ -30,16 +30,13 @@ import editorReducer, {
   SET_ELEMENT_PROPERTY,
   APPEND_ELEMENT,
 } from './editor';
+import importReducer, { SET_STATE, SET_IMPORT_ERROR } from './import';
 
 // List action types.
 /**
  * This action resets the stored state to the default.
  */
 export const CLEAR_STATE = 'genshinmap/prefs/CLEAR_STATE';
-/**
- * This action sets one or more attributes of the state directly.
- */
-export const SET_STATE = 'genshinmap/prefs/SET_STATE';
 
 /**
  * The default state of the application.
@@ -104,6 +101,8 @@ const rootReducer = (state = initialState, action) => {
     case SET_CONTROLS_OPEN:
       // Handle UI actions here.
       return uiReducer(state, action);
+    case SET_IMPORT_ERROR:
+      return importReducer(state, action);
     case SET_FEATURES_COMPLETED:
     case SET_FEATURE_MARKER_COMPLETED:
     case CLEAR_FEATURE_MARKER_COMPLETED:

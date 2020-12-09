@@ -151,7 +151,7 @@ export const MapCategories = {
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.
  */
-export const MapFeatures = Object.fromEntries(
+export const MapFeatures = _.fromPairs(
   listFeatureKeys()
     .map((relativePath) => {
       const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
@@ -184,7 +184,7 @@ export const MapFeatures = Object.fromEntries(
  * @param {*} region
  */
 export const getEmptyFeatureCategories = (region) =>
-  Object.fromEntries(
+  _.fromPairs(
     _.keys(MapCategories).map((categoryKey) => {
       const firstMatching = _.find(MapFeatures, (mapFeature) => {
         return (
@@ -212,7 +212,7 @@ export const getFeatureKeysByFilter = (region, category) => {
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.
  */
-export const MapRoutes = Object.fromEntries(
+export const MapRoutes = _.fromPairs(
   listRouteKeys()
     .map((relativePath) => {
       const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
@@ -244,7 +244,7 @@ export const MapRoutes = Object.fromEntries(
  * @param {*} region
  */
 export const getEmptyRouteCategories = (region) =>
-  Object.fromEntries(
+  _.fromPairs(
     _.keys(MapCategories).map((categoryKey) => {
       const firstMatching = _.find(MapRoutes, (mapRoute) => {
         return (

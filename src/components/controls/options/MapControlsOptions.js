@@ -5,7 +5,11 @@ import { connect } from 'react-redux';
 import ReactSwitch from 'react-switch';
 import ReactSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import { importNewDataFromString, importLegacyDataFromString } from '../../../redux/ducks/import';
+import {
+  importNewDataFromString,
+  importLegacyDataFromString,
+  SET_IMPORT_ERROR,
+} from '../../../redux/ducks/import';
 import ClearMapDataPopup from '../../popups/ClearMapDataPopup';
 import ExportDataPopup from '../../popups/ExportDataPopup';
 import ImportDataPopup from '../../popups/ImportDataPopup';
@@ -166,8 +170,18 @@ const mapDispatchToProps = (dispatch) => ({
   setHideFeaturesInEditor: (enabled) => dispatch(setHideFeaturesInEditor(enabled)),
   setHideRoutesInEditor: (enabled) => dispatch(setHideRoutesInEditor(enabled)),
   setOverrideLang: (lang) => dispatch(setOverrideLang(lang)),
-  importData: (data) => dispatch(importNewDataFromString(data)),
-  importLegacyData: (data) => dispatch(importLegacyDataFromString(data)),
+  importData: (data) => {
+    const action = importNewDataFromString(data);
+    dispatch(action);
+    // Return a result to the popup to tell it whether to close.
+    return action.type !== SET_IMPORT_ERROR;
+  },
+  importLegacyData: (data) => {
+    const action = importLegacyDataFromString(data);
+    dispatch(action);
+    // Return a result to the popup to tell it whether to close.
+    return action.type !== SET_IMPORT_ERROR;
+  },
   clearState: () => dispatch(clearMapPreferences()),
 });
 const MapControlsOptions = connect(mapStateToProps, mapDispatchToProps)(_MapControlsOptions);

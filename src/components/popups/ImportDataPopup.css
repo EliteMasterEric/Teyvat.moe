@@ -19,6 +19,12 @@
   font-size: 16px;
 }
 
+.popup-import-data-error {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  color: red;
+}
+
 .popup-import-data-textarea {
   width: calc(100% - 24px);
   margin: 0 0 8px 8px;

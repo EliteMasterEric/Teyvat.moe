@@ -98,6 +98,10 @@ export const DEFAULT_MAP_PREFERENCES = {
    * Whether the controls drawer is currently open.
    */
   controlsOpen: true,
+  /**
+   * The text to display on the Import popup for whether an error has occurred.
+   */
+  importError: '',
 
   /**
    * The user preferences, as seen in the Options menu.

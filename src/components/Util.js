@@ -59,6 +59,19 @@ export const hashObject = (input) => {
 };
 
 /**
+ * Checks whether the input string is a valid JSON blob.
+ * @returns {Boolean} True if valid and false if invalid.
+ */
+export const isValidJSON = (str) => {
+  try {
+    JSON.parse(str);
+  } catch (e) {
+    return false;
+  }
+  return true;
+};
+
+/**
  * Generate prettified JSON of an object.
  * @param {*} input The object to convert.
  * @returns {String} Prettified JSON, with spacing and newlines.
@@ -98,9 +111,10 @@ export const reloadWindow = () => {
 /**
  * Put the provided text into the clipboard.
  * @param {*} text The text to copy.
+ * @returns A promise to write the data.
  */
 export const setBrowserClipboard = (text) => {
-  clipboard.writeText(text);
+  return clipboard.writeText(text);
 };
 
 /**

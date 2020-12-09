@@ -7,6 +7,7 @@ import { t } from '../../Localization';
 
 import './MapControlsEditorImageUploader.css';
 import { uploadImage } from '../../api/imgur';
+import { InputTextArea } from '../../Input';
 
 /**
  * Handles several behaviors:
@@ -96,11 +97,11 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
         >
           {t('editor-elements-media')}
         </span>
-        <input
+        <InputTextArea
           placeholder={t('editor-elements-media-placeholder')}
           value={elementMedia}
           className={clsx('map-controls-editor-image-url', 'map-controls-editor-animation')}
-          onChange={(event) => setElementMedia(event.target.value)}
+          onChange={(value) => setElementMedia(value)}
         />
       </div>
 

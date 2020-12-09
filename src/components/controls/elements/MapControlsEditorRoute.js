@@ -71,7 +71,7 @@ const _MapControlsEditorRoute = ({
         <input
           placeholder={t('editor-elements-title-placeholder')}
           value={routeTitle}
-          onChange={(event) => setRouteTitle(event.target.value)}
+          onChange={(value) => setRouteTitle(value)}
         />
       </div>
       <div className={clsx('map-controls-editor-element-row')}>
@@ -81,7 +81,7 @@ const _MapControlsEditorRoute = ({
         <textarea
           placeholder={t('editor-elements-content-placeholder')}
           value={routeContent}
-          onChange={(event) => setRouteContent(event.target.value)}
+          onChange={(value) => setRouteContent(value)}
         />
       </div>
       <MapControlsEditorImageUploader elementMedia={routeMedia} setElementMedia={setRouteMedia} />

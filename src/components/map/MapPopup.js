@@ -64,9 +64,12 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1, allowEx
     text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;
 
   if (completionTime !== -1)
-    text = `${text}<span class="map-marker-popup-completion-time">${f('popup-completed', {
-      time: displayUnixTimestamp(completionTime),
-    })}</span>`;
+    text = `${text}<span class="map-marker-popup-completion-time">${f(
+      'map-popup-completed-format',
+      {
+        time: displayUnixTimestamp(completionTime),
+      }
+    )}</span>`;
 
   return text;
 };
