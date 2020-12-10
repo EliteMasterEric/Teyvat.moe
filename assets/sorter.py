@@ -1,3 +1,6 @@
+# Looks at how the image files are arranged,
+# then arranges the data from the legacy JSON to match.
+
 import json
 import re
 from os import listdir

@@ -33,7 +33,11 @@ const _MapControlSummary = ({ displayed, displayedFeatures }) => {
       </span>
       <div className={clsx('map-controls-about-summary-feature-container')}>
         {displayedFeatures.map((featureKey) => (
-          <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />
+          <MapControlSummaryFeature
+            key={featureKey}
+            featureKey={featureKey}
+            displayed={displayedFeatures[featureKey]}
+          />
         ))}
       </div>
     </div>

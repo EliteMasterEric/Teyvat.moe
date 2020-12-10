@@ -4,6 +4,8 @@ import hash from 'object-hash';
 import sanitizeHTML from 'sanitize-html';
 import * as clipboard from 'clipboard-polyfill/text';
 
+import packageJson from '../../package.json';
+
 export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
 };
@@ -117,6 +119,10 @@ export const setBrowserClipboard = (text) => {
   return clipboard.writeText(text);
 };
 
+export const getApplicationVersion = () => {
+  return packageJson.version;
+};
+
 /**
  * https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
  * @param {*} lat Latitude
@@ -171,6 +177,10 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
   // Create an internal local state, that is always correct.
   // The value will be committed to the state once it has been unchanged for <debounce> milliseconds.
   const [stateValue, setStateValue] = React.useState(defaultValue);
+
+  React.useEffect(() => {
+    setStateValue(defaultValue);
+  }, [defaultValue]);
 
   // This web of references creates a reference that updates every render,
   // to call the onStateChanged, preventing stale data.

@@ -1,0 +1,137 @@
+{
+  "name": {
+    "en": "Unusual Hilichurl"
+  },
+  "respawn": 43200,
+  "cluster": false,
+  "icons": {
+    "filter": "unusual-hilichurl",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-30.637912028341123, 63.44055175781251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#1: Windrise Tree"
+        },
+        "popupContent": {
+          "en": "Wei can appear at the base of the tree by the Statue of the Seven at Windrise."
+        },
+        "popupMedia": "mondstadt/wei/1"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.90689555128868, 75.90454101562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#2: Cape Oath"
+        },
+        "popupContent": {
+          "en": "Wei can appear sitting at the edge of the cliff at Cape Oath, north of the portal to Musk Reef."
+        },
+        "popupMedia": "mondstadt/wei/2"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-21.58593511478851, 42.1490478515625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#3: Stormterror's Lair"
+        },
+        "popupContent": {
+          "en": "Wei can appear at the middle of the southwest bridge at Stormterror's Lair."
+        },
+        "popupMedia": "mondstadt/wei/3"
+      }
+    },
+    {
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-29.535229562948455, 49.59228515625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#7: Andrius Arena"
+        },
+        "popupContent": {
+          "en": "Wei can appear near Andrius' arena at Wolfendom."
+        },
+        "popupMedia": "mondstadt/wei/7"
+      }
+    },
+    {
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-23.211058276488192, 39.81445312500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#10: Southwest Stormterror"
+        },
+        "popupContent": {
+          "en": "Wei is known to appear somewhere in this area. *PICTURE NEEDED*"
+        },
+        "popupMedia": ""
+      }
+    },
+    {
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-17.26672782352052, 62.49023437500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#11: Anemo Hypostasis Shrine"
+        },
+        "popupContent": {
+          "en": "Wei can appear west of the Anemo Hypostasis, inspecting the shrine."
+        },
+        "popupMedia": "mondstadt/wei/11"
+      }
+    },
+    {
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.911298488227466, 67.55493164062501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#18: Dadaupa Gorge"
+        },
+        "popupContent": {
+          "en": "Wei can be found on the northern cliff overlooking Dadaupa Gorge."
+        },
+        "popupMedia": "mondstadt/wei/18"
+      }
+    }
+  ]
+}

@@ -37,5 +37,6 @@ module.exports = {
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.
     'global-require': ['off'], // Local requires are used to reference images.
     'react/jsx-props-no-spreading': ['off'], // I don't mind passing properties.
+    'max-classes-per-file': ['off'],
   },
 };

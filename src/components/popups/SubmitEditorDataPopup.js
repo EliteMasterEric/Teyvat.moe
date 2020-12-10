@@ -46,11 +46,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         filter: 'none',
         base: {
           marker: true,
-          key: 'none',
         },
         done: {
           marker: true,
-          key: 'none',
         },
       },
     });

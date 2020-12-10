@@ -31,7 +31,7 @@ export const editorMarkerHighlight = L.icon({
 });
 
 export const lineProperties = {
-  color: '#d32f2f',
+  color: '#d32f2f', // Red
 };
 export const lineTextProperties = {
   repeat: true,
@@ -39,9 +39,13 @@ export const lineTextProperties = {
 };
 
 export const linePropertiesHighlight = {
-  color: '#f57c00',
+  color: '#f57c00', // Orange
 };
 export const lineTextPropertiesHighlight = {
   repeat: true,
   attributes: { dy: 6, fill: '#f57c00', class: 'leaflet-map-route-text' },
+};
+
+export const linePropertiesSmart = {
+  color: '#0047AB', // Cobalt Blue
 };

@@ -108,8 +108,8 @@ const LEGACY_MAPPING = {
   90: 'liyuePinecone',
   91: 'mondstadtBerry',
   92: 'liyueBerry',
-  93: 'mondstadtHillichurl',
-  94: 'liyueHillichurl',
+  93: 'mondstadtHilichurl',
+  94: 'liyueHilichurl',
   95: 'mondstadtSamachurl',
   96: 'liyueSamachurl',
 };

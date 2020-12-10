@@ -1,6 +1,6 @@
 {
   "name": { "en": "Electro Crystal" },
-  "cluster": false,
+  "cluster": true,
   "respawn": 172800,
   "icons": {
     "filter": "electro-crystal",
@@ -19,7 +19,7 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": { "en": "#1" },
         "popupContent": { "en": "" },
         "popupMedia": ""
       },
@@ -32,7 +32,7 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": { "en": "#2" },
         "popupContent": { "en": "" },
         "popupMedia": ""
       },
@@ -45,7 +45,7 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": { "en": "#3" },
         "popupContent": { "en": "" },
         "popupMedia": ""
       },

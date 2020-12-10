@@ -10,12 +10,13 @@ import { MapFeatures } from '../../../MapFeatures';
 import MapControlSummaryProgressBar from './MapControlsSummaryProgressBar';
 import MapControlSummaryFeatureMenu from './MapControlsSummaryFeatureMenu';
 
-const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount }) => {
+const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, displayed }) => {
   const totalCount = Object.keys(mapFeature.data).length;
 
   // React hooks must always before any return calls.
   const ext = useImageExtension();
 
+  if (!displayed) return null;
   if (completedCount === 0) return null;
 
   return (
@@ -41,10 +42,11 @@ const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount }) =
   );
 };
 
-const mapStateToProps = (state, { featureKey }) => {
+const mapStateToProps = (state, { featureKey, displayed }) => {
   const mapFeature = MapFeatures[featureKey];
   return {
     mapFeature,
+    displayed: displayed || state.options.showHiddenFeatures,
     doesExpire: (mapFeature?.respawn ?? -1) !== -1,
     displayedFeatures: _.keys(state.displayed.features),
     completedCount: _.keys(state.completed.features[featureKey]).length,

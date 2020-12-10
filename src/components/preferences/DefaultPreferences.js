@@ -21,7 +21,7 @@ export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
  * The data version.
  * Whenever the structure of mapPreferences changes, increment this.
  */
-export const GENSHINMAP_DATA_VERSION = 'GM_003';
+export const GENSHINMAP_DATA_VERSION = 'GM_004';
 
 /**
  * The default locale code if not specified by the browser or by the user.
@@ -88,20 +88,33 @@ export const DEFAULT_MAP_PREFERENCES = {
   controlsTab: 'help',
   /**
    * The current category of the controls view.
+   * Not saved in local storage.
    */
   controlsCategory: 'special',
   /**
    * The current region of the controls view.
+   * Not saved in local storage.
    */
   controlsRegion: 'mondstadt',
   /**
    * Whether the controls drawer is currently open.
+   * Not saved in local storage.
    */
   controlsOpen: true,
   /**
    * The text to display on the Import popup for whether an error has occurred.
+   * Not saved in local storage.
    */
   importError: '',
+  /**
+   * The currently displayed SmartRoute feature.
+   * Not saved in local storage.
+   */
+  smartRoute: {
+    geometry: {
+      coordinates: [[]],
+    },
+  },
 
   /**
    * The user preferences, as seen in the Options menu.

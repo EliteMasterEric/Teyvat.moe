@@ -5,6 +5,7 @@
  * Includes migration handling and recovery states.
  */
 
+import _ from 'lodash';
 import localStorage from './local-storage';
 
 import { fromBase64, getUnixTimestamp, reloadWindow } from '../Util';
@@ -106,6 +107,48 @@ export const migrateData = (input, version) => {
         },
       };
     case 'GM_003':
+      output = {
+        ...output,
+        displayed: {
+          ...output.displayed,
+          features: {
+            ..._.omit(output.displayed.features, [
+              'mondstadtHillichurl',
+              'liyueHillichurl',
+              'mondstadtHillichurlShooter',
+              'liyueHillichurlShooter',
+              'mondstadtWei',
+              'liyueWei',
+            ]),
+            mondstadtHilichurl: output.displayed.features.mondstadtHillichurl,
+            liyueHilichurl: output.displayed.features.liyueHillichurl,
+            mondstadtHilichurlShooter: output.displayed.features.mondstadtHillichurlShooter,
+            liyueHilichurlShooter: output.displayed.features.liyueHillichurlShooter,
+            mondstadtUnusualHilichurl: output.displayed.features.mondstadtWei,
+            liyueUnusualHilichurl: output.displayed.features.liyueWei,
+          },
+        },
+        completed: {
+          ...output.completed,
+          features: {
+            ..._.omit(output.completed.features, [
+              'mondstadtHillichurl',
+              'liyueHillichurl',
+              'mondstadtHillichurlShooter',
+              'liyueHillichurlShooter',
+              'mondstadtWei',
+              'liyueWei',
+            ]),
+            mondstadtHilichurl: output.completed.features.mondstadtHillichurl,
+            liyueHilichurl: output.completed.features.liyueHillichurl,
+            mondstadtHilichurlShooter: output.completed.features.mondstadtHillichurlShooter,
+            liyueHilichurlShooter: output.completed.features.liyueHillichurlShooter,
+            mondstadtUnusualHilichurl: output.completed.features.mondstadtWei,
+            liyueUnusualHilichurl: output.completed.features.liyueWei,
+          },
+        },
+      };
+    case 'GM_004':
       // Migration is done.
       return {
         ...output,

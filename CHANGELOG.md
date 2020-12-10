@@ -294,7 +294,6 @@ First major release of the rework, featuring a new interface developed in React.
     - https://www.whatismyip.org/website-reviewer/
   - Added several alt tags to images.
   - Added Content Security policy header to prevent XSS attacks.
-- Note that until the site is considered ready to leave Beta, version numbers will likely extend to v0.10.0, etc.
 
 # 0.8.0
 
@@ -353,3 +352,34 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where Editor field performance would dip if the user had a lot of markers.
 - Fixed a bug where importing legacy data containing invalid keys would break completely. Now, the invalid keys will be ignored.
 - Fixed a bug where browsers which did not support Object.fromEntries would crash.
+
+# 0.8.4
+
+- Improved mapping for features
+  - @MatsterEric: Added titles to most of the 1800 or so markers that were missing them (only ids, but allows for easy identification).
+  - @MasterEric: Mapped Magical Crystal Chunks (Mondstadt) with 18 total locations, with screenshots.
+  - @MasterEric: Mapped 3 Common Chest (Mondstadt) locations, with screenshots.
+  - @MasterEric: Mapped 2 Exquisite Chest (Mondstadt) locations, with screenshots.
+  - @MasterEric: Mapped 1 Dandy (Liyue) location, with screenshot.
+  - @MasterEric: Removed 1 offscreen marker from Whopperflower (Liyue).
+  - @crisrufo: Mapped 1 Common Chest (Mondstadt).
+  - @specklet: Mapped 16 + 1 Common Chest (Mondstadt) locations, with screenshots.
+  - @sgtoutlaw: Mapped 1 Fatui Skirmisher (Liyue) with screenshot.
+  - @sgtoutlaw: Mapped 2 Whopperflower (Liyue).
+  - @1Devi: Mapped 1 Precious Chest (Liyue) with screenshot.
+  - @FilthyCrimeBoi: Mapped 75 Raw Meat (Mondstadt) locations.
+  - @Makishimu120: Mapped 1 Common Chest (Liyue) with screenshot.
+- Removed first issue message as it was just kinda annoying.
+- Renamed Wei to Unusual Hilichurl, and updated its icon.
+- Added app version display at the top of the options menu. Pulls from package.json.
+- Added some icons for upcoming types for 1.2, courtesy of HoneyHunterWorld.
+- Developed make_media_local.py script to make importing markers easier.
+- New localization strings:
+  - options-subtitle-format: Displays the application version at the top of the options menu.
+- Removed legacy site from subpath (as added in v0.8.3) because I couldn't get it working alongside the new one.
+- Fixed a bug where CSP prevented manifest.json from loading on Chrome.
+- Fixed all instances of Hillichurl to read Hilichurl instead (only 1 'L').
+  - This required a data storage migration.
+- Fixed a bug where Editor GitHub submissions did not include the Editor label.
+- Fixed a bug with a missing translation key.
+- Note that the next major update will not be 1.0, but 0.10.0.

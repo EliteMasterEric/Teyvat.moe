@@ -1,6 +1,6 @@
 {
   "name": { "en": "Magical Crystal Chunk" },
-  "cluster": false,
+  "cluster": true,
   "respawn": 259200,
   "icons": {
     "filter": "magical-crystal-chunk",
@@ -11,5 +11,314 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-24.332081860073597, 49.81201171875001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk A1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-24.261989400796306, 49.81750488281251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk A2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.410785702577023, 53.33312988281251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk B1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-27.337614909452, 53.58581542968751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Iron Chunk B2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
+      },
+      "id": 4
+    },
+
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.44937385955666, 49.96582031250001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk C1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
+      },
+      "id": 5
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.352733760237818, 50.10314941406251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk C2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
+      },
+      "id": 6
+    },
+
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.950475674848008, 54.12963867187501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk D1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
+      },
+      "id": 7
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.950475674848008, 54.31091308593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk D2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
+      },
+      "id": 8
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.488773287109822, 52.15759277343751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk E1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      },
+      "id": 9
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.365227537412448, 52.21801757812501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk E2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      },
+      "id": 10
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-20.406420474920292, 52.0751953125]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk E3"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      },
+      "id": 11
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.37182502950725, 55.45349121093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk F1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      },
+      "id": 12
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.45894275368763, 55.45898437500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk F2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      },
+      "id": 13
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-33.47727218776035, 55.2447509765625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk F3"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      },
+      "id": 14
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-25.37380917154398, 51.22924804687501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk G1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
+      },
+      "id": 15
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-25.39862284961958, 51.27319335937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk G2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
+      },
+      "id": 16
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.410728397237914, 45.47241210937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk H1"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
+      },
+      "id": 17
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-28.401064827220896, 45.582275390625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Magical Crystal Chunk H2"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
+      },
+      "id": 18
+    }
+  ]
 }

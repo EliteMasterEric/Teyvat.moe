@@ -32,6 +32,17 @@ for file in **/*.webp; do
 done
 ```
 
+Create PNGS for all JPG;
+```
+shopt -s globstar
+for file in **/*.jpg; do
+    if [ ! -f ${file%.jpg}.png ]; then
+        echo ${file}
+        vips copy ${file%.jpg}.jpg ${file%.jpg}.png
+    fi
+done
+```
+
 Create smart thumbnails:
 ```
 vipsthumbnail --size=170x170 --smartcrop attention *.webp

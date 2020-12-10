@@ -35,3 +35,13 @@
 .map-controls-option-label {
   flex-grow: 1;
 }
+
+.map-controls-options-subtitle {
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+  display: inline-block;
+
+  margin: 0 0 8px 0;
+}

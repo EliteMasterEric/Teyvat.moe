@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 
 import MapControlSummary from './summary/MapControlsSummary';
 import MapControlsAboutTabs from './MapControlsAboutTabs';
-import MapControlsHelp from './MapControlsHelp';
+import MapControlsHelpEditor from './help/MapControlsHelpEditor';
+import MapControlsHelp from './help/MapControlsHelp';
 
 import './MapControlsAbout.css';
-import MapControlsHelpEditor from './MapControlsHelpEditor';
 
 const _MapControlsAbout = ({ displayed }) => {
   return (

@@ -1,0 +1,176 @@
+{
+  "name": { "en": "Unusual Hilichurl" },
+  "cluster": false,
+  "respawn": 43200,
+  "icons": {
+    "filter": "unusual-hilichurl",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.418895207144395, 32.297762507804855]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#4: Cuijue Slope" },
+        "popupContent": { "en": "Wei can appear outside the temple at Cuijue Slope." },
+        "popupMedia": "liyue/wei/4"
+      }
+    },
+    {
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-56.57764086466518, 29.575195312500004]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#5: Linju Pass" },
+        "popupContent": { "en": "Wei can appear on a cliff overlooking Linju Pass." },
+        "popupMedia": "liyue/wei/5"
+      }
+    },
+    {
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.869129727685205, 43.05541992187501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": { "en": "#6: Liyue Harbor" },
+        "popupContent": {
+          "en": "Wei can appear on this cliff, which overlooks Liyue Harbor and the Guyun Stone Forest."
+        },
+        "popupMedia": "liyue/wei/6"
+      }
+    },
+    {
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.93631775765236, 23.532714843750004]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#8: Qingyun Peak"
+        },
+        "popupContent": {
+          "en": "Wei can be found west of the teleporter, overlooking the ledge."
+        },
+        "popupMedia": "liyue/wei/8"
+      }
+    },
+    {
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-30.477082932837682, 35.83740234375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#9: Qingce Village"
+        },
+        "popupContent": {
+          "en": "Wei can appear lounging on this ledge  in the fields near Qingce Village."
+        },
+        "popupMedia": "liyue/wei/9"
+      }
+    },
+    {
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-49.8627758534132, 25.477294921875004]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#12: Tianqiu Valley"
+        },
+        "popupContent": {
+          "en": "Wei can appear east of the Tianqiu Valley temple on the ruined bridge, overlooking the ruins."
+        },
+        "popupMedia": "liyue/wei/12"
+      }
+    },
+    {
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-57.72094733293811, 29.167054139441046]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#15: North Qingxu Pool"
+        },
+        "popupContent": {
+          "en": "Wei can appear on a bridge north of Qingxu Pool. *PICTURE NEEDED*"
+        },
+        "popupMedia": ""
+      }
+    },
+    {
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-34.37064492478658, 42.220458984375]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#16: Stone Gate"
+        },
+        "popupContent": {
+          "en": "Wei can appear on one of the peaks above Stone Gate. *PICTURE NEEDED*"
+        },
+        "popupMedia": ""
+      }
+    },
+    {
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.84808025602072, 50.6744384765625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#17: South Mingyun Village"
+        },
+        "popupContent": {
+          "en": "Wei can appear south of Mingyun Village overlooking Yaoguang Shoal."
+        },
+        "popupMedia": "liyue/wei/17"
+      }
+    },
+    {
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.02695045318545, 27.800903320312504]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#19: Jueyun Karst"
+        },
+        "popupContent": {
+          "en": "Wei can be found beside the Domain at Jueyun Karst. *PICTURE NEEDED*"
+        },
+        "popupMedia": ""
+      }
+    }
+  ]
+}

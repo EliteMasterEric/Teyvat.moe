@@ -4,6 +4,9 @@ import clsx from 'clsx';
 import './MapControlsSummaryProgressBar.css';
 
 const MapControlSummaryProgressBar = ({ percentage, width, ...other }) => {
+  // eslint-disable-next-line no-param-reassign
+  if (percentage < 0) percentage = 0;
+
   const endPos = (90 - 3) * percentage + 3;
   return (
     <svg viewBox={`0 0 100 ${width}`} {...other}>

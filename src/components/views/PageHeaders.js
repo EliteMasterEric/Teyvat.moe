@@ -22,9 +22,10 @@ const CSP_BASE = `
   child-src 'none';
   connect-src 'self' data: <CONNECT>;
   font-src 'self';
+  manifest-src 'self';
   form-action 'self';
   frame-src <FRAME>;
-  img-src 'self' data: ;
+  img-src 'self' data: https://*;
   media-src 'none';
   object-src 'self';
   script-src 'self';
