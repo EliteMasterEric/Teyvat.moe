@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import ReactSwitch from 'react-switch';
 import ReactSlider from 'rc-slider';
+import Button from '@material-ui/core/Button';
 import 'rc-slider/assets/index.css';
 import {
   importNewDataFromString,
@@ -117,7 +118,11 @@ const _MapControlsOptions = ({
           <ImportDataPopup
             title={t('options-import-new')}
             content={t('popup-import-new-content')}
-            trigger={<button type="button">{t('options-import-button')}</button>}
+            trigger={
+              <Button className={clsx('map-controls-option-button')} variant="contained">
+                {t('options-import-button')}
+              </Button>
+            }
             onConfirm={importData}
           />
         </div>
@@ -127,13 +132,21 @@ const _MapControlsOptions = ({
             title={t('options-export-new')}
             message={t('popup-export-new-content')}
             fetchData={exportDataJSON}
-            trigger={<button type="button">{t('options-export-button')}</button>}
+            trigger={
+              <Button className={clsx('map-controls-option-button')} variant="contained">
+                {t('options-export-button')}
+              </Button>
+            }
           />
         </div>
         <div className={clsx('map-controls-option')}>
           <span className={clsx('map-controls-option-label')}>{t('options-clear-data')}</span>
           <ClearMapDataPopup
-            trigger={<button type="button">{t('options-clear-data-button')}</button>}
+            trigger={
+              <Button className={clsx('map-controls-option-button')} variant="contained">
+                {t('options-clear-data-button')}
+              </Button>
+            }
             onConfirm={clearState}
           />
         </div>
@@ -142,7 +155,11 @@ const _MapControlsOptions = ({
           <ImportDataPopup
             title={t('options-import-old')}
             content={t('popup-import-old-content')}
-            trigger={<button type="button">{t('options-import-button')}</button>}
+            trigger={
+              <Button className={clsx('map-controls-option-button')} variant="contained">
+                {t('options-import-button')}
+              </Button>
+            }
             onConfirm={importLegacyData}
           />
         </div>
@@ -152,7 +169,11 @@ const _MapControlsOptions = ({
             title={t('options-export-old')}
             message={t('popup-export-old-content')}
             fetchData={exportLegacyDataJSON}
-            trigger={<button type="button">{t('options-export-button')}</button>}
+            trigger={
+              <Button className={clsx('map-controls-option-button')} variant="contained">
+                {t('options-export-button')}
+              </Button>
+            }
           />
         </div>
       </div>

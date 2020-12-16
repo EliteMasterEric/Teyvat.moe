@@ -26,6 +26,7 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
+  margin-bottom: 8px;
 }
 
 .map-controls-option-slider > .rc-slider-rail {
@@ -44,4 +45,8 @@
   display: inline-block;
 
   margin: 0 0 8px 0;
+}
+
+.map-controls-option-button {
+  width: 140px;
 }
