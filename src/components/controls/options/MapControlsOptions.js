@@ -2,10 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import { connect } from 'react-redux';
 
-import ReactSwitch from 'react-switch';
 import ReactSlider from 'rc-slider';
 import Button from '@material-ui/core/Button';
 import 'rc-slider/assets/index.css';
+import { Switch } from '@material-ui/core';
 import {
   importNewDataFromString,
   importLegacyDataFromString,
@@ -64,21 +64,33 @@ const _MapControlsOptions = ({
       <div
         className={clsx('map-controls-options-container', `map-controls-options-container-${ext}`)}
       >
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>{t('options-editor-enable')}</span>
-          <ReactSwitch onChange={setEditorEnabled} checked={editorEnabled} />
+          <Switch
+            color="primary"
+            onChange={(event) => setEditorEnabled(event.target.checked)}
+            checked={editorEnabled}
+          />
         </div>
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>
             {t('options-editor-hide-features')}
           </span>
-          <ReactSwitch onChange={setHideFeaturesInEditor} checked={options.hideFeaturesInEditor} />
+          <Switch
+            color="primary"
+            onChange={(event) => setHideFeaturesInEditor(event.target.checked)}
+            checked={options.hideFeaturesInEditor}
+          />
         </div>
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>
             {t('options-editor-hide-routes')}
           </span>
-          <ReactSwitch onChange={setHideRoutesInEditor} checked={options.hideRoutesInEditor} />
+          <Switch
+            color="primary"
+            onChange={(event) => setHideRoutesInEditor(event.target.checked)}
+            checked={options.hideRoutesInEditor}
+          />
         </div>
       </div>
       <div
@@ -97,17 +109,29 @@ const _MapControlsOptions = ({
             onChange={setCompletedAlpha}
           />
         </div>
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>{t('options-cluster-markers')}</span>
-          <ReactSwitch onChange={setClusterMarkers} checked={options.clusterMarkers} />
+          <Switch
+            color="primary"
+            onChange={(event) => setClusterMarkers(event.target.checked)}
+            checked={options.clusterMarkers}
+          />
         </div>
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>{t('options-world-border')}</span>
-          <ReactSwitch onChange={setWorldBorderEnabled} checked={options.worldBorderEnabled} />
+          <Switch
+            color="primary"
+            onChange={(event) => setWorldBorderEnabled(event.target.checked)}
+            checked={options.worldBorderEnabled}
+          />
         </div>
-        <div className={clsx('map-controls-option')}>
+        <div className={clsx('map-controls-option-switch')}>
           <span className={clsx('map-controls-option-label')}>{t('options-region-labels')}</span>
-          <ReactSwitch onChange={setRegionLabelsEnabled} checked={options.regionLabelsEnabled} />
+          <Switch
+            color="primary"
+            onChange={(event) => setRegionLabelsEnabled(event.target.checked)}
+            checked={options.regionLabelsEnabled}
+          />
         </div>
       </div>
       <div

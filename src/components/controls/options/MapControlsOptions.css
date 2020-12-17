@@ -29,6 +29,13 @@
   margin-bottom: 8px;
 }
 
+.map-controls-option-switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
 .map-controls-option-slider > .rc-slider-rail {
   background-color: #ccc;
 }
