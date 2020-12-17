@@ -2,14 +2,13 @@ import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 import clsx from 'clsx';
-
-import Control from 'react-leaflet-control';
+import MapCustomControl from './MapCustomControl';
 
 import './EditorControls.css';
 
 const _EditorControls = ({ startEditorMarker, startEditorRoute, displayed }) => {
   return (
-    <Control position="topleft">
+    <MapCustomControl position="topleft">
       <div
         className={clsx('map-editor-control-toolbar', displayed ? 'display-block' : 'display-none')}
       >
@@ -36,7 +35,7 @@ const _EditorControls = ({ startEditorMarker, startEditorRoute, displayed }) => 
           )}
         />
       </div>
-    </Control>
+    </MapCustomControl>
   );
 };
 

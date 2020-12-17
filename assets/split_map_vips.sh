@@ -32,7 +32,8 @@ generate_tiles() {
     vips dzsave output/MapExtracted_${base_size}.png output/tiles --layout google --depth onetile --tile-size ${tile_size} --overlap 0 --suffix .webp
 
     # Flatten and reposition.
-    for z in {0..6};
+    # Fetch images up to zoom level 5 + 2 = 7
+    for z in {0..5};
     do
         oz=$((${z}+2))
         # Zoom Level 4 = 0-15.
@@ -58,21 +59,27 @@ optimize_images() {
 
 mkdir output
 
+# Zoom Level 2
 generate_size 512
 generate_size 768
+# Zoom Level 3
 generate_size 1024
 generate_size 1536
+# Zoom Level 4
 generate_size 2048
 generate_size 3072
+# Zoom Level 5
 generate_size 4096
 # Current original size.
 generate_size 6144
+# Zoom Level 6
 generate_size 8192 
-# Blurry, but we need this for the highest zoom level.
+# Zoom Level 7: Tiles start to become blurry.
 generate_size 16384
+# Zoom Level 8: Too big to easily generate.
+# generate_size 32768
 
 # At each zoom level, each tile is divided in four, and its size (length of the edge, given by the tileSize option) doubles, quadrupling the area.
-
-generate_tiles 16384
+generate_tiles 8192
 
 optimize_images

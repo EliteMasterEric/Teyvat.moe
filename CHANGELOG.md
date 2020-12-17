@@ -1,6 +1,6 @@
 # Changelog
 
-# 0.2.0
+# 0.2.0 React Rework
 
 First major release of the rework, featuring a new interface developed in React.
 
@@ -17,7 +17,7 @@ First major release of the rework, featuring a new interface developed in React.
 
 - Fixed issue with exporter switching latitude and longitude.
 
-# 0.3.0
+# 0.3.0 Localization Support
 
 - Implemented localization support for interface and all features and routes.
 - Marking now displays the timestamp on the popup.
@@ -28,7 +28,7 @@ First major release of the rework, featuring a new interface developed in React.
   - @MasterEric: Added Wei, and stubs for Geo Sigils and Crates.
   - @MasterEric: Imported most chest data from Yuanshen.site.
 
-# 0.4.0
+# 0.4.0 Summary Tab
 
 - Added 'respawn' parameter to feature data JSON to track respawn time.
 - Added new Summary subtab under the About tab.
@@ -36,7 +36,7 @@ First major release of the rework, featuring a new interface developed in React.
   - It includes an options menu, allowing users to pan to a random uncompleted marker, clear all markers of the feature, or clear the markers which are expired (if the respawn time is configured for that feature).
 - Added missing localization for popups.
 
-# 0.4.5
+# 0.4.5 Data Importer
 
 - Reimplemented popups on routes.
 - Reworked the Preferences handling.
@@ -53,7 +53,7 @@ First major release of the rework, featuring a new interface developed in React.
   - liyueCrystalCore
   - liyueBambooShoot
   - liyueGoldenLoach
-- Renamed Wei to [Unusual Hillichurl](https://genshin.mihoyo.com/en/news/detail/6526).
+- Renamed Wei to [Unusual Hilichurl](https://genshin.mihoyo.com/en/news/detail/6526).
 
 # 0.4.10
 
@@ -83,7 +83,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed bug where panning far enough could display parallel universes.
 - Fixed ESLint issues preventing the map from building.
 
-# 0.5.0
+# 0.5.0 Teleporters and Chest Data
 
 - Imported Liyue chest data from yuanshen.site, mostly manually.
 - Added region labels for Liyue.
@@ -127,7 +127,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Optimized all filter and comment images using PNGQuant for better web performance.
 - Fixed a bug where region labels could prevent clicking a marker.
 
-# 0.5.1
+# 0.5.1 v1.1 Markers
 
 - Added markers for all 5 world bosses and 3 weekly bosses.
 - Revised world border to add the Golden House.
@@ -137,9 +137,9 @@ First major release of the rework, featuring a new interface developed in React.
 - Added new features:
   - Childe (Liyue Boss)
 - Added new markers and revised existing markers for the following features:
-  - @MasterEric: Unusual Hillichurl (Wei) Mondstadt (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+  - @MasterEric: Unusual Hilichurl (Wei) Mondstadt (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
     - Total of 7 markers
-  - @MasterEric: Unusual Hillichurl (Wei) Liyue (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
+  - @MasterEric: Unusual Hilichurl (Wei) Liyue (Credit to [DoubleSwrd](https://www.youtube.com/watch?v=Vs5IY1C0iwQ))
     - Total of 12 markers
   - @MasterEric: Loach Pearl (Liyue) (Credit to [Juzzex](https://www.youtube.com/watch?v=4orUPwiOuaM&t=23s))
     - Total of 12 markers
@@ -149,11 +149,11 @@ First major release of the rework, featuring a new interface developed in React.
   - @MasterEric: Loach Pearls (Liyue Nature)
   - @MasterEric: Bamboo Shoots (Liyue Nature)
 - Added pictures for various features:
-  - @MasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Mondstadt
-  - @MasterEric and DoubleSwrd: Unusual Hillichurl (Wei) Liyue
+  - @MasterEric and DoubleSwrd: Unusual Hilichurl (Wei) Mondstadt
+  - @MasterEric and DoubleSwrd: Unusual Hilichurl (Wei) Liyue
   - @MasterEric: Loach Pearl (Liyue)
 
-# 0.6.0
+# 0.6.0 Redux Rework
 
 - Reworked state to use React Redux to improve major performance issues.
   - The implementation might not be the best since this is my first project using it, but it's definitely a great learning experience.
@@ -172,7 +172,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Revised existing markers:
   - Removed 2 redundant Wei locations in Liyue (2 markers at same spot)
 
-# 0.6.1
+# 0.6.1 Meteorite Shards
 
 - Fixed localization not using the proper files.
 - Disabled service worker for now.
@@ -189,8 +189,8 @@ First major release of the rework, featuring a new interface developed in React.
     - Oceanid (Liyue Boss)
     - Pyro Regisvine (Liyue Boss)
   - 12 hours = 43,200 seconds
-    - Unusual Hillichurl (Wei) (Liyue Monster)
-    - Unusual Hillichurl (Wei) (Mondstadt Monster)
+    - Unusual Hilichurl (Wei) (Liyue Monster)
+    - Unusual Hilichurl (Wei) (Mondstadt Monster)
   - 24 hours = 86,400 seconds
     - Abyss Mage (Liyue Monster)
     - Abyss Mage (Mondstadt Monster)
@@ -202,10 +202,10 @@ First major release of the rework, featuring a new interface developed in React.
     - Fowl (Liyue Nature)
     - Fowl (Mondstadt Nature)
     - Geovishap Hatchling (Liyue Monster)
-    - Hillichurl (Liyue Monster)
-    - Hillichurl (Mondstadt Monster)
-    - Hillichurl Shooter (Liyue Monster)
-    - Hillichurl Shooter (Mondstadt Monster)
+    - Hilichurl (Liyue Monster)
+    - Hilichurl (Mondstadt Monster)
+    - Hilichurl Shooter (Liyue Monster)
+    - Hilichurl Shooter (Mondstadt Monster)
     - Mitachurl (Liyue Monster)
     - Mitachurl (Mondstadt Monster)
     - Raw Meat (Liyue Nature)
@@ -275,7 +275,7 @@ First major release of the rework, featuring a new interface developed in React.
   - Challenges (Liyue)
   - Seelies (Liyue)
 
-# 0.7.0
+# 0.7.0 Imgur Uploader
 
 - Added image uploader to Editor tool.
   - The Image field takes a URL; you can also click or drag to upload an image; this will post the image on Imgur and insert the URL.
@@ -295,7 +295,7 @@ First major release of the rework, featuring a new interface developed in React.
   - Added several alt tags to images.
   - Added Content Security policy header to prevent XSS attacks.
 
-# 0.8.0
+# 0.8.0 YouTube Embed Support
 
 - Rename Image in Editor to Media.
   - This triggered a breaking change to how editor data was stored, triggering a Preferences version update to GM_003.
@@ -340,7 +340,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where the page would not update the export dialog until the page is refreshed.
 - Fixed a bug where the Language dropdown would display as blank rather than the current language.
 
-# 0.8.3
+# 0.8.3 French and Russian
 
 - Added translations for French and Russian. Thanks to the following POEditor users for contributing:
   - French: Joshua, kevin, Lapis128.256
@@ -356,7 +356,7 @@ First major release of the rework, featuring a new interface developed in React.
 # 0.8.4
 
 - Improved mapping for features
-  - @MatsterEric: Added titles to most of the 1800 or so markers that were missing them (only ids, but allows for easy identification).
+  - @MasterEric: Added titles to most of the 1800 or so markers that were missing them (only ids, but allows for easy identification).
   - @MasterEric: Mapped Magical Crystal Chunks (Mondstadt) with 18 total locations, with screenshots.
   - @MasterEric: Mapped 3 Common Chest (Mondstadt) locations, with screenshots.
   - @MasterEric: Mapped 2 Exquisite Chest (Mondstadt) locations, with screenshots.
@@ -378,8 +378,55 @@ First major release of the rework, featuring a new interface developed in React.
   - options-subtitle-format: Displays the application version at the top of the options menu.
 - Removed legacy site from subpath (as added in v0.8.3) because I couldn't get it working alongside the new one.
 - Fixed a bug where CSP prevented manifest.json from loading on Chrome.
-- Fixed all instances of Hillichurl to read Hilichurl instead (only 1 'L').
+- Fixed all instances of Hilichurl to read Hilichurl instead (only 1 'L').
   - This required a data storage migration.
 - Fixed a bug where Editor GitHub submissions did not include the Editor label.
 - Fixed a bug with a missing translation key.
+
+## 0.8.5 has been skipped and relevant feature mapping locations were added in 0.9.0.
+
+# 0.9.0 Dragonspine and Map Rework and Indonesian
+
+- Displayed region for Dragonspine.
+  - Once 1.2 releases on December 23rd, submissions for Dragonspine (any feature in any category, preferably with screenshots) will be accepted and greatly appreciated.
+- Added preliminary map graphic for Dragonspine, coming in version 1.2.
+  - Source: https://genshin.mihoyo.com/en/news/detail/7398
+  - This map will be updated once the full update releases.
+- Added full Indonesian translation for interface, as provided by dogeregod via the POEditor project.
+- Revamped the core map rendering.
+  - Users can now zoom closer while using less bandwidth on map graphics.
+    - This feature involves auto-scaling tiles at higher zoom levels, but that was being done anyway.
+  - Updated react-leaflet and react-leaflet-markercluster to version 3.
+- Mapped 126 total feature markers:
+  - @MasterEric: Mapped 1 Precious Chest (Liyue Chest) location, with screenshot.
+  - @MasterEric: Mapped 2 Magical Crystal Chunk (Liyue Ore) locations, with screenshots.
+  - @MasterEric: Mapped 5 Crystal Chunk (Liyue Ore) locations, with screenshots.
+  - @sgtoutlaw: Mapped 4 Apple (Mondstadt Nature) locations, with screenshots.
+  - @sgtoutlaw: Mapped 4 Berry (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 1 Bird Egg (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 5 Matsusake (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 22 Mint (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 26 Pinecone (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 13 Sunsettia (Mondstadt Nature) locations.
+  - @sgtoutlaw: Mapped 29 Sweet Flower (Mondstadt Nature) locations.
+  - @Venryn: Mapped 3 Common Chest (Liyue Chest) locations, with screenshots.
+  - @Tatsugi: Mapped 1 Exquisite Chest (Liyue Chest) locations, with screenshots.
+  - @birth23: Mapped 9 Geo Sigil (Liyue Chest) locations, with screenshots.
+  - @Makushimu120: Mapped 1 Crate (Liyue Chest) location, with screenshot.
+- Renamed Matsusake to Matsu**t**ake.
+  - This required a data storage migration to GM_005.
+- Disabled the following features. The data will remain, and can be re-enabled if there is a rerun.
+  - (In the event we want to reduce the space the app takes, we can archive the comment images to another project and re-add them later.)
+  - Meteorite Shards (Mondstadt Event)
+  - Meteorite Shards (Liyue Event)
+- Invalid feature data now only displays a warning in the console, rather than crashing the app.
+- The Marker IDs will now be used if a popup specifies no title.
+  - Removed marker IDs from ~1800 markers where it was added manually in v0.8.4.
+- Added new icons for the following features, courtesy of Honey Hunter World
+  - Sunsettia
+  - Bamboo Shoot
+  - Butterfly Wings
+  - Magical Crystal Chunk
+  - Plaustrite Shard (UPCOMING)
+  - Sweet Flower
 - Note that the next major update will not be 1.0, but 0.10.0.

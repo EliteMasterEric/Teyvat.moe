@@ -1,6 +1,6 @@
 # assets
 
-This directory contains assets from the game, used to generate maps, marker images, and other graphics used for the main site.
+This directory contains raw assets, and scripts used for developing the map efficiently.
 
 ## OriginalMap
 
@@ -16,6 +16,18 @@ The full game map from MapExtracted.pdn, flattened and saved as a PNG.
 
 ## split_map.sh
 
-A script which utilizes ImageMagick to upscale and downscale the world map, then performs cropping to split the world map into individual squares. Since this process creates several thousand images, this is a time-consuming and memory-intensive process.
+Legacy script which utilizes ImageMagick to upscale and crop the world map into individual squares.
 
-If the conversion fails due to resource limits, follow this fix: https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick
+DO NOT USE, it's far too slow.
+
+## split_map_vips.sh
+
+Script which utilizes VIPS to upscale and crop the world map into individual squares. Much faster than the ImageMagick version.
+
+## sorter.py
+
+Script used to sort chest JSON into individual files based on the file names in the chest comment image folders.
+
+# make_media_local.py
+
+Script which trawls all data files, locates image file paths, downloads the file to the `/public/comments` folder, and adjusts the `popupMedia` field accordingly.

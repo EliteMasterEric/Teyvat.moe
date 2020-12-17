@@ -2,13 +2,12 @@ import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { AttributionControl, Map, TileLayer, ZoomControl } from 'react-leaflet';
+import { AttributionControl, MapContainer, TileLayer, ZoomControl } from 'react-leaflet';
 import ReactLeafletEditable from 'react-leaflet-editable';
 
 import { editorMarkerHighlight, lineProperties, lineTextProperties } from './LayerConstants';
 import { useImageExtension } from '../Image';
 
-import { setPositionAndZoom } from '../../redux/ducks/ui';
 import { appendElement, setElementProperty } from '../../redux/ducks/editor';
 
 import {
@@ -16,10 +15,12 @@ import {
   MAP_BOUNDS,
   MAP_CENTER,
   MAXIMUM_ZOOM,
+  MAXIMUM_NATIVE_ZOOM,
   MINIMUM_ZOOM,
   TILE_URL,
 } from '../preferences/DefaultPreferences';
 import EditorControls from './EditorControls';
+import MapPositionHandler from './MapPositionHandler';
 
 // A link back to the main repository.
 const ATTRIBUTION =
@@ -37,17 +38,13 @@ const ATTRIBUTION =
 // shadow their associated action generators.
 /* eslint-disable no-shadow */
 const _MapEditor = ({
-  mapRef,
   editRef,
   children,
-
-  mapPosition,
 
   appendMarker,
   appendRoute,
   moveMarker,
   moveRoute,
-  setPositionAndZoom,
 }) => {
   // A separate state must be used because the type of currentEditable can't be determined
   // just by looking at it.
@@ -170,34 +167,6 @@ const _MapEditor = ({
     }
   };
 
-  /**
-   * Every time the user drags or zooms to a position on the map,
-   * update the state.
-   */
-  const onChangeMapPos = () => {
-    if (mapRef?.current?.leafletElement == null) return;
-
-    setPositionAndZoom(
-      mapRef.current.leafletElement.getCenter(),
-      mapRef.current.leafletElement.getZoom()
-    );
-  };
-
-  React.useEffect(() => {
-    if (mapRef?.current?.leafletElement == null) return;
-
-    if (
-      mapPosition.latlng !== mapRef.current.leafletElement.getCenter() ||
-      mapPosition.zoom !== mapRef.current.leafletElement.getZoom()
-    ) {
-      mapRef.current.leafletElement.setView(
-        [mapPosition.latlng.lat, mapPosition.latlng.lng],
-        mapPosition.zoom,
-        { animate: true, duration: 0.25, easeLinearity: 0.25, noMoveStart: false }
-      );
-    }
-  }, [mapPosition]);
-
   // Check for WebP support.
   const ext = useImageExtension(true);
 
@@ -215,10 +184,7 @@ const _MapEditor = ({
       onVertexMarkerDragEnd={onVertexMarkerDragEnd}
       onDrawingCommit={onDrawingCommit}
     >
-      <Map
-        ref={mapRef}
-        ondragend={onChangeMapPos}
-        onzoomend={onChangeMapPos}
+      <MapContainer
         maxBounds={MAP_BOUNDS}
         center={MAP_CENTER}
         zoom={DEFAULT_ZOOM}
@@ -230,8 +196,19 @@ const _MapEditor = ({
         attributionControl={false} // Override the Leaflet attribution with our own AttributionControl.
         zoomControl={false}
       >
+        {/* Handles events related to the map position. */}
+        <MapPositionHandler />
         {/* Controls the actual map image. */}
-        <TileLayer url={tileUrl} noWrap bounds={MAP_BOUNDS} errorTileUrl={`tiles/blank.${ext}`} />
+        <TileLayer
+          url={tileUrl}
+          noWrap
+          bounds={MAP_BOUNDS}
+          errorTileUrl={`tiles/blank.${ext}`}
+          maxZoom={MAXIMUM_ZOOM}
+          minZoom={MINIMUM_ZOOM}
+          maxNativeZoom={MAXIMUM_NATIVE_ZOOM}
+          minNativeZoom={MINIMUM_ZOOM}
+        />
         {/* Controls the attribution link in the bottom left corner. */}
         <AttributionControl prefix={ATTRIBUTION} position="bottomleft" />
         {/* Controls the zoom buttons in the top left corner. */}
@@ -239,16 +216,13 @@ const _MapEditor = ({
         <EditorControls startEditorMarker={startEditorMarker} startEditorRoute={startEditorRoute} />
 
         {children}
-      </Map>
+      </MapContainer>
     </ReactLeafletEditable>
   );
 };
 
-const mapStateToProps = (state) => ({
-  mapPosition: state.position,
-});
+const mapStateToProps = (_state) => ({});
 const mapDispatchToProps = (dispatch) => ({
-  setPositionAndZoom: (position, zoom) => dispatch(setPositionAndZoom(position, zoom)),
   appendMarker: (data) => dispatch(appendElement(data)),
   appendRoute: (data) => dispatch(appendElement(data)),
   moveMarker: (marker, newCoords) =>

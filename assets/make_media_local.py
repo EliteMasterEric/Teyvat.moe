@@ -12,7 +12,7 @@ from os.path import isfile, join, isdir, dirname
 featureDataBasePath = '../src/data/features/'
 publicCommentBasePath = '../public/comments'
 jsonPattern = re.compile('(.+)\.(json)')
-imageURLPattern = re.compile('(https://i.imgur.com/(?:.+?)\.)(png|jpg)')
+imageURLPattern = re.compile('(https:\/\/i\.imgur\.com\/(?:.+?))\.(png|jpg)')
 
 def make_parent_dirs(path):
   pathdir = dirname(path)
@@ -26,8 +26,13 @@ def subdirs_in_dir(mypath):
 
 def download_to_path(url, path):
   r = requests.get(url, allow_redirects=True)
-  make_parent_dirs(path)
-  open(path, 'wb').write(r.content)
+  if r.status_code != 200:
+    print('      [%s ERROR] ACCESSING: %s' % (r.status_code, url))
+    return False
+  else:
+    make_parent_dirs(path)
+    open(path, 'wb').write(r.content)
+    return True
 
 def parse_marker_for_media(marker, region, featureName):
   mediaURL = marker['properties']['popupMedia']
@@ -37,12 +42,13 @@ def parse_marker_for_media(marker, region, featureName):
     mediaExternalBase = mediaExternalMatch.group(1) 
     mediaExternalExt = mediaExternalMatch.group(2)
 
-    mediaURLPNG = '%s.%s' % (mediaExternalBase, 'png')
+    # Imgur will provide a file of the proper type based on the extension requested.
+    mediaURLPNG = '%s.%s' % (mediaExternalBase, mediaExternalExt)
 
     mediaOutput = '%s/%s/%s/%s' % (publicCommentBasePath, region, featureName, markerId)
     mediaOutputPath = '%s.%s' % (mediaOutput, mediaExternalExt)
-    download_to_path(mediaURLPNG, mediaOutputPath)
-    marker['properties']['popupMedia'] = mediaOutput
+    if download_to_path(mediaURLPNG, mediaOutputPath):
+      marker['properties']['popupMedia'] = mediaOutput
 
   return marker
 
@@ -55,9 +61,9 @@ def parse_json_for_media(path, region, featureName):
       marker = featureDataNew['data'][i]
       featureDataNew['data'][i] = parse_marker_for_media(marker, region, featureName)
     if (featureData == featureDataNew):
-      print('      NO CHANGES')
+      print('      no change')
     else:
-      print('      DATA CHANGED, EDITING JSON')
+      print('      ***DATA MODIFIED, EDITING JSON***')
       with open(path, 'w') as fw:
         json.dump(featureDataNew, fw, indent=2)
 

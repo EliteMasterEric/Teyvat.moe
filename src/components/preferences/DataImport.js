@@ -59,9 +59,10 @@ export const migrateData = (input, version) => {
       console.error(`[ERROR] Could not identify preferences prefix ${version}`);
       storeRecoveryData(input, `[ERROR] Could not identify preferences prefix ${version}`);
       return null;
-    // Make it look like:
-    // case GM_001: <code to mutate output> from 001 to 002, fallthrough, GM_002: Return
     case 'GM_001':
+      /*
+       * This update adds many new options, so defaults are injected.
+       */
       output = {
         options: {
           ...DEFAULT_MAP_PREFERENCES.options,
@@ -107,6 +108,11 @@ export const migrateData = (input, version) => {
         },
       };
     case 'GM_003':
+      /*
+       * This update makes the following changes:
+       * - Rename Hillichurl to Hilichurl.
+       * - Rename Hilichurl Shooter to Hillichurl Shooter.
+       */
       output = {
         ...output,
         displayed: {
@@ -149,6 +155,30 @@ export const migrateData = (input, version) => {
         },
       };
     case 'GM_004':
+      /*
+       * This update makes the following changes:
+       * - Rename Matsusake to Matsutake.
+       */
+      output = {
+        ...output,
+        displayed: {
+          ...output.displayed,
+          features: {
+            ..._.omit(output.displayed.features, ['mondstadtMatsusake', 'liyueMatsusake']),
+            mondstadtMatsutake: output.displayed.features.mondstadtMatsusake,
+            liyueMatsutake: output.displayed.features.liyueMatsusake,
+          },
+        },
+        completed: {
+          ...output.completed,
+          features: {
+            ..._.omit(output.completed.features, ['mondstadtMatsusake', 'liyueMatsusake']),
+            mondstadtMatsutake: output.completed.features.mondstadtMatsusake,
+            liyueMatsutake: output.completed.features.liyueMatsusake,
+          },
+        },
+      };
+    case 'GM_005':
       // Migration is done.
       return {
         ...output,

@@ -50,8 +50,11 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1, allowEx
   let text = '';
   if (!feature) return text;
 
-  if (feature.properties.popupTitle)
+  if (feature.properties.popupTitle && feature.properties.popupTitle !== '') {
     text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
+  } else {
+    text = `${text}<b class="map-marker-popup-title">#${feature.id}</b>`;
+  }
 
   if (feature.properties.popupMedia) {
     if (!(typeof feature.properties.popupMedia === 'string')) {

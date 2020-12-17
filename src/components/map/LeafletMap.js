@@ -14,14 +14,13 @@ import './LeafletMap.css';
 
 const _LeafletMap = () => {
   // Reference to the map.
-  const mapRef = React.useRef(null);
   const editRef = React.useRef(null);
 
   return (
-    <MapEditor ref={editRef} mapRef={mapRef}>
-      <RegionLabelLayer mapRef={mapRef} />
-      <WorldBorderLayer mapRef={mapRef} />
-      <EditorLayer mapRef={mapRef} />
+    <MapEditor ref={editRef}>
+      <RegionLabelLayer />
+      <WorldBorderLayer />
+      <EditorLayer />
 
       {_.keys(MapFeatures).map((key) => {
         const feature = MapFeatures[key];

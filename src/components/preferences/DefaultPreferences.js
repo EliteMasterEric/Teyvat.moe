@@ -9,7 +9,8 @@ export const MAP_CENTER = [-35, 45];
 // Zoom levels.
 export const MINIMUM_ZOOM = 3;
 export const DEFAULT_ZOOM = 4;
-export const MAXIMUM_ZOOM = 8;
+export const MAXIMUM_NATIVE_ZOOM = 7;
+export const MAXIMUM_ZOOM = 10;
 
 // Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
 export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
@@ -21,7 +22,7 @@ export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
  * The data version.
  * Whenever the structure of mapPreferences changes, increment this.
  */
-export const GENSHINMAP_DATA_VERSION = 'GM_004';
+export const GENSHINMAP_DATA_VERSION = 'GM_005';
 
 /**
  * The default locale code if not specified by the browser or by the user.

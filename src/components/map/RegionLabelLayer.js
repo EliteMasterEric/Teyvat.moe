@@ -5,9 +5,10 @@ import { connect } from 'react-redux';
 
 import L from 'leaflet';
 
-import { GeoJSON } from 'react-leaflet';
+import { GeoJSON, useMapEvents } from 'react-leaflet';
 import { localizeField } from '../FeatureLocalization';
 import { hashObject } from '../Util';
+import { DEFAULT_ZOOM } from '../preferences/DefaultPreferences';
 
 const regionLabelData = require('../../data/core/map-labels.json');
 
@@ -32,10 +33,17 @@ const RegionLabel = ({ featureData, zoomLevel }) => {
   );
 };
 
-const _RegionLabelLayer = ({ mapRef, displayed }) => {
-  const [zoomLevel, storeZoomLevel] = React.useState(
-    mapRef?.current?.leafletElement?.getZoom() ?? 4
-  );
+const _RegionLabelLayer = ({ displayed }) => {
+  const [zoomLevel, storeZoomLevel] = React.useState(DEFAULT_ZOOM);
+
+  // Any child elements of the react-leaflet MapContainer can access the Map instance
+  // through the use of a custom hook.
+  const mapCurrent = useMapEvents({
+    zoomend: () => {
+      // Update whenever the zoom level changes.
+      storeZoomLevel(mapCurrent?.getZoom());
+    },
+  });
 
   const pointToLayer = (featureData, latLng) => {
     const html = ReactDOMServer.renderToString(
@@ -51,15 +59,6 @@ const _RegionLabelLayer = ({ mapRef, displayed }) => {
       zIndexOffset: -900,
     });
   };
-
-  /**
-   * Update whenever the zoom level changes.
-   */
-  React.useEffect(() => {
-    mapRef.current.leafletElement.on('zoomend', () => {
-      storeZoomLevel(mapRef.current.leafletElement.getZoom());
-    });
-  }, [mapRef.current.leafletElement]);
 
   // TODO: We destroy the layer if it's hidden. Is there a more performant way?
   if (!displayed) return null;

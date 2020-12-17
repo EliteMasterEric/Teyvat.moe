@@ -5,7 +5,7 @@ import L from 'leaflet';
 import 'leaflet-editable';
 import 'leaflet-textpath';
 
-import { GeoJSON } from 'react-leaflet';
+import { GeoJSON, useMap } from 'react-leaflet';
 import { connect } from 'react-redux';
 
 import { localizeField } from '../FeatureLocalization';
@@ -20,7 +20,11 @@ import {
 import { buildPopup, POPUP_WIDTH } from './MapPopup';
 import { hashObject } from '../Util';
 
-const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
+const _EditorLayer = ({ displayed, editorData, editorHighlight }) => {
+  // Any child elements of the react-leaflet MapContainer can access the Map instance
+  // through the use of a custom hook.
+  const mapCurrent = useMap();
+
   // Use PNG for the editor since we can assume WebP hasn't been built yet.
   const ext = 'png';
 
@@ -66,7 +70,7 @@ const _EditorLayer = ({ mapRef, displayed, editorData, editorHighlight }) => {
 
   const onEachFeature = (feature, layer) => {
     // eslint-disable-next-line no-param-reassign
-    layer.enableEdit(mapRef.current.leafletElement);
+    layer.enableEdit(mapCurrent);
 
     // Define popups and drag events here.
     // layer.on('click', onClickFeature);

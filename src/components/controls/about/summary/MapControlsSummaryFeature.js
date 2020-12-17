@@ -11,13 +11,15 @@ import MapControlSummaryProgressBar from './MapControlsSummaryProgressBar';
 import MapControlSummaryFeatureMenu from './MapControlsSummaryFeatureMenu';
 
 const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, displayed }) => {
-  const totalCount = Object.keys(mapFeature.data).length;
-
   // React hooks must always before any return calls.
   const ext = useImageExtension();
 
-  if (!displayed) return null;
-  if (completedCount === 0) return null;
+  if (!displayed) return null; // Feature is not displayed.
+  if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
+  if (completedCount === 0) return null; // No markers have been completed.
+
+  // Total number of markers for this feature. Contrast with completedCount.
+  const totalCount = Object.keys(mapFeature.data).length;
 
   return (
     <div className={clsx('map-controls-about-summary-feature')}>

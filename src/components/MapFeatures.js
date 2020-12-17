@@ -21,7 +21,7 @@ export const MapRegions = {
   },
   dragonspine: {
     nameKey: 'region-dragonspine',
-    enabled: false,
+    enabled: true,
   },
   inazuma: {
     nameKey: 'region-inazuma',

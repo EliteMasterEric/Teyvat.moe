@@ -5,7 +5,7 @@ import L from 'leaflet';
 // Its very presence changes the behavior of L.
 import 'leaflet.pattern';
 
-import { GeoJSON } from 'react-leaflet';
+import { GeoJSON, useMap } from 'react-leaflet';
 import { hashObject } from '../Util';
 
 const worldBorderData = require('../../data/core/world-border.json');
@@ -31,8 +31,12 @@ const worldBorderPattern = new L.StripePattern({
   height: 0.05,
 });
 
-const _WorldBorderLayer = ({ mapRef, displayed }) => {
-  const zoomLevel = mapRef.current.leafletElement.getZoom();
+const _WorldBorderLayer = ({ displayed }) => {
+  // Any child elements of the react-leaflet MapContainer can access the Map instance
+  // through the use of a custom hook.
+  const mapCurrent = useMap();
+
+  const zoomLevel = mapCurrent.getZoom();
 
   const polygonToLayer = (_geoJsonData, latLngs) => {
     return new L.Polygon(latLngs, {
@@ -46,7 +50,7 @@ const _WorldBorderLayer = ({ mapRef, displayed }) => {
 
   // Do once.
   React.useEffect(() => {
-    worldBorderPattern.addTo(mapRef.current.leafletElement);
+    worldBorderPattern.addTo(mapCurrent);
   }, []);
 
   // TODO: We destroy the layer if it's hidden. Is there a more performant way?
