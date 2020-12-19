@@ -1,4 +1,4 @@
-import { overrideLocale } from '../../components/Localization';
+import { overrideLocale } from '~/components/i18n/Localization';
 
 /**
  * Swap the language of the Localization components whenever the user changes it.

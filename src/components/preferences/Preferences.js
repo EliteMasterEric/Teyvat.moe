@@ -1,10 +1,14 @@
 /**
  * Handles the storage of current data in local browser Storage.
  */
-import _ from 'lodash';
-import localStorage from './local-storage';
 
-import { LOCAL_STORAGE_KEY, DEFAULT_MAP_PREFERENCES } from './DefaultPreferences';
+import _ from 'lodash';
+
+import {
+  LOCAL_STORAGE_KEY,
+  DEFAULT_MAP_PREFERENCES,
+} from '~/components/preferences/DefaultPreferences';
+import localStorage from '~/components/preferences/local-storage';
 
 /**
  * Resets the local storage.

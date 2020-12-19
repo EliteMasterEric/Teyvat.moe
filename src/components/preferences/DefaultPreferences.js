@@ -1,6 +1,7 @@
 /**
  * Contains static codes and values,
  */
+
 import L from 'leaflet';
 
 // Center of the map.

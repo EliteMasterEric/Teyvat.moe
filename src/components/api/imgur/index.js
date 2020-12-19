@@ -1,5 +1,10 @@
+/**
+ * Handles API calls to Imgur for uploading user images.
+ */
+
 import axios from 'axios';
-import { t, f } from '../../Localization';
+
+import { t, f } from '~/components/i18n/Localization';
 
 /**
  * The URL to send a post request to.

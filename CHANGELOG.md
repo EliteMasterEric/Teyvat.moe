@@ -430,3 +430,26 @@ First major release of the rework, featuring a new interface developed in React.
   - Plaustrite Shard (UPCOMING)
   - Sweet Flower
 - Note that the next major update will not be 1.0, but 0.10.0.
+
+# 0.9.1: Material UI Rework and Code Cleanup
+
+- Added an option to display marked feature progress in the Summary tab even when they are hidden on the map.
+- If marked feature progress is displayed in the Summary tab when the feature is hidden on the map, there is now an option to Show that feature in the menu, where the 'Hide Feature' option was.
+- Added new localization strings:
+  map-summary-menu-show-feature: Label for the option to display marked feature progress in the Summary tab even when they are hidden on the map.
+- Replaced many UI components with Material UI (with help from @inform880)
+  - Added an internal Theme.
+  - Replaced text boxes and text fields in the Editor view and popups.
+  - Replaced buttons in Options menu.
+  - Replaced switches in the Options menu.
+- Restructured code to use absolute file paths for imports, and rearranged directory structure.
+- Improved JavaDocs for many files.
+- Removed extraneous packages:
+  - @react-hook/media-query
+  - form-data
+  - gh-pages
+  - localized-strings
+  - react-leaflet-draw
+  - react-placeholder
+  - redux-thunk
+  - salesman.js

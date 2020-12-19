@@ -3,6 +3,10 @@ module.exports = {
     browser: true,
     node: true,
   },
+  settings: {
+    // Import should respect ~ as './src'
+    'import/resolver': 'babel-plugin-root-import',
+  },
   parser: '@babel/eslint-parser',
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['@babel', 'prettier'],

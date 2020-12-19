@@ -4,7 +4,7 @@ import hash from 'object-hash';
 import sanitizeHTML from 'sanitize-html';
 import * as clipboard from 'clipboard-polyfill/text';
 
-import packageJson from '../../package.json';
+import packageJson from '~/../package.json';
 
 export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;

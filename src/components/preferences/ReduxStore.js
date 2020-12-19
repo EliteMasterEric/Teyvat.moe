@@ -1,12 +1,16 @@
 /**
  * Contains functions to save and load the Redux store in local storage.
  */
+
 import _ from 'lodash';
 
-import localStorage from './local-storage';
-import { migrateData } from './DataImport';
-
-import { LOCAL_STORAGE_KEY, DEFAULT_MAP_PREFERENCES, PERSISTENT_KEYS } from './DefaultPreferences';
+import { migrateData } from '~/components/preferences/DataImport';
+import {
+  LOCAL_STORAGE_KEY,
+  DEFAULT_MAP_PREFERENCES,
+  PERSISTENT_KEYS,
+} from '~/components/preferences/DefaultPreferences';
+import localStorage from '~/components/preferences/local-storage';
 
 export const saveStateToLocalStorage = (currentStore, key = LOCAL_STORAGE_KEY) => {
   const persistentStore = _.pick(currentStore, PERSISTENT_KEYS);

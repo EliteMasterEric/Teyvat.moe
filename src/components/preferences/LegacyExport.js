@@ -3,9 +3,9 @@
  */
 
 import _ from 'lodash';
-import localStorage from './local-storage';
 
-import { LOCAL_STORAGE_KEY } from './DefaultPreferences';
+import { LOCAL_STORAGE_KEY } from '~/components/preferences/DefaultPreferences';
+import localStorage from '~/components/preferences/local-storage';
 
 /**
  * Fetch the keys of the markers which were selected.
