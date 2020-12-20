@@ -3,85 +3,82 @@
  * when clicking "Import Data" or "Import Legacy Data" in the Options tab of the map controls.
  */
 
-import clsx from 'clsx';
-import React from 'react';
-import Popup from 'reactjs-popup';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import {
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 import { t } from '~/components/i18n/Localization';
 import { clearImportError } from '~/redux/ducks/import';
 
-import './ImportDataPopup.css';
+const useStyles = makeStyles({
+  dialog: {
+    backgroundColor: '#f0e9e2',
+  },
+});
 
 const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearError }) => {
   const [textarea, setTextarea] = React.useState('');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const classes = useStyles();
+  const closePopup = () => {
+    clearError();
+    setIsDialogOpen(false);
+  };
 
-  // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
+  const onClickConfirm = () => {
+    const success = onConfirm(textarea);
+
+    if (success) closePopup();
+  };
   return (
-    <Popup
-      trigger={trigger}
-      className={clsx('popup-export-data')}
-      modal
-      position="center center"
-      closeOnDocumentClick
-      closeOnEscape
-    >
-      {(closePopupFunc) => {
-        const closePopup = () => {
+    <div>
+      {React.cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
+      <Dialog
+        PaperProps={{ className: classes.dialog }}
+        open={isDialogOpen}
+        onClose={() => {
           clearError();
-          closePopupFunc();
-        };
-
-        const onClickConfirm = () => {
-          const success = onConfirm(textarea);
-
-          if (success) closePopup();
-        };
-
-        return (
-          <div className={clsx('popup-import-data-container')}>
-            <span className={clsx('popup-import-data-header')}>{title}</span>
-            <span className={clsx('popup-import-data-content')}>{content}</span>
-            <textarea
-              className={clsx('popup-import-data-textarea')}
-              text={textarea}
-              onChange={(event) => setTextarea(event.target.value)}
-            />
-
-            <span className={clsx('popup-import-data-error')}>{error}</span>
-
-            <div className={clsx('popup-import-data-button-container')}>
-              <div
-                role="button"
-                aria-label={t('popup-cancel')}
-                tabIndex={0}
-                onClick={closePopup}
-                onKeyDown={closePopup}
-                className={clsx(
-                  'popup-clear-editor-data-button',
-                  'popup-clear-editor-data-button-cancel'
-                )}
-              >
-                {t('popup-cancel')}
-              </div>
-              <div
-                role="button"
-                aria-label={t('popup-confirm')}
-                tabIndex={0}
-                onClick={onClickConfirm}
-                onKeyDown={onClickConfirm}
-                className={clsx(
-                  'popup-clear-editor-data-button',
-                  'popup-clear-editor-data-button-confirm'
-                )}
-              >
-                {t('popup-confirm')}
-              </div>
-            </div>
-          </div>
-        );
-      }}
-    </Popup>
+          setIsDialogOpen(false);
+        }}
+      >
+        <DialogTitle>{title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>{content}</DialogContentText>
+          <DialogContentText>{error}</DialogContentText>
+          <textarea text={textarea} onChange={(event) => setTextarea(event.target.value)} />
+        </DialogContent>
+        <DialogActions>
+          <Button
+            variant="contained"
+            size="large"
+            color="primary"
+            aria-label={t('popup-cancel')}
+            tabIndex={0}
+            onClick={closePopup}
+          >
+            {t('popup-cancel')}
+          </Button>
+          <Button
+            variant="contained"
+            size="large"
+            color="primary"
+            aria-label={t('popup-confirm')}
+            tabIndex={0}
+            onClick={onClickConfirm}
+          >
+            {t('popup-confirm')}
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
   );
 };
 
