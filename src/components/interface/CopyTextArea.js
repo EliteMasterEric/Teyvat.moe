@@ -2,6 +2,7 @@
  * Provides text area which you can click to copy the contents of.
  * Includes tooltip text.
  */
+import { TextField } from '@material-ui/core';
 import React from 'react';
 import Tooltip from 'react-tooltip';
 
@@ -24,8 +25,10 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
   return (
     <>
       <Tooltip />
-      <textarea
+      <TextField
+        fullWidth
         data-tip={t('popup-click-to-copy')}
+        multiline
         readOnly
         style={{ cursor: 'pointer' }}
         ref={textAreaRef}

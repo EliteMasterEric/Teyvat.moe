@@ -3,10 +3,10 @@
  * in the Options tab of the map controls.
  */
 
+import { MenuItem, Select as MaterialSelect } from '@material-ui/core';
 import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
-import Select from 'react-select-oss';
 import Flag from 'react-world-flags';
 
 import { getLanguageOptions } from '~/components/i18n/FeatureLocalization';
@@ -24,7 +24,7 @@ import './MapControlsOptionsLanguage.css';
  * @param {*} inputValue
  * @param {*} selectValue
  */
-const formatLanguageLabel = ({ value, label }, { _context, _inputValue, _selectValue }) => {
+const formatFlag = (value) => {
   let flagCode = value;
   // Flag overrides.
   switch (flagCode) {
@@ -45,15 +45,12 @@ const formatLanguageLabel = ({ value, label }, { _context, _inputValue, _selectV
       break;
   }
   return (
-    <div className={clsx('map-controls-options-language-label')}>
-      <Flag
-        code={flagCode}
-        height={16}
-        width={30}
-        className={clsx('map-controls-options-language-flag')}
-      />
-      {label}
-    </div>
+    <Flag
+      code={flagCode}
+      height={16}
+      width={30}
+      className={clsx('map-controls-options-language-flag')}
+    />
   );
 };
 
@@ -66,7 +63,6 @@ const _MapControlsOptionsLanguage = ({ options, setOverrideLang }) => {
   const langOptions = getLanguageOptions();
   const currentLangCode =
     (options?.overrideLang ?? '') !== '' ? options.overrideLang : getShortLocale();
-  const currentLang = langOptions.filter((langOption) => langOption.value === currentLangCode)[0];
 
   return (
     <div
@@ -74,14 +70,17 @@ const _MapControlsOptionsLanguage = ({ options, setOverrideLang }) => {
     >
       <div className={clsx('map-controls-option')}>
         <span className={clsx('map-controls-option-label')}>{t('options-language')}</span>
-        <Select
-          isSearchable={false}
-          className={clsx('popup-submit-editor-data-field-dropdown')}
-          formatOptionLabel={formatLanguageLabel}
-          options={langOptions}
-          value={currentLang}
-          onChange={(option) => setOverrideLang(option.value)}
-        />
+        <MaterialSelect
+          value={currentLangCode}
+          onChange={(event) => setOverrideLang(event.target.value)}
+        >
+          {langOptions.map((lang) => (
+            <MenuItem value={lang.value}>
+              {formatFlag(lang.value)}
+              {lang.label}
+            </MenuItem>
+          ))}
+        </MaterialSelect>
       </div>
     </div>
   );

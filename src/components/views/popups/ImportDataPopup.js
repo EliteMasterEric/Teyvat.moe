@@ -17,6 +17,7 @@ import { makeStyles } from '@material-ui/styles';
 
 import { t } from '~/components/i18n/Localization';
 import { clearImportError } from '~/redux/ducks/import';
+import { InputTextArea } from '~/components/interface/Input';
 
 const useStyles = makeStyles({
   dialog: {
@@ -53,7 +54,12 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearErro
         <DialogContent>
           <DialogContentText>{content}</DialogContentText>
           <DialogContentText>{error}</DialogContentText>
-          <textarea text={textarea} onChange={(event) => setTextarea(event.target.value)} />
+          <InputTextArea
+            text={textarea}
+            onChange={(value) => setTextarea(value)}
+            fullWidth
+            helperText={t('popup-import-hint')}
+          />
         </DialogContent>
         <DialogActions>
           <Button

@@ -4,11 +4,10 @@
  */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import { Switch } from '@material-ui/core';
+import { MenuItem, Select, Switch } from '@material-ui/core';
 import clsx from 'clsx';
 import React from 'react';
 import Popup from 'reactjs-popup';
-import Select from 'react-select-oss';
 
 import { MapCategories, MapRegions } from '~/components/data/MapFeatures';
 import { useImageExtension } from '~/components/interface/Image';
@@ -19,8 +18,8 @@ import './SubmitEditorDataPopup.css';
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
-  const [submissionRegion, setSubmissionRegion] = React.useState(null);
-  const [submissionCategory, setSubmissionCategory] = React.useState(null);
+  const [submissionRegion, setSubmissionRegion] = React.useState('');
+  const [submissionCategory, setSubmissionCategory] = React.useState('');
   const [clusterMarkers, setClusterMarkers] = React.useState(false);
 
   const isValid = () => {
@@ -94,20 +93,24 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             <div className={clsx('popup-submit-editor-data-field-container')}>
               <span>{t('popup-submit-editor-data-category')}</span>
               <Select
-                className={clsx('popup-submit-editor-data-field-dropdown')}
-                options={categoryOptions}
                 value={submissionCategory}
-                onChange={(value) => setSubmissionCategory(value)}
-              />
+                onChange={(event) => setSubmissionCategory(event.target.value)}
+              >
+                {categoryOptions.map((category) => (
+                  <MenuItem value={category.value}>{category.label}</MenuItem>
+                ))}
+              </Select>
             </div>
             <div className={clsx('popup-submit-editor-data-field-container')}>
               <span>{t('popup-submit-editor-data-region')}</span>
               <Select
-                className={clsx('popup-submit-editor-data-field-dropdown')}
-                options={regionOptions}
                 value={submissionRegion}
-                onChange={(value) => setSubmissionRegion(value)}
-              />
+                onChange={(event) => setSubmissionRegion(event.target.value)}
+              >
+                {regionOptions.map((region) => (
+                  <MenuItem value={region.value}>{region.label}</MenuItem>
+                ))}
+              </Select>
             </div>
             <span className={clsx('popup-submit-editor-data-field-subtitle', 'margin-bottom')}>
               {t('popup-submit-editor-data-subtitle-a')}
