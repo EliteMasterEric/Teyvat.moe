@@ -3,39 +3,44 @@
  * when clicking "Export Data" or "Export Legacy Data" in the Options tab of the map controls.
  */
 
-import clsx from 'clsx';
-import React from 'react';
-import Popup from 'reactjs-popup';
+import React, { useState } from 'react';
+import { Dialog, DialogTitle, DialogContent, DialogContentText } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 import CopyTextArea from '~/components/interface/CopyTextArea';
 
-import './ExportDataPopup.css';
+const useStyles = makeStyles({
+  dialog: {
+    backgroundColor: '#f0e9e2',
+  },
+});
 
 const ExportDataPopup = ({ title, message, fetchData, trigger }) => {
   const [data, setData] = React.useState('');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const classes = useStyles();
 
   // When the popup opens, update the contents.
   const onOpen = () => {
     setData(fetchData());
   };
 
-  // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
   return (
-    <Popup
-      trigger={trigger}
-      className={clsx('popup-export-data')}
-      modal
-      onOpen={onOpen}
-      position="center center"
-      closeOnDocumentClick
-      closeOnEscape
-    >
-      <div className={clsx('popup-export-data-container')}>
-        <span className={clsx('popup-export-data-header')}>{title}</span>
-        <span className={clsx('popup-export-data-content')}>{message}</span>
-        <CopyTextArea className={clsx('popup-export-data-textarea')} text={data} />
-      </div>
-    </Popup>
+    <div>
+      {React.cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
+      <Dialog
+        PaperProps={{ className: classes.dialog }}
+        open={isDialogOpen}
+        onEntering={onOpen}
+        onClose={() => setIsDialogOpen(false)}
+      >
+        <DialogTitle>{title}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>{message}</DialogContentText>
+          <CopyTextArea text={data} />
+        </DialogContent>
+      </Dialog>
+    </div>
   );
 };
 
