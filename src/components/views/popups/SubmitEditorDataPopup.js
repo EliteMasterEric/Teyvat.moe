@@ -4,10 +4,22 @@
  */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import { MenuItem, Select, Switch } from '@material-ui/core';
 import clsx from 'clsx';
-import React from 'react';
-import Popup from 'reactjs-popup';
+
+import React, { useState } from 'react';
+
+import {
+  MenuItem,
+  Select,
+  Switch,
+  Button,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 import { MapCategories, MapRegions } from '~/components/data/MapFeatures';
 import { useImageExtension } from '~/components/interface/Image';
@@ -16,12 +28,23 @@ import { SafeHTML } from '~/components/Util';
 
 import './SubmitEditorDataPopup.css';
 
+const useStyles = makeStyles({
+  dialog: {
+    backgroundColor: '#f0e9e2',
+  },
+});
+
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
   const [submissionRegion, setSubmissionRegion] = React.useState('');
   const [submissionCategory, setSubmissionCategory] = React.useState('');
   const [clusterMarkers, setClusterMarkers] = React.useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const classes = useStyles();
 
+  const closePopup = () => {
+    setIsDialogOpen(false);
+  };
   const isValid = () => {
     return submissionName !== '' && submissionRegion !== '' && submissionCategory !== '';
   };
@@ -36,8 +59,8 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
     return { value: key, label: t(value.nameKey) };
   });
 
-  const onClickConfirm = (closePopup) => () => {
-    if (!isValid) return;
+  const onClickConfirm = (closePopupCB) => () => {
+    if (!isValid()) return;
 
     onConfirm({
       name: {
@@ -56,26 +79,25 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         },
       },
     });
-    closePopup();
+    closePopupCB();
   };
 
   const ext = useImageExtension();
 
   // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
   return (
-    <Popup
-      trigger={trigger}
-      className={clsx('popup-submit-editor-data')}
-      modal
-      position="center center"
-      closeOnEscape
-    >
-      {(closePopup) => (
-        <div className={clsx('popup-submit-editor-data-container')}>
-          <span className={clsx('popup-submit-editor-data-header')}>
-            {t('popup-submit-editor-data-title')}
-          </span>
-          <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
+    <>
+      {React.cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
+      <Dialog
+        PaperProps={{ className: classes.dialog }}
+        open={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+      >
+        <DialogTitle>{t('popup-submit-editor-data-title')}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
+          </DialogContentText>
           <span
             className={clsx(
               'popup-submit-editor-data-form-content',
@@ -119,7 +141,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               <span>{t('popup-submit-editor-data-cluster-markers')}</span>
               <Switch
                 size="small"
-                onChange={(value) => setClusterMarkers(value)}
+                onChange={(value) => setClusterMarkers(value.target.checked)}
                 checked={clusterMarkers}
               />
             </div>
@@ -127,37 +149,31 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               {t('popup-submit-editor-data-subtitle-b')}
             </span>
           </span>
-          <div className={clsx('popup-submit-editor-data-button-container')}>
-            <div
-              role="button"
-              aria-label={t('popup-cancel')}
-              tabIndex={0}
-              onClick={closePopup}
-              className={clsx(
-                'popup-submit-editor-data-button',
-                'popup-submit-editor-data-button-cancel'
-              )}
-            >
-              {t('popup-cancel')}
-            </div>
-            <div
-              role="button"
-              aria-label={t('popup-confirm')}
-              tabIndex={0}
-              onClick={onClickConfirm(closePopup)}
-              className={clsx(
-                'popup-submit-editor-data-button',
-                isValid()
-                  ? 'popup-submit-editor-data-button-confirm-enabled'
-                  : 'popup-submit-editor-data-button-confirm-disabled'
-              )}
-            >
-              {t('popup-confirm')}
-            </div>
-          </div>
-        </div>
-      )}
-    </Popup>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            variant="contained"
+            size="large"
+            aria-label={t('popup-cancel')}
+            tabIndex={0}
+            onClick={closePopup}
+          >
+            {t('popup-cancel')}
+          </Button>
+          <Button
+            variant="contained"
+            size="large"
+            aria-label={t('popup-confirm')}
+            tabIndex={0}
+            color="primary"
+            onClick={onClickConfirm(closePopup)}
+            disabled={!isValid()}
+          >
+            {t('popup-confirm')}
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
 };
 
