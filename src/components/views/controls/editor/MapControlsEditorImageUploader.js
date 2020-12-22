@@ -3,16 +3,79 @@
  * in the Editor tab of the map Controls.
  */
 
+import { Box, IconButton, Tooltip, makeStyles, Typography } from '@material-ui/core';
+import { CloudUpload as CloudUploadIcon } from '@material-ui/icons';
 import clsx from 'clsx';
 import React from 'react';
 import { useDropzone } from 'react-dropzone';
-import Tooltip from 'react-tooltip';
 
 import { uploadImage } from '~/components/api/imgur';
 import { t } from '~/components/i18n/Localization';
 import { InputTextField } from '~/components/interface/Input';
 
-import './MapControlsEditorImageUploader.css';
+const useStyles = makeStyles((theme) => ({
+  root: {
+    margin: '8px 0 0 0',
+  },
+  dropzoneButtonRoot: {
+    backgroundColor: theme.custom.button.bgColor.main,
+    color: theme.custom.button.color.upload,
+    '&:hover': {
+      // Subclass which applies when hovering.
+      backgroundColor: theme.custom.button.bgColor.hover,
+    },
+    fontSize: 0,
+  },
+  dropzoneButtonText: {
+    fontSize: 'inherit',
+  },
+  dropzoneButtonLabel: {
+    flexDirection: 'column',
+  },
+  dropzoneButtonRootDragActive: {
+    borderRadius: '24px',
+    borderWidth: '2px',
+    borderStyle: 'dashed',
+    borderColor: theme.custom.button.color.upload,
+    padding: 20,
+    flexGrow: 1,
+    fontSize: 12,
+  },
+
+  mediaUrlTextField: {
+    flexGrow: 1,
+    marginRight: 4,
+    fontSize: 0,
+  },
+
+  animationMediaUrlTextField: {
+    width: 0,
+    opacity: 0,
+    overflow: 'hidden',
+    flexGrow: 0,
+    fontSize: '1em',
+  },
+
+  animationMediaUrlTextFieldHelperText: {
+    width: 0,
+    opacity: 0,
+    // height: 0,
+    whiteSpace: 'nowrap',
+  },
+
+  animationOff: {
+    '-webkit-transition': 'all 0s',
+    '-moz-transition': 'all 0s',
+    '-o-transition': 'all 0s',
+    transition: 'all 0s',
+  },
+  animationOn: {
+    '-webkit-transition': 'all 0.5s',
+    '-moz-transition': 'all 0.5s',
+    '-o-transition': 'all 0.5s',
+    transition: 'all 0.5s',
+  },
+}));
 
 /**
  * Handles several behaviors:
@@ -20,8 +83,12 @@ import './MapControlsEditorImageUploader.css';
  *  * Dragging an image will upload to Imgur.
  */
 const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
+  const classes = useStyles();
+
+  // The success or failure message to display.
   const [errorMsg, setErrorMsg] = React.useState('');
 
+  // Call when the files were accepted (correct file type etc.), and can be uploaded.
   const onDropAccepted = React.useCallback((acceptedFiles) => {
     setErrorMsg('progress');
 
@@ -35,6 +102,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
       });
   }, []);
 
+  // Call when the files were rejected (bad file type etc.).
   const onDropRejected = React.useCallback((fileRejections) => {
     setErrorMsg('error');
 
@@ -46,6 +114,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
     }
   }, []);
 
+  // Create a dropzone.
   const { getRootProps, getInputProps, isDragActive, open } = useDropzone({
     accept: ['image/jpeg', 'image/png'], // List of MIME types.
     maxFiles: 1,
@@ -54,6 +123,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
     onDropRejected,
   });
 
+  // Open the file dialog when clicking the button.
   const uploadElementMedia = () => {
     open();
   };
@@ -82,63 +152,58 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
   // Note that react-dropzone overrides classNames,
   // meaning that inline styles must be used.
   return (
-    <div {...getRootProps()} className={clsx('map-controls-editor-element-image')}>
-      {/* The image URL. */}
-      <div
-        className={clsx(
-          'map-controls-editor-element-image-url',
-          'map-controls-editor-animation',
-          isDragActive ? 'map-controls-editor-hidden' : 'map-controls-editor-animation-disabled'
-        )}
-      >
-        <Tooltip />
-        <span
-          data-tip={t('editor-elements-media-tooltip')}
-          className={clsx(
-            'map-controls-editor-element-label',
-            'map-controls-editor-animation',
-            'label-tooltip'
-          )}
-        >
-          {t('editor-elements-media')}
-        </span>
+    <Box display="flex" flexDirection="column" className={classes.root}>
+      <Box display="flex" flexDirection="row" alignItems="center" {...getRootProps()}>
+        {/* The image URL. */}
         <InputTextField
-          placeholder={t('editor-elements-media-placeholder')}
+          label={t('editor-media-url-label')}
+          helperText={t('editor-media-url-help')}
+          FormHelperTextProps={{
+            className: clsx(
+              isDragActive
+                ? [classes.animationMediaUrlTextFieldHelperText, classes.animationOn]
+                : [classes.animationOff]
+            ),
+          }}
           value={elementMedia}
-          className={clsx('map-controls-editor-image-url', 'map-controls-editor-animation')}
+          classes={{
+            root: clsx(
+              classes.mediaUrlTextField,
+              isDragActive
+                ? [classes.animationMediaUrlTextField, classes.animationOn]
+                : [classes.animationOff]
+            ),
+          }}
           onChange={(value) => setElementMedia(value)}
         />
-      </div>
 
-      <Tooltip />
+        {/* The uploaded image. */}
+        <input {...getInputProps()} />
 
-      {/* The uploaded image. */}
-      <input {...getInputProps()} />
-      <div
-        data-tip={t('editor-image-upload-tooltip')}
-        onClick={uploadElementMedia}
-        onKeyDown={uploadElementMedia}
-        role="button"
-        aria-label="Upload"
-        tabIndex={0}
-        className={clsx(
-          'nf',
-          'map-controls-editor-element-button',
-          'map-controls-editor-element-image-upload-button',
-          'map-controls-editor-animation',
-          'nf-mdi-cloud_upload',
-          isDragActive
-            ? 'map-controls-editor-element-image-upload-dropzone-active'
-            : [
-                'map-controls-editor-element-image-upload-dropzone-inactive',
-                'map-controls-editor-animation-disabled',
-              ]
-        )}
-      >
-        {t('editor-image-upload-dropzone')}
-      </div>
-      {message()}
-    </div>
+        <Tooltip title={t('editor-image-upload-tooltip')}>
+          <IconButton
+            variant="contained"
+            color="secondary"
+            onClick={uploadElementMedia}
+            classes={{
+              root: clsx(
+                classes.dropzoneButtonRoot,
+                isDragActive
+                  ? [classes.dropzoneButtonRootDragActive, classes.animationOn]
+                  : [classes.animationOff]
+              ),
+              label: classes.dropzoneButtonLabel,
+            }}
+          >
+            <CloudUploadIcon />
+            <Typography className={classes.dropzoneButtonText}>
+              {t('editor-image-upload-dropzone')}
+            </Typography>
+          </IconButton>
+        </Tooltip>
+      </Box>
+      <Typography>{message()}</Typography>
+    </Box>
   );
 };
 

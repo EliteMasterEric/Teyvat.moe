@@ -19,7 +19,6 @@ const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, dis
   const ext = useImageExtension();
 
   if (!displayed) return null; // Feature is not displayed.
-  console.log(`FEATURE: ${featureKey}`);
   if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
   if (completedCount === 0) return null; // No markers have been completed.
 

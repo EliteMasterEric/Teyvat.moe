@@ -12,8 +12,8 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
+  makeStyles,
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 
 import { t } from '~/components/i18n/Localization';
 import { clearImportError } from '~/redux/ducks/import';
@@ -45,6 +45,8 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearErro
       <Dialog
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
+        fullWidth
+        maxWidth="lg"
         onClose={() => {
           clearError();
           setIsDialogOpen(false);

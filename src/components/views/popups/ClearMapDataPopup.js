@@ -7,8 +7,8 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
+  makeStyles,
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import { t } from '~/components/i18n/Localization';
 
 const useStyles = makeStyles({
@@ -24,6 +24,8 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
     <div>
       {React.cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
       <Dialog
+        fullWidth
+        maxWidth="lg"
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}

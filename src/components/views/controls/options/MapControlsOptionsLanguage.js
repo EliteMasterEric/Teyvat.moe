@@ -75,7 +75,7 @@ const _MapControlsOptionsLanguage = ({ options, setOverrideLang }) => {
           onChange={(event) => setOverrideLang(event.target.value)}
         >
           {langOptions.map((lang) => (
-            <MenuItem value={lang.value}>
+            <MenuItem key={lang.value} value={lang.value}>
               {formatFlag(lang.value)}
               {lang.label}
             </MenuItem>

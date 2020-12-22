@@ -28,12 +28,13 @@ export const InputTextField = ({ value, onChange, ...others }) => {
 /**
  * A debounced text area.
  */
-export const InputTextArea = ({ value, onChange, ...others }) => {
+export const InputTextArea = ({ value, onChange, rows = 10, ...others }) => {
   const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
 
   return (
     <MaterialTextField
       multiline
+      rows={rows}
       value={currentValue}
       onChange={(event) => setCurrentValue(event.target.value)}
       {...others}

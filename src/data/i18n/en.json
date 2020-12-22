@@ -41,7 +41,8 @@
   "map-editor-help-content-f": "Once you have completed placing markers for a feature, click the 'Submit Editor Data' at the bottom of the window. You will be directed to fill out a simple form describing the feature's location and category (a feature can only be for one region and one category), then click Confirm to submit the data. You will need to use a GitHub account, and paste the editor data (which has been added to your clipboard) into the appropriate spot.",
   "map-editor-button-clear": "Clear Editor Data",
   "map-editor-button-submit": "Submit Editor Data",
-  "editor-image-upload-tooltip": "Click or drag/drop to Upload to Imgur",
+
+  "editor-image-upload-tooltip": "Click or drag/drop to upload to Imgur",
   "editor-image-upload-success": "Successfully uploaded image to Imgur.",
   "editor-image-upload-progress": "Uploading to Imgur...",
   "editor-image-upload-dropzone": "Drag and drop image files here",
@@ -51,13 +52,14 @@
   "editor-image-upload-error-generic": "ERROR: Unknown error ({code})",
   "editor-elements-marker-id": "Marker #{id}",
   "editor-elements-route-id": "Route #{id}",
-  "editor-elements-title": "Title",
-  "editor-elements-title-placeholder": "Name...",
-  "editor-elements-content": "Content",
-  "editor-elements-content-placeholder": "Info...",
-  "editor-elements-media": "Media",
-  "editor-elements-media-placeholder": "URL...",
-  "editor-elements-media-tooltip": "Insert the URL of an image or YouTube video, or drag-n-drop an image to upload it to Imgur.",
+
+  "editor-delete-tooltip": "Delete",
+  "editor-highlight-tooltip": "Highlight",
+  "editor-title-label": "Popup Title",
+  "editor-content-label": "Popup Content",
+  "editor-media-url-label": "Media URL",
+  "editor-media-url-help": "Image or YouTube link",
+
   "map-summary-subtitle": "Manage and evaluate markers flagged as completed.",
   "map-summary-menu-locate": "Locate",
   "map-summary-menu-clear-expired": "Clear Expired",
@@ -103,5 +105,9 @@
   "options-export-old": "Export Legacy Data",
   "options-export-button": "Export",
   "options-clear-data": "Clear Data",
-  "options-clear-data-button": "Clear"
+  "options-clear-data-button": "Clear",
+  "error-handler-flavor": "Oh no, Paimon used up all her brain juice!",
+  "error-handler-message": "GenshinMap experienced an error and had to close.",
+  "error-handler-instruction": "Please click the link below to submit an error report.",
+  "error-handler-submit": "Submit to GitHub"
 }

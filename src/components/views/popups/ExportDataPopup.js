@@ -4,8 +4,13 @@
  */
 
 import React, { useState } from 'react';
-import { Dialog, DialogTitle, DialogContent, DialogContentText } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  makeStyles,
+} from '@material-ui/core';
 
 import CopyTextArea from '~/components/interface/CopyTextArea';
 
@@ -32,6 +37,8 @@ const ExportDataPopup = ({ title, message, fetchData, trigger }) => {
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
         onEntering={onOpen}
+        fullWidth
+        maxWidth="lg"
         onClose={() => setIsDialogOpen(false)}
       >
         <DialogTitle>{title}</DialogTitle>

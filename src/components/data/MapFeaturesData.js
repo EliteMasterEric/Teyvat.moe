@@ -99,6 +99,7 @@ const MAP_FEATURE_SCHEMA = Joi.object({
 
 const MAP_ROUTE_SCHEMA = Joi.object({
   name: localizedField.required(),
+  enabled: Joi.boolean().optional().default(true),
   icons: {
     filter: Joi.string()
       .regex(/[-a-zA-Z0-9]+/)

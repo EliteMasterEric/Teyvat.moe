@@ -3,10 +3,10 @@
  * in the About > Summary tab of the map controls.
  */
 
-import clsx from 'clsx';
+import { Menu, MenuItem, IconButton, makeStyles } from '@material-ui/core';
+import { Menu as MenuIcon } from '@material-ui/icons';
 import _ from 'lodash';
 import React from 'react';
-import Popup from 'reactjs-popup';
 import { connect } from 'react-redux';
 import Tooltip from 'react-tooltip';
 
@@ -18,7 +18,15 @@ import { clearFeatureCompleted, clearFeatureMarkersCompleted } from '~/redux/duc
 import { setFeatureDisplayed } from '~/redux/ducks/displayed';
 import { setEditorHighlight, setPositionAndZoom } from '~/redux/ducks/ui';
 
-import './MapControlsSummaryFeatureMenu.css';
+const useStyles = makeStyles((_theme) => ({
+  menuButtonRoot: {
+    backgroundColor: '#313131',
+    color: '#1976d2',
+    '&:hover': {
+      backgroundColor: '#515151',
+    },
+  },
+}));
 
 const _MapControlSummaryFeatureMenu = ({
   featureKey,
@@ -31,121 +39,59 @@ const _MapControlSummaryFeatureMenu = ({
   clearExpiredFeature,
   locateFeature,
 }) => {
+  const classes = useStyles();
+
   const mapFeature = MapFeatures[featureKey];
   const doesExpire = (mapFeature?.respawn ?? -1) !== -1;
+
+  const [menuAnchor, setMenuAnchor] = React.useState(null);
+
+  const handleOpen = (event) => {
+    setMenuAnchor(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setMenuAnchor(null);
+  };
 
   return (
     <>
       <Tooltip place="left" />
-      <Popup
-        trigger={
-          <div
-            data-tip={t('map-summary-menu-open')}
-            aria-label={t('map-summary-menu-open')}
-            className={clsx(
-              'nf',
-              'nf-mdi-menu',
-              'map-controls-about-summary-feature-button',
-              'map-controls-about-summary-feature-button-menu'
-            )}
-          />
-        }
-        position="top center"
-        closeOnDocumentClick
-        className="map-controls-about-summary-feature-menu"
-        contentStyle={{ padding: '0px' }}
-        nested
-        keepTooltipInside
-        offsetX={16}
-        offsetY={0}
+      <IconButton
+        classes={{ root: classes.menuButtonRoot }}
+        variant="contained"
+        aria-label={t('map-summary-menu-open')}
+        onClick={handleOpen}
       >
-        {(closePopup) => (
-          <div className={clsx('map-controls-about-summary-feature-menu')}>
-            <div
-              role="button"
-              tabIndex={0}
-              onClick={() => {
-                locateFeature();
-                closePopup();
-              }}
-              onKeyDown={() => {
-                locateFeature();
-                closePopup();
-              }}
-              className={clsx('map-controls-about-summary-feature-menu-item')}
-            >
-              {t('map-summary-menu-locate')}
-            </div>
-            {doesExpire ? (
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => {
-                  clearExpiredFeature();
-                  closePopup();
-                }}
-                onKeyDown={() => {
-                  clearExpiredFeature();
-                  closePopup();
-                }}
-                className={clsx('map-controls-about-summary-feature-menu-item')}
-              >
-                {t('map-summary-menu-clear-expired')}
-              </div>
-            ) : null}
+        <MenuIcon />
+      </IconButton>
 
-            {displayed ? (
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => {
-                  hideFeature();
-                  closePopup();
-                }}
-                onKeyDown={() => {
-                  hideFeature();
-                  closePopup();
-                }}
-                className={clsx('map-controls-about-summary-feature-menu-item')}
-              >
-                {t('map-summary-menu-hide-feature')}
-              </div>
-            ) : (
-              <div
-                role="button"
-                tabIndex={0}
-                onClick={() => {
-                  showFeature();
-                  closePopup();
-                }}
-                onKeyDown={() => {
-                  showFeature();
-                  closePopup();
-                }}
-                className={clsx('map-controls-about-summary-feature-menu-item')}
-              >
-                {t('map-summary-menu-show-feature')}
-              </div>
-            )}
-
-            <div
-              role="button"
-              tabIndex={0}
-              onClick={() => {
-                clearAllFeature();
-                closePopup();
-              }}
-              onKeyDown={() => {
-                clearAllFeature();
-                closePopup();
-              }}
-              className={clsx('map-controls-about-summary-feature-menu-item')}
-            >
-              {t('map-summary-menu-clear-all')}
-            </div>
-          </div>
+      <Menu
+        id="summary-menu"
+        anchorEl={menuAnchor}
+        open={Boolean(menuAnchor)}
+        onClose={handleClose}
+        getContentAnchorEl={null}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+        <MenuItem onClick={locateFeature}>{t('map-summary-menu-locate')}</MenuItem>
+        {doesExpire ? (
+          <MenuItem onClick={clearExpiredFeature}>{t('map-summary-menu-clear-expired')}</MenuItem>
+        ) : null}
+        {displayed ? (
+          <MenuItem onClick={hideFeature}>{t('map-summary-menu-hide-feature')}</MenuItem>
+        ) : (
+          <MenuItem onClick={showFeature}>{t('map-summary-menu-show-feature')}</MenuItem>
         )}
-      </Popup>
+        <MenuItem onClick={clearAllFeature}>{t('map-summary-menu-clear-all')}</MenuItem>
+      </Menu>
     </>
   );
 };

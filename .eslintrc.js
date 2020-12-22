@@ -9,7 +9,7 @@ module.exports = {
   },
   parser: '@babel/eslint-parser',
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['@babel', 'prettier'],
+  plugins: ['@babel', 'prettier', 'mui-unused-classes'],
   rules: {
     'prettier/prettier': ['warn'], // Utilize Prettier to maintain code style.
 
@@ -30,6 +30,8 @@ module.exports = {
      * Allow variable declarations in case blocks.
      */
     'no-case-declarations': ['off'],
+
+    'mui-unused-classes/unused-classes': ['warn'],
 
     /*
      * Allow use of console commands at specific log levels.

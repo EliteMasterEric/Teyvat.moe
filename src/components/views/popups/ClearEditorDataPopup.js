@@ -12,8 +12,8 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
+  makeStyles,
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 import { t } from '~/components/i18n/Localization';
 import Theme from '~/components/Theme';
 

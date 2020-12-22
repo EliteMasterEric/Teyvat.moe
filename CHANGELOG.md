@@ -453,3 +453,46 @@ First major release of the rework, featuring a new interface developed in React.
   - react-placeholder
   - redux-thunk
   - salesman.js
+  - react-switch
+
+# 0.10.0: Error Handling, Continued Material UI Rework
+
+- Added a new page which displays when the page experiences a crash, allowing users to submit a crash report to GitHub.
+- Replaced dropdowns and sliders with Material UI equivalents.
+- Reworked map to fix the editor after the changes in v0.9.0.
+- @inform880: Replaced import, export, and clear data popups, as well as submit and clear editor data popups, with Material UI modals.
+- Reworked the following areas to use Material UI styling, layouts, and components:
+  - @inform880: Import Data Popup
+  - @inform880: Export Data Popup
+  - @inform880: Clear Data Popup
+  - @inform880: Submit Editor Data Popup
+  - @inform880: Clear Editor Data Popup
+  - @MasterEric: Editor Marker Elements
+  - @MasterEric: Editor Route Elements
+  - @MasterEric: Editor Image Uploader
+- Added new localization strings:
+  - popup-import-hint: Placeholder text on the input box in the Import Data popup.
+  - error-handler-flavor: https://www.youtube.com/watch?v=2EwbLyG5nQI
+  - error-handler-message: The message on the Error screen informing the user the app has crashed.
+  - error-handler-instruction: The message on the Error screen instructing the user to submit the crash report to GitHub.
+  - error-handler-submit: Submit to GitHub button
+  - editor-media-url-label: Label for text box for Media URL in Editor tab.
+  - editor-media-url-help: Help text for text box for Media URL in Editor tab.
+  - editor-title-label: Label for the text box for Popup Title in the Editor tab.
+  - editor-content-label: Label for the text box for Popup Content in the Editor tab.
+  - editor-delete-tooltip: Tooltip for the Delete button on markers and routes.
+  - editor-highlight-tooltip: Tooltip for the Highlight button on markers and routes.
+- Removed localization strings:
+  - editor-elements-media
+  - editor-elements-media-placeholder
+  - editor-elements-media-tooltip
+  - editor-elements-title
+  - editor-elements-title-placeholder
+  - editor-elements-content
+  - editor-elements-content-placeholder
+- Removed extraneous packages
+  - @material-ui/styles (included in @material-ui/core)
+  - react-leaflet-editable
+  - react-select-oss
+  - reactjs-popup
+  - rc-slider

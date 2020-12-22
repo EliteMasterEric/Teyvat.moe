@@ -3,94 +3,97 @@
  * in the Editor tab of the map Controls.
  */
 
-import clsx from 'clsx';
+import { Box, Tooltip, IconButton, makeStyles, Typography } from '@material-ui/core';
+import { Delete as DeleteIcon, GpsFixed as GpsFixedIcon } from '@material-ui/icons';
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
-import Tooltip from 'react-tooltip';
 
 import { f, t } from '~/components/i18n/Localization';
 import MapControlsEditorImageUploader from '~/components/views/controls/editor/MapControlsEditorImageUploader';
 import { removeElement, setElementProperty } from '~/redux/ducks/editor';
 import { setEditorHighlight, setPositionAndZoom } from '~/redux/ducks/ui';
 
-import './MapControlsEditor.css';
+import { InputTextArea, InputTextField } from '~/components/interface/Input';
+
+const useStyles = makeStyles((theme) => ({
+  routeBox: {
+    border: '2px solid #d2c6bb',
+    borderRadius: '12px 0 0 12px',
+    padding: '8px 8px 8px 8px',
+    margin: '4px 4px 4px 0px',
+  },
+  textField: {
+    width: '100%',
+  },
+  routeLabel: {
+    flexGrow: 1,
+  },
+  deleteButton: {
+    backgroundColor: theme.custom.button.bgColor.main,
+    color: theme.custom.button.color.delete,
+    '&:hover': {
+      backgroundColor: theme.custom.button.bgColor.hover,
+    },
+  },
+  locateButton: {
+    margin: '0 8px 0 0',
+    backgroundColor: theme.custom.button.bgColor.main,
+    color: theme.custom.button.color.locate,
+    '&:hover': {
+      backgroundColor: theme.custom.button.bgColor.hover,
+    },
+  },
+}));
 
 const _MapControlsEditorRoute = ({
   routeId,
   routeTitle,
   routeContent,
   routeMedia,
-  highlighted,
   highlightRoute,
   setRouteTitle,
   setRouteContent,
   setRouteMedia,
   deleteRoute,
 }) => {
+  const classes = useStyles();
+
   return (
-    <div className={clsx('map-controls-editor-element')}>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <div
-          data-tip="Highlight"
-          onClick={highlightRoute}
-          onKeyDown={highlightRoute}
-          role="button"
-          aria-label="highlight"
-          tabIndex={0}
-          className={clsx(
-            'nf',
-            'nf-mdi-crosshairs_gps',
-            'map-controls-editor-element-button',
-            highlighted
-              ? 'map-controls-editor-element-highlight-on'
-              : 'map-controls-editor-element-highlight'
-          )}
-        />
+    <Box display="flex" flexDirection="column" className={classes.routeBox}>
+      <Box display="flex" flexDirection="row" alignItems="center">
+        <Tooltip title={t('editor-highlight-tooltip')}>
+          <IconButton className={classes.locateButton} onClick={highlightRoute}>
+            <GpsFixedIcon />
+          </IconButton>
+        </Tooltip>
 
-        <span className={clsx('map-controls-editor-element-label')}>
+        <Typography className={classes.routeLabel}>
           {f('editor-elements-route-id', { id: routeId })}
-        </span>
+        </Typography>
 
-        <Tooltip />
+        <Tooltip title={t('editor-delete-tooltip')}>
+          <IconButton className={classes.deleteButton} onClick={deleteRoute}>
+            <DeleteIcon />
+          </IconButton>
+        </Tooltip>
+      </Box>
 
-        <div
-          data-tip="Delete"
-          onClick={deleteRoute}
-          onKeyDown={deleteRoute}
-          role="button"
-          aria-label="Delete"
-          tabIndex={0}
-          className={clsx(
-            'nf',
-            'nf-fa-trash',
-            'map-controls-editor-element-button',
-            'map-controls-editor-element-trash'
-          )}
-        />
-      </div>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>
-          {t('editor-elements-title')}
-        </span>
-        <input
-          placeholder={t('editor-elements-title-placeholder')}
-          value={routeTitle}
-          onChange={(value) => setRouteTitle(value)}
-        />
-      </div>
-      <div className={clsx('map-controls-editor-element-row')}>
-        <span className={clsx('map-controls-editor-element-label')}>
-          {t('editor-elements-content')}
-        </span>
-        <textarea
-          placeholder={t('editor-elements-content-placeholder')}
-          value={routeContent}
-          onChange={(value) => setRouteContent(value)}
-        />
-      </div>
+      <InputTextField
+        className={classes.textField}
+        label={t('editor-title-label')}
+        value={routeTitle}
+        onChange={(value) => setRouteTitle(value)}
+      />
+      <InputTextArea
+        className={classes.textField}
+        label={t('editor-content-label')}
+        value={routeContent}
+        rows={3}
+        onChange={(value) => setRouteContent(value)}
+      />
       <MapControlsEditorImageUploader elementMedia={routeMedia} setElementMedia={setRouteMedia} />
-    </div>
+    </Box>
   );
 };
 

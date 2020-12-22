@@ -6,7 +6,6 @@ import App from './App';
 
 import './index.css';
 
-import 'reactjs-popup/dist/index.css';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 

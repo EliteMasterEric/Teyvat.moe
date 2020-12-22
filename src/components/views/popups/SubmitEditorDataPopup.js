@@ -18,8 +18,8 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
+  makeStyles,
 } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
 
 import { MapCategories, MapRegions } from '~/components/data/MapFeatures';
 import { useImageExtension } from '~/components/interface/Image';
@@ -119,7 +119,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                 onChange={(event) => setSubmissionCategory(event.target.value)}
               >
                 {categoryOptions.map((category) => (
-                  <MenuItem value={category.value}>{category.label}</MenuItem>
+                  <MenuItem key={category.value} value={category.value}>
+                    {category.label}
+                  </MenuItem>
                 ))}
               </Select>
             </div>
@@ -130,7 +132,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                 onChange={(event) => setSubmissionRegion(event.target.value)}
               >
                 {regionOptions.map((region) => (
-                  <MenuItem value={region.value}>{region.label}</MenuItem>
+                  <MenuItem key={region.value} value={region.value}>
+                    {region.label}
+                  </MenuItem>
                 ))}
               </Select>
             </div>
