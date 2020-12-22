@@ -8,6 +8,7 @@ import newGithubIssueUrl from 'new-github-issue-url';
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { Button } from '@material-ui/core';
 import { t } from '~/components/i18n/Localization';
 import { useImageExtension } from '~/components/interface/Image';
 import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from '~/components/Util';
@@ -61,20 +62,15 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
           return isRoute ? (
             <MapControlsEditorRoute key={element?.id} route={element} />
           ) : (
-            <MapControlsEditorMarker key={element?.id} marker={element} />
-          );
+              <MapControlsEditorMarker key={element?.id} marker={element} />
+            );
         })}
       </div>
       <ClearEditorDataPopup
         trigger={
-          <div
-            role="button"
-            aria-label="Clear"
-            tabIndex={0}
-            className={clsx('map-controls-editor-button')}
-          >
+          <Button fullWidth variant="contained" size="large" color="primary" aria-label="Clear" tabIndex={0}>
             {t('map-editor-button-clear')}
-          </div>
+          </Button>
         }
         onConfirm={() => {
           clearEditorData();
@@ -84,14 +80,9 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
 
       <SubmitEditorDataPopup
         trigger={
-          <div
-            role="button"
-            aria-label="Submit"
-            tabIndex={0}
-            className={clsx('map-controls-editor-button')}
-          >
+          <Button fullWidth variant="contained" size="large" color="primary" aria-label="Clear" tabIndex={0}>
             {t('map-editor-button-submit')}
-          </div>
+          </Button>
         }
         onConfirm={submitEditorData}
       />
