@@ -25,42 +25,9 @@ import logoWebP from '~/images/controls/logo.webp';
 
 import './MapControls.css';
 
-const MapControlsChildren = () => {
-  const small = isSmallScreen();
-
-  return (
-    <>
-      <MapControlsFoldButton />
-      <MapControlsRegions />
-
-      <div className={clsx('map-control-header')}>
-        <Image srcPNG={logoPNG} srcWebP={logoWebP} className={clsx('map-controls-fold-small')} />
-        <SafeHTML className={clsx('map-control-header-text')}>
-          {t('meta-page-title-short')}
-        </SafeHTML>
-      </div>
-
-      {small ? <MapControlsNavigationSmall /> : null}
-
-      <MapControlsTabs />
-
-      <MapControlsAbout />
-
-      <MapControlsCategories />
-
-      <MapControlsFeatures />
-
-      <MapControlsRoutes />
-
-      <MapControlsEditor />
-
-      <MapControlsOptions />
-    </>
-  );
-};
-
 const _MapControls = ({ open }) => {
   const ext = useImageExtension();
+  const small = isSmallScreen();
 
   return (
     <div className={clsx('map-controls-wrapper')}>
@@ -71,7 +38,31 @@ const _MapControls = ({ open }) => {
           open ? 'map-controls-main-open' : 'map-controls-main-closed'
         )}
       >
-        <MapControlsChildren />
+        <MapControlsFoldButton />
+        <MapControlsRegions />
+
+        <div className={clsx('map-control-header')}>
+          <Image srcPNG={logoPNG} srcWebP={logoWebP} className={clsx('map-controls-fold-small')} />
+          <SafeHTML className={clsx('map-control-header-text')}>
+            {t('meta-page-title-short')}
+          </SafeHTML>
+        </div>
+
+        {small ? <MapControlsNavigationSmall /> : null}
+
+        <MapControlsTabs />
+
+        <MapControlsAbout />
+
+        <MapControlsCategories />
+
+        <MapControlsFeatures />
+
+        <MapControlsRoutes />
+
+        <MapControlsEditor />
+
+        <MapControlsOptions />
       </div>
     </div>
   );

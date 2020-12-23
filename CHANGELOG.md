@@ -500,5 +500,7 @@ First major release of the rework, featuring a new interface developed in React.
 
 # 0.9.3: Continued Material UI Rework
 
+- Revised the world border to accomodate Dragonspine.
 - Reworked the following areas to use Material UI styling, layouts, and components:
   - @MasterEric: Summary Tab
+  - @MasterEric: Controls Tabs

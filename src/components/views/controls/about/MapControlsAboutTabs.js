@@ -1,50 +1,20 @@
 /**
  * Powers the tab view in the About tab of the Map controls.
  */
-
-import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
 import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
+import { TabBar } from '~/components/interface/Tabs';
 import { setControlsTab } from '~/redux/ducks/ui';
 
-import './MapControlsAboutTabs.css';
+const ABOUT_TABS = [
+  { label: t('map-controls-tab-help'), enabled: true, value: 'help', order: 1 },
+  { label: t('map-controls-tab-summary'), enabled: true, value: 'summary', order: 2 },
+];
 
 const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
-  return (
-    <BorderBox direction="row" grow={false} displayed={displayed}>
-      <div
-        onClick={() => setTab('help')}
-        onKeyDown={() => setTab('help')}
-        role="button"
-        aria-label={t('map-controls-tab-help')}
-        tabIndex={0}
-        className={clsx(
-          'map-controls-about-tab',
-          tab === 'help' ? 'map-controls-about-tab-active' : '',
-          'noselect'
-        )}
-      >
-        {t('map-controls-tab-help')}
-      </div>
-      <div
-        onClick={() => setTab('summary')}
-        onKeyDown={() => setTab('summary')}
-        role="button"
-        aria-label={t('map-controls-tab-summary')}
-        tabIndex={0}
-        className={clsx(
-          'map-controls-about-tab',
-          tab === 'summary' ? 'map-controls-about-tab-active' : '',
-          'noselect'
-        )}
-      >
-        {t('map-controls-tab-summary')}
-      </div>
-    </BorderBox>
-  );
+  return <TabBar displayed={displayed} value={tab} onChange={setTab} tabs={ABOUT_TABS} />;
 };
 
 const mapStateToProps = (state) => ({
