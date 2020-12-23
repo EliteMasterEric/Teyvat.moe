@@ -2,7 +2,6 @@
  * Provides the view which displays the About > Help tab of the map controls.
  */
 
-import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 

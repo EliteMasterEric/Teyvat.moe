@@ -3,6 +3,7 @@
  * in the About > Summary tab of the map controls.
  */
 
+import { Box, makeStyles, Typography, LinearProgress } from '@material-ui/core';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React from 'react';
@@ -10,13 +11,62 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
-import { useImageExtension } from '~/components/interface/Image';
-import MapControlSummaryProgressBar from '~/components/interface/ProgressBar';
+import { Image } from '~/components/interface/Image';
 import MapControlSummaryFeatureMenu from '~/components/views/controls/about/summary/MapControlsSummaryFeatureMenu';
 
+const ICON_BORDER_IMAGE = require('~/images/controls/filter_border.png').default;
+
+const useStyles = makeStyles((_theme) => ({
+  iconBorder: {
+    position: 'absolute',
+    top: -1,
+    left: -37,
+    width: 79,
+    height: 79,
+    /* This URL MUST start with a '/' to indicate it is an absolute URL. */
+    background: ({ bgImage }) => `url(${bgImage}) no-repeat`,
+    backgroundSize: '100% 100%',
+  },
+  icon: {
+    position: 'absolute',
+    width: 70,
+    height: 70,
+    top: 2,
+    left: 2,
+  },
+  label: {
+    textAlign: 'center',
+    fontSize: 14,
+  },
+  featureRoot: {
+    // Position relative so the frame image can be positioned absolutely.
+    position: 'relative',
+    // Make space for the image.
+    margin: '0 0 10px 37px',
+    width: 'calc(100% - 43px)',
+    height: 74,
+    // Prevent the box getting squished.
+    flexShrink: 0,
+
+    border: '1px solid #d2c6bb',
+    color: '#78583d',
+
+    background: 'linear-gradient(270deg, #ffffff -95.11%, rgba(255, 255, 255, 0) 100%), #f0e9e2',
+
+    // Align the text.
+    padding: '0 8px 0 48px',
+
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+
+    fontSize: 18,
+    boxSizing: 'border-box',
+  },
+}));
+
 const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, displayed }) => {
-  // React hooks must always before any return calls.
-  const ext = useImageExtension();
+  const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
 
   if (!displayed) return null; // Feature is not displayed.
   if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
@@ -26,25 +76,23 @@ const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, dis
   const totalCount = Object.keys(mapFeature.data).length;
 
   return (
-    <div className={clsx('map-controls-about-summary-feature')}>
-      <div className={clsx('map-controls-about-summary-feature-border')}>
-        <img
-          className={clsx('map-controls-about-summary-feature-icon')}
-          src={getFilterIconURL(mapFeature.icons.filter, ext)}
-          alt={mapFeature.name}
+    <Box className={clsx(classes.featureRoot)}>
+      <Box className={classes.iconBorder}>
+        <Image
+          className={classes.icon}
+          srcPNG={getFilterIconURL(mapFeature.icons.filter, 'png')}
+          srcWebP={getFilterIconURL(mapFeature.icons.filter, 'webp')}
         />
-      </div>
-      <div className={clsx('map-controls-about-summary-feature-subcontainer', 'flex-grow')}>
-        <div className={clsx('map-controls-about-summary-feature-label')}>{mapFeature.name}</div>
-        <MapControlSummaryProgressBar percentage={completedCount / totalCount} width={12} />
-        <div className={clsx('map-controls-about-summary-feature-label')}>
+      </Box>
+      <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>
+        <Typography className={classes.label}>{mapFeature.name}</Typography>
+        <LinearProgress variant="determinate" value={completedCount / totalCount} />
+        <Typography className={classes.label}>
           {completedCount} / {totalCount}
-        </div>
-      </div>
-      <div className={clsx('map-controls-about-summary-feature-subcontainer')}>
-        <MapControlSummaryFeatureMenu featureKey={featureKey} />
-      </div>
-    </div>
+        </Typography>
+      </Box>
+      <MapControlSummaryFeatureMenu featureKey={featureKey} />
+    </Box>
   );
 };
 

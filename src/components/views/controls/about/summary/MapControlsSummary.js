@@ -2,8 +2,7 @@
  * Provides the view which displays the About > Summary tab of the map controls.
  */
 
-import { makeStyles } from '@material-ui/core';
-import clsx from 'clsx';
+import { makeStyles, Typography } from '@material-ui/core';
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -12,11 +11,17 @@ import { t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
 import MapControlSummaryFeature from '~/components/views/controls/about/summary/MapControlsSummaryFeature';
 
-import './MapControlsSummary.css';
-
 const useStyles = makeStyles((_theme) => ({
-  header: {},
-  subtitle: {},
+  header: {
+    fontSize: 24,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
 }));
 
 /**
@@ -29,12 +34,8 @@ const _MapControlSummary = ({ displayed, displayedFeatures }) => {
 
   return (
     <BorderBox displayed={displayed}>
-      <span className={clsx('map-controls-about-summary-header')}>
-        {t('map-controls-tab-summary')}
-      </span>
-      <span className={clsx('map-controls-about-summary-subtitle')}>
-        {t('map-summary-subtitle')}
-      </span>
+      <Typography className={classes.header}>{t('map-controls-tab-summary')}</Typography>
+      <Typography className={classes.subtitle}>{t('map-summary-subtitle')}</Typography>
       {displayedFeatures.map((featureKey) => (
         <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />
       ))}

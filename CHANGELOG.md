@@ -497,3 +497,8 @@ First major release of the rework, featuring a new interface developed in React.
   - react-select-oss
   - reactjs-popup
   - rc-slider
+
+# 0.9.3: Continued Material UI Rework
+
+- Reworked the following areas to use Material UI styling, layouts, and components:
+  - @MasterEric: Summary Tab
