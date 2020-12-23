@@ -498,8 +498,10 @@ First major release of the rework, featuring a new interface developed in React.
   - reactjs-popup
   - rc-slider
 
-# 0.9.3: Continued Material UI Rework
+# 0.9.3: Dragonspine
 
+- Updated map graphics using assets extracted from Genshin Impact v1.2.
+  - Holy shit.
 - Revised the world border to accomodate Dragonspine.
 - Reworked the following areas to use Material UI styling, layouts, and components:
   - @MasterEric: Summary Tab

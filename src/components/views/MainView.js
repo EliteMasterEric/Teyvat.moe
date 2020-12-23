@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import LeafletMap from '~/components/views/map/LeafletMap';
 import MapControls from '~/components/views/controls/MapControls';
 
-import './MainView.css';
-
 const _MainView = () => {
   return (
     <>
