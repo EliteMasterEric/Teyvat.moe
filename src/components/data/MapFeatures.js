@@ -223,6 +223,16 @@ export const getFeatureKeysByFilter = (region, category) => {
   });
 };
 
+export const sortByName = (data) =>
+  data.sort((a, b) => {
+    // Sort the features alphabetically.
+    const textA = MapFeatures[a].name;
+    const textB = MapFeatures[b].name;
+
+    if (textA < textB) return -1;
+    return textA > textB ? 1 : 0;
+  });
+
 /**
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.

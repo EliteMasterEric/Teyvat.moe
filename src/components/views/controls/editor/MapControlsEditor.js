@@ -9,7 +9,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { t } from '~/components/i18n/Localization';
-import { useImageExtension } from '~/components/interface/Image';
 import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from '~/components/Util';
 import MapControlsEditorMarker from '~/components/views/controls/editor/MapControlsEditorMarker';
 import MapControlsEditorRoute from '~/components/views/controls/editor/MapControlsEditorRoute';
@@ -48,7 +47,7 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
 
   return (
     <TabView displayed={displayed}>
-      <BorderBox>
+      <BorderBox overflow="hidden auto">
         {editorData.feature.data.map((element) => {
           const isRoute = element?.geometry?.type === 'LineString';
 

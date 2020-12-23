@@ -2,16 +2,22 @@
  * Provides the view which displays the About > Summary tab of the map controls.
  */
 
+import { makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
 import { t } from '~/components/i18n/Localization';
-import { useImageExtension } from '~/components/interface/Image';
+import BorderBox from '~/components/interface/BorderBox';
 import MapControlSummaryFeature from '~/components/views/controls/about/summary/MapControlsSummaryFeature';
 
 import './MapControlsSummary.css';
+
+const useStyles = makeStyles((_theme) => ({
+  header: {},
+  subtitle: {},
+}));
 
 /**
  * Displays features which are both:
@@ -19,28 +25,20 @@ import './MapControlsSummary.css';
  * B) Have at least one feature marked as completed.
  */
 const _MapControlSummary = ({ displayed, displayedFeatures }) => {
-  const ext = useImageExtension();
+  const classes = useStyles();
 
   return (
-    <div
-      className={clsx(
-        'map-controls-about-summary-container',
-        `map-controls-about-summary-container-${ext}`,
-        displayed ? '' : 'display-none'
-      )}
-    >
+    <BorderBox displayed={displayed}>
       <span className={clsx('map-controls-about-summary-header')}>
         {t('map-controls-tab-summary')}
       </span>
       <span className={clsx('map-controls-about-summary-subtitle')}>
         {t('map-summary-subtitle')}
       </span>
-      <div className={clsx('map-controls-about-summary-feature-container')}>
-        {displayedFeatures.map((featureKey) => (
-          <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />
-        ))}
-      </div>
-    </div>
+      {displayedFeatures.map((featureKey) => (
+        <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />
+      ))}
+    </BorderBox>
   );
 };
 

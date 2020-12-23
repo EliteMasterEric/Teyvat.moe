@@ -7,22 +7,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { t } from '~/components/i18n/Localization';
-import { useImageExtension } from '~/components/interface/Image';
+import BorderBox from '~/components/interface/BorderBox';
 import { setControlsTab } from '~/redux/ducks/ui';
 
 import './MapControlsAboutTabs.css';
 
 const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
-  const ext = useImageExtension();
-
   return (
-    <div
-      className={clsx(
-        'map-controls-about-tab-container',
-        `map-controls-about-tab-container-${ext}`,
-        displayed ? '' : 'display-none'
-      )}
-    >
+    <BorderBox direction="row" grow={false} displayed={displayed}>
       <div
         onClick={() => setTab('help')}
         onKeyDown={() => setTab('help')}
@@ -51,7 +43,7 @@ const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
       >
         {t('map-controls-tab-summary')}
       </div>
-    </div>
+    </BorderBox>
   );
 };
 

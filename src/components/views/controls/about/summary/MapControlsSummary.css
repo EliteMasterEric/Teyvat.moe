@@ -1,29 +1,3 @@
-.map-controls-about-summary-container {
-  border: 16px solid transparent;
-
-  box-sizing: border-box;
-
-  width: auto;
-  min-height: 0;
-
-  margin: 0 12px 12px 0px;
-
-  overflow-y: auto;
-
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.map-controls-about-summary-container-png {
-  border-image: url('../../../../../images/controls/filter_container.png') 32 round;
-}
-
-.map-controls-about-summary-container-webp {
-  border-image: url('../../../../../images/controls/filter_container.webp') 32 round;
-}
-
 .map-controls-about-summary-header-container {
   flex-grow: 0;
 }

@@ -7,41 +7,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { t } from '~/components/i18n/Localization';
-import { useImageExtension } from '~/components/interface/Image';
+import BorderBox from '~/components/interface/BorderBox';
 import { SafeHTML } from '~/components/Util';
 
-import './MapControlsHelp.css';
-
 const _MapControlsHelp = ({ displayed }) => {
-  const ext = useImageExtension();
-
   return (
-    <div
-      className={clsx(
-        'map-controls-about-help-container',
-        `map-controls-about-help-container-${ext}`,
-        displayed ? '' : 'display-none'
-      )}
-    >
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-a')}
-      </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-b')}
-      </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-c')}
-      </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-d')}
-      </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-e')}
-      </SafeHTML>
-      <SafeHTML className={clsx('map-control-about-help-content')}>
-        {t('map-about-help-content-f')}
-      </SafeHTML>
-    </div>
+    <BorderBox displayed={displayed}>
+      <SafeHTML>{t('map-about-help-content-a')}</SafeHTML>
+      <SafeHTML>{t('map-about-help-content-b')}</SafeHTML>
+      <SafeHTML>{t('map-about-help-content-c')}</SafeHTML>
+      <SafeHTML>{t('map-about-help-content-d')}</SafeHTML>
+      <SafeHTML>{t('map-about-help-content-e')}</SafeHTML>
+      <SafeHTML>{t('map-about-help-content-f')}</SafeHTML>
+    </BorderBox>
   );
 };
 

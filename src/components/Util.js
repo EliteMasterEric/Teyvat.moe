@@ -1,8 +1,9 @@
-import _ from 'lodash';
-import React from 'react';
-import hash from 'object-hash';
-import sanitizeHTML from 'sanitize-html';
+import { Typography } from '@material-ui/core';
 import * as clipboard from 'clipboard-polyfill/text';
+import _ from 'lodash';
+import hash from 'object-hash';
+import React from 'react';
+import sanitizeHTML from 'sanitize-html';
 
 import packageJson from '~/../package.json';
 
@@ -160,7 +161,9 @@ export const SafeHTML = ({ children, ...other }) => {
   };
   // Never fear, no danger here! We sanitized this text before rendering it.
   // eslint-disable-next-line react/no-danger
-  return <span dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />;
+  return (
+    <Typography dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />
+  );
 };
 
 /**

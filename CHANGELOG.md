@@ -455,7 +455,7 @@ First major release of the rework, featuring a new interface developed in React.
   - salesman.js
   - react-switch
 
-# 0.10.0: Error Handling, Continued Material UI Rework
+# 0.9.2: Error Handling, Continued Material UI Rework
 
 - Added a new page which displays when the page experiences a crash, allowing users to submit a crash report to GitHub.
 - Replaced dropdowns and sliders with Material UI equivalents.
@@ -467,9 +467,10 @@ First major release of the rework, featuring a new interface developed in React.
   - @inform880: Clear Data Popup
   - @inform880: Submit Editor Data Popup
   - @inform880: Clear Editor Data Popup
-  - @MasterEric: Editor Marker Elements
-  - @MasterEric: Editor Route Elements
-  - @MasterEric: Editor Image Uploader
+  - @MasterEric: Options Tab
+  - @MasterEric: Help Tab
+  - @MasterEric: Editor Help Tab
+  - @MasterEric: Editor Tab
 - Added new localization strings:
   - popup-import-hint: Placeholder text on the input box in the Import Data popup.
   - error-handler-flavor: https://www.youtube.com/watch?v=2EwbLyG5nQI

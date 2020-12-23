@@ -125,7 +125,7 @@ const VALIDATION_OPTIONS = {
 };
 
 export const validateFeatureData = (input) => {
-  return MAP_FEATURE_SCHEMA.validate(input, { abortconvert: false });
+  return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
 };
 
 /**
@@ -133,7 +133,7 @@ export const validateFeatureData = (input) => {
  * If not valid, validation.error contains the error data.
  */
 export const validateRouteData = (input) => {
-  return MAP_ROUTE_SCHEMA.validate(input, { convert: false });
+  return MAP_ROUTE_SCHEMA.validate(input, { convert: true });
 };
 
 const featuresContext = require.context('../../data/features/', true, /.json$/);
@@ -159,7 +159,7 @@ export const loadRoute = (key) => {
     console.warn(validation);
     return null;
   }
-  return routeData;
+  return validation.value;
 };
 
 /**

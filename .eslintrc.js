@@ -17,6 +17,7 @@ module.exports = {
     'react/jsx-filename-extension': ['off'], // Allow JSX in .js files.
     'react/prop-types': ['off'], // IDGAF about validating prop types.
 
+    // Add a warning for unused variables, except if they start with '_'.
     'no-unused-vars': [
       'warn',
       {
@@ -39,10 +40,11 @@ module.exports = {
      */
     'no-console': ['warn', { allow: ['warn', 'error', 'debug'] }],
 
+    'react/self-closing-comp': ['warn'], // Stop crashing my app because of this!
     'import/prefer-default-export': ['off'], // Allow single exports in file that will have multipl efiles later.
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.
     'global-require': ['off'], // Local requires are used to reference images.
     'react/jsx-props-no-spreading': ['off'], // I don't mind passing properties.
-    'max-classes-per-file': ['off'],
+    'max-classes-per-file': ['off'], // I don't mind having multiple classes in one file.
   },
 };

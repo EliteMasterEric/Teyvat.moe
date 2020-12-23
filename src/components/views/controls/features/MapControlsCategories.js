@@ -3,32 +3,21 @@
  * within the Features and Routes tabs of the Map controls.
  */
 
-import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
 import { MapCategories } from '~/components/data/MapFeatures';
-import { useImageExtension } from '~/components/interface/Image';
+import BorderBox from '~/components/interface/BorderBox';
 import MapControlsCategoryButton from '~/components/views/controls/features/MapControlsCategoryButton';
 import { setControlsCategory, setControlsTab } from '~/redux/ducks/ui';
 
-import './MapControlsCategories.css';
-
 const _MapControlsCategories = ({ displayed }) => {
-  const ext = useImageExtension();
-
   return (
-    <div
-      className={clsx(
-        'map-controls-category-container',
-        `map-controls-category-container-${ext}`,
-        displayed ? '' : 'display-none'
-      )}
-    >
+    <BorderBox displayed={displayed} direction="row" grow={false} wrap>
       {Object.keys(MapCategories).map((key) => {
         return <MapControlsCategoryButton key={key} categoryKey={key} />;
       })}
-    </div>
+    </BorderBox>
   );
 };
 

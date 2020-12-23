@@ -5,7 +5,6 @@
 
 import { Box, Tooltip, IconButton, makeStyles, Typography } from '@material-ui/core';
 import { Delete as DeleteIcon, GpsFixed as GpsFixedIcon } from '@material-ui/icons';
-import clsx from 'clsx';
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
