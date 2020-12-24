@@ -71,7 +71,7 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1, allowEx
 
   if (feature.properties.popupMedia) {
     if (!(typeof feature.properties.popupMedia === 'string')) {
-      throw new Error('ERROR: popupMedia is not a valid string.');
+      throw new Error('popupMedia is not a valid string.');
     }
     text = `${text}${buildMedia(feature.properties.popupMedia, imgExt, allowExternal)}`;
   }

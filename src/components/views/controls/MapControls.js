@@ -2,6 +2,7 @@
  * Provides the interface for the Map controls on the right side.
  */
 
+import { makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -25,12 +26,27 @@ import logoWebP from '~/images/controls/logo.webp';
 
 import './MapControls.css';
 
+const useStyles = makeStyles((_theme) => ({
+  wrapper: {
+    position: 'fixed',
+    top: 0,
+    right: 0,
+    zIndex: 100,
+
+    // This prevents a bug where you couldn't click behind the drawer
+    // when it was closed.
+    pointerEvents: 'none',
+  },
+}));
+
 const _MapControls = ({ open }) => {
+  const classes = useStyles();
+
   const ext = useImageExtension();
   const small = isSmallScreen();
 
   return (
-    <div className={clsx('map-controls-wrapper')}>
+    <div className={classes.wrapper}>
       <div
         className={clsx(
           'map-controls-main',

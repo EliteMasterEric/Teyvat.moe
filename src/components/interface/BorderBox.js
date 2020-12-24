@@ -11,7 +11,7 @@ const BORDER_BOX_IMAGE_WEBP = require('~/images/controls/filter_container.webp')
 
 const useStyles = makeStyles((_theme) => ({
   borderBox: {
-    borderImage: ({ borderBoxImage }) => `url(${borderBoxImage}) 32 round`,
+    borderImage: ({ img }) => `url(${img}) 32 round`,
     border: '16px solid transparent',
     boxSizing: 'border-box',
     marginBottom: 12,
@@ -29,13 +29,14 @@ const BorderBox = ({
   direction = 'column',
   grow = true,
   wrap = false,
+  image = null,
   ...other
 }) => {
   const ext = useImageExtension();
 
   const borderBoxImage = ext === 'webp' ? BORDER_BOX_IMAGE_WEBP : BORDER_BOX_IMAGE_PNG;
 
-  const classes = useStyles({ borderBoxImage });
+  const classes = useStyles({ img: image !== null ? image : borderBoxImage });
 
   return (
     <Box

@@ -9,8 +9,6 @@ import 'leaflet-textpath';
 import 'leaflet.pattern';
 import _ from 'lodash';
 
-import './layers/MapLayers.css';
-
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.

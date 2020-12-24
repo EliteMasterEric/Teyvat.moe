@@ -18,8 +18,6 @@ import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
 import store from '~/redux';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 
-import './FeatureLayer.css';
-
 const _FeatureLayer = ({
   mapFeature,
 

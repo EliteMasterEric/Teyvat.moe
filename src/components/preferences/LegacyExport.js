@@ -6,6 +6,7 @@ import _ from 'lodash';
 
 import { LOCAL_STORAGE_KEY } from '~/components/preferences/DefaultPreferences';
 import localStorage from '~/components/preferences/local-storage';
+import { generateJSON } from '../Util';
 
 /**
  * Fetch the keys of the markers which were selected.
@@ -25,5 +26,5 @@ export const fetchLegacyData = (excludedKeys = [LOCAL_STORAGE_KEY]) => {
  */
 const EXCLUDED_KEYS = [LOCAL_STORAGE_KEY, 'preferences', 'prefs', 'ally-supports-cache'];
 export const exportLegacyDataJSON = (excludedKeys = EXCLUDED_KEYS) => {
-  return JSON.stringify(fetchLegacyData(excludedKeys));
+  return generateJSON(fetchLegacyData(excludedKeys));
 };

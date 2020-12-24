@@ -523,6 +523,13 @@ First major release of the rework, featuring a new interface developed in React.
   - map-editor-cancel-tooltip: Tooltip which displays when hovering over the 'Cancel' button in the map controls on the left.
   - map-editor-marker-tooltip: Tooltip which displays when hovering over the 'Marker' button in the map controls on the left.
   - map-editor-route-tooltip: Tooltip which displays when hovering over the 'Route' button in the map controls on the left.
+- Reworked editor data in localization; existing localization for these elements will be invalidated:
+  - map-editor-help-content-a: Text which displays in the Editor Help menu.
+  - map-editor-help-content-b: Text which displays in the Editor Help menu.
+  - map-editor-help-content-c: Text which displays in the Editor Help menu.
+  - map-editor-help-content-d: Text which displays in the Editor Help menu.
+  - map-editor-help-content-e: Text which displays in the Editor Help menu.
+  - map-editor-help-content-f: Text which displays in the Editor Help menu.
 - Fixed a bug where routes could not be deleted.
 - Fixed a bug where clicking the editor controls would pass through to click the map, causing accidental marker and route placement.
 - Fixed a bug where editor controls would not clean up incomplete routes after cancelling.

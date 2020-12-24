@@ -39,7 +39,7 @@ assignees: ''
 
 **Device Specs (please complete the following information):**
 
-- App Version: [see options tab, e.g. 0.8.4]
+- GenshinMap app version: [see options tab, e.g. 'App version: 0.8.4']
 - Device: [e.g. iPhone6, PC, Pixel 4a]
 - OS: [e.g. iOS8.1, Android 11, Windows 10]
 - Browser: [e.g. chrome, safari]

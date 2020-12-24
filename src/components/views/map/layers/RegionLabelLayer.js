@@ -3,7 +3,7 @@
  * on the Leaflet map.
  */
 
-import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core';
 import L from 'leaflet';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -17,7 +17,29 @@ import { hashObject } from '~/components/Util';
 // The data file which contains the information on the region label markers.
 const regionLabelData = require('~/data/core/map-labels.json');
 
+const useStyles = makeStyles((_theme) => ({
+  regionLabelMarker: {
+    backgroundColor: 'transparent',
+    width: 'auto !important',
+  },
+
+  regionLabelText: {
+    margin: 0,
+    fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
+    whiteSpace: 'nowrap',
+    color: 'white',
+    fontSize: '1.75em',
+    fontWeight: 'bold',
+
+    width: 'auto !important',
+    position: 'relative',
+    left: '-50%',
+  },
+}));
+
 const RegionLabel = ({ featureData, zoomLevel }) => {
+  const classes = useStyles();
+
   const name = localizeField(featureData?.properties?.label);
   /**
    * Dynamically style based on zoom level.
@@ -32,13 +54,15 @@ const RegionLabel = ({ featureData, zoomLevel }) => {
     top: `-${zoomLevel * 2}px`,
   };
   return (
-    <h1 className={clsx('map-region-label-text')} style={style}>
+    <h1 className={classes.regionLabelText} style={style}>
       {name}
     </h1>
   );
 };
 
 const _RegionLabelLayer = ({ displayed }) => {
+  const classes = useStyles();
+
   const [zoomLevel, storeZoomLevel] = React.useState(DEFAULT_ZOOM);
 
   // Any child elements of the react-leaflet MapContainer can access the Map instance
@@ -59,7 +83,7 @@ const _RegionLabelLayer = ({ displayed }) => {
       interactive: false, // Allow clicks to pass through.
       icon: L.divIcon({
         html,
-        className: 'map-region-label-marker',
+        className: classes.regionLabelMarker,
       }),
       zIndexOffset: -900,
     });

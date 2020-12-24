@@ -54,7 +54,6 @@ export const TabBar = ({ displayed = true, scroll = false, value, onChange, tabs
   const theme = useTheme();
   const actionRef = React.useRef();
   React.useEffect(() => {
-    console.log('useEffect');
     const timeout = setTimeout(() => {
       if (actionRef?.current) {
         actionRef.current.updateIndicator();

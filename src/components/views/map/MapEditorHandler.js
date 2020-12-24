@@ -60,7 +60,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // Called when starting to drag a marker.
 
       if (event.layer.feature === undefined) {
-        console.log('BAD FEATURE');
+        // This is a bad marker, remove it.
         event.layer.remove();
         return;
       }
@@ -95,7 +95,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
     'editable:vertex:dragstart': (event) => {
       if (event.layer.feature === undefined) {
-        console.log('BAD ROUTE');
+        // This is a bad route, remove it.
         event.layer.remove();
         return;
       }
@@ -138,8 +138,6 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // Drawing has been ended. Remove the layer.
       // If the layer was drawn successfully, it will have been added
       // to the editor data in editable:drawing:commit.
-      console.log('END');
-      console.log(event);
       event.layer.remove();
     },
   });

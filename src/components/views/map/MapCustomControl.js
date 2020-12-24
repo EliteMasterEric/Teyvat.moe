@@ -20,7 +20,7 @@ const POSITION_CLASSES = {
   topright: 'leaflet-top leaflet-right',
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((_theme) => ({
   button: {
     cursor: 'pointer',
   },

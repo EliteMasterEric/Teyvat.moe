@@ -12,17 +12,12 @@ import { SafeHTML } from '~/components/Util';
 const _MapControlsHelpEditor = ({ displayed }) => {
   return (
     <BorderBox displayed={displayed}>
-      <SafeHTML>{t('map-editor-help-content-a')}</SafeHTML>
-
-      <SafeHTML>{t('map-editor-help-content-b')}</SafeHTML>
-
-      <SafeHTML>{t('map-editor-help-content-c')}</SafeHTML>
-
-      <SafeHTML>{t('map-editor-help-content-d')}</SafeHTML>
-
-      <SafeHTML>{t('map-editor-help-content-e')}</SafeHTML>
-
-      <SafeHTML>{t('map-editor-help-content-f')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-a')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-b')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-c')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-d')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-e')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('map-editor-help-content-f')}</SafeHTML>
     </BorderBox>
   );
 };

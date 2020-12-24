@@ -14,7 +14,7 @@
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
   <br/><br/>
 <a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
-<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)" alt="Netlify"/></a>
+<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
   <br/><br/>

@@ -18,8 +18,6 @@ import { t } from '~/components/i18n/Localization';
 
 import MapCustomControl, { MapCustomControlButton } from '~/components/views/map/MapCustomControl';
 
-import './EditorControls.css';
-
 const useStyles = makeStyles((theme) => ({
   toolbar: {},
   show: {
