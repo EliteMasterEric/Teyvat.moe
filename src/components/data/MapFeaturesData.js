@@ -43,7 +43,7 @@ const geoJSONRoute = Joi.object({
 });
 
 const markerStyle = Joi.object({
-  marker: Joi.boolean().optional(), // Optional.
+  marker: Joi.boolean().optional().default(false), // Optional.
 
   // Specify these style keys if the simple marker style is not used.
   key: Joi.string()
@@ -78,6 +78,11 @@ const markerStyle = Joi.object({
     .regex(/[-a-zA-Z0-9]+/)
     .when('marker', { is: true, then: Joi.forbidden() })
     .optional(), // Optional, but forbidden if marker = true.
+
+  // This niche attribute is used when clusterMarkers is on but marker is false.
+  clusterIcon: Joi.string()
+    .regex(/[-a-z]+/)
+    .when('marker', { is: false, then: Joi.optional(), otherwise: Joi.forbidden() }), // Optional but allowed if marker = false. Otherwise forbidden.
 });
 
 const MAP_FEATURE_SCHEMA = Joi.object({
@@ -179,7 +184,14 @@ export const createGeoJSONLayer = (dataJSON) => {
 const iconsContext = require.context('../../images/icons', true, /\.(png|webp|svg)/);
 export const getFilterIconURL = (key, ext) => iconsContext(`./filter/${key}.${ext}`).default;
 
-export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', ...options }) => {
+export const createMapIcon = ({
+  key,
+  marker = false,
+  clusterIcon = '',
+  done = false,
+  ext = 'png',
+  ...options
+}) => {
   if (marker) {
     // Use the marker image.
     const iconUrl = getFilterIconURL(key, ext);
@@ -211,9 +223,13 @@ export const createMapIcon = ({ key, marker = false, done = false, ext = 'png', 
   // Else, don't use the marker image.
   const iconUrl = iconsContext(`./map_${done ? 'done' : 'base'}/${key}.${ext}`, true).default;
 
+  // Handle the niche case where cluster = true and marker = false.
+  const clusterIconUrl = clusterIcon !== '' ? getFilterIconURL(clusterIcon, ext) : undefined;
+
   return L.icon({
     className: `map-marker-${key}`,
     iconUrl,
+    clusterIconUrl,
     shadowUrl: '',
     ...options,
   });

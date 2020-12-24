@@ -41,6 +41,8 @@ module.exports = {
     'no-console': ['warn', { allow: ['warn', 'error', 'debug'] }],
 
     'react/self-closing-comp': ['warn'], // Stop crashing my app because of this!
+    'object-shorthand': ['warn'], // This is not severe.
+
     'import/prefer-default-export': ['off'], // Allow single exports in file that will have multipl efiles later.
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.
     'global-require': ['off'], // Local requires are used to reference images.

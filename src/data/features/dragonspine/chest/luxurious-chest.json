@@ -1,0 +1,33 @@
+{
+  "name": { "en": "Luxurious Chest" },
+  "enabled": false,
+  "cluster": false,
+  "icons": {
+    "filter": "luxurious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.17451935556444, 66.29699707031251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Luxurious Chest"
+        },
+        "popupContent": {
+          "en": "Break the Scarlet Quartz on the north cliff in Mondstadt, glide over, and break the ice to reveal the chest. Contains Crimson Agate."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=6ydUPk7fF-A"
+      },
+      "id": 15
+    }
+  ]
+}

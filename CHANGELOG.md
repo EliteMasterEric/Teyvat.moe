@@ -533,3 +533,15 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where routes could not be deleted.
 - Fixed a bug where clicking the editor controls would pass through to click the map, causing accidental marker and route placement.
 - Fixed a bug where editor controls would not clean up incomplete routes after cancelling.
+
+# 0.9.4 Crimson Agate
+
+- Added the following markers:
+  - @MasterEric and @maciejpk: Mapped 79 Crimson Agate, 58 of which have a screenshot or video.
+- The following feature types now display by default to new users:
+  - Crimson Agate (Dragonspine)
+  - Domains (Dragonspine)
+  - Teleporters (Dragonspine)
+  - Statues of the Seven (Dragonspine)
+- Tweaked a Dragonspine teleporter to be more accurate.
+- Fixed a bug where progress bars in the Summary tab were always displaying 0%.

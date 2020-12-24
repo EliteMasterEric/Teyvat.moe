@@ -63,6 +63,14 @@ const useStyles = makeStyles((_theme) => ({
     fontSize: 18,
     boxSizing: 'border-box',
   },
+
+  progressRoot: {
+    height: 12,
+    borderRadius: 6,
+  },
+  progressBar: {
+    borderRadius: 6,
+  },
 }));
 
 const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, displayed }) => {
@@ -86,7 +94,14 @@ const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, dis
       </Box>
       <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>
         <Typography className={classes.label}>{mapFeature.name}</Typography>
-        <LinearProgress variant="determinate" value={completedCount / totalCount} />
+        <LinearProgress
+          classes={{
+            root: classes.progressRoot,
+            bar: classes.progressBar,
+          }}
+          variant="determinate"
+          value={(completedCount / totalCount) * 100}
+        />
         <Typography className={classes.label}>
           {completedCount} / {totalCount}
         </Typography>
