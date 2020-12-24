@@ -115,9 +115,9 @@ const mapDispatchToProps = (dispatch, { route }) => ({
     dispatch(setElementProperty(route, 'properties.popupMedia', value));
   },
 
-  deleteMarker: () => dispatch(removeElement(route)),
+  deleteRoute: () => dispatch(removeElement(route)),
 
-  highlightMarker: () => {
+  highlightRoute: () => {
     const HIGHLIGHT_ZOOM_LEVEL = 8;
 
     dispatch(setEditorHighlight(route.id));

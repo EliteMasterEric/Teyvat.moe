@@ -6,26 +6,25 @@
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
-import { AttributionControl, MapContainer, TileLayer } from 'react-leaflet';
+import { AttributionControl, MapContainer, ZoomControl } from 'react-leaflet';
 
 import { MapFeatures, MapRoutes } from '~/components/data/MapFeatures';
-import { useImageExtension } from '~/components/interface/Image';
+
 import {
   DEFAULT_ZOOM,
   MAP_BOUNDS,
   MAP_CENTER,
   MAXIMUM_ZOOM,
-  MAXIMUM_NATIVE_ZOOM,
   MINIMUM_ZOOM,
-  TILE_URL,
 } from '~/components/preferences/DefaultPreferences';
-import EditorLayer from '~/components/views/map/EditorLayer';
-import FeatureLayer from '~/components/views/map/FeatureLayer';
+import EditorLayer from '~/components/views/map/layers/EditorLayer';
+import FeatureLayer from '~/components/views/map/layers/FeatureLayer';
+import RegionLabelLayer from '~/components/views/map/layers/RegionLabelLayer';
+import RouteLayer from '~/components/views/map/layers/RouteLayer';
+import TileLayer from '~/components/views/map/layers/TileLayer';
+import WorldBorderLayer from '~/components/views/map/layers/WorldBorderLayer';
 import MapEditorHandler from '~/components/views/map/MapEditorHandler';
 import MapPositionHandler from '~/components/views/map/MapPositionHandler';
-import RegionLabelLayer from '~/components/views/map/RegionLabelLayer';
-import RouteLayer from '~/components/views/map/RouteLayer';
-import WorldBorderLayer from '~/components/views/map/WorldBorderLayer';
 
 import './LeafletMap.css';
 
@@ -34,14 +33,6 @@ const ATTRIBUTION =
   "<a href='https://github.com/GenshinMap/genshinmap.github.io' rel='noreferrer' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
 
 const _LeafletMap = () => {
-  // Check for WebP support.
-  const ext = useImageExtension(true);
-
-  // Wait until we get confirmation of WebP support.
-  if (ext == null) return null;
-
-  const tileUrl = TILE_URL.replace('{ext}', ext);
-
   return (
     <MapContainer
       maxBounds={MAP_BOUNDS}
@@ -60,16 +51,7 @@ const _LeafletMap = () => {
       {/* Handles events related to the map editing, and renders the editor controls.. */}
       <MapEditorHandler />
       {/* Controls the actual map image. */}
-      <TileLayer
-        url={tileUrl}
-        noWrap
-        bounds={MAP_BOUNDS}
-        errorTileUrl={`tiles/blank.${ext}`}
-        maxZoom={MAXIMUM_ZOOM}
-        minZoom={MINIMUM_ZOOM}
-        maxNativeZoom={MAXIMUM_NATIVE_ZOOM}
-        minNativeZoom={MINIMUM_ZOOM}
-      />
+      <TileLayer />
       {/* Controls the attribution link in the bottom left corner. */}
       <AttributionControl prefix={ATTRIBUTION} position="bottomleft" />
 
@@ -77,6 +59,10 @@ const _LeafletMap = () => {
       <WorldBorderLayer />
       <EditorLayer />
 
+      {/* Controls the zoom buttons in the top left corner. */}
+      <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
+
+      {/* Display each available feature. */}
       {_.keys(MapFeatures).map((key) => {
         const feature = MapFeatures[key];
         if (!feature) {
@@ -87,6 +73,7 @@ const _LeafletMap = () => {
         return <FeatureLayer key={`Feature:${key}`} mapFeature={feature} featureKey={key} />;
       })}
 
+      {/* Display each available route. */}
       {_.keys(MapRoutes).map((key) => {
         const route = MapRoutes[key];
         if (!route) {

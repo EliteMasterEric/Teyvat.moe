@@ -501,8 +501,28 @@ First major release of the rework, featuring a new interface developed in React.
 # 0.9.3: Dragonspine
 
 - Updated map graphics using assets extracted from Genshin Impact v1.2.
-  - Holy shit.
 - Revised the world border to accomodate Dragonspine.
+- Reworked marker icons.
+  - Improved several existing marker icons to increase image quality.
+  - Added new marker icons for certain elements.
+- Editor controls now display 'Cancel' while drawing is active.
+  - Also displays a 'Done' button while drawing routes.
+- Added 6 new region labels for Dragonspine.
+  - Tagged all labels with a region name, will eventually add a feature to filter them.
+- Added the following markers:
+  - @MasterEric: Mapped 1 Teleporter (Mondstadt) location, with screenshot.
+  - @MasterEric: Mapped 10 Teleporter (Dragonspine) locations, with screenshots.
+  - @MasterEric: Mapped 1 Domain (Dragonspine) location, with screenshot.
+  - @MasterEric: Mapped 1 Statue of the Seven (Dragonspine) location, with screenshot.
 - Reworked the following areas to use Material UI styling, layouts, and components:
   - @MasterEric: Summary Tab
   - @MasterEric: Controls Tabs
+  - @MasterEric: Editor Controls
+- Added new localization strings:
+  - map-editor-done-tooltip: Tooltip which displays when hovering over the 'Done' button in the map controls on the left.
+  - map-editor-cancel-tooltip: Tooltip which displays when hovering over the 'Cancel' button in the map controls on the left.
+  - map-editor-marker-tooltip: Tooltip which displays when hovering over the 'Marker' button in the map controls on the left.
+  - map-editor-route-tooltip: Tooltip which displays when hovering over the 'Route' button in the map controls on the left.
+- Fixed a bug where routes could not be deleted.
+- Fixed a bug where clicking the editor controls would pass through to click the map, causing accidental marker and route placement.
+- Fixed a bug where editor controls would not clean up incomplete routes after cancelling.

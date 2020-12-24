@@ -59,6 +59,12 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     'editable:dragstart': (event) => {
       // Called when starting to drag a marker.
 
+      if (event.layer.feature === undefined) {
+        console.log('BAD FEATURE');
+        event.layer.remove();
+        return;
+      }
+
       const isMarker = event.layer.feature.geometry.type === 'Point';
       // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
 
@@ -88,6 +94,12 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     },
 
     'editable:vertex:dragstart': (event) => {
+      if (event.layer.feature === undefined) {
+        console.log('BAD ROUTE');
+        event.layer.remove();
+        return;
+      }
+
       const isRoute = event.layer.feature.geometry.type === 'LineString';
       // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
       if (isRoute) {
@@ -113,16 +125,22 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
     'editable:drawing:commit': (_event) => {
       if (editorState === 'createRoute') {
-        map.removeLayer(currentEditable);
         placeRoute(currentEditable);
         return;
       }
 
       if (editorState === 'createMarker') {
-        map.removeLayer(currentEditable);
         placeMarker(currentEditable);
-        // return;
       }
+    },
+
+    'editable:drawing:end': (event) => {
+      // Drawing has been ended. Remove the layer.
+      // If the layer was drawn successfully, it will have been added
+      // to the editor data in editable:drawing:commit.
+      console.log('END');
+      console.log(event);
+      event.layer.remove();
     },
   });
 
@@ -141,9 +159,35 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     setCurrentEditable(editable);
   };
 
+  const commitDrawing = (event) => {
+    // Finish the current drawing, saving any data it had.
+    map.editTools.commitDrawing(event);
+    setEditorState('none');
+    setCurrentEditable(null);
+  };
+
+  /**
+   * Cancel drawing the current element.
+   */
+  const cancelDrawing = () => {
+    // Cancel the current drawing, dumping any data it had.
+    map.editTools.stopDrawing();
+    setEditorState('none');
+    setCurrentEditable(null);
+  };
+
   // Render the controls which allow placing the markers and routes.
   return (
-    <EditorControls startEditorMarker={startEditorMarker} startEditorRoute={startEditorRoute} />
+    <>
+      <EditorControls
+        startEditorMarker={startEditorMarker}
+        startEditorRoute={startEditorRoute}
+        cancelEditor={cancelDrawing}
+        commitEditor={commitDrawing}
+        showCancel={['createMarker', 'createRoute'].includes(editorState)}
+        showDone={['createRoute'].includes(editorState)}
+      />
+    </>
   );
 };
 

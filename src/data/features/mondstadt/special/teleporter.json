@@ -7,7 +7,7 @@
     "filter": "teleporter",
     "base": {
       "key": "teleporter",
-      "iconSize": [22, 36],
+      "iconSize": [25, 35],
       "shadowSize": [50, 64],
       "iconAnchor": [12, 36],
       "shadowAnchor": [4, 62],
@@ -15,7 +15,7 @@
     },
     "done": {
       "key": "teleporter",
-      "iconSize": [22, 36],
+      "iconSize": [25, 35],
       "shadowSize": [50, 64],
       "iconAnchor": [12, 36],
       "shadowAnchor": [4, 62],
@@ -379,6 +379,23 @@
         },
         "popupMedia": "mondstadt/teleporter/east-stormterror"
       }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-34.451544835570715, 61.59668710156167]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Forward Base Camp"
+        },
+        "popupContent": {
+          "en": "Added with Dragonspine"
+        },
+        "popupMedia": "mondstadt/teleporter/forward-base-camp"
+      },
+      "id": 22
     }
   ]
 }

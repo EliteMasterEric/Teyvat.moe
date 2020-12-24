@@ -1,0 +1,44 @@
+{
+  "name": {
+    "en": "Domain"
+  },
+  "cluster": false,
+  "icons": {
+    "filter": "domain",
+    "base": {
+      "key": "domain",
+      "iconSize": [36, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [18, 27],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -27]
+    },
+    "done": {
+      "key": "domain",
+      "iconSize": [36, 36],
+      "shadowSize": [50, 64],
+      "iconAnchor": [18, 27],
+      "shadowAnchor": [0, 62],
+      "popupAnchor": [0, -27]
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.832565197967725, 57.141448269659364]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Peak of Vindagnyr"
+        },
+        "popupContent": {
+          "en": "This Artifact domain drops the Heart of Depth, Blizzard Strayer, Gambler, and Defender's Will sets. Complete a questline in this area to enter."
+        },
+        "popupMedia": "dragonspine/domain/1"
+      },
+      "id": 1
+    }
+  ]
+}

@@ -20,6 +20,8 @@ const Theme = createMuiTheme({
         upload: '#1bb76e',
         delete: '#ff5d5a',
         locate: '#ffca31',
+
+        mapControl: '#555',
       },
     },
   },

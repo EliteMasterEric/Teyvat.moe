@@ -9,7 +9,7 @@ import 'leaflet-textpath';
 import 'leaflet.pattern';
 import _ from 'lodash';
 
-import './MapLayers.css';
+import './layers/MapLayers.css';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,

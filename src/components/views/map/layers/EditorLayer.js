@@ -1,5 +1,7 @@
 /**
  * Provides the map layer used to display the Editor data on the leaflet map.
+ *
+ * For the logic managing the placement of markers and routes, see MapEditorHandler.
  */
 
 import L from 'leaflet';
