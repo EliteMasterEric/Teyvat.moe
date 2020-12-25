@@ -1,10 +1,11 @@
-import _ from 'lodash';
-import React from 'react';
-import hash from 'object-hash';
-import sanitizeHTML from 'sanitize-html';
+import { Typography } from '@material-ui/core';
 import * as clipboard from 'clipboard-polyfill/text';
+import _ from 'lodash';
+import hash from 'object-hash';
+import React from 'react';
+import sanitizeHTML from 'sanitize-html';
 
-import packageJson from '../../package.json';
+import packageJson from '~/../package.json';
 
 export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
@@ -54,9 +55,11 @@ export const hashObject = (input) => {
   try {
     return hash(input);
   } catch (err) {
-    console.error('COULD NOT HASH OBJECT');
     console.error(input);
-    throw err;
+    const output = new Error('Unable to hash object, did an input leak?');
+    output.detail = input;
+    output.original = err;
+    throw output;
   }
 };
 
@@ -73,13 +76,40 @@ export const isValidJSON = (str) => {
   return true;
 };
 
+const jsonReplacer = (_key, value) => {
+  if (value instanceof Error) {
+    const error = {};
+
+    Object.getOwnPropertyNames(value).forEach((key) => {
+      error[key] = value[key];
+    });
+
+    return error;
+  }
+
+  return value;
+};
+
 /**
- * Generate prettified JSON of an object.
+ * Generate JSON of an object.
+ * Includes handling for undefined types such as Error.
+ *
+ * @param {*} input The object to convert.
+ * @returns {String} A JSON string representing the object.
+ */
+export const generateJSON = (input) => {
+  return JSON.stringify(input, jsonReplacer);
+};
+
+/**
+ * Generate prettified JSON of an object, with spaces and line breaks.
+ * Includes handling for undefined types such as Error.
+ *
  * @param {*} input The object to convert.
  * @returns {String} Prettified JSON, with spacing and newlines.
  */
 export const generatePrettyJSON = (input) => {
-  return JSON.stringify(input, null, 2);
+  return JSON.stringify(input, jsonReplacer, 2);
 };
 
 /**
@@ -160,7 +190,9 @@ export const SafeHTML = ({ children, ...other }) => {
   };
   // Never fear, no danger here! We sanitized this text before rendering it.
   // eslint-disable-next-line react/no-danger
-  return <span dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />;
+  return (
+    <Typography dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />
+  );
 };
 
 /**

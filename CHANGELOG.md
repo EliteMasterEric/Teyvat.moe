@@ -430,3 +430,118 @@ First major release of the rework, featuring a new interface developed in React.
   - Plaustrite Shard (UPCOMING)
   - Sweet Flower
 - Note that the next major update will not be 1.0, but 0.10.0.
+
+# 0.9.1: Material UI Rework and Code Cleanup
+
+- Added an option to display marked feature progress in the Summary tab even when they are hidden on the map.
+- If marked feature progress is displayed in the Summary tab when the feature is hidden on the map, there is now an option to Show that feature in the menu, where the 'Hide Feature' option was.
+- Added new localization strings:
+  map-summary-menu-show-feature: Label for the option to display marked feature progress in the Summary tab even when they are hidden on the map.
+- Replaced many UI components with Material UI (with help from @inform880)
+  - Added an internal Theme.
+  - Replaced text boxes and text fields in the Editor view and popups.
+  - Replaced buttons in Options menu.
+  - Replaced switches in the Options menu.
+- Restructured code to use absolute file paths for imports, and rearranged directory structure.
+- Improved JavaDocs for many files.
+- Removed extraneous packages:
+  - @react-hook/media-query
+  - form-data
+  - gh-pages
+  - localized-strings
+  - react-leaflet-draw
+  - react-placeholder
+  - redux-thunk
+  - salesman.js
+  - react-switch
+
+# 0.9.2: Error Handling, Continued Material UI Rework
+
+- Added a new page which displays when the page experiences a crash, allowing users to submit a crash report to GitHub.
+- Replaced dropdowns and sliders with Material UI equivalents.
+- Reworked map to fix the editor after the changes in v0.9.0.
+- @inform880: Replaced import, export, and clear data popups, as well as submit and clear editor data popups, with Material UI modals.
+- Reworked the following areas to use Material UI styling, layouts, and components:
+  - @inform880: Import Data Popup
+  - @inform880: Export Data Popup
+  - @inform880: Clear Data Popup
+  - @inform880: Submit Editor Data Popup
+  - @inform880: Clear Editor Data Popup
+  - @MasterEric: Options Tab
+  - @MasterEric: Help Tab
+  - @MasterEric: Editor Help Tab
+  - @MasterEric: Editor Tab
+- Added new localization strings:
+  - popup-import-hint: Placeholder text on the input box in the Import Data popup.
+  - error-handler-flavor: https://www.youtube.com/watch?v=2EwbLyG5nQI
+  - error-handler-message: The message on the Error screen informing the user the app has crashed.
+  - error-handler-instruction: The message on the Error screen instructing the user to submit the crash report to GitHub.
+  - error-handler-submit: Submit to GitHub button
+  - editor-media-url-label: Label for text box for Media URL in Editor tab.
+  - editor-media-url-help: Help text for text box for Media URL in Editor tab.
+  - editor-title-label: Label for the text box for Popup Title in the Editor tab.
+  - editor-content-label: Label for the text box for Popup Content in the Editor tab.
+  - editor-delete-tooltip: Tooltip for the Delete button on markers and routes.
+  - editor-highlight-tooltip: Tooltip for the Highlight button on markers and routes.
+- Removed localization strings:
+  - editor-elements-media
+  - editor-elements-media-placeholder
+  - editor-elements-media-tooltip
+  - editor-elements-title
+  - editor-elements-title-placeholder
+  - editor-elements-content
+  - editor-elements-content-placeholder
+- Removed extraneous packages
+  - @material-ui/styles (included in @material-ui/core)
+  - react-leaflet-editable
+  - react-select-oss
+  - reactjs-popup
+  - rc-slider
+
+# 0.9.3: Dragonspine
+
+- Updated map graphics using assets extracted from Genshin Impact v1.2.
+- Revised the world border to accomodate Dragonspine.
+- Reworked marker icons.
+  - Improved several existing marker icons to increase image quality.
+  - Added new marker icons for certain elements.
+- Editor controls now display 'Cancel' while drawing is active.
+  - Also displays a 'Done' button while drawing routes.
+- Added 6 new region labels for Dragonspine.
+  - Tagged all labels with a region name, will eventually add a feature to filter them.
+- Added the following markers:
+  - @MasterEric: Mapped 1 Teleporter (Mondstadt) location, with screenshot.
+  - @MasterEric: Mapped 10 Teleporter (Dragonspine) locations, with screenshots.
+  - @MasterEric: Mapped 1 Domain (Dragonspine) location, with screenshot.
+  - @MasterEric: Mapped 1 Statue of the Seven (Dragonspine) location, with screenshot.
+- Reworked the following areas to use Material UI styling, layouts, and components:
+  - @MasterEric: Summary Tab
+  - @MasterEric: Controls Tabs
+  - @MasterEric: Editor Controls
+- Added new localization strings:
+  - map-editor-done-tooltip: Tooltip which displays when hovering over the 'Done' button in the map controls on the left.
+  - map-editor-cancel-tooltip: Tooltip which displays when hovering over the 'Cancel' button in the map controls on the left.
+  - map-editor-marker-tooltip: Tooltip which displays when hovering over the 'Marker' button in the map controls on the left.
+  - map-editor-route-tooltip: Tooltip which displays when hovering over the 'Route' button in the map controls on the left.
+- Reworked editor data in localization; existing localization for these elements will be invalidated:
+  - map-editor-help-content-a: Text which displays in the Editor Help menu.
+  - map-editor-help-content-b: Text which displays in the Editor Help menu.
+  - map-editor-help-content-c: Text which displays in the Editor Help menu.
+  - map-editor-help-content-d: Text which displays in the Editor Help menu.
+  - map-editor-help-content-e: Text which displays in the Editor Help menu.
+  - map-editor-help-content-f: Text which displays in the Editor Help menu.
+- Fixed a bug where routes could not be deleted.
+- Fixed a bug where clicking the editor controls would pass through to click the map, causing accidental marker and route placement.
+- Fixed a bug where editor controls would not clean up incomplete routes after cancelling.
+
+# 0.9.4 Crimson Agate
+
+- Added the following markers:
+  - @MasterEric and @maciejpk: Mapped 79 Crimson Agate, 58 of which have a screenshot or video.
+- The following feature types now display by default to new users:
+  - Crimson Agate (Dragonspine)
+  - Domains (Dragonspine)
+  - Teleporters (Dragonspine)
+  - Statues of the Seven (Dragonspine)
+- Tweaked a Dragonspine teleporter to be more accurate.
+- Fixed a bug where progress bars in the Summary tab were always displaying 0%.

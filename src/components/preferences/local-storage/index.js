@@ -4,8 +4,8 @@
  * Based on https://github.com/bevacqua/local-storage but with necessary additions.
  */
 
-import { on as trackingOn, off as trackingOff } from './tracking';
 import stub from './stub';
+import { on as trackingOn, off as trackingOff } from './tracking';
 
 let ls = 'localStorage' in global && global.localStorage ? global.localStorage : stub;
 

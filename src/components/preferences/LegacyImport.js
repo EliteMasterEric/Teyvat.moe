@@ -4,10 +4,9 @@
 
 import _ from 'lodash';
 
-import { getFeatureKeysByFilter, MapFeatures } from '../MapFeatures';
-
-import { getUnixTimestamp, reloadWindow } from '../Util';
-import { DEFAULT_MAP_PREFERENCES } from './DefaultPreferences';
+import { getFeatureKeysByFilter, MapFeatures } from '~/components/data/MapFeatures';
+import { DEFAULT_MAP_PREFERENCES } from '~/components/preferences/DefaultPreferences';
+import { getUnixTimestamp, reloadWindow } from '~/components/Util';
 
 /**
  * Feature names are stored only as IDs on Yuanshen.site.

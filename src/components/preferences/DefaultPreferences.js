@@ -1,6 +1,7 @@
 /**
  * Contains static codes and values,
  */
+
 import L from 'leaflet';
 
 // Center of the map.
@@ -138,15 +139,19 @@ export const DEFAULT_MAP_PREFERENCES = {
     features: {
       // These features will be displayed to new users when they first open the site.
       mondstadtAnemoculus: true,
-      liyueGeoculus: true,
-
       mondstadtTeleporter: true,
       mondstadtStatue: true,
       mondstadtDomain: true,
 
+      liyueGeoculus: true,
       liyueTeleporter: true,
       liyueStatue: true,
       liyueDomain: true,
+
+      dragonspineCrimsonAgate: true,
+      dragonspineTeleporter: true,
+      dragonspineStatue: true,
+      dragonspineDomain: true,
     },
     routes: {},
   },

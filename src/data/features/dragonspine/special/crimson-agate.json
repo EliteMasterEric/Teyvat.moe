@@ -1,11 +1,10 @@
 {
   "name": { "en": "Crimson Agate" },
-  "cluster": false,
   "icons": {
     "filter": "crimson-agate",
     "base": {
-      "key": "oculus",
-      "svg": true,
+      "key": "crimson-agate",
+      "clusterIcon": "crimson-agate",
       "iconSize": [24, 24],
       "shadowSize": [50, 64],
       "iconAnchor": [12, 12],
@@ -13,8 +12,8 @@
       "popupAnchor": [0, -12]
     },
     "done": {
-      "key": "oculus",
-      "svg": true,
+      "key": "crimson-agate",
+      "clusterIcon": "crimson-agate",
       "iconSize": [24, 24],
       "shadowSize": [50, 64],
       "iconAnchor": [12, 12],
@@ -22,5 +21,1349 @@
       "popupAnchor": [0, -12]
     }
   },
-  "data": []
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.605688178320804, 59.58435058593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-1"
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.91240739487225, 60.39733886718751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-2"
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.01347623104193, 60.24353027343751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#3. Frostbearing Tree"
+        },
+        "popupContent": {
+          "en": "Located next to the Frostbearing Tree when you activate it."
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-3"
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.25907654252574, 54.31640625000001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-4"
+      },
+      "id": 4
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.949891786813275, 55.5633544921875]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-5"
+      },
+      "id": 5
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.70555348721582, 56.77185058593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-6"
+      },
+      "id": 6
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.39475669987384, 57.11791992187501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-7"
+      },
+      "id": 7
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.206718844918484, 59.10095214843751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 8
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.740313292102655, 59.19433593750001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-9"
+      },
+      "id": 9
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.22158045838649, 58.6175537109375]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-10"
+      },
+      "id": 10
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-37.98213841614044, 62.99113412915794]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 11
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.05489352210786, 61.75594149747097]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-12"
+      },
+      "id": 12
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.03728970015421, 62.369653559755676]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 13
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.41392643995871, 62.96782860780534]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-14"
+      },
+      "id": 14
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.28367523178071, 63.5970776843251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-15"
+      },
+      "id": 15
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.3341843859394, 61.95739746093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 16
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.052833917627936, 65.48400878906251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-17"
+      },
+      "id": 17
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.95546236007019, 61.16165070298006]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 18
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45.369861378023515, 61.99676521811435]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 19
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.2427723992795, 61.25098853483166]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-20"
+      },
+      "id": 20
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.93758500391091, 57.83203125000001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-21"
+      },
+      "id": 21
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.88592102814744, 53.37707519531251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-22"
+      },
+      "id": 22
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.16747501039534, 52.93212890625001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-23"
+      },
+      "id": 23
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.382894009614034, 53.250732421875]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 24
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.34654412118006, 51.43798828125]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 25
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.13269100586688, 52.70141601562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-26"
+      },
+      "id": 26
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.26628442213065, 53.06945800781251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-27"
+      },
+      "id": 27
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.400947631519614, 50.185546875]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 28
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.34235741658333, 50.4931640625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-29"
+      },
+      "id": 29
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.450961401203884, 50.855712890625]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 30
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.321181429266616, 54.62402343750001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Located in the chest once you complete the puzzle."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=HH5v9Ie9zSQ"
+      },
+      "id": 31
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.085993504477244, 55.87646484375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-32"
+      },
+      "id": 32
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.39741506646461, 58.70544433593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-33"
+      },
+      "id": 33
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.99624282178581, 58.89221191406251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 34
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.89409955811395, 57.7166748046875]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-35"
+      },
+      "id": 35
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.69723718750306, 60.749919825751114]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-36"
+      },
+      "id": 36
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.209179690393555, 58.42529296875001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "This Agate is located in the chest inside the hut. There is also another Agate located on the roof of the hut."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=rOleu23Luio"
+      },
+      "id": 37
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.19286392256367, 58.330029858641126]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "This Agate is located on the roof of the hut. There is also another Agate located in the chest inside the hut."
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-38"
+      },
+      "id": 38
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.07935114946898, 58.41979980468751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-39"
+      },
+      "id": 39
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.48425110546248, 55.90393066406251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-40"
+      },
+      "id": 40
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.783307077249624, 56.56860351562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 41
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.30047607974949, 55.28869628906251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 42
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.72831341029744, 55.59631347656251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-43"
+      },
+      "id": 43
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.86965182408356, 53.21228027343751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-44"
+      },
+      "id": 44
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.28562496668374, 52.11364746093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 45
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.62974534092597, 50.53161621093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 46
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.76529191711623, 52.12463378906251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 47
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-36.58465761247167, 52.87719726562501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-48"
+      },
+      "id": 48
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.780541431860314, 62.12219238281251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-49"
+      },
+      "id": 49
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.24857720128942, 61.50346501615132]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 50
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.75474928028315, 53.52132395289131]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#51: Precious Chest - Fatui Hut"
+        },
+        "popupContent": {
+          "en": "This Agate is located in a chest, in a hut guarded by Fatui Skirmishers."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=MixDpYtite8"
+      },
+      "id": 51
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-44.13097085672744, 53.88244628906251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-52"
+      },
+      "id": 52
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.90893302084464, 56.671453589048895]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=4VnvekL-VPE"
+      },
+      "id": 53
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.543026009955, 57.89245605468751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-54"
+      },
+      "id": 54
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.50544628405212, 57.82653808593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-55"
+      },
+      "id": 55
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.73676229957947, 57.42553710937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 56
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.02340800226772, 56.73889160156251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-57"
+      },
+      "id": 57
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.801335759792, 58.12866210937501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "https://youtu.be/FsVgYwRmGlU"
+      },
+      "id": 58
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.34636533160189, 62.34191894531251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-59"
+      },
+      "id": 59
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.26917949243506, 64.07775878906251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-60"
+      },
+      "id": 60
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.240641902694755, 66.28601074218751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#61: Scarlet Quartz Luxurious Chest"
+        },
+        "popupContent": {
+          "en": "Break the Scarlet Quartz on the north cliff in Mondstadt, glide over, and break the ice to reveal the chest. "
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=6ydUPk7fF-A"
+      },
+      "id": 61
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.38526381099775, 58.10668945312501]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-62"
+      },
+      "id": 62
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.08763212467917, 57.45849609375001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=a7FY8DeDnT8"
+      },
+      "id": 63
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.41389556467731, 57.84851074218751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-64"
+      },
+      "id": 64
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.199323141276075, 58.29895019531251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-65"
+      },
+      "id": 65
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.46742831254426, 58.52966308593751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 66
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.62776153144344, 58.99658203125001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Bottom of the underground cavern"
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=BbSNNiyHWAc"
+      },
+      "id": 67
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.36260292171997, 58.11218261718751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "dragonspine/crimson-agate/crimson-agate-68"
+      },
+      "id": 68
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.826280356677124, 57.00256347656251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=0lzFGLU3d1M"
+      },
+      "id": 69
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.39443399815697, 60.01579590314472]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 70
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.145289295676605, 59.15039062500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 71
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.99624282178581, 61.96289062500001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "#72: Ragged Records"
+        },
+        "popupContent": {
+          "en": "Collect all 3 Ragged Records and claim the chest."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=6adN7fkBGIY"
+      },
+      "id": 72
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.04929263868684, 60.34240722656251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Climb along the mountain."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=AUBVvAmm9jo"
+      },
+      "id": 73
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.50948995925552, 61.18835449218751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=K-8qa6a7QRs"
+      },
+      "id": 74
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.19820534889481, 53.10791015625001]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Complete the puzzle on the surface to receive a Precious Chest containing a Crimson Agate."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=08A9z5gwXDQ"
+      },
+      "id": 75
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.772221877329024, 52.34436035156251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Complete the nearby time trial to receive a Precious Chest containing a Crimson Agate."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=GhuFtWsu5m8"
+      },
+      "id": 76
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.68605343225987, 55.10192871093751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Climb to reach the Agate on top of the mountain."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=HcqYs_44qL8"
+      },
+      "id": 77
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.838749137964584, 56.92565917968751]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Completing the 'In the Mountains' questline unlocks the Domain and rewards a Luxurious Chest containing a Crimson Agate."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=ss-EHNTAWSM"
+      },
+      "id": 78
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.54970014513273, 57.52990722656251]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": "Located amidst some ruins on top of the mountain."
+        },
+        "popupMedia": "https://www.youtube.com/watch?v=89qXY9bdMfs"
+      },
+      "id": 79
+    }
+  ]
 }

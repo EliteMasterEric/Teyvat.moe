@@ -6,16 +6,15 @@
  */
 
 import _ from 'lodash';
-import localStorage from './local-storage';
 
-import { fromBase64, getUnixTimestamp, reloadWindow } from '../Util';
-
+import localStorage from '~/components/preferences/local-storage';
 import {
   DEFAULT_MAP_PREFERENCES,
   GENSHINMAP_DATA_VERSION,
   LOCAL_STORAGE_KEY_RECOVERY,
   PREFERENCES_PREFIX,
-} from './DefaultPreferences';
+} from '~/components/preferences/DefaultPreferences';
+import { fromBase64, getUnixTimestamp, reloadWindow } from '~/components/Util';
 
 /**
  * When attempting to import data, via string or via local storage,

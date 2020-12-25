@@ -1,0 +1,197 @@
+{
+  "name": {
+    "en": "Teleporter"
+  },
+  "cluster": false,
+  "icons": {
+    "filter": "teleporter",
+    "base": {
+      "key": "teleporter",
+      "iconSize": [25, 35],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 36],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -36]
+    },
+    "done": {
+      "key": "teleporter",
+      "iconSize": [25, 35],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 36],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -36]
+    }
+  },
+  "data": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.39124186883316, 57.467725568595505]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Albedo's Camp"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 1
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.95272076929493, 53.490249924421185]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #2"
+        },
+        "popupContent": {
+          "en": "North Wyrmrest"
+        },
+        "popupMedia": ""
+      },
+      "id": 2
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.864611780038864, 53.27273172513041]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #3"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 3
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-39.64958959805563, 51.00044339325347]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Entombed City - Outskirts (North)"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 4
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.98294877466649, 52.17737222155896]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Entombed City - Outskirts (South)"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 5
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.947083897682504, 56.667569335490136]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Skyfrost Nail"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 6
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41.049688293574846, 59.79050919673639]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #7"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 7
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.11305312101859, 55.37022864686296]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #8"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 8
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.88056782366761, 59.813814718088956]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #9"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 9
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.073811171899166, 64.55260405978103]
+      },
+      "type": "Feature",
+      "properties": {
+        "popupTitle": {
+          "en": "Teleporter #10"
+        },
+        "popupContent": {
+          "en": ""
+        },
+        "popupMedia": ""
+      },
+      "id": 10
+    }
+  ]
+}

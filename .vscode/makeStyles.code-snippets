@@ -1,0 +1,18 @@
+{
+  "MaterialUI makeStyles": {
+    "prefix": "makeStyles",
+    "scope": "javascript,typescript",
+    "body": [
+      "import { makeStyles } from '@material-ui/core'",
+      "const useStyles = makeStyles((theme) => ({",
+      "}));"
+    ],
+    "description": "Material UI managed styles (configuration)."
+  },
+  "MaterialUI useStyles": {
+    "prefix": "useStyles",
+    "scope": "javascript,typescript",
+    "body": ["const classes = useStyles();"],
+    "description": "Material UI managed styles (hook)."
+  }
+}

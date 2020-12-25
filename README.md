@@ -14,7 +14,7 @@
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
   <br/><br/>
 <a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
-<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build)" alt="Netlify"/></a>
+<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
   <br/><br/>
@@ -46,12 +46,12 @@ This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.g
 There are numerous other interactive maps available, but this map has the edge in the following ways:
 
 - **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
+- **Newest resources mapped**: Magical crystal chunks, meteorites, Crimson Agate, and more before other maps.
+- **Multiple Language Support**: The site currently supports English, French, Russian, and Indonesian, with more to come. If your language isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
 - **Track progress for free**: GenshinMap allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or even Chinese credentials to allow you to track your progress.
 - **Mobile friendly**: GenshinMap officially supports mobile devices and has a custom menu layout for them.
-- **Newest resources**: Bamboo shoots, loach pearls, magical crystal chunks, meteorites, and more before other maps.
 - **Routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
 - **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Other sites have no submission functionality available, or may only have an email.
-- **Translated**: The site currently supports English, French, and Russian, with more to come. If yours isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
 - **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can create a fork or pull request. All other interactive map websites are closed source.
 
 ## Credits

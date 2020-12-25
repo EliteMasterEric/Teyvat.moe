@@ -1,4 +1,13 @@
 {
   "presets": ["@babel/preset-react"],
-  "plugins": ["@babel/plugin-proposal-optional-chaining"]
+  "plugins": [
+    ["@babel/plugin-proposal-optional-chaining", {}],
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
+    ]
+  ]
 }

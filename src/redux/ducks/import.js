@@ -1,4 +1,4 @@
-import { t } from '../../components/Localization';
+import { t } from '~/components/i18n/Localization';
 import { migrateData, parseDataFromString } from '../../components/preferences/DataImport';
 import { parseLegacyDataFromString } from '../../components/preferences/LegacyImport';
 import { isValidJSON } from '../../components/Util';

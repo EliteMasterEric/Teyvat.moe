@@ -3,7 +3,7 @@ import {
   getEmptyFeatureCategories,
   getEmptyRouteCategories,
   MapCategories,
-} from '../../components/MapFeatures';
+} from '../../components/data/MapFeatures';
 import { setControlsCategory, SET_CONTROLS_TAB } from '../ducks/ui';
 
 export const rootMiddleware = ({ dispatch, getState }) => {

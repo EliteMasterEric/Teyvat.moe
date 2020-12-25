@@ -1,3 +1,4 @@
+#!/bin/python3
 # Travels through each JSON file in the src/data folder,
 # finds markers whose media is an external image,
 # downloads the image to public/comments, and rewrites the URL to be local.
@@ -45,10 +46,11 @@ def parse_marker_for_media(marker, region, featureName):
     # Imgur will provide a file of the proper type based on the extension requested.
     mediaURLPNG = '%s.%s' % (mediaExternalBase, mediaExternalExt)
 
-    mediaOutput = '%s/%s/%s/%s' % (publicCommentBasePath, region, featureName, markerId)
+    mediaOutputBase = '%s/%s/%s' % (region, featureName, markerId)
+    mediaOutput = '%s/%s' % (publicCommentBasePath, mediaOutputBase)
     mediaOutputPath = '%s.%s' % (mediaOutput, mediaExternalExt)
     if download_to_path(mediaURLPNG, mediaOutputPath):
-      marker['properties']['popupMedia'] = mediaOutput
+      marker['properties']['popupMedia'] = mediaOutputBase
 
   return marker
 
