@@ -10,7 +10,8 @@
     "start:dev": "npx react-app-rewired start",
     "start:prod": "npx serve -s build",
     "build": "npx react-app-rewired build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "test": "echo \"This test is blank. Do not remove it, as it is required by TravisCI.\""
   },
   "eslintConfig": {
     "extends": [
