@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Dvalin (Stormterror)" },
+  "name": { 
+    "en": "Dvalin (Stormterror)",
+    "ru": "Двалин (Ужас бури)"
+  },
   "cluster": false,
   "icons": {
     "filter": "dvalin",
@@ -22,7 +25,8 @@
       "type": "Feature",
       "properties": {
         "popupTitle": {
-          "en": "Dvalin"
+          "en": "Dvalin",
+          "ru": "Двалин"
         },
         "popupContent": {
           "en": ""
