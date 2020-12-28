@@ -12,12 +12,13 @@ import MapControlsRegionButton from '~/components/views/controls/options/MapCont
 
 import './MapControlsRegions.css';
 
-const _MapControlsRegions = ({ displayed }) => {
+const _MapControlsRegions = ({ displayed, open }) => {
   return (
     <div
       className={clsx(
         'map-control-regions',
-        displayed ? 'map-control-regions-on' : 'map-control-regions-off'
+        displayed ? 'map-control-regions-on' : 'map-control-regions-off',
+        open ? null : 'map-controls-regions-closed'
       )}
     >
       {_.keys(MapRegions).map((key) =>
@@ -29,6 +30,7 @@ const _MapControlsRegions = ({ displayed }) => {
 
 const mapStateToProps = (state) => ({
   displayed: state.controlsOpen && ['features', 'routes'].includes(state.controlsTab),
+  open: state.controlsOpen,
 });
 const mapDispatchToProps = (_dispatch) => ({});
 const MapControlsRegions = connect(mapStateToProps, mapDispatchToProps)(_MapControlsRegions);

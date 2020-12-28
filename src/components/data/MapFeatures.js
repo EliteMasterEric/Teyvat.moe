@@ -12,7 +12,6 @@ import {
   loadFeature,
   loadRoute,
 } from '~/components/data/MapFeaturesData';
-import { localizeFeature, localizeRoute } from '~/components/i18n/FeatureLocalization';
 
 /*
  * List of ingame regions.
@@ -172,11 +171,11 @@ export const MapFeatures = _.fromPairs(
       const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
       const baseFeatureData = loadFeature(relativePath);
       if (baseFeatureData == null) return null; // Validation failed.
-      const featureData = localizeFeature({
+      const featureData = {
         ...baseFeatureData,
         region: featureRegion,
         category: featureCategory,
-      });
+      };
 
       // crystal-chunk -> CrystalChunk
       const correctedName = featureName
@@ -243,11 +242,11 @@ export const MapRoutes = _.fromPairs(
       const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
       const baseRouteData = loadRoute(relativePath);
       if (baseRouteData == null) return null; // Validation failed.
-      const routeData = localizeRoute({
+      const routeData = {
         ...baseRouteData,
         region: routeRegion,
         category: routeCategory,
-      });
+      };
 
       // crystal-chunk -> CrystalChunk
       const correctedName = routeName

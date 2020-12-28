@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { localizeFeature } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import { setFeatureDisplayed } from '~/redux/ducks/displayed';
 
@@ -88,7 +89,7 @@ const useStyles = makeStyles((_theme) => ({
 const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) => {
   const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
 
-  const mapFeature = MapFeatures[featureKey];
+  const mapFeature = localizeFeature(MapFeatures[featureKey]);
 
   // Hide button if feature is not enabled.
   if (!mapFeature?.enabled) return null;
@@ -120,6 +121,9 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
 
 const mapStateToProps = (state, { featureKey }) => ({
   active: state.displayed?.features[featureKey] ?? false,
+  // Adding language to the props, even if it isn't used,
+  // causes the component to re-render when the language changes.
+  lang: state.options.overrideLang,
 });
 const mapDispatchToProps = (dispatch, { featureKey }) => ({
   setFeatureDisplayed: (newState) => {

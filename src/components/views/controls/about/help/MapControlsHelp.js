@@ -22,8 +22,11 @@ const _MapControlsHelp = ({ displayed }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  displayed: state.controlsTab === 'help' && !state.editorEnabled,
+const mapStateToProps = ({ controlsTab, editorEnabled, options: { overrideLang: lang } }) => ({
+  displayed: controlsTab === 'help' && !editorEnabled,
+  // Adding language to the props, even if it isn't used,
+  // causes the component to re-render when the language changes.
+  lang,
 });
 const mapDispatchToProps = (_dispatch) => ({});
 const MapControlsHelp = connect(mapStateToProps, mapDispatchToProps)(React.memo(_MapControlsHelp));

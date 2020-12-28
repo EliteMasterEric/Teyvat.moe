@@ -27,10 +27,13 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
   return <TabBar displayed={displayed} value={tab} onChange={setTab} tabs={tabs} />;
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = ({ editorEnabled, controlsTab: tab, options: { overrideLang: lang } }) => ({
   displayed: true,
-  editorEnabled: state.editorEnabled,
-  tab: state.controlsTab,
+  editorEnabled,
+  tab,
+  // Adding language to the props, even if it isn't used,
+  // causes the component to re-render when the language changes.
+  lang,
 });
 const mapDispatchToProps = (dispatch) => ({
   setTab: (tab) => dispatch(setControlsTab(tab)),

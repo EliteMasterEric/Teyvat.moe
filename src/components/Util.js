@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core';
 import * as clipboard from 'clipboard-polyfill/text';
 import _ from 'lodash';
-import hash from 'object-hash';
+import objectHash from 'object-hash';
 import React from 'react';
 import sanitizeHTML from 'sanitize-html';
 
@@ -53,7 +53,7 @@ export const fromBase64 = (input) => {
  */
 export const hashObject = (input) => {
   try {
-    return hash(input);
+    return objectHash(input);
   } catch (err) {
     console.error(input);
     const output = new Error('Unable to hash object, did an input leak?');

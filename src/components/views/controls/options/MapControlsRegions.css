@@ -1,28 +1,29 @@
 .map-control-regions {
   position: fixed;
   top: 192px;
+  right: 0;
 
   z-index: -100;
+
+  /* Set the speed of this animation. */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.map-control-regions.map-controls-regions-closed {
+  right: -40px;
 }
 
 .map-control-regions-on {
   opacity: 1;
-
-  /* Set the speed of this animation. */
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .map-control-regions-off {
   opacity: 0;
-
-  /* Set the speed of this animation. */
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  /* Can't use display: none since that disables the animations. */
+  pointer-events: none;
 }
 
 /* Media queries: XXS (0px - 479px) */

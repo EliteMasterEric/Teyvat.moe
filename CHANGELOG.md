@@ -545,3 +545,12 @@ First major release of the rework, featuring a new interface developed in React.
   - Statues of the Seven (Dragonspine)
 - Tweaked a Dragonspine teleporter to be more accurate.
 - Fixed a bug where progress bars in the Summary tab were always displaying 0%.
+
+# 0.9.5 Bug Fixes
+
+- Updated language strings, including partial translations for Japanese and German
+  - Strings are still missing for new strings, or outdated for others (mainly the Editor Tab help text). Please contribute if you can!
+- Fixed a bug where invisible region tabs blocked clicking the map.
+- Fixed a bug where the animation on region tabs would not play when the map controls closed.
+- Fixed a bug where switching language would cause buttons to not update language until interacted with.
+- Fixed a bug where switching languages would not cause Feature and Route buttons to update.

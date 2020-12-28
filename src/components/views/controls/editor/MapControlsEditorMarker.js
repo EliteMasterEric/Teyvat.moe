@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const _MapControlsEditorMarker = ({
-  markerId,
+  index,
   markerTitle,
   markerContent,
   markerMedia,
@@ -68,7 +68,7 @@ const _MapControlsEditorMarker = ({
         </Tooltip>
 
         <Typography className={classes.markerLabel}>
-          {f('editor-elements-marker-id', { id: markerId })}
+          {f('editor-elements-marker-id', { id: index })}
         </Typography>
 
         <Tooltip title={t('editor-delete-tooltip')}>
@@ -98,7 +98,6 @@ const _MapControlsEditorMarker = ({
 
 const mapStateToProps = (state, { marker }) => ({
   highlighted: state.editorHighlight === marker.id,
-  markerId: marker.id,
   markerTitle: marker.properties.popupTitle.en,
   markerContent: marker.properties.popupContent.en,
   markerMedia: marker.properties.popupMedia,

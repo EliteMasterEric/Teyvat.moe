@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { localizeFeature } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import MapControlSummaryFeatureMenu from '~/components/views/controls/about/summary/MapControlsSummaryFeatureMenu';
 
@@ -73,12 +74,14 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, displayed }) => {
+const _MapControlSummaryFeature = ({ featureKey, completedCount, displayed }) => {
   const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
 
   if (!displayed) return null; // Feature is not displayed.
-  if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
   if (completedCount === 0) return null; // No markers have been completed.
+
+  const mapFeature = localizeFeature(MapFeatures[featureKey]);
+  if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
 
   // Total number of markers for this feature. Contrast with completedCount.
   const totalCount = Object.keys(mapFeature.data).length;
@@ -112,11 +115,8 @@ const _MapControlSummaryFeature = ({ mapFeature, featureKey, completedCount, dis
 };
 
 const mapStateToProps = (state, { featureKey }) => {
-  const mapFeature = MapFeatures[featureKey];
   return {
-    mapFeature,
     displayed: state.displayed.features[featureKey] || state.options.showHiddenFeatures,
-    doesExpire: (mapFeature?.respawn ?? -1) !== -1,
     completedCount: _.keys(state.completed.features[featureKey]).length,
   };
 };

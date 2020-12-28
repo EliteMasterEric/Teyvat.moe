@@ -19,6 +19,9 @@ const _MapControlsAboutTabs = ({ tab, displayed, setTab }) => {
 
 const mapStateToProps = (state) => ({
   tab: state.controlsTab,
+  // Adding language to the props, even if it isn't used,
+  // causes the component to re-render when the language changes.
+  lang: state.options.overrideLang,
   displayed:
     (state.controlsTab === 'help' || state.controlsTab === 'summary') && !state.editorEnabled,
 });

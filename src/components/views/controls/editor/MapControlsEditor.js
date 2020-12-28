@@ -48,13 +48,13 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
   return (
     <TabView displayed={displayed}>
       <BorderBox overflow="hidden auto">
-        {editorData.feature.data.map((element) => {
+        {editorData.feature.data.map((element, index) => {
           const isRoute = element?.geometry?.type === 'LineString';
 
           return isRoute ? (
-            <MapControlsEditorRoute key={element?.id} route={element} />
+            <MapControlsEditorRoute key={element?.id} index={index} route={element} />
           ) : (
-            <MapControlsEditorMarker key={element?.id} marker={element} />
+            <MapControlsEditorMarker key={element?.id} index={index} marker={element} />
           );
         })}
       </BorderBox>
