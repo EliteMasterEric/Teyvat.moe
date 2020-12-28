@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
-import { localizeFeature } from '~/components/i18n/FeatureLocalization';
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import MapControlSummaryFeatureMenu from '~/components/views/controls/about/summary/MapControlsSummaryFeatureMenu';
 
@@ -80,7 +80,7 @@ const _MapControlSummaryFeature = ({ featureKey, completedCount, displayed }) =>
   if (!displayed) return null; // Feature is not displayed.
   if (completedCount === 0) return null; // No markers have been completed.
 
-  const mapFeature = localizeFeature(MapFeatures[featureKey]);
+  const mapFeature = MapFeatures[featureKey];
   if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
 
   // Total number of markers for this feature. Contrast with completedCount.
@@ -96,7 +96,7 @@ const _MapControlSummaryFeature = ({ featureKey, completedCount, displayed }) =>
         />
       </Box>
       <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>
-        <Typography className={classes.label}>{mapFeature.name}</Typography>
+        <Typography className={classes.label}>{localizeField(mapFeature.name)}</Typography>
         <LinearProgress
           classes={{
             root: classes.progressRoot,

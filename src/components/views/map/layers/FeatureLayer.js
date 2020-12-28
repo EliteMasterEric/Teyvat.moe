@@ -12,6 +12,7 @@ import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { connect } from 'react-redux';
 
 import { createMapIcon } from '~/components/data/MapFeaturesData';
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { useImageExtension } from '~/components/interface/Image';
 import { hashObject } from '~/components/Util';
 import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';

@@ -3,6 +3,7 @@
  * on the Leaflet map.
  */
 
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { displayUnixTimestamp, f } from '~/components/i18n/Localization';
 
 // Capture group 1 is the video ID.
@@ -63,8 +64,10 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1, allowEx
   let text = '';
   if (!feature) return text;
 
-  if (feature.properties.popupTitle && feature.properties.popupTitle !== '') {
-    text = `${text}<b class="map-marker-popup-title">${feature.properties.popupTitle}</b>`;
+  const title = localizeField(feature.properties.popupTitle);
+
+  if (title && title !== '') {
+    text = `${text}<b class="map-marker-popup-title">${title}</b>`;
   } else {
     text = `${text}<b class="map-marker-popup-title">#${feature.id}</b>`;
   }
@@ -76,16 +79,20 @@ export const buildPopup = (feature, imgExt = 'png', completionTime = -1, allowEx
     text = `${text}${buildMedia(feature.properties.popupMedia, imgExt, allowExternal)}`;
   }
 
-  if (feature.properties.popupContent)
-    text = `${text}<span class="map-marker-popup-content">${feature.properties.popupContent}</span>`;
+  const content = localizeField(feature.properties.popupContent);
 
-  if (completionTime !== -1)
+  if (content && content !== '') {
+    text = `${text}<span class="map-marker-popup-content">${content}</span>`;
+  }
+
+  if (completionTime !== -1) {
     text = `${text}<span class="map-marker-popup-completion-time">${f(
       'map-popup-completed-format',
       {
         time: displayUnixTimestamp(completionTime),
       }
     )}</span>`;
+  }
 
   return text;
 };
