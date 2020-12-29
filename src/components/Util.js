@@ -51,14 +51,34 @@ export const fromBase64 = (input) => {
  * @param {*} input The object to hash.
  * @returns {String} The hashed object.
  */
-export const hashObject = (input) => {
+export const hashObject = (input, options) => {
   try {
-    return objectHash(input);
+    const fullOptions = {
+      algorithm: 'sha1',
+      unorderedArrays: false,
+      unorderedSets: true,
+      unorderedObjects: true,
+      ...options,
+    };
+
+    if (fullOptions.debug) {
+      // writeToStream will display the information that WOULD have been hashed.
+      // Used for debugging.
+      let output = '';
+      objectHash.writeToStream(input, fullOptions, {
+        write: (x) => {
+          output += x;
+        },
+      });
+      console.log(output);
+    }
+    // Actually return the hash.
+    return objectHash(input, fullOptions);
   } catch (err) {
     console.error(input);
     const output = new Error('Unable to hash object, did an input leak?');
+    output.stack = err.stack;
     output.detail = input;
-    output.original = err;
     throw output;
   }
 };

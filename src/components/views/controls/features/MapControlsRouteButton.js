@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 
 import { MapRoutes } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import { setRouteDisplayed } from '~/redux/ducks/displayed';
 
@@ -109,7 +110,7 @@ const _MapControlsRouteButton = ({ routeKey, active, setRouteDisplayed }) => {
           srcWebP={getFilterIconURL(mapRoute.icons.filter, 'webp')}
         />
       </Box>
-      <Typography>{mapRoute.name}</Typography>
+      <Typography>{localizeField(mapRoute.name)}</Typography>
     </Box>
   );
 };

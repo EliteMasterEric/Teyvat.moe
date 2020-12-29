@@ -15,9 +15,6 @@ import './App.css';
 import './NerdFonts.css';
 
 const App = () => {
-  // Uncomment this to clear local storage.
-  // require('./components/preferences/Preferences').resetLocalStorage();
-
   return (
     <ThemeProvider theme={Theme}>
       <HelmetProvider>
