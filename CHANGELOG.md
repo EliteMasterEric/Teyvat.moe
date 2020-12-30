@@ -546,11 +546,36 @@ First major release of the rework, featuring a new interface developed in React.
 - Tweaked a Dragonspine teleporter to be more accurate.
 - Fixed a bug where progress bars in the Summary tab were always displaying 0%.
 
-# 0.9.5 Bug Fixes
+# 0.9.5 Tab Rework and Bug Fixes
 
-- Updated language strings, including partial translations for Japanese and German
+- Redid Map Controls tabs to use icons with tooltips, rather than text.
+  - This should help display on smaller screens and in languages with longer text.
+- Moved the Help and Summary subtabs into their own tabs, then removed the About tab.
+  - This should make navigating easier.
+- Redid region buttons to use CSS styling rather than images.
+  - Uses element vector images created by /u/SnooDogs3804 on Reddit.
+  - This replaces 64 PNG images with 8 SVGs!
+- Updated language strings from POEditor, including partial translations for Japanese and German
   - Strings are still missing for new strings, or outdated for others (mainly the Editor Tab help text). Please contribute if you can!
+- Fixed a bug where `Mt. Aozang` was misspelled as `Mt. Aiozag`.
+- Fixed a bug where the North Qingyun Peak teleporter had the wrong position.
+- Fixed a bug where many Crimson Agate images would not display (wrong image format).
 - Fixed a bug where invisible region tabs blocked clicking the map.
 - Fixed a bug where the animation on region tabs would not play when the map controls closed.
 - Fixed a bug where switching language would cause buttons to not update language until interacted with.
 - Fixed a bug where switching languages would not cause Feature and Route buttons to update.
+
+# 0.9.6 Map Clustering Rework, Material UI Cleanup
+
+- Redid several UI elements to use Material UI for styling.
+  - Redid open/close banner to use CSS and SVG icons instead of ugly PNGs.
+  - Redid main controls panel to use Material UI for styling.
+  - Redid Region button container (on the left).
+  - The only element of the UI not using Material styling is the Category buttons.
+- Redid the "small mode" close and region buttons to use the new UI elements.
+- Marker clusters now display other other marker types.
+- Marker clusters now display individual markers on click, at any zoom level.
+- Marker graphics have been revamped to use SVGs in all cases.
+- Markers now recluster when zooming in.
+- Markers now decluster to their original positions, rather than a generic circle.
+- Fixed a bug where markers listed in the editor Elements tab would start at the 0th index.

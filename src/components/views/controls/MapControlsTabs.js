@@ -2,6 +2,15 @@
  * Provides the interface for the tabs at the top of the Map controls.
  */
 
+import { makeStyles } from '@material-ui/core';
+import {
+  Create as CreateIcon,
+  LiveHelp as LiveHelpIcon,
+  Place as PlaceIcon,
+  Satellite as SatelliteIcon,
+  Settings as SettingsIcon,
+  Timeline as TimelineIcon,
+} from '@material-ui/icons';
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -9,22 +18,77 @@ import { t } from '~/components/i18n/Localization';
 import { TabBar } from '~/components/interface/Tabs';
 import { setControlsTab } from '~/redux/ducks/ui';
 
+const useStyles = makeStyles((_theme) => ({
+  tabBar: {
+    margin: '0 0 8px 0',
+  },
+}));
+
 const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
+  const classes = useStyles();
+
   const tabs = [
-    { enabled: !editorEnabled, label: t('map-controls-tab-about'), value: 'help', order: 1 },
-    { enabled: editorEnabled, label: t('map-controls-tab-editor-help'), value: 'help', order: 1 },
+    {
+      enabled: !editorEnabled,
+      label: t('map-controls-tab-help'),
+      value: 'help',
+      order: 11,
+      icon: <LiveHelpIcon />,
+    },
+    {
+      enabled: !editorEnabled,
+      label: t('map-controls-tab-summary'),
+      value: 'summary',
+      order: 12,
+      icon: <SatelliteIcon />,
+    },
+    {
+      enabled: editorEnabled,
+      label: t('map-controls-tab-editor-help'),
+      value: 'help',
+      order: 21,
+      icon: <LiveHelpIcon />,
+    },
     {
       enabled: editorEnabled,
       label: t('map-controls-tab-editor-elements'),
       value: 'elements',
-      order: 2,
+      order: 22,
+      icon: <CreateIcon />,
     },
-    { enabled: !editorEnabled, label: t('map-controls-tab-features'), value: 'features', order: 2 },
-    { enabled: !editorEnabled, label: t('map-controls-tab-routes'), value: 'routes', order: 3 },
-    { enabled: true, label: t('map-controls-tab-options'), value: 'options', order: 10 },
+    {
+      enabled: !editorEnabled,
+      label: t('map-controls-tab-features'),
+      value: 'features',
+      order: 31,
+      icon: <PlaceIcon />,
+    },
+    {
+      enabled: !editorEnabled,
+      label: t('map-controls-tab-routes'),
+      value: 'routes',
+      order: 32,
+      icon: <TimelineIcon />,
+    },
+    {
+      enabled: true,
+      label: t('map-controls-tab-options'),
+      value: 'options',
+      order: 41,
+      icon: <SettingsIcon />,
+    },
   ];
 
-  return <TabBar displayed={displayed} value={tab} onChange={setTab} tabs={tabs} />;
+  return (
+    <TabBar
+      className={classes.tabBar}
+      displayed={displayed}
+      value={tab}
+      onChange={setTab}
+      tabs={tabs}
+      icons
+    />
+  );
 };
 
 const mapStateToProps = ({ editorEnabled, controlsTab: tab, options: { overrideLang: lang } }) => ({

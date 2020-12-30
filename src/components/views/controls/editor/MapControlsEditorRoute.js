@@ -69,7 +69,7 @@ const _MapControlsEditorRoute = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('editor-elements-route-id', { id: index })}
+          {f('editor-elements-route-id', { id: index + 1 })}
         </Typography>
 
         <Tooltip title={t('editor-delete-tooltip')}>

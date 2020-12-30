@@ -8,12 +8,16 @@ import 'leaflet.markercluster';
 import _ from 'lodash';
 import React from 'react';
 import { GeoJSON } from 'react-leaflet';
-import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { connect } from 'react-redux';
 
 import { createMapIcon } from '~/components/data/MapFeaturesData';
 import { useImageExtension } from '~/components/interface/Image';
 import { hashObject } from '~/components/Util';
+import MapCluster, {
+  offClusterFunction,
+  onClusterFunction,
+  variableClusterFunction,
+} from '~/components/views/map/MapCluster';
 import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
 import store from '~/redux';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
@@ -97,28 +101,6 @@ const _FeatureLayer = ({
       });
   };
 
-  const createClusterIcon = (cluster) => {
-    const childMarkers = cluster.getAllChildMarkers();
-    const childCount = childMarkers.length;
-    // For each cluster child element, check if completed = true; if so, add to the count.
-    const childCompletedCount = childMarkers.reduce(
-      (prev, marker) => prev + (marker?.options?.properties?.completed ? 1 : 0),
-      0
-    );
-    const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
-
-    // const svgTipFill = childCompletedCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
-    const iconHTML = `<img class='map-marker-cluster-marker' alt="" src="${
-      require('~/images/icons/map_base/marker_cluster.png').default
-    }"/><b class="map-marker-cluster-label">${childCompletedCount}/${childCount}</b><img class='map-marker-cluster-img' src='${iconUrl}'/>`;
-
-    return L.divIcon({
-      html: iconHTML,
-      className: 'map-marker-cluster',
-      iconSize: new L.Point(40, 40),
-    });
-  };
-
   // If any of these values change, update the map.
   const hashValue = {
     clusterMarkers,
@@ -126,27 +108,24 @@ const _FeatureLayer = ({
     completedIds,
   };
 
-  const inner = (
-    <GeoJSON
-      key={hashObject(hashValue)}
-      data={mapFeature.data}
-      pointToLayer={pointToLayer}
-      onEachFeature={onEachFeature}
-    />
-  );
+  let clusterFunction = offClusterFunction;
+
+  if (['mondstadtCommonChest', 'liyueCommonChest'].includes(mapFeature.key)) {
+    clusterFunction = variableClusterFunction;
+  } else if (mapFeature.cluster === 'on') {
+    clusterFunction = onClusterFunction;
+  }
 
   // Cluster if enabled by the user and the feature type supports it.
-  return clusterMarkers ? (
-    <MarkerClusterGroup
-      iconCreateFunction={createClusterIcon}
-      maxClusterRadius={(_zoom) => 80}
-      zoomToBoundsOnClick={false}
-      showCoverageOnHover={false}
-    >
-      {inner}
-    </MarkerClusterGroup>
-  ) : (
-    inner
+  return (
+    <MapCluster clusterFunction={clusterFunction}>
+      <GeoJSON
+        key={hashObject(hashValue)}
+        data={mapFeature.data}
+        pointToLayer={pointToLayer}
+        onEachFeature={onEachFeature}
+      />
+    </MapCluster>
   );
 };
 

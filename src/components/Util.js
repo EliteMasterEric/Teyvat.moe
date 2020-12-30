@@ -70,7 +70,7 @@ export const hashObject = (input, options) => {
           output += x;
         },
       });
-      console.log(output);
+      console.debug(output);
     }
     // Actually return the hash.
     return objectHash(input, fullOptions);
@@ -255,3 +255,11 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
   // Pass the reference to the state getter and setter.
   return [stateValue, setStateValue];
 };
+
+/**
+ * MaterialUI can break if it can't assign props to certain children.
+ * @see https://github.com/mui-org/material-ui/issues/12597#issuecomment-455244379
+ *
+ * @param {*} children A function which takes the other props passed to this component as an argument.
+ */
+export const CloneProps = ({ children, ...other }) => children(other);

@@ -2,11 +2,12 @@ import {
   Box,
   Tabs as MaterialTabs,
   Tab as MaterialTab,
+  Tooltip,
   makeStyles,
   useTheme,
 } from '@material-ui/core';
 import React from 'react';
-import { useDebouncedState } from '../Util';
+import { useDebouncedState, CloneProps } from '../Util';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
@@ -44,8 +45,17 @@ const sortByOrder = (array) => {
 /**
  * Debounced tab bar.
  * @param {*} tabs: {label: 'About', value: 'about', order: 0, enabled: true}
+ * @param {String} scroll: 'auto', 'desktop', 'on', 'off'
  */
-export const TabBar = ({ displayed = true, scroll = false, value, onChange, tabs }) => {
+export const TabBar = ({
+  displayed = true,
+  scroll = 'auto',
+  icons = false,
+  value,
+  onChange,
+  tabs,
+  ...other
+}) => {
   const classes = useStyles();
 
   const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
@@ -72,15 +82,37 @@ export const TabBar = ({ displayed = true, scroll = false, value, onChange, tabs
       action={actionRef}
       value={currentValue}
       onChange={(_event, newValue) => setCurrentValue(newValue)}
-      variant={scroll ? 'scrollable' : ''}
       centered
-      scrollButtons={scroll ? 'on' : 'off'}
+      variant="fullWidth"
+      scrollButtons={scroll}
       indicatorColor="primary"
       textColor="primary"
+      {...other}
     >
       {sortByOrder(tabs).map((tab) => {
         if (!tab.enabled) return null;
-        return <MaterialTab label={tab.label} value={tab.value} classes={{ root: classes.tab }} />;
+
+        return icons ? (
+          <CloneProps value={tab.value}>
+            {(tabProps) => (
+              <Tooltip title={tab.label}>
+                <MaterialTab
+                  wrapped
+                  icon={tab.icon}
+                  classes={{ root: classes.tab }}
+                  {...tabProps}
+                />
+              </Tooltip>
+            )}
+          </CloneProps>
+        ) : (
+          <MaterialTab
+            wrapped
+            label={tab.label}
+            value={tab.value}
+            classes={{ root: classes.tab }}
+          />
+        );
       })}
     </MaterialTabs>
   );

@@ -68,7 +68,7 @@ const _MapControlsEditorMarker = ({
         </Tooltip>
 
         <Typography className={classes.markerLabel}>
-          {f('editor-elements-marker-id', { id: index })}
+          {f('editor-elements-marker-id', { id: index + 1 })}
         </Typography>
 
         <Tooltip title={t('editor-delete-tooltip')}>

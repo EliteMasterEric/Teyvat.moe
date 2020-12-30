@@ -25,12 +25,12 @@ export const MapRegions = {
   liyue: {
     nameKey: 'region-liyue',
     enabled: true,
-    color: '#663F5C',
+    color: '#A28339',
   },
   dragonspine: {
     nameKey: 'region-dragonspine',
-    color: '#394984',
     enabled: true,
+    color: '#394984',
   },
   inazuma: {
     nameKey: 'region-inazuma',
@@ -171,11 +171,6 @@ export const MapFeatures = _.fromPairs(
       const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
       const baseFeatureData = loadFeature(relativePath);
       if (baseFeatureData == null) return null; // Validation failed.
-      const featureData = {
-        ...baseFeatureData,
-        region: featureRegion,
-        category: featureCategory,
-      };
 
       // crystal-chunk -> CrystalChunk
       const correctedName = featureName
@@ -186,6 +181,13 @@ export const MapFeatures = _.fromPairs(
 
       // CrystalChunk -> mondstadtCrystalChunk
       const fullName = `${featureRegion}${correctedName}`; // Prefix with region.
+
+      const featureData = {
+        ...baseFeatureData,
+        key: fullName,
+        region: featureRegion,
+        category: featureCategory,
+      };
 
       return [fullName, featureData];
     })

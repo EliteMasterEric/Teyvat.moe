@@ -41,11 +41,14 @@ Final data format example.:
    */
   "name": { "en": "Crimson Agate" },
   /*
-   * cluster {Boolean}: Whether to cluster markers of this type.
+   * cluster {String}: Whether to cluster markers of this type.
    *   Optional. Only allowed on markers.
-   *   Defaults to false.
+   *   Possible values are:
+   *   - 'off' (no clustering, default)
+   *   - 'on' (close clustering)
+   *   - 'variable' (far clustering based on zoom level)
    */
-  "cluster": true,
+  "cluster": 'off',
   /*
    * cluster {Number}: How long it takes markers of this type to respawn, in seconds.
    *   Optional. Only allowed on markers.
