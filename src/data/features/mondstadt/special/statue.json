@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Statue of the Seven" },
+  "name": { 
+    "en": "Statue of the Seven",
+    "ru": "Статуя семи Архонтов"
+  },
   "cluster": false,
   "icons": {
     "filter": "mondstadt-statue",
@@ -29,8 +32,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Starfell Valley, Mondstadt" },
+        "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+        "popupContent": { "en": "Starfell Valley, Mondstadt", "ru": "Долина Звездопадов, Мондштадт" },
         "popupMedia": "mondstadt/statue/starfell"
       }
     },
@@ -42,8 +45,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Galesong Hill, Mondstadt" },
+        "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+        "popupContent": { "en": "Galesong Hill, Mondstadt", "ru": "Склон Песни ветра, Мондштадт" },
         "popupMedia": "mondstadt/statue/windrise"
       }
     },
@@ -55,8 +58,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Windwail Highland, Mondstadt" },
+        "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+        "popupContent": { "en": "Windwail Highland, Mondstadt", "ru": "Нагорье Ревущих ветров, Мондштадт" },
         "popupMedia": "mondstadt/statue/springvale"
       }
     },
@@ -68,8 +71,8 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Brightcrown Mountains, Mondstadt" },
+        "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+        "popupContent": { "en": "Brightcrown Mountains, Mondstadt", "ru": "Горы Светлой короны, Мондштадт" },
         "popupMedia": "mondstadt/statue/stormterror"
       }
     }
