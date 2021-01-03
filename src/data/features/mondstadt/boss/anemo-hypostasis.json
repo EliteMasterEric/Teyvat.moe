@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Anemo Hypostasis" },
+  "name": {
+    "en": "Anemo Hypostasis",
+    "pt": "Hypostasis Anemo"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.161785912715136, 64.03930664062501]
+        "coordinates": [
+          -17.161785912715136,
+          64.03930664062501
+        ]
       },
       "type": "Feature",
       "properties": {

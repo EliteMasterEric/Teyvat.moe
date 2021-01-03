@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Electro Hypostasis" },
+  "name": {
+    "en": "Electro Hypostasis",
+    "pt": "Hypostasis Electro"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.74465712069938, 73.42163085937501]
+        "coordinates": [
+          -37.74465712069938,
+          73.42163085937501
+        ]
       },
       "type": "Feature",
       "properties": {

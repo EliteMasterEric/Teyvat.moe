@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Dvalin (Stormterror)" },
+  "name": {
+    "en": "Dvalin (Stormterror)",
+    "pt": "Dvalin (Stormterror)"
+  },
   "cluster": false,
   "icons": {
     "filter": "dvalin",
@@ -17,7 +20,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.653346148076054, 43.07739257812501]
+        "coordinates": [
+          -20.653346148076054,
+          43.07739257812501
+        ]
       },
       "type": "Feature",
       "properties": {

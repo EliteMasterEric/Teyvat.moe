@@ -1,23 +1,56 @@
 {
-  "name": { "en": "Statue of the Seven" },
+  "name": {
+    "en": "Statue of the Seven",
+    "pt": "Estátua dos Sete"
+  },
   "cluster": false,
   "icons": {
     "filter": "mondstadt-statue",
     "base": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     },
     "done": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     }
   },
   "data": [
@@ -25,12 +58,19 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.870414069992147, 64.39772956367817]
+        "coordinates": [
+          -21.870414069992147,
+          64.39772956367817
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Starfell Valley, Mondstadt" },
+        "popupTitle": {
+          "en": "Statue of The Seven - Anemo"
+        },
+        "popupContent": {
+          "en": "Starfell Valley, Mondstadt"
+        },
         "popupMedia": "mondstadt/statue/starfell"
       }
     },
@@ -38,12 +78,19 @@
       "id": 2,
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.318385244367025, 63.50372716588123]
+        "coordinates": [
+          -30.318385244367025,
+          63.50372716588123
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Galesong Hill, Mondstadt" },
+        "popupTitle": {
+          "en": "Statue of The Seven - Anemo"
+        },
+        "popupContent": {
+          "en": "Galesong Hill, Mondstadt"
+        },
         "popupMedia": "mondstadt/statue/windrise"
       }
     },
@@ -51,12 +98,19 @@
       "id": 3,
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.12819177556202, 53.42376306849378]
+        "coordinates": [
+          -31.12819177556202,
+          53.42376306849378
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Windwail Highland, Mondstadt" },
+        "popupTitle": {
+          "en": "Statue of The Seven - Anemo"
+        },
+        "popupContent": {
+          "en": "Windwail Highland, Mondstadt"
+        },
         "popupMedia": "mondstadt/statue/springvale"
       }
     },
@@ -64,12 +118,19 @@
       "id": 4,
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.792066100825625, 42.40584321810945]
+        "coordinates": [
+          -20.792066100825625,
+          42.40584321810945
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Statue of The Seven - Anemo" },
-        "popupContent": { "en": "Brightcrown Mountains, Mondstadt" },
+        "popupTitle": {
+          "en": "Statue of The Seven - Anemo"
+        },
+        "popupContent": {
+          "en": "Brightcrown Mountains, Mondstadt"
+        },
         "popupMedia": "mondstadt/statue/stormterror"
       }
     }

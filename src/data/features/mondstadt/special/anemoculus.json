@@ -1,35 +1,75 @@
 {
-  "name": { "en": "Anemoculus" },
+  "name": {
+    "en": "Anemoculus",
+    "pt": "Anemoculus"
+  },
   "cluster": false,
   "icons": {
     "filter": "anemoculus",
     "base": {
       "key": "anemoculus",
-      "iconSize": [31, 37],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        31,
+        37
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     },
     "done": {
       "key": "anemoculus",
-      "iconSize": [31, 37],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        31,
+        37
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.6430655467, 43.0993652343]
+        "coordinates": [
+          -20.6430655467,
+          43.0993652343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ftGeNlEKIoE"
       },
       "id": 1
@@ -37,12 +77,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-16.8886597873, 45.4504394531]
+        "coordinates": [
+          -16.8886597873,
+          45.4504394531
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/UKWDvkoyn_Y"
       },
       "id": 2
@@ -50,12 +97,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.5183441878, 40.5834960937]
+        "coordinates": [
+          -17.5183441878,
+          40.5834960937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/1cabjTBAYvE"
       },
       "id": 3
@@ -63,12 +117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.7486866517, 43.7036132812]
+        "coordinates": [
+          -17.7486866517,
+          43.7036132812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fdt4dfud1v8"
       },
       "id": 4
@@ -76,12 +137,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.8896075104, 47.7795410156]
+        "coordinates": [
+          -20.8896075104,
+          47.7795410156
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/HBLI7jxCg6Q"
       },
       "id": 5
@@ -89,12 +157,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-18.4066547139, 45.3735351562]
+        "coordinates": [
+          -18.4066547139,
+          45.3735351562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Uw1cUxSnytQ"
       },
       "id": 6
@@ -102,12 +177,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.2725032501, 42.4072265625]
+        "coordinates": [
+          -20.2725032501,
+          42.4072265625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fWgbLsrN5Lo"
       },
       "id": 7
@@ -115,12 +197,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-19.983673966, 41.6271972656]
+        "coordinates": [
+          -19.983673966,
+          41.6271972656
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/9I5jezwgtoE"
       },
       "id": 8
@@ -128,12 +217,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-19.456233596, 42.4291992187]
+        "coordinates": [
+          -19.456233596,
+          42.4291992187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/sJS92GFiynI"
       },
       "id": 9
@@ -141,12 +237,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.9328547363, 39.2980957031]
+        "coordinates": [
+          -21.9328547363,
+          39.2980957031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/L74L4pTZTWA"
       },
       "id": 10
@@ -154,12 +257,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.4684055773, 40.1000976562]
+        "coordinates": [
+          -21.4684055773,
+          40.1000976562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/U9py1Fe3_pM"
       },
       "id": 11
@@ -167,12 +277,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-23.0797317624, 41.1108398437]
+        "coordinates": [
+          -23.0797317624,
+          41.1108398437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/GZXBpaWYAE0"
       },
       "id": 12
@@ -180,12 +297,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-25.2446959513, 45.9008789062]
+        "coordinates": [
+          -25.2446959513,
+          45.9008789062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/p84ASJj5-Yk"
       },
       "id": 13
@@ -193,12 +317,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-23.7250117359, 48.0102539062]
+        "coordinates": [
+          -23.7250117359,
+          48.0102539062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/14"
       },
       "id": 14
@@ -206,12 +337,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-26.9514530834, 44.6594238281]
+        "coordinates": [
+          -26.9514530834,
+          44.6594238281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/a3z-wjdo8yM"
       },
       "id": 15
@@ -219,12 +357,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-24.2770124716, 49.833984375]
+        "coordinates": [
+          -24.2770124716,
+          49.833984375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/1uf5xXWo7EA"
       },
       "id": 16
@@ -232,12 +377,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-22.4313401563, 50.1745605468]
+        "coordinates": [
+          -22.4313401563,
+          50.1745605468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/hRv5qJ1uDkE"
       },
       "id": 17
@@ -245,12 +397,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-23.0595162735, 51.2731933593]
+        "coordinates": [
+          -23.0595162735,
+          51.2731933593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/NtEiByP8VMI"
       },
       "id": 18
@@ -258,12 +417,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-22.0449133002, 51.3610839843]
+        "coordinates": [
+          -22.0449133002,
+          51.3610839843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/nSGOKj6MwSc"
       },
       "id": 19
@@ -271,12 +437,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.9716985304, 50.6359863281]
+        "coordinates": [
+          -20.9716985304,
+          50.6359863281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/dzg_M4Xh0ro"
       },
       "id": 20
@@ -284,12 +457,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.1694112276, 50.5041503906]
+        "coordinates": [
+          -20.1694112276,
+          50.5041503906
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/OHen2-RFO-A"
       },
       "id": 21
@@ -297,12 +477,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.8793429719, 52.20703125]
+        "coordinates": [
+          -20.8793429719,
+          52.20703125
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/qFiw5t9k5Xc"
       },
       "id": 22
@@ -310,12 +497,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-24.8665025269, 51.240234375]
+        "coordinates": [
+          -24.8665025269,
+          51.240234375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/UWwUGj2vNvA"
       },
       "id": 23
@@ -323,12 +517,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-25.8592235547, 52.1630859375]
+        "coordinates": [
+          -25.8592235547,
+          52.1630859375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/24"
       },
       "id": 24
@@ -336,12 +537,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-26.8240707804, 51.15234375]
+        "coordinates": [
+          -26.8240707804,
+          51.15234375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/TASmw3X0mKg"
       },
       "id": 25
@@ -349,11 +557,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-28.1882436418, 51.7565917968]
+        "coordinates": [
+          -28.1882436418,
+          51.7565917968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "This oculus is on top of one of the pillars. Use fire to burn the brambles or glide over from an adjacent pillar."
         },
@@ -365,7 +578,9 @@
       "type": "Feature",
       "id": 27,
       "properties": {
-        "popupTitle": { "en": "#27: Springvale Cliff" },
+        "popupTitle": {
+          "en": "#27: Springvale Cliff"
+        },
         "popupContent": {
           "en": "This Anemoculus is located underneath the cliff. Jump off, perform a glide, then turn around and move under the cliff to grab the floating Geoculus."
         },
@@ -373,27 +588,39 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.516110386062277, 53.03100585937501]
+        "coordinates": [
+          -29.516110386062277,
+          53.03100585937501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 28,
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/QGI5wQZoKBM"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-28.22697003891834, 55.92041015625001]
+        "coordinates": [
+          -28.22697003891834,
+          55.92041015625001
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 29,
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "Collect the three Mysterious Anemogranum to create a wind gust upward. The rings will quickly boost you upward to reach the Anemoculus."
         },
@@ -401,14 +628,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.240985378021307, 55.18432617187501]
+        "coordinates": [
+          -31.240985378021307,
+          55.18432617187501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 30,
       "properties": {
-        "popupTitle": { "en": "#30: Dawn Winery" },
+        "popupTitle": {
+          "en": "#30: Dawn Winery"
+        },
         "popupContent": {
           "en": "This Anemoculus is located on the roof of the Winery. Climb from the front door to the balcony above it. From there, you can climb onto the roof, then to the left side where the Anemoculus is."
         },
@@ -416,40 +648,59 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.166312956967346, 50.92163085937501]
+        "coordinates": [
+          -32.166312956967346,
+          50.92163085937501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 31,
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Ih3t4D7MYOk"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.42227225886604, 49.09790039062501]
+        "coordinates": [
+          -33.42227225886604,
+          49.09790039062501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 32,
       "properties": {
-        "popupTitle": { "en": "#32: Springvale Anemogranum A" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": "#32: Springvale Anemogranum A"
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/LaYdxT6bxlk"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.04355650412745, 51.49291992187501]
+        "coordinates": [
+          -34.04355650412745,
+          51.49291992187501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 33,
       "properties": {
-        "popupTitle": { "en": "#33: Springvale Anemogranum B" },
+        "popupTitle": {
+          "en": "#33: Springvale Anemogranum B"
+        },
         "popupContent": {
           "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
         },
@@ -457,14 +708,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.259067203213018, 57.35961914062501]
+        "coordinates": [
+          -30.259067203213018,
+          57.35961914062501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 34,
       "properties": {
-        "popupTitle": { "en": "#34: Springvale Roof" },
+        "popupTitle": {
+          "en": "#34: Springvale Roof"
+        },
         "popupContent": {
           "en": "This Anemoculus is located on the roof of the southeast house of Springvale. You can climb up the wall of the house or glide from the nearby cliff."
         },
@@ -472,14 +728,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.221101852485987, 58.94165039062501]
+        "coordinates": [
+          -30.221101852485987,
+          58.94165039062501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 35,
       "properties": {
-        "popupTitle": { "en": "#35: Southeast Springvale Cliff" },
+        "popupTitle": {
+          "en": "#35: Southeast Springvale Cliff"
+        },
         "popupContent": {
           "en": "This Anemoculus is located on a cliff nearby to Springvale. You can simply walk up and grab it."
         },
@@ -487,14 +748,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.30570601389429, 60.10620117187501]
+        "coordinates": [
+          -32.30570601389429,
+          60.10620117187501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 36,
       "properties": {
-        "popupTitle": { "en": "#36: Gorge Cliff" },
+        "popupTitle": {
+          "en": "#36: Gorge Cliff"
+        },
         "popupContent": {
           "en": "This Anemoculus is located off a cliff. You will have to glide down from the side to retrieve it."
         },
@@ -502,14 +768,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.68561985372199, 61.32568359375001]
+        "coordinates": [
+          -32.68561985372199,
+          61.32568359375001
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 37,
       "properties": {
-        "popupTitle": { "en": "#37: Gorge Anemogranum" },
+        "popupTitle": {
+          "en": "#37: Gorge Anemogranum"
+        },
         "popupContent": {
           "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
         },
@@ -517,14 +788,19 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.35806161277886, 61.42456054687501]
+        "coordinates": [
+          -33.35806161277886,
+          61.42456054687501
+        ]
       }
     },
     {
       "type": "Feature",
       "id": 38,
       "properties": {
-        "popupTitle": { "en": "#38: Gorge Boulder" },
+        "popupTitle": {
+          "en": "#38: Gorge Boulder"
+        },
         "popupContent": {
           "en": "This Anemoculus is floating in the air. You can climb up to the top of the nearby boulder, jump off, and glide to retrieve it."
         },
@@ -532,18 +808,28 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.7506398050501, 62.22656250000001]
+        "coordinates": [
+          -34.7506398050501,
+          62.22656250000001
+        ]
       }
     },
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.5223614704, 62.8747558593]
+        "coordinates": [
+          -31.5223614704,
+          62.8747558593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/dIjqhdEQmFE"
       },
       "id": 39
@@ -551,12 +837,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.7318408968, 65.0830078125]
+        "coordinates": [
+          -32.7318408968,
+          65.0830078125
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/F7hoHoDPFvs"
       },
       "id": 40
@@ -564,12 +857,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.9889184837, 65.8190917968]
+        "coordinates": [
+          -33.9889184837,
+          65.8190917968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/41"
       },
       "id": 41
@@ -577,11 +877,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.2097216452, 65.302734375]
+        "coordinates": [
+          -35.2097216452,
+          65.302734375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
         },
@@ -592,12 +897,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.8267212736, 68.4008789062]
+        "coordinates": [
+          -35.8267212736,
+          68.4008789062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_qPH8SI6pLs"
       },
       "id": 43
@@ -605,12 +917,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.8482643886, 66.3024902343]
+        "coordinates": [
+          -38.8482643886,
+          66.3024902343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Su1cuPbqfow"
       },
       "id": 44
@@ -618,12 +937,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.4835765504, 69.7302246093]
+        "coordinates": [
+          -37.4835765504,
+          69.7302246093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/5DcK4HxsNdw"
       },
       "id": 45
@@ -631,12 +957,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.0025526721, 68.0053710937]
+        "coordinates": [
+          -37.0025526721,
+          68.0053710937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/VhbqERK9vjY"
       },
       "id": 46
@@ -644,12 +977,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.666222341, 73.0920410156]
+        "coordinates": [
+          -35.666222341,
+          73.0920410156
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Nbcr7reBQ6A"
       },
       "id": 47
@@ -657,12 +997,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.2875315892, 61.1828613281]
+        "coordinates": [
+          -30.2875315892,
+          61.1828613281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/u4xgWVtjgRY"
       },
       "id": 48
@@ -670,12 +1017,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.6662659463, 63.4130859375]
+        "coordinates": [
+          -30.6662659463,
+          63.4130859375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/F4sMCaP0ZUI"
       },
       "id": 49
@@ -683,12 +1037,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.0999817937, 64.6875]
+        "coordinates": [
+          -31.0999817937,
+          64.6875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/50"
       },
       "id": 50
@@ -696,12 +1057,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.8692288489, 63.5888671875]
+        "coordinates": [
+          -29.8692288489,
+          63.5888671875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=65IuX05dvAc"
       },
       "id": 51
@@ -709,12 +1077,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.2001234776, 65.4675292968]
+        "coordinates": [
+          -29.2001234776,
+          65.4675292968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/dXaDQlFZZy8"
       },
       "id": 52
@@ -722,12 +1097,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-28.4783486922, 63.5339355468]
+        "coordinates": [
+          -28.4783486922,
+          63.5339355468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/53"
       },
       "id": 53
@@ -735,12 +1117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-25.2745035178, 63.5119628906]
+        "coordinates": [
+          -25.2745035178,
+          63.5119628906
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/54"
       },
       "id": 54
@@ -748,12 +1137,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-26.18501825, 67.8625488281]
+        "coordinates": [
+          -26.18501825,
+          67.8625488281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/55"
       },
       "id": 55
@@ -761,12 +1157,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-24.9462190743, 70.9497070312]
+        "coordinates": [
+          -24.9462190743,
+          70.9497070312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/56"
       },
       "id": 56
@@ -774,12 +1177,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-22.7153900193, 68.994140625]
+        "coordinates": [
+          -22.7153900193,
+          68.994140625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/t408wedYlbg"
       },
       "id": 57
@@ -787,12 +1197,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-19.093266636, 62.5231933593]
+        "coordinates": [
+          -19.093266636,
+          62.5231933593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/1GrLLLimHYs"
       },
       "id": 58
@@ -800,12 +1217,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.1512884498, 61.1389160156]
+        "coordinates": [
+          -17.1512884498,
+          61.1389160156
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fZfuDaGBfY4"
       },
       "id": 59
@@ -813,12 +1237,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-18.4483467029, 68.1866455078]
+        "coordinates": [
+          -18.4483467029,
+          68.1866455078
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "mondstadt/anemoculus/60"
       },
       "id": 60
@@ -826,12 +1257,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-16.4255475069, 71.4331054687]
+        "coordinates": [
+          -16.4255475069,
+          71.4331054687
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/yo57sy-HwqQ"
       },
       "id": 61
@@ -839,12 +1277,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.0434912168, 79.892578125]
+        "coordinates": [
+          -21.0434912168,
+          79.892578125
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/XjU1JKupzvI"
       },
       "id": 62
@@ -852,12 +1297,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.8521697014, 83.6059570312]
+        "coordinates": [
+          -33.8521697014,
+          83.6059570312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fZfuDaGBfY4"
       },
       "id": 63
@@ -865,12 +1317,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-20.6841837793, 54.9206542968]
+        "coordinates": [
+          -20.6841837793,
+          54.9206542968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ZE-NYhyU44M"
       },
       "id": 64
@@ -878,12 +1337,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.5246272205, 55.6127929687]
+        "coordinates": [
+          -21.5246272205,
+          55.6127929687
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ZE-NYhyU44M"
       },
       "id": 65

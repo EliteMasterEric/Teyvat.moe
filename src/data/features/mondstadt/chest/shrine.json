@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Shrine" },
+  "name": {
+    "en": "Shrine",
+    "pt": "Santuário"
+  },
   "cluster": false,
   "icons": {
     "filter": "mondstadt-shrine",
@@ -14,11 +17,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.5497718325, 62.666015625]
+        "coordinates": [
+          -17.5497718325,
+          62.666015625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #10" },
+        "popupTitle": {
+          "en": "Shrine #10"
+        },
         "popupContent": {
           "en": "This shrine is located past the hilichurl tower, nearby to the Anemo Hypostasis arena."
         },
@@ -29,12 +37,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-21.4632934418, 69.5434570312]
+        "coordinates": [
+          -21.4632934418,
+          69.5434570312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #2" },
-        "popupContent": { "en": "This shrine is located below Starsnatch Cliff." },
+        "popupTitle": {
+          "en": "Shrine #2"
+        },
+        "popupContent": {
+          "en": "This shrine is located below Starsnatch Cliff."
+        },
         "popupMedia": "mondstadt/shrine/2"
       },
       "id": 2
@@ -42,12 +57,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.5639015514, 59.5568847656]
+        "coordinates": [
+          -29.5639015514,
+          59.5568847656
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #3" },
-        "popupContent": { "en": "This shrine is nestled within the cliff near Springvale." },
+        "popupTitle": {
+          "en": "Shrine #3"
+        },
+        "popupContent": {
+          "en": "This shrine is nestled within the cliff near Springvale."
+        },
         "popupMedia": "mondstadt/shrine/3"
       },
       "id": 3
@@ -55,11 +77,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.5543451257, 54.1516113281]
+        "coordinates": [
+          -29.5543451257,
+          54.1516113281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #4" },
+        "popupTitle": {
+          "en": "Shrine #4"
+        },
         "popupContent": {
           "en": "This shrine is located in the middle of a field near Springvale, by the cliff with an Anemoculus under it."
         },
@@ -70,11 +97,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.9625864419, 62.4353027343]
+        "coordinates": [
+          -32.9625864419,
+          62.4353027343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #5" },
+        "popupTitle": {
+          "en": "Shrine #5"
+        },
         "popupContent": {
           "en": "This shrine is located by a cliff near a river gorge, south of the large tree by the Statue of the Seven."
         },
@@ -85,12 +117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.011325943, 63.896484375]
+        "coordinates": [
+          -37.011325943,
+          63.896484375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #6" },
-        "popupContent": { "en": "This shrine is located far up the cliffs near the world border." },
+        "popupTitle": {
+          "en": "Shrine #6"
+        },
+        "popupContent": {
+          "en": "This shrine is located far up the cliffs near the world border."
+        },
         "popupMedia": ""
       },
       "id": 6
@@ -98,11 +137,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.4431586745, 67.0935058593]
+        "coordinates": [
+          -34.4431586745,
+          67.0935058593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #7" },
+        "popupTitle": {
+          "en": "Shrine #7"
+        },
         "popupContent": {
           "en": "This shrine is located up at the top of a cliff near Dadaupa Gorge."
         },
@@ -113,11 +157,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-27.4985267227, 48.9880371093]
+        "coordinates": [
+          -27.4985267227,
+          48.9880371093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #8" },
+        "popupTitle": {
+          "en": "Shrine #8"
+        },
         "popupContent": {
           "en": "This shrine is located in the plain to the north of Andrius' arena."
         },
@@ -128,11 +177,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.6512851989, 47.9553222656]
+        "coordinates": [
+          -34.6512851989,
+          47.9553222656
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #9" },
+        "popupTitle": {
+          "en": "Shrine #9"
+        },
         "popupContent": {
           "en": "This shrine is located across the water near the border to Liyue."
         },
@@ -143,11 +197,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-19.3007748258, 52.8662109375]
+        "coordinates": [
+          -19.3007748258,
+          52.8662109375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #10" },
+        "popupTitle": {
+          "en": "Shrine #10"
+        },
         "popupContent": {
           "en": "This shrine is located at the top of a far cliff to the east of Stormterror's lair."
         },

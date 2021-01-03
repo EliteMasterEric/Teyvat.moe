@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Cryo Regisvine" },
+  "name": {
+    "en": "Cryo Regisvine",
+    "pt": "Regisvine Cryo"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-28.04289477256162, 69.46655273437501]
+        "coordinates": [
+          -28.04289477256162,
+          69.46655273437501
+        ]
       },
       "type": "Feature",
       "properties": {
