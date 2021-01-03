@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Luxurious Chest" },
+  "name": {
+    "en": "Luxurious Chest",
+    "pt": "Baú Luxuoso"
+  },
   "cluster": true,
   "icons": {
     "filter": "luxurious-chest",
@@ -14,11 +17,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-57.44494943583983, 43.736572265625]
+        "coordinates": [
+          -57.44494943583983,
+          43.736572265625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#4: Liyue Harbor Tower" },
+        "popupTitle": {
+          "en": "#4: Liyue Harbor Tower"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is found by climbing to the top of the south tower of Liyue Harbor."
         },
@@ -27,10 +35,18 @@
       "id": 735
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-54.552951560561894, 55.4150390625] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.552951560561894,
+          55.4150390625
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#7: Guyun Gauntlet" },
+        "popupTitle": {
+          "en": "#7: Guyun Gauntlet"
+        },
         "popupContent": {
           "en": "This Luxurious Chest will only spawn after defeating all four of the Ruin Guards that spawn on this island. Oh yeah, and they're all going to attack you at the same time."
         },
@@ -39,10 +55,18 @@
       "id": 179
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-47.68018294648414, 55.97534179687501] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.68018294648414,
+          55.97534179687501
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#8: Unswerving" },
+        "popupTitle": {
+          "en": "#8: Unswerving"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is unlocked when you and another player (via Co-Op) stand within the heart-shaped formation on this island. You claim an achievement for unlocking this chest too."
         },
@@ -54,7 +78,10 @@
       "id": 2003,
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.90984851278422, 62.47064415228354]
+        "coordinates": [
+          -53.90984851278422,
+          62.47064415228354
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -68,10 +95,18 @@
       }
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-52.8823912222619, 40.166015625] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.8823912222619,
+          40.166015625
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#13: Liyue Port Mountain" },
+        "popupTitle": {
+          "en": "#13: Liyue Port Mountain"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located on a pillar at the top of a mountain north of Liyue Harbor. Ignite the torch inside the wooden square to trigger a wind gust and allowing you to glide to the chest."
         },
@@ -80,10 +115,18 @@
       "id": 608
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-33.020944662786654, 37.57324218750001] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -33.020944662786654,
+          37.57324218750001
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#14: Wuwang Hill Hidden Chest" },
+        "popupTitle": {
+          "en": "#14: Wuwang Hill Hidden Chest"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located nearby to the puzzle but is not connected to it. Drop down onto the cliff nearby the tree to find the chest tucked away in the corner."
         },
@@ -95,7 +138,10 @@
       "id": 2004,
       "geometry": {
         "type": "Point",
-        "coordinates": [-56.97492429075949, 47.98828125000001]
+        "coordinates": [
+          -56.97492429075949,
+          47.98828125000001
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -112,7 +158,10 @@
       "id": 2005,
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.80608653412717, 23.961181640625004]
+        "coordinates": [
+          -49.80608653412717,
+          23.961181640625004
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -129,7 +178,10 @@
       "id": 2006,
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.813176333376134, 24.488525390625]
+        "coordinates": [
+          -49.813176333376134,
+          24.488525390625
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -146,7 +198,10 @@
       "id": 2007,
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.884017217246566, 24.400634765625004]
+        "coordinates": [
+          -49.884017217246566,
+          24.400634765625004
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -163,7 +218,10 @@
       "id": 2008,
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.96182229868412, 24.49951171875]
+        "coordinates": [
+          -49.96182229868412,
+          24.49951171875
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -177,10 +235,18 @@
       }
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-52.76289173758373, 31.453857421875004] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.76289173758373,
+          31.453857421875004
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#21: Dunyu Ruins Ledge" },
+        "popupTitle": {
+          "en": "#21: Dunyu Ruins Ledge"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located in plain sight on this ledge at the Dunyu Ruins."
         },
@@ -192,7 +258,10 @@
       "id": 2009,
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.8459123539017, 31.063842773437504]
+        "coordinates": [
+          -52.8459123539017,
+          31.063842773437504
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -206,10 +275,18 @@
       }
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-52.869129727685205, 30.146484375000004] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.869129727685205,
+          30.146484375000004
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#23: Dunyu Ruins (Second Floor)" },
+        "popupTitle": {
+          "en": "#23: Dunyu Ruins (Second Floor)"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located in the room with the Seelie in the cave across from the Dunyu Ruins."
         },
@@ -218,10 +295,18 @@
       "id": 539
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-58.51374222830473, 26.081557872437607] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.51374222830473,
+          26.081557872437607
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#24: Qingxu Pool (Nameless Treasure)" },
+        "popupTitle": {
+          "en": "#24: Qingxu Pool (Nameless Treasure)"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located by locating the Ancient Tablet here, then activating Geo on each of the five seals in the towers. This chest contains one of three Nameless Treasures, which you can sell once you complete the set."
         },
@@ -230,10 +315,18 @@
       "id": 565
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-43.08493742707593, 24.01611328125] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.08493742707593,
+          24.01611328125
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#25: Qingyun Peak Floating island" },
+        "popupTitle": {
+          "en": "#25: Qingyun Peak Floating island"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located on an island far above Qingyun Peak, which is accessed by completing the Three Birds puzzle to create a wind gust. This Chest notably contains the recipe for the 5-star Warrior's Dish, the Adeptus' Temptation."
         },
@@ -245,7 +338,10 @@
       "id": 2010,
       "geometry": {
         "type": "Point",
-        "coordinates": [-50.69077185556627, 34.185509737364136]
+        "coordinates": [
+          -50.69077185556627,
+          34.185509737364136
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -259,10 +355,18 @@
       }
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-47.15984001304432, 41.52832031250001] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.15984001304432,
+          41.52832031250001
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#27: Treasure Lost, Treasure found" },
+        "popupTitle": {
+          "en": "#27: Treasure Lost, Treasure found"
+        },
         "popupContent": {
           "en": "This Luxurious Chest can be found in the hole, and is unlocked by completing the 'Treasure Lost, Treasure Found' World Quest by talking to Soraya in this area."
         },
@@ -274,7 +378,10 @@
       "id": 2011,
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.97528500664138, 28.289212835160413]
+        "coordinates": [
+          -55.97528500664138,
+          28.289212835160413
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -288,10 +395,18 @@
       }
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-27.712710260887462, 34.13452148437501] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -27.712710260887462,
+          34.13452148437501
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#29: The Chi of Guyun" },
+        "popupTitle": {
+          "en": "#29: The Chi of Guyun"
+        },
         "popupContent": {
           "en": "This Luxurious Chest is located in a cave (NOT ON TOP OF THE CLIFF) and can be accessed by completing 'The Chi of Guyun' World Quest by talking to Yan'er near the ruin in Bishui Plain."
         },
@@ -300,10 +415,18 @@
       "id": 69
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-48.212276939690916, 30.225187546967764] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.212276939690916,
+          30.225187546967764
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "#30: Nine Pillars of Peace" },
+        "popupTitle": {
+          "en": "#30: Nine Pillars of Peace"
+        },
         "popupContent": {
           "en": "This Luxurious Chest can be found in the ruins that are opened by completing the Nine Pillars of Peace World Quest in this area, using the stones received as rewards for locating all the Geoculus in Liyue. There is a 5-star Royal Flower nearby."
         },

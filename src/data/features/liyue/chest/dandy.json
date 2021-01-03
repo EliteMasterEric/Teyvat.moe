@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Dandy" },
+  "name": {
+    "en": "Dandy",
+    "pt": "Dandy"
+  },
   "cluster": false,
   "icons": {
     "filter": "dandy",
@@ -12,31 +15,61 @@
   },
   "data": [
     {
-      "geometry": { "type": "Point", "coordinates": [-45.460130637921, 48.42773437500001] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.460130637921,
+          48.42773437500001
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 4
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-30.05007652169871, 36.02416992187501] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -30.05007652169871,
+          36.02416992187501
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "liyue/dandy/1"
       },
       "id": 1
     },
     {
-      "geometry": { "type": "Point", "coordinates": [-36.191092021824524, 26.114501953125004] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.191092021824524,
+          26.114501953125004
+        ]
+      },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 3

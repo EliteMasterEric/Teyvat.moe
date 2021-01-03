@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Geo Hypostasis" },
+  "name": {
+    "en": "Geo Hypostasis",
+    "pt": "Hypostasis Geo"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-50.897015170100225, 57.49879959706563]
+        "coordinates": [
+          -50.897015170100225,
+          57.49879959706563
+        ]
       },
       "type": "Feature",
       "properties": {

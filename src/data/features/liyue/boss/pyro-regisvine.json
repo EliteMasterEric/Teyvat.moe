@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Pyro Regisvine" },
+  "name": {
+    "en": "Pyro Regisvine",
+    "pt": "Árvore Queimada"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.373480573412145, 30.946042269354955]
+        "coordinates": [
+          -49.373480573412145,
+          30.946042269354955
+        ]
       },
       "type": "Feature",
       "properties": {

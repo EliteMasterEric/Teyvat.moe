@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Oceanid" },
+  "name": {
+    "en": "Oceanid",
+    "pt": "Oceanid"
+  },
   "cluster": false,
   "respawn": 180,
   "icons": {
@@ -18,7 +21,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.02504144466066, 40.76543526591035]
+        "coordinates": [
+          -32.02504144466066,
+          40.76543526591035
+        ]
       },
       "type": "Feature",
       "properties": {

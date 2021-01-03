@@ -1,34 +1,72 @@
 {
-  "name": { "en": "Geoculus" },
+  "name": {
+    "en": "Geoculus",
+    "pt": "Geoculus"
+  },
   "cluster": false,
   "icons": {
     "filter": "geoculus",
     "base": {
       "key": "geoculus",
-      "iconSize": [34, 32],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        34,
+        32
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     },
     "done": {
       "key": "geoculus",
-      "iconSize": [34, 32],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        34,
+        32
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-27.6835280837, 33.9367675781]
+        "coordinates": [
+          -27.6835280837,
+          33.9367675781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "This Geoculus is UNDERGROUND, you have to complete the Chi of Guyun quest to open the cave and find this Oculus."
         },
@@ -39,12 +77,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.7229488247, 32.8491210937]
+        "coordinates": [
+          -30.7229488247,
+          32.8491210937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_oISBLhctoQ"
       },
       "id": 102
@@ -52,12 +97,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-29.916852233, 32.5964355468]
+        "coordinates": [
+          -29.916852233,
+          32.5964355468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=bBkbX5NdypU"
       },
       "id": 103
@@ -65,12 +117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-30.0405664305, 35.8923339843]
+        "coordinates": [
+          -30.0405664305,
+          35.8923339843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/6F1q6aCpU14"
       },
       "id": 104
@@ -78,12 +137,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.2597699873, 34.2993164062]
+        "coordinates": [
+          -31.2597699873,
+          34.2993164062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/LBAG5Eew2Uc"
       },
       "id": 105
@@ -91,12 +157,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.9335167619, 37.1337890625]
+        "coordinates": [
+          -31.9335167619,
+          37.1337890625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/P1gZD_oojlw"
       },
       "id": 106
@@ -104,12 +177,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-31.5036293057, 38.1884765625]
+        "coordinates": [
+          -31.5036293057,
+          38.1884765625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Hqlcz3_1HOc"
       },
       "id": 107
@@ -117,12 +197,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.0639555946, 34.9694824218]
+        "coordinates": [
+          -32.0639555946,
+          34.9694824218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=jri_1uDe67c"
       },
       "id": 108
@@ -130,12 +217,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.5653331608, 32.1899414062]
+        "coordinates": [
+          -32.5653331608,
+          32.1899414062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=m0uoxxgwFE4"
       },
       "id": 109
@@ -143,12 +237,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.073130945, 33.7609863281]
+        "coordinates": [
+          -33.073130945,
+          33.7609863281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=frKU3-5RHP4"
       },
       "id": 110
@@ -156,12 +257,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-32.9257074887, 36.5295410156]
+        "coordinates": [
+          -32.9257074887,
+          36.5295410156
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=frKU3-5RHP4"
       },
       "id": 111
@@ -169,12 +277,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.2019241897, 37.0788574218]
+        "coordinates": [
+          -33.2019241897,
+          37.0788574218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/7A5eZr2IwN0"
       },
       "id": 112
@@ -182,12 +297,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-33.2938035583, 38.6059570312]
+        "coordinates": [
+          -33.2938035583,
+          38.6059570312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/JcvH4Msr7sE"
       },
       "id": 113
@@ -195,12 +317,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.4340978935, 36.0900878906]
+        "coordinates": [
+          -34.4340978935,
+          36.0900878906
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/hIt-wuV6qR0"
       },
       "id": 114
@@ -208,12 +337,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.1618181612, 32.0031738281]
+        "coordinates": [
+          -34.1618181612,
+          32.0031738281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/l41ujULyFdQ"
       },
       "id": 115
@@ -221,12 +357,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.3711350228, 33.4643554687]
+        "coordinates": [
+          -35.3711350228,
+          33.4643554687
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=e7Mg2QVb7IU"
       },
       "id": 116
@@ -234,12 +377,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.0839555792, 33.9916992187]
+        "coordinates": [
+          -35.0839555792,
+          33.9916992187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=5WaT4WIjzww"
       },
       "id": 117
@@ -247,12 +397,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.0224466817, 35.8374023437]
+        "coordinates": [
+          -36.0224466817,
+          35.8374023437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=f6DYNZqARJA"
       },
       "id": 118
@@ -260,12 +417,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.1690715771, 35.4968261718]
+        "coordinates": [
+          -37.1690715771,
+          35.4968261718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=q2AWCQgDNV4"
       },
       "id": 119
@@ -273,12 +437,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.3711350228, 36.3977050781]
+        "coordinates": [
+          -35.3711350228,
+          36.3977050781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=p7CRiE3COpo"
       },
       "id": 120
@@ -286,12 +457,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.9309785883, 39.5727539062]
+        "coordinates": [
+          -34.9309785883,
+          39.5727539062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/eWJ2xfl7F5k"
       },
       "id": 121
@@ -299,12 +477,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.7643434796, 38.3093261718]
+        "coordinates": [
+          -35.7643434796,
+          38.3093261718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=VQGYXcdGZ6s"
       },
       "id": 122
@@ -312,12 +497,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.5714238234, 38.1555175781]
+        "coordinates": [
+          -36.5714238234,
+          38.1555175781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=Dr8NtwiE7PA"
       },
       "id": 123
@@ -325,12 +517,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.840156836, 38.4741210937]
+        "coordinates": [
+          -37.840156836,
+          38.4741210937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/wEi9tKv1WrQ"
       },
       "id": 124
@@ -338,12 +537,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.2708502072, 39.5288085937]
+        "coordinates": [
+          -36.2708502072,
+          39.5288085937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=27kk3_oo0Y4"
       },
       "id": 125
@@ -351,12 +557,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.6151266834, 42.1215820312]
+        "coordinates": [
+          -34.6151266834,
+          42.1215820312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=sS3TeKtq_0w"
       },
       "id": 126
@@ -364,12 +577,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.1165261849, 40.60546875]
+        "coordinates": [
+          -37.1165261849,
+          40.60546875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/A1W40-FFaos"
       },
       "id": 127
@@ -377,12 +597,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.1431975016, 42.0227050781]
+        "coordinates": [
+          -38.1431975016,
+          42.0227050781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=_OPHL0nEjUM"
       },
       "id": 128
@@ -390,12 +617,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-40.622291783, 38.6499023437]
+        "coordinates": [
+          -40.622291783,
+          38.6499023437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/b4neonDG6G8"
       },
       "id": 129
@@ -403,12 +637,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-39.6987341434, 36.5405273437]
+        "coordinates": [
+          -39.6987341434,
+          36.5405273437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Payo3R_KvN8"
       },
       "id": 130
@@ -416,12 +657,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.8225909761, 46.9445800781]
+        "coordinates": [
+          -38.8225909761,
+          46.9445800781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/6nCM9Bh0bms"
       },
       "id": 131
@@ -429,12 +677,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.3747783611, 40.0561523437]
+        "coordinates": [
+          -42.3747783611,
+          40.0561523437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=s4BG2yCm0-4"
       },
       "id": 132
@@ -442,12 +697,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.3016903282, 39.5947265625]
+        "coordinates": [
+          -42.3016903282,
+          39.5947265625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=_dHJCE3ghtc"
       },
       "id": 133
@@ -455,12 +717,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.9885764583, 40.9460449218]
+        "coordinates": [
+          -42.9885764583,
+          40.9460449218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fpDNLbGBB_M"
       },
       "id": 134
@@ -468,12 +737,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.7958880981, 42.6599121093]
+        "coordinates": [
+          -41.7958880981,
+          42.6599121093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/cb6AuN0XtH0"
       },
       "id": 135
@@ -481,12 +757,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.8204550961, 48.4387207031]
+        "coordinates": [
+          -41.8204550961,
+          48.4387207031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/qLL2IJohxxY"
       },
       "id": 136
@@ -494,12 +777,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.5045028529, 47.0324707031]
+        "coordinates": [
+          -42.5045028529,
+          47.0324707031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Z_PyWFE3_bw"
       },
       "id": 137
@@ -507,12 +797,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.9483813976, 48.5046386718]
+        "coordinates": [
+          -42.9483813976,
+          48.5046386718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Ay9wstp-ryM"
       },
       "id": 138
@@ -520,12 +817,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.1170241213, 46.23046875]
+        "coordinates": [
+          -43.1170241213,
+          46.23046875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ad9tLw6p-j4"
       },
       "id": 139
@@ -533,12 +837,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.9770046749, 46.0876464843]
+        "coordinates": [
+          -43.9770046749,
+          46.0876464843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/wi-4J60ey4g"
       },
       "id": 140
@@ -546,12 +857,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.0718004675, 49.1748046875]
+        "coordinates": [
+          -44.0718004675,
+          49.1748046875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/gDSqEBtTCuA"
       },
       "id": 141
@@ -559,12 +877,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-46.9540119257, 51.1907958984]
+        "coordinates": [
+          -46.9540119257,
+          51.1907958984
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=Xw_zZFpvX0Y"
       },
       "id": 142
@@ -572,12 +897,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.7828483519, 48.2189941406]
+        "coordinates": [
+          -45.7828483519,
+          48.2189941406
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/gMQl7oU7WwU"
       },
       "id": 143
@@ -585,12 +917,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.7467332402, 51.6027832031]
+        "coordinates": [
+          -44.7467332402,
+          51.6027832031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=Fsp17ET7yAY"
       },
       "id": 144
@@ -598,12 +937,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.2980751387, 52.3388671875]
+        "coordinates": [
+          -45.2980751387,
+          52.3388671875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=TDY2BHRgAhM"
       },
       "id": 145
@@ -611,12 +957,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-46.7248003746, 51.6027832031]
+        "coordinates": [
+          -46.7248003746,
+          51.6027832031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://i.ytimg.com/an_webp/2k-GmymCm8c/mqdefault_6s.webp?du=3000&sqp=COjFpv4F&rs=AOn4CLAy1tx0BoK0K1i-y80cPPjP5dO6sQ"
       },
       "id": 146
@@ -624,12 +977,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-47.8205318674, 47.8454589843]
+        "coordinates": [
+          -47.8205318674,
+          47.8454589843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/u05pkN8uXys"
       },
       "id": 147
@@ -637,11 +997,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-47.5394554474, 56.1401367187]
+        "coordinates": [
+          -47.5394554474,
+          56.1401367187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "This one is on the island with the chest from the Unswerving achievement."
         },
@@ -652,12 +1017,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.4225229542, 53.3166503906]
+        "coordinates": [
+          -52.4225229542,
+          53.3166503906
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ofP8HiSKprY"
       },
       "id": 149
@@ -665,12 +1037,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.2681573737, 58.1176757812]
+        "coordinates": [
+          -52.2681573737,
+          58.1176757812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/8OKzpVX-8cg"
       },
       "id": 150
@@ -678,12 +1057,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.2257684357, 59.7875976562]
+        "coordinates": [
+          -53.2257684357,
+          59.7875976562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/IbVCIy8XkpA"
       },
       "id": 151
@@ -691,12 +1077,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-54.3421488644, 55.7556152343]
+        "coordinates": [
+          -54.3421488644,
+          55.7556152343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/2utYOoiE2cc"
       },
       "id": 152
@@ -704,12 +1097,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.9414733548, 44.6484375]
+        "coordinates": [
+          -44.9414733548,
+          44.6484375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=ELzDMTpMc3U"
       },
       "id": 153
@@ -717,12 +1117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-46.0351092794, 44.0551757812]
+        "coordinates": [
+          -46.0351092794,
+          44.0551757812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/bH8yw0rAEd8"
       },
       "id": 154
@@ -730,12 +1137,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-47.0102256556, 37.9907226562]
+        "coordinates": [
+          -47.0102256556,
+          37.9907226562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/sYHVwmV3-_o"
       },
       "id": 155
@@ -743,12 +1157,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.1953874083, 41.8469238281]
+        "coordinates": [
+          -48.1953874083,
+          41.8469238281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=Srl6P1a6sm0"
       },
       "id": 156
@@ -756,12 +1177,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.8430283529, 38.1774902343]
+        "coordinates": [
+          -48.8430283529,
+          38.1774902343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_oGjEK2sEaA"
       },
       "id": 157
@@ -769,12 +1197,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.7706724688, 41.9018554687]
+        "coordinates": [
+          -48.7706724688,
+          41.9018554687
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=51FVF9MzKrg"
       },
       "id": 158
@@ -782,12 +1217,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.0882577847, 42.9675292968]
+        "coordinates": [
+          -49.0882577847,
+          42.9675292968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ZKueqjkVHUs"
       },
       "id": 159
@@ -795,12 +1237,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.8430283529, 46.5161132812]
+        "coordinates": [
+          -48.8430283529,
+          46.5161132812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/7Padelw800U"
       },
       "id": 160
@@ -808,12 +1257,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-50.176898122, 39.9353027343]
+        "coordinates": [
+          -50.176898122,
+          39.9353027343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/-dpqT_NWt90"
       },
       "id": 161
@@ -821,12 +1277,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-51.1104199102, 41.7260742187]
+        "coordinates": [
+          -51.1104199102,
+          41.7260742187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/UTeR0FQ8It4"
       },
       "id": 162
@@ -834,12 +1297,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-50.9445844349, 46.9775390625]
+        "coordinates": [
+          -50.9445844349,
+          46.9775390625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/gukEtPqcuA4"
       },
       "id": 163
@@ -847,12 +1317,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-51.8561388502, 45.4614257812]
+        "coordinates": [
+          -51.8561388502,
+          45.4614257812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/HLT9FbqmLjc"
       },
       "id": 164
@@ -860,12 +1337,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.3243115198, 38.0676269531]
+        "coordinates": [
+          -53.3243115198,
+          38.0676269531
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/iM7Vu_qkIVw"
       },
       "id": 165
@@ -873,12 +1357,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.7894755813, 40.0231933593]
+        "coordinates": [
+          -52.7894755813,
+          40.0231933593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/d5k51FMRPG8"
       },
       "id": 166
@@ -886,12 +1377,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.4760890412, 41.3305664062]
+        "coordinates": [
+          -52.4760890412,
+          41.3305664062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/FdngacwvRiM"
       },
       "id": 167
@@ -899,12 +1397,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-50.3384488872, 34.3981933593]
+        "coordinates": [
+          -50.3384488872,
+          34.3981933593
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/6FLqwiBfPkc"
       },
       "id": 168
@@ -912,12 +1417,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.0927571603, 34.3432617187]
+        "coordinates": [
+          -48.0927571603,
+          34.3432617187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/3yiGWV95dHA"
       },
       "id": 169
@@ -925,12 +1437,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.7595676154, 29.8059082031]
+        "coordinates": [
+          -52.7595676154,
+          29.8059082031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=KYBGLVIv5jA"
       },
       "id": 170
@@ -938,12 +1457,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.8890204489, 31.1242675781]
+        "coordinates": [
+          -52.8890204489,
+          31.1242675781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/eJeD2J6PwjQ"
       },
       "id": 171
@@ -951,12 +1477,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-52.7296390978, 31.8933105468]
+        "coordinates": [
+          -52.7296390978,
+          31.8933105468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/ce5rmzezcX4"
       },
       "id": 172
@@ -964,12 +1497,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.488045536, 26.8011474609]
+        "coordinates": [
+          -53.488045536,
+          26.8011474609
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/30_rGj-Ey2o"
       },
       "id": 173
@@ -977,12 +1517,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-54.2972935423, 28.2568359375]
+        "coordinates": [
+          -54.2972935423,
+          28.2568359375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/fdjh_vpIEgE"
       },
       "id": 174
@@ -990,12 +1537,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.7147345501, 26.3891601562]
+        "coordinates": [
+          -55.7147345501,
+          26.3891601562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/8Y7uYeknUBg"
       },
       "id": 175
@@ -1003,12 +1557,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-56.0352257836, 29.1027832031]
+        "coordinates": [
+          -56.0352257836,
+          29.1027832031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/--s1JgO07GE"
       },
       "id": 176
@@ -1016,12 +1577,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-56.7948622614, 26.1804199218]
+        "coordinates": [
+          -56.7948622614,
+          26.1804199218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/gZG2wHny7ho"
       },
       "id": 177
@@ -1029,12 +1597,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.6713892882, 32.1240234375]
+        "coordinates": [
+          -55.6713892882,
+          32.1240234375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/-d_Ut55rxLw"
       },
       "id": 178
@@ -1042,12 +1617,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-54.9271418645, 36.3427734375]
+        "coordinates": [
+          -54.9271418645,
+          36.3427734375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_gDVa1v-jvA"
       },
       "id": 179
@@ -1055,12 +1637,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.1286490684, 35.7165527343]
+        "coordinates": [
+          -55.1286490684,
+          35.7165527343
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/HFAXa5jLRT0"
       },
       "id": 180
@@ -1068,12 +1657,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-55.8629823119, 35.771484375]
+        "coordinates": [
+          -55.8629823119,
+          35.771484375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/e6zWmirYLUw"
       },
       "id": 181
@@ -1081,12 +1677,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-56.3956644447, 34.7607421875]
+        "coordinates": [
+          -56.3956644447,
+          34.7607421875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/pXwdxI22Y-k"
       },
       "id": 182
@@ -1094,12 +1697,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-57.0765747227, 37.0349121093]
+        "coordinates": [
+          -57.0765747227,
+          37.0349121093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/tTICslXMqQ4"
       },
       "id": 183
@@ -1107,11 +1717,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-57.7334848338, 37.5567626953]
+        "coordinates": [
+          -57.7334848338,
+          37.5567626953
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
         "popupContent": {
           "en": "There is a small cave underneath the statue; the entrance is covered by foliage."
         },
@@ -1122,12 +1737,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-58.4132225905, 33.4973144531]
+        "coordinates": [
+          -58.4132225905,
+          33.4973144531
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/TSEFDAiZHyQ"
       },
       "id": 185
@@ -1135,12 +1757,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-58.3901969841, 31.2670898437]
+        "coordinates": [
+          -58.3901969841,
+          31.2670898437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Zk7rlyDZ8eU"
       },
       "id": 186
@@ -1148,12 +1777,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-58.619777025, 26.3781738281]
+        "coordinates": [
+          -58.619777025,
+          26.3781738281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/avPznFh1zxk"
       },
       "id": 187
@@ -1161,12 +1797,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-49.8804776387, 24.0161132812]
+        "coordinates": [
+          -49.8804776387,
+          24.0161132812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/LWJMVqsBeIQ"
       },
       "id": 188
@@ -1174,12 +1817,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.5747899109, 23.90625]
+        "coordinates": [
+          -48.5747899109,
+          23.90625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/hK8loD5l0S4"
       },
       "id": 189
@@ -1187,12 +1837,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-34.2617565244, 27.9711914062]
+        "coordinates": [
+          -34.2617565244,
+          27.9711914062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/N3bRA1s90YQ"
       },
       "id": 190
@@ -1200,12 +1857,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.2531331969, 25.8837890625]
+        "coordinates": [
+          -36.2531331969,
+          25.8837890625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/-MBQykDN_io"
       },
       "id": 191
@@ -1213,12 +1877,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.7828920619, 26.7736816406]
+        "coordinates": [
+          -36.7828920619,
+          26.7736816406
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/dLqK34fv2r4"
       },
       "id": 192
@@ -1226,12 +1897,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-36.5272948145, 29.9047851562]
+        "coordinates": [
+          -36.5272948145,
+          29.9047851562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/MKhJGbjT3As"
       },
       "id": 193
@@ -1239,12 +1917,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.7283759182, 26.0046386718]
+        "coordinates": [
+          -38.7283759182,
+          26.0046386718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/hyqEurczc4U"
       },
       "id": 194
@@ -1252,12 +1937,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-39.4361929993, 31.8273925781]
+        "coordinates": [
+          -39.4361929993,
+          31.8273925781
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/oL5PQc__t-8"
       },
       "id": 195
@@ -1265,12 +1957,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.6122167681, 37.2766113281]
+        "coordinates": [
+          -43.6122167681,
+          37.2766113281
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/qvHN2rmTj7A"
       },
       "id": 196
@@ -1278,12 +1977,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.1490939992, 35.3540039062]
+        "coordinates": [
+          -43.1490939992,
+          35.3540039062
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/-bvFk5NcUDw"
       },
       "id": 197
@@ -1291,12 +1997,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-47.4429499951, 32.958984375]
+        "coordinates": [
+          -47.4429499951,
+          32.958984375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/KXJAHCqbWSA"
       },
       "id": 198
@@ -1304,12 +2017,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.2671547633, 32.34375]
+        "coordinates": [
+          -45.2671547633,
+          32.34375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/eWs35HkCn8A"
       },
       "id": 199
@@ -1317,12 +2037,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-56.9809114245, 47.5927734375]
+        "coordinates": [
+          -56.9809114245,
+          47.5927734375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/INxp5VJXQQg"
       },
       "id": 200
@@ -1330,12 +2057,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.6122167681, 31.1022949218]
+        "coordinates": [
+          -43.6122167681,
+          31.1022949218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/Wrloz2mfQ2k"
       },
       "id": 201
@@ -1343,12 +2077,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.0580014353, 29.2346191406]
+        "coordinates": [
+          -45.0580014353,
+          29.2346191406
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/rdDBPxpy1r0"
       },
       "id": 202
@@ -1356,12 +2097,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.8211434007, 27.7954101562]
+        "coordinates": [
+          -45.8211434007,
+          27.7954101562
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/CwVA8PHdpXU"
       },
       "id": 203
@@ -1369,12 +2117,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.9492492666, 26.5869140625]
+        "coordinates": [
+          -44.9492492666,
+          26.5869140625
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/-QuBn6A1mwM"
       },
       "id": 204
@@ -1382,12 +2137,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.063906608, 27.1801757812]
+        "coordinates": [
+          -44.063906608,
+          27.1801757812
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/9mgBKTXisGY"
       },
       "id": 205
@@ -1395,12 +2157,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.1822039577, 26.0925292968]
+        "coordinates": [
+          -44.1822039577,
+          26.0925292968
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/bWevd8RHjOI"
       },
       "id": 206
@@ -1408,12 +2177,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.7790266216, 25.7849121093]
+        "coordinates": [
+          -43.7790266216,
+          25.7849121093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_7FsPnXKluE"
       },
       "id": 207
@@ -1421,12 +2197,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.2130035559, 24.6423339843]
+        "coordinates": [
+          -45.2130035559,
+          24.6423339843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/qSNqjNxZUns"
       },
       "id": 208
@@ -1434,12 +2217,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.0207135942, 24.0710449218]
+        "coordinates": [
+          -43.0207135942,
+          24.0710449218
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=v7RC6BNfIlk"
       },
       "id": 209
@@ -1447,12 +2237,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.8204550961, 26.7077636718]
+        "coordinates": [
+          -41.8204550961,
+          26.7077636718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/eZqEoVE_Uyk"
       },
       "id": 210
@@ -1460,12 +2257,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-40.9716035327, 27.3999023437]
+        "coordinates": [
+          -40.9716035327,
+          27.3999023437
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/8Zj11TdoflY"
       },
       "id": 211
@@ -1473,12 +2277,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.360318663, 25.6530761718]
+        "coordinates": [
+          -41.360318663,
+          25.6530761718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/kzKlHKPN_JY"
       },
       "id": 212
@@ -1486,12 +2297,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.5309788944, 21.6979980468]
+        "coordinates": [
+          -38.5309788944,
+          21.6979980468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/EWpyq7taw70"
       },
       "id": 213
@@ -1499,12 +2317,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-40.1200903802, 20.91796875]
+        "coordinates": [
+          -40.1200903802,
+          20.91796875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/OdJrH11MstQ"
       },
       "id": 214
@@ -1512,12 +2337,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.5579215778, 21.3464355468]
+        "coordinates": [
+          -41.5579215778,
+          21.3464355468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/HDrijgc5chQ"
       },
       "id": 215
@@ -1525,12 +2357,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.7057285152, 19.4787597656]
+        "coordinates": [
+          -41.7057285152,
+          19.4787597656
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/b-VlK5bCbMU"
       },
       "id": 216
@@ -1538,12 +2377,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.9186288651, 20.830078125]
+        "coordinates": [
+          -41.9186288651,
+          20.830078125
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/A33d-uYDy4w"
       },
       "id": 217
@@ -1551,12 +2397,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.1715463345, 21.4343261718]
+        "coordinates": [
+          -42.1715463345,
+          21.4343261718
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/HINlGcuI0Yw"
       },
       "id": 218
@@ -1564,12 +2417,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.4558876419, 22.4011230468]
+        "coordinates": [
+          -42.4558876419,
+          22.4011230468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/26a6XtrfdEA"
       },
       "id": 219
@@ -1577,12 +2437,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.0086201154, 19.2590332031]
+        "coordinates": [
+          -44.0086201154,
+          19.2590332031
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/wnhzkj3nMus"
       },
       "id": 220
@@ -1590,12 +2457,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.6360751559, 17.9626464843]
+        "coordinates": [
+          -43.6360751559,
+          17.9626464843
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/_CbP7zK1p-I"
       },
       "id": 221
@@ -1603,12 +2477,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.8947957646, 17.841796875]
+        "coordinates": [
+          -44.8947957646,
+          17.841796875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/gnOttevqAYw"
       },
       "id": 222
@@ -1616,12 +2497,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.7233201889, 18.5668945312]
+        "coordinates": [
+          -44.7233201889,
+          18.5668945312
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/yVXUvfXJpNg"
       },
       "id": 223
@@ -1629,12 +2517,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.2766712737, 20.2807617187]
+        "coordinates": [
+          -44.2766712737,
+          20.2807617187
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/2_zn_27kXT8"
       },
       "id": 224
@@ -1642,12 +2537,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.2766712737, 20.6433105468]
+        "coordinates": [
+          -44.2766712737,
+          20.6433105468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/e_lxSXnGMCE"
       },
       "id": 225
@@ -1655,12 +2557,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.5997003658, 39.7814941406]
+        "coordinates": [
+          -38.5997003658,
+          39.7814941406
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/5jQqUsNVnEo"
       },
       "id": 226
@@ -1668,12 +2577,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-45.5602179571, 48.9111328125]
+        "coordinates": [
+          -45.5602179571,
+          48.9111328125
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://www.youtube.com/watch?v=D8gqdZ6btCg"
       },
       "id": 227
@@ -1681,12 +2597,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-44.0481157308, 35.0573730468]
+        "coordinates": [
+          -44.0481157308,
+          35.0573730468
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/e4KUM1dKhLY"
       },
       "id": 228
@@ -1694,12 +2617,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.3264886133, 30.9375]
+        "coordinates": [
+          -37.3264886133,
+          30.9375
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/p8JcfckJhZg"
       },
       "id": 229
@@ -1707,12 +2637,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-54.8386636129, 61.6772460937]
+        "coordinates": [
+          -54.8386636129,
+          61.6772460937
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/4-X6mVEOlVc"
       },
       "id": 230
@@ -1720,12 +2657,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.244785356, 36.8701171875]
+        "coordinates": [
+          -42.244785356,
+          36.8701171875
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": "https://youtu.be/a_GtgEQLE50"
       },
       "id": 231

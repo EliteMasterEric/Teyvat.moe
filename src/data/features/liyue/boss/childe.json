@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Childe" },
+  "name": {
+    "en": "Childe",
+    "pt": "Childe"
+  },
   "cluster": false,
   "icons": {
     "filter": "childe",
@@ -17,7 +20,10 @@
       "id": 1,
       "geometry": {
         "type": "Point",
-        "coordinates": [-58.92827765143785, 41.386915835312585]
+        "coordinates": [
+          -58.92827765143785,
+          41.386915835312585
+        ]
       },
       "type": "Feature",
       "properties": {
