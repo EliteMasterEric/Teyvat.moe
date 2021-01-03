@@ -1,32 +1,66 @@
 {
   "name": {
-    "en": "Teleporter"
+    "en": "Teleporter",
+    "pt": "Ponto de Teleporte"
   },
   "cluster": false,
   "icons": {
     "filter": "teleporter",
     "base": {
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     },
     "done": {
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     }
   },
   "data": [
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.39124186883316, 57.467725568595505]
+        "coordinates": [
+          -38.39124186883316,
+          57.467725568595505
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -43,7 +77,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-35.95272076929493, 53.490249924421185]
+        "coordinates": [
+          -35.95272076929493,
+          53.490249924421185
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -60,7 +97,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-38.864611780038864, 53.27273172513041]
+        "coordinates": [
+          -38.864611780038864,
+          53.27273172513041
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -77,7 +117,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-39.64958959805563, 51.00044339325347]
+        "coordinates": [
+          -39.64958959805563,
+          51.00044339325347
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -94,7 +137,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.98294877466649, 52.17737222155896]
+        "coordinates": [
+          -42.98294877466649,
+          52.17737222155896
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -111,7 +157,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-40.947083897682504, 56.667569335490136]
+        "coordinates": [
+          -40.947083897682504,
+          56.667569335490136
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -128,7 +177,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-41.049688293574846, 59.79050919673639]
+        "coordinates": [
+          -41.049688293574846,
+          59.79050919673639
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -145,7 +197,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.11305312101859, 55.37022864686296]
+        "coordinates": [
+          -42.11305312101859,
+          55.37022864686296
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -162,7 +217,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-42.88056782366761, 59.813814718088956]
+        "coordinates": [
+          -42.88056782366761,
+          59.813814718088956
+        ]
       },
       "type": "Feature",
       "properties": {
@@ -179,7 +237,10 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-43.073811171899166, 64.55260405978103]
+        "coordinates": [
+          -43.073811171899166,
+          64.55260405978103
+        ]
       },
       "type": "Feature",
       "properties": {
