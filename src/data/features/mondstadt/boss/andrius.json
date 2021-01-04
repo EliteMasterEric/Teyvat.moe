@@ -1,6 +1,11 @@
 {
-  "name": { "en": "Andrius (Lupus Boreas)" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Andrius (Lupus Boreas)"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "boss",
   "icons": {
     "filter": "andrius",
     "base": {
@@ -14,21 +19,12 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.52567042617583, 48.57055664062501]
+      "coordinates": [-29.52567, 48.57056],
+      "id": "AA4E4E368EEE80875719345D8FE9B4F34473934A",
+      "importIds": {
+        "gm_legacy": ["mondstadtAndrius/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Andrius"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown"
     }
   ]
 }

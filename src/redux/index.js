@@ -2,10 +2,10 @@
  * This folder contains modules that handle React Redux.
  */
 import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from './ducks/index';
-import { rootMiddleware } from './middleware';
+import rootReducer from '~/redux/ducks/index';
+import { rootMiddleware } from '~/redux/middleware';
 import { loadStateFromLocalStorage } from '../components/preferences/ReduxStore';
-import watchers from './watchers';
+import watchers from '~/redux/watchers';
 
 /**
  * The store in Redux holds ALL the application's state.

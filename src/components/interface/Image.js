@@ -3,6 +3,7 @@
  * including WebP support detection and a lazy loading, WebP-sensitive image component.
  */
 
+import clsx from 'clsx';
 import React from 'react';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
@@ -76,7 +77,7 @@ export const useImageExtension = (block = false) => {
 const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
 export const Image = ({
   srcPNG,
-  srcWebP,
+  srcWebP = null,
   className = '',
   alt = '',
   scrollPosition = undefined,
@@ -86,10 +87,31 @@ export const Image = ({
   return (
     <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
       <picture>
-        <source srcSet={srcWebP} type="image/webp" />
+        {srcWebP ? <source srcSet={srcWebP} type="image/webp" /> : null}
         <source srcSet={srcPNG} />
-        <img {...others} alt={alt} className={className} src={srcPNG} />
+        <img {...others} alt={alt} className={clsx(className)} src={srcPNG} />
       </picture>
+    </LazyLoadComponent>
+  );
+};
+
+/**
+ * React still has no standard solution for everything you need.
+ * This component handles lazy loading, placeholdering, and more.
+ * @param {*} scrollPosition Call trackWindowScroll on the higher order component to add a 'scrollPosition'
+ *   property you can pass to this to reduce performance issues.
+ */
+export const VectorImage = ({
+  srcSVG,
+  className = '',
+  placeholder = defaultPlaceholder,
+  alt = '',
+  scrollPosition = undefined,
+  ...others
+}) => {
+  return (
+    <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
+      <img {...others} alt={alt} className={clsx(className)} src={srcSVG} />
     </LazyLoadComponent>
   );
 };

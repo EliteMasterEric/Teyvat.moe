@@ -134,18 +134,22 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
         return null;
       case 'success':
         return (
-          <span className={clsx('map-controls-editor-element-image-success')}>
+          <Typography flexGrow={1} width="100%" fontSize="0.8em" color="green">
             {t('editor-image-upload-success')}
-          </span>
+          </Typography>
         );
       case 'progress':
         return (
-          <span className={clsx('map-controls-editor-element-image-progress')}>
+          <Typography flexGrow={1} width="100%" fontSize="0.8em" color="orangered">
             {t('editor-image-upload-progress')}
-          </span>
+          </Typography>
         );
       default:
-        return <span className={clsx('map-controls-editor-element-image-error')}>{errorMsg}</span>;
+        return (
+          <Typography flexGrow={1} width="100%" fontSize="0.8em" color="red">
+            {errorMsg}
+          </Typography>
+        );
     }
   };
 
@@ -202,7 +206,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
           </IconButton>
         </Tooltip>
       </Box>
-      <Typography>{message()}</Typography>
+      {message()}
     </Box>
   );
 };
