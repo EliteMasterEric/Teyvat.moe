@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Electro Crystal" },
+  "name": {
+    "en": "Electro Crystal",
+    "pt": "Cristal Electro"
+  },
   "cluster": true,
   "respawn": 172800,
   "icons": {
@@ -15,12 +18,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-24.537129399, 48.9880371093]
+        "coordinates": [
+          -24.537129399,
+          48.9880371093
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 1
@@ -28,12 +38,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-23.3876402273, 69.4720458984]
+        "coordinates": [
+          -23.3876402273,
+          69.4720458984
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 2
@@ -41,12 +58,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-23.3775561491, 69.5489501953]
+        "coordinates": [
+          -23.3775561491,
+          69.5489501953
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 3
