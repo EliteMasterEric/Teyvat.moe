@@ -188,7 +188,7 @@ export const createMapIcon = ({
   key,
   marker = false,
   clusterIcon = '',
-  done = false,
+  // done = false,
   ext = 'png',
   ...options
 }) => {
