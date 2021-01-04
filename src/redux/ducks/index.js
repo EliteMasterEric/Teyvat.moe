@@ -12,8 +12,11 @@ import completedReducer, {
   CLEAR_FEATURE_MARKER_COMPLETED,
   SET_FEATURES_COMPLETED,
   SET_FEATURE_MARKER_COMPLETED,
-} from './completed';
-import displayedReducer, { SET_FEATURE_DISPLAYED, SET_ROUTE_DISPLAYED } from './displayed';
+} from '~/redux/ducks/completed';
+import displayedReducer, {
+  SET_FEATURE_DISPLAYED,
+  SET_ROUTE_DISPLAYED,
+} from '~/redux/ducks/displayed';
 import uiReducer, {
   SET_CONTROLS_CATEGORY,
   SET_CONTROLS_TAB,
@@ -22,15 +25,15 @@ import uiReducer, {
   SET_EDITOR_ENABLED,
   SET_EDITOR_HIGHLIGHT,
   SET_POSITION_AND_ZOOM,
-} from './ui';
-import optionsReducer, { SET_OPTIONS } from './options';
+} from '~/redux/ducks/ui';
+import optionsReducer, { SET_OPTIONS } from '~/redux/ducks/options';
 import editorReducer, {
   CLEAR_EDITOR_DATA,
   REMOVE_ELEMENT,
   SET_ELEMENT_PROPERTY,
   APPEND_ELEMENT,
-} from './editor';
-import importReducer, { SET_STATE, SET_IMPORT_ERROR } from './import';
+} from '~/redux/ducks/editor';
+import importReducer, { SET_STATE, SET_IMPORT_ERROR } from '~/redux/ducks/import';
 
 // List action types.
 /**

@@ -34,10 +34,7 @@ const editorReducer = (state, action) => {
         editor: DEFAULT_MAP_PREFERENCES.editor,
       };
     case REMOVE_ELEMENT:
-      const elementToRemove = _.find(
-        state.editor.feature.data,
-        (element) => element.id === action.payload.id
-      );
+      const elementToRemove = action.payload.element;
       const trimedEditorData = _.difference(state.editor.feature.data, [elementToRemove]);
       return {
         ...state,
@@ -67,7 +64,7 @@ const editorReducer = (state, action) => {
       };
     case SET_ELEMENT_PROPERTY:
       const editedEditorData = state.editor.feature.data.map((element) => {
-        if (element.id === action.payload.id) {
+        if (element === action.payload.element) {
           // Set a property. 'popupTitle.en' can set `popupTitle: { en: value }`
           return _.set(element, action.payload.propertyPath, action.payload.value);
         }
@@ -104,31 +101,13 @@ export const clearEditorData = () => {
 };
 /**
  * Set the property of an editor element.
- * @param {*} id
+ * @param {*} originalElement
  * @param {*} propertyPath
  * @param {*} value
  * @returns An action to be dispatched.
  */
-export const setElementPropertyById = (id, propertyPath, value) => {
-  return { type: SET_ELEMENT_PROPERTY, payload: { id, propertyPath, value } };
-};
-/**
- * Set the property of an editor element.
- * @param {*} element
- * @param {*} propertyPath
- * @param {*} value
- * @returns An action to be dispatched.
- */
-export const setElementProperty = (element, propertyPath, value) => {
-  return setElementPropertyById(element.id, propertyPath, value);
-};
-/**
- * Remove an editor element.
- * @param {*} id
- * @returns An action to be dispatched.
- */
-export const removeElementById = (id) => {
-  return { type: REMOVE_ELEMENT, payload: { id } };
+export const setElementProperty = (originalElement, propertyPath, value) => {
+  return { type: SET_ELEMENT_PROPERTY, payload: { element: originalElement, propertyPath, value } };
 };
 /**
  * Remove an editor element.
@@ -136,7 +115,7 @@ export const removeElementById = (id) => {
  * @returns An action to be dispatched.
  */
 export const removeElement = (element) => {
-  return removeElementById(element.id);
+  return { type: REMOVE_ELEMENT, payload: { element } };
 };
 /**
  * Remove an editor element.

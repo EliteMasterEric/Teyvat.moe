@@ -6,6 +6,8 @@ import Joi from 'joi';
 import L from 'leaflet';
 import _ from 'lodash';
 
+import { MDF_FEATURE_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
+
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
 const imagePath = Joi.string()
@@ -130,7 +132,13 @@ const VALIDATION_OPTIONS = {
 };
 
 export const validateFeatureData = (input) => {
-  return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
+  switch (input.format) {
+    case 2:
+      return MDF_FEATURE_SCHEMA.validate(input, { convert: true });
+    case 1:
+    default:
+      return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
+  }
 };
 
 /**
@@ -199,10 +207,8 @@ export const createMapIcon = ({
     // This part is a little complex.
     // As a neat hack, the marker"s shadow is offset and used to implement the frame.
     // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(`./map_${done ? 'done' : 'base'}/marker.${ext}`, true).default;
-
-    /*
-     */
+    const shadowUrl = iconsContext(`./marker/marker_${done ? 'green' : 'white'}_bg.svg`, true)
+      .default;
 
     const iconHTML = `<div class='map-marker-container'>
       <img style='width: 40px; height: 40px;' class='map-marker-shadow' alt="" src="${shadowUrl}"/>
@@ -221,7 +227,7 @@ export const createMapIcon = ({
   }
 
   // Else, don't use the marker image.
-  const iconUrl = iconsContext(`./map_${done ? 'done' : 'base'}/${key}.${ext}`, true).default;
+  const iconUrl = iconsContext(`./map/${key}.${ext}`, true).default;
 
   // Handle the niche case where cluster = true and marker = false.
   const clusterIconUrl = clusterIcon !== '' ? getFilterIconURL(clusterIcon, ext) : undefined;

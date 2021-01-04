@@ -15,6 +15,8 @@ import { DEFAULT_LOCALE_CODE } from '~/components/preferences/DefaultPreferences
  * @returns {value} The value from 'field' whose key matches the current locale, or the default locale.
  */
 export const localizeField = (field) => {
+  if (!field) return '';
+
   const currentLanguage = getLocale();
   if (field[currentLanguage]) {
     return field[currentLanguage];
@@ -24,7 +26,7 @@ export const localizeField = (field) => {
     return field[DEFAULT_LOCALE_CODE];
   }
   // Else, return null.
-  return null;
+  return '';
 };
 
 const FEATURE_TO_LOCALIZE = ['name'];

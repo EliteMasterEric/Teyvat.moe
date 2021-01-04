@@ -1,6 +1,11 @@
 {
-  "name": { "en": "Anemoculus" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Anemoculus"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "anemoculus",
     "base": {
@@ -22,871 +27,1118 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.6430655467, 43.0993652343]
+      "coordinates": [-20.64307, 43.09937],
+      "id": "A29C286178DF5CF3BE3C8F9B41B0C630F45838B5",
+      "importIds": {
+        "yuanshen": ["0_1"],
+        "gm_legacy": ["mondstadtAnemoculus/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ftGeNlEKIoE"
+      "popupTitle": {
+        "en": "#1",
+        "zh": "风神瞳"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/ftGeNlEKIoE",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.8886597873, 45.4504394531]
+      "coordinates": [-16.88866, 45.45044],
+      "id": "E13DB245E975C787EC867A913EC5BB107F038D0C",
+      "importIds": {
+        "yuanshen": ["0_2"],
+        "gm_legacy": ["mondstadtAnemoculus/2"]
+      },
+      "popupTitle": {
+        "en": "#2",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/UKWDvkoyn_Y"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 2
+      "popupMedia": "https://youtu.be/UKWDvkoyn_Y",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.5183441878, 40.5834960937]
+      "coordinates": [-17.51834, 40.5835],
+      "id": "FF2C8C1A76F9D5956EECB71A30A1DD99A2C339C7",
+      "importIds": {
+        "yuanshen": ["0_3"],
+        "gm_legacy": ["mondstadtAnemoculus/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/1cabjTBAYvE"
+      "popupTitle": {
+        "en": "#3",
+        "zh": "风神瞳"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/1cabjTBAYvE",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.7486866517, 43.7036132812]
+      "coordinates": [-17.74869, 43.70361],
+      "id": "B164B24FDEFD16AD2DEA19E8B098765548674BE4",
+      "importIds": {
+        "yuanshen": ["0_4"],
+        "gm_legacy": ["mondstadtAnemoculus/4"]
+      },
+      "popupTitle": {
+        "en": "#4",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fdt4dfud1v8"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 4
+      "popupMedia": "https://youtu.be/fdt4dfud1v8",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.8896075104, 47.7795410156]
+      "coordinates": [-20.88961, 47.77954],
+      "id": "F920B0BDA3C8D157E1B83A7577D3C3402CC527BA",
+      "importIds": {
+        "yuanshen": ["0_5"],
+        "gm_legacy": ["mondstadtAnemoculus/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/HBLI7jxCg6Q"
+      "popupTitle": {
+        "en": "#5",
+        "zh": "风神瞳"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/HBLI7jxCg6Q",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.4066547139, 45.3735351562]
+      "coordinates": [-18.40665, 45.37354],
+      "id": "69A03B9A1EF6AC4942528DD13BFF71B41E822CEB",
+      "importIds": {
+        "yuanshen": ["0_6"],
+        "gm_legacy": ["mondstadtAnemoculus/6"]
+      },
+      "popupTitle": {
+        "en": "#6",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Uw1cUxSnytQ"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 6
+      "popupMedia": "https://youtu.be/Uw1cUxSnytQ",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.2725032501, 42.4072265625]
+      "coordinates": [-20.2725, 42.40723],
+      "id": "8DB8E616EF1532B3A90339F5488DE72361FDA4B3",
+      "importIds": {
+        "yuanshen": ["0_7"],
+        "gm_legacy": ["mondstadtAnemoculus/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fWgbLsrN5Lo"
+      "popupTitle": {
+        "en": "#7",
+        "zh": "风神瞳"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/fWgbLsrN5Lo",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.983673966, 41.6271972656]
+      "coordinates": [-19.98367, 41.6272],
+      "id": "9A9262073C42CB6E412B7A7BE1695F32A754DDB2",
+      "importIds": {
+        "yuanshen": ["0_8"],
+        "gm_legacy": ["mondstadtAnemoculus/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/9I5jezwgtoE"
+      "popupTitle": {
+        "en": "#8",
+        "zh": "风神瞳"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/9I5jezwgtoE",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.456233596, 42.4291992187]
+      "coordinates": [-19.45623, 42.4292],
+      "id": "B4D796E285EDDAC477988581399D39A5C15A6149",
+      "importIds": {
+        "yuanshen": ["0_9"],
+        "gm_legacy": ["mondstadtAnemoculus/9"]
+      },
+      "popupTitle": {
+        "en": "#9",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/sJS92GFiynI"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 9
+      "popupMedia": "https://youtu.be/sJS92GFiynI",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.9328547363, 39.2980957031]
+      "coordinates": [-21.93285, 39.2981],
+      "id": "06486824B7C92E3DD0945A17E32C38A8313E85D8",
+      "importIds": {
+        "yuanshen": ["0_10"],
+        "gm_legacy": ["mondstadtAnemoculus/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/L74L4pTZTWA"
+      "popupTitle": {
+        "en": "#10",
+        "zh": "风神瞳"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/L74L4pTZTWA",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.4684055773, 40.1000976562]
+      "coordinates": [-21.46841, 40.1001],
+      "id": "E66AFA473C26F8527D840AE8AFB0934B479DEBBD",
+      "importIds": {
+        "yuanshen": ["0_11"],
+        "gm_legacy": ["mondstadtAnemoculus/11"]
+      },
+      "popupTitle": {
+        "en": "#11",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/U9py1Fe3_pM"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 11
+      "popupMedia": "https://youtu.be/U9py1Fe3_pM",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.0797317624, 41.1108398437]
+      "coordinates": [-23.07973, 41.11084],
+      "id": "B673382C75CD4BCA75D43D606FA36164719F6DEE",
+      "importIds": {
+        "yuanshen": ["0_12"],
+        "gm_legacy": ["mondstadtAnemoculus/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/GZXBpaWYAE0"
+      "popupTitle": {
+        "en": "#12",
+        "zh": "风神瞳"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/GZXBpaWYAE0",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2446959513, 45.9008789062]
+      "coordinates": [-25.2447, 45.90088],
+      "id": "569EB2736D63475239447C7D608EEC5EC7159FF2",
+      "importIds": {
+        "yuanshen": ["0_13"],
+        "gm_legacy": ["mondstadtAnemoculus/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/p84ASJj5-Yk"
+      "popupTitle": {
+        "en": "#13",
+        "zh": "风神瞳"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/p84ASJj5-Yk",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.7250117359, 48.0102539062]
+      "coordinates": [-23.72501, 48.01025],
+      "id": "9423C24970A30241328C6A26A77C6AF451434F00",
+      "importIds": {
+        "yuanshen": ["0_14"],
+        "gm_legacy": ["mondstadtAnemoculus/14"]
+      },
+      "popupTitle": {
+        "en": "#14",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/14"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 14
+      "popupMedia": "mondstadt/anemoculus/14",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.9514530834, 44.6594238281]
+      "coordinates": [-26.95145, 44.65942],
+      "id": "28A168C1FEFCD20390515F477D7A4C4D7AE0A1D1",
+      "importIds": {
+        "yuanshen": ["0_15"],
+        "gm_legacy": ["mondstadtAnemoculus/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/a3z-wjdo8yM"
+      "popupTitle": {
+        "en": "#15",
+        "zh": "风神瞳"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/a3z-wjdo8yM",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.2770124716, 49.833984375]
+      "coordinates": [-24.27701, 49.83398],
+      "id": "BBD8B719435B519D33327BAEC9B1E3D18C45246F",
+      "importIds": {
+        "yuanshen": ["0_16"],
+        "gm_legacy": ["mondstadtAnemoculus/16"]
+      },
+      "popupTitle": {
+        "en": "#16",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/1uf5xXWo7EA"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 16
+      "popupMedia": "https://youtu.be/1uf5xXWo7EA",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.4313401563, 50.1745605468]
+      "coordinates": [-22.43134, 50.17456],
+      "id": "B0EDCC1705EA2E193D2FFFADC7367D952335E422",
+      "importIds": {
+        "yuanshen": ["0_17"],
+        "gm_legacy": ["mondstadtAnemoculus/17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/hRv5qJ1uDkE"
+      "popupTitle": {
+        "en": "#17",
+        "zh": "风神瞳"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/hRv5qJ1uDkE",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.0595162735, 51.2731933593]
+      "coordinates": [-23.05952, 51.27319],
+      "id": "3E45E3F551D3B6BA04715B5A12818ED112C4D498",
+      "importIds": {
+        "yuanshen": ["0_18"],
+        "gm_legacy": ["mondstadtAnemoculus/18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/NtEiByP8VMI"
+      "popupTitle": {
+        "en": "#18",
+        "zh": "风神瞳"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/NtEiByP8VMI",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.0449133002, 51.3610839843]
+      "coordinates": [-22.04491, 51.36108],
+      "id": "C8BFBB269F0815E4CB5BC7783E2AA2A0B55B35AB",
+      "importIds": {
+        "yuanshen": ["0_19"],
+        "gm_legacy": ["mondstadtAnemoculus/19"]
+      },
+      "popupTitle": {
+        "en": "#19",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/nSGOKj6MwSc"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 19
+      "popupMedia": "https://youtu.be/nSGOKj6MwSc",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9716985304, 50.6359863281]
+      "coordinates": [-20.9717, 50.63599],
+      "id": "4323AEE18B7036F26C224C2D205BF7B4F6F0B4B6",
+      "importIds": {
+        "yuanshen": ["0_20"],
+        "gm_legacy": ["mondstadtAnemoculus/20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/dzg_M4Xh0ro"
+      "popupTitle": {
+        "en": "#20",
+        "zh": "风神瞳"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/dzg_M4Xh0ro",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.1694112276, 50.5041503906]
+      "coordinates": [-20.16941, 50.50415],
+      "id": "4ED466C6DF0EEE2AE11C957486CD36C44BCCA7CC",
+      "importIds": {
+        "yuanshen": ["0_21"],
+        "gm_legacy": ["mondstadtAnemoculus/21"]
+      },
+      "popupTitle": {
+        "en": "#21",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/OHen2-RFO-A"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 21
+      "popupMedia": "https://youtu.be/OHen2-RFO-A",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.8793429719, 52.20703125]
+      "coordinates": [-20.87934, 52.20703],
+      "id": "AC45CA9F0CA3854EA5875D2EA18F8BD809D2A3E5",
+      "importIds": {
+        "yuanshen": ["0_22"],
+        "gm_legacy": ["mondstadtAnemoculus/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/qFiw5t9k5Xc"
+      "popupTitle": {
+        "en": "#22",
+        "zh": "风神瞳"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/qFiw5t9k5Xc",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.8665025269, 51.240234375]
+      "coordinates": [-24.8665, 51.24023],
+      "id": "62C9011E9F1C42D08073F4D0182DD1EBD5D047B0",
+      "importIds": {
+        "yuanshen": ["0_23"],
+        "gm_legacy": ["mondstadtAnemoculus/23"]
+      },
+      "popupTitle": {
+        "en": "#23",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/UWwUGj2vNvA"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 23
+      "popupMedia": "https://youtu.be/UWwUGj2vNvA",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8592235547, 52.1630859375]
+      "coordinates": [-25.85922, 52.16309],
+      "id": "A1773A9FBB66910A3B6679A83EB14CCFD613114C",
+      "importIds": {
+        "yuanshen": ["0_24"],
+        "gm_legacy": ["mondstadtAnemoculus/24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/24"
+      "popupTitle": {
+        "en": "#24",
+        "zh": "风神瞳"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/24",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8240707804, 51.15234375]
+      "coordinates": [-26.82407, 51.15234],
+      "id": "B4AB8C8A195A4BC4D1A06DCCA486DCB9C36887EF",
+      "importIds": {
+        "yuanshen": ["0_25"],
+        "gm_legacy": ["mondstadtAnemoculus/25"]
+      },
+      "popupTitle": {
+        "en": "#25",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/TASmw3X0mKg"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 25
+      "popupMedia": "https://youtu.be/TASmw3X0mKg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.1882436418, 51.7565917968]
+      "coordinates": [-28.18824, 51.75659],
+      "id": "E4E14061E8FBEF10F7BB9D3F6A02B62801173784",
+      "importIds": {
+        "yuanshen": ["0_26"],
+        "gm_legacy": ["mondstadtAnemoculus/26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "This oculus is on top of one of the pillars. Use fire to burn the brambles or glide over from an adjacent pillar."
-        },
-        "popupMedia": "mondstadt/anemoculus/26"
+      "popupTitle": {
+        "en": "#26",
+        "zh": "风神瞳"
       },
-      "id": 26
+      "popupContent": {
+        "en": "This oculus is on top of one of the pillars. Use fire to burn the brambles or glide over from an adjacent pillar.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/26",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 27,
-      "properties": {
-        "popupTitle": { "en": "#27: Springvale Cliff" },
-        "popupContent": {
-          "en": "This Anemoculus is located underneath the cliff. Jump off, perform a glide, then turn around and move under the cliff to grab the floating Geoculus."
-        },
-        "popupMedia": "mondstadt/anemoculus/27"
+      "coordinates": [-29.51611, 53.03101],
+      "id": "9D733ABEFCAA362A8B85C840A05C255C4C7052C9",
+      "importIds": {
+        "yuanshen": ["0_27"],
+        "gm_legacy": ["mondstadtAnemoculus/27"]
+      },
+      "popupTitle": {
+        "en": "#27: Springvale Cliff",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is located underneath the cliff. Jump off, perform a glide, then turn around and move under the cliff to grab the floating Geoculus.",
+        "zh": "这是一个风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.516110386062277, 53.03100585937501]
-      }
+      "popupMedia": "https://yuanshen.site/comment_png/0_27.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 28,
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/QGI5wQZoKBM"
+      "coordinates": [-28.22697, 55.92041],
+      "id": "7A59234BE6925C6080D8E0803A97F0DF5D0A166C",
+      "importIds": {
+        "yuanshen": ["0_28"],
+        "gm_legacy": ["mondstadtAnemoculus/28"]
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.22697003891834, 55.92041015625001]
-      }
+      "popupTitle": {
+        "en": "#28",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/QGI5wQZoKBM",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 29,
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "Collect the three Mysterious Anemogranum to create a wind gust upward. The rings will quickly boost you upward to reach the Anemoculus."
-        },
-        "popupMedia": "https://youtu.be/F7w2amQxCMM"
+      "coordinates": [-31.24099, 55.18433],
+      "id": "255418B97B24AD90A71988EBAD5F662420C61FE5",
+      "importIds": {
+        "yuanshen": ["0_29"],
+        "gm_legacy": ["mondstadtAnemoculus/29"]
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.240985378021307, 55.18432617187501]
-      }
+      "popupTitle": {
+        "en": "#29",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward. The rings will quickly boost you upward to reach the Anemoculus.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/F7w2amQxCMM",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 30,
-      "properties": {
-        "popupTitle": { "en": "#30: Dawn Winery" },
-        "popupContent": {
-          "en": "This Anemoculus is located on the roof of the Winery. Climb from the front door to the balcony above it. From there, you can climb onto the roof, then to the left side where the Anemoculus is."
-        },
-        "popupMedia": "mondstadt/anemoculus/30"
+      "coordinates": [-32.16631, 50.92163],
+      "id": "85109590296D36494FF03493D9DF2F97D10440BB",
+      "importIds": {
+        "yuanshen": ["0_30"],
+        "gm_legacy": ["mondstadtAnemoculus/30"]
+      },
+      "popupTitle": {
+        "en": "#30: Dawn Winery",
+        "zh": "风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.166312956967346, 50.92163085937501]
-      }
+      "popupContent": {
+        "en": "This Anemoculus is located on the roof of the Winery. Climb from the front door to the balcony above it. From there, you can climb onto the roof, then to the left side where the Anemoculus is.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/30",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 31,
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Ih3t4D7MYOk"
+      "coordinates": [-33.42227, 49.0979],
+      "id": "2F494C6B19B84D29C21CBEF3ED17470214329970",
+      "importIds": {
+        "yuanshen": ["0_31"],
+        "gm_legacy": ["mondstadtAnemoculus/31"]
+      },
+      "popupTitle": {
+        "en": "#31",
+        "zh": "风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.42227225886604, 49.09790039062501]
-      }
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/Ih3t4D7MYOk",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 32,
-      "properties": {
-        "popupTitle": { "en": "#32: Springvale Anemogranum A" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/LaYdxT6bxlk"
+      "coordinates": [-34.04356, 51.49292],
+      "id": "4449D94EB3EE4F1EFDDCBA397ED77F551A334E4E",
+      "importIds": {
+        "yuanshen": ["0_32"],
+        "gm_legacy": ["mondstadtAnemoculus/32"]
+      },
+      "popupTitle": {
+        "en": "#32: Springvale Anemogranum A",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "zh": "从旁边山坡上开风场获取"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.04355650412745, 51.49291992187501]
-      }
+      "popupMedia": "https://youtu.be/LaYdxT6bxlk",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 33,
-      "properties": {
-        "popupTitle": { "en": "#33: Springvale Anemogranum B" },
-        "popupContent": {
-          "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
-        },
-        "popupMedia": "mondstadt/anemoculus/33"
+      "coordinates": [-30.25907, 57.35962],
+      "id": "2FFE79B8362FD162296C1459164AE01566FB7E01",
+      "importIds": {
+        "yuanshen": ["0_33"],
+        "gm_legacy": ["mondstadtAnemoculus/33"]
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.259067203213018, 57.35961914062501]
-      }
+      "popupTitle": {
+        "en": "#33: Springvale Anemogranum B",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/33",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 34,
-      "properties": {
-        "popupTitle": { "en": "#34: Springvale Roof" },
-        "popupContent": {
-          "en": "This Anemoculus is located on the roof of the southeast house of Springvale. You can climb up the wall of the house or glide from the nearby cliff."
-        },
-        "popupMedia": "mondstadt/anemoculus/34"
+      "coordinates": [-30.2211, 58.94165],
+      "id": "81ECDDAE1293FB1F24FC0A074DF1356C8D64BE82",
+      "importIds": {
+        "yuanshen": ["0_34"],
+        "gm_legacy": ["mondstadtAnemoculus/34"]
+      },
+      "popupTitle": {
+        "en": "#34: Springvale Roof",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.221101852485987, 58.94165039062501]
-      }
+      "popupMedia": "mondstadt/anemoculus/34",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 35,
-      "properties": {
-        "popupTitle": { "en": "#35: Southeast Springvale Cliff" },
-        "popupContent": {
-          "en": "This Anemoculus is located on a cliff nearby to Springvale. You can simply walk up and grab it."
-        },
-        "popupMedia": "https://youtu.be/nN41BmoIsds"
+      "coordinates": [-32.30571, 60.1062],
+      "id": "C7FFB49533433D218AEA3E34EDCE31E7509CF08E",
+      "importIds": {
+        "yuanshen": ["0_35"],
+        "gm_legacy": ["mondstadtAnemoculus/35"]
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.30570601389429, 60.10620117187501]
-      }
+      "popupTitle": {
+        "en": "#35: Southeast Springvale Cliff",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is located on a cliff nearby to Springvale. You can simply walk up and grab it.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/35",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 36,
-      "properties": {
-        "popupTitle": { "en": "#36: Gorge Cliff" },
-        "popupContent": {
-          "en": "This Anemoculus is located off a cliff. You will have to glide down from the side to retrieve it."
-        },
-        "popupMedia": "https://youtu.be/Wr1otEds8mg"
+      "coordinates": [-32.68562, 61.32568],
+      "id": "49A5D8083143C6071B3771C6F5F5CA45A05F4803",
+      "importIds": {
+        "yuanshen": ["0_36"],
+        "gm_legacy": ["mondstadtAnemoculus/36"]
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.68561985372199, 61.32568359375001]
-      }
+      "popupTitle": {
+        "en": "#36: Gorge Cliff",
+        "zh": "风神瞳"
+      },
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/Wr1otEds8mg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 37,
-      "properties": {
-        "popupTitle": { "en": "#37: Gorge Anemogranum" },
-        "popupContent": {
-          "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
-        },
-        "popupMedia": "https://youtu.be/CKA85jpKXps"
+      "coordinates": [-33.35806, 61.42456],
+      "id": "4B678FEB051F39E372C4A281B54CF3E4897B1451",
+      "importIds": {
+        "yuanshen": ["0_37"],
+        "gm_legacy": ["mondstadtAnemoculus/37"]
+      },
+      "popupTitle": {
+        "en": "#37: Gorge Anemogranum",
+        "zh": "风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.35806161277886, 61.42456054687501]
-      }
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/CKA85jpKXps",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "type": "Feature",
-      "id": 38,
-      "properties": {
-        "popupTitle": { "en": "#38: Gorge Boulder" },
-        "popupContent": {
-          "en": "This Anemoculus is floating in the air. You can climb up to the top of the nearby boulder, jump off, and glide to retrieve it."
-        },
-        "popupMedia": "mondstadt/anemoculus/38"
+      "coordinates": [-34.75064, 62.22656],
+      "id": "9BC7C51750FD5FCF4FAABEE359805B7DB85BE37B",
+      "importIds": {
+        "yuanshen": ["0_38"],
+        "gm_legacy": ["mondstadtAnemoculus/38"]
+      },
+      "popupTitle": {
+        "en": "#38: Gorge Boulder",
+        "zh": "风神瞳"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.7506398050501, 62.22656250000001]
-      }
+      "popupContent": {
+        "en": "This Anemoculus is floating in the air. You can climb up to the top of the nearby boulder, jump off, and glide to retrieve it.",
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/38",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5223614704, 62.8747558593]
+      "coordinates": [-31.52236, 62.87476],
+      "id": "80DB6A94A146B6C782BBC0DF6E37C6B8D2F526DC",
+      "importIds": {
+        "yuanshen": ["0_39"],
+        "gm_legacy": ["mondstadtAnemoculus/39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/dIjqhdEQmFE"
+      "popupTitle": {
+        "en": "#39",
+        "zh": "风神瞳"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/dIjqhdEQmFE",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.7318408968, 65.0830078125]
+      "coordinates": [-32.73184, 65.08301],
+      "id": "51A794F463CC45ED35CE3C443025EC8FCCA869F9",
+      "importIds": {
+        "yuanshen": ["0_40"],
+        "gm_legacy": ["mondstadtAnemoculus/40"]
+      },
+      "popupTitle": {
+        "en": "#40",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/F7hoHoDPFvs"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 40
+      "popupMedia": "https://youtu.be/F7hoHoDPFvs",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.9889184837, 65.8190917968]
+      "coordinates": [-33.98892, 65.81909],
+      "id": "509411C17F4209C7D709D604FA299771B7535234",
+      "importIds": {
+        "yuanshen": ["0_41"],
+        "gm_legacy": ["mondstadtAnemoculus/41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/41"
+      "popupTitle": {
+        "en": "#41",
+        "zh": "风神瞳"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/41",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.2097216452, 65.302734375]
+      "coordinates": [-35.20972, 65.30273],
+      "id": "3DC451E94D7DDBD923DC9E24F36EC6BA7CF13212",
+      "importIds": {
+        "yuanshen": ["0_42"],
+        "gm_legacy": ["mondstadtAnemoculus/42"]
+      },
+      "popupTitle": {
+        "en": "#42",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
-        },
-        "popupMedia": "https://youtu.be/dJnc3Mr_kG0"
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus.",
+        "zh": "这是一个风神瞳"
       },
-      "id": 42
+      "popupMedia": "https://youtu.be/dJnc3Mr_kG0",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.8267212736, 68.4008789062]
+      "coordinates": [-35.82672, 68.40088],
+      "id": "BBBB9114CCFA3D1EA7762968BD7091CE9898CD95",
+      "importIds": {
+        "yuanshen": ["0_43"],
+        "gm_legacy": ["mondstadtAnemoculus/43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_qPH8SI6pLs"
+      "popupTitle": {
+        "en": "#43",
+        "zh": "风神瞳"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/_qPH8SI6pLs",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.8482643886, 66.3024902343]
+      "coordinates": [-38.84826, 66.30249],
+      "id": "1947722B3F1C630BE90682DA447784AF2F991BB0",
+      "importIds": {
+        "yuanshen": ["0_44"],
+        "gm_legacy": ["mondstadtAnemoculus/44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Su1cuPbqfow"
+      "popupTitle": {
+        "en": "#44",
+        "zh": "风神瞳"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/Su1cuPbqfow",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4835765504, 69.7302246093]
+      "coordinates": [-37.48358, 69.73022],
+      "id": "B790AFC645580BB4C299EFFC08844AA623404FD4",
+      "importIds": {
+        "yuanshen": ["0_45"],
+        "gm_legacy": ["mondstadtAnemoculus/45"]
+      },
+      "popupTitle": {
+        "en": "#45",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/5DcK4HxsNdw"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 45
+      "popupMedia": "https://youtu.be/5DcK4HxsNdw",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0025526721, 68.0053710937]
+      "coordinates": [-37.00255, 68.00537],
+      "id": "B8EE4BC140103C840999A0587887481FDDFAFE7F",
+      "importIds": {
+        "yuanshen": ["0_46"],
+        "gm_legacy": ["mondstadtAnemoculus/46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/VhbqERK9vjY"
+      "popupTitle": {
+        "en": "#46",
+        "zh": "风神瞳"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/VhbqERK9vjY",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.666222341, 73.0920410156]
+      "coordinates": [-35.66622, 73.09204],
+      "id": "AEEE632828D23E60C55269D2F95DE01D7B0764AD",
+      "importIds": {
+        "yuanshen": ["0_47"],
+        "gm_legacy": ["mondstadtAnemoculus/47"]
+      },
+      "popupTitle": {
+        "en": "#47",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Nbcr7reBQ6A"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 47
+      "popupMedia": "https://youtu.be/Nbcr7reBQ6A",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2875315892, 61.1828613281]
+      "coordinates": [-30.28753, 61.18286],
+      "id": "E2BA211239776C1C89E3BFC1A76615C1AE4279DE",
+      "importIds": {
+        "yuanshen": ["0_48"],
+        "gm_legacy": ["mondstadtAnemoculus/48"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/u4xgWVtjgRY"
+      "popupTitle": {
+        "en": "#48",
+        "zh": "风神瞳"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/u4xgWVtjgRY",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.6662659463, 63.4130859375]
+      "coordinates": [-30.66627, 63.41309],
+      "id": "3A51BEB5A2D45E94381231D52BB048E592126D8A",
+      "importIds": {
+        "yuanshen": ["0_49"],
+        "gm_legacy": ["mondstadtAnemoculus/49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/F4sMCaP0ZUI"
+      "popupTitle": {
+        "en": "#49",
+        "zh": "风神瞳"
       },
-      "id": 49
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/F4sMCaP0ZUI",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.0999817937, 64.6875]
+      "coordinates": [-31.09998, 64.6875],
+      "id": "28344AFEEAB5C9D142CDB3A97A19A33EFEF30CED",
+      "importIds": {
+        "yuanshen": ["0_50"],
+        "gm_legacy": ["mondstadtAnemoculus/50"]
+      },
+      "popupTitle": {
+        "en": "#50",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/50"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 50
+      "popupMedia": "mondstadt/anemoculus/50",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.8692288489, 63.5888671875]
+      "coordinates": [-29.86923, 63.58887],
+      "id": "C7C2F56621F5A92A9F8AFEB7F0EB523BA5B27187",
+      "importIds": {
+        "yuanshen": ["0_51"],
+        "gm_legacy": ["mondstadtAnemoculus/51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=65IuX05dvAc"
+      "popupTitle": {
+        "en": "#51",
+        "zh": "风神瞳"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://www.youtube.com/watch?v=65IuX05dvAc",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.2001234776, 65.4675292968]
+      "coordinates": [-29.20012, 65.46753],
+      "id": "10B44EA4B07D73C540CAE95C05A80E0623D9FFD1",
+      "importIds": {
+        "yuanshen": ["0_52"],
+        "gm_legacy": ["mondstadtAnemoculus/52"]
+      },
+      "popupTitle": {
+        "en": "#52",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/dXaDQlFZZy8"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 52
+      "popupMedia": "https://youtu.be/dXaDQlFZZy8",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.4783486922, 63.5339355468]
+      "coordinates": [-28.47835, 63.53394],
+      "id": "69019265F599740A5C891D13822DA243A41B3E45",
+      "importIds": {
+        "yuanshen": ["0_53"],
+        "gm_legacy": ["mondstadtAnemoculus/53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/53"
+      "popupTitle": {
+        "en": "#53",
+        "zh": "风神瞳"
       },
-      "id": 53
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/53",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.2745035178, 63.5119628906]
+      "coordinates": [-25.2745, 63.51196],
+      "id": "8AC408F40C81047A6D35F76E8194F78D33CA936E",
+      "importIds": {
+        "yuanshen": ["0_54"],
+        "gm_legacy": ["mondstadtAnemoculus/54"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/54"
+      "popupTitle": {
+        "en": "#54",
+        "zh": "风神瞳"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/54",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.18501825, 67.8625488281]
+      "coordinates": [-26.18502, 67.86255],
+      "id": "56EEEB0BB4239BCE77FA7D5F8428C8F5FB045BF7",
+      "importIds": {
+        "yuanshen": ["0_55"],
+        "gm_legacy": ["mondstadtAnemoculus/55"]
+      },
+      "popupTitle": {
+        "en": "#55",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/55"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 55
+      "popupMedia": "mondstadt/anemoculus/55",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9462190743, 70.9497070312]
+      "coordinates": [-24.94622, 70.94971],
+      "id": "F61438622A1E46756FECE94C46B7CD9FFC25FCC1",
+      "importIds": {
+        "yuanshen": ["0_56"],
+        "gm_legacy": ["mondstadtAnemoculus/56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/56"
+      "popupTitle": {
+        "en": "#56",
+        "zh": "风神瞳"
       },
-      "id": 56
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "mondstadt/anemoculus/56",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.7153900193, 68.994140625]
+      "coordinates": [-22.71539, 68.99414],
+      "id": "0066362054C6A9FED0F261288647D27E56B64405",
+      "importIds": {
+        "yuanshen": ["0_57"],
+        "gm_legacy": ["mondstadtAnemoculus/57"]
+      },
+      "popupTitle": {
+        "en": "#57",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/t408wedYlbg"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 57
+      "popupMedia": "https://youtu.be/t408wedYlbg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.093266636, 62.5231933593]
+      "coordinates": [-19.09327, 62.52319],
+      "id": "BC9F282AD6A2F462F12FC44CE58B6FD320304481",
+      "importIds": {
+        "yuanshen": ["0_58"],
+        "gm_legacy": ["mondstadtAnemoculus/58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/1GrLLLimHYs"
+      "popupTitle": {
+        "en": "#58",
+        "zh": "风神瞳"
       },
-      "id": 58
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/1GrLLLimHYs",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1512884498, 61.1389160156]
+      "coordinates": [-17.15129, 61.13892],
+      "id": "B71ED16F0111C80525626DD728CE14C401625F5E",
+      "importIds": {
+        "yuanshen": ["0_59"],
+        "gm_legacy": ["mondstadtAnemoculus/59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fZfuDaGBfY4"
+      "popupTitle": {
+        "en": "#59",
+        "zh": "风神瞳"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/fZfuDaGBfY4",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.4483467029, 68.1866455078]
+      "coordinates": [-18.44835, 68.18665],
+      "id": "B59F8998AB048985306CA3BD099436512D92D13A",
+      "importIds": {
+        "yuanshen": ["0_60"],
+        "gm_legacy": ["mondstadtAnemoculus/60"]
+      },
+      "popupTitle": {
+        "en": "#60",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/anemoculus/60"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 60
+      "popupMedia": "mondstadt/anemoculus/60",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.4255475069, 71.4331054687]
+      "coordinates": [-16.42555, 71.43311],
+      "id": "AC134A416EFA2C6654068E11BC1441293DFCBAE4",
+      "importIds": {
+        "yuanshen": ["0_61"],
+        "gm_legacy": ["mondstadtAnemoculus/61"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/yo57sy-HwqQ"
+      "popupTitle": {
+        "en": "#61",
+        "zh": "风神瞳"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/yo57sy-HwqQ",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.0434912168, 79.892578125]
+      "coordinates": [-21.04349, 79.89258],
+      "id": "3516B67DE827FFE6E042BC67D52AEB82F1CD3D5B",
+      "importIds": {
+        "yuanshen": ["0_62"],
+        "gm_legacy": ["mondstadtAnemoculus/62"]
+      },
+      "popupTitle": {
+        "en": "#62",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/XjU1JKupzvI"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 62
+      "popupMedia": "https://youtu.be/XjU1JKupzvI",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.8521697014, 83.6059570312]
+      "coordinates": [-33.85217, 83.60596],
+      "id": "8403F04CAAEB047D559369DFEF581A7966994B86",
+      "importIds": {
+        "yuanshen": ["0_63"],
+        "gm_legacy": ["mondstadtAnemoculus/63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fZfuDaGBfY4"
+      "popupTitle": {
+        "en": "#63",
+        "zh": "风神瞳"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/fZfuDaGBfY4",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.6841837793, 54.9206542968]
+      "coordinates": [-20.68418, 54.92065],
+      "id": "2C41C7034BA4B9900394D867789963A14F66636D",
+      "importIds": {
+        "yuanshen": ["0_64"],
+        "gm_legacy": ["mondstadtAnemoculus/64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ZE-NYhyU44M"
+      "popupTitle": {
+        "en": "#64",
+        "zh": "风神瞳"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个风神瞳"
+      },
+      "popupMedia": "https://youtu.be/ZE-NYhyU44M",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.5246272205, 55.6127929687]
+      "coordinates": [-21.52463, 55.61279],
+      "id": "EE16DCCBE15E3AFB6D56839DAAB6031CA69E406C",
+      "importIds": {
+        "yuanshen": ["0_65"],
+        "gm_legacy": ["mondstadtAnemoculus/65"]
+      },
+      "popupTitle": {
+        "en": "#65",
+        "zh": "风神瞳"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ZE-NYhyU44M"
+      "popupContent": {
+        "zh": "这是一个风神瞳"
       },
-      "id": 65
+      "popupMedia": "https://youtu.be/ZE-NYhyU44M",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }
