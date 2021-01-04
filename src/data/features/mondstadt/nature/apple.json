@@ -1,9 +1,12 @@
 {
+  "format": 2,
   "name": {
     "en": "Apple",
-    "ru": "Яблоко"
+    "zh": "苹果"
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "apple",
     "base": {
@@ -15,72 +18,199 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.78390753059817, 53.0914306640625]
+      "coordinates": [-19.5594, 62.92217],
+      "id": "15202DCE367B10AC906B27D2C965312C34AD5014",
+      "importIds": {
+        "yuanshen": ["109_1"],
+        "gm_legacy": ["mondstadtApple/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/apple/1"
+      "popupTitle": {
+        "en": "#1",
+        "zh": "#1"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "mondstadt/apple/15202DC",
+      "popupAttribution": "sgtoutlaw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.679406342899444, 62.99560546875001]
+      "coordinates": [-18.71737, 63.48999],
+      "id": "CE662E5A764C55E9DDCC72063C8581F948FFF9E7",
+      "importIds": {
+        "yuanshen": ["109_2", "109_3"],
+        "gm_legacy": ["mondstadtApple/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/apple/2"
+      "popupTitle": {
+        "en": "#2",
+        "zh": "#2"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这里有六个苹果"
+      },
+      "popupMedia": "mondstadt/apple/CE662E5",
+      "popupAttribution": "sgtoutlaw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.64697323773125, 63.48999023437501]
+      "coordinates": [-25.12041, 61.40992],
+      "id": "6FEC083D2939732C5F177814DA6C2340ED59398C",
+      "importIds": {
+        "yuanshen": ["109_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/apple/3"
+      "popupTitle": {
+        "en": "#4",
+        "zh": "#4"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "地上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_4.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.632519605753572, 60.91369628906251]
+      "coordinates": [-25.49452, 60.86976],
+      "id": "E0CC31E2B608928849F304EB21F03FEFF5C706BC",
+      "importIds": {
+        "yuanshen": ["109_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "../public/comments/mondstadt/apple/4"
+      "popupTitle": {
+        "en": "#5",
+        "zh": "#5"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.5472, 61.43921],
+      "id": "AFEAE7A7B5EBCDF67F4605B41978582F85838801",
+      "importIds": {
+        "yuanshen": ["109_6"]
+      },
+      "popupTitle": {
+        "en": "#6",
+        "zh": "#6"
+      },
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.70121, 70.32898],
+      "id": "F9D61D5FE3A664F3D898C42880D786E9F017C377",
+      "importIds": {
+        "yuanshen": ["109_7"]
+      },
+      "popupTitle": {
+        "en": "#7",
+        "zh": "#7"
+      },
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.9543, 69.12597],
+      "id": "B531FF1539F96AAE6C4E2623CF21EC0EEB0C64DF",
+      "importIds": {
+        "yuanshen": ["109_8"]
+      },
+      "popupTitle": {
+        "en": "#8",
+        "zh": "#8"
+      },
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.78579, 53.04932],
+      "id": "7C885923BFD448063DC470A479AF3727AEBE77C4",
+      "importIds": {
+        "yuanshen": ["109_9"],
+        "gm_legacy": ["mondstadtApple/1"]
+      },
+      "popupTitle": {
+        "en": "#9",
+        "zh": "#9"
+      },
+      "popupContent": {
+        "zh": "苹果树 有四个苹果"
+      },
+      "popupMedia": "mondstadt/apple/7C88592",
+      "popupAttribution": "sgtoutlaw"
+    },
+    {
+      "coordinates": [-27.25789, 61.02356],
+      "id": "175917D3244E659BDFEA82AD225E93D5C3EB5E1C",
+      "importIds": {
+        "yuanshen": ["109_10"]
+      },
+      "popupTitle": {
+        "en": "#10",
+        "zh": "#10"
+      },
+      "popupContent": {
+        "zh": "地上有一个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.14162, 62.57629],
+      "id": "33545167E3CE4D7FF241ED82B0ABC76AFC8BFCAB",
+      "importIds": {
+        "yuanshen": ["109_11"]
+      },
+      "popupTitle": {
+        "en": "#11",
+        "zh": "#11"
+      },
+      "popupContent": {
+        "zh": "地上有一个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.49175, 51.40557],
+      "id": "AA29098720B83CDEE1A5852E7A189D165DD0B295",
+      "importIds": {
+        "yuanshen": ["109_12"]
+      },
+      "popupTitle": {
+        "en": "#12",
+        "zh": "#12"
+      },
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/109_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.63251, 60.91369],
+      "id": "32DCFF66D63DCA451AE0FB97888B50A0932AA1A1",
+      "importIds": {
+        "gm_legacy": ["mondstadtApple/4"]
+      },
+      "popupTitle": {
+        "en": "#13",
+        "zh": "#13"
+      },
+      "popupContent": {
+        "zh": "苹果树上有三个苹果"
+      },
+      "popupMedia": "mondstadt/apple/32DCFF6",
+      "popupAttribution": "sgtoutlaw"
     }
   ]
 }

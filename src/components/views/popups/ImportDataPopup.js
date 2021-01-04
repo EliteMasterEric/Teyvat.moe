@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 import {
   Button,
   Dialog,
-  DialogTitle,
   DialogContent,
   DialogContentText,
   DialogActions,
@@ -18,6 +17,7 @@ import {
 import { t } from '~/components/i18n/Localization';
 import { clearImportError } from '~/redux/ducks/import';
 import { InputTextArea } from '~/components/interface/Input';
+import DialogTitle from '~/components/views/popups/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -52,7 +52,7 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearErro
           setIsDialogOpen(false);
         }}
       >
-        <DialogTitle>{title}</DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>{title}</DialogTitle>
         <DialogContent>
           <DialogContentText>{content}</DialogContentText>
           <DialogContentText>{error}</DialogContentText>

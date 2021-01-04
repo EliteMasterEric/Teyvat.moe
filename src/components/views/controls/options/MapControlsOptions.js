@@ -12,7 +12,6 @@ import BorderBox from '~/components/interface/BorderBox';
 import { InputSlider } from '~/components/interface/Input';
 import { TabView } from '~/components/interface/Tabs';
 import { exportDataJSON } from '~/components/preferences/DataExport';
-import { exportLegacyDataJSON } from '~/components/preferences/LegacyExport';
 import { getApplicationVersion } from '~/components/Util';
 import MapControlsOptionsLanguage from '~/components/views/controls/options/MapControlsOptionsLanguage';
 import ClearMapDataPopup from '~/components/views/popups/ClearMapDataPopup';
@@ -171,10 +170,10 @@ const _MapControlsOptions = ({
       </BorderBox>
       <BorderBox overflow="show">
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-import-new')}</Typography>
+          <Typography className={classes.label}>{t('options-import-data')}</Typography>
           <ImportDataPopup
-            title={t('options-import-new')}
-            content={t('popup-import-new-content')}
+            title={t('options-import-data')}
+            content={t('popup-import-data-content')}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
                 {t('options-import-button')}
@@ -184,10 +183,10 @@ const _MapControlsOptions = ({
           />
         </Box>
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-export-new')}</Typography>
+          <Typography className={classes.label}>{t('options-export-data')}</Typography>
           <ExportDataPopup
-            title={t('options-export-new')}
-            message={t('popup-export-new-content')}
+            title={t('options-export-data')}
+            message={t('popup-export-data-content')}
             fetchData={exportDataJSON}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
@@ -208,29 +207,16 @@ const _MapControlsOptions = ({
           />
         </Box>
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-import-old')}</Typography>
+          <Typography className={classes.label}>{t('options-import-yuanshen')}</Typography>
           <ImportDataPopup
-            title={t('options-import-old')}
-            content={t('popup-import-old-content')}
+            title={t('options-import-yuanshen')}
+            content={t('popup-import-yuanshen-content')}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
                 {t('options-import-button')}
               </Button>
             }
             onConfirm={importLegacyData}
-          />
-        </Box>
-        <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-export-old')}</Typography>
-          <ExportDataPopup
-            title={t('options-export-old')}
-            message={t('popup-export-old-content')}
-            fetchData={exportLegacyDataJSON}
-            trigger={
-              <Button className={classes.button} variant="contained" size="small">
-                {t('options-export-button')}
-              </Button>
-            }
           />
         </Box>
       </BorderBox>

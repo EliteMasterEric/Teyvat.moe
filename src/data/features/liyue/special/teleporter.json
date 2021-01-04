@@ -1,8 +1,11 @@
 {
+  "format": 2,
   "name": {
     "en": "Teleporter"
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "teleporter",
     "base": {
@@ -24,684 +27,484 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.624167789904895, 42.02270507812501]
+      "coordinates": [-34.62417, 42.02271],
+      "id": "AEDAA829B0E27BB8EB399EE812FA99B71759A977",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stone Gate Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/stone-gate"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Stone Gate Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/stone-gate"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.43144133557529, 40.73730468750001]
+      "coordinates": [-33.43144, 40.7373],
+      "id": "F6A9E9E277E5288AECEB1BC9579625CDDF5BE5E1",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Wuwang Hill Domain Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/wuwang-hill-domain"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Wuwang Hill Domain Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/wuwang-hill-domain"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.05798104702501, 37.90283203125001]
+      "coordinates": [-36.05798, 37.90283],
+      "id": "F6C037711FE6B91F11DD00F3000F3969A873CA34",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Wuwang Hill Ruins Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/wuwang-hill-ruins"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Wuwang Hill Ruins Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/wuwang-hill-ruins"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.25926542645934, 37.08984375000001]
+      "coordinates": [-32.25927, 37.08984],
+      "id": "9D8B5CBD4A87363245AA9007703FD6997656E2F2",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "East Qingce Village Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/east-qingce-village"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "East Qingce Village Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/east-qingce-village"
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.24068253457368, 33.25561523437501]
+      "coordinates": [-32.24068, 33.25562],
+      "id": "AA991ED1D2CB857D3A295174F8D42A7B914755C2",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "West Qingce Village Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/west-qingce-village"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "West Qingce Village Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/west-qingce-village"
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.18278813800227, 32.90405273437501]
+      "coordinates": [-35.18279, 32.90405],
+      "id": "53F21E52C7E3B297561391F97E733A2F69A16714",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Southwest Qingce Village Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/southwest-qingce-village"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Southwest Qingce Village Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/southwest-qingce-village"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.55308028895581, 40.20996093750001]
+      "coordinates": [-42.55308, 40.20996],
+      "id": "2214E1EA1F8C2D10A8D3C212E4F1B60396F04837",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Wangshu Inn Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/wangshu-inn"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Wangshu Inn Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/wangshu-inn"
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.23225314171489, 47.39501953125001]
+      "coordinates": [-39.23225, 47.39502],
+      "id": "A2F3A7CE1F6730E1216EA0E4334F3DAA4F0CDE2F",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Sal Terrae Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/sal-terrae"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Sal Terrae Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/sal-terrae"
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.49212083968777, 47.92236328125001]
+      "coordinates": [-41.49212, 47.92236],
+      "id": "33251F2175B9C042FC217F5583A638A5EBEC2687",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Mingyun Village Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-mingyun-village"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Mingyun Village Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-mingyun-village"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.91813929958516, 45.81298828125001]
+      "coordinates": [-44.91814, 45.81299],
+      "id": "67081D44310CAAD84ECE1ECD04BBF41E665CF75F",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "West Mingyun Village Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/west-mingyun-village"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "West Mingyun Village Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/west-mingyun-village"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.040182144806664, 51.87744140625001]
+      "coordinates": [-47.04018, 51.87744],
+      "id": "850AB867082ACEE29B54CDC78434A1C39B04329C",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Shoal Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/yaoguang-shoal"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Yaoguang Shoal Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/yaoguang-shoal"
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.980216985374994, 32.67333984375001]
+      "coordinates": [-48.98022, 32.67334],
+      "id": "9698B8D8439265EAF2FAF101D20888088C90B7C8",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "South Cuijue Slope Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/south-cuijue-slope"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "South Cuijue Slope Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/south-cuijue-slope"
     },
     {
-      "id": 13,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.66012730272193, 32.05810546875001]
+      "coordinates": [-45.66013, 32.05811],
+      "id": "2CA9BDA66F673D83F8EC090111B3D9992F699AFC",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Cuijue Slope Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-cuijue-slope"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Cuijue Slope Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-cuijue-slope"
     },
     {
-      "id": 14,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.25942203635171, 27.817382812500004]
+      "coordinates": [-45.25942, 27.81738],
+      "id": "FE0637F1085D803B410052ED66BC3EF0EA50884C",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Jueyun Karst Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/jueyun-karst"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Jueyun Karst Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/jueyun-karst"
     },
     {
-      "id": 15,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.224772722794825, 37.83691406250001]
+      "coordinates": [-49.22477, 37.83691],
+      "id": "A66C3E1E6A0029B86AA8C04D65E226D9F7BCA0AA",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Luhua Pool Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-luhua-pool"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Luhua Pool Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-luhua-pool"
     },
     {
-      "id": 16,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.57634993749886, 44.80224609375001]
+      "coordinates": [-52.57635, 44.80225],
+      "id": "6FCE5E98BCB20FAC3D110E4B100D20D80767ABF2",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Liyue Harbor Outlook Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/liyue-harbor-outlook"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Liyue Harbor Outlook Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/liyue-harbor-outlook"
     },
     {
-      "id": 17,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.409531853086435, 40.86914062500001]
+      "coordinates": [-53.40953, 40.86914],
+      "id": "20C840A5AA073031B25BCEF34278B9B3BEC8A435",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Liyue Harbor Path Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/liyue-harbor-path"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Liyue Harbor Path Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/liyue-harbor-path"
     },
     {
-      "id": 18,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.80128097118045, 39.66064453125001]
+      "coordinates": [-55.80128, 39.66064],
+      "id": "6E349140E1FC490AE49414A7E785A5F3F7078410",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Liyue Harbor Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-liyue-harbor"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Liyue Harbor Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-liyue-harbor"
     },
     {
-      "id": 19,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.00485033534416, 41.08886718750001]
+      "coordinates": [-57.00485, 41.08887],
+      "id": "2C0F3A296E68D089A5018802D4333F88F4FEAE0B",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "South Liyue Harbor Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/south-liyue-harbor"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "South Liyue Harbor Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/south-liyue-harbor"
     },
     {
-      "id": 20,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.692441635399774, 37.37548828125001]
+      "coordinates": [-56.69244, 37.37549],
+      "id": "39965944257ACBB75218D897C27A55F093375366",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Tianheng Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/mt-tianheng"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Mt. Tianheng Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/mt-tianheng"
     },
     {
-      "id": 21,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.16045455774705, 54.86572265625001]
+      "coordinates": [-52.16045, 54.86572],
+      "id": "F1E6E79B5B804F5708A0A3B359F701158FE4E975",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Stone Forest Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/guyun-stone-forest"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Guyun Stone Forest Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/guyun-stone-forest"
     },
     {
-      "id": 22,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.996961618203805, 40.12207031250001]
+      "coordinates": [-45.99696, 40.12207],
+      "id": "4B94499C75B913A214703A52DC65330585F134A8",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Guili Plains Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-guili-plains"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Guili Plains Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-guili-plains"
     },
     {
-      "id": 23,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.05008477838257, 44.14306640625001]
+      "coordinates": [-50.05008, 44.14307],
+      "id": "93D7978739AC7E9681B903F76FFED1088A6F4018",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "South Guili Plains Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/south-guili-plains"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "South Guili Plains Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/south-guili-plains"
     },
     {
-      "id": 24,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.813625792352354, 36.14501953125001]
+      "coordinates": [-53.81363, 36.14502],
+      "id": "DBF6FC678BE1861192E661F38DF029165193BE09",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Mt. Tianheng Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-mt-tianheng"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Mt. Tianheng Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-mt-tianheng"
     },
     {
-      "id": 25,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.559482483762245, 32.95898437500001]
+      "coordinates": [-56.55948, 32.95898],
+      "id": "6ECA275D89114E0B32842EAD0F71D1802DA6F3B6",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "West Mt. Tianheng Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/west-mt-tianheng"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "West Mt. Tianheng Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/west-mt-tianheng"
     },
     {
-      "id": 26,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.938183012205315, 34.84863281250001]
+      "coordinates": [-57.93818, 34.84863],
+      "id": "8B6D049D0997D4D91EADEE4CC70AA1DFC3EF89AA",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Tianheng River Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/mt-tianheng-river"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Mt. Tianheng River Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/mt-tianheng-river"
     },
     {
-      "id": 27,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.723177144920655, 28.542480468750004]
+      "coordinates": [-59.72318, 28.54248],
+      "id": "0BEA401D105DAD42D4C16C1FA73C13ED3547F6D9",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Qingxu Pool Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/qingxu-pool"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Qingxu Pool Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/qingxu-pool"
     },
     {
-      "id": 28,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.05976947910657, 29.882812500000004]
+      "coordinates": [-56.05977, 29.88281],
+      "id": "2194EC3A24AB29031D72894B317CF2F988112C47",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Lingju Pass Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/lingju-pass"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Lingju Pass Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/lingju-pass"
     },
     {
-      "id": 29,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.903612807883555, 26.433105468750004]
+      "coordinates": [-51.90361, 26.43311],
+      "id": "C8D569B1D53B02EBE6A900B1F3FACC508BA82647",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "South Tianqiu Valley Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/south-tianqiu-valley"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "South Tianqiu Valley Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/south-tianqiu-valley"
     },
     {
-      "id": 30,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.0641917366591, 28.300781250000004]
+      "coordinates": [-50.06419, 28.30078],
+      "id": "B7F19B75F5A4178BAFF7F5E7BCE74E5FC9D0A2D2",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "East Tianqiu Valley Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/east-tianqiu-valley"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "East Tianqiu Valley Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/east-tianqiu-valley"
     },
     {
-      "id": 31,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.42808726171426, 20.610351562500004]
+      "coordinates": [-47.42809, 20.61035],
+      "id": "46BE86BFCB4C05874E7FFE81508E3D3204B43843",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Nantianmen Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/nantianmen"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Nantianmen Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/nantianmen"
     },
     {
-      "id": 32,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.956422511073335, 24.169921875]
+      "coordinates": [-42.95642, 24.16992],
+      "id": "D3F00F0E383B9E9FF3B3CFD0F45542D8C3DFDB64",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Qingyun Peak Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/qingyun-peak"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Qingyun Peak Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/qingyun-peak"
     },
     {
-      "id": 33,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.24519901522129, 18.698730468750004]
+      "coordinates": [-44.2452, 18.69873],
+      "id": "3E246641B9B2EEFBFD10EE7203B24F6C25C1F976",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Hulao Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/mt-hulao"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Mt. Hulao Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/mt-hulao"
     },
     {
-      "id": 34,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.597270634420255, 21.665039062500004]
+      "coordinates": [-40.59727, 21.66504],
+      "id": "28D4617F5CCE3EE7148F195BC512DCAC30244CD1",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Aiozang Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/mt-aiozang"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Mt. Aiozang Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/mt-aiozang"
     },
     {
-      "id": 35,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.12580528903429, 23.868932285286984]
+      "coordinates": [-41.12581, 23.86893],
+      "id": "D7BC41576DBB0277C700378991822BECC9AC9998",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Qingyun Peak Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/north-qingyun-peak"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "North Qingyun Peak Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/north-qingyun-peak"
     },
     {
-      "id": 36,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.36209301204983, 24.697265625000004]
+      "coordinates": [-46.36209, 24.69727],
+      "id": "F46304EC8759314D3607D349358F7EE4EC61ABC3",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "South Qingyun Peak Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/south-qingyun-peak"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "South Qingyun Peak Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/south-qingyun-peak"
     },
     {
-      "id": 37,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.58058466412763, 34.58496093750001]
+      "coordinates": [-40.58058, 34.58496],
+      "id": "B6BE11A91EE8FBCC357498500E4248F83B0EDC88",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Eastern Coast Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/eastern-coast"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Eastern Coast Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/eastern-coast"
     },
     {
-      "id": 38,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.147102707700746, 28.806152343750004]
+      "coordinates": [-39.1471, 28.80615],
+      "id": "9CDDEBB4EC3C6D9E3A5DD6850C9591FDCBD1DDB0",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Northern Coast Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/northern-coast"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Northern Coast Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/northern-coast"
     },
     {
-      "id": 39,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.88592102814744, 29.619140625000004]
+      "coordinates": [-41.88592, 29.61914],
+      "id": "03F365B256F7AB1BA5BFB6D5E672E88FB688BB3F",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "East Qingyun Peak Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/east-qingyun-peak"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "East Qingyun Peak Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/east-qingyun-peak"
     },
     {
-      "id": 40,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.52466147177172, 26.542968750000004]
+      "coordinates": [-34.52466, 26.54297],
+      "id": "8FF222F61E2293E7F3193ED642656797D0422105",
+      "importIds": {
+        "gm_legacy": ["liyueTeleporter/40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stonehide Lawachurl Teleporter"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/teleporter/stonehide-lawachurl"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Stonehide Lawachurl Teleporter"
+      },
+      "popupMedia": "liyue/teleporter/stonehide-lawachurl"
     }
   ]
 }

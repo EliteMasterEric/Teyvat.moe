@@ -1,8 +1,11 @@
 {
+  "format": 2,
   "name": {
     "en": "Teleporter"
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "teleporter",
     "base": {
@@ -24,174 +27,84 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.39124186883316, 57.467725568595505]
+      "coordinates": [-38.39124, 57.46773],
+      "id": "31249BEC1F9BBF7DFFF507BFC84A618534FBAC65",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Albedo's Camp"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 1
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.95272076929493, 53.490249924421185]
+      "coordinates": [-35.95272, 53.49025],
+      "id": "29EE5E8FBAE867D48DBE284DD69213425D5A62E0",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #2"
-        },
-        "popupContent": {
-          "en": "North Wyrmrest"
-        },
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.864611780038864, 53.27273172513041]
+      "coordinates": [-38.86461, 53.27273],
+      "id": "5F4648E2B80ED93B0C37C2349828F7E7741C9084",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #3"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 3
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.64958959805563, 51.00044339325347]
+      "coordinates": [-39.64959, 51.00044],
+      "id": "879DB17BD7A609264486391E7F69E810A9FDF978",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Entombed City - Outskirts (North)"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 4
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.98294877466649, 52.17737222155896]
+      "coordinates": [-42.98295, 52.17737],
+      "id": "B7EFEAD3E54CCE73924BCAC56B4FD6F4BA124E7B",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Entombed City - Outskirts (South)"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 5
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.947083897682504, 56.667569335490136]
+      "coordinates": [-40.94708, 56.66757],
+      "id": "85CC3F90AF76C93F61A0A84AFD1BD0E8271328F6",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Skyfrost Nail"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 6
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.049688293574846, 59.79050919673639]
+      "coordinates": [-41.04969, 59.79051],
+      "id": "69742BB7FECF6F43C8D307E2A07163119EEFAB06",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #7"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.11305312101859, 55.37022864686296]
+      "coordinates": [-42.11305, 55.37023],
+      "id": "EF2510B6E7A780F9BAB39BC383B7A2827D7E7925",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #8"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 8
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.88056782366761, 59.813814718088956]
+      "coordinates": [-42.88057, 59.81381],
+      "id": "67777643F7B42C370777AA62389C057BC4123D69",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #9"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 9
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.073811171899166, 64.55260405978103]
+      "coordinates": [-43.07381, 64.5526],
+      "id": "806FD87A9432B627521EF9748388BD95E7F6F18E",
+      "importIds": {
+        "gm_legacy": ["dragonspineTeleporter/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Teleporter #10"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 10
+      "popupAttribution": "MasterEric"
     }
   ]
 }

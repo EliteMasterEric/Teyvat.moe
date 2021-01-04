@@ -14,7 +14,7 @@ generate_size() {
     
     echo Creating MapExtracted_${base_size}.png...
     if [ ! -f output/MapExtracted_${base_size}.png ]; then
-        vips resize MapExtracted.png output/MapExtracted_${base_size}.png $factor
+        vips resize ../assets/MapExtracted.png ../assets/output/MapExtracted_${base_size}.png $factor
     fi
 }
 
@@ -25,11 +25,11 @@ generate_tiles() {
 
     # Split the file.
     echo Splitting MapExtracted_${base_size}.png...
-    vips dzsave output/MapExtracted_${base_size}.png output/tiles --layout google --depth onetile --tile-size ${tile_size} --overlap 0 --suffix .png
+    vips dzsave ../assets/output/MapExtracted_${base_size}.png output/tiles --layout google --depth onetile --tile-size ${tile_size} --overlap 0 --suffix .png
 
     # Save as WEBP this time.
     echo Splitting MapExtracted_${base_size}.webp...
-    vips dzsave output/MapExtracted_${base_size}.png output/tiles --layout google --depth onetile --tile-size ${tile_size} --overlap 0 --suffix .webp
+    vips dzsave ../assets/output/MapExtracted_${base_size}.png output/tiles --layout google --depth onetile --tile-size ${tile_size} --overlap 0 --suffix .webp
 
     # Flatten and reposition.
     # Fetch images up to zoom level 5 + 2 = 7
@@ -46,15 +46,15 @@ generate_tiles() {
             for x in $(seq 0 ${tile_count});
             do
                 ox=$((${x}+${tile_offset}))
-                mv output/tiles/${z}/${y}/${x}.png output/Map_${oz}_${ox}_${oy}.png
-                mv output/tiles/${z}/${y}/${x}.webp output/Map_${oz}_${ox}_${oy}.webp
+                mv ../assets/output/tiles/${z}/${y}/${x}.png ../assets/output/Map_${oz}_${ox}_${oy}.png
+                mv ../assets/output/tiles/${z}/${y}/${x}.webp ../assets/output/Map_${oz}_${ox}_${oy}.webp
             done
         done
     done
 }
 
 optimize_images() {
-    find ./output -name '*.png' -print0 | xargs -0 -P8 -L1 pngquant --ext .png --force 256
+    find ../assets/output -name '*.png' -print0 | xargs -0 -P8 -L1 pngquant --ext .png --force 256
 }
 
 mkdir output

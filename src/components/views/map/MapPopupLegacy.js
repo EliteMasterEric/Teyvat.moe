@@ -3,11 +3,11 @@
  * on the Leaflet map.
  */
 
+import { YOUTUBE_REGEX } from '~/components/data/MarkerDataFormatSchema';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { displayUnixTimestamp, f } from '~/components/i18n/Localization';
 
 // Capture group 1 is the video ID.
-const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([-_a-zA-Z0-9]+)(?:&.+)?$/;
 
 // Maximum width of the popup.
 export const POPUP_WIDTH = 560;

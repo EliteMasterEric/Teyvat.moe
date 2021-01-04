@@ -13,7 +13,7 @@ from os.path import isfile, join, isdir, dirname
 featureDataBasePath = '../src/data/features/'
 publicCommentBasePath = '../public/comments'
 jsonPattern = re.compile('(.+)\.(json)')
-imageURLPattern = re.compile('(https:\/\/i\.imgur\.com\/(?:.+?))\.(png|jpg)')
+imageURLPattern = re.compile('((?:https:\/\/i\.imgur\.com\/(?:.+?))|https:\/\/yuanshen\.site\/comment_png\/)\.(png|jpg)')
 
 def make_parent_dirs(path):
   pathdir = dirname(path)

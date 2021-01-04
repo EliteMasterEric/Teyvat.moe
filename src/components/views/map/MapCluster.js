@@ -67,19 +67,10 @@ const createClusterIcon = (cluster) => {
   });
 };
 
-const MapCluster = ({
-  children,
-  onClusterClick,
-  onClusterDoubleClick,
-  clusterFunction = offClusterFunction,
-}) => {
+const MapCluster = ({ children, clusterFunction = offClusterFunction }) => {
   const map = useMap();
 
-  const generateSpiderPoints = (childMarkerCount, centerPoint, childMarkers) => {
-    const distanceFromCenter = 35;
-    const markerDistance = 45;
-    const lineLength = markerDistance * (childMarkerCount - 1);
-    const lineStart = centerPoint.y - lineLength / 2;
+  const generateSpiderPoints = (childMarkerCount, _centerPoint, childMarkers) => {
     const res = [];
 
     res.length = childMarkerCount;
@@ -98,10 +89,10 @@ const MapCluster = ({
       disableClusteringAtZoom={8}
       iconCreateFunction={createClusterIcon}
       maxClusterRadius={clusterFunction}
-      onClick={console.log}
-      onDblClick={console.log}
-      onMouseOut={console.log}
-      onMouseOver={console.log}
+      // onClick={console.log}
+      // onDblClick={console.log}
+      // onMouseOut={console.log}
+      // onMouseOver={console.log}
       // Configure how the coverage line is displayed.
       polygonOptions={{
         color: '#008E8A',

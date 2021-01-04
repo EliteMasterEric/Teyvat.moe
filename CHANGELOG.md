@@ -579,3 +579,63 @@ First major release of the rework, featuring a new interface developed in React.
 - Markers now recluster when zooming in.
 - Markers now decluster to their original positions, rather than a generic circle.
 - Fixed a bug where markers listed in the editor Elements tab would start at the 0th index.
+- Fixed a bug where popup titles and content would display as `[object Object]`
+
+# 0.10.0 Marker Data Format Rework
+
+- Marker data is now stored in a new format which will make the importing of new features easier.
+  - TODO: Old completion data currently is not migrated, it's just sitting hidden in the user's data. Add functionality to migrate by IDs.
+  - Some markers are still being stored in the old format.
+- Popups for features stored in the new format now display a switch to enable/disable completed status, as an alternative to double clicking the marker.
+- Migrated the following features to the new marker data format:
+  - Crimson Agate (Dragonspine): Migrated 79 markers, and added import IDs for Yuanshen.site. (This took absurdly long.)
+  - Anemoculus (Mondstadt): Migrated 65 markers, and added import IDs for Yuanshen.site.
+  - Geoculus (Mondstadt): Migrated 131 markers, and added import IDs for Yuanshen.site.
+  - Apple (Mondstadt): Migrated 4 markers, and added import IDs for Yuanshen.site.
+  - Statue (Mondstadt): Migrated 4 markers.
+  - Teleporter (Mondstadt): Migrated 22 markers.
+  - Viewpoint (Mondstadt): Migrated 10 markers.
+  - Domain (Dragonspine): Migrated 1 marker.
+  - Statue (Dragonspine): Migrated 1 marker.
+  - Teleporter (Dragonspine): Migrated 10 markers.
+  - Andrius (Mondstadt): Migrated 1 marker.
+  - Anemo Hypostasis (Mondstadt): Migrated 1 marker.
+  - Cryo Regisvine (Mondstadt): Migrated 1 marker.
+  - Dvalin (Mondstadt): Migrated 1 marker.
+  - Electro Hypostasis (Mondstadt): Migrated 1 marker.
+  - Childe (Liyue): Migrated 1 marker.
+  - Geo Hypostasis (Liyue): Migrated 1 marker.
+  - Oceanid (Liyue): Migrated 1 marker.
+  - Pyro Regisvine (Liyue): Migrated 1 marker.
+  - Domain (Mondstadt): Migrated 8 markers.
+  - Domain (Liyue): Migrated 8 markers.
+  - Statue (Liyue): Migrated 5 markers.
+  - Teleporter (Liyue): Migrated 40 markers.
+  - Viewpoint (Liyue): Migrated 17 markers.
+- Added new markers:
+  - Yuanshen.site: Imported 8 Apple (Mondstadt) locations.
+  - Yuanshen.site: Imported 14 Chilled Meat (Dragonspine) locations.
+  - Yuanshen.site: Imported 2 Crimson Agate (Dragonspine) locations (1 addition, 1 correction).
+- Modified data on popups:
+  - Yuanshen.site: Imported 80 Crimson Agate (Dragonspine) Chinese descriptions.
+  - Crimson Agate (Dragonspine): All markers now have text descriptions, YouTube embeds, and AppSample IDs (for future importing attempts).
+- Added a Close button to popups.
+- Removed the "Export Legacy Data" button.
+- Localization key modifications:
+  - New keys:
+    - map-popup-completed-label: Displayed on the popup next to the completed status switch.
+    - options-import-yuanshen: Displayed next to the button for "Import from Yuanshen.site" (previously Import Legacy Data)
+    - options-export-data: Import Data, previously "options-export-new"
+    - options-import-data: Export Data, previously "options-import-new"
+    - popup-import-data-content: Popup content when importing data.
+    - popup-import-yuanshen-content: Popup content when importing Yuanshen.site data.
+  - Removed keys:
+    - options-export-old
+    - options-import-old
+    - options-export-new
+    - options-import-new
+    - popup-import-old-content
+    - popup-import-new-content
+- Modified existing localization keys:
+
+- Completed markers now display with a green highlight to distinguish them when opacity is 1.

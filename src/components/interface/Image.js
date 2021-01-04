@@ -77,7 +77,7 @@ export const useImageExtension = (block = false) => {
 const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
 export const Image = ({
   srcPNG,
-  srcWebP,
+  srcWebP = null,
   className = '',
   alt = '',
   scrollPosition = undefined,
@@ -87,7 +87,7 @@ export const Image = ({
   return (
     <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
       <picture>
-        <source srcSet={srcWebP} type="image/webp" />
+        {srcWebP ? <source srcSet={srcWebP} type="image/webp" /> : null}
         <source srcSet={srcPNG} />
         <img {...others} alt={alt} className={clsx(className)} src={srcPNG} />
       </picture>

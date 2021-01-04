@@ -21,7 +21,7 @@ import {
   lineTextProperties,
   lineTextPropertiesHighlight,
 } from '~/components/views/map/LayerConstants';
-import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
+import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopupLegacy';
 import { hashObject } from '~/components/Util';
 
 const _EditorLayer = ({ displayed, editorData, editorHighlight }) => {

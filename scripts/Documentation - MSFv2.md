@@ -30,6 +30,11 @@ Final data format example.:
 ```javascript
 {
   /*
+   * A variable to indicate data format version.
+   * Change whenever structure requires migration.
+   */
+  "format": 2,
+  /*
    * cluster {Boolean}: Whether to display this feature or route to the user.
    *   Optional. Allowed on markers or routes.
    *   Defaults to true.
@@ -50,19 +55,42 @@ Final data format example.:
    */
   "cluster": 'off',
   /*
-   * cluster {Number}: How long it takes markers of this type to respawn, in seconds.
+   * respawn {Number or String}:
    *   Optional. Only allowed on markers.
    *   Used for the Clear Respawned Markers option.
-   *   Defaults to -1, indicating no respawn.
+   *   <number>: How long it takes markers of this type to respawn, in seconds.
+   *   'none' indicates no respawn.
+   *   'boss' indicates respawn at Monday at 4 AM (server time).
    */
-  "respawn": -1,
+  "respawn": 'none',
   /*
-   * name {Object} Data used to display markers.
+   * icons {Object} Data used to display markers.
    *   Mandatory on markers, not used on routes.
    *   Format has not changed since the first marker storage format.
    */
   "icons": {
-    ...
+    // This is the image that displays in the Map Controls, and on Marker icons.
+    "filter": "crimson-agate",
+    "base": {
+      // If true, use a generic marker that displays the Filter icon.
+      "marker": false,
+
+      // When marker is enabled, custom icon display is not used and the below options are FORBIDDEN.
+
+      "key": "crimson-agate", // Display the icon from `./src/images/icons/map/<key>`
+      "svg": false, // If true, uses `<key>.svg` instead of `<key>.png` or `<key>.webp`
+      "iconSize": [24, 24], // Icon width and height.
+      "shadowSize": [50, 64], // Shadow width and height.
+      "iconAnchor": [12, 12], // Position of icon relative to the marker position.
+      "shadowAnchor": [4, 62], // Position of the shadow relative to the marker position.
+      "popupAnchor": [0, -12]. // Position of the popup relative to the marker position.
+      "className": "map-marker-custom-crimson-agate", // Use a custom class for this marker. You can then specify CSS in code.
+      "clusterIcon": "crimson-agate", // Clusters always use generic markers. Specify to override the value of "filter" in this case.
+    },
+    "done": {
+      // Uses the same format as "base".
+      "marker": true,
+    },
   },
 
   /*
@@ -123,7 +151,7 @@ Final data format example.:
          * gm_legacy {String[]}: The corresponding marker ID(s) for GenshinMap
          *   before the MSFv2 migration.
          */
-        "gm_legacy": ["107"]
+        "gm_legacy": ["mondstadtAndrius/107"]
         /*
          * gm_msfv2 {String[]}: The corresponding marker ID(s) for GenshinMap
          *   after migration.
@@ -151,6 +179,7 @@ Final data format example.:
        * popupAttribution {String}: The individual, creator, or site that provided this marker.
        *   Optional value. Used on both markers and routes.
        *   Used on popups.
+       *   Supports safe HTML including links.
        */
       "popupAttribution": "Yuanshen.site",
       /*
