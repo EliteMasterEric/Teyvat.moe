@@ -36,3 +36,8 @@ body > textarea {
   text-decoration: black underline dotted;
   cursor: pointer;
 }
+
+/* SVGs should fill with the current text color. */
+svg {
+  fill: currentColor;
+}

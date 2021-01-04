@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const _MapControlsEditorRoute = ({
-  routeId,
+  index,
   routeTitle,
   routeContent,
   routeMedia,
@@ -69,7 +69,7 @@ const _MapControlsEditorRoute = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('editor-elements-route-id', { id: routeId })}
+          {f('editor-elements-route-id', { id: index + 1 })}
         </Typography>
 
         <Tooltip title={t('editor-delete-tooltip')}>
@@ -99,7 +99,6 @@ const _MapControlsEditorRoute = ({
 
 const mapStateToProps = (state, { route }) => ({
   highlighted: state.editorHighlight === route.id,
-  routeId: route.id,
   routeTitle: route.properties.popupTitle.en,
   routeContent: route.properties.popupContent.en,
   routeMedia: route.properties.popupMedia,

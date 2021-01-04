@@ -69,7 +69,16 @@ const FullPageErrorHandler = ({ error, errorInfo }) => {
 
   const classes = useStyles();
 
-  const componentStack = (errorInfo?.componentStack ?? 'NO COMPONENT STACK').trim();
+  let componentStack = (errorInfo?.componentStack ?? 'NO COMPONENT STACK').trim();
+
+  if (error.detail) {
+    componentStack += `\n---DETAIL---\n${error.detail}`;
+  }
+  if (error.original) {
+    componentStack += `\n---ORIGINAL---\n`;
+    componentStack += `${error.original.name}: ${error.original.message}\n`;
+    componentStack += `${error.original.stack}`;
+  }
 
   const onSubmitError = () => {
     openURLInWindow(generateReportURL(error.name, error.message, componentStack));

@@ -11,13 +11,9 @@ import MainView from '~/components/views/MainView';
 import PageHeaders from '~/components/views/PageHeaders';
 import store from '~/redux';
 
-import './App.css';
 import './NerdFonts.css';
 
 const App = () => {
-  // Uncomment this to clear local storage.
-  // require('./components/preferences/Preferences').resetLocalStorage();
-
   return (
     <ThemeProvider theme={Theme}>
       <HelmetProvider>

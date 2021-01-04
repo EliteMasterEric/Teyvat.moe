@@ -5,7 +5,7 @@
 
 import L from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
-import 'leaflet.pattern';
+// import 'leaflet.pattern';
 import React from 'react';
 import { GeoJSON, useMap } from 'react-leaflet';
 import { connect } from 'react-redux';
@@ -19,6 +19,7 @@ const worldBorderData = require('~/data/core/world-border.json');
  * Adds a striped pattern outside the world border.
  * Looks great but TANKS performance.
  */
+/*
 const worldBorderPattern = new L.StripePattern({
   patternContentUnits: 'objectBoundingBox',
   patternUnits: 'objectBoundingBox',
@@ -35,6 +36,7 @@ const worldBorderPattern = new L.StripePattern({
   spaceWeight: 0.025,
   height: 0.05,
 });
+*/
 
 const _WorldBorderLayer = ({ displayed }) => {
   // Any child elements of the react-leaflet MapContainer can access the Map instance
@@ -55,7 +57,7 @@ const _WorldBorderLayer = ({ displayed }) => {
 
   // Do once.
   React.useEffect(() => {
-    worldBorderPattern.addTo(mapCurrent);
+    // worldBorderPattern.addTo(mapCurrent);
   }, []);
 
   // TODO: We destroy the layer if it's hidden. Is there a more performant way?

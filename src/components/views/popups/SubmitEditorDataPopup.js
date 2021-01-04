@@ -2,11 +2,6 @@
  * Provides the interface for the popup which displays
  * when clicking "Submit Editor Data" in the Editor tab of the map controls.
  */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-
-import clsx from 'clsx';
-
-import React, { useState } from 'react';
 
 import {
   MenuItem,
@@ -19,18 +14,31 @@ import {
   DialogContentText,
   DialogActions,
   makeStyles,
+  FormControl,
+  InputLabel,
+  Typography,
+  Box,
 } from '@material-ui/core';
+import React, { useState } from 'react';
 
 import { MapCategories, MapRegions } from '~/components/data/MapFeatures';
-import { useImageExtension } from '~/components/interface/Image';
 import { t } from '~/components/i18n/Localization';
 import { SafeHTML } from '~/components/Util';
-
-import './SubmitEditorDataPopup.css';
+import BorderBox from '~/components/interface/BorderBox';
+import { InputTextField } from '~/components/interface/Input';
 
 const useStyles = makeStyles({
   dialog: {
     backgroundColor: '#f0e9e2',
+  },
+  formField: {
+    width: '90%',
+    maxWidth: 300,
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 10,
+    fontStyle: 'italic',
   },
 });
 
@@ -59,7 +67,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
     return { value: key, label: t(value.nameKey) };
   });
 
-  const onClickConfirm = (closePopupCB) => () => {
+  const onClickConfirm = () => {
     if (!isValid()) return;
 
     onConfirm({
@@ -79,12 +87,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         },
       },
     });
-    closePopupCB();
+    closePopup();
   };
 
-  const ext = useImageExtension();
-
-  // NOTE: className on popup gets overridden with <class>-content, -overlay, and -arrow.
   return (
     <>
       {React.cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
@@ -98,22 +103,21 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
           <DialogContentText>
             <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
           </DialogContentText>
-          <span
-            className={clsx(
-              'popup-submit-editor-data-form-content',
-              `popup-submit-editor-data-form-content-${ext}`
-            )}
+          <BorderBox
+            display="flex"
+            flexDirection="column"
+            flexWrap="wrap"
+            alignItems="center"
+            justifyContent="center"
           >
-            <div className={clsx('popup-submit-editor-data-field-container', 'margin-bottom')}>
-              <span>{t('popup-submit-editor-data-feature-name')}</span>
-              <input
-                type="text"
-                value={submissionName}
-                onChange={(event) => setSubmissionName(event.target.value)}
-              />
-            </div>
-            <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>{t('popup-submit-editor-data-category')}</span>
+            <InputTextField
+              value={submissionName}
+              label={t('popup-submit-editor-data-feature-name')}
+              onChange={setSubmissionName}
+              className={classes.formField}
+            />
+            <FormControl className={classes.formField}>
+              <InputLabel>{t('popup-submit-editor-data-category')}</InputLabel>
               <Select
                 value={submissionCategory}
                 onChange={(event) => setSubmissionCategory(event.target.value)}
@@ -124,9 +128,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                   </MenuItem>
                 ))}
               </Select>
-            </div>
-            <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>{t('popup-submit-editor-data-region')}</span>
+            </FormControl>
+            <FormControl className={classes.formField}>
+              <InputLabel>{t('popup-submit-editor-data-region')}</InputLabel>
               <Select
                 value={submissionRegion}
                 onChange={(event) => setSubmissionRegion(event.target.value)}
@@ -137,22 +141,30 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
                   </MenuItem>
                 ))}
               </Select>
-            </div>
-            <span className={clsx('popup-submit-editor-data-field-subtitle', 'margin-bottom')}>
+            </FormControl>
+            <Typography className={classes.subtitle} gutterBottom>
               {t('popup-submit-editor-data-subtitle-a')}
-            </span>
-            <div className={clsx('popup-submit-editor-data-field-container')}>
-              <span>{t('popup-submit-editor-data-cluster-markers')}</span>
+            </Typography>
+            <Box
+              className={classes.formField}
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Typography className={classes.label} flexGrow={1}>
+                {t('popup-submit-editor-data-cluster-markers')}
+              </Typography>
               <Switch
                 size="small"
-                onChange={(value) => setClusterMarkers(value.target.checked)}
+                color="primary"
+                onChange={(event) => setClusterMarkers(event.target.checked)}
                 checked={clusterMarkers}
               />
-            </div>
-            <span className={clsx('popup-submit-editor-data-field-subtitle')}>
+            </Box>
+            <Typography className={classes.subtitle} gutterBottom>
               {t('popup-submit-editor-data-subtitle-b')}
-            </span>
-          </span>
+            </Typography>
+          </BorderBox>
         </DialogContent>
         <DialogActions>
           <Button
@@ -170,7 +182,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             aria-label={t('popup-confirm')}
             tabIndex={0}
             color="primary"
-            onClick={onClickConfirm(closePopup)}
+            onClick={onClickConfirm}
             disabled={!isValid()}
           >
             {t('popup-confirm')}

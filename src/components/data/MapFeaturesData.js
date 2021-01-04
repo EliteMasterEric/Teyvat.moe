@@ -199,7 +199,7 @@ export const createMapIcon = ({
     // This part is a little complex.
     // As a neat hack, the marker"s shadow is offset and used to implement the frame.
     // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(`./map_${done ? 'done' : 'base'}/marker.${ext}`, true).default;
+    const shadowUrl = iconsContext(`./marker/marker_white_bg.svg`, true).default;
 
     /*
      */
@@ -221,7 +221,7 @@ export const createMapIcon = ({
   }
 
   // Else, don't use the marker image.
-  const iconUrl = iconsContext(`./map_${done ? 'done' : 'base'}/${key}.${ext}`, true).default;
+  const iconUrl = iconsContext(`./map/${key}.${ext}`, true).default;
 
   // Handle the niche case where cluster = true and marker = false.
   const clusterIconUrl = clusterIcon !== '' ? getFilterIconURL(clusterIcon, ext) : undefined;

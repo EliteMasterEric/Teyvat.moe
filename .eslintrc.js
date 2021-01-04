@@ -11,13 +11,16 @@ module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['@babel', 'prettier', 'mui-unused-classes'],
   rules: {
-    'prettier/prettier': ['warn'], // Utilize Prettier to maintain code style.
+    /**
+     * Set up basic formatting rules with the Prettier plugin.
+     * This helps maintain a consistent code style.
+     */
+    'prettier/prettier': ['warn'],
 
-    // Style overrides.
-    'react/jsx-filename-extension': ['off'], // Allow JSX in .js files.
-    'react/prop-types': ['off'], // IDGAF about validating prop types.
-
-    // Add a warning for unused variables, except if they start with '_'.
+    /**
+     * Add a warning for unused variables, except if they start with '_'.
+     * This flags the variable as 'unused, but potentially used in future'.
+     */
     'no-unused-vars': [
       'warn',
       {
@@ -26,27 +29,32 @@ module.exports = {
       },
     ],
 
-    'no-underscore-dangle': ['off'], // Allow dangling underscores in identifier names.
-    /*
-     * Allow variable declarations in case blocks.
-     */
-    'no-case-declarations': ['off'],
-
-    'mui-unused-classes/unused-classes': ['warn'],
-
-    /*
+    /**
      * Allow use of console commands at specific log levels.
      * Instances of console.log and console.info should be stripped.
      */
     'no-console': ['warn', { allow: ['warn', 'error', 'debug'] }],
 
-    'react/self-closing-comp': ['warn'], // Stop crashing my app because of this!
-    'object-shorthand': ['warn'], // This is not severe.
+    /**
+     * Make less severe/important issues throw warnings instead of breaking the program.
+     * Don't add stuff here if it can be autofixed.
+     */
+    'mui-unused-classes/unused-classes': ['warn'],
+    'react/self-closing-comp': ['warn'],
+    'object-shorthand': ['warn'],
+    'react/jsx-boolean-value': ['warn'],
 
-    'import/prefer-default-export': ['off'], // Allow single exports in file that will have multipl efiles later.
+    /**
+     * Turn off rules I don't like, or that annoy me.
+     */
+    'react/jsx-filename-extension': ['off'], // Allow JSX in .js files.
+    'react/prop-types': ['off'], // I don't use TypeScript.
+    'no-underscore-dangle': ['off'], // Allow dangling underscores in identifier names.
+    'no-case-declarations': ['off'], // Allow variables to be declared in case blocks.
+    'import/prefer-default-export': ['off'], // Allow single exports in files. They may get more later.
     'import/no-dynamic-require': ['off'], // Dynamic requires are used to reference images.
     'global-require': ['off'], // Local requires are used to reference images.
-    'react/jsx-props-no-spreading': ['off'], // I don't mind passing properties.
-    'max-classes-per-file': ['off'], // I don't mind having multiple classes in one file.
+    'react/jsx-props-no-spreading': ['off'], // I don't mind passing spread properties using {...other} in JSX.
+    'max-classes-per-file': ['off'], // I don't mind having multiple classes in one file, to keep them organized.
   },
 };
