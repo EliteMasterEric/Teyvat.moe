@@ -1,8 +1,9 @@
 import _ from 'lodash';
+
+import MapCategories from '~/components/data/MapCategories';
 import {
   getEmptyFeatureCategories,
   getEmptyRouteCategories,
-  MapCategories,
 } from '../../components/data/MapFeatures';
 import { setControlsCategory, SET_CONTROLS_TAB } from '../ducks/ui';
 

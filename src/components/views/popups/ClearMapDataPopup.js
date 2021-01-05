@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-
 import {
   Button,
   Dialog,
-  DialogTitle,
   DialogContent,
   DialogContentText,
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
+import React, { useState } from 'react';
+
 import { t } from '~/components/i18n/Localization';
+import DialogTitle from '~/components/views/popups/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -30,7 +30,9 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle>{t('popup-clear-map-data-title')}</DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>
+          {t('popup-clear-map-data-title')}
+        </DialogTitle>
         <DialogContent>
           <DialogContentText>{t('popup-clear-map-data-content')}</DialogContentText>
         </DialogContent>

@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core';
 import * as clipboard from 'clipboard-polyfill/text';
 import _ from 'lodash';
-import hash from 'object-hash';
+import objectHash from 'object-hash';
 import React from 'react';
 import sanitizeHTML from 'sanitize-html';
 
@@ -51,14 +51,34 @@ export const fromBase64 = (input) => {
  * @param {*} input The object to hash.
  * @returns {String} The hashed object.
  */
-export const hashObject = (input) => {
+export const hashObject = (input, options) => {
   try {
-    return hash(input);
+    const fullOptions = {
+      algorithm: 'sha1',
+      unorderedArrays: false,
+      unorderedSets: true,
+      unorderedObjects: true,
+      ...options,
+    };
+
+    if (fullOptions.debug) {
+      // writeToStream will display the information that WOULD have been hashed.
+      // Used for debugging.
+      let output = '';
+      objectHash.writeToStream(input, fullOptions, {
+        write: (x) => {
+          output += x;
+        },
+      });
+      console.debug(output);
+    }
+    // Actually return the hash.
+    return objectHash(input, fullOptions);
   } catch (err) {
     console.error(input);
     const output = new Error('Unable to hash object, did an input leak?');
+    output.stack = err.stack;
     output.detail = input;
-    output.original = err;
     throw output;
   }
 };
@@ -235,3 +255,11 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
   // Pass the reference to the state getter and setter.
   return [stateValue, setStateValue];
 };
+
+/**
+ * MaterialUI can break if it can't assign props to certain children.
+ * @see https://github.com/mui-org/material-ui/issues/12597#issuecomment-455244379
+ *
+ * @param {*} children A function which takes the other props passed to this component as an argument.
+ */
+export const CloneProps = ({ children, ...other }) => children(other);

@@ -8,13 +8,18 @@ import 'leaflet.markercluster';
 import _ from 'lodash';
 import React from 'react';
 import { GeoJSON } from 'react-leaflet';
-import MarkerClusterGroup from 'react-leaflet-markercluster';
 import { connect } from 'react-redux';
 
 import { createMapIcon } from '~/components/data/MapFeaturesData';
 import { useImageExtension } from '~/components/interface/Image';
 import { hashObject } from '~/components/Util';
-import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
+import FeatureMarker from '~/components/views/map/layers/FeatureMarker';
+import MapCluster, {
+  offClusterFunction,
+  onClusterFunction,
+  variableClusterFunction,
+} from '~/components/views/map/MapCluster';
+import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopupLegacy';
 import store from '~/redux';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 
@@ -41,13 +46,13 @@ const _FeatureLayer = ({
     // Note that GeoJSON reverses these.
     const icon = completed
       ? createMapIcon({
-          ...mapFeature.icons.done,
+          ...mapFeature?.icons?.done,
           ext: mapFeature?.icons?.done?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.done.key ?? mapFeature.icons.filter,
           completed: true,
         })
       : createMapIcon({
-          ...mapFeature.icons.base,
+          ...mapFeature?.icons?.base,
           ext: mapFeature?.icons?.base?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.base.key ?? mapFeature.icons.filter,
           completed: false,
@@ -97,63 +102,58 @@ const _FeatureLayer = ({
       });
   };
 
-  const createClusterIcon = (cluster) => {
-    const childMarkers = cluster.getAllChildMarkers();
-    const childCount = childMarkers.length;
-    // For each cluster child element, check if completed = true; if so, add to the count.
-    const childCompletedCount = childMarkers.reduce(
-      (prev, marker) => prev + (marker?.options?.properties?.completed ? 1 : 0),
-      0
-    );
-    const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
-
-    // const svgTipFill = childCompletedCount / childCount === 1 ? '00EBF4' : 'E6E6E6';
-    const iconHTML = `<img class='map-marker-cluster-marker' alt="" src="${
-      require('~/images/icons/map_base/marker_cluster.png').default
-    }"/><b class="map-marker-cluster-label">${childCompletedCount}/${childCount}</b><img class='map-marker-cluster-img' src='${iconUrl}'/>`;
-
-    return L.divIcon({
-      html: iconHTML,
-      className: 'map-marker-cluster',
-      iconSize: new L.Point(40, 40),
-    });
-  };
-
   // If any of these values change, update the map.
+  // Only used for legacy GeoJSON features.
   const hashValue = {
     clusterMarkers,
     mapFeature,
     completedIds,
   };
 
-  const inner = (
-    <GeoJSON
-      key={hashObject(hashValue)}
-      data={mapFeature.data}
-      pointToLayer={pointToLayer}
-      onEachFeature={onEachFeature}
-    />
-  );
+  // Choose the proper clustering function.
+  let clusterFunction = null;
+  switch (mapFeature.cluster) {
+    case 'on':
+      clusterFunction = onClusterFunction;
+      break;
+    case 'variable':
+      clusterFunction = variableClusterFunction;
+      break;
+    case 'off':
+    default:
+      clusterFunction = offClusterFunction;
+      break;
+  }
+
+  const dataView =
+    mapFeature.format === 2 ? (
+      mapFeature.data.map((marker) => {
+        return (
+          <FeatureMarker
+            marker={marker}
+            feature={mapFeature}
+            completed={completedIds[marker.id]}
+            markFeature={() => markFeature(marker.id)}
+            unmarkFeature={() => unmarkFeature(marker.id)}
+          />
+        );
+      })
+    ) : (
+      <GeoJSON
+        key={hashObject(hashValue)}
+        data={mapFeature.data}
+        pointToLayer={pointToLayer}
+        onEachFeature={onEachFeature}
+      />
+    );
 
   // Cluster if enabled by the user and the feature type supports it.
-  return clusterMarkers ? (
-    <MarkerClusterGroup
-      iconCreateFunction={createClusterIcon}
-      maxClusterRadius={(_zoom) => 80}
-      zoomToBoundsOnClick={false}
-      showCoverageOnHover={false}
-    >
-      {inner}
-    </MarkerClusterGroup>
-  ) : (
-    inner
-  );
+  return <MapCluster clusterFunction={clusterFunction}>{dataView}</MapCluster>;
 };
 
 const mapStateToProps = (state, { mapFeature, featureKey }) => ({
   clusterMarkers: state.options.clusterMarkers && (mapFeature?.cluster ?? false),
-  completedIds: state.completed.features[featureKey],
-  completedAlpha: state.options.completedAlpha,
+  completedIds: state.completed.features[featureKey] ?? [],
 
   // Display the feature if the feature is enabled in the controls,
   // and we aren't in the state of (editor on + hide features when editor is on)

@@ -6,13 +6,12 @@ import L from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-editable';
 import 'leaflet-textpath';
-import 'leaflet.pattern';
 import _ from 'lodash';
 
 export const editorMarker = L.icon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
-  shadowUrl: require('~/images/icons/map_base/marker.svg').default, // Default value. Use options to override.
+  shadowUrl: require('~/images/icons/marker/marker_white_bg.svg').default, // Default value. Use options to override.
   iconSize: [24, 23], // size of the icon
   shadowSize: [40, 40], // size of the shadow
   iconAnchor: [12, 34.5], // point of the icon which will correspond to marker's location
@@ -23,7 +22,7 @@ export const editorMarker = L.icon({
 export const editorMarkerHighlight = L.icon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
-  shadowUrl: require('~/images/icons/map_done/marker.png').default, // Default value. Use options to override.
+  shadowUrl: require('~/images/icons/marker/marker_white_bg.svg').default, // Default value. Use options to override.
   iconSize: [24, 23], // size of the icon
   shadowSize: [40, 40], // size of the shadow
   iconAnchor: [12, 34.5], // point of the icon which will correspond to marker's location

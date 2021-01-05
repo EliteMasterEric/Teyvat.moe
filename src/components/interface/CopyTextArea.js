@@ -15,10 +15,8 @@ import { t } from '~/components/i18n/Localization';
  * @param {*} others Any other parameters passed will be received by the text area.
  */
 const CopyTextArea = ({ text, rows = 10, ...others }) => {
-  const textAreaRef = React.useRef(null);
-
-  const copyText = () => {
-    textAreaRef.current.select();
+  const copyText = (event) => {
+    event.target.select();
     document.execCommand('copy');
   };
 
@@ -30,8 +28,7 @@ const CopyTextArea = ({ text, rows = 10, ...others }) => {
         data-tip={t('popup-click-to-copy')}
         multiline
         readOnly
-        style={{ cursor: 'pointer' }}
-        ref={textAreaRef}
+        inputProps={{ style: { cursor: 'pointer' } }}
         onClick={copyText}
         rows={rows}
         value={text}

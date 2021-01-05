@@ -1,8 +1,11 @@
 {
+  "format": 2,
   "name": {
     "en": "Statue of the Seven"
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "dragonspine-statue",
     "base": {
@@ -24,21 +27,12 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.26571791212971, 60.050754185173595]
+      "coordinates": [-39.26572, 60.05075],
+      "id": "9D7B5E84ECBF41F751DD353233F67BF58DFC35FE",
+      "importIds": {
+        "gm_legacy": ["dragonspineStatue/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Statue of The Seven - Anemo"
-        },
-        "popupContent": {
-          "en": "Starfell Valley, Dragonspine, Mondstadt"
-        },
-        "popupMedia": "dragonspine/statue/1"
-      }
+      "popupAttribution": "MasterEric"
     }
   ]
 }
