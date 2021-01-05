@@ -5,21 +5,15 @@
  * above the tabs in the map controls.
  */
 
-import clsx from 'clsx';
+import { Box } from '@material-ui/core';
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { MapRegions } from '~/components/data/MapFeatures';
-import { Image } from '~/components/interface/Image';
-import MapControlsRegionButton from '~/components/views/controls/options/MapControlsRegionButton';
-import imgFoldOpenPNG from '~/images/controls/fold_open_small.png';
-import imgFoldOpenWebP from '~/images/controls/fold_open_small.webp';
-import imgFoldClosePNG from '~/images/controls/fold_close_small.png';
-import imgFoldCloseWebP from '~/images/controls/fold_close_small.webp';
+import MapRegions from '~/components/data/MapRegions';
+import MapControlsRegionButton from '~/components/views/controls/sidebar/MapControlsRegionButton';
 import { setControlsOpen } from '~/redux/ducks/ui';
-
-import './MapControlsNavigationSmall.css';
+import MapControlsFoldButton from '../sidebar/MapControlsFoldButton';
 
 /**
  * The button next to the Map Controls.
@@ -28,32 +22,15 @@ import './MapControlsNavigationSmall.css';
  * @param {*} setOpen The function to change the state of the Map Controls.
  */
 const _MapControlsNavigationSmall = ({ displayRegions, open, setOpen }) => {
-  // Toggle isOpen.
-  const toggleOpen = () => setOpen(!open);
-
   return (
-    <div className={clsx('map-controls-navigation-small-container')}>
-      <div
-        onClick={toggleOpen}
-        onKeyDown={() => {}}
-        role="button"
-        aria-label={open ? 'Close Filter Window' : 'Open Filter Window'}
-        tabIndex={0}
-      >
-        <Image
-          srcPNG={open ? imgFoldClosePNG : imgFoldOpenPNG}
-          srcWebP={open ? imgFoldCloseWebP : imgFoldOpenWebP}
-          className={clsx('map-controls-fold-small')}
-        />
-      </div>
+    <Box display="flex" flexGrow="0" justifyContent="center" flexWrap="wrap">
+      <MapControlsFoldButton button fixedPosition={false} open={open} setOpen={setOpen} />
       {displayRegions
         ? _.keys(MapRegions).map((key) =>
-            MapRegions[key]?.enabled ? (
-              <MapControlsRegionButton key={key} regionKey={key} small />
-            ) : null
+            MapRegions[key]?.enabled ? <MapControlsRegionButton key={key} regionKey={key} /> : null
           )
         : null}
-    </div>
+    </Box>
   );
 };
 

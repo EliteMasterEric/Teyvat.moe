@@ -2,6 +2,7 @@
  * Provides a component to display a simple flex box with a stylized border.
  */
 import { Box, makeStyles } from '@material-ui/core';
+import clsx from 'clsx';
 import React from 'react';
 
 import { useImageExtension } from '~/components/interface/Image';
@@ -30,6 +31,7 @@ const BorderBox = ({
   grow = true,
   wrap = false,
   image = null,
+  className = null,
   ...other
 }) => {
   const ext = useImageExtension();
@@ -40,7 +42,7 @@ const BorderBox = ({
 
   return (
     <Box
-      className={classes.borderBox}
+      className={clsx(classes.borderBox, className)}
       display={displayed ? 'flex' : 'none'}
       flexDirection={direction}
       flexGrow={grow ? '1' : '0'}

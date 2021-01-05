@@ -1,6 +1,6 @@
 # assets
 
-This directory contains raw assets, and scripts used for developing the map efficiently.
+This directory contains raw assets.
 
 ## OriginalMap
 

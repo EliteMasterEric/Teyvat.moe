@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 import { useImageExtension } from '~/components/interface/Image';
 import { hashObject } from '~/components/Util';
 import { lineProperties, lineTextProperties } from '~/components/views/map/LayerConstants';
-import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
+import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopupLegacy';
 
 const _RouteLayer = ({ mapRoute, displayed }) => {
   const ext = useImageExtension();
