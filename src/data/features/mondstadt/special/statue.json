@@ -1,7 +1,8 @@
 {
   "format": 2,
   "name": {
-    "en": "Statue of the Seven"
+    "en": "Statue of the Seven",
+    "ru": "Статуя семи Архонтов"
   },
   "enabled": true,
   "cluster": "off",
@@ -33,12 +34,8 @@
         "gm_legacy": ["mondstadtStatue/1"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Statue of The Seven - Anemo"
-      },
-      "popupContent": {
-        "en": "Starfell Valley, Mondstadt"
-      },
+      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupContent": { "en": "Starfell Valley, Mondstadt", "ru": "Долина Звездопадов, Мондштадт" },
       "popupMedia": "mondstadt/statue/starfell"
     },
     {
@@ -48,12 +45,8 @@
         "gm_legacy": ["mondstadtStatue/2"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Statue of The Seven - Anemo"
-      },
-      "popupContent": {
-        "en": "Galesong Hill, Mondstadt"
-      },
+      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupContent": { "en": "Galesong Hill, Mondstadt", "ru": "Склон Песни ветра, Мондштадт" },
       "popupMedia": "mondstadt/statue/windrise"
     },
     {
@@ -63,12 +56,8 @@
         "gm_legacy": ["mondstadtStatue/3"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Statue of The Seven - Anemo"
-      },
-      "popupContent": {
-        "en": "Windwail Highland, Mondstadt"
-      },
+      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupContent": { "en": "Windwail Highland, Mondstadt", "ru": "Нагорье Ревущих ветров, Мондштадт" },
       "popupMedia": "mondstadt/statue/springvale"
     },
     {
@@ -78,12 +67,8 @@
         "gm_legacy": ["mondstadtStatue/4"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Statue of The Seven - Anemo"
-      },
-      "popupContent": {
-        "en": "Brightcrown Mountains, Mondstadt"
-      },
+      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupContent": { "en": "Brightcrown Mountains, Mondstadt", "ru": "Горы Светлой короны, Мондштадт" },
       "popupMedia": "mondstadt/statue/stormterror"
     }
   ]

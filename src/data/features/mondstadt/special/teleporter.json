@@ -1,7 +1,8 @@
 {
   "format": 2,
   "name": {
-    "en": "Teleporter"
+    "en": "Teleporter", 
+    "ru": "Телепорт"
   },
   "enabled": true,
   "cluster": "off",
@@ -34,7 +35,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Stormbearer Point"
+        "en": "Stormbearer Point", 
+        "ru": "Пик Буревестника"
       },
       "popupMedia": "mondstadt/teleporter/stormbearer-point"
     },
@@ -46,7 +48,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Stormbearer Mountains"
+        "en": "Stormbearer Mountains", 
+        "ru": "Горы Буревестника"
       },
       "popupMedia": "mondstadt/teleporter/stormbearer-mountains"
     },
@@ -58,7 +61,7 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Starting Beach"
+        "en": "Stormbearer Beach",
       },
       "popupMedia": "mondstadt/teleporter/starting-beach"
     },
@@ -70,7 +73,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Starsnatch Cliff"
+          "en": "Starsnatch Cliff", 
+          "ru": "Утёс Звездопада"
       },
       "popupMedia": "mondstadt/teleporter/starsnatch"
     },
@@ -82,7 +86,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Mondstadt City Limits"
+          "en": "Mondstadt City Limits", 
+          "ru": "Границы города Мондштадт"
       },
       "popupMedia": "mondstadt/teleporter/mondstadt-city-limits"
     },
@@ -93,9 +98,10 @@
         "gm_legacy": ["mondstadtTeleporter/6"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Central Mondstadt"
-      },
+        "popupTitle": {
+          "en": "Central Mondstadt", 
+          "ru": "Центр Мондштадта"
+        },
       "popupMedia": "mondstadt/teleporter/central-mondstadt"
     },
     {
@@ -105,9 +111,10 @@
         "gm_legacy": ["mondstadtTeleporter/7"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Knights of Favonius HQ"
-      },
+        "popupTitle": {
+          "en": "Knights of Favonius HQ", 
+          "ru": "Ордо Фавониус"
+        },
       "popupMedia": "mondstadt/teleporter/kof-hq"
     },
     {
@@ -117,9 +124,10 @@
         "gm_legacy": ["mondstadtTeleporter/8"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Falcon Coast"
-      },
+        "popupTitle": {
+          "en": "Falcon Coast", 
+          "ru": "Побережье Сокола"
+        },
       "popupMedia": "mondstadt/teleporter/falcon-coast"
     },
     {
@@ -129,9 +137,10 @@
         "gm_legacy": ["mondstadtTeleporter/9"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Dadaupa Gorge"
-      },
+        "popupTitle": {
+          "en": "Dadaupa Gorge", 
+          "ru": "Ущелье Дадаупа"
+        },
       "popupMedia": "mondstadt/teleporter/dadaupa-gorge"
     },
     {
@@ -141,9 +150,10 @@
         "gm_legacy": ["mondstadtTeleporter/10"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Cape Oath"
-      },
+        "popupTitle": {
+          "en": "Cape Oath", 
+          "ru": "Мыс Веры"
+        },
       "popupMedia": "mondstadt/teleporter/cape-oath"
     },
     {
@@ -153,9 +163,10 @@
         "gm_legacy": ["mondstadtTeleporter/11"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Springvale"
-      },
+        "popupTitle": {
+          "en": "Springvale", 
+          "ru": "Спрингвейл"
+        },
       "popupMedia": "mondstadt/teleporter/springvale"
     },
     {
@@ -165,9 +176,10 @@
         "gm_legacy": ["mondstadtTeleporter/12"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Springvale Pond"
-      },
+        "popupTitle": {
+          "en": "Springvale Pond", 
+          "ru": "Пруд у Спрингвейла"
+        },
       "popupMedia": "mondstadt/teleporter/springvale-pond"
     },
     {
@@ -177,9 +189,10 @@
         "gm_legacy": ["mondstadtTeleporter/13"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "North Stone Gate"
-      },
+        "popupTitle": {
+          "en": "North Stone Gate", 
+          "ru": "Каменные Врата - Север"
+        },
       "popupMedia": "mondstadt/teleporter/north-stone-gate"
     },
     {
@@ -189,9 +202,10 @@
         "gm_legacy": ["mondstadtTeleporter/14"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Wolvendom"
-      },
+        "popupTitle": {
+          "en": "Wolvendom", 
+          "ru": "Вольфендом"
+        },
       "popupMedia": "mondstadt/teleporter/wolvendom"
     },
     {
@@ -201,9 +215,10 @@
         "gm_legacy": ["mondstadtTeleporter/15"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "North Wolvendom"
-      },
+        "popupTitle": {
+          "en": "North Wolvendom", 
+          "ru": "Вольфендом - Север"
+        },
       "popupMedia": "mondstadt/teleporter/north-wolvendom"
     },
     {
@@ -213,9 +228,10 @@
         "gm_legacy": ["mondstadtTeleporter/16"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Brightcrown Canyon"
-      },
+        "popupTitle": {
+          "en": "Brightcrown Canyon", 
+          "ru": "Каньон светлой короны"
+        },
       "popupMedia": "mondstadt/teleporter/brightcrown-canyon"
     },
     {
@@ -225,9 +241,10 @@
         "gm_legacy": ["mondstadtTeleporter/17"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "Stormterror's Lair Entrance"
-      },
+        "popupTitle": {
+          "en": "Stormterror's Lair Entrance", 
+          "ru": "Вход в Логово Ужаса Бури"
+        },
       "popupMedia": "mondstadt/teleporter/south-stormterror"
     },
     {
@@ -238,7 +255,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Contront Stormterror"
+          "en": "Contront Stormterror", 
+          "ru": "Логово Ужаса Бури"
       },
       "popupMedia": "mondstadt/teleporter/confront-stormterror"
     },
@@ -249,9 +267,10 @@
         "gm_legacy": ["mondstadtTeleporter/19"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "West Stormterror's Lair"
-      },
+        "popupTitle": {
+          "en": "West Stormterror's Lair", 
+          "ru": "Логово Ужаса Бури - Запад"
+        },
       "popupMedia": "mondstadt/teleporter/west-stormterror"
     },
     {
@@ -261,9 +280,10 @@
         "gm_legacy": ["mondstadtTeleporter/20"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "North Stormterror's Lair"
-      },
+        "popupTitle": {
+          "en": "North Stormterror's Lair", 
+          "ru": "Логово Ужаса Бури - Север"
+        },
       "popupMedia": "mondstadt/teleporter/north-stormterror"
     },
     {
@@ -274,7 +294,8 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "East Stormterror's Lair"
+          "en": "East Stormterror's Lair", 
+          "ru": "Логово Ужаса Бури - Восток"
       },
       "popupMedia": "mondstadt/teleporter/east-stormterror"
     },
@@ -286,10 +307,12 @@
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
-        "en": "Forward Base Camp"
+        "en": "Forward Base Camp", 
+        "ru": "Лагерь у Драконьего Хребта"
       },
       "popupContent": {
-        "en": "Added with Dragonspine"
+        "en": "Added with Dragonspine Update", 
+        "ru": "Добавлен с обновлением Драконьего Хребта"
       },
       "popupMedia": "mondstadt/teleporter/forward-base-camp"
     }
