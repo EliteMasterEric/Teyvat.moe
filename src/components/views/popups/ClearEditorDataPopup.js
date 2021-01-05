@@ -3,19 +3,19 @@
  * when clicking "Clear Editor Data" in the Editor tab of the map controls.
  */
 
-import React, { useState } from 'react';
-
 import {
   Button,
   Dialog,
-  DialogTitle,
   DialogContent,
   DialogContentText,
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
+import React, { useState } from 'react';
+
 import { t } from '~/components/i18n/Localization';
 import Theme from '~/components/Theme';
+import DialogTitle from '~/components/views/popups/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -40,7 +40,9 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle>{t('popup-clear-editor-data-title')}</DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>
+          {t('popup-clear-editor-data-title')}
+        </DialogTitle>
         <DialogContent>
           <DialogContentText> {t('popup-clear-editor-data-content')}</DialogContentText>
         </DialogContent>

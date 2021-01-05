@@ -5,6 +5,9 @@ import LeafletMap from '~/components/views/map/LeafletMap';
 import MapControls from '~/components/views/controls/MapControls';
 
 const _MainView = () => {
+  // Uncomment this to clear local storage.
+  // require('./components/preferences/Preferences').resetLocalStorage();
+
   return (
     <>
       <div className="map">

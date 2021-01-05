@@ -1,5 +1,12 @@
 {
-  "name": { "en": "Crimson Agate" },
+  "format": 2,
+  "name": {
+    "en": "Crimson Agate",
+    "zh": "绯红玉髓"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "crimson-agate",
     "base": {
@@ -23,1347 +30,1406 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.605688178320804, 59.58435058593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-1"
-      },
-      "id": 1
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.91240739487225, 60.39733886718751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-2"
-      },
-      "id": 2
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.01347623104193, 60.24353027343751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#3. Frostbearing Tree"
-        },
-        "popupContent": {
-          "en": "Located next to the Frostbearing Tree when you activate it."
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-3"
-      },
-      "id": 3
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.25907654252574, 54.31640625000001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-4"
-      },
-      "id": 4
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.949891786813275, 55.5633544921875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-5"
-      },
-      "id": 5
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.70555348721582, 56.77185058593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-6"
-      },
-      "id": 6
-    },
+      "coordinates": [-39.60569, 59.58435],
+      "id": "2C6DA4818E4385FA6A421B8F4620BFE11EAD3D3F",
+      "importIds": {
+        "appsample": ["9384"],
+        "gm_legacy": ["dragonspineCrimsonAgate/1"],
+        "yuanshen": ["111_3"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#1"
+      },
+      "popupContent": {
+        "en": "In a hole nearby the Statue of the Seven.",
+        "zh": "高空的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/j3IPxIT0xi0"
+    },
+    {
+      "coordinates": [-38.91241, 60.39734],
+      "id": "0F8C5BE8D5D47412467A50EA59027701E24EFA37",
+      "importIds": {
+        "appsample": ["9374"],
+        "gm_legacy": ["dragonspineCrimsonAgate/2"],
+        "yuanshen": ["111_33"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#2"
+      },
+      "popupContent": {
+        "en": "Climb the tree or glide from the statue.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/2BccBRni2mM"
+    },
+    {
+      "coordinates": [-38.01348, 60.24353],
+      "id": "BBF4B884EA1CCEEDE393F4D2B6F2BE603C04AC97",
+      "importIds": {
+        "appsample": ["9360"],
+        "gm_legacy": ["dragonspineCrimsonAgate/3"],
+        "yuanshen": ["111_9"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#3: Frostbearing Tree"
+      },
+      "popupContent": {
+        "en": "Located next to the Frostbearing Tree when you activate it.",
+        "zh": "晶树后的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/1vuNqZB-V_I"
+    },
+    {
+      "coordinates": [-35.25908, 54.31641],
+      "id": "C931C5327449AD2DEB6623F0107D4A542AADD0C4",
+      "importIds": {
+        "appsample": ["9323"],
+        "gm_legacy": ["dragonspineCrimsonAgate/4"],
+        "yuanshen": ["111_28"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#4"
+      },
+      "popupContent": {
+        "en": "Collect the 3 Anemograna to fly over the barrier",
+        "zh": "风场内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/Rjpn-ysTxCA"
+    },
+    {
+      "coordinates": [-36.94989, 55.56335],
+      "id": "495EA2E68CE47E7860CBE3D1EE71C3B3D3ED21F3",
+      "importIds": {
+        "appsample": ["9338"],
+        "gm_legacy": ["dragonspineCrimsonAgate/5"],
+        "yuanshen": ["111_11"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#5"
+      },
+      "popupContent": {
+        "en": "Inside of Durin's skull.",
+        "zh": "眼骨的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/MZALsZ23HIQ"
+    },
+    {
+      "coordinates": [-37.70555, 56.77185],
+      "id": "068716757FE375DC85E8C114F56C66D51F0CE237",
+      "importIds": {
+        "appsample": ["9340"],
+        "gm_legacy": ["dragonspineCrimsonAgate/6"],
+        "yuanshen": ["111_30"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#6"
+      },
+      "popupContent": {
+        "en": "On top of Durin's ribs.",
+        "zh": "龙骨上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/8LWDkICMS_s"
+    },
+    {
+      "coordinates": [-36.39476, 57.11792],
+      "id": "FFC328C7F79FB7936662853C26F8DD100DD4FDCC",
+      "importIds": {
+        "appsample": ["9333"],
+        "gm_legacy": ["dragonspineCrimsonAgate/7"],
+        "yuanshen": ["111_10"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#7"
+      },
+      "popupContent": {
+        "en": "Fly from the nearby cliff over to the tree where the Agate is floating.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/M8E0Y_sTIw4"
+    },
+    {
+      "coordinates": [-39.20672, 59.10095],
+      "id": "6B72AD1D8C9CFB547DB549A535176C7457B397E9",
+      "importIds": {
+        "appsample": ["9379"],
+        "gm_legacy": ["dragonspineCrimsonAgate/8"],
+        "yuanshen": ["111_1"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#8"
+      },
+      "popupContent": {
+        "en": "Destroy the enemy to unlock the mechanism that drains the water, revealing a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/qQmtljBKBBg"
+    },
+    {
+      "coordinates": [-37.74031, 59.19434],
+      "id": "76930AC6ECB6210A82355C8E289248483FFE2D6D",
+      "importIds": {
+        "appsample": ["9347"],
+        "gm_legacy": ["dragonspineCrimsonAgate/9"],
+        "yuanshen": ["111_8"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#9"
+      },
+      "popupContent": {
+        "en": "Climb along the side of this ridge.",
+        "zh": "山坡上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/gJoEHbhvMlE"
+    },
+    {
+      "coordinates": [-37.22158, 58.61755],
+      "id": "9844CC15B429CCB3F46F8EE9CE052AD9A19A02D3",
+      "importIds": {
+        "appsample": ["9344"],
+        "gm_legacy": ["dragonspineCrimsonAgate/10"],
+        "yuanshen": ["111_7"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#10"
+      },
+      "popupContent": {
+        "en": "You're supposed to break the ice with Scarlet Quartz, but you can get the Agate by climbing around a bit.",
+        "zh": "融化坚冰获得的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/8LWDkICMS_s"
+    },
+    {
+      "coordinates": [-37.98214, 62.99113],
+      "id": "CB33FF811D9CAD3B56021697E37256D5B3CF81A4",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/11"],
+        "yuanshen": ["111_34"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#11"
+      },
+      "popupContent": {
+        "en": "Defeat all the Hilichurls to unlock the Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/1U2WU3qo53I"
+    },
+    {
+      "coordinates": [-39.05489, 61.75594],
+      "id": "91C7001D4CD90ECB4B5C854BD17A3D6F71302202",
+      "importIds": {
+        "appsample": ["9370"],
+        "gm_legacy": ["dragonspineCrimsonAgate/12"],
+        "yuanshen": ["111_51"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#12"
+      },
+      "popupContent": {
+        "en": "Climb to the top of the tree.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/2BccBRni2mM"
+    },
+    {
+      "coordinates": [-40.03729, 62.36965],
+      "id": "58AA216D76A10EE064E324B9997C95722CF8F542",
+      "importIds": {
+        "appsample": ["9602"],
+        "gm_legacy": ["dragonspineCrimsonAgate/13"],
+        "yuanshen": ["111_16"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#13"
+      },
+      "popupContent": {
+        "en": "Defeat the nearby enemies to unlock the Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/sDCQFZvHXCM"
+    },
+    {
+      "coordinates": [-40.41393, 62.96783],
+      "id": "BCB96F9F9979A4782CD15FB5D25BD162CA7D7592",
+      "importIds": {
+        "appsample": ["9597"],
+        "gm_legacy": ["dragonspineCrimsonAgate/14"],
+        "yuanshen": ["111_40"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#14"
+      },
+      "popupContent": {
+        "en": "In the tunnel over the water.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/LSTICzcLI2Y"
+    },
+    {
+      "coordinates": [-40.28368, 63.59708],
+      "id": "37F4A2A41E57C183232CB346E8958119CD4F917C",
+      "importIds": {
+        "appsample": ["9607"],
+        "gm_legacy": ["dragonspineCrimsonAgate/15"],
+        "yuanshen": ["111_39"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#15"
+      },
+      "popupContent": {
+        "en": "Collect the three Anemograna to create a wind gust glide up to the Agate.",
+        "zh": "上升气流后获得的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/E9UjIS6i1Kc"
+    },
+    {
+      "coordinates": [-42.33418, 61.9574],
+      "id": "B22EF310EEC7E945A6EF552FFAD843EEA1322EFE",
+      "importIds": {
+        "appsample": ["9641"],
+        "gm_legacy": ["dragonspineCrimsonAgate/16"],
+        "yuanshen": ["111_45"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#16"
+      },
+      "popupContent": {
+        "en": "Solve the puzzle to spawn a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/GTamdS7GRSk"
+    },
+    {
+      "coordinates": [-43.05283, 65.48401],
+      "id": "A7C6F24130E3DDBEE0BFE6239EC0EEA1992E2372",
+      "importIds": {
+        "appsample": ["9658"],
+        "gm_legacy": ["dragonspineCrimsonAgate/17"],
+        "yuanshen": ["111_50"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#17"
+      },
+      "popupContent": {
+        "en": "Swim over or bridge with Kaeya to reach the Agate over the water.",
+        "zh": "水面上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/Ak-VOn5Ypfw"
+    },
+    {
+      "coordinates": [-43.95546, 61.16165],
+      "id": "7139C975DAF3B03BF3B544400324D0D5A3670931",
+      "importIds": {
+        "appsample": ["10177"],
+        "gm_legacy": ["dragonspineCrimsonAgate/18"],
+        "yuanshen": ["111_36"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#18"
+      },
+      "popupContent": {
+        "en": "Defeat the Hilichurls to open the Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/jYWMplnAN3Y"
+    },
+    {
+      "coordinates": [-45.36986, 61.99677],
+      "id": "E634B525345F2264FAF4CE961A9D6B9D605B2987",
+      "importIds": {
+        "appsample": ["9581"],
+        "gm_legacy": ["dragonspineCrimsonAgate/19"],
+        "yuanshen": ["111_37"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#19"
+      },
+      "popupContent": {
+        "en": "Defeat the Ruin Grader to unlock a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/VnoXNgHLIcI"
+    },
+    {
+      "coordinates": [-44.24277, 61.25099],
+      "id": "293ABD29C54B64FDC4B1C4EE327DEA6A0A0A52F4",
+      "importIds": {
+        "appsample": ["9664"],
+        "gm_legacy": ["dragonspineCrimsonAgate/20"],
+        "yuanshen": ["111_53"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#20"
+      },
+      "popupContent": {
+        "en": "Climb to the top of this ridge.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/eIjzL0YiVqs"
+    },
+    {
+      "coordinates": [-44.93759, 57.83203],
+      "id": "3F1847F85D9F10DF791BE17AE735AD39E89449BC",
+      "importIds": {
+        "appsample": ["9578"],
+        "gm_legacy": ["dragonspineCrimsonAgate/21"],
+        "yuanshen": ["111_48"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#21"
+      },
+      "popupContent": {
+        "en": "Atop the ruin where you did the test with Albedo.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/GT_SUf0HLLA"
+    },
+    {
+      "coordinates": [-41.88592, 53.37708],
+      "id": "93F4051AA20E6563E65266466A85482E2FECE389",
+      "importIds": {
+        "appsample": ["9527"],
+        "gm_legacy": ["dragonspineCrimsonAgate/22"],
+        "yuanshen": ["111_23"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#22"
+      },
+      "popupContent": {
+        "en": "Atop the mountain, near the Fatui camp.",
+        "zh": "山上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/g7JpZFN-mZg"
+    },
+    {
+      "coordinates": [-42.16748, 52.93213],
+      "id": "2A0E90842564E1D7BBCEA26000F4F6B405FFF241",
+      "importIds": {
+        "appsample": ["9529"],
+        "gm_legacy": ["dragonspineCrimsonAgate/23"],
+        "yuanshen": ["111_20"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#23"
+      },
+      "popupContent": {
+        "en": "Activate the Cryo totems to unlock the center totem, then activate the center totem to lower the water. Descend and break the fake wall.",
+        "zh": "石墙后的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/fi_4MplaKVs"
+    },
+    {
+      "coordinates": [-42.38289, 53.25073],
+      "id": "6FD0F967EFAE4224A64AB83F7B2794DAC16895E5",
+      "importIds": {
+        "appsample": ["9534"],
+        "gm_legacy": ["dragonspineCrimsonAgate/24"],
+        "yuanshen": ["111_21"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#24"
+      },
+      "popupContent": {
+        "en": "Complete the puzzle above, use Scarlet Quartz to break the ice and reveal a totem to open the cage holding the Precious Chest containing the Agate in it.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/tsrym3LtVUg"
+    },
+    {
+      "coordinates": [-40.34654, 51.43799],
+      "id": "AD6FB7AB4F7D5BF872154D9777E1E05C2A7A1E73",
+      "importIds": {
+        "appsample": ["9515"],
+        "gm_legacy": ["dragonspineCrimsonAgate/25"],
+        "yuanshen": ["111_18"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#25"
+      },
+      "popupContent": {
+        "en": "Defeat the Combat Trial challenge here to spawn a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/ev_iQmdvW34"
+    },
+    {
+      "coordinates": [-40.13269, 52.70142],
+      "id": "F3B11D18676C7DDD92917388882B24E9C57ECA2C",
+      "importIds": {
+        "appsample": ["9518"],
+        "gm_legacy": ["dragonspineCrimsonAgate/26"],
+        "yuanshen": ["111_24"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#26"
+      },
+      "popupContent": {
+        "en": "Located on the side of the mountain.",
+        "zh": "山坡的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/wuzDaMjMecw"
+    },
+    {
+      "coordinates": [-39.26628, 53.06946],
+      "id": "1759C2566229607B20E4BBBEEB9DB7A360129616",
+      "importIds": {
+        "appsample": ["10181"],
+        "gm_legacy": ["dragonspineCrimsonAgate/27"],
+        "yuanshen": ["111_15"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#27"
+      },
+      "popupContent": {
+        "en": "On an icicle in the pit that opens upon completing the nearby challenge.",
+        "zh": "洞穴内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/08A9z5gwXDQ"
+    },
+    {
+      "coordinates": [-40.40095, 50.18555],
+      "id": "150BB75B3337759D964065479F7BAF42AD95FC9F",
+      "importIds": {
+        "appsample": ["9507"],
+        "gm_legacy": ["dragonspineCrimsonAgate/28"],
+        "yuanshen": ["111_38"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#28"
+      },
+      "popupContent": {
+        "en": "Defeat the Hilichurls to unlock the Precious Chest in the hut.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/4oEQnFFUGAk"
+    },
+    {
+      "coordinates": [-40.34236, 50.49316],
+      "id": "EE81E2FA2EC921A33087F548EB49A0E9B1D1ECA7",
+      "importIds": {
+        "appsample": ["9513"],
+        "gm_legacy": ["dragonspineCrimsonAgate/29"],
+        "yuanshen": ["111_17"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#29"
+      },
+      "popupContent": {
+        "en": "In the air between two trees.",
+        "zh": "空中内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/8OEDXerW4N0"
+    },
+    {
+      "coordinates": [-41.45096, 50.85571],
+      "id": "FB3953BD66C76CF0A63E6347B14B755B4D57FD35",
+      "importIds": {
+        "appsample": ["9523"],
+        "gm_legacy": ["dragonspineCrimsonAgate/30"],
+        "yuanshen": ["111_19"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#30"
+      },
+      "popupContent": {
+        "en": "Kill the Frostarm Lawachurl here to spawn a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/Tw2Hw3ETkEY"
+    },
+    {
+      "coordinates": [-43.32118, 54.62402],
+      "id": "FE25C5C2EF3273CA5AA3950464EE758B66B2094B",
+      "importIds": {
+        "appsample": ["9568"],
+        "gm_legacy": ["dragonspineCrimsonAgate/31"],
+        "yuanshen": ["111_4"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#31"
+      },
+      "popupContent": {
+        "en": "Located in the Precious Chest once you complete the puzzle and defeat the Ruin Grader.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/HH5v9Ie9zSQ"
+    },
+    {
+      "coordinates": [-42.08599, 55.87646],
+      "id": "7787E5AAC1B2DB88B1158889A77A4A45EB84613B",
+      "importIds": {
+        "appsample": ["9521"],
+        "gm_legacy": ["dragonspineCrimsonAgate/32"],
+        "yuanshen": ["111_56"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#32"
+      },
+      "popupContent": {
+        "en": "Floating in the center of the ruins near the teleporter.",
+        "zh": "遗迹圆形中央的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/7ykIPztjnw4"
+    },
+    {
+      "coordinates": [-41.39742, 58.70544],
+      "id": "CAC0FCBDC60BFB8E672D51E548A77F6CA748398F",
+      "importIds": {
+        "appsample": ["9439"],
+        "gm_legacy": ["dragonspineCrimsonAgate/33"],
+        "yuanshen": ["111_5"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#33"
+      },
+      "popupContent": {
+        "en": "In the middle of a rock pillar at the bottom part of Starglow Cavern.",
+        "zh": "洞穴内中央的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/NlDawGFvTJs"
+    },
+    {
+      "coordinates": [-41.99624, 58.89221],
+      "id": "58CBC1E0CD87793B255556B6493BC16B278B3A3A",
+      "importIds": {
+        "appsample": ["9452"],
+        "gm_legacy": ["dragonspineCrimsonAgate/34"],
+        "yuanshen": ["111_71"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#34"
+      },
+      "popupContent": {
+        "en": "Complete the challenge here to spawn a Precious Chest containing the Agate.",
+        "zh": "这是一个珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/J5CpRk_iSB8"
+    },
+    {
+      "coordinates": [-41.8941, 57.71667],
+      "id": "2B6847FF73E62B0A7A13A424B5467E07CD75368C",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/35"],
+        "yuanshen": ["111_69"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#35" },
+      "popupContent": {
+        "en": "Underneath the bridge in Starglow Cavern.",
+        "zh": "这是一个山洞中空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/J5CpRk_iSB8"
+    },
+    {
+      "coordinates": [-40.69724, 60.74992],
+      "id": "38E1F19C93A3115DFC1722B7EAFB2B3B437B67DE",
+      "importIds": {
+        "appsample": ["9587"],
+        "gm_legacy": ["dragonspineCrimsonAgate/36"],
+        "yuanshen": ["111_41"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#36" },
+      "popupContent": {
+        "en": "Climb along the side from the Statue, then glide over to the floating Agate.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/YFiS1cEyDJM"
+    },
+    {
+      "coordinates": [-43.20918, 58.42529],
+      "id": "0643D85E5BBBED483042073873387E0532885CE4",
+      "importIds": {
+        "appsample": ["9646"],
+        "gm_legacy": ["dragonspineCrimsonAgate/37"],
+        "yuanshen": ["111_35"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#37"
+      },
+      "popupContent": {
+        "en": "This Agate is located in the chest inside the hut. There is also another Agate located on the roof of the hut.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/rOleu23Luio"
+    },
+    {
+      "coordinates": [-43.19286, 58.33003],
+      "id": "485AAA4AE8B00EFA01B797A0F34C929B174544B8",
+      "importIds": {
+        "appsample": ["9654"],
+        "gm_legacy": ["dragonspineCrimsonAgate/38"],
+        "yuanshen": ["111_47"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#38"
+      },
+      "popupContent": {
+        "en": "This Agate is located on the roof of the hut. There is also another Agate located in the chest inside the hut.",
+        "zh": "房顶上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/rOleu23Luio"
+    },
+    {
+      "coordinates": [-41.07935, 58.4198],
+      "id": "71DB81CA90DB8A7BBDBA9246A28CD530FB586C0E",
+      "importIds": {
+        "appsample": ["9434"],
+        "gm_legacy": ["dragonspineCrimsonAgate/39"],
+        "yuanshen": ["111_79"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#39" },
+      "popupContent": {
+        "en": "Underneath the ice bridge in Starglow Cavern.",
+        "zh": "洞穴内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/fGL1hlNuMok"
+    },
+    {
+      "coordinates": [-42.48425, 55.90393],
+      "id": "F146C9210A1629D75BE33A07AE24F67A761A63D4",
+      "importIds": {
+        "appsample": ["10285"],
+        "gm_legacy": ["dragonspineCrimsonAgate/40"],
+        "yuanshen": ["111_55"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#40" },
+      "popupContent": {
+        "en": "Climb to the top of this ridge.",
+        "zh": "山峰上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/fKul4uoF3s0"
+    },
+    {
+      "coordinates": [-42.78331, 56.5686],
+      "id": "A0F809DF030C4F2A168F65E1FD4C68C72CA820AF",
+      "importIds": {
+        "appsample": ["9620"],
+        "gm_legacy": ["dragonspineCrimsonAgate/41"],
+        "yuanshen": ["111_6"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#41"
+      },
+      "popupContent": {
+        "en": "Remove the ice barrier or climb along the side of the mountain.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/KHSZDpsgX28"
+    },
+    {
+      "coordinates": [-40.30048, 55.2887],
+      "id": "1E19D1B459A9517DAF35B58912E354E8973C45D7",
+      "importIds": {
+        "appsample": ["9489"],
+        "gm_legacy": ["dragonspineCrimsonAgate/42"],
+        "yuanshen": ["111_26"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#42"
+      },
+      "popupContent": {
+        "en": "Defeat the Frostarm Lawachurl to spawn a Luxurious Chest containing the Agate.",
+        "zh": "华丽宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/eGE_TkKVAOw"
+    },
+    {
+      "coordinates": [-39.72831, 55.59631],
+      "id": "17F69AEC72A1D886D551FE6AB5BF34551D990C53",
+      "importIds": {
+        "appsample": ["9483"],
+        "gm_legacy": ["dragonspineCrimsonAgate/43"],
+        "yuanshen": ["111_59"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#43" },
+      "popupContent": {
+        "en": "Guarded by two Hilichurls on a broken bridge.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/brlrRvl0_1w"
+    },
+    {
+      "coordinates": [-38.86965, 53.21228],
+      "id": "65C6351CAF1D48C1586013F5E5FF83084351F297",
+      "importIds": {
+        "appsample": ["9493"],
+        "gm_legacy": ["dragonspineCrimsonAgate/44"],
+        "yuanshen": ["111_32"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#44" },
+      "popupContent": {
+        "en": "Climb the cliffside and glide over to the floating Agate.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/6Rww9isAxQA"
+    },
+    {
+      "coordinates": [-38.28562, 52.11365],
+      "id": "F25865622818C2074731F9422FA07CF5692F1BF6",
+      "importIds": {
+        "appsample": ["10169"],
+        "gm_legacy": ["dragonspineCrimsonAgate/45"],
+        "yuanshen": ["111_31"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#45"
+      },
+      "popupContent": {
+        "en": "Use Scarlet Quartz to shatter the ice on the mountainside.",
+        "zh": "山坡上坚冰下的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/LIo7ZgbIre4"
+    },
+    {
+      "coordinates": [-38.62975, 50.53162],
+      "id": "956AA0C2E1D63DDCABFDEF7683F6D991BCF759DE",
+      "importIds": {
+        "appsample": ["9502"],
+        "gm_legacy": ["dragonspineCrimsonAgate/46"],
+        "yuanshen": ["111_29"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#46"
+      },
+      "popupContent": {
+        "en": "Solve the puzzle here to spawn the Luxurious Chest.",
+        "zh": "完成解密出现华丽宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/aT6sRPsiXec"
+    },
+    {
+      "coordinates": [-36.76529, 52.12463],
+      "id": "8275EA59CD67A826AF946D105B13D4652E94C763",
+      "importIds": {
+        "appsample": ["9315"],
+        "gm_legacy": ["dragonspineCrimsonAgate/47"],
+        "yuanshen": ["111_13"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#47"
+      },
+      "popupContent": {
+        "en": "Defeat the nearby Fatui Skirmishers to unlock the Precious Chest.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/XT4kwwvVVLg"
+    },
+    {
+      "coordinates": [-36.58466, 52.8772],
+      "id": "9D093311680974FD7D89D3A20C3520D4C9130F4F",
+      "importIds": {
+        "appsample": ["9320"],
+        "gm_legacy": ["dragonspineCrimsonAgate/48"],
+        "yuanshen": ["111_12"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#48" },
+      "popupContent": {
+        "en": "Use Venti, or collect the 3 Anemograna at the boat, water, and ice platform to fly up to the Agate.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/-0r6X0Ho4iE"
+    },
+    {
+      "coordinates": [-40.78054, 62.12219],
+      "id": "2785061F4573792A4E73E94101D17CAA4DA2085B",
+      "importIds": {
+        "appsample": ["9592"],
+        "gm_legacy": ["dragonspineCrimsonAgate/49"],
+        "yuanshen": ["111_42"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#49" },
+      "popupContent": {
+        "en": "At the top of the hill near the frozen Boars.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/jFPyxVeVSdM"
+    },
+    {
+      "coordinates": [-41.24858, 61.50347],
+      "id": "0C3765E200D0ABDEC0872E981638E4FD998BE869",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/50"],
+        "yuanshen": ["111_2"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#50: Snowboar King Luxurious Chest"
+      },
+      "popupContent": {
+        "en": "Vanquish the true king of Dragonspine.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/IQqMj7HWgOw"
+    },
+    {
+      "coordinates": [-41.75475, 53.52132],
+      "id": "AE9A0C6411C90ABDA60403418611A68D5FCAE383",
+      "importIds": {
+        "appsample": ["9525"],
+        "gm_legacy": ["dragonspineCrimsonAgate/51"],
+        "yuanshen": ["111_22"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#51: Precious Chest - Fatui Hut"
+      },
+      "popupContent": {
+        "en": "This Agate is located in a chest, in a hut guarded by Fatui Skirmishers.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/MixDpYtite8"
+    },
+    {
+      "coordinates": [-44.13097, 53.88245],
+      "id": "6EF4B435A09D0426778A654D7E81B60CDBCCAF16",
+      "importIds": {
+        "appsample": ["9573"],
+        "gm_legacy": ["dragonspineCrimsonAgate/52"],
+        "yuanshen": ["111_49"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#52" },
+      "popupContent": {
+        "en": "Climb the nearby mountain and glide down to collect the floating Agate.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/CQlaos4e-eE"
+    },
+    {
+      "coordinates": [-40.90893, 56.67145],
+      "id": "DD9246735E6B06AADA7306D3163668AF3248CC0D",
+      "importIds": {
+        "appsample": ["9475"],
+        "gm_legacy": ["dragonspineCrimsonAgate/53"],
+        "yuanshen": ["111_77"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#53"
+      },
+      "popupContent": {
+        "en": "On a pillar near the teleporter by the domain.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/4VnvekL-VPE"
+    },
+    {
+      "coordinates": [-40.54303, 57.89246],
+      "id": "A6D28538A4BE40344E6070C7A6457A4362CB32E7",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/54"],
+        "yuanshen": ["111_75"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#54" },
+      "popupContent": {
+        "en": "By the explosive barrel in the cave on the way up to the peak.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/35OmMZ3t8A0"
+    },
+    {
+      "coordinates": [-40.50545, 57.82654],
+      "id": "E5B7D4D46C1341324848DBFC0C7A0F0B7009A3AF",
+      "importIds": {
+        "appsample": ["9392"],
+        "gm_legacy": ["dragonspineCrimsonAgate/55"],
+        "yuanshen": ["111_76"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#55" },
+      "popupContent": {
+        "en": "Atop a pillar near the Domain.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/qaeSKsKeBO4"
+    },
+    {
+      "coordinates": [-39.73676, 57.42554],
+      "id": "6B8E66409BF719C5943926B3D84A55F05670DEA1",
+      "importIds": {
+        "appsample": ["9478"],
+        "gm_legacy": ["dragonspineCrimsonAgate/56"],
+        "yuanshen": ["111_66"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#56"
+      },
+      "popupContent": {
+        "en": "Defeat the Frostarm Lawachurl to unlock the Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/OSGPcC7fFMA"
+    },
+    {
+      "coordinates": [-40.02341, 56.73889],
+      "id": "7196CC24D83C791DF7A5A96BBEE349C20428D0B1",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/57"],
+        "yuanshen": ["111_65"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#57" },
+      "popupContent": {
+        "en": "Among the ruins of the broken tower.",
+        "zh": "从山顶上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/g81IvlDcOAc"
+    },
+    {
+      "coordinates": [-40.80134, 58.12866],
+      "id": "CFA32742044BC669A625BFD05DF5573DC3B3428F",
+      "importIds": {
+        "appsample": ["10180"],
+        "gm_legacy": ["dragonspineCrimsonAgate/58"],
+        "yuanshen": ["111_74"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#58"
+      },
+      "popupContent": {
+        "en": "Use Scarlet Quartz to shatter the ice to reveal the panels that open the gate, unlocking the Precious Chest containing the Agate.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/FsVgYwRmGlU"
+    },
+    {
+      "coordinates": [-42.34637, 62.34192],
+      "id": "17D0EA505E4FE6D08F97452856DBB3723A5D7479",
+      "importIds": {
+        "appsample": ["10178"],
+        "gm_legacy": ["dragonspineCrimsonAgate/59"],
+        "yuanshen": ["111_44"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#59" },
+      "popupContent": {
+        "en": "High in the air off a cliff. You can glide here from the Statue of the Seven.",
+        "zh": "山崖上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/nxl-CYHzx-s"
+    },
+    {
+      "coordinates": [-42.26918, 64.07776],
+      "id": "B532A78C567B28761E111E75001117122786AD66",
+      "importIds": {
+        "appsample": ["9631"],
+        "gm_legacy": ["dragonspineCrimsonAgate/60"],
+        "yuanshen": ["111_54"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#60" },
+      "popupContent": {
+        "en": "Climb the tree on this small island.",
+        "zh": "树上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/DNIB9udcQq8"
+    },
+    {
+      "coordinates": [-41.24064, 66.28601],
+      "id": "6C1CA1045DA59DE8A9947DCED4C1AEB805416E16",
+      "importIds": {
+        "appsample": ["9627"],
+        "gm_legacy": ["dragonspineCrimsonAgate/61"],
+        "yuanshen": ["111_67"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#61: Scarlet Quartz Island - Luxurious Chest"
+      },
+      "popupContent": {
+        "en": "Break the Scarlet Quartz on the north cliff in Mondstadt, glide over, and break the ice to reveal the chest.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/6ydUPk7fF-A"
+    },
+    {
+      "coordinates": [-39.38526, 58.10669],
+      "id": "F5B59B98C0AC8387C9FA7A7F769A51F104EDB931",
+      "importIds": {
+        "appsample": ["9748"],
+        "gm_legacy": ["dragonspineCrimsonAgate/62"],
+        "yuanshen": ["111_78"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#62" },
+      "popupContent": {
+        "en": "Break the rock wall and navigate to the end of the cave.",
+        "zh": "这是一个营地向北洞穴中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/fVzWu4gvR1Q"
+    },
+    {
+      "coordinates": [-41.08763, 57.4585],
+      "id": "D66053025F7DAE7DE650ECB1C3CD88A750A7ECD4",
+      "importIds": {
+        "appsample": ["9398"],
+        "gm_legacy": ["dragonspineCrimsonAgate/63"],
+        "yuanshen": ["111_60"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#63"
+      },
+      "popupContent": {
+        "en": "Just off where you land after activating the Anemo pillar that creates the rings to push you to the South.",
+        "zh": "空中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/a7FY8DeDnT8"
+    },
+    {
+      "coordinates": [-41.4139, 57.84851],
+      "id": "F562601054BFA28302A49F5CC60133EF38E98825",
+      "importIds": {
+        "appsample": ["9462"],
+        "gm_legacy": ["dragonspineCrimsonAgate/64"],
+        "yuanshen": ["111_61"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#64" },
+      "popupContent": {
+        "en": "Amidst some ruins up the mountain.",
+        "zh": "山顶上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/89qXY9bdMfs"
+    },
+    {
+      "coordinates": [-41.19932, 58.29895],
+      "id": "429206A9BC27CAAA45B42BE1E581AC5CDEDEFCF1",
+      "importIds": {
+        "appsample": ["9428"],
+        "gm_legacy": ["dragonspineCrimsonAgate/65"],
+        "yuanshen": ["111_63"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#65: Towering Achievement" },
+      "popupContent": {
+        "en": "Located at the peak of Dragonspine.",
+        "zh": "山顶上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/WHmirlRtdDQ"
+    },
+    {
+      "coordinates": [-41.46743, 58.52966],
+      "id": "C10978E02CEA95953E1AB70E4083ADC0E1D017E2",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/66"],
+        "yuanshen": ["111_62"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#66"
+      },
+      "popupContent": {
+        "en": "Located in an open Precious Chest on the way up the summit.",
+        "zh": "山顶上珍贵宝箱内绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/d4bOw7HnqU8"
+    },
+    {
+      "coordinates": [-41.62776, 58.99658],
+      "id": "B6B0A2CEE304EBC381C6ED9BC90EF2A1AF06AC24",
+      "importIds": {
+        "appsample": ["9449"],
+        "gm_legacy": ["dragonspineCrimsonAgate/67"],
+        "yuanshen": ["111_70"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#67"
+      },
+      "popupContent": {
+        "en": "Bottom of the underground cavern, underneath ice that breaks when you stand on it.",
+        "zh": "这是一个山洞底部，水池中的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/BbSNNiyHWAc"
+    },
+    {
+      "coordinates": [-42.3626, 58.11218],
+      "id": "BAF367986EACF38715BE2B4B92ABDC1804BD3BF7",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/68"],
+        "yuanshen": ["111_73"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": { "en": "#68" },
+      "popupContent": {
+        "en": "Come out the top area of Starglow Cavern and glide up the side using the Anemograna.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/TpRIQ2tZhpc"
+    },
+    {
+      "coordinates": [-40.82628, 57.00256],
+      "id": "96E9B9B6E80D8073D09CF99FE456B4DF6CFB1274",
+      "importIds": {
+        "appsample": ["9470"],
+        "gm_legacy": ["dragonspineCrimsonAgate/69"],
+        "yuanshen": ["111_64"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#69"
+      },
+      "popupContent": {
+        "en": "Atop the pillar of Celestia. Use the Anemo pillar at the peak to glide here.",
+        "zh": "从山顶上飞到柱子上获得的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/0lzFGLU3d1M"
+    },
+    {
+      "coordinates": [-41.39443, 60.0158],
+      "id": "5363283DB0A81CBAED368FF3E139E1F4C4664E66",
+      "importIds": {
+        "appsample": ["0000"],
+        "gm_legacy": ["dragonspineCrimsonAgate/70"],
+        "yuanshen": ["111_68"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#70: Priest, Scribe, and Princess"
+      },
+      "popupContent": {
+        "en": "Find the Priest Box, Scribe Box, and Princess Box and use them to open the door to the Luxurious Chest containing the Agate.",
+        "zh": "这是一个绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/EQTikUfb1YU"
+    },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.39475669987384, 57.11791992187501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-7"
-      },
-      "id": 7
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.206718844918484, 59.10095214843751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 8
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.740313292102655, 59.19433593750001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-9"
-      },
-      "id": 9
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.22158045838649, 58.6175537109375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-10"
-      },
-      "id": 10
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.98213841614044, 62.99113412915794]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 11
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.05489352210786, 61.75594149747097]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-12"
-      },
-      "id": 12
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.03728970015421, 62.369653559755676]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 13
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.41392643995871, 62.96782860780534]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-14"
-      },
-      "id": 14
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.28367523178071, 63.5970776843251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-15"
-      },
-      "id": 15
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.3341843859394, 61.95739746093751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 16
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.052833917627936, 65.48400878906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-17"
-      },
-      "id": 17
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.95546236007019, 61.16165070298006]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 18
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.369861378023515, 61.99676521811435]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 19
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2427723992795, 61.25098853483166]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-20"
-      },
-      "id": 20
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.93758500391091, 57.83203125000001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-21"
-      },
-      "id": 21
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.88592102814744, 53.37707519531251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-22"
-      },
-      "id": 22
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.16747501039534, 52.93212890625001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-23"
-      },
-      "id": 23
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.382894009614034, 53.250732421875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 24
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.34654412118006, 51.43798828125]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 25
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.13269100586688, 52.70141601562501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-26"
-      },
-      "id": 26
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.26628442213065, 53.06945800781251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-27"
-      },
-      "id": 27
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.400947631519614, 50.185546875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 28
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.34235741658333, 50.4931640625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-29"
-      },
-      "id": 29
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.450961401203884, 50.855712890625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 30
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.321181429266616, 54.62402343750001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Located in the chest once you complete the puzzle."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=HH5v9Ie9zSQ"
-      },
-      "id": 31
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.085993504477244, 55.87646484375001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-32"
-      },
-      "id": 32
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.39741506646461, 58.70544433593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-33"
-      },
-      "id": 33
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.99624282178581, 58.89221191406251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 34
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.89409955811395, 57.7166748046875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-35"
-      },
-      "id": 35
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.69723718750306, 60.749919825751114]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-36"
-      },
-      "id": 36
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.209179690393555, 58.42529296875001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "This Agate is located in the chest inside the hut. There is also another Agate located on the roof of the hut."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=rOleu23Luio"
-      },
-      "id": 37
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.19286392256367, 58.330029858641126]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "This Agate is located on the roof of the hut. There is also another Agate located in the chest inside the hut."
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-38"
-      },
-      "id": 38
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.07935114946898, 58.41979980468751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-39"
-      },
-      "id": 39
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.48425110546248, 55.90393066406251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-40"
-      },
-      "id": 40
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.783307077249624, 56.56860351562501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 41
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.30047607974949, 55.28869628906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 42
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.72831341029744, 55.59631347656251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-43"
-      },
-      "id": 43
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.86965182408356, 53.21228027343751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-44"
-      },
-      "id": 44
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.28562496668374, 52.11364746093751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 45
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.62974534092597, 50.53161621093751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 46
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.76529191711623, 52.12463378906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 47
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.58465761247167, 52.87719726562501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-48"
-      },
-      "id": 48
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.780541431860314, 62.12219238281251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-49"
-      },
-      "id": 49
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.24857720128942, 61.50346501615132]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 50
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.75474928028315, 53.52132395289131]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#51: Precious Chest - Fatui Hut"
-        },
-        "popupContent": {
-          "en": "This Agate is located in a chest, in a hut guarded by Fatui Skirmishers."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=MixDpYtite8"
-      },
-      "id": 51
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.13097085672744, 53.88244628906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-52"
-      },
-      "id": 52
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.90893302084464, 56.671453589048895]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=4VnvekL-VPE"
-      },
-      "id": 53
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.543026009955, 57.89245605468751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-54"
-      },
-      "id": 54
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.50544628405212, 57.82653808593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-55"
-      },
-      "id": 55
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.73676229957947, 57.42553710937501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 56
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.02340800226772, 56.73889160156251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-57"
-      },
-      "id": 57
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.801335759792, 58.12866210937501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "https://youtu.be/FsVgYwRmGlU"
-      },
-      "id": 58
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.34636533160189, 62.34191894531251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-59"
-      },
-      "id": 59
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.26917949243506, 64.07775878906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-60"
-      },
-      "id": 60
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.240641902694755, 66.28601074218751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#61: Scarlet Quartz Luxurious Chest"
-        },
-        "popupContent": {
-          "en": "Break the Scarlet Quartz on the north cliff in Mondstadt, glide over, and break the ice to reveal the chest. "
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=6ydUPk7fF-A"
-      },
-      "id": 61
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.38526381099775, 58.10668945312501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-62"
-      },
-      "id": 62
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.08763212467917, 57.45849609375001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=a7FY8DeDnT8"
-      },
-      "id": 63
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.41389556467731, 57.84851074218751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-64"
-      },
-      "id": 64
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.199323141276075, 58.29895019531251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-65"
-      },
-      "id": 65
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.46742831254426, 58.52966308593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 66
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.62776153144344, 58.99658203125001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Bottom of the underground cavern"
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=BbSNNiyHWAc"
-      },
-      "id": 67
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.36260292171997, 58.11218261718751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "dragonspine/crimson-agate/crimson-agate-68"
-      },
-      "id": 68
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.826280356677124, 57.00256347656251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=0lzFGLU3d1M"
-      },
-      "id": 69
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.39443399815697, 60.01579590314472]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 70
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.145289295676605, 59.15039062500001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 71
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.99624282178581, 61.96289062500001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#72: Ragged Records"
-        },
-        "popupContent": {
-          "en": "Collect all 3 Ragged Records and claim the chest."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=6adN7fkBGIY"
-      },
-      "id": 72
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.04929263868684, 60.34240722656251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Climb along the mountain."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=AUBVvAmm9jo"
-      },
-      "id": 73
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.50948995925552, 61.18835449218751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=K-8qa6a7QRs"
-      },
-      "id": 74
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.19820534889481, 53.10791015625001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Complete the puzzle on the surface to receive a Precious Chest containing a Crimson Agate."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=08A9z5gwXDQ"
-      },
-      "id": 75
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.772221877329024, 52.34436035156251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Complete the nearby time trial to receive a Precious Chest containing a Crimson Agate."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=GhuFtWsu5m8"
-      },
-      "id": 76
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.68605343225987, 55.10192871093751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Climb to reach the Agate on top of the mountain."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=HcqYs_44qL8"
-      },
-      "id": 77
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.838749137964584, 56.92565917968751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Completing the 'In the Mountains' questline unlocks the Domain and rewards a Luxurious Chest containing a Crimson Agate."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=ss-EHNTAWSM"
-      },
-      "id": 78
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.54970014513273, 57.52990722656251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "Located amidst some ruins on top of the mountain."
-        },
-        "popupMedia": "https://www.youtube.com/watch?v=89qXY9bdMfs"
-      },
-      "id": 79
+      "coordinates": [-40.14529, 59.15039],
+      "id": "2D081B89A4CCE4AA68754C7048A750827ABD6360",
+      "importIds": {
+        "appsample": ["9387"],
+        "gm_legacy": ["dragonspineCrimsonAgate/71"],
+        "yuanshen": ["111_58"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#71: Memory of the Entombed City"
+      },
+      "popupContent": {
+        "en": "Activate 8 Ancient Carvings around Dragonspine to open the room, with the Precious Chest containing the Agate.",
+        "zh": "密室内开启宝箱获得的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/zlSC1ncdS90"
+    },
+    {
+      "coordinates": [-41.99624, 61.96289],
+      "id": "BC8E79425854D38F7A6F11D0903747731CD2D2CE",
+      "importIds": {
+        "appsample": ["10175"],
+        "gm_legacy": ["dragonspineCrimsonAgate/72"],
+        "yuanshen": ["111_43"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#72: Ragged Records"
+      },
+      "popupContent": {
+        "en": "Collect all 3 Ragged Records and claim the chest.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/6adN7fkBGIY"
+    },
+    {
+      "coordinates": [-42.04929, 60.34241],
+      "id": "4D1C843551D7F86F65EDAFDF64806C3E3E41C053",
+      "importIds": {
+        "appsample": ["9622"],
+        "gm_legacy": ["dragonspineCrimsonAgate/73"],
+        "yuanshen": ["111_46"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#73"
+      },
+      "popupContent": {
+        "en": "Climb along the mountain.",
+        "zh": "山崖上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/AUBVvAmm9jo"
+    },
+    {
+      "coordinates": [-38.50949, 61.18835],
+      "id": "6B1EE1473A29DFC525D0CA2B141D3B55DE7D1726",
+      "importIds": {
+        "appsample": ["9367"],
+        "gm_legacy": ["dragonspineCrimsonAgate/74"],
+        "yuanshen": ["111_52"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#74"
+      },
+      "popupContent": {
+        "en": "Atop this small ridge.",
+        "zh": "绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/K-8qa6a7QRs"
+    },
+    {
+      "coordinates": [-39.19821, 53.10791],
+      "id": "43EDB3815EF13A3926CD83594486080FF6C93F98",
+      "importIds": {
+        "appsample": ["9495"],
+        "gm_legacy": ["dragonspineCrimsonAgate/75"],
+        "yuanshen": ["111_14"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#75"
+      },
+      "popupContent": {
+        "en": "Complete the puzzle on the surface to receive a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/08A9z5gwXDQ"
+    },
+    {
+      "coordinates": [-40.77222, 52.34436],
+      "id": "22C3D6255A38E84B90AEE41B754290346C63C9A6",
+      "importIds": {
+        "appsample": ["10176"],
+        "gm_legacy": ["dragonspineCrimsonAgate/76"],
+        "yuanshen": ["111_25"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#76"
+      },
+      "popupContent": {
+        "en": "Complete the nearby time trial to receive a Precious Chest containing the Agate.",
+        "zh": "珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/GhuFtWsu5m8"
+    },
+    {
+      "coordinates": [-39.68605, 55.10193],
+      "id": "618F6EEF5F9BD3A38EF881B2A1BDD5C6AAF50A3B",
+      "importIds": {
+        "appsample": ["9486"],
+        "gm_legacy": ["dragonspineCrimsonAgate/77"],
+        "yuanshen": ["111_27"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#77"
+      },
+      "popupContent": {
+        "en": "Climb to reach the Agate on top of the mountain.",
+        "zh": "山上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/HcqYs_44qL8"
+    },
+    {
+      "coordinates": [-40.83875, 56.92566],
+      "id": "7F4EA4601B11CCE1FC32F9C98E6A181AB8879181",
+      "importIds": {
+        "appsample": ["10179"],
+        "gm_legacy": ["dragonspineCrimsonAgate/78"],
+        "yuanshen": ["111_57"]
+      },
+      "popupAttribution": "maciejpk and MasterEric",
+      "popupTitle": {
+        "en": "#78: In The Mountains Quest"
+      },
+      "popupContent": {
+        "en": "Completing the 'In the Mountains' questline unlocks the Domain and rewards a Luxurious Chest containing the Agate.",
+        "zh": "华丽宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/ss-EHNTAWSM"
+    },
+    {
+      "coordinates": [-42.02482, 58.2605],
+      "id": "921846EBE1BDBBEA0DFF0B98CB08E8F3480DC322",
+      "importIds": {
+        "appsample": ["10346"],
+        "yuanshen": ["111_72"]
+      },
+      "popupTitle": {
+        "en": "#79"
+      },
+      "popupContent": {
+        "en": "On a ledge around the back side of the peak.",
+        "zh": "这是一个山腰上的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/NngAqGoeJ4s",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.9182, 58.42895],
+      "id": "1ED43B8D0ABEF29CBF88E56F03158A30BC38D9DD",
+      "importIds": {
+        "appsample": ["10522"],
+        "yuanshen": ["111_80"]
+      },
+      "popupTitle": {
+        "en": "#80: Untellable Tale"
+      },
+      "popupContent": {
+        "en": "Feed the foxes several days in a row to spawn the Precious Chest containing the Agate and an achievement.",
+        "zh": "累计喂白狐五天后出现的珍贵宝箱内的绯红玉髓"
+      },
+      "popupMedia": "https://youtu.be/wpIN0J76RF0",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }
