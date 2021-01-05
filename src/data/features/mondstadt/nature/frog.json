@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Frog" },
+  "name": {
+    "en": "Frog",
+    "pt": "Sapo"
+  },
   "cluster": false,
   "icons": {
     "filter": "frog",
@@ -14,12 +17,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.8182647724, 42.6916267175]
+        "coordinates": [
+          -37.8182647724,
+          42.6916267175
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 1
@@ -27,12 +37,19 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-37.426050565, 42.4555913325]
+        "coordinates": [
+          -37.426050565,
+          42.4555913325
+        ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
+        "popupTitle": {
+          "en": ""
+        },
+        "popupContent": {
+          "en": ""
+        },
         "popupMedia": ""
       },
       "id": 2

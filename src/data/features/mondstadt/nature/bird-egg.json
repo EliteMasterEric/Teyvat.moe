@@ -1,6 +1,7 @@
 {
   "name": {
     "en": "Bird Egg",
+    "pt": "Ovo de Pássaro",
     "ru": "Яйцо"
   },
   "cluster": false,
@@ -17,12 +18,16 @@
     {
       "geometry": {
         "type": "Point",
-        "coordinates": [-17.649256706812025, 71.85607910156251]
+        "coordinates": [
+          -17.649256706812025,
+          71.85607910156251
+        ]
       },
       "type": "Feature",
       "properties": {
         "popupTitle": {
-          "en": "Bird Egg"
+          "en": "Bird Egg",
+          "pt": "Ovo de Pássaro"
         },
         "popupContent": {
           "en": ""
