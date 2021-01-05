@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import { setFeatureDisplayed } from '~/redux/ducks/displayed';
 
@@ -113,13 +114,16 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
           srcWebP={getFilterIconURL(mapFeature.icons.filter, 'webp')}
         />
       </Box>
-      <Typography>{mapFeature.name}</Typography>
+      <Typography>{localizeField(mapFeature.name)}</Typography>
     </Box>
   );
 };
 
 const mapStateToProps = (state, { featureKey }) => ({
   active: state.displayed?.features[featureKey] ?? false,
+  // Adding language to the props, even if it isn't used,
+  // causes the component to re-render when the language changes.
+  lang: state.options.overrideLang,
 });
 const mapDispatchToProps = (dispatch, { featureKey }) => ({
   setFeatureDisplayed: (newState) => {

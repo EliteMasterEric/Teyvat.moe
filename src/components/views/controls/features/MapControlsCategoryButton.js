@@ -7,11 +7,8 @@ import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import {
-  getEmptyFeatureCategories,
-  getEmptyRouteCategories,
-  MapCategories,
-} from '~/components/data/MapFeatures';
+import MapCategories from '~/components/data/MapCategories';
+import { getEmptyFeatureCategories, getEmptyRouteCategories } from '~/components/data/MapFeatures';
 import { t } from '~/components/i18n/Localization';
 import { setControlsCategory } from '~/redux/ducks/ui';
 
@@ -47,16 +44,19 @@ const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enable
   );
 };
 
-const mapStateToProps = (state, { categoryKey }) => {
+const mapStateToProps = (
+  { controlsTab, controlsRegion, controlsCategory, options: { overrideLang: lang } },
+  { categoryKey }
+) => {
   // Check if the given category is empty for the active region.
   let categoryEmpty = true;
-  switch (state.controlsTab) {
+  switch (controlsTab) {
     case 'features':
-      const featureList = getEmptyFeatureCategories(state.controlsRegion);
+      const featureList = getEmptyFeatureCategories(controlsRegion);
       categoryEmpty = featureList[categoryKey];
       break;
     case 'routes':
-      const routeList = getEmptyRouteCategories(state.controlsRegion);
+      const routeList = getEmptyRouteCategories(controlsRegion);
       categoryEmpty = routeList[categoryKey];
       break;
     default:
@@ -64,8 +64,11 @@ const mapStateToProps = (state, { categoryKey }) => {
       break;
   }
   return {
-    active: state.controlsCategory === categoryKey,
+    active: controlsCategory === categoryKey,
     categoryEmpty,
+    // Adding language to the props, even if it isn't used,
+    // causes the component to re-render when the language changes.
+    lang,
   };
 };
 const mapDispatchToProps = (dispatch, { categoryKey }) => ({

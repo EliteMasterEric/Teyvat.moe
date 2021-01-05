@@ -1,8 +1,11 @@
 {
+  "format": 2,
   "name": {
     "en": "Viewpoint"
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "viewpoint",
     "base": {
@@ -16,293 +19,217 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.330872983017045, 41.90734863281251]
+      "coordinates": [-53.33087, 41.90735],
+      "id": "3D5601B569CC7BE70531262BCA144794E839B9F1",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Merchants Flock And All Ships Dock"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/where-merchants-flock"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Where Merchants Flock And All Ships Dock"
+      },
+      "popupMedia": "liyue/viewpoint/where-merchants-flock"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.559482483762245, 40.3143310546875]
+      "coordinates": [-56.55948, 40.31433],
+      "id": "BF4E096AB849FD9857BC111DDBD9997BDE129451",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Feiyun Slope"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/feiyun-slope"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Feiyun Slope"
+      },
+      "popupMedia": "liyue/viewpoint/feiyun-slope"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.18092474909873, 42.23693847656251]
+      "coordinates": [-57.18092, 42.23694],
+      "id": "72B198017265D8978055F7CBB3746995FB7EB095",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Chihu Rock"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/chihu-rock"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Chihu Rock"
+      },
+      "popupMedia": "liyue/viewpoint/chihu-rock"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.08779989547407, 38.638916015625]
+      "coordinates": [-55.0878, 38.63892],
+      "id": "C9707380B7A9B642AF9D6DBB6F1DE90C657E9E6F",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yujing Terrace"
-        },
-        "popupContent": {
-          "en": "This one is located on the Pharmacy's roof."
-        },
-        "popupMedia": "liyue/viewpoint/yujing-terrace"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Yujing Terrace"
+      },
+      "popupContent": {
+        "en": "This one is located on the Pharmacy's roof."
+      },
+      "popupMedia": "liyue/viewpoint/yujing-terrace"
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.15988184949158, 41.29211425781251]
+      "coordinates": [-39.15988, 41.29211],
+      "id": "EA094CF119CCA712851A5D20541AB2F6B6D1A638",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Vigilant Guardians' Vantage Point"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/vigilant-guardians"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Vigilant Guardians' Vantage Point"
+      },
+      "popupMedia": "liyue/viewpoint/vigilant-guardians"
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.29943548054545, 41.64916992187501]
+      "coordinates": [-35.29944, 41.64917],
+      "id": "EE543A4E6534446CC1E3C189E1A5D6F4256B7013",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Marsh of Rustling Reeds"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/marsh-of-rustling-reeds"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Marsh of Rustling Reeds"
+      },
+      "popupMedia": "liyue/viewpoint/marsh-of-rustling-reeds"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.07386310181415, 40.81420898437501]
+      "coordinates": [-47.07386, 40.81421],
+      "id": "67E5BEC8685A1502B4BCB99BD932124B4276D5DB",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Ruins of Guili"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/ruins-of-guili"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Ruins of Guili"
+      },
+      "popupMedia": "liyue/viewpoint/ruins-of-guili"
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.147006308556552, 33.23913574218751]
+      "coordinates": [-31.14701, 33.23914],
+      "id": "B21F5995937D3ABC08347E0AA5502F41B14AACFC",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "A Home in the Hills"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/home-in-the-hills"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "A Home in the Hills"
+      },
+      "popupMedia": "liyue/viewpoint/home-in-the-hills"
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7116101085843, 29.053344726562504]
+      "coordinates": [-44.71161, 29.05334],
+      "id": "66B9E7CFFDF9BA905A5BF60E1502F913FA06DE92",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Mountains Peak Beyond The Clouds"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/where-mountains-peak"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Where Mountains Peak Beyond The Clouds"
+      },
+      "popupMedia": "liyue/viewpoint/where-mountains-peak"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.5982904898401, 21.42333984375]
+      "coordinates": [-44.59829, 21.42334],
+      "id": "60B53F3A40989B03A56F7C59C10726568261299C",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Moonlit Tree"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/moonlit-tree"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Moonlit Tree"
+      },
+      "popupMedia": "liyue/viewpoint/moonlit-tree"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.87596410238255, 23.543701171875004]
+      "coordinates": [-42.87596, 23.5437],
+      "id": "FCC3FA2164217380F83783F8B03CC1F68B1A475D",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mist-Veiled Stone Forest"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/mist-veiled-stone-forest"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Mist-Veiled Stone Forest"
+      },
+      "popupMedia": "liyue/viewpoint/mist-veiled-stone-forest"
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.00905080938206, 33.23913574218751]
+      "coordinates": [-49.00905, 33.23914],
+      "id": "BCA89CB7B0F41CE23D3B6AFC0194613AA82746D1",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Weeping Garden"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/weeping-garden"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Weeping Garden"
+      },
+      "popupMedia": "liyue/viewpoint/weeping-garden"
     },
     {
-      "id": 13,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.39236339707179, 48.29040527343751]
+      "coordinates": [-52.39236, 48.29041],
+      "id": "42BA3D363ACEB5F4D18197BDAD4827CB626071B9",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "A Drop in the Ocean"
-        },
-        "popupContent": {
-          "en": "Up on the rocks a bit, but not on top of the cliff."
-        },
-        "popupMedia": "liyue/viewpoint/a-drop-in-the-ocean"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "A Drop in the Ocean"
+      },
+      "popupContent": {
+        "en": "Up on the rocks a bit, but not on top of the cliff."
+      },
+      "popupMedia": "liyue/viewpoint/a-drop-in-the-ocean"
     },
     {
-      "id": 14,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.133258370556554, 27.5537109375]
+      "coordinates": [-57.13326, 27.55371],
+      "id": "3969F1466F107761B7BD2192C0969EB1275313BA",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Beyond the Chasm"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/beyond-the-chasm"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Beyond the Chasm"
+      },
+      "popupMedia": "liyue/viewpoint/beyond-the-chasm"
     },
     {
-      "id": 15,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.39335222384588, 27.147216796875004]
+      "coordinates": [-54.39335, 27.14722],
+      "id": "930EF35D4D41A90BE7B95D479DCDBBE28A6A300C",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dunyu Ruins"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/dunyu-ruins"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Dunyu Ruins"
+      },
+      "popupMedia": "liyue/viewpoint/dunyu-ruins"
     },
     {
-      "id": 16,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.75110666755426, 28.086547851562504]
+      "coordinates": [-58.75111, 28.08655],
+      "id": "498A45A88A89FB11A21A7C60052FFACCC0366662",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Qingxu's Forsaken Tower"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/viewpoint/qingxus-forsaken-tower"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Qingxu's Forsaken Tower"
+      },
+      "popupMedia": "liyue/viewpoint/qingxus-forsaken-tower"
     },
     {
-      "id": 17,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.204642388766935, 33.75549316406251]
+      "coordinates": [-47.20464, 33.75549],
+      "id": "E7D3D864BFE91F16078683E67B8DAB9FF0FF505C",
+      "importIds": {
+        "gm_legacy": ["liyueViewpoint/17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Nine Pillars of Peace"
-        },
-        "popupContent": {
-          "en": "At ground level between the cliffs."
-        },
-        "popupMedia": "liyue/viewpoint/nine-pillars-of-peace"
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Nine Pillars of Peace"
+      },
+      "popupContent": {
+        "en": "At ground level between the cliffs."
+      },
+      "popupMedia": "liyue/viewpoint/nine-pillars-of-peace"
     }
   ]
 }

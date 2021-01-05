@@ -8,7 +8,7 @@ import L from 'leaflet';
 export const MAP_CENTER = [-35, 45];
 
 // Zoom levels.
-export const MINIMUM_ZOOM = 3;
+export const MINIMUM_ZOOM = 4;
 export const DEFAULT_ZOOM = 4;
 export const MAXIMUM_NATIVE_ZOOM = 7;
 export const MAXIMUM_ZOOM = 10;
