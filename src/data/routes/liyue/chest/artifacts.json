@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Artifacts" },
+  "name": {
+    "en": "Artifacts",
+    "pt": "Artefatos"
+  },
   "icons": {
     "filter": "artifacts"
   },
@@ -9,17 +12,37 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-45.425443559580444, 27.685546875000004],
-          [-45.76369095661866, 27.789916992187504],
-          [-45.90912212390728, 28.0096435546875],
-          [-45.867062714815475, 28.185424804687504],
-          [-46.35071935547731, 28.416137695312504],
-          [-46.1646144968971, 29.487304687500004]
+          [
+            -45.425443559580444,
+            27.685546875000004
+          ],
+          [
+            -45.76369095661866,
+            27.789916992187504
+          ],
+          [
+            -45.90912212390728,
+            28.0096435546875
+          ],
+          [
+            -45.867062714815475,
+            28.185424804687504
+          ],
+          [
+            -46.35071935547731,
+            28.416137695312504
+          ],
+          [
+            -46.1646144968971,
+            29.487304687500004
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #1" },
+        "popupTitle": {
+          "en": "Artifacts #1"
+        },
         "popupContent": {
           "en": "Navigate from portal to 3 Artifact spawn next to house, continue on road for 1 mora spawn and finally 1 Artifact Spawn at destination\n\n"
         },
@@ -31,14 +54,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-56.45034902929676, 32.88208007812501],
-          [-57.037741202282064, 32.73925781250001]
+          [
+            -56.45034902929676,
+            32.88208007812501
+          ],
+          [
+            -57.037741202282064,
+            32.73925781250001
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #2" },
-        "popupContent": { "en": "Navigate from portal for Artifact spawns inside the tent" },
+        "popupTitle": {
+          "en": "Artifacts #2"
+        },
+        "popupContent": {
+          "en": "Navigate from portal for Artifact spawns inside the tent"
+        },
         "popupMedia": ""
       }
     },
@@ -47,18 +80,41 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-45.70234306798271, 31.915283203125004],
-          [-44.735027899515465, 33.77746582031251],
-          [-44.92591837128866, 34.31579589843751],
-          [-44.949249266611524, 34.62341308593751],
-          [-44.94147335480251, 35.05737304687501],
-          [-44.894795764697875, 35.16723632812501],
-          [-44.76623687516233, 35.26062011718751]
+          [
+            -45.70234306798271,
+            31.915283203125004
+          ],
+          [
+            -44.735027899515465,
+            33.77746582031251
+          ],
+          [
+            -44.92591837128866,
+            34.31579589843751
+          ],
+          [
+            -44.949249266611524,
+            34.62341308593751
+          ],
+          [
+            -44.94147335480251,
+            35.05737304687501
+          ],
+          [
+            -44.894795764697875,
+            35.16723632812501
+          ],
+          [
+            -44.76623687516233,
+            35.26062011718751
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #3" },
+        "popupTitle": {
+          "en": "Artifacts #3"
+        },
         "popupContent": {
           "en": "Navigate along the path for multiple artifact and mora spawns.  "
         },
@@ -70,21 +126,53 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-40.65147128144056, 34.38720703125001],
-          [-40.588928169693745, 33.73901367187501],
-          [-41.759019938155404, 35.35400390625001],
-          [-41.94314874732696, 35.59570312500001],
-          [-42.24071874922666, 36.53503417968751],
-          [-42.96446257387128, 35.49133300781251],
-          [-43.06487470411879, 35.59570312500001],
-          [-43.1090040242731, 35.57373046875001],
-          [-43.12103377575541, 35.46936035156251],
-          [-43.08894918346589, 35.41442871093751]
+          [
+            -40.65147128144056,
+            34.38720703125001
+          ],
+          [
+            -40.588928169693745,
+            33.73901367187501
+          ],
+          [
+            -41.759019938155404,
+            35.35400390625001
+          ],
+          [
+            -41.94314874732696,
+            35.59570312500001
+          ],
+          [
+            -42.24071874922666,
+            36.53503417968751
+          ],
+          [
+            -42.96446257387128,
+            35.49133300781251
+          ],
+          [
+            -43.06487470411879,
+            35.59570312500001
+          ],
+          [
+            -43.1090040242731,
+            35.57373046875001
+          ],
+          [
+            -43.12103377575541,
+            35.46936035156251
+          ],
+          [
+            -43.08894918346589,
+            35.41442871093751
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #4" },
+        "popupTitle": {
+          "en": "Artifacts #4"
+        },
         "popupContent": {
           "en": "Navigate from portal to broken cart then go the other way, at your first stop next to the house you will find a bucket that gives mora and a box that gives an artifact, continue on the path to find a boat and finally a cellar with alot of artifacts"
         },
@@ -96,16 +184,33 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-39.37677199661635, 28.723754882812504],
-          [-37.98750437106373, 28.756713867187504],
-          [-38.03078569382294, 28.63037109375],
-          [-38.20797181420939, 28.306274414062504],
-          [-38.277000935659, 30.223388671875004]
+          [
+            -39.37677199661635,
+            28.723754882812504
+          ],
+          [
+            -37.98750437106373,
+            28.756713867187504
+          ],
+          [
+            -38.03078569382294,
+            28.63037109375
+          ],
+          [
+            -38.20797181420939,
+            28.306274414062504
+          ],
+          [
+            -38.277000935659,
+            30.223388671875004
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #5" },
+        "popupTitle": {
+          "en": "Artifacts #5"
+        },
         "popupContent": {
           "en": "Navigate from portal to Treasure hoarder camp for 3 artifact spawns and then continue along the road for two broken carts artifact spawns"
         },
@@ -117,15 +222,28 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-41.13729606112275, 23.895263671875],
-          [-40.66397287638688, 23.219604492187504],
-          [-40.72228267283148, 22.9779052734375]
+          [
+            -41.13729606112275,
+            23.895263671875
+          ],
+          [
+            -40.66397287638688,
+            23.219604492187504
+          ],
+          [
+            -40.72228267283148,
+            22.9779052734375
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #6" },
-        "popupContent": { "en": "Navigate from portal to house for 2 artifact spawns" },
+        "popupTitle": {
+          "en": "Artifacts #6"
+        },
+        "popupContent": {
+          "en": "Navigate from portal to house for 2 artifact spawns"
+        },
         "popupMedia": ""
       }
     },
@@ -134,14 +252,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-40.83459313808023, 21.516723632812504],
-          [-41.918628865183024, 20.8465576171875],
-          [-41.9268032064879, 20.747680664062504]
+          [
+            -40.83459313808023,
+            21.516723632812504
+          ],
+          [
+            -41.918628865183024,
+            20.8465576171875
+          ],
+          [
+            -41.9268032064879,
+            20.747680664062504
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #7" },
+        "popupTitle": {
+          "en": "Artifacts #7"
+        },
         "popupContent": {
           "en": "Glide from portal to the shed on the bridge for 2 artifact spawns"
         },
@@ -153,14 +282,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-44.312057426666186, 18.638305664062504],
-          [-43.941417172952114, 21.088256835937504]
+          [
+            -44.312057426666186,
+            18.638305664062504
+          ],
+          [
+            -43.941417172952114,
+            21.088256835937504
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #8" },
-        "popupContent": { "en": "Glide from portal down for 1 artifact spawn" },
+        "popupTitle": {
+          "en": "Artifacts #8"
+        },
+        "popupContent": {
+          "en": "Glide from portal down for 1 artifact spawn"
+        },
         "popupMedia": ""
       }
     },
@@ -169,14 +308,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-41.14143302653629, 23.944702148437504],
-          [-40.065460682065535, 24.719238281250004]
+          [
+            -41.14143302653629,
+            23.944702148437504
+          ],
+          [
+            -40.065460682065535,
+            24.719238281250004
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #9" },
-        "popupContent": { "en": "1 Artifact in Treasure Hoarders camp" },
+        "popupTitle": {
+          "en": "Artifacts #9"
+        },
+        "popupContent": {
+          "en": "1 Artifact in Treasure Hoarders camp"
+        },
         "popupMedia": ""
       }
     },
@@ -185,14 +334,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-32.04998888314202, 33.33801269531251],
-          [-32.58384932565661, 32.26135253906251]
+          [
+            -32.04998888314202,
+            33.33801269531251
+          ],
+          [
+            -32.58384932565661,
+            32.26135253906251
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #10" },
-        "popupContent": { "en": "From portal go to house.  There is 1 artifact spawn" },
+        "popupTitle": {
+          "en": "Artifacts #10"
+        },
+        "popupContent": {
+          "en": "From portal go to house.  There is 1 artifact spawn"
+        },
         "popupMedia": ""
       }
     },
@@ -201,15 +360,29 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-32.296419798969076, 37.04589843750001],
-          [-32.579220642875676, 37.44689941406251],
-          [-33.008663494575565, 35.91430664062501],
-          [-32.81497839698581, 35.29907226562501]
+          [
+            -32.296419798969076,
+            37.04589843750001
+          ],
+          [
+            -32.579220642875676,
+            37.44689941406251
+          ],
+          [
+            -33.008663494575565,
+            35.91430664062501
+          ],
+          [
+            -32.81497839698581,
+            35.29907226562501
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #11" },
+        "popupTitle": {
+          "en": "Artifacts #11"
+        },
         "popupContent": {
           "en": "1 artifact spawn in the old lady house, go down to the yard, there is 1 artifact spawn  vase stand and finally 1 spawn on the rug stand"
         },
@@ -221,14 +394,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-38.108627664321276, 41.40747070312501],
-          [-38.41055825094608, 41.04492187500001],
-          [-40.12849105685408, 40.02319335937501]
+          [
+            -38.108627664321276,
+            41.40747070312501
+          ],
+          [
+            -38.41055825094608,
+            41.04492187500001
+          ],
+          [
+            -40.12849105685408,
+            40.02319335937501
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #12" },
+        "popupTitle": {
+          "en": "Artifacts #12"
+        },
         "popupContent": {
           "en": "Teleport and then go to the nearest shed for 1 weapon spawn, continue on path to arrive at 1  artifact spawn"
         },
@@ -240,13 +424,21 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-42.65815872149923, 40.24494528903603],
-          [-41.92259356832627, 39.203965335287265]
+          [
+            -42.65815872149923,
+            40.24494528903603
+          ],
+          [
+            -41.92259356832627,
+            39.203965335287265
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #13" },
+        "popupTitle": {
+          "en": "Artifacts #13"
+        },
         "popupContent": {
           "en": "Teleport and go in the west direction to the docks for 1 artifact spawn"
         },
@@ -258,16 +450,32 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-39.48284540453334, 47.41149902343751],
-          [-38.603993275591684, 46.3568115234375],
-          [-38.55246141354153, 46.29089355468751],
-          [-38.57823196583315, 46.24694824218751]
+          [
+            -39.48284540453334,
+            47.41149902343751
+          ],
+          [
+            -38.603993275591684,
+            46.3568115234375
+          ],
+          [
+            -38.55246141354153,
+            46.29089355468751
+          ],
+          [
+            -38.57823196583315,
+            46.24694824218751
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #14" },
-        "popupContent": { "en": "Teleport and go to the tent for 3 artifact spawns" },
+        "popupTitle": {
+          "en": "Artifacts #14"
+        },
+        "popupContent": {
+          "en": "Teleport and go to the tent for 3 artifact spawns"
+        },
         "popupMedia": ""
       }
     },
@@ -276,14 +484,24 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-45.32897866218558, 48.82324218750001],
-          [-45.71385093029221, 46.62597656250001]
+          [
+            -45.32897866218558,
+            48.82324218750001
+          ],
+          [
+            -45.71385093029221,
+            46.62597656250001
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #15" },
-        "popupContent": { "en": "Glide down from teleporter to tent for 1 artifact spawn" },
+        "popupTitle": {
+          "en": "Artifacts #15"
+        },
+        "popupContent": {
+          "en": "Glide down from teleporter to tent for 1 artifact spawn"
+        },
         "popupMedia": ""
       }
     },
@@ -292,14 +510,25 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-50.0818196020607, 28.207397460937504],
-          [-48.4292005555684, 29.157714843750004],
-          [-47.90897831472869, 29.421386718750004]
+          [
+            -50.0818196020607,
+            28.207397460937504
+          ],
+          [
+            -48.4292005555684,
+            29.157714843750004
+          ],
+          [
+            -47.90897831472869,
+            29.421386718750004
+          ]
         ]
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Artifacts #16" },
+        "popupTitle": {
+          "en": "Artifacts #16"
+        },
         "popupContent": {
           "en": "Teleport and walk up the path for 1 artifact spawn in a broken cart and then continue on path for 1 more artifact spawn"
         },
