@@ -1,5 +1,8 @@
 {
-  "name": { "en": "Shrine" },
+  "name": { 
+    "en": "Shrine",
+    "ru": "Святилище" 
+  },
   "cluster": false,
   "icons": {
     "filter": "mondstadt-shrine",
@@ -18,9 +21,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #10" },
+        "popupTitle": { "en": "Shrine #1", "ru": "Святилище #1" },
         "popupContent": {
-          "en": "This shrine is located past the hilichurl tower, nearby to the Anemo Hypostasis arena."
+          "en": "This shrine is located past the hilichurl tower, nearby to the Anemo Hypostasis arena.",
+          "ru": "Это святилище расположено около башни хиличурлов, рядом с ареной Анемо гипостазиса."
         },
         "popupMedia": "mondstadt/shrine/1"
       },
@@ -33,8 +37,11 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #2" },
-        "popupContent": { "en": "This shrine is located below Starsnatch Cliff." },
+        "popupTitle": { "en": "Shrine #2", "ru": "Святилище #2" },
+        "popupContent": {
+          "en": "This shrine is located below Starsnatch Cliff.",
+          "ru": "Это святилище расположено снизу Утёса Звездолова."
+        },
         "popupMedia": "mondstadt/shrine/2"
       },
       "id": 2
@@ -46,8 +53,11 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #3" },
-        "popupContent": { "en": "This shrine is nestled within the cliff near Springvale." },
+        "popupTitle": { "en": "Shrine #3", "ru": "Святилище #3" },
+        "popupContent": { 
+          "en": "This shrine is nestled within the cliff near Springvale.",
+          "ru": "Это святилище расположено под утёсом вблизи Спрингвейла."
+        },
         "popupMedia": "mondstadt/shrine/3"
       },
       "id": 3
@@ -59,9 +69,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #4" },
+        "popupTitle": { "en": "Shrine #4", "ru": "Святилище #4" },
         "popupContent": {
-          "en": "This shrine is located in the middle of a field near Springvale, by the cliff with an Anemoculus under it."
+          "en": "This shrine is located in the middle of a field near Springvale, by the cliff with an Anemoculus under it.",
+          "ru": "Святилище расположено посреди поля вблизи Спригвейла, под утёсом, если идти на север от Статуи Анемо Архонта."
         },
         "popupMedia": "mondstadt/shrine/4"
       },
@@ -74,9 +85,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #5" },
+        "popupTitle": { "en": "Shrine #5", "ru": "Святилище #5" },
         "popupContent": {
-          "en": "This shrine is located by a cliff near a river gorge, south of the large tree by the Statue of the Seven."
+          "en": "This shrine is located by a cliff near a river gorge, south of the large tree by the Statue of the Seven.",
+          "ru": "Это святилище расположено на утёсе вблизи ущелья с рекой, на юге от огромного дерева, там же Статуя Анемо Архонта."
         },
         "popupMedia": ""
       },
@@ -89,8 +101,11 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #6" },
-        "popupContent": { "en": "This shrine is located far up the cliffs near the world border." },
+        "popupTitle": { "en": "Shrine #6", "ru": "Святилище #6" },
+        "popupContent": { 
+          "en": "This shrine is located far up the cliffs near the world border.",
+          "ru": "Это святищиле расположено на утёсе вблизи Драконьего Хребта, можно долететь от Статуи Анемо Архонта на Драконьем Хребте."
+        },
         "popupMedia": ""
       },
       "id": 6
@@ -102,9 +117,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #7" },
+        "popupTitle": { "en": "Shrine #7", "ru": "Святилище #7" },
         "popupContent": {
-          "en": "This shrine is located up at the top of a cliff near Dadaupa Gorge."
+          "en": "This shrine is located up at the top of a cliff near Dadaupa Gorge.",
+          "ru": "Это святилище расположено наверху утёса вблизи Храма Льва и Ущелья Дадаупа."
         },
         "popupMedia": ""
       },
@@ -117,9 +133,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #8" },
+        "popupTitle": { "en": "Shrine #8", "ru": "Святилище #8" },
         "popupContent": {
-          "en": "This shrine is located in the plain to the north of Andrius' arena."
+          "en": "This shrine is located in the plain to the north of Andrius' arena.",
+          "ru": "Это святилище расположено на равниве к северу от испытания Андриуса, в Вольфендроме."
         },
         "popupMedia": "mondstadt/shrine/8"
       },
@@ -132,9 +149,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #9" },
+        "popupTitle": { "en": "Shrine #9", "ru": "Святилище #9" },
         "popupContent": {
-          "en": "This shrine is located across the water near the border to Liyue."
+          "en": "This shrine is located across the water near the border to Liyue.",
+          "ru": "Это святилище расположено на утёсе, вблизи границы Ли Юэ."
         },
         "popupMedia": ""
       },
@@ -147,9 +165,10 @@
       },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "Shrine #10" },
+        "popupTitle": { "en": "Shrine #10", "ru": "Святилище #10" },
         "popupContent": {
-          "en": "This shrine is located at the top of a far cliff to the east of Stormterror's lair."
+          "en": "This shrine is located at the top of a far cliff to the east of Stormterror's lair.",
+          "en": "Это святилище расположено на вершине дальнего утёса к востоку от Логова Ужаса Бури, можно дойти следуя на север от телепорта Каньона светлой короны."
         },
         "popupMedia": "mondstadt/shrine/10"
       },
