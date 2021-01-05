@@ -21,12 +21,16 @@
 <b><a href="https://poeditor.com/projects/view?id=394831">Translation</a></b>
   <br/>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/zh-CN?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Chinese"/></a>
-<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ja?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Japanese"/></a>
-<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ko?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Korean"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/fr?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - French"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/de?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - German"/></a>
-<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Spanish"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/id?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Indonesian"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ja?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Japanese"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ko?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Korean"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/pt?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Portuguese"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/ru?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Russian"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Spanish"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/th?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Thai"/></a>
+<a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/vi?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Vietnamese"/></a>
 </p>
 
 ---

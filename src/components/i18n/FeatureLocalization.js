@@ -24,7 +24,7 @@ export const localizeField = (field) => {
     return field[DEFAULT_LOCALE_CODE];
   }
   // Else, return null.
-  return null;
+  return '';
 };
 
 const FEATURE_TO_LOCALIZE = ['name'];
