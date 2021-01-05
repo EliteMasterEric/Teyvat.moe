@@ -640,6 +640,10 @@ First major release of the rework, featuring a new interface developed in React.
 
 # 0.10.1 Continued Fixes
 
+- Added a new description field for features and routes. This is a one or two sentence explanation of the feature or route.
+  - Like attribution, this will appear in the interface later at some point.
+- Added description fields for 14 features.
 - Localization of features:
   - @alkmaar: Translated 31 Mondstadt features to Russian.
   - @Likanion: Translated 27 Mondstadt nature features to Russian.
+  - @MasterEric: Copied Russian translations to 57 features.
