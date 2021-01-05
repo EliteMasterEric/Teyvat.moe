@@ -636,6 +636,10 @@ First major release of the rework, featuring a new interface developed in React.
     - options-import-new
     - popup-import-old-content
     - popup-import-new-content
-- Modified existing localization keys:
-
 - Completed markers now display with a green highlight to distinguish them when opacity is 1.
+
+# 0.10.1 Continued Fixes
+
+- Localization of features:
+  - @alkmaar: Translated 31 Mondstadt features to Russian.
+  - @Likanion: Translated 27 Mondstadt nature features to Russian.
