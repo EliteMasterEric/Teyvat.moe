@@ -46,6 +46,11 @@ Final data format example.:
    */
   "name": { "en": "Crimson Agate" },
   /*
+   * description {Object} A description of the feature or route.
+   *   Optional. Localized.
+   */
+  "description": { "en": "Redeem at the Frostbearing Tree for rewards. 80 are found in the world with more available from the Crimson Wish." },
+  /*
    * cluster {String}: Whether to cluster markers of this type.
    *   Optional. Only allowed on markers.
    *   Possible values are:
