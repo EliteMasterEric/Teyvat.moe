@@ -2,14 +2,13 @@
   "format": 2,
   "name": {
     "en": "Bird Egg",
-    "ru": "Яйцо",
-    "zh": ""
+    "ru": "Яйцо"
   },
   "description": {
     "en": "A versatile food used in various Recipes."
   },
   "enabled": true,
-  "cluster": "off",
+  "cluster": "on",
   "respawn": "none",
   "icons": {
     "filter": "bird-egg",
@@ -22,58 +21,35 @@
   },
   "data": [
     {
-      "coordinates": [
-        -17.64926,
-        71.85608
-      ],
+      "coordinates": [-17.64926, 71.85608],
       "id": "76A2C4CE65D091412C51352225D5BD12A086B955",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtBirdEgg/1"
-        ]
+        "gm_legacy": ["mondstadtBirdEgg/1"]
       },
       "popupAttribution": "Unknown",
-      "popupTitle": {
-        "en": "#1"
-      },
+      "popupTitle": {},
       "popupMedia": ""
     },
     {
-      "coordinates": [
-        -31.88993,
-        58.42987
-      ],
+      "coordinates": [-31.88993, 58.42987],
       "id": "C0A195796010F7C4C05F8CCFA0F8D1470F005E18",
       "importIds": {
-        "yuanshen": [
-          "122_1"
-        ]
+        "yuanshen": ["122_1"]
       },
-      "popupTitle": {
-        "zh": "",
-        "en": ""
-      },
-      "popupContent": {
-        "zh": ""
-      },
+      "popupTitle": {},
+      "popupContent": {},
       "popupMedia": "https://yuanshen.site/comment_png/122_1.jpg",
       "popupAttribution": "Yuanshen.site"
     },
-    
     {
-      "coordinates": [
-        -27.15692,
-        66.82251
-      ],
+      "coordinates": [-27.15692, 66.82251],
       "id": "61ADF5B55EC9862B39F2670D15D2D238239A65C0",
       "importIds": {
-        "yuanshen": [
-          "121_8"
-        ]
+        "yuanshen": ["121_8"]
       },
       "popupTitle": {
         "zh": "鸟蛋",
-        "en": "NEW MARKER: 61ADF5B5"
+        "en": "61ADF5B5"
       },
       "popupContent": {
         "zh": "鸟窝里有两个鸟蛋"

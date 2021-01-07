@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Snapdragon",
-    "ru": "Львиный Зев"
+    "ru": "Львиный Зев",
+    "zh": ""
   },
   "description": {
     "en": "As a spice, it can bring a wonderful flavor to dishes. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "snapdragon",
@@ -19,107 +22,377 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9069379708, 62.8747580197]
+      "coordinates": [-30.90694, 62.87476],
+      "id": "D841A6E1BEECFA176AA78BD35861C0401228B877",
+      "importIds": {
+        "gm_legacy": ["mondstadtSnapdragon/1"],
+        "yuanshen": ["61_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8833658726, 62.9241975765]
+      "coordinates": [-30.9437, 62.2411],
+      "id": "D67F252C37D51741FA1049DDD66DF373CB48489F",
+      "importIds": {
+        "gm_legacy": ["mondstadtSnapdragon/3"],
+        "yuanshen": ["61_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9436964635, 62.2410998147]
+      "coordinates": [-30.89594, 62.91687],
+      "id": "EFAA2B5198B88EC39CB86C90275D6A9D11486823",
+      "importIds": {
+        "yuanshen": ["61_2"],
+        "gm_legacy": ["mondstadtSnapdragon/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#2"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_2.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.3947470647, 62.2960206535]
+      "coordinates": [-31.36459, 62.30164],
+      "id": "F18CB215A00D0FAACE2D6FB80DEAD2F7BC60145D",
+      "importIds": {
+        "yuanshen": ["61_4"],
+        "gm_legacy": ["mondstadtSnapdragon/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#4"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_4.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.198043686762652, 64.59411621093751]
+      "coordinates": [-18.75031, 66.34094],
+      "id": "4F775C51E5D7EA8041FEA8D2CFE468B141AF8152",
+      "importIds": {
+        "yuanshen": ["61_5"],
+        "gm_legacy": ["mondstadtSnapdragon/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#5"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_5.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.318025732001438, 64.52819824218751]
+      "coordinates": [-18.82485, 67.00562],
+      "id": "B65ABB28847A247E09442BDB85E1121B88B0349E",
+      "importIds": {
+        "yuanshen": ["61_6"],
+        "gm_legacy": ["mondstadtSnapdragon/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#6"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_6.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.588982352118443, 64.25354003906251]
+      "coordinates": [-18.93573, 66.93054],
+      "id": "809F822BA61BD1D9F95CA014533BEC7336CC7D54",
+      "importIds": {
+        "yuanshen": ["61_7"],
+        "gm_legacy": ["mondstadtSnapdragon/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#7"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.30238, 64.59961],
+      "id": "7F1FAB85F2D6898AD193530E2B7DACF0663E0B57",
+      "importIds": {
+        "yuanshen": ["61_8"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#8"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.4275, 64.53369],
+      "id": "DE6A80475A617971EEA14C4D1CEF59460EE8C06D",
+      "importIds": {
+        "yuanshen": ["61_9"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#9"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.67227, 64.35242],
+      "id": "F01CF622F7C4530365787B9A38B960D12FA026CE",
+      "importIds": {
+        "yuanshen": ["61_10"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#10"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.2732, 66.88477],
+      "id": "37FE6A473263998943E262C8701C5707C41C4DA3",
+      "importIds": {
+        "yuanshen": ["61_12"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#12"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.39114, 66.40869],
+      "id": "E098D21AD071268E5D2081FAF16926F5FF4736DD",
+      "importIds": {
+        "yuanshen": ["61_13"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#13"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.02671, 65.90149],
+      "id": "40AB8DE71F7D36141E24CFCABC538D5FF6329357",
+      "importIds": {
+        "yuanshen": ["61_14"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#14"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.25977, 64.3689],
+      "id": "8FDE39A73CC6277A7E249BC2975C0F3976C46BC8",
+      "importIds": {
+        "yuanshen": ["61_15"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#15"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.19868, 65.54076],
+      "id": "EF6A09D1E3F5CA3DEDBDFE33C59B12A0CCFEB7A2",
+      "importIds": {
+        "yuanshen": ["61_16"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#16"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.49862, 63.08245],
+      "id": "4E9EA8D565C78585263C5FF379A7C723EE0F0894",
+      "importIds": {
+        "yuanshen": ["61_18"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#18"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.9729, 64.06677],
+      "id": "453A7E51BB503306560E7684464BAC0ACA89B4EB",
+      "importIds": {
+        "yuanshen": ["61_19"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#19"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.01999, 64.11072],
+      "id": "3F67DB96641250A0CFB371941413D33FB170694F",
+      "importIds": {
+        "yuanshen": ["61_20"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#20"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.72756, 64.4626],
+      "id": "52B0C0E5FAFD8E671ABFD193E88444037CA1F2E4",
+      "importIds": {
+        "yuanshen": ["61_21"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#21"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.98767, 60.9906],
+      "id": "F84D5D1ECE1FE43A6EF9208834DFE7F785A3AE42",
+      "importIds": {
+        "yuanshen": ["61_22"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#22"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.30159, 61.00158],
+      "id": "F5B0759AC0BF6E489CF651F5FFB14011ECE4F898",
+      "importIds": {
+        "yuanshen": ["61_23"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#23"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.33609, 60.9613],
+      "id": "0FD1D9BB037DADC41382E041D3206205CE092891",
+      "importIds": {
+        "yuanshen": ["61_24"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#24"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.31147, 52.6414],
+      "id": "F5CC66A4150B72A8026BF55957198670AF204227",
+      "importIds": {
+        "yuanshen": ["61_25"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "#25"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_25.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

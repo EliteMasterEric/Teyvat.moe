@@ -139,3 +139,50 @@ export const getRouteKeysByFilter = (region, category) => {
     return route?.region === region && route?.category === category && route?.enabled;
   });
 };
+
+export const getElementPathById = (id) => {
+  let result = null;
+
+  // Search the features.
+  Object.keys(MapFeatures).forEach((featureKey) => {
+    const feature = MapFeatures[featureKey];
+    const matchingMarkers = feature.data.filter((element) => element.id === id);
+    if (matchingMarkers.length >= 1) {
+      result = `feature/${featureKey}/${id}`;
+    }
+  });
+  if (result !== null) return result;
+
+  // Search the routes.
+  Object.keys(MapRoutes).forEach((routeKey) => {
+    const routes = MapRoutes[routeKey];
+    const matchingMarkers = routes.data.filter((element) => element.id === id);
+    if (matchingMarkers.length >= 1) {
+      result = `route/${routeKey}/${id}`;
+    }
+  });
+  if (result !== null) return result;
+
+  // Couldn't find it.
+  return null;
+};
+
+export const getElementByPath = (path) => {
+  const [type, name, id] = path.split('/');
+  switch (type) {
+    case 'feature':
+      const feature = MapFeatures[name];
+      const markers = feature.data.filter((m) => m.id === id);
+      if (markers.length >= 1) return markers[0];
+      break;
+    case 'route':
+      const route = MapRoutes[name];
+      const routes = route.data.filter((r) => r.id === id);
+      if (routes.length >= 1) return routes[0];
+      break;
+    default:
+      console.error(`Unknown type ${type}.`);
+      break;
+  }
+  return null;
+};

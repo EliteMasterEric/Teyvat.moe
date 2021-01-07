@@ -1,0 +1,39 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Berry",
+    "ru": "Ягода"
+  },
+  "description": {
+    "en": "Small brightly-colored fruit used in Recipes."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "berry",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-39.7804, 49.53369],
+      "id": "8FFE0167A2E724BC4B67D94D7A4D3E8D25E17433",
+      "importIds": {
+        "yuanshen": ["91_6"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3个树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/91_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

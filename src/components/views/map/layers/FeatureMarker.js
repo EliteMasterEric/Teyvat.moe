@@ -1,4 +1,5 @@
-import { makeStyles, Box, Typography, Switch } from '@material-ui/core';
+import { makeStyles, Box, Typography, Tooltip, IconButton } from '@material-ui/core';
+import { AssignmentTurnedIn as AssignmentTurnedInIcon, Link as LinkIcon } from '@material-ui/icons';
 import React from 'react';
 import { Marker, Popup } from 'react-leaflet';
 import { connect } from 'react-redux';
@@ -10,6 +11,9 @@ import { Image, useImageExtension } from '~/components/interface/Image';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
+import { SafeHTML } from '~/components/Util';
+import { copyPermalink } from '../../PermalinkHandler';
+import { InputSwitch } from '~/components/interface/Input';
 
 const POPUP_WIDTH = '560';
 
@@ -23,14 +27,18 @@ const useStyles = makeStyles((_theme) => ({
       margin: 0,
     },
   },
-  completedContainer: {
+  actionContainer: {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 0,
+    justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
   },
-  completedLabel: {
-    fontSize: 12,
+  innerActionContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   completedSubtitle: {
     fontSize: 10,
@@ -143,6 +151,8 @@ const _FeatureMarker = ({
 
   const DOUBLE_CLICK_TIMEOUT = 300;
 
+  const onCopyPermalink = () => copyPermalink(marker.id);
+
   /* eslint-disable no-param-reassign */
   const eventHandlers = {
     add: (event) => {
@@ -193,18 +203,27 @@ const _FeatureMarker = ({
             <FeatureMedia media={marker.popupMedia} allowExternalMedia={allowExternalMedia} />
           </Box>
           {content && content !== '' ? (
-            <Typography className={classes.popupContent}>{content}</Typography>
+            <SafeHTML className={classes.popupContent}>{content}</SafeHTML>
           ) : null}
-          <Box className={classes.completedContainer}>
-            <Typography className={classes.completedLabel}>
-              {t('map-popup-completed-label')}
-            </Typography>
-            <Switch
-              size="small"
-              color="primary"
-              value={completed !== undefined}
-              onChange={(event) => (event.target.checked ? markFeature() : unmarkFeature())}
-            />
+          <Box className={classes.actionContainer}>
+            <Tooltip title={t('map-popup-completed-label')}>
+              <Box className={classes.innerActionContainer}>
+                <InputSwitch
+                  size="small"
+                  color="primary"
+                  label={<AssignmentTurnedInIcon />}
+                  value={Boolean(completed)}
+                  onChange={(value) => (value ? markFeature() : unmarkFeature())}
+                />
+              </Box>
+            </Tooltip>
+            <Tooltip title={t('map-popup-copy-permalink-label')}>
+              <Box className={classes.innerActionContainer}>
+                <IconButton onClick={onCopyPermalink}>
+                  <LinkIcon />
+                </IconButton>
+              </Box>
+            </Tooltip>
           </Box>
           {completed ? (
             <Typography className={classes.completedSubtitle}>

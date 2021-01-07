@@ -150,8 +150,8 @@ FEATURE_TRANSLATION = {
   JS_DWQ_LY: 'liyueUnusualHilichurl',
   JS_JG_MD: 'liyueViewpoint', # They swapped this.
   JS_JG_LY: 'mondstadtViewpoint', # They swapped this.
-  JS_MJK_MD: 'mondstadtMagicalCrystalChunk',
-  JS_MJK_LY: 'liyueMagicalCrystalChunk',
+  JS_MJK_MD: 'liyueMagicalCrystalChunk', # They swapped this.
+  JS_MJK_LY: 'mondstadtMagicalCrystalChunk', # They swapped this.
   JS_S_LY: 'liyueBambooShoot',
   JS_NQ_LY: 'liyueLoachPearl',
   JS_YSSP_MD: 'mondstadtMeteoriteShard',

@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Dandelion Seed",
-    "ru": "Семена Одуванчика"
+    "ru": "Семена Одуванчика",
+    "zh": ""
   },
   "description": {
     "en": "A tiny seed that rides on the wind. Used in Alchemy and Character Ascension."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "dandelion-seed",
@@ -19,615 +22,801 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.2934294166, 59.2712359136]
+      "coordinates": [-26.29343, 59.27124],
+      "id": "780FD19DD13D0FFBD0307E8D1DDE8CBFE3141489",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/1"],
+        "yuanshen": ["13_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.4214005226, 59.3371668446]
+      "coordinates": [-26.4214, 59.33717],
+      "id": "C979BCED7B5514B2819534F8A6F195BA9C77BCA0",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/2"],
+        "yuanshen": ["13_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.1110264173, 59.3536301339]
+      "coordinates": [-26.11103, 59.35363],
+      "id": "EF313B3FA20DFECCDF6DC23F057057CBDBA4DE04",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/3"],
+        "yuanshen": ["13_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.3228953597, 59.4085747368]
+      "coordinates": [-26.3229, 59.40857],
+      "id": "0AED86120ABA6C8E43DE64015114274FC1C4B1F1",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/4"],
+        "yuanshen": ["13_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8093617945, 58.9691388948]
+      "coordinates": [-26.80936, 58.96914],
+      "id": "CFD7A13707425EEE8A0B28AD6B72A59B36ED759C",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/5"],
+        "yuanshen": ["13_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8634544022, 58.8517951552]
+      "coordinates": [-26.86345, 58.8518],
+      "id": "F7D9C5E12F73195B66141151F09C86A0EFB11CF0",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/6"],
+        "yuanshen": ["13_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.980810683, 58.8812698736]
+      "coordinates": [-26.98081, 58.88127],
+      "id": "4EAC74D1E2DA45FD322693D9577A7188462FD06D",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/7"],
+        "yuanshen": ["13_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.1602142147, 59.2053093033]
+      "coordinates": [-25.16021, 59.20531],
+      "id": "330CD2A5BED15F99B433BB6398CF57A5A4F96959",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/8"],
+        "yuanshen": ["13_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.547141458, 58.2495052376]
+      "coordinates": [-24.54714, 58.24951],
+      "id": "18E265411BA6EE8F734E0EE3A3A9A31F2AF3A64E",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/9"],
+        "yuanshen": ["13_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2592331962, 54.8427857003]
+      "coordinates": [-30.25923, 54.84279],
+      "id": "D8AD31072FD0785B5C1688B8EE3C3A84B8B36588",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/10"],
+        "yuanshen": ["13_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.7359084562, 50.6585191584]
+      "coordinates": [-29.73591, 50.65852],
+      "id": "75EEA66C0364B5A89457235EFBAE5E79D5BBF4AA",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/11"],
+        "yuanshen": ["13_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.3920013707, 51.5590699627]
+      "coordinates": [-30.392, 51.55907],
+      "id": "3D1F62FA8C61C98D316D8B3474049A6C714E025F",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/12"],
+        "yuanshen": ["13_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2111198348, 52.7453613281]
+      "coordinates": [-33.21112, 52.74536],
+      "id": "08A832A62C465DB219EF83C341373FB2BA8392E3",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/13"],
+        "yuanshen": ["13_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.1467266743, 52.7893239236]
+      "coordinates": [-33.14673, 52.78932],
+      "id": "62671D3DCA5894158B3A202BD20234A7EFD2656E",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/14"],
+        "yuanshen": ["13_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.4910083399, 45.6372091916]
+      "coordinates": [-33.49101, 45.63721],
+      "id": "26AFB78D3494565EC2B63F77DEE8B5433A370234",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/15"],
+        "yuanshen": ["13_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.4406094437, 45.8294666932]
+      "coordinates": [-33.44061, 45.82947],
+      "id": "A74CAACB38DC1307AC8780B405E8F1FF4EBD9B64",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/16"],
+        "yuanshen": ["13_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5276832644, 45.8129818001]
+      "coordinates": [-33.52768, 45.81298],
+      "id": "2DDFA53503CB6A01DB48FC6A578F8BB0CF2240D4",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/17"],
+        "yuanshen": ["13_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.8521530133, 46.0107573101]
+      "coordinates": [-33.85215, 46.01076],
+      "id": "29F3BE91CCC844769A14821A132AE038C1AC1EF0",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/18"],
+        "yuanshen": ["13_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6877650383, 46.318359375]
+      "coordinates": [-33.68777, 46.31836],
+      "id": "9555C6E5E3D6E6F933450F28DBDE881D2A4DF550",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/19"],
+        "yuanshen": ["13_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2479263633, 46.4996607937]
+      "coordinates": [-33.24793, 46.49966],
+      "id": "CD8E74343CE00480D45F0C626916E3B0E833B62F",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/20"],
+        "yuanshen": ["13_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.8019751878, 47.4883979193]
+      "coordinates": [-33.04551, 63.67127],
+      "id": "821DBF84640B3D8A5C5D1D61CCE0440B8BCA7781",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/25"],
+        "yuanshen": ["13_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.3479831046, 46.9446038422]
+      "coordinates": [-33.03635, 63.73171],
+      "id": "DBCC842BB89825495BB7DCBC550CDF044F32AC81",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/26"],
+        "yuanshen": ["13_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.474885204, 46.8951426817]
+      "coordinates": [-35.94267, 74.75955],
+      "id": "66F0019D44D99CF7BFF6AA543EC40D1AA5C8D4E8",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/29"],
+        "yuanshen": ["13_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.5111113519, 46.8292722412]
+      "coordinates": [-28.09152, 64.51036],
+      "id": "F38A42D1CCA526355C7E6EFB11974DA0E0EB7326",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/30"],
+        "yuanshen": ["13_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.0455145524, 63.6712722097]
+      "coordinates": [-28.00425, 64.6751],
+      "id": "47F7A4C1DBCD18E91B7476A6FB305DF923CB4F0B",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/31"],
+        "yuanshen": ["13_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.0363520851, 63.7317088965]
+      "coordinates": [-22.95327, 63.61087],
+      "id": "8F9CCDF34D75C3CECC28E92B030AC4ED2ACC13A6",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/32"],
+        "yuanshen": ["13_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.6967710737, 69.6830022787]
+      "coordinates": [-22.7711, 63.83058],
+      "id": "1129D30DF5DD5EDEC907745D29D397AFC355AB36",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/33"],
+        "yuanshen": ["13_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8772348357, 69.6830022787]
+      "coordinates": [-22.88253, 63.81408],
+      "id": "7A77D4FC09C62225099EFEE6E1453F846A71080C",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/34"],
+        "yuanshen": ["13_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.9426670112, 74.7595541422]
+      "coordinates": [-21.65769, 61.01709],
+      "id": "9A0B6F19C6AAB74A74A966862ACE9FF76EC526E0",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/35"],
+        "yuanshen": ["13_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.0915177089, 64.5103623285]
+      "coordinates": [-18.97924, 62.42346],
+      "id": "8CD4746FADCB3D3DAB38C51E99B31B0FC503B665",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/36"],
+        "yuanshen": ["13_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.0042499101, 64.6750972317]
+      "coordinates": [-16.07755, 69.98291],
+      "id": "950D443C2D86F5C6B9DA1AAE78BC5A0495F1ED8F",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/37"],
+        "yuanshen": ["13_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.9532704198, 63.6108657682]
+      "coordinates": [-23.5136, 68.17016],
+      "id": "C3AF8BDFC66D086659D8CBC1056046F7219117FD",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/38"],
+        "yuanshen": ["13_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.7710961999, 63.8305772081]
+      "coordinates": [-23.59416, 68.18117],
+      "id": "12358D91C11DE57D6AC4CC4B5D0F2948C5CCB545",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/39"],
+        "yuanshen": ["13_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8825255014, 63.8140836734]
+      "coordinates": [-23.53881, 68.04383],
+      "id": "5870764068252FDD4546B23A701C1709347739C3",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/40"],
+        "yuanshen": ["13_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.6576859634, 61.0170861016]
+      "coordinates": [-36.08483, 74.81418],
+      "id": "12CBD8A817F4F7F655C18A73D480F4E408F259C7",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/42"],
+        "yuanshen": ["13_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.9792390715, 62.4234561389]
+      "coordinates": [-30.24977, 59.04996],
+      "id": "E331699EA9B808E152D4F87956E912062D717113",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/43"],
+        "yuanshen": ["13_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.0775476564, 69.9829058354]
+      "coordinates": [-28.61358, 50.60121],
+      "id": "91BA2E85055A6E6AEE3ACAA13E07C993E899A079",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/44"],
+        "yuanshen": ["13_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.5135968819, 68.1701595344]
+      "coordinates": [-25.09568, 50.10687],
+      "id": "5EA0AE78EE2CE4D180AF5584A39D69092CEFD59E",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/45"],
+        "yuanshen": ["13_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.5941648627, 68.181165306]
+      "coordinates": [-25.04592, 50.22767],
+      "id": "D6890DAF0820D5CFE91ADB0CCCCE797B929C60A0",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/46"],
+        "yuanshen": ["13_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.538807314, 68.0438264827]
+      "coordinates": [-37.03787, 69.51968],
+      "id": "7306D449CD0A123E8C1BEB4DD5FD7FC4EEF3ABC6",
+      "importIds": {
+        "gm_legacy": ["mondstadtDandelionSeed/47"],
+        "yuanshen": ["13_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.3766322832, 66.1800081177]
+      "coordinates": [-33.73807, 47.45544],
+      "id": "2E96DC2B26F2FD6383B8F8F7415495CD5A83FA70",
+      "importIds": {
+        "yuanshen": ["13_21"],
+        "gm_legacy": ["mondstadtDandelionSeed/21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_21.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.084827783, 74.8141776871]
+      "coordinates": [-34.34796, 46.91712],
+      "id": "0AA26203697088F0A5D6A8B8355190EDDBBE1F3D",
+      "importIds": {
+        "yuanshen": ["13_22"],
+        "gm_legacy": ["mondstadtDandelionSeed/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_22.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2497700373, 59.0499611895]
+      "coordinates": [-34.4658, 46.89697],
+      "id": "98DD114F0D6E2A81C056894CD242A89C13EFF4A5",
+      "importIds": {
+        "yuanshen": ["13_23"],
+        "gm_legacy": ["mondstadtDandelionSeed/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_23.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.6135775179, 50.6012147805]
+      "coordinates": [-34.50203, 46.80358],
+      "id": "87BD2160133F38C63F366DFA76B046123D8C868D",
+      "importIds": {
+        "yuanshen": ["13_24"],
+        "gm_legacy": ["mondstadtDandelionSeed/24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_24.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.0956810434, 50.1068660261]
+      "coordinates": [-34.83337, 69.79614],
+      "id": "6C1D73DB3934E837BA318240FBABD74C98A93A5F",
+      "importIds": {
+        "yuanshen": ["13_27"],
+        "gm_legacy": ["mondstadtDandelionSeed/27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 45
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_27.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.0459228194, 50.2276716218]
+      "coordinates": [-34.88593, 69.75952],
+      "id": "09FD61A9B2CAEBCA61EA81DDBC367EED5C6EE529",
+      "importIds": {
+        "yuanshen": ["13_28"],
+        "gm_legacy": ["mondstadtDandelionSeed/28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_28.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0378718751, 69.519675813]
+      "coordinates": [-33.33055, 66.26589],
+      "id": "F87424D7D43254FD3DC2CD5C447AA144999D429C",
+      "importIds": {
+        "yuanshen": ["13_41"],
+        "gm_legacy": ["mondstadtDandelionSeed/41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "蒲公英籽"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.12851, 70.37659],
+      "id": "EE3D23ACE522E73995FCDB895C4A7D40FD827140",
+      "importIds": {
+        "yuanshen": ["13_48"]
+      },
+      "popupTitle": {
+        "zh": "蒲公英籽"
+      },
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_48.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.15435, 70.21728],
+      "id": "F1EC1911C0A3F6761C990842B16F829320D9DB33",
+      "importIds": {
+        "yuanshen": ["13_49"]
+      },
+      "popupTitle": {
+        "zh": "蒲公英籽"
+      },
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_49.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.23547, 70.35708],
+      "id": "3A35DD5D52D03785CDB8C28EA1BD6AC5E92CEE3D",
+      "importIds": {
+        "yuanshen": ["13_50"]
+      },
+      "popupTitle": {
+        "zh": "蒲公英籽"
+      },
+      "popupContent": {
+        "zh": "这是一个蒲公英籽"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/13_50.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

@@ -1,9 +1,16 @@
 {
-  "name": { "en": "Berry", "ru": "Ягода" },
+  "format": 2,
+  "name": {
+    "en": "Berry",
+    "ru": "Ягода",
+    "zh": ""
+  },
   "description": {
     "en": "Small brightly-colored fruit used in Recipes."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "berry",
     "base": {
@@ -13,5 +20,276 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-52.71633, 52.93946],
+      "id": "55A656A221F0E3B8882A1AA57C173C3951180BF5",
+      "importIds": {
+        "yuanshen": ["92_1"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.21456, 55.80533],
+      "id": "3B62CF8598556C472C2A61A319ED98609F74A3FC",
+      "importIds": {
+        "yuanshen": ["92_2"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.69117, 42.75387],
+      "id": "097EFC62B6F8ECA5EBBAB2D68E275E9A2B643EB4",
+      "importIds": {
+        "yuanshen": ["92_3"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.35835, 39.52952],
+      "id": "66670ABA74CFF13BA7C456DAACFBE31E5B81D668",
+      "importIds": {
+        "yuanshen": ["92_4"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.27165, 35.05801],
+      "id": "20B1433E9A3599736418FB14791ECFD0D0FB8DAC",
+      "importIds": {
+        "yuanshen": ["92_5"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.16297, 32.58059],
+      "id": "4B6220F4001CF964C7C74C1F7C07E1E9A4293E57",
+      "importIds": {
+        "yuanshen": ["92_6"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.63871, 41.96595],
+      "id": "3491F0750EABD5781FDB9D062CFE4148EC0BE109",
+      "importIds": {
+        "yuanshen": ["92_7"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.10561, 33.67676],
+      "id": "BA16088750AD3A8A3526F65B2F85705D98E78DF2",
+      "importIds": {
+        "yuanshen": ["92_8"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.02706, 41.15478],
+      "id": "98CC58F808523B5085DDA8AF2ADEE6249F07AC0D",
+      "importIds": {
+        "yuanshen": ["92_9"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.76287, 40.58533],
+      "id": "1A877DD7F48E3E5B68B40BF959B3477054BC55C4",
+      "importIds": {
+        "yuanshen": ["92_10"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.33511, 33.93127],
+      "id": "19B7324DE7C235845578B7FCEA27E23EA000B448",
+      "importIds": {
+        "yuanshen": ["92_11"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.85812, 36.05164],
+      "id": "959C91DF84AF11EBF996EE5E00BB487B6C7B4F56",
+      "importIds": {
+        "yuanshen": ["92_12"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.0467, 35.06159],
+      "id": "93B224B581EE9D3F6C80A6016295D3B87F596639",
+      "importIds": {
+        "yuanshen": ["92_13"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.36728, 35.14949],
+      "id": "3407D2C28103E5D046F37E2BAACDBD154C0B3116",
+      "importIds": {
+        "yuanshen": ["92_14"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.67301, 45.2417],
+      "id": "7BD583E1E1B9FC1A09DA6096B105AA439016D11E",
+      "importIds": {
+        "yuanshen": ["92_15"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.28453, 31.40259],
+      "id": "FA52F1B2E09542BEB09887A3C9F12336D26B6281",
+      "importIds": {
+        "yuanshen": ["92_16"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.01257, 48.00843],
+      "id": "472105F8C3B9213822A30631DEAD8E414BE6519F",
+      "importIds": {
+        "yuanshen": ["92_17"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-58.4439, 29.84985],
+      "id": "C937132A100184FBA16296395F589ECAAC466898",
+      "importIds": {
+        "yuanshen": ["92_18"]
+      },
+      "popupTitle": {
+        "zh": "树莓"
+      },
+      "popupContent": {
+        "zh": "这里有3颗树莓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/92_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

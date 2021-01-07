@@ -81,11 +81,6 @@ def build_absolute_name(input_full_path)
 end
 
 def migrate_marker_imports(input_json, output_json, absolute_name, options)
-  # Import from Yuanshen.site if specified.
-  unless options[:yuanshenIndex].nil?
-    output_json['importIds']['yuanshen'] = ["#{options[:yuanshenIndex]}_#{input_json['id']}"]
-  end
-
   # Import from MDFv1
   output_json['importIds']['gm_legacy'] = ["#{absolute_name}/#{input_json['id']}"]
 
@@ -99,7 +94,7 @@ def migrate_marker(input_json, absolute_name, options)
   # Drop keys: type, geometry/type
 
   # Features we can move without formatting changes, if they have content.
-  %w[popupTitle popupContent].each { |x| output_json[x] = input_json['properties'][x] unless input_json['properties'][x]['en'].empty? }
+  %w[popupTitle popupContent].each { |x| output_json[x] = input_json['properties'][x] unless input_json['properties'].fetch(x, {'en' => ''})['en'].empty? }
   %w[popupMedia].each { |x| output_json[x] = input_json['properties'][x] if input_json['properties'][x] }
 
   # Move coordinates.
@@ -136,15 +131,21 @@ def process_data_file(input, output, options)
     return
   end
 
+  output_path = File.directory?(output) ? File.join(output, File.basename(input)) : output
+
   if input_json['format'] == DEFAULT_FEATURE['format']
-    puts("  Format up-to-date, skipping...")
-    return
+    if options[:copy] then
+      puts("  Format up-to-date, copying...")
+      write_file(output_path, JSON.pretty_generate(input_json))
+      return
+    else
+      puts("  Format up-to-date, skipping...")
+      return
+    end
   end
 
   absolute_name = build_absolute_name(input)
   output_json = migrate_feature(input_json, absolute_name, options)
-
-  output_path = File.directory?(output) ? File.join(output, File.basename(input)) : output
 
   write_file(output_path, JSON.pretty_generate(output_json))
 end
@@ -157,8 +158,7 @@ def parse_options
 
     opts.on('-i', '--input INPUT', 'Input file/folder to process') { |i| options[:input] = i }
     opts.on('-o', '--output OUTPUT', 'Output file/folder to place processed files') { |o| options[:output] = o }
-    opts.on('--yuanshen-index INDEX', 'Value used for importing from Yuanshen.site.'\
-      'Example: 26 is Monstadt Chests and 1 is Geoculus') { |i| options[:yuanshenIndex] = i }
+    opts.on('-c', '--copy', 'Copy files which are new. Otherwise, ignore files which are new.') { |c| options[:copy] = c }
   end.parse!
 
   # Validate and reorganize options.

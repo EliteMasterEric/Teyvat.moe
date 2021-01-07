@@ -24,4 +24,14 @@ Rips Yuanshen marker data and converts it to MSFv2, while maintaining Chinese de
 
 ## merge_yuanshen_migrate.rb
 
-Combines data from migrate_marker_data.rb and rip_yuanshen.rb. Any markers with the same coordinates will be seamlessly merged, and any markers with no corresonding marker in one or the other will be annotated for review.
+Combines data from migrate_marker_data.rb and rip_yuanshen.rb. Any markers with the same coordinates will be seamlessly merged.
+
+Markers with no corresonding marker in Yuanshen will be annotated as MIGRATED MARKER: #ID. You'll have to do manual cleanup to check whether this is a marker Yuanshen omitted or a marker that has been moved by Yuanshen.
+
+Markers with no corresonding marker in Migrated will be annotated as NEW MARKER: #ID. You'll have to do manual cleanup to see if this is a new marker or an old marker that was moved.
+
+【普通宝箱】: Common Chest
+【精致宝箱】: Exquisite Chest
+【珍贵宝箱】: Precious Chest
+【华丽宝箱】: Luxurious Chest
+【绯红玉髓】: Crimson Agate

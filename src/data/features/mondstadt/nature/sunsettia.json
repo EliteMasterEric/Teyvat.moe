@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Sunsettia",
-    "ru": "Закатник"
+    "ru": "Закатник",
+    "zh": ""
   },
   "description": {
     "en": "A plump fruit abundant across Teyvat. Used to craft Jam for Recipes."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "sunsettia",
     "base": {
@@ -18,225 +22,163 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.938158704300704, 64.01733398437501]
+      "coordinates": [-18.93816, 64.01733],
+      "id": "F4321C8F6DA16F8C508C21CD78D42C17102F0DD9",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 1
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: F4321C8"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.007293311015577, 62.47375488281251]
+      "coordinates": [-21.00729, 62.47375],
+      "id": "A155D30312BEA063909400183846B5DCB8F27E2F",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: A155D30"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.895820439093047, 68.69201660156251]
+      "coordinates": [-18.89582, 68.69202],
+      "id": "4E75B7FAA21230A63334CBFE44CC708A405D21E8",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 3
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 4E75B7F"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.502147910537875, 62.03430175781251]
+      "coordinates": [-22.50215, 62.0343],
+      "id": "71BC3CBD9EEABFAC984416F1F2F5693181CD0494",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 4
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 71BC3CB"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.598527395774187, 62.04528808593751]
+      "coordinates": [-22.59853, 62.04529],
+      "id": "376E7FF96B157F70BCC4C217F5A2881D650CD011",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "These ones are laying on the ground."
-        },
-        "popupMedia": ""
+      "popupAttribution": "Unknown",
+      "popupContent": {
+        "en": "These ones are laying on the ground."
       },
-      "id": 5
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 376E7FF"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.723609320406464, 63.02307128906251]
+      "coordinates": [-21.72361, 63.02307],
+      "id": "2209098759DF9F7273F37585D99AB5402CD17244",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 6
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2209098"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.6572619349508, 63.53393554687501]
+      "coordinates": [-21.65726, 63.53394],
+      "id": "E09E7F5402749F24A31A0791FE4954324B0D2C5A",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: E09E7F5"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.42224969801705, 67.83508300781251]
+      "coordinates": [-21.42225, 67.83508],
+      "id": "3791BF19DA32594085DFCB5EA7D3AC6A9FFD1E62",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 8
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 3791BF1"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.009062724418566, 66.30798339843751]
+      "coordinates": [-22.00906, 66.30798],
+      "id": "9E2D07F7527EA87FF9CEB69F7821BEC2770AD604",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 9
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9E2D07F"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.327171672165257, 64.97314453125001]
+      "coordinates": [-23.32717, 64.97314],
+      "id": "F10233B4908BC7805A178339797CAC75742F20C0",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 10
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: F10233B"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.131762288224547, 64.34692382812501]
+      "coordinates": [-24.13176, 64.34692],
+      "id": "C4521D5F86559A44345C72F15B76C78B791A1BBE",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 11
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: C4521D5"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.795444846850287, 63.40209960937501]
+      "coordinates": [-23.79544, 63.4021],
+      "id": "ACD1EF553CB6683DFA365D542D64A5BA361A1558",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 12
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: ACD1EF5"
+      }
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.830623480144983, 63.13842773437501]
+      "coordinates": [-23.83062, 63.13843],
+      "id": "326F6ED0FCA0288267E8F31625C6B4FB16FA8CA8",
+      "importIds": {
+        "gm_legacy": ["mondstadtSunsettia/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      },
-      "id": 13
+      "popupAttribution": "Unknown",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 326F6ED"
+      }
     }
   ]
 }

@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Crystal Chunk",
-    "ru": "Обломок кристалла"
+    "ru": "Обломок кристалла",
+    "zh": ""
   },
   "description": {
     "en": "Light blue crystals used to forge Mystic Enhancement Ore as well as some weapons."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 259200,
   "icons": {
     "filter": "crystal-chunk",
@@ -19,1688 +22,1897 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.0115259321, 55.2286422247]
+      "coordinates": [-52.01153, 55.22864],
+      "id": "B18B86B21AB9A04421EB48F98F48BB65772F54FC",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/1"],
+        "yuanshen": ["16_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 1
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.0520578672, 55.1846943376]
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.0655603482, 55.26160314]
+      "coordinates": [-52.05206, 55.18469],
+      "id": "247AA7A39697B28218987A9ECE2BE1D7CD953444",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/2"],
+        "yuanshen": ["16_2"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 3
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.721396126, 57.2941929177]
+      "coordinates": [-52.06556, 55.2616],
+      "id": "EE010C6547A56857959B922BE815702A8380A011",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/3"],
+        "yuanshen": ["16_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7668516275, 57.2392580588]
+      "coordinates": [-53.7214, 57.29419],
+      "id": "EDFC8C81BA9FBE76D0617EE2CA8FD069F0823B3D",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/4"],
+        "yuanshen": ["16_4"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 5
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.2572094959, 56.3822742607]
+      "coordinates": [-53.76685, 57.23926],
+      "id": "0D03F0ED1B8FBA8E6CB970055DA547DFADEDCCD8",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/5"],
+        "yuanshen": ["16_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.3084903278, 56.3383263736]
+      "coordinates": [-54.25721, 56.38227],
+      "id": "7F5D955C192B8428181C33DFA2B7025694FB6E6A",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/6"],
+        "yuanshen": ["16_6"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 7
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.538464939, 56.5690527808]
+      "coordinates": [-54.30849, 56.33833],
+      "id": "81C4E2949088ACA97B3D15FE96F1DA86726742D3",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/7"],
+        "yuanshen": ["16_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.1454401582, 56.9535967928]
+      "coordinates": [-54.53846, 56.56905],
+      "id": "BDEF8E0FFE56F25978010274659F0E626E20A126",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/8"],
+        "yuanshen": ["16_8"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 9
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.2018767163, 56.8986619339]
+      "coordinates": [-55.14544, 56.9536],
+      "id": "C2D89C2FB67EA95E0D58EF445230908188B717EE",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/9"],
+        "yuanshen": ["16_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3103966019, 56.865234375]
+      "coordinates": [-55.20188, 56.89866],
+      "id": "43658360A8438BA86CD1A54750D69C1F570BAA34",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/10"],
+        "yuanshen": ["16_10"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 11
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.2331958415, 56.9975446799]
+      "coordinates": [-55.3104, 56.86523],
+      "id": "57AEE99751AF9EE7C6438A9982F8704C10E322E5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/11"],
+        "yuanshen": ["16_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.2832551884, 56.9755707363]
+      "coordinates": [-55.2332, 56.99754],
+      "id": "A0369CCC18CA4DA2A19A38D6A5AEC89EBC3B4B69",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/12"],
+        "yuanshen": ["16_12"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 13
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3082612173, 56.9535967928]
+      "coordinates": [-55.28326, 56.97557],
+      "id": "D1E8AA8744E80ABE96290FD9BF271CC3E6880BD5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/13"],
+        "yuanshen": ["16_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.4704165817, 56.8986619339]
+      "coordinates": [-55.30826, 56.9536],
+      "id": "F7552AA6110D1B9ED3E55506F604B97CAD02EF5A",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/14"],
+        "yuanshen": ["16_14"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 15
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1357911629, 33.5856170118]
+      "coordinates": [-55.47042, 56.89866],
+      "id": "3DCEFBCCD412DB575959BDA3C30102C4E00D62F2",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/15"],
+        "yuanshen": ["16_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1986237683, 33.6295648989]
+      "coordinates": [-35.13579, 33.58562],
+      "id": "4499EA2C3739C3B9151D1B5791A3988BC5DB402F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/16"],
+        "yuanshen": ["16_16"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 17
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.7397337073, 34.3986529229]
+      "coordinates": [-35.19862, 33.62956],
+      "id": "1E7815AA09FE8FF302981525C6C90805666E3163",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/17"],
+        "yuanshen": ["16_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8118863348, 34.4645747535]
+      "coordinates": [-34.73973, 34.39865],
+      "id": "547A8B02C300954CA2ADE29B6C0492BF3BEA92F7",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/18"],
+        "yuanshen": ["16_18"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 19
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.856949676, 34.5085226406]
+      "coordinates": [-34.81189, 34.46457],
+      "id": "6094D5A4140EE7F1D7B24D4263D28C43A29752F1",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/19"],
+        "yuanshen": ["16_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.9289996983, 34.5524705277]
+      "coordinates": [-34.85695, 34.50852],
+      "id": "19B3EA94618E327BD10E179FB0BFCA29554BD7CC",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/20"],
+        "yuanshen": ["16_20"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 21
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7889608952, 29.9266670583]
+      "coordinates": [-34.929, 34.55247],
+      "id": "E30D5706EAF2597ECF84C4039F2974214E1D02B1",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/21"],
+        "yuanshen": ["16_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.8287672298, 29.9486410018]
+      "coordinates": [-58.78896, 29.92667],
+      "id": "781D45D7FCC54A9C3D0C0C52EE4454C942516BF6",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/22"],
+        "yuanshen": ["16_22"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 23
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.686391835, 26.3668882044]
+      "coordinates": [-58.82877, 29.94864],
+      "id": "D21C2FB029A4E0FE12BFB97C70698546CEA0B961",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/23"],
+        "yuanshen": ["16_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9259235743, 29.0367223448]
+      "coordinates": [-58.68639, 26.36689],
+      "id": "AD45E28EFA58DB2B9F31879FA17CC370E04AFCDD",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/24"],
+        "yuanshen": ["16_24"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 25
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9838969661, 29.0148990592]
+      "coordinates": [-56.92592, 29.03672],
+      "id": "5ADB9BD473ACD39114124FC2C6C103893C1B4FC5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/25"],
+        "yuanshen": ["16_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9659538348, 29.075318463]
+      "coordinates": [-56.9839, 29.0149],
+      "id": "37711C0496B5E881FEB8220E1A0A56B8258780AE",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/26"],
+        "yuanshen": ["16_26"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 27
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.8479438761, 31.7614913441]
+      "coordinates": [-56.96595, 29.07532],
+      "id": "680E643E0CACDB5F02E377D80D73D43652A0F753",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/27"],
+        "yuanshen": ["16_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.0754276192, 32.1460353561]
+      "coordinates": [-56.84794, 31.76149],
+      "id": "ADC0AEC1E5C6068C3782CCD3459FFB145D95A493",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/28"],
+        "yuanshen": ["16_28"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 29
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.0813952911, 32.2449181021]
+      "coordinates": [-57.07543, 32.14604],
+      "id": "03C79DC74964827BF81ACA10731C48B4EF049B1C",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/29"],
+        "yuanshen": ["16_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.8724168464, 33.4864459122]
+      "coordinates": [-57.0814, 32.24492],
+      "id": "BA73A9D2C15A64E66A1EC00FBB957A4E48ADA762",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/30"],
+        "yuanshen": ["16_30"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 31
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.0006538901, 33.497432884]
+      "coordinates": [-57.87242, 33.48645],
+      "id": "26FED67CEE487DE39C32554153FF379232434B5B",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/31"],
+        "yuanshen": ["16_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.0181052758, 33.6512504888]
+      "coordinates": [-58.00065, 33.49743],
+      "id": "DEB9665A10EDF7FCB4751529090A617DB6D1C002",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/32"],
+        "yuanshen": ["16_32"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 33
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0898012194, 36.4639152623]
+      "coordinates": [-58.01811, 33.65125],
+      "id": "8B0CD7917F177DFFA293BE241AC6469683049F1B",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/33"],
+        "yuanshen": ["16_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.1142966678, 36.4199673752]
+      "coordinates": [-56.0898, 36.46392],
+      "id": "F96AB65316FD3FADA975F1C3B92473D14B786FD2",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/34"],
+        "yuanshen": ["16_34"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 35
+      "popupMedia": "liyue/crystal-chunk/tianheng-1",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.126538548, 36.4749022341]
+      "coordinates": [-56.1143, 36.41997],
+      "id": "DB0225D5F3F98A4A9FAAFD67DC12C87A06D1EAE2",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/35"],
+        "yuanshen": ["16_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupMedia": "liyue/crystal-chunk/tianheng-1",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.4616662289, 36.6836546977]
+      "coordinates": [-56.12654, 36.4749],
+      "id": "EA51CD39E41810BF775EB1D9FC999313D9D4C67D",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/36"],
+        "yuanshen": ["16_36"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 37
+      "popupMedia": "liyue/crystal-chunk/tianheng-1",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.4495312143, 36.7276025848]
+      "coordinates": [-56.46167, 36.68365],
+      "id": "B29865C5F525A4287397020D5635D69F496D2C9F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/37"],
+        "yuanshen": ["16_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/tianheng-2",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.534394941, 36.6177328671]
+      "coordinates": [-56.44953, 36.7276],
+      "id": "05600501AF60FD44940D6A7587B216D53FF00C15",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/38"],
+        "yuanshen": ["16_38"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 39
+      "popupMedia": "liyue/magical-crystal-chunk/tianheng-2",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7428844861, 34.8048825248]
+      "coordinates": [-56.53439, 36.61773],
+      "id": "A5CA0489750E02D6CDD58A27A49A4E23E82223C2",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/39"],
+        "yuanshen": ["16_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/tianheng-2",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7948030628, 34.6400779482]
+      "coordinates": [-53.74288, 34.80488],
+      "id": "A3812F835C4C08F3FF4AC4F7373EF13FF538A818",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/40"],
+        "yuanshen": ["16_40"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 41
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.9243187603, 34.9037652708]
+      "coordinates": [-53.7948, 34.64008],
+      "id": "39D9C67EB5DE072DA53CE1660178B254863C6602",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/41"],
+        "yuanshen": ["16_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1114051138, 34.6730388636]
+      "coordinates": [-53.92432, 34.90377],
+      "id": "A07B5477CF6925015788D73ED89ADA4CE063CBAA",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/42"],
+        "yuanshen": ["16_42"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 43
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.0792088583, 29.7728494535]
+      "coordinates": [-54.11141, 34.67304],
+      "id": "39D414D37B3F0922613F94652B76C066B64BDB6B",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/43"],
+        "yuanshen": ["16_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.053433859, 29.8277843124]
+      "coordinates": [-54.07921, 29.77285],
+      "id": "6E22B2A60ADCCC85B7FA7BFF67F1F848C168C871",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/44"],
+        "yuanshen": ["16_44"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 45
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1757226812, 29.6300188205]
+      "coordinates": [-54.05343, 29.82778],
+      "id": "03333AF457FCAAEFA93AC25DA2886780940A6CE6",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/45"],
+        "yuanshen": ["16_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.137144129, 29.8497582559]
+      "coordinates": [-54.17572, 29.63002],
+      "id": "77B04BEAACD7B537C3396B0E6AFEF598D7316DE7",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/46"],
+        "yuanshen": ["16_46"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 47
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1949984747, 29.7398885382]
+      "coordinates": [-54.13714, 29.84976],
+      "id": "70FD670B2A4CA11AFEDE2587859EA6B8D0FD6BCD",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/47"],
+        "yuanshen": ["16_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1821489442, 29.8167973406]
+      "coordinates": [-54.195, 29.73989],
+      "id": "16118A3EC8829B6630F531FB29593294ACE581B9",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/48"],
+        "yuanshen": ["16_48"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 49
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4128299563, 28.5093476998]
+      "coordinates": [-54.18215, 29.8168],
+      "id": "0D1309FC4374FCBE832780A102B1573DCA7C5EA6",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/49"],
+        "yuanshen": ["16_49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 50
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4128299563, 28.5752695304]
+      "coordinates": [-54.41283, 28.50935],
+      "id": "36CFA0A1F33A8DD12A435BEF8BF97BD92AA40D30",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/50"],
+        "yuanshen": ["16_50"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 51
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.3808681854, 28.6741522764]
+      "coordinates": [-54.41283, 28.57527],
+      "id": "AE97DC93056ADB692104AAF3A25D6688608AE63A",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/51"],
+        "yuanshen": ["16_51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.3680765039, 28.7181001634]
+      "coordinates": [-54.38087, 28.67415],
+      "id": "A6B2BE9E233AF64169873D829F21B550888465F1",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/52"],
+        "yuanshen": ["16_52"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 53
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.6777867937, 24.7934692858]
+      "coordinates": [-54.36808, 28.7181],
+      "id": "47052B624358394F324F54C727D74F4B5EC4002C",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/53"],
+        "yuanshen": ["16_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.0637314794, 29.920984367]
+      "coordinates": [-50.67779, 24.79347],
+      "id": "CBE8094380339F8D5C2D334D601B12ADD615188F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/54"],
+        "yuanshen": ["16_54"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 55
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.1533618451, 29.9054464425]
+      "coordinates": [-50.06373, 29.92098],
+      "id": "54C40934F13917A9A99C730997CA7BE80A75F584",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/55"],
+        "yuanshen": ["16_55"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 56
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.3906828561, 33.6656241688]
+      "coordinates": [-50.15336, 29.90545],
+      "id": "B802FCAA73CF21BD826589E4EEE931BE920CD4E2",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/56"],
+        "yuanshen": ["16_56"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 57
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.4009934363, 33.5723966218]
+      "coordinates": [-48.39068, 33.66562],
+      "id": "087262923CCEDF28EDAF7647A6DD6820EFB0CB96",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/57"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 58
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.4628130416, 33.5413207729]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "coordinates": [-48.40099, 33.5724],
+      "id": "1F0D3DDD3811830BC35078FDC07D1D0A6AC09782",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/58"]
       },
-      "id": 59
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5904868193, 34.1317619034]
+      "coordinates": [-48.46281, 33.54132],
+      "id": "0300442544A302CF563B5CAA1A47D9EB3D1A2C27",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 60
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.63236112, 34.1472998279]
+      "coordinates": [-47.59049, 34.13176],
+      "id": "AF269E15FC3F5436712EEBF93AF3622E45896E50",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/60"],
+        "yuanshen": ["16_60"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 61
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.74734259, 34.1939136014]
+      "coordinates": [-47.63236, 34.1473],
+      "id": "F0D9E4FD4199BE6D127C17E95EEAD690685DCF0C",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/61"],
+        "yuanshen": ["16_61"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 62
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.6713832669, 27.85444041]
+      "coordinates": [-47.74734, 34.19391],
+      "id": "1041117A61EB9A3815F6EE2FF23F5876D85B5877",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/62"],
+        "yuanshen": ["16_62"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 63
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.9661489657, 21.0488294841]
+      "coordinates": [-45.67138, 27.85444],
+      "id": "2507FDF629D034515E18078C341BEDFEE315FD27",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/63"],
+        "yuanshen": ["16_63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.9769318894, 27.631112773]
+      "coordinates": [-47.96615, 21.04883],
+      "id": "E5CE362F5C8C0EA46AA1D4A9C91B93D968CF9703",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/64"],
+        "yuanshen": ["16_64"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 65
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.3716981519, 26.1478715839]
+      "coordinates": [-44.97693, 27.63111],
+      "id": "8728AB2E91E19F6C8F036C3C259AEC1C8889DA77",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/65"],
+        "yuanshen": ["16_65"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 66
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4102534339, 26.2687282734]
+      "coordinates": [-45.3717, 26.14787],
+      "id": "B82010322A3F5B85837FC08B35E8776F81933F72",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/66"],
+        "yuanshen": ["16_66"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 67
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.9147594678, 24.8953568019]
+      "coordinates": [-45.41025, 26.26873],
+      "id": "DDA9889E68C7CBA2D6301F84B63567AD1828E257",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/67"],
+        "yuanshen": ["16_67"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 68
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7902126156, 23.8076465966]
+      "coordinates": [-44.91476, 24.89536],
+      "id": "D69A4AB060C042080FCD2CFDA1D5F0E97D3B1CD0",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/68"],
+        "yuanshen": ["16_68"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 69
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.571607532, 23.3132328668]
+      "coordinates": [-44.79021, 23.80765],
+      "id": "6D61C42E8B297F27B83519C0D461354F750FFEDC",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/69"],
+        "yuanshen": ["16_69"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 70
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.7048183935, 23.2033631491]
+      "coordinates": [-44.57161, 23.31323],
+      "id": "26EBB37896CE5849399B8433F82083C041CA5B2F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/70"],
+        "yuanshen": ["16_70"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 71
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.8633627994, 22.2694705486]
+      "coordinates": [-43.70482, 23.20336],
+      "id": "A510E33A361F1BE6CD6999A5ECC3503B30F11072",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/71"],
+        "yuanshen": ["16_71"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 72
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2586577659, 23.8406075119]
+      "coordinates": [-43.86336, 22.26947],
+      "id": "C5647A01AD69510B112F50AE7E2A6E44E4D4B73E",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/72"],
+        "yuanshen": ["16_72"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 73
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2586577659, 25.3018747575]
+      "coordinates": [-43.25866, 23.84061],
+      "id": "E709EE466277ABFC1AF9950FACC70B261C35C51C",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/73"],
+        "yuanshen": ["16_73"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 74
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2986274794, 25.2469398986]
+      "coordinates": [-43.25866, 25.30187],
+      "id": "DBB3EBC91997030453C1BC643E756C421E61CD93",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/74"],
+        "yuanshen": ["16_74"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 75
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.1706319824, 25.4447053905]
+      "coordinates": [-43.29863, 25.24694],
+      "id": "5011917439CF19ED83EA54E0473B700578ABCD07",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/75"],
+        "yuanshen": ["16_75"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 76
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.186646121, 25.4007575034]
+      "coordinates": [-43.17063, 25.44471],
+      "id": "F082CA494A70DA3C70DDD9DF60CA954D61A7A061",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/76"],
+        "yuanshen": ["16_76"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 77
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.8475272809, 26.2687282734]
+      "coordinates": [-43.18665, 25.40076],
+      "id": "B7C922084D0334CAB0A6688068FCDCAEF03C5800",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/77"],
+        "yuanshen": ["16_77"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 78
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.0102596233, 26.4005719346]
+      "coordinates": [-43.84753, 26.26873],
+      "id": "273A2EADC03F8DDB9F007A6CACBCD9B0EE5A7D86",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/78"],
+        "yuanshen": ["16_78"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 79
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.4861508447, 26.8400508055]
+      "coordinates": [-43.01026, 26.40057],
+      "id": "3AF6E2572E7A14D48B7E63CC5F1E2BF5CDFB7DF5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/79"],
+        "yuanshen": ["16_79"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 80
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.1532812513, 29.4219891718]
+      "coordinates": [-42.48615, 26.84005],
+      "id": "6164FF34E2E2898719D6FCE3D5F329609779DEC8",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/80"],
+        "yuanshen": ["16_80"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 81
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7203788012, 30.2789729699]
+      "coordinates": [-42.15328, 29.42199],
+      "id": "12FAD4F241D5C3E0AC46B321DA80F5F29F0D4265",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/81"],
+        "yuanshen": ["16_81"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 82
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.193715822, 29.8285071273]
+      "coordinates": [-41.72038, 30.27897],
+      "id": "B871C8FB7D8378EDD24EBA0C915E101880A295A8",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/82"],
+        "yuanshen": ["16_82"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 83
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.1358527237, 27.7849303778]
+      "coordinates": [-41.19372, 29.82851],
+      "id": "C7084A6355ADF414AD4FAB03F350EAB5471F2B3D",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/83"],
+        "yuanshen": ["16_83"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 84
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.8752514746, 31.7951750744]
+      "coordinates": [-41.13585, 27.78493],
+      "id": "A964B1F74E2A4E5BAAC2F4CEF2883043E5FEC49E",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/84"],
+        "yuanshen": ["16_84"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 85
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.6377892214, 26.2687282734]
+      "coordinates": [-39.87525, 31.79518],
+      "id": "0625496B510F12B22E73734A3E52EFD0BD36AB0B",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/85"],
+        "yuanshen": ["16_85"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 86
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.019973282, 25.1370701809]
+      "coordinates": [-40.63779, 26.26873],
+      "id": "37431B84F1DB525ECB66F07173B539DF80254FD5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/86"],
+        "yuanshen": ["16_86"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 87
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.8816594435, 22.9286888548]
+      "coordinates": [-41.01997, 25.13707],
+      "id": "D871C4B34CD87BBC7BDBF5360275A508EED11B36",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/87"],
+        "yuanshen": ["16_87"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 88
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.6398101883, 23.1044804032]
+      "coordinates": [-42.88166, 22.92869],
+      "id": "FD076D7C0CCC05F54FA2C3AA6DF9CA4BA2A249BF",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/88"],
+        "yuanshen": ["16_88"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 89
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9057924405, 22.3244054074]
+      "coordinates": [-42.63981, 23.10448],
+      "id": "E646ACD4337A1DC97969118253828C49A811E3E5",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/89"],
+        "yuanshen": ["16_89"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 90
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.4246570753, 23.543959274]
+      "coordinates": [-42.90579, 22.32441],
+      "id": "39A733B87CD5A118F44676B7A0CBA3DE8C4C896A",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/90"],
+        "yuanshen": ["16_90"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 91
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5644721493, 23.0275716008]
+      "coordinates": [-41.42466, 23.54396],
+      "id": "2BD5A369DD37D5207D0C58B2886EAA13DFFBCD87",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/91"],
+        "yuanshen": ["16_91"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 92
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.8922576656, 24.6866043383]
+      "coordinates": [-41.56447, 23.02757],
+      "id": "A4A68583BE00FA1A06B2FEF9C2D3D187616E0653",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/92"],
+        "yuanshen": ["16_92"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 94
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.0962739153, 25.0052265196]
+      "coordinates": [-41.89226, 24.6866],
+      "id": "5575239E818EE8F0D6EE0E898F9B0E91CB54E289",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/94"],
+        "yuanshen": ["16_94"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 95
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.1786395767, 22.0387441414]
+      "coordinates": [-42.09627, 25.00523],
+      "id": "028A5BBF7ACE18E9254CD731A757AE7E9059477F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/95"],
+        "yuanshen": ["16_95"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 96
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.7930909991, 23.8076465966]
+      "coordinates": [-43.17864, 22.03874],
+      "id": "E9D72AD32F555D6CB410D955B5E1BB1B35951C2F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/96"],
+        "yuanshen": ["16_96"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 97
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9299159935, 23.6538289918]
+      "coordinates": [-42.79309, 23.80765],
+      "id": "5936887CA725588CC854252C9DA079AA100FEF87",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/97"],
+        "yuanshen": ["16_97"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 98
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.218369675, 22.9946106855]
+      "coordinates": [-42.92992, 23.65383],
+      "id": "14C13EC003129F5220F9F548129846FFDFCE7C74",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/98"],
+        "yuanshen": ["16_98"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 100
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5726871659, 24.2910733545]
+      "coordinates": [-42.21837, 22.99461],
+      "id": "2E8436A481F31FC43CD5F5C1E2DA46AB0FDB6EAE",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/100"],
+        "yuanshen": ["16_100"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 101
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9057924405, 28.2793441075]
+      "coordinates": [-41.57269, 24.29107],
+      "id": "C3303E9DE97DCF5610D8F2A319F583D92700E131",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/101"],
+        "yuanshen": ["16_101"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 102
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.4246570753, 34.7616574527]
+      "coordinates": [-42.90579, 28.27934],
+      "id": "A9C80281899D0075DCC505C578D5EE998DDA5CAA",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/102"],
+        "yuanshen": ["16_102"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 103
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.9847112891, 21.2476821738]
+      "coordinates": [-41.42466, 34.76166],
+      "id": "A03B450140167A21AD7C2ED1B8F94F32A5C6AB49",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/103"],
+        "yuanshen": ["16_103"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 104
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.0099463852, 21.3136040044]
+      "coordinates": [-39.98471, 21.24768],
+      "id": "3F815B553A307E3F0DF1737074318AE33A6A42FA",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/104"],
+        "yuanshen": ["16_104"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 105
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.0771943775, 21.2806430891]
+      "coordinates": [-40.00995, 21.3136],
+      "id": "B963F3EC5704095A5478440C93F0044A1A6A83C0",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/105"],
+        "yuanshen": ["16_105"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 106
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.1863308514, 21.3136040044]
+      "coordinates": [-40.07719, 21.28064],
+      "id": "4D8F206AEAA0A88AE6D78781F139FEF9258BAF53",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/106"],
+        "yuanshen": ["16_106"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 107
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2114913, 21.1158385126]
+      "coordinates": [-40.18633, 21.3136],
+      "id": "0B9781AF7DF6AD6AF44048C59F0E5E634090B637",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/107"],
+        "yuanshen": ["16_107"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 108
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.0603885982, 20.8960990771]
+      "coordinates": [-40.21149, 21.11584],
+      "id": "E97EAE60261E13EE1BB2C2285598F5BE70EAEA70",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/108"],
+        "yuanshen": ["16_108"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 109
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.1443760247, 20.7752423876]
+      "coordinates": [-40.06039, 20.8961],
+      "id": "6E8C73CFEDE84AAADD3968CCD5BFE8E7739C4042",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/109"],
+        "yuanshen": ["16_109"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 110
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2114913, 20.7862293594]
+      "coordinates": [-40.14438, 20.77524],
+      "id": "0A079980D641AE30FA23CA88638013C7A13BA69F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/110"],
+        "yuanshen": ["16_110"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 111
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.0188821338, 29.652715579]
+      "coordinates": [-40.21149, 20.78623],
+      "id": "1EECDCDB76624CEE0D2DAC3DCBC1FCCDB473F7A8",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/111"],
+        "yuanshen": ["16_111"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 112
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.0359420545, 29.7186374096]
+      "coordinates": [-39.01888, 29.65272],
+      "id": "E1D979C0C2FB0B507708D26BB50DADBA8BD78EE7",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/112"],
+        "yuanshen": ["16_112"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 113
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.7276927916, 28.2683571358]
+      "coordinates": [-39.03594, 29.71864],
+      "id": "2AA8660809BE837D0AB900A5D92C127D5FF9FB84",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/113"],
+        "yuanshen": ["16_113"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 114
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.8058129039, 28.3672398817]
+      "coordinates": [-37.72769, 28.26836],
+      "id": "2D7D2B4BB8F0D47CB1DDE4D095FD1B7E3900E461",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/114"],
+        "yuanshen": ["16_114"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 115
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0472027303, 24.7854870842]
+      "coordinates": [-37.80581, 28.36724],
+      "id": "D96C786CB281F567E1E7E23E5745D9C9783DFCD1",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/115"],
+        "yuanshen": ["16_115"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 116
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1610463537, 24.7525261689]
+      "coordinates": [-37.0472, 24.78549],
+      "id": "C574732C03F8932C444CB1AE5B394A7CBD9F7F4C",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/116"],
+        "yuanshen": ["16_116"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 117
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4115797137, 22.2691422889]
+      "coordinates": [-37.16105, 24.75253],
+      "id": "1584B7A4C4164DA7538D101A4E14B6330EFF2609",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/117"],
+        "yuanshen": ["16_117"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 118
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.7117115132, 31.4091484166]
+      "coordinates": [-37.41158, 22.26914],
+      "id": "084EED510B80C5E7E7516BB1FC6301A28C2C8824",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/118"],
+        "yuanshen": ["16_118"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 119
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.2092058904, 32.2494372495]
+      "coordinates": [-48.71171, 31.40915],
+      "id": "9AA689D16D5FAA878F7F6A2C89C370D3B02D07C3",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/119"],
+        "yuanshen": ["16_119"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 120
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.2567556725, 32.271405585]
+      "coordinates": [-48.20921, 32.24944],
+      "id": "5B99A4794AE3D32FE054468678759D7DEE012623",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/120"],
+        "yuanshen": ["16_120"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 121
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.1743180115, 31.7826101201]
+      "coordinates": [-48.25676, 32.27141],
+      "id": "ACB076B3F6EF18C5ED060975699C8311D941DF84",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/121"],
+        "yuanshen": ["16_121"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 122
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.7534319419, 31.8155626234]
+      "coordinates": [-47.17432, 31.78261],
+      "id": "26C75645BEC6D2E8143491673FBEB6E8A3F6B012",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/122"],
+        "yuanshen": ["16_122"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 123
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.4573857422, 25.6133591236]
+      "coordinates": [-47.75343, 31.81556],
+      "id": "5EE8A0BF5A08178B0193BF8C91DFE065FA36B9DB",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/123"],
+        "yuanshen": ["16_123"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 124
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.4501020059, 25.684756214]
+      "coordinates": [-48.45739, 25.61336],
+      "id": "8A0FCB3D419A4FF943915C41F7C40F72D7F85D6F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/124"],
+        "yuanshen": ["16_124"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 125
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.541315384450805, 36.60095214843751]
+      "coordinates": [-48.4501, 25.68476],
+      "id": "85E0D4503D24E733E9F7DA3E58E12F5B1D0A0B8F",
+      "importIds": {
+        "gm_legacy": ["liyueCrystalChunk/125"],
+        "yuanshen": ["16_125"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Crystal Chunk"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 126
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.45034902929676, 36.71081542968751]
+      "coordinates": [-48.64018, 35.54069],
+      "id": "096B9FC9C536F17EE5AE37E6916141A138711F30",
+      "importIds": {
+        "yuanshen": ["16_57"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Crystal Chunk"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 127
+      "popupMedia": "https://yuanshen.site/comment_png/16_57.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.47462805805593, 36.70532226562501]
+      "coordinates": [-48.55662, 35.46927],
+      "id": "2ADB11900487A24D5B1533ACF5CDE7849A5208B0",
+      "importIds": {
+        "yuanshen": ["16_58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Crystal Chunk"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 128
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/16_58.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.43820369358165, 36.77673339843751]
+      "coordinates": [-48.6075, 35.3595],
+      "id": "B8D82158C1A303A90FB1C3EB5C9BCA40A93F72E3",
+      "importIds": {
+        "yuanshen": ["16_59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Crystal Chunk"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "id": 129
+      "popupContent": {
+        "zh": "这是一个水晶矿"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/16_59.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.48676175249086, 36.78771972656251]
+      "coordinates": [-48.98265, 28.84462],
+      "id": "40A478AF342FF5DA11D8CE271F89347F9A37D724",
+      "importIds": {
+        "yuanshen": ["16_126"]
+      },
+      "popupTitle": {
+        "zh": "水晶矿"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Crystal Chunk"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupContent": {
+        "zh": "这是一个水晶矿"
       },
-      "id": 130
+      "popupMedia": "https://yuanshen.site/comment_png/16_126.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

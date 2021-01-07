@@ -1,9 +1,14 @@
 {
-  "name": { "en": "Fatui Pyro Agent" },
+  "format": 2,
+  "name": {
+    "en": "Fatui Pyro Agent",
+    "zh": ""
+  },
   "description": {
     "en": "Agent of the Fatui who turn invisible to catch enemies off-guard. Drops Sacrificial Knife and Recruit's Insignia."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-pyro-agent",
@@ -14,5 +19,21 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-33.81957, 59.07211],
+      "id": "78370CAB0941D25964DD74505BBFCC1358C3E9CF",
+      "importIds": {
+        "yuanshen": ["133_1"]
+      },
+      "popupTitle": {
+        "zh": "债务处理人"
+      },
+      "popupContent": {
+        "zh": "（我有理由怀疑这是个逃兵233）"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/133_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

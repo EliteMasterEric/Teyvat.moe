@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Mitachurl",
-    "ru": "Митачурл"
+    "ru": "Митачурл",
+    "zh": ""
   },
   "description": {
     "en": "Formidable warrior Hilichurls who wield shields or axes. Drops Stained Masks."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "mitachurl",
@@ -19,771 +22,934 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4340978935, 40.7373046875]
+      "coordinates": [-34.4341, 40.7373],
+      "id": "4A4F01F58328F67233D94AA49D2BA843DC732691",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/2"],
+        "yuanshen": ["25_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2873524053, 38.7300772354]
+      "coordinates": [-33.28735, 38.73008],
+      "id": "5EF785E09D1103B05E992D698C81F48886A981B0",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/3"],
+        "yuanshen": ["25_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1865785952, 37.4523925781]
+      "coordinates": [-37.18658, 37.45239],
+      "id": "C947CB98C486C53C9A836F25C54C7BD4805B5308",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/4"],
+        "yuanshen": ["25_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9586711315, 35.6396484375]
+      "coordinates": [-36.95867, 35.63965],
+      "id": "10E1ED8B8A94EB2CB3AE2F43D7C43A2B062C9036",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/5"],
+        "yuanshen": ["25_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.7080683793, 34.0081711496]
+      "coordinates": [-36.70807, 34.00817],
+      "id": "11BC06C957CDA50EBF08B6D93D10170B76DD8B82",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/6"],
+        "yuanshen": ["25_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.5858515932, 46.6259765625]
+      "coordinates": [-35.58585, 46.62598],
+      "id": "EAF4FE038FDD05AA6E492053C245AAFA5B287E0B",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/7"],
+        "yuanshen": ["25_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4574181026, 47.021484375]
+      "coordinates": [-37.45742, 47.02148],
+      "id": "C6128D4F09BCDDE88DD0FCD00782A5821FEAB8ED",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/8"],
+        "yuanshen": ["25_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个丘丘岩盔王"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.244772343, 49.3286132812]
+      "coordinates": [-41.24477, 49.32861],
+      "id": "C952E9ACB0ED49533B70E70A64E1CC99B425CA2D",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/9"],
+        "yuanshen": ["25_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.1620564524, 44.0167203922]
+      "coordinates": [-41.16206, 44.01672],
+      "id": "DE83459F840279EBC0D9C2356BEBE42E916A5E3F",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/10"],
+        "yuanshen": ["25_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.8598215179, 45.6811501833]
+      "coordinates": [-42.85982, 45.68115],
+      "id": "BE12A5A01DFD145DBD332D5932ECAC501103F7CD",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/11"],
+        "yuanshen": ["25_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.0122238406, 54.1186523437]
+      "coordinates": [-46.01222, 54.11865],
+      "id": "4C0582389E9ACA0444A4B116E9E73A6BE5DC04AC",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/12"],
+        "yuanshen": ["25_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.2195681123, 45.3845214843]
+      "coordinates": [-47.21957, 45.38452],
+      "id": "3E3D11385BEFD635526CD3E3A5DC9FAF87F75D91",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/13"],
+        "yuanshen": ["25_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.4836963025, 46.2413319367]
+      "coordinates": [-47.4837, 46.24133],
+      "id": "32A4D3ED4F37AE732E9ABF3C7995B5E1C1020E76",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/14"],
+        "yuanshen": ["25_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1199986576, 58.3044433593]
+      "coordinates": [-52.12, 58.30444],
+      "id": "9FCBA88FB30FDF698F8D79FA6B7708C544DAD376",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/15"],
+        "yuanshen": ["25_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.9221513797, 59.8315516102]
+      "coordinates": [-52.92215, 59.83155],
+      "id": "EE79214E6716B3E5FC83F84883D7035B81C940A2",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/16"],
+        "yuanshen": ["25_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.0774901475, 59.8644868304]
+      "coordinates": [-53.07749, 59.86449],
+      "id": "76E1DDE01AE74CFA227FB7A7C75D505467AE95E2",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/17"],
+        "yuanshen": ["25_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.6430634366, 37.9797363281]
+      "coordinates": [-52.64306, 37.97974],
+      "id": "BED71AD530463D183FB2C80F7A6DC5D83B03B907",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/18"],
+        "yuanshen": ["25_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4828045595, 36.4636230468]
+      "coordinates": [-54.4828, 36.46362],
+      "id": "EA180450623FA0125C5C7FF055A6146AD558A8C9",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/19"],
+        "yuanshen": ["25_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.0909436222, 36.6394042968]
+      "coordinates": [-55.09094, 36.6394],
+      "id": "61501089C70B3317D649B168DA939F385A984229",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/20"],
+        "yuanshen": ["25_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0045242011, 36.8481445312]
+      "coordinates": [-56.00452, 36.84814],
+      "id": "4309F2FC208EE1A32C7677D1F49AB3EBE2DC1140",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/21"],
+        "yuanshen": ["25_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8753108356, 32.4755859375]
+      "coordinates": [-55.87531, 32.47559],
+      "id": "247664B77E764E4A59B4B0A74206659B64C3041B",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/22"],
+        "yuanshen": ["25_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.7023550932, 31.4758300781]
+      "coordinates": [-55.70236, 31.47583],
+      "id": "A8229473103058B244374D451E88E1BC274A698D",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/23"],
+        "yuanshen": ["25_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个丘丘岩盔王"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.4994347229, 31.4318847656]
+      "coordinates": [-58.49943, 31.43188],
+      "id": "B6EC2177DB19D80743DC3E86FED58700C40B0E85",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/24"],
+        "yuanshen": ["25_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.4477328038, 31.5747070312]
+      "coordinates": [-58.44773, 31.57471],
+      "id": "0A68195D83D412D8D8A69BC2342CC2D39A5E06B6",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/25"],
+        "yuanshen": ["25_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.3671563324, 29.3444824218]
+      "coordinates": [-58.36716, 29.34448],
+      "id": "9532A787EB65F26AEEF9CC079DE4D5AD23900F0D",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/26"],
+        "yuanshen": ["25_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.8819420813, 26.4770745453]
+      "coordinates": [-58.88194, 26.47707],
+      "id": "392A5B978F9A1822DC08C7F2C9AF7AA8701BC7AA",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/27"],
+        "yuanshen": ["25_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.6940780609, 26.1254645171]
+      "coordinates": [-58.69408, 26.12546],
+      "id": "50A45A0ADFB2FE2CDE9C620AF66D1B790BB0CAB6",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/28"],
+        "yuanshen": ["25_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.397624055, 26.630859375]
+      "coordinates": [-57.39762, 26.63086],
+      "id": "5D0301BD88B2BC160312115B6DD6076C8CAB6A5B",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/29"],
+        "yuanshen": ["25_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.1600782673, 27.4328613281]
+      "coordinates": [-57.16008, 27.43286],
+      "id": "38B8E56D010BE41DA0F597EDE249747F5FA44935",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/30"],
+        "yuanshen": ["25_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.2678045506, 30.9375]
+      "coordinates": [-49.2678, 30.9375],
+      "id": "37CD8B2216EF2BCBE1E72FB9F1784E92253957B2",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/34"],
+        "yuanshen": ["25_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.7983966729, 35.7495117187]
+      "coordinates": [-47.7984, 35.74951],
+      "id": "0C8C8204182650B8DCB82B2B40BA7EE08E052F25",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/35"],
+        "yuanshen": ["25_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.6546698005, 31.3810817231]
+      "coordinates": [-47.65467, 31.38108],
+      "id": "0451FE83271058394214988F3F6DDF2B26CE65A1",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/36"],
+        "yuanshen": ["25_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9502622421, 27.7514648437]
+      "coordinates": [-46.95026, 27.75146],
+      "id": "5859FC0E70D3EC8A9A2278C8964EA5C6BCBFA225",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/37"],
+        "yuanshen": ["25_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.3241716172, 22.9504394531]
+      "coordinates": [-46.32417, 22.95044],
+      "id": "AACE1FB630492F79E1983D6EFF5B3D830E648216",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/39"],
+        "yuanshen": ["25_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.1587760707, 19.7039762516]
+      "coordinates": [-48.15878, 19.70398],
+      "id": "286344AA251AD634617D0A54648169AAD0A6BC2A",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/40"],
+        "yuanshen": ["25_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.7675229621, 22.7087402343]
+      "coordinates": [-45.76752, 22.70874],
+      "id": "4CDBF761828743E2E6DE7D10C2C273DF87BD6F8B",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/41"],
+        "yuanshen": ["25_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.5986656898, 22.4011230468]
+      "coordinates": [-45.59867, 22.40112],
+      "id": "BA3F23B7DF1561BBAC1E0B19DF8B089574EDCC02",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/42"],
+        "yuanshen": ["25_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4292987325, 22.0825195312]
+      "coordinates": [-45.4293, 22.08252],
+      "id": "F344825B5CC222B1F002FE3A0EE996022DD27711",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/43"],
+        "yuanshen": ["25_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1950421086, 36.1450195312]
+      "coordinates": [-46.19504, 36.14502],
+      "id": "F5181CD042D5B8A366A5FB366B95F52628A3DB03",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/44"],
+        "yuanshen": ["25_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.182036837, 34.98046875]
+      "coordinates": [-45.18204, 34.98047],
+      "id": "07B9483D1AFA751C362BABBE773B93FE5D541AD4",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/46"],
+        "yuanshen": ["25_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.8714427501, 37.8918457031]
+      "coordinates": [-44.87144, 37.89185],
+      "id": "E006FA382D73F7AC091086708C6638B8BE0C7FC2",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/47"],
+        "yuanshen": ["25_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9644625738, 34.2224121093]
+      "coordinates": [-42.96446, 34.22241],
+      "id": "B920C6D05698868350EEAAC549AA1EA5887B98F3",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/48"],
+        "yuanshen": ["25_48"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5127043006, 31.4319085297]
+      "coordinates": [-41.5127, 31.43191],
+      "id": "F19D6E98868E83DCB9B1874E3317435B0BBDA431",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/50"],
+        "yuanshen": ["25_50"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 50
+      "popupContent": {
+        "zh": "这是一个丘丘岩盔王"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.8928613994, 29.7674420122]
+      "coordinates": [-39.89286, 29.76744],
+      "id": "A2D15FD8CE4DF0E7BD6E6D7DAD9E84AF7463040A",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/51"],
+        "yuanshen": ["25_51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这是一个丘丘岩盔王"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.8247082823, 33.0908203125]
+      "coordinates": [-44.82471, 33.09082],
+      "id": "EA207182C4CDA20E2CAE4297226151E4ED7F5681",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/53"],
+        "yuanshen": ["25_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 53
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9052455464, 40.6384277343]
+      "coordinates": [-46.90525, 40.63843],
+      "id": "FDF8E0999E67D3CD54D1E14F40A389F7A521C691",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/54"],
+        "yuanshen": ["25_54"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.6639728763, 42.3852539062]
+      "coordinates": [-40.66397, 42.38525],
+      "id": "B7DBAAE01154B78B8272F8298DB0077A78BA3884",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/55"],
+        "yuanshen": ["25_55"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 55
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4431586745, 36.1779785156]
+      "coordinates": [-34.44316, 36.17798],
+      "id": "36BB45C89A2ACAF3F94BC6910EEE543CBAD994D4",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/56"],
+        "yuanshen": ["25_56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 56
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.5246614717, 36.1450195312]
+      "coordinates": [-34.52466, 36.14502],
+      "id": "9ECCEF31D14BD276F2B1C1CC7FF0171CFF2D59FE",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/57"],
+        "yuanshen": ["25_57"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 57
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4975192822, 36.2603813775]
+      "coordinates": [-34.49752, 36.26038],
+      "id": "A7BC1A5D1C683E19C17971EF05FFD35374CD127C",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/58"],
+        "yuanshen": ["25_58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 58
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.1063737057, 46.8896484375]
+      "coordinates": [-42.10637, 46.88965],
+      "id": "519024C50743DD7E25AD7118E2D71B83E64C645F",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/59"],
+        "yuanshen": ["25_59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.46089378, 48.1640625]
+      "coordinates": [-43.46089, 48.16406],
+      "id": "BE65FAE1331B5F093D4F11B11EFF7143966055EC",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/60"],
+        "yuanshen": ["25_60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 60
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.7198047426, 39.8583984375]
+      "coordinates": [-38.7198, 39.8584],
+      "id": "5B37E431AE1942D82111EA15FF3B9E53FCB6ABA7",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/61"],
+        "yuanshen": ["25_61"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.0154259405, 27.1966552734]
+      "coordinates": [-55.01543, 27.19666],
+      "id": "D0662DCBD88AECECB45326D2A348DAF3B132EE64",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/62"],
+        "yuanshen": ["25_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 62
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.0056825556, 51.8763093695]
+      "coordinates": [-45.00568, 51.87631],
+      "id": "F3C9349EDF89AED7FD036D42DDF220D9C7DCE860",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/63"],
+        "yuanshen": ["25_63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这是一个丘丘岩盔王"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.9340765116, 59.1816115874]
+      "coordinates": [-52.93408, 59.18161],
+      "id": "DB969797CA55841FAE190D94006009DE66DDC6E4",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/64"],
+        "yuanshen": ["25_64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5249644062, 58.2646863442]
+      "coordinates": [-52.52496, 58.26469],
+      "id": "16129AF2C65C8E204541D7030712ECE7CEA571F2",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/65"],
+        "yuanshen": ["25_65"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 65
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.1662829272, 25.6079480538]
+      "coordinates": [-39.16628, 25.60795],
+      "id": "89C94105937C767EF05C0C0888E96EA2EDC3E6DA",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/66"],
+        "yuanshen": ["25_66"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 66
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.5277789303, 27.6072188907]
+      "coordinates": [-46.52778, 27.60722],
+      "id": "6F5ABA52B69F38B8F4E31D7A06B903FABCBF461C",
+      "importIds": {
+        "gm_legacy": ["liyueMitachurl/67"],
+        "yuanshen": ["25_67"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 67
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-57.21961, 25.90576],
+      "id": "3E77B12723D44E4837F03CF722447E5BEAB0806C",
+      "importIds": {
+        "yuanshen": ["25_68"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/25_68.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.86099, 26.21338],
+      "id": "1E560B606ECC916CA8F270050B9FB6E37870E760",
+      "importIds": {
+        "yuanshen": ["25_70"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/25_70.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.61112, 32.33276],
+      "id": "9F6D70C8E116C5D897C85F4D12B879B3A6E1B54B",
+      "importIds": {
+        "yuanshen": ["25_71"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/25_71.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

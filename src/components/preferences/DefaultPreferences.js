@@ -114,6 +114,17 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   importError: '',
   /**
+   * The notification to display to the user.
+   * Not saved in local storage.
+   */
+  currentToast: {
+    message: '',
+    action: null,
+    showClose: true,
+    duration: 6000,
+  },
+
+  /**
    * The currently displayed SmartRoute feature.
    * Not saved in local storage.
    */

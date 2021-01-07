@@ -25,6 +25,7 @@ import uiReducer, {
   SET_EDITOR_ENABLED,
   SET_DEBUG_ENABLED,
   SET_EDITOR_HIGHLIGHT,
+  SET_TOAST,
   SET_POSITION_AND_ZOOM,
 } from '~/redux/ducks/ui';
 import optionsReducer, { SET_OPTIONS } from '~/redux/ducks/options';
@@ -104,6 +105,7 @@ const rootReducer = (state = initialState, action) => {
     case SET_CONTROLS_CATEGORY:
     case SET_CONTROLS_REGION:
     case SET_CONTROLS_OPEN:
+    case SET_TOAST:
       // Handle UI actions here.
       return uiReducer(state, action);
     case SET_IMPORT_ERROR:

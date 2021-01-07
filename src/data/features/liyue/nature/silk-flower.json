@@ -1,9 +1,14 @@
 {
-  "name": { "en": "Silk Flower" },
+  "format": 2,
+  "name": {
+    "en": "Silk Flower",
+    "zh": ""
+  },
   "description": {
     "en": "A crimson flower that blooms like the rainbow clouds in Liyue. Used in Character Ascension."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "silk-flower",
@@ -16,186 +21,215 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8601989842, 37.6721191406]
+      "coordinates": [-55.97687, 38.72132],
+      "id": "C48D2C68EFF6631543CE7F7B3B9A25AC90E59959",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/2"],
+        "yuanshen": ["5_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9768719035, 38.7213231982]
+      "coordinates": [-56.04443, 38.57301],
+      "id": "5477304CABFEA3368C6F67E1CA5EFCCCBDB99089",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/3"],
+        "yuanshen": ["5_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0444270098, 38.5730110091]
+      "coordinates": [-56.61091, 38.47411],
+      "id": "46ACD9214585C9DCF95A5EE4F517A5C3F55F0034",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/4"],
+        "yuanshen": ["5_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.6109108055, 38.4741146126]
+      "coordinates": [-56.56857, 38.69934],
+      "id": "C8B372E48B318D0C94F2A9064473D22D0580C08A",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/5"],
+        "yuanshen": ["5_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5685705134, 38.6993375797]
+      "coordinates": [-56.423, 38.98499],
+      "id": "4F06B506EEC7EBCAA7D03BEC426FAD2B39737836",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/6"],
+        "yuanshen": ["5_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.4230032289, 38.9849885921]
+      "coordinates": [-56.38652, 38.996],
+      "id": "E8ECBA9462CE30B0234610C6D214638D17D91EAC",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/7"],
+        "yuanshen": ["5_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.3865182289, 38.9960008447]
+      "coordinates": [-40.91831, 39.38599],
+      "id": "6AB88022F5A5206A1383FDFA1018B9E327050EFB",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/8"],
+        "yuanshen": ["5_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.9183107152, 39.3859863281]
+      "coordinates": [-41.12564, 39.91333],
+      "id": "1780BDC7421DE9591F729ADACA939A479F41FDB5",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/9"],
+        "yuanshen": ["5_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.1256414731, 39.9133300781]
+      "coordinates": [-41.87481, 40.80322],
+      "id": "2EBF877C668E468698D25D642F1BFD817F328DFD",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/10"],
+        "yuanshen": ["5_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.8748063592, 40.8032226562]
+      "coordinates": [-41.98929, 40.56152],
+      "id": "FE155B9445D613477FA60D34F280FB5BD04B4D2D",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/11"],
+        "yuanshen": ["5_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.9892927404, 40.5615234375]
+      "coordinates": [-42.24207, 40.98999],
+      "id": "696DB3F1D1675F94ECF36CD7FBE50D9EA22039E0",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/12"],
+        "yuanshen": ["5_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.2420667567, 40.9899902343]
+      "coordinates": [-42.48573, 40.78125],
+      "id": "A22A249F52AC4E422030BCE45A931329A3712EFB",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/13"],
+        "yuanshen": ["5_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.4857264332, 40.78125]
+      "coordinates": [-42.73651, 41.09985],
+      "id": "5FDBE93F6CAEB9ADCB791F55E5834A409099738E",
+      "importIds": {
+        "gm_legacy": ["liyueSilkFlower/14"],
+        "yuanshen": ["5_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.7365149519, 41.0998535156]
+      "coordinates": [-55.86196, 37.68494],
+      "id": "DCF526D4350713C2B3E7B8CB68987372C510991D",
+      "importIds": {
+        "yuanshen": ["5_1"],
+        "gm_legacy": ["liyueSilkFlower/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "霓裳花"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这里有一束霓裳花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/5_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

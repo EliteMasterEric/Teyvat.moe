@@ -1,12 +1,14 @@
 {
+  "format": 2,
   "name": {
     "en": "Valberry",
-    "ru": "Валяшка"
+    "ru": "Валяшка",
+    "zh": ""
   },
   "description": {
     "en": "A plump and translucent berry. Used in Character Ascension."
   },
-  "cluster": false,
+  "enabled": true,  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "valberry",
@@ -19,251 +21,308 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.6890504045, 63.2136555103]
+      "coordinates": [-16.68905, 63.21366],
+      "id": "A7776BF868BADE5CC27B6821825D0F20A7C030D9",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/1"],
+        "yuanshen": ["11_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.5837817447, 65.5858381168]
+      "coordinates": [-16.58378, 65.58584],
+      "id": "92F2AE48C4A857F26F0B171AB6C5FA4CCCFB7908",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/2"],
+        "yuanshen": ["11_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.0730434128, 64.7511812738]
+      "coordinates": [-18.07304, 64.75118],
+      "id": "F9EEAEBC73B133781A9E4CBD3709AAD878F45A62",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/3"],
+        "yuanshen": ["11_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.2285070687, 63.3893727404]
+      "coordinates": [-19.22851, 63.38937],
+      "id": "15477CEF809ABFABE29B65856769D34EB49ECC67",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/4"],
+        "yuanshen": ["11_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.0001245313, 61.66514742]
+      "coordinates": [-19.00012, 61.66515],
+      "id": "C19976D61A0D5F2E456E942BDF4566904E91F63C",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/5"],
+        "yuanshen": ["11_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.9585666162, 60.5888793856]
+      "coordinates": [-18.95857, 60.58888],
+      "id": "00ACBF1C1C906BC08C096BA8C46CE7D513CDFA11",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/6"],
+        "yuanshen": ["11_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.2419512204, 62.2142637641]
+      "coordinates": [-20.24195, 62.21426],
+      "id": "629CD26CDF4311E8AA1FB1CCB48CAECA6D9BA1FC",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/7"],
+        "yuanshen": ["11_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.8386684474, 60.6877203275]
+      "coordinates": [-20.83867, 60.68772],
+      "id": "5AFA08127A1CFEE80DC526BD72A2647B89ACA676",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/8"],
+        "yuanshen": ["11_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.3921158783, 61.291748306]
+      "coordinates": [-21.39212, 61.29175],
+      "id": "3CD66F758AB0C437323883EE4F36AF2D981C6143",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/9"],
+        "yuanshen": ["11_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.365505972, 64.0814954073]
+      "coordinates": [-20.36551, 64.0815],
+      "id": "ADDA6C46FF3BEF9433AF6B4FD6C8A3E7320B7F5C",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/10"],
+        "yuanshen": ["11_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.2212387357, 65.0259755192]
+      "coordinates": [-20.22124, 65.02598],
+      "id": "762C8AFF54752CB0B1E48A8402A9A4086B383DB6",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/11"],
+        "yuanshen": ["11_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.4993477942, 66.2120668224]
+      "coordinates": [-20.49935, 66.21207],
+      "id": "8576F8088A43FF9FBD031E455026D9C80C8F91B7",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/12"],
+        "yuanshen": ["11_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.4875525059, 65.8716146891]
+      "coordinates": [-19.48755, 65.87161],
+      "id": "B59B3EC11337533FB039AED3FD6D8B2528BE4B9E",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/13"],
+        "yuanshen": ["11_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.1460451811, 66.3658193987]
+      "coordinates": [-18.14605, 66.36582],
+      "id": "92DA69DF8D28D3270CBFEB7BF3914B7F9DB2DC82",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/14"],
+        "yuanshen": ["11_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.9309261324, 68.8828048862]
+      "coordinates": [-16.93093, 68.8828],
+      "id": "A1DE3B0C9FC64C7893BE5409BC2BB1DE0AFB528D",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/15"],
+        "yuanshen": ["11_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.8783660003, 70.1787194583]
+      "coordinates": [-16.87837, 70.17872],
+      "id": "BF4C1BD870E7F0A24527E04082C074549115D9CF",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/16"],
+        "yuanshen": ["11_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.8047572403, 70.8047120905]
+      "coordinates": [-16.80476, 70.80471],
+      "id": "1DE2A041FF2A6DFAF2EE6970975658C541B95973",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/17"],
+        "yuanshen": ["11_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.9998937244, 72.1225913164]
+      "coordinates": [-17.99989, 72.12259],
+      "id": "DB8202F85F55560484B302003A38CD674F40E85C",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/18"],
+        "yuanshen": ["11_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.5095795822, 66.872070766]
+      "coordinates": [-20.50958, 66.87207],
+      "id": "7C18BA746A3FFDEF2BA5D4E2B1FF769177D251CB",
+      "importIds": {
+        "gm_legacy": ["mondstadtValberry/19"],
+        "yuanshen": ["11_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "落落梅"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个落落梅"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     }
   ]
 }

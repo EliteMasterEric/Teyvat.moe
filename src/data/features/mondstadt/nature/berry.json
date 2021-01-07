@@ -2,14 +2,13 @@
   "format": 2,
   "name": {
     "en": "Berry",
-    "ru": "Ягода",
-    "zh": ""
+    "ru": "Ягода"
   },
   "description": {
     "en": "Small brightly-colored fruit used in Recipes."
   },
   "enabled": true,
-  "cluster": "off",
+  "cluster": "on",
   "respawn": "none",
   "icons": {
     "filter": "berry",
@@ -28,7 +27,6 @@
         "yuanshen": ["91_1"]
       },
       "popupTitle": {
-        "en": "#1",
         "zh": "树莓"
       },
       "popupContent": {
@@ -44,7 +42,6 @@
         "yuanshen": ["91_2"]
       },
       "popupTitle": {
-        "en": "#2",
         "zh": "树莓"
       },
       "popupContent": {
@@ -60,7 +57,6 @@
         "yuanshen": ["91_3"]
       },
       "popupTitle": {
-        "en": "#3",
         "zh": "树莓"
       },
       "popupContent": {
@@ -76,7 +72,6 @@
         "yuanshen": ["91_4"]
       },
       "popupTitle": {
-        "en": "#4",
         "zh": "树莓"
       },
       "popupContent": {
@@ -92,7 +87,6 @@
         "yuanshen": ["91_5"]
       },
       "popupTitle": {
-        "en": "#5",
         "zh": "树莓"
       },
       "popupContent": {
@@ -102,29 +96,12 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-39.7804, 49.53369],
-      "id": "8FFE0167A2E724BC4B67D94D7A4D3E8D25E17433",
-      "importIds": {
-        "yuanshen": ["91_6"]
-      },
-      "popupTitle": {
-        "en": "#6",
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
-      "popupMedia": "https://yuanshen.site/comment_png/91_6.jpg",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
       "coordinates": [-33.62224, 51.1432],
       "id": "2BFA19DC91964D38EC9B3EE2199049207797C733",
       "importIds": {
         "yuanshen": ["91_7"]
       },
       "popupTitle": {
-        "en": "#7",
         "zh": "树莓"
       },
       "popupContent": {
@@ -140,7 +117,6 @@
         "yuanshen": ["91_8"]
       },
       "popupTitle": {
-        "en": "#8",
         "zh": "树莓"
       },
       "popupContent": {
@@ -157,7 +133,6 @@
         "gm_legacy": ["mondstadtBerry/3"]
       },
       "popupTitle": {
-        "en": "#9",
         "zh": "树莓"
       },
       "popupContent": {
@@ -174,7 +149,6 @@
         "gm_legacy": ["mondstadtBerry/2"]
       },
       "popupTitle": {
-        "en": "#10",
         "zh": "树莓"
       },
       "popupContent": {
@@ -191,7 +165,6 @@
         "gm_legacy": ["mondstadtBerry/4"]
       },
       "popupTitle": {
-        "en": "#11",
         "zh": "树莓"
       },
       "popupContent": {
@@ -207,7 +180,6 @@
         "yuanshen": ["91_12"]
       },
       "popupTitle": {
-        "en": "#12",
         "zh": "树莓"
       },
       "popupContent": {
@@ -223,7 +195,6 @@
         "yuanshen": ["91_13"]
       },
       "popupTitle": {
-        "en": "#13",
         "zh": "树莓"
       },
       "popupContent": {
@@ -239,7 +210,6 @@
         "yuanshen": ["91_14"]
       },
       "popupTitle": {
-        "en": "#14",
         "zh": "树莓"
       },
       "popupContent": {
@@ -255,7 +225,6 @@
         "yuanshen": ["91_15"]
       },
       "popupTitle": {
-        "en": "#15",
         "zh": "树莓"
       },
       "popupContent": {
@@ -272,7 +241,6 @@
         "gm_legacy": ["mondstadtBerry/1"]
       },
       "popupTitle": {
-        "en": "#16",
         "zh": "树莓"
       },
       "popupContent": {
@@ -288,7 +256,6 @@
         "yuanshen": ["91_17"]
       },
       "popupTitle": {
-        "en": "#17",
         "zh": "树莓"
       },
       "popupContent": {
@@ -304,7 +271,6 @@
         "yuanshen": ["91_18"]
       },
       "popupTitle": {
-        "en": "#18",
         "zh": "树莓"
       },
       "popupContent": {
@@ -320,7 +286,6 @@
         "yuanshen": ["91_19"]
       },
       "popupTitle": {
-        "en": "#19",
         "zh": "树莓"
       },
       "popupContent": {
@@ -336,7 +301,6 @@
         "yuanshen": ["91_20"]
       },
       "popupTitle": {
-        "en": "#20",
         "zh": "树莓"
       },
       "popupContent": {
@@ -352,7 +316,6 @@
         "yuanshen": ["91_21"]
       },
       "popupTitle": {
-        "en": "#21",
         "zh": "树莓"
       },
       "popupContent": {
@@ -368,7 +331,6 @@
         "yuanshen": ["91_22"]
       },
       "popupTitle": {
-        "en": "#22",
         "zh": "树莓"
       },
       "popupContent": {
@@ -384,7 +346,6 @@
         "yuanshen": ["91_23"]
       },
       "popupTitle": {
-        "en": "#23",
         "zh": "树莓"
       },
       "popupContent": {
@@ -400,7 +361,6 @@
         "yuanshen": ["91_24"]
       },
       "popupTitle": {
-        "en": "#24",
         "zh": "树莓"
       },
       "popupContent": {
@@ -416,7 +376,6 @@
         "yuanshen": ["91_25"]
       },
       "popupTitle": {
-        "en": "#25",
         "zh": "树莓"
       },
       "popupContent": {
@@ -432,7 +391,6 @@
         "yuanshen": ["91_26"]
       },
       "popupTitle": {
-        "en": "#26",
         "zh": "树莓"
       },
       "popupContent": {
@@ -448,7 +406,6 @@
         "yuanshen": ["91_27"]
       },
       "popupTitle": {
-        "en": "#27",
         "zh": "树莓"
       },
       "popupContent": {
@@ -464,7 +421,6 @@
         "yuanshen": ["91_28"]
       },
       "popupTitle": {
-        "en": "#28",
         "zh": "树莓"
       },
       "popupContent": {
@@ -480,7 +436,6 @@
         "yuanshen": ["91_29"]
       },
       "popupTitle": {
-        "en": "#29",
         "zh": "树莓"
       },
       "popupContent": {
@@ -496,7 +451,6 @@
         "yuanshen": ["91_30"]
       },
       "popupTitle": {
-        "en": "#30",
         "zh": "树莓"
       },
       "popupContent": {
@@ -512,7 +466,6 @@
         "yuanshen": ["91_31"]
       },
       "popupTitle": {
-        "en": "#31",
         "zh": "树莓"
       },
       "popupContent": {
@@ -528,7 +481,6 @@
         "yuanshen": ["91_32"]
       },
       "popupTitle": {
-        "en": "#32",
         "zh": "树莓"
       },
       "popupContent": {
@@ -544,7 +496,6 @@
         "yuanshen": ["91_33"]
       },
       "popupTitle": {
-        "en": "#33",
         "zh": "树莓"
       },
       "popupContent": {
@@ -560,7 +511,6 @@
         "yuanshen": ["91_34"]
       },
       "popupTitle": {
-        "en": "#34",
         "zh": "树莓"
       },
       "popupContent": {
@@ -576,7 +526,6 @@
         "yuanshen": ["91_35"]
       },
       "popupTitle": {
-        "en": "#35",
         "zh": "树莓"
       },
       "popupContent": {
@@ -592,7 +541,6 @@
         "yuanshen": ["91_36"]
       },
       "popupTitle": {
-        "en": "#36",
         "zh": "树莓"
       },
       "popupContent": {
@@ -608,7 +556,6 @@
         "yuanshen": ["91_37"]
       },
       "popupTitle": {
-        "en": "#37",
         "zh": "树莓"
       },
       "popupContent": {
@@ -624,7 +571,6 @@
         "yuanshen": ["91_38"]
       },
       "popupTitle": {
-        "en": "#38",
         "zh": "树莓"
       },
       "popupContent": {
@@ -640,7 +586,6 @@
         "yuanshen": ["91_39"]
       },
       "popupTitle": {
-        "en": "#39",
         "zh": "树莓"
       },
       "popupContent": {
@@ -656,7 +601,6 @@
         "yuanshen": ["91_40"]
       },
       "popupTitle": {
-        "en": "#40",
         "zh": "树莓"
       },
       "popupContent": {
@@ -672,7 +616,6 @@
         "yuanshen": ["91_41"]
       },
       "popupTitle": {
-        "en": "#41",
         "zh": "树莓"
       },
       "popupContent": {
@@ -688,7 +631,6 @@
         "yuanshen": ["91_42"]
       },
       "popupTitle": {
-        "en": "#42",
         "zh": "树莓"
       },
       "popupContent": {
@@ -704,7 +646,6 @@
         "yuanshen": ["91_43"]
       },
       "popupTitle": {
-        "en": "#43",
         "zh": "树莓"
       },
       "popupContent": {
@@ -720,7 +661,6 @@
         "yuanshen": ["91_44"]
       },
       "popupTitle": {
-        "en": "#44",
         "zh": "树莓"
       },
       "popupContent": {
@@ -736,7 +676,6 @@
         "yuanshen": ["91_45"]
       },
       "popupTitle": {
-        "en": "#45",
         "zh": "树莓"
       },
       "popupContent": {
@@ -752,7 +691,6 @@
         "yuanshen": ["91_46"]
       },
       "popupTitle": {
-        "en": "#46",
         "zh": "树莓"
       },
       "popupContent": {
@@ -768,7 +706,6 @@
         "yuanshen": ["91_47"]
       },
       "popupTitle": {
-        "en": "#47",
         "zh": "树莓"
       },
       "popupContent": {
@@ -784,7 +721,6 @@
         "yuanshen": ["91_48"]
       },
       "popupTitle": {
-        "en": "#48",
         "zh": "树莓"
       },
       "popupContent": {
@@ -800,7 +736,6 @@
         "yuanshen": ["91_49"]
       },
       "popupTitle": {
-        "en": "#49",
         "zh": "树莓"
       },
       "popupContent": {
@@ -816,7 +751,6 @@
         "yuanshen": ["91_50"]
       },
       "popupTitle": {
-        "en": "#50",
         "zh": "树莓"
       },
       "popupContent": {
@@ -832,7 +766,6 @@
         "yuanshen": ["91_51"]
       },
       "popupTitle": {
-        "en": "#51",
         "zh": "树莓"
       },
       "popupContent": {

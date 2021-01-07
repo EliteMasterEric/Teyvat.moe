@@ -33,7 +33,7 @@ import {
   setShowHiddenFeatures,
   setWorldBorderEnabled,
 } from '~/redux/ducks/options';
-import { setDebugEnabled, setEditorEnabled } from '~/redux/ducks/ui';
+import { setDebugEnabled, setEditorEnabled, setToast } from '~/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {
@@ -240,6 +240,8 @@ const mapStateToProps = (state) => ({
   editorEnabled: state.editorEnabled,
 });
 const mapDispatchToProps = (dispatch) => ({
+  showToast: (message, action = null, showClose = true, duration = 6000) =>
+    dispatch(setToast(message, action, showClose, duration)),
   setEditorEnabled: (enabled) => dispatch(setEditorEnabled(enabled)),
   setCompletedAlpha: (alpha) => dispatch(setCompletedAlpha(alpha)),
   setWorldBorderEnabled: (enabled) => dispatch(setWorldBorderEnabled(enabled)),

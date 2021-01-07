@@ -1,14 +1,13 @@
 {
   "format": 2,
   "name": {
-    "en": "Treasure Hoarder",
-    "zh": ""
+    "en": "Treasure Hoarder"
   },
   "description": {
     "en": "Vicious bandits wielding various weapons such as potions or crossbows. Drops Silver Raven Insignia."
   },
   "enabled": true,
-  "cluster": "off",
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "treasure-hoarder",
@@ -21,18 +20,11 @@
   },
   "data": [
     {
-      "coordinates": [
-        -58.43853,
-        24.83397
-      ],
+      "coordinates": [-58.43853, 24.83397],
       "id": "3F2030C0515FCCC562E4B9ACE9C483F2B5DDEAF2",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/1"
-        ],
-        "yuanshen": [
-          "34_1"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/1"],
+        "yuanshen": ["34_1"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -40,22 +32,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.56769,
-        27.17385
-      ],
+      "coordinates": [-58.56769, 27.17385],
       "id": "E5AD3A27C1A23709678DFC26BE013C408F43A8C4",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/2"
-        ],
-        "yuanshen": [
-          "34_2"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/2"],
+        "yuanshen": ["34_2"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -63,22 +47,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.45296,
-        27.56928
-      ],
+      "coordinates": [-58.45296, 27.56928],
       "id": "34B36FB8879C851A5166FAF9B761B9638C9A1BEE",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/3"
-        ],
-        "yuanshen": [
-          "34_3"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/3"],
+        "yuanshen": ["34_3"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -86,22 +62,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -56.68289,
-        25.48194
-      ],
+      "coordinates": [-56.68289, 25.48194],
       "id": "F3B9773A014CCE666B093898FD0E565FC1EF4C53",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/4"
-        ],
-        "yuanshen": [
-          "34_4"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/4"],
+        "yuanshen": ["34_4"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -109,22 +77,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -55.82532,
-        26.3553
-      ],
+      "coordinates": [-55.82532, 26.3553],
       "id": "93B60D8E25229D51864442E8525C9B126B0C3E3D",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/5"
-        ],
-        "yuanshen": [
-          "34_5"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/5"],
+        "yuanshen": ["34_5"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -132,22 +92,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -54.36091,
-        27.58024
-      ],
+      "coordinates": [-54.36091, 27.58024],
       "id": "C7D7E5956DDB9EF6A6FA0D0C45F8FBC879196F23",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/6"
-        ],
-        "yuanshen": [
-          "34_6"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/6"],
+        "yuanshen": ["34_6"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -155,22 +107,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -54.48593,
-        32.41919
-      ],
+      "coordinates": [-54.48593, 32.41919],
       "id": "90C2E1AD7211E661CFDB464AB32F47CAD260F1BC",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/7"
-        ],
-        "yuanshen": [
-          "34_7"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/7"],
+        "yuanshen": ["34_7"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -178,22 +122,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -56.81206,
-        34.97612
-      ],
+      "coordinates": [-56.81206, 34.97612],
       "id": "DBE28C188229A52A1487F4BB1FABB6419E2665CF",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/8"
-        ],
-        "yuanshen": [
-          "34_8"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/8"],
+        "yuanshen": ["34_8"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -201,22 +137,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -56.86304,
-        35.00719
-      ],
+      "coordinates": [-56.86304, 35.00719],
       "id": "149258A467B067D087287BC6D7C008830F783D59",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/9"
-        ],
-        "yuanshen": [
-          "34_9"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/9"],
+        "yuanshen": ["34_9"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -224,22 +152,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -56.68896,
-        31.60134
-      ],
+      "coordinates": [-56.68896, 31.60134],
       "id": "C92FF3A4371841B5BF8861C0716B5C021FE855C9",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/10"
-        ],
-        "yuanshen": [
-          "34_10"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/10"],
+        "yuanshen": ["34_10"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -247,22 +167,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -55.55604,
-        33.16697
-      ],
+      "coordinates": [-55.55604, 33.16697],
       "id": "5A247565A29860FEA9C1C00026D5322D8421E8BA",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/11"
-        ],
-        "yuanshen": [
-          "34_11"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/11"],
+        "yuanshen": ["34_11"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -270,22 +182,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -55.63051,
-        33.32624
-      ],
+      "coordinates": [-55.63051, 33.32624],
       "id": "073FC57A35AAAAB5139A2D3512BDC7ABFC1122CF",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/12"
-        ],
-        "yuanshen": [
-          "34_12"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/12"],
+        "yuanshen": ["34_12"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -293,22 +197,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.83639,
-        34.97383
-      ],
+      "coordinates": [-58.83639, 34.97383],
       "id": "EF1387A9F84C707BA86DD994D8784FE49A61EACC",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/13"
-        ],
-        "yuanshen": [
-          "34_13"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/13"],
+        "yuanshen": ["34_13"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -316,22 +212,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.97817,
-        35.22647
-      ],
+      "coordinates": [-58.97817, 35.22647],
       "id": "28230221A0DF2EEFD6BC284B108E327999726720",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/14"
-        ],
-        "yuanshen": [
-          "34_14"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/14"],
+        "yuanshen": ["34_14"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -339,22 +227,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.71113,
-        34.41364
-      ],
+      "coordinates": [-58.71113, 34.41364],
       "id": "CB1209B44D01F13469C35E425B297315472A6B37",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/15"
-        ],
-        "yuanshen": [
-          "34_15"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/15"],
+        "yuanshen": ["34_15"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -362,22 +242,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -57.99375,
-        34.07313
-      ],
+      "coordinates": [-57.99375, 34.07313],
       "id": "FB099205E123360A7A1257EC54014CA9813437FD",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/16"
-        ],
-        "yuanshen": [
-          "34_16"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/16"],
+        "yuanshen": ["34_16"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -385,22 +257,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.2605,
-        33.469
-      ],
+      "coordinates": [-58.2605, 33.469],
       "id": "A86B6760F378A8CE626C57AE6F265D27ABFFD2C3",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/17"
-        ],
-        "yuanshen": [
-          "34_17"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/17"],
+        "yuanshen": ["34_17"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -408,22 +272,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -58.14477,
-        32.46395
-      ],
+      "coordinates": [-58.14477, 32.46395],
       "id": "0E4845115F404F3BF07AF535B2B074678FAE098D",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/18"
-        ],
-        "yuanshen": [
-          "34_18"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/18"],
+        "yuanshen": ["34_18"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -431,22 +287,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -55.94304,
-        38.5675
-      ],
+      "coordinates": [-55.94304, 38.5675],
       "id": "F5AE460AE7850AF6CED148475CBB2C5661A0B80E",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/19"
-        ],
-        "yuanshen": [
-          "34_19"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/19"],
+        "yuanshen": ["34_19"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -454,22 +302,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.94127,
-        33.56235
-      ],
+      "coordinates": [-50.94127, 33.56235],
       "id": "9BA05E99A31997103C559C639FC0F93BC167B0D5",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/20"
-        ],
-        "yuanshen": [
-          "34_20"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/20"],
+        "yuanshen": ["34_20"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -477,22 +317,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.55314,
-        24.28451
-      ],
+      "coordinates": [-49.55314, 24.28451],
       "id": "C5DE074C9B2211BFC2716F49609BBC862F4F60FC",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/21"
-        ],
-        "yuanshen": [
-          "34_21"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/21"],
+        "yuanshen": ["34_21"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -500,22 +332,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.08106,
-        22.16384
-      ],
+      "coordinates": [-48.08106, 22.16384],
       "id": "E1931EB2F0BAF392E8D42E27ED4BCF7511D3FB5F",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/22"
-        ],
-        "yuanshen": [
-          "34_22"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/22"],
+        "yuanshen": ["34_22"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -523,22 +347,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.52751,
-        19.47237
-      ],
+      "coordinates": [-47.52751, 19.47237],
       "id": "8A3C853FDC9E99807114B7384062057A4B6682A5",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/23"
-        ],
-        "yuanshen": [
-          "34_23"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/23"],
+        "yuanshen": ["34_23"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -546,22 +362,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -42.11772,
-        21.37841
-      ],
+      "coordinates": [-42.11772, 21.37841],
       "id": "63A9D5D9DB762AEF4B6851B3AAB7F367F335AAC3",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/24"
-        ],
-        "yuanshen": [
-          "34_24"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/24"],
+        "yuanshen": ["34_24"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -569,22 +377,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -41.8033,
-        22.43301
-      ],
+      "coordinates": [-41.8033, 22.43301],
       "id": "3DCBEE7994142EA9843CC86A643654C2E8BE5F29",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/25"
-        ],
-        "yuanshen": [
-          "34_25"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/25"],
+        "yuanshen": ["34_25"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -592,22 +392,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -41.81148,
-        23.37765
-      ],
+      "coordinates": [-41.81148, 23.37765],
       "id": "C641AF16D296DBCB9984EB6F9DCE9285453A2EFF",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/26"
-        ],
-        "yuanshen": [
-          "34_26"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/26"],
+        "yuanshen": ["34_26"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -615,22 +407,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.39769,
-        29.09635
-      ],
+      "coordinates": [-44.39769, 29.09635],
       "id": "631B1EC7E34AD5215F5857108521F97A9CF16634",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/27"
-        ],
-        "yuanshen": [
-          "34_27"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/27"],
+        "yuanshen": ["34_27"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -638,22 +422,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -43.58388,
-        27.03133
-      ],
+      "coordinates": [-43.58388, 27.03133],
       "id": "B72EB9ADBBDFE4A9FF89F9E2B8AC68C2EDE7E532",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/28"
-        ],
-        "yuanshen": [
-          "34_28"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/28"],
+        "yuanshen": ["34_28"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -661,22 +437,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -43.20432,
-        26.27839
-      ],
+      "coordinates": [-43.20432, 26.27839],
       "id": "7B06D0D81F98F17CD7561C48CE7BD7AE5B57151D",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/29"
-        ],
-        "yuanshen": [
-          "34_29"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/29"],
+        "yuanshen": ["34_29"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -684,22 +452,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.35929,
-        33.26021
-      ],
+      "coordinates": [-48.35929, 33.26021],
       "id": "194A1702E808BABF5EBA9D3D906A3E250848A201",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/30"
-        ],
-        "yuanshen": [
-          "34_30"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/30"],
+        "yuanshen": ["34_30"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -707,39 +467,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.5169,
-        33.90278
-      ],
-      "id": "872F9EA3AD93CD344B25A99E6118C99A0E5F5A6E",
-      "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/31"
-        ]
-      },
-      "popupAttribution": "Unknown",
-      "popupMedia": "",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 872F9EA3"
-      }
-    },
-    {
-      "coordinates": [
-        -53.01074,
-        47.0095
-      ],
+      "coordinates": [-53.01074, 47.0095],
       "id": "64B5764F1BC1D995EA0482F072AFC6ACA7881C0A",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/32"
-        ],
-        "yuanshen": [
-          "34_32"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/32"],
+        "yuanshen": ["34_32"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -747,22 +482,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -52.51565,
-        47.49281
-      ],
+      "coordinates": [-52.51565, 47.49281],
       "id": "8AAE10BBF248B6BAC1C7EDFF6C03A17D37527C34",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/33"
-        ],
-        "yuanshen": [
-          "34_33"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/33"],
+        "yuanshen": ["34_33"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -770,22 +497,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.8684,
-        45.93305
-      ],
+      "coordinates": [-50.8684, 45.93305],
       "id": "EA42E528C31FB1C1113007D8AF6DE85EED96A054",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/34"
-        ],
-        "yuanshen": [
-          "34_34"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/34"],
+        "yuanshen": ["34_34"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -793,22 +512,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.24746,
-        44.42822
-      ],
+      "coordinates": [-50.24746, 44.42822],
       "id": "E97DA62BBE7B4357616783A1985CEDC782E93041",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/35"
-        ],
-        "yuanshen": [
-          "34_35"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/35"],
+        "yuanshen": ["34_35"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -816,22 +527,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.70843,
-        41.89006
-      ],
+      "coordinates": [-48.70843, 41.89006],
       "id": "013EC949E66E7CCBC85FA17620394E838252555F",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/36"
-        ],
-        "yuanshen": [
-          "34_36"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/36"],
+        "yuanshen": ["34_36"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -839,39 +542,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.46871,
-        41.26396
-      ],
-      "id": "D5BC2405C6F0C52CE4831864B0560B499EE80B3E",
-      "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/37"
-        ]
-      },
-      "popupAttribution": "Unknown",
-      "popupMedia": "",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D5BC2405"
-      }
-    },
-    {
-      "coordinates": [
-        -47.79438,
-        42.24155
-      ],
+      "coordinates": [-47.79438, 42.24155],
       "id": "E9FC4E4D6EA97EE45AC2F2F2DD4234877A2C3042",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/38"
-        ],
-        "yuanshen": [
-          "34_38"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/38"],
+        "yuanshen": ["34_38"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -879,22 +557,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -40.18544,
-        25.58519
-      ],
+      "coordinates": [-40.18544, 25.58519],
       "id": "68CC4D2899636E19676A3550224CFA7E06BA46F0",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/39"
-        ],
-        "yuanshen": [
-          "34_39"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/39"],
+        "yuanshen": ["34_39"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -902,22 +572,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -40.00571,
-        24.8227
-      ],
+      "coordinates": [-40.00571, 24.8227],
       "id": "B6A8678DE40D044DF3A909AE28EDA8944A943233",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/40"
-        ],
-        "yuanshen": [
-          "34_40"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/40"],
+        "yuanshen": ["34_40"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -925,22 +587,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.29505,
-        25.08648
-      ],
+      "coordinates": [-39.29505, 25.08648],
       "id": "D037EA26E5DA8A76DE364952F10294B7C85F8366",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/41"
-        ],
-        "yuanshen": [
-          "34_41"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/41"],
+        "yuanshen": ["34_41"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -948,22 +602,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.38838,
-        26.22326
-      ],
+      "coordinates": [-39.38838, 26.22326],
       "id": "E6D7FA67D89F928D50EC326BE0A99EDE465E2A9E",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/42"
-        ],
-        "yuanshen": [
-          "34_42"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/42"],
+        "yuanshen": ["34_42"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -971,22 +617,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.84308,
-        25.82779
-      ],
+      "coordinates": [-38.84308, 25.82779],
       "id": "EF905BF41775D7119DC752FE546D600E9DFDF34A",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/43"
-        ],
-        "yuanshen": [
-          "34_43"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/43"],
+        "yuanshen": ["34_43"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -994,22 +632,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.20297,
-        25.14128
-      ],
+      "coordinates": [-38.20297, 25.14128],
       "id": "29E4B7D9EE3FF8701223807733AF2837DB2DBB7F",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/44"
-        ],
-        "yuanshen": [
-          "34_44"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/44"],
+        "yuanshen": ["34_44"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1017,22 +647,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.42701,
-        26.19576
-      ],
+      "coordinates": [-38.42701, 26.19576],
       "id": "8A332E7D6495282630D61E1A6F30ACE5F6140126",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/45"
-        ],
-        "yuanshen": [
-          "34_45"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/45"],
+        "yuanshen": ["34_45"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1040,22 +662,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.0014,
-        27.51958
-      ],
+      "coordinates": [-39.0014, 27.51958],
       "id": "54720E8EAD092A6A30A04FF08DB98AC09E64FF63",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/46"
-        ],
-        "yuanshen": [
-          "34_46"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/46"],
+        "yuanshen": ["34_46"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1063,22 +677,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.76989,
-        28.96436
-      ],
+      "coordinates": [-37.76989, 28.96436],
       "id": "F48AF4603B5AFACB8FED1ED8361255C4EE25C93D",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/47"
-        ],
-        "yuanshen": [
-          "34_47"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/47"],
+        "yuanshen": ["34_47"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1086,22 +692,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.03419,
-        28.64032
-      ],
+      "coordinates": [-38.03419, 28.64032],
       "id": "7C1C2C2D027968E7A6E41CC01170986C1EF9C993",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/48"
-        ],
-        "yuanshen": [
-          "34_48"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/48"],
+        "yuanshen": ["34_48"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1109,22 +707,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.07311,
-        28.28883
-      ],
+      "coordinates": [-38.07311, 28.28883],
       "id": "9E13BAB70F26A1DC2789DCC35B26BC8CE743E28B",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/49"
-        ],
-        "yuanshen": [
-          "34_49"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/49"],
+        "yuanshen": ["34_49"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1132,22 +722,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.75915,
-        33.72758
-      ],
+      "coordinates": [-34.75915, 33.72758],
       "id": "9609A786782233A249E21AAD32EED0FEEEF59E6B",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/50"
-        ],
-        "yuanshen": [
-          "34_50"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/50"],
+        "yuanshen": ["34_50"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1155,22 +737,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -35.10579,
-        34.02415
-      ],
+      "coordinates": [-35.10579, 34.02415],
       "id": "3D3C41C514C6606265E14C6F3C9269B5E86604F3",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/51"
-        ],
-        "yuanshen": [
-          "34_51"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/51"],
+        "yuanshen": ["34_51"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1178,22 +752,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.41126,
-        32.00776
-      ],
+      "coordinates": [-30.41126, 32.00776],
       "id": "38BFF209DE643401BFEEA71A64ABDF3E17A3D117",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/52"
-        ],
-        "yuanshen": [
-          "34_52"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/52"],
+        "yuanshen": ["34_52"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1201,22 +767,14 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.81296,
-        32.55696
-      ],
+      "coordinates": [-30.81296, 32.55696],
       "id": "C59E552687F92B10030A2435C42E8FF42C9FB44B",
       "importIds": {
-        "gm_legacy": [
-          "liyueTreasureHoarder/53"
-        ],
-        "yuanshen": [
-          "34_53"
-        ]
+        "gm_legacy": ["liyueTreasureHoarder/53"],
+        "yuanshen": ["34_53"]
       },
       "popupTitle": {
         "zh": "盗宝团"
@@ -1224,23 +782,17 @@
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
       },
-      "popupMedia": "",
-      "popupAttribution": "Unknown"
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.41695,
-        33.97707
-      ],
+      "coordinates": [-47.41695, 33.97707],
       "id": "938DA45EDAC1137180CB45908405F5520503E9E8",
       "importIds": {
-        "yuanshen": [
-          "34_31"
-        ]
+        "yuanshen": ["34_31"],
+        "gm_legacy": ["liyueTreasureHoarder/31"]
       },
       "popupTitle": {
-        "zh": "盗宝团",
-        "en": "NEW MARKER: 938DA45E"
+        "zh": "盗宝团"
       },
       "popupContent": {
         "zh": "此处应有3个左右的盗宝团成员"
@@ -1249,19 +801,14 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.50605,
-        41.15388
-      ],
+      "coordinates": [-48.50605, 41.15388],
       "id": "5594AB23AD8221FAC3CED9C3D4C708F65D7F9E8D",
       "importIds": {
-        "yuanshen": [
-          "34_37"
-        ]
+        "yuanshen": ["34_37"],
+        "gm_legacy": ["liyueTreasureHoarder/37"]
       },
       "popupTitle": {
-        "zh": "盗宝团",
-        "en": "NEW MARKER: 5594AB23"
+        "zh": "盗宝团"
       },
       "popupContent": {
         "zh": "此处应有2个盗宝团成员"
@@ -1270,19 +817,13 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.45124,
-        25.16857
-      ],
+      "coordinates": [-50.45124, 25.16857],
       "id": "F34B599775F7047D49A739AA56E1153377D697CC",
       "importIds": {
-        "yuanshen": [
-          "34_54"
-        ]
+        "yuanshen": ["34_54"]
       },
       "popupTitle": {
-        "zh": "盗宝团",
-        "en": "NEW MARKER: F34B5997"
+        "zh": "盗宝团"
       },
       "popupContent": {
         "zh": "此处应有1个盗宝团成员"

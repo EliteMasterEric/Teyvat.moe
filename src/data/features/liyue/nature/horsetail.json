@@ -1,9 +1,14 @@
 {
-  "name": { "en": "Horsetail" },
+  "format": 2,
+  "name": {
+    "en": "Horsetail",
+    "zh": ""
+  },
   "description": {
     "en": "A purple plant that sometimes grows amidst Silvergrass. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "horsetail",
@@ -16,329 +21,379 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.5696522351, 40.2923519173]
+      "coordinates": [-38.56965, 40.29235],
+      "id": "38DA18AD048B1A436418DDFBAE5CFF95F7B7178D",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/1"],
+        "yuanshen": ["45_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 1
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.4562004787, 41.2481603038]
+      "coordinates": [-35.4562, 41.24816],
+      "id": "49C72914671CDA4F2FC993D58FCA5F5241B15AE1",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/2"],
+        "yuanshen": ["45_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 2
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.4293424067, 41.308588349]
+      "coordinates": [-35.42934, 41.30859],
+      "id": "021F6512C9480B00C4CB40D73F8B9501A8D473CF",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/3"],
+        "yuanshen": ["45_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 3
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.5750542273, 39.7705045719]
+      "coordinates": [-37.57505, 39.7705],
+      "id": "86FE1D1187FC4B2527FC2CCDE0BBB1CB94EE33D6",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/4"],
+        "yuanshen": ["45_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 4
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.9465948817, 40.5175738042]
+      "coordinates": [-38.94659, 40.51757],
+      "id": "C25A671B95605C27E4D713A6876AE2CA814707B7",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/5"],
+        "yuanshen": ["45_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 5
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.0234529551, 40.4956043885]
+      "coordinates": [-39.02345, 40.4956],
+      "id": "911F4E665BD70B3999FF7FB1DCEF4086F25D1A0D",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/6"],
+        "yuanshen": ["45_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 6
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.7251000979, 43.1045332619]
+      "coordinates": [-33.7251, 43.10453],
+      "id": "2A41D99E8E643F2D803825A2C2DC563EDEF055B0",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/7"],
+        "yuanshen": ["45_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 7
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.3756010241, 41.5063411751]
+      "coordinates": [-35.3756, 41.50634],
+      "id": "CD5D9D6FE97B8E0C84BE116FC37B8831914C8CA2",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/8"],
+        "yuanshen": ["45_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 8
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.335293203, 41.6216932996]
+      "coordinates": [-35.33529, 41.62169],
+      "id": "5CFAA882D1705F41B3E91DD2BEC7DE0943FEDFAA",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/9"],
+        "yuanshen": ["45_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 9
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.2927899852, 40.4079503246]
+      "coordinates": [-36.29279, 40.40795],
+      "id": "64FE3959F2F294841AAC7244886E50B29314FA9A",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/10"],
+        "yuanshen": ["45_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 10
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.1910871566, 40.7537722976]
+      "coordinates": [-36.19109, 40.75377],
+      "id": "6D2C7E5613F0026AA257F2ED9E357093F271F8A4",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/11"],
+        "yuanshen": ["45_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 11
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.9913312054, 40.8087104193]
+      "coordinates": [-35.99133, 40.80871],
+      "id": "8F929367390D8E2ADA1B6E931E29B13052CBB474",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/12"],
+        "yuanshen": ["45_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 12
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.8957610259, 42.0548550019]
+      "coordinates": [-36.89576, 42.05486],
+      "id": "2D5B042BF3E340FAD72887FD25E0242E594C6995",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/13"],
+        "yuanshen": ["45_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 13
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9440515328, 42.2141254343]
+      "coordinates": [-36.94405, 42.21413],
+      "id": "11FC3F8196BE371391AC9E534C2C420BCC339481",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/14"],
+        "yuanshen": ["45_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 14
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.0757373432, 42.4456765505]
+      "coordinates": [-36.07574, 42.44568],
+      "id": "11EB23D514875E9A3A960DA3BCEC8C5067794BDC",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/15"],
+        "yuanshen": ["45_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 15
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.1777894612, 42.506105676]
+      "coordinates": [-36.17779, 42.50611],
+      "id": "12A1C6D02B4FE351B268C2D9C71098917793F71D",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/16"],
+        "yuanshen": ["45_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 16
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.1423238554, 42.4292143413]
+      "coordinates": [-36.14232, 42.42921],
+      "id": "D3C4F2CE5A50D6A41FC04A55D7F5ECCDA8C05CC5",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/17"],
+        "yuanshen": ["45_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 17
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.6968419075, 39.6716330197]
+      "coordinates": [-37.69684, 39.67163],
+      "id": "3C4DF3962E89AF937B34EA056A20B9E572467F3A",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/18"],
+        "yuanshen": ["45_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 18
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.7964016856, 39.4794100841]
+      "coordinates": [-36.7964, 39.47941],
+      "id": "A184F23313076412696FD6E29F039AAAD7FC2C56",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/19"],
+        "yuanshen": ["45_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 19
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.3634024014, 40.4889511029]
+      "coordinates": [-37.3634, 40.48895],
+      "id": "D72C21BB13127F919EC19FA8A2B5A5BBEE9E6447",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/20"],
+        "yuanshen": ["45_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 20
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.8636253031, 40.8019998838]
+      "coordinates": [-37.86363, 40.802],
+      "id": "1C0F05FF4C35FF267DC9933D10D4E2DBCB933834",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/21"],
+        "yuanshen": ["45_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 21
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.8068854525, 40.8898732258]
+      "coordinates": [-38.80689, 40.88987],
+      "id": "924236BF7411EFA8F32A21CACB63F8A2FF06F5B6",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/22"],
+        "yuanshen": ["45_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 22
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.025508032, 41.8359288584]
+      "coordinates": [-35.02551, 41.83593],
+      "id": "BA20499F7DE797F6948C9B36BC7042AB708C4510",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/23"],
+        "yuanshen": ["45_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 23
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.4555773843, 40.2530939488]
+      "coordinates": [-36.45558, 40.25309],
+      "id": "367D170C446DB11163C3FC3E76DFBC437608321C",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/24"],
+        "yuanshen": ["45_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 24
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.3587878094, 41.3071938267]
+      "coordinates": [-39.35879, 41.30719],
+      "id": "0571684CF9E1CF2279C39609205D4E69B353E1FC",
+      "importIds": {
+        "gm_legacy": ["liyueHorsetail/25"],
+        "yuanshen": ["45_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "马尾-璃月特产"
       },
-      "id": 25
+      "popupContent": {
+        "zh": ""
+      },
+      "popupAttribution": "Unknown"
     }
   ]
 }

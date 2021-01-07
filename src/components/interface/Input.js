@@ -6,7 +6,12 @@
  */
 
 import React from 'react';
-import { TextField as MaterialTextField, Slider as MaterialSlider } from '@material-ui/core';
+import {
+  TextField as MaterialTextField,
+  Slider as MaterialSlider,
+  Switch as MaterialSwitch,
+  FormControlLabel,
+} from '@material-ui/core';
 
 import { useDebouncedState } from '~/components/Util';
 
@@ -57,5 +62,35 @@ export const InputSlider = ({ value, onChange, ...others }) => {
       onChange={(_event, newValue) => setCurrentValue(newValue)}
       {...others}
     />
+  );
+};
+
+/**
+ * A debounced switch.
+ */
+export const InputSwitch = ({
+  value = false,
+  onChange,
+  label = null,
+  labelPlacement = 'start',
+  ...others
+}) => {
+  // Maintains the current state of the switch.
+  // If the switch has gone a period without changing,
+  // onChange will be called to propage the change to the local storage.
+  const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
+
+  const control = (
+    <MaterialSwitch
+      checked={currentValue}
+      onChange={(_event, newValue) => setCurrentValue(newValue)}
+      {...others}
+    />
+  );
+
+  return label ? (
+    <FormControlLabel label={label} labelPlacement={labelPlacement} control={control} />
+  ) : (
+    control
   );
 };

@@ -53,7 +53,7 @@ const _DebugControls = ({ displayed }) => {
 
   const [mousePos, setMousePos] = React.useState({ lat: 0, lng: 0 });
 
-  const map = useMapEvents({
+  const _map = useMapEvents({
     mousemove: (event) => {
       setMousePos(event.latlng);
     },

@@ -1,8 +1,10 @@
 {
   "language": "English",
   "language-code": "en",
+
   "meta-page-title-full": "[BETA] GenshinMap - Interactive Teyvat Map",
   "meta-page-title-short": "[BETA] GenshinMap",
+
   "map-controls-tab-about": "About",
   "map-controls-tab-help": "Help",
   "map-controls-tab-summary": "Summary",
@@ -11,6 +13,7 @@
   "map-controls-tab-routes": "Routes",
   "map-controls-tab-editor-elements": "Elements",
   "map-controls-tab-options": "Options",
+
   "category-event": "Event",
   "category-boss": "Boss",
   "category-monster": "Monster",
@@ -18,6 +21,7 @@
   "category-special": "Special",
   "category-ore": "Ore",
   "category-chest": "Chest",
+
   "region-mondstadt": "Mondstadt",
   "region-liyue": "Liyue",
   "region-dragonspine": "Dragonspine",
@@ -27,6 +31,7 @@
   "region-natlan": "Natlan",
   "region-snezhnaya": "Snezhnaya",
   "region-khaenriah": "Khaenri'ah",
+
   "map-about-help-content-a": "This interactive map was developed by the community.",
   "map-about-help-content-b": "<b>We are looking for community contributors</b> to help with markers as well as localization! Click to learn <a href=\"https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing\">how to contribute.</a>",
   "map-about-help-content-c": "Click the Features tab above to filter the map to display Oculi, ores, plants, monsters, and more.",
@@ -73,8 +78,11 @@
   "map-summary-menu-show-feature": "Show Feature",
   "map-summary-menu-hide-feature": "Hide Feature",
   "map-summary-menu-open": "Open Menu",
+
   "map-popup-completed-label": "Completed?",
   "map-popup-completed-format": "Marked completed at {time}.",
+  "map-popup-copy-permalink-label": "Copy Permalink",
+
   "popup-cancel": "Cancel",
   "popup-confirm": "Confirm",
   "popup-click-to-copy": "Click to Copy",
@@ -94,6 +102,7 @@
   "popup-submit-editor-data-cluster-markers": "Cluster Markers?",
   "popup-export-data-content": "Below is exported data for GenshinMap.",
   "popup-import-hint": "Paste data here...",
+
   "options-subtitle-format": "App version: v{version}",
   "options-language": "Language",
   "options-editor-enable": "Enable Editor",
@@ -112,7 +121,21 @@
   "options-clear-data": "Clear Data",
   "options-clear-data-button": "Clear",
   "options-display-debug": "Show Map Debug Display",
+
+  "respawn-259200": "Respawns every three days",
+  "respawn-176800": "Respawns every two days",
+  "respawn-86400": "Respawns daily",
+  "respawn-43200": "Respawns every 12 hours",
+  "respawn-180": "Respawns after three minutes",
+  "respawn-boss": "Respawns weekly on Monday 4AM server time",
+  "respawn-none": "Does not respawn",
+
   "debug-title": "Debug",
+
+  "notification-permalink-fail-id": "Permalinked element not found.",
+  "notification-permalink-feature": "Navigated to permalinked feature.",
+  "notification-permalink-route": "Navigated to permalinked route.",
+
   "error-handler-flavor": "Oh no, Paimon used up all her brain juice!",
   "error-handler-message": "GenshinMap experienced an error and had to close.",
   "error-handler-instruction": "Please click the link below to submit an error report.",
