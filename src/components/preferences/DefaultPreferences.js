@@ -104,6 +104,11 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   controlsOpen: true,
   /**
+   * Whether the debug display is enabled.
+   * Not saved in local storage.
+   */
+  displayDebug: false,
+  /**
    * The text to display on the Import popup for whether an error has occurred.
    * Not saved in local storage.
    */

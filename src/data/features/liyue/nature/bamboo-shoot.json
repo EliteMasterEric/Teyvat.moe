@@ -1,10 +1,14 @@
 {
-  "name": { "en": "Bamboo Shoot" },
+  "format": 2,
+  "name": {
+    "en": "Bamboo Shoot",
+    "zh": "笋"
+  },
   "description": {
     "en": "A fresh young bamboo shoot with an exotic aroma. Used in Recipes."
   },
-  "enabled": false,
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "bamboo-shoot",
@@ -17,208 +21,320 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.49317312281965, 32.72503039926887]
+      "coordinates": [-34.49317, 32.72503],
+      "id": "3226ACB169E3C27A1494F9D1DFDA868B0D90887B",
+      "importIds": {
+        "yuanshen": ["103_1"],
+        "gm_legacy": ["liyueBambooShoot/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 1"
-        },
-        "popupContent": {
-          "en": "There are several Bamboo Shoots along the path north of the teleporter, southwest of Qingce Village."
-        },
-        "popupMedia": "liyue/bamboo-shoot/1"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#1",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "en": "There are several Bamboo Shoots along the path north of the teleporter, southwest of Qingce Village.",
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupMedia": "liyue/bamboo-shoot/1"
+    },
+    {
+      "coordinates": [-34.41144, 32.49207],
+      "id": "0DE038D206AACD6F25F87474FA5A5C1375550949",
+      "importIds": {
+        "yuanshen": ["103_2"],
+        "gm_legacy": ["liyueBambooShoot/2"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#2",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupMedia": "liyue/bamboo-shoot/2"
+    },
+    {
+      "coordinates": [-34.36611, 32.47009],
+      "id": "6491D7B33A525B94B53FBF4FAD77BEB3E7DD35E6",
+      "importIds": {
+        "yuanshen": ["103_3"],
+        "gm_legacy": ["liyueBambooShoot/3"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#3",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.366110728831174, 32.47009277343751]
+      "coordinates": [-34.09361, 32.73926],
+      "id": "69A1118DEEA9D95ABA9B3491523C030FF6683B44",
+      "importIds": {
+        "yuanshen": ["103_5"],
+        "gm_legacy": ["liyueBambooShoot/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 3"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#4",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.41144164327243, 32.49206542968751]
+      "coordinates": [-33.86129, 32.73926],
+      "id": "536992184102612962583F412A1C2C94756FE9CF",
+      "importIds": {
+        "yuanshen": ["103_6"],
+        "gm_legacy": ["liyueBambooShoot/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/bamboo-shoot/2"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#5",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.093610452768715, 32.73925781250001]
+      "coordinates": [-34.14818, 32.35474],
+      "id": "3707E0AA664F356C1135E936F21FB1CBC04304BF",
+      "importIds": {
+        "yuanshen": ["103_20"],
+        "gm_legacy": ["liyueBambooShoot/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 4"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#6",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.86129311351552, 32.73925781250001]
+      "coordinates": [-33.71977, 32.33276],
+      "id": "2757A7726BA2B5FE63DA0E7BA0B4E602F58A9CE2",
+      "importIds": {
+        "yuanshen": ["103_8"],
+        "gm_legacy": ["liyueBambooShoot/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 5"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#7",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.14818102254435, 32.35473632812501]
+      "coordinates": [-33.58259, 32.76123],
+      "id": "A5F66E115846F5F9B3E5CCF18628DD0BDE1AF8E3",
+      "importIds": {
+        "yuanshen": ["103_9"],
+        "gm_legacy": ["liyueBambooShoot/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 6"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#8",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.7197707748314, 32.33276367187501]
+      "coordinates": [-33.0409, 32.83264],
+      "id": "651D8F574EF13F89A2C0A5400E2C136D1D1B8562",
+      "importIds": {
+        "yuanshen": ["103_11"],
+        "gm_legacy": ["liyueBambooShoot/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 7"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#9",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.58259116393917, 32.76123046875001]
+      "coordinates": [-32.98102, 32.81616],
+      "id": "5D6F77086E9990C48EC7D5F9EF88F1C758DF03F9",
+      "importIds": {
+        "yuanshen": ["103_10"],
+        "gm_legacy": ["liyueBambooShoot/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 8"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#10",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.040903117240916, 32.83264160156251]
+      "coordinates": [-32.65325, 32.3822],
+      "id": "814FE199BD25FA4039A5D558E781C482CB4D3EB0",
+      "importIds": {
+        "yuanshen": ["103_13"],
+        "gm_legacy": ["liyueBambooShoot/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 9"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#11",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
       }
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.98102014898148, 32.81616210937501]
+      "coordinates": [-32.26391, 32.31079],
+      "id": "59668FA925FE47A93D0102A0C4FF4BFB400B4BC4",
+      "importIds": {
+        "yuanshen": ["103_12"],
+        "gm_legacy": ["liyueBambooShoot/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 10"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "en": "#12",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "MasterEric"
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.263910555201306, 32.31079101562501]
+      "coordinates": [-34.23451, 32.81616],
+      "id": "D43F3AB7C4407EA145C741809624F7A43CA5AE55",
+      "importIds": {
+        "yuanshen": ["103_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 12"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "en": "#13",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.653250879968816, 32.38220214843751]
+      "coordinates": [-32.29642, 33.29407],
+      "id": "7033416081B26F2B8A0191A5F143CB5BD2FD69D2",
+      "importIds": {
+        "yuanshen": ["103_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Bamboo Shoot 11"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "en": "#14",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.32983, 33.349],
+      "id": "0DB810A2049698D54D11C84E8A0B6195A18F9F07",
+      "importIds": {
+        "yuanshen": ["103_15"]
+      },
+      "popupTitle": {
+        "en": "#15",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.40691, 33.29956],
+      "id": "CB58D8883B624856DC68302CD7559835E68F218F",
+      "importIds": {
+        "yuanshen": ["103_16"]
+      },
+      "popupTitle": {
+        "en": "#16",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+
+    {
+      "coordinates": [-32.41243, 37.55676],
+      "id": "0B91931B765425E723B410EDF7F49532A3D30B9F",
+      "importIds": {
+        "yuanshen": ["103_17"]
+      },
+      "popupTitle": {
+        "en": "#17",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.47733, 37.55676],
+      "id": "41C6E23A4AAE9D665121536C3AA9E4B6D0187054",
+      "importIds": {
+        "yuanshen": ["103_18"]
+      },
+      "popupTitle": {
+        "en": "#18",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.67637, 37.34253],
+      "id": "E713943E9D0CEA36265A9E1CA4A1D7DFE436C224",
+      "importIds": {
+        "yuanshen": ["103_19"]
+      },
+      "popupTitle": {
+        "en": "#19",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.33529, 33.12378],
+      "id": "F1A235855F39D2E580129F1717848B517040B91D",
+      "importIds": {
+        "yuanshen": ["103_21"]
+      },
+      "popupTitle": {
+        "en": "#20",
+        "zh": "笋"
+      },
+      "popupContent": {
+        "zh": "这是一节嘎嘣脆的笋"
+      },
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

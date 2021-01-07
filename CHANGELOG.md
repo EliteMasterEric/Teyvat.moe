@@ -588,30 +588,30 @@ First major release of the rework, featuring a new interface developed in React.
   - Some markers are still being stored in the old format.
 - Popups for features stored in the new format now display a switch to enable/disable completed status, as an alternative to double clicking the marker.
 - Migrated the following features to the new marker data format:
-  - Crimson Agate (Dragonspine): Migrated 79 markers, and added import IDs for Yuanshen.site. (This took absurdly long.)
-  - Anemoculus (Mondstadt): Migrated 65 markers, and added import IDs for Yuanshen.site.
-  - Geoculus (Mondstadt): Migrated 131 markers, and added import IDs for Yuanshen.site.
-  - Apple (Mondstadt): Migrated 4 markers, and added import IDs for Yuanshen.site.
-  - Statue (Mondstadt): Migrated 4 markers.
-  - Teleporter (Mondstadt): Migrated 22 markers.
-  - Viewpoint (Mondstadt): Migrated 10 markers.
-  - Domain (Dragonspine): Migrated 1 marker.
-  - Statue (Dragonspine): Migrated 1 marker.
-  - Teleporter (Dragonspine): Migrated 10 markers.
   - Andrius (Mondstadt): Migrated 1 marker.
   - Anemo Hypostasis (Mondstadt): Migrated 1 marker.
+  - Anemoculus (Mondstadt): Migrated 65 markers, and added import IDs for Yuanshen.site.
+  - Apple (Mondstadt): Migrated 4 markers, and added import IDs for Yuanshen.site.
+  - Childe (Liyue): Migrated 1 marker.
+  - Crimson Agate (Dragonspine): Migrated 79 markers, and added import IDs for Yuanshen.site. (This took absurdly long.)
   - Cryo Regisvine (Mondstadt): Migrated 1 marker.
+  - Domain (Dragonspine): Migrated 1 marker.
+  - Domain (Liyue): Migrated 8 markers.
+  - Domain (Mondstadt): Migrated 8 markers.
   - Dvalin (Mondstadt): Migrated 1 marker.
   - Electro Hypostasis (Mondstadt): Migrated 1 marker.
-  - Childe (Liyue): Migrated 1 marker.
   - Geo Hypostasis (Liyue): Migrated 1 marker.
+  - Geoculus (Mondstadt): Migrated 131 markers, and added import IDs for Yuanshen.site.
   - Oceanid (Liyue): Migrated 1 marker.
   - Pyro Regisvine (Liyue): Migrated 1 marker.
-  - Domain (Mondstadt): Migrated 8 markers.
-  - Domain (Liyue): Migrated 8 markers.
+  - Statue (Dragonspine): Migrated 1 marker.
   - Statue (Liyue): Migrated 5 markers.
+  - Statue (Mondstadt): Migrated 4 markers.
+  - Teleporter (Dragonspine): Migrated 10 markers.
   - Teleporter (Liyue): Migrated 40 markers.
+  - Teleporter (Mondstadt): Migrated 22 markers.
   - Viewpoint (Liyue): Migrated 17 markers.
+  - Viewpoint (Mondstadt): Migrated 10 markers.
 - Added new markers:
   - Yuanshen.site: Imported 8 Apple (Mondstadt) locations.
   - Yuanshen.site: Imported 14 Chilled Meat (Dragonspine) locations.
@@ -638,12 +638,79 @@ First major release of the rework, featuring a new interface developed in React.
     - popup-import-new-content
 - Completed markers now display with a green highlight to distinguish them when opacity is 1.
 
-# 0.10.1 Continued Fixes
+# 0.10.1 Yuanshen Import
 
+- Added new map Debug view, which can be enabled in the Options. Currently only displays the coordinates at the cursor but more info can be implemented in the future.
 - Added a new description field for features and routes. This is a one or two sentence explanation of the feature or route.
   - Like attribution, this will appear in the interface later at some point.
-- Added description fields for 14 features.
+- Created some new scripts to help with the process of importing data from Yuanshen.site.
+- Migrated the following features to the new marker data format:
+  - Abyss Mage (Liyue): Migrated 34 markers and added Yuanshen.site import IDs.
+  - Abyss Mage (Mondstadt): Migrated 7 markers and added Yuanshen.site import IDs.
+  - Berry (Mondstadt): Migrated 4 markers and added Yuanshen.site import IDs.
+  - Bamboo Shoot (Liyue): Migrated 12 markers and added Yuanshen.site import IDs.
+  - Crystal Chunk (Mondstadt): Migrated 46 markers and added Yuanshen.site import IDs.
+  - Fatui Electro Cicin Mage (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Magical Crystal Chunk (Mondstadt): Migrated 18 markers and added Yuanshen.site import IDs.
+  - Meteorite Shard (Liyue): Migrated 77 markers (NO YUANSHEN.SITE IDS).
+  - Meteorite Shard (Mondstadt): Migrated 41 markers (NO YUANSHEN.SITE IDS).
+  - Shrine (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Shrine (Mondstadt): Migrated 10 markers and added Yuanshen.site import IDs.
+  - White Iron Chunk (Mondstadt): Migrated 64 markers and added Yuanshen.site import IDs.
+  - Bird Egg (Mondstadt): Migrated 1 markers and added Yuanshen.site import IDs.
+  - Calla Lily (Mondstadt): Migrated 40 markers and added Yuanshen.site import IDs.
+  - Fatui Electro Cicin Mage (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Fatui Pyro Agent (Liyue): Migrated 8 markers and added Yuanshen.site import IDs.
+  - Fatui Skirmisher (Liyue): Migrated 21 markers and added Yuanshen.site import IDs.
+  - Geovishap Hatchling (Liyue): Migrated 15 markers and added Yuanshen.site import IDs.
+  - Ruin Guard (Liyue): Migrated 15 markers and added Yuanshen.site import IDs.
+  - Ruin Hunter (Liyue): Migrated 5 markers and added Yuanshen.site import IDs.
+  - Samachurl (Liyue): Migrated 1 marker and added Yuanshen.site import IDs.
+  - Slime (Liyue): Migrated 177 markers and added Yuanshen.site import IDs.
+  - Treasure Hoarder (Liyue): Migrated 53 markers and added Yuanshen.site import IDs.
+  - Unusual Hilichurl (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Whopperflower (Liyue): Migrated 48 markers and added Yuanshen.site import IDs.
+- Added new markers:
+  - Yuanshen.site: Whopperflower (Liyue): Imported 12 locations.
+  - Yuanshen.site: Treasure Hoarder (Liyue): Imported 1 location.
+  - Yuanshen.site: Samachurl (Liyue): Imported 47 locations.
+  - Yuanshen.site: Slime (Liyue): Imported 3 locations
+  - Yuanshen.site: Abyss Mage (Dragonspine): Imported 4 location.
+  - Yuanshen.site: Abyss Mage (Liyue): Imported 1 location.
+  - Yuanshen.site: Abyss Mage (Mondstadt): Imported 1 location.
+  - Yuanshen.site: Bamboo Shoot (Liyue): Imported 8 locations.
+  - Yuanshen.site: Berry (Mondstadt): Imported 47 locations.
+  - Yuanshen.site: Bird Egg (Liyue): Imported 11 location.
+  - Yuanshen.site: Bird Egg (Mondstadt): Imported 2 location.
+  - Yuanshen.site: Calla Lily (Mondstadt): Imported 11 locations.
+  - Yuanshen.site: Fatui Skirmisher (Liyue): Imported 4 locations.
+  - Yuanshen.site: Geovishap Hatchling (Liyue): Imported 18 locations.
+  - Yuanshen.site: Samachurl (Liyue): Imported 47 locations.
+  - Yuanshen.site: White Iron Chunk (Mondstadt): Imported 3 locations.
+- Hid the following markers due to lack of data. Feel free to help if you can!
+  - Iron Chunk (Mondstadt) 
+  - Iron Chunk (Liyue)
+  - Bird Egg (Liyue)
 - Localization of features:
+  - @MasterEric: Added 148 English descriptions to features.
   - @alkmaar: Translated 31 Mondstadt features to Russian.
   - @Likanion: Translated 27 Mondstadt nature features to Russian.
   - @MasterEric: Copied Russian translations to 57 features.
+- Localization key changes:
+  - New keys:
+    - popup-export-data-content: The content of the "Export Data" box. Moved from `popup-export-new-content`.
+    - options-display-debug: Whether to display the Debug view.
+    - debug-title: The "DEBUG" text at the top of the Debug view.
+    - respawn-259200: Localized display for respawning 'every 3 days'. Will be used in a future interface.
+    - respawn-176800: Localized display for respawning 'every 2 days'. Will be used in a future interface.
+    - respawn-86400: Localized display for respawning 'every day'. Will be used in a future interface.
+    - respawn-43200: Localized display for respawning 'every 12 hours'. Will be used in a future interface.
+    - respawn-180: Localized display for respawning 'after 3 minutes'. Will be used in a future interface.
+    - respawn-boss: Localized display for respawning 'on monday at 4 am'. Will be used in a future interface.
+    - respawn-none: Localized display for respawning 'never'. Will be used in a future interface.
+  - Removed keys:
+    - popup-export-old-content
+    - popup-export-new-content
+- Markers can now be cleared while the Editor is enabled.
+- Fixed a bug where new version markers could not be double clicked to mark as completed.
+- Fixed several bugs with rendering of clustered markers.

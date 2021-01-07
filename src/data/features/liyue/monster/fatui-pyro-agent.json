@@ -1,9 +1,14 @@
 {
-  "name": { "en": "Fatui Pyro Agent" },
+  "format": 2,
+  "name": {
+    "en": "Fatui Pyro Agent",
+    "zh": "债务处理人"
+  },
   "description": {
     "en": "Agent of the Fatui who turn invisible to catch enemies off-guard. Drops Sacrificial Knife and Recruit's Insignia."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-pyro-agent",
@@ -16,108 +21,188 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7096753321, 51.9653320312]
+      "coordinates": [
+        -52.70968,
+        51.96533
+      ],
+      "id": "1510F012976208C777B6D1F156C838E79B339499",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/1"
+        ],
+        "yuanshen": [
+          "23_1"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7625032627, 30.1574707031]
+      "coordinates": [
+        -58.7625,
+        30.15747
+      ],
+      "id": "E8F5449B8D6D5B30CEBB6AA6BBDD9409DDF685A3",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/2"
+        ],
+        "yuanshen": [
+          "23_2"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.5410649561, 29.8718261718]
+      "coordinates": [
+        -55.54106,
+        29.87183
+      ],
+      "id": "F7799E44076147FCAC0037D63BF9C1DB866EA0DE",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/3"
+        ],
+        "yuanshen": [
+          "23_3"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7362916559, 26.6857910156]
+      "coordinates": [
+        -52.73629,
+        26.68579
+      ],
+      "id": "19BD015A70C0F4C90422129CC987C67367CE4F34",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/4"
+        ],
+        "yuanshen": [
+          "23_4"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.4225229542, 31.4318847656]
+      "coordinates": [
+        -52.42252,
+        31.43188
+      ],
+      "id": "D0241D6E029A6C950DB75D9CA67335D5B38F8ECF",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/5"
+        ],
+        "yuanshen": [
+          "23_5"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.7699684335, 49.9548339843]
+      "coordinates": [
+        -46.76997,
+        49.95483
+      ],
+      "id": "52842C22DC901BD6D81F44C4A634F7C644AE1E77",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/7"
+        ],
+        "yuanshen": [
+          "23_7"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.4181207006, 37.4743652343]
+      "coordinates": [
+        -49.41812,
+        37.47437
+      ],
+      "id": "89B9C7ECE6006A093EBDD1FA53D4DF3F587C123A",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/9"
+        ],
+        "yuanshen": [
+          "23_9"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7856683571, 48.4781986724]
+      "coordinates": [
+        -41.78567,
+        48.4782
+      ],
+      "id": "4A50A1D26DC8FE0426C34B095D401C57BC331EDF",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiPyroAgent/10"
+        ],
+        "yuanshen": [
+          "23_10"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "债务处理人"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个债务处理人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     }
   ]
 }

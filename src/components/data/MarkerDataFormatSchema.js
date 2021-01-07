@@ -112,6 +112,9 @@ export const MDF_FEATURE_SCHEMA = Joi.object({
   // The localized name of the feature.
   name: localizedField.required(),
 
+  // The localized description of the feature.
+  description: localizedField.optional(),
+
   // Whether to cluster markers on the map.
   cluster: Joi.string()
     .valid(...clusterEnum)

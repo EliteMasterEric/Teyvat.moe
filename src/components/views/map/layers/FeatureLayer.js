@@ -20,11 +20,11 @@ import MapCluster, {
   variableClusterFunction,
 } from '~/components/views/map/MapCluster';
 import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopupLegacy';
-import store from '~/redux';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 
 const _FeatureLayer = ({
   mapFeature,
+  featureKey,
 
   clusterMarkers,
   displayed,
@@ -73,7 +73,7 @@ const _FeatureLayer = ({
   const onDoubleClickMarker = (feature, _event) => {
     // Get the state in real time.
     // If the editor is not enabled, don't mark as completed.
-    if (store.getState().editorEnabled) return;
+    // if (store.getState().editorEnabled) return;
 
     const completed = _.has(completedIds, feature?.id);
     // Mark as completed.
@@ -113,15 +113,15 @@ const _FeatureLayer = ({
   // Choose the proper clustering function.
   let clusterFunction = null;
   switch (mapFeature.cluster) {
-    case 'on':
-      clusterFunction = onClusterFunction;
-      break;
     case 'variable':
       clusterFunction = variableClusterFunction;
       break;
     case 'off':
-    default:
       clusterFunction = offClusterFunction;
+      break;
+    case 'on':
+    default:
+      clusterFunction = onClusterFunction;
       break;
   }
 
@@ -130,11 +130,10 @@ const _FeatureLayer = ({
       mapFeature.data.map((marker) => {
         return (
           <FeatureMarker
+            key={marker.id}
             marker={marker}
             feature={mapFeature}
-            completed={completedIds[marker.id]}
-            markFeature={() => markFeature(marker.id)}
-            unmarkFeature={() => unmarkFeature(marker.id)}
+            featureKey={featureKey}
           />
         );
       })
@@ -148,7 +147,11 @@ const _FeatureLayer = ({
     );
 
   // Cluster if enabled by the user and the feature type supports it.
-  return <MapCluster clusterFunction={clusterFunction}>{dataView}</MapCluster>;
+  return (
+    <MapCluster legacy={mapFeature.format !== 2} clusterFunction={clusterFunction}>
+      {dataView}
+    </MapCluster>
+  );
 };
 
 const mapStateToProps = (state, { mapFeature, featureKey }) => ({

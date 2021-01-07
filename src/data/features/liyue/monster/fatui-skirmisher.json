@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Fatui Skirmisher",
-    "ru": "Застрельщик Фатуи"
+    "ru": "Застрельщик Фатуи",
+    "zh": "先遣队"
   },
   "description": {
     "en": "Bulky combatants for the Fatui who wield various elemental powers. Drops Recruit's Insignia."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-skirmisher",
@@ -19,361 +22,508 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.7065558114, 30.2673339843]
+      "coordinates": [
+        -59.70656,
+        30.26733
+      ],
+      "id": "E7E1D2E25350515E5ECCE6702C981BE87E6C73C9",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/1"
+        ],
+        "yuanshen": [
+          "38_1"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.9760704482, 36.1669921875]
+      "coordinates": [
+        -57.97607,
+        36.16699
+      ],
+      "id": "F5DC7F116D1669F8C19C65C4C93AEE7A511D61EC",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/2"
+        ],
+        "yuanshen": [
+          "38_2"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.1335898292, 30.5255126953]
+      "coordinates": [
+        -53.13359,
+        30.52551
+      ],
+      "id": "E8E1C4BA639F199330DA548A1A184DB544D82B84",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/3"
+        ],
+        "yuanshen": [
+          "38_3"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.9937285602, 36.2363956163]
+      "coordinates": [
+        -57.99373,
+        36.2364
+      ],
+      "id": "B64806EF860AF5C2CF41303E0E86F50DA6B6FC83",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/6"
+        ],
+        "yuanshen": [
+          "38_6"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.8558932982, 32.2558248089]
+      "coordinates": [
+        -52.85589,
+        32.25582
+      ],
+      "id": "6B50DD4A73664F5FD43188C0C3B96CDCF9B86A97",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/7"
+        ],
+        "yuanshen": [
+          "38_7"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.3538301581, 31.5692138671]
+      "coordinates": [
+        -53.35383,
+        31.56921
+      ],
+      "id": "0976DFF88670FDED924F79FA7E741DE0911A9752",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/10"
+        ],
+        "yuanshen": [
+          "38_10"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8992204823, 28.1570602682]
+      "coordinates": [
+        -55.89922,
+        28.15706
+      ],
+      "id": "04AB86B0DFAAB682FA955F98B2EA0C1FF1906863",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/11"
+        ],
+        "yuanshen": [
+          "38_11"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7021510384, 28.6064338466]
+      "coordinates": [
+        -53.51325,
+        29.31323
+      ],
+      "id": "3BD55C3A53387A8AD86443FA82957F4833C88284",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/13"
+        ],
+        "yuanshen": [
+          "38_13"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.5132458829, 29.3132289812]
+      "coordinates": [
+        -52.65504,
+        28.10158
+      ],
+      "id": "866979F7F659B5FA60FE23884888D17B9D49F4CC",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/14"
+        ],
+        "yuanshen": [
+          "38_14"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.6550361901, 28.101580179]
+      "coordinates": [
+        -49.88704,
+        26.83875
+      ],
+      "id": "11E8256EB698E420FC169BC00409460292874CDA",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/15",
+          "liyueFatuiSkirmisher/25"
+        ],
+        "yuanshen": [
+          "38_15"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "liyue/fatui-skirmisher/25",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.8870438451, 26.8387484214]
+      "coordinates": [
+        -49.95775,
+        26.28405
+      ],
+      "id": "1C3DA4B1D79662145DD4D901D07D86E0F855A128",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/16"
+        ],
+        "yuanshen": [
+          "38_16"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.9577506329, 26.2840479501]
+      "coordinates": [
+        -32.80574,
+        45.85693
+      ],
+      "id": "84192753A07ECED6F846BE9938623C2F3DDB0267",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/17"
+        ],
+        "yuanshen": [
+          "38_17"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.8057447329, 45.8569335937]
+      "coordinates": [
+        -46.51131,
+        32.37401
+      ],
+      "id": "75D431ABE06561D467FF4530ED5115159D07A446",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/18"
+        ],
+        "yuanshen": [
+          "38_18"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.5113149011, 32.374007037]
+      "coordinates": [
+        -46.72467,
+        31.13906
+      ],
+      "id": "A76F1BDB60EDF352D34B7E1E79904E7BAB7F897A",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/19"
+        ],
+        "yuanshen": [
+          "38_19"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个愚人众先遣队【雷锤】"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.7246712812, 31.1390572963]
+      "coordinates": [
+        -41.865,
+        35.31883
+      ],
+      "id": "BC6DF0724ACD67ADC8740C444EFD4E36DA47A21D",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/20"
+        ],
+        "yuanshen": [
+          "38_20"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.8649957412, 35.3188316173]
+      "coordinates": [
+        -37.42603,
+        31.45295
+      ],
+      "id": "49F8A81789E452C327A19FB8E0AFC71139684F01",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/21"
+        ],
+        "yuanshen": [
+          "38_21"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4260298198, 31.452948984]
+      "coordinates": [
+        -43.06408,
+        48.25029
+      ],
+      "id": "9BC5BAA162C2B73D6FA931058BBB09F4E4703DB1",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/22"
+        ],
+        "yuanshen": [
+          "38_22"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.0640760712, 48.2502907161]
+      "coordinates": [
+        -42.60503,
+        47.94823
+      ],
+      "id": "509650FBF21414FBBC997AAFA37DC1D99A454763",
+      "importIds": {
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/23"
+        ],
+        "yuanshen": [
+          "38_23"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.6050272302, 47.948226103]
+      "coordinates": [
+        -53.48041,
+        28.50586
+      ],
+      "id": "C66646B16FB10F6955D93D0FE164A6C33AB26354",
+      "importIds": {
+        "yuanshen": [
+          "38_12"
+        ],
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/12"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个先遣队"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/38_12.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.205615911, 30.8590855168]
+      "coordinates": [
+        -47.21459,
+        30.81298
+      ],
+      "id": "86EEEE8E3897A34FA7B229DD35DEEB1E90E8C7FF",
+      "importIds": {
+        "yuanshen": [
+          "38_24"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "先遣队",
+        "en": ""
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个愚人众先遣队【风拳】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/38_24.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.5653192846123, 26.58790977642176]
+      "coordinates": [
+        -47.19551,
+        30.72553
+      ],
+      "id": "E55804A9F0C4EA0EAFD2BAE557286889543C4734",
+      "importIds": {
+        "yuanshen": [
+          "38_25"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Fatui Skirmisher"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "liyue/fatui-skirmisher/25"
+      "popupTitle": {
+        "zh": "先遣队",
+        "en": ""
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个愚人众先遣队【水铳】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/38_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -47.22163,
+        30.72003
+      ],
+      "id": "9C2F66E4170F46799548E8D6EC03D55F73783266",
+      "importIds": {
+        "yuanshen": [
+          "38_26"
+        ],
+        "gm_legacy": [
+          "liyueFatuiSkirmisher/24"
+        ]
+      },
+      "popupTitle": {
+        "zh": "先遣队",
+        "en": ""
+      },
+      "popupContent": {
+        "zh": "这是一个愚人众先遣队【冰铳】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/38_26.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

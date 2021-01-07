@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Shrine",
     "ru": "Святилище"
@@ -6,7 +7,9 @@
   "description": {
     "en": "An ancient Shrine of Depths containing a Luxurious Chest, opened only with a special key."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "liyue-shrine",
     "base": {
@@ -18,134 +21,144 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1019340572, 43.8024902343]
+      "coordinates": [-35.10193, 43.80249],
+      "id": "CC423B0A94EF09A6C14DC3A5662B04A653E6AC11",
+      "importIds": { "gm_legacy": ["liyueShrine/1"], "yuanshen": ["3_1"] },
+      "popupTitle": {
+        "en": "#1",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_1"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 1
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_1"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5688611825, 37.265625]
+      "coordinates": [-33.56886, 37.26562],
+      "id": "37AD1AFC4F466D09B0A471A97FE7DC589194CA8B",
+      "importIds": { "gm_legacy": ["liyueShrine/2"], "yuanshen": ["3_2"] },
+      "popupTitle": {
+        "en": "#2",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_2"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 2
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_2"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.0462168145, 49.4934082031]
+      "coordinates": [-41.04622, 49.49341],
+      "id": "66027246EA04A4606945F621CF14CCCEC25A21A9",
+      "importIds": { "gm_legacy": ["liyueShrine/3"], "yuanshen": ["3_3"] },
+      "popupTitle": {
+        "en": "#3",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_3"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 3
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_3"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.0668621325, 25.8508300781]
+      "coordinates": [-36.06686, 25.85083],
+      "id": "468D3030F0B9E0E7987F6B84C9597280A11D0410",
+      "importIds": { "gm_legacy": ["liyueShrine/4"], "yuanshen": ["3_4"] },
+      "popupTitle": {
+        "en": "#4",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_4"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 4
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.8311498093, 25.8508300781]
+      "coordinates": [-38.83115, 25.85083],
+      "id": "43B4758686B0082F0D2C3896FF5C9192321051BA",
+      "importIds": { "gm_legacy": ["liyueShrine/5"], "yuanshen": ["3_5"] },
+      "popupTitle": {
+        "en": "#5",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_5"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 5
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_5"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.6889690376, 24.3786621093]
+      "coordinates": [-40.68897, 24.37866],
+      "id": "697595756C590CB62D0E1142737191459B7874AB",
+      "importIds": { "gm_legacy": ["liyueShrine/6"], "yuanshen": ["3_6"] },
+      "popupTitle": {
+        "en": "#6",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_6"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 6
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_6"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9802523552, 21.9396972656]
+      "coordinates": [-46.98025, 21.9397],
+      "id": "E9C81293957F6C1481691A9554D386F70D490253",
+      "importIds": { "gm_legacy": ["liyueShrine/7"], "yuanshen": ["3_7"] },
+      "popupTitle": {
+        "en": "#7",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_7"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 7
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_7"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.7678398873, 29.1467285156]
+      "coordinates": [-51.76784, 29.14673],
+      "id": "3BA5BA9D60F57231DB2F53C595DB3B57EAC8D0B3",
+      "importIds": { "gm_legacy": ["liyueShrine/8"], "yuanshen": ["3_8"] },
+      "popupTitle": {
+        "en": "#8",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_8"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 8
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.8008783123, 31.8493652343]
+      "coordinates": [-56.80088, 31.84937],
+      "id": "7BB55E9B3BBAA5D4F97B0B19A75A06D616F99155",
+      "importIds": { "gm_legacy": ["liyueShrine/9"], "yuanshen": ["3_9"] },
+      "popupTitle": {
+        "en": "#9",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_9"
+      "popupContent": {
+        "zh": "这是一个地灵龛，从下边水流进入洞穴"
       },
-      "id": 9
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_9"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5352577468, 54.9755859375]
+      "coordinates": [-56.53526, 54.97559],
+      "id": "1A12F920CBB5D1F1EB48D0C1DA6AF71FBE28A83A",
+      "importIds": { "gm_legacy": ["liyueShrine/10"], "yuanshen": ["3_10"] },
+      "popupTitle": {
+        "en": "#10",
+        "zh": "地灵龛"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "liyue/shrine/3_10"
+      "popupContent": {
+        "zh": "这是一个地灵龛"
       },
-      "id": 10
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "liyue/shrine/3_10"
     }
   ]
 }

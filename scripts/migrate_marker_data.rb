@@ -14,6 +14,9 @@ DEFAULT_FEATURE = {
   'name' => { # Localized string.
     'en' => 'NO NAME'
   },
+  'description' => { # Localized string.
+    'en' => ''
+  },
   'enabled' => true, # Boolean.
   'cluster' => 'off', # off, on, or variable.
   'respawn' => 'none', # Number of seconds until respawn.
@@ -115,7 +118,9 @@ def migrate_feature(input_json, absolute_name, options)
 
   # Features we can move without formatting changes.
   # Features not present are left as default with the 'if' statement.
-  %w[name cluster respawn enabled icons].each { |x| output_json[x] = input_json[x] if input_json[x] }
+  %w[name description respawn enabled icons].each { |x| output_json[x] = input_json[x] if input_json[x] }
+  # No longer a boolean.
+  output_json['cluster'] = input_json['cluster'] ? 'on' : 'off'
 
   output_json['data'] = input_json['data'].map { |x| migrate_marker(x, absolute_name, options) }
 
@@ -125,13 +130,16 @@ end
 
 def process_data_file(input, output, options)
   begin
-    input_json = JSON.parse(File.open(input).read)
+    input_json = JSON.parse(File.open(input, 'r:UTF-8').read)
   rescue JSON::ParserError => e
     puts("  COULD NOT PARSE JSON: #{e.message}")
     return
   end
 
-  return if input_json['format'] == DEFAULT_FEATURE['format']
+  if input_json['format'] == DEFAULT_FEATURE['format']
+    puts("  Format up-to-date, skipping...")
+    return
+  end
 
   absolute_name = build_absolute_name(input)
   output_json = migrate_feature(input_json, absolute_name, options)

@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Abyss Mage",
     "ru": "Маг Бездны"
@@ -6,8 +7,9 @@
   "description": {
     "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches."
   },
-  "cluster": false,
-  "respawn": 86400,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "pyro-abyss-mage",
     "base": {
@@ -19,95 +21,140 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.2590820629, 68.1369369843]
+      "coordinates": [-26.25908, 68.13694],
+      "id": "D9417583D8D08F47143989FF4A8D1C46CCED769D",
+      "importIds": {
+        "yuanshen": ["31_1"],
+        "gm_legacy": ["liyueAbyssMage/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#1",
+        "zh": "深渊法师"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.3906661532, 63.2863817004]
+      "coordinates": [-34.39067, 63.28638],
+      "id": "2F663946A9169436457D027DC44BD7C56A913697",
+      "importIds": {
+        "yuanshen": ["31_2"],
+        "gm_legacy": ["liyueAbyssMage/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#2",
+        "zh": "深渊法师"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_2.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1646941887, 65.1214599609]
+      "coordinates": [-37.16469, 65.12146],
+      "id": "17F9FCAC2CE428FAA34300BBDFBB4114FC5F1230",
+      "importIds": {
+        "yuanshen": ["31_3"],
+        "gm_legacy": ["liyueAbyssMage/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#3",
+        "zh": "深渊法师"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_3.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.5909964603, 46.4598454484]
+      "coordinates": [-17.591, 46.45985],
+      "id": "8B0BB1A239F5BEDA7F90C9CA0C0FC989ABEE7D12",
+      "importIds": {
+        "yuanshen": ["31_4"],
+        "gm_legacy": ["liyueAbyssMage/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#4",
+        "zh": "深渊法师"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_4.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.5538204859, 40.3078916462]
+      "coordinates": [-19.55382, 40.30789],
+      "id": "836A9458BBC425E082F2B37417F4C338152CA15B",
+      "importIds": {
+        "yuanshen": ["31_5"],
+        "gm_legacy": ["liyueAbyssMage/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#5",
+        "zh": "深渊法师"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_5.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.5732988856, 48.2676397594]
+      "coordinates": [-26.5733, 48.26764],
+      "id": "D432F5E7B340F6BB349C37B97633DE0BAB01E537",
+      "importIds": {
+        "yuanshen": ["31_6"],
+        "gm_legacy": ["liyueAbyssMage/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#6",
+        "zh": "深渊法师"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_6.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.5174985657, 68.1527337979]
+      "coordinates": [-19.5175, 68.15273],
+      "id": "63B41EC71A471B31CA3C83F3E08454717143C2B8",
+      "importIds": {
+        "yuanshen": ["31_7"],
+        "gm_legacy": ["liyueAbyssMage/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "en": "#7",
+        "zh": "深渊法师"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.65838, 63.77012],
+      "id": "E9283C9DE6229C47052BC5D20FE12DCF497D407A",
+      "importIds": {
+        "yuanshen": ["31_8"],
+        "gm_legacy": ["liyueAbyssMage/8"]
+      },
+      "popupTitle": {
+        "en": "#8",
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个火深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_8.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

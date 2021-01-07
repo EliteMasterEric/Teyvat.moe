@@ -17,3 +17,11 @@ OUTDATED AND NOT USEFUL ANYMORE: Script which uses the locations of comment imag
 ## migrate_marker_data.rb
 
 Converts old marker data to MSFv2, while maintaining references to allow for old user profiles to migrate.
+
+## rip_yuanshen.rb
+
+Rips Yuanshen marker data and converts it to MSFv2, while maintaining Chinese description data.
+
+## merge_yuanshen_migrate.rb
+
+Combines data from migrate_marker_data.rb and rip_yuanshen.rb. Any markers with the same coordinates will be seamlessly merged, and any markers with no corresonding marker in one or the other will be annotated for review.

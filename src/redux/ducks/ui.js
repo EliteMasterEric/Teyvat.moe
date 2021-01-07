@@ -7,6 +7,10 @@ import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPre
  */
 export const SET_EDITOR_ENABLED = 'genshinmap/ui/SET_EDITOR_ENABLED';
 /**
+ * This action sets only whether the Debug display is visible.
+ */
+export const SET_DEBUG_ENABLED = 'genshinmap/ui/SET_DEBUG_ENABLED';
+/**
  * This action sets only which marker is highlighted on the editor.
  */
 export const SET_EDITOR_HIGHLIGHT = 'genshinmap/ui/SET_EDITOR_HIGHLIGHT';
@@ -65,6 +69,12 @@ const uiReducer = (state, action) => {
         ...state,
         editorEnabled: action.payload.enabled,
       };
+    case SET_DEBUG_ENABLED:
+      // Set whether the Editor is enabled.
+      return {
+        ...state,
+        displayDebug: action.payload.enabled,
+      };
     case SET_EDITOR_HIGHLIGHT:
       // Set which marker ID is highlighted in the editor.
       return {
@@ -97,6 +107,14 @@ export default uiReducer;
  */
 export const setEditorEnabled = (enabled) => {
   return { type: SET_EDITOR_ENABLED, payload: { enabled } };
+};
+/**
+ * Set whether the Debug display is enabled.
+ * @param {*} enabled The new state of debug visibility.
+ * @returns An action to be dispatched.
+ */
+export const setDebugEnabled = (enabled) => {
+  return { type: SET_DEBUG_ENABLED, payload: { enabled } };
 };
 /**
  * Set which marker ID is highlighted in the editor.

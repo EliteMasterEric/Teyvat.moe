@@ -23,6 +23,7 @@ import uiReducer, {
   SET_CONTROLS_REGION,
   SET_CONTROLS_OPEN,
   SET_EDITOR_ENABLED,
+  SET_DEBUG_ENABLED,
   SET_EDITOR_HIGHLIGHT,
   SET_POSITION_AND_ZOOM,
 } from '~/redux/ducks/ui';
@@ -96,6 +97,7 @@ const rootReducer = (state = initialState, action) => {
       // Handle displayed actions here.
       return displayedReducer(state, action);
     case SET_EDITOR_ENABLED:
+    case SET_DEBUG_ENABLED:
     case SET_EDITOR_HIGHLIGHT:
     case SET_POSITION_AND_ZOOM:
     case SET_CONTROLS_TAB:

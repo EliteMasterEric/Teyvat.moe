@@ -9,6 +9,7 @@ import { createMapIcon } from '~/components/data/MapFeaturesData';
 import { Image, useImageExtension } from '~/components/interface/Image';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
+import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 
 const POPUP_WIDTH = '560';
 
@@ -92,8 +93,10 @@ const FeatureMedia = ({ media, allowExternalMedia }) => {
 const _FeatureMarker = ({
   marker,
   icons,
+
   completed,
   completedAlpha,
+
   markFeature,
   unmarkFeature,
   allowExternalMedia = false,
@@ -120,23 +123,61 @@ const _FeatureMarker = ({
         completed,
       });
 
-  const onCompletedChanged = (event) => {
-    if (event.target.checked) {
-      markFeature();
-    } else {
+  const onSingleClick = (event) => {
+    // Calls on single clicks, not double clicks.
+
+    // Trigger the popup to display only on single clicks.
+    event.target.openPopup();
+  };
+
+  const onDoubleClick = (_event) => {
+    // Calls on double clicks, not single clicks.
+
+    // Mark as completed.
+    if (completed) {
       unmarkFeature();
+    } else {
+      markFeature();
     }
   };
+
+  const DOUBLE_CLICK_TIMEOUT = 300;
+
+  /* eslint-disable no-param-reassign */
+  const eventHandlers = {
+    add: (event) => {
+      // We will be triggering popups manually.
+      event.target.off('click', event.target._openPopup);
+    },
+    click: (event) => {
+      if (event.target.clicks === undefined) event.target.clicks = 0;
+
+      event.target.clicks += 1;
+
+      setTimeout(() => {
+        if (event.target.clicks === 1) {
+          onSingleClick(event);
+        }
+        event.target.clicks = 0;
+      }, DOUBLE_CLICK_TIMEOUT);
+    },
+    dblclick: (event) => {
+      event.target.clicks = 0;
+      onDoubleClick(event);
+    },
+  };
+  /* eslint-enable no-param-reassign */
 
   const title = localizeField(marker.popupTitle);
   const content = localizeField(marker.popupContent);
 
   return (
     <Marker
-      key={marker.id}
+      eventHandlers={eventHandlers}
       position={marker.coordinates}
       icon={icon}
       opacity={completed ? completedAlpha : 1}
+      completed={completed} // Used only by the progress display on the tracker.
     >
       {/* A modern variant of MapPopupLegacy. */}
       <Popup maxWidth={540} minWidth={192} autoPan={false} keepInView={false}>
@@ -162,7 +203,7 @@ const _FeatureMarker = ({
               size="small"
               color="primary"
               value={completed !== undefined}
-              onChange={onCompletedChanged}
+              onChange={(event) => (event.target.checked ? markFeature() : unmarkFeature())}
             />
           </Box>
           {completed ? (
@@ -178,11 +219,15 @@ const _FeatureMarker = ({
   );
 };
 
-const mapStateToProps = (state, { feature }) => ({
+const mapStateToProps = (state, { feature, featureKey, marker }) => ({
+  completed: (state.completed.features[featureKey] ?? [])[marker.id],
   completedAlpha: state.options.completedAlpha,
   icons: feature.icons,
 });
-const mapDispatchToProps = (_dispatch) => ({});
+const mapDispatchToProps = (dispatch, { marker, featureKey }) => ({
+  markFeature: () => dispatch(setFeatureMarkerCompleted(featureKey, marker.id)),
+  unmarkFeature: () => dispatch(clearFeatureMarkerCompleted(featureKey, marker.id)),
+});
 const FeatureMarker = connect(mapStateToProps, mapDispatchToProps)(_FeatureMarker);
 
 export default FeatureMarker;

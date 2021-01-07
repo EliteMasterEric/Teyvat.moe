@@ -33,7 +33,7 @@ import {
   setShowHiddenFeatures,
   setWorldBorderEnabled,
 } from '~/redux/ducks/options';
-import { setEditorEnabled } from '~/redux/ducks/ui';
+import { setDebugEnabled, setEditorEnabled } from '~/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {
@@ -75,6 +75,7 @@ const _MapControlsOptions = ({
   setHideFeaturesInEditor,
   setShowHiddenFeatures,
   setHideRoutesInEditor,
+  setDebugEnabled,
   importData,
   importLegacyData,
   clearState,
@@ -167,6 +168,15 @@ const _MapControlsOptions = ({
             checked={options.showHiddenFeatures}
           />
         </Box>
+        <Box className={classes.optionContainer}>
+          <Typography className={classes.label}>{t('options-display-debug')}</Typography>
+          <Switch
+            size="small"
+            color="primary"
+            onChange={(event) => setDebugEnabled(event.target.checked)}
+            checked={options.displayDebug}
+          />
+        </Box>
       </BorderBox>
       <BorderBox overflow="show">
         <Box className={classes.optionContainer}>
@@ -238,6 +248,7 @@ const mapDispatchToProps = (dispatch) => ({
   setHideFeaturesInEditor: (enabled) => dispatch(setHideFeaturesInEditor(enabled)),
   setHideRoutesInEditor: (enabled) => dispatch(setHideRoutesInEditor(enabled)),
   setShowHiddenFeatures: (enabled) => dispatch(setShowHiddenFeatures(enabled)),
+  setDebugEnabled: (enabled) => dispatch(setDebugEnabled(enabled)),
   setOverrideLang: (lang) => dispatch(setOverrideLang(lang)),
   importData: (data) => {
     const action = importNewDataFromString(data);

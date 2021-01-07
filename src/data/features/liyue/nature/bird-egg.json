@@ -1,9 +1,16 @@
 {
-  "name": { "en": "Bird Egg", "ru": "Яйцо" },
+  "format": 2,
+  "name": {
+    "en": "Bird Egg",
+    "ru": "Яйцо",
+    "zh": ""
+  },
   "description": {
     "en": "A versatile food used in various Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "bird-egg",
     "base": {
@@ -13,5 +20,237 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [
+        -34.95254,
+        42.32536
+      ],
+      "id": "5EA2ABB8555AAE579B037AF1BE839B39F8F782E6",
+      "importIds": {
+        "yuanshen": [
+          "121_1"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 5EA2ABB8"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.50231,
+        46.2744
+      ],
+      "id": "67660105D7E97CFE8F187FDA3F2000E5E04D8347",
+      "importIds": {
+        "yuanshen": [
+          "121_2"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 67660105"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.32319,
+        30.16196
+      ],
+      "id": "A2B73A723E128928AA9760CFDF8E6F2BD3E963A5",
+      "importIds": {
+        "yuanshen": [
+          "121_3"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: A2B73A72"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.25667,
+        29.49097
+      ],
+      "id": "04A7F9585046B8C3AEF420E99251E143D01B62B5",
+      "importIds": {
+        "yuanshen": [
+          "121_4"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 04A7F958"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.13885,
+        27.81006
+      ],
+      "id": "84147D6F38D79BA63C8BAA5B5244666FA5706D0D",
+      "importIds": {
+        "yuanshen": [
+          "121_5"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 84147D6F"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -41.72041,
+        19.46799
+      ],
+      "id": "A909861B3E6DB835A578A21AFF704738BDFE8859",
+      "importIds": {
+        "yuanshen": [
+          "121_6"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: A909861B"
+      },
+      "popupContent": {
+        "zh": "山顶上有八个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -45.36939,
+        48.66872
+      ],
+      "id": "927AD226E82687B505C7EC7C1A9CE9925E5BECBC",
+      "importIds": {
+        "yuanshen": [
+          "121_7"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 927AD226"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -44.25614,
+        42.0288
+      ],
+      "id": "2CAF9CBCB1D37DE21306CCF6236AB16D3E1979A0",
+      "importIds": {
+        "yuanshen": [
+          "121_9"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 2CAF9CBC"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -52.05699,
+        54.84741
+      ],
+      "id": "D731F57270D445F2BA3CAE077A9EFAB5A415DCA8",
+      "importIds": {
+        "yuanshen": [
+          "121_10"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: D731F572"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -45.02436,
+        26.03775
+      ],
+      "id": "50DE028A6FE5D0622E1826FC6A8FADEE03C4962E",
+      "importIds": {
+        "yuanshen": [
+          "121_11"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 50DE028A"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.33587,
+        36.49004
+      ],
+      "id": "6EA6ACCDA4B20DC950538CB7BEB915EB0A17BA5E",
+      "importIds": {
+        "yuanshen": [
+          "121_12"
+        ]
+      },
+      "popupTitle": {
+        "zh": "鸟蛋",
+        "en": "NEW MARKER: 6EA6ACCD"
+      },
+      "popupContent": {
+        "zh": "鸟窝里有两个鸟蛋"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/121_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }
