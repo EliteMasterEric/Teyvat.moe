@@ -7,11 +7,8 @@ import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import {
-  getEmptyFeatureCategories,
-  getEmptyRouteCategories,
-  MapCategories,
-} from '~/components/data/MapFeatures';
+import MapCategories from '~/components/data/MapCategories';
+import { getEmptyFeatureCategories, getEmptyRouteCategories } from '~/components/data/MapFeatures';
 import { t } from '~/components/i18n/Localization';
 import { setControlsCategory } from '~/redux/ducks/ui';
 

@@ -1,8 +1,15 @@
 {
+  "format": 2,
   "name": {
-    "en": "Viewpoint"
+    "en": "Viewpoint",
+    "ru": "Точка обзора"
   },
-  "cluster": false,
+  "description": {
+    "en": "Collect the marker to add a new image to your Archive."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "viewpoint",
     "base": {
@@ -16,174 +23,145 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.046463999666567, 62.95166015625001]
+      "coordinates": [-24.04646, 62.95166],
+      "id": "97DD9A5FD0FC95A61142CD3FC3C22E95E1D53506",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "The City of Wind"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/city-of-wind"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "The City of Wind",
+        "ru": "Город Ветров"
+      },
+      "popupContent": {
+        "ru": "Ветер разносит по миру семена одуванчиков, слова и песни. А ещё он указывает путь юным путешественникам. Добро пожаловать в Мондштадт."
+      },
+      "popupMedia": "mondstadt/viewpoint/city-of-wind"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.857194700969636, 65.76416015625001]
+      "coordinates": [-22.85719, 65.76416],
+      "id": "A1F16788ED5636BCC75735DDEFC95BD6D95170F1",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "The Marsh of Celestial Guardians"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/marsh-of-celestial-guardians"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "The Marsh of Celestial Guardians",
+        "ru": "Озеро, оберегающее статую"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/marsh-of-celestial-guardians"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.748396571187392, 61.11694335937501]
+      "coordinates": [-28.7484, 61.11694],
+      "id": "1B9EB822AF922DA62A6543ACF3BE0AC07092D1E6",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Windswept Wilderness"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/windswept-wilderness"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Windswept Wilderness",
+        "ru": "Долина, продуваемая ветром"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/windswept-wilderness"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.07537517955836, 56.99707031250001]
+      "coordinates": [-29.07538, 56.99707],
+      "id": "D75D6D1532E8E4669FE85D32252194E96C321BD3",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Land of Clear Springs"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/land-of-clear-springs"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Land of Clear Springs",
+        "ru": "Колыбель родника"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/land-of-clear-springs"
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.911651004518244, 49.8779296875]
+      "coordinates": [-30.91165, 49.87793],
+      "id": "0AE0A35D651060535F56E3175E0BB57AD7611AFC",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Manor of Daybreak"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/manor-of-daybreak"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Manor of Daybreak",
+        "ru": "Усадьба лучей рассвета"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/manor-of-daybreak"
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.686952411999144, 54.89868164062501]
+      "coordinates": [-24.68695, 54.89868],
+      "id": "ED2EAC8458DB8F57F1059369D130873783B7EA0D",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Favonius Cathedral"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/favonius-cathedral"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Favonius Cathedral",
+        "ru": "Собор Барбатоса"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/favonius-cathedral"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.15543796871355, 56.22802734375001]
+      "coordinates": [-26.15544, 56.22803],
+      "id": "AC3DAA6ECDD66E19190954DFE22A43780E523F75",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Knights of Favonius - Library"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/knights-of-favonius-library"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Knights of Favonius - Library",
+        "ru": "Ордо Фавониус - Библиотека"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/knights-of-favonius-library"
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.946096014998382, 70.80688476562501]
+      "coordinates": [-23.9461, 70.80688],
+      "id": "C36F43E7EF2945E1F6D215A06D3204FD991BF728",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Ancient Thousand Winds Temple"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/ancient-thousand-winds-temple"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Ancient Thousand Winds Temple",
+        "ru": "Пустынный храм Тысячи ветров"
+      },
+      "popupMedia": "mondstadt/viewpoint/ancient-thousand-winds-temple"
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5096361573305, 66.36840820312501]
+      "coordinates": [-36.50964, 66.36841],
+      "id": "20619E02F62FA469512E7B8A002916BCF176708B",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Forgotten Sword Cemetery"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/forgotten-sword-cemetery"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Forgotten Sword Cemetery",
+        "ru": "Безымянное кладбище мечей"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/forgotten-sword-cemetery"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.81839009384496, 47.94433593750001]
+      "coordinates": [-19.81839, 47.94434],
+      "id": "524539A0F2FA1A623137B982441499C02380ECAB",
+      "importIds": {
+        "gm_legacy": ["mondstadtViewpoint/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Ancient Capital of Howling Winds"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/viewpoint/ancient-capital-of-howling-winds"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Ancient Capital of Howling Winds",
+        "ru": "Древняя столица пронзительных ветров"
+      },
+      "popupContent": {},
+      "popupMedia": "mondstadt/viewpoint/ancient-capital-of-howling-winds"
     }
   ]
 }

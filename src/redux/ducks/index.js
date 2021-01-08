@@ -12,25 +12,30 @@ import completedReducer, {
   CLEAR_FEATURE_MARKER_COMPLETED,
   SET_FEATURES_COMPLETED,
   SET_FEATURE_MARKER_COMPLETED,
-} from './completed';
-import displayedReducer, { SET_FEATURE_DISPLAYED, SET_ROUTE_DISPLAYED } from './displayed';
+} from '~/redux/ducks/completed';
+import displayedReducer, {
+  SET_FEATURE_DISPLAYED,
+  SET_ROUTE_DISPLAYED,
+} from '~/redux/ducks/displayed';
 import uiReducer, {
   SET_CONTROLS_CATEGORY,
   SET_CONTROLS_TAB,
   SET_CONTROLS_REGION,
   SET_CONTROLS_OPEN,
   SET_EDITOR_ENABLED,
+  SET_DEBUG_ENABLED,
   SET_EDITOR_HIGHLIGHT,
+  SET_TOAST,
   SET_POSITION_AND_ZOOM,
-} from './ui';
-import optionsReducer, { SET_OPTIONS } from './options';
+} from '~/redux/ducks/ui';
+import optionsReducer, { SET_OPTIONS } from '~/redux/ducks/options';
 import editorReducer, {
   CLEAR_EDITOR_DATA,
   REMOVE_ELEMENT,
   SET_ELEMENT_PROPERTY,
   APPEND_ELEMENT,
-} from './editor';
-import importReducer, { SET_STATE, SET_IMPORT_ERROR } from './import';
+} from '~/redux/ducks/editor';
+import importReducer, { SET_STATE, SET_IMPORT_ERROR } from '~/redux/ducks/import';
 
 // List action types.
 /**
@@ -93,12 +98,14 @@ const rootReducer = (state = initialState, action) => {
       // Handle displayed actions here.
       return displayedReducer(state, action);
     case SET_EDITOR_ENABLED:
+    case SET_DEBUG_ENABLED:
     case SET_EDITOR_HIGHLIGHT:
     case SET_POSITION_AND_ZOOM:
     case SET_CONTROLS_TAB:
     case SET_CONTROLS_CATEGORY:
     case SET_CONTROLS_REGION:
     case SET_CONTROLS_OPEN:
+    case SET_TOAST:
       // Handle UI actions here.
       return uiReducer(state, action);
     case SET_IMPORT_ERROR:

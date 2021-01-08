@@ -14,7 +14,7 @@ import React from 'react';
 
 // Classes used by Leaflet to position controls.
 const POSITION_CLASSES = {
-  bottomleft: 'leaflet-bottom leaflet-left',
+  bottomleft: 'leaflet-bottom leaflet-left leaflet-bottom-left-offset',
   bottomright: 'leaflet-bottom leaflet-right',
   topleft: 'leaflet-top leaflet-left leaflet-top-left-offset',
   topright: 'leaflet-top leaflet-right',

@@ -13,17 +13,18 @@ import { connect } from 'react-redux';
 import { createMapIcon } from '~/components/data/MapFeaturesData';
 import { useImageExtension } from '~/components/interface/Image';
 import { hashObject } from '~/components/Util';
+import FeatureMarker from '~/components/views/map/layers/FeatureMarker';
 import MapCluster, {
   offClusterFunction,
   onClusterFunction,
   variableClusterFunction,
 } from '~/components/views/map/MapCluster';
-import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopup';
-import store from '~/redux';
+import { buildPopup, POPUP_WIDTH } from '~/components/views/map/MapPopupLegacy';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 
 const _FeatureLayer = ({
   mapFeature,
+  featureKey,
 
   clusterMarkers,
   displayed,
@@ -45,13 +46,13 @@ const _FeatureLayer = ({
     // Note that GeoJSON reverses these.
     const icon = completed
       ? createMapIcon({
-          ...mapFeature.icons.done,
+          ...mapFeature?.icons?.done,
           ext: mapFeature?.icons?.done?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.done.key ?? mapFeature.icons.filter,
           completed: true,
         })
       : createMapIcon({
-          ...mapFeature.icons.base,
+          ...mapFeature?.icons?.base,
           ext: mapFeature?.icons?.base?.svg ?? false ? 'svg' : ext,
           key: mapFeature.icons.base.key ?? mapFeature.icons.filter,
           completed: false,
@@ -72,7 +73,7 @@ const _FeatureLayer = ({
   const onDoubleClickMarker = (feature, _event) => {
     // Get the state in real time.
     // If the editor is not enabled, don't mark as completed.
-    if (store.getState().editorEnabled) return;
+    // if (store.getState().editorEnabled) return;
 
     const completed = _.has(completedIds, feature?.id);
     // Mark as completed.
@@ -102,37 +103,60 @@ const _FeatureLayer = ({
   };
 
   // If any of these values change, update the map.
+  // Only used for legacy GeoJSON features.
   const hashValue = {
     clusterMarkers,
     mapFeature,
     completedIds,
   };
 
-  let clusterFunction = offClusterFunction;
-
-  if (['mondstadtCommonChest', 'liyueCommonChest'].includes(mapFeature.key)) {
-    clusterFunction = variableClusterFunction;
-  } else if (mapFeature.cluster === 'on') {
-    clusterFunction = onClusterFunction;
+  // Choose the proper clustering function.
+  let clusterFunction = null;
+  switch (mapFeature.cluster) {
+    case 'variable':
+      clusterFunction = variableClusterFunction;
+      break;
+    case 'off':
+      clusterFunction = offClusterFunction;
+      break;
+    case 'on':
+    default:
+      clusterFunction = onClusterFunction;
+      break;
   }
 
-  // Cluster if enabled by the user and the feature type supports it.
-  return (
-    <MapCluster clusterFunction={clusterFunction}>
+  const dataView =
+    mapFeature.format === 2 ? (
+      mapFeature.data.map((marker) => {
+        return (
+          <FeatureMarker
+            key={marker.id}
+            marker={marker}
+            feature={mapFeature}
+            featureKey={featureKey}
+          />
+        );
+      })
+    ) : (
       <GeoJSON
         key={hashObject(hashValue)}
         data={mapFeature.data}
         pointToLayer={pointToLayer}
         onEachFeature={onEachFeature}
       />
+    );
+
+  // Cluster if enabled by the user and the feature type supports it.
+  return (
+    <MapCluster legacy={mapFeature.format !== 2} clusterFunction={clusterFunction}>
+      {dataView}
     </MapCluster>
   );
 };
 
 const mapStateToProps = (state, { mapFeature, featureKey }) => ({
   clusterMarkers: state.options.clusterMarkers && (mapFeature?.cluster ?? false),
-  completedIds: state.completed.features[featureKey],
-  completedAlpha: state.options.completedAlpha,
+  completedIds: state.completed.features[featureKey] ?? [],
 
   // Display the feature if the feature is enabled in the controls,
   // and we aren't in the state of (editor on + hide features when editor is on)

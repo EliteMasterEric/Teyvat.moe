@@ -1,9 +1,14 @@
 {
+  "format": 2,
   "name": {
     "en": "Meteorite Shard"
   },
+  "description": {
+    "en": "A collection of celestial energy that once comprised an adventurer's Constellation. Part of the Unreconciled Stars event."
+  },
   "enabled": false,
-  "cluster": false,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "meteorite-shard",
     "base": {
@@ -15,701 +20,619 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.85130210558968, 64.27001953125001]
+      "coordinates": [-21.8513, 64.27002],
+      "id": "EA91096774C25E976805CCF841FEC794007BC1C4",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #1"
-        },
-        "popupContent": {
-          "en": "This shard is located on the back side of the island."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-1"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #1"
       },
-      "id": 1
+      "popupContent": {
+        "en": "This shard is located on the back side of the island."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-1"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.760986169250472, 65.65429687500001]
+      "coordinates": [-22.76099, 65.6543],
+      "id": "94173C5D95ABC9640D2D82FE12DD2B2F876C5026",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #2"
-        },
-        "popupContent": {
-          "en": "This shard is located on the ground by a rock formation."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-2"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #2"
       },
-      "id": 2
+      "popupContent": {
+        "en": "This shard is located on the ground by a rock formation."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-2"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.540221355754714, 65.81359863281251]
+      "coordinates": [-20.54022, 65.8136],
+      "id": "C08AEA49778F56724499EF16225154D2A3F1B27F",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #3"
-        },
-        "popupContent": {
-          "en": "This shard is located high up on a cliff face."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-3"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #3"
       },
-      "id": 3
+      "popupContent": {
+        "en": "This shard is located high up on a cliff face."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-3"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.374221832433058, 60.55959140137165]
+      "coordinates": [-21.37422, 60.55959],
+      "id": "8CF23A57A4C2A3AF34174C8428A9243BFEFBD147",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #4"
-        },
-        "popupContent": {
-          "en": "This shard is by the water's edge on a small ledge below the main ground level."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-4"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #4"
       },
-      "id": 4
+      "popupContent": {
+        "en": "This shard is by the water's edge on a small ledge below the main ground level."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.669681880942303, 60.7708740234375]
+      "coordinates": [-23.66968, 60.77087],
+      "id": "DC317A4BA3D0183E4A6251A1A3C6AE6F76629817",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #5"
-        },
-        "popupContent": {
-          "en": "This shard is located sticking out of the side of the cliff."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-5"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #5"
       },
-      "id": 5
+      "popupContent": {
+        "en": "This shard is located sticking out of the side of the cliff."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-5"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.309269760067764, 62.29797363281251]
+      "coordinates": [-25.30927, 62.29797],
+      "id": "05D557BF067E43F27137D643C12BC5423CABAD35",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #6"
-        },
-        "popupContent": {
-          "en": "This shard is located on top of a small pile of rocks at the bottom of the cliff."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-6"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #6"
       },
-      "id": 6
+      "popupContent": {
+        "en": "This shard is located on top of a small pile of rocks at the bottom of the cliff."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-6"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.667095801104804, 61.53991699218751]
+      "coordinates": [-26.6671, 61.53992],
+      "id": "F6AC60DB74D66BFBA448F2EFDD5E0BECAA52547E",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #7"
-        },
-        "popupContent": {
-          "en": "This shard is located midway up this cliff face."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-7"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #7"
       },
-      "id": 7
+      "popupContent": {
+        "en": "This shard is located midway up this cliff face."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-7"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.254629577800078, 62.14416503906251]
+      "coordinates": [-27.25463, 62.14417],
+      "id": "916EA83760B96F7BCFC563E4DA78397A6DD0D78A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #8"
-        },
-        "popupContent": {
-          "en": "This shard is located on top of the Domain building."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-8"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #8"
       },
-      "id": 8
+      "popupContent": {
+        "en": "This shard is located on top of the Domain building."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.052590823339845, 65.01708984375001]
+      "coordinates": [-28.05259, 65.01709],
+      "id": "9B03F5AB70F91E9855029FCDF4031246C483D79B",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #9"
-        },
-        "popupContent": {
-          "en": "This shard is located midway up the cliff face, by some Electro slimes."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-9"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #9"
       },
-      "id": 9
+      "popupContent": {
+        "en": "This shard is located midway up the cliff face, by some Electro slimes."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-9"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.613459424004414, 68.68652343750001]
+      "coordinates": [-28.61346, 68.68652],
+      "id": "6CBE298C664C47EF1E345105DAC273B59BDDCE78",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #10"
-        },
-        "popupContent": {
-          "en": "This shard is located on the cliff wall above the Cryo Regisvine, but can be reached without climbing."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-10"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #10"
       },
-      "id": 10
+      "popupContent": {
+        "en": "This shard is located on the cliff wall above the Cryo Regisvine, but can be reached without climbing."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-10"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.127591028502092, 70.88378906250001]
+      "coordinates": [-27.12759, 70.88379],
+      "id": "1A5F4BA8057D020736C8BEC1D457B86C97A46749",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #11"
-        },
-        "popupContent": {
-          "en": "This shard is located annoyingly high up the wall."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-11"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #11"
       },
-      "id": 11
+      "popupContent": {
+        "en": "This shard is located annoyingly high up the wall."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-11"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.05678288577881, 69.87304687500001]
+      "coordinates": [-26.05678, 69.87305],
+      "id": "1B1A5089F27B9D02B41D1DCD2013BA2BB7B0B05F",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #12"
-        },
-        "popupContent": {
-          "en": "This shard is located on the ground nestled near a chunk of ruins."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-12"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #12"
       },
-      "id": 12
+      "popupContent": {
+        "en": "This shard is located on the ground nestled near a chunk of ruins."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-12"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.246964554300924, 70.02685546875001]
+      "coordinates": [-24.24696, 70.02686],
+      "id": "5B39B1B9281B6473FC9AAB68ADF3A94955E27C22",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #13"
-        },
-        "popupContent": {
-          "en": "This shard is located in the gap near the bottom of the seating area. Beware of the Ruin Guard here."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-13"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #13"
       },
-      "id": 13
+      "popupContent": {
+        "en": "This shard is located in the gap near the bottom of the seating area. Beware of the Ruin Guard here."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-13"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.026396666017327, 72.52075195312501]
+      "coordinates": [-24.0264, 72.52075],
+      "id": "2EA1886A1228E7463BE46E9815FF11FC05B716B0",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #22"
-        },
-        "popupContent": {
-          "en": "This shard is located on a small island rock formation off the cliff."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-22"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #22"
       },
-      "id": 14
+      "popupContent": {
+        "en": "This shard is located on a small island rock formation off the cliff."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-22"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.37124437061831, 69.89501953125001]
+      "coordinates": [-21.37124, 69.89502],
+      "id": "904E0C79E19F842AA5282A5238E43C572655B09A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #14"
-        },
-        "popupContent": {
-          "en": "This shard is located AT THE TOP (not the bottom) of this cliff, just behind where the couple are at night."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-14"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #14"
       },
-      "id": 15
+      "popupContent": {
+        "en": "This shard is located AT THE TOP (not the bottom) of this cliff, just behind where the couple are at night."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-14"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.553147478403194, 67.41210937500001]
+      "coordinates": [-22.55315, 67.41211],
+      "id": "E9B477178FEE024F1DF026AB3DC031E3667DC030",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #15"
-        },
-        "popupContent": {
-          "en": "This shard is located near the top of this waterfall."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-15"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #15"
       },
-      "id": 16
+      "popupContent": {
+        "en": "This shard is located near the top of this waterfall."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-15"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.467150664738988, 67.09350585937501]
+      "coordinates": [-24.46715, 67.09351],
+      "id": "A65C30A2DE4F5F395EE5C102E9CCD6D0EC45D0CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #16"
-        },
-        "popupContent": {
-          "en": "This shard is located at the top of this rocky outcropping."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-16"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #16"
       },
-      "id": 17
+      "popupContent": {
+        "en": "This shard is located at the top of this rocky outcropping."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-16"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.63301706043418, 66.30828666834238]
+      "coordinates": [-25.63302, 66.30829],
+      "id": "A3108210E4C01E8A53EFDEA006CEAD4D302BDCD4",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #17"
-        },
-        "popupContent": {
-          "en": "This shard is located near the shore of this small pond."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-17"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #17"
       },
-      "id": 18
+      "popupContent": {
+        "en": "This shard is located near the shore of this small pond."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-17"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.710836919640606, 68.31848144531251]
+      "coordinates": [-25.71084, 68.31848],
+      "id": "B3C4985C19B984926CBDDCCF0D1C66850BEE6842",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #18"
-        },
-        "popupContent": {
-          "en": "This shard is located up the rock face."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-18"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #18"
       },
-      "id": 19
+      "popupContent": {
+        "en": "This shard is located up the rock face."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-18"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.657277674217585, 66.75842285156251]
+      "coordinates": [-26.65728, 66.75842],
+      "id": "20CAB36A3E8FFB644EDE46E06EADFC96EA8749D9",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #19"
-        },
-        "popupContent": {
-          "en": "This shard is located at the peak of the hut's roof."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-19"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #19"
       },
-      "id": 20
+      "popupContent": {
+        "en": "This shard is located at the peak of the hut's roof."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-19"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.165298896316042, 64.62158203125001]
+      "coordinates": [-26.1653, 64.62158],
+      "id": "11273618B3AB5C68983A854504825EBFE14D8E3B",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #20"
-        },
-        "popupContent": {
-          "en": "This shard is in the middle of the field, being inspected by hilichurls."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-20"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #20"
       },
-      "id": 21
+      "popupContent": {
+        "en": "This shard is in the middle of the field, being inspected by hilichurls."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-20"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.302046975036557, 64.47326660156251]
+      "coordinates": [-24.30205, 64.47327],
+      "id": "EE8A793471E2D0DDCA4CA0413C52EFD427242061",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Where Stars Fall #21"
-        },
-        "popupContent": {
-          "en": "This shard is located near the bottom, at the crevice of this cliff."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-21"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Where Stars Fall #21"
       },
-      "id": 22
+      "popupContent": {
+        "en": "This shard is located near the bottom, at the crevice of this cliff."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/where-stars-fall-21"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.35860694237141, 67.0929058872127]
+      "coordinates": [-34.35861, 67.09291],
+      "id": "4AF2976410979E3873A5C9964E8F1F1C0AFD3352",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #1"
-        },
-        "popupContent": {
-          "en": "This shard is located near the Shrine of Depths."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-1"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #1"
       },
-      "id": 23
+      "popupContent": {
+        "en": "This shard is located near the Shrine of Depths."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-1"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.13787471840728, 67.03308105468751]
+      "coordinates": [-36.13787, 67.03308],
+      "id": "7965BE68444E5B85B10F428B57C546365D231B8B",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #2"
-        },
-        "popupContent": {
-          "en": "This shard is at the bottom part of a rock formation."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-2"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #2"
       },
-      "id": 24
+      "popupContent": {
+        "en": "This shard is at the bottom part of a rock formation."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-2"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.00693943418587, 67.99438476562501]
+      "coordinates": [-37.00694, 67.99438],
+      "id": "3839A63DA3602AC2C7B95A6807EDF42E9FC74A5D",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #3"
-        },
-        "popupContent": {
-          "en": "This shard is at the top of the sword graveyard structure, between the two pillars."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-3"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #3"
       },
-      "id": 25
+      "popupContent": {
+        "en": "This shard is at the top of the sword graveyard structure, between the two pillars."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-3"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.990443477586716, 68.46016313989762]
+      "coordinates": [-35.99044, 68.46016],
+      "id": "BB59BBA81EA7C48135E9ADA57B23E376FBBEC3A9",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #4"
-        },
-        "popupContent": {
-          "en": "This shard is up on the sniper's tower."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-4"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #4"
       },
-      "id": 26
+      "popupContent": {
+        "en": "This shard is up on the sniper's tower."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.97835959286116, 68.57669074666055]
+      "coordinates": [-34.97836, 68.57669],
+      "id": "B18FDFC6B0FC124640D258EAAAAE0423642DF36F",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #5"
-        },
-        "popupContent": {
-          "en": "This shard is in a rock formation at the side."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-5"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #5"
       },
-      "id": 27
+      "popupContent": {
+        "en": "This shard is in a rock formation at the side."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-5"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.435528427529505, 68.84081998865649]
+      "coordinates": [-34.43553, 68.84082],
+      "id": "68AE3AA9FAE2A8D0443636421BB16929FF8D3205",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #6"
-        },
-        "popupContent": {
-          "en": "This shard is on the ground, being inspected by several hilichurls."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-6"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #6"
       },
-      "id": 28
+      "popupContent": {
+        "en": "This shard is on the ground, being inspected by several hilichurls."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-6"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.37918767794311, 69.55552264346906]
+      "coordinates": [-36.37919, 69.55552],
+      "id": "91EE413455ECA2E44B093FE8C2CD4AA764FEE1C4",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #7"
-        },
-        "popupContent": {
-          "en": "This shard is on a rock near some Electro Crystals."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-7"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #7"
       },
-      "id": 29
+      "popupContent": {
+        "en": "This shard is on a rock near some Electro Crystals."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-7"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.78466590919918, 71.40442733744072]
+      "coordinates": [-36.78467, 71.40443],
+      "id": "370BA37B9A3A35C2A62C0E03CE8AC6C011BBA0AF",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #8"
-        },
-        "popupContent": {
-          "en": "This shard is on a rock being inspected by an Abyss Mage."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-8"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #8"
       },
-      "id": 30
+      "popupContent": {
+        "en": "This shard is on a rock being inspected by an Abyss Mage."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.66841891894785, 73.02612304687501]
+      "coordinates": [-36.66842, 73.02612],
+      "id": "85304C6452A17D27911C8FA2FCD46545963F4101",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #9"
-        },
-        "popupContent": {
-          "en": "This shard is at the bottom of this cliff here."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-9"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #9"
       },
-      "id": 31
+      "popupContent": {
+        "en": "This shard is at the bottom of this cliff here."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-9"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.776443301925475, 73.50969276629083]
+      "coordinates": [-35.77644, 73.50969],
+      "id": "3CD2680A609A356ABFB201C24A251DCBE17090F9",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #10"
-        },
-        "popupContent": {
-          "en": "This one is by some rocks in the forested area."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-10"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #10"
       },
-      "id": 32
+      "popupContent": {
+        "en": "This one is by some rocks in the forested area."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-10"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.10350339456379, 74.37199705633643]
+      "coordinates": [-36.1035, 74.372],
+      "id": "317A27EBFE3B1E4B9C598579C6976692747416BC",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #11"
-        },
-        "popupContent": {
-          "en": "This one is nestled among some rocks."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-11"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #11"
       },
-      "id": 33
+      "popupContent": {
+        "en": "This one is nestled among some rocks."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-11"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.34671184354866, 75.31198641755729]
+      "coordinates": [-35.34671, 75.31199],
+      "id": "252106CC6B3961B962E6726ADBE89AD915E52D7A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #12"
-        },
-        "popupContent": {
-          "en": "This shard is AT THE TOP OF THE CLIFF. You can glide up here using the gust that takes you up to the portal. Don't spend 10 minutes searching for it at ground level."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-12"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #12"
       },
-      "id": 34
+      "popupContent": {
+        "en": "This shard is AT THE TOP OF THE CLIFF. You can glide up here using the gust that takes you up to the portal. Don't spend 10 minutes searching for it at ground level."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-12"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.897777013859475, 75.93750000000001]
+      "coordinates": [-33.89778, 75.9375],
+      "id": "9328ACF58E7DFC08F23693FA52B8EFEEC9A6C4BD",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #13"
-        },
-        "popupContent": {
-          "en": "This shard is located at the edge of the far cliff here. Wei appears here sometimes."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-13"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #13"
       },
-      "id": 35
+      "popupContent": {
+        "en": "This shard is located at the edge of the far cliff here. Wei appears here sometimes."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-13"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.10776507118514, 75.22338867187501]
+      "coordinates": [-37.10777, 75.22339],
+      "id": "49BAD5FE247F498F79293F48B3A3A87C9549B0B5",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #14"
-        },
-        "popupContent": {
-          "en": "This one is at the base of a small ledge."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-14"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #14"
       },
-      "id": 36
+      "popupContent": {
+        "en": "This one is at the base of a small ledge."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-14"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.56199695314351, 69.93896484375001]
+      "coordinates": [-37.562, 69.93896],
+      "id": "BA01DB603C5B65D857C0762CD13A2DC9A5608A0A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #15"
-        },
-        "popupContent": {
-          "en": "This one is at the top of an old ruin. Glide here from the nearby cliff."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-15"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #15"
       },
-      "id": 37
+      "popupContent": {
+        "en": "This one is at the top of an old ruin. Glide here from the nearby cliff."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-15"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.22955045532614, 69.70825195312501]
+      "coordinates": [-38.22955, 69.70825],
+      "id": "6361A70B80DBCF2611197E4355A5BBEC601008B8",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #16"
-        },
-        "popupContent": {
-          "en": "This one is on a pile of rubble near the village."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-16"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #16"
       },
-      "id": 38
+      "popupContent": {
+        "en": "This one is on a pile of rubble near the village."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-16"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.84826438869912, 69.79614257812501]
+      "coordinates": [-38.84826, 69.79614],
+      "id": "39B2D510A070D8C9285A07964E153DAE3F66EC91",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #17"
-        },
-        "popupContent": {
-          "en": "This one is at the top of the large wooden throne structure."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-17"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #17"
       },
-      "id": 39
+      "popupContent": {
+        "en": "This one is at the top of the large wooden throne structure."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-17"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.23818011979864, 67.57690429687501]
+      "coordinates": [-38.23818, 67.5769],
+      "id": "F5A8095C4E31A9B33C902AC8D587925812DACF5B",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #18"
-        },
-        "popupContent": {
-          "en": "This one is on a rock being inspected by some hilichurls. It's kinda in the bushes."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-18"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #18"
       },
-      "id": 40
+      "popupContent": {
+        "en": "This one is on a rock being inspected by some hilichurls. It's kinda in the bushes."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-18"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.41055825094608, 66.66503906250001]
+      "coordinates": [-38.41056, 66.66504],
+      "id": "65C2AD9F203D963576C40E1FE9E04748368C76C9",
+      "importIds": {
+        "gm_legacy": ["mondstadtMeteoriteShard/41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starlit Cape Oath #19"
-        },
-        "popupContent": {
-          "en": "This one is on the branches of the tree in the center pond."
-        },
-        "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-19"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starlit Cape Oath #19"
       },
-      "id": 41
+      "popupContent": {
+        "en": "This one is on the branches of the tree in the center pond."
+      },
+      "popupMedia": "mondstadt/meteorite-shard/starlit-cape-oath-19"
     }
   ]
 }

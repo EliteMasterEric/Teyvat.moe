@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Starconch" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Starconch",
+    "zh": ""
+  },
+  "description": {
+    "en": "Empty seashells brought ashore by the tides. Used in Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "starconch",
@@ -13,901 +21,1144 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.8302243979, 45.9008810666]
+      "coordinates": [-50.83022, 45.90088],
+      "id": "5F442E364EE51F04F5FBB9E5F2B7D0E00567B783",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/38"],
+        "yuanshen": ["47_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-48.83154, 49.38259],
+      "id": "7EC8F9099ABD2E093B4B96C90B26716994E15A86",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/2"],
+        "yuanshen": ["47_2"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-49.89073, 55.05153],
+      "id": "58E2B87125AC549F113AAF0BF7D752366F817AA5",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/3"],
+        "yuanshen": ["47_3"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-52.56864, 51.51994],
+      "id": "F274E8188103B4E6D67954DC964E3BFA9DBF67DF",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/4"],
+        "yuanshen": ["47_4"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-52.79833, 51.25083],
+      "id": "B2039CDAEDDB2195E0F6B67A843DE6F3557C161C",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/5"],
+        "yuanshen": ["47_5"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-53.1126, 51.6133],
+      "id": "DB13E859FE765F899174DBCB9A5DAF16212E34BA",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/6"],
+        "yuanshen": ["47_6"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.8315440543, 49.3825900359]
+      "coordinates": [-52.54934, 53.02453],
+      "id": "7522CA980A5E46A2B1A9557594F7844CDF7CE920",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/7"],
+        "yuanshen": ["47_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-52.06925, 53.99663],
+      "id": "8C101205979A156DECA36A759268C7B4557058E7",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/8"],
+        "yuanshen": ["47_8"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.8907344086, 55.0515321079]
+      "coordinates": [-51.66171, 54.78248],
+      "id": "4C6B40DBD1E70F2620F26C1F8B2971CCFACBB4C3",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/9"],
+        "yuanshen": ["47_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-52.43503, 56.84201],
+      "id": "6180EBF08AFDF231E1FF47C89D273EC3CD9BCCEC",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/10"],
+        "yuanshen": ["47_10"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
+      },
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5686433987, 51.5199385444]
+      "coordinates": [-52.15966, 57.58344],
+      "id": "34502DE0EDE86EB6CD567C06388C4D013E57574F",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/11"],
+        "yuanshen": ["47_11"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 4
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7983323099, 51.2508264346]
+      "coordinates": [-51.81134, 58.06125],
+      "id": "A9B13B603D4D815428334A355CA5B2B3AF476361",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/12"],
+        "yuanshen": ["47_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.1125969065, 51.6133039703]
+      "coordinates": [-52.71553, 59.81402],
+      "id": "0EEF511F98198DFD8BC15886EDE4DE13CC5D8FAC",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/13"],
+        "yuanshen": ["47_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5493403751, 53.0245297245]
+      "coordinates": [-53.63087, 57.65533],
+      "id": "CD7D27AE47C9F1776B955C6405F82F99B19E3DC0",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/14"],
+        "yuanshen": ["47_14"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 7
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.0692548088, 53.9966285703]
+      "coordinates": [-53.8679, 57.15006],
+      "id": "E564328EACAC445D189E7C4561569EB131727765",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/15"],
+        "yuanshen": ["47_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.6617109282, 54.7824761678]
+      "coordinates": [-53.92973, 57.58932],
+      "id": "8DACCC237C82F6E92BCE23D34EFBAC3DCB206ECF",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/16"],
+        "yuanshen": ["47_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.4350275076, 56.8420076208]
+      "coordinates": [-53.99434, 57.8804],
+      "id": "CB6E9E16F7437B481677420F15A05DF006A1EA0A",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/17"],
+        "yuanshen": ["47_17"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 10
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1596569929, 57.5834389439]
+      "coordinates": [-54.99589, 57.10044],
+      "id": "3D075B188D5637C5FA6331A77DCA39006A7FEBEE",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/18"],
+        "yuanshen": ["47_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.8113351615, 58.061250241]
+      "coordinates": [-55.34714, 57.32562],
+      "id": "C206CE523317550131C99F7C28FA5E0D6E70B7DE",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/19"],
+        "yuanshen": ["47_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7155311972, 59.814018935]
+      "coordinates": [-54.98076, 55.3656],
+      "id": "0D39DC0067AD771A9A8CAEDB569A08C405D73AE6",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/20"],
+        "yuanshen": ["47_20"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 13
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.630873029, 57.6553340008]
+      "coordinates": [-54.54291, 56.22679],
+      "id": "811991A40E95359D31BC90E6D784E73FB7446D2D",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/21"],
+        "yuanshen": ["47_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.8679046866, 57.1500622843]
+      "coordinates": [-54.55216, 56.3256],
+      "id": "D353253755CD51611E650404356545DC570A71B6",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/22"],
+        "yuanshen": ["47_22"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 15
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.9297276899, 57.5893188152]
+      "coordinates": [-54.17466, 55.44157],
+      "id": "F092C7BA0917D215B1F1FDA52BAF00B3A88FACF5",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/23"],
+        "yuanshen": ["47_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.9943389284, 57.8803992605]
+      "coordinates": [-54.09423, 56.22694],
+      "id": "FEEFDD27B32FBF78D0DBD92A2713AC6C09A2AC29",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/24"],
+        "yuanshen": ["47_24"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 17
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.9958948956, 57.1004423362]
+      "coordinates": [-54.64785, 53.77174],
+      "id": "679AF39D7312FEE0BF2357501644F90D649788CF",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/25"],
+        "yuanshen": ["47_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3471372531, 57.3256177751]
+      "coordinates": [-52.73045, 48.08944],
+      "id": "52ED6E593CCE9B142ACF5FB2C99A159351B83528",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/26"],
+        "yuanshen": ["47_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.9807591355, 55.3656005859]
+      "coordinates": [-52.91811, 48.43783],
+      "id": "FC98CEAECFDD8D356DEB09B9438F7E9208C10FD2",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/27"],
+        "yuanshen": ["47_27"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 20
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.5429140675, 56.2267937694]
+      "coordinates": [-52.5457, 48.70694],
+      "id": "5B0A0D4B131E01DA808135CEA5568E667F5C375A",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/28"],
+        "yuanshen": ["47_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.5521637555, 56.3255961896]
+      "coordinates": [-52.37506, 48.55316],
+      "id": "E0FEB6EE58BA05A753529021938AF9EF4B106493",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/29"],
+        "yuanshen": ["47_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1746592483, 55.4415694402]
+      "coordinates": [-51.92018, 48.36094],
+      "id": "5934143FAE5535C0218911653297D6B5BE9BF2B5",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/30"],
+        "yuanshen": ["47_30"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 23
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.0942296138, 56.2269374343]
+      "coordinates": [-51.99124, 47.99297],
+      "id": "0F44A6A2504745B300926347E45188DB6EE2B238",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/31"],
+        "yuanshen": ["47_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.6478486123, 53.7717426218]
+      "coordinates": [-52.1903, 47.28998],
+      "id": "57FA7F82B5CBCF2DBE216FC3B9F8044D8E7669C9",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/32"],
+        "yuanshen": ["47_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7304482002, 48.0894387686]
+      "coordinates": [-51.67859, 47.73455],
+      "id": "811EAE9538E3322D68AF10EE6C4F5A419CC242C3",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/33"],
+        "yuanshen": ["47_33"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 26
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.9181088325, 48.4378284681]
+      "coordinates": [-51.28538, 46.52093],
+      "id": "992E1CA0F2D397BD220E2487D3FAEF6B3131F346",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/34"],
+        "yuanshen": ["47_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5456956979, 48.7069405779]
+      "coordinates": [-51.27489, 46.94901],
+      "id": "89B26CF9BAE924181C0549F688C41293CCFBCB2F",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/35"],
+        "yuanshen": ["47_35"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 28
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.3750594105, 48.5531622294]
+      "coordinates": [-50.88839, 46.42175],
+      "id": "684013F29C9242403203A53840CC2791B71F2B75",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/36"],
+        "yuanshen": ["47_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.9201776464, 48.3609392938]
+      "coordinates": [-50.76772, 45.95581],
+      "id": "16CD3C7FCCC77E76F5BBDBAFA80B41C34E8F9AB8",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/37"],
+        "yuanshen": ["47_37"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 30
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.9912423873, 47.9929696742]
+      "coordinates": [-50.90303, 45.96131],
+      "id": "CB555AA49DE6781272BCB54741813BABE9D1D05E",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/39"],
+        "yuanshen": ["47_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1902981019, 47.2899829382]
+      "coordinates": [-50.29942, 45.63629],
+      "id": "F7EE585CB5BBF0162916F5DE035AFBBE8BA9B2DC",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/40"],
+        "yuanshen": ["47_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.6785878692, 47.7345500814]
+      "coordinates": [-49.68162, 45.61981],
+      "id": "A92BBE71224932F79E8E286214922B5A66777F2F",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/41"],
+        "yuanshen": ["47_41"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 33
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.2853822455, 46.5209291676]
+      "coordinates": [-49.48939, 45.9713],
+      "id": "31B5001D0DA775D9201FB9685095682B90327E90",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/42"],
+        "yuanshen": ["47_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.274889336, 46.9490124978]
+      "coordinates": [-49.21396, 46.2514],
+      "id": "BC612D57DB6A2E9F0134653B94B0FAACFF8787CF",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/43"],
+        "yuanshen": ["47_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.8883893943, 46.4217497619]
+      "coordinates": [-49.35723, 46.44912],
+      "id": "DD2362D01462D282DA6C60E9248D3887EA426700",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/44"],
+        "yuanshen": ["47_44"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 36
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.7677235562, 45.9558127072]
+      "coordinates": [-48.7338, 46.16369],
+      "id": "81CDDFD0EB542203143CBE8189EE178D7E71541B",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/45"],
+        "yuanshen": ["47_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.8302243979, 45.9008810666]
+      "coordinates": [-47.39074, 45.23004],
+      "id": "7DA8A40D5BBD31F4CD0385126BEDDA377F3C8E55",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/46"],
+        "yuanshen": ["47_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.9030264949, 45.9613058713]
+      "coordinates": [-47.45728, 45.61989],
+      "id": "5283561D56F6F072DC6D76E6A2C02229FA72ABA0",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/47"],
+        "yuanshen": ["47_47"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 39
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.2994228976, 45.6362877915]
+      "coordinates": [-47.86477, 46.54357],
+      "id": "E4A52259B82E3D587B63043BC09528EF00AEC152",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/48"],
+        "yuanshen": ["47_48"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.6816245686, 45.6198115399]
+      "coordinates": [-48.10665, 47.24562],
+      "id": "A0F0496B1143C2BBAD8712DBB0A8BB9D5BDAA9C7",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/50"],
+        "yuanshen": ["47_50"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 41
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.4893857513, 45.9713049079]
+      "coordinates": [-46.60793, 45.63719],
+      "id": "85867F2D5F2E46B2F1D32F45065AF17C174CBD77",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/51"],
+        "yuanshen": ["47_51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.2139563998, 46.2514011855]
+      "coordinates": [-45.47486, 45.72982],
+      "id": "220A49E0A5DFF12034B962C327FF4039C6FA974B",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/52"],
+        "yuanshen": ["47_52"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 43
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.357229056, 46.449116205]
+      "coordinates": [-46.65211, 46.53716],
+      "id": "A316458F6F2A447A493F6E3485099DA7CBDB6126",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/53"],
+        "yuanshen": ["47_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.7338046296, 46.1636931122]
+      "coordinates": [-46.55024, 47.25113],
+      "id": "F79ED621E484773E039049DD8F11528E0F2167BA",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/54"],
+        "yuanshen": ["47_54"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 45
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.3907420129, 45.2300388535]
+      "coordinates": [-47.64593, 47.98737],
+      "id": "231D92BD914AE630FE3D0A5A4A3E03D8B7238182",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/55"],
+        "yuanshen": ["47_55"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 46
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.45728137, 45.619887153]
+      "coordinates": [-47.63478, 48.65196],
+      "id": "FA5CD5625BECBCC36F4F335E09204EE3419A9CFB",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/56"],
+        "yuanshen": ["47_56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.8647739557, 46.5435682996]
+      "coordinates": [-47.1067, 49.37143],
+      "id": "186061A4E1B8663D335E00FB4B9CF83C4037C305",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/57"],
+        "yuanshen": ["47_57"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.106654291, 47.2456239138]
+      "coordinates": [-47.52749, 49.89915],
+      "id": "521FC2C6924CED2D362B0FEB2F39B14A5A818266",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/58"],
+        "yuanshen": ["47_58"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 50
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.6079286014, 45.637188668]
+      "coordinates": [-47.06188, 51.89316],
+      "id": "1625B2BC170ECFC0D0573A0754A36223F57FA63B",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/59"],
+        "yuanshen": ["47_59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4748554674, 45.7298206465]
+      "coordinates": [-47.11796, 52.09636],
+      "id": "9E5581F7555F9DDD7FF6963EFD6ACA96FB434443",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/60"],
+        "yuanshen": ["47_60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.6521103077, 46.5371569761]
+      "coordinates": [-47.5014, 51.17353],
+      "id": "EE124B90AB73AB854097B1670DBBDDF246D1F650",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/61"],
+        "yuanshen": ["47_61"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 53
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.5502441631, 47.2511278798]
+      "coordinates": [-46.19042, 49.19596],
+      "id": "B7E512E1953D198345D9979F0917389D282846F1",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/62"],
+        "yuanshen": ["47_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.6459312049, 47.9873695716]
+      "coordinates": [-46.12574, 47.76249],
+      "id": "C764C59A94532CD1F741826ECCB9501B9F3D8830",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/63"],
+        "yuanshen": ["47_63"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 55
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.6347775224, 48.6519624892]
+      "coordinates": [-46.01896, 51.6075],
+      "id": "167A88516FE519FE0FDE571747AD4414A759CD17",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/64"],
+        "yuanshen": ["47_64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 56
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.1067008028, 49.3714254768]
+      "coordinates": [-46.23593, 52.54686],
+      "id": "8EE69974BBDFFEF50B0CF4FC21E5DDD564B66044",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/65"],
+        "yuanshen": ["47_65"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 57
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5274852969, 49.8991505331]
+      "coordinates": [-45.9236, 53.10705],
+      "id": "38BF9546C02A5A47062602422FCC4C2015DAC326",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/66"],
+        "yuanshen": ["47_66"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 58
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.061877403, 51.8931550453]
+      "coordinates": [-45.80101, 53.03577],
+      "id": "AA543CDD93C02100F3A1D8E054D8BEDB8669660B",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/67"],
+        "yuanshen": ["47_67"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.1179571658, 52.0963621487]
+      "coordinates": [-45.78664, 52.42127],
+      "id": "FC09251E24376256BC3C126ABD4E8AA288A166D5",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/68"],
+        "yuanshen": ["47_68"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 60
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5014046184, 51.17353219]
+      "coordinates": [-47.64954, 46.8504],
+      "id": "707D0872DE62CC0CC7FFF4D75AD755AD2D479D1C",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/69"],
+        "yuanshen": ["47_69"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1904202444, 49.1959585614]
+      "coordinates": [-47.59795, 48.28967],
+      "id": "B47ACF09552FAAC974928686256D4183B11AA7DD",
+      "importIds": {
+        "gm_legacy": ["liyueStarconch/70"],
+        "yuanshen": ["47_70"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 62
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1257415759, 47.7624933447]
+      "coordinates": [-45.45343, 56.57486],
+      "id": "AC5F1F0DF35B9B5071E17CE2AE84CCBBE453ABBC",
+      "importIds": {
+        "yuanshen": ["47_71"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 63
+      "popupMedia": "https://yuanshen.site/comment_png/47_71.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.0189603225, 51.607498632]
+      "coordinates": [-45.26588, 54.68262],
+      "id": "41E47EE74F1E931805960264797FB8B3E7E1017C",
+      "importIds": {
+        "yuanshen": ["47_72"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/47_72.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.2359338541, 52.5468556112]
+      "coordinates": [-45.26846, 54.74854],
+      "id": "C2B5BE472F82B49D4299645ED40EC2166C59A555",
+      "importIds": {
+        "yuanshen": ["47_73"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 65
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/47_73.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.9235992342, 53.1070481664]
+      "coordinates": [-45.2259, 58.68165],
+      "id": "6842532E7D4CC716203A3F5AD7190EF44EDD3150",
+      "importIds": {
+        "yuanshen": ["47_74"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 66
+      "popupMedia": "https://yuanshen.site/comment_png/47_74.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.8010087444, 53.0357709769]
+      "coordinates": [-45.26071, 58.61388],
+      "id": "9933C683B268C95C60CA000E320282E9C4C70634",
+      "importIds": {
+        "yuanshen": ["47_75"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 67
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/47_75.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.7866426087, 52.4212668088]
+      "coordinates": [-45.05153, 58.35938],
+      "id": "53EBFA524D43E404A3371865ED55EACFF937BA98",
+      "importIds": {
+        "yuanshen": ["47_76"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 68
+      "popupMedia": "https://yuanshen.site/comment_png/47_76.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.649541177, 46.8504023511]
+      "coordinates": [-45.14286, 59.15146],
+      "id": "BA74ADFAFCB55108419055C6461C08E23EDA6EF6",
+      "importIds": {
+        "yuanshen": ["47_77"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "id": 69
+      "popupContent": {
+        "zh": "这是一个星螺"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/47_77.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5979517584, 48.2896707458]
+      "coordinates": [-45.32823, 57.41518],
+      "id": "76720988EA48533A3F8A72BBCB76154705A465BC",
+      "importIds": {
+        "yuanshen": ["47_78"]
+      },
+      "popupTitle": {
+        "zh": "星螺"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个星螺"
       },
-      "id": 70
+      "popupMedia": "https://yuanshen.site/comment_png/47_78.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

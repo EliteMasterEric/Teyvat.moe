@@ -1,0 +1,40 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Samachurl",
+    "ru": "Шамачурл",
+    "zh": ""
+  },
+  "description": {
+    "en": "Spiritual leaders who wield elemental powers. Drops Divining Scroll."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": 86400,
+  "icons": {
+    "filter": "samachurl",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-42.11237, 51.60142],
+      "id": "8D1351569D30009FAAED694554FFEF973DE12541",
+      "importIds": {
+        "yuanshen": ["95_19"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只QQ萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

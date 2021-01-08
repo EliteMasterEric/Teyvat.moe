@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Noctilucous Jade" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Noctilucous Jade",
+    "zh": ""
+  },
+  "description": {
+    "en": "A rare luminescent mineral used for Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "noctilucous-jade",
     "base": {
@@ -12,602 +21,695 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8938966954, 36.0054014182]
+      "coordinates": [-55.8939, 36.0054],
+      "id": "7DB09BEF1C7D97C102E57DE8DE147D39EB5FA9A6",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/1"],
+        "yuanshen": ["14_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9554535816, 35.9504404864]
+      "coordinates": [-55.95545, 35.95044],
+      "id": "199151C06EAD52693DFDE5577D1D107FC8FF522B",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/2"],
+        "yuanshen": ["14_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.998485248, 35.9944092318]
+      "coordinates": [-55.99849, 35.99441],
+      "id": "152DECF34527A298E1C49055B4645F051734BE81",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/3"],
+        "yuanshen": ["14_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.998485248, 36.1153232819]
+      "coordinates": [-55.99849, 36.11532],
+      "id": "C141E8D88F1AC0FB8378875C3BAD015015D43F1F",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/4"],
+        "yuanshen": ["14_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9246873599, 36.1812764001]
+      "coordinates": [-55.92469, 36.18128],
+      "id": "BC48370068733F801278B6C97C26DBAD273586A9",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/5"],
+        "yuanshen": ["14_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7569440726, 26.2259352433]
+      "coordinates": [-58.75694, 26.22594],
+      "id": "88030C283554D315A58C6396287F2FF436FF209D",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/6"],
+        "yuanshen": ["14_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.6713613944, 26.3138727342]
+      "coordinates": [-58.67136, 26.31387],
+      "id": "CF4763925EAFE7CFC4FF6B73CDB7B0BB8160E572",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/7"],
+        "yuanshen": ["14_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.574113166, 26.2808961751]
+      "coordinates": [-58.57411, 26.2809],
+      "id": "CBC28EBB4160800C1B9800A75442C5C1D1087E4F",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/8"],
+        "yuanshen": ["14_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7293216188, 34.8940719767]
+      "coordinates": [-53.72932, 34.89407],
+      "id": "86710344EF7A19F57E5148EA7AB73FEC14932E0A",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/9"],
+        "yuanshen": ["14_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.1312611259, 33.6399199637]
+      "coordinates": [-51.13126, 33.63992],
+      "id": "431BF0B3A149C1EC96754586DEBAD4A8C1010458",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/10"],
+        "yuanshen": ["14_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.1863851215, 33.617935591]
+      "coordinates": [-51.18639, 33.61794],
+      "id": "2887947F7DF81E67199E5AB0DA6CE4F336F133E6",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/11"],
+        "yuanshen": ["14_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.1794982239, 33.7058730819]
+      "coordinates": [-51.1795, 33.70587],
+      "id": "323FAB31F8D5CE6BEE4A9A871F8828A1463C5A2E",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/12"],
+        "yuanshen": ["14_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.9557875819, 33.5761871194]
+      "coordinates": [-57.95579, 33.57619],
+      "id": "0FFB4640318349854AE1751A154678F5CF4535E3",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/13"],
+        "yuanshen": ["14_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.891201782, 24.006163862]
+      "coordinates": [-38.8912, 24.00616],
+      "id": "03F858D74A3AE4F96C9A35CC7B0C867B5E0158F6",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/14"],
+        "yuanshen": ["14_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5005854407, 34.7846129142]
+      "coordinates": [-41.50059, 34.78461],
+      "id": "4F2A5B4FE14A640D247E49A802E09B309B3A9FA3",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/15"],
+        "yuanshen": ["14_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0957050258, 32.7188727399]
+      "coordinates": [-44.09571, 32.71887],
+      "id": "3E09FA4663FC98CE388C0B6CBD325354E1F903B6",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/16"],
+        "yuanshen": ["14_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.8358043685, 38.245388289]
+      "coordinates": [-35.8358, 38.24539],
+      "id": "6CE040F3A056F09803964FD729DED5AEEB1DBDEA",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/17"],
+        "yuanshen": ["14_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.8001685716, 38.3443179663]
+      "coordinates": [-35.80017, 38.34432],
+      "id": "553C46AA0C380E3C395D2F04658179D8DA9DD314",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/18"],
+        "yuanshen": ["14_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5363138893, 47.9119627773]
+      "coordinates": [-36.53631, 47.91196],
+      "id": "0A0EDDD6817FC030A486E73108044970195BDA04",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/19"],
+        "yuanshen": ["14_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.6245399121, 47.9229549637]
+      "coordinates": [-36.62454, 47.92295],
+      "id": "DB4AF5810DBF7EF274B6E16ED3ECA264730B1187",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/20"],
+        "yuanshen": ["14_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.6333569682, 48.0328768273]
+      "coordinates": [-36.63336, 48.03288],
+      "id": "CEAAF0A834933C07CF91E3F56613A3B15E0F6DA0",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/21"],
+        "yuanshen": ["14_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5252123605, 48.8469547417]
+      "coordinates": [-41.52521, 48.84695],
+      "id": "000D099E36C48981422EAD5F46F230CECA6F6810",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/22"],
+        "yuanshen": ["14_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5827645129, 48.9678687917]
+      "coordinates": [-41.58276, 48.96787],
+      "id": "F1F377161F347AD6DFB1716A4B111C739CA227BF",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/23"],
+        "yuanshen": ["14_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.5694499691, 47.1216442831]
+      "coordinates": [-42.56945, 47.12164],
+      "id": "BFA84127A48F68E1C6DE73AAB816193F5E674A06",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/24"],
+        "yuanshen": ["14_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2854150927, 48.3417769699]
+      "coordinates": [-43.28542, 48.34178],
+      "id": "1671630DCB272C080A8EE5BDDD5A8A63857D693B",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/25"],
+        "yuanshen": ["14_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9646102351, 49.8368842049]
+      "coordinates": [-42.96461, 49.83688],
+      "id": "D9542E89B56BCE60408FE6F602B9EA5E197943CB",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/26"],
+        "yuanshen": ["14_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2847327503, 49.758480198]
+      "coordinates": [-44.28473, 49.75848],
+      "id": "479741862FA2DEECDE14B19D2A294C3CE8D4912D",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/27"],
+        "yuanshen": ["14_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.261132435, 49.8464176889]
+      "coordinates": [-44.26113, 49.84642],
+      "id": "167AC3EABCABD80B952422EA5930E5BBB96077E3",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/28"],
+        "yuanshen": ["14_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.3476205894, 49.7364958253]
+      "coordinates": [-44.34762, 49.7365],
+      "id": "F6688358780017FB40CBC80001FCBB63B6ED885B",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/29"],
+        "yuanshen": ["14_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.3476205894, 49.8684020617]
+      "coordinates": [-44.34762, 49.8684],
+      "id": "515DD68F4F8FB6E6108C3FE80A27C1ED16FD7F38",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/30"],
+        "yuanshen": ["14_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4603689764, 48.6262850022]
+      "coordinates": [-55.29803, 56.88912],
+      "id": "B5CDB4F554E4CFEF26869AF43ECDA6371BDA2A99",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/33"],
+        "yuanshen": ["14_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4757791575, 48.7362068658]
+      "coordinates": [-55.37302, 56.87812],
+      "id": "F50F0A9877C8FCC0D77ADCBD5BBA0D9BA9C54CE9",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/34"],
+        "yuanshen": ["14_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.2980308079, 56.8891168182]
+      "coordinates": [-44.34484, 49.8127],
+      "id": "14C6D1241FC4B6C010508D19D9F8262E76586773",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/35"],
+        "yuanshen": ["14_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3730180438, 56.8781246318]
+      "coordinates": [-44.70494, 50.70264],
+      "id": "986E722C19439B363C0F2AA523414EA8765ACBB8",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/36"],
+        "yuanshen": ["14_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.3448374123, 49.8126952712]
+      "coordinates": [-44.69713, 51.04324],
+      "id": "EDAE36F33441A939968A0711AC2DADBFF0EC447F",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/37"],
+        "yuanshen": ["14_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7049390402, 50.7026399847]
+      "coordinates": [-44.75954, 50.99929],
+      "id": "E4980520F437CE4E1407CBA26875BDDFBE9384F1",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/38"],
+        "yuanshen": ["14_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.6971344144, 51.0432361096]
+      "coordinates": [-44.81409, 51.09817],
+      "id": "0B77F1ED944ACA5DC0FCB8B08693C4C45E66CD46",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/39"],
+        "yuanshen": ["14_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.759541962, 50.9992882225]
+      "coordinates": [-44.72835, 51.19705],
+      "id": "83360835F66CC511F42A8FCE928309EF7C86158A",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/40"],
+        "yuanshen": ["14_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.8140933309, 51.0981709685]
+      "coordinates": [-44.63466, 51.16409],
+      "id": "FB746CB4AAE8BC1842A747A45D682F745492A892",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/41"],
+        "yuanshen": ["14_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.728346605, 51.1970537144]
+      "coordinates": [-44.27372, 49.80169],
+      "id": "BF6CFADC4C143E4AE03F046DC8C91AE10CA2C7CF",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/42"],
+        "yuanshen": ["14_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.6346595338, 51.1640927991]
+      "coordinates": [-40.21345, 47.9984],
+      "id": "3D912F453965C8F6C0299104077AC6DCB8CED4A5",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/43"],
+        "yuanshen": ["14_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2737185563, 49.8016915646]
+      "coordinates": [-40.26798, 48.11923],
+      "id": "AD8C9C1F6B754C3A2865260152A9D8DF9F89EC3B",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/44"],
+        "yuanshen": ["14_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2134494488, 47.9984045081]
+      "coordinates": [-40.30571, 47.98193],
+      "id": "7FBCEF9B4461F7DBC611BB9FC4942007C5D5B4F8",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/45"],
+        "yuanshen": ["14_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2679801672, 48.1192303534]
+      "coordinates": [-40.20506, 48.24555],
+      "id": "65046DF26531715E32D008190047322CBAB7F007",
+      "importIds": {
+        "gm_legacy": ["liyueNoctilucousJade/46"],
+        "yuanshen": ["14_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.3057064707, 47.9819282565]
+      "coordinates": [-45.46013, 48.62915],
+      "id": "972971821108D43384909B00AF85DC0E83CC5385",
+      "importIds": {
+        "yuanshen": ["14_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 45
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/14_31.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2050562094, 48.2455482825]
+      "coordinates": [-45.43059, 48.6914],
+      "id": "71DE1972479137C9EBD46BC0B9CA4964B0B20EF9",
+      "importIds": {
+        "yuanshen": ["14_32"],
+        "gm_legacy": ["liyueNoctilucousJade/31", "liyueNoctilucousJade/32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "夜泊石"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个夜泊石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/14_32.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

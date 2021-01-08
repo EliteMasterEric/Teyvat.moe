@@ -1,8 +1,13 @@
 {
-    "name": { 
+
+  "name": {
     "en": "Challenge and Time Trial",
     "ru": "Вызов и испытание на время"
   },
+  "description": {
+    "en": "Complete a race or challenge, or defeat a group of enemies, to receive a reward."
+  },
+
   "cluster": false,
   "icons": {
     "filter": "challenge",
@@ -18,8 +23,6 @@
       "geometry": { "type": "Point", "coordinates": [-25.5035112735, 45.8121397281] },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
         "popupMedia": "mondstadt/challenge/26_107"
       },
       "id": 107
@@ -28,8 +31,6 @@
       "geometry": { "type": "Point", "coordinates": [-23.3830176055, 49.91181176] },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
         "popupMedia": "mondstadt/challenge/26_155"
       },
       "id": 155
@@ -38,8 +39,6 @@
       "geometry": { "type": "Point", "coordinates": [-18.4701277912, 39.5947825857] },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
         "popupMedia": "mondstadt/challenge/26_19"
       },
       "id": 19
@@ -48,8 +47,6 @@
       "geometry": { "type": "Point", "coordinates": [-22.2798711837, 46.4613307107] },
       "type": "Feature",
       "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
         "popupMedia": "mondstadt/challenge/26_96"
       },
       "id": 96

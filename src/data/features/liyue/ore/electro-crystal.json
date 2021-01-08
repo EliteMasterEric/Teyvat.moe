@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Electro Crystal" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Electro Crystal",
+    "zh": ""
+  },
+  "description": {
+    "en": "Purple electric crystals used for various recipes. Use Pyro to create an Overload reaction in order to harvest."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "electro-crystal",
@@ -13,69 +21,79 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.3454604086, 35.9637451171]
+      "coordinates": [-50.34546, 35.96375],
+      "id": "AC140ED785AE974FD7674008C06F4B7AB9B77272",
+      "importIds": {
+        "gm_legacy": ["liyueElectroCrystal/1"],
+        "yuanshen": ["54_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一块电气水晶"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.3699925828, 36.0736083984]
+      "coordinates": [-50.36999, 36.07361],
+      "id": "4F676DE56D1CE00005D64056AB3687AA065372CF",
+      "importIds": {
+        "gm_legacy": ["liyueElectroCrystal/2"],
+        "yuanshen": ["54_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一块电气水晶"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.4540066662, 36.0021972656]
+      "coordinates": [-50.45401, 36.0022],
+      "id": "F043D66C0EC0A8419F552D6D731F0C3EC250AEAF",
+      "importIds": {
+        "gm_legacy": ["liyueElectroCrystal/3"],
+        "yuanshen": ["54_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一块电气水晶"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.434541919, 24.9499511718]
+      "coordinates": [-36.43454, 24.94995],
+      "id": "DC5D40D47067894FF6A6FF132321EDF19C19B483",
+      "importIds": {
+        "gm_legacy": ["liyueElectroCrystal/4"],
+        "yuanshen": ["54_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一块电气水晶"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5008053176, 24.9774169921]
+      "coordinates": [-36.50081, 24.97742],
+      "id": "778FA7CF9AD716B08032237E4BFF13FC1406750F",
+      "importIds": {
+        "gm_legacy": ["liyueElectroCrystal/5"],
+        "yuanshen": ["54_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一块电气水晶"
+      },
+      "popupAttribution": "Unknown"
     }
   ]
 }

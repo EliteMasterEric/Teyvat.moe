@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Philanemo Mushroom" },
-  "cluster": true,
+  "format": 2,
+  "name": {
+    "en": "Philanemo Mushroom",
+    "ru": "Гриб Филанемо",
+    "zh": ""
+  },
+  "description": {
+    "en": "A fungus that grows under the roofs of houses. Used in Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "philanemo-mushroom",
@@ -13,641 +22,788 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9962429627, 57.767205219]
+      "coordinates": [-24.99624, 57.76721],
+      "id": "8B98892D8D11BE550B137F135D5BC5E8F1706FE1",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/1"],
+        "yuanshen": ["10_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9265193432, 57.1738034417]
+      "coordinates": [-24.92652, 57.1738],
+      "id": "29E3117FF4F935F9745745356A4D9C8EBCBFCD7B",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/2"],
+        "yuanshen": ["10_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.4633594125, 57.1078699109]
+      "coordinates": [-25.46336, 57.10787],
+      "id": "025910A762155618E5E42A21E8D809158356729D",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/3"],
+        "yuanshen": ["10_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.5625136356, 57.1518255981]
+      "coordinates": [-25.56251, 57.15183],
+      "id": "89DB610C2CA2DE68A67E1DB84D1C4B5A061A2F96",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/4"],
+        "yuanshen": ["10_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.5789889741, 56.9650139275]
+      "coordinates": [-26.57899, 56.96501],
+      "id": "9C78D45E2A3E9EF52B930BF0E271DDC495DCCF5F",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/5"],
+        "yuanshen": ["10_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.6870202466, 56.2507340104]
+      "coordinates": [-26.68702, 56.25073],
+      "id": "4EF45428723BF9FD28F6D889C546D688A07E3D1B",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/6"],
+        "yuanshen": ["10_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7066513145, 56.327656463]
+      "coordinates": [-26.70665, 56.32766],
+      "id": "91FF2274CF6C61B4DF034D76EE1DA6D916BD59CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/7"],
+        "yuanshen": ["10_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7262789991, 56.3716121502]
+      "coordinates": [-26.72628, 56.37161],
+      "id": "AD82BA8084A22A7F653BBC97253C659A1C3AB7F9",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/8"],
+        "yuanshen": ["10_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7753333974, 56.2507340104]
+      "coordinates": [-26.77533, 56.25073],
+      "id": "D1778F9043FB94DC4C06D4310231F6F00D0B5636",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/9"],
+        "yuanshen": ["10_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.794949227, 56.2946896976]
+      "coordinates": [-26.79495, 56.29469],
+      "id": "3415DB5FC4BE4B72DD631276AB1118BA6B8F9CE2",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/10"],
+        "yuanshen": ["10_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8145616656, 56.3496343066]
+      "coordinates": [-26.81456, 56.34963],
+      "id": "A89BB1E0DB894D16785B91A1FB83CF517CABD4A0",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/11"],
+        "yuanshen": ["10_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.6772034445, 57.4485264867]
+      "coordinates": [-26.6772, 57.44853],
+      "id": "C4EE62D28BD881E1FB284EB5B39B213A407B6B6A",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/12"],
+        "yuanshen": ["10_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8145690717, 57.8106136405]
+      "coordinates": [-26.81457, 57.81061],
+      "id": "BE9B3FC745A7FE62516C74E044FC2F4FF5434762",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/13"],
+        "yuanshen": ["10_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8929848765, 57.8435804059]
+      "coordinates": [-26.89298, 57.84358],
+      "id": "44D366A36E7C27CA11E434B34F12EA98F29C1394",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/14"],
+        "yuanshen": ["10_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.9171916872, 57.7935823421]
+      "coordinates": [-26.91719, 57.79358],
+      "id": "856539F2D51C494EFCD7D61B75FC853F3094A59F",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/15"],
+        "yuanshen": ["10_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.9027830299, 57.9644585457]
+      "coordinates": [-26.90278, 57.96446],
+      "id": "983AB6EA49CA62193595CB2655B09CDB7789252E",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/16"],
+        "yuanshen": ["10_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8243740182, 58.0633588419]
+      "coordinates": [-26.82437, 58.06336],
+      "id": "2EEF6673B13AEA02E5D265E548BC0FD4770B285A",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/17"],
+        "yuanshen": ["10_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7066587277, 58.3710486523]
+      "coordinates": [-26.70666, 58.37105],
+      "id": "845CD8BA4E87BE3150F97D5608D5AF338A2C4799",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/18"],
+        "yuanshen": ["10_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.7701368763, 58.3868354193]
+      "coordinates": [-26.77014, 58.38684],
+      "id": "AEF30F09754D02C72268461DC730D68C41F46813",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/19"],
+        "yuanshen": ["10_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.9125803331, 58.2611594343]
+      "coordinates": [-26.91258, 58.26116],
+      "id": "2530E4BBD0EF88E48BDDBD2C31AB7C824F0099C1",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/20"],
+        "yuanshen": ["10_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.5526346055, 58.6895691703]
+      "coordinates": [-25.55263, 58.68957],
+      "id": "9ED489DE586C8E64EF8DAB1A8367769337721252",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/21"],
+        "yuanshen": ["10_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.612092698, 58.7335248575]
+      "coordinates": [-25.61209, 58.73352],
+      "id": "D7207D1324C58185CD904C2D655F5DEC990F6904",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/22"],
+        "yuanshen": ["10_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.6715212265, 58.7335248575]
+      "coordinates": [-25.67152, 58.73352],
+      "id": "2A5A1969342918F35302CC0577FA186CCF6BF106",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/23"],
+        "yuanshen": ["10_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8100725459, 58.6675913267]
+      "coordinates": [-25.81007, 58.66759],
+      "id": "76B0DF760EE90A08CBA1A0227749F8010465D32F",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/24"],
+        "yuanshen": ["10_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.7309201418, 58.8104473101]
+      "coordinates": [-25.73092, 58.81045],
+      "id": "AD7643D09CD03929591C7336F26E789785C8D067",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/25"],
+        "yuanshen": ["10_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9023776083, 57.5801004629]
+      "coordinates": [-30.90238, 57.5801],
+      "id": "9CD70F98B8D0976C2550FC816B663D4EA7AC270E",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/26"],
+        "yuanshen": ["10_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0597062883, 57.6240561501]
+      "coordinates": [-30.05971, 57.62406],
+      "id": "472A85C4205071035C077266D501FDE64C2BCB23",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/27"],
+        "yuanshen": ["10_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1642509581, 57.6240561501]
+      "coordinates": [-30.16425, 57.62406],
+      "id": "3B943F14F73B2419A16435885B76497318441884",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/28"],
+        "yuanshen": ["10_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2402138984, 57.7449342899]
+      "coordinates": [-30.24021, 57.74493],
+      "id": "845306985C95B2B2C1599717A9E37387C9F28A71",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/29"],
+        "yuanshen": ["10_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2686848812, 58.3603139108]
+      "coordinates": [-30.26868, 58.36031],
+      "id": "614639B22C72316CB9D40904446B3A9ECF84D10D",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/30"],
+        "yuanshen": ["10_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1832471882, 58.459214207]
+      "coordinates": [-30.18325, 58.45921],
+      "id": "A81D231FAE81725603AC24C3AEB19160D953F7DA",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/31"],
+        "yuanshen": ["10_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7136496841, 58.5031698942]
+      "coordinates": [-30.71365, 58.50317],
+      "id": "F56BA01846640EC1A727F37D5A02860A0315E566",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/32"],
+        "yuanshen": ["10_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.4772195721, 58.7009704867]
+      "coordinates": [-30.47722, 58.70097],
+      "id": "D0EA80091A9C16039D99F177ACC576A4F4D1EFEF",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/33"],
+        "yuanshen": ["10_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.5150871363, 58.8218486265]
+      "coordinates": [-30.51509, 58.82185],
+      "id": "35F1593CF8C2FE2CDD6870ACD2ACF73CE007CAFE",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/34"],
+        "yuanshen": ["10_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.8121618035, 58.7009704867]
+      "coordinates": [-29.81216, 58.70097],
+      "id": "A870108BEDF7B595F9D6656CAC645D71D6731626",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/35"],
+        "yuanshen": ["10_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.7740234319, 58.8548153919]
+      "coordinates": [-29.77402, 58.85482],
+      "id": "0D20085013F97A974E4B6B9FE49095C39F7A438E",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/36"],
+        "yuanshen": ["10_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.7072463275, 58.9427267663]
+      "coordinates": [-29.70725, 58.94273],
+      "id": "38359525CB0260031264B9227D7CBC77AD1DF49B",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/37"],
+        "yuanshen": ["10_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.8407560406, 58.9537156881]
+      "coordinates": [-29.84076, 58.95372],
+      "id": "202C8475CF049EEC00E477C605AC3CE134A953D0",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/38"],
+        "yuanshen": ["10_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0262839242, 58.9856021842]
+      "coordinates": [-30.02628, 58.9856],
+      "id": "000554ECB4AEE37186253D4527E201E5DA98CFCE",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/39"],
+        "yuanshen": ["10_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.107240307, 58.8658043137]
+      "coordinates": [-30.10724, 58.8658],
+      "id": "285BCB5374320630F8F211F5CD9D3D20033FA6AD",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/40"],
+        "yuanshen": ["10_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1783646252, 58.9471467952]
+      "coordinates": [-30.17836, 58.94715],
+      "id": "C4C4BB4E44968775CEB9EB59B632A1A39DC6A7C8",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/41"],
+        "yuanshen": ["10_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.8059954654, 52.3620277475]
+      "coordinates": [-32.806, 52.36203],
+      "id": "DE0E96010544EE5CC68C01283D61A96FA6C89FF2",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/42"],
+        "yuanshen": ["10_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2113821337, 51.7356592048]
+      "coordinates": [-33.21138, 51.73566],
+      "id": "83D84E92A894BADA48F9DCF5419EDA2882EDEBBD",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/43"],
+        "yuanshen": ["10_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.1194125088, 50.7136894773]
+      "coordinates": [-33.11941, 50.71369],
+      "id": "E31E4DFC2031A0ECFDD0F20716F9D4D30BEA4B0B",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/44"],
+        "yuanshen": ["10_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.238954201, 50.7136894773]
+      "coordinates": [-33.23895, 50.71369],
+      "id": "CCD0586B03E37547F5DEE7CF8CE30FFC01809302",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/45"],
+        "yuanshen": ["10_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 45
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.3216182324, 50.6038002593]
+      "coordinates": [-33.32162, 50.6038],
+      "id": "CE168E03F4354265A5765AA261FF8DA75B2198C3",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/46"],
+        "yuanshen": ["10_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.1237659757, 51.7071565608]
+      "coordinates": [-33.12377, 51.70716],
+      "id": "C39D31CAD21AB5E588A6555E7C3878EAC0B596FA",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/47"],
+        "yuanshen": ["10_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.8649919341, 52.3816869444]
+      "coordinates": [-32.86499, 52.38169],
+      "id": "96EFB6210CFCB6A61A915943771B308B2E1C539C",
+      "importIds": {
+        "gm_legacy": ["mondstadtPhilanemoMushroom/48"],
+        "yuanshen": ["10_48"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.4999666589, 57.7377087778]
+      "coordinates": [-30.48497, 57.724],
+      "id": "E9AA83AD7F98A28E567115DB0E59632D0939609A",
+      "importIds": {
+        "yuanshen": ["10_49"],
+        "gm_legacy": ["mondstadtPhilanemoMushroom/49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "慕风蘑菇"
       },
-      "id": 49
+      "popupContent": {
+        "zh": "这是一个慕风蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/10_49.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

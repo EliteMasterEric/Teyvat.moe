@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Windwheel Aster" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Windwheel Aster",
+    "ru": "Ветряная Астра",
+    "zh": ""
+  },
+  "description": {
+    "en": "A plant that adores the wind. Used in Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "windwheel-aster",
@@ -13,849 +22,1058 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.5145111474, 64.1054372908]
+      "coordinates": [-31.99899, 66.10634],
+      "id": "4C6EAC85567FD5CDA3A2B6FF80015456A08BACE1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/3"],
+        "yuanshen": ["12_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-32.0735, 66.00744],
+      "id": "D863AD83057E9CE8EDF27CBE12549385CAEBA6B7",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/4"],
+        "yuanshen": ["12_4"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
+      },
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.6269014474, 64.149392978]
+      "coordinates": [-32.15725, 66.17227],
+      "id": "FC6973C5EA56469D127DB2EE90EAC81C9520CA1B",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/5"],
+        "yuanshen": ["12_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.9989860574, 66.1063366264]
+      "coordinates": [-30.7609, 65.7437],
+      "id": "D6996567EBC9F8267FF6E956AE00D0D0844D5A85",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/10"],
+        "yuanshen": ["12_10"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 3
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0734950129, 66.0074363302]
+      "coordinates": [-30.63809, 65.87557],
+      "id": "2C1B370B98DEE81991A7B6A0E847E4BD8D39B2CF",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/11"],
+        "yuanshen": ["12_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.1572450654, 66.1722701572]
+      "coordinates": [-29.95508, 63.17229],
+      "id": "403B515507EE37316E738C32E822BBC33F06C7BC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/12"],
+        "yuanshen": ["12_12"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 5
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.0342988357, 63.7656962827]
+      "coordinates": [-30.12628, 64.7547],
+      "id": "BED878580B7A1464F7E225B0632FBCB4D81E3362",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/13"],
+        "yuanshen": ["12_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8646943071, 63.5788846121]
+      "coordinates": [-30.16428, 64.8536],
+      "id": "8B66D70AE600B96390FA9DB3A91E700E31BC9738",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/14"],
+        "yuanshen": ["12_14"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 7
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7892179752, 63.9305301097]
+      "coordinates": [-30.28769, 64.74371],
+      "id": "A3E42DE730AC715A955DF4755F338C0C538633BA",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/15"],
+        "yuanshen": ["12_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7231275449, 63.7656962827]
+      "coordinates": [-18.71926, 45.17689],
+      "id": "A14C45D4AA4A0DE16983F61B4DDE2D856B6E7DA6",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/17"],
+        "yuanshen": ["12_17"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 9
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7608990603, 65.743702207]
+      "coordinates": [-18.54227, 45.30876],
+      "id": "D096DF2BC2E8B3B255A842E4E2CC4843C92CCEE8",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/18"],
+        "yuanshen": ["12_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.6380875238, 65.8755692686]
+      "coordinates": [-18.64641, 45.39667],
+      "id": "D21286C47ECDDB8E6579742421B72BA773C0E2CF",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/19"],
+        "yuanshen": ["12_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.9550840254, 63.1722945054]
+      "coordinates": [-18.79208, 45.30876],
+      "id": "B756F9BD2668FB6FAC9DEAB78A5DB9422D58A9C1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/20"],
+        "yuanshen": ["12_20"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 12
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1262803818, 64.7546992448]
+      "coordinates": [-17.98932, 43.63844],
+      "id": "6DEEAA8619929C666A0360852855FE5452C0BFC9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/21"],
+        "yuanshen": ["12_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1642838111, 64.8535995411]
+      "coordinates": [-18.0729, 43.75932],
+      "id": "E825E3C12BAFB25F5E6B05E0DF49B57F89BB32D7",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/22"],
+        "yuanshen": ["12_22"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 14
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2876937627, 64.743710323]
+      "coordinates": [-18.13555, 43.5835],
+      "id": "16B0D44BA2740E2EE0AD8BEE4244DE4464171CE1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/23"],
+        "yuanshen": ["12_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.6595542073, 64.3700869818]
+      "coordinates": [-18.20862, 43.73735],
+      "id": "4C687AA7BCE7350E597F828A43B615AFE6C1035F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/24"],
+        "yuanshen": ["12_24"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 16
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.7192609404, 45.1768939371]
+      "coordinates": [-16.70995, 42.55054],
+      "id": "702D4EE7E720F8773625A66158CB6435237AAF8E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/25"],
+        "yuanshen": ["12_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.542273595, 45.3087609987]
+      "coordinates": [-16.56257, 42.68241],
+      "id": "FCF2FFC605A32B55CBF2D472AF2878BC51B8075F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/26"],
+        "yuanshen": ["12_26"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 18
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.6464061256, 45.3966723732]
+      "coordinates": [-16.6889, 42.66043],
+      "id": "1EBABFB424A50ADBD988BF99D0CFD85698DE8278",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/27"],
+        "yuanshen": ["12_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.7920843773, 45.3087609987]
+      "coordinates": [-17.16189, 42.22087],
+      "id": "42180B87503FB3FF6530BF5515B6890FF0286D77",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/28"],
+        "yuanshen": ["12_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.989318089, 43.6384448849]
+      "coordinates": [-17.28782, 42.16593],
+      "id": "6CD975370D390916E9DB1BF82EB4776D96EB4BB1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/29"],
+        "yuanshen": ["12_29"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 21
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.0728955964, 43.7593230247]
+      "coordinates": [-17.38221, 42.36373],
+      "id": "79D5F509874A2781B42ED64CDDA6DA854F521450",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/30"],
+        "yuanshen": ["12_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.1355526397, 43.5835002759]
+      "coordinates": [-17.19338, 42.3967],
+      "id": "CFBD3492D5A10F88D617717B24D935A93087516C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/31"],
+        "yuanshen": ["12_31"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 23
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.2086241638, 43.7373451811]
+      "coordinates": [-19.12459, 39.69342],
+      "id": "A95FD9DBE84D111D370BC9915DE28C1DF92590CB",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/32"],
+        "yuanshen": ["12_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.7099482705, 42.5505416266]
+      "coordinates": [-18.96881, 39.68243],
+      "id": "94EA90D1181D2FA07B86F632E6474ED9DD85F282",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/33"],
+        "yuanshen": ["12_33"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 25
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.5625720503, 42.6824086882]
+      "coordinates": [-21.12575, 38.63849],
+      "id": "9ABFD2BD1558CB4F22E17C78EE0B3669AC45EB13",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/34"],
+        "yuanshen": ["12_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.6889014662, 42.6604308446]
+      "coordinates": [-21.23844, 38.68244],
+      "id": "6956280D93138C78C3F2DEC95350C9647649F254",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/35"],
+        "yuanshen": ["12_35"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 27
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1618889899, 42.2208739726]
+      "coordinates": [-21.29987, 38.80332],
+      "id": "5852D4CBF1B0C6E6E6769C172923E22CFFF92E81",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/36"],
+        "yuanshen": ["12_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.287817062, 42.1659293635]
+      "coordinates": [-21.98409, 40.08902],
+      "id": "3589676A81EF1D600024D6CFF4EA911C5972130D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/37"],
+        "yuanshen": ["12_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.3822066551, 42.363729956]
+      "coordinates": [-22.12665, 39.97913],
+      "id": "7154F4987D8BCA6A9F1B1E563B607E57717E1155",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/38"],
+        "yuanshen": ["12_38"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 30
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1933790481, 42.3966967214]
+      "coordinates": [-22.12665, 40.15496],
+      "id": "1CB0224779C45B53E773E1534838A6A6C0A82FEE",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/39"],
+        "yuanshen": ["12_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.1245890344, 39.6934219582]
+      "coordinates": [-22.88788, 40.55056],
+      "id": "25886FCB3892743F5EB6927847D31C653F97AB98",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/40"],
+        "yuanshen": ["12_40"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 32
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.9688100226, 39.6824330364]
+      "coordinates": [-23.04974, 40.96814],
+      "id": "56C649CD22711D7648F705D9FE8C950BE5D63FD1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/41"],
+        "yuanshen": ["12_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.1257538974, 38.6384854653]
+      "coordinates": [-22.88788, 40.83627],
+      "id": "909E9563F00391CCF0FFE0C2E673E57FA5F885B5",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/42"],
+        "yuanshen": ["12_42"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 34
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.2384429696, 38.6824411525]
+      "coordinates": [-22.86764, 41.0011],
+      "id": "F91E4FCCD6E79D1B6674CE3A037DC45F07841EB0",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/43"],
+        "yuanshen": ["12_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.2998734814, 38.8033192923]
+      "coordinates": [-22.16735, 41.08902],
+      "id": "C93BC41AC30A3990DF08CEF53D634A2F62347DC8",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/44"],
+        "yuanshen": ["12_44"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 36
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.9840901867, 40.0890231431]
+      "coordinates": [-22.34022, 41.05605],
+      "id": "4C53580F3401BCB5EA0C90477F80E55EFF54921B",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/45"],
+        "yuanshen": ["12_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1266489026, 39.9791339251]
+      "coordinates": [-22.10625, 43.80323],
+      "id": "1D277DF1C5400DF6B993924986719F8DAAE56FEC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/46"],
+        "yuanshen": ["12_46"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 38
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1266489026, 40.1549566739]
+      "coordinates": [-22.16731, 43.75927],
+      "id": "C34D43A4558969517D4DB89B97016C066A8E1D55",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/47"],
+        "yuanshen": ["12_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8878849213, 40.5505578587]
+      "coordinates": [-22.21817, 43.83619],
+      "id": "E4B7E46C159528640DB2E3F222C77B317A883707",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/48"],
+        "yuanshen": ["12_48"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 40
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.0497361404, 40.9681368872]
+      "coordinates": [-22.15713, 45.60541],
+      "id": "98538DECBC2DD72938C9B010D4ED2B39EBC55B55",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/49"],
+        "yuanshen": ["12_49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8878849213, 40.8362698256]
+      "coordinates": [-22.26902, 45.66035],
+      "id": "7EFEB9435C56804A872ED9885C6ADE636D2770D9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/50"],
+        "yuanshen": ["12_50"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 42
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8676399094, 41.0011036526]
+      "coordinates": [-22.38082, 45.60541],
+      "id": "D2587865234C109C98DF253DCC2D1F0ED7B7B3BB",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/51"],
+        "yuanshen": ["12_51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1673535335, 41.089015027]
+      "coordinates": [-22.21817, 45.47354],
+      "id": "B0963F3150406BA7507DB26A6064BA960489ECA4",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/52"],
+        "yuanshen": ["12_52"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 44
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.3402166041, 41.0560482616]
+      "coordinates": [-21.07444, 38.71657],
+      "id": "E0413CE631A102F03D33943A70ECD809AF5845F4",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/53"],
+        "yuanshen": ["12_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 45
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1062484728, 43.8032268384]
+      "coordinates": [-31.30699, 53.2603],
+      "id": "BB8D8F428F0064C55C1B74F7AAEC352018C4CC5B",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/54"],
+        "yuanshen": ["12_54"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1673098496, 43.7592711512]
+      "coordinates": [-31.35393, 53.2603],
+      "id": "E65E2134CE8D57E2AB44C115393B887D5AA07CE9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/55"],
+        "yuanshen": ["12_55"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 47
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.2181740884, 43.8361936038]
+      "coordinates": [-31.31168, 53.18341],
+      "id": "7979719EE6D35B5B41B5E67B7A64D814C4692B56",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/56"],
+        "yuanshen": ["12_56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.1571347923, 45.6054100139]
+      "coordinates": [-31.31642, 53.41972],
+      "id": "B2B9B4107167FDC20B1975CE6A710A12FD8CEAC6",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/57"],
+        "yuanshen": ["12_57"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 49
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.26901989, 45.6603546229]
+      "coordinates": [-30.87402, 53.0462],
+      "id": "3A35D18F9C79823D09AE27844FBECD560284F50D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/58"],
+        "yuanshen": ["12_58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 50
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.3808155899, 45.6054100139]
+      "coordinates": [-30.91645, 53.05169],
+      "id": "D8B574B8A0A72795446C3A9DD6E443EFAEC9944D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/59"],
+        "yuanshen": ["12_59"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 51
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.2181740884, 45.4735429522]
+      "coordinates": [-30.85054, 53.55149],
+      "id": "8A5F5FCD7A370F38A5E411F9E6D9CBF073A7ABD9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/60"],
+        "yuanshen": ["12_60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.0744351774, 38.7165672913]
+      "coordinates": [-30.97292, 53.58996],
+      "id": "87486F92BAFA4F205133D9BA6C7B473162C48321",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/61"],
+        "yuanshen": ["12_61"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 53
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.3069857712, 53.2603004635]
+      "coordinates": [-30.94936, 53.51307],
+      "id": "C0F804EC2A189BCA4A1F3BAA697B91FDD59BDC91",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/62"],
+        "yuanshen": ["12_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.3539252176, 53.2603004635]
+      "coordinates": [-30.07385, 63.29773],
+      "id": "1C832BA9C63ED9722287D35E2A52C70F6F56EE80",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/64"],
+        "yuanshen": ["12_63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 55
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.3116807692, 53.1834112893]
+      "coordinates": [-29.90437, 63.176],
+      "id": "36117CB860FB6D3C0F66E185DF7F6E4ADD5D5095",
+      "importIds": {
+        "gm_legacy": ["mondstadtWindwheelAster/65"],
+        "yuanshen": ["12_65"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 56
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.3164235982, 53.4197221222]
+      "coordinates": [-21.52973, 64.07955],
+      "id": "32A85D64E3CE49A90DB14D18766C362A372D1B53",
+      "importIds": {
+        "yuanshen": ["12_1"],
+        "gm_legacy": ["mondstadtWindwheelAster/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 57
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/12_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8740153548, 53.0461956074]
+      "coordinates": [-21.53144, 64.12721],
+      "id": "6139C2A30FB4CCD0CD531ABC9E017B8668DC75FC",
+      "importIds": {
+        "yuanshen": ["12_2"],
+        "gm_legacy": ["mondstadtWindwheelAster/2"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 58
+      "popupMedia": "https://yuanshen.site/comment_png/12_2.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.916454979, 53.0516876913]
+      "coordinates": [-30.97447, 63.74267],
+      "id": "EE499E4C0BC76C7C19E193FB46B679BC6054E975",
+      "importIds": {
+        "yuanshen": ["12_6"],
+        "gm_legacy": ["mondstadtWindwheelAster/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/12_6.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8505423633, 53.5514943286]
+      "coordinates": [-30.88966, 63.64381],
+      "id": "B4F15465D8A09D73E091785BF268E34DD632F54C",
+      "importIds": {
+        "yuanshen": ["12_7"],
+        "gm_legacy": ["mondstadtWindwheelAster/7"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 60
+      "popupMedia": "https://yuanshen.site/comment_png/12_7.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.972920751, 53.5899551186]
+      "coordinates": [-30.99338, 63.83787],
+      "id": "3201B9E99CFCF92AF38F0C87A07ABB12B005845F",
+      "importIds": {
+        "yuanshen": ["12_8"],
+        "gm_legacy": ["mondstadtWindwheelAster/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/12_8.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.9493594251, 53.5130659443]
+      "coordinates": [-30.91794, 63.7445],
+      "id": "3816662721F0E51D732E17A067E68BD6E52B70E9",
+      "importIds": {
+        "yuanshen": ["12_9"],
+        "gm_legacy": ["mondstadtWindwheelAster/9"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 62
+      "popupMedia": "https://yuanshen.site/comment_png/12_9.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0738512321, 63.2977284119]
+      "coordinates": [-29.64191, 64.47696],
+      "id": "33978AE0C49DAA5269D1A38057E362EB41CC35B4",
+      "importIds": {
+        "yuanshen": ["12_16"],
+        "gm_legacy": ["mondstadtWindwheelAster/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/12_16.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0738512321, 63.2977284119]
+      "coordinates": [-30.07543, 63.34717],
+      "id": "BC89C927BAD93BCA9CFD72EA08D7DEA92F5C2F37",
+      "importIds": {
+        "yuanshen": ["12_64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个风车菊"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/12_64.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.9043683698, 63.1760027704]
+      "coordinates": [-32.50976, 65.51147],
+      "id": "9640FB3E058670C502BFF6624EF1328492ED6B2B",
+      "importIds": {
+        "yuanshen": ["12_66"]
+      },
+      "popupTitle": {
+        "zh": "风车菊"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这是一个风车菊"
       },
-      "id": 65
+      "popupMedia": "https://yuanshen.site/comment_png/12_66.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

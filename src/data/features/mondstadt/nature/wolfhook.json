@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Wolfhook" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Wolfhook",
+    "ru": "Волчий Крюк",
+    "zh": ""
+  },
+  "description": {
+    "en": "A berry with thorns that often gets attached to a wolf's pelt. Used in Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "wolfhook",
@@ -13,433 +22,530 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.0568574405, 51.3507026838]
+      "coordinates": [-27.05686, 51.3507],
+      "id": "88217583A54FC480785BD9EB7620EFD92C6A1DB9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/1"],
+        "yuanshen": ["7_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.4960252511, 51.196885079]
+      "coordinates": [-27.49603, 51.19689],
+      "id": "C721A338E551E91988BA68A6DF71060A8A2A38CA",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/2"],
+        "yuanshen": ["7_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-2"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-2",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.554449518, 51.2847808532]
+      "coordinates": [-27.55445, 51.28478],
+      "id": "DBA0561B56BF1CF0EB7A9B25C3F6EDB2EA1C999C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/3"],
+        "yuanshen": ["7_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-3"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-3",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.2240845567, 50.8782628977]
+      "coordinates": [-28.22408, 50.87826],
+      "id": "426568F4EDEF7D354BCEC773773937C06BFEAFCC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/4"],
+        "yuanshen": ["7_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-4"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-4",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.4367167825, 50.7354322646]
+      "coordinates": [-28.43672, 50.73543],
+      "id": "09AB4D59DC047B10C9D5C2AD7C36B62FBFEFE70A",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/5"],
+        "yuanshen": ["7_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-5"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-5",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.8703158152, 51.054054446]
+      "coordinates": [-28.87032, 51.05405],
+      "id": "510AF120EEE4F8241A390481A4907F3E72B41F74",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/6"],
+        "yuanshen": ["7_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-6"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-6",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.6970914373, 50.6804974058]
+      "coordinates": [-28.69709, 50.6805],
+      "id": "A4E0AA9F069F9263129B2F5A81095830B350E846",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/7"],
+        "yuanshen": ["7_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-7"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-7",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.7933627265, 50.7354322646]
+      "coordinates": [-28.79336, 50.73543],
+      "id": "FD11E1DBB072A4A1125B6EFD1BE6C10A79E0508C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/8"],
+        "yuanshen": ["7_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-8"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-8",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.6778265376, 50.6145755752]
+      "coordinates": [-28.67783, 50.61458],
+      "id": "DA59278A66D5E8509900867184D202C5CE26B30C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/9"],
+        "yuanshen": ["7_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-9"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-9",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.7548648588, 50.6145755752]
+      "coordinates": [-28.75486, 50.61458],
+      "id": "E3C04EA26241890A1FD4EEE7661653C896CBF958",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/10"],
+        "yuanshen": ["7_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-10"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-10",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.2254816417, 50.6804974058]
+      "coordinates": [-29.22548, 50.6805],
+      "id": "647FD60D68EBE66192D57FEB9BEF60A47F40F971",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/11"],
+        "yuanshen": ["7_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.4934403649, 50.4607579704]
+      "coordinates": [-29.49344, 50.46076],
+      "id": "E990414AA2DA2F294ADFB2DBF69BD9F257D27857",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/12"],
+        "yuanshen": ["7_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-12"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-12",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.0912384215, 50.2080576196]
+      "coordinates": [-29.09124, 50.20806],
+      "id": "2BF38C7FC468276BAA39975C63C06BF09F5896F2",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/13"],
+        "yuanshen": ["7_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-13"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-13",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.1296115302, 50.3069403656]
+      "coordinates": [-29.12961, 50.30694],
+      "id": "69DB957DFD4645E0B07FA8464730DAC9A5D7B01C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/14"],
+        "yuanshen": ["7_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-14"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-14",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.966427089, 50.0652269866]
+      "coordinates": [-28.96643, 50.06523],
+      "id": "B89E5345744232C433796AAFB2044A7036552487",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/15"],
+        "yuanshen": ["7_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-15"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-15",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.5332269381, 50.5486537445]
+      "coordinates": [-28.53323, 50.54865],
+      "id": "C2C1E3DB758FEB594FE6593CFBCD507019F46155",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/16"],
+        "yuanshen": ["7_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-16"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-16",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.5042831548, 50.3508882526]
+      "coordinates": [-28.50428, 50.35089],
+      "id": "D1273AA28CE27308B1D4622A624AD8BDC0CAA9A9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/17"],
+        "yuanshen": ["7_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-17"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-17",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.5621627739, 50.427797055]
+      "coordinates": [-28.56216, 50.4278],
+      "id": "5022FF246069AD0B2E72840AACA82D3EC0F16FD0",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/18"],
+        "yuanshen": ["7_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "WARNING: Couldn't find this one." },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 18
+      "popupContent": {
+        "en": "WARNING: Couldn't find this one.",
+        "zh": "这是一个钩钩果"
+      },
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.6970914373, 50.1750967043]
+      "coordinates": [-28.69709, 50.1751],
+      "id": "3AC79FD127DF5E413F2EEFB03729FF4D316FF82D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/19"],
+        "yuanshen": ["7_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-19"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-19",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.7067225578, 50.2300315632]
+      "coordinates": [-28.70672, 50.23003],
+      "id": "7DD0ED65E28CF0A6F0132A5CC3EFB322A08BE923",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/20"],
+        "yuanshen": ["7_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "WARNING: Couldn't find this one." },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 20
+      "popupContent": {
+        "en": "WARNING: Couldn't find this one.",
+        "zh": "这是一个钩钩果"
+      },
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.7452381728, 49.8235136076]
+      "coordinates": [-28.74524, 49.82351],
+      "id": "63A212ACD080EA795541142A1FB04EBDFFD1BF33",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/21"],
+        "yuanshen": ["7_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-21"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-21",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.8029849733, 49.90042241]
+      "coordinates": [-28.80298, 49.90042],
+      "id": "0E5ED201696CAEF3CBD5F36E12AAD64EA22B9F04",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/22"],
+        "yuanshen": ["7_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-22"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-22",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.8414650747, 49.7685787488]
+      "coordinates": [-28.84147, 49.76858],
+      "id": "D616589BA80F8FDBF88DE55593BE69160DA3F996",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/23"],
+        "yuanshen": ["7_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-23"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-23",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.3308351973, 49.8015396641]
+      "coordinates": [-29.33084, 49.80154],
+      "id": "7DFE2F3B92C5A7390DFFAEFCAEC6FF8D2180CFE7",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/24"],
+        "yuanshen": ["7_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-24"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-24",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1317501629, 48.8786340353]
+      "coordinates": [-30.13175, 48.87863],
+      "id": "EF56DC2193CE1BAF61C36BFDAA0DC558ADE02A84",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/25"],
+        "yuanshen": ["7_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-25"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-25",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.1507414107, 48.9994907248]
+      "coordinates": [-30.15074, 48.99949],
+      "id": "D5E06E3876F990B5CDF754C8753728CEDE309E44",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/26"],
+        "yuanshen": ["7_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-26"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-26",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2551278903, 48.4391551644]
+      "coordinates": [-30.25513, 48.43916],
+      "id": "66E276A8ADE724F3B7AAF47694B9EA652BC1418C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/27"],
+        "yuanshen": ["7_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-27"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-27",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.2740953511, 48.6808685434]
+      "coordinates": [-30.2741, 48.68087],
+      "id": "EBA7BD8AEE3C192C442AC7CA431815266845F558",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/28"],
+        "yuanshen": ["7_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-28"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-28",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.9130885062, 48.1315199548]
+      "coordinates": [-29.91309, 48.13152],
+      "id": "699B3EDA163F9C9C937DCB1525EFF9540E8AA48E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/29"],
+        "yuanshen": ["7_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-29"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-29",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.9891994178, 48.1974417854]
+      "coordinates": [-29.9892, 48.19744],
+      "id": "2019072B52711107F6D1BA14407108B19CDFF93F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/30"],
+        "yuanshen": ["7_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-30"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-30",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.9671403109, 48.1358362275]
+      "coordinates": [-29.96714, 48.13584],
+      "id": "C713DCE5C2357038BF8092F5FB91EA10C1934F0B",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/31"],
+        "yuanshen": ["7_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-31"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-31",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.742028907263524, 51.858863429740325]
+      "coordinates": [-28.55388, 50.34379],
+      "id": "70EE6F683EB6AB174EB06DC174D5D0BAAE2B9CF0",
+      "importIds": {
+        "gm_legacy": ["mondstadtWolfhook/33"],
+        "yuanshen": ["7_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-32"
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupMedia": "mondstadt/wolfhook/wolfhook-33",
+      "popupAttribution": "MasterEric"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.5538782945, 50.3437932894]
+      "coordinates": [-28.57317, 51.83215],
+      "id": "A177B512BDD4950E71C0CF7AE9FF182DA15963BA",
+      "importIds": {
+        "yuanshen": ["7_32"],
+        "gm_legacy": ["mondstadtWolfhook/32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "mondstadt/wolfhook/wolfhook-33"
+      "popupMedia": "mondstadt/wolfhook/wolfhook-32",
+      "popupTitle": {
+        "zh": "钩钩果"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个钩钩果"
+      },
+      "popupAttribution": "MasterEric"
     }
   ]
 }

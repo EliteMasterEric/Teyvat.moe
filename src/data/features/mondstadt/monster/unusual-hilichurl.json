@@ -1,9 +1,16 @@
 {
+  "format": 2,
   "name": {
-    "en": "Unusual Hilichurl"
+    "en": "Unusual Hilichurl",
+    "ru": "Странный Хиличурл",
+    "zh": ""
   },
+  "description": {
+    "en": "An oddly dressed Hilichurl sharing a resemblence to Wei, miHoYo's founder. Drops Adventure EXP and Cabbage."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 43200,
-  "cluster": false,
   "icons": {
     "filter": "unusual-hilichurl",
     "base": {
@@ -15,123 +22,112 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.637912028341123, 63.44055175781251]
+      "coordinates": [-30.63791, 63.44055],
+      "id": "E9EFF0C9CBF61B8D937C96AB23DB3C2A9C70821A",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/1"],
+        "yuanshen": ["97_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#1: Windrise Tree"
-        },
-        "popupContent": {
-          "en": "Wei can appear at the base of the tree by the Statue of the Seven at Windrise."
-        },
-        "popupMedia": "mondstadt/wei/1"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#1: Windrise Tree",
+        "ru": "#1: Древо в Долине Ветров"
+      },
+      "popupContent": {
+        "en": "Wei can appear at the base of the tree by the Statue of the Seven at Windrise.",
+        "ru": "Может появиться у основания древа в Долине Ветров, находящегося у Статуи Анемо Архонта."
+      },
+      "popupMedia": "mondstadt/wei/1"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.90689555128868, 75.90454101562501]
+      "coordinates": [-33.9069, 75.90454],
+      "id": "87FA0540053692B71B6910E0A289B7C11FE5ABA4",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/2"],
+        "yuanshen": ["97_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#2: Cape Oath"
-        },
-        "popupContent": {
-          "en": "Wei can appear sitting at the edge of the cliff at Cape Oath, north of the portal to Musk Reef."
-        },
-        "popupMedia": "mondstadt/wei/2"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#2: Cape Oath",
+        "ru": "#2: Мыс Веры"
+      },
+      "popupContent": {
+        "en": "Wei can appear sitting at the edge of the cliff at Cape Oath, north of the portal to Musk Reef.",
+        "ru": "Может появиться сидящим на краю утёса на Мысе Веры, к северу от портала на Риф Маска."
+      },
+      "popupMedia": "mondstadt/wei/2"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.58593511478851, 42.1490478515625]
+      "coordinates": [-21.58594, 42.14905],
+      "id": "CD0606A1B22660A7109C433E2600C41DCBE67489",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/3"],
+        "yuanshen": ["97_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#3: Stormterror's Lair"
-        },
-        "popupContent": {
-          "en": "Wei can appear at the middle of the southwest bridge at Stormterror's Lair."
-        },
-        "popupMedia": "mondstadt/wei/3"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#3: Stormterror's Lair",
+        "ru": "#3: Логово Ужаса Бури"
+      },
+      "popupContent": {
+        "en": "Wei can appear at the middle of the southwest bridge at Stormterror's Lair.",
+        "ru": "Может появиться в середине юго-западного моста в Логове Ужаса Бури."
+      },
+      "popupMedia": "mondstadt/wei/3"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.535229562948455, 49.59228515625]
+      "coordinates": [-29.53523, 49.59229],
+      "id": "330CF2A1651C909311C3CE25CA2ACE703D41E579",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/7"],
+        "yuanshen": ["97_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#7: Andrius Arena"
-        },
-        "popupContent": {
-          "en": "Wei can appear near Andrius' arena at Wolfendom."
-        },
-        "popupMedia": "mondstadt/wei/7"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#7: Andrius Arena",
+        "ru": "#7: Арена Андриуса"
+      },
+      "popupContent": {
+        "en": "Wei can appear near Andrius' arena at Wolfendom.",
+        "ru": "Может появиться вблизи арены Андриуса в Вольфендоме."
+      },
+      "popupMedia": "mondstadt/wei/7"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.211058276488192, 39.81445312500001]
+      "coordinates": [-17.26673, 62.49023],
+      "id": "5D90332293D77FCFCF48B95AD81BF397A3658CCF",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/11"],
+        "yuanshen": ["97_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#10: Southwest Stormterror"
-        },
-        "popupContent": {
-          "en": "Wei is known to appear somewhere in this area. *PICTURE NEEDED*"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#11: Anemo Hypostasis Shrine",
+        "ru": "#11: Святилище Анемо гипостазиса"
+      },
+      "popupContent": {
+        "en": "Wei can appear west of the Anemo Hypostasis, inspecting the shrine.",
+        "ru": "Может появиться на западе от Анемо гипостазисе, наблюдая за святилищем."
+      },
+      "popupMedia": "mondstadt/wei/11"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.26672782352052, 62.49023437500001]
+      "coordinates": [-35.9113, 67.55493],
+      "id": "25415C23E9E0FA074B1DC5896EC868EC4EFA2AB8",
+      "importIds": {
+        "gm_legacy": ["mondstadtUnusualHilichurl/18"],
+        "yuanshen": ["97_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#11: Anemo Hypostasis Shrine"
-        },
-        "popupContent": {
-          "en": "Wei can appear west of the Anemo Hypostasis, inspecting the shrine."
-        },
-        "popupMedia": "mondstadt/wei/11"
-      }
-    },
-    {
-      "id": 18,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.911298488227466, 67.55493164062501]
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "#18: Dadaupa Gorge",
+        "ru": "#18: Ущелье Дадаупа"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "#18: Dadaupa Gorge"
-        },
-        "popupContent": {
-          "en": "Wei can be found on the northern cliff overlooking Dadaupa Gorge."
-        },
-        "popupMedia": "mondstadt/wei/18"
-      }
+      "popupContent": {
+        "en": "Wei can be found on the northern cliff overlooking Dadaupa Gorge.",
+        "ru": "Может быть найден на севере утёса с видом на Ущелье Дадаупа."
+      },
+      "popupMedia": "mondstadt/wei/18"
     }
   ]
 }

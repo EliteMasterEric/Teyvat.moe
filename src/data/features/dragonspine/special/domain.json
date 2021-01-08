@@ -1,8 +1,15 @@
 {
+  "format": 2,
   "name": {
-    "en": "Domain"
+    "en": "Domain",
+    "ru": "Подземелья"
   },
-  "cluster": false,
+  "description": {
+    "en": "Complete the challenges to earn Artifact, Weapon Ascension, or Talent Level-Up rewards."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "domain",
     "base": {
@@ -24,21 +31,12 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.832565197967725, 57.141448269659364]
+      "coordinates": [-40.83257, 57.14145],
+      "id": "3710A403C350DB2237BEDEEC88C90CB9536F3762",
+      "importIds": {
+        "gm_legacy": ["dragonspineDomain/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Peak of Vindagnyr"
-        },
-        "popupContent": {
-          "en": "This Artifact domain drops the Heart of Depth, Blizzard Strayer, Gambler, and Defender's Will sets. Complete a questline in this area to enter."
-        },
-        "popupMedia": "dragonspine/domain/1"
-      },
-      "id": 1
+      "popupAttribution": "MasterEric"
     }
   ]
 }

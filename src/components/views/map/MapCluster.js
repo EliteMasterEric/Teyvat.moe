@@ -36,15 +36,19 @@ export const onClusterFunction = (_zoom) => {
 
 const CLUSTER_MARKER_ICON = require('~/images/icons/marker/marker_blue_bg.svg').default;
 
-const createClusterIcon = (cluster) => {
+const createClusterIcon = (legacy) => (cluster) => {
   const childMarkers = cluster.getAllChildMarkers();
   const childCount = childMarkers.length;
   // For each cluster child element, check if completed = true; if so, add to the count.
-  const childCompletedCount = childMarkers.reduce(
-    (prev, marker) => prev + (marker?.options?.properties?.completed ? 1 : 0),
-    0
-  );
-  const iconUrl = childMarkers[0]?.options?.properties?.iconUrl;
+  const childCompletedCount = childMarkers.reduce((prev, marker) => {
+    if (legacy) {
+      return prev + (marker?.options?.properties?.completed ? 1 : 0);
+    }
+    // Else, new.
+    return prev + (marker?.options?.completed ? 1 : 0);
+  }, 0);
+  const iconUrl = childMarkers[0]?.options?.icon?.options?.clusterIconUrl;
+  // childMarkers[0]?.options?.properties?.iconUrl
 
   const icon = (
     <>
@@ -67,12 +71,8 @@ const createClusterIcon = (cluster) => {
   });
 };
 
-const MapCluster = ({
-  children,
-  // onClusterClick,
-  // onClusterDoubleClick,
-  clusterFunction = offClusterFunction,
-}) => {
+const MapCluster = ({ children, clusterFunction = offClusterFunction, legacy = true }) => {
+
   const map = useMap();
 
   const generateSpiderPoints = (childMarkerCount, _centerPoint, childMarkers) => {
@@ -92,7 +92,7 @@ const MapCluster = ({
   return (
     <MarkerClusterGroup
       disableClusteringAtZoom={8}
-      iconCreateFunction={createClusterIcon}
+      iconCreateFunction={createClusterIcon(legacy)}
       maxClusterRadius={clusterFunction}
       // onClick={console.log}
       // onDblClick={console.log}

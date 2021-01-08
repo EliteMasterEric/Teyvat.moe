@@ -1,6 +1,14 @@
 {
-  "name": { "en": "White Iron Chunk" },
-  "cluster": true,
+  "format": 2,
+  "name": {
+    "en": "White Iron Chunk",
+    "ru": "Обломок белого железа"
+  },
+  "description": {
+    "en": "Modestly rare, light gray ore used for forging Weapons, along with creating Fine Enhancement Ore."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "white-iron-chunk",
@@ -13,836 +21,1006 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.0784828607, 68.8500569966]
+      "coordinates": [-17.07848, 68.85006],
+      "id": "EABB92722441DFE04007951D0165375702934E5D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/1"],
+        "yuanshen": ["19_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.0154282554, 68.7951540233]
+      "coordinates": [-17.01543, 68.79515],
+      "id": "AD54258326C6FF5DC32841D428B7D4BC2732AAEF",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/2"],
+        "yuanshen": ["19_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.0994963299, 68.8061346179]
+      "coordinates": [-17.0995, 68.80613],
+      "id": "FCB18D51329920CA43A8532F3AD7801E4CFE28EF",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/3"],
+        "yuanshen": ["19_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1520196259, 68.8500569966]
+      "coordinates": [-17.15202, 68.85006],
+      "id": "4592CAB7613BCD5CDBDDD8293B62C7BD0C678E11",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/4"],
+        "yuanshen": ["19_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1625225037, 68.7622122393]
+      "coordinates": [-17.16252, 68.76221],
+      "id": "A4330B3D7C9E7E13D9414F26557FAD9F3CF1377D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/5"],
+        "yuanshen": ["19_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.8142151539, 65.8077270599]
+      "coordinates": [-18.81422, 65.80773],
+      "id": "C74C9C8110A7EC15194B3FA71168430EBA211206",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/6"],
+        "yuanshen": ["19_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.9182301764, 65.7418434919]
+      "coordinates": [-18.91823, 65.74184],
+      "id": "7505E1B1BAC9776DF4624B6D16805B2909DABF07",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/7"],
+        "yuanshen": ["19_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.980608164, 65.7747852759]
+      "coordinates": [-18.98061, 65.77479],
+      "id": "100A695ED7F622CF445E7FF95E8F7ADEC0BAF3CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/8"],
+        "yuanshen": ["19_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.0167541174, 64.7865317567]
+      "coordinates": [-20.01675, 64.78653],
+      "id": "AE3421F7E98F3B04C10F1BC5031C579EA3A841CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/9"],
+        "yuanshen": ["19_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.9651054566, 64.7426093781]
+      "coordinates": [-19.96511, 64.74261],
+      "id": "9FB90DC8530F2ED85F793053AEABFE57BC18CCAD",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/10"],
+        "yuanshen": ["19_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.0580608397, 64.7535899727]
+      "coordinates": [-20.05806, 64.75359],
+      "id": "1BD7B9A5B8BD6263AB6C382401F0BCE615E90923",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/11"],
+        "yuanshen": ["19_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.0787101257, 64.6328034315]
+      "coordinates": [-20.07871, 64.6328],
+      "id": "94DCCE5A8081C0B6EF065C74475FAD9BD3452FFE",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/12"],
+        "yuanshen": ["19_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.1509611924, 64.7316287834]
+      "coordinates": [-20.15096, 64.73163],
+      "id": "3574413E4988E57D54D3907ECA9EFEACCB8B896E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/13"],
+        "yuanshen": ["19_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4538006371, 63.9289158804]
+      "coordinates": [-34.4538, 63.92892],
+      "id": "6327F280064B2DDEA8AA3B40B166EC38A1794F8F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/14"],
+        "yuanshen": ["19_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3337243577, 53.8323140629]
+      "coordinates": [-27.33372, 53.83231],
+      "id": "B613024548F123FF2F99602215302C70AC537E0C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/15"],
+        "yuanshen": ["19_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.2751204069, 53.7883916843]
+      "coordinates": [-27.27512, 53.78839],
+      "id": "22EE05EBA603D4FB9EFB58456BE9C52EA2451E5D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/16"],
+        "yuanshen": ["19_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.49960057, 53.7115275217]
+      "coordinates": [-27.4996, 53.71153],
+      "id": "F7CA7159D89D6BEA1F890BDF0F44737B97D3EB51",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/17"],
+        "yuanshen": ["19_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3532521287, 53.5248574125]
+      "coordinates": [-27.35325, 53.52486],
+      "id": "4614545E4BA4FBF35A9ADC03C8261ACDE7E26A88",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/18"],
+        "yuanshen": ["19_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.402056492, 53.5907409805]
+      "coordinates": [-27.40206, 53.59074],
+      "id": "13D137166DD28AF1FBB0EAD844EAA19C52208E54",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/19"],
+        "yuanshen": ["19_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.4508393144, 53.6236827644]
+      "coordinates": [-27.45084, 53.62368],
+      "id": "DCBCBB75FC0C2A4F9AF07920CF37B4E541B6D63D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/20"],
+        "yuanshen": ["19_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.893443034, 51.4934474008]
+      "coordinates": [-26.89344, 51.49345],
+      "id": "49EA1CBD900327CF3C262FB441574263F97670C2",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/21"],
+        "yuanshen": ["19_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8836393668, 51.4385444275]
+      "coordinates": [-26.88364, 51.43854],
+      "id": "BB06CF7A20FE92115D8D13D977C50B05B8F5B3D4",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/22"],
+        "yuanshen": ["19_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.6096807072, 51.4605056168]
+      "coordinates": [-20.60968, 51.46051],
+      "id": "29B62E24A95101A43E9D94F52AC7289338AC80BF",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/23"],
+        "yuanshen": ["19_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.578811935, 51.4056026435]
+      "coordinates": [-20.57881, 51.4056],
+      "id": "7114BC426E521FC419710F6202EF697F09E9300C",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/24"],
+        "yuanshen": ["19_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8118382958, 51.2724938763]
+      "coordinates": [-25.81184, 51.27249],
+      "id": "DCBFC43CCA29D2976C8046B8D7ECECCC2D5C0101",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/25"],
+        "yuanshen": ["19_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.5938525974, 51.1742132038]
+      "coordinates": [-22.59385, 51.17421],
+      "id": "45C5DC057E01174AF484457120460DCDD293973F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/26"],
+        "yuanshen": ["19_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.4415423617, 51.1522520145]
+      "coordinates": [-22.44154, 51.15225],
+      "id": "716EEF39500342505811E22D643115F9E02542B2",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/27"],
+        "yuanshen": ["19_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.5024865952, 51.1302908252]
+      "coordinates": [-22.50249, 51.13029],
+      "id": "A6EBEC96882FB7665D58A5DBEFF1D234F0EDE728",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/28"],
+        "yuanshen": ["19_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9833536819, 50.8551682112]
+      "coordinates": [-20.98335, 50.85517],
+      "id": "9C2ECA2708F5B67D71259FD6257FB934AF5CD80E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/29"],
+        "yuanshen": ["19_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.8293280773, 50.73438167]
+      "coordinates": [-20.82933, 50.73438],
+      "id": "C7C3A4493E28B02DF5A2627C9FCD05D461D33BC2",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/30"],
+        "yuanshen": ["19_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9217624239, 50.7563428593]
+      "coordinates": [-20.92176, 50.75634],
+      "id": "0664C70A0FD8B9980575AB2DE141771187485B3B",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/31"],
+        "yuanshen": ["19_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9422956598, 50.7892846433]
+      "coordinates": [-20.9423, 50.78928],
+      "id": "F151E7AD830098ADFA830C659EDA62B74937E7BC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/32"],
+        "yuanshen": ["19_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.0244004229, 50.8002652379]
+      "coordinates": [-21.0244, 50.80027],
+      "id": "A1FECA46A549117064DE02418B057042DD0B718F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/33"],
+        "yuanshen": ["19_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.0551780646, 50.7453622646]
+      "coordinates": [-21.05518, 50.74536],
+      "id": "3C7847E28878C7DB39F8A1B509A558A026FA6D92",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/34"],
+        "yuanshen": ["19_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.1167142503, 50.8332070219]
+      "coordinates": [-21.11671, 50.83321],
+      "id": "1160C1C3EB9FE10A31CCDAC834AE015F758B33B0",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/35"],
+        "yuanshen": ["19_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8927264375, 50.3061384783]
+      "coordinates": [-25.89273, 50.30614],
+      "id": "1D4677F9ACA0C4E91FC4F672DFC2FE44E9701976",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/36"],
+        "yuanshen": ["19_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.8630569607, 50.2292743157]
+      "coordinates": [-25.86306, 50.22927],
+      "id": "5BA6E2EE6191BA7F2F687C773F6C1EDEDD010E86",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/37"],
+        "yuanshen": ["19_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.4798344576, 49.8773219399]
+      "coordinates": [-28.47983, 49.87732],
+      "id": "F24D7BD8E169881A55E3C15306DA13BD2CC7C11D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/38"],
+        "yuanshen": ["19_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.8056632914, 49.4934483373]
+      "coordinates": [-19.80566, 49.49345],
+      "id": "5B8CA9FB43311834508E0E42E76E1F2E76CEAE4D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/39"],
+        "yuanshen": ["19_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.8470252289, 49.3507006068]
+      "coordinates": [-19.84703, 49.3507],
+      "id": "130F4F0C72C5F3538DED9FED04FE834346FC9C36",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/40"],
+        "yuanshen": ["19_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.513545206, 48.4686008157]
+      "coordinates": [-25.51355, 48.4686],
+      "id": "5F72EA1FB61B4A5EAF9ABCAE76F183D31D5730C0",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/41"],
+        "yuanshen": ["19_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.4837811183, 48.3917366531]
+      "coordinates": [-25.48378, 48.39174],
+      "id": "315358AE4F78C6866248741B3D435F2997E56DC8",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/42"],
+        "yuanshen": ["19_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 42
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1977630056, 48.2068897864]
+      "coordinates": [-35.19776, 48.20689],
+      "id": "30FAB9FC2131B606721FA1D6FDEB61FC00F1A926",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/43"],
+        "yuanshen": ["19_43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1797963479, 48.1190450291]
+      "coordinates": [-35.1798, 48.11905],
+      "id": "C294B6844AD508B6A24D0A94ACA4FA2139852446",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/44"],
+        "yuanshen": ["19_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.5352115612, 47.7681762786]
+      "coordinates": [-27.53521, 47.76818],
+      "id": "D3C1B49443448D1773EF197A62A7044E501D9A71",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 45
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5971513618, 46.9991390433]
+      "coordinates": [-33.59715, 46.99914],
+      "id": "546A95EF484653BB48A0026691EB54DC2A91A693",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/46"],
+        "yuanshen": ["19_46"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.312855033, 46.2854003906]
+      "coordinates": [-33.31286, 46.2854],
+      "id": "13B062B525C1D6A46A0BB95FABAA2DA11887275D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/47"],
+        "yuanshen": ["19_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 47
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4806723561, 45.2312633034]
+      "coordinates": [-34.48067, 45.23126],
+      "id": "ED16588DCE09A52DA0BD2612D1A56FED52693DE7",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/48"],
+        "yuanshen": ["19_48"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4081534622, 45.1653797355]
+      "coordinates": [-34.40815, 45.16538],
+      "id": "B500E63AB81D32404704E597088B073ABF37CEB6",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/49"],
+        "yuanshen": ["19_49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 49
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4081534622, 45.0445931942]
+      "coordinates": [-34.40815, 45.04459],
+      "id": "BDE5537082BC4F93CF4AC60161724A4468789B2F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/50"],
+        "yuanshen": ["19_50"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 50
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.679514225, 44.8689036797]
+      "coordinates": [-33.67951, 44.8689],
+      "id": "00F1E280D018B3E12D1239B6FAE3557DE08581CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/51"],
+        "yuanshen": ["19_51"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6337668041, 44.8359618957]
+      "coordinates": [-33.63377, 44.83596],
+      "id": "5D52B6A8FDA9905360C686C6FAC0C9FE07D3D6D1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/52"],
+        "yuanshen": ["19_52"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.7914748677, 44.7041947598]
+      "coordinates": [-22.79147, 44.70419],
+      "id": "E2CB65C6868AB2DE10A9978823E1D1801AC6F96F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/53"],
+        "yuanshen": ["19_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 53
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.4668094525, 41.3770745785]
+      "coordinates": [-22.46681, 41.37707],
+      "id": "E8A894BAEB8CA6651CBDA603326A40E2F4213648",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/54"],
+        "yuanshen": ["19_54"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.4788177362, 40.8719672242]
+      "coordinates": [-23.47882, 40.87197],
+      "id": "9F7CA4533AFB41795692D5BEC1151E6C8BD14C12",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/55"],
+        "yuanshen": ["19_55"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 55
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.2066573808, 50.3185352393]
+      "coordinates": [-19.20666, 50.31854],
+      "id": "B925BA00DB2806EB79A121B80063C7253E46556D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/56"],
+        "yuanshen": ["19_56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 56
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.3726565434, 50.2855934553]
+      "coordinates": [-19.37266, 50.28559],
+      "id": "7F94AA2323808ED64B96D6426B65D9C3942172C3",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/57"],
+        "yuanshen": ["19_57"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 57
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.8886558331, 83.2708761838]
+      "coordinates": [-33.88866, 83.27088],
+      "id": "B3B2B9542A5F50C004AF1B576676A4D97423F73F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/58"],
+        "yuanshen": ["19_58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 58
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.9843537309, 83.3312966677]
+      "coordinates": [-33.98435, 83.3313],
+      "id": "E69FEECEA398C9293ACD38529D9F40EA884836B1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/59"],
+        "yuanshen": ["19_59"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.9205698612, 83.3807373046]
+      "coordinates": [-33.92057, 83.38074],
+      "id": "AC22EC3A3C76D9234734E37E516FAE15C2E10472",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/60"],
+        "yuanshen": ["19_60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 60
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.9023280653, 83.4356743462]
+      "coordinates": [-33.90233, 83.43567],
+      "id": "C69291826521363364C162BA942ADD1BDC0C29B1",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/61"],
+        "yuanshen": ["19_61"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 61
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6100479207, 83.6444091796]
+      "coordinates": [-33.61005, 83.64441],
+      "id": "1C9DF8185B40AB1F6F4F977C56F173F41569D0E9",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/62"],
+        "yuanshen": ["19_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 62
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6603798825, 83.6094702113]
+      "coordinates": [-33.66038, 83.60947],
+      "id": "FB6D9C314D2C965269C1C234D509DC4113FABAAC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/63"],
+        "yuanshen": ["19_63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6649502556, 83.6808673016]
+      "coordinates": [-33.66495, 83.68087],
+      "id": "627C2D485A0F66C9A9F5E3D5FD14BB6DCE217B96",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhiteIronChunk/64"],
+        "yuanshen": ["19_64"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "白铁矿"
       },
-      "id": 64
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-27.54399, 47.74291],
+      "id": "59845A5FDCEB7A8719E4AD7786D0546A2672F1AC",
+      "importIds": {
+        "yuanshen": ["19_45"],
+        "gm_legacy": ["mondstadtWhiteIronChunk/45"]
+      },
+      "popupTitle": {
+        "zh": "白铁矿"
+      },
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/19_45.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.29527, 49.84561],
+      "id": "93F9F20D776B26665D211CBF94E972F00C984969",
+      "importIds": {
+        "yuanshen": ["19_65"],
+        "gm_legacy": ["mondstadtWhiteIronChunk/65"]
+      },
+      "popupTitle": {
+        "zh": "白铁矿"
+      },
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/19_65.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.2633, 46.07732],
+      "id": "A107C8494C79F50F45351633660569FF37439DE0",
+      "importIds": {
+        "yuanshen": ["19_66"],
+        "gm_legacy": ["mondstadtWhiteIronChunk/66"]
+      },
+      "popupTitle": {
+        "zh": "白铁矿"
+      },
+      "popupContent": {
+        "zh": "这是一个白铁矿"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/19_66.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
+  "format": 2,
   "name": {
-    "en": "Magical Crystal Chunk"
+    "en": "Magical Crystal Chunk",
+    "ru": "Магический кристальный обломок",
+    "zh": "魔晶矿-璃月"
   },
-  "cluster": false,
+  "description": {
+    "en": "Crystal eroded by Ley Line energy that requires Original Resin to refine into Mystic Enhancement Ore.",
+    "zh": "魔晶矿刷新位置"
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 259200,
   "icons": {
     "filter": "magical-crystal-chunk",
@@ -15,106 +23,385 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.08123240531224, 36.56250000000001]
+      "coordinates": [-56.08123, 36.5625],
+      "id": "2E3850067F5DA9A35722DBC8998007EEB4AC7B47",
+      "importIds": {
+        "gm_legacy": ["liyueMagicalCrystalChunk/1"],
+        "yuanshen": ["101_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Tianheng"
-        },
-        "popupContent": {
-          "en": "This Rich Ore Reserve is located on Mt. Tianheng, near the teleporter."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-1"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Mt. Tianheng"
+      },
+      "popupContent": {
+        "en": "This Rich Ore Reserve is located on Mt. Tianheng, near the teleporter."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/tianheng-1"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.901101814728264, 57.12341308593751]
+      "coordinates": [-54.52746, 56.14563],
+      "id": "267709CA70F7E8147C9C66CA3F72927F00FBFACC",
+      "importIds": {
+        "gm_legacy": ["liyueMagicalCrystalChunk/3"],
+        "yuanshen": ["101_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Stone Pillars Boat"
-        },
-        "popupContent": {
-          "en": "This Rich Ore Reserve is located at the Guyun Stone Pillars, on a boat to the west of the Domain."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/guyun-1"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Stone Pillars"
+      },
+      "popupContent": {
+        "en": "This Rich Ore Reserve is located at a rock on the shoreline of Guyun Stone Pillars."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/guyun-2"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.52745749948722, 56.14562988281251]
+      "coordinates": [-55.29788, 57.13989],
+      "id": "E505C5CB973B26770C148EF32FA3D231274AA30C",
+      "importIds": {
+        "gm_legacy": ["liyueMagicalCrystalChunk/4"],
+        "yuanshen": ["101_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Stone Pillars"
-        },
-        "popupContent": {
-          "en": "This Rich Ore Reserve is located at a rock on the shoreline of Guyun Stone Pillars."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/guyun-2"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Stone Pillars Island"
+      },
+      "popupContent": {
+        "en": "This Rich Ore Reserve is located at a small island to the south of Guyun Stone Pillars."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/guyun-3"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.297883605105554, 57.13989257812501]
+      "coordinates": [-56.49889, 36.6394],
+      "id": "89064B93DE9EF10FC117858EAEB660BA8EF77271",
+      "importIds": {
+        "gm_legacy": ["liyueMagicalCrystalChunk/5"],
+        "yuanshen": ["101_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Stone Pillars Island"
-        },
-        "popupContent": {
-          "en": "This Rich Ore Reserve is located at a small island to the south of Guyun Stone Pillars."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/guyun-3"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Mt. Tianheng South A"
+      },
+      "popupContent": {
+        "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/5"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.49889156789072, 36.63940429687501]
+      "coordinates": [-56.46249, 36.6394],
+      "id": "83E3C80E701D7BEA737D41CC51FFC18BC7C553EA",
+      "importIds": {
+        "gm_legacy": ["liyueMagicalCrystalChunk/6"],
+        "yuanshen": ["101_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Tianheng South A"
-        },
-        "popupContent": {
-          "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/5"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Mt. Tianheng South B"
       },
-      "id": 5
+      "popupContent": {
+        "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/5"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.46249048388979, 36.63940429687501]
+      "coordinates": [-43.18382, 21.98729],
+      "id": "DC177F292A96189E881E2756650F61058708D1B4",
+      "importIds": {
+        "yuanshen": ["101_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mt. Tianheng South B"
-        },
-        "popupContent": {
-          "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng."
-        },
-        "popupMedia": "liyue/magical-crystal-chunk/tianheng-2"
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-41.8811, 24.63205],
+      "id": "40915C5CDE49BFA4A647E630962BDE485A9F2D15",
+      "importIds": {
+        "yuanshen": ["101_2"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.11043, 24.98657],
+      "id": "8E5C27449AE374C7CA44318610C22D9BFA9B4BA1",
+      "importIds": {
+        "yuanshen": ["101_3"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-40.05284, 20.95094],
+      "id": "5C5B83E29B107A8DD23113FBFE94C4549532666D",
+      "importIds": {
+        "yuanshen": ["101_4"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.18115, 25.55786],
+      "id": "25BD5EFB52C57FA54B2A06C0593A156BDF30A39A",
+      "importIds": {
+        "yuanshen": ["101_5"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.77161, 23.42116],
+      "id": "63F0FDEA7475B12AFC45943998A57266CBE3E35C",
+      "importIds": {
+        "yuanshen": ["101_6"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.22191, 22.9688],
+      "id": "EEA8551B8568DA851E37197C6436869A2FAA207F",
+      "importIds": {
+        "yuanshen": ["101_7"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.69186, 23.19763],
+      "id": "7EF6EE000A706F773F7CB70E82E81AAE9C4B9D14",
+      "importIds": {
+        "yuanshen": ["101_8"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-47.92306, 20.90751],
+      "id": "FF18F9F50CCE11CD989D268A6D86E25DCCAAD47E",
+      "importIds": {
+        "yuanshen": ["101_9"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.11738, 29.76746],
+      "id": "BDC65F2A69D399F22F0482E4690DDDF00025B03F",
+      "importIds": {
+        "yuanshen": ["101_10"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.367, 28.57053],
+      "id": "031CB1A5D7D7D053CD5513AD4293D85087ECCBC9",
+      "importIds": {
+        "yuanshen": ["101_11"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.9343, 29.00808],
+      "id": "92E19309830C823ED0CD1DE6A6A7E89EDABA1FF3",
+      "importIds": {
+        "yuanshen": ["101_12"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-58.75683, 30.08967],
+      "id": "5474724C98179685384060C6BCA07FF99357578F",
+      "importIds": {
+        "yuanshen": ["101_13"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.97698, 31.8457],
+      "id": "E5E31709C9C7F844A613C097AE7F6883471A51C3",
+      "importIds": {
+        "yuanshen": ["101_14"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.88662, 33.60352],
+      "id": "EEA314F1D0798A3B261128DF635328A3D84F48FB",
+      "importIds": {
+        "yuanshen": ["101_15"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.54266, 35.01405],
+      "id": "48F8E1D845125403490B5CB7FAEACC6B8EAE1AC2",
+      "importIds": {
+        "yuanshen": ["101_18"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.0783, 34.88219],
+      "id": "662E1D22F9431C1217CF9046BD654983BD6C82AB",
+      "importIds": {
+        "yuanshen": ["101_19"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-58.76366, 26.21948],
+      "id": "07E44C6C1622E7CBF808006A13D1C6D0584A7463",
+      "importIds": {
+        "yuanshen": ["101_20"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-51.97761, 55.17971],
+      "id": "69B1FFE61A0A79791BA0F7E63F45248A5887C554",
+      "importIds": {
+        "yuanshen": ["101_23"]
+      },
+      "popupTitle": {
+        "zh": "魔晶矿-璃月"
+      },
+      "popupContent": {
+        "zh": "魔晶矿刷新位置"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/101_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.68963, 57.2834],
+      "id": "BB298487ADE8E3D52A2D21EB18E9DE592589BEA9",
+      "importIds": {
+        "yuanshen": ["101_24"],
+        "gm_legacy": ["liyueMagicalCrystalChunk/2"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Stone Pillars Boat"
+      },
+      "popupContent": {
+        "en": "This Rich Ore Reserve is located at the Guyun Stone Pillars, on a boat to the west of the Domain."
+      },
+      "popupMedia": "liyue/magical-crystal-chunk/guyun-1"
     }
   ]
 }

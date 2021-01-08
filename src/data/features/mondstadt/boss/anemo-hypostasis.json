@@ -1,9 +1,15 @@
+
 {
-  "name": { 
+  "format": 2,
+  "name": {
     "en": "Anemo Hypostasis",
     "ru": "Анемо Гипостазис"
   },
-  "cluster": false,
+  "description": {
+    "en": "Beth; an Anemo elemental life form who abandoned its former apperance to reach the highest level of elemental purity. Drops Artifacts and Anemo Character Ascension Materials."
+  },
+  "enabled": true,
+  "cluster": "off",
   "respawn": 180,
   "icons": {
     "filter": "anemo-hypostasis",
@@ -18,21 +24,12 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.161785912715136, 64.03930664062501]
+      "coordinates": [-17.16179, 64.03931],
+      "id": "D555B2047122BD9BCFE73699A6F012E086D4A705",
+      "importIds": {
+        "gm_legacy": ["mondstadtAnemoHypostasis/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Anemo Hypostasis"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric"
     }
   ]
 }

@@ -6,6 +6,8 @@ import Joi from 'joi';
 import L from 'leaflet';
 import _ from 'lodash';
 
+import { MDF_FEATURE_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
+
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
 const imagePath = Joi.string()
@@ -87,6 +89,7 @@ const markerStyle = Joi.object({
 
 const MAP_FEATURE_SCHEMA = Joi.object({
   name: localizedField.required(),
+  description: localizedField.optional(),
   cluster: Joi.boolean(),
   enabled: Joi.boolean().optional().default(true),
   respawn: Joi.number().integer().positive().optional().default(-1),
@@ -130,7 +133,13 @@ const VALIDATION_OPTIONS = {
 };
 
 export const validateFeatureData = (input) => {
-  return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
+  switch (input.format) {
+    case 2:
+      return MDF_FEATURE_SCHEMA.validate(input, { convert: true });
+    case 1:
+    default:
+      return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
+  }
 };
 
 /**
@@ -199,10 +208,8 @@ export const createMapIcon = ({
     // This part is a little complex.
     // As a neat hack, the marker"s shadow is offset and used to implement the frame.
     // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(`./marker/marker_white_bg.svg`, true).default;
-
-    /*
-     */
+    const shadowUrl = iconsContext(`./marker/marker_${done ? 'green' : 'white'}_bg.svg`, true)
+      .default;
 
     const iconHTML = `<div class='map-marker-container'>
       <img style='width: 40px; height: 40px;' class='map-marker-shadow' alt="" src="${shadowUrl}"/>

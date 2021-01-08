@@ -1,6 +1,13 @@
 {
-  "name": { "en": "Geo Hypostasis" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Geo Hypostasis"
+  },
+  "description": {
+    "en": "Grimoire; a Geo elemental life form who abandoned its former apperance to reach the highest level of elemental purity. Drops Artifacts and Geo Character Ascension Materials."
+  },
+  "enabled": true,
+  "cluster": "off",
   "respawn": 180,
   "icons": {
     "filter": "geo-hypostasis",
@@ -15,21 +22,16 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.897015170100225, 57.49879959706563]
+      "coordinates": [-50.89702, 57.4988],
+      "id": "E389267F94C23738CFE7E23CE096CB420932A5A2",
+      "importIds": {
+        "gm_legacy": ["liyueGeoHypostasis/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Geo Hypostasis"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Geo Hypostasis"
+      },
+      "popupMedia": ""
     }
   ]
 }

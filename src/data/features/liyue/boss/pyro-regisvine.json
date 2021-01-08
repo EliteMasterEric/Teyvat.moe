@@ -1,6 +1,13 @@
 {
-  "name": { "en": "Pyro Regisvine" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Pyro Regisvine"
+  },
+  "description": {
+    "en": "A giant vine that has absorbed the ancient flame that rages within the Ley Lines. Drops Artifacts and Pyro Character Ascension Materials."
+  },
+  "enabled": true,
+  "cluster": "off",
   "respawn": 180,
   "icons": {
     "filter": "pyro-regisvine",
@@ -15,21 +22,16 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.373480573412145, 30.946042269354955]
+      "coordinates": [-49.37348, 30.94604],
+      "id": "6D8C5D7F7C60D77DF5A4A1330D0C9DACA163FCFF",
+      "importIds": {
+        "gm_legacy": ["liyuePyroRegisvine/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Pyro Regisvine"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Pyro Regisvine"
+      },
+      "popupMedia": ""
     }
   ]
 }

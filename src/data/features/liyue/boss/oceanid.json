@@ -1,6 +1,13 @@
 {
-  "name": { "en": "Oceanid" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Oceanid"
+  },
+  "description": {
+    "en": "Rhodeia of Loch; a life-form created from condensed Hydro elements of incredible purity. Drops Artifacts and Hydro Character Ascension Materials."
+  },
+  "enabled": true,
+  "cluster": "off",
   "respawn": 180,
   "icons": {
     "filter": "oceanid",
@@ -15,21 +22,16 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.02504144466066, 40.76543526591035]
+      "coordinates": [-32.02504, 40.76544],
+      "id": "BF4F1DC0E3868B8DB594E5FC4DBA8E120069911B",
+      "importIds": {
+        "gm_legacy": ["liyueOceanid/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Oceanid"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Oceanid"
+      },
+      "popupMedia": ""
     }
   ]
 }

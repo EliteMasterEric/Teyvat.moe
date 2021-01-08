@@ -8,7 +8,7 @@ import clsx from 'clsx';
 import { connect } from 'react-redux';
 
 import { makeStyles, Box, Tooltip } from '@material-ui/core';
-import { MapRegions } from '~/components/data/MapFeatures';
+import MapRegions from '~/components/data/MapRegions';
 import { t } from '~/components/i18n/Localization';
 import { setControlsRegion } from '~/redux/ducks/ui';
 import { VectorImage } from '~/components/interface/Image';

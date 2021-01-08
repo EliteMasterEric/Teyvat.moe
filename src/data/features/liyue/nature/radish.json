@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Radish" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Radish",
+    "ru": "Редис",
+    "zh": ""
+  },
+  "description": {
+    "en": "Rich in fiber and nutrients. Used in Recipes."
+  },
+  "enabled": false,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "radish",
     "base": {

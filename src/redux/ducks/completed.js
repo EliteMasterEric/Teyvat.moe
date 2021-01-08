@@ -80,9 +80,8 @@ const completedReducer = (state, action) => {
         },
       };
     case CLEAR_FEATURE_MARKER_COMPLETED:
-      const { [action.payload.id]: _clearedMarker, ...newFeatureData } = state.completed.features[
-        action.payload.key
-      ];
+      const { [action.payload.id]: _clearedMarker, ...newFeatureData } =
+        state.completed.features[action.payload.key] ?? {};
       // Set whether a given route is visible.
       return {
         ...state,

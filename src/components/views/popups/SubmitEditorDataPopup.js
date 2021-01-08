@@ -9,7 +9,6 @@ import {
   Switch,
   Button,
   Dialog,
-  DialogTitle,
   DialogContent,
   DialogContentText,
   DialogActions,
@@ -21,11 +20,13 @@ import {
 } from '@material-ui/core';
 import React, { useState } from 'react';
 
-import { MapCategories, MapRegions } from '~/components/data/MapFeatures';
+import MapCategories from '~/components/data/MapCategories';
+import MapRegions from '~/components/data/MapRegions';
 import { t } from '~/components/i18n/Localization';
 import { SafeHTML } from '~/components/Util';
 import BorderBox from '~/components/interface/BorderBox';
 import { InputTextField } from '~/components/interface/Input';
+import DialogTitle from '~/components/views/popups/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -50,9 +51,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const classes = useStyles();
 
-  const closePopup = () => {
-    setIsDialogOpen(false);
-  };
   const isValid = () => {
     return submissionName !== '' && submissionRegion !== '' && submissionCategory !== '';
   };
@@ -87,7 +85,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         },
       },
     });
-    closePopup();
+    setIsDialogOpen(false);
   };
 
   return (
@@ -98,7 +96,9 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle>{t('popup-submit-editor-data-title')}</DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>
+          {t('popup-submit-editor-data-title')}
+        </DialogTitle>
         <DialogContent>
           <DialogContentText>
             <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
@@ -172,7 +172,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             size="large"
             aria-label={t('popup-cancel')}
             tabIndex={0}
-            onClick={closePopup}
+            onClick={() => setIsDialogOpen(false)}
           >
             {t('popup-cancel')}
           </Button>

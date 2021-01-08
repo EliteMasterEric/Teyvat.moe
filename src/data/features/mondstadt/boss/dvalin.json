@@ -1,9 +1,17 @@
 {
-  "name": { 
-    "en": "Cryo Regisvine",
-    "ru": "Крио папоротник"
+
+  "format": 2,
+  "name": {
+    "en": "Dvalin (Stormterror)",
+    "ru": "Двалин (Ужас бури)"
   },
-  "cluster": false,
+  "description": {
+    "en": "The Dragon of the East. Can be fought once a week for special rewards."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "boss",
+
   "icons": {
     "filter": "dvalin",
     "base": {
@@ -17,21 +25,12 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.653346148076054, 43.07739257812501]
+      "coordinates": [-20.65335, 43.07739],
+      "id": "707C0968BEF687BC24F9E5EB96111024B1ECD2B7",
+      "importIds": {
+        "gm_legacy": ["mondstadtDvalin/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dvalin"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "MasterEric"
     }
   ]
 }

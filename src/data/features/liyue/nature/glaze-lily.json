@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Glaze Lily" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Glaze Lily",
+    "zh": ""
+  },
+  "description": {
+    "en": "An ancient flower said to be common in Liyue. Used for Character Ascension."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "glaze-lily",
@@ -13,472 +21,529 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9509503224, 40.836221054]
+      "coordinates": [-56.95095, 40.83622],
+      "id": "752D14E278EAAE0C773AA97B5E53077797CE28CE",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/1"],
+        "yuanshen": ["6_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9869151127, 40.8746370296]
+      "coordinates": [-56.98692, 40.87464],
+      "id": "C398C21AFE8D9DB2E9675807763B79760200766D",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/2"],
+        "yuanshen": ["6_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.6683020757, 38.6938476562]
+      "coordinates": [-56.6683, 38.69385],
+      "id": "3B30084E06393626AACCEAFD302F05D326B96994",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/3"],
+        "yuanshen": ["6_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.3226293006, 39.1223144531]
+      "coordinates": [-56.32263, 39.12231],
+      "id": "5B09BAB5521D8996DD2421D00A0F4E7136C17ED3",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/4"],
+        "yuanshen": ["6_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5715890395, 38.232421875]
+      "coordinates": [-56.57159, 38.23242],
+      "id": "78307201463C3B85442254625FCF968BEBAB0477",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/5"],
+        "yuanshen": ["6_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5534277528, 38.3862304687]
+      "coordinates": [-56.55343, 38.38623],
+      "id": "8E973BF5DB003C2248B133C7E72DC2D10D4464F2",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/6"],
+        "yuanshen": ["6_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5049550211, 38.7817382812]
+      "coordinates": [-56.50496, 38.78174],
+      "id": "853367D15B9E17C7195AE46DC22E8C4F1FEA4444",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/7"],
+        "yuanshen": ["6_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.254077067, 37.79296875]
+      "coordinates": [-55.25408, 37.79297],
+      "id": "D2357C2010545930889EC1702E40D1CB41A3D7AE",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/8"],
+        "yuanshen": ["6_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3228942192, 38.0676269531]
+      "coordinates": [-55.32289, 38.06763],
+      "id": "7BB47B4D5CE9B48CCEE0766C600FB0F3C56C6AC7",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/9"],
+        "yuanshen": ["6_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.6403989566, 37.5732421875]
+      "coordinates": [-55.6404, 37.57324],
+      "id": "52190FD61947D0A9DE7F6D4D6B749FF9079D0C49",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/10"],
+        "yuanshen": ["6_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.7147345501, 38.14453125]
+      "coordinates": [-55.71473, 38.14453],
+      "id": "260774DE6DA25C91A0B3C4A1A5C70326EB68E7BA",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/11"],
+        "yuanshen": ["6_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.7981945054, 38.001718706]
+      "coordinates": [-55.79819, 38.00172],
+      "id": "D4074073896779CB50AC34845647A10CDFE4BF39",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/12"],
+        "yuanshen": ["6_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8457350862, 37.9275883984]
+      "coordinates": [-55.84574, 37.92759],
+      "id": "20A7FB4709113E404D5CD965722B791CBF2116B5",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/13"],
+        "yuanshen": ["6_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9623163139, 37.5535614909]
+      "coordinates": [-55.96232, 37.55356],
+      "id": "B7817E6E94A05B2B7266E72CCCAFDE8D1979574A",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/14"],
+        "yuanshen": ["6_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9430361154, 38.567500562]
+      "coordinates": [-55.94304, 38.5675],
+      "id": "F5AE460AE7850AF6CED148475CBB2C5661A0B80E",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/16"],
+        "yuanshen": ["6_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.9430361154, 38.567500562]
+      "coordinates": [-56.02383, 38.56563],
+      "id": "FED440B19FB650B6AE73A4D29F17FA9AED007F42",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/17"],
+        "yuanshen": ["6_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0238253137, 38.5656342995]
+      "coordinates": [-30.46834, 36.60645],
+      "id": "E4130AF6FF494B4CE1C7E02E187FA214D140C11B",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/18"],
+        "yuanshen": ["6_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.468337867, 36.6064453125]
+      "coordinates": [-30.45511, 36.26587],
+      "id": "E9F2CBF1A9CC068F2559C5275CE33E5E9E2ACB1A",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/19"],
+        "yuanshen": ["6_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.4551081689, 36.2658691406]
+      "coordinates": [-30.30378, 35.95825],
+      "id": "E2E25D19391D24D7D9D0B052B18025CE9AA0CDB6",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/20"],
+        "yuanshen": ["6_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.3037845852, 35.9582519531]
+      "coordinates": [-30.43621, 35.90332],
+      "id": "C33A43EBC546D06940A7458E246AAFAB25537B46",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/21"],
+        "yuanshen": ["6_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.4362055383, 35.9033203125]
+      "coordinates": [-30.70993, 35.89233],
+      "id": "AFE48FC0097D276C761D03098532A752663E907B",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/22"],
+        "yuanshen": ["6_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7099343146, 35.8923339843]
+      "coordinates": [-30.35363, 35.2771],
+      "id": "62B418F7F47686A20A1D450155B4261B125F7BEB",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/23"],
+        "yuanshen": ["6_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.35363457, 35.2770996093]
+      "coordinates": [-30.5719, 34.72778],
+      "id": "3886378B66C0742D0B5E4CC9FA1F56100B754932",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/24"],
+        "yuanshen": ["6_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.5719013044, 34.7277832031]
+      "coordinates": [-30.47706, 34.05762],
+      "id": "09B2BBE50B8AEC85AE9BF317192D1EB0413B574F",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/25"],
+        "yuanshen": ["6_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.4770628214, 34.0576171875]
+      "coordinates": [-30.77076, 36.58447],
+      "id": "BBA157BFE37B61CF3927815D0504B6ED3E7F1D10",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/26"],
+        "yuanshen": ["6_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7707603627, 36.5844726562]
+      "coordinates": [-31.23317, 35.71655],
+      "id": "20FD8E4938D01ECE86FCF3F979892C86EB6FC574",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/27"],
+        "yuanshen": ["6_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.2331673183, 35.7165527343]
+      "coordinates": [-31.17667, 36.37573],
+      "id": "01E1B5F0E5F67A12775D31912D5694BA6B33FEA9",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/28"],
+        "yuanshen": ["6_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.1766666736, 36.3757324218]
+      "coordinates": [-31.97393, 34.17847],
+      "id": "BDC9C469D686662DE64526522A38A12AE6A15802",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/29"],
+        "yuanshen": ["6_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.9739302894, 34.1784667968]
+      "coordinates": [-31.56208, 34.21143],
+      "id": "B561155087B24AA5915CB7405EA68D0C3749575E",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/30"],
+        "yuanshen": ["6_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5620803092, 34.2114257812]
+      "coordinates": [-31.59022, 34.11255],
+      "id": "C4D79D8794FF9722A6E42757806091FD0542DE37",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/31"],
+        "yuanshen": ["6_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5902191661, 34.1125488281]
+      "coordinates": [-54.69433, 36.78209],
+      "id": "9A99D67C5592A6AAD5F20B9B92C27CCFCF79190E",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/32"],
+        "yuanshen": ["6_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.6943337537, 36.7820882984]
+      "coordinates": [-32.39248, 35.6723],
+      "id": "EF9E189E9ABB8DE09AAFB7A35CBC50AF762418A3",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/33"],
+        "yuanshen": ["6_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.3924794431, 35.6723006485]
+      "coordinates": [-32.27184, 36.72678],
+      "id": "450A56AA96CCE56B95F1EC5B600EEFDAFD0F68DC",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/34"],
+        "yuanshen": ["6_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.271844277, 36.7267807525]
+      "coordinates": [-56.97943, 40.77481],
+      "id": "FACA3A33EF2C86E40D9A8B32623A92FEB90D34CC",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/35"],
+        "yuanshen": ["6_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9794267158, 40.7748127519]
+      "coordinates": [-55.30698, 37.7654],
+      "id": "C4E52A2ECA32D2B35003566415AC771351E88FC9",
+      "importIds": {
+        "gm_legacy": ["liyueGlazeLily/36"],
+        "yuanshen": ["6_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "琉璃百合"
       },
-      "id": 35
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.3069773997, 37.7653983327]
+      "popupContent": {
+        "zh": "这是一株琉璃百合"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 36
+      "popupAttribution": "Unknown"
     }
   ]
 }

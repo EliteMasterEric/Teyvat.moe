@@ -1,6 +1,11 @@
 {
+  "format": 2,
   "name": { "en": "Electro Crystal" },
-  "cluster": true,
+  "description": {
+    "en": "Purple electric crystals used for various recipes. Use Pyro to create an Overload reaction in order to harvest."
+  },
+  "cluster": "on",
+  "enabled": true,
   "respawn": 172800,
   "icons": {
     "filter": "electro-crystal",
@@ -13,43 +18,847 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.537129399, 48.9880371093]
+      "coordinates": [-24.53713, 48.98804],
+      "id": "A72B3F1F91FF80535518101E7095A854667848FA",
+      "importIds": {
+        "yuanshen": ["53_1"],
+        "gm_legacy": ["mondstadtElectroCrystal/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.3876402273, 69.4720458984]
+      "coordinates": [-23.38764, 69.47205],
+      "id": "FE1910B92A967991B1A00A923D7C2CA4172E92DC",
+      "importIds": {
+        "yuanshen": ["53_2"],
+        "gm_legacy": ["mondstadtElectroCrystal/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_2.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.3775561491, 69.5489501953]
+      "coordinates": [-23.37756, 69.54895],
+      "id": "DE0ABE491224DE1B9C2F51533D45B8F66D64B681",
+      "importIds": {
+        "yuanshen": ["53_3"],
+        "gm_legacy": ["mondstadtElectroCrystal/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "电气水晶"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.99616, 75.62228],
+      "id": "F5B88644C116CD5F4100D71EAC36D05CBC3E13C2",
+      "importIds": {
+        "yuanshen": ["53_4"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.07246, 75.69218],
+      "id": "CEAF12963BB4EFD4C8961B7158C6CA787EC3F479",
+      "importIds": {
+        "yuanshen": ["53_5"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.98861, 75.43186],
+      "id": "4F25560FCC5F9D08181CD687D5354647EE81D13E",
+      "importIds": {
+        "yuanshen": ["53_6"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.06192, 75.59512],
+      "id": "B48598624FB160ACAC213924A7ACBC86794F4927",
+      "importIds": {
+        "yuanshen": ["53_7"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.55297, 70.58144],
+      "id": "2AD19813D7EBB7C2479A290F55298CBEA347A481",
+      "importIds": {
+        "yuanshen": ["53_8"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.88286, 70.35078],
+      "id": "378C8AB94152CFC3CFB5486DC797A1A58A71D4F7",
+      "importIds": {
+        "yuanshen": ["53_9"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.42572, 69.0816],
+      "id": "9DE60C165697ED5BE831E2B1BCD7EA29E1B6FF05",
+      "importIds": {
+        "yuanshen": ["53_10"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.70481, 69.59361],
+      "id": "E51D23154E99EB3BE0834754C2E6A5BEC471E966",
+      "importIds": {
+        "yuanshen": ["53_11"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.70921, 69.65951],
+      "id": "3F6117D2369847A0583E4D565EC60DA4EA2D73DE",
+      "importIds": {
+        "yuanshen": ["53_12"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.05985, 68.3049],
+      "id": "CA28F084DF48745F96C1ED78ECFE4FBF31C26A7C",
+      "importIds": {
+        "yuanshen": ["53_13"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.35324, 68.44769],
+      "id": "258D92121BA1868A4F00EE583B4A733E25C54374",
+      "importIds": {
+        "yuanshen": ["53_14"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.47971, 68.09842],
+      "id": "B44266F666999A109515739E4877A54DDDBED5BD",
+      "importIds": {
+        "yuanshen": ["53_15"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.35491, 59.55986],
+      "id": "FD1168374DE57D200DC07A8C12E797953AC5FE00",
+      "importIds": {
+        "yuanshen": ["53_16"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.23926, 64.754],
+      "id": "1CB03D452AABFF40421F961838ADBD1D3FC12732",
+      "importIds": {
+        "yuanshen": ["53_17"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.46777, 62.12638],
+      "id": "C01F596BA2BC0FB7B887C5E24C389423CEFA3236",
+      "importIds": {
+        "yuanshen": ["53_18"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.7551, 64.48907],
+      "id": "01FBF32B5DBAFBF2D5A756A294215BBD52F10DB7",
+      "importIds": {
+        "yuanshen": ["53_19"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.40531, 65.77481],
+      "id": "D8C2547823A2C3F0355377BBFF93645C908A2788",
+      "importIds": {
+        "yuanshen": ["53_20"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.2773, 55.61093],
+      "id": "0632459B5190D67B347EB8B87ECA099895D46364",
+      "importIds": {
+        "yuanshen": ["53_21"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.32882, 54.40795],
+      "id": "50CB453E07B921E951A86C0274C80C1099353B31",
+      "importIds": {
+        "yuanshen": ["53_22"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.557, 51.65888],
+      "id": "E75375067E46631E1B66E0CABFBE74FB94CC52F3",
+      "importIds": {
+        "yuanshen": ["53_23"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.90351, 51.06204],
+      "id": "D7762B50B55069E72AD9DE8E1F864338E72829A6",
+      "importIds": {
+        "yuanshen": ["53_24"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.45523, 45.8702],
+      "id": "77093B70D2BCE74DA575C3C54E3C59BF8506C207",
+      "importIds": {
+        "yuanshen": ["53_25"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.23739, 46.47881],
+      "id": "1AA506BD283BEEE7297B9825DB802F58D13C0164",
+      "importIds": {
+        "yuanshen": ["53_26"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.55566, 48.28963],
+      "id": "E5FAC427D2F3A3C72DB357CF46C1895BFB005823",
+      "importIds": {
+        "yuanshen": ["53_27"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.09604, 49.70085],
+      "id": "E18C6722347335BC50764E39836B0B269E8D2D3C",
+      "importIds": {
+        "yuanshen": ["53_28"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.23268, 51.04939],
+      "id": "2747DDE26473661D5481E869854BC59560B222E8",
+      "importIds": {
+        "yuanshen": ["53_29"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.29667, 51.59911],
+      "id": "77E16F97E03E43FEF5DF39500809D1F5FFB13652",
+      "importIds": {
+        "yuanshen": ["53_30"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.47471, 50.42393],
+      "id": "C69A50BBCA4245AA7B01EAA9471B6D6343FA1084",
+      "importIds": {
+        "yuanshen": ["53_31"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.87455, 49.50003],
+      "id": "505AEF7866700868BEEA6BAB58841D16981AD644",
+      "importIds": {
+        "yuanshen": ["53_32"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_32.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.78218, 46.36662],
+      "id": "7F08A51B78E00D02A04867625D8DFA05C284F91B",
+      "importIds": {
+        "yuanshen": ["53_33"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_33.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.23087, 47.66891],
+      "id": "7DB24E2720E9C026025BFEDBF037B25AA4E4201D",
+      "importIds": {
+        "yuanshen": ["53_34"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_34.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.56212, 43.7037],
+      "id": "2586D9DA500F11B9F0EA81EE74E9BFC23095B54B",
+      "importIds": {
+        "yuanshen": ["53_35"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_35.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.64346, 41.04314],
+      "id": "37DBEABDFD902484F6780E4D98A4B2B7A68B93BB",
+      "importIds": {
+        "yuanshen": ["53_36"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.59529, 39.86555],
+      "id": "25542244367057E9B4019531A6EE947CA906987E",
+      "importIds": {
+        "yuanshen": ["53_37"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_37.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.64917, 40.12761],
+      "id": "1665ED25684395ED81E6A80BB89B43EA12FD2837",
+      "importIds": {
+        "yuanshen": ["53_38"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_38.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.57603, 40.22858],
+      "id": "8EA5F157ACE78FB1E63CEA50FAA243D4C1010B4C",
+      "importIds": {
+        "yuanshen": ["53_39"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_39.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.02197, 41.47916],
+      "id": "249A9CE3BABBAC53716B5CE0EE80EF0CCC898FEB",
+      "importIds": {
+        "yuanshen": ["53_40"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_40.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.51763, 43.75528],
+      "id": "82B7B370BD95AE17CE2481C6CB7937B0D2683DA3",
+      "importIds": {
+        "yuanshen": ["53_41"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.37904, 38.93394],
+      "id": "5D11D648F643DA89F7CD332870CDF63E98842D8C",
+      "importIds": {
+        "yuanshen": ["53_42"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_42.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.16169, 37.60125],
+      "id": "3C7B0FE95BB5D6610A98895328AF770B775A4442",
+      "importIds": {
+        "yuanshen": ["53_43"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_43.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.40767, 37.61678],
+      "id": "A4F5D82A65254F1578FD991C5D2B8ED3C1D7195B",
+      "importIds": {
+        "yuanshen": ["53_44"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_44.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.5305, 37.59348],
+      "id": "4C1A137399DA55F7F167C078D9100033F0D66F17",
+      "importIds": {
+        "yuanshen": ["53_45"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_45.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.42097, 38.39188],
+      "id": "DE011D966E440A3086F85723458356E2B89B103E",
+      "importIds": {
+        "yuanshen": ["53_46"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_46.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.5426, 39.46367],
+      "id": "E5F31BEDBCBB745BC8FEDC61E3F4AEE9A2DA054B",
+      "importIds": {
+        "yuanshen": ["53_47"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_47.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.47036, 39.37047],
+      "id": "88B0E6C441747DBEF73FE5946E0B2A02FC942181",
+      "importIds": {
+        "yuanshen": ["53_48"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_48.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.47176, 40.08115],
+      "id": "9F449E84C60920D57BAF3A95F8D54C7CD265B1FF",
+      "importIds": {
+        "yuanshen": ["53_49"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_49.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.7958, 40.18704],
+      "id": "3F88480F449B938D92D4CA6B480D9970339D47DD",
+      "importIds": {
+        "yuanshen": ["53_50"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_50.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.01832, 39.35228],
+      "id": "0F33A3DAEE2A039CD5E3BE790C4DF4BE61EE03B5",
+      "importIds": {
+        "yuanshen": ["53_51"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_51.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.08904, 41.23048],
+      "id": "6D38083E41360F69C8CF9308DC16948FF2660998",
+      "importIds": {
+        "yuanshen": ["53_52"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_52.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.75403, 42.65835],
+      "id": "D29D079797D0894BC3C49F5834ED1377EFDCB06A",
+      "importIds": {
+        "yuanshen": ["53_53"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_53.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.27384, 67.81129],
+      "id": "CC925C1021020BC4FAACF15185A3DFCA1C964539",
+      "importIds": {
+        "yuanshen": ["53_54"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_54.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.29733, 67.84058],
+      "id": "CA6FB641F2D2505A754A2004FDA9B4F8B4E83861",
+      "importIds": {
+        "yuanshen": ["53_55"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_55.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.20453, 70.6941],
+      "id": "97429286C5CDC610C8A379B21DAD9481C9745EB0",
+      "importIds": {
+        "yuanshen": ["53_56"]
+      },
+      "popupTitle": {
+        "zh": "电气水晶"
+      },
+      "popupContent": {
+        "zh": "这是一颗电气水晶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/53_56.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

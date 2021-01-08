@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Fowl" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Fowl",
+    "ru": "Мясо Птицы",
+    "zh": ""
+  },
+  "description": {
+    "en": "A fresh bird. Used in various recipes. Poor Timmy..."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "fowl",
@@ -13,82 +22,589 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.1172881582, 40.5340673388]
+      "coordinates": [-39.11729, 40.53407],
+      "id": "CF5F438BAA9672B0D7A968ADCA4D115CA5D718C2",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/1"],
+        "yuanshen": ["78_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.4022412348, 41.7810101801]
+      "coordinates": [-39.40224, 41.78101],
+      "id": "6DA37319FB1F8E79A2B278FA28C8A6D34FA11C3B",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/2"],
+        "yuanshen": ["78_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.1428502704, 40.6549147878]
+      "coordinates": [-39.14285, 40.65491],
+      "id": "8B31AE5E9C03E6E60758293B312BBDF7FCCB68B4",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/3"],
+        "yuanshen": ["78_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1340485752, 38.8751242306]
+      "coordinates": [-37.13405, 38.87512],
+      "id": "5EAB87299EB29D08B77826E3BD308F4FA9363E56",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/4"],
+        "yuanshen": ["78_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这里一只鸭子"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1865801961, 38.7817404416]
+      "coordinates": [-37.18658, 38.78174],
+      "id": "0682B0F7A2BC84C0F71F589BFA8617087242984A",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/5"],
+        "yuanshen": ["78_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0946054719, 38.7597667051]
+      "coordinates": [-37.09461, 38.75977],
+      "id": "4C99CCA10251C126811AF9753AEDE5C15631D9EA",
+      "importIds": {
+        "gm_legacy": ["liyueFowl/6"],
+        "yuanshen": ["78_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "禽肉"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这里有两只鸭子"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-34.72807, 28.87756],
+      "id": "A436481DEF01D0527F78D4F61D4137C361EAB896",
+      "importIds": {
+        "yuanshen": ["78_7"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.9805, 29.02039],
+      "id": "891318BDB9AD989BB2A77DD9F6E5337AB0AE7AB1",
+      "importIds": {
+        "yuanshen": ["78_8"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.93548, 29.34448],
+      "id": "34AD6F4C91ADC762104348BF6B7E978FFA477F3C",
+      "importIds": {
+        "yuanshen": ["78_9"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.59925, 28.77869],
+      "id": "732651DA2BB0ABC125B7C62DFC0CE270DC5C6895",
+      "importIds": {
+        "yuanshen": ["78_10"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.00455, 57.67272],
+      "id": "0441CC983638A00D2279C81BB658AC4385EB06B8",
+      "importIds": {
+        "yuanshen": ["78_11"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.98085, 57.54818],
+      "id": "62570EBB2C7861EA6ABC1ED80C7F80BBAEAE111C",
+      "importIds": {
+        "yuanshen": ["78_12"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.80389, 57.14539],
+      "id": "2BD07A64C788B768CEC72ED7C81A69F131F92BA1",
+      "importIds": {
+        "yuanshen": ["78_13"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.88815, 57.1344],
+      "id": "0A058FBDB9ABC9B08A9F6470E75219FA1E9DB1A9",
+      "importIds": {
+        "yuanshen": ["78_14"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.92699, 57.24426],
+      "id": "3674929A32F1EE28A711FBE345842AEA41F27DBD",
+      "importIds": {
+        "yuanshen": ["78_15"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.156, 57.08496],
+      "id": "AAE3EE4CFD7EB05926247EC0788ECB90EC7A9960",
+      "importIds": {
+        "yuanshen": ["78_16"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.72272, 57.24426],
+      "id": "B246E23BCF024A3EB1E0AED973E472231F5E64F3",
+      "importIds": {
+        "yuanshen": ["78_17"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.44554, 58.40881],
+      "id": "1C9BFCC8E94140F78B42FA2FF752FCAC31344F9B",
+      "importIds": {
+        "yuanshen": ["78_18"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-52.93209, 59.49097],
+      "id": "C00C776271A9B624C0CFB0BCA35ED855622FF3DF",
+      "importIds": {
+        "yuanshen": ["78_19"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.03461, 59.25476],
+      "id": "D2DA3A4BEB25BC1E664100B329F75058E15BD3BB",
+      "importIds": {
+        "yuanshen": ["78_20"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只鸭子"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.63892, 18.66024],
+      "id": "A82F6E24BC6A56099D8CA02AE21410D2706C346E",
+      "importIds": {
+        "yuanshen": ["78_21"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.48965, 18.53577],
+      "id": "63E6492B16AE24D991FD799B21D15728EB1637C1",
+      "importIds": {
+        "yuanshen": ["78_22"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.4451, 18.53578],
+      "id": "652D40BA491AA5A03E39A8CC68764799473D72B6",
+      "importIds": {
+        "yuanshen": ["78_23"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.62679, 18.48992],
+      "id": "A6568BB35AFCCC7E7058DD9576B837F47E3AD35E",
+      "importIds": {
+        "yuanshen": ["78_24"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.61871, 18.38553],
+      "id": "2512D9ECDF02C5E16302BCED92B3701DD16A93B6",
+      "importIds": {
+        "yuanshen": ["78_25"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.55855, 19.06813],
+      "id": "D4832AA59B85955510422792D6D2F0AFB68E0D87",
+      "importIds": {
+        "yuanshen": ["78_26"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-51.40498, 36.33322],
+      "id": "A6AD8EA887219263B31C0CD6A6E694FD3D1B18B7",
+      "importIds": {
+        "yuanshen": ["78_27"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "这里有一只仙鹤"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.82999, 29.68389],
+      "id": "BD1CDB23FD273D932A59BD92439920A5F37E2E96",
+      "importIds": {
+        "yuanshen": ["78_28"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处仙鹤掉落2禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.83367, 29.22975],
+      "id": "48B61744F42D4A890C4C060E18F311F2AC29A1D9",
+      "importIds": {
+        "yuanshen": ["78_29"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处仙鹤掉落2禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.84555, 29.26821],
+      "id": "372B2263BF64AB6EE49A52FE291F7D70749B62EB",
+      "importIds": {
+        "yuanshen": ["78_30"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处仙鹤掉落2禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.76578, 38.19783],
+      "id": "98DD5F4691ABBA60A1AF02B0A025BC62F6209677",
+      "importIds": {
+        "yuanshen": ["78_31"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.71323, 38.07696],
+      "id": "BB08B97B8C71B1AAFED18375D2D43D0724F8D5D2",
+      "importIds": {
+        "yuanshen": ["78_32"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_32.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.94147, 38.72528],
+      "id": "59717F00454A368E53AAE1A9853759577C02A81E",
+      "importIds": {
+        "yuanshen": ["78_33"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_33.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.84697, 39.16077],
+      "id": "638F126D3F2974CFB6ECAE4F730FADC8A46F0269",
+      "importIds": {
+        "yuanshen": ["78_34"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_34.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.85498, 39.21936],
+      "id": "9E67293205FE1C57F3F6BC7632AC44D269CC6393",
+      "importIds": {
+        "yuanshen": ["78_35"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_35.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.86326, 39.17788],
+      "id": "41F2FD5D6C6204E0356DCDA6C48D669D9D971387",
+      "importIds": {
+        "yuanshen": ["78_36"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.67333, 39.67712],
+      "id": "DE2D80B3491D87EE4623CA2DAB90B9A99424C390",
+      "importIds": {
+        "yuanshen": ["78_37"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_37.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.65824, 39.70275],
+      "id": "A918B9F6132CA377557B5B141F8DFDBED2D3D5BD",
+      "importIds": {
+        "yuanshen": ["78_38"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处小鸟掉落1块禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_38.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.2502, 30.00434],
+      "id": "5E4A3F7CDD6502238FE53AFB2D5F43E5B22920CB",
+      "importIds": {
+        "yuanshen": ["78_39"]
+      },
+      "popupTitle": {
+        "zh": "禽肉"
+      },
+      "popupContent": {
+        "zh": "击杀此处仙鹤掉落2块禽肉"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/78_39.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

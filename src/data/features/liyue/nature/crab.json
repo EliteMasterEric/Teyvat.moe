@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Crab" },
-  "cluster": true,
+  "format": 2,
+  "name": {
+    "en": "Crab",
+    "ru": "Краб",
+    "zh": ""
+  },
+  "description": {
+    "en": "A shelled creature that lives near the ocean. Used for high-rarity Recipes."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "crab",
     "base": {
@@ -10,5 +20,396 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-49.73513, 35.22766],
+      "id": "704DA4C0202F21F5ED36314C9873130706C92A5B",
+      "importIds": {
+        "yuanshen": ["66_1"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.76353, 35.29358],
+      "id": "33E65143F96FAA5E67313A85E95A325B8E0E9061",
+      "importIds": {
+        "yuanshen": ["66_2"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹\n"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.78126, 35.24963],
+      "id": "FE502F4C8CB8EBC884A70A6D9ACFD50898FAAC78",
+      "importIds": {
+        "yuanshen": ["66_3"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.09944, 34.43665],
+      "id": "DB3507E7A1CA6CCFE38357390E436208BBE45222",
+      "importIds": {
+        "yuanshen": ["66_4"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.11706, 34.37622],
+      "id": "D6461DEF0EBF22FE2FBD46866D300976B87EE865",
+      "importIds": {
+        "yuanshen": ["66_5"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.11706, 34.53003],
+      "id": "48808BCA8941B6A0A910E5A1911A71C41AC1BA0B",
+      "importIds": {
+        "yuanshen": ["66_6"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.15579, 34.44763],
+      "id": "2121B187E8F1D9174AD5E10E9481F34CF54213B4",
+      "importIds": {
+        "yuanshen": ["66_7"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.30688, 33.96973],
+      "id": "7B64C1D6B34062E677B4FAE2CC4CD4F24D821FDE",
+      "importIds": {
+        "yuanshen": ["66_8"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.32092, 34.03564],
+      "id": "551D9BB30A0E3B69AAD3B5870DFB1F55B8AB8DE4",
+      "importIds": {
+        "yuanshen": ["66_9"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-50.34195, 34.04114],
+      "id": "B5129CB277D98EFD36BAF1F296D20D1507FCB6E3",
+      "importIds": {
+        "yuanshen": ["66_10"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.61792, 39.96753],
+      "id": "EB3CAF990B851F24F23C369BF29E983039209135",
+      "importIds": {
+        "yuanshen": ["66_11"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.30821, 42.19185],
+      "id": "4ED3B30C08730D04E74A48E1A89F65976E8F6405",
+      "importIds": {
+        "yuanshen": ["66_12"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.85346, 43.126],
+      "id": "356D2C8440E2B5E5CF22D53CCE60F78133059A87",
+      "importIds": {
+        "yuanshen": ["66_13"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.69587, 58.93026],
+      "id": "9610C0055A67A8607FABD369BA704DBF09EA4E2C",
+      "importIds": {
+        "yuanshen": ["66_14"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.7403, 58.9797],
+      "id": "9B287E05CA49E19101B1C11258BC63A3AB97DDEB",
+      "importIds": {
+        "yuanshen": ["66_15"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.15065, 56.46059],
+      "id": "91A2E61F4933D50452D4C426A898FD2C9029590C",
+      "importIds": {
+        "yuanshen": ["66_16"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.95561, 57.76128],
+      "id": "853A41801CB97550F50672BDD68198FD304AAFF5",
+      "importIds": {
+        "yuanshen": ["66_17"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.80012, 57.55799],
+      "id": "AB1661986C720144990D132AC6C7ACD7A2679ADC",
+      "importIds": {
+        "yuanshen": ["66_18"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.82283, 57.56898],
+      "id": "1390EA5C3AB80605F40C571FCADB2A712FAFDCDA",
+      "importIds": {
+        "yuanshen": ["66_19"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.8266, 57.4823],
+      "id": "2087FEF35B0D4F287B47347164A2D52ED42938DA",
+      "importIds": {
+        "yuanshen": ["66_20"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-41.45465, 35.76864],
+      "id": "6E0DEE76F45B6C8AA2474B44CE2DA18C791D5F76",
+      "importIds": {
+        "yuanshen": ["66_21"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-41.58943, 35.92713],
+      "id": "D5C5BD1B2415799155F0B199632EA69B7697F221",
+      "importIds": {
+        "yuanshen": ["66_22"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.44093, 37.08373],
+      "id": "225C6E7B1D06B4392765108A0CEE7B58DC8E7D50",
+      "importIds": {
+        "yuanshen": ["66_23"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.61591, 37.21376],
+      "id": "D1C0F14B9EAF515A1C92D17148EC052368FE4209",
+      "importIds": {
+        "yuanshen": ["66_24"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.06236, 43.09439],
+      "id": "1B6FB858F32D6FC719B55760DA82E4A510B9CE72",
+      "importIds": {
+        "yuanshen": ["66_25"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.70304, 42.58343],
+      "id": "B26121A1FB51C2E8E44D112FECFA5B78DEF80B80",
+      "importIds": {
+        "yuanshen": ["66_26"]
+      },
+      "popupTitle": {
+        "zh": "螃蟹"
+      },
+      "popupContent": {
+        "zh": "这是一只螃蟹"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/66_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

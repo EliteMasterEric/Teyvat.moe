@@ -1,0 +1,84 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Abyss Mage",
+    "ru": "Маг Бездны"
+  },
+  "description": {
+    "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "pyro-abyss-mage",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-42.42356, 61.79536],
+      "id": "7FF51C467D6034308951C75AD175D552F1739ECF",
+      "importIds": {
+        "yuanshen": ["31_9"]
+      },
+      "popupTitle": {
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个火深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.44382, 61.81733],
+      "id": "096DF2B0FAF72FC758B7205E38B4F428F958EE5F",
+      "importIds": {
+        "yuanshen": ["31_10"]
+      },
+      "popupTitle": {
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个火深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.40925, 55.18667],
+      "id": "8427A98971D82E848286D9AFA4309FEEA85185B3",
+      "importIds": {
+        "yuanshen": ["31_11"]
+      },
+      "popupTitle": {
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个水深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.49871, 55.30754],
+      "id": "4EDA64A418492937C91B7D681609493A8AB6174D",
+      "importIds": {
+        "yuanshen": ["31_12"]
+      },
+      "popupTitle": {
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/31_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

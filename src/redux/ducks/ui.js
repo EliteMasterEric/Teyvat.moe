@@ -7,6 +7,10 @@ import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPre
  */
 export const SET_EDITOR_ENABLED = 'genshinmap/ui/SET_EDITOR_ENABLED';
 /**
+ * This action sets only whether the Debug display is visible.
+ */
+export const SET_DEBUG_ENABLED = 'genshinmap/ui/SET_DEBUG_ENABLED';
+/**
  * This action sets only which marker is highlighted on the editor.
  */
 export const SET_EDITOR_HIGHLIGHT = 'genshinmap/ui/SET_EDITOR_HIGHLIGHT';
@@ -30,6 +34,10 @@ export const SET_CONTROLS_REGION = 'genshinmap/ui/SET_CONTROLS_REGION';
  * This action folds the map controls open or closed.
  */
 export const SET_CONTROLS_OPEN = 'genshinmap/ui/SET_CONTROLS_OPEN';
+/**
+ * This action sets displays a notification in the corner.
+ */
+export const SET_TOAST = 'genshinmap/ui/SET_TOAST';
 
 /**
  * The reducer.
@@ -65,6 +73,18 @@ const uiReducer = (state, action) => {
         ...state,
         editorEnabled: action.payload.enabled,
       };
+    case SET_DEBUG_ENABLED:
+      // Set whether the Editor is enabled.
+      return {
+        ...state,
+        displayDebug: action.payload.enabled,
+      };
+    case SET_TOAST:
+      // Set the displayed notification.
+      return {
+        ...state,
+        currentToast: action.payload,
+      };
     case SET_EDITOR_HIGHLIGHT:
       // Set which marker ID is highlighted in the editor.
       return {
@@ -97,6 +117,14 @@ export default uiReducer;
  */
 export const setEditorEnabled = (enabled) => {
   return { type: SET_EDITOR_ENABLED, payload: { enabled } };
+};
+/**
+ * Set whether the Debug display is enabled.
+ * @param {*} enabled The new state of debug visibility.
+ * @returns An action to be dispatched.
+ */
+export const setDebugEnabled = (enabled) => {
+  return { type: SET_DEBUG_ENABLED, payload: { enabled } };
 };
 /**
  * Set which marker ID is highlighted in the editor.
@@ -169,4 +197,16 @@ export const setControlsRegion = (region) => {
  */
 export const setControlsOpen = (open) => {
   return { type: SET_CONTROLS_OPEN, payload: { open } };
+};
+/**
+ * Display a notification to the user.
+ * @param {String} message Text to show.
+ * @param {Component} action An optional component used to include user actions.
+ *   Not needed for informational popups.
+ * @param {Boolean} showClose Whether to display a Close button.
+ * @param {Integer} duration Override the duration before the popup auto-hides.
+ * @returns An action to be dispatched.
+ */
+export const setToast = (message, action = null, showClose = true, duration = 6000) => {
+  return { type: SET_TOAST, payload: { message, action, showClose, duration } };
 };

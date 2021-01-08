@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Fish" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Fish",
+    "ru": "Рыба"
+  },
+  "description": {
+    "en": "A fresh fillet used in many Recipes."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "fish",
     "base": {
@@ -12,121 +21,85 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.665972794, 33.9807128906]
+      "coordinates": [-57.66597, 33.98071],
+      "id": "D51ED93113E2B62ACF044B30D8A6DBAD57F14945",
+      "importIds": {
+        "gm_legacy": ["liyueFish/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 1
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.8834248429, 29.2071533203]
+      "coordinates": [-59.88342, 29.20715],
+      "id": "3153D33DF70DA52B7850FB105C69BA8C210A8113",
+      "importIds": {
+        "gm_legacy": ["liyueFish/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1165261849, 39.5837402343]
+      "coordinates": [-37.11653, 39.58374],
+      "id": "F5D705ED43814AD332801201F8336821778B9B22",
+      "importIds": {
+        "gm_legacy": ["liyueFish/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 3
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7966706337, 30.3662109375]
+      "coordinates": [-58.79667, 30.36621],
+      "id": "15409C56574298CBBEB6A818F8BB45AEDB2164DB",
+      "importIds": {
+        "gm_legacy": ["liyueFish/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 4
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.2003488511, 39.4289173444]
+      "coordinates": [-36.20035, 39.42892],
+      "id": "B364008539F3EE52FF3C6837043E049D2545FA4F",
+      "importIds": {
+        "gm_legacy": ["liyueFish/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 5
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.2392512371, 39.406920924]
+      "coordinates": [-36.23925, 39.40692],
+      "id": "2EFEAAF16AC19CFA0AAE8E35979B1176AC8B3385",
+      "importIds": {
+        "gm_legacy": ["liyueFish/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 6
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.1905179271, 39.4893021821]
+      "coordinates": [-36.19052, 39.4893],
+      "id": "9C417907C4B1DC36878BA0C56D6BBE7A4C0D4A11",
+      "importIds": {
+        "gm_legacy": ["liyueFish/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.5821749294, 42.3288823754]
+      "coordinates": [-37.58217, 42.32888],
+      "id": "240A4BE430B0D1A93DA2E1D02CFA1A5072729626",
+      "importIds": {
+        "gm_legacy": ["liyueFish/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 8
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.6387245838, 42.4167557174]
+      "coordinates": [-37.63872, 42.41676],
+      "id": "D220F61C33289A13F524CAC451E3D707BB012158",
+      "importIds": {
+        "gm_legacy": ["liyueFish/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 9
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     }
   ]
 }

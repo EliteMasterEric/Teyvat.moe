@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Crystal Core" },
-  "cluster": true,
+  "format": 2,
+  "name": {
+    "en": "Crystal Core",
+    "ru": "Кристальное Ядро",
+    "zh": ""
+  },
+  "description": {
+    "en": "The core of a Crystalfly. Used in Alchemy to craft Condensed Resin."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "crystal-core",
     "base": {
@@ -10,5 +20,621 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-54.00202, 58.21549],
+      "id": "BC2D282C1B45BB88C9FC3E9D25ABEDEE86ECAD4F",
+      "importIds": {
+        "yuanshen": ["60_1"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.01784, 58.24867],
+      "id": "558BE2BDE693426A29D6CE5D28C2EE12BDBDB66C",
+      "importIds": {
+        "yuanshen": ["60_2"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.82725, 58.91325],
+      "id": "2DF268B79F9F5ADA831B0448FA72D390B56310A1",
+      "importIds": {
+        "yuanshen": ["60_3"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "在上空有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.77532, 58.98465],
+      "id": "17FA4E7B7C79611805BADEDDF536C9556BF7601B",
+      "importIds": {
+        "yuanshen": ["60_4"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "在上空有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.88493, 59.01306],
+      "id": "59763B925B6C7BB96D758F8089C9F480151F984D",
+      "importIds": {
+        "yuanshen": ["60_5"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.86874, 59.06799],
+      "id": "B9D017384EAC5C8E0F74B265BA32CB6DCA1B1D32",
+      "importIds": {
+        "yuanshen": ["60_6"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.84929, 58.97468],
+      "id": "B6F0257F571E1CBAD3F9AE8CC858D5574322D516",
+      "importIds": {
+        "yuanshen": ["60_7"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.83956, 59.05154],
+      "id": "D240BB797F33376DEEC20B323C16D4D7A38E82B4",
+      "importIds": {
+        "yuanshen": ["60_8"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.80157, 59.14345],
+      "id": "B4D8C4FF138EEA96F8C0608223B130892F172B1D",
+      "importIds": {
+        "yuanshen": ["60_9"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.63812, 59.3701],
+      "id": "31E10A066E55D476D063A04F627C2896B6417EB9",
+      "importIds": {
+        "yuanshen": ["60_10"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "山洞中关卡入口旁边有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.97421, 36.18571],
+      "id": "CC41F1B21FDA3C6CBE16C083B1BFD1513F19BA86",
+      "importIds": {
+        "yuanshen": ["60_16"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.88808, 36.0539],
+      "id": "C871F6FA3466D004AA17AED7299CE1C45C79B1DA",
+      "importIds": {
+        "yuanshen": ["60_12"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.88808, 35.87817],
+      "id": "1818EC3F9E3606E48C1CB02C6FCD2A09EAE0B17B",
+      "importIds": {
+        "yuanshen": ["60_13"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-55.91887, 36.06489],
+      "id": "C6F612739BAD45ABD4090C014E25CBDFB25B5188",
+      "importIds": {
+        "yuanshen": ["60_14"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.69173, 51.11223],
+      "id": "6861158BCDC59430FF822D8AFBF89673915A0515",
+      "importIds": {
+        "yuanshen": ["60_17"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.70928, 51.26966],
+      "id": "5127C13B8AD9342EDB82D255FC1169072E72A404",
+      "importIds": {
+        "yuanshen": ["60_18"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.11032, 32.04232],
+      "id": "4D1C1EDDA4798DCF80C7666BA29B0255FBA5F9CA",
+      "importIds": {
+        "yuanshen": ["60_19"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.11875, 31.91806],
+      "id": "CEBD2105AA3732E99A0DC9D3C803C29EE95C9E77",
+      "importIds": {
+        "yuanshen": ["60_20"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.1693, 31.94912],
+      "id": "7EF146F95296F8F39F9BA702BD2F317C9DA31C40",
+      "importIds": {
+        "yuanshen": ["60_21"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.11875, 32.11999],
+      "id": "26C0C9CC0D12614236AB3AFBFC8ED6DBF26533C2",
+      "importIds": {
+        "yuanshen": ["60_22"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.13777, 31.24391],
+      "id": "AF20B2D9DD97656E6E396A0A1E60DF0AD4DAB138",
+      "importIds": {
+        "yuanshen": ["60_23"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.14551, 31.21096],
+      "id": "BECEF3058B0F652736906BB7AE63D40836DA2A53",
+      "importIds": {
+        "yuanshen": ["60_24"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.17629, 31.27182],
+      "id": "6DF40B6D8FF7C0113D2321DDD6BBBAD678BE35FD",
+      "importIds": {
+        "yuanshen": ["60_26"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.45775, 33.43139],
+      "id": "F9F86DC4EDA46AA921D2A391953695BCE272112D",
+      "importIds": {
+        "yuanshen": ["60_27"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-40.99235, 32.83447],
+      "id": "EA31EC6BFFBFB0437205EFF357BDBA00503E5DAF",
+      "importIds": {
+        "yuanshen": ["60_28"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.87714, 23.31944],
+      "id": "7CF2CAA24E2034D1C07A54602D83F4F3A6BCE7BF",
+      "importIds": {
+        "yuanshen": ["60_29"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.43892, 26.93738],
+      "id": "D23329CABED04FE65B4CEA893C1C3FF6151AE773",
+      "importIds": {
+        "yuanshen": ["60_30"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.1953, 27.39179],
+      "id": "926A565331F424300CB2E1393E7374431FEA2B11",
+      "importIds": {
+        "yuanshen": ["60_31"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.10986, 27.36606],
+      "id": "B703DC5DA2AAA2A51C1CD289493293B6DE78401C",
+      "importIds": {
+        "yuanshen": ["60_32"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_32.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.13967, 22.19062],
+      "id": "7B0D19F3A91F17E3644F45D16D2607A69B9EB941",
+      "importIds": {
+        "yuanshen": ["60_33"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_33.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.19218, 22.25653],
+      "id": "F9F396E1AB3E12AA3017A51BE60A3A269CCFC71E",
+      "importIds": {
+        "yuanshen": ["60_34"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_34.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.31594, 22.72234],
+      "id": "344EC4164E940CA21A94CA39922EB6DBB783C002",
+      "importIds": {
+        "yuanshen": ["60_35"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_35.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.81266, 24.22669],
+      "id": "4A2880E345452700E112B0B788D5FE063BCF3CED",
+      "importIds": {
+        "yuanshen": ["60_36"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.89818, 24.07291],
+      "id": "477811ED6EE21CAD7F7677D518966A0A2A44AEEF",
+      "importIds": {
+        "yuanshen": ["60_37"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_37.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.70352, 25.07901],
+      "id": "32CA402658DBE186719DE99765C4890BB7A463E5",
+      "importIds": {
+        "yuanshen": ["60_38"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_38.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.26689, 25.58426],
+      "id": "9442C57AE2C94E476E32E06E7C5D0D833D2AED84",
+      "importIds": {
+        "yuanshen": ["60_39"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_39.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.51145, 59.35258],
+      "id": "95B4AA8961065FF30FB13129E68F1905484B4435",
+      "importIds": {
+        "yuanshen": ["60_40"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_40.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.98915, 23.12519],
+      "id": "736CE28CA7B17D11D9D5B3F601998F33858E6EAD",
+      "importIds": {
+        "yuanshen": ["60_41"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-42.48059, 22.91639],
+      "id": "8F2B152A2AF981CF3843E6E327575A588E89A19D",
+      "importIds": {
+        "yuanshen": ["60_42"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_42.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-57.14121, 32.04816],
+      "id": "6A8519401F1103A7042463A9889EA79380B80261",
+      "importIds": {
+        "yuanshen": ["60_43"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_43.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-47.14803, 34.06933],
+      "id": "1BC3B864EFAE6A03B4F94009FD8EE961B026A171",
+      "importIds": {
+        "yuanshen": ["60_44"]
+      },
+      "popupTitle": {
+        "zh": "岩晶蝶"
+      },
+      "popupContent": {
+        "zh": "这里有一只岩晶蝶"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/60_44.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

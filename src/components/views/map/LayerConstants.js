@@ -6,7 +6,6 @@ import L from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-editable';
 import 'leaflet-textpath';
-import 'leaflet.pattern';
 import _ from 'lodash';
 
 export const editorMarker = L.icon({

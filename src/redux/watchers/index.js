@@ -1,5 +1,5 @@
-import localStorage from './localStorage';
-import localization from './localization';
+import localStorage from '~/redux/watchers/localStorage';
+import localization from '~/redux/watchers/localization';
 
 const watchers = [localStorage, localization];
 

@@ -579,3 +579,263 @@ First major release of the rework, featuring a new interface developed in React.
 - Markers now recluster when zooming in.
 - Markers now decluster to their original positions, rather than a generic circle.
 - Fixed a bug where markers listed in the editor Elements tab would start at the 0th index.
+- Fixed a bug where popup titles and content would display as `[object Object]`
+
+# 0.10.0 Marker Data Format Rework
+
+- Marker data is now stored in a new format which will make the importing of new features easier.
+  - TODO: Old completion data currently is not migrated, it's just sitting hidden in the user's data. Add functionality to migrate by IDs.
+  - Some markers are still being stored in the old format.
+- Popups for features stored in the new format now display a switch to enable/disable completed status, as an alternative to double clicking the marker.
+- Migrated the following features to the new marker data format:
+  - Andrius (Mondstadt): Migrated 1 marker.
+  - Anemo Hypostasis (Mondstadt): Migrated 1 marker.
+  - Anemoculus (Mondstadt): Migrated 65 markers, and added import IDs for Yuanshen.site.
+  - Apple (Mondstadt): Migrated 4 markers, and added import IDs for Yuanshen.site.
+  - Childe (Liyue): Migrated 1 marker.
+  - Crimson Agate (Dragonspine): Migrated 79 markers, and added import IDs for Yuanshen.site. (This took absurdly long.)
+  - Cryo Regisvine (Mondstadt): Migrated 1 marker.
+  - Domain (Dragonspine): Migrated 1 marker.
+  - Domain (Liyue): Migrated 8 markers.
+  - Domain (Mondstadt): Migrated 8 markers.
+  - Dvalin (Mondstadt): Migrated 1 marker.
+  - Electro Hypostasis (Mondstadt): Migrated 1 marker.
+  - Geo Hypostasis (Liyue): Migrated 1 marker.
+  - Geoculus (Mondstadt): Migrated 131 markers, and added import IDs for Yuanshen.site.
+  - Oceanid (Liyue): Migrated 1 marker.
+  - Pyro Regisvine (Liyue): Migrated 1 marker.
+  - Statue (Dragonspine): Migrated 1 marker.
+  - Statue (Liyue): Migrated 5 markers.
+  - Statue (Mondstadt): Migrated 4 markers.
+  - Teleporter (Dragonspine): Migrated 10 markers.
+  - Teleporter (Liyue): Migrated 40 markers.
+  - Teleporter (Mondstadt): Migrated 22 markers.
+  - Viewpoint (Liyue): Migrated 17 markers.
+  - Viewpoint (Mondstadt): Migrated 10 markers.
+- Added new markers:
+  - Yuanshen.site: Imported 8 Apple (Mondstadt) locations.
+  - Yuanshen.site: Imported 14 Chilled Meat (Dragonspine) locations.
+  - Yuanshen.site: Imported 2 Crimson Agate (Dragonspine) locations (1 addition, 1 correction).
+- Modified data on popups:
+  - Yuanshen.site: Imported 80 Crimson Agate (Dragonspine) Chinese descriptions.
+  - Crimson Agate (Dragonspine): All markers now have text descriptions, YouTube embeds, and AppSample IDs (for future importing attempts).
+- Added a Close button to popups.
+- Removed the "Export Legacy Data" button.
+- Localization key modifications:
+  - New keys:
+    - map-popup-completed-label: Displayed on the popup next to the completed status switch.
+    - options-import-yuanshen: Displayed next to the button for "Import from Yuanshen.site" (previously Import Legacy Data)
+    - options-export-data: Import Data, previously "options-export-new"
+    - options-import-data: Export Data, previously "options-import-new"
+    - popup-import-data-content: Popup content when importing data.
+    - popup-import-yuanshen-content: Popup content when importing Yuanshen.site data.
+  - Removed keys:
+    - options-export-old
+    - options-import-old
+    - options-export-new
+    - options-import-new
+    - popup-import-old-content
+    - popup-import-new-content
+- Completed markers now display with a green highlight to distinguish them when opacity is 1.
+
+# 0.10.1 Yuanshen Import and Debug View
+
+- Added new map Debug view, which can be enabled in the Options. Currently only displays the coordinates at the cursor but more info can be implemented in the future.
+- Added a new description field for features and routes. This is a one or two sentence explanation of the feature or route.
+  - Like attribution, this will appear in the interface later at some point.
+- Created some new scripts to help with the process of importing data from Yuanshen.site.
+- Migrated 737 markers from the following features to the new marker data format:
+  - Abyss Mage (Liyue): Migrated 34 markers and added Yuanshen.site import IDs.
+  - Abyss Mage (Mondstadt): Migrated 7 markers and added Yuanshen.site import IDs.
+  - Berry (Mondstadt): Migrated 4 markers and added Yuanshen.site import IDs.
+  - Bamboo Shoot (Liyue): Migrated 12 markers and added Yuanshen.site import IDs.
+  - Crystal Chunk (Mondstadt): Migrated 46 markers and added Yuanshen.site import IDs.
+  - Fatui Electro Cicin Mage (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Magical Crystal Chunk (Mondstadt): Migrated 18 markers and added Yuanshen.site import IDs.
+  - Meteorite Shard (Liyue): Migrated 77 markers (NO YUANSHEN.SITE IDS).
+  - Meteorite Shard (Mondstadt): Migrated 41 markers (NO YUANSHEN.SITE IDS).
+  - Shrine (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Shrine (Mondstadt): Migrated 10 markers and added Yuanshen.site import IDs.
+  - White Iron Chunk (Mondstadt): Migrated 64 markers and added Yuanshen.site import IDs.
+  - Bird Egg (Mondstadt): Migrated 1 markers and added Yuanshen.site import IDs.
+  - Calla Lily (Mondstadt): Migrated 40 markers and added Yuanshen.site import IDs.
+  - Fatui Electro Cicin Mage (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Fatui Pyro Agent (Liyue): Migrated 8 markers and added Yuanshen.site import IDs.
+  - Fatui Skirmisher (Liyue): Migrated 21 markers and added Yuanshen.site import IDs.
+  - Geovishap Hatchling (Liyue): Migrated 15 markers and added Yuanshen.site import IDs.
+  - Ruin Guard (Liyue): Migrated 15 markers and added Yuanshen.site import IDs.
+  - Ruin Hunter (Liyue): Migrated 5 markers and added Yuanshen.site import IDs.
+  - Samachurl (Liyue): Migrated 1 marker and added Yuanshen.site import IDs.
+  - Slime (Liyue): Migrated 177 markers and added Yuanshen.site import IDs.
+  - Treasure Hoarder (Liyue): Migrated 53 markers and added Yuanshen.site import IDs.
+  - Unusual Hilichurl (Liyue): Migrated 10 markers and added Yuanshen.site import IDs.
+  - Whopperflower (Liyue): Migrated 48 markers and added Yuanshen.site import IDs.
+- Added 220 new markers:
+  - Yuanshen.site: Whopperflower (Liyue): Imported 12 locations.
+  - Yuanshen.site: Treasure Hoarder (Liyue): Imported 1 location.
+  - Yuanshen.site: Samachurl (Liyue): Imported 47 locations.
+  - Yuanshen.site: Slime (Liyue): Imported 3 locations
+  - Yuanshen.site: Abyss Mage (Dragonspine): Imported 4 location.
+  - Yuanshen.site: Abyss Mage (Liyue): Imported 1 location.
+  - Yuanshen.site: Abyss Mage (Mondstadt): Imported 1 location.
+  - Yuanshen.site: Bamboo Shoot (Liyue): Imported 8 locations.
+  - Yuanshen.site: Berry (Mondstadt): Imported 47 locations.
+  - Yuanshen.site: Bird Egg (Liyue): Imported 11 location.
+  - Yuanshen.site: Bird Egg (Mondstadt): Imported 2 location.
+  - Yuanshen.site: Calla Lily (Mondstadt): Imported 11 locations.
+  - Yuanshen.site: Fatui Skirmisher (Liyue): Imported 4 locations.
+  - Yuanshen.site: Geovishap Hatchling (Liyue): Imported 18 locations.
+  - Yuanshen.site: Samachurl (Liyue): Imported 47 locations.
+  - Yuanshen.site: White Iron Chunk (Mondstadt): Imported 3 locations.
+- Hid the following markers due to lack of data. Feel free to help if you can!
+  - Iron Chunk (Mondstadt)
+  - Iron Chunk (Liyue)
+  - Bird Egg (Liyue)
+- Localization of features:
+  - @MasterEric: Added 148 English descriptions to features.
+  - @alkmaar: Translated 31 Mondstadt features to Russian.
+  - @Likanion: Translated 27 Mondstadt nature features to Russian.
+  - @MasterEric: Copied Russian translations to 57 features.
+- Localization key changes:
+  - New keys:
+    - popup-export-data-content: The content of the "Export Data" box. Moved from `popup-export-new-content`.
+    - options-display-debug: Whether to display the Debug view.
+    - debug-title: The "DEBUG" text at the top of the Debug view.
+    - respawn-259200: Localized display for respawning 'every 3 days'. Will be used in a future interface.
+    - respawn-176800: Localized display for respawning 'every 2 days'. Will be used in a future interface.
+    - respawn-86400: Localized display for respawning 'every day'. Will be used in a future interface.
+    - respawn-43200: Localized display for respawning 'every 12 hours'. Will be used in a future interface.
+    - respawn-180: Localized display for respawning 'after 3 minutes'. Will be used in a future interface.
+    - respawn-boss: Localized display for respawning 'on monday at 4 am'. Will be used in a future interface.
+    - respawn-none: Localized display for respawning 'never'. Will be used in a future interface.
+  - Removed keys:
+    - popup-export-old-content
+    - popup-export-new-content
+- Markers can now be cleared while the Editor is enabled.
+- Fixed a bug where new version markers could not be double clicked to mark as completed.
+- Fixed several bugs with rendering of clustered markers.
+
+# 0.10.2 Permalinks, Notifications, and Imports
+
+- Added functionality to navigate to a marker via permalink.
+- Added a button to popups to copy the permalink.
+- Made the Completed switch smaller using an icon/tooltip to make space for the permalink button.
+- Added functionality to display notifications/toasts to the user.
+- Adjusted clustering on many markers.
+- Migrated 1,495 markers.
+  - Cecilia (Mondatadt): Migrated 37 markers, and added Yuanshen.site import IDs.
+  - Cor Lapis (Liyue): Migrated 104 markers, and added Yuanshen.site import IDs.
+  - Crystal Chunk (Liyue): Migrated 127 markers, and added Yuanshen.site import IDs.
+  - Dandelion Seed (Mondstadt): Migrated 47 markers, and added Yuanshen.site import IDs.
+  - Electro Crystal (Liyue): Migrated 5 markers, and added Yuanshen.site import IDs.
+  - Fatui Electro Cicin Mage (Mondstadt): Migrated 4 markers, and added Yuanshen.site import IDs.
+  - Fatui Skirmisher (Mondstadt): Migrated 5 markers, and added Yuanshen.site import IDs.
+  - Fish (Liyue): Migrated 9 markers, and added Yuanshen.site import IDs.
+  - Flaming Flower Stamen (Liyue): Migrated 4 markers, and added Yuanshen.site import IDs.
+  - Flaming Flower Stamen (Mondstadt): Migrated 12 markers, and added Yuanshen.site import IDs.
+  - Fowl (Liyue): Migrated 6 markers, and added Yuanshen.site import IDs.
+  - Fowl (Mondstadt): Migrated 9 markers, and added Yuanshen.site import IDs.
+  - Glaze Lily (Liyue): Migrated 35 markers, and added Yuanshen.site import IDs.
+  - Horsetail (Liyue): Migrated 25 markers, and added Yuanshen.site import IDs.
+  - Jueyun Chili (Liyue): Migrated 43 markers, and added Yuanshen.site import IDs.
+  - Loach Pearl (Liyue): Migrated 11 markers, and added Yuanshen.site import IDs.
+  - Lotus Head (Liyue): Migrated 50 markers, and added Yuanshen.site import IDs.
+  - Magical Crystal Chunk (Liyue): Migrated 6 markers, and added Yuanshen.site import IDs.
+  - Mint (Mondstadt): Migrated 22 markers, and added Yuanshen.site import IDs.
+  - Mist Flower Corolla (Liyue): Migrated 8 markers, and added Yuanshen.site import IDs.
+  - Mist Flower Corolla (Mondstadt): Migrated 4 markers, and added Yuanshen.site import IDs.
+  - Mitachurl (Liyue): Migrated 59 markers, and added Yuanshen.site import IDs.
+  - Mitachurl (Mondstadt): Migrated 22 markers, and added Yuanshen.site import IDs.
+  - Noctilucous Jade (Liyue): Migrated 46 markers, and added Yuanshen.site import IDs.
+  - Philanemo Mushroom (Mondstadt): Migrated 49 markers, and added Yuanshen.site import IDs.
+  - Pinecone (Mondstadt): Migrated 27 markers, and added Yuanshen.site import IDs.
+  - Qingxin (Liyue): Migrated 17 markers, and added Yuanshen.site import IDs.
+  - Raw Meat (Liyue): Migrated 12 markers, and added Yuanshen.site import IDs.
+  - Raw Meat (Mondstadt): Migrated 93 markers, and added Yuanshen.site import IDs.
+  - Ruin Guard (Mondstadt): Migrated 6 markers, and added Yuanshen.site import IDs.
+  - Silk Flower (Liyue): Migrated 15 markers, and added Yuanshen.site import IDs.
+  - Small Lamp Grass (Mondstadt): Migrated 75 markers, and added Yuanshen.site import IDs.
+  - Snapdragon (Liyue): Migrated 6 markers, and added Yuanshen.site import IDs.
+  - Snapdragon (Mondstadt): Migrated 7 markers, and added Yuanshen.site import IDs.
+  - Starconch (Liyue): Migrated 69 markers, and added Yuanshen.site import IDs.
+  - Sunsettia (Mondstadt): Migrated 13 markers, and added Yuanshen.site import IDs.
+  - Sweet Flower (Mondstadt): Migrated 31 markers, and added Yuanshen.site import IDs.
+  - Unusual Hilichurl (Mondstadt): Migrated 6 markers, and added Yuanshen.site import IDs.
+  - Valberry (Mondstadt): Migrated 19 markers, and added Yuanshen.site import IDs.
+  - Violetgrass (Liyue): Migrated 121 markers, and added Yuanshen.site import IDs.
+  - White Iron Chunk (Liyue): Migrated 110 markers, and added Yuanshen.site import IDs.
+  - Whopperflower (Mondstadt): Migrated 21 markers, and added Yuanshen.site import IDs.
+  - Windwheel Aster (Mondstadt): Migrated 65 markers, and added Yuanshen.site import IDs.
+  - Wolfhook (Mondstadt): Migrated 33 markers, and added Yuanshen.site import IDs.
+- Imported 1,883 markers from Yuanshen.site:
+  - Apple (Liyue): Imported 5 new markers.
+  - Berry (Dragonspine): Imported 1 new markers.
+  - Berry (Liyue): Imported 18 new markers.
+  - Carrot (Mondstadt): Imported 45 new markers.
+  - Cor Lapis (Liyue): Imported 9 new markers.
+  - Crab (Liyue): Imported 26 new markers.
+  - Crab (Mondstadt): Imported 63 new markers.
+  - Crystal Core (Dragonspine): Imported 31 new markers.
+  - Crystal Core (Liyue): Imported 41 new markers.
+  - Crystal Core (Mondstadt): Imported 62 new markers.
+  - Dandelion Seed (Mondstadt): Imported 3 new markers.
+  - Fatui Electro Cicin Mage (Dragonspine): Imported 5 new markers.
+  - Fatui Pyro Agent (Mondstadt): Imported 5 new markers.
+  - Fatui Skirmisher (Dragonspine): Imported 19 new markers.
+  - Fatui Skirmisher (Mondstadt): Imported 8 new markers.
+  - Flaming Flower Stamen (Liyue): Imported 18 new markers.
+  - Flaming Flower Stamen (Mondstadt): Imported 23 new markers.
+  - Fowl (Liyue): Imported 33 new markers.
+  - Fowl (Mondstadt): Imported 127 new markers.
+  - Frog (Liyue): Imported 10 new markers.
+  - Frog (Mondstadt): Imported 19 new markers.
+  - Lizard Tail (Liyue): Imported 6 new markers.
+  - Lizard Tail (Mondstadt): Imported 10 new markers.
+  - Loach Pearl (Liyue): Imported 9 new markers.
+  - Lotus Head (Liyue): Imported 12 new markers.
+  - Luminescent Spine (Liyue): Imported 24 new markers.
+  - Luminescent Spine (Mondstadt): Imported 45 new markers.
+  - Magical Crystal Chunk (Liyue): Imported 19 new markers.
+  - Mint (Mondstadt): Imported 180 new markers.
+  - Mist Flower Corolla (Liyue): Imported 36 new markers.
+  - Mist Flower Corolla (Mondstadt): Imported 11 new markers.
+  - Mitachurl (Dragonspine): Imported 14 new markers.
+  - Mitachurl (Liyue): Imported 3 new markers.
+  - Mitachurl (Mondstadt): Imported 4 new markers.
+  - Mushroom (Liyue): Imported 7 new markers.
+  - Mushroom (Mondstadt): Imported 135 new markers.
+  - Pinecone (Liyue): Imported 11 new markers.
+  - Pinecone (Mondstadt): Imported 178 new markers.
+  - Qingxin (Liyue): Imported 65 new markers.
+  - Radish (Mondstadt): Imported 15 new markers.
+  - Raw Meat (Liyue): Imported 85 new markers.
+  - Raw Meat (Mondstadt): Imported 82 new markers.
+  - Ruin Grader (Dragonspine): Imported 1 new markers.
+  - Samachurl (Dragonspine): Imported 1 new markers.
+  - Samachurl (Mondstadt): Imported 18 new markers.
+  - Slime (Dragonspine): Imported 9 new markers.
+  - Slime (Mondstadt): Imported 120 new markers.
+  - Small Lamp Grass (Mondstadt): Imported 7 new markers.
+  - Snapdragon (Liyue): Imported 25 new markers.
+  - Snapdragon (Mondstadt): Imported 16 new markers.
+  - Starconch (Liyue): Imported 7 new markers.
+  - Sunsettia (Liyue): Imported 16 new markers.
+  - Sweet Flower (Liyue): Imported 10 new markers.
+  - Sweet Flower (Mondstadt): Imported 100 new markers.
+  - Violetgrass (Liyue): Imported 11 new markers.
+  - White Iron Chunk (Liyue): Imported 1 new markers.
+  - Whopperflower (Dragonspine): Imported 16 new markers.
+  - Whopperflower (Mondstadt): Imported 2 new markers.
+  - Windwheel Aster (Mondstadt): Imported 1 new markers.
+- Hid the following markers due to lack of data. Feel free to help if you can!
+  - Carrot (Liyue)
+  - Radish (Liyue)
+- Localization key changes:
+  - New keys:
+    - map-popup-copy-permalink-label: Tooltip on the button to copy a permalink in a marker popup.
+    - notification-permalink-fail-id: Notification which displays when navigating via permalink fails due to an unknown ID.
+    - notification-permalink-feature: Notification which displays when navigating to a feature via permalink.
+    - notification-permalink-route: Notification which displays when navigating to a route via permalink.
+- Fixed a bug where the Completed switch's status would not match the state of the marker.
+- Fixed a bug where navigating via permalink would not display the feature if it was currently hidden.
+- Fixed a bug where opening of a popup when the category has no completed markers would cause a crash.

@@ -1,8 +1,14 @@
 {
+  "format": 2,
   "name": {
-    "en": "Loach Pearl"
+    "en": "Loach Pearl",
+    "zh": ""
   },
-  "cluster": true,
+  "description": {
+    "en": "A shiny orb spat out by a loach. Currently unused."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "loach-pearl",
@@ -17,208 +23,299 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.4385858670433, 41.84692382812501]
+      "coordinates": [-40.43859, 41.84692],
+      "id": "0311FD1E9EEF6F8BCB80D8FF340EC9E9036916DE",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/1"],
+        "yuanshen": ["104_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dihua Marsh Island #1"
-        },
-        "popupContent": {
-          "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
-        },
-        "popupMedia": "liyue/loach-pearl/1"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Dihua Marsh Island #1"
+      },
+      "popupContent": {
+        "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
+      },
+      "popupMedia": "liyue/loach-pearl/1"
+    },
+    {
+      "coordinates": [-40.46367, 41.81946],
+      "id": "7CE9F128DF1FA288CC721D9F60D5780667C1806F",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/2"],
+        "yuanshen": ["104_9"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Dihua Marsh Island #2"
+      },
+      "popupContent": {
+        "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
+      },
+      "popupMedia": "liyue/loach-pearl/1"
+    },
+    {
+      "coordinates": [-40.4344, 41.90735],
+      "id": "CEFBF9A2548366670A14D88F52A16E302F493BCF",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/3"],
+        "yuanshen": ["104_10"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Dihua Marsh Island #3"
+      },
+      "popupContent": {
+        "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
+      },
+      "popupMedia": "liyue/loach-pearl/1"
+    },
+    {
+      "coordinates": [-40.45949, 41.87439],
+      "id": "86B1B749FEE7C18726AFF661F64CB44AAE4B6896",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/4"],
+        "yuanshen": ["104_11"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Dihua Marsh Island #4"
+      },
+      "popupContent": {
+        "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
+      },
+      "popupMedia": "liyue/loach-pearl/1"
+    },
+    {
+      "coordinates": [-40.68897, 40.10559],
+      "id": "0F832852FC318B70391BA332BEE4B775FDF84FDB",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/6"],
+        "yuanshen": ["104_6", "104_7"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "A Golden Loach can be found here by the rock where the Hilichurl is training to shoot."
       }
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.46366632458767, 41.8194580078125]
+      "coordinates": [-40.28372, 40.44617],
+      "id": "C075D20E1BDBB7F557D36D81127AE58718C8F088",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/7"],
+        "yuanshen": ["104_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dihua Marsh Island #2"
-        },
-        "popupContent": {
-          "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
-        },
-        "popupMedia": "liyue/loach-pearl/1"
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "Three Golden Loaches can be found among the reeds here."
+      },
+      "popupMedia": "liyue/loach-pearl/7"
+    },
+    {
+      "coordinates": [-40.12849, 40.45166],
+      "id": "7CDBA065465FB1801CC1E897724029F114B0470F",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/8"],
+        "yuanshen": ["104_5"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "Three Golden Loaches can be found among the reeds here."
+      },
+      "popupMedia": "liyue/loach-pearl/7"
+    },
+    {
+      "coordinates": [-40.09908, 40.59448],
+      "id": "1ECBB228AAE13EBD064203DA4CA4C2A97C2B9788",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/9"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "Three Golden Loaches can be found among the reeds here."
+      },
+      "popupMedia": "liyue/loach-pearl/7"
+    },
+    {
+      "coordinates": [-39.70719, 41.08337],
+      "id": "A8F08B9AF75F1E51164180553422CACC6F89C6A3",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/10"],
+        "yuanshen": ["104_4"]
+      },
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-39.26203, 40.23193],
+      "id": "C30794889BE818D4BB1C031A7BCACF23F1D2E663",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/11"],
+        "yuanshen": ["104_2"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "A Golden Loach can be found by this pond."
       }
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.43440488077009, 41.90734863281251]
+      "coordinates": [-38.41486, 41.99524],
+      "id": "1834EFF6DACE87BD61F0F24044968E3BBE9433B6",
+      "importIds": {
+        "gm_legacy": ["liyueLoachPearl/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dihua Marsh Island #3"
-        },
-        "popupContent": {
-          "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
-        },
-        "popupMedia": "liyue/loach-pearl/1"
-      }
+      "popupAttribution": "MasterEric",
+      "popupContent": {
+        "en": "A Golden Loach can be found north at the cape."
+      },
+      "popupMedia": "liyue/loach-pearl/12"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.45948689837196, 41.87438964843751]
+      "coordinates": [-39.3258, 41.04492],
+      "id": "6C55A0237485A83099180B20454CF182A2181CC7",
+      "importIds": {
+        "yuanshen": ["104_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dihua Marsh Island #4"
-        },
-        "popupContent": {
-          "en": "You can find a group of four Loaches on this island. They look like pink lizards and give Loach Pearls when you grab them."
-        },
-        "popupMedia": "liyue/loach-pearl/1"
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.39676430557204, 42.04467773437501]
+      "coordinates": [-40.43859, 41.43494],
+      "id": "1EFD9AE25C9E383627F72742A93B018D22E31640",
+      "importIds": {
+        "yuanshen": ["104_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dihua Marsh Island Camp"
-        },
-        "popupContent": {
-          "en": "You can find a Loach on this island in the middle of a group of Hilichurls."
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_8.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.68896903762434, 40.10559082031251]
+      "coordinates": [-40.73893, 42.13806],
+      "id": "F2969C8E2C0C5B3A955C99C27ED0CCCDC0643A26",
+      "importIds": {
+        "yuanshen": ["104_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "A Golden Loach can be found here by the rock where the Hilichurl is training to shoot."
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_12.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.283716270542605, 40.44616699218751]
+      "coordinates": [-40.48456, 41.56128],
+      "id": "BC86A126A196247DD89FBFF03F150D5FDFC4182F",
+      "importIds": {
+        "yuanshen": ["104_14"],
+        "gm_legacy": ["liyueLoachPearl/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "A"
-        },
-        "popupContent": {
-          "en": "Three Golden Loaches can be found among the reeds here."
-        },
-        "popupMedia": "liyue/loach-pearl/7"
-      }
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_14.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.12849105685408, 40.45166015625]
+      "coordinates": [-35.94244, 40.73181],
+      "id": "98F79BAD341F691185A0B916726770FAFDBFF1AF",
+      "importIds": {
+        "yuanshen": ["104_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "B"
-        },
-        "popupContent": {
-          "en": "Three Golden Loaches can be found among the reeds here."
-        },
-        "popupMedia": "liyue/loach-pearl/7"
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_15.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.09908414736845, 40.59448242187501]
+      "coordinates": [-36.91476, 39.10583],
+      "id": "B3EE30B9DE041D398E4554B6F0231BDFF8792B0E",
+      "importIds": {
+        "yuanshen": ["104_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "C"
-        },
-        "popupContent": {
-          "en": "Three Golden Loaches can be found among the reeds here."
-        },
-        "popupMedia": "liyue/loach-pearl/7"
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_16.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.70718665682655, 41.08337402343751]
+      "coordinates": [-37.58377, 39.84192],
+      "id": "17E194B9B8C48714D0C2A9E735D87A766ACBAA17",
+      "importIds": {
+        "yuanshen": ["104_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_18.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.26203141523747, 40.23193359375001]
+      "coordinates": [-37.62728, 39.89136],
+      "id": "52C0B82F75CBD9DA828B7B8AE842DFC719FED91B",
+      "importIds": {
+        "yuanshen": ["104_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "A Golden Loach can be found by this pond."
-        },
-        "popupMedia": ""
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_19.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.414862450649444, 41.99523925781251]
+      "coordinates": [-37.62293, 39.82544],
+      "id": "3E8D48D9B70F0A639DD355161161381C17027168",
+      "importIds": {
+        "yuanshen": ["104_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": ""
-        },
-        "popupContent": {
-          "en": "A Golden Loach can be found north at the cape."
-        },
-        "popupMedia": "liyue/loach-pearl/12"
-      }
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.03133, 42.48962],
+      "id": "D208E6801C22B50F51DAB7A83CC7485B8737F7B2",
+      "importIds": {
+        "yuanshen": ["104_22"]
+      },
+      "popupTitle": {
+        "zh": "泥鳅"
+      },
+      "popupContent": {
+        "zh": "这是一条黏黏的泥鳅"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/104_22.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

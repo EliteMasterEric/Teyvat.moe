@@ -12,7 +12,6 @@ import BorderBox from '~/components/interface/BorderBox';
 import { InputSlider } from '~/components/interface/Input';
 import { TabView } from '~/components/interface/Tabs';
 import { exportDataJSON } from '~/components/preferences/DataExport';
-import { exportLegacyDataJSON } from '~/components/preferences/LegacyExport';
 import { getApplicationVersion } from '~/components/Util';
 import MapControlsOptionsLanguage from '~/components/views/controls/options/MapControlsOptionsLanguage';
 import ClearMapDataPopup from '~/components/views/popups/ClearMapDataPopup';
@@ -34,7 +33,7 @@ import {
   setShowHiddenFeatures,
   setWorldBorderEnabled,
 } from '~/redux/ducks/options';
-import { setEditorEnabled } from '~/redux/ducks/ui';
+import { setDebugEnabled, setEditorEnabled, setToast } from '~/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {
@@ -76,6 +75,7 @@ const _MapControlsOptions = ({
   setHideFeaturesInEditor,
   setShowHiddenFeatures,
   setHideRoutesInEditor,
+  setDebugEnabled,
   importData,
   importLegacyData,
   clearState,
@@ -168,13 +168,22 @@ const _MapControlsOptions = ({
             checked={options.showHiddenFeatures}
           />
         </Box>
+        <Box className={classes.optionContainer}>
+          <Typography className={classes.label}>{t('options-display-debug')}</Typography>
+          <Switch
+            size="small"
+            color="primary"
+            onChange={(event) => setDebugEnabled(event.target.checked)}
+            checked={options.displayDebug}
+          />
+        </Box>
       </BorderBox>
       <BorderBox overflow="show">
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-import-new')}</Typography>
+          <Typography className={classes.label}>{t('options-import-data')}</Typography>
           <ImportDataPopup
-            title={t('options-import-new')}
-            content={t('popup-import-new-content')}
+            title={t('options-import-data')}
+            content={t('popup-import-data-content')}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
                 {t('options-import-button')}
@@ -184,10 +193,10 @@ const _MapControlsOptions = ({
           />
         </Box>
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-export-new')}</Typography>
+          <Typography className={classes.label}>{t('options-export-data')}</Typography>
           <ExportDataPopup
-            title={t('options-export-new')}
-            message={t('popup-export-new-content')}
+            title={t('options-export-data')}
+            message={t('popup-export-data-content')}
             fetchData={exportDataJSON}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
@@ -208,29 +217,16 @@ const _MapControlsOptions = ({
           />
         </Box>
         <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-import-old')}</Typography>
+          <Typography className={classes.label}>{t('options-import-yuanshen')}</Typography>
           <ImportDataPopup
-            title={t('options-import-old')}
-            content={t('popup-import-old-content')}
+            title={t('options-import-yuanshen')}
+            content={t('popup-import-yuanshen-content')}
             trigger={
               <Button className={classes.button} variant="contained" size="small">
                 {t('options-import-button')}
               </Button>
             }
             onConfirm={importLegacyData}
-          />
-        </Box>
-        <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-export-old')}</Typography>
-          <ExportDataPopup
-            title={t('options-export-old')}
-            message={t('popup-export-old-content')}
-            fetchData={exportLegacyDataJSON}
-            trigger={
-              <Button className={classes.button} variant="contained" size="small">
-                {t('options-export-button')}
-              </Button>
-            }
           />
         </Box>
       </BorderBox>
@@ -244,6 +240,8 @@ const mapStateToProps = (state) => ({
   editorEnabled: state.editorEnabled,
 });
 const mapDispatchToProps = (dispatch) => ({
+  showToast: (message, action = null, showClose = true, duration = 6000) =>
+    dispatch(setToast(message, action, showClose, duration)),
   setEditorEnabled: (enabled) => dispatch(setEditorEnabled(enabled)),
   setCompletedAlpha: (alpha) => dispatch(setCompletedAlpha(alpha)),
   setWorldBorderEnabled: (enabled) => dispatch(setWorldBorderEnabled(enabled)),
@@ -252,6 +250,7 @@ const mapDispatchToProps = (dispatch) => ({
   setHideFeaturesInEditor: (enabled) => dispatch(setHideFeaturesInEditor(enabled)),
   setHideRoutesInEditor: (enabled) => dispatch(setHideRoutesInEditor(enabled)),
   setShowHiddenFeatures: (enabled) => dispatch(setShowHiddenFeatures(enabled)),
+  setDebugEnabled: (enabled) => dispatch(setDebugEnabled(enabled)),
   setOverrideLang: (lang) => dispatch(setOverrideLang(lang)),
   importData: (data) => {
     const action = importNewDataFromString(data);

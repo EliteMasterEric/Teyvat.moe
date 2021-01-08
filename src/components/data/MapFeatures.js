@@ -6,160 +6,14 @@
 
 import _ from 'lodash';
 
+import MapCategories from '~/components/data/MapCategories';
+
 import {
   listFeatureKeys,
   listRouteKeys,
   loadFeature,
   loadRoute,
 } from '~/components/data/MapFeaturesData';
-
-/*
- * List of ingame regions.
- */
-export const MapRegions = {
-  mondstadt: {
-    nameKey: 'region-mondstadt',
-    enabled: true,
-    color: '#408867',
-  },
-  liyue: {
-    nameKey: 'region-liyue',
-    enabled: true,
-    color: '#A28339',
-  },
-  dragonspine: {
-    nameKey: 'region-dragonspine',
-    enabled: true,
-    color: '#394984',
-  },
-  inazuma: {
-    nameKey: 'region-inazuma',
-    enabled: false,
-    color: '#663F5C',
-  },
-  sumeru: {
-    nameKey: 'region-sumeru',
-    enabled: false,
-    color: '#2A5220',
-  },
-  fontaine: {
-    nameKey: 'region-fontaine',
-    enabled: false,
-    color: '#295B6C',
-  },
-  natlan: {
-    nameKey: 'region-natlan',
-    enabled: false,
-    color: '#408867',
-  },
-  snezhnaya: {
-    nameKey: 'region-snezhnaya',
-    enabled: false,
-    color: '#257C85',
-  },
-  khaenriah: {
-    nameKey: 'region-khaenriah',
-    enabled: false,
-  },
-};
-
-/**
- * Metadata regarding the map categories.
- */
-export const MapCategories = {
-  event: {
-    nameKey: 'category-event',
-    style: {
-      fullWidth: true,
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#947F17',
-        text: '#FFF',
-      },
-    },
-  },
-  monster: {
-    nameKey: 'category-monster',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#c62828',
-        text: '#FFF',
-      },
-    },
-  },
-  boss: {
-    nameKey: 'category-boss',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#d84315',
-        text: '#FFF',
-      },
-    },
-  },
-  nature: {
-    nameKey: 'category-nature',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#4caf50',
-        text: '#000',
-      },
-    },
-  },
-  special: {
-    nameKey: 'category-special',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#DDAABB',
-        text: '#000',
-      },
-    },
-  },
-  ore: {
-    nameKey: 'category-ore',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#00bcd4',
-        text: '#000',
-      },
-    },
-  },
-  chest: {
-    nameKey: 'category-chest',
-    style: {
-      disabled: {
-        bg: '#9e9e9e',
-        text: '#000',
-      },
-      enabled: {
-        bg: '#795548',
-        text: '#FFF',
-      },
-    },
-  },
-};
 
 /**
  * Metadata regarding the map features.
@@ -216,11 +70,7 @@ export const getEmptyFeatureCategories = (region) =>
 export const getFeatureKeysByFilter = (region, category) => {
   return _.keys(MapFeatures).filter((key) => {
     const feature = MapFeatures[key];
-    return (
-      (feature?.region ?? 'mondstadt') === region &&
-      (feature?.category ?? 'special') === category &&
-      (feature?.enabled ?? true)
-    );
+    return feature?.region === region && feature?.category === category && feature?.enabled;
   });
 };
 
@@ -286,10 +136,53 @@ export const getEmptyRouteCategories = (region) =>
 export const getRouteKeysByFilter = (region, category) => {
   return Object.keys(MapRoutes).filter((key) => {
     const route = MapRoutes[key];
-    return (
-      (route?.region ?? 'mondstadt') === region &&
-      (route?.category ?? 'special') === category &&
-      (route?.enabled ?? true)
-    );
+    return route?.region === region && route?.category === category && route?.enabled;
   });
+};
+
+export const getElementPathById = (id) => {
+  let result = null;
+
+  // Search the features.
+  Object.keys(MapFeatures).forEach((featureKey) => {
+    const feature = MapFeatures[featureKey];
+    const matchingMarkers = feature.data.filter((element) => element.id === id);
+    if (matchingMarkers.length >= 1) {
+      result = `feature/${featureKey}/${id}`;
+    }
+  });
+  if (result !== null) return result;
+
+  // Search the routes.
+  Object.keys(MapRoutes).forEach((routeKey) => {
+    const routes = MapRoutes[routeKey];
+    const matchingMarkers = routes.data.filter((element) => element.id === id);
+    if (matchingMarkers.length >= 1) {
+      result = `route/${routeKey}/${id}`;
+    }
+  });
+  if (result !== null) return result;
+
+  // Couldn't find it.
+  return null;
+};
+
+export const getElementByPath = (path) => {
+  const [type, name, id] = path.split('/');
+  switch (type) {
+    case 'feature':
+      const feature = MapFeatures[name];
+      const markers = feature.data.filter((m) => m.id === id);
+      if (markers.length >= 1) return markers[0];
+      break;
+    case 'route':
+      const route = MapRoutes[name];
+      const routes = route.data.filter((r) => r.id === id);
+      if (routes.length >= 1) return routes[0];
+      break;
+    default:
+      console.error(`Unknown type ${type}.`);
+      break;
+  }
+  return null;
 };

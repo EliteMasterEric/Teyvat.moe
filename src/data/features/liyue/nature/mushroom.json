@@ -1,6 +1,16 @@
 {
-  "name": { "en": "Mushroom" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Mushroom",
+    "ru": "Гриб",
+    "zh": ""
+  },
+  "description": {
+    "en": "Hardy common fungi. Used in Recipes."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "mushroom",
     "base": {
@@ -10,5 +20,111 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-54.47004, 44.47266],
+      "id": "1474B01BF003C0CCA78475426D8F1DA20344E793",
+      "importIds": {
+        "yuanshen": ["86_1"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.43572, 54.05273],
+      "id": "32735068599A12465EDC24CA6819E954032DA49E",
+      "importIds": {
+        "yuanshen": ["86_2"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-46.55886, 51.41602],
+      "id": "6B276F28B5C28165D572F2EA499213E4F852622C",
+      "importIds": {
+        "yuanshen": ["86_3"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.9225, 51.06445],
+      "id": "9BC6DF7B3AFAC6BE32C34197D6CE1C4C853CDD9C",
+      "importIds": {
+        "yuanshen": ["86_4"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-46.9165, 39.06189],
+      "id": "AF74100939436B25FEB9A66988A2EBFF5D546477",
+      "importIds": {
+        "yuanshen": ["86_5"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-46.91275, 39.09668],
+      "id": "168CD050627943374BD55D25201C65333DCBBF90",
+      "importIds": {
+        "yuanshen": ["86_6"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.67931, 32.36096],
+      "id": "0F8595500E61B55053B515E81C69FC3C4D2DF56A",
+      "importIds": {
+        "yuanshen": ["86_7"]
+      },
+      "popupTitle": {
+        "zh": "蘑菇-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有一株蘑菇"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/86_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

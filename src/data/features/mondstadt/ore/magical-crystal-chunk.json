@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Magical Crystal Chunk" },
-  "cluster": true,
+  "format": 2,
+  "name": {
+    "en": "Magical Crystal Chunk",
+    "ru": "Магический кристальный обломок"
+  },
+  "description": {
+    "en": "Crystal eroded by Ley Line energy that requires Original Resin to refine into Mystic Enhancement Ore."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 259200,
   "icons": {
     "filter": "magical-crystal-chunk",
@@ -13,312 +21,238 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.332081860073597, 49.81201171875001]
+      "coordinates": [-24.33208, 49.81201],
+      "id": "40640E17B693797386713F2ADFBBF69B9D55B627",
+      "importIds": {
+        "yuanshen": ["102_5"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk A1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk A1"
       },
-      "id": 1
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.261989400796306, 49.81750488281251]
+      "coordinates": [-24.26199, 49.8175],
+      "id": "004A4CB5801A8321C94FEDC944CB948F8FDB7026",
+      "importIds": {
+        "yuanshen": ["102_5"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk A2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk A2"
       },
-      "id": 2
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-a"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.410785702577023, 53.33312988281251]
+      "coordinates": [-27.41079, 53.33313],
+      "id": "F2C2F02B20A537A2576E6BC54E656CAE902B8008",
+      "importIds": {
+        "yuanshen": ["102_2"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk B1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk B1"
       },
-      "id": 3
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.337614909452, 53.58581542968751]
+      "coordinates": [-27.33761, 53.58582],
+      "id": "35D78AA8339096865964917CDA2C37FD4960D37A",
+      "importIds": {
+        "yuanshen": ["102_2"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Iron Chunk B2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Iron Chunk B2"
       },
-      "id": 4
-    },
-
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.44937385955666, 49.96582031250001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk C1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
-      },
-      "id": 5
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.352733760237818, 50.10314941406251]
+      "coordinates": [-28.44937, 49.96582],
+      "id": "9193932F879A91217378C2A4AECCDE2ABB3387B6",
+      "importIds": {
+        "yuanshen": ["102_1"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk C2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk C1"
       },
-      "id": 6
-    },
-
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.950475674848008, 54.12963867187501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk D1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
-      },
-      "id": 7
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.950475674848008, 54.31091308593751]
+      "coordinates": [-28.35273, 50.10315],
+      "id": "E5BB650171D36D06AEF73A4010E2C8B770B49FA8",
+      "importIds": {
+        "yuanshen": ["102_1"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk D2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk C2"
       },
-      "id": 8
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-c"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.488773287109822, 52.15759277343751]
+      "coordinates": [-28.95048, 54.12964],
+      "id": "BFA8800514FCC1D734B9D1AF81952B49E2200FAB",
+      "importIds": {
+        "yuanshen": ["102_3"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk E1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk D1"
       },
-      "id": 9
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.365227537412448, 52.21801757812501]
+      "coordinates": [-28.95048, 54.31091],
+      "id": "E04FEC40BAEE30B837182C470AF14DF2E1211FB1",
+      "importIds": {
+        "yuanshen": ["102_3"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk E2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk D2"
       },
-      "id": 10
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-d"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.406420474920292, 52.0751953125]
+      "coordinates": [-20.48877, 52.15759],
+      "id": "3A06558E8B3A13C688E07514620C21067B8527F4",
+      "importIds": {
+        "yuanshen": ["102_7"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk E3"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk E1"
       },
-      "id": 11
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.37182502950725, 55.45349121093751]
+      "coordinates": [-20.36523, 52.21802],
+      "id": "C52156891FBF99D6A8282B5362167F8C68037A55",
+      "importIds": {
+        "yuanshen": ["102_7"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk F1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk E2"
       },
-      "id": 12
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.45894275368763, 55.45898437500001]
+      "coordinates": [-20.40642, 52.0752],
+      "id": "DB0B497969CC2D9D3DE29A28AE2D364C7056DC8B",
+      "importIds": {
+        "yuanshen": ["102_7"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk F2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk E3"
       },
-      "id": 13
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-e"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.47727218776035, 55.2447509765625]
+      "coordinates": [-33.37183, 55.45349],
+      "id": "21377F27F22F6FAC77CD13F7177FBFCA56CA069B",
+      "importIds": {
+        "yuanshen": ["102_10"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk F3"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk F1"
       },
-      "id": 14
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.37380917154398, 51.22924804687501]
+      "coordinates": [-33.45894, 55.45898],
+      "id": "7465A4A2F42CA481D33F8DF091316F5CE4EA65A7",
+      "importIds": {
+        "yuanshen": ["102_10"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk G1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk F2"
       },
-      "id": 15
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.39862284961958, 51.27319335937501]
+      "coordinates": [-33.47727, 55.24475],
+      "id": "6BFB077BD91DD0F786E3B8886A17547958FE19B8",
+      "importIds": {
+        "yuanshen": ["102_10"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk G2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk F3"
       },
-      "id": 16
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-f"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.410728397237914, 45.47241210937501]
+      "coordinates": [-25.37381, 51.22925],
+      "id": "2F8DD80825C1C9ED81629E38173BC83E976B426F",
+      "importIds": {
+        "yuanshen": ["102_4"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk H1"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk G1"
       },
-      "id": 17
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.401064827220896, 45.582275390625]
+      "coordinates": [-25.39862, 51.27319],
+      "id": "87BEC857F2D54F01ABF859D4BD0D0305773FD127",
+      "importIds": {
+        "yuanshen": ["102_4"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Magical Crystal Chunk H2"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk G2"
       },
-      "id": 18
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-g"
+    },
+    {
+      "coordinates": [-28.41073, 45.47241],
+      "id": "D6AEABA32BD62F5F278DFB200DD3781B7411D60A",
+      "importIds": {
+        "yuanshen": ["102_6"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/17"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk H1"
+      },
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
+    },
+    {
+      "coordinates": [-28.40106, 45.58228],
+      "id": "3CDC5247E9DB4BD0B805AD763362818B672CD603",
+      "importIds": {
+        "yuanshen": ["102_6"],
+        "gm_legacy": ["mondstadtMagicalCrystalChunk/18"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Magical Crystal Chunk H2"
+      },
+      "popupMedia": "mondstadt/magical-crystal-chunk/group-h"
     }
   ]
 }

@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Mitachurl" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Mitachurl",
+    "ru": "Митачурл",
+    "zh": ""
+  },
+  "description": {
+    "en": "Formidable warrior Hilichurls who wield shields or axes. Drops Stained Masks."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "mitachurl",
@@ -13,290 +22,408 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.7355809121, 69.0545654296]
+      "coordinates": [-25.73558, 69.05457],
+      "id": "CFA2F9B2398CBEE7E58940C2B6F2B720016099AA",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/1"],
+        "yuanshen": ["30_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9696610222, 69.5534387848]
+      "coordinates": [-20.96966, 69.55344],
+      "id": "9E8CD78A9D5EB37CEB92EBC6FF385300D131D06A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/2"],
+        "yuanshen": ["30_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.6608548558, 67.9001584301]
+      "coordinates": [-20.66085, 67.90016],
+      "id": "4C2D4AC76D96B878F54726FC20E6AF7902E80AD8",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/3"],
+        "yuanshen": ["30_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.229085799, 64.0436980132]
+      "coordinates": [-20.22909, 64.0437],
+      "id": "D6D17F9E5D7C107A63E0B9F2BF2257C8F7AC95CA",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/4"],
+        "yuanshen": ["30_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.6662624941, 73.8377459709]
+      "coordinates": [-36.66626, 73.83775],
+      "id": "A8812EFE339832181D912C2129165D507A9F3751",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/6"],
+        "yuanshen": ["30_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8926566078, 62.2918301957]
+      "coordinates": [-34.89266, 62.29183],
+      "id": "E3355853D7D35FBE83ADD57E32F8532E0280E947",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.7809441062, 56.1666195682]
+      "coordinates": [-33.78094, 56.16662],
+      "id": "F5467DEEF342ECE6EBF1CF05A1E952602806BD7F",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/9"],
+        "yuanshen": ["30_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.0890046418, 55.8645549551]
+      "coordinates": [-33.089, 55.86455],
+      "id": "49517208315ED87BD5C4A3966F2A355E83532933",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/10"],
+        "yuanshen": ["30_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.3648591616, 53.6175570425]
+      "coordinates": [-28.36486, 53.61756],
+      "id": "DD2AE2CD03721DE235A350AAC10EF4FAF64B878E",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/11"],
+        "yuanshen": ["30_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.3885650593, 51.4864146219]
+      "coordinates": [-28.38857, 51.48641],
+      "id": "E61397B133D5D153B2FC466746F57856FA8133B3",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/12"],
+        "yuanshen": ["30_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.0218703744, 51.5083678348]
+      "coordinates": [-27.02187, 51.50837],
+      "id": "3F3E8EEFCE43A2DB72EB47AFA7DA11B85B9628B9",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/13"],
+        "yuanshen": ["30_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.3976161337, 50.0239513301]
+      "coordinates": [-24.39762, 50.02395],
+      "id": "1A004BA3A185E389FED9921DA4C0F47AB8966216",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/14"],
+        "yuanshen": ["30_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.7976807478, 50.7779163587]
+      "coordinates": [-23.79768, 50.77792],
+      "id": "4B5E20C57649BCD618145BB098C8C448F072D6EC",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/15"],
+        "yuanshen": ["30_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.4091452281, 51.4311826891]
+      "coordinates": [-20.40915, 51.43118],
+      "id": "AA73DD5294F43D8913C9C6BD5A20BA6C7C1A401A",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/16"],
+        "yuanshen": ["30_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0997529855, 47.7182401787]
+      "coordinates": [-30.09975, 47.71824],
+      "id": "DA0B1320DDE17A0EDBBE918CCB955B3B9C833822",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/17"],
+        "yuanshen": ["30_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.2741697671, 38.9126625403]
+      "coordinates": [-24.27417, 38.91266],
+      "id": "0A5322D267D9872766D3B8D8BCFD204BF174053F",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/18"],
+        "yuanshen": ["30_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.2291107127, 39.0115200501]
+      "coordinates": [-24.22911, 39.01152],
+      "id": "D0B0FE663443D22C50737AFE76CAFE91CC5688F0",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/19"],
+        "yuanshen": ["30_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.7587164084, 39.9125166968]
+      "coordinates": [-19.75872, 39.91252],
+      "id": "4188B2329425756CA5612713F5E6CE38BED19E96",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/20"],
+        "yuanshen": ["30_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.6124345245, 40.8683175219]
+      "coordinates": [-16.61243, 40.86832],
+      "id": "231B8446E08CE1C13FEDD97C08F6F46FF4283480",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/21"],
+        "yuanshen": ["30_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.0016719704, 43.5210599249]
+      "coordinates": [-19.00167, 43.52106],
+      "id": "0D720C5F2117C9F6B047E4BE48A81DD2D7A70B95",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/22"],
+        "yuanshen": ["30_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.1926090108, 43.7192761515]
+      "coordinates": [-20.19261, 43.71928],
+      "id": "9D9EF0D3DE762EE59D7D477A2AF7416A29FD06E3",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/23"],
+        "yuanshen": ["30_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.2660072017, 66.3724409534]
+      "coordinates": [-18.26601, 66.37244],
+      "id": "6D3233452EE0A723A35E00E10885CE97C8B77CD3",
+      "importIds": {
+        "gm_legacy": ["mondstadtMitachurl/25"],
+        "yuanshen": ["30_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "大型丘丘人"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个大型丘丘人"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.83684, 53.61517],
+      "id": "A17BE9B543474E63241000AB0A2525ED2F6D59AA",
+      "importIds": {
+        "yuanshen": ["30_36"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个丘丘暴徒"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/30_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.80033, 53.67559],
+      "id": "8BD159037C7054E0376EF9ADF305C63B6521E3BC",
+      "importIds": {
+        "yuanshen": ["30_37"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个丘丘暴徒"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/30_37.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.30271, 62.76058],
+      "id": "2173DCF148D74CA55D28C4725B9A3381F0E8795B",
+      "importIds": {
+        "yuanshen": ["30_41"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个丘丘暴徒"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/30_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.98095, 63.6841],
+      "id": "D8D2C8295423DE71844D3CF62C547F7462CFD5D3",
+      "importIds": {
+        "yuanshen": ["30_42"]
+      },
+      "popupTitle": {
+        "zh": "大型丘丘人"
+      },
+      "popupContent": {
+        "zh": "这是一个丘丘暴徒"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/30_42.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

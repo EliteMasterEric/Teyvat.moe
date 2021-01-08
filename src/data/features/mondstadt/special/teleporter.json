@@ -1,8 +1,15 @@
 {
+  "format": 2,
   "name": {
-    "en": "Teleporter"
+    "en": "Teleporter",
+    "ru": "Телепорт"
   },
-  "cluster": false,
+  "description": {
+    "en": "Activate to gain the ability to move here at will via the World Map."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "teleporter",
     "base": {
@@ -24,378 +31,293 @@
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.521283325496277, 68.91723632812501]
+      "coordinates": [-18.52128, 68.91724],
+      "id": "F15C9F324CF5512DCB2108DF7FEFF190E64D8497",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stormbearer Point"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/stormbearer-point"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stormbearer Point",
+        "ru": "Пик Буревестника"
+      },
+      "popupMedia": "mondstadt/teleporter/stormbearer-point"
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.200346006493735, 63.50097656250001]
+      "coordinates": [-20.20035, 63.50098],
+      "id": "9C456A0C6F8C2287F2C5C761BFBAA326172BEB3F",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stormbearer Mountains"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/stormbearer-mountains"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stormbearer Mountains",
+        "ru": "Горы Буревестника"
+      },
+      "popupMedia": "mondstadt/teleporter/stormbearer-mountains"
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.540221355754714, 69.09301757812501]
+      "coordinates": [-20.54022, 69.09302],
+      "id": "EB4B1B6C90E1CC48187754EF5B0AF03FA74C0CB3",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starting Beach"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/starting-beach"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stormbearer Beach"
+      },
+      "popupMedia": "mondstadt/teleporter/starting-beach"
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.839449402063185, 67.23632812500001]
+      "coordinates": [-25.83945, 67.23633],
+      "id": "6755BDA7DAD3EDF3A455F4D4AD1BFBD61A4F1AF1",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Starsnatch Cliff"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/starsnatch"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Starsnatch Cliff",
+        "ru": "Утёс Звездопада"
+      },
+      "popupMedia": "mondstadt/teleporter/starsnatch"
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.068909095463365, 61.39160156250001]
+      "coordinates": [-27.06891, 61.3916],
+      "id": "9535997653F7C2540638CDAE664958D906577E63",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Mondstadt City Limits"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/mondstadt-city-limits"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Mondstadt City Limits",
+        "ru": "Границы города Мондштадт"
+      },
+      "popupMedia": "mondstadt/teleporter/mondstadt-city-limits"
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.720735134412106, 57.81005859375001]
+      "coordinates": [-25.72074, 57.81006],
+      "id": "C9F82C92D953EB8B7D4119AB685905EC67BBE4C7",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Central Mondstadt"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/central-mondstadt"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Central Mondstadt",
+        "ru": "Центр Мондштадта"
+      },
+      "popupMedia": "mondstadt/teleporter/central-mondstadt"
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.13571361317392, 55.99731445312501]
+      "coordinates": [-26.13571, 55.99731],
+      "id": "D02988461AF9ED3411BB8C7C6F93A5B96F17BCE4",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Knights of Favonius HQ"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/kof-hq"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Knights of Favonius HQ",
+        "ru": "Ордо Фавониус"
+      },
+      "popupMedia": "mondstadt/teleporter/kof-hq"
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.878755346037977, 67.50000000000001]
+      "coordinates": [-29.87876, 67.5],
+      "id": "53641D978F2F9D2DDAE93F23AF51150D350869F8",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Falcon Coast"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/falcon-coast"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Falcon Coast",
+        "ru": "Побережье Сокола"
+      },
+      "popupMedia": "mondstadt/teleporter/falcon-coast"
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.24427318493909, 65.93994140625001]
+      "coordinates": [-36.24427, 65.93994],
+      "id": "4932E7B38C5E9ADADFABF0A6242DD4E05D90E230",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Dadaupa Gorge"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/dadaupa-gorge"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Dadaupa Gorge",
+        "ru": "Ущелье Дадаупа"
+      },
+      "popupMedia": "mondstadt/teleporter/dadaupa-gorge"
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.456636011596196, 74.44335937500001]
+      "coordinates": [-36.45664, 74.44336],
+      "id": "239560F95990A352A9CD0FD9F48E361B445FB721",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Cape Oath"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/cape-oath"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Cape Oath",
+        "ru": "Мыс Веры"
+      },
+      "popupMedia": "mondstadt/teleporter/cape-oath"
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.530450107491063, 57.68371582031251]
+      "coordinates": [-29.53045, 57.68372],
+      "id": "2E561A2D01D0C82E08ADC3CB8EA4F3005E2C09C8",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Springvale"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/springvale"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Springvale",
+        "ru": "Спрингвейл"
+      },
+      "popupMedia": "mondstadt/teleporter/springvale"
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.036020039737565, 58.35388183593751]
+      "coordinates": [-32.03602, 58.35388],
+      "id": "28F1B3389079FBFD2F1161A1E78AE0861A1AD927",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Springvale Pond"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/springvale-pond"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Springvale Pond",
+        "ru": "Пруд у Спрингвейла"
+      },
+      "popupMedia": "mondstadt/teleporter/springvale-pond"
     },
     {
-      "id": 13,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.170509824703437, 47.97729492187501]
+      "coordinates": [-31.17051, 47.97729],
+      "id": "74C7FCB95CF7CD62F207EEA0979999223165B091",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Stone Gate"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/north-stone-gate"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "North Stone Gate",
+        "ru": "Каменные Врата - Север"
+      },
+      "popupMedia": "mondstadt/teleporter/north-stone-gate"
     },
     {
-      "id": 14,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.147144835991796, 52.74536132812501]
+      "coordinates": [-27.14714, 52.74536],
+      "id": "DBADFCB5B1B217CD760CDCBD46A5984C9852AE2D",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Wolvendom"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/wolvendom"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Wolvendom",
+        "ru": "Вольфендом"
+      },
+      "popupMedia": "mondstadt/teleporter/wolvendom"
     },
     {
-      "id": 15,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.66628476656516, 50.70739746093751]
+      "coordinates": [-25.66628, 50.7074],
+      "id": "CAB2981EF9B7D01FCB95459DC24CCD953361D9AC",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Wolvendom"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/north-wolvendom"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "North Wolvendom",
+        "ru": "Вольфендом - Север"
+      },
+      "popupMedia": "mondstadt/teleporter/north-wolvendom"
     },
     {
-      "id": 16,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.820707853875017, 51.43798828125]
+      "coordinates": [-21.82071, 51.43799],
+      "id": "141B0B0B736182C25AB2EDAAA055783827FC04FB",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Brightcrown Canyon"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/brightcrown-canyon"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Brightcrown Canyon",
+        "ru": "Каньон светлой короны"
+      },
+      "popupMedia": "mondstadt/teleporter/brightcrown-canyon"
     },
     {
-      "id": 17,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.597080137096412, 44.59350585937501]
+      "coordinates": [-24.59708, 44.59351],
+      "id": "917A09B182DE96115595782CBBDDA4AD47AE2A20",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stormterror's Lair Entrance"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/south-stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stormterror's Lair Entrance",
+        "ru": "Вход в Логово Ужаса Бури"
+      },
+      "popupMedia": "mondstadt/teleporter/south-stormterror"
     },
     {
-      "id": 18,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.67390526467283, 43.14880371093751]
+      "coordinates": [-20.67391, 43.1488],
+      "id": "A4C53B5A4D1EA93BD95B886D0FEC9EB4997AA731",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Contront Stormterror"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/confront-stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Contront Stormterror",
+        "ru": "Логово Ужаса Бури"
+      },
+      "popupMedia": "mondstadt/teleporter/confront-stormterror"
     },
     {
-      "id": 19,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.886987120681574, 39.9957275390625]
+      "coordinates": [-21.88699, 39.99573],
+      "id": "DD4C1D654B1D8144461E581E6DC2775AD689F3D9",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "West Stormterror's Lair"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/west-stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "West Stormterror's Lair",
+        "ru": "Логово Ужаса Бури - Запад"
+      },
+      "popupMedia": "mondstadt/teleporter/west-stormterror"
     },
     {
-      "id": 20,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.16703442146408, 41.04492187500001]
+      "coordinates": [-17.16703, 41.04492],
+      "id": "87CCC28B16227EA9E802B23CC590CCD20EDE2C29",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "North Stormterror's Lair"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/north-stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "North Stormterror's Lair",
+        "ru": "Логово Ужаса Бури - Север"
+      },
+      "popupMedia": "mondstadt/teleporter/north-stormterror"
     },
     {
-      "id": 21,
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.994608853186367, 46.263427734375]
+      "coordinates": [-18.99461, 46.26343],
+      "id": "8ECA85F4C5ABA3C7CE23EC9ECD64A9D7771C87DE",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "East Stormterror's Lair"
-        },
-        "popupContent": {
-          "en": ""
-        },
-        "popupMedia": "mondstadt/teleporter/east-stormterror"
-      }
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "East Stormterror's Lair",
+        "ru": "Логово Ужаса Бури - Восток"
+      },
+      "popupMedia": "mondstadt/teleporter/east-stormterror"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.451544835570715, 61.59668710156167]
+      "coordinates": [-34.45154, 61.59669],
+      "id": "CF4A3DB40344612960DE033923A4C9B9234514B3",
+      "importIds": {
+        "gm_legacy": ["mondstadtTeleporter/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Forward Base Camp"
-        },
-        "popupContent": {
-          "en": "Added with Dragonspine"
-        },
-        "popupMedia": "mondstadt/teleporter/forward-base-camp"
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Forward Base Camp",
+        "ru": "Лагерь у Драконьего Хребта"
       },
-      "id": 22
+      "popupContent": {
+        "en": "Added with Dragonspine Update",
+        "ru": "Добавлен с обновлением Драконьего Хребта"
+      },
+      "popupMedia": "mondstadt/teleporter/forward-base-camp"
     }
   ]
 }

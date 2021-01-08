@@ -1,6 +1,14 @@
 {
-  "name": { "en": "Geoculus" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Geoculus"
+  },
+  "description": {
+    "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "geoculus",
     "base": {
@@ -22,1713 +30,1323 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.6835280837, 33.9367675781]
+      "coordinates": [-27.68353, 33.93677],
+      "id": "B27191879C4A126EDE238C67C54A72F218735A66",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/101"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "This Geoculus is UNDERGROUND, you have to complete the Chi of Guyun quest to open the cave and find this Oculus."
-        },
-        "popupMedia": "https://youtu.be/E8Am0EQASQM"
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "This Geoculus is UNDERGROUND, you have to complete the Chi of Guyun quest to open the cave and find this Oculus."
       },
-      "id": 101
+      "popupMedia": "https://youtu.be/E8Am0EQASQM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.7229488247, 32.8491210937]
+      "coordinates": [-30.72295, 32.84912],
+      "id": "B8ACBB2804CCA0C718602829193A2B0F59666E56",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/102"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_oISBLhctoQ"
-      },
-      "id": 102
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_oISBLhctoQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.916852233, 32.5964355468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=bBkbX5NdypU"
+      "coordinates": [-29.91685, 32.59644],
+      "id": "BB4653D5E605C5803BB14FA377B44E9445BF3CCD",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/103"]
       },
-      "id": 103
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/bBkbX5NdypU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.0405664305, 35.8923339843]
+      "coordinates": [-30.04057, 35.89233],
+      "id": "40D371E8D2CB20DAE6C94A02D09BE0AAC14C1EE2",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/104"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/6F1q6aCpU14"
-      },
-      "id": 104
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/6F1q6aCpU14"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.2597699873, 34.2993164062]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/LBAG5Eew2Uc"
+      "coordinates": [-31.25977, 34.29932],
+      "id": "487A10FCE6D2710310369A43A558DB0B76689BD6",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/105"]
       },
-      "id": 105
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/LBAG5Eew2Uc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.9335167619, 37.1337890625]
+      "coordinates": [-31.93352, 37.13379],
+      "id": "F37D436B054D8BB59FD9C446EBA7724FCC3C5553",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/106"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/P1gZD_oojlw"
-      },
-      "id": 106
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/P1gZD_oojlw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5036293057, 38.1884765625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Hqlcz3_1HOc"
+      "coordinates": [-31.50363, 38.18848],
+      "id": "246F4DA76F7D27CEFFB87D9117BDF1F7BD0CF9D6",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/107"]
       },
-      "id": 107
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Hqlcz3_1HOc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0639555946, 34.9694824218]
+      "coordinates": [-32.06396, 34.96948],
+      "id": "D4048A400292B4BFC24D6852810550B6B9A9B0AA",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/108"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=jri_1uDe67c"
-      },
-      "id": 108
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/jri_1uDe67c"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.5653331608, 32.1899414062]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=m0uoxxgwFE4"
+      "coordinates": [-32.56533, 32.18994],
+      "id": "95DF3797DB8C5ED87CBD68ADCE024E603A84ED4A",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/109"]
       },
-      "id": 109
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/m0uoxxgwFE4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.073130945, 33.7609863281]
+      "coordinates": [-33.07313, 33.76099],
+      "id": "9987EB862448719342B1CFA45CE4568E5D12044F",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/110"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=frKU3-5RHP4"
-      },
-      "id": 110
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/frKU3-5RHP4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.9257074887, 36.5295410156]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=frKU3-5RHP4"
+      "coordinates": [-32.92571, 36.52954],
+      "id": "90E03BDC9BAD47D448E4295A6A53F09D993A4F65",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/111"]
       },
-      "id": 111
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/frKU3-5RHP4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2019241897, 37.0788574218]
+      "coordinates": [-33.20192, 37.07886],
+      "id": "D6BFEE9A57EC2317F3D830BBBC02F51AC957B2AE",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/112"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/7A5eZr2IwN0"
-      },
-      "id": 112
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/7A5eZr2IwN0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2938035583, 38.6059570312]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/JcvH4Msr7sE"
+      "coordinates": [-33.2938, 38.60596],
+      "id": "F480AC2D48A5D8EEBDFE395CF01F9E2BC2C89615",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/113"]
       },
-      "id": 113
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/JcvH4Msr7sE"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4340978935, 36.0900878906]
+      "coordinates": [-34.4341, 36.09009],
+      "id": "6024F81A8BE5235D924916057115EB784B47A4A8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/114"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/hIt-wuV6qR0"
-      },
-      "id": 114
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/hIt-wuV6qR0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.1618181612, 32.0031738281]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/l41ujULyFdQ"
+      "coordinates": [-34.16182, 32.00317],
+      "id": "EF41E1046748CAB4423E0B07852C9B19C056FA6E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/115"]
       },
-      "id": 115
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/l41ujULyFdQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.3711350228, 33.4643554687]
+      "coordinates": [-35.37114, 33.46436],
+      "id": "086FAC02E4F42983CD37B360EF154C5A45A64403",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/116"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=e7Mg2QVb7IU"
-      },
-      "id": 116
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/e7Mg2QVb7IU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.0839555792, 33.9916992187]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=5WaT4WIjzww"
+      "coordinates": [-35.08396, 33.9917],
+      "id": "29464A48886EE08A60A65E9D488548E69270C9ED",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/117"]
       },
-      "id": 117
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/5WaT4WIjzww"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.0224466817, 35.8374023437]
+      "coordinates": [-36.02245, 35.8374],
+      "id": "10E06F06D53176C1DC83367330BA62367E36F617",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/118"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=f6DYNZqARJA"
-      },
-      "id": 118
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/f6DYNZqARJA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1690715771, 35.4968261718]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=q2AWCQgDNV4"
+      "coordinates": [-37.16907, 35.49683],
+      "id": "8F6F9EA2EADEFE93B417CED16225CF6BD220734A",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/119"]
       },
-      "id": 119
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/q2AWCQgDNV4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.3711350228, 36.3977050781]
+      "coordinates": [-35.37114, 36.39771],
+      "id": "BF836F73E77DD718C516A937D01C2904F018E51F",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/120"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=p7CRiE3COpo"
-      },
-      "id": 120
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/p7CRiE3COpo"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.9309785883, 39.5727539062]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/eWJ2xfl7F5k"
+      "coordinates": [-34.93098, 39.57275],
+      "id": "A1CD527776DB80CBB2F5C916C1C3906578D52DFD",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/121"]
       },
-      "id": 121
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/eWJ2xfl7F5k"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.7643434796, 38.3093261718]
+      "coordinates": [-35.76434, 38.30933],
+      "id": "3EE06469F480A2B25095260550D848BA26107779",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/122"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=VQGYXcdGZ6s"
-      },
-      "id": 122
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/VQGYXcdGZ6s"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5714238234, 38.1555175781]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=Dr8NtwiE7PA"
+      "coordinates": [-36.57142, 38.15552],
+      "id": "53E31BEAF97582BCF510ED24105E6A0F21B0D693",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/123"]
       },
-      "id": 123
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Dr8NtwiE7PA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.840156836, 38.4741210937]
+      "coordinates": [-37.84016, 38.47412],
+      "id": "48CDAACC3DE5171611BC583CA4745E4445C2187C",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/124"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/wEi9tKv1WrQ"
-      },
-      "id": 124
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/wEi9tKv1WrQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.2708502072, 39.5288085937]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=27kk3_oo0Y4"
+      "coordinates": [-36.27085, 39.52881],
+      "id": "E0DF5FBBB435597975DF167B5D720C144C758ACE",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/125"]
       },
-      "id": 125
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/27kk3_oo0Y4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.6151266834, 42.1215820312]
+      "coordinates": [-34.61513, 42.12158],
+      "id": "8DCB2356252A65259356709467E4632653120841",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/126"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=sS3TeKtq_0w"
-      },
-      "id": 126
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/sS3TeKtq_0w"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.1165261849, 40.60546875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/A1W40-FFaos"
+      "coordinates": [-37.11653, 40.60547],
+      "id": "CCC76D497776D418F7588FEEB925CC5A0CF4F4F9",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/127"]
       },
-      "id": 127
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/A1W40-FFaos"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.1431975016, 42.0227050781]
+      "coordinates": [-38.1432, 42.02271],
+      "id": "6ED439812AD786BCBD7C60440D1FDFB852D806CE",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/128"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=_OPHL0nEjUM"
-      },
-      "id": 128
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_OPHL0nEjUM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.622291783, 38.6499023437]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/b4neonDG6G8"
+      "coordinates": [-40.62229, 38.6499],
+      "id": "A13FBA855189EA64DD766C9EABEEE04FCC68ECCD",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/129"]
       },
-      "id": 129
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/b4neonDG6G8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.6987341434, 36.5405273437]
+      "coordinates": [-39.69873, 36.54053],
+      "id": "A5B91295E422188DA97690E86B4EA8AFACE80B9C",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/130"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Payo3R_KvN8"
-      },
-      "id": 130
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Payo3R_KvN8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.8225909761, 46.9445800781]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/6nCM9Bh0bms"
+      "coordinates": [-38.82259, 46.94458],
+      "id": "0ED9EEB79F9696F13922875E3E265DA483E3DBDA",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/131"]
       },
-      "id": 131
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/6nCM9Bh0bms"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.3747783611, 40.0561523437]
+      "coordinates": [-42.37478, 40.05615],
+      "id": "71B7895AC8220FCAB75010504BBEBE5F770ACA1E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/132"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=s4BG2yCm0-4"
-      },
-      "id": 132
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/s4BG2yCm0-4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.3016903282, 39.5947265625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=_dHJCE3ghtc"
+      "coordinates": [-42.30169, 39.59473],
+      "id": "7D9B64E595D2072D407C914D96BF6AABFB541776",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/133"]
       },
-      "id": 133
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_dHJCE3ghtc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9885764583, 40.9460449218]
+      "coordinates": [-42.98858, 40.94604],
+      "id": "123122A6CCA5206E727C351BAD8F7C1BCDB4F505",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/134"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fpDNLbGBB_M"
-      },
-      "id": 134
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/fpDNLbGBB_M"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7958880981, 42.6599121093]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/cb6AuN0XtH0"
+      "coordinates": [-41.79589, 42.65991],
+      "id": "36EDD890692BD3A0BBBAD1DB00162735642188C8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/135"]
       },
-      "id": 135
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/cb6AuN0XtH0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.8204550961, 48.4387207031]
+      "coordinates": [-41.82046, 48.43872],
+      "id": "3A1FDD41CADA6F62600385F9AAC737D685A5DA16",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/136"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/qLL2IJohxxY"
-      },
-      "id": 136
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/qLL2IJohxxY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.5045028529, 47.0324707031]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Z_PyWFE3_bw"
+      "coordinates": [-42.5045, 47.03247],
+      "id": "278B1CC8B572AAA71C674054FF8D1FAA45318B20",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/137"]
       },
-      "id": 137
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Z_PyWFE3_bw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.9483813976, 48.5046386718]
+      "coordinates": [-42.94838, 48.50464],
+      "id": "4CB0F94704BE018C4C5258424398C11FD3FF05B3",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/138"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Ay9wstp-ryM"
-      },
-      "id": 138
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Ay9wstp-ryM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.1170241213, 46.23046875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ad9tLw6p-j4"
+      "coordinates": [-43.11702, 46.23047],
+      "id": "D84C2A79A2726268220E010C46DF4C8747D919D6",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/139"]
       },
-      "id": 139
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/ad9tLw6p-j4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.9770046749, 46.0876464843]
+      "coordinates": [-43.977, 46.08765],
+      "id": "3CDE58FC3514613C292DBDD5A32003E14A485170",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/140"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/wi-4J60ey4g"
-      },
-      "id": 140
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/wi-4J60ey4g"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0718004675, 49.1748046875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/gDSqEBtTCuA"
+      "coordinates": [-44.0718, 49.1748],
+      "id": "303B345F91D102451856F600CF2477B08323176E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/141"]
       },
-      "id": 141
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/gDSqEBtTCuA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.9540119257, 51.1907958984]
+      "coordinates": [-46.95401, 51.1908],
+      "id": "A015310F0D5F9BD412EB36AEA5A02ADB841F7A67",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/142"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=Xw_zZFpvX0Y"
-      },
-      "id": 142
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Xw_zZFpvX0Y"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.7828483519, 48.2189941406]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/gMQl7oU7WwU"
+      "coordinates": [-45.78285, 48.21899],
+      "id": "A0E5C79A28C8F7D9BC96178AAEE66223E54CDBC3",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/143"]
       },
-      "id": 143
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/gMQl7oU7WwU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7467332402, 51.6027832031]
+      "coordinates": [-44.74673, 51.60278],
+      "id": "26FCD3F1028AED5410D6EB6B78522E0FF4C7B5F8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/144"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=Fsp17ET7yAY"
-      },
-      "id": 144
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Fsp17ET7yAY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2980751387, 52.3388671875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=TDY2BHRgAhM"
+      "coordinates": [-45.29808, 52.33887],
+      "id": "6C6ACD387ECD088FAB47D163D34F91E89ADBA128",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/145"]
       },
-      "id": 145
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/TDY2BHRgAhM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.7248003746, 51.6027832031]
+      "coordinates": [-46.7248, 51.60278],
+      "id": "9D3E07A3397908FFCC8DB371B655F62BCF08F3C0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/146"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://i.ytimg.com/an_webp/2k-GmymCm8c/mqdefault_6s.webp?du=3000&sqp=COjFpv4F&rs=AOn4CLAy1tx0BoK0K1i-y80cPPjP5dO6sQ"
-      },
-      "id": 146
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/0tm5elgCqrw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.8205318674, 47.8454589843]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/u05pkN8uXys"
+      "coordinates": [-47.82053, 47.84546],
+      "id": "1A95F5BA1AC08BE46E8C6F436DE074AFB521698A",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/147"]
       },
-      "id": 147
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/u05pkN8uXys"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5394554474, 56.1401367187]
+      "coordinates": [-47.53946, 56.14014],
+      "id": "EDA505046AF39F1C1C56ADDFA0971E336A253E48",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/148"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "This one is on the island with the chest from the Unswerving achievement."
-        },
-        "popupMedia": "https://youtu.be/u05pkN8uXys"
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "This one is on the island with the chest from the Unswerving achievement."
       },
-      "id": 148
+      "popupMedia": "https://youtu.be/u05pkN8uXys"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.4225229542, 53.3166503906]
+      "coordinates": [-52.42252, 53.31665],
+      "id": "AE910BE25650DC62BEA010BBD15B08A9E9DF9CE8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/149"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ofP8HiSKprY"
-      },
-      "id": 149
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/ofP8HiSKprY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.2681573737, 58.1176757812]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/8OKzpVX-8cg"
+      "coordinates": [-52.26816, 58.11768],
+      "id": "CE66DF5596E9F3092E7FE4D702A63D2A379196EE",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/150"]
       },
-      "id": 150
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/8OKzpVX-8cg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.2257684357, 59.7875976562]
+      "coordinates": [-53.22577, 59.7876],
+      "id": "B4B5FB4A348C9353989463C9DC375D5BBDEB55D0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/151"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/IbVCIy8XkpA"
-      },
-      "id": 151
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/IbVCIy8XkpA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.3421488644, 55.7556152343]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/2utYOoiE2cc"
+      "coordinates": [-54.34215, 55.75562],
+      "id": "0149BD1E22D1DB3EB2639499FB4C7E1D44B63BCF",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/152"]
       },
-      "id": 152
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/2utYOoiE2cc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.9414733548, 44.6484375]
+      "coordinates": [-44.94147, 44.64844],
+      "id": "726FD1328877440EDFC1EB32587C6381883B8F23",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/153"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=ELzDMTpMc3U"
-      },
-      "id": 153
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/ELzDMTpMc3U"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.0351092794, 44.0551757812]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/bH8yw0rAEd8"
+      "coordinates": [-46.03511, 44.05518],
+      "id": "2252A601C93F9FC846BAB75D9DBA31AF6AC22C00",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/154"]
       },
-      "id": 154
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/bH8yw0rAEd8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.0102256556, 37.9907226562]
+      "coordinates": [-47.01023, 37.99072],
+      "id": "54C2FDBA5A372ABADF9C652EA3C7C27F42B7864B",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/155"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/sYHVwmV3-_o"
-      },
-      "id": 155
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/sYHVwmV3-_o"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.1953874083, 41.8469238281]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=Srl6P1a6sm0"
+      "coordinates": [-48.19539, 41.84692],
+      "id": "CD4379AC19640944A66DBBA8B51B7A69DA545C5B",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/156"]
       },
-      "id": 156
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Srl6P1a6sm0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.8430283529, 38.1774902343]
+      "coordinates": [-48.84303, 38.17749],
+      "id": "4F012F80806840AFD3DC1229EE2026E7EEE6D047",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/157"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_oGjEK2sEaA"
-      },
-      "id": 157
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_oGjEK2sEaA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.7706724688, 41.9018554687]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=51FVF9MzKrg"
+      "coordinates": [-48.77067, 41.90186],
+      "id": "849C4B3062F9C68496E83FE5324B933EBC10DE89",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/158"]
       },
-      "id": 158
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/51FVF9MzKrg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.0882577847, 42.9675292968]
+      "coordinates": [-49.08826, 42.96753],
+      "id": "EC6D43E4ACDE8ED0D0D45AF08DC662BC9F277D70",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/159"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ZKueqjkVHUs"
-      },
-      "id": 159
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/ZKueqjkVHUs"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.8430283529, 46.5161132812]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/7Padelw800U"
+      "coordinates": [-48.84303, 46.51611],
+      "id": "6ED37B755FCAA3D09918AB87EC0A93C3555DE1F4",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/160"]
       },
-      "id": 160
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/7Padelw800U"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.176898122, 39.9353027343]
+      "coordinates": [-50.1769, 39.9353],
+      "id": "7971A05B3071205D6C486F6F26B830094B489201",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/161"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/-dpqT_NWt90"
-      },
-      "id": 161
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/-dpqT_NWt90"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.1104199102, 41.7260742187]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/UTeR0FQ8It4"
+      "coordinates": [-51.11042, 41.72607],
+      "id": "5AACDB4BCD82A005EE2248A446704B229F9DCF2F",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/162"]
       },
-      "id": 162
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/UTeR0FQ8It4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.9445844349, 46.9775390625]
+      "coordinates": [-50.94458, 46.97754],
+      "id": "99E96B0C6573A885B41429494B54068A06F1F76E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/163"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/gukEtPqcuA4"
-      },
-      "id": 163
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/gukEtPqcuA4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.8561388502, 45.4614257812]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/HLT9FbqmLjc"
+      "coordinates": [-51.85614, 45.46143],
+      "id": "ADA80C91B14CDCF12A71F8AF1349803F38FC9481",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/164"]
       },
-      "id": 164
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/HLT9FbqmLjc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.3243115198, 38.0676269531]
+      "coordinates": [-53.32431, 38.06763],
+      "id": "4653AA7057B5C44CAF94F4A0DDA86C136E9F1F07",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/165"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/iM7Vu_qkIVw"
-      },
-      "id": 165
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/iM7Vu_qkIVw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7894755813, 40.0231933593]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/d5k51FMRPG8"
+      "coordinates": [-52.78948, 40.02319],
+      "id": "E79AC222A876B0E26CB920F5EA2231369DF22B49",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/166"]
       },
-      "id": 166
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/d5k51FMRPG8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.4760890412, 41.3305664062]
+      "coordinates": [-52.47609, 41.33057],
+      "id": "59B5D72402A7C0BBD6B454C8AC29070E2CF0A21D",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/167"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/FdngacwvRiM"
-      },
-      "id": 167
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/FdngacwvRiM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.3384488872, 34.3981933593]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/6FLqwiBfPkc"
+      "coordinates": [-50.33845, 34.39819],
+      "id": "0A8955018BA8C7742B3EBA28CAB713FF1CEE3652",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/168"]
       },
-      "id": 168
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/6FLqwiBfPkc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.0927571603, 34.3432617187]
+      "coordinates": [-48.09276, 34.34326],
+      "id": "F343A3916C7D6A19E4238C0E4774118D24528A3C",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/169"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/3yiGWV95dHA"
-      },
-      "id": 169
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/3yiGWV95dHA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7595676154, 29.8059082031]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=KYBGLVIv5jA"
+      "coordinates": [-52.75957, 29.80591],
+      "id": "DF42D10833642D7C9210067E1629A796D4E697BC",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/170"]
       },
-      "id": 170
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/KYBGLVIv5jA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.8890204489, 31.1242675781]
+      "coordinates": [-52.88902, 31.12427],
+      "id": "B73CE74FFCE1FA4CE781AB3479D00A84527FE258",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/171"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/eJeD2J6PwjQ"
-      },
-      "id": 171
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/eJeD2J6PwjQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7296390978, 31.8933105468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/ce5rmzezcX4"
+      "coordinates": [-52.72964, 31.89331],
+      "id": "EC9E9A49771063B66A61256E4F5D1294FE888CD0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/172"]
       },
-      "id": 172
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/ce5rmzezcX4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.488045536, 26.8011474609]
+      "coordinates": [-53.48805, 26.80115],
+      "id": "70ED2ABFC8D7A264B70A85AD9A3C06D8C935543F",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/173"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/30_rGj-Ey2o"
-      },
-      "id": 173
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/30_rGj-Ey2o"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.2972935423, 28.2568359375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/fdjh_vpIEgE"
+      "coordinates": [-54.29729, 28.25684],
+      "id": "B11BED80E038507D161E1FA125076E7EAEC7A3FA",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/174"]
       },
-      "id": 174
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/fdjh_vpIEgE"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.7147345501, 26.3891601562]
+      "coordinates": [-55.71473, 26.38916],
+      "id": "D39531FAE5CC4887D4FFF72D1B6169DDF71A3B68",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/175"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/8Y7uYeknUBg"
-      },
-      "id": 175
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/8Y7uYeknUBg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0352257836, 29.1027832031]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/--s1JgO07GE"
+      "coordinates": [-56.03523, 29.10278],
+      "id": "F5CB3D9731FF6DE2550CC38188CF4A0BFF41F6A0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/176"]
       },
-      "id": 176
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/--s1JgO07GE"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.7948622614, 26.1804199218]
+      "coordinates": [-56.79486, 26.18042],
+      "id": "F8450BAE046468320468872FF60BF67682190385",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/177"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/gZG2wHny7ho"
-      },
-      "id": 177
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/gZG2wHny7ho"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.6713892882, 32.1240234375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/-d_Ut55rxLw"
+      "coordinates": [-55.67139, 32.12402],
+      "id": "79BC8C66750F9CE8D33D2833D7DF180F026454C0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/178"]
       },
-      "id": 178
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/-d_Ut55rxLw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.9271418645, 36.3427734375]
+      "coordinates": [-54.92714, 36.34277],
+      "id": "53E977C06140C05CFFFF13C4D37E7A379A0E9715",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/179"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_gDVa1v-jvA"
-      },
-      "id": 179
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_gDVa1v-jvA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.1286490684, 35.7165527343]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/HFAXa5jLRT0"
+      "coordinates": [-55.12865, 35.71655],
+      "id": "E18B6EF921C2A895AF41A37FD141D2913834D835",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/180"]
       },
-      "id": 180
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/HFAXa5jLRT0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.8629823119, 35.771484375]
+      "coordinates": [-55.86298, 35.77148],
+      "id": "EC8C0F00F9840A6779959540F1725648A8738883",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/181"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/e6zWmirYLUw"
-      },
-      "id": 181
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/e6zWmirYLUw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.3956644447, 34.7607421875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/pXwdxI22Y-k"
+      "coordinates": [-56.39566, 34.76074],
+      "id": "EAF4E2E8A6F4FE5E624E1CE5A5319601B6BA8947",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/182"]
       },
-      "id": 182
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/pXwdxI22Y-k"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.0765747227, 37.0349121093]
+      "coordinates": [-57.07657, 37.03491],
+      "id": "E448D6F338D45C6AEE2C9B63A6018331F9151668",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/183"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/tTICslXMqQ4"
-      },
-      "id": 183
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/tTICslXMqQ4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.7334848338, 37.5567626953]
+      "coordinates": [-57.73348, 37.55676],
+      "id": "2A215E7BE57A357FD7DDDE221199A5D01A6D3ABD",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/184"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": {
-          "en": "There is a small cave underneath the statue; the entrance is covered by foliage."
-        },
-        "popupMedia": "https://youtu.be/VWj0_BUjOuk"
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "There is a small cave underneath the statue; the entrance is covered by foliage."
       },
-      "id": 184
+      "popupMedia": "https://youtu.be/VWj0_BUjOuk"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.4132225905, 33.4973144531]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/TSEFDAiZHyQ"
+      "coordinates": [-58.41322, 33.49731],
+      "id": "B5ABB3B8EB3D735AFE0F9F7A49D33808FD691E18",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/185"]
       },
-      "id": 185
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/TSEFDAiZHyQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.3901969841, 31.2670898437]
+      "coordinates": [-58.3902, 31.26709],
+      "id": "36472CA8BF0D1E574023BB316BF85EBF74576BCC",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/186"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Zk7rlyDZ8eU"
-      },
-      "id": 186
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Zk7rlyDZ8eU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.619777025, 26.3781738281]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/avPznFh1zxk"
+      "coordinates": [-58.61978, 26.37817],
+      "id": "65EAAF8CFB76E7467AE01F53AA8713B6DE0FD318",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/187"]
       },
-      "id": 187
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/avPznFh1zxk"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.8804776387, 24.0161132812]
+      "coordinates": [-49.88048, 24.01611],
+      "id": "337695E8ACA4008C52B0617BB274DE1E73B1D514",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/188"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/LWJMVqsBeIQ"
-      },
-      "id": 188
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/LWJMVqsBeIQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.5747899109, 23.90625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/hK8loD5l0S4"
+      "coordinates": [-48.57479, 23.90625],
+      "id": "1477B91D89FE585AF5A88809CFF6904710B16919",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/189"]
       },
-      "id": 189
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/hK8loD5l0S4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.2617565244, 27.9711914062]
+      "coordinates": [-34.26176, 27.97119],
+      "id": "08D5BBA9C8BFFD850E850382F1BF4819E5DEA1C7",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/190"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/N3bRA1s90YQ"
-      },
-      "id": 190
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/N3bRA1s90YQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.2531331969, 25.8837890625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/-MBQykDN_io"
+      "coordinates": [-36.25313, 25.88379],
+      "id": "54789C55070C3ECEBB2FED83A871BAAB2A30AA8D",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/191"]
       },
-      "id": 191
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/-MBQykDN_io"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.7828920619, 26.7736816406]
+      "coordinates": [-36.78289, 26.77368],
+      "id": "7199DBB3B558405F065E0E551F960589F453A5B9",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/192"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/dLqK34fv2r4"
-      },
-      "id": 192
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/dLqK34fv2r4"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5272948145, 29.9047851562]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/MKhJGbjT3As"
+      "coordinates": [-36.52729, 29.90479],
+      "id": "D15CC9365023581AE625DB57891E6B4E80232C63",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/193"]
       },
-      "id": 193
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/MKhJGbjT3As"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.7283759182, 26.0046386718]
+      "coordinates": [-38.72838, 26.00464],
+      "id": "66A916F6988A60396EDC6F68CE306BD2AEF3B139",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/194"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/hyqEurczc4U"
-      },
-      "id": 194
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/hyqEurczc4U"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.4361929993, 31.8273925781]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/oL5PQc__t-8"
+      "coordinates": [-39.43619, 31.82739],
+      "id": "FEA279AFDAC34554D054E92C539F29971501104A",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/195"]
       },
-      "id": 195
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/oL5PQc__t-8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.6122167681, 37.2766113281]
+      "coordinates": [-43.61222, 37.27661],
+      "id": "FC14F9547A25F8F3ABB6060461F919C25C3DCD72",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/196"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/qvHN2rmTj7A"
-      },
-      "id": 196
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/qvHN2rmTj7A"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.1490939992, 35.3540039062]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/-bvFk5NcUDw"
+      "coordinates": [-43.14909, 35.354],
+      "id": "4C5836F1DAA0EA1B0785F64FCD09A3AE15A7A287",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/197"]
       },
-      "id": 197
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/-bvFk5NcUDw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.4429499951, 32.958984375]
+      "coordinates": [-47.44295, 32.95898],
+      "id": "8F03ED73A0C2D4350B7D14A68B75DF668CFDB2D0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/198"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/KXJAHCqbWSA"
-      },
-      "id": 198
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/KXJAHCqbWSA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2671547633, 32.34375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/eWs35HkCn8A"
+      "coordinates": [-45.26715, 32.34375],
+      "id": "3A3CFA0F1A2737A198C0190FE91C60225E7CF3F0",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/199"]
       },
-      "id": 199
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/eWs35HkCn8A"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9809114245, 47.5927734375]
+      "coordinates": [-56.98091, 47.59277],
+      "id": "3E48C9ADFA2D31B99806D0D895616CEFC59413E4",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/200"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/INxp5VJXQQg"
-      },
-      "id": 200
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/INxp5VJXQQg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.6122167681, 31.1022949218]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/Wrloz2mfQ2k"
+      "coordinates": [-43.61222, 31.10229],
+      "id": "2CCE6ABDCDF548DF0C188A8AFCF6DCCC60CE0FC2",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/201"]
       },
-      "id": 201
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/Wrloz2mfQ2k"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.0580014353, 29.2346191406]
+      "coordinates": [-45.058, 29.23462],
+      "id": "A78C4935693381E8F268697040794EB579C64DAF",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/202"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/rdDBPxpy1r0"
-      },
-      "id": 202
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/rdDBPxpy1r0"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.8211434007, 27.7954101562]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/CwVA8PHdpXU"
+      "coordinates": [-45.82114, 27.79541],
+      "id": "E089A8549DE82EE110D4A2F3EBB56995EDD6680B",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/203"]
       },
-      "id": 203
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/CwVA8PHdpXU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.9492492666, 26.5869140625]
+      "coordinates": [-44.94925, 26.58691],
+      "id": "8DC7E9177197132A3EBCC1421D8F3E66E8489ED4",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/204"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/-QuBn6A1mwM"
-      },
-      "id": 204
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/-QuBn6A1mwM"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.063906608, 27.1801757812]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/9mgBKTXisGY"
+      "coordinates": [-44.06391, 27.18018],
+      "id": "4E3BD534981F824E0A9FA0B1AD2ADE45117A61B3",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/205"]
       },
-      "id": 205
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/9mgBKTXisGY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.1822039577, 26.0925292968]
+      "coordinates": [-44.1822, 26.09253],
+      "id": "99433605E99C2896CBA7DAE1F0FC684F1A2C412E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/206"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/bWevd8RHjOI"
-      },
-      "id": 206
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/bWevd8RHjOI"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.7790266216, 25.7849121093]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_7FsPnXKluE"
+      "coordinates": [-43.77903, 25.78491],
+      "id": "C0A406B66E44C43F74536362658DC328920BABD3",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/207"]
       },
-      "id": 207
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_7FsPnXKluE"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2130035559, 24.6423339843]
+      "coordinates": [-45.213, 24.64233],
+      "id": "98BED822338C41764F3DE6B1D3E3C20B708AB46F",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/208"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/qSNqjNxZUns"
-      },
-      "id": 208
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/qSNqjNxZUns"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.0207135942, 24.0710449218]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=v7RC6BNfIlk"
+      "coordinates": [-43.02071, 24.07104],
+      "id": "F6E271B05055FC72DC00B46AE1A448D92321CAE8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/209"]
       },
-      "id": 209
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/v7RC6BNfIlk"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.8204550961, 26.7077636718]
+      "coordinates": [-41.82046, 26.70776],
+      "id": "B8361312920550734892DB75523CEFD2D5489F07",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/210"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/eZqEoVE_Uyk"
-      },
-      "id": 210
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/eZqEoVE_Uyk"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.9716035327, 27.3999023437]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/8Zj11TdoflY"
+      "coordinates": [-40.9716, 27.3999],
+      "id": "20ACC64BB46C88B5889BB96B017105DAEB23A076",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/211"]
       },
-      "id": 211
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/8Zj11TdoflY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.360318663, 25.6530761718]
+      "coordinates": [-41.36032, 25.65308],
+      "id": "0B727FF00059066B47264109A02BABCC8A6C165E",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/212"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/kzKlHKPN_JY"
-      },
-      "id": 212
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/kzKlHKPN_JY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.5309788944, 21.6979980468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/EWpyq7taw70"
+      "coordinates": [-38.53098, 21.698],
+      "id": "7AED399CD7BE0E8F0F3A64C92AFE0AF8E0B3B5DF",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/213"]
       },
-      "id": 213
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/EWpyq7taw70"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.1200903802, 20.91796875]
+      "coordinates": [-40.12009, 20.91797],
+      "id": "9155E08767C990DBB620CAD8EF08C52E5D52B2C5",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/214"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/OdJrH11MstQ"
-      },
-      "id": 214
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/OdJrH11MstQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.5579215778, 21.3464355468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/HDrijgc5chQ"
+      "coordinates": [-41.55792, 21.34644],
+      "id": "D26FE02DED25A44C99A2CA1623E82EB0F89C719B",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/215"]
       },
-      "id": 215
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/HDrijgc5chQ"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7057285152, 19.4787597656]
+      "coordinates": [-41.70573, 19.47876],
+      "id": "DD00CD34AFCD41EE66AAC4EB7388ADF3B19EA495",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/216"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/b-VlK5bCbMU"
-      },
-      "id": 216
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/b-VlK5bCbMU"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.9186288651, 20.830078125]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/A33d-uYDy4w"
+      "coordinates": [-41.91863, 20.83008],
+      "id": "3E5FD1690C6E73F7E6B2D2ECC50FAE7909AF60F2",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/217"]
       },
-      "id": 217
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/A33d-uYDy4w"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.1715463345, 21.4343261718]
+      "coordinates": [-42.17155, 21.43433],
+      "id": "993807AA4146371F493517559D59B6AF3A62D4D3",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/218"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/HINlGcuI0Yw"
-      },
-      "id": 218
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/HINlGcuI0Yw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.4558876419, 22.4011230468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/26a6XtrfdEA"
+      "coordinates": [-42.45589, 22.40112],
+      "id": "98C6959A86D1C151C65B6E4082E0E9E8E3D6BBA1",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/219"]
       },
-      "id": 219
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/26a6XtrfdEA"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0086201154, 19.2590332031]
+      "coordinates": [-44.00862, 19.25903],
+      "id": "5E21EDBD5D864898FD360BD592A7E382FCEA2FC8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/220"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/wnhzkj3nMus"
-      },
-      "id": 220
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/wnhzkj3nMus"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.6360751559, 17.9626464843]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/_CbP7zK1p-I"
+      "coordinates": [-43.63608, 17.96265],
+      "id": "7A5D5D6A21C946C5EB1E9252E18F10088B59D6D6",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/221"]
       },
-      "id": 221
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/_CbP7zK1p-I"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.8947957646, 17.841796875]
+      "coordinates": [-44.8948, 17.8418],
+      "id": "6D4D39BC66F6EDDA3D7D258B027E9B0002211D34",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/222"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/gnOttevqAYw"
-      },
-      "id": 222
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/gnOttevqAYw"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7233201889, 18.5668945312]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/yVXUvfXJpNg"
+      "coordinates": [-44.72332, 18.56689],
+      "id": "4A11A9BBB343D269932A471D866238CA85D2EC35",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/223"]
       },
-      "id": 223
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/yVXUvfXJpNg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2766712737, 20.2807617187]
+      "coordinates": [-44.27667, 20.28076],
+      "id": "6A323D7A033910EC13B512FDBF4D02B98FA5EE91",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/224"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/2_zn_27kXT8"
-      },
-      "id": 224
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/2_zn_27kXT8"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2766712737, 20.6433105468]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/e_lxSXnGMCE"
+      "coordinates": [-44.27667, 20.64331],
+      "id": "358417A797CD3480D41C2C1340D9083F2FA3BDA6",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/225"]
       },
-      "id": 225
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/e_lxSXnGMCE"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.5997003658, 39.7814941406]
+      "coordinates": [-38.5997, 39.78149],
+      "id": "9EE135ED5133C70197D4A5DA9C1A272712CB2520",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/226"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/5jQqUsNVnEo"
-      },
-      "id": 226
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/5jQqUsNVnEo"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.5602179571, 48.9111328125]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://www.youtube.com/watch?v=D8gqdZ6btCg"
+      "coordinates": [-45.56022, 48.91113],
+      "id": "BCE60A0B97E037FA9BC9203AB16FE1A617A57C31",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/227"]
       },
-      "id": 227
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/D8gqdZ6btCg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0481157308, 35.0573730468]
+      "coordinates": [-44.04812, 35.05737],
+      "id": "8291B6DEE9F640F4658DE0D91E375469BD3551B8",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/228"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/e4KUM1dKhLY"
-      },
-      "id": 228
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/e4KUM1dKhLY"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.3264886133, 30.9375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/p8JcfckJhZg"
+      "coordinates": [-37.32649, 30.9375],
+      "id": "B6B0F7EDF2F79F7993B5A0F09F8B42E6F7246A35",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/229"]
       },
-      "id": 229
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/p8JcfckJhZg"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.8386636129, 61.6772460937]
+      "coordinates": [-54.83866, 61.67725],
+      "id": "7BF20AE5709A173DAA5FD9242BE9D9F3FFC688BD",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/230"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/4-X6mVEOlVc"
-      },
-      "id": 230
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/4-X6mVEOlVc"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.244785356, 36.8701171875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": "https://youtu.be/a_GtgEQLE50"
+      "coordinates": [-42.24479, 36.87012],
+      "id": "F79EB0045C7413A039D04491D73693CA3334C654",
+      "importIds": {
+        "gm_legacy": ["liyueGeoculus/231"]
       },
-      "id": 231
+      "popupTitle": {},
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "https://youtu.be/a_GtgEQLE50"
     }
   ]
 }

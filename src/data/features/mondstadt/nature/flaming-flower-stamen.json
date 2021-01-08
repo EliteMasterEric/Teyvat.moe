@@ -1,6 +1,15 @@
 {
-  "name": { "en": "Flaming Flower Stamen" },
-  "cluster": false,
+  "format": 2,
+  "name": {
+    "en": "Flaming Flower Stamen",
+    "ru": "Пылающий Цветок (тычинка)",
+    "zh": ""
+  },
+  "description": {
+    "en": "The stamen of a fiercely burning flower. Harvest using a Hydro skill. Used in Alchemy."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "flaming-flower-stamen",
@@ -13,160 +22,541 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1565372554, 68.3679199218]
+      "coordinates": [-28.46869, 68.3075],
+      "id": "348C9B3FAA7B096D401610B86CC4891588CA94D7",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/2"],
+        "yuanshen": ["51_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.4686912973, 68.3074951171]
+      "coordinates": [-27.34737, 69.26331],
+      "id": "B1AD41B1171E83E47A37FB5A946DB36EC8E8D09D",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/3"],
+        "yuanshen": ["51_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.34737381, 69.263305664]
+      "coordinates": [-27.38152, 69.31824],
+      "id": "383F3A73DCBB93464CF4A568DD2AD374028CF561",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/4"],
+        "yuanshen": ["51_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3815231917, 69.3182373046]
+      "coordinates": [-27.36689, 69.30725],
+      "id": "F689842A86D64C81194DCFFA94A17CFA9B4B6DCC",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/5"],
+        "yuanshen": ["51_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3668890323, 69.3072509765]
+      "coordinates": [-36.12013, 73.50403],
+      "id": "4F85AEC6AD5968E05FA3663D66ED501F5BF304D6",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/6"],
+        "yuanshen": ["51_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.1201275897, 73.5040283203]
+      "coordinates": [-35.76434, 73.23486],
+      "id": "A2B260E83969115685BDAD01AC75D5C95B9DE6E2",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/7"],
+        "yuanshen": ["51_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.7643434796, 73.2348632812]
+      "coordinates": [-35.46067, 73.61389],
+      "id": "E7E503C8210EE08B4BED70E579706A9DDAD52F07",
+      "importIds": {
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/8"],
+        "yuanshen": ["51_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.4606699514, 73.6138916015]
+      "coordinates": [-17.18452, 68.35327],
+      "id": "C0C35EC8FA08D3B2C25AC0405EA98BCD1E2C1B3F",
+      "importIds": {
+        "yuanshen": ["51_1"],
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_1.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.9166815363, 69.5104980468]
+      "coordinates": [-38.94375, 69.92066],
+      "id": "E8B098D42CA190E163F8443EC779A54AA32BF72D",
+      "importIds": {
+        "yuanshen": ["51_9"],
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_9.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.8824811975, 69.7192382812]
+      "coordinates": [-38.86679, 69.90418],
+      "id": "7622E9A2C844A72D6A528617988DC547F6F9E51B",
+      "importIds": {
+        "yuanshen": ["51_10"],
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_10.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.7412307538, 69.6697998046]
+      "coordinates": [-38.7912, 69.79614],
+      "id": "3D8BC9FF553250125571BB16AFF9D0B84CD0C9BC",
+      "importIds": {
+        "yuanshen": ["51_11"],
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_11.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.7583669356, 69.5104980468]
+      "coordinates": [-38.89245, 69.77234],
+      "id": "96E8A52683361161BA5A87B032F508B53E1371B4",
+      "importIds": {
+        "yuanshen": ["51_12"],
+        "gm_legacy": ["mondstadtFlamingFlowerStamen/12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "烈焰花"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.90472, 52.65167],
+      "id": "BE927B8C661AAC429C6ECC90B3A3C3DFE230E1F6",
+      "importIds": {
+        "yuanshen": ["51_13"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.88339, 69.88953],
+      "id": "754DBB76BEC23A0112F880E3980FC121AEE58E34",
+      "importIds": {
+        "yuanshen": ["51_14"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.36298, 67.75818],
+      "id": "8D5FFCBECB4E2B4DFD555B753047CB4B6122D53C",
+      "importIds": {
+        "yuanshen": ["51_15"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.47848, 65.90149],
+      "id": "45C9BA715099B4070218B15593426C7C9D6905E4",
+      "importIds": {
+        "yuanshen": ["51_16"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花（山顶上）"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.42186, 61.10596],
+      "id": "F7A437ED1423A0769647143C3B97788DF55B2E4B",
+      "importIds": {
+        "yuanshen": ["51_17"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.76434, 74.14124],
+      "id": "7938B79D6FB7EF59A659DA35D7A593A848E88E44",
+      "importIds": {
+        "yuanshen": ["51_18"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.57245, 74.17969],
+      "id": "6411BF8B6DABD0AB7CE3ECE40F71031A8F35534B",
+      "importIds": {
+        "yuanshen": ["51_19"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.99134, 64.23157],
+      "id": "A1339422C3BB633401DDEC4244F329F81A56CF27",
+      "importIds": {
+        "yuanshen": ["51_20"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.018, 64.22058],
+      "id": "006361AE8067B0EFB2C2CE130D22D3C09D153E35",
+      "importIds": {
+        "yuanshen": ["51_21"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.23216, 62.79785],
+      "id": "8DCE133977D4BDD9815C7E78F5B273CEC4A339D8",
+      "importIds": {
+        "yuanshen": ["51_22"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.17381, 62.62756],
+      "id": "5A9BA8AC0C88D30C0B96441CAFA30D67F7AF1DAF",
+      "importIds": {
+        "yuanshen": ["51_23"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.05698, 62.80334],
+      "id": "5B09C4C2C7AC9FF93A8B1188A176DB921C68FA3D",
+      "importIds": {
+        "yuanshen": ["51_24"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "这是一朵烈焰花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.55055, 64.34692],
+      "id": "448C409C431E76B74C329B103D1721205FFE7D57",
+      "importIds": {
+        "yuanshen": ["51_25"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.90573, 64.00085],
+      "id": "9712ED5D451E7996C9A7CC3D41E3F861944EB4A4",
+      "importIds": {
+        "yuanshen": ["51_26"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.96566, 63.98438],
+      "id": "995396232ED5BC3A35CA5896AE29DA9C1D0CD4C1",
+      "importIds": {
+        "yuanshen": ["51_27"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.07301, 46.05533],
+      "id": "6F47E8E0EC40757028E7F5CBFFBCD19468BD6516",
+      "importIds": {
+        "yuanshen": ["51_28"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.21038, 66.90395],
+      "id": "0E006D1D3A31A49D0268FB226A89F987477255FA",
+      "importIds": {
+        "yuanshen": ["51_29"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.21498, 66.86549],
+      "id": "E92C1A67DFD95C2B18E23EB12ADE962E799B6A38",
+      "importIds": {
+        "yuanshen": ["51_30"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.98258, 54.97045],
+      "id": "A318A1F4F0D382C94BDC121D7553778AEDF57E44",
+      "importIds": {
+        "yuanshen": ["51_31"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.59899, 54.02893],
+      "id": "37D0FC098A1FFF0EA57EC6ACA80744004EBF9D49",
+      "importIds": {
+        "yuanshen": ["51_32"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_32.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.09461, 54.90417],
+      "id": "6333CDCBB1A7967012C4FFC6831574C56ED2E5B1",
+      "importIds": {
+        "yuanshen": ["51_33"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_33.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.66948, 64.47326],
+      "id": "37BD07C428B5484D7426B4B634DE979F76BF91D3",
+      "importIds": {
+        "yuanshen": ["51_34"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_34.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.98562, 64.05579],
+      "id": "FD7838D287B2B0C086C999D67B29BA8440103102",
+      "importIds": {
+        "yuanshen": ["51_35"]
+      },
+      "popupTitle": {
+        "zh": "烈焰花"
+      },
+      "popupContent": {
+        "zh": "是烈焰花哒！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/51_35.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }
