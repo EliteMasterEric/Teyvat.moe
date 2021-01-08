@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Meteorite Shard"
   },
@@ -6,7 +7,8 @@
     "en": "A collection of celestial energy that once comprised an adventurer's Constellation. Part of the Unreconciled Stars event."
   },
   "enabled": false,
-  "cluster": false,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "meteorite-shard",
     "base": {
@@ -18,1313 +20,1159 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.50619134203458, 51.9158935546875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #1"
-        },
-        "popupContent": {
-          "en": "This one is in the water, being inspected by two hilichurls."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-1"
-      },
-      "id": 101
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.42922227795513, 53.30566406250001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #2"
-        },
-        "popupContent": {
-          "en": "This one is on a rock formation at this small island."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-2"
-      },
-      "id": 102
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.46605036188952, 54.95361328125001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #3"
-        },
-        "popupContent": {
-          "en": "The one on this island is being inspected by some Treasure Hoarders."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-3"
-      },
-      "id": 103
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.02883848153627, 55.23376464843751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #4"
-        },
-        "popupContent": {
-          "en": "This shard is at the top of a rock on this island."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-4"
-      },
-      "id": 104
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.11662567378819, 56.54663085937501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #5"
-        },
-        "popupContent": {
-          "en": "This shard is on a rock by the shoreline."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-5"
-      },
-      "id": 105
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.237892349421315, 57.71118164062501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #6"
-        },
-        "popupContent": {
-          "en": "This shard is up on the wrecked boat atop the rock formation."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-6"
-      },
-      "id": 106
-    },
+      "coordinates": [-52.50619, 51.91589],
+      "id": "666CEC8ACC3660E7611E5CC52AB4B5702DFEEC7C",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/101"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #1"
+      },
+      "popupContent": {
+        "en": "This one is in the water, being inspected by two hilichurls."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-1"
+    },
+    {
+      "coordinates": [-52.42922, 53.30566],
+      "id": "7EC158CF76D548116AE1D1E98F8D7BEBE459C4B8",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/102"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #2"
+      },
+      "popupContent": {
+        "en": "This one is on a rock formation at this small island."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-2"
+    },
+    {
+      "coordinates": [-52.46605, 54.95361],
+      "id": "15932C58D18B2F2CC825E6FAE63E22082C87722B",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/103"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #3"
+      },
+      "popupContent": {
+        "en": "The one on this island is being inspected by some Treasure Hoarders."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-3"
+    },
+    {
+      "coordinates": [-52.02884, 55.23376],
+      "id": "E2AF40AAA078D29AC3CF91F12D1F1379A04869A4",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/104"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #4"
+      },
+      "popupContent": {
+        "en": "This shard is at the top of a rock on this island."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-4"
+    },
+    {
+      "coordinates": [-52.11663, 56.54663],
+      "id": "BA5143DB38FDB20D140C47B90E1B7758F0CA7BEE",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/105"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #5"
+      },
+      "popupContent": {
+        "en": "This shard is on a rock by the shoreline."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-5"
+    },
+    {
+      "coordinates": [-52.23789, 57.71118],
+      "id": "B882979834BACDD096BF92C3A988B2CBB85948FA",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/106"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #6"
+      },
+      "popupContent": {
+        "en": "This shard is up on the wrecked boat atop the rock formation."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-6"
+    },
+    {
+      "coordinates": [-51.53609, 57.95837],
+      "id": "E0533FC5ADC459FF3BFE852F9FD5943AFECE23C1",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/107"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #7"
+      },
+      "popupContent": {
+        "en": "This shard is by a rock by the shoreline."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-7"
+    },
+    {
+      "coordinates": [-51.99165, 59.43604],
+      "id": "D562979C6DC01D7D8D3859E027574520A4C36CB7",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/108"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #8"
+      },
+      "popupContent": {
+        "en": "This shard is on the tip of the island."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-8"
+    },
+    {
+      "coordinates": [-53.15665, 59.55139],
+      "id": "FA32A07A272A11A4F9FC97E72EB922D59EFF1F73",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/109"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #9"
+      },
+      "popupContent": {
+        "en": "This shard is in the grass among a small boat wreck. Go west after grabbing this one, don't try to go up the mountain yet."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-9"
+    },
+    {
+      "coordinates": [-53.14018, 58.06824],
+      "id": "6B472994725299DC559CAF1FD2CA22A65BE97A84",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/110"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #10"
+      },
+      "popupContent": {
+        "en": "It's on this rock here, I swear, I grabbed it on accident while trying to fight the monsters guarding it."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-10"
+    },
+    {
+      "coordinates": [-53.73896, 57.40906],
+      "id": "D69C1B9D70C2BDBAF6849B9F0C05904A0613C3C2",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/111"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #11"
+      },
+      "popupContent": {
+        "en": "This one is at the base of the rock by some Crystal Chunks."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-11"
+    },
+    {
+      "coordinates": [-53.82011, 58.89771],
+      "id": "3C76493788598223E5EC46E25F75A0BC0FDD387D",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/112"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #12"
+      },
+      "popupContent": {
+        "en": "This shard is located in the side of the cliff after climbing up the mountain path. Don't fall down!"
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-12"
+    },
+    {
+      "coordinates": [-53.22906, 59.89746],
+      "id": "937F44BF5380C7D3503AC83D23D8AD8675F6D4A2",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/113"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #13"
+      },
+      "popupContent": {
+        "en": "This shard is at the absolute peak of Guyun Stone Forest. Don't grab this after #9, instead wrap around and take the path up the mountain."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-13"
+    },
+    {
+      "coordinates": [-54.74048, 58.9032],
+      "id": "7441B4A88AD5F841B4932C66F3A6F851EFFF9973",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/114"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #14"
+      },
+      "popupContent": {
+        "en": "This one is on the rock outcropping off the shore."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-14"
+    },
+    {
+      "coordinates": [-55.16318, 57.10144],
+      "id": "B61D499D3AB8DE569176F1BEC8849B637037A967",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/115"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #15"
+      },
+      "popupContent": {
+        "en": "This one is on the island where the Geovishap lives, I think there were some hilichurls doing a meteorite dance there."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-15"
+    },
+    {
+      "coordinates": [-54.34535, 56.42029],
+      "id": "4E2D296AC5C633ED59D26A38873C0FDAC8A16F9F",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/116"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #16"
+      },
+      "popupContent": {
+        "en": "This one is at the base of the cliff here."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-16"
+    },
+    {
+      "coordinates": [-54.44449, 55.27222],
+      "id": "C1C4353508D6DCF3FCB7E38D699AE00F4E270822",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/117"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #17"
+      },
+      "popupContent": {
+        "en": "Yeah, good luck with that."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-17"
+    },
+    {
+      "coordinates": [-54.60389, 54.20105],
+      "id": "220BD725A4C8019F191167FCCA5A3B5B599C0661",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/118"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #18"
+      },
+      "popupContent": {
+        "en": "This one is high up on a piece of ruin."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-18"
+    },
+    {
+      "coordinates": [-54.65159, 53.59131],
+      "id": "5E931A8803BE0A420A45A26F68ECCD018110DD8C",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/119"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #19"
+      },
+      "popupContent": {
+        "en": "This one is on the shoreline guarded by some foxes."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-19"
+    },
+    {
+      "coordinates": [-56.37742, 55.05798],
+      "id": "3427CA82BC81BC800A3E253EA1444AB62FD14C04",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/120"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Guyun Starcatcher #20"
+      },
+      "popupContent": {
+        "en": "This one is on the far island with the Shrine, being inspected by some hilichurls."
+      },
+      "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-20"
+    },
+    {
+      "coordinates": [-33.39764, 37.45605],
+      "id": "E1495A9DF2AE9DA9AC90BE54D3485D07C1EEB09A",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/201"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #1"
+      },
+      "popupContent": {
+        "en": "This one is at the top of the mountain, in the center of the pool of water."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-1"
+    },
+    {
+      "coordinates": [-34.04356, 39.92981],
+      "id": "127EC929D666395AEEB78FBF8FCF233EA41FDA93",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/202"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #2"
+      },
+      "popupContent": {
+        "en": "This one is by some ruins near the main path.="
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-2"
+    },
+    {
+      "coordinates": [-35.0255, 39.6167],
+      "id": "9D3C2E5689A95A0EF9BAE56B228785F74B35EAD7",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/203"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #3"
+      },
+      "popupContent": {
+        "en": "This one is sitting on top of a large rock.="
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-3"
+    },
+    {
+      "coordinates": [-35.21421, 38.63342],
+      "id": "ECEB69461FFAE7C06A4AC4F9A8F9735A4BBC6558",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/204"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #4"
+      },
+      "popupContent": {
+        "en": "This one is in the abandoned village, being inspected by some Treasure Hoarders."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-4"
+    },
+    {
+      "coordinates": [-35.7688, 38.32031],
+      "id": "15A6914C8681FD1F730F36709258E8775CE1FD19",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/205"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #5"
+      },
+      "popupContent": {
+        "en": "This one requires you to dive down the hole."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-5"
+    },
+    {
+      "coordinates": [-36.85325, 38.62793],
+      "id": "01C3A4C544FDA48D8A3DFA85A5DEF87C14743C96",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/206"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #6"
+      },
+      "popupContent": {
+        "en": "This one is sitting among the ruins of an old house."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-6"
+    },
+    {
+      "coordinates": [-37.32649, 37.65015],
+      "id": "8E3AB9B5D11664846BFFB8E3CA44797ADA79F4D0",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/207"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #7"
+      },
+      "popupContent": {
+        "en": "This one is atop a large boulder next to the clover device."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-7"
+    },
+    {
+      "coordinates": [-35.97356, 37.19421],
+      "id": "4B75AA49944132AB850ED333F7D73A47E487DB56",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/208"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #8"
+      },
+      "popupContent": {
+        "en": "This one is sitting on some rocks amidst the ruins."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-8"
+    },
+    {
+      "coordinates": [-36.51847, 36.44714],
+      "id": "70AE73D6DD0BDCA140D4011C064B03C46CC56B4B",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/209"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #9"
+      },
+      "popupContent": {
+        "en": "This one is in the ruins of an abandoned house."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-9"
+    },
+    {
+      "coordinates": [-37.30028, 35.36499],
+      "id": "31F8D8873128ADE82866034CEEF83500363640A2",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/210"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #10"
+      },
+      "popupContent": {
+        "en": "This one is amid some rocks just off the path."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-10"
+    },
+    {
+      "coordinates": [-35.91575, 34.91455],
+      "id": "F22A6764D75842364D9E3FA2D9F71E1E551C0DC3",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/211"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #11"
+      },
+      "popupContent": {
+        "en": "This one is by some ruins, inspected by Treasure Hunters."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-11"
+    },
+    {
+      "coordinates": [-36.21326, 33.84338],
+      "id": "72EA47B377496FEAC30065BAF75E035DBBBD3EAC",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/212"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #12"
+      },
+      "popupContent": {
+        "en": "This one is on a small island surrounded by hilichurls."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-12"
+    },
+    {
+      "coordinates": [-34.958, 33.0304],
+      "id": "66CC2DBDDB4B49F3EE53F54261F05E7E204C2A2C",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/213"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #13"
+      },
+      "popupContent": {
+        "en": "This one is on a small cliff to the right of the path. If you went to the gazebo you went too far North."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-13"
+    },
+    {
+      "coordinates": [-34.19817, 32.01965],
+      "id": "09A732EE9C11A04D6ABDD4E5C86F319CC2366636",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/214"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #14"
+      },
+      "popupContent": {
+        "en": "This one is behind a rock."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-14"
+    },
+    {
+      "coordinates": [-33.12375, 32.58545],
+      "id": "D04A9BC8D9D5B5B75662F1CBDAB65A93D2921AF9",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/215"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #15"
+      },
+      "popupContent": {
+        "en": "This one is at the base of a cliff by the water's edge."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-15"
+    },
+    {
+      "coordinates": [-32.34284, 32.47559],
+      "id": "07E99DA58E11019C10CAB71C62442204D809BB70",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/216"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #16"
+      },
+      "popupContent": {
+        "en": "This one is in the middle of the path near the house."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-16"
+    },
+    {
+      "coordinates": [-32.08257, 33.40393],
+      "id": "6C74053583B0EF3ED8105A2E381C9837280C706F",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/217"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #17"
+      },
+      "popupContent": {
+        "en": "This one is among the rocks near the teleporter."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-17"
+    },
+    {
+      "coordinates": [-30.69461, 34.03564],
+      "id": "90C74DDEEB4A6C6ABD13B753524D71A7B9ACD138",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/218"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #18"
+      },
+      "popupContent": {
+        "en": "This one is by the path amidst the fields."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-18"
+    },
+    {
+      "coordinates": [-30.92108, 35.78247],
+      "id": "1EA72B41AFA81179319BBD66357A7F9963C3A604",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/219"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #19"
+      },
+      "popupContent": {
+        "en": "This one is in the water by the tree amidst the fields."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-19"
+    },
+    {
+      "coordinates": [-31.41929, 36.11206],
+      "id": "E21430FFEF9AF933AE2AE6BC93FD04322CCA1F07",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/220"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Meteors over Qingce #20"
+      },
+      "popupContent": {
+        "en": "This one is hidden in the grass next to the scarecrow by the apth."
+      },
+      "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-20"
+    },
+    {
+      "coordinates": [-42.66387, 23.93885],
+      "id": "EED97FCF52AD9BAC7193E833120AE3B85A682BD2",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/301"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #1"
+      },
+      "popupContent": {
+        "en": "This one is midway down the cliff face on a ledge."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-1"
+    },
+    {
+      "coordinates": [-41.98614, 24.93322],
+      "id": "040EEADFC59F7F8751E5B8482A0861C61E686370",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/302"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #2"
+      },
+      "popupContent": {
+        "en": "This one is also on a ledge midway down the cliff face."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-2"
+    },
+    {
+      "coordinates": [-41.28945, 23.27076],
+      "id": "FD33CF0684EBC70D1EDC7075F36027F3EA8F4C3D",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/303"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #3"
+      },
+      "popupContent": {
+        "en": "This one is at the top of the rock next to the clover gust device."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-3"
+    },
+    {
+      "coordinates": [-40.18285, 23.95439],
+      "id": "A31AFCB6DB616B87F37149C1F7F5EA6F72C4E913",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/304"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #4"
+      },
+      "popupContent": {
+        "en": "This one is on the far cliff, being inspected by Treasure Hoarders."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-4"
+    },
+    {
+      "coordinates": [-40.33699, 21.39078],
+      "id": "5A016EBFF23260C40A2E98B1D50F84DE600E37E5",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/305"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #5"
+      },
+      "popupContent": {
+        "en": "This one is on a cliff by the tree. Feel free to use the teleporter nearby."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-5"
+    },
+    {
+      "coordinates": [-41.25442, 21.7792],
+      "id": "9523A1F4210339473BC85FDB2B034774EFF5FD72",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/306"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #6"
+      },
+      "popupContent": {
+        "en": "This one is on a hill next to a pyro brazier, just north of the bridge."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-6"
+    },
+    {
+      "coordinates": [-42.61815, 22.16763],
+      "id": "84F90FC4C8ACFF7DB5D454A0A8422A3527FE9444",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/307"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #7"
+      },
+      "popupContent": {
+        "en": "This one is on this ledge just below the top of the rock. I swear it's here I grabbed it by accident."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-7"
+    },
+    {
+      "coordinates": [-41.63874, 20.86252],
+      "id": "C572C4C2F67F5F1DDB15F9507172695D13FAA219",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/308"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #8"
+      },
+      "popupContent": {
+        "en": "This one is on the top of this rock, next to the clover device. Follow the bridge from the previous pillars."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-8"
+    },
+    {
+      "coordinates": [-42.56096, 20.56732],
+      "id": "6F07A7FA5A2BA6B7398C30F2D353391A22B0F01D",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/309"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #9"
+      },
+      "popupContent": {
+        "en": "This one is on the top of this rock, next to the flowers. Follow the bridge from the previous pillars."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-9"
+    },
+    {
+      "coordinates": [-41.71997, 19.41758],
+      "id": "82A965A2515981B6C23048DE67E00C7A75108B31",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/310"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #10"
+      },
+      "popupContent": {
+        "en": "This one is also near the top of the rock pillar."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-10"
+    },
+    {
+      "coordinates": [-42.88057, 19.18452],
+      "id": "1B7D184D2CC9268FE7034C54D4007AB67D3C7544",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/311"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #11"
+      },
+      "popupContent": {
+        "en": "This one is at the top of this pillar next to the Seelie Garden."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-11"
+    },
+    {
+      "coordinates": [-42.99431, 17.6619],
+      "id": "9662DCD0E2C75C0817DE23A15B69DD09676F64CC",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/312"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #12"
+      },
+      "popupContent": {
+        "en": "This one is in the branches of a tree at the top here."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-12"
+    },
+    {
+      "coordinates": [-44.87379, 18.06586],
+      "id": "91AB9623F87BC5A03169D1CDF8512AADB3074DC4",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/313"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #13"
+      },
+      "popupContent": {
+        "en": "Took me a while to find this one; it's on a ledge behind the entrance to the Adeptus' abode."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-13"
+    },
+    {
+      "coordinates": [-44.2539, 20.20997],
+      "id": "0E3FB56C90EF0E86B8B27332B6E8C9086F5AD01E",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/314"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #14"
+      },
+      "popupContent": {
+        "en": "Glide over from where you grabbed #13 and land on this rock pillar."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-14"
+    },
+    {
+      "coordinates": [-43.5824, 20.97128],
+      "id": "78CA4C8AEEE677843DFDE123C14DF85B44984147",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/315"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #15"
+      },
+      "popupContent": {
+        "en": "This one is on top of this pillar, you'll have to climb up."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-15"
+    },
+    {
+      "coordinates": [-45.53063, 19.55741],
+      "id": "28F94ED1EB9E0E7D41B879FC16E660CED0EC0318",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/316"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #16"
+      },
+      "popupContent": {
+        "en": "This one is up in the branches of the fancy tree in Nantianhen."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-16"
+    },
+    {
+      "coordinates": [-45.32345, 20.78483],
+      "id": "834EB15063DBD26C869B8F7BC992684E53167EE9",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/317"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #17"
+      },
+      "popupContent": {
+        "en": "This one is resting on a rock here."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-17"
+    },
+    {
+      "coordinates": [-45.5959, 22.72696],
+      "id": "3287878962078D764D345F72C7CE5BFEB4C34684",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/318"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #18"
+      },
+      "popupContent": {
+        "en": "This one is at the base of the cliff near the village."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-18"
+    },
+    {
+      "coordinates": [-46.8747, 24.84],
+      "id": "095BA7C44DD9151165B529B0D3A78A577F29E831",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/319"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #19"
+      },
+      "popupContent": {
+        "en": "This one is guarded by treasure hoarders. Feel free to teleport nearby to save some time."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-19"
+    },
+    {
+      "coordinates": [-44.19823, 23.34844],
+      "id": "311E4BAE3498C51616A6DE1D2436C61B1B6DFA51",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/320"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Stardust in Jueyun #20"
+      },
+      "popupContent": {
+        "en": "This one is guarded by hilichurls to the south of the teleport. Feel free to use the statue to get here to save time."
+      },
+      "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-20"
+    },
+    {
+      "coordinates": [-46.2444, 42.49781],
+      "id": "27AE0C7EA446ACAE10AD5772ED8E93F592B7D720",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/401"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #1"
+      },
+      "popupContent": {
+        "en": "This shard is resting at a small ledge."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-1"
+    },
+    {
+      "coordinates": [-44.37063, 42.38128],
+      "id": "A0931BE35ACDE1B60E301D05E12A46D0EA0C492B",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/402"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #2"
+      },
+      "popupContent": {
+        "en": "This shard is sitting atop a rock near the small pond."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-2"
+    },
+    {
+      "coordinates": [-45.03322, 43.78738],
+      "id": "70DCA0F3E33244013C3FE86B61D8293B26F96BB8",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/403"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #3"
+      },
+      "popupContent": {
+        "en": "This shard is located on the bottom part of the ruined bridge."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-3"
+    },
+    {
+      "coordinates": [-46.4214, 46.34322],
+      "id": "F45DF156B10AC36F0A41A895E6103749BC12D6CB",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/404"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #4"
+      },
+      "popupContent": {
+        "en": "This shard is located MIDWAY up the rock ledge, on the south face."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-4"
+    },
+    {
+      "coordinates": [-45.25787, 47.50073],
+      "id": "08FA418407B456AE01B337F29535977E31D7CAF8",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/405"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #5"
+      },
+      "popupContent": {
+        "en": "This shard is located up the hill next to a log. You can use the teleporter for convenience."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-5"
+    },
+    {
+      "coordinates": [-45.42714, 49.6293],
+      "id": "1B9478787204A46B272CBF4537F18F5E3CD4D582",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/406"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #6"
+      },
+      "popupContent": {
+        "en": "This shard is located at the top of the mountain next to some Qingxe."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-6"
+    },
+    {
+      "coordinates": [-45.14292, 50.78681],
+      "id": "D283CCC83E8B12C9DA69AED04B273E3441E58658",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/407"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #7"
+      },
+      "popupContent": {
+        "en": "This shard is located at the base of a cliff here."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-7"
+    },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.53608560178475, 57.95837402343751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #7"
-        },
-        "popupContent": {
-          "en": "This shard is by a rock by the shoreline."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-7"
-      },
-      "id": 107
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.991645772197344, 59.43603515625001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #8"
-        },
-        "popupContent": {
-          "en": "This shard is on the tip of the island."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-8"
-      },
-      "id": 108
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.15665305315797, 59.5513916015625]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #9"
-        },
-        "popupContent": {
-          "en": "This shard is in the grass among a small boat wreck. Go west after grabbing this one, don't try to go up the mountain yet."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-9"
-      },
-      "id": 109
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.1401805855804, 58.06823730468751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #10"
-        },
-        "popupContent": {
-          "en": "It's on this rock here, I swear, I grabbed it on accident while trying to fight the monsters guarding it."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-10"
-      },
-      "id": 110
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.73896488496292, 57.4090576171875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #11"
-        },
-        "popupContent": {
-          "en": "This one is at the base of the rock by some Crystal Chunks."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-11"
-      },
-      "id": 111
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.82011176955966, 58.89770507812501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #12"
-        },
-        "popupContent": {
-          "en": "This shard is located in the side of the cliff after climbing up the mountain path. Don't fall down!"
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-12"
-      },
-      "id": 112
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.229056865869424, 59.89746093750001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #13"
-        },
-        "popupContent": {
-          "en": "This shard is at the absolute peak of Guyun Stone Forest. Don't grab this after #9, instead wrap around and take the path up the mountain."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-13"
-      },
-      "id": 113
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.74047879141591, 58.90319824218751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #14"
-        },
-        "popupContent": {
-          "en": "This one is on the rock outcropping off the shore."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-14"
-      },
-      "id": 114
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.16318114347372, 57.1014404296875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #15"
-        },
-        "popupContent": {
-          "en": "This one is on the island where the Geovishap lives, I think there were some hilichurls doing a meteorite dance there."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-15"
-      },
-      "id": 115
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.345350944898776, 56.42028808593751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #16"
-        },
-        "popupContent": {
-          "en": "This one is at the base of the cliff here."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-16"
-      },
-      "id": 116
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.444491763357625, 55.27221679687501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #17"
-        },
-        "popupContent": {
-          "en": "Yeah, good luck with that."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-17"
-      },
-      "id": 117
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.60389191417926, 54.20104980468751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #18"
-        },
-        "popupContent": {
-          "en": "This one is high up on a piece of ruin."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-18"
-      },
-      "id": 118
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.65159068002714, 53.59130859375]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #19"
-        },
-        "popupContent": {
-          "en": "This one is on the shoreline guarded by some foxes."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-19"
-      },
-      "id": 119
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.377418773876194, 55.05798339843751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Guyun Starcatcher #20"
-        },
-        "popupContent": {
-          "en": "This one is on the far island with the Shrine, being inspected by some hilichurls."
-        },
-        "popupMedia": "liyue/meteorite-shard/guyun-starcatcher-20"
-      },
-      "id": 120
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.39763641741909, 37.456051233843425]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #1"
-        },
-        "popupContent": {
-          "en": "This one is at the top of the mountain, in the center of the pool of water."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-1"
-      },
-      "id": 201
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.04355650412745, 39.92980957031251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #2"
-        },
-        "popupContent": {
-          "en": "This one is by some ruins near the main path.="
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-2"
-      },
-      "id": 202
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.0254981588326, 39.61669921875001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #3"
-        },
-        "popupContent": {
-          "en": "This one is sitting on top of a large rock.="
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-3"
-      },
-      "id": 203
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.214209694830764, 38.63342285156251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #4"
-        },
-        "popupContent": {
-          "en": "This one is in the abandoned village, being inspected by some Treasure Hoarders."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-4"
-      },
-      "id": 204
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.76880066023838, 38.3203125]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #5"
-        },
-        "popupContent": {
-          "en": "This one requires you to dive down the hole."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-5"
-      },
-      "id": 205
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.85325222344017, 38.6279296875]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #6"
-        },
-        "popupContent": {
-          "en": "This one is sitting among the ruins of an old house."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-6"
-      },
-      "id": 206
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.326488613342065, 37.65014648437501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #7"
-        },
-        "popupContent": {
-          "en": "This one is atop a large boulder next to the clover device."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-7"
-      },
-      "id": 207
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.97356075349624, 37.19421386718751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #8"
-        },
-        "popupContent": {
-          "en": "This one is sitting on some rocks amidst the ruins."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-8"
-      },
-      "id": 208
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.518465989675896, 36.44714355468751]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #9"
-        },
-        "popupContent": {
-          "en": "This one is in the ruins of an abandoned house."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-9"
-      },
-      "id": 209
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.30027528134431, 35.36499023437501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #10"
-        },
-        "popupContent": {
-          "en": "This one is amid some rocks just off the path."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-10"
-      },
-      "id": 210
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.915747419499695, 34.91455078125001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #11"
-        },
-        "popupContent": {
-          "en": "This one is by some ruins, inspected by Treasure Hunters."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-11"
-      },
-      "id": 211
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.21325523306185, 33.84338378906251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #12"
-        },
-        "popupContent": {
-          "en": "This one is on a small island surrounded by hilichurls."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-12"
-      },
-      "id": 212
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.957995310867915, 33.03039550781251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #13"
-        },
-        "popupContent": {
-          "en": "This one is on a small cliff to the right of the path. If you went to the gazebo you went too far North."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-13"
-      },
-      "id": 213
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.198173096277245, 32.01965332031251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #14"
-        },
-        "popupContent": {
-          "en": "This one is behind a rock."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-14"
-      },
-      "id": 214
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.12375082971021, 32.58544921875001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #15"
-        },
-        "popupContent": {
-          "en": "This one is at the base of a cliff by the water's edge."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-15"
-      },
-      "id": 215
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.34284135639302, 32.47558593750001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #16"
-        },
-        "popupContent": {
-          "en": "This one is in the middle of the path near the house."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-16"
-      },
-      "id": 216
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.082574559545904, 33.40393066406251]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #17"
-        },
-        "popupContent": {
-          "en": "This one is among the rocks near the teleporter."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-17"
-      },
-      "id": 217
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.69461154663229, 34.03564453125001]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #18"
-        },
-        "popupContent": {
-          "en": "This one is by the path amidst the fields."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-18"
-      },
-      "id": 218
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.92107637538488, 35.78247070312501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #19"
-        },
-        "popupContent": {
-          "en": "This one is in the water by the tree amidst the fields."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-19"
-      },
-      "id": 219
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.419288124288357, 36.11206054687501]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Meteors over Qingce #20"
-        },
-        "popupContent": {
-          "en": "This one is hidden in the grass next to the scarecrow by the apth."
-        },
-        "popupMedia": "liyue/meteorite-shard/meteors-over-qingce-20"
-      },
-      "id": 220
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.663871494055066, 23.938848849344726]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #1"
-        },
-        "popupContent": {
-          "en": "This one is midway down the cliff face on a ledge."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-1"
-      },
-      "id": 301
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.986143463146085, 24.933217760388317]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #2"
-        },
-        "popupContent": {
-          "en": "This one is also on a ledge midway down the cliff face."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-2"
-      },
-      "id": 302
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.289450008648004, 23.270757237237326]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #3"
-        },
-        "popupContent": {
-          "en": "This one is at the top of the rock next to the clover gust device."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-3"
-      },
-      "id": 303
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.18285433724068, 23.954385863579784]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #4"
-        },
-        "popupContent": {
-          "en": "This one is on the far cliff, being inspected by Treasure Hoarders."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-4"
-      },
-      "id": 304
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.33699022013268, 21.390778514795553]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #5"
-        },
-        "popupContent": {
-          "en": "This one is on a cliff by the tree. Feel free to use the teleporter nearby."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-5"
-      },
-      "id": 305
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.254417740305655, 21.779203870671942]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #6"
-        },
-        "popupContent": {
-          "en": "This one is on a hill next to a pyro brazier, just north of the bridge."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-6"
-      },
-      "id": 306
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.61815461711869, 22.167629226548364]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #7"
-        },
-        "popupContent": {
-          "en": "This one is on this ledge just below the top of the rock. I swear it's here I grabbed it by accident."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-7"
-      },
-      "id": 307
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.638738177027996, 20.86252003080364]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #8"
-        },
-        "popupContent": {
-          "en": "This one is on the top of this rock, next to the clover device. Follow the bridge from the previous pillars."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-8"
-      },
-      "id": 308
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.560961286669176, 20.56731676033757]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #9"
-        },
-        "popupContent": {
-          "en": "This one is on the top of this rock, next to the flowers. Follow the bridge from the previous pillars."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-9"
-      },
-      "id": 309
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7199679224291, 19.417577706943433]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #10"
-        },
-        "popupContent": {
-          "en": "This one is also near the top of the rock pillar."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-10"
-      },
-      "id": 310
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.88056782366761, 19.184522493417592]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #11"
-        },
-        "popupContent": {
-          "en": "This one is at the top of this pillar next to the Seelie Garden."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-11"
-      },
-      "id": 311
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.99431392976988, 17.66189509838213]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #12"
-        },
-        "popupContent": {
-          "en": "This one is in the branches of a tree at the top here."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-12"
-      },
-      "id": 312
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.873792870810604, 18.065857468493572]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #13"
-        },
-        "popupContent": {
-          "en": "Took me a while to find this one; it's on a ledge behind the entrance to the Adeptus' abode."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-13"
-      },
-      "id": 313
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.25390190736166, 20.209965432931302]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #14"
-        },
-        "popupContent": {
-          "en": "Glide over from where you grabbed #13 and land on this rock pillar."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-14"
-      },
-      "id": 314
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.58240494316009, 20.97127913044905]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #15"
-        },
-        "popupContent": {
-          "en": "This one is on top of this pillar, you'll have to climb up."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-15"
-      },
-      "id": 315
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.530631144774, 19.55741083505896]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #16"
-        },
-        "popupContent": {
-          "en": "This one is up in the branches of the fancy tree in Nantianhen."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-16"
-      },
-      "id": 316
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.323452840581076, 20.78483495962835]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #17"
-        },
-        "popupContent": {
-          "en": "This one is resting on a rock here."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-17"
-      },
-      "id": 317
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.5958979000794, 22.726961739010356]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #18"
-        },
-        "popupContent": {
-          "en": "This one is at the base of the cliff near the village."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-18"
-      },
-      "id": 318
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.87469788068301, 24.839995674977963]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #19"
-        },
-        "popupContent": {
-          "en": "This one is guarded by treasure hoarders. Feel free to teleport nearby to save some time."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-19"
-      },
-      "id": 319
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.19823330850893, 23.348442308412615]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Stardust in Jueyun #20"
-        },
-        "popupContent": {
-          "en": "This one is guarded by hilichurls to the south of the teleport. Feel free to use the statue to get here to save time."
-        },
-        "popupMedia": "liyue/meteorite-shard/stardust-in-jueyun-20"
-      },
-      "id": 320
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.24439603707857, 42.49781235311909]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #1"
-        },
-        "popupContent": {
-          "en": "This shard is resting at a small ledge."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-1"
-      },
-      "id": 401
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.370634595346544, 42.38128474635617]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #2"
-        },
-        "popupContent": {
-          "en": "This shard is sitting atop a rock near the small pond."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-2"
-      },
-      "id": 402
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.03322368499523, 43.78738453462876]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #3"
-        },
-        "popupContent": {
-          "en": "This shard is located on the bottom part of the ruined bridge."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-3"
-      },
-      "id": 403
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.42140447983394, 46.34322337629543]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #4"
-        },
-        "popupContent": {
-          "en": "This shard is located MIDWAY up the rock ledge, on the south face."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-4"
-      },
-      "id": 404
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.25787013134414, 47.50073093680712]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #5"
-        },
-        "popupContent": {
-          "en": "This shard is located up the hill next to a log. You can use the teleporter for convenience."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-5"
-      },
-      "id": 405
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.42713704242554, 49.62930188700979]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #6"
-        },
-        "popupContent": {
-          "en": "This shard is located at the top of the mountain next to some Qingxe."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-6"
-      },
-      "id": 406
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.14291791241433, 50.78680944752147]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #7"
-        },
-        "popupContent": {
-          "en": "This shard is located at the base of a cliff here."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-7"
-      },
-      "id": 407
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.37804717035356, 52.161835207323904]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #8"
-        },
-        "popupContent": {
-          "en": "This shard is located by the rubble of some ruins. I was able to grab it without alerting the Stonehide Lawachurl nearby."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-8"
-      },
-      "id": 408
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.9210944395987, 53.11736158277986]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #9"
-        },
-        "popupContent": {
-          "en": "This shard is located in the crook of a rock by the shore. I sadly had to fight the Ruin Guard to reach it."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-9"
-      },
-      "id": 409
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1422221757418, 54.119499000940955]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #10"
-        },
-        "popupContent": {
-          "en": "This one is near the hilichurl camp on the small island"
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-10"
-      },
-      "id": 410
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.84140712700584, 51.2677001953125]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #11"
-        },
-        "popupContent": {
-          "en": "This one is up a tree on this rock. Feel free to skip the swim with the teleporter."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-11"
-      },
-      "id": 411
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.66718781791499, 49.89343112900574]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #12"
-        },
-        "popupContent": {
-          "en": "There's a second tree on this island and the shard is sitting there."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-12"
-      },
-      "id": 412
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.24514724026056, 48.8058401325518]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #13"
-        },
-        "popupContent": {
-          "en": "This shard is by the rock, being guarded by some hilichurls."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-13"
-      },
-      "id": 413
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.86900844606353, 47.842545249978365]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #14"
-        },
-        "popupContent": {
-          "en": "This shard is midway up this cliff face."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-14"
-      },
-      "id": 414
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.287320452332295, 47.18999065210599]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #15"
-        },
-        "popupContent": {
-          "en": "This shard is sitting on some hexagonal rocks."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-15"
-      },
-      "id": 415
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.33472515570285, 45.22455835137141]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #16"
-        },
-        "popupContent": {
-          "en": "This shard is located partway up the face of the cliff."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-16"
-      },
-      "id": 416
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.721752622768186, 46.16454771259232]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": {
-          "en": "Yaoguang Algol #17"
-        },
-        "popupContent": {
-          "en": "This shard is sitting in the wreck of a boat on the shore by the hut."
-        },
-        "popupMedia": "liyue/meteorite-shard/yaoguang-algol-17"
-      },
-      "id": 417
+      "coordinates": [-45.37805, 52.16184],
+      "id": "E4E6A04734AF600C1FB7CB7EB1C39E1458EB9D75",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/408"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #8"
+      },
+      "popupContent": {
+        "en": "This shard is located by the rubble of some ruins. I was able to grab it without alerting the Stonehide Lawachurl nearby."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-8"
+    },
+    {
+      "coordinates": [-45.92109, 53.11736],
+      "id": "24B338D32BED92AFC88AD022E1E64D40F8143FBD",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/409"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #9"
+      },
+      "popupContent": {
+        "en": "This shard is located in the crook of a rock by the shore. I sadly had to fight the Ruin Guard to reach it."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-9"
+    },
+    {
+      "coordinates": [-46.14222, 54.1195],
+      "id": "7D6E79EE391D3F742566A629F89C758697009639",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/410"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #10"
+      },
+      "popupContent": {
+        "en": "This one is near the hilichurl camp on the small island"
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-10"
+    },
+    {
+      "coordinates": [-46.84141, 51.2677],
+      "id": "35F240B78A0154D69669C5E96AF0ADFC5EDFF0F2",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/411"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #11"
+      },
+      "popupContent": {
+        "en": "This one is up a tree on this rock. Feel free to skip the swim with the teleporter."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-11"
+    },
+    {
+      "coordinates": [-46.66719, 49.89343],
+      "id": "A150FBA3E6C7A2F3EFB12887B27A8F174BEA14D1",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/412"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #12"
+      },
+      "popupContent": {
+        "en": "There's a second tree on this island and the shard is sitting there."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-12"
+    },
+    {
+      "coordinates": [-47.24515, 48.80584],
+      "id": "6F68217D81A4D893C54FF63A9D01DBC5ADD21319",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/413"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #13"
+      },
+      "popupContent": {
+        "en": "This shard is by the rock, being guarded by some hilichurls."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-13"
+    },
+    {
+      "coordinates": [-47.86901, 47.84255],
+      "id": "DC25223F27EEF8AD071643B4D966FA3143AA98D8",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/414"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #14"
+      },
+      "popupContent": {
+        "en": "This shard is midway up this cliff face."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-14"
+    },
+    {
+      "coordinates": [-47.28732, 47.18999],
+      "id": "59CF15637DF378D14D099A910C1197751F61E37B",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/415"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #15"
+      },
+      "popupContent": {
+        "en": "This shard is sitting on some hexagonal rocks."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-15"
+    },
+    {
+      "coordinates": [-47.33473, 45.22456],
+      "id": "D6506D9ECEC50AB320FFC899EE003155320E7F61",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/416"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #16"
+      },
+      "popupContent": {
+        "en": "This shard is located partway up the face of the cliff."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-16"
+    },
+    {
+      "coordinates": [-48.72175, 46.16455],
+      "id": "6C1EA699D95EFAEFC7A399E6BD18765C8805412E",
+      "importIds": {
+        "gm_legacy": ["liyueMeteoriteShard/417"]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Yaoguang Algol #17"
+      },
+      "popupContent": {
+        "en": "This shard is sitting in the wreck of a boat on the shore by the hut."
+      },
+      "popupMedia": "liyue/meteorite-shard/yaoguang-algol-17"
     }
   ]
 }

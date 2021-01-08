@@ -30,6 +30,11 @@
   top: 80px;
 }
 
+.leaflet-bottom.leaflet-left.leaflet-bottom-left-offset {
+  /* Fix custom controls overlapping the attribution. */
+  bottom: 24px;
+}
+
 .map-marker-popup {
   /* The main content of the popup. */
   display: flex;

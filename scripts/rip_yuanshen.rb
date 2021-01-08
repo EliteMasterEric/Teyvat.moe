@@ -65,9 +65,9 @@ FEATURE_TRANSLATION = {
   JS_PGYZ: 'mondstadtDandelionSeed',
   JS_YPS: 'liyueNoctilucousJade',
   JS_SP: 'liyueCorLapis',
-  JS_SJK_LY: 'liyueMagicalCrystalChunk',
+  JS_SJK_LY: 'liyueCrystalChunk',
   JS_BTK_LY: 'liyueWhiteIronChunk',
-  JS_SJK_MD: 'mondstadtMagicalCrystalChunk',
+  JS_SJK_MD: 'mondstadtCrystalChunk',
   JS_BTK_MD: 'mondstadtWhiteIronChunk',
   JS_YJSW_LY: 'liyueRuinGuard',
   JS_YJLZ_LY: 'liyueRuinHunter',
@@ -75,13 +75,13 @@ FEATURE_TRANSLATION = {
   JS_ZWCLR_LY: 'liyueFatuiPyroAgent',
   JS_SYFS_LY: 'liyueAbyssMage',
   JS_DXQQR_LY: 'liyueMitachurl',
-  JS_BX_MD: 'mondstadtCommonChest',
-  JS_BX_LY: 'liyueCommonChest',
+  JS_BX_MD: 'mondstadtChest',
+  JS_BX_LY: 'liyueChest',
   JS_LLD: 'liyueVioletgrass',
   JS_YJSW_MD: 'mondstadtRuinGuard',
   JS_DXQQR_MD: 'mondstadtMitachurl',
-  JS_SYFS_MD: 'liyueAbyssMage',
-  JS_LYSS_MD: 'liyueFatuiElectroCicinMage',
+  JS_SYFS_MD: 'mondstadtAbyssMage',
+  JS_LYSS_MD: 'mondstadtFatuiElectroCicinMage',
   JS_DBT_MD: 'mondstadtTreasureHoarder',
   JS_DBT_LY: 'liyueTreasureHoarder',
   JS_PPH_MD: 'mondstadtWhopperflower',
@@ -148,10 +148,10 @@ FEATURE_TRANSLATION = {
   JS_QQSM_LY: 'liyueSamachurl',
   JS_DWQ_MD: 'mondstadtUnusualHilichurl',
   JS_DWQ_LY: 'liyueUnusualHilichurl',
-  JS_JG_MD: 'liyueViewpoint',
-  JS_JG_LY: 'mondstadtViewpoint',
-  JS_MJK_MD: 'mondstadtMagicalCrystalChunk',
-  JS_MJK_LY: 'liyueMagicalCrystalChunk',
+  JS_JG_MD: 'liyueViewpoint', # They swapped this.
+  JS_JG_LY: 'mondstadtViewpoint', # They swapped this.
+  JS_MJK_MD: 'liyueMagicalCrystalChunk', # They swapped this.
+  JS_MJK_LY: 'mondstadtMagicalCrystalChunk', # They swapped this.
   JS_S_LY: 'liyueBambooShoot',
   JS_NQ_LY: 'liyueLoachPearl',
   JS_YSSP_MD: 'mondstadtMeteoriteShard',
@@ -166,7 +166,7 @@ FEATURE_TRANSLATION = {
   JS_SJ_LY: 'liyueBooks',
   JS_SJRW_MD: 'mondstadtWorldQuest',
   JS_SJRW_LY: 'liyueWorldQuest',
-  JS_SYWD_MD: 'liyueArtifact',
+  JS_SYWD_MD: 'mondstadtArtifact',
   JS_SYWD_LY: 'liyueArtifact',
   JS_KDCD_MD: 'mondstadtMineInvestigationPoint',
   JS_KDCD_LY: 'liyueMineInvestigationPoint',
@@ -192,6 +192,12 @@ def write_file(filepath, data)
   FileUtils.makedirs(File.dirname(filepath))
 
   File.write(filepath, data)
+end
+
+# ChilledMeat => chilled-meat
+# Unknown20 => unknown-20
+def slugify(input)
+  input.gsub(/(.)([A-Z]|[0-9]+)/,'\1-\2').downcase
 end
 
 def download_to_path(url, path)
@@ -239,7 +245,8 @@ def migrate_marker_data(input_json, yuanshen_code, genshinmap_code, feature_inde
   output_json['id'] = ObjectHash.hash(output_json['coordinates'])
 
   output_json['importIds']['yuanshen'] = ["#{feature_index}_#{input_json['id']}"]
-  output_json['importIds']['gm_legacy'] = ["#{genshinmap_code}/#{input_json['id']}"]
+  # Created by merging.
+  # output_json['importIds']['gm_legacy'] = ["#{genshinmap_code}/#{input_json['id']}"]
 
   output_json['popupMedia'] = "#{URL_YUANSHEN_IMAGE_BASE}/#{feature_index}_#{input_json['id']}.jpg"
 
@@ -277,7 +284,7 @@ def parse_json(input, output_folder)
     output_json = migrate_feature_data(feature_data, feature_code, feature_name, index)
 
     feature_region = feature_name.split(/(?=[A-Z])/)[0]
-    feature_subname = feature_name.split(/(?=[A-Z])/)[1..-1].join('')
+    feature_subname = slugify(feature_name.split(/(?=[A-Z])/)[1..-1].join(''))
 
     output_path = File.join(output_folder, feature_region, "#{feature_subname}.json")
     puts("Writing file #{output_path}...")

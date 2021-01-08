@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Lizard Tail",
-    "ru": "Хвост Ящерицы"
+    "ru": "Хвост Ящерицы",
+    "zh": ""
   },
   "description": {
     "en": "A lizard tail that curled up after losing its owner. Used in Alchemy."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "lizard-tail",
     "base": {
@@ -16,5 +20,166 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-20.76125, 66.40137],
+      "id": "293A8DEE1B79FE657D4B3BDDE0D3B9A09FC653E8",
+      "importIds": {
+        "yuanshen": ["87_1"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #1"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.36361, 62.58729],
+      "id": "A29D45FFB658BD15729A4119F80F4DB88BD5028B",
+      "importIds": {
+        "yuanshen": ["87_2"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #2"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.83862, 62.46644],
+      "id": "FA9431EED958454C0E793DDDA42C1FA686281B60",
+      "importIds": {
+        "yuanshen": ["87_3"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #3"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.93588, 43.15288],
+      "id": "93DBA245C2C3F33787F76F39964C65067B72D235",
+      "importIds": {
+        "yuanshen": ["87_4"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #4"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.27285, 42.99542],
+      "id": "2F11D2BFD5F169714B1CC2DDFD4BB9B9696AA5B2",
+      "importIds": {
+        "yuanshen": ["87_5"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #5"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.47693, 47.22314],
+      "id": "45489AAF6B3E2123C8F5C43E74D35E7E58633E01",
+      "importIds": {
+        "yuanshen": ["87_6"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #6"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.32712, 62.25952],
+      "id": "116477315B877931A9F1BAB448A41B4D7ADF56F6",
+      "importIds": {
+        "yuanshen": ["87_7"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #7"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.71998, 63.95691],
+      "id": "35F308A07267B5CAD045235D826E3933ED49D866",
+      "importIds": {
+        "yuanshen": ["87_8"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #8"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.08062, 63.85803],
+      "id": "DEFE1AF2C700349F8AE2012DCBA26FF0102EC45B",
+      "importIds": {
+        "yuanshen": ["87_9"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #9"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.1602, 63.90198],
+      "id": "21F41793391C839F2EF15D6B21BFA65A575DCB0A",
+      "importIds": {
+        "yuanshen": ["87_10"]
+      },
+      "popupTitle": {
+        "zh": "蜥蜴尾巴",
+        "en": "NEW MARKER: #10"
+      },
+      "popupContent": {
+        "zh": "捕捉蜥蜴可以获得蜥蜴尾巴！"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

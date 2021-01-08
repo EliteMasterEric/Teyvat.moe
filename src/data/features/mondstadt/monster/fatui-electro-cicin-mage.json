@@ -1,13 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Fatui Electro Cicin Mage",
-    "ru": "Маг цицинов Фатуи"
+    "ru": "Маг цицинов Фатуи",
+    "zh": ""
   },
   "description": {
     "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.", 
     "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон. "
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
@@ -20,56 +23,68 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.4887732871, 51.0095128428]
+      "coordinates": [-20.48877, 51.00951],
+      "id": "F7BF691507CB8264959EEBDD581DC3BAA47C0DDA",
+      "importIds": {
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/1"],
+        "yuanshen": ["32_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-30.8126510202, 56.7224121093]
+      "coordinates": [-30.81265, 56.72241],
+      "id": "957EBCEB5111C1E19B94D8EAC8282A952C6D4D85",
+      "importIds": {
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/2"],
+        "yuanshen": ["32_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.995795141, 61.9848665218]
+      "coordinates": [-16.87815, 70.62561],
+      "id": "FFAC4A8AD0DFE36A0D2E725C6CF144E95FEC20C9",
+      "importIds": {
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/4"],
+        "yuanshen": ["32_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.8781469947, 70.6256071109]
+      "coordinates": [-36.33725, 62.7887],
+      "id": "7ECD70ED27B7552190456F45E6728F8D3A662524",
+      "importIds": {
+        "yuanshen": ["32_3"],
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/32_3.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

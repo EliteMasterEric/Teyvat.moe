@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Mist Flower Corolla",
-    "ru": "Туманный Цветок (венчик)"
+    "ru": "Туманный Цветок (венчик)",
+    "zh": ""
   },
   "description": {
     "en": "A flower bud encased in solid ice. Harvest using Pyro skills. Used in Alchemy."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "mist-flower-corolla",
@@ -19,56 +22,244 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.7278251345, 49.1554229528]
+      "coordinates": [-22.72783, 49.15542],
+      "id": "9761A615DFA5DA64DFD7E36C4C478E603C8A14A4",
+      "importIds": {
+        "gm_legacy": ["mondstadtMistFlowerCorolla/1"],
+        "yuanshen": ["49_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "冰雾花"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8774404648, 49.39453125]
+      "coordinates": [-22.87744, 49.39453],
+      "id": "2B5F71F333EBAC549F444F3D9A40AE2361B30C91",
+      "importIds": {
+        "gm_legacy": ["mondstadtMistFlowerCorolla/2"],
+        "yuanshen": ["49_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "冰雾花"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2754354129, 67.8735351562]
+      "coordinates": [-33.27544, 67.87354],
+      "id": "27FA1132A7FA5389D55A97EFB82C6B4693225888",
+      "importIds": {
+        "gm_legacy": ["mondstadtMistFlowerCorolla/3"],
+        "yuanshen": ["49_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "冰雾花"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.330528249, 67.9284667968]
+      "coordinates": [-33.33053, 67.92847],
+      "id": "345441EBB4CFECB41045A8C0EAA130F365CB5DFF",
+      "importIds": {
+        "gm_legacy": ["mondstadtMistFlowerCorolla/4"],
+        "yuanshen": ["49_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "冰雾花"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-18.59419, 66.64856],
+      "id": "1DB2A52A06677DFD53ECC2E5061BD77457498156",
+      "importIds": {
+        "yuanshen": ["49_5"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #5"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.21066, 63.8031],
+      "id": "0349D57B2F67DA10418A043DE3B3E6D7A36C548A",
+      "importIds": {
+        "yuanshen": ["49_6"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #6"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.40127, 61.66626],
+      "id": "4D9B4EC7ABA2FAC8C287E5762CCDCCE3F2F5CC55",
+      "importIds": {
+        "yuanshen": ["49_7"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #7"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.52099, 67.99988],
+      "id": "A415AEA02EB53C56A90B29B7EE7741B49A6CF086",
+      "importIds": {
+        "yuanshen": ["49_8"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #8"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.51958, 67.94129],
+      "id": "BBE9991D918ACA436F6A6A62F78FBAF4345BDCA5",
+      "importIds": {
+        "yuanshen": ["49_9"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #9"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.74075, 55.14762],
+      "id": "F75A3F45BE32E15202BD72845773FF6F40DDE0D7",
+      "importIds": {
+        "yuanshen": ["49_10"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #10"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.68169, 51.96166],
+      "id": "EED69E5AE3079A2597E1253053CAFFF55E18EA68",
+      "importIds": {
+        "yuanshen": ["49_11"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #11"
+      },
+      "popupContent": {
+        "zh": "这是一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.47069, 52.99901],
+      "id": "91A4A377BB93901D0AE62872A965916BE1DD65E3",
+      "importIds": {
+        "yuanshen": ["49_12"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #12"
+      },
+      "popupContent": {
+        "zh": "在崖底的一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.18685, 63.1604],
+      "id": "9D4026225F22A480499FA3959DC876A992D79C16",
+      "importIds": {
+        "yuanshen": ["49_13"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #13"
+      },
+      "popupContent": {
+        "zh": "一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.66219, 65.4895],
+      "id": "C8D6C5C2E13A7DF40B0563EF185C7E633C626BF3",
+      "importIds": {
+        "yuanshen": ["49_14"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #14"
+      },
+      "popupContent": {
+        "zh": "一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.64746, 65.37964],
+      "id": "FE77A76D2507F7ADC2A9C609BEF58D58165493E0",
+      "importIds": {
+        "yuanshen": ["49_15"]
+      },
+      "popupTitle": {
+        "zh": "冰雾花",
+        "en": "NEW MARKER: #15"
+      },
+      "popupContent": {
+        "zh": "一朵冰雾花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/49_15.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

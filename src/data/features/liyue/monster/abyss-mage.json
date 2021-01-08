@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Abyss Mage",
-    "ru": "Маг Бездны"
+    "ru": "Маг Бездны",
+    "zh": "深渊法师"
   },
   "description": {
     "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "pyro-abyss-mage",
@@ -19,446 +22,533 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.3062721695, 44.0551757812]
+      "coordinates": [-36.30627, 44.05518],
+      "id": "76982E2AD03E97AA6F8ABCB85C051E2D5967782E",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/1"],
+        "yuanshen": ["24_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.2102496001, 41.5283203125]
+      "coordinates": [-46.21025, 41.52832],
+      "id": "D508910B21D833035B25C19E4E35043EB5655C0E",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/3"],
+        "yuanshen": ["24_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.6946673077, 47.8784179687]
+      "coordinates": [-46.69467, 47.87842],
+      "id": "59BE29582B20506910568F67296C456666B33EED",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/5"],
+        "yuanshen": ["24_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.0510656839, 59.7766091677]
+      "coordinates": [-53.05107, 59.77661],
+      "id": "14857AE3C17C052F5D772449C85FCA6BF62C418C",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/6"],
+        "yuanshen": ["24_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个火深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.699947923, 59.4964826448]
+      "coordinates": [-53.69995, 59.49648],
+      "id": "ED2B7BF251481732CE3F04A33D41E282C1CCB281",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/7"],
+        "yuanshen": ["24_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.6966969575, 59.578863903]
+      "coordinates": [-53.6967, 59.57886],
+      "id": "08FF07DEF134E96F0E5D4F1317EBB9BEB723274E",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/8"],
+        "yuanshen": ["24_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.6609590567, 59.534921831]
+      "coordinates": [-53.66096, 59.53492],
+      "id": "2DBE4616A8A50E9F9C23E40CCACFCA840DDD733A",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/9"],
+        "yuanshen": ["24_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.1910453115, 38.3105870167]
+      "coordinates": [-49.19105, 38.31059],
+      "id": "ABB8EF2BEDE5C34C44D7031696A9CF0A1E1F2FBD",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/10"],
+        "yuanshen": ["24_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5329670959, 48.1805365912]
+      "coordinates": [-52.53297, 48.18054],
+      "id": "985C78EAE36591DFECBF57F24334AEA5BA78BE06",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/11"],
+        "yuanshen": ["24_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.5295912218, 48.2244786631]
+      "coordinates": [-52.52959, 48.22448],
+      "id": "26414AD09D45AB73D15E5D92E9BD874C4C91C4FF",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/12"],
+        "yuanshen": ["24_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个水深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.9772189969, 33.6028701759]
+      "coordinates": [-57.97722, 33.60287],
+      "id": "08D3D44F39DD31ED27FC276784B6DC02BBB4E3A2",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/14"],
+        "yuanshen": ["24_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个山洞中的火深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7710763862, 32.074596843]
+      "coordinates": [-58.77108, 32.0746],
+      "id": "92707DE2749B659E701305802EFBA3E68325569F",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/15"],
+        "yuanshen": ["24_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.285983466, 27.4765128295]
+      "coordinates": [-55.28598, 27.47651],
+      "id": "A5C14A1EA3800B3D0CF4E87286C029C2CB5B51C9",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/16"],
+        "yuanshen": ["24_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7454069685, 26.103515625]
+      "coordinates": [-58.74541, 26.10352],
+      "id": "ADDEFA77786A885E67012C22F8686979557582B8",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/17"],
+        "yuanshen": ["24_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.7795911503, 26.015625]
+      "coordinates": [-58.77959, 26.01562],
+      "id": "43A9813A4F14BEB5821CCAB514A9EB7139134E1F",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/18"],
+        "yuanshen": ["24_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.4259134651, 29.3499723453]
+      "coordinates": [-55.42591, 29.34997],
+      "id": "6CFAE0767CFBBA3D5EABFA802C35C80258E0A05B",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/22"],
+        "yuanshen": ["24_22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个水深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.4259134651, 29.3499723453]
+      "coordinates": [-55.40408, 29.31702],
+      "id": "119DF6429225177DEDC2100ED032E855001C1AD8",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/24"],
+        "yuanshen": ["24_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个冰深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.4040778135, 29.3170230826]
+      "coordinates": [-49.29647, 26.63086],
+      "id": "A862676BC9D254E30BB50F6391BB7BCAC2004BB5",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/25"],
+        "yuanshen": ["24_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.4040778135, 29.3170230826]
+      "coordinates": [-47.91999, 30.1685],
+      "id": "F978C1A24D65CBEA5EE496C18FC82A3B71C0BCEC",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/26"],
+        "yuanshen": ["24_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.2964716026, 26.630859375]
+      "coordinates": [-48.57479, 27.96021],
+      "id": "4F9A6BFCFC4BB361C51436B5A80CE8D23F630CDC",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/27"],
+        "yuanshen": ["24_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.9199925365, 30.168495918]
+      "coordinates": [-47.17478, 29.13574],
+      "id": "BADF36BEBA942DA6F5FE87FBE8213E2350BB3F3A",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/28"],
+        "yuanshen": ["24_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.5747899109, 27.9602050781]
+      "coordinates": [-44.48083, 33.07983],
+      "id": "DAA1906835A1A62DED9B9C08BD86B64D250142F9",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/31"],
+        "yuanshen": ["24_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.1747783392, 29.1357421875]
+      "coordinates": [-42.52089, 32.4376],
+      "id": "57166E55683B7F1268DC0D53D16BCC6D540C1A02",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/32"],
+        "yuanshen": ["24_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.4808302785, 33.0798339843]
+      "coordinates": [-45.66013, 17.88574],
+      "id": "78B85E61E5CB46185B5C8CB0252CB87B0D0CC630",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/33"],
+        "yuanshen": ["24_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.5208884491, 32.4376002187]
+      "coordinates": [-44.41809, 19.14917],
+      "id": "865488563DA85B0D4B665B8991A498756ECEB9FE",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/34"],
+        "yuanshen": ["24_34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.6601273027, 17.8857421875]
+      "coordinates": [-46.76244, 20.92896],
+      "id": "FBC7E0B7FE1C520C777D8A858367531BA131D5D5",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/35"],
+        "yuanshen": ["24_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.4180879437, 19.1491699218]
+      "coordinates": [-56.90284, 32.08804],
+      "id": "A3921054BC707162A51F0DCF89D79175A46621C1",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/36"],
+        "yuanshen": ["24_36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "山下矿洞里面的冰深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.762443052, 20.9289550781]
+      "coordinates": [-55.25138, 26.75882],
+      "id": "6CA51442ED9F88A4E6BD3BBF54CB32D4770DB515",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/37"],
+        "yuanshen": ["24_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9028433807, 32.0880387851]
+      "coordinates": [-55.68528, 32.10634],
+      "id": "98A3DBA7775F8C54BCAED5C300CBCDEAF4B6985E",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/38"],
+        "yuanshen": ["24_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.251379727, 26.758816933]
+      "coordinates": [-48.05793, 23.63115],
+      "id": "B5F8F1EE6F9E3C452E0A9EC8C36990E062632EA6",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/39", "liyueAbyssMage/40"],
+        "yuanshen": ["24_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.685275896, 32.1063362954]
+      "coordinates": [-47.61016, 46.57333],
+      "id": "F0374564A014212D74DC5D91A10A7637FAB826B1",
+      "importIds": {
+        "gm_legacy": ["liyueAbyssMage/41"],
+        "yuanshen": ["24_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.0579311163, 23.6311543208]
+      "coordinates": [-55.43529, 29.26752],
+      "id": "354022D2DE583CBBCE49CD6C16466471FACC310D",
+      "importIds": {
+        "yuanshen": ["24_23"],
+        "gm_legacy": ["liyueAbyssMage/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个水深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/24_23.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.0579311163, 23.6311543208]
+      "coordinates": [-46.21042, 33.32943],
+      "id": "B6DA0A8C63A64E21351893F956E287ED99E15255",
+      "importIds": {
+        "yuanshen": ["24_42"],
+        "gm_legacy": ["liyueAbyssMage/42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/24_42.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.6101617599, 46.5733302908]
+      "coordinates": [-40.93888, 44.65324],
+      "id": "68CD3AD0DBDFFF0F7B34487A0FD6E2CCAF5E13B0",
+      "importIds": {
+        "yuanshen": ["24_43"],
+        "gm_legacy": ["liyueAbyssMage/43"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "深渊法师"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "攻击此处的丘丘人设施并击败出现的全部火史莱姆会出现火深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/24_43.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-56.897, 25.97168],
+      "id": "C03E41267981A8BCD363739720FC86B5B378F8F2",
+      "importIds": {
+        "yuanshen": ["24_44"],
+        "gm_legacy": ["liyueAbyssMage/44"]
+      },
+      "popupTitle": {
+        "zh": "深渊法师"
+      },
+      "popupContent": {
+        "zh": "这是一个深渊法师"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/24_44.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

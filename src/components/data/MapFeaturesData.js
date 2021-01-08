@@ -89,6 +89,7 @@ const markerStyle = Joi.object({
 
 const MAP_FEATURE_SCHEMA = Joi.object({
   name: localizedField.required(),
+  description: localizedField.optional(),
   cluster: Joi.boolean(),
   enabled: Joi.boolean().optional().default(true),
   respawn: Joi.number().integer().positive().optional().default(-1),

@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Pinecone",
-    "ru": "Сосновая Шишка"
+    "ru": "Сосновая Шишка",
+    "zh": ""
   },
   "description": {
     "en": "Filled with oil-rich seeds. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "pinecone",
     "base": {
@@ -16,5 +20,171 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-31.80401, 33.14105],
+      "id": "CCE8141C087D9C8C4FAEC1586CEDB9DDBE36E33A",
+      "importIds": {
+        "yuanshen": ["90_1"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.75933, 33.17504],
+      "id": "CE8CFBD596E2E446116FFC6353823721D4D74B53",
+      "importIds": {
+        "yuanshen": ["90_2"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.63156, 33.1311],
+      "id": "C8A2A0E3EE9CF3031070688F12D7D8307FC4B17E",
+      "importIds": {
+        "yuanshen": ["90_3"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.53016, 33.18603],
+      "id": "78DB76C87DE5FC27C622D94EB039D40DE81C9D1A",
+      "importIds": {
+        "yuanshen": ["90_4"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.38647, 33.14941],
+      "id": "35BC35C283ED908735081B78F32B8EF09B997DAD",
+      "importIds": {
+        "yuanshen": ["90_5"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.24725, 33.17505],
+      "id": "9640922E7D0908F02CAC3F36C8428D39F5E56915",
+      "importIds": {
+        "yuanshen": ["90_6"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.12508, 33.19335],
+      "id": "6B3E238BD7CDA2836B9DFAC68B09724A99B5496D",
+      "importIds": {
+        "yuanshen": ["90_7"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.14387, 33.15491],
+      "id": "A95B658FF2F2E2857A262E0067BDC45AC7C15FEF",
+      "importIds": {
+        "yuanshen": ["90_8"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.14544, 33.20618],
+      "id": "6AAB74C56F9A8CC772F81A02E8F877694F6738B3",
+      "importIds": {
+        "yuanshen": ["90_9"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-47.19842, 39.12048],
+      "id": "CD284760EE858241A5AADF674772AD111C225ED7",
+      "importIds": {
+        "yuanshen": ["90_10"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-47.19096, 39.14978],
+      "id": "AE48735C600EE00E1AADE2CA65A4034C0DCF60E8",
+      "importIds": {
+        "yuanshen": ["90_11"]
+      },
+      "popupTitle": {
+        "zh": "松果"
+      },
+      "popupContent": {
+        "zh": "这是一个松果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/90_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

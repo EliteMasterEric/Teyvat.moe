@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Fatui Electro Cicin Mage",
-    "ru": "Маг цицинов Фатуи"
+    "ru": "Маг цицинов Фатуи",
+    "zh": "雷萤术士"
   },
   "description": {
     "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
@@ -19,121 +22,139 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.7416124988, 38.1225585937]
+      "coordinates": [-34.74161, 38.12256],
+      "id": "713D0B02C92FDE0BCAA0D91C07474BB505295975",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/1"],
+        "yuanshen": ["22_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.5638945306, 46.0107421875]
+      "coordinates": [-40.56389, 46.01074],
+      "id": "E6658806D3B2DB02DE92C10BB0713FBF5AF969BB",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/2"],
+        "yuanshen": ["22_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.4875130089, 51.240234375]
+      "coordinates": [-47.48751, 51.24023],
+      "id": "1B5D6F2F8FFD706684BBF16C963F5C37E6CCAC67",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/3"],
+        "yuanshen": ["22_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.5337781842, 57.9968261718]
+      "coordinates": [-53.53378, 57.99683],
+      "id": "698022BE6CBCABFCE459B6049D3E0159C1D0041A",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/4"],
+        "yuanshen": ["22_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.3487631819, 45.8679199218]
+      "coordinates": [-52.34876, 45.86792],
+      "id": "433E7938DE57D2DE339605D21DE558CEF1C866F3",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/5"],
+        "yuanshen": ["22_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.3174081126, 45.1208496093]
+      "coordinates": [-50.31741, 45.12085],
+      "id": "40AE36A10D247DF6F5B6B7B5FDAB5061319CBE62",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/6"],
+        "yuanshen": ["22_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.2060325515, 26.71875]
+      "coordinates": [-53.20603, 26.71875],
+      "id": "E4B29B9E8884E30AFE445C02684ABD2AE5E4EA57",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/8"],
+        "yuanshen": ["22_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.0747808402, 29.1852098291]
+      "coordinates": [-50.07478, 29.18521],
+      "id": "DD7293772876BACDCE72CAD2C3C1D57AF9AAAD25",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/9"],
+        "yuanshen": ["22_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.5688611825, 41.0339355468]
+      "coordinates": [-33.56886, 41.03394],
+      "id": "78AFE4BAF329C48783D49CC8B4F801840194030B",
+      "importIds": {
+        "gm_legacy": ["liyueFatuiElectroCicinMage/10"],
+        "yuanshen": ["22_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "雷萤术士"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个雷萤术士"
+      },
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

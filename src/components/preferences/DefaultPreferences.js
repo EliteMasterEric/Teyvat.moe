@@ -104,10 +104,26 @@ export const DEFAULT_MAP_PREFERENCES = {
    */
   controlsOpen: true,
   /**
+   * Whether the debug display is enabled.
+   * Not saved in local storage.
+   */
+  displayDebug: false,
+  /**
    * The text to display on the Import popup for whether an error has occurred.
    * Not saved in local storage.
    */
   importError: '',
+  /**
+   * The notification to display to the user.
+   * Not saved in local storage.
+   */
+  currentToast: {
+    message: '',
+    action: null,
+    showClose: true,
+    duration: 6000,
+  },
+
   /**
    * The currently displayed SmartRoute feature.
    * Not saved in local storage.

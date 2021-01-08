@@ -1,13 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Whopperflower",
-    "ru": "Попрыгунья"
+    "ru": "Попрыгунья",
+    "zh": ""
   },
   "description": {
     "en": "A bizarre mimetic plant monster that harnesses the elements in combat. Drops Whopperflower Nectar.", 
     "ru": "Изворотливо миметическое растение-монстр, которое использует в бою элементы. Возможные награды: Нектар Попрыгуньи."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "whopperflower",
@@ -20,277 +23,370 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.2535128149, 39.3365478515]
+      "coordinates": [-22.25351, 39.33655],
+      "id": "31B1FD9018DF0A362BC846D27E285D18E9D8E012",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/1"],
+        "yuanshen": ["35_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.3401516523, 44.1705322265]
+      "coordinates": [-17.34015, 44.17053],
+      "id": "BF0537777EE2E99ECE784364500333E1AB00846E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/2"],
+        "yuanshen": ["35_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是有一个烈焰骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.2111164724, 48.3233642578]
+      "coordinates": [-33.21112, 48.32336],
+      "id": "A564638B1713FA164EF4460CBB87A6B3A16B4E60",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/3"],
+        "yuanshen": ["35_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "捡完甜甜花后出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8047829195, 46.7028808593]
+      "coordinates": [-34.80478, 46.70288],
+      "id": "C5A3D7A887C3AAB8983D0CF5948A9DC4DD96A35F",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/4"],
+        "yuanshen": ["35_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "捡完小灯草出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.3399144255, 68.1042480468]
+      "coordinates": [-22.33991, 68.10425],
+      "id": "44ED8C02EECFDEBAD66B96360376DB563EC68ADA",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/5"],
+        "yuanshen": ["35_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是有一个火焰骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.7772890399, 68.2690429687]
+      "coordinates": [-28.77729, 68.26904],
+      "id": "052C3E7C715725740E82FA06B1029AEBD3DB8C99",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/6"],
+        "yuanshen": ["35_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "捡了薄荷出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.0913662814, 68.7908935546]
+      "coordinates": [-28.09137, 68.79089],
+      "id": "E50272D99F229EAD28B9AF3A36AB5DF283D0A5C4",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/7"],
+        "yuanshen": ["35_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.6023616668, 59.6118164062]
+      "coordinates": [-32.60236, 59.61182],
+      "id": "3373FAAE4C0CDA8BD99370E7C41BF665C10460BC",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/8"],
+        "yuanshen": ["35_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是有一个火焰骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.7965101095, 60.4357910156]
+      "coordinates": [-32.79651, 60.43579],
+      "id": "33E9EFEDD90C5BEF11CD1F821DD309ACC8ED3579",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/9"],
+        "yuanshen": ["35_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.2572164432, 62.2430419921]
+      "coordinates": [-34.25722, 62.24304],
+      "id": "79CFBFD59529AC760BFFE5B77AC461A20B4BBAE5",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/10"],
+        "yuanshen": ["35_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.9399851515, 62.8967285156]
+      "coordinates": [-34.93999, 62.89673],
+      "id": "CDD77E89021DBB0B476846F5A90A1926F2B0E86D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/11"],
+        "yuanshen": ["35_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "薄荷D是假的！（详情可看薄荷小剧场！）"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9806150652, 64.423828125]
+      "coordinates": [-36.98062, 64.42383],
+      "id": "97E6459E28E44FD0461BCA8D5133D13F1FA01788",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/12"],
+        "yuanshen": ["35_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "薄荷D在撒谎，捡了就会出现冰霜骗骗花（详情看这里的薄荷，有小剧场彩蛋）"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.3012463698, 62.7270048871]
+      "coordinates": [-32.30125, 62.727],
+      "id": "03F70A1D378748844DD275AC0F9D13F9DB53EDC7",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/13"],
+        "yuanshen": ["35_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "捡了薄荷之后出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.5098717383, 73.6029052734]
+      "coordinates": [-35.50987, 73.60291],
+      "id": "697919FA95DD0F2743769967BECDD4A9D67933B3",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/14"],
+        "yuanshen": ["35_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.8561793281, 49.1795482013]
+      "coordinates": [-22.85618, 49.17955],
+      "id": "0F92AA2B740A132CA61F8409BA05D282FF40A73D",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/15"],
+        "yuanshen": ["35_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "采集冰雾花出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.4357985804, 69.1974190207]
+      "coordinates": [-19.4358, 69.19742],
+      "id": "346862C49775C75F75A0BCC69CCBDE597DFD9339",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/16"],
+        "yuanshen": ["35_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是有一个调查甜甜花出现的冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.4156754712, 68.7249755859]
+      "coordinates": [-29.41568, 68.72498],
+      "id": "44D2650FC265008D5A1B7D7AB2289A96E566F587",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/17"],
+        "yuanshen": ["35_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.8739889279, 70.5959690332]
+      "coordinates": [-37.87399, 70.59597],
+      "id": "07625BAE5CE761CF804BF15E812C906F83F424CD",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/18"],
+        "yuanshen": ["35_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.6134594071, 68.893423032]
+      "coordinates": [-37.61346, 68.89342],
+      "id": "4E5FC6EC1B8A5FD1FCB15561FC2902F92AED3B8E",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/19"],
+        "yuanshen": ["35_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-26.8527766745, 47.8004507672]
+      "coordinates": [-26.85278, 47.80045],
+      "id": "F2992AEFDB6817F2A98C07F2119D7022E35C6C31",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/20"],
+        "yuanshen": ["35_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.1450006959, 65.6092594927]
+      "coordinates": [-17.145, 65.60926],
+      "id": "B5328B7021F2FC4530F5F22F7D9F4F1829B5BB26",
+      "importIds": {
+        "gm_legacy": ["mondstadtWhopperflower/21"],
+        "yuanshen": ["35_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是有一个冰霜骗骗花"
+      },
+      "popupMedia": "",
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-18.58898, 62.47375],
+      "id": "CAB44D47A6548F47F5CE16F69D2E32BB33A80A8C",
+      "importIds": {
+        "yuanshen": ["35_22"]
+      },
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
+      },
+      "popupContent": {
+        "zh": "捡取3个甜甜花后出现"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/35_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.54745, 58.12682],
+      "id": "7BD76E69A20BD166F20D2D45BE9CD3B1AF3989CE",
+      "importIds": {
+        "yuanshen": ["35_36"]
+      },
+      "popupTitle": {
+        "zh": "骗骗花-蒙德"
+      },
+      "popupContent": {
+        "zh": "调查薄荷出现的烈焰骗骗花"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/35_36.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

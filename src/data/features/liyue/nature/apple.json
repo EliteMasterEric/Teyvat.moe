@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Apple",
-    "ru": "Яблоко"
+    "ru": "Яблоко",
+    "zh": ""
   },
   "description": {
     "en": "Crisp and fragrant. Restore 300 HP or use in Recipes."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "apple",
     "base": {
@@ -16,5 +20,81 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-32.32835, 33.50899],
+      "id": "A02F1DE4C9C618CF0D40682B9F9836F2E314A7BD",
+      "importIds": {
+        "yuanshen": ["110_1"]
+      },
+      "popupTitle": {
+        "zh": "苹果-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有两个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/110_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.32835, 33.54196],
+      "id": "648CA3C05C85125060AF5449D7A9EC4D88987C46",
+      "importIds": {
+        "yuanshen": ["110_2"]
+      },
+      "popupTitle": {
+        "zh": "苹果-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/110_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-54.18064, 29.88282],
+      "id": "6AFDF6C7AC33C94492E78B59875C0DBA2FDBFC94",
+      "importIds": {
+        "yuanshen": ["110_3"]
+      },
+      "popupTitle": {
+        "zh": "苹果-璃月"
+      },
+      "popupContent": {
+        "zh": "这里有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/110_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.13556, 40.53589],
+      "id": "6D371D0C70F33BED8EFF0DA9A6BC16CF0A017560",
+      "importIds": {
+        "yuanshen": ["110_4"]
+      },
+      "popupTitle": {
+        "zh": "苹果-璃月"
+      },
+      "popupContent": {
+        "zh": "树上有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/110_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.12651, 40.49378],
+      "id": "44A360EBF4CDBDCB1A122BDA1C2AF48312BAD9DE",
+      "importIds": {
+        "yuanshen": ["110_5"]
+      },
+      "popupTitle": {
+        "zh": "苹果-璃月"
+      },
+      "popupContent": {
+        "zh": "树下有三个苹果"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/110_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

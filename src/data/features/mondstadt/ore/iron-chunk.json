@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Iron Chunk",
     "ru": "Обломок железа"
@@ -7,7 +8,8 @@
     "en": "Abundantly available, low-quality metal used for Enhancement Ore.", 
     "ru": "Доступлен в изобилии, низкокачественный металл, используемый для изготовления Обычной руды усиления"
   },
-  "cluster": true,
+  "enabled": false,
+  "cluster": "on",
   "icons": {
     "filter": "iron-chunk",
     "base": {

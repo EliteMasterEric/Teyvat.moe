@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Snapdragon",
-    "ru": "Львиный Зев"
+    "ru": "Львиный Зев",
+    "zh": ""
   },
   "description": {
     "en": "As a spice, it can bring a wonderful flavor to dishes. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "snapdragon",
@@ -19,82 +22,485 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.8783883437, 40.302599397]
+      "coordinates": [-37.87839, 40.3026],
+      "id": "411EB179AA0AD3619E266C1FC288CD24988BF076",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/1"],
+        "yuanshen": ["62_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.4863613793, 42.9547549767]
+      "coordinates": [-41.48636, 42.95475],
+      "id": "BF5BC6E5249ACCECE9F9DB3528C46790740AA60B",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/2"],
+        "yuanshen": ["62_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.9952676241, 42.5657084578]
+      "coordinates": [-41.99527, 42.56571],
+      "id": "7A9410E1E3F33ED8C9F61544ECF224405F136BB7",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/3"],
+        "yuanshen": ["62_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4784041704, 42.9611763034]
+      "coordinates": [-37.4784, 42.96118],
+      "id": "EB51FDA117EDB1B0FF4CC2F89D30DFCD2BF8B273",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/4"],
+        "yuanshen": ["62_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.6442245514, 27.3435988647]
+      "coordinates": [-45.64422, 27.3436],
+      "id": "BF4DBD73C9377D7DFBF65CF1F69DDB1322896B48",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/5"],
+        "yuanshen": ["62_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.628866726, 27.4095038712]
+      "coordinates": [-45.62887, 27.4095],
+      "id": "CE018E973AE0146BC3F5977130F7B272E19C43A6",
+      "importIds": {
+        "gm_legacy": ["liyueSnapdragon/6"],
+        "yuanshen": ["62_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "金鱼草"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupAttribution": "Unknown"
+    },
+    {
+      "coordinates": [-37.06832, 31.10686],
+      "id": "8EE90F9AA39632BA63DACDCA1CEF81C3BB19AEB6",
+      "importIds": {
+        "yuanshen": ["62_7"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.06394, 31.16727],
+      "id": "97A6F2B4CADD2842242A902E3351F945EDAD8045",
+      "importIds": {
+        "yuanshen": ["62_8"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.12092, 31.37597],
+      "id": "CF815AC1035D80D5D4EC4214D594EDD46800BAF6",
+      "importIds": {
+        "yuanshen": ["62_9"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.94985, 31.36498],
+      "id": "6FA9C4FD7394C31324FDABCB8794CC3ED702E9B7",
+      "importIds": {
+        "yuanshen": ["62_10"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.94241, 28.27248],
+      "id": "AF0298714376630655CFC8CBD64E680AD03E3743",
+      "importIds": {
+        "yuanshen": ["62_11"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.78288, 28.51491],
+      "id": "D75509AB25C7B109A3872C8C6D0FDE9C61114E88",
+      "importIds": {
+        "yuanshen": ["62_12"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-47.82732, 20.37874],
+      "id": "E06FB8C2BCE922353770BC0F13A724647EAA3397",
+      "importIds": {
+        "yuanshen": ["62_13"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.06927, 43.3347],
+      "id": "0F19742F540B511D6BD85B2FB8E7074D8D266C61",
+      "importIds": {
+        "yuanshen": ["62_14"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-46.88391, 42.46084],
+      "id": "DBC56D493B82E3614893924807D8ACBF8198109D",
+      "importIds": {
+        "yuanshen": ["62_15"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.28192, 25.64107],
+      "id": "0A5C120DC50B0053F7A4CEC73DA23DD5A7010208",
+      "importIds": {
+        "yuanshen": ["62_16"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.671, 36.88724],
+      "id": "37F0B7096F41B500751D55E4F4927706CF4223E9",
+      "importIds": {
+        "yuanshen": ["62_17"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.3268, 37.39563],
+      "id": "C439DAADE99F21933790DAB283F39386ED7E7D80",
+      "importIds": {
+        "yuanshen": ["62_18"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.74796, 37.47498],
+      "id": "58A7E4B5A4FA78819FB8FDADB933FBF7F6A15F0F",
+      "importIds": {
+        "yuanshen": ["62_19"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.42252, 35.58837],
+      "id": "DAC7571BA502878697F32E63FE9B2C62A2D19A0C",
+      "importIds": {
+        "yuanshen": ["62_20"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.79961, 32.43165],
+      "id": "60303943ED45D04D91D5DFD9E2579B810B1F2CCA",
+      "importIds": {
+        "yuanshen": ["62_21"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-41.44409, 35.79164],
+      "id": "255D090AA9047675689D226AECB7509EF73000B9",
+      "importIds": {
+        "yuanshen": ["62_22"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-41.49898, 35.85938],
+      "id": "A827A0C9885EC407B4C58386CA22B4CE5E62FE0D",
+      "importIds": {
+        "yuanshen": ["62_23"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-40.91438, 23.57721],
+      "id": "0271AB5183FD0244D05EC4902C81F3779D9AEF28",
+      "importIds": {
+        "yuanshen": ["62_24"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.96745, 48.68775],
+      "id": "7F5604F4212D3C157AAC4AE3BD47F9C8D454058E",
+      "importIds": {
+        "yuanshen": ["62_25"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.96161, 49.35058],
+      "id": "35CBF290A5C2ACA0DA3A966E335FF59A7BB93925",
+      "importIds": {
+        "yuanshen": ["62_26"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.14281, 49.13086],
+      "id": "F371C7E727EC358E627A62A29438B35AEE4B3C72",
+      "importIds": {
+        "yuanshen": ["62_27"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.57273, 37.45606],
+      "id": "3EAB332A957AA2E7865B816EE54053519D68E48F",
+      "importIds": {
+        "yuanshen": ["62_28"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-49.35755, 37.40367],
+      "id": "10FA2EC62E90C696705E057AC100835E961970BA",
+      "importIds": {
+        "yuanshen": ["62_29"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.41815, 35.32654],
+      "id": "341398DCDE4D8F623F840543D9A99A6AD7245AC8",
+      "importIds": {
+        "yuanshen": ["62_30"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.42743, 35.41531],
+      "id": "82F5192BD9D0488A5CF5EEDEA0B906BC7932A17C",
+      "importIds": {
+        "yuanshen": ["62_31"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草"
+      },
+      "popupContent": {
+        "zh": "这里是一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/62_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.77072, 42.53789],
+      "id": "0C8D02AE34281177C6698F916617DF7DF59ADCED",
+      "importIds": {
+        "yuanshen": ["61_17"]
+      },
+      "popupTitle": {
+        "zh": "金鱼草-蒙德",
+        "en": "NEW MARKER: #17"
+      },
+      "popupContent": {
+        "zh": "这里有一株金鱼草"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_17.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

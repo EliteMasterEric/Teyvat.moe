@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Luminescent Spine",
-    "ru": "Светящееся Брюшко"
+    "ru": "Светящееся Брюшко",
+    "zh": ""
   },
   "description": {
     "en": "The light-emitting part of a firefly. Used in Alchemy."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "luminescent-spine",
     "base": {
@@ -16,5 +20,366 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-44.31598, 22.71423],
+      "id": "D33F6FA8118A4B2F2BCB68EDE2345FD120E51E7B",
+      "importIds": {
+        "yuanshen": ["58_1"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.34688, 22.77377],
+      "id": "1105598004D27FC0073929B1AD216EEF997C652B",
+      "importIds": {
+        "yuanshen": ["58_2"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-58.92388, 25.22373],
+      "id": "12816A92E4C6EED398FD6122EA75D23C3B0C147C",
+      "importIds": {
+        "yuanshen": ["58_3"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.32994, 27.19574],
+      "id": "1EFEDCB3AB16F0A7EDB7600DDED04C80EB527B03",
+      "importIds": {
+        "yuanshen": ["58_4"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.7751, 31.71698],
+      "id": "B7128B5FCEAFDAB32373C9C110CEB60688B83727",
+      "importIds": {
+        "yuanshen": ["58_5"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.82083, 59.44241],
+      "id": "A2F72664177640D0C7F0BE20BF2B5A622F01B93A",
+      "importIds": {
+        "yuanshen": ["58_6"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.83705, 59.49186],
+      "id": "4244AA9083CA853B7074D04742FEA40659F01B5A",
+      "importIds": {
+        "yuanshen": ["58_7"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-53.78838, 59.32154],
+      "id": "660A159B503873872BBA889A1CFB0902342B02D6",
+      "importIds": {
+        "yuanshen": ["58_8"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.88205, 41.38079],
+      "id": "4A0F6BCA5490A41BE814255607C9BBCF8F486272",
+      "importIds": {
+        "yuanshen": ["58_9"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.98801, 32.48161],
+      "id": "28FABDF09A25C92490ABEDDE74CA6BDB4EABBFC3",
+      "importIds": {
+        "yuanshen": ["58_10"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.99257, 32.54754],
+      "id": "E82A3FA2535A4399A32AE717E592CEFA9AACE51B",
+      "importIds": {
+        "yuanshen": ["58_11"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-45.43505, 22.65438],
+      "id": "7211B8C34A35AB2ADEC4575E616D2C396B9DBAEF",
+      "importIds": {
+        "yuanshen": ["58_12"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.79576, 35.86005],
+      "id": "ECCDCFD784039EDFE450F7DB509026AE27D7D700",
+      "importIds": {
+        "yuanshen": ["58_13"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-43.67317, 35.82092],
+      "id": "6E10D3341F44A207BE998F208C6A9482B3A3FAFF",
+      "importIds": {
+        "yuanshen": ["58_14"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-40.84211, 23.70374],
+      "id": "0ECE950471EA050F25C7B7B348F522A72C03A32D",
+      "importIds": {
+        "yuanshen": ["58_15"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-40.75833, 23.69202],
+      "id": "AE51C54036D494D3E844B567EE40A2A874C0EE84",
+      "importIds": {
+        "yuanshen": ["58_16"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.42921, 29.22731],
+      "id": "2EFDDE04C84111C3F3BC3C9A5686E672531D2C57",
+      "importIds": {
+        "yuanshen": ["58_17"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.44743, 29.1559],
+      "id": "1C83122BA52404095467096B03845F3764413BBA",
+      "importIds": {
+        "yuanshen": ["58_18"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-48.42326, 29.57769],
+      "id": "0A890970B56064CB4E5EFACEDB53A4E0715F8AE2",
+      "importIds": {
+        "yuanshen": ["58_19"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.13024, 28.97156],
+      "id": "BEB06D1E84D3D88AD6417417F71B5A33082EB121",
+      "importIds": {
+        "yuanshen": ["58_20"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.42911, 27.00989],
+      "id": "9BEDC37188D7D037BE78F186C057FC8991EC3CBE",
+      "importIds": {
+        "yuanshen": ["58_21"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.46163, 27.01172],
+      "id": "50D1C04B538C509E2DA5CEA93F85CAE044AB6F49",
+      "importIds": {
+        "yuanshen": ["58_22"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.3725, 27.03735],
+      "id": "FC3763D779CC62A72D2619E3D7ECFF20D2D10FD7",
+      "importIds": {
+        "yuanshen": ["58_23"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-39.34136, 27.07763],
+      "id": "BF596A0BF40CAEEB9588CA056147B3B900E586DD",
+      "importIds": {
+        "yuanshen": ["58_24"]
+      },
+      "popupTitle": {
+        "zh": "萤火虫"
+      },
+      "popupContent": {
+        "zh": "捕捉萤火虫可以获得一个发光髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/58_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

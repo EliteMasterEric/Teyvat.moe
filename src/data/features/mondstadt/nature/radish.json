@@ -1,12 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Radish",
-    "ru": "Редис"
+    "ru": "Редис",
+    "zh": ""
   },
   "description": {
     "en": "Rich in fiber and nutrients. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "radish",
     "base": {
@@ -16,5 +20,246 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-30.4092, 57.83935],
+      "id": "661D4698C057DEBB350A451FE7B29A6B35A0C849",
+      "importIds": {
+        "yuanshen": ["81_1"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #1"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.38392, 57.9364],
+      "id": "9B74A5A0C70CDDE5086EAB535F87C7F93AABB534",
+      "importIds": {
+        "yuanshen": ["81_2"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #2"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.46287, 57.91443],
+      "id": "FEFD1BC6A9508B89E3AD592528344DD4B6244213",
+      "importIds": {
+        "yuanshen": ["81_3"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #3"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.16974, 51.84998],
+      "id": "A7672310CBC3341770905557914DEC63E0FD3AC7",
+      "importIds": {
+        "yuanshen": ["81_4"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #4"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.12835, 51.92688],
+      "id": "811F1EAF1696438768B9C11884565BB747422C43",
+      "importIds": {
+        "yuanshen": ["81_5"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #5"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.21112, 51.85547],
+      "id": "39205768887B1C23CD11D740E7E8DD91C39A46CE",
+      "importIds": {
+        "yuanshen": ["81_6"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #6"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.17894, 51.94336],
+      "id": "EAAFC858C138D0C0FDEC833B9F730CBCD8F1E04F",
+      "importIds": {
+        "yuanshen": ["81_7"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #7"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.27084, 50.80627],
+      "id": "57508F396EDC36FF15D9C17EA2C352D9D023DFFB",
+      "importIds": {
+        "yuanshen": ["81_8"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #8"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.29839, 50.85571],
+      "id": "DF88B0676DA0A31600A98BC2A1BE7616792A7220",
+      "importIds": {
+        "yuanshen": ["81_9"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #9"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.32594, 50.80079],
+      "id": "96CF090CEEB3184248AD691AC6CDEA359BD2B653",
+      "importIds": {
+        "yuanshen": ["81_10"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #10"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.29839, 50.75683],
+      "id": "D5629C232720EA501501D5AB16853748DA269715",
+      "importIds": {
+        "yuanshen": ["81_11"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #11"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.78345, 58.6615],
+      "id": "54FED1421CA907A8EB7FC1165FB713A13EAA1644",
+      "importIds": {
+        "yuanshen": ["81_12"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #12"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.88808, 57.98035],
+      "id": "9000D1B638C2B75D9D0E2C72D53558B5B062ABD7",
+      "importIds": {
+        "yuanshen": ["81_13"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #13"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.94464, 57.96936],
+      "id": "47F077ED2A996EE1696EDE7CC7324EAC1812E337",
+      "importIds": {
+        "yuanshen": ["81_14"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #14"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.92579, 57.90894],
+      "id": "9D7DD08896B7EBD13E83BCB245E3D3CB3A3BF8A7",
+      "importIds": {
+        "yuanshen": ["81_15"]
+      },
+      "popupTitle": {
+        "zh": "白萝卜-蒙德",
+        "en": "NEW MARKER: #15"
+      },
+      "popupContent": {
+        "zh": "这里有一根白萝卜"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/81_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

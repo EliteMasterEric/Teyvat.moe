@@ -93,7 +93,7 @@ export const TabBar = ({
         if (!tab.enabled) return null;
 
         return icons ? (
-          <CloneProps value={tab.value}>
+          <CloneProps key={tab.value} value={tab.value}>
             {(tabProps) => (
               <Tooltip title={tab.label}>
                 <MaterialTab

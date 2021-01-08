@@ -27,6 +27,17 @@ export const isDev = () => {
 };
 
 /**
+ * For url https://localhost:3000?id=test&id=test2&query=fun
+ * Returns {"id": ["test", "test2"], "query": ["fun"]}
+ */
+export const getURLParams = () => {
+  if (typeof window === 'undefined') return {};
+  const urlParams = new URLSearchParams(window.location.search);
+  const keys = Object.fromEntries([...urlParams.keys()].map((key) => [key, urlParams.getAll(key)]));
+  return keys;
+};
+
+/**
  * Encode an input string in base64.
  * @param {String} input The string to encode.
  * @returns {String} The encoded string.

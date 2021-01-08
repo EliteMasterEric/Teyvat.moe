@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Magical Crystal Chunk",
     "ru": "Магический кристальный обломок"
@@ -7,7 +8,8 @@
     "en": "Crystal eroded by Ley Line energy that requires Original Resin to refine into Mystic Enhancement Ore.", 
     "ru": "Кристалл, омытый энергией Артерий Земли, который требует Первородную Смолу для усовершенствования в Волшебную руду усиления."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 259200,
   "icons": {
     "filter": "magical-crystal-chunk",
@@ -20,6 +22,7 @@
   },
   "data": [
     {
+
       "geometry": {
         "type": "Point",
         "coordinates": [-24.332081860073597, 49.81201171875001]
@@ -90,9 +93,10 @@
         "popupMedia": "mondstadt/magical-crystal-chunk/group-b"
       },
       "id": 4
-    },
 
+    },
     {
+
       "geometry": {
         "type": "Point",
         "coordinates": [-28.44937385955666, 49.96582031250001]
@@ -128,8 +132,8 @@
       },
       "id": 6
     },
-
     {
+
       "geometry": {
         "type": "Point",
         "coordinates": [-28.950475674848008, 54.12963867187501]

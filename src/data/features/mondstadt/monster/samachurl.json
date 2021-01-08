@@ -1,13 +1,16 @@
 {
+  "format": 2,
   "name": {
     "en": "Samachurl",
-    "ru": "Шамачурл"
+    "ru": "Шамачурл",
+    "zh": ""
   },
   "description": {
     "en": "Spiritual leaders who wield elemental powers. Drops Divining Scroll.", 
     "ru": "Шаманы хиличурлов. Могут призывать на помощь элементы. Возможные награды: Свиток божественной магии."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "samachurl",
@@ -18,5 +21,276 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-18.03097, 64.70398],
+      "id": "7E03A61970368607DBD055D2B41FF006064764F0",
+      "importIds": {
+        "yuanshen": ["95_1"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_1.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.06019, 41.3855],
+      "id": "A7146C170EE62FBF8F0B231F2355889D1351D7A6",
+      "importIds": {
+        "yuanshen": ["95_2"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_2.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.56039, 38.39722],
+      "id": "2498639F1DFCEC5D3B0E12AD9B4A6D86D4FF3DB7",
+      "importIds": {
+        "yuanshen": ["95_3"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_3.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.01402, 38.10608],
+      "id": "A59B0B6F409B8BA41ABFDBDA5653BE243879A828",
+      "importIds": {
+        "yuanshen": ["95_4"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_4.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.07973, 38.18848],
+      "id": "7AE87BEB998632FFDA949F2932447E272F2C6756",
+      "importIds": {
+        "yuanshen": ["95_5"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_5.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.79772, 39.98474],
+      "id": "E5C5B7F6DB016011C33EDBA56A84F4617A496970",
+      "importIds": {
+        "yuanshen": ["95_6"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_6.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.87006, 40.06714],
+      "id": "4FCAD6CE7942DFB450DD4B514FA4A79491D51C25",
+      "importIds": {
+        "yuanshen": ["95_7"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_7.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.72039, 40.60547],
+      "id": "1ED4CD7D16B54855985E7435E7529F363A47B88A",
+      "importIds": {
+        "yuanshen": ["95_8"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_8.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.76523, 52.51465],
+      "id": "0ABB16B999E18599AAD292D337FE6B78E197E764",
+      "importIds": {
+        "yuanshen": ["95_9"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_9.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.02998, 44.12659],
+      "id": "F9A2F266BFF8C5CF6BE8AC444708CE15BAE15C9D",
+      "importIds": {
+        "yuanshen": ["95_10"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_10.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.55501, 46.53259],
+      "id": "B7A047394ACF4C7A7542E9E2036E2C5B251416E0",
+      "importIds": {
+        "yuanshen": ["95_11"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.92188, 47.23572],
+      "id": "9AB57369CB01D0F43F3556D4D4E3273142A68431",
+      "importIds": {
+        "yuanshen": ["95_12"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.005, 47.30164],
+      "id": "E5828B7EB2AF7F6F9FEF5BB072C3FC923EBDF17C",
+      "importIds": {
+        "yuanshen": ["95_13"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.04804, 71.71326],
+      "id": "FAC8A299D4BD8824F55B1EDE6FF22865B5929E6F",
+      "importIds": {
+        "yuanshen": ["95_14"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只丘丘萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.43271, 69.63684],
+      "id": "086CB2462894CC7A23F5E6DF2B66E9364C7FFFD4",
+      "importIds": {
+        "yuanshen": ["95_15"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只QQ萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.93204, 65.66528],
+      "id": "BB8CE5F82DC4FFA9643FCC0AA46D4B0A96A9A9F6",
+      "importIds": {
+        "yuanshen": ["95_16"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只QQ萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.59704, 62.31445],
+      "id": "7911C786AA8256082A8AB233F1E2C7D57F8D4193",
+      "importIds": {
+        "yuanshen": ["95_17"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只QQ萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.01509, 70.4718],
+      "id": "DFD496286844F7D7F9A1A320B3DBA448209731EE",
+      "importIds": {
+        "yuanshen": ["95_18"]
+      },
+      "popupTitle": {
+        "zh": "丘丘萨满"
+      },
+      "popupContent": {
+        "zh": "这里有一只QQ萨满"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/95_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

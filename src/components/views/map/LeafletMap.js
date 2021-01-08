@@ -27,6 +27,7 @@ import MapEditorHandler from '~/components/views/map/MapEditorHandler';
 import MapPositionHandler from '~/components/views/map/MapPositionHandler';
 
 import './LeafletMap.css';
+import DebugControls from './DebugControls';
 
 // A link back to the main repository.
 const ATTRIBUTION =
@@ -61,6 +62,7 @@ const _LeafletMap = () => {
 
       {/* Controls the zoom buttons in the top left corner. */}
       <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
+      <DebugControls />
 
       {/* Display each available feature. */}
       {_.keys(MapFeatures).map((key) => {

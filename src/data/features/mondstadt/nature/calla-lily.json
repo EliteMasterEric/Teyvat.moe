@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Calla Lily",
-    "ru": "Лилия Калла"
+    "ru": "Лилия Калла",
+    "zh": "嘟嘟莲"
   },
   "description": {
     "en": "A flower that grows near water sources. Used in Recipes or Character Ascension."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 172800,
   "icons": {
     "filter": "calla-lily",
@@ -19,524 +22,776 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.4442955895, 58.4587565719]
+      "coordinates": [-31.4443, 58.45876],
+      "id": "5B5FE1DFFDA28E43E1E4072792FF81E5D4B7746A",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/1"],
+        "yuanshen": ["8_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5472845525, 58.4807305154]
+      "coordinates": [-31.54728, 58.48073],
+      "id": "790DAFE29C0DBE9FB05CDE83035D30C33F78B435",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/2"],
+        "yuanshen": ["8_2"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 2
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.4349273342, 58.2829650235]
+      "coordinates": [-31.43493, 58.28297],
+      "id": "FAEB5CA8E47BBAA8A5F62A6311D608804726AC38",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/3"],
+        "yuanshen": ["8_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.5098471451, 58.2390171365]
+      "coordinates": [-31.50985, 58.23902],
+      "id": "82C5AB3CA06EEF95778E6717FCCB3487581F8AED",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/4"],
+        "yuanshen": ["8_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.6221143215, 58.1511213623]
+      "coordinates": [-31.62211, 58.15112],
+      "id": "ADDC5928E77C7B1336B1DE5118A5488956B86F2D",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/5"],
+        "yuanshen": ["8_5"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 5
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.6501599876, 58.0851995317]
+      "coordinates": [-31.65016, 58.0852],
+      "id": "F6959AED91B2EA1B1776E9628669691DAF3DE953",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/6"],
+        "yuanshen": ["8_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.7342462116, 58.0412516446]
+      "coordinates": [-31.73425, 58.04125],
+      "id": "482DE140713A6CCC4F694B90144D2D7C4128535A",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/7"],
+        "yuanshen": ["8_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0419091767, 58.0961865034]
+      "coordinates": [-32.04191, 58.09619],
+      "id": "345968A4B1A148E4B0BF22BDFA055E5A90ACB4CB",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/8"],
+        "yuanshen": ["8_8"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 8
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.1256386293, 58.118160447]
+      "coordinates": [-32.12564, 58.11816],
+      "id": "63055C39C3488C1D0E162F9CBE65C452EDA39489",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/9"],
+        "yuanshen": ["8_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.2743013867, 57.9203949551]
+      "coordinates": [-32.2743, 57.92039],
+      "id": "0AB30A3C3A1564D0EB53CC087AD6D5C9CEEE27D9",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/10"],
+        "yuanshen": ["8_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.5060998325, 58.3378998824]
+      "coordinates": [-32.5061, 58.3379],
+      "id": "CD64AEAE913D5E56E480AFB3E4A168879E9E416A",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/11"],
+        "yuanshen": ["8_11"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 11
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.3949108247, 58.4148086848]
+      "coordinates": [-32.39491, 58.41481],
+      "id": "BE6DA9EE24C70884945B2F28D9DB2A1102FD62C4",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/12"],
+        "yuanshen": ["8_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.3856388831, 58.7224438944]
+      "coordinates": [-32.38564, 58.72244],
+      "id": "5CB0CE7E5E14EC7CDBC00B8E751795FEFE8722C1",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/13"],
+        "yuanshen": ["8_13"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 13
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.302148596, 58.7444178379]
+      "coordinates": [-32.30215, 58.74442],
+      "id": "21F9795DE41CA30175FC521D85C189020A1D19D1",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/14"],
+        "yuanshen": ["8_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.7155669695, 58.6784960073]
+      "coordinates": [-31.71557, 58.6785],
+      "id": "C36A3317993DAC9C4A6BA7FF68CBE07542CB9641",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/15"],
+        "yuanshen": ["8_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.4164002123, 47.7580034643]
+      "coordinates": [-31.4164, 47.758],
+      "id": "6246EA10F1B0B845B476C6289B8D8EEA14E898D1",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/16"],
+        "yuanshen": ["8_16"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 16
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.4164002123, 47.8788601538]
+      "coordinates": [-31.4164, 47.87886],
+      "id": "5308418BE324D14A2A559680470F66F8D06EB1BF",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/17"],
+        "yuanshen": ["8_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.720864242, 50.0432498248]
+      "coordinates": [-34.03082, 50.76839],
+      "id": "0B6744712718651B7CDF71BAAD147196C11BF262",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/19"],
+        "yuanshen": ["8_19"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.0308189142, 50.7683899617]
+      "coordinates": [-34.43026, 49.04344],
+      "id": "E66245153F53E555CC61711656673BE4FC1B0C0E",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/20"],
+        "yuanshen": ["8_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 19
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4302613078, 49.0434353936]
+      "coordinates": [-34.38497, 48.58198],
+      "id": "2E1AE7294E89613AC01C93FA57A29A52740F867D",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/21"],
+        "yuanshen": ["8_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.3849656139, 48.5819825792]
+      "coordinates": [-22.26636, 64.24839],
+      "id": "7C17418B4601C0019D2334A605ECE818EE39D330",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/24"],
+        "yuanshen": ["8_24"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.6000142475, 53.1413010273]
+      "coordinates": [-22.33747, 64.3253],
+      "id": "BBDE948733695AF135F01271778C5EFDF3702ED0",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/25"],
+        "yuanshen": ["8_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 22
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.6286520261, 53.0643922249]
+      "coordinates": [-23.39975, 65.30314],
+      "id": "CFEE015C1E42C16BFB8F2CA3A8D165CD84296E63",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/26"],
+        "yuanshen": ["8_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.2663563455, 64.2483912258]
+      "coordinates": [-23.33928, 65.38005],
+      "id": "BEC38FAC78F9F55EE122AE40017DDBB73AEE0174",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/27"],
+        "yuanshen": ["8_27"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 24
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-22.3374686914, 64.3253000282]
+      "coordinates": [-24.90304, 61.80942],
+      "id": "5D547921DBB2FA29EAB6D11FF45F33FF3812C59D",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/28"],
+        "yuanshen": ["8_28"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.3997538227, 65.3031405159]
+      "coordinates": [-24.99265, 61.83139],
+      "id": "ADD7519F2D7AD575A0D4656103649907A273D4E3",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/29"],
+        "yuanshen": ["8_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.3392767881, 65.3800493183]
+      "coordinates": [-24.90304, 61.91929],
+      "id": "13D1887E400511F3C319562F9A8F5B0E94F6DA86",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/30"],
+        "yuanshen": ["8_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 27
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9030448395, 61.809417371]
+      "coordinates": [-21.68513, 68.07184],
+      "id": "4E5FFFED861121A87C91D1C07708A07ED9A565D3",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/31"],
+        "yuanshen": ["8_31"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9926462907, 61.8313913145]
+      "coordinates": [-21.77693, 68.12677],
+      "id": "BD3E06EF35C6A304028CD7BFC71D45457BF532DB",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/32"],
+        "yuanshen": ["8_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-24.9030448395, 61.9192870887]
+      "coordinates": [-36.93801, 67.48941],
+      "id": "BA09A061D80410C961C370F7F70AFDEC2F0D82B7",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/37"],
+        "yuanshen": ["8_37"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 30
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.6851325089, 68.0718374492]
+      "coordinates": [-36.96433, 67.62125],
+      "id": "1D84A41A84420D0A2D050D44DDFB37E61A00397F",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/38"],
+        "yuanshen": ["8_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-21.7769317766, 68.1267723081]
+      "coordinates": [-17.86083, 44.1876],
+      "id": "5EF5199087279A70D153B78D31C13F0FCD31F628",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/39"],
+        "yuanshen": ["8_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.2595127843, 51.981814764]
+      "coordinates": [-17.72491, 43.04495],
+      "id": "1E1BE5F77306616FD17F6983EE4153E331E97A9E",
+      "importIds": {
+        "gm_legacy": ["mondstadtCallaLily/40"],
+        "yuanshen": ["8_40"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 33
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupAttribution": "Unknown"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3375970591, 52.0422492903]
+      "coordinates": [-33.72282, 50.0647],
+      "id": "34DDDBCE7A07A269E5EC45DF026DEC372C916E9D",
+      "importIds": {
+        "yuanshen": ["8_18"],
+        "gm_legacy": ["mondstadtCallaLily/18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_18.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3487246725, 51.9660567771]
+      "coordinates": [-29.57984, 53.14819],
+      "id": "81747168B4DAE79A1FCCAD9A342CC34C9D198A60",
+      "importIds": {
+        "yuanshen": ["8_22"],
+        "gm_legacy": ["mondstadtCallaLily/22"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_22.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.3877296615, 52.0209916359]
+      "coordinates": [-29.66419, 53.13538],
+      "id": "04B0584D60FFE3FB6D16106E9C3649B54537D913",
+      "importIds": {
+        "yuanshen": ["8_23"],
+        "gm_legacy": ["mondstadtCallaLily/23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 36
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_23.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9380091829, 67.4894056525]
+      "coordinates": [-27.31159, 51.93238],
+      "id": "18AB6BFC22B41A1BA6D729AB729F1ED98B2B0C5C",
+      "importIds": {
+        "yuanshen": ["8_33"],
+        "gm_legacy": ["mondstadtCallaLily/33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_33.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9643337525, 67.6212493138]
+      "coordinates": [-27.34412, 52.01477],
+      "id": "0BAEC27A4FEEB0F6CB04B7126D706346FA1DBCA9",
+      "importIds": {
+        "yuanshen": ["8_34"],
+        "gm_legacy": ["mondstadtCallaLily/34"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_34.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.8608263128, 44.1875987242]
+      "coordinates": [-27.35714, 51.99097],
+      "id": "ADCE09894EBB2D2ABF3154899C7B09512F43EF38",
+      "importIds": {
+        "yuanshen": ["8_35"],
+        "gm_legacy": ["mondstadtCallaLily/35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 39
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_35.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.7249107098, 43.04495366]
+      "coordinates": [-27.36039, 52.02576],
+      "id": "502EAC384B56F5552657CB2D1B67297CF3503291",
+      "importIds": {
+        "yuanshen": ["8_36"],
+        "gm_legacy": ["mondstadtCallaLily/36"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "嘟嘟莲"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.36008, 62.89124],
+      "id": "4064871CF3093DE71A936730EB8ABC41315CFE30",
+      "importIds": {
+        "yuanshen": ["8_41"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.70366, 68.08777],
+      "id": "5712275280EFE97BD3D3A19D5ECE23D37F2A4630",
+      "importIds": {
+        "yuanshen": ["8_42"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_42.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.73448, 68.16467],
+      "id": "FC48C05D17D2B330C2A45C0C35CE4905AB0B47E5",
+      "importIds": {
+        "yuanshen": ["8_43"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_43.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.44498, 66.53503],
+      "id": "FB35A5E121D538B438004F033CC4D31956B8AF34",
+      "importIds": {
+        "yuanshen": ["8_44"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_44.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.46076, 66.57349],
+      "id": "38CFFB5D2141EFF2660391DFDFAEBEA5C36A8F31",
+      "importIds": {
+        "yuanshen": ["8_45"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_45.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-38.51376, 66.86096],
+      "id": "197F77B197D6781685746AA614BD5E89C1172416",
+      "importIds": {
+        "yuanshen": ["8_46"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_46.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.98921, 43.52845],
+      "id": "4B89E077A5BD375EE4BC99F8BBECBE71303479CD",
+      "importIds": {
+        "yuanshen": ["8_47"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_47.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.31976, 35.76049],
+      "id": "C741FF6B9B96352E258B2FEA0F2D48CD90CECC9D",
+      "importIds": {
+        "yuanshen": ["8_48"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_48.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.56062, 66.44531],
+      "id": "EAB53BDF8CC88BF67C3B66BBCF484D112D3C16DE",
+      "importIds": {
+        "yuanshen": ["8_49"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_49.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.64813, 66.34094],
+      "id": "B9C1B2FDB41D2023D70CF57826E42043354A427F",
+      "importIds": {
+        "yuanshen": ["8_50"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_50.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.68356, 66.33461],
+      "id": "B13CB9A848A75027DA467D7E90A858FE96B0CF04",
+      "importIds": {
+        "yuanshen": ["8_51"]
+      },
+      "popupTitle": {
+        "zh": "嘟嘟莲"
+      },
+      "popupContent": {
+        "zh": "这是一个嘟嘟莲"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/8_51.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

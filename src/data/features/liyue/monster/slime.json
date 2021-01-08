@@ -1,12 +1,15 @@
 {
+  "format": 2,
   "name": {
     "en": "Slime",
-    "ru": "Слайм"
+    "ru": "Слайм",
+    "zh": "史莱姆"
   },
   "description": {
     "en": "Beings of pure elemental energy. Drops Slime Condensate."
   },
-  "cluster": true,
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "slime",
@@ -19,2305 +22,2673 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1653215435, 46.3394635603]
+      "coordinates": [-52.16532, 46.33946],
+      "id": "ABFAE9B643843D9F76EA577D78C835B1051EC79E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/1"],
+        "yuanshen": ["41_1"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 1
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.9153767171, 46.2790506377]
+      "coordinates": [-51.91538, 46.27905],
+      "id": "8A71C3E8042B8FD81055A2F606D4E6834E864C4E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/2"],
+        "yuanshen": ["41_2"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 2
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.8170439401, 47.5202615934]
+      "coordinates": [-51.81704, 47.52026],
+      "id": "80B12D997220C7E92741BED2B024ABD1D8E440B9",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/3"],
+        "yuanshen": ["41_3"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 3
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.6911542874, 48.0643062741]
+      "coordinates": [-51.69115, 48.06431],
+      "id": "FD1C24F666CD2CAD79EA1BB99576ACE6CDF7D16A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/4"],
+        "yuanshen": ["41_4"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 4
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.0270001387, 48.4983029614]
+      "coordinates": [-52.027, 48.4983],
+      "id": "0A83B8BA934322022A667393A830AA922EE3AC75",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/5"],
+        "yuanshen": ["41_5"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 5
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.3736487635, 48.7454467357]
+      "coordinates": [-52.37365, 48.74545],
+      "id": "46A2E7CB5CE3085A4FBAD14EB8777AB4416B7FD5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/6"],
+        "yuanshen": ["41_6"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 6
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.7873928049, 48.6191288066]
+      "coordinates": [-52.78739, 48.61913],
+      "id": "100675C4AA5EBF9B4ADCF8ADA9CE4ADFCD242D0A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/7"],
+        "yuanshen": ["41_7"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 7
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.0489543819, 48.1028729224]
+      "coordinates": [-53.04895, 48.10287],
+      "id": "D252A96AFE9ECED98FE618B678A049B3AB5DFCAC",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/8"],
+        "yuanshen": ["41_8"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 8
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.827225472, 47.7074428834]
+      "coordinates": [-52.82723, 47.70744],
+      "id": "A78E65A14B2ABF4DFB1D364DB061ED5F8063E375",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/9"],
+        "yuanshen": ["41_9"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 9
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.6718685572, 54.1341747896]
+      "coordinates": [-54.67187, 54.13417],
+      "id": "8CD6F9F739D34804A931AB0910C2EF8B9EA79684",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/10"],
+        "yuanshen": ["41_10"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 10
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.8587797881, 55.6499899391]
+      "coordinates": [-54.85878, 55.64999],
+      "id": "CD5E71CCF49613EFCEF93978D7877CD7AE7D9D48",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/11"],
+        "yuanshen": ["41_11"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 11
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.0114419785, 51.963471948]
+      "coordinates": [-53.01144, 51.96347],
+      "id": "1324D204C392F6FE0B2A6CB4F2D8A8F48FA7EBE2",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/12"],
+        "yuanshen": ["41_12"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 12
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.430986321, 53.9417487787]
+      "coordinates": [-52.43099, 53.94175],
+      "id": "4EF39CADF47C0992CA5088D027D45EA4C9A3DDDC",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/13"],
+        "yuanshen": ["41_13"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 13
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.3930413975, 58.9376666585]
+      "coordinates": [-53.39304, 58.93767],
+      "id": "2DEAA5E738F90F5004D690EA5AA0B0B44887A145",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/14"],
+        "yuanshen": ["41_14"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 14
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.525527991, 59.7965111042]
+      "coordinates": [-53.52553, 59.79651],
+      "id": "F4D4AFC98C326DE441F39F6A89FC70BBA8E286A4",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/15"],
+        "yuanshen": ["41_15"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 15
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.8798438331, 59.6097802524]
+      "coordinates": [-53.87984, 59.60978],
+      "id": "5E00DF42C204F8BAA6C63AA713268D5F42ADFF76",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/16"],
+        "yuanshen": ["41_16"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 16
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.0638771125, 53.6728656686]
+      "coordinates": [-54.06388, 53.67287],
+      "id": "B50E8FA734BDC9DF7279E1919F8A57BA5617D139",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/17"],
+        "yuanshen": ["41_17"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 17
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.8085054769, 53.8925490236]
+      "coordinates": [-53.80851, 53.89255],
+      "id": "59427F32D589FC53BF5B96012F5EEBF99A8A994F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/18"],
+        "yuanshen": ["41_18"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 18
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.9915757782, 45.7628444421]
+      "coordinates": [-49.99158, 45.76284],
+      "id": "52A62CBCE564DC9307391D2E2288AA1D51A45136",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/19"],
+        "yuanshen": ["41_19"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 19
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.4448387103, 46.9491345591]
+      "coordinates": [-49.44484, 46.94913],
+      "id": "BECBAE49CD31772448B88B746BAFD2C59388E66F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/20"],
+        "yuanshen": ["41_20"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 20
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.3805323069, 46.8722453848]
+      "coordinates": [-49.38053, 46.87225],
+      "id": "8E2F822E96AF56C9191B9E12A574DDF6C555CBBE",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/21"],
+        "yuanshen": ["41_21"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 21
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.6160944128, 47.9484702254]
+      "coordinates": [-47.61609, 47.94847],
+      "id": "24523079D66705C7EF10FDE761544624C915B918",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/22"],
+        "yuanshen": ["41_22"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 22
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5450026636, 48.1905442693]
+      "coordinates": [-47.545, 48.19054],
+      "id": "67D510AAF9B26266CDAC49224092E33A9B908072",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/23"],
+        "yuanshen": ["41_23"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 23
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1077739359, 46.3421448793]
+      "coordinates": [-46.10777, 46.34214],
+      "id": "35FCA456F6031A568B547CCDCED98A259C77090E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/24"],
+        "yuanshen": ["41_24"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 24
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.8693967547, 47.5691550199]
+      "coordinates": [-45.8694, 47.56916],
+      "id": "801AE4DB787C0FF60E6AE06A26E6B95BB1D5C0E5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/25"],
+        "yuanshen": ["41_25"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 25
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.8910213617, 47.7167276305]
+      "coordinates": [-45.89102, 47.71673],
+      "id": "AB419B37CA3A406AA75A076EF075E34CB78364BA",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/26"],
+        "yuanshen": ["41_26"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 26
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.4234452782, 49.3108343232]
+      "coordinates": [-45.68491, 49.45363],
+      "id": "BF192A09C50F0A82E8BAD8B3771A0606F0FC1C5D",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/28"],
+        "yuanshen": ["41_28"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 27
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.684911105, 49.453628504]
+      "coordinates": [-45.03471, 49.66919],
+      "id": "D7F36EAB678BF9BA4955C9C542FC40B07EAEDE43",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/29"],
+        "yuanshen": ["41_29"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 28
+      "popupContent": {
+        "zh": "这里有一个大草史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.0347062584, 49.6691872927]
+      "coordinates": [-44.76056, 51.04084],
+      "id": "DA9178E55619B1F2369E3BB11B23A3232C718A3F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/30"],
+        "yuanshen": ["41_30"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 29
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7605590422, 51.0408407438]
+      "coordinates": [-44.29047, 49.77818],
+      "id": "876F21A1A6360E26F28BC067838E6C37F877AB9F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/31"],
+        "yuanshen": ["41_31"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 30
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2904709688, 49.7781788625]
+      "coordinates": [-45.61603, 52.01922],
+      "id": "C2E3CE13FBB4B6E0A4ABDF4577F62E12D2FF9A1B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/32"],
+        "yuanshen": ["41_32"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 31
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.6160273736, 52.0192158898]
+      "coordinates": [-44.83846, 52.4533],
+      "id": "05C1104CB252A3C0474031AA2342C23EAB5B5C1A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/33"],
+        "yuanshen": ["41_33"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 32
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.8384612729, 52.4532989921]
+      "coordinates": [-44.16835, 45.39506],
+      "id": "1666180081D7A64EB6ADC9395CED370282CC16CD",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/34"],
+        "yuanshen": ["41_34"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 33
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.1683527475, 45.3950552138]
+      "coordinates": [-44.08952, 45.31267],
+      "id": "EE1FEAEE31A842E1DEBC6F46F32DB79480D6AC2B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/35"],
+        "yuanshen": ["41_35"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 34
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0895245263, 45.3126739557]
+      "coordinates": [-34.81268, 40.50581],
+      "id": "ADC886A66A061EA782470982771B8BA7D9D27185",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/58"],
+        "yuanshen": ["41_58"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 35
+      "popupContent": {
+        "zh": "这里是山洞下的史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8126798083, 40.5058129815]
+      "coordinates": [-32.04481, 43.16422],
+      "id": "4A74D3DAD0DA87A697BD5352F9B8CF6BFE60A5D3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/59"],
+        "yuanshen": ["41_59"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 36
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0448065279, 43.1642202984]
+      "coordinates": [-44.1384, 46.10839],
+      "id": "FD3110DFF7597EE2DF63BDF32A00482835F9361E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/38"],
+        "yuanshen": ["41_38"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 37
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.1383957391, 46.1083888068]
+      "coordinates": [-43.28843, 45.99891],
+      "id": "67ED42043285D0860458C6B5AC82BEB01EBB4DA7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/39"],
+        "yuanshen": ["41_39"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 38
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2884296591, 45.9989057516]
+      "coordinates": [-42.78674, 46.52065],
+      "id": "15EF77492953E92F974AD47C649CFB9DAD4E9E4F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/40"],
+        "yuanshen": ["41_40"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 39
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.7867442269, 46.5206537197]
+      "coordinates": [-42.7259, 45.01561],
+      "id": "401F07BD1248F2A7A0CC29F361F8608A38595394",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/41"],
+        "yuanshen": ["41_41"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 40
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.7259003205, 45.0156067005]
+      "coordinates": [-41.47403, 48.30451],
+      "id": "A018A324F8EF21F36962441BDA5D5F9F9885688A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/42"],
+        "yuanshen": ["41_42"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 41
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.4740341815, 48.3045126735]
+      "coordinates": [-41.15309, 48.84946],
+      "id": "21711FB656FCCD74ECA80EC3E29ECC83BE503208",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/43"],
+        "yuanshen": ["41_43"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 42
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.1530919021, 48.849460391]
+      "coordinates": [-40.40883, 47.32266],
+      "id": "366010AAA8394FCE07718E6529A7C037596CA696",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/44"],
+        "yuanshen": ["41_44"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 43
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.4088284725, 47.3226610738]
+      "coordinates": [-40.55501, 46.91625],
+      "id": "2F633172A1C6DAF809A147995D4EAA69B0C27B1C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/45"],
+        "yuanshen": ["41_45"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 44
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.5550104912, 46.9162468671]
+      "coordinates": [-40.67589, 46.77345],
+      "id": "2FC637932FC91074E08611853CB7AC2144B6AAF7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/46"],
+        "yuanshen": ["41_46"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 45
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.6758914932, 46.7734526863]
+      "coordinates": [-39.57975, 45.63088],
+      "id": "4D75BECEF05F413D54D7B4385E45D4863588F9CC",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/47"],
+        "yuanshen": ["41_47"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 46
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.5797482105, 45.6308821226]
+      "coordinates": [-40.26344, 44.15065],
+      "id": "48BF6F360B8264055C963CF4C0C3480827878FBB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/48"],
+        "yuanshen": ["41_48"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 47
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2634395012, 44.1506528984]
+      "coordinates": [-38.79207, 46.95456],
+      "id": "0E42BEDF02A2DE651912B69ECF4DC5453BE00143",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/49"],
+        "yuanshen": ["41_49"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 48
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.7920693877, 46.9545575109]
+      "coordinates": [-36.90103, 49.19021],
+      "id": "D95D1AC997955349926A91A23E58253E750C21C6",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/50"],
+        "yuanshen": ["41_50"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 49
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.901034531, 49.1902061523]
+      "coordinates": [-35.76761, 47.00937],
+      "id": "535B38B87B25764C5290BB3C7E98A5D065CB1235",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/51"],
+        "yuanshen": ["41_51"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 50
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.7676120668, 47.0093692507]
+      "coordinates": [-34.30188, 45.07041],
+      "id": "9A4D130F74E7E9BFADE589526441DDB63D1614D5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/52"],
+        "yuanshen": ["41_52"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 51
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.3018791644, 45.0704065582]
+      "coordinates": [-33.49516, 43.70837],
+      "id": "EEF41158CF89B02AB5589DAE99B576848732710C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/53"],
+        "yuanshen": ["41_53"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 52
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.4951603765, 43.7083697573]
+      "coordinates": [-34.02472, 41.89598],
+      "id": "4FA03498FF623A25D4EACDDA6062681A30982C47",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/54"],
+        "yuanshen": ["41_54"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 53
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.0247198756, 41.8959820786]
+      "coordinates": [-34.45587, 42.27438],
+      "id": "B0C0A97C78774F80BB9E62ED177020CEC59A9573",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/55"],
+        "yuanshen": ["41_55"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 54
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.4558665288, 42.2743752485]
+      "coordinates": [-34.01998, 42.84047],
+      "id": "965D580EF0CFD5C1C870750200E725A21A310B17",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/56"],
+        "yuanshen": ["41_56"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 55
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.0199755055, 42.8404725193]
+      "coordinates": [-32.24908, 44.75184],
+      "id": "9D77FFA38C60B832DCADD66BDE60A697D58A9D9E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/57"],
+        "yuanshen": ["41_57"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 56
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.2490839409, 44.7518419294]
+      "coordinates": [-36.91828, 41.08808],
+      "id": "EE84647D07FAB1C992DFAEACABA4BA94C9017A0E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/60"],
+        "yuanshen": ["41_60"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 57
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.8126798083, 40.5058129815]
+      "coordinates": [-37.88664, 41.00021],
+      "id": "EC50BD9DA92220BD7A41A239BE8593D4AA692C9E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/61"],
+        "yuanshen": ["41_61"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里有两只冰史莱姆"
       },
-      "id": 58
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0448065279, 43.1642202984]
+      "coordinates": [-35.79903, 37.2922],
+      "id": "9ED25CA7A69E516853DAC4AB37673D7B6ADDC7D6",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/62"],
+        "yuanshen": ["41_62"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 59
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.9182757321, 41.088081891]
+      "coordinates": [-35.33449, 37.18785],
+      "id": "9B292BDFD344E1DD41A159BEFF68CE9E90F1AD13",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/63"],
+        "yuanshen": ["41_63"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 60
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.8866392493, 41.000208549]
+      "coordinates": [-33.61849, 37.48425],
+      "id": "2663590E4A23BF643AD8AED6FD43AAF2718A474F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/64"],
+        "yuanshen": ["41_64"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 61
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.7990290873, 37.2921985852]
+      "coordinates": [-32.64788, 36.13299],
+      "id": "E51A85284CCF9FB683866C812990E6C1FA7E4D41",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/65"],
+        "yuanshen": ["41_65"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 62
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.3344932346, 37.1878489916]
+      "coordinates": [-31.96974, 37.42411],
+      "id": "217A8DE8B28B09D5AB21A62AFC4175710CE871A6",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/66"],
+        "yuanshen": ["41_66"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 63
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6184909623, 37.484249771]
+      "coordinates": [-32.06286, 34.35904],
+      "id": "B2C2081D5810922E7A4FA4E64A8F46C313E09C98",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/67"],
+        "yuanshen": ["41_67"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 64
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.6478847083, 36.1329875814]
+      "coordinates": [-29.87286, 36.35289],
+      "id": "1326C46C3F5266205D56D456F07B019341CEBC8C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/68"],
+        "yuanshen": ["41_68"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 65
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-31.969741926, 37.4241058151]
+      "coordinates": [-37.42168, 35.36975],
+      "id": "5294B1573FC316D3FEC349E6C202E00DA96F3AA4",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/69"],
+        "yuanshen": ["41_69"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 66
+      "popupContent": {
+        "zh": "这里有4个冰史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0628589076, 34.3590412493]
+      "coordinates": [-34.15203, 24.7189],
+      "id": "366D6BC969D5F2149DBA5404C965C22F5A4E627A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/70"],
+        "yuanshen": ["41_70"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 67
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.872863104, 36.3528891343]
+      "coordinates": [-35.17318, 27.01996],
+      "id": "0D8BD31336A41B4360E3B96F956981C4D8E31551",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/71"],
+        "yuanshen": ["41_71"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 68
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4216801261, 35.3697467104]
+      "coordinates": [-35.90151, 27.07489],
+      "id": "2C8A9FC6F6CB68AC4EA6C025F09F1B58A365E273",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/72"],
+        "yuanshen": ["41_72"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 69
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-34.1520318817, 24.7188969419]
+      "coordinates": [-36.83884, 28.78292],
+      "id": "9E694F08D33771473928F2ABC0BF40F85CF88E97",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/73"],
+        "yuanshen": ["41_73"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 70
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.1731775799, 27.0199645054]
+      "coordinates": [-36.85273, 31.23329],
+      "id": "074F65AB7065D51E8DAA7EC43E130B7BB3220090",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/74"],
+        "yuanshen": ["41_74"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 71
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-35.9015095246, 27.0748853441]
+      "coordinates": [-38.61187, 31.24432],
+      "id": "9DBE2862670FC7153C860C7C83D4857AA5958998",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/75"],
+        "yuanshen": ["41_75"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 72
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.8388439967, 28.7829234292]
+      "coordinates": [-39.74424, 30.95882],
+      "id": "B1F2E477573718FA31C4A71B6C89E6DD5B3D17AC",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/76"],
+        "yuanshen": ["41_76"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 73
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.8527344747, 31.2332926337]
+      "coordinates": [-40.25783, 32.89208],
+      "id": "67EC5B402EEB2ADB7CC3AEDF640C6B05769A194D",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/77"],
+        "yuanshen": ["41_77"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 74
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.611868613, 31.2443221693]
+      "coordinates": [-40.42525, 34.49028],
+      "id": "A5CE4DC3BC53A1682C2E8062EE35A65ECEEECB82",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/78"],
+        "yuanshen": ["41_78"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 75
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.7442398512, 30.9588245436]
+      "coordinates": [-39.06493, 26.17954],
+      "id": "D86F453316E201592ECCC9135433F6AE035902D1",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/79"],
+        "yuanshen": ["41_79"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 76
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.2578342216, 32.8920791147]
+      "coordinates": [-40.07294, 28.38772],
+      "id": "C99D81D09DEF366D6B4846469A8D40FD1685C1BD",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/80"],
+        "yuanshen": ["41_80"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 77
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.4252482193, 34.4902755222]
+      "coordinates": [-41.11164, 29.22798],
+      "id": "0BA9E390C5A25BDCB98C37CA2F2596EF1F81B894",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/81"],
+        "yuanshen": ["41_81"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 78
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.0649347592, 26.1795384887]
+      "coordinates": [-40.90471, 25.72347],
+      "id": "7AC7CE513D7BF837C3987B5A6D27A9D9EBB1E54C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/82"],
+        "yuanshen": ["41_82"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 79
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.0729362761, 28.3877213098]
+      "coordinates": [-41.75491, 25.71899],
+      "id": "0A8C615449E9A34C6A29B8D5E6026F531E5738FB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/83"],
+        "yuanshen": ["41_83"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 80
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.1116361059, 29.227977737]
+      "coordinates": [-42.61665, 27.02011],
+      "id": "5CE8B114F7C5E8A5DDBFEBF8BCF4194AB47E39BB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/84"],
+        "yuanshen": ["41_84"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 81
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.904711552, 25.7234697679]
+      "coordinates": [-43.27174, 26.38855],
+      "id": "BC015EFE44FBEFC057E470A298CEFF73D6567A3B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/85"],
+        "yuanshen": ["41_85"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 82
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7549056781, 25.7189898198]
+      "coordinates": [-43.59526, 29.28857],
+      "id": "BC9082C41F6842D963062B592B500265373AEA08",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/86"],
+        "yuanshen": ["41_86"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 83
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.6166513236, 27.0201114109]
+      "coordinates": [-43.91257, 29.11832],
+      "id": "45060BE1BA9DAD784CDA24A90AF12A7B6163EEB3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/87"],
+        "yuanshen": ["41_87"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 84
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.2717442958, 26.38854877]
+      "coordinates": [-42.30098, 35.55605],
+      "id": "B25597FCF102259A5593C05A4515C562596AF358",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/88"],
+        "yuanshen": ["41_88"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 85
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.5952581081, 29.288571051]
+      "coordinates": [-41.37221, 35.6552],
+      "id": "A1C549F40898C42EC5C4BAF9ACB7622C68206719",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/89"],
+        "yuanshen": ["41_89"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 86
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.9125651955, 29.1183164509]
+      "coordinates": [-44.73001, 31.1948],
+      "id": "30409C8976BB43FABA394195C81EE228A1EDDD95",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/90"],
+        "yuanshen": ["41_90"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 87
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.3009843739, 35.5560476474]
+      "coordinates": [-45.69366, 31.62353],
+      "id": "6005E7752B2611F7A49E009FEBD053A8796AE262",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/91"],
+        "yuanshen": ["41_91"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 88
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.372208462, 35.6552000484]
+      "coordinates": [-44.19725, 34.80342],
+      "id": "632757679F788F190E3B2190B396DFA54FC6C34E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/93"],
+        "yuanshen": ["41_93"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 89
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7300120949, 31.1948015985]
+      "coordinates": [-43.55209, 34.57863],
+      "id": "6B9BE90F86FD0B0777985F357256E4F6DB3F258B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/94"],
+        "yuanshen": ["41_94"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 90
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.6936620755, 31.62352548]
+      "coordinates": [-44.03131, 35.68266],
+      "id": "4BFE747C1B7604182EC537AA6A87E7A31774828F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/95"],
+        "yuanshen": ["41_95"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 91
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-44.35415, 36.63279],
+      "id": "11EBF441C68A088CE42DABD8C10AE3AD2E885E38",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/96"]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.320389656, 33.4247118733]
+      "coordinates": [-43.67493, 37.23692],
+      "id": "FD8B613F4E9BB7AB587F4E5F7FDF5E8CBE018A98",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/97"],
+        "yuanshen": ["41_97"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 92
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.1972545596, 34.8034236804]
+      "coordinates": [-45.20063, 28.16807],
+      "id": "7A5BC17A5DEC218CC07688DA38ED271CBF4D86FF",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/98"],
+        "yuanshen": ["41_98"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 93
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.5520924726, 34.5786295478]
+      "coordinates": [-45.15805, 28.0747],
+      "id": "EAE1EF676E87FC0D0E7D0EA3F01ED36CA6B1CD34",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/99"],
+        "yuanshen": ["41_99"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 94
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.0313064622, 35.682661548]
+      "coordinates": [-44.62979, 25.89503],
+      "id": "59A107C5E31BEC77BB2EFC68CF77F36F7B97F595",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/100"],
+        "yuanshen": ["41_100"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 95
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.3541517546, 36.6327920583]
+      "coordinates": [-45.04148, 25.03686],
+      "id": "2CFF937EBA5BEB46493BF886D4F43CC6B251DD22",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/101"],
+        "yuanshen": ["41_101"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 96
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.6749286354, 37.2369212846]
+      "coordinates": [-45.98469, 30.81584],
+      "id": "382802E32DB1FEB90F985A17657D09FFF1EF245A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/102"],
+        "yuanshen": ["41_102"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 97
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2006270085, 28.1680692803]
+      "coordinates": [-46.29668, 28.6959],
+      "id": "C13EDFCBE85616DB4A55480503E2FA9E5CCEBE6B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/103"],
+        "yuanshen": ["41_103"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 98
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.158049749, 28.0747038544]
+      "coordinates": [-45.53248, 24.9545],
+      "id": "E967720C723D1876F3806CEB619066AC5D569A3A",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/104"],
+        "yuanshen": ["41_104"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 99
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.629790099, 25.8950278001]
+      "coordinates": [-45.53248, 24.75129],
+      "id": "5381A2F4D859550425C6CB592302C7A82E0BA7A7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/105"],
+        "yuanshen": ["41_105"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 100
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.0414784738, 25.0368609864]
+      "coordinates": [-45.10384, 23.80654],
+      "id": "48C00652E54EFC5AA654B16C3603939C6F9526B7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/106"],
+        "yuanshen": ["41_106"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 101
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.9846856042, 30.8158402498]
+      "coordinates": [-44.75006, 24.1855],
+      "id": "868EBB8011086A71001B0F868E2953652FD20245",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/107"],
+        "yuanshen": ["41_107"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 102
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.2966752314, 28.6958958741]
+      "coordinates": [-44.56257, 22.62025],
+      "id": "686007162066137A2D8A983E62C8EAC5293E3769",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/108"],
+        "yuanshen": ["41_108"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 103
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.5324794986, 24.9544959311]
+      "coordinates": [-41.75923, 21.60926],
+      "id": "964C2D1B19150238ECDC4E480CC147FACFA35BC1",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/109"],
+        "yuanshen": ["41_109"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 104
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.5324794986, 24.7512888277]
+      "coordinates": [-42.30492, 22.04865],
+      "id": "19F7819CEC851DF2F023CBD29AA3CE974A25F39F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/110"],
+        "yuanshen": ["41_110"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 105
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.1038428285, 23.8065434627]
+      "coordinates": [-44.5781, 20.01619],
+      "id": "08EFB585E020CCEA797BB82700D51E326839DB94",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/111"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {}
+    },
+    {
+      "coordinates": [-44.66018, 19.90635],
+      "id": "F6086F83E4100B199089A8D5D02CDEB8C7B8C61C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/112"]
       },
-      "id": 106
+      "popupAttribution": "Yuanshen.site",
+      "popupTitle": {}
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.7500565293, 24.1854972501]
+      "coordinates": [-48.71813, 22.55328],
+      "id": "7EBF3ECE1B2B460EDF9E82C1C7829A8DAB68E208",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/113"],
+        "yuanshen": ["41_113"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 107
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.5625661922, 22.6202533457]
+      "coordinates": [-43.74273, 18.93938],
+      "id": "2862DF0118D613B167FE5879CF851752AEB113FB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/114"],
+        "yuanshen": ["41_114"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 108
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.7592282923, 21.6092551538]
+      "coordinates": [-44.98745, 16.82468],
+      "id": "79DFBED6818706C884FA1C817CE8FAD1D821DF39",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/115"],
+        "yuanshen": ["41_115"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 109
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-42.3049207729, 22.0486531892]
+      "coordinates": [-46.21794, 20.13701],
+      "id": "B7B6C45A2B4044E42C2B6772662C2E89525DC965",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/116"],
+        "yuanshen": ["41_116"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 110
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.5781018979, 20.016187887]
+      "coordinates": [-46.62297, 20.04365],
+      "id": "E1FF81C5581C0AD97767212A8D759F308D58C97F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/117"],
+        "yuanshen": ["41_117"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 111
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.6601815695, 19.9063462095]
+      "coordinates": [-47.52379, 20.48868],
+      "id": "B8ED655D49D74C8F6B28D732C96029B80C0E5AF5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/118"],
+        "yuanshen": ["41_118"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 112
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.7181304255, 22.5532834869]
+      "coordinates": [-48.61389, 20.26358],
+      "id": "47DCF8B73B4E86CC67B00A0BC8563BB0DF216938",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/119"],
+        "yuanshen": ["41_119"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 113
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.742729866, 18.939379745]
+      "coordinates": [-48.81316, 20.67548],
+      "id": "AFCAF0B14662AC9EEDF44340FFC9BEEC200BD5D3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/120"],
+        "yuanshen": ["41_120"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 114
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.9874479053, 16.8246768497]
+      "coordinates": [-48.55243, 23.21863],
+      "id": "140ACFECA43BF38C81D3F82650B2BCF9127BE97B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/121"],
+        "yuanshen": ["41_121"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 115
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.2179393609, 20.1370126521]
+      "coordinates": [-50.05969, 24.60838],
+      "id": "82578C70F07B84AE4780670658F42769E8319AE7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/122"],
+        "yuanshen": ["41_122"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 116
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.6229731236, 20.0436472262]
+      "coordinates": [-49.88331, 27.84364],
+      "id": "1FBA15A42C00D7609E177525B92A115F73CF52C5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/123"],
+        "yuanshen": ["41_123"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 117
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.5237909076, 20.4886820906]
+      "coordinates": [-50.69371, 24.65799],
+      "id": "9A7461D2167B2DD92CCA2394FADDCD17C895A6DE",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/124"],
+        "yuanshen": ["41_124"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 118
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.6138875047, 20.2635757838]
+      "coordinates": [-50.30977, 26.80015],
+      "id": "45EA4E9173D1A03AFC1CEC9DFB472971A27CE902",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/125"],
+        "yuanshen": ["41_125"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 119
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.8131629943, 20.6754820744]
+      "coordinates": [-50.48479, 31.02906],
+      "id": "5C7880B088A63BECB5EB611E2C0BA1F8D05FB71C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/126"],
+        "yuanshen": ["41_126"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 120
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.5524314865, 23.2186334034]
+      "coordinates": [-52.17658, 29.09655],
+      "id": "577E4C0A4087075D6A56171AE7BB446C15315BDB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/127"],
+        "yuanshen": ["41_127"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 121
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.0596927021, 24.6083779867]
+      "coordinates": [-52.19678, 30.91448],
+      "id": "951E91BF7B5B4633222EA7C2205379D739EBE310",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/128"],
+        "yuanshen": ["41_128"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 122
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.8833063874, 27.8436388226]
+      "coordinates": [-52.65884, 31.49115],
+      "id": "2731E97C3FE4C75E9D87EC2071D32A6B8656AAF5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/129"],
+        "yuanshen": ["41_129"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 123
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.69371479, 24.6579914537]
+      "coordinates": [-53.20496, 32.33693],
+      "id": "4B0B958B27A74B5FE43D1A1973C94996D6DB8593",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/130"],
+        "yuanshen": ["41_130"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 124
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.3097662005, 26.8001515279]
+      "coordinates": [-53.78392, 32.40849],
+      "id": "0D7E2C41B75B8BAEE2909B5B33BCBD8462FDABD1",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/131"],
+        "yuanshen": ["41_131"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 125
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.4847856754, 31.0290561115]
+      "coordinates": [-53.90021, 33.60637],
+      "id": "17CBB11501CAB090DB19035F61BB36DF956CA63C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/132"],
+        "yuanshen": ["41_132"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 126
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1765794753, 29.0965457897]
+      "coordinates": [-51.36061, 33.76504],
+      "id": "9BFEEE7FBCA4BFB47688B426482FDEE5A370ED22",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/133"],
+        "yuanshen": ["41_133"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 127
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1967789312, 30.914481722]
+      "coordinates": [-52.14245, 34.05612],
+      "id": "8691D3A834A3CEBC274580FE5D8CC7A133F0695F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/134"],
+        "yuanshen": ["41_134"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 128
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.6588373999, 31.4911505289]
+      "coordinates": [-51.91609, 34.48451],
+      "id": "C1D3C9E18261965C1D954B2235D8CE2192EE75F1",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/135"],
+        "yuanshen": ["41_135"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 129
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.2049565749, 32.3369314456]
+      "coordinates": [-48.7845, 32.20006],
+      "id": "2F46D77B7039B1882E3493160155374288B80688",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/136"],
+        "yuanshen": ["41_136"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 130
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7839242687, 32.4084851632]
+      "coordinates": [-46.19039, 33.25963],
+      "id": "1C22FAFE06F0167ECD407A6FCDD6F46B3668555E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/137"],
+        "yuanshen": ["41_137"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 131
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.9002138585, 33.6063708341]
+      "coordinates": [-47.72034, 34.0125],
+      "id": "1F81AF4284CEFC104D181FBE363ABC68F63B545B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/138"],
+        "yuanshen": ["41_138"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 132
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.3606070803, 33.7650428425]
+      "coordinates": [-45.23533, 37.56152],
+      "id": "2B96F3707EF02D9E0EEFECDD1247909A6C2537D3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/139"],
+        "yuanshen": ["41_139"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 133
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-52.1424493715, 34.0561232879]
+      "coordinates": [-46.18242, 38.74232],
+      "id": "D5146544FA2FADEFF4589126FCF1EA35D8D9CAF5",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/140"],
+        "yuanshen": ["41_140"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 134
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-51.9160917523, 34.4845058301]
+      "coordinates": [-44.15033, 39.55565],
+      "id": "9CA06254035B8997D40C7D196DB76BA6BF4DA86B",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/141"],
+        "yuanshen": ["41_141"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 135
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.7844966163, 32.2000646644]
+      "coordinates": [-46.18689, 41.56023],
+      "id": "1671BE3B3B69E73F13900446664B4D3B4B8F81DF",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/143"],
+        "yuanshen": ["41_143"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 136
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1903921893, 33.2596260141]
+      "coordinates": [-46.18321, 42.70236],
+      "id": "218B972BCA30859B6EBA676592D882E5B7B195A2",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/144"],
+        "yuanshen": ["41_144"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 137
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-47.720340895, 34.0124987911]
+      "coordinates": [-50.76009, 38.34134],
+      "id": "C086AB0A39CAAE7C7F1F7477F581C80F174F17A4",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/145"],
+        "yuanshen": ["41_145"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 138
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2353288931, 37.5615213317]
+      "coordinates": [-49.70967, 40.21994],
+      "id": "2DA46185DF291DAA2D33CAAAE0342EE481B772DB",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/146"],
+        "yuanshen": ["41_146"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 139
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1824163782, 38.7423193648]
+      "coordinates": [-50.40781, 36.02903],
+      "id": "A6F9964430400D49C4F67839B157EF6C6BFD527C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/147"],
+        "yuanshen": ["41_147"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 140
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.1503279175, 39.5556479052]
+      "coordinates": [-53.75818, 34.6438],
+      "id": "5EB573EEAF70F3A19EE8FF470565D5D4F34B6778",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/148"],
+        "yuanshen": ["41_148"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 141
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-44.2999019987, 42.2306438132]
+      "coordinates": [-53.94928, 34.73717],
+      "id": "B0C3FBA24F49A192F5A1F9A30AD071D0F1D39F2F",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/149"],
+        "yuanshen": ["41_149"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 142
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.186892844, 41.5602282742]
+      "coordinates": [-53.05381, 35.42442],
+      "id": "7B45F13F1ED4DF336F3D7C36FBE9D1DB4B34E463",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/150"],
+        "yuanshen": ["41_150"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 143
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.1832149624, 42.7023602817]
+      "coordinates": [-49.57081, 28.48099],
+      "id": "A70EC4D6F8B698709C4DC41BBED2609ECDA67B40",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/151"],
+        "yuanshen": ["41_151"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 144
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.7600881667, 38.3413421524]
+      "coordinates": [-49.08833, 34.37002],
+      "id": "B632945BB18C3B6FFFB9A7A1043945F8D970CC5E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/152"],
+        "yuanshen": ["41_152"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 145
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.7096670502, 40.2199405307]
+      "coordinates": [-54.73616, 34.31988],
+      "id": "AE8B09745F154B69664A1B78D90431CE3F2D2A40",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/153"],
+        "yuanshen": ["41_153"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 146
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.4078093309, 36.0290257752]
+      "coordinates": [-54.46295, 34.3644],
+      "id": "C2153EAF2E95FC0E37E07F3E6050E7F182184FB6",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/154"],
+        "yuanshen": ["41_154"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 147
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.7581800271, 34.6438000266]
+      "coordinates": [-54.13919, 28.83879],
+      "id": "458C6BB014A2BD4328F13B487444BE6DD1B351C3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/155"],
+        "yuanshen": ["41_155"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 148
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.9492776758, 34.7371654525]
+      "coordinates": [-55.09025, 30.68938],
+      "id": "3CB9A3361B7C8C76E9CE7DFBF0F16785EF620D6E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/156"],
+        "yuanshen": ["41_156"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 149
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-53.0538095106, 35.4244212664]
+      "coordinates": [-55.55305, 32.01855],
+      "id": "C7DFE1A4F7E5F2B1EC9F21B8658A2A47A086C9E7",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/157"],
+        "yuanshen": ["41_157"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 150
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.5708092372, 28.4809949197]
+      "coordinates": [-57.0876, 30.23385],
+      "id": "2336DC5964D26E280A0508E6278711A87C166E5E",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/158"],
+        "yuanshen": ["41_158"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 151
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-49.0883324109, 34.3700214738]
+      "coordinates": [-56.97448, 28.83266],
+      "id": "92AD6C13FDDEE4F3D38C31C914C63ECEED1A0B36",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/159"],
+        "yuanshen": ["41_159"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 152
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.7361555655, 34.3198772572]
+      "coordinates": [-55.72371, 25.57562],
+      "id": "B806C3CE668723C6AC7EBC27F21F3F74406C3BAD",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/160"],
+        "yuanshen": ["41_160"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 153
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.4629472088, 34.3644026304]
+      "coordinates": [-56.0164, 26.53124],
+      "id": "51F7AE04057D7C04F8943F5B63E5001C0495A81C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/161"],
+        "yuanshen": ["41_161"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 154
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-54.1391882121, 28.8387948331]
+      "coordinates": [-56.61029, 27.23975],
+      "id": "55E12DD97F327C339C60FF6E9A9BF0F0974C8423",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/162"],
+        "yuanshen": ["41_162"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 155
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.0902547911, 30.6893829765]
+      "coordinates": [-56.57401, 27.15737],
+      "id": "4556A244BFA3DEF08DF0AB721A48A5C85676A3AF",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/163"],
+        "yuanshen": ["41_163"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 156
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.5530499017, 32.0185450477]
+      "coordinates": [-57.83246, 25.27328],
+      "id": "6A73E207D046EEF2EB08B22F20981A89DDF0BAD6",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/164"],
+        "yuanshen": ["41_164"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 157
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.0875992798, 30.2338467882]
+      "coordinates": [-57.92586, 28.25584],
+      "id": "B8758C36B7D1929919E3F053A256EF1F1E311E0C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/165"],
+        "yuanshen": ["41_165"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 158
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.9744752716, 28.8326557168]
+      "coordinates": [-58.95213, 29.17909],
+      "id": "2569DC6A33FBF9EE56AC2965C908854787C41365",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/166"],
+        "yuanshen": ["41_166"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 159
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-55.7237121455, 25.5756220594]
+      "coordinates": [-59.68651, 31.30467],
+      "id": "F911061D66202957EF6D03B0B131BB48F3662B0C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/167"],
+        "yuanshen": ["41_167"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 160
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.0163989231, 26.5312446536]
+      "coordinates": [-59.33257, 31.77186],
+      "id": "B868D2038940C0703518A22E0870DDC9358D5741",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/168"],
+        "yuanshen": ["41_168"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 161
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.6102882104, 27.2397515584]
+      "coordinates": [-59.22599, 33.4801],
+      "id": "C336010AEB117934411F0A0B8B58E4078C41EF00",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/169"],
+        "yuanshen": ["41_169"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 162
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-56.5740073767, 27.1573703003]
+      "coordinates": [-58.25962, 32.43638],
+      "id": "E71C82A3BAD2998C623A9EF016BDDC92D72672B9",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/170"],
+        "yuanshen": ["41_170"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 163
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.8324590256, 25.2732830786]
+      "coordinates": [-57.15378, 36.0173],
+      "id": "E863579BF355FF590EF5A720B7B658FE74D71ED3",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/171"],
+        "yuanshen": ["41_171"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 164
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.9258578544, 28.2558421648]
+      "coordinates": [-58.42586, 35.20447],
+      "id": "6DFB48BE27843FC049478620FD2A1F488DB139B8",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/172"],
+        "yuanshen": ["41_172"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 165
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.9521346079, 29.179089076]
+      "coordinates": [-36.52288, 25.10925],
+      "id": "B3DDD6C0539E3FBD4FA8AABEE2E11165B9B5793C",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/173"],
+        "yuanshen": ["41_173"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 166
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.6865138449, 31.3046681203]
+      "coordinates": [-41.01618, 41.85694],
+      "id": "46BE3E54FF8ABD8D376628B2DD421AC0DA345E23",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/174"],
+        "yuanshen": ["41_174"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 167
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.3325703758, 31.7718603531]
+      "coordinates": [-37.71806, 40.87914],
+      "id": "4340C713790DF0DD1BA0BF2D09B27068E4899DBA",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/175"],
+        "yuanshen": ["41_175"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
       },
-      "id": 168
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-59.2259911909, 33.4800982729]
+      "coordinates": [-37.45212, 43.0547],
+      "id": "E2C4160D52F67CFF35A1052BD079DD158E84A0FC",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/176"],
+        "yuanshen": ["41_176"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 169
+      "popupContent": {
+        "zh": "这里大概有三个冰史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.2596162404, 32.4363819784]
+      "coordinates": [-40.47531, 39.85222],
+      "id": "5639703AA2BE8BFA874D055B5D9EE192E9A22E7D",
+      "importIds": {
+        "gm_legacy": ["liyueSlime/177"],
+        "yuanshen": ["41_177"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 170
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-57.1537810137, 36.0172984383]
+      "coordinates": [-45.31096, 33.75922],
+      "id": "E024628769AC44469EBF640920C330CB9252B88C",
+      "importIds": {
+        "yuanshen": ["41_92"],
+        "gm_legacy": ["liyueSlime/92"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里有三个岩史莱姆"
       },
-      "id": 171
+      "popupMedia": "https://yuanshen.site/comment_png/41_92.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-58.425862704, 35.2044700248]
+      "coordinates": [-44.30026, 42.35598],
+      "id": "B3EA9461461D8CD102EECA8A05419ADC0F9A0C7C",
+      "importIds": {
+        "yuanshen": ["41_142"],
+        "gm_legacy": ["liyueSlime/142"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 172
+      "popupContent": {
+        "zh": "这里有三个冰史莱姆"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/41_142.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.522880528, 25.1092529296]
+      "coordinates": [-43.7757, 36.01565],
+      "id": "0F24CABCC947ED976607563EA8B02F83E6B1D06F",
+      "importIds": {
+        "yuanshen": ["41_178"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 173
+      "popupContent": {
+        "zh": "这里大概有三个史莱姆"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/41_178.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.0161841335, 41.8569433882]
+      "coordinates": [-45.30944, 54.66836],
+      "id": "02E8445F50C6440CA734A37530DD04F1EA45C8F4",
+      "importIds": {
+        "yuanshen": ["41_179"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里有三个冰史莱姆"
       },
-      "id": 174
+      "popupMedia": "https://yuanshen.site/comment_png/41_179.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.7180578328, 40.8791385814]
+      "coordinates": [-35.25252, 41.63146],
+      "id": "C6C9FB277B74A4A69EF49285BAC74953FEE3CC83",
+      "importIds": {
+        "yuanshen": ["41_180"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 175
+      "popupContent": {
+        "zh": "这里有两个冰史莱姆"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/41_180.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.4521226754, 43.0547005168]
+      "coordinates": [-44.59079, 42.90055],
+      "id": "985436514D1A102C41B09002E7C775E54C68BF52",
+      "importIds": {
+        "yuanshen": ["41_181"]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "id": 176
+      "popupContent": {
+        "zh": "这里有两个岩史莱姆"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/41_181.jpg",
+      "popupAttribution": "Yuanshen.site"
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-40.4753149559, 39.8522225948]
+      "coordinates": [-57.16802, 36.73829],
+      "id": "7FE07715286FFF132D6A1460FC783AE6ACF1B65E",
+      "importIds": {
+        "yuanshen": ["41_182"]
+      },
+      "popupTitle": {
+        "zh": "史莱姆"
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "" },
-        "popupContent": { "en": "" },
-        "popupMedia": ""
+      "popupContent": {
+        "zh": "这里有三个火史莱姆"
       },
-      "id": 177
+      "popupMedia": "https://yuanshen.site/comment_png/41_182.jpg",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }
