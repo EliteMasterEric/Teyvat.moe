@@ -69,6 +69,7 @@ export const hashObject = (input, options) => {
       unorderedArrays: false,
       unorderedSets: true,
       unorderedObjects: true,
+      upperCase: true,
       ...options,
     };
 
@@ -84,7 +85,16 @@ export const hashObject = (input, options) => {
       console.debug(output);
     }
     // Actually return the hash.
-    return objectHash(input, fullOptions);
+    let result = objectHash(input, fullOptions);
+
+    // Convert to uppercase.
+    if (fullOptions.upperCase) result = result.toUpperCase();
+
+    // Print the result.
+    if (fullOptions.debug) console.debug(result);
+
+    // Return the result.
+    return result;
   } catch (err) {
     console.error(input);
     const output = new Error('Unable to hash object, did an input leak?');

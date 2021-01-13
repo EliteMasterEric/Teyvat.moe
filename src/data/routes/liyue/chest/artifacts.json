@@ -1,310 +1,543 @@
 {
-  "name": { "en": "Artifacts" },
+  "format": 2,
+  "name": {
+    "en": "Artifacts"
+  },
+  "description": {
+    "en": ""
+  },
+  "enabled": true,
   "icons": {
     "filter": "artifacts"
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-45.425443559580444, 27.685546875000004],
-          [-45.76369095661866, 27.789916992187504],
-          [-45.90912212390728, 28.0096435546875],
-          [-45.867062714815475, 28.185424804687504],
-          [-46.35071935547731, 28.416137695312504],
-          [-46.1646144968971, 29.487304687500004]
+      "coordinates": [
+        [
+          -45.42544,
+          27.68555
+        ],
+        [
+          -45.76369,
+          27.78992
+        ],
+        [
+          -45.90912,
+          28.00964
+        ],
+        [
+          -45.86706,
+          28.18542
+        ],
+        [
+          -46.35072,
+          28.41614
+        ],
+        [
+          -46.16461,
+          29.4873
+        ]
+      ],
+      "id": "881CD16F8D83CF79F46870043418BC370D5A9418",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/1"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #1" },
-        "popupContent": {
-          "en": "Navigate from portal to 3 Artifact spawn next to house, continue on road for 1 mora spawn and finally 1 Artifact Spawn at destination\n\n"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #1"
+      },
+      "popupContent": {
+        "en": "Navigate from portal to 3 Artifact spawn next to house, continue on road for 1 mora spawn and finally 1 Artifact Spawn at destination\n\n"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 2,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-56.45034902929676, 32.88208007812501],
-          [-57.037741202282064, 32.73925781250001]
+      "coordinates": [
+        [
+          -56.45035,
+          32.88208
+        ],
+        [
+          -57.03774,
+          32.73926
+        ]
+      ],
+      "id": "A3C032D1E64F03EA668375F67D49F25FE2D78165",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/2"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #2" },
-        "popupContent": { "en": "Navigate from portal for Artifact spawns inside the tent" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #2"
+      },
+      "popupContent": {
+        "en": "Navigate from portal for Artifact spawns inside the tent"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 3,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-45.70234306798271, 31.915283203125004],
-          [-44.735027899515465, 33.77746582031251],
-          [-44.92591837128866, 34.31579589843751],
-          [-44.949249266611524, 34.62341308593751],
-          [-44.94147335480251, 35.05737304687501],
-          [-44.894795764697875, 35.16723632812501],
-          [-44.76623687516233, 35.26062011718751]
+      "coordinates": [
+        [
+          -45.70234,
+          31.91528
+        ],
+        [
+          -44.73503,
+          33.77747
+        ],
+        [
+          -44.92592,
+          34.3158
+        ],
+        [
+          -44.94925,
+          34.62341
+        ],
+        [
+          -44.94147,
+          35.05737
+        ],
+        [
+          -44.8948,
+          35.16724
+        ],
+        [
+          -44.76624,
+          35.26062
+        ]
+      ],
+      "id": "98A053890FA038961965117FB30C9F4E1AC7FCDA",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/3"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #3" },
-        "popupContent": {
-          "en": "Navigate along the path for multiple artifact and mora spawns.  "
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #3"
+      },
+      "popupContent": {
+        "en": "Navigate along the path for multiple artifact and mora spawns.  "
+      },
+      "popupMedia": ""
     },
     {
-      "id": 4,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-40.65147128144056, 34.38720703125001],
-          [-40.588928169693745, 33.73901367187501],
-          [-41.759019938155404, 35.35400390625001],
-          [-41.94314874732696, 35.59570312500001],
-          [-42.24071874922666, 36.53503417968751],
-          [-42.96446257387128, 35.49133300781251],
-          [-43.06487470411879, 35.59570312500001],
-          [-43.1090040242731, 35.57373046875001],
-          [-43.12103377575541, 35.46936035156251],
-          [-43.08894918346589, 35.41442871093751]
+      "coordinates": [
+        [
+          -40.65147,
+          34.38721
+        ],
+        [
+          -40.58893,
+          33.73901
+        ],
+        [
+          -41.75902,
+          35.354
+        ],
+        [
+          -41.94315,
+          35.5957
+        ],
+        [
+          -42.24072,
+          36.53503
+        ],
+        [
+          -42.96446,
+          35.49133
+        ],
+        [
+          -43.06487,
+          35.5957
+        ],
+        [
+          -43.109,
+          35.57373
+        ],
+        [
+          -43.12103,
+          35.46936
+        ],
+        [
+          -43.08895,
+          35.41443
+        ]
+      ],
+      "id": "5B2B9B0DB49657E0ECA02F7A1FC4366911218A43",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/4"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #4" },
-        "popupContent": {
-          "en": "Navigate from portal to broken cart then go the other way, at your first stop next to the house you will find a bucket that gives mora and a box that gives an artifact, continue on the path to find a boat and finally a cellar with alot of artifacts"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #4"
+      },
+      "popupContent": {
+        "en": "Navigate from portal to broken cart then go the other way, at your first stop next to the house you will find a bucket that gives mora and a box that gives an artifact, continue on the path to find a boat and finally a cellar with alot of artifacts"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 5,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-39.37677199661635, 28.723754882812504],
-          [-37.98750437106373, 28.756713867187504],
-          [-38.03078569382294, 28.63037109375],
-          [-38.20797181420939, 28.306274414062504],
-          [-38.277000935659, 30.223388671875004]
+      "coordinates": [
+        [
+          -39.37677,
+          28.72375
+        ],
+        [
+          -37.9875,
+          28.75671
+        ],
+        [
+          -38.03079,
+          28.63037
+        ],
+        [
+          -38.20797,
+          28.30627
+        ],
+        [
+          -38.277,
+          30.22339
+        ]
+      ],
+      "id": "526F830D25247F4CC1BC20F9C1D85424605B5A7B",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/5"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #5" },
-        "popupContent": {
-          "en": "Navigate from portal to Treasure hoarder camp for 3 artifact spawns and then continue along the road for two broken carts artifact spawns"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #5"
+      },
+      "popupContent": {
+        "en": "Navigate from portal to Treasure hoarder camp for 3 artifact spawns and then continue along the road for two broken carts artifact spawns"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 6,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-41.13729606112275, 23.895263671875],
-          [-40.66397287638688, 23.219604492187504],
-          [-40.72228267283148, 22.9779052734375]
+      "coordinates": [
+        [
+          -41.1373,
+          23.89526
+        ],
+        [
+          -40.66397,
+          23.2196
+        ],
+        [
+          -40.72228,
+          22.97791
+        ]
+      ],
+      "id": "23B58F387EE2DB12DBC9A1FC1136A06F983B4AE8",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/6"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #6" },
-        "popupContent": { "en": "Navigate from portal to house for 2 artifact spawns" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #6"
+      },
+      "popupContent": {
+        "en": "Navigate from portal to house for 2 artifact spawns"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 7,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-40.83459313808023, 21.516723632812504],
-          [-41.918628865183024, 20.8465576171875],
-          [-41.9268032064879, 20.747680664062504]
+      "coordinates": [
+        [
+          -40.83459,
+          21.51672
+        ],
+        [
+          -41.91863,
+          20.84656
+        ],
+        [
+          -41.9268,
+          20.74768
+        ]
+      ],
+      "id": "79E7620AC50B558570DFEFFCF7680AE8A891FCC9",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/7"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #7" },
-        "popupContent": {
-          "en": "Glide from portal to the shed on the bridge for 2 artifact spawns"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #7"
+      },
+      "popupContent": {
+        "en": "Glide from portal to the shed on the bridge for 2 artifact spawns"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 8,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-44.312057426666186, 18.638305664062504],
-          [-43.941417172952114, 21.088256835937504]
+      "coordinates": [
+        [
+          -44.31206,
+          18.63831
+        ],
+        [
+          -43.94142,
+          21.08826
+        ]
+      ],
+      "id": "043788F0419047E71E8EA49F8D90DFC279F6FCF5",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/8"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #8" },
-        "popupContent": { "en": "Glide from portal down for 1 artifact spawn" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #8"
+      },
+      "popupContent": {
+        "en": "Glide from portal down for 1 artifact spawn"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 9,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-41.14143302653629, 23.944702148437504],
-          [-40.065460682065535, 24.719238281250004]
+      "coordinates": [
+        [
+          -41.14143,
+          23.9447
+        ],
+        [
+          -40.06546,
+          24.71924
+        ]
+      ],
+      "id": "5F98D0BC203D250F8F395E704B6C4E6F4ADA71E6",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/9"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #9" },
-        "popupContent": { "en": "1 Artifact in Treasure Hoarders camp" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #9"
+      },
+      "popupContent": {
+        "en": "1 Artifact in Treasure Hoarders camp"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 10,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-32.04998888314202, 33.33801269531251],
-          [-32.58384932565661, 32.26135253906251]
+      "coordinates": [
+        [
+          -32.04999,
+          33.33801
+        ],
+        [
+          -32.58385,
+          32.26135
+        ]
+      ],
+      "id": "CA851DC2738AD0DE30009F9CCD2468D8D28694A7",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/10"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #10" },
-        "popupContent": { "en": "From portal go to house.  There is 1 artifact spawn" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #10"
+      },
+      "popupContent": {
+        "en": "From portal go to house.  There is 1 artifact spawn"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 11,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-32.296419798969076, 37.04589843750001],
-          [-32.579220642875676, 37.44689941406251],
-          [-33.008663494575565, 35.91430664062501],
-          [-32.81497839698581, 35.29907226562501]
+      "coordinates": [
+        [
+          -32.29642,
+          37.0459
+        ],
+        [
+          -32.57922,
+          37.4469
+        ],
+        [
+          -33.00866,
+          35.91431
+        ],
+        [
+          -32.81498,
+          35.29907
+        ]
+      ],
+      "id": "61DB5FFC9A911EC57D73C1FF9A0790EFC1BE64FC",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/11"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #11" },
-        "popupContent": {
-          "en": "1 artifact spawn in the old lady house, go down to the yard, there is 1 artifact spawn  vase stand and finally 1 spawn on the rug stand"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #11"
+      },
+      "popupContent": {
+        "en": "1 artifact spawn in the old lady house, go down to the yard, there is 1 artifact spawn  vase stand and finally 1 spawn on the rug stand"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 12,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-38.108627664321276, 41.40747070312501],
-          [-38.41055825094608, 41.04492187500001],
-          [-40.12849105685408, 40.02319335937501]
+      "coordinates": [
+        [
+          -38.10863,
+          41.40747
+        ],
+        [
+          -38.41056,
+          41.04492
+        ],
+        [
+          -40.12849,
+          40.02319
+        ]
+      ],
+      "id": "F336C05236DF0087D277F67F3E60241388030CCF",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/12"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #12" },
-        "popupContent": {
-          "en": "Teleport and then go to the nearest shed for 1 weapon spawn, continue on path to arrive at 1  artifact spawn"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #12"
+      },
+      "popupContent": {
+        "en": "Teleport and then go to the nearest shed for 1 weapon spawn, continue on path to arrive at 1  artifact spawn"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 13,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-42.65815872149923, 40.24494528903603],
-          [-41.92259356832627, 39.203965335287265]
+      "coordinates": [
+        [
+          -42.65816,
+          40.24495
+        ],
+        [
+          -41.92259,
+          39.20397
+        ]
+      ],
+      "id": "51256B034FA1DD3377DDF1BACDA9AC2B2F34F532",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/13"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #13" },
-        "popupContent": {
-          "en": "Teleport and go in the west direction to the docks for 1 artifact spawn"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #13"
+      },
+      "popupContent": {
+        "en": "Teleport and go in the west direction to the docks for 1 artifact spawn"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 14,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-39.48284540453334, 47.41149902343751],
-          [-38.603993275591684, 46.3568115234375],
-          [-38.55246141354153, 46.29089355468751],
-          [-38.57823196583315, 46.24694824218751]
+      "coordinates": [
+        [
+          -39.48285,
+          47.4115
+        ],
+        [
+          -38.60399,
+          46.35681
+        ],
+        [
+          -38.55246,
+          46.29089
+        ],
+        [
+          -38.57823,
+          46.24695
+        ]
+      ],
+      "id": "950A811F87254F7C9DC1318A32B0892FEF06BBBD",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/14"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #14" },
-        "popupContent": { "en": "Teleport and go to the tent for 3 artifact spawns" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #14"
+      },
+      "popupContent": {
+        "en": "Teleport and go to the tent for 3 artifact spawns"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 15,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-45.32897866218558, 48.82324218750001],
-          [-45.71385093029221, 46.62597656250001]
+      "coordinates": [
+        [
+          -45.32898,
+          48.82324
+        ],
+        [
+          -45.71385,
+          46.62598
+        ]
+      ],
+      "id": "E2C30E94AC3E0082784BA206A2A2ABD767CA31F2",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/15"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #15" },
-        "popupContent": { "en": "Glide down from teleporter to tent for 1 artifact spawn" },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #15"
+      },
+      "popupContent": {
+        "en": "Glide down from teleporter to tent for 1 artifact spawn"
+      },
+      "popupMedia": ""
     },
     {
-      "id": 16,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-50.0818196020607, 28.207397460937504],
-          [-48.4292005555684, 29.157714843750004],
-          [-47.90897831472869, 29.421386718750004]
+      "coordinates": [
+        [
+          -50.08182,
+          28.2074
+        ],
+        [
+          -48.4292,
+          29.15771
+        ],
+        [
+          -47.90898,
+          29.42139
+        ]
+      ],
+      "id": "6002F04F6C4022D264416A380E3A33CF009BFF0C",
+      "importIds": {
+        "gm_legacy": [
+          "liyueArtifacts/16"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Artifacts #16" },
-        "popupContent": {
-          "en": "Teleport and walk up the path for 1 artifact spawn in a broken cart and then continue on path for 1 more artifact spawn"
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Artifacts #16"
+      },
+      "popupContent": {
+        "en": "Teleport and walk up the path for 1 artifact spawn in a broken cart and then continue on path for 1 more artifact spawn"
+      },
+      "popupMedia": ""
     }
   ]
 }

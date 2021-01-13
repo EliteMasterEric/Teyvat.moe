@@ -581,7 +581,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where markers listed in the editor Elements tab would start at the 0th index.
 - Fixed a bug where popup titles and content would display as `[object Object]`
 
-# 0.10.0 Marker Data Format Rework
+# [ALPHA] 0.10.0 Marker Data Format Rework
 
 - Marker data is now stored in a new format which will make the importing of new features easier.
   - TODO: Old completion data currently is not migrated, it's just sitting hidden in the user's data. Add functionality to migrate by IDs.
@@ -638,7 +638,7 @@ First major release of the rework, featuring a new interface developed in React.
     - popup-import-new-content
 - Completed markers now display with a green highlight to distinguish them when opacity is 1.
 
-# 0.10.1 Yuanshen Import and Debug View
+# [ALPHA] 0.10.1 Yuanshen Import and Debug View
 
 - Added new map Debug view, which can be enabled in the Options. Currently only displays the coordinates at the cursor but more info can be implemented in the future.
 - Added a new description field for features and routes. This is a one or two sentence explanation of the feature or route.
@@ -715,7 +715,7 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where new version markers could not be double clicked to mark as completed.
 - Fixed several bugs with rendering of clustered markers.
 
-# 0.10.2 Permalinks, Notifications, and Imports
+# [ALPHA] 0.10.2 Permalinks, Notifications, and Imports
 
 - Added functionality to navigate to a marker via permalink.
 - Added a button to popups to copy the permalink.
@@ -839,3 +839,48 @@ First major release of the rework, featuring a new interface developed in React.
 - Fixed a bug where the Completed switch's status would not match the state of the marker.
 - Fixed a bug where navigating via permalink would not display the feature if it was currently hidden.
 - Fixed a bug where opening of a popup when the category has no completed markers would cause a crash.
+
+# [ALPHA] 0.10.3 Chest Imports and Route Migration
+
+- The v0.10.0 versions have been notated as ALPHA versions. Marker data is not currently migrated from older versions of the map which use different IDs for markers. Please test them to ensure proper functionality but be aware that there may be issues if you use these versions to store progress.
+- Map Debug View now includes a text field. Pasting a partial or full marker ID here will locate and navigate to it on the map.
+- Help menu now displays a count of markers and routes in the first paragraph.
+- Fixed a bug causing routes to not render properly.
+- Redid the map graphics to undo an optimization which lowered overall quality at higher zoom levels.
+- Fixed an issue where the map seams were visible on higher zoom levels.
+- JSON files (including I18N and features) have been replaced with JSONC files.
+  - JSONC is a format which is a variant of JSON, which allows for single-line and multi-line comments.
+  - Added a Webpack loader to handle converting these JSONC files to JSON objects.
+- Disabled features due to lack of data.
+  - Hilichurl (Mondstadt)
+  - Hilichurl Shooter (Mondstadt)
+  - Hilichurl Shooter (Liyue)
+  - Stonehide Lawachurl (Liyue)
+  - Fish (Mondstadt)
+- Migrated routes.
+  - Cecilia (Mondstadt)
+  - Loach Pearl (Liyue)
+  - Bamboo Shoot (Liyue)
+  - Hilichurl (Liyue)
+  - Artifacts (Liyue)
+- Migrated 1,441 markers.
+  - Matsutake (Mondstadt): Migrated 32 markers.
+  - Matsutake (Liyue): Migrated 9 markers.
+  - Hilichurl (Liyue): Migrated 2 markers.
+  - Common Chest (Mondstadt): Migrated 225 markers, and added Yuanshen.site import IDs.
+  - Exquisite Chest (Mondstadt): Migrated 202 markers, and added Yuanshen.site import IDs.
+  - Precious Chest (Mondstadt): Migrated 9 markers, and added Yuanshen.site import IDs.
+  - Luxurious Chest (Mondstadt): Migrated 9 markers, and added Yuanshen.site import IDs.
+  - Common Chest (Liyue): Migrated 535 markers, and added Yuanshen.site import IDs.
+  - Exquisite Chest (Liyue): Migrated 327 markers, and added Yuanshen.site import IDs.
+  - Precious Chest (Liyue): Migrated 70 markers, and added Yuanshen.site import IDs.
+  - Luxurious Chest (Liyue): Migrated 21 markers, and added Yuanshen.site import IDs.
+- Imported 307 new markers.
+  - Note: Many of these Common Chests are actually higher rarities, since they could not be sorted automatically.
+  - Common Chest (Mondstadt): Imported 41 new chests from Yuanshen.site.
+  - Common Chest (Dragonspine): Imported 226 new chests from Yuanshen.site.
+  - Common Chest (Liyue): Imported 40 new chests from Yuanshen.site.
+- Localization key changes:
+  - Modified keys:
+    - map-about-help-content-a: Now gives a general description of the app and a counter of markers and routes.
+

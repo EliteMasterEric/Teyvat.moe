@@ -11,7 +11,7 @@ import { DEFAULT_LOCALE_FILE } from '~/components/preferences/DefaultPreferences
 /**
  * The require context referencing all the localization files.
  */
-const i18nContext = require.context('../../data/i18n', true, /.json$/);
+const i18nContext = require.context('../../data/i18n', true, /.jsonc$/);
 
 /**
  * A list of JSON file paths, excluding the default locale.
@@ -19,19 +19,20 @@ const i18nContext = require.context('../../data/i18n', true, /.json$/);
 const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
 
 // ex [./en-US.json, en-US].
-const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)\.json/)[1];
+const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)\.jsonc/)[1];
 
 /**
  * A map of locales and JSON data objects, including the default locale (it must be moved to the front).
  */
 const i18nData = _.fromPairs(
   [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
-    return [getLocaleFromI18nFilePath(filePath), i18nContext(filePath)];
+    return [getLocaleFromI18nFilePath(filePath), i18nContext(filePath).default];
   })
 );
 
 const localizedStrings = new LocalizedStrings(i18nData, {
   pseudo: false, // Enable while testing to find unlocalized strings.
+  logsEnabled: false,
 });
 
 /**

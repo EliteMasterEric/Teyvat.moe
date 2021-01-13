@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Hilichurl",
     "ru": "Хиличурл"
@@ -6,7 +7,8 @@
   "description": {
     "en": "Basic Hilichurls who attack with claws or clubs. Drops Stained Masks."
   },
-  "cluster": true,
+  "enabled": false,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "hilichurl",

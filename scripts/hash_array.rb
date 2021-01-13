@@ -2,7 +2,10 @@ require 'json'
 require 'object_hash_rb'
 
 # Modify this.
-INPUT_DATA = [-20.63251, 60.91369]
+INPUT_DATA = [
+  -18.49523,
+  39.56726
+]
 
 def truncate_number(input)
   # Truncate to 5 digits.

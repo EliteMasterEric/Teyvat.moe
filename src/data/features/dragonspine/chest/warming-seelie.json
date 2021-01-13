@@ -1,10 +1,14 @@
 {
-  "name": { "en": "Warming Seelie" },
+  "format": 2,
+  "name": {
+    "en": "Warming Seelie"
+  },
   "description": {
     "en": "A mutated Seelie found only on Dragonspine, whose warmth guides Adventurers to Treasure."
   },
-  "cluster": false,
   "enabled": false,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "warming-seelie",
     "base": {
@@ -14,5 +18,7 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+
+  ]
 }

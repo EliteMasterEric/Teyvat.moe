@@ -1,39 +1,93 @@
 {
-  "name": { "en": "Loach Pearls" },
+  "format": 2,
+  "name": {
+    "en": "Loach Pearls"
+  },
+  "description": {
+    "en": ""
+  },
+  "enabled": true,
   "icons": {
     "filter": "loach-pearl"
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-38.087013204022725, 41.13281250000001],
-          [-38.48369476951686, 42.06665039062501],
-          [-39.33004855294241, 41.24267578125001],
-          [-39.15988184949158, 40.10559082031251],
-          [-39.75365697136309, 41.01196289062501],
-          [-40.02340800226772, 40.9295654296875],
-          [-40.05705222132201, 40.62744140625001],
-          [-40.09488212232116, 40.37475585937501],
-          [-40.287906612507406, 40.36926269531251],
-          [-40.47202439692055, 40.09460449218751],
-          [-40.68480366159126, 40.05615234375001],
-          [-40.45530721213149, 41.84692382812501],
-          [-40.20824570152502, 41.8194580078125],
-          [-40.296286517117146, 42.04467773437501],
-          [-40.4302236345086, 42.08312988281251]
+      "coordinates": [
+        [
+          -38.08701,
+          41.13281
+        ],
+        [
+          -38.48369,
+          42.06665
+        ],
+        [
+          -39.33005,
+          41.24268
+        ],
+        [
+          -39.15988,
+          40.10559
+        ],
+        [
+          -39.75366,
+          41.01196
+        ],
+        [
+          -40.02341,
+          40.92957
+        ],
+        [
+          -40.05705,
+          40.62744
+        ],
+        [
+          -40.09488,
+          40.37476
+        ],
+        [
+          -40.28791,
+          40.36926
+        ],
+        [
+          -40.47202,
+          40.0946
+        ],
+        [
+          -40.6848,
+          40.05615
+        ],
+        [
+          -40.45531,
+          41.84692
+        ],
+        [
+          -40.20825,
+          41.81946
+        ],
+        [
+          -40.29629,
+          42.04468
+        ],
+        [
+          -40.43022,
+          42.08313
+        ]
+      ],
+      "id": "1A07F328A54E5A1B746B5E64861C1A7661EA51B9",
+      "importIds": {
+        "gm_legacy": [
+          "liyueLoachPearl/1"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Loach Pearls" },
-        "popupContent": {
-          "en": "Start at the Statue, then move along the coast, heading under the bridge to the pond, then back along the coast until you reach the small rock. Then, go across to the island and follow the coast there."
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Loach Pearls"
+      },
+      "popupContent": {
+        "en": "Start at the Statue, then move along the coast, heading under the bridge to the pond, then back along the coast until you reach the small rock. Then, go across to the island and follow the coast there."
+      },
+      "popupMedia": ""
     }
   ]
 }

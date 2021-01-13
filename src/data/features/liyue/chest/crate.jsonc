@@ -1,0 +1,41 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Crate",
+    "zh": ""
+  },
+  "description": {
+    "en": "An old floating crate containing Mora or Geo Sigils."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "liyue-crate",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -35.46514,
+        28.03162
+      ],
+      "id": "491C8C5F4B59BDE5CA323E35F2F44E81498E432B",
+      "importIds": {
+        "gm_legacy": [
+          "liyueCrate/1"
+        ]
+      },
+      "popupAttribution": "Unknown",
+      "popupMedia": "liyue/crate/1",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 491C8C5"
+      }
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Challenge and Time Trial",
     "ru": "Вызов и испытание на время"
@@ -6,8 +7,9 @@
   "description": {
     "en": "Complete a race or challenge, or defeat a group of enemies, to receive a reward."
   },
-  "cluster": false,
   "enabled": false,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "challenge",
     "base": {
@@ -17,5 +19,7 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+
+  ]
 }

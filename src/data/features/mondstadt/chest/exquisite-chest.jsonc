@@ -1,0 +1,4577 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Exquisite Chest",
+    "ru": "Богатый сундук",
+    "zh": ""
+  },
+  "description": {
+    "en": "A solid wooden chest held together with iron. Contains useful rewards."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "exquisite-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -27.49853,
+        45.84595
+      ],
+      "id": "00929F70DC0E5B9E339BAAFC4B0F535354AA031F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/2001"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "Guarded by two hilichurls.",
+        "ru": "Охраняется двумя хиличурлами."
+      },
+      "popupMedia": "mondstadt/exquisite-chest/2001",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 00929F7"
+      }
+    },
+    {
+      "coordinates": [
+        -28.77729,
+        45.87891
+      ],
+      "id": "2F1337F403B9DDBF324AF580A91789CB58EFA812",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/2002"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "Guarded by three hilichurls.",
+        "ru": "Охраняется двумя хиличурлами."
+      },
+      "popupMedia": "mondstadt/exquisite-chest/2002",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2F1337F"
+      }
+    },
+    {
+      "coordinates": [
+        -19.99625,
+        38.01334
+      ],
+      "id": "E89F05D89C9FD5C5578BF20A6C209303FC9D1EE6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/1"
+        ],
+        "yuanshen": [
+          "26_1"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_1",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.00001,
+        39.28733
+      ],
+      "id": "FA0A28061039FF44C3360EE9DFD073B61320C21B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/10"
+        ],
+        "yuanshen": [
+          "26_10"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_10",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.03632,
+        46.21842
+      ],
+      "id": "CD38ACD979E86FCF88AB914448419AE27ADF635E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/104"
+        ],
+        "yuanshen": [
+          "26_104"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "悬崖下石柱上的宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_104",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.03632,
+        48.65611
+      ],
+      "id": "1EDD3591C1BA4A4EF5D510FD2AECB0338D73A234",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/105"
+        ],
+        "yuanshen": [
+          "26_105"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "射爆绕树的四只风史莱姆后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_105",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.19557,
+        47.96434
+      ],
+      "id": "97B6795B2A31773EEA6CD56ABDFD59CC3EA3FD09",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/106"
+        ],
+        "yuanshen": [
+          "26_106"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_106",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.08032,
+        39.39713
+      ],
+      "id": "1F9647CEAD0A7721A316639925581564F468AA20",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/11"
+        ],
+        "yuanshen": [
+          "26_11"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_11",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.70177,
+        48.51337
+      ],
+      "id": "31D7BD2EF4F0C112B79B2FCBF7D5886FFFF6DDE5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/111"
+        ],
+        "yuanshen": [
+          "26_111"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_111",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.87002,
+        49.31495
+      ],
+      "id": "ECE7772A48DEC76A635B1CA4B4E17B3B967CDDD2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/112"
+        ],
+        "yuanshen": [
+          "26_112"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_112",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.88958,
+        45.98783
+      ],
+      "id": "FBB6DF2864A020827F805A9B470C3C5B2608DF0F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/119"
+        ],
+        "yuanshen": [
+          "26_119"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_119",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.6447,
+        45.61449
+      ],
+      "id": "FFBDDB65713B0FD7B57CD69DCD7CF42759948422",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/120"
+        ],
+        "yuanshen": [
+          "26_120"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_120",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.59391,
+        47.44825
+      ],
+      "id": "4071ECD406B0CBCF7CBF657A245BC26CAB6BD259",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/123"
+        ],
+        "yuanshen": [
+          "26_123"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_123",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.74134,
+        49.00749
+      ],
+      "id": "A780D89AC24B993399B6D8A6B5CB2B6EF22B45E8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/127"
+        ],
+        "yuanshen": [
+          "26_127"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_127",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.7084,
+        46.24038
+      ],
+      "id": "E52414A7F739F030E393804330ECE07B0D33BA88",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/129"
+        ],
+        "yuanshen": [
+          "26_129"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_129",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.37744,
+        39.41909
+      ],
+      "id": "0552F8E79A62F18358C2F723C336BB76DE11D38F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/13"
+        ],
+        "yuanshen": [
+          "26_13"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_13",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.50262,
+        47.58002
+      ],
+      "id": "0163E562F3927560BCDB6BDADE187DFC8E07E53D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/135"
+        ],
+        "yuanshen": [
+          "26_135"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_135",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.29192,
+        52.51421
+      ],
+      "id": "CA3DB83A134C659BBA7E8DB3303856D6B5147D0B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/143"
+        ],
+        "yuanshen": [
+          "26_143"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_143",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.75602,
+        49.93377
+      ],
+      "id": "5FABDF6105BA0A8555D98A99896DAA2FB1A75063",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/151"
+        ],
+        "yuanshen": [
+          "26_151"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_151",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.83708,
+        53.23893
+      ],
+      "id": "CFCF33C47490ADF1393C89145B0B1AD4506B63FB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/152"
+        ],
+        "yuanshen": [
+          "26_152"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_152",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.72745,
+        50.71314
+      ],
+      "id": "A85A895FE12909E6B9EA5D211AE7D5F24723216F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/161"
+        ],
+        "yuanshen": [
+          "26_161"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_161",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.80729,
+        50.66921
+      ],
+      "id": "8E9C81E6E1E2462A8EFB0F9E827DF556CD3BB5A8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/162"
+        ],
+        "yuanshen": [
+          "26_162"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_162",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.94622,
+        51.83899
+      ],
+      "id": "7868498B925E3CC95160A4BB8C0FB5E713A71BCC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/163"
+        ],
+        "yuanshen": [
+          "26_163"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "荆棘宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_163",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.34405,
+        51.96492
+      ],
+      "id": "8B7C124556CFB10B61E9526547B1C635426EA4D6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/167"
+        ],
+        "yuanshen": [
+          "26_167"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "在山脚角落里的宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_167",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.61953,
+        51.97591
+      ],
+      "id": "1FA8583B1A4A7E5B5949DD9B64D6E22DB3E41F54",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/170"
+        ],
+        "yuanshen": [
+          "26_170"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_170",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.25649,
+        51.93198
+      ],
+      "id": "26965854BCF8FA659F8C2FC172E3ABCB0D258E46",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/174"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_174",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2696585"
+      }
+    },
+    {
+      "coordinates": [
+        -27.41272,
+        52.29434
+      ],
+      "id": "2B7F5B61AF97B99618C55C577F3DC51745996B5D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/175"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_175",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 2B7F5B6"
+      }
+    },
+    {
+      "coordinates": [
+        -27.41272,
+        51.74531
+      ],
+      "id": "9F963BD8FB99D72627FFBE2CBCDA12299D6A5B81",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/176"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_176",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9F963BD"
+      }
+    },
+    {
+      "coordinates": [
+        -27.59796,
+        52.51395
+      ],
+      "id": "9E496183539E66BCA8CCE05D4051BD2F41395D98",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/179"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_179",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9E49618"
+      }
+    },
+    {
+      "coordinates": [
+        -27.73426,
+        53.18377
+      ],
+      "id": "9DCDE24F1E818AC76F0FB4521E98E2AE8605CB1D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/180"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_180",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9DCDE24"
+      }
+    },
+    {
+      "coordinates": [
+        -28.02574,
+        52.2614
+      ],
+      "id": "AEA5A23D681F9012617FDBF302BD0EDE27782DBF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/183"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_183",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: AEA5A23"
+      }
+    },
+    {
+      "coordinates": [
+        -28.52912,
+        50.64725
+      ],
+      "id": "D6FDA0CDAAB1DC0EE0B6AB619A46A964ED149D08",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/185"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_185",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: D6FDA0C"
+      }
+    },
+    {
+      "coordinates": [
+        -29.97718,
+        54.38066
+      ],
+      "id": "E281513FE2D708D5862F4DD41D8EC23BC12C0917",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/192"
+        ],
+        "yuanshen": [
+          "26_192"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_192",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.98429,
+        52.57984
+      ],
+      "id": "D2B867FAAC790F193AB5C58E702A719B64DD581D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/197"
+        ],
+        "yuanshen": [
+          "26_197"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_197",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.08508,
+        38.05731
+      ],
+      "id": "C30E115F18C713BED66A43C3D1D93DE2E6EBED5A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/2"
+        ],
+        "yuanshen": [
+          "26_2"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_2",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.92536,
+        39.67165
+      ],
+      "id": "37B6A59FD83DBD4F4DAF5671F8383C1CAB713FBE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/20"
+        ],
+        "yuanshen": [
+          "26_20"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "摘取4个胡萝卜"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_20",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.29145,
+        51.09746
+      ],
+      "id": "036DD5AC84F00BE1743E533FFB3A75716E378416",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/200"
+        ],
+        "yuanshen": [
+          "26_200"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_200",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.41216,
+        50.25195
+      ],
+      "id": "82C3896B4625A305556757EC8BAF18D239E3DB3D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/201"
+        ],
+        "yuanshen": [
+          "26_201"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_201",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.61608,
+        50.7351
+      ],
+      "id": "D4A664843A16B87982D9B060D599552E20E363ED",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/202"
+        ],
+        "yuanshen": [
+          "26_202"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_202",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.51418,
+        54.19399
+      ],
+      "id": "152509342E0294AF5382BE6ACDC7061B0A3D4CFA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/204"
+        ],
+        "yuanshen": [
+          "26_204"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_204",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.99057,
+        51.83316
+      ],
+      "id": "E70D6A33DE488DB4777D4F8D4C54CD54C74F5F3F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/205"
+        ],
+        "yuanshen": [
+          "26_205"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_205",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.7693,
+        60.33488
+      ],
+      "id": "6ED321FC3FDBFCCA956CE74B16DA8F530D641F16",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/222"
+        ],
+        "yuanshen": [
+          "26_222"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_222",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.06117,
+        58.34822
+      ],
+      "id": "E48C4B20CA92232338878240987ACD1FC686CA58",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/228"
+        ],
+        "yuanshen": [
+          "26_228"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_228",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.20377,
+        58.29332
+      ],
+      "id": "3BA601A703D129E047432F5AB0F6AF42543CED33",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/229"
+        ],
+        "yuanshen": [
+          "26_229"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_229",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.80043,
+        57.70037
+      ],
+      "id": "849E45A0FACDFD085ACE0930DA9F6EA077F0A968",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/232"
+        ],
+        "yuanshen": [
+          "26_232"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_232",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.93379,
+        57.06268
+      ],
+      "id": "DC0C2D796043086DD992C995EEB2402B9A9F78B3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/234"
+        ],
+        "yuanshen": [
+          "26_234"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_234",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.00839,
+        60.00548
+      ],
+      "id": "F2E120D382DAE793DFEAF36D063E38942AF7019C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/235"
+        ],
+        "yuanshen": [
+          "26_235"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_235",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.85265,
+        58.05093
+      ],
+      "id": "A3CAB7A211E606F512861F5667F108B8D7BDE8AF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/239"
+        ],
+        "yuanshen": [
+          "26_239"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【普通宝箱】无原石"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_239",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.08237,
+        64.57701
+      ],
+      "id": "686B8EC6738E81D611FEBA4FEF3B1476BDC4FBC6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/243"
+        ],
+        "yuanshen": [
+          "26_243"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_243",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.35384,
+        61.60126
+      ],
+      "id": "B41DC07FF02B951EBD8FEE7B1B1736987131B706",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/244"
+        ],
+        "yuanshen": [
+          "26_244"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_244",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.23832,
+        61.84284
+      ],
+      "id": "71EF5C6659166798D1BCCD3A0AD85B63EB21F789",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/246"
+        ],
+        "yuanshen": [
+          "26_246"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_246",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.34207,
+        62.23814
+      ],
+      "id": "F975FC6A1F37D625694012A67F711ADDE4FBC3B9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/247"
+        ],
+        "yuanshen": [
+          "26_247"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_247",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.52865,
+        62.15029
+      ],
+      "id": "EC51252F492A9AE41DD27E3699BCD17C1F0BA4DE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/248"
+        ],
+        "yuanshen": [
+          "26_248"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_248",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.67363,
+        62.82011
+      ],
+      "id": "D9EA4F6B3C7F15F75170CB824C3A4DD957DC383B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/250"
+        ],
+        "yuanshen": [
+          "26_250"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_250",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.07676,
+        61.29381
+      ],
+      "id": "033A550DFDDA8BEE8818982AF5C06E9016F208CD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/254"
+        ],
+        "yuanshen": [
+          "26_254"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_254",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.17996,
+        64.74171
+      ],
+      "id": "2B1AB95A8B4832D714FBB73AE550FAF4578C943D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/255"
+        ],
+        "yuanshen": [
+          "26_255"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_255",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.23154,
+        64.02798
+      ],
+      "id": "52050222903D8B778E4A38A029D5588C36C18C37",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/256"
+        ],
+        "yuanshen": [
+          "26_256"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_256",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.29342,
+        64.33543
+      ],
+      "id": "AF3DEB0A5E4550A819E882E7A0F0396AABF13BFF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/257"
+        ],
+        "yuanshen": [
+          "26_257"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_257",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.44799,
+        62.84207
+      ],
+      "id": "24B868DB785436A029B268A74CCEB0133CD9D090",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/259"
+        ],
+        "yuanshen": [
+          "26_259"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_259",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.44799,
+        61.59028
+      ],
+      "id": "FFB4A63B7D82CDEE52A8663B8A45C8A481CBEE44",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/260"
+        ],
+        "yuanshen": [
+          "26_260"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_260",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.47446,
+        62.08441
+      ],
+      "id": "7C81CD5FC3E51B93290A6982C874FCAF297EC5A2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/265"
+        ],
+        "yuanshen": [
+          "26_265"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_265",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.82184,
+        63.21541
+      ],
+      "id": "3DC9588D2657FCE2BCD61D1E0E4178EEC0BDDD6F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/266"
+        ],
+        "yuanshen": [
+          "26_266"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_266",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.14801,
+        62.56756
+      ],
+      "id": "37E1FC8FF8C5ECA9BCDF24284830007CE28F34F9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/267"
+        ],
+        "yuanshen": [
+          "26_267"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_267",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.39215,
+        61.66715
+      ],
+      "id": "D52BC8F19B96FB971E6B2B4E74E162235AAA9B50",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/270"
+        ],
+        "yuanshen": [
+          "26_270"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_270",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.76116,
+        61.13896
+      ],
+      "id": "4260C031B309F201AD588839E2328ECFD3387ABF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/272"
+        ],
+        "yuanshen": [
+          "26_272"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_272",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.19272,
+        63.07266
+      ],
+      "id": "FA9F7E6D747658FA4FF555C26F088D341C2151C6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/273"
+        ],
+        "yuanshen": [
+          "26_273"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_273",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.75734,
+        61.29381
+      ],
+      "id": "36E032692F3CF0D086134144F5BEC3231073D716",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/275"
+        ],
+        "yuanshen": [
+          "26_275"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_275",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.90817,
+        63.7864
+      ],
+      "id": "FF3A910A7021377DE5970B49C9A7894C06F04087",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/277"
+        ],
+        "yuanshen": [
+          "26_277"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_277",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.22505,
+        40.28656
+      ],
+      "id": "3C9FA8A7B4A0FFC0FE5F34F9923E768D2A437CEB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/28"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_28",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 3C9FA8A"
+      }
+    },
+    {
+      "coordinates": [
+        -24.38962,
+        61.01929
+      ],
+      "id": "204F90742293504B96720C00227F1FE673CBA8FA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/280"
+        ],
+        "yuanshen": [
+          "26_280"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_280",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.8493,
+        64.55504
+      ],
+      "id": "5020E35A6117AF3589FBFD83F68A08D4B0284045",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/281"
+        ],
+        "yuanshen": [
+          "26_281"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_281",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.21486,
+        61.00718
+      ],
+      "id": "6E30519D5719CCACE82258CE27321A40F4DD9EC7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/282"
+        ],
+        "yuanshen": [
+          "26_282"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_282",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.53236,
+        61.41348
+      ],
+      "id": "9810ADE45E0DB06D8FAA5C056487628EFF6FA83F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/283"
+        ],
+        "yuanshen": [
+          "26_283"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_283",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.23529,
+        62.90727
+      ],
+      "id": "9558DF6FB9CDE0D12A1B5F0CAA78AF0B2F692B14",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/285"
+        ],
+        "yuanshen": [
+          "26_285"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_285",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.8601,
+        61.07351
+      ],
+      "id": "40D4F50AB0412CE13863F2A10E9D0D605E3F2CC2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/286"
+        ],
+        "yuanshen": [
+          "26_286"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接拾取的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_286",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.96885,
+        64.49945
+      ],
+      "id": "CAF48776B37AAD3C71428FBF41E6227FE361E3CA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/287"
+        ],
+        "yuanshen": [
+          "26_287"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_287",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.61722,
+        62.41314
+      ],
+      "id": "5EBEA1347EFF949CFBC85F3C9AD4F3499D68A2F2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/291"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_291",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 5EBEA13"
+      }
+    },
+    {
+      "coordinates": [
+        -27.64643,
+        63.48924
+      ],
+      "id": "FF9C5E596D635D74D1F4E73DE45FC6D18D6FB605",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/292"
+        ],
+        "yuanshen": [
+          "26_292"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_292",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.05463,
+        62.86335
+      ],
+      "id": "96D28068A976DA140B656B6772F560626A72A277",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/293"
+        ],
+        "yuanshen": [
+          "26_293"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_293",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.08373,
+        64.192
+      ],
+      "id": "46E8D809CEE2621B147036B0586AA0B2891F1E38",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/294"
+        ],
+        "yuanshen": [
+          "26_294"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物获得的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_294",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.25815,
+        60.86488
+      ],
+      "id": "EBCA5E1E534B868D6F33A4D945E4FEB6DE088492",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/295"
+        ],
+        "yuanshen": [
+          "26_295"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_295",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.71225,
+        61.43587
+      ],
+      "id": "16DC797EF77ABC82635496D4A55CDD84EE9CB6BB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/297"
+        ],
+        "yuanshen": [
+          "26_297"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_297",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.94413,
+        38.28814
+      ],
+      "id": "23E6ABBD4B07C614924E4851A052B781B91CC630",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/3"
+        ],
+        "yuanshen": [
+          "26_3"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.2907,
+        61.51273
+      ],
+      "id": "D4DF93E736048FF4A33C16FCEA624FFE72FCFEDE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/300"
+        ],
+        "yuanshen": [
+          "26_300"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_300",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.47643,
+        62.06213
+      ],
+      "id": "9326CBFECFEFBCD6EF6D15F16D7D36A490A634EE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/303"
+        ],
+        "yuanshen": [
+          "26_303"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_303",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.77961,
+        63.00647
+      ],
+      "id": "EF22E44BA5842E3F47595789CCEFE4FDFFF7B279",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/308"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_308",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: EF22E44"
+      }
+    },
+    {
+      "coordinates": [
+        -32.92743,
+        63.67683
+      ],
+      "id": "C950B7B7FDDFD7346517418C24FC0EEE0047E659",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/310"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_310",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: C950B7B"
+      }
+    },
+    {
+      "coordinates": [
+        -33.35082,
+        62.42504
+      ],
+      "id": "3A49DFB8A82264853A89D25084304C1EE3262785",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/313"
+        ],
+        "yuanshen": [
+          "26_313"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_313",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.53427,
+        62.22739
+      ],
+      "id": "E22C5E415CB55631940A8C52E67E6008F612D45D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/315"
+        ],
+        "yuanshen": [
+          "26_315"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_315",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.56175,
+        62.62269
+      ],
+      "id": "3D06251B1B63DC9AAF73B867488B5A9B4716E167",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/316"
+        ],
+        "yuanshen": [
+          "26_316"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_316",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.04584,
+        63.35839
+      ],
+      "id": "2AB4C51061ABAD16AB7653064349122E1595376F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/319"
+        ],
+        "yuanshen": [
+          "26_319"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_319",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.18235,
+        63.83055
+      ],
+      "id": "ED74916FA2F517FCA4954FA48AD438174E9BFC88",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/320"
+        ],
+        "yuanshen": [
+          "26_320"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_320",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.6851,
+        64.80701
+      ],
+      "id": "DDF64253DBD4C666596DE68E518AE7641F366A79",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/325"
+        ],
+        "yuanshen": [
+          "26_325"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败火史莱姆解锁的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_325",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.76225,
+        68.09201
+      ],
+      "id": "35204D55F4183792868A8FB3A5937AE633076C74",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/328"
+        ],
+        "yuanshen": [
+          "26_328"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_328",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.47479,
+        41.0991
+      ],
+      "id": "ECAAC9B50F6B4901879365904295E42C1174135F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/33"
+        ],
+        "yuanshen": [
+          "26_33"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_33",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.52901,
+        67.63082
+      ],
+      "id": "2B249CA6D1C88187E22C1E1FDE736B4E1F4FC4DA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/331"
+        ],
+        "yuanshen": [
+          "26_331"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_331",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.62332,
+        65.91785
+      ],
+      "id": "AED5C404C0FA31F90B6B5206522E93A494ED64DD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/333"
+        ],
+        "yuanshen": [
+          "26_333"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_333",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.376,
+        65.58843
+      ],
+      "id": "8C512F50285809166B1369B4AB338A525A8C36BA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/337"
+        ],
+        "yuanshen": [
+          "26_337"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_337",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.30515,
+        41.154
+      ],
+      "id": "F3A4332B061E71DF60A6737925BD779A75311C9A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/34"
+        ],
+        "yuanshen": [
+          "26_34"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_34",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.77194,
+        67.88337
+      ],
+      "id": "A857A7792E8282FE99F18620F25475979457F3E4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/340"
+        ],
+        "yuanshen": [
+          "26_340"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个露天的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_340",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.59209,
+        66.02765
+      ],
+      "id": "5A7EDA52D578FBBD968821C5B71D342DAD184668",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/343"
+        ],
+        "yuanshen": [
+          "26_343"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_343",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.9438,
+        68.16887
+      ],
+      "id": "248C66A43CD46125B7BD37C7B3903053D1C491C7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/346"
+        ],
+        "yuanshen": [
+          "26_346"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_346",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.18127,
+        65.56647
+      ],
+      "id": "01CBD0CA865A131FF17DF7683AB188A4FAD35368",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/347"
+        ],
+        "yuanshen": [
+          "26_347"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_347",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.62428,
+        66.54374
+      ],
+      "id": "54847E59389C2F5FD4E30D63A0F3DC102A4E7542",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/348"
+        ],
+        "yuanshen": [
+          "26_348"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_348",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.78879,
+        68.09201
+      ],
+      "id": "031B63DFE88B4B251C2C5F40DCDC19D2DD577CE6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/350"
+        ],
+        "yuanshen": [
+          "26_350"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_350",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.05438,
+        64.92871
+      ],
+      "id": "A6E5BD19320081C0C5A14AA22EFC744E3BD6F259",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/351"
+        ],
+        "yuanshen": [
+          "26_351"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_351",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.81154,
+        65.52166
+      ],
+      "id": "28529B69580E4D71574C50A6D5DA6854D016FCA4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/353"
+        ],
+        "yuanshen": [
+          "26_353"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_353",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.5241,
+        66.56481
+      ],
+      "id": "60E90DFC0E5A0FB3E36E3DA5A1729CCCEC258A47",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/355"
+        ],
+        "yuanshen": [
+          "26_355"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "拾取日落果"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_355",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.14207,
+        65.67539
+      ],
+      "id": "1A0058BF98AB691A417772CC3847433D34AD2866",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/358"
+        ],
+        "yuanshen": [
+          "26_358"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_358",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.39452,
+        65.44479
+      ],
+      "id": "C4F0983CC0A7961E651F7DDFA7E3B3DF3CDA1054",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/360"
+        ],
+        "yuanshen": [
+          "26_360"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_360",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.17606,
+        66.40083
+      ],
+      "id": "871F9A37DE4D7E7C623DCF7D457D71811CF7DDDB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/366"
+        ],
+        "yuanshen": [
+          "26_366"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：可见宝箱\n备注：位于山脚的角落里"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_366",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.40272,
+        65.0612
+      ],
+      "id": "452C0D79893F7D02BA597E8A383A4B356AA8E979",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/369"
+        ],
+        "yuanshen": [
+          "26_369"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：打掉路边小石柱后，打一个小怪出现"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_369",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.49035,
+        68.13577
+      ],
+      "id": "A15A4C57454E189D800C21C8C16892B28C4CAD51",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/374"
+        ],
+        "yuanshen": [
+          "26_374"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_374",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.00593,
+        64.94041
+      ],
+      "id": "35C88D5745D5301D2A368F08F04087FE5A0786A8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/377"
+        ],
+        "yuanshen": [
+          "26_377"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_377",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.32234,
+        41.72499
+      ],
+      "id": "4443B0F8E5A12C2521F6AD4697E558FB48B92216",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/38"
+        ],
+        "yuanshen": [
+          "26_38"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_38",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.43044,
+        66.79616
+      ],
+      "id": "4ABE4740F19E2C053E6C35B2F37AE834B617AF8C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/382"
+        ],
+        "yuanshen": [
+          "26_382"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_382",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.6695,
+        67.48794
+      ],
+      "id": "F6722FFBCDC0E99DF668AB950ED01CC2B09EBC09",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/384"
+        ],
+        "yuanshen": [
+          "26_384"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_384",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.72679,
+        68.11384
+      ],
+      "id": "F2F759C4D19DF1D765CA39A6B65995E799A09DFF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/385"
+        ],
+        "yuanshen": [
+          "26_385"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_385",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.8222,
+        66.86205
+      ],
+      "id": "16BE3D1607F17313B97B9B8374C11CF06BD77E78",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/386"
+        ],
+        "yuanshen": [
+          "26_386"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_386",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.33626,
+        65.193
+      ],
+      "id": "D8B0A8323BADAC6F8948606EE555157497A8F90B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/389"
+        ],
+        "yuanshen": [
+          "26_389"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_389",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.71644,
+        41.91166
+      ],
+      "id": "11B0E30787800595AAAA6183150D594259C2B911",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/39"
+        ],
+        "yuanshen": [
+          "26_39"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_39",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.78495,
+        67.09246
+      ],
+      "id": "3074BC4EBA6AD3A176F717FEECF211D7780FF451",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/391"
+        ],
+        "yuanshen": [
+          "26_391"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_391",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.47378,
+        67.35599
+      ],
+      "id": "085FE6E0AC06DFE435D7155F8DEBEFF70FCA8AB9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/393"
+        ],
+        "yuanshen": [
+          "26_393"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_393",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.7063,
+        67.8398
+      ],
+      "id": "942ED0A241316CBE82FBBDD8E690062C95C78091",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/395"
+        ],
+        "yuanshen": [
+          "26_395"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_395",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.61392,
+        68.1253
+      ],
+      "id": "31F954569C9A1052837DA09D858484C4AFB64F51",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/396"
+        ],
+        "yuanshen": [
+          "26_396"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_396",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.88155,
+        65.25936
+      ],
+      "id": "162B8F20194BD730F9C8C3C70B9D77B46610BE82",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/397"
+        ],
+        "yuanshen": [
+          "26_397"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_397",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.02392,
+        66.17075
+      ],
+      "id": "87C2FE0DFCCEA1035E1C4EEA1028B6E8C0C2089F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/398"
+        ],
+        "yuanshen": [
+          "26_398"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_398",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.69742,
+        38.39806
+      ],
+      "id": "91A31966E276DBAAD2BED4BBBB583F6DD6401BF1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/4"
+        ],
+        "yuanshen": [
+          "26_4"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.51135,
+        66.29154
+      ],
+      "id": "40597889F9EB4C3C5D0820ECC5CD50947EC39360",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/401"
+        ],
+        "yuanshen": [
+          "26_401"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：用火点燃附近三个火炬后出现"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_401",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.88592,
+        67.18097
+      ],
+      "id": "60A9DBA7678B72A05B997AA584BA5CCDDE010EAE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/406"
+        ],
+        "yuanshen": [
+          "26_406"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_406",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.25801,
+        67.4994
+      ],
+      "id": "462F21E635E7DD4822442214A3D15F452FA66520",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/407"
+        ],
+        "yuanshen": [
+          "26_407"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_407",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.33117,
+        68.93925
+      ],
+      "id": "C700097D99FF42929E75817E6568FA10DC935866",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/409"
+        ],
+        "yuanshen": [
+          "26_409"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_409",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.05765,
+        68.75258
+      ],
+      "id": "004FBA7CDF0B9094DB262CC1D6380CBA325A5BCB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/411"
+        ],
+        "yuanshen": [
+          "26_411"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_411",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.57065,
+        71.98238
+      ],
+      "id": "780A9061F992BF4A6F81C05DE6ABEEEFC8B6DDE1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/414"
+        ],
+        "yuanshen": [
+          "26_414"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】无原石"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_414",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.5864,
+        72.10321
+      ],
+      "id": "7C9580FE03384F2A8235C6193AAF58603FE34CEA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/415"
+        ],
+        "yuanshen": [
+          "26_415"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接获取的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_415",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.82317,
+        70.57536
+      ],
+      "id": "0D0023CED833F2FAB1B5E9C5D32C17971C2634E4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/417"
+        ],
+        "yuanshen": [
+          "26_417"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_417",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.9487,
+        71.36596
+      ],
+      "id": "D2267309D5059D6433E29CE57EF9DCA5773D1E44",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/418"
+        ],
+        "yuanshen": [
+          "26_418"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_418",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.08506,
+        42.14315
+      ],
+      "id": "14085E6DED788CF1A593C021B0A2D451DF391D02",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/42"
+        ],
+        "yuanshen": [
+          "26_42"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_42",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.03234,
+        69.38945
+      ],
+      "id": "6605662626A1B220EB11B93C22200955D5006320",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/420"
+        ],
+        "yuanshen": [
+          "26_420"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_420",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.06373,
+        72.44271
+      ],
+      "id": "F7ADE38164DF553CB937274819D71B341EE65E00",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/422"
+        ],
+        "yuanshen": [
+          "26_422"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_422",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.38739,
+        69.58776
+      ],
+      "id": "998B82093F45C1B63A9A3550A73741CB295E0063",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/423"
+        ],
+        "yuanshen": [
+          "26_423"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物获得的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_423",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.93191,
+        71.50936
+      ],
+      "id": "52299893C67A1589DE9A62ABA69E89D6E2BFD33A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/428"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_428",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 5229989"
+      }
+    },
+    {
+      "coordinates": [
+        -22.47323,
+        42.20903
+      ],
+      "id": "6A03C938BE514768E71AC3DA46B2DE19D3B37EA2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/43"
+        ],
+        "yuanshen": [
+          "26_43"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_43",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.40171,
+        71.30073
+      ],
+      "id": "1F4ACBEDAD2A9377228BADC46A6D47322881550E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/431"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_431",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 1F4ACBE"
+      }
+    },
+    {
+      "coordinates": [
+        -24.46176,
+        69.40109
+      ],
+      "id": "BFE1F416BD05F933A360A2E1C25EA229DDE9E4BB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/432"
+        ],
+        "yuanshen": [
+          "26_432"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_432",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.01085,
+        69.42305
+      ],
+      "id": "305B0474C359390CFEC311DF4EA7B745630FD893",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/434"
+        ],
+        "yuanshen": [
+          "26_434"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_434",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.54757,
+        70.54307
+      ],
+      "id": "C6F0D01E2B2BB43592A1BC294ABDCC74292C5F17",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/437"
+        ],
+        "yuanshen": [
+          "26_437"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_437",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.68634,
+        69.81835
+      ],
+      "id": "C9766E35050017B520AF413B6685EC296F0AEFCE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/438"
+        ],
+        "yuanshen": [
+          "26_438"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_438",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.2508,
+        70.16973
+      ],
+      "id": "DA809CE723ADD8D55E2512C68FBC6763A3A76532",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/442"
+        ],
+        "yuanshen": [
+          "26_442"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_442",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.70675,
+        69.0268
+      ],
+      "id": "94EAD191BD2984E1E567B485D1375BF4E99C6E09",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/444"
+        ],
+        "yuanshen": [
+          "26_444"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_444",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.60543,
+        70.98134
+      ],
+      "id": "44D6CCAA67CB1BE7E764FCF75715527188E769AA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/445"
+        ],
+        "yuanshen": [
+          "26_445"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_445",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.03325,
+        68.84013
+      ],
+      "id": "DBA207D5083CD105B3E8E64E7AA5E03FE28745B8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/446"
+        ],
+        "yuanshen": [
+          "26_446"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_446",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.18422,
+        72.25509
+      ],
+      "id": "F70AC42A4E47ECA255A4B28C50F3C8F97C29CB89",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/448"
+        ],
+        "yuanshen": [
+          "26_448"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_448",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.34375,
+        69.77348
+      ],
+      "id": "8A684C82AE1802DCDE57A0BFA781284E46E960B1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/449"
+        ],
+        "yuanshen": [
+          "26_449"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_449",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.59126,
+        72.67235
+      ],
+      "id": "C87CC4C76276F39D119E1D0EA10B7AAA20A0E5AB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/451"
+        ],
+        "yuanshen": [
+          "26_451"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_451",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.13651,
+        69.58681
+      ],
+      "id": "82BC57F8B3550290B0544EA90EA2E38A5F5CCB71",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/453"
+        ],
+        "yuanshen": [
+          "26_453"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_453",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.92738,
+        69.96161
+      ],
+      "id": "E591F549BF0F91A9E5822654C8423AD197A3595C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/456"
+        ],
+        "yuanshen": [
+          "26_456"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_456",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.43715,
+        69.18199
+      ],
+      "id": "0580BFD211D092A6EAEC8E4013F879FD06E96001",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/458"
+        ],
+        "yuanshen": [
+          "26_458"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_458",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.50897,
+        42.35202
+      ],
+      "id": "173DEE3B8B3563C04C576934CDFBF954C48D384A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/46"
+        ],
+        "yuanshen": [
+          "26_46"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_46",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.55982,
+        83.03464
+      ],
+      "id": "9759C3E8BDE0F1926D877EA6DCB6DECED02D5391",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/464"
+        ],
+        "yuanshen": [
+          "26_464"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个激活风元素方碑击败怪物解锁的【珍贵宝箱】"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_464",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.28855,
+        75.75073
+      ],
+      "id": "B41F5C0EB3EF5A8D821BAAC0E7DBCD2148A7A168",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/466"
+        ],
+        "yuanshen": [
+          "26_466"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_466",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.69184,
+        74.14673
+      ],
+      "id": "EE65EC06329D67EA9B845A6630159F454C42C62F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/470"
+        ],
+        "yuanshen": [
+          "26_470"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_470",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.38713,
+        49.64722
+      ],
+      "id": "948B71F6CD3BD32FB14FCCAB074FD629CBB563C6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/473"
+        ],
+        "yuanshen": [
+          "26_473"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_473",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.83908,
+        45.49438
+      ],
+      "id": "EF3A4913629AEFC61BABE310031A9B139C4868E7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/474"
+        ],
+        "yuanshen": [
+          "26_474"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "跑到该点后出现史莱姆，打倒史莱姆后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_474",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.42139,
+        67.46704
+      ],
+      "id": "C53F780A2FD89BE904DC7E444E508612291E8F16",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/476"
+        ],
+        "yuanshen": [
+          "26_476"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_476",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.48801,
+        68.302
+      ],
+      "id": "33D38D349B5EE3CB08DD6B11244FEE23A44B029A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/477"
+        ],
+        "yuanshen": [
+          "26_477"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_477",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.25706,
+        50.65796
+      ],
+      "id": "DC6F05D1D327D59130315342879A08E64E6AB73A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/481"
+        ],
+        "yuanshen": [
+          "26_481"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_481",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.9697,
+        68.01636
+      ],
+      "id": "7D583C75FABB4FB1155DDD4B5E169B272E41738C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/483"
+        ],
+        "yuanshen": [
+          "26_483"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_483",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.26958,
+        52.60254
+      ],
+      "id": "EBA527F55DC9063F02BBA5C57A5857F90824ECE1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/487"
+        ],
+        "yuanshen": [
+          "26_487"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_487",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.95937,
+        51.26221
+      ],
+      "id": "FBA640E6DB6DE99648FC392314B982834854D285",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/488"
+        ],
+        "yuanshen": [
+          "26_488"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_488",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.06093,
+        43.19824
+      ],
+      "id": "51DFDB0AD369CFF405F6C15E869AEF4C901D0AE2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/489"
+        ],
+        "yuanshen": [
+          "26_489"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_489",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.29834,
+        79.61802
+      ],
+      "id": "686571DD0B635640FCBAC2F1B416EBB8F12C29ED",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/493"
+        ],
+        "yuanshen": [
+          "26_493"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_493",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.13007,
+        70.66242
+      ],
+      "id": "F3AB18099C01F4A343330A69050A47805DF8B4C9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/498"
+        ],
+        "yuanshen": [
+          "26_498"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_498",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.01327,
+        44.88464
+      ],
+      "id": "FF83008CB92FDA1990A0923D3F02D9352849372C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/522"
+        ],
+        "yuanshen": [
+          "26_522"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "到达点位挖掘宝箱即可"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_522",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.5988,
+        66.01135
+      ],
+      "id": "56459CD76887EDA9F9CC5E048B5364880AF2F636",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/524"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_524",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 56459CD"
+      }
+    },
+    {
+      "coordinates": [
+        -23.01094,
+        43.0881
+      ],
+      "id": "499A53A0E3C3AAC3CE6501F1E358F43033CD87DA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/53"
+        ],
+        "yuanshen": [
+          "26_53"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_53",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.58649,
+        79.24445
+      ],
+      "id": "7B2BDD9BDA85843853107886164E912D742977F6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/532"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/exquisite-chest/26_532",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 7B2BDD9"
+      }
+    },
+    {
+      "coordinates": [
+        -23.3343,
+        43.01124
+      ],
+      "id": "D862B03755F0C96ECAD3193EA3E7235344847829",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/54"
+        ],
+        "yuanshen": [
+          "26_54"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_54",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.43519,
+        42.83555
+      ],
+      "id": "A932C9E6A6D727BB8EE18F67B0C9C684DB0EB102",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/55"
+        ],
+        "yuanshen": [
+          "26_55"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_55",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.64383,
+        43.0881
+      ],
+      "id": "522A71AFC8ABF99D77746B82FDC6DD426A4B2EDB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/58"
+        ],
+        "yuanshen": [
+          "26_58"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_58",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.41357,
+        43.47242
+      ],
+      "id": "0EC7D1CEEA0D8D55483BE28BE2AC96A7A2CBBBF9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/59"
+        ],
+        "yuanshen": [
+          "26_59"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_59",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.05472,
+        43.58223
+      ],
+      "id": "2988EC5B0EE1601B843B1D09A414E5B758D730D6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/63"
+        ],
+        "yuanshen": [
+          "26_63"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_63",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.55999,
+        43.70302
+      ],
+      "id": "2694E2808BF717D1776B7ED733AC1EC077CB893F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/64"
+        ],
+        "yuanshen": [
+          "26_64"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_64",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.54724,
+        44.62097
+      ],
+      "id": "C7A3EAC46C74941CDE353ECAF35A69E2643605EA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/70"
+        ],
+        "yuanshen": [
+          "26_70"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_70",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.03643,
+        44.62097
+      ],
+      "id": "EF39BED91D1D3C4D4A49BBB10295054E199450EE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/71"
+        ],
+        "yuanshen": [
+          "26_71"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_71",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.9461,
+        44.29688
+      ],
+      "id": "67540424AD32527D93B0FC3E50A574D194B89ABA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/72"
+        ],
+        "yuanshen": [
+          "26_72"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_72",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.19714,
+        44.26368
+      ],
+      "id": "8A18F9C0375BE2C750E5A3780642EED6E7BD8E6F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/73"
+        ],
+        "yuanshen": [
+          "26_73"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_73",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.44756,
+        44.35153
+      ],
+      "id": "2D0CC2853EC2DDBBF8BD8F1E6908F10215AE6FE3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/74"
+        ],
+        "yuanshen": [
+          "26_74"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_74",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.09836,
+        44.66999
+      ],
+      "id": "99F2901C659306FFE9621D9FF015172C28F17544",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/75"
+        ],
+        "yuanshen": [
+          "26_75"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_75",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.06736,
+        44.54921
+      ],
+      "id": "9225F50D03BAA07614E181B78D24740DC66561F5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/77"
+        ],
+        "yuanshen": [
+          "26_77"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_77",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.35618,
+        44.47234
+      ],
+      "id": "BF3C17A371F2C42B52C072AA63A40485F6E71932",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/78"
+        ],
+        "yuanshen": [
+          "26_78"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_78",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.80896,
+        44.65901
+      ],
+      "id": "499B1F17CB187FAB29FB13CA3865F74700713510",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/79"
+        ],
+        "yuanshen": [
+          "26_79"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "燃起来啦！"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_79",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.6702,
+        39.1336
+      ],
+      "id": "F0D2C36B435721DEFA125E4D9234B273BC16E105",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/8"
+        ],
+        "yuanshen": [
+          "26_8"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.75126,
+        44.75784
+      ],
+      "id": "DEF2A6A12D0BE2CF9E9CCCD769C0F9C3880EB50C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/80"
+        ],
+        "yuanshen": [
+          "26_80"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_80",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.50602,
+        44.98843
+      ],
+      "id": "BE6F7807AD365EC240720871F843E1CA02DDDC97",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/81"
+        ],
+        "yuanshen": [
+          "26_81"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_81",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.31328,
+        45.06573
+      ],
+      "id": "9DC66EE5C4F9FADDB5FEE4357E5078C73E9A652E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/83"
+        ],
+        "yuanshen": [
+          "26_83"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_83",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.50013,
+        45.32923
+      ],
+      "id": "B5CE8E53E50B74BFEB2936B225E985672435D61A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/85"
+        ],
+        "yuanshen": [
+          "26_85"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_85",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.76344,
+        47.59144
+      ],
+      "id": "E7F134640F83B4DC246E6217436CAF5F2CA5E960",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/89"
+        ],
+        "yuanshen": [
+          "26_89"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_89",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.77011,
+        45.85651
+      ],
+      "id": "C74151D0DE107A4A2689668C736412CAEEBE587F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/91"
+        ],
+        "yuanshen": [
+          "26_91"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_91",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.77011,
+        46.21887
+      ],
+      "id": "E96E3FD20EBBA06046314F49E84EA4C0F395FC0E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/92"
+        ],
+        "yuanshen": [
+          "26_92"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_92",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.33432,
+        45.88945
+      ],
+      "id": "3850614214F5DCF8763DF2E68841EA6691374917",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/94"
+        ],
+        "yuanshen": [
+          "26_94"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_94",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.19879,
+        47.78998
+      ],
+      "id": "315E2E3906E44329032407B7AD474B8F6A977DB2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtExquisiteChest/98"
+        ],
+        "yuanshen": [
+          "26_98"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/exquisite-chest/26_98",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

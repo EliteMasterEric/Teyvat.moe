@@ -1,0 +1,1605 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Precious Chest",
+    "ru": "Драгоценный сундук",
+    "zh": ""
+  },
+  "description": {
+    "en": "A solid wooden chest framed with gold. Contains helpful rewards."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "precious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -56.897,
+        26.02112
+      ],
+      "id": "501F4B984968555BA745AC3211B87C4A87DBDE52",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/2001"
+        ],
+        "yuanshen": [
+          "27_1140"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "liyue/precious-chest/2001"
+    },
+    {
+      "coordinates": [
+        -50.83023,
+        44.29138
+      ],
+      "id": "416A101620EA11B32D8FDB111A47C5B371CF99E4",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/2002"
+        ],
+        "yuanshen": [
+          "27_1072"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupTitle": {
+        "en": "Flower Power"
+      },
+      "popupContent": {
+        "en": "Activate all Geo Sigils, following the flowers to activate them from outside to inside. This will spawn an Eye of the Storm, and defeating it spawns the chest."
+      },
+      "popupMedia": "liyue/precious-chest/2002"
+    },
+    {
+      "coordinates": [
+        -38.62545,
+        39.81445
+      ],
+      "id": "1A8F87976ADE77A8E909CA089F2D059406488C9B",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/100"
+        ],
+        "yuanshen": [
+          "27_100"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_100",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.20042,
+        25.20953
+      ],
+      "id": "C14827747803873456FEBE2DC4C7A6FD51BE4CBC",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/1010"
+        ],
+        "yuanshen": [
+          "27_1010"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_1010",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -40.09419,
+        39.0153
+      ],
+      "id": "30AEAC84218B6254215E9B2925B150F1E7452E8A",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/1033"
+        ],
+        "yuanshen": [
+          "27_1033"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_1033",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -43.02167,
+        31.1824
+      ],
+      "id": "F78F8C16E40D71D9372D46C80D47FD0ECC356A64",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/1041"
+        ],
+        "yuanshen": [
+          "27_1041"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_1041",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -48.59831,
+        32.39057
+      ],
+      "id": "FA14333CBB694163A5ECC8EA703D0DE336D7FB99",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/1049"
+        ],
+        "yuanshen": [
+          "27_1049"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_1049",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -46.54753,
+        32.25586
+      ],
+      "id": "708473EC0EE8A2A59342EFEC69709758833FB590",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/1121"
+        ],
+        "yuanshen": [
+          "27_1121"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个珍贵的宝箱。需要击杀先遣队解锁"
+      },
+      "popupMedia": "liyue/precious-chest/27_1121",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -40.6473,
+        42.41821
+      ],
+      "id": "137309F28AB9062EF2B0DCD93981A50A2E6B1E39",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/118"
+        ],
+        "yuanshen": [
+          "27_118"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_118",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -41.07107,
+        43.9563
+      ],
+      "id": "42419222282777EC0E23C435ABD37067F74F2B7F",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/119"
+        ],
+        "yuanshen": [
+          "27_119"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "liyue/precious-chest/27_119"
+    },
+    {
+      "coordinates": [
+        -34.47034,
+        40.68237
+      ],
+      "id": "271DC2A281C8657469E0DF65599E90FFCC9D07D9",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/14"
+        ],
+        "yuanshen": [
+          "27_14"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_14",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -47.15237,
+        45.37354
+      ],
+      "id": "BC8510B3B6E69C4A57543BF5F5A1BB5667AB14ED",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/151"
+        ],
+        "yuanshen": [
+          "27_151"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_151",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -52.66306,
+        57.96387
+      ],
+      "id": "360B272ECDFDEAC23B07BC03C544C5EA0AEA2A55",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/164"
+        ],
+        "yuanshen": [
+          "27_164"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_164",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -53.04782,
+        59.85352
+      ],
+      "id": "5FA083167309C0A579D377FEE1028B1C7DA1F5C6",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/167"
+        ],
+        "yuanshen": [
+          "27_167"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_167",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -53.50765,
+        59.56787
+      ],
+      "id": "68D90D59E3FD5C49D463E0EC33EA5852C4650872",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/170"
+        ],
+        "yuanshen": [
+          "27_170"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_170",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -52.24798,
+        57.64526
+      ],
+      "id": "16BA9D89564B586ADEC919B3B35FFA687A514C25",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/173"
+        ],
+        "yuanshen": [
+          "27_173"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "二楼船，打烂石头"
+      },
+      "popupMedia": "liyue/precious-chest/27_173",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.18169,
+        54.3603
+      ],
+      "id": "3EC2A48BF546CC33B2E98A0EB483168BE97C2854",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/181"
+        ],
+        "yuanshen": [
+          "27_181"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_181",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -49.13141,
+        38.25439
+      ],
+      "id": "EEDF91AB32FB88F4755A38E477284F7FC681EF58",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/202"
+        ],
+        "yuanshen": [
+          "27_202"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_202",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -48.20271,
+        41.85791
+      ],
+      "id": "02CA3DA566C946C12A39655CB2A43084049BA0A7",
+      "importIds": {
+        "yuanshen": [
+          "27_203"
+        ],
+        "gm_legacy": [
+          "liyuePreciousChest/203"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "liyue/precious-chest/27_203"
+    },
+    {
+      "coordinates": [
+        -48.70546,
+        41.9458
+      ],
+      "id": "E57CE50412E86FF473B8C4EA97F1D34B90431D66",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/206"
+        ],
+        "yuanshen": [
+          "27_206"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "liyue/precious-chest/27_206"
+    },
+    {
+      "coordinates": [
+        -48.5166,
+        42.89062
+      ],
+      "id": "3DB587FCF06CFC13E831A78BB2CDD0EE0991BC52",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/207"
+        ],
+        "yuanshen": [
+          "27_207"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_207",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -46.18744,
+        41.52832
+      ],
+      "id": "AFEBF5EE0C0BA3654E806C5C59E173CC8285B2E5",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/215"
+        ],
+        "yuanshen": [
+          "27_215"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_215",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -43.03678,
+        24.104
+      ],
+      "id": "F1378640AE4A615CCD2464AA3EFDE3A316907FB2",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/243"
+        ],
+        "yuanshen": [
+          "27_243"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_243",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -39.54641,
+        47.44995
+      ],
+      "id": "4604327627598EB5261C3AD5A7DC9871F41EEE85",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/250"
+        ],
+        "yuanshen": [
+          "27_250"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败狂风之核解锁的【珍贵宝箱】"
+      },
+      "popupMedia": "liyue/precious-chest/27_250",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.51844,
+        47.10938
+      ],
+      "id": "FF647CD2735C50895565CFBAAF95F819ED4E577D",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/256"
+        ],
+        "yuanshen": [
+          "27_256"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_256",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -42.4883,
+        32.34375
+      ],
+      "id": "24F416EFB8388F3F603A1C39CBF58E5CA95071B1",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/272"
+        ],
+        "yuanshen": [
+          "27_272"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_272",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -41.36032,
+        31.32202
+      ],
+      "id": "0D6448C3A7AA54B40D669A065697620DA96A5764",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/273"
+        ],
+        "yuanshen": [
+          "27_273"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_273",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -44.94147,
+        32.96997
+      ],
+      "id": "B76A0EE5A5B83A8D9D7F59742B86E6CFA4C7B7E8",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/279"
+        ],
+        "yuanshen": [
+          "27_279"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_279",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -49.11703,
+        26.64185
+      ],
+      "id": "566378AD49525F084F6A53694B8C818DDE8D0A89",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/301"
+        ],
+        "yuanshen": [
+          "27_301"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_301",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -48.4292,
+        23.74146
+      ],
+      "id": "219D0695EC4DE16053CD97487139BC2A5498112B",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/303"
+        ],
+        "yuanshen": [
+          "27_303"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_303",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -45.74453,
+        22.73071
+      ],
+      "id": "B2BD9E38800F4E72CD72CE0A01903FFADCFCFE86",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/315"
+        ],
+        "yuanshen": [
+          "27_315"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_315",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -46.59662,
+        25.36743
+      ],
+      "id": "47092793F26D93F8332C17389CC035D260627FC7",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/392"
+        ],
+        "yuanshen": [
+          "27_392"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_392",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -44.00862,
+        21.01685
+      ],
+      "id": "AE69CC574992DD123556F349C43200688A15250A",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/395"
+        ],
+        "yuanshen": [
+          "27_395"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_395",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.51232,
+        44.78951
+      ],
+      "id": "333A416A73431461C57B1CB55F857104FFD7E024",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/4"
+        ],
+        "yuanshen": [
+          "27_4"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -43.96119,
+        28.4436
+      ],
+      "id": "4476453856F6D690EFD5E4497DC788743E8EE2F6",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/424"
+        ],
+        "yuanshen": [
+          "27_424"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_424",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -44.8325,
+        27.93823
+      ],
+      "id": "D05CFF8EEB0D85A8560EA8A99B4F1AE0E68E9A9A",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/425"
+        ],
+        "yuanshen": [
+          "27_425"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_425",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.92523,
+        21.24756
+      ],
+      "id": "EFD62A5997EB5D82A4617EC7300607AFC2E028F7",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/435"
+        ],
+        "yuanshen": [
+          "27_435"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_435",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.88248,
+        26.77368
+      ],
+      "id": "1A734BAF72E71F75A12C3D23F0554ED69F8F71EE",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/439"
+        ],
+        "yuanshen": [
+          "27_439"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_439",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -39.99396,
+        29.729
+      ],
+      "id": "AEE909B0E6F8FEEF9FC17CBB7C731FB434F60B52",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/449"
+        ],
+        "yuanshen": [
+          "27_449"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_449",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.38878,
+        26.61987
+      ],
+      "id": "055871C0E91EC30780D6412CF96A5D9CB8CA02D8",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/458"
+        ],
+        "yuanshen": [
+          "27_458"
+        ]
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "liyue/precious-chest/27_458"
+    },
+    {
+      "coordinates": [
+        -46.58907,
+        27.65259
+      ],
+      "id": "ED732019449F655027064CC15F6AE41454AF9B2D",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/481"
+        ],
+        "yuanshen": [
+          "27_481"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_481",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -55.86298,
+        32.25586
+      ],
+      "id": "E807AD477205B96B379CF558073608CB0F8E58B8",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/499"
+        ],
+        "yuanshen": [
+          "27_499"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_499",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -55.47885,
+        29.15771
+      ],
+      "id": "513DB6E78C7291F525F283B4A56E06CFA546A87A",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/545"
+        ],
+        "yuanshen": [
+          "27_545"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_545",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -58.69407,
+        26.05957
+      ],
+      "id": "4EB34DF49D42D347E181DEFCC2EF6EBAA8B84DE0",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/560"
+        ],
+        "yuanshen": [
+          "27_560"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_560",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -58.7682,
+        32.00317
+      ],
+      "id": "09D41C403E52E2EA099DD05D34B194996D941F04",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/568"
+        ],
+        "yuanshen": [
+          "27_568"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_568",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -58.46498,
+        31.44287
+      ],
+      "id": "54A5000BF1B93D7F8399839F78DA9391AF9467C4",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/588"
+        ],
+        "yuanshen": [
+          "27_588"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_588",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -58.20545,
+        31.53076
+      ],
+      "id": "87C7B5F7740723D024F0DD71BEE7A0AA9D9D09CE",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/589"
+        ],
+        "yuanshen": [
+          "27_589"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_589",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.64206,
+        33.03589
+      ],
+      "id": "186B83E8403CEE0D1CABFA27FD49C421F8A91940",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/591"
+        ],
+        "yuanshen": [
+          "27_591"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_591",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.05698,
+        44.49463
+      ],
+      "id": "89D461CBCD6C7065323AA938BE063454FB39713E",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/6"
+        ],
+        "yuanshen": [
+          "27_6"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -54.18173,
+        36.2384
+      ],
+      "id": "3EC14FC4B9D4EEFD6AAB89EB620F6BF99BEEF9BC",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/601"
+        ],
+        "yuanshen": [
+          "27_601"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【珍贵宝箱】"
+      },
+      "popupMedia": "liyue/precious-chest/27_601",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.54117,
+        36.3208
+      ],
+      "id": "B36475D8F1BA355D91FB39504BD1B5153720E401",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/62"
+        ],
+        "yuanshen": [
+          "27_62"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_62",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -51.99841,
+        43.61572
+      ],
+      "id": "8983824050F311A357CF238251F9C5E184EAA758",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/621"
+        ],
+        "yuanshen": [
+          "27_621"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_621",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -55.28537,
+        27.47681
+      ],
+      "id": "619E65E2067928CBE895A9A6381950BEA2B3B79D",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/636"
+        ],
+        "yuanshen": [
+          "27_636"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是三个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_636",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.03944,
+        28.61938
+      ],
+      "id": "C1C823A9A23DA094AC65C9B2E83A2073406B7E3B",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/642"
+        ],
+        "yuanshen": [
+          "27_642"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_642",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.45222,
+        36.14502
+      ],
+      "id": "4843C71987F7E4D62A6CD37197CE00EF4F501C69",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/650"
+        ],
+        "yuanshen": [
+          "27_650"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_650",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -56.80088,
+        40.62744
+      ],
+      "id": "49A8FDEB768A621485FC8BC69C32DE89620955D6",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/692"
+        ],
+        "yuanshen": [
+          "27_692"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_692",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -48.25394,
+        35.17822
+      ],
+      "id": "22A52802D15408E1728BD056A0B0514298248931",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/723"
+        ],
+        "yuanshen": [
+          "27_723"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "点燃内部三角火炬即可"
+      },
+      "popupMedia": "liyue/precious-chest/27_723",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -57.42721,
+        43.78052
+      ],
+      "id": "62958FDB8D63897C99D44C1A34F37386681315A8",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/734"
+        ],
+        "yuanshen": [
+          "27_734"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_734",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -56.51102,
+        37.90283
+      ],
+      "id": "D18EEC28D0C98DA567DB84ECEE583EDF881E90C2",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/745"
+        ],
+        "yuanshen": [
+          "27_745"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_745",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -57.26122,
+        43.03345
+      ],
+      "id": "11814922ADBF102ACB6EFB4511AF4A30DE5B1022",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/763"
+        ],
+        "yuanshen": [
+          "27_763"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_763",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -51.04143,
+        33.88185
+      ],
+      "id": "D34D0B0325680FFB0FB56217A2C6C8E412C8A98B",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/772"
+        ],
+        "yuanshen": [
+          "27_772"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "从右侧窗户进去"
+      },
+      "popupMedia": "liyue/precious-chest/27_772",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -48.23569,
+        47.55987
+      ],
+      "id": "BD3C17204EB677C10D61B2E37827E32CAFDB73DA",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/797"
+        ],
+        "yuanshen": [
+          "27_797"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_797",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -43.12504,
+        34.15649
+      ],
+      "id": "B410EEB9C53E7892074550388B2E8E6AD98D54EA",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/820"
+        ],
+        "yuanshen": [
+          "27_820"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_820",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.13843,
+        42.52807
+      ],
+      "id": "A5583913BC131CD0448D3F5060970D57CD8B0F44",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/854"
+        ],
+        "yuanshen": [
+          "27_854"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "击败雷萤术士获得的【珍贵宝箱】"
+      },
+      "popupMedia": "liyue/precious-chest/27_854",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -44.86491,
+        37.81494
+      ],
+      "id": "AA7D90AA7525044094B6C22EA6041E5304FF1F7F",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/872"
+        ],
+        "yuanshen": [
+          "27_872"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_872",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -52.25471,
+        34.44214
+      ],
+      "id": "8DA47C9E5EAE69B7080B671C8737FC2CC2D4C0E9",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/913"
+        ],
+        "yuanshen": [
+          "27_913"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_913",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -50.57657,
+        43.60559
+      ],
+      "id": "2781678FD2A4EC44AEB29E437938033ED7C23B8F",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/944"
+        ],
+        "yuanshen": [
+          "27_944"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_944",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -52.62231,
+        41.04647
+      ],
+      "id": "45A33881D85D6CD53E48E5838A156A288855DBD1",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/949"
+        ],
+        "yuanshen": [
+          "27_949"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "客栈假山宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_949",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -51.79502,
+        29.02588
+      ],
+      "id": "DFE5382A93C56B214A162D381A017F8595D23A75",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/956"
+        ],
+        "yuanshen": [
+          "27_956"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "击败幼岩龙蜥蜴解锁的【珍贵宝箱】"
+      },
+      "popupMedia": "liyue/precious-chest/27_956",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -49.9121,
+        26.68407
+      ],
+      "id": "FAB21E5AECAFF5D2F11E63BC4B6EF736B2D32D39",
+      "importIds": {
+        "gm_legacy": [
+          "liyuePreciousChest/978"
+        ],
+        "yuanshen": [
+          "27_978"
+        ]
+      },
+      "popupTitle": {
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个璃月宝箱"
+      },
+      "popupMedia": "liyue/precious-chest/27_978",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

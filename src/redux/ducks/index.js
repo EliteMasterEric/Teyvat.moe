@@ -5,6 +5,8 @@
  */
 // import { combineReducers } from 'redux';
 
+import _ from 'lodash';
+
 import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
 import completedReducer, {
   CLEAR_FEATURE_COMPLETED,
@@ -46,23 +48,7 @@ export const CLEAR_STATE = 'genshinmap/prefs/CLEAR_STATE';
 /**
  * The default state of the application.
  */
-export const initialState = {
-  // version (not needed in state)
-
-  // Not saved in localStorage, and thus reset on page refresh..
-  editorEnabled: DEFAULT_MAP_PREFERENCES.editorEnabled,
-  editorHighlight: DEFAULT_MAP_PREFERENCES.editorHighlight,
-  position: DEFAULT_MAP_PREFERENCES.position,
-  controlsTab: DEFAULT_MAP_PREFERENCES.controlsTab,
-  controlsCategory: DEFAULT_MAP_PREFERENCES.controlsCategory,
-  controlsRegion: DEFAULT_MAP_PREFERENCES.controlsRegion,
-
-  // Saved in localStorage.
-  options: DEFAULT_MAP_PREFERENCES.options,
-  displayed: DEFAULT_MAP_PREFERENCES.displayed,
-  editor: DEFAULT_MAP_PREFERENCES.editor,
-  completed: DEFAULT_MAP_PREFERENCES.completed,
-};
+export const initialState = _.omit(DEFAULT_MAP_PREFERENCES, ['version']);
 
 /**
  * The state of the application is produced by reducers.

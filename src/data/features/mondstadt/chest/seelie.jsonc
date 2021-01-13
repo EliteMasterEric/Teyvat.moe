@@ -1,0 +1,646 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Seelie",
+    "ru": "Феи",
+    "zh": ""
+  },
+  "description": {
+    "en": "Mysterious beings who now only offer small treasures to those willing to follow them."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "seelie",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -20.11655,
+        50.12044
+      ],
+      "id": "91C3D272595E6FBA3B25019FD915373C1A53F3D4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/140"
+        ],
+        "yuanshen": [
+          "26_140"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_140",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.93676,
+        51.29537
+      ],
+      "id": "BDBFDC9189BBD21B9FE046B1F3C658A92D40BCCA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/157"
+        ],
+        "yuanshen": [
+          "26_157"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "需要两个仙灵的仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_157",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.59758,
+        50.77902
+      ],
+      "id": "E87ED3600939CF214183ED3C46FEE6100720B2C9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/160"
+        ],
+        "yuanshen": [
+          "26_160"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_160",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.86336,
+        52.68127
+      ],
+      "id": "488F1FD7F72E25FBA5B892E9950505826C1B6E29",
+      "importIds": {
+        "yuanshen": [
+          "26_182"
+        ],
+        "gm_legacy": [
+          "mondstadtSeelie/182"
+        ],
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "跟随仙灵出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/seelie/26_182",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.11897,
+        39.59478
+      ],
+      "id": "B5FEC6E1FB4AFF40F621240F9DB885641FA92EAD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/21"
+        ],
+        "yuanshen": [
+          "26_21"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_21",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.90883,
+        59.10588
+      ],
+      "id": "326C4015764842E1B68FCBE5AFFBC2AD725E7F05",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/227"
+        ],
+        "yuanshen": [
+          "26_227"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_227",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.50729,
+        57.77723
+      ],
+      "id": "59B1289D166B57BE0AE8D122EB08A8162D506A52",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/230"
+        ],
+        "yuanshen": [
+          "26_230"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_230",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.64001,
+        58.10584
+      ],
+      "id": "42C2B49FD1E9C95862E0AE3056E9A1732D800BED",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/237"
+        ],
+        "yuanshen": [
+          "26_237"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "跟随仙灵出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/seelie/26_237",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.86469,
+        64.07121
+      ],
+      "id": "F971A730D142BE330D320AA8B327809E602DEC2D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/290"
+        ],
+        "yuanshen": [
+          "26_290"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_290",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.81825,
+        62.23745
+      ],
+      "id": "886C20D46F2A8BB82DB3C5EDD03CD6B791DF8628",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/298"
+        ],
+        "yuanshen": [
+          "26_298"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个跟随仙灵获得的精致宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_298",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.82736,
+        64.09354
+      ],
+      "id": "1E964D4BC4814E023443B1B788DA6B94B5093EC0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/301"
+        ],
+        "yuanshen": [
+          "26_301"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_301",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.63162,
+        60.94211
+      ],
+      "id": "861CFA71FB05A41DA4F91BC17614C09BDDB0CEBA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/307"
+        ],
+        "yuanshen": [
+          "26_307"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_307",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.21959,
+        40.76968
+      ],
+      "id": "D5797AB7159DA9CFB99DF2D057499D21AA9B772C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/31"
+        ],
+        "yuanshen": [
+          "26_31"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_31",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.00714,
+        64.05579
+      ],
+      "id": "138E3BBBEBB12EDC899BDBBB392051EB4740DEFF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/318"
+        ],
+        "yuanshen": [
+          "26_318"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_318",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.32086,
+        65.4997
+      ],
+      "id": "FE1553AD1A31D5A7A684AE5652F427E43FE81F99",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/352"
+        ],
+        "yuanshen": [
+          "26_352"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_352",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.33456,
+        66.64241
+      ],
+      "id": "EB94DBA5C0CB1AF52DD402A1AE2D7FCFD1FDEABE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/365"
+        ],
+        "yuanshen": [
+          "26_365"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_365",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.64084,
+        67.89422
+      ],
+      "id": "F8B42073D33D63531D23A390FAAC94F634718EF3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/383"
+        ],
+        "yuanshen": [
+          "26_383"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_383",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.84868,
+        67.08265
+      ],
+      "id": "880EDDB78F8246C74BA768066E4635A589E6B0DD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/402"
+        ],
+        "yuanshen": [
+          "26_402"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "三个仙灵汇聚的宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_402",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.23621,
+        70.44359
+      ],
+      "id": "97D3274103AFEE471E34D197FD7820433E8C3B0C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/413"
+        ],
+        "yuanshen": [
+          "26_413"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个跟随仙灵获得的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/seelie/26_413",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.61376,
+        71.2891
+      ],
+      "id": "D342A4614BC30501523C15F76A4D052D2A64DB35",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/416"
+        ],
+        "yuanshen": [
+          "26_416"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击碎石头跟随仙灵获得的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/seelie/26_416",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.62329,
+        70.40083
+      ],
+      "id": "1E1B538D1C57C1977DF848C870D32E3D1B0C2F6A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/455"
+        ],
+        "yuanshen": [
+          "26_455"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：仙灵宝箱\n备注：还需要一个仙灵，在宝箱的正北方不远的山坡上"
+      },
+      "popupMedia": "mondstadt/seelie/26_455",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.93642,
+        42.73641
+      ],
+      "id": "2726312CFD0E3ED6776574784B1D65ED847D27C7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/50"
+        ],
+        "yuanshen": [
+          "26_50"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_50",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.34348,
+        44.31852
+      ],
+      "id": "6BEF1EA1C8A45073B79BA90C9F75DFEF4EE70A7A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/69"
+        ],
+        "yuanshen": [
+          "26_69"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_69",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.02605,
+        44.69195
+      ],
+      "id": "9FF5CB7EC2C534D90136D551F568E30CED5ABBA2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/76"
+        ],
+        "yuanshen": [
+          "26_76"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_76",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.11915,
+        45.95533
+      ],
+      "id": "B05A29D21CD6495ECE2E86C7A836C6F64358BE94",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/93"
+        ],
+        "yuanshen": [
+          "26_93"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_93",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.9642,
+        48.99785
+      ],
+      "id": "8D9299C5E0F13D44848BBED87854B274B8109A7E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/95"
+        ],
+        "yuanshen": [
+          "26_95"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_95",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.32906,
+        47.62527
+      ],
+      "id": "00573C028F0C76A51D2DF2062BE4C3B41EEE63C6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtSeelie/99"
+        ],
+        "yuanshen": [
+          "26_99"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/seelie/26_99",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

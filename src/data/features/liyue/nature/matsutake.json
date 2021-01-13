@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Matsutake",
     "ru": "Мацутакэ"
@@ -6,7 +7,9 @@
   "description": {
     "en": "A rare fungus that grows near pine trees. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "matsutake",
     "base": {
@@ -18,114 +21,131 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-41.9513199467, 35.9197998046]
+      "coordinates": [
+        -41.95132,
+        35.9198
+      ],
+      "id": "DCADDF9D3F2B0D8367DA9A7272F73501A087C861",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/1"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 1
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-43.0327606858, 35.0189208984]
+      "coordinates": [
+        -43.03276,
+        35.01892
+      ],
+      "id": "8B05680E56A13E08E742A75F1BE9F4390AF51E68",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/2"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-39.3002991861, 29.7290039062]
+      "coordinates": [
+        -39.3003,
+        29.729
+      ],
+      "id": "31FA4E52F85D6E4785EBE798325E1DCF2451342C",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/3"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 3
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.0046734867, 42.5335693359]
+      "coordinates": [
+        -36.00467,
+        42.53357
+      ],
+      "id": "96C6980277C566F690839E069C531329FE9D0280",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/4"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 4
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-33.6191937681, 43.4729003906]
+      "coordinates": [
+        -33.61919,
+        43.4729
+      ],
+      "id": "B2125FFD3680522574DC2B1709B901D7BBB0C0E2",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/5"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 5
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0825745595, 44.038696289]
+      "coordinates": [
+        -32.08257,
+        44.0387
+      ],
+      "id": "F9CF18DCB99BCDFAFCDEFB8275BEAC5EF758E1FC",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/6"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 6
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.9335566875, 41.313246528]
+      "coordinates": [
+        -50.93356,
+        41.31325
+      ],
+      "id": "D1254C27A9762573DD1F505046C4FA5BDF0F8FCD",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/7"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-50.8746885584, 41.2034048505]
+      "coordinates": [
+        -50.87469,
+        41.2034
+      ],
+      "id": "2FC1A84B3205CD4F043006B10CABA3A25F595C0E",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/8"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 8
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0719986209, 42.6862588552]
+      "coordinates": [
+        -37.072,
+        42.68626
+      ],
+      "id": "7D0324F6D12908F6BF608D48B60F56E432D75355",
+      "importIds": {
+        "gm_legacy": [
+          "liyueMatsutake/9", 
+          "liyueMatsutake/10"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 9
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.0719986209, 42.6862588552]
-      },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 10
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     }
   ]
 }

@@ -146,9 +146,9 @@ export const getElementPathById = (id) => {
   // Search the features.
   Object.keys(MapFeatures).forEach((featureKey) => {
     const feature = MapFeatures[featureKey];
-    const matchingMarkers = feature.data.filter((element) => element.id === id);
+    const matchingMarkers = feature.data.filter((element) => element.id.startsWith(id));
     if (matchingMarkers.length >= 1) {
-      result = `feature/${featureKey}/${id}`;
+      result = `feature/${featureKey}/${matchingMarkers[0].id}`;
     }
   });
   if (result !== null) return result;
@@ -156,9 +156,9 @@ export const getElementPathById = (id) => {
   // Search the routes.
   Object.keys(MapRoutes).forEach((routeKey) => {
     const routes = MapRoutes[routeKey];
-    const matchingMarkers = routes.data.filter((element) => element.id === id);
-    if (matchingMarkers.length >= 1) {
-      result = `route/${routeKey}/${id}`;
+    const matchingRoutes = routes.data.filter((element) => element.id.startsWith(id));
+    if (matchingRoutes.length >= 1) {
+      result = `route/${routeKey}/${matchingRoutes[0].id}`;
     }
   });
   if (result !== null) return result;
@@ -185,4 +185,18 @@ export const getElementByPath = (path) => {
       break;
   }
   return null;
+};
+
+export const getMarkerCount = () => {
+  return Object.keys(MapFeatures).reduce((sum, key, _index) => {
+    const feature = MapFeatures[key];
+    return sum + feature.data.length;
+  }, 0);
+};
+
+export const getRouteCount = () => {
+  return Object.keys(MapRoutes).reduce((sum, key, _index) => {
+    const route = MapRoutes[key];
+    return sum + route.data.length;
+  }, 0);
 };

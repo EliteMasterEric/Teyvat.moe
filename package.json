@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.10.2",
+  "version": "0.10.3-alpha",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -54,6 +54,7 @@
     "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "^3.0.4",
     "react-leaflet-markercluster": "^3.0.0-rc1",
+    "react-leaflet-textpath": "github:MasterEric/react-leaflet-textpath#dist",
     "react-localization": "^1.0.15",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
@@ -80,6 +81,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.0",
+    "jsonc-loader": "^0.1.1",
     "prettier": "^2.1.2",
     "react-app-rewired": "^2.1.8",
     "serve": "^11.3.2"

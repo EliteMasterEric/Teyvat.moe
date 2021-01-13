@@ -18,13 +18,15 @@ import { useDebouncedState } from '~/components/Util';
 /**
  * A debounced text field.
  */
-export const InputTextField = ({ value, onChange, ...others }) => {
+export const InputTextField = ({ value, onChange, errorText, ...others }) => {
   const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
 
   return (
     <MaterialTextField
       value={currentValue}
       onChange={(event) => setCurrentValue(event.target.value)}
+      error={errorText !== undefined}
+      helperText={errorText ?? ''}
       {...others}
     />
   );

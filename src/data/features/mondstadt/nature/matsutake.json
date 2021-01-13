@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Matsutake",
     "ru": "Мацутакэ"
@@ -6,7 +7,9 @@
   "description": {
     "en": "A rare fungus that grows near pine trees. Used in Recipes."
   },
-  "cluster": false,
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
   "icons": {
     "filter": "matsutake",
     "base": {
@@ -18,356 +21,452 @@
   },
   "data": [
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.8676336168, 68.0712890625]
+      "coordinates": [
+        -16.86763,
+        68.07129
+      ],
+      "id": "037998878E25443950374F3BB1F7E83C9D92DD64",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/1"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 1
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.0620360807, 67.6263427734]
+      "coordinates": [
+        -17.06204,
+        67.62634
+      ],
+      "id": "54FD0194A873040B3C1D89C4120F93495F78C7DC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/2"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 2
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.3367453626, 66.5335733747]
+      "coordinates": [
+        -17.33675,
+        66.53357
+      ],
+      "id": "F6A6820871E4EDB47986A80FD140CECC63DA6D07",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/3"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 3
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.724299645, 69.5159912109]
+      "coordinates": [
+        -18.7243,
+        69.51599
+      ],
+      "id": "ACC4E4A5AD336D5059F41788AD1C0CEB666538CA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/4"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 4
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.4135461143, 71.3342285156]
+      "coordinates": [
+        -17.41355,
+        71.33423
+      ],
+      "id": "386B3A00C546F753AA52AB58EB7E832074FF6C61",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/5"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 5
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.6677686612, 71.4166259765]
+      "coordinates": [
+        -16.66777,
+        71.41663
+      ],
+      "id": "D9E62EF1AD4B826F92E37D41798A518932985FB0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/6"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 6
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-25.19095588, 68.8874310313]
+      "coordinates": [
+        -25.19096,
+        68.88743
+      ],
+      "id": "BF40A6B9DA4EDDC83019939AE98153827BE15BB2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/7"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 7
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.9902355596, 58.18359375]
+      "coordinates": [
+        -32.99024,
+        58.18359
+      ],
+      "id": "B84992E515F92B63DF1E91CA1F8C7E35B4D1915C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/8"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 8
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.0033362001, 67.153930664]
+      "coordinates": [
+        -29.00334,
+        67.15393
+      ],
+      "id": "352D372CF7353382C3014E34DA5F5F76C5843BA8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/9"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 9
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-29.3678143847, 68.3514404296]
+      "coordinates": [
+        -29.36781,
+        68.35144
+      ],
+      "id": "8F1B7E930DA21F991B347A20462821926FD41F8E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/10"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 10
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-27.8002099374, 69.2358398437]
+      "coordinates": [
+        -27.80021,
+        69.23584
+      ],
+      "id": "95E9F442E687699D16E94767C41E14472CE19B13",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/11"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 11
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-28.4058967224, 68.9392089843]
+      "coordinates": [
+        -28.4059,
+        68.93921
+      ],
+      "id": "0882CCE330CE538EEA47F0A01A2B3A7FAB9711FC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/12"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 12
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.7149535069, 70.1477050781]
+      "coordinates": [
+        -23.71495,
+        70.14771
+      ],
+      "id": "B861374B56A1871AFF0D07DBF98DED8E01DDE04D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/13"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 13
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.6243945697, 70.2630615234]
+      "coordinates": [
+        -23.62439,
+        70.26306
+      ],
+      "id": "245BB4E2D47AF7D269C1ABA7B3E25700C0866308",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/14"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 14
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.0639555946, 54.2834472656]
+      "coordinates": [
+        -32.06396,
+        54.28345
+      ],
+      "id": "688F96A545C2EC0956D2A24021DFD0E3F9DE24D8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/15"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 15
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.1291053786, 54.4372558593]
+      "coordinates": [
+        -32.12911,
+        54.43726
+      ],
+      "id": "CC4744609274BDF62FF6B2226FD5603D6BF33027",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/16"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 16
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-32.1849110505, 54.3273925781]
+      "coordinates": [
+        -32.18491,
+        54.32739
+      ],
+      "id": "05A0EE03EBADE7BFDC52ACE7D4D27C2CDD0642B5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/17"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 17
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.5603564576, 73.3931651595]
+      "coordinates": [
+        -36.56036,
+        73.39317
+      ],
+      "id": "4D629431FBD34AC5298AF84F3F1143D5167B996D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/18"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 18
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-36.597889133, 72.3834228515]
+      "coordinates": [
+        -36.59789,
+        72.38342
+      ],
+      "id": "70C3317C06B87B1B58144517AD52D3C92AFE6B20",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/19"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 19
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-38.9978413075, 69.5819091796]
+      "coordinates": [
+        -38.99784,
+        69.58191
+      ],
+      "id": "2A3E209151FE4FCE0B30F842B124DB3BC66044F1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/20"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 20
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-37.7098993548, 66.2530517578]
+      "coordinates": [
+        -37.7099,
+        66.25305
+      ],
+      "id": "FC739450949875A1393C0DFFE185C63F3C4A8F75",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/21"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 21
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-23.4531680159, 69.7631835937]
+      "coordinates": [
+        -23.45317,
+        69.76318
+      ],
+      "id": "EA71EDBB93846E4BAE6335EE2EAEB5108B3549BD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/22"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 22
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.2052634561, 49.8724365234]
+      "coordinates": [
+        -45.20526,
+        49.87244
+      ],
+      "id": "DB015A0632C2B651D1B029CF31F00ECB61098E14",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/23"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 23
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-45.3405631388, 50.8117675781]
+      "coordinates": [
+        -45.34056,
+        50.81177
+      ],
+      "id": "17CF9937F7DDB1E7B6DE0DC529519C41BC6CB8DA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/24"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 24
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-46.6494361633, 41.4074707031]
+      "coordinates": [
+        -46.64944,
+        41.40747
+      ],
+      "id": "67F7E3AF01B7E01F3F3B4A2707CFD8D2D7A4F6FC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/25"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 25
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-48.5420687636, 40.9954833984]
+      "coordinates": [
+        -48.54207,
+        40.99548
+      ],
+      "id": "AE78B2EE3923483C54EFA3D68C0BEDAEE22E695A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/26"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 26
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-20.9957424905, 69.7510274223]
+      "coordinates": [
+        -20.99574,
+        69.75103
+      ],
+      "id": "4B11EEFE2424AACACA5562A80F8F8443B93F5E2C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/27"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 27
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.17111285978146, 63.14941406250001]
+      "coordinates": [
+        -19.17111,
+        63.14941
+      ],
+      "id": "5E3AC80CE0D82B5CBBECC1A96993DEBFACD7FB11",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/28"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 28
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-19.17111285978146, 60.57861328125001]
+      "coordinates": [
+        -19.17111,
+        60.57861
+      ],
+      "id": "F9D8430730020818535E456018DFDAE863206026",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/29"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 29
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-18.004855857908037, 62.85827636718751]
+      "coordinates": [
+        -18.00486,
+        62.85828
+      ],
+      "id": "3C60E658A9D1AB9B664A301EEB8B544A39DAEA1A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/30"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 30
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-16.741427547003596, 71.30126953125001]
+      "coordinates": [
+        -16.74143,
+        71.30127
+      ],
+      "id": "05457CB27112DBDD846F7335DA9B789B72EB0DF8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/31"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 31
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     },
     {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-17.413546114374437, 71.22436523437501]
+      "coordinates": [
+        -17.41355,
+        71.22437
+      ],
+      "id": "9122E99A7F399F8781CDA283B48F6B4248C7E248",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtMatsutake/32"
+        ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupMedia": ""
-      },
-      "id": 32
+      "popupAttribution": "Unknown",
+      "popupMedia": ""
     }
   ]
 }

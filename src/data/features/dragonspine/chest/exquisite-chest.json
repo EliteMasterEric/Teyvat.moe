@@ -1,4 +1,5 @@
 {
+  "format": 2,
   "name": {
     "en": "Exquisite Chest",
     "ru": "Богатый сундук"
@@ -7,7 +8,8 @@
     "en": "A solid wooden chest held together with iron. Contains useful rewards."
   },
   "enabled": false,
-  "cluster": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "exquisite-chest",
     "base": {
@@ -17,5 +19,7 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+
+  ]
 }

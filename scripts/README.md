@@ -35,3 +35,7 @@ Markers with no corresonding marker in Migrated will be annotated as NEW MARKER:
 【珍贵宝箱】: Precious Chest
 【华丽宝箱】: Luxurious Chest
 【绯红玉髓】: Crimson Agate
+
+## MapGenie
+
+Paste the FULL contents of `window.store.getState()` into `output/mapgenie/InputData.json`

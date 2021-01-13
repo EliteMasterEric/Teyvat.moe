@@ -39,7 +39,7 @@ def parse_marker_for_media(marker, region, featureName):
   mediaURL = marker['properties']['popupMedia']
   mediaExternalMatch = imageURLPattern.match(mediaURL)
   if mediaExternalMatch is not None:
-    markerId = marker['id']
+    markerId = marker['id'][0:7] # First 7 characters.
     mediaExternalBase = mediaExternalMatch.group(1) 
     mediaExternalExt = mediaExternalMatch.group(2)
 

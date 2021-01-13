@@ -1,0 +1,117 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Challenge and Time Trial",
+    "ru": "Вызов и испытание на время",
+    "zh": ""
+  },
+  "description": {
+    "en": "Complete a race or challenge, or defeat a group of enemies, to receive a reward."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "challenge",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -25.50351,
+        45.81214
+      ],
+      "id": "3175730226E102BD45E5D8B22C6C4C4F509E7112",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtChallenge/107"
+        ],
+        "yuanshen": [
+          "26_107"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/challenge/26_107",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.38302,
+        49.91181
+      ],
+      "id": "D6BFE991C0F3614AA5699E19C9E32A5183EBCB64",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtChallenge/155"
+        ],
+        "yuanshen": [
+          "26_155"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "挑战宝箱"
+      },
+      "popupMedia": "mondstadt/challenge/26_155",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.49523,
+        39.56726
+      ],
+      "id": "C45201685160B42B7BEF6DF7DE1CF388D9ECDE75",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtChallenge/19"
+        ],
+        "yuanshen": [
+          "26_19"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/challenge/26_19",
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个完成限时击杀挑战出现的【精致宝箱】"
+      }
+    },
+    {
+      "coordinates": [
+        -22.27987,
+        46.46133
+      ],
+      "id": "D9F26E7A77A613AD35F27B715FEAFE7F1E3AFA70",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtChallenge/96"
+        ],
+        "yuanshen": [
+          "26_96"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/challenge/26_96",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

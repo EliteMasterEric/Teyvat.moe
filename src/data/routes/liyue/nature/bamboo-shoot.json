@@ -1,36 +1,81 @@
 {
-  "name": { "en": "Bamboo Shoots" },
+  "format": 2,
+  "name": {
+    "en": "Bamboo Shoots"
+  },
+  "description": {
+    "en": ""
+  },
+  "enabled": true,
   "icons": {
     "filter": "bamboo-shoot"
   },
   "data": [
     {
-      "id": 1,
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-35.13787911963419, 32.87658691406251],
-          [-34.48844783780931, 32.72277832031251],
-          [-34.366110728831174, 32.47009277343751],
-          [-34.089061315849946, 32.34924316406251],
-          [-34.04355650412745, 32.72277832031251],
-          [-33.811102288647014, 32.74475097656251],
-          [-33.674068533741966, 32.34924316406251],
-          [-33.50933936780059, 32.75573730468751],
-          [-32.98102014898148, 32.83264160156251],
-          [-32.828827094089085, 32.75024414062501],
-          [-32.64400044827676, 32.38769531250001],
-          [-32.25926542645934, 32.31079101562501]
+      "coordinates": [
+        [
+          -35.13788,
+          32.87659
+        ],
+        [
+          -34.48845,
+          32.72278
+        ],
+        [
+          -34.36611,
+          32.47009
+        ],
+        [
+          -34.08906,
+          32.34924
+        ],
+        [
+          -34.04356,
+          32.72278
+        ],
+        [
+          -33.8111,
+          32.74475
+        ],
+        [
+          -33.67407,
+          32.34924
+        ],
+        [
+          -33.50934,
+          32.75574
+        ],
+        [
+          -32.98102,
+          32.83264
+        ],
+        [
+          -32.82883,
+          32.75024
+        ],
+        [
+          -32.644,
+          32.3877
+        ],
+        [
+          -32.25927,
+          32.31079
+        ]
+      ],
+      "id": "6DEE03D62AB34EC34C6EEB3E515AE825F5975653",
+      "importIds": {
+        "gm_legacy": [
+          "liyueBambooShoot/1"
         ]
       },
-      "type": "Feature",
-      "properties": {
-        "popupTitle": { "en": "Bamboo Shoots" },
-        "popupContent": {
-          "en": "Follow the forest path, then head across the bridge and behind the house, collecting the marked bamboo shoots."
-        },
-        "popupMedia": ""
-      }
+      "popupAttribution": "Unknown",
+      "popupTitle": {
+        "en": "Bamboo Shoots"
+      },
+      "popupContent": {
+        "en": "Follow the forest path, then head across the bridge and behind the house, collecting the marked bamboo shoots."
+      },
+      "popupMedia": ""
     }
   ]
 }

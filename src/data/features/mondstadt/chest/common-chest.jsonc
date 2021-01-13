@@ -1,0 +1,6283 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Common Chest",
+    "ru": "Обычный сундук",
+    "zh": ""
+  },
+  "description": {
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "common-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -18.32384,
+        66.82924
+      ],
+      "id": "1A9526F5D542C86B231B445E2900A8F18318103F",
+      "importIds": {
+        "yuanshen": [
+          "26_336"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/2001"
+        ]
+      },
+      "popupTitle": {
+        "en": "#336: Common Chest - Stormbearer Mountains",
+        "ru": "Обычный сундук - Горы Буревестника",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "en": "Behind a stone near the long lake",
+        "ru": "Позади камня ближе к озеру",
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/2001",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.25432,
+        51.45447
+      ],
+      "id": "9F8D69783525CD76EBF5884189016D3090CCA455",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/2002"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9F8D697"
+      }
+    },
+    {
+      "coordinates": [
+        -27.86822,
+        46.05469
+      ],
+      "id": "7030326971B0D1AA04CB592ECA3952A8341B976D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/2003"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/2003",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 7030326"
+      }
+    },
+    {
+      "coordinates": [
+        -27.89735,
+        45.46143
+      ],
+      "id": "150ECB4C0F67CAED8EA9A790A6654919362C9847",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/2004"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "Appears after killing the slimes here.",
+        "ru": "Появляется здесь после убийства слаймов."
+      },
+      "popupMedia": "mondstadt/common-chest/2004",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 150ECB4"
+      }
+    },
+    {
+      "coordinates": [
+        -33.10995,
+        66.95068
+      ],
+      "id": "C724A24643BFDCF60611C6F54A2A2EB226C17449",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/2005"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupContent": {
+        "en": "Located behind a rock formation which must be smashed. The rocks can be highlighted with Elemental Sight.",
+        "ru": "Расположен позади груды камней, который нужно разрушить. Груда камней может быть выделена с помощью Чувства Стихий."
+      },
+      "popupMedia": "mondstadt/common-chest/2005",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: C724A24"
+      }
+    },
+    {
+      "coordinates": [
+        -24.2999,
+        56.08539
+      ],
+      "id": "1AFA6EA556CE57D03D12DA809381A45B89210965",
+      "importIds": {
+        "yuanshen": [
+          "26_206"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/206"
+        ]
+      },
+      "popupTitle": {
+        "en": "#206",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_206.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.94652,
+        55.59814
+      ],
+      "id": "DF28FEBF428EFE19E4BB54F7DF4C3A49F84428CF",
+      "importIds": {
+        "yuanshen": [
+          "26_215"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/215"
+        ]
+      },
+      "popupTitle": {
+        "en": "#215",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】10阅历"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_215.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.24798,
+        56.34892
+      ],
+      "id": "7A09ED36F0FA4C3DDD5D213C31B7509FD041E779",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/217"
+        ],
+        "yuanshen": [
+          "26_217"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "en": "On the roof of the Knights of Favonius",
+        "ru": "На крыше штаба Ордо Фавониус",
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/217",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.35637,
+        55.99754
+      ],
+      "id": "532378BD956149FA24EEBAD0ABD86A227ACA85E8",
+      "importIds": {
+        "yuanshen": [
+          "26_218"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/218"
+        ]
+      },
+      "popupTitle": {
+        "en": "#218",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个普通宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/218",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.622,
+        56.27206
+      ],
+      "id": "181825A98C3015288BA19117FF3851E91FEE3A9A",
+      "importIds": {
+        "yuanshen": [
+          "26_220"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/220"
+        ]
+      },
+      "popupTitle": {
+        "en": "#220",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/220",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.21985,
+        57.07364
+      ],
+      "id": "7A769802ACA433FC49DDD7866648C18DBC29577E",
+      "importIds": {
+        "yuanshen": [
+          "26_224"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/224"
+        ]
+      },
+      "popupTitle": {
+        "en": "#224",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/224",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.45419,
+        57.62267
+      ],
+      "id": "A777CC793B38A008D03D20F5D5390B055B59D0A1",
+      "importIds": {
+        "yuanshen": [
+          "26_225"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/225"
+        ]
+      },
+      "popupTitle": {
+        "en": "#225",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/225",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.92622,
+        57.80934
+      ],
+      "id": "BECF00AFF308CE74AB84E7081030DA49F7EFC1AE",
+      "importIds": {
+        "yuanshen": [
+          "26_223"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/223"
+        ]
+      },
+      "popupTitle": {
+        "en": "#223",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/223",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.7693,
+        58.46818
+      ],
+      "id": "8457F3E356230F37F0AF21067DD3DF25BCF40F72",
+      "importIds": {
+        "yuanshen": [
+          "26_221"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/221"
+        ]
+      },
+      "popupTitle": {
+        "en": "#221",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/221",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.46466,
+        58.80858
+      ],
+      "id": "C492CF573DC883C3E00173E29D898805018BD9A4",
+      "importIds": {
+        "yuanshen": [
+          "26_219"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/219"
+        ]
+      },
+      "popupTitle": {
+        "en": "#219",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/219",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.5955,
+        58.95132
+      ],
+      "id": "283AE1BDE2A7212260DCEBF92BA5661B5362ED09",
+      "importIds": {
+        "yuanshen": [
+          "26_212"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/212"
+        ]
+      },
+      "popupTitle": {
+        "en": "#212",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/212",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.16847,
+        58.55602
+      ],
+      "id": "5BF77EE8FF61C342F219F18DFDF29A8B0771A1AF",
+      "importIds": {
+        "yuanshen": [
+          "26_211"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/211"
+        ]
+      },
+      "popupTitle": {
+        "en": "#211",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/211",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.60541,
+        57.84228
+      ],
+      "id": "82530D0C91F47AD86BF3A25BFD722F22CB9AA188",
+      "importIds": {
+        "yuanshen": [
+          "26_213"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/213"
+        ]
+      },
+      "popupTitle": {
+        "en": "#213",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_213.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.15852,
+        57.76542
+      ],
+      "id": "918BA72FEAE2FA7C43B27EAC2559A13FBB34E9C1",
+      "importIds": {
+        "yuanshen": [
+          "26_210"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/210"
+        ]
+      },
+      "popupTitle": {
+        "en": "#210",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_210.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.79982,
+        57.54581
+      ],
+      "id": "4FF6404954A83AFFEE0AE46A34BE02E1FA2D5E3A",
+      "importIds": {
+        "yuanshen": [
+          "26_209"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/209"
+        ]
+      },
+      "popupTitle": {
+        "en": "#209",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_209.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.36,
+        57.0407
+      ],
+      "id": "2C049B49CD247F900B509203367ADE987B097E2C",
+      "importIds": {
+        "yuanshen": [
+          "26_207"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/207"
+        ]
+      },
+      "popupTitle": {
+        "en": "#207",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_207.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -25.92219,
+        57.20541
+      ],
+      "id": "538D3656C540F2C9B225A2C9EAD5636C245E0B92",
+      "importIds": {
+        "yuanshen": [
+          "26_214"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/214"
+        ]
+      },
+      "popupTitle": {
+        "en": "#214",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_214.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.42918,
+        47.85587
+      ],
+      "id": "A874A14F5AF7657F389BD9F6FEBC3C89983D7744",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/100"
+        ],
+        "yuanshen": [
+          "26_100"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_100",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.78709,
+        49.09534
+      ],
+      "id": "C1FA12E8EC94828D575D7CED2B5FD465C1B85BFD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/102"
+        ],
+        "yuanshen": [
+          "26_102"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_102",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.18609,
+        46.86628
+      ],
+      "id": "3341D1C0ABAB14AE23790F5362C2C42BC98D1AEA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/108"
+        ],
+        "yuanshen": [
+          "26_108"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "藏在山腰的岩石后面的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_108",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.2354,
+        49.40279
+      ],
+      "id": "CC165F19ED17245BA1E4F1A9D61A4887FB3C0D4A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/114"
+        ],
+        "yuanshen": [
+          "26_114"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_114",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.41274,
+        48.95259
+      ],
+      "id": "7DE5FE96125E37BC3384FBB58E9227EDD99E67D0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/116"
+        ],
+        "yuanshen": [
+          "26_116"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_116",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.29455,
+        45.52664
+      ],
+      "id": "D3574279F1A07BDAB1F8FCD67A9E18E3507D3950",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/117"
+        ],
+        "yuanshen": [
+          "26_117"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_117",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.49052,
+        45.87802
+      ],
+      "id": "734AB448DE6ED6C079A66FEF8181C755D4FEC4DE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/118"
+        ],
+        "yuanshen": [
+          "26_118"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_118",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.28087,
+        39.44105
+      ],
+      "id": "32432012F852073D07F407DE655BDBFFC9B1ADBB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/12"
+        ],
+        "yuanshen": [
+          "26_12"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_12",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.69293,
+        45.97685
+      ],
+      "id": "72FAC137A54D1732D4F80D278342C67E71084FF8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/121"
+        ],
+        "yuanshen": [
+          "26_121"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_121",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.26027,
+        46.09764
+      ],
+      "id": "86B79F12B859DBB18D5DCCDF04EA7F447D21E937",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/122"
+        ],
+        "yuanshen": [
+          "26_122"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_122",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.78719,
+        45.74707
+      ],
+      "id": "E4721EF8DB4A9D8D9384AE8A2F35FD87607DF03E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/128"
+        ],
+        "yuanshen": [
+          "26_128"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_128",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.29837,
+        46.24038
+      ],
+      "id": "3783E2BE08F147335C4FF6DD0B12AA180F221451",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/131"
+        ],
+        "yuanshen": [
+          "26_131"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_131",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.20316,
+        45.74626
+      ],
+      "id": "32B02B8C312F5A18D7F3A9DF034E9302869049DF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/132"
+        ],
+        "yuanshen": [
+          "26_132"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_132",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.3031,
+        45.3839
+      ],
+      "id": "73AA0D8361D42C1E8A14E8C03FA13796253A4E59",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/133"
+        ],
+        "yuanshen": [
+          "26_133"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_133",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.43012,
+        46.00979
+      ],
+      "id": "B17253739C97B994D12E9680496FC9B7C11FAACF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/134"
+        ],
+        "yuanshen": [
+          "26_134"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_134",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.7135,
+        50.12044
+      ],
+      "id": "EECE36FBDE273B9B23DBB1A325F170BA750FB767",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/137"
+        ],
+        "yuanshen": [
+          "26_137"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_137",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.81694,
+        50.95497
+      ],
+      "id": "171AEE41D8F9142A3443815B7CE8163AEAF2C714",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/138"
+        ],
+        "yuanshen": [
+          "26_138"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "点燃三个火炬后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_138",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.00298,
+        51.30635
+      ],
+      "id": "7390DB81766F3D12E64902028162884A9845ACC8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/139"
+        ],
+        "yuanshen": [
+          "26_139"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_139",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.33556,
+        39.40811
+      ],
+      "id": "01CBA80950848DE6FB67202C914392246C727210",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/14"
+        ],
+        "yuanshen": [
+          "26_14"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "悬崖底下，破坏岩石后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_14",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.18879,
+        50.49378
+      ],
+      "id": "1E075A2856DD612FBF88AE63003BFCDE65183D35",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/141"
+        ],
+        "yuanshen": [
+          "26_141"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_141",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.2713,
+        50.35104
+      ],
+      "id": "156FAD4674C57388A4657DFD1C3FB6E2A7116DC5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/142"
+        ],
+        "yuanshen": [
+          "26_142"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "打爆石门上的两只风史莱姆后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_142",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.39498,
+        50.90007
+      ],
+      "id": "82CA6F7770968F49484511D3F4BD323FC4DBE75A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/144"
+        ],
+        "yuanshen": [
+          "26_144"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_144",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.51857,
+        50.29613
+      ],
+      "id": "050492CD9F202E539C7BE1ADEF7CA13B30C42D53",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/145"
+        ],
+        "yuanshen": [
+          "26_145"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_145",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.53916,
+        51.47106
+      ],
+      "id": "5697EA300EDFBB81891F1C8EC039CBACC9711109",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/146"
+        ],
+        "yuanshen": [
+          "26_146"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_146",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.80655,
+        52.09695
+      ],
+      "id": "65AF9F3D8FF47469736C8AEC20EE88AF342C1CC2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/147"
+        ],
+        "yuanshen": [
+          "26_147"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_147",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.40619,
+        39.5838
+      ],
+      "id": "EFAA7DDA5080A1983C5CD1AADF854B79A7A7EE25",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/15"
+        ],
+        "yuanshen": [
+          "26_15"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "在山顶有怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_15",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.6749,
+        51.32831
+      ],
+      "id": "6D697E3A695D111BDF74AB5930814960CE0E03B8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/150"
+        ],
+        "yuanshen": [
+          "26_150"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_150",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.46671,
+        39.68263
+      ],
+      "id": "CCFF0A09910063EE1A42CF7D060504BA729956B6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/16"
+        ],
+        "yuanshen": [
+          "26_16"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "在山顶有怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_16",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.67229,
+        51.93198
+      ],
+      "id": "E392CAC1E41C3069F367A1AB3D702C2CFFC0A787",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/164"
+        ],
+        "yuanshen": [
+          "26_164"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_164",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.15674,
+        51.43786
+      ],
+      "id": "D6563B916D1AE8D506DED1A5D510B739EA58A688",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/166"
+        ],
+        "yuanshen": [
+          "26_166"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "用弓箭射爆三只风史莱姆后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_166",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.45235,
+        51.8661
+      ],
+      "id": "0EB6D55A447921ABC30F4F25D57D04A4D9734070",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/168"
+        ],
+        "yuanshen": [
+          "26_168"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "点燃三个火炬后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_168",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.47203,
+        50.95471
+      ],
+      "id": "297BC4BC8A044562369A85BF1389B4DFDAEF5430",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/169"
+        ],
+        "yuanshen": [
+          "26_169"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_169",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.53727,
+        39.78145
+      ],
+      "id": "649F7044CFAEC88169F4709C4C8471209CFDC098",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/17"
+        ],
+        "yuanshen": [
+          "26_17"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "在山顶有怪物守护着的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_17",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.75703,
+        51.21824
+      ],
+      "id": "662728794198CE021DFB7BB806FB7AB833E3C55F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/172"
+        ],
+        "yuanshen": [
+          "26_172"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_172",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.0511,
+        51.59158
+      ],
+      "id": "3683C4C36135B9D42FD88439DE9551F1F96C9C23",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/173"
+        ],
+        "yuanshen": [
+          "26_173"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_173",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.48066,
+        51.81152
+      ],
+      "id": "6641EF8C0A69BF4B1E0C2646656022768045FC6B",
+      "importIds": {
+        "yuanshen": [
+          "26_177"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/177"
+        ]
+      },
+      "popupTitle": {
+        "en": "#177",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击碎岩石点燃火把出现的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_177.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -27.59268,
+        51.2622
+      ],
+      "id": "F2448945D4C760743E5B7FE55DBCC592E3358C41",
+      "importIds": {
+        "yuanshen": [
+          "26_178"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/178"
+        ]
+      },
+      "popupTitle": {
+        "en": "#178",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个在草丛中的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_178.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.81206,
+        52.76651
+      ],
+      "id": "AB367E5CD383CE1FEBDACBE80E3DC00401FDE2CC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/181"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_181",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: AB367E5"
+      }
+    },
+    {
+      "coordinates": [
+        -28.21963,
+        53.69986
+      ],
+      "id": "BE5CC16EC306E6980E1FA4A1C465989DD127E349",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/184"
+        ],
+        "yuanshen": [
+          "26_184"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_184",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.66423,
+        51.60257
+      ],
+      "id": "0DB075DFE856FD43DA52BC785F201AAC854B4697",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/186"
+        ],
+        "yuanshen": [
+          "26_186"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_186",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.94245,
+        50.43823
+      ],
+      "id": "107410B50BDC58913FC24D41F0B5D753A0382808",
+      "importIds": {
+        "yuanshen": [
+          "26_187"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/187"
+        ]
+      },
+      "popupTitle": {
+        "en": "#187",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个激活四个火元素方碑出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_187",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.44254,
+        52.9422
+      ],
+      "id": "CA3C5B1B7430D3C2572241B94F09BA1B38F8D844",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/188"
+        ],
+        "yuanshen": [
+          "26_188"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_188",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.85017,
+        51.72546
+      ],
+      "id": "6A164D972ED67A87068C36B836569C7FCFBABB4B",
+      "importIds": {
+        "yuanshen": [
+          "26_190"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/190"
+        ]
+      },
+      "popupTitle": {
+        "en": "#190",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "完成限时挑战出现的【宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_190",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.08186,
+        53.13985
+      ],
+      "id": "0486D429D250FD1191B4123CD7D5D197EC43889A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/193"
+        ],
+        "yuanshen": [
+          "26_193"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_193",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.45211,
+        54.38066
+      ],
+      "id": "F8ECCC8F56D6F4E89DA547C20FA0CD3D1BF4BD05",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/195"
+        ],
+        "yuanshen": [
+          "26_195"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_195",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.67162,
+        52.82141
+      ],
+      "id": "800781A8E67E8D50CF4475AA2DB5F37B3CC4BC37",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/203"
+        ],
+        "yuanshen": [
+          "26_203"
+        ]
+      },
+      "popupTitle": {
+        "zh": "引路仙灵"
+      },
+      "popupContent": {
+        "zh": "在树上的仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_203",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.84009,
+        39.66067
+      ],
+      "id": "4D625C7F37F03F2C4D688BFFABF65119D4863017",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/22"
+        ],
+        "yuanshen": [
+          "26_22"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_22",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.83601,
+        59.91845
+      ],
+      "id": "45D4EC241FC3E702A654AE96421F5AD64348D29D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/226"
+        ],
+        "yuanshen": [
+          "26_226"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_226",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.04574,
+        39.83636
+      ],
+      "id": "A7B873A7CE0AF4BA8527ACF46793CA1E2418F50C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/23"
+        ],
+        "yuanshen": [
+          "26_23"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_23",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.78154,
+        56.67917
+      ],
+      "id": "E73B26523C1A4616C2FA6EA3E492EA8A6CADD217",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/231"
+        ],
+        "yuanshen": [
+          "26_231"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_231",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.29014,
+        57.05251
+      ],
+      "id": "63E244F01E4BE1F0955CA43CF17725F195F74119",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/233"
+        ],
+        "yuanshen": [
+          "26_233"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_233",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.06626,
+        39.93518
+      ],
+      "id": "0F15754C102D68CCC786B7E7DFD2255FCF1EDEB4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/24"
+        ],
+        "yuanshen": [
+          "26_24"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_24",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.02793,
+        55.83285
+      ],
+      "id": "B88E4FF3ACC65D092FE4428F39D0FEA6BA6C1937",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/240"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_240",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: B88E4FF"
+      }
+    },
+    {
+      "coordinates": [
+        -33.53333,
+        55.37167
+      ],
+      "id": "2BC088D467D64EFD1528D34C9CD60364EADE59B6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/241"
+        ],
+        "yuanshen": [
+          "26_241"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_241",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.93554,
+        56.08541
+      ],
+      "id": "3D4BE17DC538D1751D4F40B22B532CF06A2F3E28",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/242"
+        ],
+        "yuanshen": [
+          "26_242"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_242",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.02024,
+        64.47818
+      ],
+      "id": "D5C7CAA91DACD5B10960C33D45544E69E9A69EC6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/245"
+        ],
+        "yuanshen": [
+          "26_245"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_245",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.65292,
+        62.74325
+      ],
+      "id": "D929ABCC7D0F2C5A3DBBB3986F283EFD67042F9A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/249"
+        ],
+        "yuanshen": [
+          "26_249"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_249",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.26064,
+        39.88028
+      ],
+      "id": "F4197FF5F2B026C89A6E233DFE7E6E210B939E90",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/25"
+        ],
+        "yuanshen": [
+          "26_25"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_25",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.90117,
+        61.88676
+      ],
+      "id": "DA1D5527C44EBE8A5052D32F08CFDBA7645CD46A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/251"
+        ],
+        "yuanshen": [
+          "26_251"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_251",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.98381,
+        62.91894
+      ],
+      "id": "BC447FA90D87582BC43DC9B63BBB7412A730F521",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/252"
+        ],
+        "yuanshen": [
+          "26_252"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_252",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.02513,
+        64.28053
+      ],
+      "id": "6D2E0C5EB32BA27F2CE6DFC64707A23B88C1137B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/253"
+        ],
+        "yuanshen": [
+          "26_253"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_253",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.33465,
+        63.94013
+      ],
+      "id": "334940DB82A211B91010FF2590F5CE05047966CA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/258"
+        ],
+        "yuanshen": [
+          "26_258"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_258",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.19023,
+        39.93518
+      ],
+      "id": "3708D853CD5BBE6F76839CDBA863DC7AA36D8787",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/26"
+        ],
+        "yuanshen": [
+          "26_26"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_26",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.47889,
+        60.82164
+      ],
+      "id": "9D8C6C5FDF792A283C1024CF4A4BC8B10552750E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/261"
+        ],
+        "yuanshen": [
+          "26_261"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_261",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.53036,
+        64.39034
+      ],
+      "id": "00AEEEFCA25D04A7A8B6364BF28E829FFBF0A3FC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/262"
+        ],
+        "yuanshen": [
+          "26_262"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_262",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.64356,
+        62.72129
+      ],
+      "id": "9A66A7F8D2B3929C16276A8453B944643A82BBDE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/263"
+        ],
+        "yuanshen": [
+          "26_263"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_263",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.64356,
+        61.42558
+      ],
+      "id": "E28EE65DF70EF1DB627283B938007FBDACC6BCE2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/264"
+        ],
+        "yuanshen": [
+          "26_264"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_264",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.37182,
+        61.98559
+      ],
+      "id": "77B0067CE30799E03D50E858E668C85610FF23DF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/269"
+        ],
+        "yuanshen": [
+          "26_269"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_269",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.74762,
+        39.99008
+      ],
+      "id": "C75530C60135D9B6A1A99F8EE5F91CB67EEDEE3E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/27"
+        ],
+        "yuanshen": [
+          "26_27"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_27",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.80658,
+        61.62765
+      ],
+      "id": "99580429F1B48FD1D3C7BA32369CD97D931B2003",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/271"
+        ],
+        "yuanshen": [
+          "26_271"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_271",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.89812,
+        63.84131
+      ],
+      "id": "EBC35FE9977386511D0F2722854871CFAF728180",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/276"
+        ],
+        "yuanshen": [
+          "26_276"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_276",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.97849,
+        62.39187
+      ],
+      "id": "B189675EDEB78C4395DF3B0C7D1E242669A48010",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/278"
+        ],
+        "yuanshen": [
+          "26_278"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：把排成正方形的四个胡萝卜捡起后，清除小怪后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_278",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.52096,
+        62.25941
+      ],
+      "id": "17D97A3BC8597DCFF1606911416095569F3A4915",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/288"
+        ],
+        "yuanshen": [
+          "26_288"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_288",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.62329,
+        40.4183
+      ],
+      "id": "6574059269572C4D1558E51D6EE702991678F848",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/29"
+        ],
+        "yuanshen": [
+          "26_29"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_29",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.37428,
+        63.61003
+      ],
+      "id": "DADCFB414EC3BDFA9D4DEC4ABC54FF647C1DA43C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/296"
+        ],
+        "yuanshen": [
+          "26_296"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个射爆风史莱姆出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_296",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.86266,
+        62.06176
+      ],
+      "id": "9C0050F77429CEDCC10956E27DD90F4C21960C11",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/299"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_299",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 9C0050F"
+      }
+    },
+    {
+      "coordinates": [
+        -16.71686,
+        40.67138
+      ],
+      "id": "6E9E8F646E1EB498A039E57AAF95AF55D2F0BD92",
+      "importIds": {
+        "yuanshen": [
+          "26_30"
+        ],
+        "gm_legacy": [
+          "mondstadtCommonChest/30"
+        ]
+      },
+      "popupTitle": {
+        "en": "#30",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.91227,
+        63.24804
+      ],
+      "id": "46AEBDBCC70D876B6E5E24D4165B35D73C7BE5C5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/302"
+        ],
+        "yuanshen": [
+          "26_302"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：破解元素机关后出现（火雷冰）"
+      },
+      "popupMedia": "mondstadt/common-chest/26_302",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.82265,
+        63.48961
+      ],
+      "id": "5A6B2197C2B95888051FDC9B0BBAAFBDD238B4CE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/304"
+        ],
+        "yuanshen": [
+          "26_304"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_304",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.47411,
+        61.89743
+      ],
+      "id": "3BE1229D220687165440DF0BF695E010A1660706",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/306"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_306",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 3BE1229"
+      }
+    },
+    {
+      "coordinates": [
+        -32.79817,
+        61.97483
+      ],
+      "id": "92A5BDFF107E0DE9B97587A8ABBD4F5DAA9B68D7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/309"
+        ],
+        "yuanshen": [
+          "26_309"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_309",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.96433,
+        64.62116
+      ],
+      "id": "28EAAAD4CA298EE2817D45842D9208B11208C808",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/311"
+        ],
+        "yuanshen": [
+          "26_311"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_311",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.13018,
+        64.75292
+      ],
+      "id": "9FFFD48B6CD9E1FD1859ECAC016F8D4041FFC6AC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/312"
+        ],
+        "yuanshen": [
+          "26_312"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_312",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.38754,
+        64.53331
+      ],
+      "id": "C008897CB45C5042007D1EC628D49B4FF87DCAA3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/314"
+        ],
+        "yuanshen": [
+          "26_314"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_314",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.58007,
+        62.85328
+      ],
+      "id": "E6F9AF7F27E5FD649131D4D0E246CA8FA972B90E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/317"
+        ],
+        "yuanshen": [
+          "26_317"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：破坏岩石后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_317",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.47001,
+        40.89047
+      ],
+      "id": "396AE67C43840B3D14EEEF3E06F2AF75C65AED25",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/32"
+        ],
+        "yuanshen": [
+          "26_32"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_32",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.83243,
+        62.17167
+      ],
+      "id": "A74F75CDF69F723671AD479177007EB43B426140",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/322"
+        ],
+        "yuanshen": [
+          "26_322"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_322",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.87753,
+        62.39128
+      ],
+      "id": "BAC76B95D24C911AD3204A03CDB0B34196A8B503",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/323"
+        ],
+        "yuanshen": [
+          "26_323"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_323",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.13863,
+        63.93954
+      ],
+      "id": "F2A8E3C9328A4A629AA53E4F67302D83386353CF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/324"
+        ],
+        "yuanshen": [
+          "26_324"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_324",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.03571,
+        67.90534
+      ],
+      "id": "787677FAD3126B1A671952A3B57973916D460817",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/329"
+        ],
+        "yuanshen": [
+          "26_329"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_329",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.37171,
+        68.25672
+      ],
+      "id": "6CF3AE8DDF56E4138EDDA5FB610998E90A5B5267",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/330"
+        ],
+        "yuanshen": [
+          "26_330"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个飞行挑战获得的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_330",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.56045,
+        66.12648
+      ],
+      "id": "615CFE52FC6C443A8B514726D5FCD9887FC2C843",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/332"
+        ],
+        "yuanshen": [
+          "26_332"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_332",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.76992,
+        67.87239
+      ],
+      "id": "8CE27C720E67E1F3500A71FE543142A1C0447EF3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/334"
+        ],
+        "yuanshen": [
+          "26_334"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_334",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.29253,
+        66.12648
+      ],
+      "id": "3318F7D6F0E0CD85DDDD867637E3C3EBFE21D83F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/335"
+        ],
+        "yuanshen": [
+          "26_335"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_335",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.37018,
+        67.91199
+      ],
+      "id": "72808C3F01B0CED01C8408DC8FD20ACED20E3F06",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/338"
+        ],
+        "yuanshen": [
+          "26_338"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败风史莱姆解锁的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_338",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.4275,
+        68.14819
+      ],
+      "id": "0A25F38881768D0C5BD333B03B70508C85251ACB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/339"
+        ],
+        "yuanshen": [
+          "26_339"
+        ]
+      },
+      "popupTitle": {
+        "zh": "限时挑战"
+      },
+      "popupContent": {
+        "zh": "这是一个完成限时挑战出现的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_339",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.21886,
+        67.14767
+      ],
+      "id": "6BFA2FEA86393745C5D617BB4761CA5B251707C4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/341"
+        ],
+        "yuanshen": [
+          "26_341"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_341",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.52995,
+        65.26999
+      ],
+      "id": "625FFE7E202BEE20800EC9BBA8574FB7CC832BD3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/342"
+        ],
+        "yuanshen": [
+          "26_342"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_342",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.63351,
+        68.0371
+      ],
+      "id": "7C5087BF035EFEC98B9C8FF62DF6461A2CA06E8D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/344"
+        ],
+        "yuanshen": [
+          "26_344"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_344",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.87145,
+        65.47862
+      ],
+      "id": "D500D13400CAA5A990E6EACB2E134623DC3C0769",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/345"
+        ],
+        "yuanshen": [
+          "26_345"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_345",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.71684,
+        67.91632
+      ],
+      "id": "FC2A1A98D2A06989685FD4C5BAA74F8DC7FC51A0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/349"
+        ],
+        "yuanshen": [
+          "26_349"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_349",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.07809,
+        41.41753
+      ],
+      "id": "5E9B06495272C865E772161E64FF9FD4F31E6B36",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/35"
+        ],
+        "yuanshen": [
+          "26_35"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_35",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.81154,
+        67.32248
+      ],
+      "id": "96930B39C47BCE6DB7B9C1F4AF6F7AD636BEF7B1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/354"
+        ],
+        "yuanshen": [
+          "26_354"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_354",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.53425,
+        66.09265
+      ],
+      "id": "2B843D7B741B25643BA522DC93EB00FAEEDB2672",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/356"
+        ],
+        "yuanshen": [
+          "26_356"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_356",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.233,
+        67.12483
+      ],
+      "id": "357CFCF4569625C530D51E557FA1A7FE04588A28",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/359"
+        ],
+        "yuanshen": [
+          "26_359"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_359",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.64735,
+        41.57126
+      ],
+      "id": "70E410832A35B14BA8C6B8CEB7E0D6CF2D691E7C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/36"
+        ],
+        "yuanshen": [
+          "26_36"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_36",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.4046,
+        67.33346
+      ],
+      "id": "C081DE176774513716C42056DFCC887AC5CA1EFD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/361"
+        ],
+        "yuanshen": [
+          "26_361"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_361",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.46512,
+        67.98131
+      ],
+      "id": "1C6F2FBA3011FE9040EF8D3E55124A7258BC7B4B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/362"
+        ],
+        "yuanshen": [
+          "26_362"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "首次击杀此处风史莱姆"
+      },
+      "popupMedia": "mondstadt/common-chest/26_362",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.49954,
+        67.26757
+      ],
+      "id": "1167EE592D903240B1ED8262C73859D4E4EBF333",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/363"
+        ],
+        "yuanshen": [
+          "26_363"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_363",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.88902,
+        65.63146
+      ],
+      "id": "45D8D0B47B8EA1AA596483182D573A688237027B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/364"
+        ],
+        "yuanshen": [
+          "26_364"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_364",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.24509,
+        68.12479
+      ],
+      "id": "BC59CFAC5793756F96255382CD623A0DE4707597",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/368"
+        ],
+        "yuanshen": [
+          "26_368"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_368",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.46791,
+        41.63715
+      ],
+      "id": "BEDA4DEDA90604C7A7B9FEEAFA571C8AA002BB9D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/37"
+        ],
+        "yuanshen": [
+          "26_37"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_37",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.4913,
+        66.21416
+      ],
+      "id": "B1B898B6BE79EF432EA0082C0FD24531A1F76F6D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/370"
+        ],
+        "yuanshen": [
+          "26_370"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：破坏山脚的可岩石后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_370",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.66824,
+        66.74123
+      ],
+      "id": "F49CBF2EE634D36F01C0B6CCCB6F664917EAB1F7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/371"
+        ],
+        "yuanshen": [
+          "26_371"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_371",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.2463,
+        67.46595
+      ],
+      "id": "A5276D96772E6B24D95A02CE41778F0A6FB3C088",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/373"
+        ],
+        "yuanshen": [
+          "26_373"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_373",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.74358,
+        67.93812
+      ],
+      "id": "A20BB3BCBCD7AEB2692B32CBE761C6384D0E3B49",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/375"
+        ],
+        "yuanshen": [
+          "26_375"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_375",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.19016,
+        67.45497
+      ],
+      "id": "369AEBCB357B806EB7561A7B3DB1E6E648BEABCF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/378"
+        ],
+        "yuanshen": [
+          "26_378"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_378",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.17182,
+        65.85038
+      ],
+      "id": "86D8720491ACEEFBDDAD3AEB4D32972CC3673802",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/379"
+        ],
+        "yuanshen": [
+          "26_379"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：破坏岩石后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_379",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.33485,
+        64.94997
+      ],
+      "id": "71533F0FD4029810B0750C777BB590425F27CFA7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/380"
+        ],
+        "yuanshen": [
+          "26_380"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_380",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.39214,
+        68.02599
+      ],
+      "id": "33C78489FBD135DA091D39E86B604E416C784C57",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/381"
+        ],
+        "yuanshen": [
+          "26_381"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_381",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.1364,
+        67.82834
+      ],
+      "id": "CA3391153517BD95167EBE2F2326794CA7E7237C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/387"
+        ],
+        "yuanshen": [
+          "26_387"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_387",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.95996,
+        67.7954
+      ],
+      "id": "F1821A60F373AED846FED92EFA93D63E396CE5BD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/388"
+        ],
+        "yuanshen": [
+          "26_388"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_388",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.4386,
+        67.13638
+      ],
+      "id": "2927F9986502DF657C53F822E035ACBBAA7279E5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/390"
+        ],
+        "yuanshen": [
+          "26_390"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：把三只风史莱姆打破后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_390",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.42741,
+        65.15987
+      ],
+      "id": "B3E4F6A55B82C31FB7932EFC1C4BF23C3950B9F9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/392"
+        ],
+        "yuanshen": [
+          "26_392"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_392",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.01503,
+        67.87274
+      ],
+      "id": "17466D35F46914B87D25009E430E1BBD323BC23F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/399"
+        ],
+        "yuanshen": [
+          "26_399"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_399",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.07653,
+        41.97844
+      ],
+      "id": "94ADDCC0D9158436AB1B8BE9A1E5E7CB8572C83A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/40"
+        ],
+        "yuanshen": [
+          "26_40"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_40",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.05947,
+        67.45548
+      ],
+      "id": "3FD7287C5C8D97D18C9A38D432A66EBFCBE5E79D",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/400"
+        ],
+        "yuanshen": [
+          "26_400"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_400",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.73829,
+        66.82959
+      ],
+      "id": "444CCBD25A6E56E2B95BC1FDA1151A340F3E1433",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/405"
+        ],
+        "yuanshen": [
+          "26_405"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_405",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.4751,
+        42.01138
+      ],
+      "id": "118AAE2B6E2B98FF0FFA3B793228AB7A29A026A0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/41"
+        ],
+        "yuanshen": [
+          "26_41"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_41",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.63684,
+        70.58634
+      ],
+      "id": "BD3CB030C0E524D714CC7A64E4E97353E1AB69A9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/410"
+        ],
+        "yuanshen": [
+          "26_410"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_410",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.97356,
+        71.75028
+      ],
+      "id": "2AFD45A88F3C03ED6D9C856FCF4E27C3959A48F5",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/412"
+        ],
+        "yuanshen": [
+          "26_412"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_412",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.03238,
+        72.11329
+      ],
+      "id": "5DAA5471D365F4C7164A5E5F33D0F1673F773E18",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/421"
+        ],
+        "yuanshen": [
+          "26_421"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_421",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.87192,
+        69.70854
+      ],
+      "id": "92E35A992E3E91387A44EA74C188B160BE4698A3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/425"
+        ],
+        "yuanshen": [
+          "26_425"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败暴徒丘解锁的【精致宝箱】"
+      },
+      "popupMedia": "mondstadt/common-chest/26_425",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.0789,
+        69.30226
+      ],
+      "id": "DDBFD7AC344CF3FEAB898178FB90193B4FEB6D1C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/426"
+        ],
+        "yuanshen": [
+          "26_426"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_426",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.44512,
+        69.80737
+      ],
+      "id": "E7A69F1536DD24F0829BA33B36E91881C6A235BE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/427"
+        ],
+        "yuanshen": [
+          "26_427"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_427",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.42704,
+        68.64343
+      ],
+      "id": "5E1E3EF1241ED37527657BA5C3E8E0C64B70BC56",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/429"
+        ],
+        "yuanshen": [
+          "26_429"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_429",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.08099,
+        71.21289
+      ],
+      "id": "3A3E80F02847687F538A956696CBC9737D1F78DB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/430"
+        ],
+        "yuanshen": [
+          "26_430"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：解开元素机关后出现（顺序：火雷冰）"
+      },
+      "popupMedia": "mondstadt/common-chest/26_430",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.6717,
+        70.51013
+      ],
+      "id": "A25BF69DE69B6554B7F028E83B749BB5010E3833",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/433"
+        ],
+        "yuanshen": [
+          "26_433"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_433",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.03077,
+        70.87249
+      ],
+      "id": "5F5B78E6117413442D39940E82AD7043C77248D6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/435"
+        ],
+        "yuanshen": [
+          "26_435"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "打碎周围四个木桶出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_435",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.06064,
+        68.91794
+      ],
+      "id": "43BD16CA300BC76FB54E163E4C2EF0A96A1BACB8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/436"
+        ],
+        "yuanshen": [
+          "26_436"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_436",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.34816,
+        70.87249
+      ],
+      "id": "AE720534BDD2B9D45770BDFEEC62EDE7F406F2F8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/439"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_439",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: AE72053"
+      }
+    },
+    {
+      "coordinates": [
+        -26.84942,
+        70.43326
+      ],
+      "id": "BABAE569D54A3E7B1B495FBE6B0A6B6D904DDC9F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/440"
+        ],
+        "yuanshen": [
+          "26_440"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_440",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.12369,
+        70.77366
+      ],
+      "id": "C9C967DD3CCAA8FA4C1E3C56043617F785C1B489",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/441"
+        ],
+        "yuanshen": [
+          "26_441"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：仙灵宝箱\n备注：仙灵在石墙的上面"
+      },
+      "popupMedia": "mondstadt/common-chest/26_441",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.44607,
+        70.56503
+      ],
+      "id": "4B9252AF33E8ADD45961F0DF952E3D831EC0ED12",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/443"
+        ],
+        "yuanshen": [
+          "26_443"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：位于山脚的岩石中，破坏后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_443",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.04214,
+        68.54365
+      ],
+      "id": "71439C5AAE9559DDAA3DD1848D0029077954869E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/447"
+        ],
+        "yuanshen": [
+          "26_447"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_447",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -15.1332,
+        42.42864
+      ],
+      "id": "A9613BF1728EB62AF27839A1818A74F63E836D26",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/45"
+        ],
+        "yuanshen": [
+          "26_45"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_45",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.58244,
+        72.00254
+      ],
+      "id": "A1A861E51FFE7DBB15F3DCBEDCC8328CE4A56BBD",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/450"
+        ],
+        "yuanshen": [
+          "26_450"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_450",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.46297,
+        70.20318
+      ],
+      "id": "F2381D163C403B860C493F916FD85FA1C0A1D25E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/459"
+        ],
+        "yuanshen": [
+          "26_459"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_459",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.63259,
+        76.03638
+      ],
+      "id": "3609986F19E0BCC97BD1353749D05249F65DAD5E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/467"
+        ],
+        "yuanshen": [
+          "26_467"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_467",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.66431,
+        42.26417
+      ],
+      "id": "41749027C0523DEB16ACDB444AA723A1F2B90C34",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/47"
+        ],
+        "yuanshen": [
+          "26_47"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_47",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.49924,
+        73.83911
+      ],
+      "id": "15EF977871D0556869D2ECB5F139594399751B9C",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/471"
+        ],
+        "yuanshen": [
+          "26_471"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_471",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.05575,
+        47.76855
+      ],
+      "id": "0E5F40A284902888257F2EC9556FFE9A68486ED2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/475"
+        ],
+        "yuanshen": [
+          "26_475"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_475",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.70013,
+        65.68726
+      ],
+      "id": "56F230027C5AF833B937136DAA1C00016F05FC35",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/478"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_478",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 56F2300"
+      }
+    },
+    {
+      "coordinates": [
+        -24.78673,
+        48.32886
+      ],
+      "id": "C1A3DFCFBC30CBBB8CB998AAAE3B1C6FB336FF59",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/479"
+        ],
+        "yuanshen": [
+          "26_479"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_479",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.9642,
+        42.49477
+      ],
+      "id": "84CE8E4335BECBC43BB9949862BBB87E08685E3F",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/48"
+        ],
+        "yuanshen": [
+          "26_48"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_48",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.18278,
+        69.33472
+      ],
+      "id": "FFF97F9B183CE286BE1EC5A47272B91257E23142",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/482"
+        ],
+        "yuanshen": [
+          "26_482"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_482",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.51861,
+        61.79276
+      ],
+      "id": "93557EB1E6493D2F9664901B4067C02E09E9FBD2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/484"
+        ],
+        "yuanshen": [
+          "26_484"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：打到树旁的风史莱姆后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_484",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -18.6884,
+        42.68144
+      ],
+      "id": "2D1C4D8FBF721AFD069D09E5CB5D2F41BF5B4EEC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/49"
+        ],
+        "yuanshen": [
+          "26_49"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "拔起四个胡萝卜后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_49",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -15.33717,
+        42.52808
+      ],
+      "id": "4590C44BE40745B7472F472CEAAD4E2D0FA018C6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/490"
+        ],
+        "yuanshen": [
+          "26_490"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_490",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.34888,
+        69.67529
+      ],
+      "id": "4E5EC1ADB5C9AC794330D354AC2F95A3C37E27DA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/491"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_491",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 4E5EC1A"
+      }
+    },
+    {
+      "coordinates": [
+        -20.04579,
+        43.65687
+      ],
+      "id": "9F0C224B3B4756B1339E0E143BE225E6A0748BD8",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/492"
+        ],
+        "yuanshen": [
+          "26_492"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_492",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.62753,
+        79.45869
+      ],
+      "id": "C63759FFE2ACE327333840A0C5E601BB47993ABA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/494"
+        ],
+        "yuanshen": [
+          "26_494"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_494",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.58128,
+        79.93097
+      ],
+      "id": "EADE6C7D5E9E54919F2B2794956DBCA32EC94FAA",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/495"
+        ],
+        "yuanshen": [
+          "26_495"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_495",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.28025,
+        62.47249
+      ],
+      "id": "5DC7626D59ABCC431F2A248C8A52ADAAA0C024A9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/499"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_499",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 5DC7626"
+      }
+    },
+    {
+      "coordinates": [
+        -21.57957,
+        38.40905
+      ],
+      "id": "4AD96AC8D935B1AC46DA7D82D2CDAEDD9AE6F6F4",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/5"
+        ],
+        "yuanshen": [
+          "26_5"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_5",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.2522,
+        66.17355
+      ],
+      "id": "D3428C6917416D51ADD5B4A54759402F3F3E9898",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/501"
+        ],
+        "yuanshen": [
+          "26_501"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：破坏山顶的可岩石后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_501",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.80345,
+        66.2793
+      ],
+      "id": "7959A64E596BEE835201338F606CB20CCA2F03FB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/502"
+        ],
+        "yuanshen": [
+          "26_502"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：隐藏宝箱\n备注：打倒冰史莱姆后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_502",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.39431,
+        65.81799
+      ],
+      "id": "48A83DA31A24F8F04DA36B5BD5AC780783A84021",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/503"
+        ],
+        "yuanshen": [
+          "26_503"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_503",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.78995,
+        62.5175
+      ],
+      "id": "6E0F212755D9072BA89D26F253CC36F3DFF27BE6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/504"
+        ]
+      },
+      "popupAttribution": "Yuanshen.site",
+      "popupMedia": "mondstadt/common-chest/26_504",
+      "popupTitle": {
+        "en": "MIGRATED MARKER: 6E0F212"
+      }
+    },
+    {
+      "coordinates": [
+        -34.47882,
+        67.59664
+      ],
+      "id": "E9EA69CF3B5C2E4B805F4B7DFC4BBAAC30AFC2C1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/508"
+        ],
+        "yuanshen": [
+          "26_508"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_508",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.94448,
+        42.76967
+      ],
+      "id": "076E7878667D2C6274B83851ACDA092CAEB8B36E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/51"
+        ],
+        "yuanshen": [
+          "26_51"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_51",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.60337,
+        72.29752
+      ],
+      "id": "E85CE2BDCD0070C05C404E4C51D0B2819A1F55BF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/510"
+        ],
+        "yuanshen": [
+          "26_510"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_510",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.58472,
+        58.8334
+      ],
+      "id": "CFB4C8DE7756C45361490D960090D30A699FA263",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/512"
+        ],
+        "yuanshen": [
+          "26_512"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_512",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.73898,
+        52.80354
+      ],
+      "id": "15C7830BB0C5048F76D2E67F67668967DE5EC62E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/513"
+        ],
+        "yuanshen": [
+          "26_513"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "隐藏宝箱，用弓箭打破三个气球后出现"
+      },
+      "popupMedia": "mondstadt/common-chest/26_513",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.20032,
+        50.68925
+      ],
+      "id": "A55BE4FE7067C76DF2EAEC0C9324D2DE88FF34F7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/514"
+        ],
+        "yuanshen": [
+          "26_514"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_514",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.38524,
+        45.16462
+      ],
+      "id": "E499B405B4289E7434C903C787A2B184D01DB686",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/515"
+        ],
+        "yuanshen": [
+          "26_515"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_515",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.99493,
+        51.15055
+      ],
+      "id": "8C8851718F85536CE73E47F1F1A7D835B7EA3E7B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/517"
+        ],
+        "yuanshen": [
+          "26_517"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "拔了正方形萝卜后出现的隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_517",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.35191,
+        42.78065
+      ],
+      "id": "5EAC532B270319A5C12FBDA87868C358FE207D62",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/52"
+        ],
+        "yuanshen": [
+          "26_52"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_52",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.82206,
+        63.35815
+      ],
+      "id": "2303088EF1E21205B1E0459D279E8DE55342440A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/523"
+        ],
+        "yuanshen": [
+          "26_523"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_523",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.69078,
+        51.45447
+      ],
+      "id": "9117AA84406768C8D369D876BBF6AD65EE45CE9B",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/525"
+        ],
+        "yuanshen": [
+          "26_525"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_525",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.50241,
+        39.06738
+      ],
+      "id": "FAD262A4CCCAD93CFB7DABF83467BC62F153B8EF",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/526"
+        ],
+        "yuanshen": [
+          "26_526"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_526",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.35842,
+        63.63281
+      ],
+      "id": "5E13020A0E127E9005F233F1F03EF5DC28B45EFC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/527"
+        ],
+        "yuanshen": [
+          "26_527"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_527",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.73186,
+        46.29089
+      ],
+      "id": "393E50634AD8D3288BF921D62F97FF9817450620",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/530"
+        ],
+        "yuanshen": [
+          "26_530"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "竖直墙壁上方的宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_530",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.14161,
+        67.73456
+      ],
+      "id": "ADE3566CC31B0AFF2723A4083E1FF344BD3AE372",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/535"
+        ],
+        "yuanshen": [
+          "26_535"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_535",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.99518,
+        51.28822
+      ],
+      "id": "A1895E0149EE307C85965022CF297DDA09A94EB9",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/536"
+        ],
+        "yuanshen": [
+          "26_536"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "三跳雷宝箱（踩踏藏在草里的三角形跳雷后击败冰霜骗骗花后出现）"
+      },
+      "popupMedia": "mondstadt/common-chest/26_536",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.02397,
+        47.89892
+      ],
+      "id": "6F0FA895C92315E6A07CFC28077777DA6F97FE6A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/538"
+        ],
+        "yuanshen": [
+          "26_538"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "踩踏藏在草中的三个跳雷，然后打败一只冰霜骗骗花后出现隐藏宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_538",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.76721,
+        42.86849
+      ],
+      "id": "569CAC6DE7E932606145E00BBA885F5F3CC828C6",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/56"
+        ],
+        "yuanshen": [
+          "26_56"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_56",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.53064,
+        43.09908
+      ],
+      "id": "EA975F104AE8BE6A8B47E964178795392613C3C3",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/57"
+        ],
+        "yuanshen": [
+          "26_57"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_57",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.68713,
+        38.69485
+      ],
+      "id": "2E1A4DD166DB4E3CB4FADD3092105ACAB63411C7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/6"
+        ],
+        "yuanshen": [
+          "26_6"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.11833,
+        43.56027
+      ],
+      "id": "6A96857E7C07A0D19FE4EED3961F1F4576A6B6DE",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/61"
+        ],
+        "yuanshen": [
+          "26_61"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_61",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.20088,
+        43.47242
+      ],
+      "id": "297CD0142566999BA0F1BAC7C58F4631CC97087E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/62"
+        ],
+        "yuanshen": [
+          "26_62"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_62",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.56989,
+        43.73596
+      ],
+      "id": "25CDADDA8617E560377F93DD77AF12057E432018",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/65"
+        ],
+        "yuanshen": [
+          "26_65"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_65",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.14247,
+        44.03297
+      ],
+      "id": "36AFE76A428118E8A269236FDCBE826118E717C0",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/66"
+        ],
+        "yuanshen": [
+          "26_66"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_66",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -15.91744,
+        44.24161
+      ],
+      "id": "914CA8411C99DE94401C73AB6382989CE7DDDD68",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/67"
+        ],
+        "yuanshen": [
+          "26_67"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_67",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.28136,
+        44.26361
+      ],
+      "id": "47CFB1FBCF3B57DA090B5FFC4A2BC678BA6A3B4E",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/68"
+        ],
+        "yuanshen": [
+          "26_68"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "角落里"
+      },
+      "popupMedia": "mondstadt/common-chest/26_68",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -21.32247,
+        39.04575
+      ],
+      "id": "A4BC2FED68E7BAAEF930B9EA4A22F11F6C1243BC",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/7"
+        ],
+        "yuanshen": [
+          "26_7"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.89892,
+        45.03235
+      ],
+      "id": "BBF6E459F997987FA1B648C702A2C0AB501E3894",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/82"
+        ],
+        "yuanshen": [
+          "26_82"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_82",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.91727,
+        45.10962
+      ],
+      "id": "59A5F2F9F2935A7671D6C174AFDD44F217F6DDC7",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/84"
+        ],
+        "yuanshen": [
+          "26_84"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_84",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.43656,
+        45.81259
+      ],
+      "id": "3AEE88DD337AE82416F474CAB3C31216900063A2",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/87"
+        ],
+        "yuanshen": [
+          "26_87"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_87",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -17.65666,
+        46.47142
+      ],
+      "id": "109782272A6400122098AE9A53C4A4B60930E4D1",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/88"
+        ],
+        "yuanshen": [
+          "26_88"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_88",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.14645,
+        39.16654
+      ],
+      "id": "7A55DF3CD229836B771FB224F798F08CED290CDB",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/9"
+        ],
+        "yuanshen": [
+          "26_9"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -19.06499,
+        47.30595
+      ],
+      "id": "95C7C4B0999B1B4D8B7A34437B04D672329D8584",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/90"
+        ],
+        "yuanshen": [
+          "26_90"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_90",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.04063,
+        45.94524
+      ],
+      "id": "EBD5C2C494A1D3F4D3EC29625BE39C27CA925E3A",
+      "importIds": {
+        "gm_legacy": [
+          "mondstadtCommonChest/97"
+        ],
+        "yuanshen": [
+          "26_97"
+        ]
+      },
+      "popupTitle": {
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "mondstadt/common-chest/26_97",
+      "popupAttribution": "Yuanshen.site"
+    },
+        {
+      "coordinates": [
+        -17.31565,
+        40.16965
+      ],
+      "id": "CB50C2D52764BEC678B1B7EFC1BA54911EC7EC0D",
+      "importIds": {
+        "yuanshen": [
+          "26_28"
+        ]
+      },
+      "popupTitle": {
+        "en": "#28",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "墙边破坏岩石后出现的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -16.77129,
+        42.3408
+      ],
+      "id": "6F71307F240EE62D217906F7399168695C88E5FF",
+      "importIds": {
+        "yuanshen": [
+          "26_44"
+        ]
+      },
+      "popupTitle": {
+        "en": "#44",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_44.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.74573,
+        50.80124
+      ],
+      "id": "2F7D6F68EA907F4EB53213AC73AE64E66C9C3FC3",
+      "importIds": {
+        "yuanshen": [
+          "26_156"
+        ]
+      },
+      "popupTitle": {
+        "en": "#156",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "怪物守护着的宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_156.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.29206,
+        51.88476
+      ],
+      "id": "36298408296A264CDE49D6F0FCA660D47537ECCE",
+      "importIds": {
+        "yuanshen": [
+          "26_174"
+        ]
+      },
+      "popupTitle": {
+        "en": "#174",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_174.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.42216,
+        52.25647
+      ],
+      "id": "D3FF18A0066156F809EE1E0B2064F23544C04AAA",
+      "importIds": {
+        "yuanshen": [
+          "26_175"
+        ]
+      },
+      "popupTitle": {
+        "en": "#175",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "采摘四个萝卜并击杀水史莱姆出现的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_175.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.4189,
+        51.77307
+      ],
+      "id": "A12AD96D36A5DFE91ADD4ADFED4727BD186127EF",
+      "importIds": {
+        "yuanshen": [
+          "26_176"
+        ]
+      },
+      "popupTitle": {
+        "en": "#176",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个在上方丘丘人设施旁的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_176.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.64783,
+        52.52197
+      ],
+      "id": "A4B27DE0E412E7A997D39156141E2C3711A568F9",
+      "importIds": {
+        "yuanshen": [
+          "26_179"
+        ]
+      },
+      "popupTitle": {
+        "en": "#179",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "在树上的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_179.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.73864,
+        53.18115
+      ],
+      "id": "90556FD9D58B94473E6273EEC0C6994FAE3C0452",
+      "importIds": {
+        "yuanshen": [
+          "26_180"
+        ]
+      },
+      "popupTitle": {
+        "en": "#180",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_180.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.93939,
+        52.72888
+      ],
+      "id": "7873AC2A42BCE2FA5436E30983C92E84FBB83E06",
+      "importIds": {
+        "yuanshen": [
+          "26_181"
+        ]
+      },
+      "popupTitle": {
+        "en": "#181",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个在树上直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_181.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.06873,
+        52.24731
+      ],
+      "id": "D0A6918F66DE6A48F21D41F192EA7771E278C9C2",
+      "importIds": {
+        "yuanshen": [
+          "26_183"
+        ]
+      },
+      "popupTitle": {
+        "en": "#183",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_183.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -28.54594,
+        50.61951
+      ],
+      "id": "FEA4ADEB9C58A93DAFD56AA785E1CD116A3B16C2",
+      "importIds": {
+        "yuanshen": [
+          "26_185"
+        ]
+      },
+      "popupTitle": {
+        "en": "#185",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_185.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.71976,
+        50.42764
+      ],
+      "id": "08EBB60F8A95130F586BA136BE825AA41B82C492",
+      "importIds": {
+        "yuanshen": [
+          "26_189"
+        ]
+      },
+      "popupTitle": {
+        "en": "#189",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "藏在山腰角落里的可见宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_189.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -30.21493,
+        51.59158
+      ],
+      "id": "C9793BFA5317ABEA5E9F114BA7383F86B6C06413",
+      "importIds": {
+        "yuanshen": [
+          "26_194"
+        ]
+      },
+      "popupTitle": {
+        "en": "#194",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_194.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.0309,
+        53.83163
+      ],
+      "id": "8D9D070EA701D6CA652259C5B26909A220108C77",
+      "importIds": {
+        "yuanshen": [
+          "26_199"
+        ]
+      },
+      "popupTitle": {
+        "en": "#199",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_199.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -32.64001,
+        56.96385
+      ],
+      "id": "F353425F03E8614F5D6EA279AFB474D4C6F39FBA",
+      "importIds": {
+        "yuanshen": [
+          "26_236"
+        ]
+      },
+      "popupTitle": {
+        "en": "#236",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_236.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.08541,
+        55.80322
+      ],
+      "id": "EF004321CAB21923FD27DAF85EF7DCB770413DED",
+      "importIds": {
+        "yuanshen": [
+          "26_240"
+        ]
+      },
+      "popupTitle": {
+        "en": "#240",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_240.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -27.65111,
+        62.37304
+      ],
+      "id": "873509FF8B1CD4519C5E3CAA190A7514371712B0",
+      "importIds": {
+        "yuanshen": [
+          "26_291"
+        ]
+      },
+      "popupTitle": {
+        "en": "#291",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败三只风史莱姆出现的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_291.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -29.88353,
+        62.16063
+      ],
+      "id": "35FD4FF7ACE996811047A918056403CBA34756B4",
+      "importIds": {
+        "yuanshen": [
+          "26_299"
+        ]
+      },
+      "popupTitle": {
+        "en": "#299",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_299.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.47578,
+        61.90796
+      ],
+      "id": "FCB0D16C9A5315FC8C6162EC9B39CF779121039B",
+      "importIds": {
+        "yuanshen": [
+          "26_306"
+        ]
+      },
+      "popupTitle": {
+        "en": "#306",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_306.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.7888,
+        63.01574
+      ],
+      "id": "6B6D876808790FCB773875A913C7D0DB5A91F212",
+      "importIds": {
+        "yuanshen": [
+          "26_308"
+        ]
+      },
+      "popupTitle": {
+        "en": "#308",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_308.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.96716,
+        63.65295
+      ],
+      "id": "1DD07E41A63B827657FD362AB0141C32D9A6AF53",
+      "importIds": {
+        "yuanshen": [
+          "26_310"
+        ]
+      },
+      "popupTitle": {
+        "en": "#310",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_310.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.26774,
+        66.71912
+      ],
+      "id": "AD2ACF79FE4B6BB35B9AEA9D8E4411528DB75E72",
+      "importIds": {
+        "yuanshen": [
+          "26_394"
+        ]
+      },
+      "popupTitle": {
+        "en": "#394",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_394.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.93985,
+        71.48071
+      ],
+      "id": "4117A377F732955B3E2392515879CD40E715A296",
+      "importIds": {
+        "yuanshen": [
+          "26_428"
+        ]
+      },
+      "popupTitle": {
+        "en": "#428",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败水史莱姆解锁的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_428.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.39213,
+        71.27197
+      ],
+      "id": "8CB98939F9E0B36CB39BF80ABF70434D0D400248",
+      "importIds": {
+        "yuanshen": [
+          "26_431"
+        ]
+      },
+      "popupTitle": {
+        "en": "#431",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_431.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.37218,
+        70.87463
+      ],
+      "id": "B229DB0B96916CCE11087DE375FE4F85FCC1263C",
+      "importIds": {
+        "yuanshen": [
+          "26_439"
+        ]
+      },
+      "popupTitle": {
+        "en": "#439",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "破坏地上的岩石后出现的【普通宝箱】10阅历"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_439.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.74687,
+        65.6433
+      ],
+      "id": "CBB0FF770F48853F49D085AF0CE24E908EDC2FE8",
+      "importIds": {
+        "yuanshen": [
+          "26_478"
+        ]
+      },
+      "popupTitle": {
+        "en": "#478",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_478.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.36417,
+        69.65698
+      ],
+      "id": "77E0D07E9741BD315C0DB5EED9A47514F3FF9C69",
+      "importIds": {
+        "yuanshen": [
+          "26_491"
+        ]
+      },
+      "popupTitle": {
+        "en": "#491",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_491.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.32209,
+        62.4591
+      ],
+      "id": "BF02F5F0631FE0AE9DE6D9091508DF0D87E14F93",
+      "importIds": {
+        "yuanshen": [
+          "26_499"
+        ]
+      },
+      "popupTitle": {
+        "en": "#499",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_499.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -25.20506,
+        61.38061
+      ],
+      "id": "27CAFED1FD756F6830DEAC9FADCB1029046B7A16",
+      "importIds": {
+        "yuanshen": [
+          "26_500"
+        ]
+      },
+      "popupTitle": {
+        "en": "#500",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可以直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_500.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -31.79822,
+        62.51404
+      ],
+      "id": "AC3FF05B264C2CF35694075C4D6B44E34FC40B14",
+      "importIds": {
+        "yuanshen": [
+          "26_504"
+        ]
+      },
+      "popupTitle": {
+        "en": "#504",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_504.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.69484,
+        63.56506
+      ],
+      "id": "7F53CEC6D877DF9EF0C31383CFFAD86C7ADC44A5",
+      "importIds": {
+        "yuanshen": [
+          "26_506"
+        ]
+      },
+      "popupTitle": {
+        "en": "#506",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败愚人众先遣队解锁的【珍贵宝箱】5原石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_506.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -37.00508,
+        68.00303
+      ],
+      "id": "7D9A8B981E8095184481F9DA674F849D4452FA71",
+      "importIds": {
+        "yuanshen": [
+          "26_507"
+        ]
+      },
+      "popupTitle": {
+        "en": "#507",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "剑冢世界任务宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_507.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.93803,
+        50.99129
+      ],
+      "id": "C975C6895D69431889330B46961AE2B5DD8D42C5",
+      "importIds": {
+        "yuanshen": [
+          "26_518"
+        ]
+      },
+      "popupTitle": {
+        "en": "#518",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_518.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -20.58691,
+        79.24593
+      ],
+      "id": "9F834823ADFD729515C73796E74568FBD881F714",
+      "importIds": {
+        "yuanshen": [
+          "26_532"
+        ]
+      },
+      "popupTitle": {
+        "en": "#532",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德挖掘宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_532.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -24.18896,
+        63.73232
+      ],
+      "id": "7AC4C7EEC210FAEDFE71B8030EB9C195434D3EFD",
+      "importIds": {
+        "yuanshen": [
+          "26_534"
+        ]
+      },
+      "popupTitle": {
+        "en": "#534",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "类型：可见宝箱\n备注：藏在草里"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_534.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -22.56838,
+        66.02967
+      ],
+      "id": "BF52447A725DE28A4D292B82A8E06DC536B78E56",
+      "importIds": {
+        "yuanshen": [
+          "26_524"
+        ]
+      },
+      "popupTitle": {
+        "en": "#524",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "高处点燃火堆出现的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_524.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -40.48735,
+        65.72753
+      ],
+      "id": "38E5331372FD5164F4CF04B1F04B44A7F60C85DE",
+      "importIds": {
+        "yuanshen": [
+          "26_706"
+        ]
+      },
+      "popupTitle": {
+        "en": "#706",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "获取红石飞至下方礁石融化坚冰【华丽宝箱】 内有绯红玉髓"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_706.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -39.54079,
+        67.97608
+      ],
+      "id": "81B3DC456B05EA7B327C1224D9053279C7FF20AC",
+      "importIds": {
+        "yuanshen": [
+          "26_713"
+        ]
+      },
+      "popupTitle": {
+        "en": "#713",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "打败冰史莱姆解锁的【普通宝箱】10阅历 无原石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_713.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -39.60311,
+        67.10999
+      ],
+      "id": "FFFEE3FF2C3FD879A595951D65895CF147E42928",
+      "importIds": {
+        "yuanshen": [
+          "26_715"
+        ]
+      },
+      "popupTitle": {
+        "en": "#715",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "跟随仙灵出现的【精致宝箱】2原石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_715.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -40.04303,
+        65.72205
+      ],
+      "id": "349D62130F1B5F52EC400657CA563FE54589DF01",
+      "importIds": {
+        "yuanshen": [
+          "26_717"
+        ]
+      },
+      "popupTitle": {
+        "en": "#717",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击碎石块出现的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_717.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -34.86685,
+        55.64039
+      ],
+      "id": "395FACBF652AB75D7B8E8017B52C4A2EC045B923",
+      "importIds": {
+        "yuanshen": [
+          "26_622"
+        ]
+      },
+      "popupTitle": {
+        "en": "#622",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "点亮三个元素柱解锁宝箱【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_622.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -34.297,
+        55.37672
+      ],
+      "id": "EF8BCB8473490524766D6607A8D9F903845879D8",
+      "importIds": {
+        "yuanshen": [
+          "26_623"
+        ]
+      },
+      "popupTitle": {
+        "en": "#623",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_623.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.86935,
+        53.76173
+      ],
+      "id": "95D7B36869AEDB829A8FF203BA44BE86497BAE83",
+      "importIds": {
+        "yuanshen": [
+          "26_624"
+        ]
+      },
+      "popupTitle": {
+        "en": "#624",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击杀丘丘人解锁【珍贵宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_624.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },      {
+      "coordinates": [
+        -34.01082,
+        61.04639
+      ],
+      "id": "8739B794C5E6737F486FE7182E215734F277E092",
+      "importIds": {
+        "yuanshen": [
+          "26_765"
+        ]
+      },
+      "popupTitle": {
+        "en": "#765",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "可直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_765.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -26.05678,
+        50.40527
+      ],
+      "id": "3A6AB9CFEDCFB773C93E5EE60F542577109D325C",
+      "importIds": {
+        "yuanshen": [
+          "26_539"
+        ]
+      },
+      "popupTitle": {
+        "en": "#539",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个蒙德宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_539.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -36.00559,
+        63.57933
+      ],
+      "id": "3FBB02C545E6313382D6E0ACDCE750F8556CCD7D",
+      "importIds": {
+        "yuanshen": [
+          "26_540"
+        ]
+      },
+      "popupTitle": {
+        "en": "#540",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击杀怪物解锁的【精致宝箱】 2原石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_540.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -23.29181,
+        50.26794
+      ],
+      "id": "49423EDFD955EF94589EA5E3B19C8DA87C0A2C60",
+      "importIds": {
+        "yuanshen": [
+          "26_528"
+        ]
+      },
+      "popupTitle": {
+        "en": "#528",
+        "zh": "小精灵"
+      },
+      "popupContent": {
+        "zh": "仙灵宝箱"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_528.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -33.91699,
+        59.21856
+      ],
+      "id": "D1D38FDF7A33E38EA2BA231162980C654257759A",
+      "importIds": {
+        "yuanshen": [
+          "26_646"
+        ]
+      },
+      "popupTitle": {
+        "en": "#646",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击杀讨债人解锁【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_646.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -38.48232,
+        64.00452
+      ],
+      "id": "7EB480184F7C125D5A5447FAAC072F3E1EE3A7DE",
+      "importIds": {
+        "yuanshen": [
+          "26_703"
+        ]
+      },
+      "popupTitle": {
+        "en": "#703",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击杀火法师并点燃三个火堆出现的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_703.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -39.45335,
+        65.38139
+      ],
+      "id": "DBFDB541D70B7A31CA6DB41E7E2A6C76CDEC14AB",
+      "importIds": {
+        "yuanshen": [
+          "26_705"
+        ]
+      },
+      "popupTitle": {
+        "en": "#705",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个可直接开启的【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_705.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -35.60967,
+        61.87866
+      ],
+      "id": "CA8A888E1350FB41C9921F693E007FCC74D8E90B",
+      "importIds": {
+        "yuanshen": [
+          "26_635"
+        ]
+      },
+      "popupTitle": {
+        "en": "#635",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【精致宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_635.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -35.38012,
+        62.76121
+      ],
+      "id": "477C32C039CA35C98D82921528FC6F85A0C239F8",
+      "importIds": {
+        "yuanshen": [
+          "26_716"
+        ]
+      },
+      "popupTitle": {
+        "en": "#716",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "击败怪物解锁的【精致宝箱】20阅历 2原石"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_716.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },    {
+      "coordinates": [
+        -51.67938,
+        28.12135
+      ],
+      "id": "3C1000F725151FAA9C22E731D5C13D975A15EF76",
+      "importIds": {
+        "yuanshen": [
+          "27_646"
+        ]
+      },
+      "popupTitle": {
+        "en": "#646",
+        "zh": "璃月宝箱"
+      },
+      "popupContent": {
+        "zh": "这是一个完成限时击杀挑战出现的【珍贵宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/27_646.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [
+        -32.87825,
+        58.59657
+      ],
+      "id": "FAAB8E58D6B9A9B5369F98BE9BF715D2294D7B75",
+      "importIds": {
+        "yuanshen": [
+          "26_647"
+        ]
+      },
+      "popupTitle": {
+        "en": "#647",
+        "zh": "蒙德宝箱"
+      },
+      "popupContent": {
+        "zh": "山顶【普通宝箱】"
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/26_647.jpg",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

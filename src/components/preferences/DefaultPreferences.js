@@ -32,7 +32,7 @@ export const DEFAULT_LOCALE_CODE = 'en';
 /**
  * The path, relative to ./data/i18n/, of the default locale code's language file.
  */
-export const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
+export const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.jsonc`;
 
 /**
  * The location to store the application data.

@@ -6,7 +6,7 @@ import Joi from 'joi';
 import L from 'leaflet';
 import _ from 'lodash';
 
-import { MDF_FEATURE_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
+import { MSF_FEATURE_SCHEMA, MSF_ROUTES_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
 
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
@@ -87,7 +87,7 @@ const markerStyle = Joi.object({
     .when('marker', { is: false, then: Joi.optional(), otherwise: Joi.forbidden() }), // Optional but allowed if marker = false. Otherwise forbidden.
 });
 
-const MAP_FEATURE_SCHEMA = Joi.object({
+const LEGACY_FEATURE_SCHEMA = Joi.object({
   name: localizedField.required(),
   description: localizedField.optional(),
   cluster: Joi.boolean(),
@@ -105,7 +105,7 @@ const MAP_FEATURE_SCHEMA = Joi.object({
     .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
 
-const MAP_ROUTE_SCHEMA = Joi.object({
+const LEGACY_ROUTE_SCHEMA = Joi.object({
   name: localizedField.required(),
   enabled: Joi.boolean().optional().default(true),
   icons: {
@@ -133,12 +133,19 @@ const VALIDATION_OPTIONS = {
 };
 
 export const validateFeatureData = (input) => {
+  if (input === undefined) {
+    console.error(`Feature is undefined!`);
+    return null;
+  }
   switch (input.format) {
     case 2:
-      return MDF_FEATURE_SCHEMA.validate(input, { convert: true });
+      return MSF_FEATURE_SCHEMA.validate(input, { convert: true });
     case 1:
     default:
-      return MAP_FEATURE_SCHEMA.validate(input, { convert: true });
+      console.error(
+        `Feature (${JSON.stringify(input.name)}) using outdated MSF version: ${input.format}`
+      );
+      return null;
   }
 };
 
@@ -147,15 +154,28 @@ export const validateFeatureData = (input) => {
  * If not valid, validation.error contains the error data.
  */
 export const validateRouteData = (input) => {
-  return MAP_ROUTE_SCHEMA.validate(input, { convert: true });
+  switch (input.format) {
+    case 2:
+      return MSF_ROUTES_SCHEMA.validate(input, { convert: true });
+    case 1:
+    default:
+      console.error(
+        `Route (${JSON.stringify(input.name)}) using outdated MSF version: ${input.format}`
+      );
+      return null;
+  }
 };
 
-const featuresContext = require.context('../../data/features/', true, /.json$/);
+const featuresContext = require.context('../../data/features/', true, /.jsonc?$/);
 export const listFeatureKeys = () => featuresContext.keys();
 export const loadFeature = (key) => {
-  const featureData = featuresContext(key);
+  let featureData = featuresContext(key);
+  if (_.isEqual(Object.keys(featureData), ['default'])) {
+    featureData = featureData.default;
+  }
+
   const validation = validateFeatureData(featureData);
-  if (validation.error) {
+  if (validation == null || validation.error) {
     console.warn(`ERROR during validation of feature '${key}'`);
     console.warn(validation);
     return null;
@@ -163,10 +183,14 @@ export const loadFeature = (key) => {
   return validation.value;
 };
 
-const routesContext = require.context('../../data/routes/', true, /.json$/);
+const routesContext = require.context('../../data/routes/', true, /.jsonc?$/);
 export const listRouteKeys = () => routesContext.keys();
 export const loadRoute = (key) => {
-  const routeData = routesContext(key);
+  let routeData = routesContext(key);
+  if (_.isEqual(Object.keys(routeData), ['default'])) {
+    routeData = routeData.default;
+  }
+
   const validation = validateRouteData(routeData);
   if (validation.error) {
     console.warn(`ERROR during validation of route '${key}'`);

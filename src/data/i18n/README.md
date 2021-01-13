@@ -1,8 +1,10 @@
 ### data/i18n
 
-This folder contains JSON files which describe how the site should be translated for users. The website fetches the data from the appropriate JSON file as it loads.
+This folder contains JSONC files which describe how the site should be translated for users. The website fetches the data from the appropriate JSONC file as it loads.
 
-Since the files in this folder are loaded dynamically, you can simply create a new JSON file, whose name is a 2-letter language code to provide the translations for, and the site will pick it up and use it.
+The JSONC format is a variant of JSON which allows for single-line and multi-line comments.
+
+Since the files in this folder are loaded dynamically, you can simply create a new JSONC file, whose name is a 2-letter language code to provide the translations for, and the site will pick it up and use it. It will even fetch and display the appropriate flag, if available.
 
 ## Formatting
 
