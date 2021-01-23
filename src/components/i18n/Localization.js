@@ -32,7 +32,7 @@ const i18nData = _.fromPairs(
 
 const localizedStrings = new LocalizedStrings(i18nData, {
   pseudo: false, // Enable while testing to find unlocalized strings.
-  logsEnabled: false,
+  logsEnabled: true,
 });
 
 /**

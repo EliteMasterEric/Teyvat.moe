@@ -1,11 +1,8 @@
 import _ from 'lodash';
 
 import MapCategories from '~/components/data/MapCategories';
-import {
-  getEmptyFeatureCategories,
-  getEmptyRouteCategories,
-} from '../../components/data/MapFeatures';
-import { setControlsCategory, SET_CONTROLS_TAB } from '../ducks/ui';
+import { getEmptyFeatureCategories, getEmptyRouteCategories } from '~/components/data/MapFeatures';
+import { setControlsCategory, SET_CONTROLS_TAB } from '~/redux/ducks/ui';
 
 export const rootMiddleware = ({ dispatch, getState }) => {
   return (next) => {

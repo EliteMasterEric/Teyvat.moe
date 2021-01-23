@@ -6,7 +6,7 @@
 import 'leaflet-textpath';
 import React from 'react';
 import { connect } from 'react-redux';
-import RouteLine from './RouteLine';
+import RouteLine from '~/components/views/map/layers/RouteLine';
 
 const _RouteLayer = ({ mapRoute, routeKey, displayed }) => {
   // TODO: We hide by destroying it. Is there a better way?

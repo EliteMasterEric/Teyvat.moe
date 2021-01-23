@@ -4,19 +4,21 @@
  */
 
 import _ from 'lodash';
+import L from 'leaflet';
 import React from 'react';
 import { connect } from 'react-redux';
-import { AttributionControl, MapContainer, ZoomControl } from 'react-leaflet';
+import { AttributionControl, MapContainer, ZoomControl, Marker } from 'react-leaflet';
 
 import { MapFeatures, MapRoutes } from '~/components/data/MapFeatures';
 
+import DebugControls from '~/components/views/map/DebugControls';
 import {
   DEFAULT_ZOOM,
   MAP_BOUNDS,
   MAP_CENTER,
   MAXIMUM_ZOOM,
   MINIMUM_ZOOM,
-} from '~/components/preferences/DefaultPreferences';
+} from '~/components/views/map/LayerConstants';
 import EditorLayer from '~/components/views/map/layers/EditorLayer';
 import FeatureLayer from '~/components/views/map/layers/FeatureLayer';
 import RegionLabelLayer from '~/components/views/map/layers/RegionLabelLayer';
@@ -27,7 +29,6 @@ import MapEditorHandler from '~/components/views/map/MapEditorHandler';
 import MapPositionHandler from '~/components/views/map/MapPositionHandler';
 
 import './LeafletMap.css';
-import DebugControls from './DebugControls';
 
 // A link back to the main repository.
 const ATTRIBUTION =
@@ -41,6 +42,7 @@ const _LeafletMap = () => {
       zoom={DEFAULT_ZOOM}
       zoomDelta={0.5}
       editable
+      crs={L.CRS.Simple}
       zoomSnap={0.5}
       maxZoom={MAXIMUM_ZOOM}
       minZoom={MINIMUM_ZOOM}
@@ -59,6 +61,9 @@ const _LeafletMap = () => {
       <RegionLabelLayer />
       <WorldBorderLayer />
       <EditorLayer />
+
+      <Marker position={[0, 0]} />
+      <Marker position={[-64, 64]} />
 
       {/* Controls the zoom buttons in the top left corner. */}
       <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
@@ -89,10 +94,8 @@ const _LeafletMap = () => {
   );
 };
 
-const mapStateToProps = (state, { mapFeature, featureKey }) => ({
-  clusterMarkers: state.options.clusterMarkers && (mapFeature?.cluster ?? false),
-  completedIds: state.completed.features[featureKey],
-  completedAlpha: state.options.completedAlpha,
+const mapStateToProps = (state) => ({
+  completed: state.completed,
 });
 const mapDispatchToProps = (_dispatch) => ({});
 const LeafletMap = connect(mapStateToProps, mapDispatchToProps)(_LeafletMap);

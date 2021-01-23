@@ -1,7 +1,7 @@
 // List action types.
 import _ from 'lodash';
 
-import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
+import { DEFAULT_MAP_PREFERENCES } from '~/components/preferences/DefaultPreferences';
 
 /**
  * This action clears the data for the current editor feature.

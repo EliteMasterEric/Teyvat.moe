@@ -1,7 +1,5 @@
 // List action types.
 
-import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
-
 /**
  * This action sets only whether the Editor is enabled.
  */

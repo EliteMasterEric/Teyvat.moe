@@ -106,6 +106,8 @@
   "popup-clear-map-data-content": "Are you sure? If you clear the map preferences data, it cannot be recovered.",
   "popup-import-data-content": "Paste your data into the text box, and click Confirm to import your data. BEWARE, existing data will be overridden.",
   "popup-import-yuanshen-content": "Paste data from YuanShen.site into the text box, and click Confirm to import your data. BEWARE, existing data will be overridden.",
+  "popup-import-appsample-content": "Paste data from AppSample.com into the text box, and click Confirm to import your data. BEWARE, existing data will be overridden.",
+  "popup-import-mapgenie-content": "Paste data from MapGenie.io into the text box, and click Confirm to import your data. BEWARE, existing data will be overridden.",
   "popup-submit-editor-data-title": "Submit Editor Data",
   "popup-submit-editor-data-content": "Fill in the following form, then click &quot;Confirm.&quot; <b>This will put the editor data into your clipboard;</b> you will then be redirected to GitHub, where you will paste the data in.",
   "popup-submit-editor-data-feature-name": "Feature Name",
@@ -116,6 +118,13 @@
   "popup-submit-editor-data-cluster-markers": "Cluster Markers?",
   "popup-export-data-content": "Below is exported data for GenshinMap.",
   "popup-import-hint": "Paste data here...",
+
+  "message-import-error-malformed-json": "Your import data appears to be malformed. Did you mean to select a different import option?",
+  "message-import-error-malformed-not-json": "Your import data appears to be malformed. Please check it and try again.",
+  "message-import-error-generic": "An unknown error occurred while attempting to import the submitted data.",
+
+  "message-import-success": "Successfully imported all {count} markers.",
+  "message-import-success-partial": "Imported {success}/{count} markers",
 
   "options-subtitle-format": "App version: v{version}",
   "options-language": "Language",
@@ -132,6 +141,8 @@
   "options-import-data": "Import Data",
   "options-export-data": "Export Data",
   "options-import-yuanshen": "Import from Yuanshen.site",
+  "options-import-appsample": "Import from AppSample.com",
+  "options-import-mapgenie": "Import from MapGenie.io",
   "options-clear-data": "Clear Data",
   "options-clear-data-button": "Clear",
   "options-display-debug": "Show Map Debug Display",

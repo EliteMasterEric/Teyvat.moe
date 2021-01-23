@@ -38,7 +38,8 @@ generate_tiles() {
         oz=$((${z}+2))
         # Zoom Level 4 = 0-15.
         tile_count=$(((2**${z})-1))
-        tile_offset=$(((2**${z})*2))
+        # tile_offset=$(((2**${z})*2))
+        tile_offset=0
         echo Moving ${tile_count} rows of tile from zoom level ${z}, offset by ${tile_offset}...
         for y in $(seq 0 ${tile_count});
         do

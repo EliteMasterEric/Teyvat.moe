@@ -18,6 +18,7 @@ import MapCluster, {
 const _FeatureLayer = ({
   mapFeature,
   featureKey,
+  completed,
 
   displayed,
 }) => {
@@ -42,14 +43,18 @@ const _FeatureLayer = ({
   switch (mapFeature.format) {
     case 2:
       return (
-        <MapCluster legacy={mapFeature.format !== 2} clusterFunction={clusterFunction}>
+        <MapCluster
+          legacy={mapFeature.format === 1}
+          clusterFunction={clusterFunction}
+          completed={completed}
+        >
           {mapFeature.data.map((marker) => {
             return (
               <FeatureMarker
-                key={marker.id}
-                marker={marker}
+                key={`${featureKey}/${marker.id}`}
+                markerKey={`${featureKey}/${marker.id}`}
                 feature={mapFeature}
-                featureKey={featureKey}
+                marker={marker}
               />
             );
           })}
@@ -66,6 +71,7 @@ const mapStateToProps = (state, { featureKey }) => ({
   displayed:
     !((state.options.hideFeaturesInEditor ?? false) && (state.editorEnabled ?? false)) &&
     (state.displayed.features[featureKey] ?? false),
+  completed: _.filter(_.keys(state.completed.features), (key) => key.startsWith(featureKey)),
 });
 const mapDispatchToProps = (_dispatch) => ({});
 const FeatureLayer = connect(mapStateToProps, mapDispatchToProps)(_FeatureLayer);

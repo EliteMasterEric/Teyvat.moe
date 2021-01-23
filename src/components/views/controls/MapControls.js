@@ -27,8 +27,8 @@ import MapControlsRegions from '~/components/views/controls/sidebar/MapControlsR
 import logoPNG from '~/images/controls/logo.png';
 import logoWebP from '~/images/controls/logo.webp';
 
-const CONTROL_BOX_IMAGE_PNG = require('~/images/controls/control_border.png').default;
-const CONTROL_BOX_IMAGE_WEBP = require('~/images/controls/control_border.webp').default;
+const CONTROL_BOX_IMAGE_PNG = require('../../../images/controls/control_border.png').default;
+const CONTROL_BOX_IMAGE_WEBP = require('../../../images/controls/control_border.webp').default;
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {

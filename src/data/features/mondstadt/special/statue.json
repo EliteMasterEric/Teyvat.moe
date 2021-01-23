@@ -14,52 +14,112 @@
     "filter": "mondstadt-statue",
     "base": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     },
     "done": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     }
   },
   "data": [
     {
-      "coordinates": [-21.87041, 64.39773],
-      "id": "DBE65A0D6B2D523359B7A093DDF3E02720B4962A",
+      "coordinates": [
+        -16.04433,
+        45.94394
+      ],
+      "id": "266AC5D7050B88BC45FF36E5B562B5FD8CFC8DFB",
       "importIds": {
-        "gm_legacy": ["mondstadtStatue/1"]
+        "gm_legacy": [
+          "mondstadtStatue/1"
+        ]
       },
       "popupAttribution": "MasterEric",
-      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
-      "popupContent": { "en": "Starfell Valley, Mondstadt", "ru": "Долина Звездопадов, Мондштадт" },
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Starfell Valley, Mondstadt",
+        "ru": "Долина Звездопадов, Мондштадт"
+      },
       "popupMedia": "mondstadt/statue/starfell"
     },
     {
-      "coordinates": [-30.31839, 63.50373],
-      "id": "8CAB2694AD7B73D522394EA686CDD621381F7CF8",
+      "coordinates": [
+        -22.7426,
+        45.30821
+      ],
+      "id": "16B0F36A04625C6E50E0FCAAB47D8A27E1C81A52",
       "importIds": {
-        "gm_legacy": ["mondstadtStatue/2"]
+        "gm_legacy": [
+          "mondstadtStatue/2"
+        ]
       },
       "popupAttribution": "MasterEric",
-      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
-      "popupContent": { "en": "Galesong Hill, Mondstadt", "ru": "Склон Песни ветра, Мондштадт" },
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
+      "popupContent": {
+        "en": "Galesong Hill, Mondstadt",
+        "ru": "Склон Песни ветра, Мондштадт"
+      },
       "popupMedia": "mondstadt/statue/windrise"
     },
     {
-      "coordinates": [-31.12819, 53.42376],
-      "id": "B1F755AF88CDDD953D80CD3760215942F4976F5D",
+      "coordinates": [
+        -23.41249,
+        38.14023
+      ],
+      "id": "CD32EBA5001B7BEA3572EFFF1CFDCAA0FB9560AE",
       "importIds": {
-        "gm_legacy": ["mondstadtStatue/3"]
+        "gm_legacy": [
+          "mondstadtStatue/3"
+        ]
       },
       "popupAttribution": "MasterEric",
-      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
       "popupContent": {
         "en": "Windwail Highland, Mondstadt",
         "ru": "Нагорье Ревущих ветров, Мондштадт"
@@ -67,13 +127,21 @@
       "popupMedia": "mondstadt/statue/springvale"
     },
     {
-      "coordinates": [-20.79207, 42.40584],
-      "id": "D3B15709480CA5CF2DF599E5D9F48E8B6AE14DDA",
+      "coordinates": [
+        -15.2211,
+        30.30526
+      ],
+      "id": "F878EFE2F845591EDE26B9C09577669B568D4DDA",
       "importIds": {
-        "gm_legacy": ["mondstadtStatue/4"]
+        "gm_legacy": [
+          "mondstadtStatue/4"
+        ]
       },
       "popupAttribution": "MasterEric",
-      "popupTitle": { "en": "Statue of The Seven - Anemo", "ru": "Статуя Анемо Архонта" },
+      "popupTitle": {
+        "en": "Statue of The Seven - Anemo",
+        "ru": "Статуя Анемо Архонта"
+      },
       "popupContent": {
         "en": "Brightcrown Mountains, Mondstadt",
         "ru": "Горы Светлой короны, Мондштадт"

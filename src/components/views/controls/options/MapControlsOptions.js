@@ -11,18 +11,16 @@ import { f, t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
 import { InputSlider } from '~/components/interface/Input';
 import { TabView } from '~/components/interface/Tabs';
+import { importMarkerDataFromSite } from '~/components/preferences/import/ExternalImport';
 import { exportDataJSON } from '~/components/preferences/DataExport';
-import { getApplicationVersion } from '~/components/Util';
+import { getApplicationVersion, isValidJSON } from '~/components/Util';
 import MapControlsOptionsLanguage from '~/components/views/controls/options/MapControlsOptionsLanguage';
 import ClearMapDataPopup from '~/components/views/popups/ClearMapDataPopup';
 import ExportDataPopup from '~/components/views/popups/ExportDataPopup';
 import ImportDataPopup from '~/components/views/popups/ImportDataPopup';
-import { clearMapPreferences } from '~/redux/ducks';
-import {
-  importNewDataFromString,
-  importLegacyDataFromString,
-  SET_IMPORT_ERROR,
-} from '~/redux/ducks/import';
+import { clearMapPreferences, setMapPreferences } from '~/redux/ducks';
+import { displayImportError } from '~/redux/ducks/error';
+import { parseDataFromString } from '~/components/preferences/import/InternalImport';
 import {
   setClusterMarkers,
   setCompletedAlpha,
@@ -33,7 +31,8 @@ import {
   setShowHiddenFeatures,
   setWorldBorderEnabled,
 } from '~/redux/ducks/options';
-import { setDebugEnabled, setEditorEnabled, setToast } from '~/redux/ducks/ui';
+import { setDebugEnabled, setEditorEnabled } from '~/redux/ducks/ui';
+import { setFeatureMarkersCompleted } from '~/redux/ducks/completed';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {
@@ -67,6 +66,7 @@ const _MapControlsOptions = ({
   displayed,
   options,
   editorEnabled,
+
   setEditorEnabled,
   setCompletedAlpha,
   setWorldBorderEnabled,
@@ -76,11 +76,30 @@ const _MapControlsOptions = ({
   setShowHiddenFeatures,
   setHideRoutesInEditor,
   setDebugEnabled,
-  importData,
-  importLegacyData,
+
+  completeFeatures,
+
+  importPreferences,
+
   clearState,
 }) => {
   const classes = useStyles();
+
+  const importDataYuanshen = (dataString) => {
+    return importMarkerDataFromSite(dataString, 'yuanshen', completeFeatures);
+  };
+
+  const importDataMapGenie = (dataString) => {
+    return importMarkerDataFromSite(dataString, 'mapgenie', completeFeatures);
+  };
+
+  const importDataAppSample = (dataString) => {
+    return importMarkerDataFromSite(dataString, 'appsample', completeFeatures);
+  };
+
+  const importDataGenshinMap = (dataString) => {
+    return importPreferences(dataString);
+  };
 
   return (
     <TabView grow displayed={displayed}>
@@ -180,6 +199,47 @@ const _MapControlsOptions = ({
       </BorderBox>
       <BorderBox overflow="show">
         <Box className={classes.optionContainer}>
+          <Typography className={classes.label}>{t('options-import-yuanshen')}</Typography>
+          <ImportDataPopup
+            title={t('options-import-yuanshen')}
+            content={t('popup-import-yuanshen-content')}
+            trigger={
+              <Button className={classes.button} variant="contained" size="small">
+                {t('options-import-button')}
+              </Button>
+            }
+            onConfirm={importDataYuanshen}
+          />
+        </Box>
+        <Box className={classes.optionContainer}>
+          <Typography className={classes.label}>{t('options-import-appsample')}</Typography>
+          <ImportDataPopup
+            title={t('options-import-appsample')}
+            content={t('popup-import-appsample-content')}
+            trigger={
+              <Button className={classes.button} variant="contained" size="small">
+                {t('options-import-button')}
+              </Button>
+            }
+            onConfirm={importDataAppSample}
+          />
+        </Box>
+        <Box className={classes.optionContainer}>
+          <Typography className={classes.label}>{t('options-import-mapgenie')}</Typography>
+          <ImportDataPopup
+            title={t('options-import-mapgenie')}
+            content={t('popup-import-mapgenie-content')}
+            trigger={
+              <Button className={classes.button} variant="contained" size="small">
+                {t('options-import-button')}
+              </Button>
+            }
+            onConfirm={importDataMapGenie}
+          />
+        </Box>
+      </BorderBox>
+      <BorderBox overflow="show">
+        <Box className={classes.optionContainer}>
           <Typography className={classes.label}>{t('options-import-data')}</Typography>
           <ImportDataPopup
             title={t('options-import-data')}
@@ -189,7 +249,7 @@ const _MapControlsOptions = ({
                 {t('options-import-button')}
               </Button>
             }
-            onConfirm={importData}
+            onConfirm={importDataGenshinMap}
           />
         </Box>
         <Box className={classes.optionContainer}>
@@ -216,19 +276,6 @@ const _MapControlsOptions = ({
             onConfirm={clearState}
           />
         </Box>
-        <Box className={classes.optionContainer}>
-          <Typography className={classes.label}>{t('options-import-yuanshen')}</Typography>
-          <ImportDataPopup
-            title={t('options-import-yuanshen')}
-            content={t('popup-import-yuanshen-content')}
-            trigger={
-              <Button className={classes.button} variant="contained" size="small">
-                {t('options-import-button')}
-              </Button>
-            }
-            onConfirm={importLegacyData}
-          />
-        </Box>
       </BorderBox>
     </TabView>
   );
@@ -240,8 +287,6 @@ const mapStateToProps = (state) => ({
   editorEnabled: state.editorEnabled,
 });
 const mapDispatchToProps = (dispatch) => ({
-  showToast: (message, action = null, showClose = true, duration = 6000) =>
-    dispatch(setToast(message, action, showClose, duration)),
   setEditorEnabled: (enabled) => dispatch(setEditorEnabled(enabled)),
   setCompletedAlpha: (alpha) => dispatch(setCompletedAlpha(alpha)),
   setWorldBorderEnabled: (enabled) => dispatch(setWorldBorderEnabled(enabled)),
@@ -252,18 +297,31 @@ const mapDispatchToProps = (dispatch) => ({
   setShowHiddenFeatures: (enabled) => dispatch(setShowHiddenFeatures(enabled)),
   setDebugEnabled: (enabled) => dispatch(setDebugEnabled(enabled)),
   setOverrideLang: (lang) => dispatch(setOverrideLang(lang)),
-  importData: (data) => {
-    const action = importNewDataFromString(data);
-    dispatch(action);
-    // Return a result to the popup to tell it whether to close.
-    return action.type !== SET_IMPORT_ERROR;
+  completeFeatures: (features) => dispatch(setFeatureMarkersCompleted(features)),
+
+  importPreferences: (data) => {
+    try {
+      const importedData = parseDataFromString(data);
+      dispatch(setMapPreferences(importedData));
+      return true;
+    } catch (err) {
+      switch (err.name) {
+        case 'InvalidCharacterError':
+          if (isValidJSON(data)) {
+            dispatch(displayImportError(t('message-import-error-malformed-json')));
+          } else {
+            dispatch(displayImportError(t('message-import-error-malformed-not-json')));
+          }
+          break;
+        default:
+          console.error(err);
+          console.error(err.name);
+          dispatch(displayImportError(t('message-import-error-generic')));
+      }
+      return false;
+    }
   },
-  importLegacyData: (data) => {
-    const action = importLegacyDataFromString(data);
-    dispatch(action);
-    // Return a result to the popup to tell it whether to close.
-    return action.type !== SET_IMPORT_ERROR;
-  },
+
   clearState: () => dispatch(clearMapPreferences()),
 });
 const MapControlsOptions = connect(mapStateToProps, mapDispatchToProps)(_MapControlsOptions);

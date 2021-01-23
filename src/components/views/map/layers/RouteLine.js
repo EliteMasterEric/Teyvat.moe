@@ -11,7 +11,7 @@ import { Image } from '~/components/interface/Image';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
 import { SafeHTML } from '~/components/Util';
-import { copyPermalink } from '../../PermalinkHandler';
+import { copyPermalink } from '~/components/views/PermalinkHandler';
 
 const POPUP_WIDTH = '560';
 

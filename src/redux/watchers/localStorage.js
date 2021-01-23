@@ -1,4 +1,4 @@
-import { saveStateToLocalStorage } from '../../components/preferences/ReduxStore';
+import { saveStateToLocalStorage } from '~/components/preferences/ReduxStore';
 
 /**
  * Save all the data to local storage whenever the state changes.

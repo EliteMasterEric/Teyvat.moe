@@ -7,8 +7,8 @@ import React from 'react';
 
 import { useImageExtension } from '~/components/interface/Image';
 
-const BORDER_BOX_IMAGE_PNG = require('~/images/controls/filter_container.png').default;
-const BORDER_BOX_IMAGE_WEBP = require('~/images/controls/filter_container.webp').default;
+const BORDER_BOX_IMAGE_PNG = require('../../images/controls/filter_container.png').default;
+const BORDER_BOX_IMAGE_WEBP = require('../../images/controls/filter_container.webp').default;
 
 const useStyles = makeStyles((_theme) => ({
   borderBox: {

@@ -1,12 +1,16 @@
 // List action types.
 import _ from 'lodash';
 
-import { getUnixTimestamp } from '../../components/Util';
+import { getUnixTimestamp } from '~/components/Util';
 
 /**
- * This action sets a single marker in a single feature as completed at the given time.
+ * This action sets a single marker as completed at the given time.
  */
 export const SET_FEATURE_MARKER_COMPLETED = 'genshinmap/completed/SET_FEATURE_MARKER_COMPLETED';
+/**
+ * This action sets multiple marker as completed at the given time.
+ */
+export const SET_FEATURE_MARKERS_COMPLETED = 'genshinmap/completed/SET_FEATURE_MARKERS_COMPLETED';
 /**
  * This action sets a single marker in a single feature as uncompleted.
  */
@@ -15,7 +19,8 @@ export const CLEAR_FEATURE_MARKER_COMPLETED = 'genshinmap/completed/CLEAR_FEATUR
  * This action sets multiple markers in a single feature as uncompleted.
  */
 export const CLEAR_FEATURE_MARKERS_COMPLETED =
-  'genshinmap/completed/CLEAR_FEATURE_MARKER_COMPLETED';
+  'genshinmap/completed/CLEAR_FEATURE_MARKERS_COMPLETED';
+
 /**
  * This action sets multiple feature markers as completed at the given time.
  */
@@ -33,35 +38,13 @@ export const CLEAR_FEATURE_COMPLETED = 'genshinmap/completed/CLEAR_FEATURE_COMPL
  */
 const completedReducer = (state, action) => {
   switch (action.type) {
-    case SET_FEATURES_COMPLETED:
-      // Set whether a given feature marker is completed.
+    case SET_FEATURE_MARKERS_COMPLETED:
+      // Set whether a given set of feature markers is completed.
       return {
         ...state,
         completed: {
           ...state.completed,
-          features: {
-            ...state.completed.features,
-            // Translate each feature into its old data, plus the new IDs with the new timestamp as the completion date.
-            ...Object.keys(action.payload.features).map((featureKey) => ({
-              ...state.completed.features[featureKey],
-              ...action.payload.features[featureKey].map((id) => ({
-                [id]: action.payload.timestamp,
-              })),
-            })),
-          },
-        },
-      };
-    case CLEAR_FEATURE_COMPLETED:
-      // Clear completion of all markers of a given feature.
-      return {
-        ...state,
-        completed: {
-          ...state.completed,
-          features: {
-            ...state.completed.features,
-            // Set to blank, all false.
-            [action.payload.key]: {},
-          },
+          ..._.fromPairs(_.map(action.payload.features, (id) => [id, action.payload.timestamp])),
         },
       };
     case SET_FEATURE_MARKER_COMPLETED:
@@ -72,49 +55,49 @@ const completedReducer = (state, action) => {
           ...state.completed,
           features: {
             ...state.completed.features,
-            [action.payload.key]: {
-              ...state.completed.features[action.payload.key],
-              [action.payload.id]: action.payload.timestamp,
-            },
+            [action.payload.marker]: action.payload.timestamp,
+          },
+        },
+      };
+    case CLEAR_FEATURE_COMPLETED:
+      // Clear completion of all markers of a given feature.
+      const newFeatures = _.omit(
+        state.completed.features,
+        _.keys(state.completed.features).filter((key) => key.startsWith(action.payload.key))
+      );
+      return {
+        ...state,
+        completed: {
+          ...state.completed,
+          features: newFeatures,
+        },
+      };
+    case CLEAR_FEATURE_MARKERS_COMPLETED:
+      // Clear completion of all specified markers.
+      const newMarkerFeatureData = _.omit(state.completed.features, action.payload.markers);
+      // Set whether a given route is visible.
+      return {
+        ...state,
+        completed: {
+          ...state.completed,
+          features: {
+            ...state.completed.features,
+            ...newMarkerFeatureData,
           },
         },
       };
     case CLEAR_FEATURE_MARKER_COMPLETED:
-      const { [action.payload.id]: _clearedMarker, ...newFeatureData } =
-        state.completed.features[action.payload.key] ?? {};
-      // Set whether a given route is visible.
+      // Clear completion of a single marker.
+      const clearedFeatures = _.omit(state.completed.features, [action.payload.marker]);
+
       return {
         ...state,
         completed: {
           ...state.completed,
-          features: {
-            ...state.completed.features,
-            [action.payload.key]: {
-              // Drop the cleared marker while including everything else.
-              ...newFeatureData,
-            },
-          },
+          features: clearedFeatures,
         },
       };
-    case CLEAR_FEATURE_MARKERS_COMPLETED:
-      const newMarkerFeatureData = _.pickBy(
-        state.completed.features[action.payload.key],
-        (_value, key) => action.payload.ids.includes(key)
-      );
-      // Set whether a given route is visible.
-      return {
-        ...state,
-        completed: {
-          ...state.completed,
-          features: {
-            ...state.completed.features,
-            [action.payload.key]: {
-              // Drop the cleared marker while including everything else.
-              ...newMarkerFeatureData,
-            },
-          },
-        },
-      };
+
     default:
       console.error(`COMPLETED REDUCER ERROR: Unknown action '${action.type}'`);
   }
@@ -126,52 +109,56 @@ export default completedReducer;
 
 // The action creators.
 /**
- * Set a single marker as completed.
- * @param {*} featureKey The feature to set the state of.
- * @param {*} markerId The ID of the marker to set the state of.
- * @param {*} displayed The new state of the feature's visibility.
+ * Set an array of markers as completed.
+ * @param {*} markers The markers to set the state of.
+ * @param {*} timestamp The timestamp the marker was completed at.
  * @returns An action to be dispatched.
  */
-export const setFeatureMarkerCompleted = (featureKey, markerId, timestamp = getUnixTimestamp()) => {
+export const setFeatureMarkersCompleted = (markers, timestamp = getUnixTimestamp()) => {
   return {
-    type: SET_FEATURE_MARKER_COMPLETED,
+    type: SET_FEATURE_MARKERS_COMPLETED,
     payload: {
-      key: featureKey,
-      id: markerId,
+      markers,
       timestamp,
-    },
-  };
-};
-export const clearFeatureMarkersCompleted = (featureKey, markerIds) => {
-  return {
-    type: CLEAR_FEATURE_MARKER_COMPLETED,
-    payload: {
-      key: featureKey,
-      ids: markerIds,
-    },
-  };
-};
-export const clearFeatureMarkerCompleted = (featureKey, markerId) => {
-  return {
-    type: CLEAR_FEATURE_MARKER_COMPLETED,
-    payload: {
-      key: featureKey,
-      id: markerId,
     },
   };
 };
 /**
- * Set whether a given route is enabled.
- * @param {*} features A map of features: {[featureKey]: [featureIds]}
- * @param {*} timestamp The timestamp to mark them as completed on.
+ * Set a single marker as completed.
+ * @param {*} markerKey The marker to set the state of.
+ * @param {*} timestamp The timestamp the marker was completed at.
  * @returns An action to be dispatched.
  */
-export const setFeaturesCompleted = (features, timestamp = getUnixTimestamp()) => {
+export const setFeatureMarkerCompleted = (marker, timestamp = getUnixTimestamp()) => {
   return {
-    type: SET_FEATURES_COMPLETED,
+    type: SET_FEATURE_MARKER_COMPLETED,
     payload: {
-      features,
+      marker,
       timestamp,
+    },
+  };
+};
+/**
+ * Unset multiple markers as completed.
+ * @param {*} markers The markers to clear.
+ */
+export const clearFeatureMarkersCompleted = (markers) => {
+  return {
+    type: CLEAR_FEATURE_MARKERS_COMPLETED,
+    payload: {
+      markers,
+    },
+  };
+};
+/**
+ * Unset a single marker as completed.
+ * @param {*} marker The marker to clear.
+ */
+export const clearFeatureMarkerCompleted = (marker) => {
+  return {
+    type: CLEAR_FEATURE_MARKER_COMPLETED,
+    payload: {
+      marker,
     },
   };
 };

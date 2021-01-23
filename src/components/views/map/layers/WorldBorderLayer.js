@@ -3,6 +3,7 @@
  * on the Leaflet map.
  */
 
+import _ from 'lodash';
 import L from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
 // import 'leaflet.pattern';
@@ -13,7 +14,7 @@ import { connect } from 'react-redux';
 import { hashObject } from '~/components/Util';
 
 // The data file which contains the information on the world border shape.
-const worldBorderData = require('~/data/core/world-border.json');
+const worldBorderData = require('../../../../data/core/world-border.json');
 
 /**
  * Adds a striped pattern outside the world border.
@@ -46,6 +47,9 @@ const _WorldBorderLayer = ({ displayed }) => {
   const zoomLevel = mapCurrent.getZoom();
 
   const polygonToLayer = (_geoJsonData, latLngs) => {
+    // There are two sets of coordinates, one for the outer part of the border,
+    // and one for the inner part.
+
     return new L.Polygon(latLngs, {
       // fillPattern: worldBorderPattern,
       stroke: false,

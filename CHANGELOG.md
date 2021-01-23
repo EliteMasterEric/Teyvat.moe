@@ -884,3 +884,17 @@ First major release of the rework, featuring a new interface developed in React.
   - Modified keys:
     - map-about-help-content-a: Now gives a general description of the app and a counter of markers and routes.
 
+# [ALPHA] v0.10.4 Data Migration
+
+- Fixed a bug where the map was using Spherical Mercator projection, causing distances farther from the origin to be skewed.
+  - Apparently the mapping library the site uses defaults to assuming you're displaying a map of Earth, and therefore calculates distances as thought the map were based on a sphere.
+  - This required making a script to realign all the points on the map. If any of them seem skewed, please make an issue requesting a correction.
+- Redid importer for Yuanshen.site to work with new marker storage format.
+- Incremented 
+
+- [ ] Create generic importer for GM legacy, Yuanshen, AppSample, etc.
+- [ ] Create importer for gm_msfv2 (which should run EVERY time preferences are loaded).
+- [ ] Increment preferences version, and add migration which migrates gm_legacy to MSFv2.
+
+- [ ] Update the Editor to place markers in MSFv2 format.
+- [ ] CTRL-click to place an additional marker in Editor.

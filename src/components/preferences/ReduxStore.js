@@ -4,7 +4,7 @@
 
 import _ from 'lodash';
 
-import { migrateData } from '~/components/preferences/DataImport';
+import { migrateData } from '~/components/preferences/import/InternalImport';
 import {
   LOCAL_STORAGE_KEY,
   DEFAULT_MAP_PREFERENCES,

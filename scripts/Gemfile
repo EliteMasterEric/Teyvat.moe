@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+# Download gems from here.
+source "https://rubygems.org"
+
+# Specify dependencies
+gem 'spherical_mercator', :git => "git://github.com/MasterEric/spherical_mercator.git", :branch => "option-round"
+
+gem 'object_hash_rb'
+gem 'json-next'
