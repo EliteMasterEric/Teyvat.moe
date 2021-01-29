@@ -4,9 +4,11 @@ import 'leaflet.markercluster';
 import _ from 'lodash';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createPathComponent } from '@react-leaflet/core';
+
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { useMap } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-markercluster';
 
 export const offClusterFunction = (_zoom) => {
   return 0; // Don't cluster.
@@ -35,73 +37,7 @@ export const onClusterFunction = (_zoom) => {
   return 24;
 };
 
-const buildMarkerClusterGroupProps = (props) => {
-  const clusterProps = {};
-  const clusterEvents = {};
-
-  // Splitting props and events to different objects
-  Object.entries(props).forEach(([propName, prop]) => {
-    if (propName.startsWith('on')) {
-      clusterEvents[propName] = prop;
-    } else {
-      clusterProps[propName] = prop;
-    }
-  });
-  return { clusterProps, clusterEvents };
-};
-
-const createLeafletElement = ({ children: _c, ...props }, ctx) => {
-  const { clusterProps, clusterEvents } = buildMarkerClusterGroupProps(props);
-
-  // Creating markerClusterGroup Leaflet element
-  // eslint-disable-next-line new-cap
-  const markerClusterGroup = new L.markerClusterGroup(clusterProps);
-
-  // Initializing event listeners
-  Object.entries(clusterEvents).forEach(([eventAsProp, callback]) => {
-    const clusterEvent = `cluster${eventAsProp.substring(2).toLowerCase()}`;
-    markerClusterGroup.on(clusterEvent, callback);
-  });
-
-  return {
-    instance: markerClusterGroup,
-    context: { ...ctx, layerContainer: markerClusterGroup },
-  };
-};
-
-const updateLeafletElement = (instance, toProps, fromProps) => {
-  const { children: _fromChildren } = fromProps;
-  const { children: toChildren, ...toOtherProps } = toProps;
-
-  const { clusterProps, clusterEvents } = buildMarkerClusterGroupProps(toOtherProps);
-
-  L.setOptions(clusterProps);
-  Object.entries(clusterEvents).forEach(([eventAsProp, callback]) => {
-    const clusterEvent = `cluster${eventAsProp.substring(2).toLowerCase()}`;
-    instance.off(clusterEvent);
-    instance.on(clusterEvent, callback);
-  });
-
-  // TODO: Only handles 'completed' status.
-  // Since the <MarkerClusterGroup> contains functional components and not <Marker>s directly,
-  // I can't get the props passed to the <Marker>.
-  const markers = instance.getLayers();
-  console.log(toChildren);
-  React.Children.forEach(toChildren, (element) => {
-    // console.log(element);
-    // console.log(element.children);
-    // const clusterChildMarker = markers.find(({ options }) => options.id === key);
-    // if (clusterChildMarker) {
-    //   const { children: _children, ...restProps } = props;
-    //   L.setOptions(clusterChildMarker, restProps);
-    // }
-  });
-
-  instance.refreshClusters(markers);
-};
-const MarkerClusterGroup = createPathComponent(createLeafletElement, updateLeafletElement);
-
-const CLUSTER_MARKER_ICON = require('../../../images/icons/marker/marker_blue_bg.svg').default;
+const CLUSTER_MARKER_ICON = require('../../../../images/icons/marker/marker_blue_bg.svg').default;
 
 const createClusterIcon = (legacy) => (cluster) => {
   const childMarkers = cluster.getAllChildMarkers();

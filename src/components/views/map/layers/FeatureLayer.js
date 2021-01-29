@@ -13,7 +13,7 @@ import MapCluster, {
   offClusterFunction,
   onClusterFunction,
   variableClusterFunction,
-} from '~/components/views/map/MapCluster';
+} from '~/components/views/map/layers/MapCluster';
 
 const _FeatureLayer = ({
   mapFeature,

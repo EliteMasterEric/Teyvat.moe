@@ -12,6 +12,7 @@ import {
   lineTextProperties,
 } from '~/components/views/map/LayerConstants';
 import { appendElement, setElementProperty } from '~/redux/ducks/editor';
+import { hashObject } from '~/components/Util';
 
 const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute }) => {
   // A separate state must be used because the type of currentEditable can't be determined
@@ -24,11 +25,16 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
     // Note this is not reversed because it corresponds to direct map coordinates.
     const latlngFormatted = [latlng?.lat, latlng?.lng];
+    const id = hashObject(latlngFormatted);
 
+    // Switched to MSFv2.
     const newMarker = {
-      geometry: { type: 'Point', coordinates: latlngFormatted },
-      type: 'Feature',
-      properties: { popupTitle: { en: '' }, popupContent: { en: '' }, popupMedia: '' },
+      coordinates: latlngFormatted,
+      id,
+      popupTitle: { en: '' },
+      popupContent: { en: '' },
+      popupAttribution: 'Unknown',
+      popupMedia: '',
     };
 
     appendMarker(newMarker);
@@ -40,11 +46,18 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     const { _latlngs: latlngs } = editable;
     // Note this is not reversed because it corresponds to direct map coordinates.
     const latlngsFormatted = latlngs.map((latlng) => [latlng?.lat, latlng?.lng]);
+    const id = hashObject(latlngsFormatted);
 
+    // Switched to MSFv2.
     const newRoute = {
-      geometry: { type: 'LineString', coordinates: latlngsFormatted },
-      type: 'Feature',
-      properties: { popupTitle: '', popupContent: '', popupMedia: '' },
+      coordinates: latlngsFormatted,
+      id,
+      routeColor: '#dafada',
+      routeText: '  ★  ',
+      popupTitle: { en: '' },
+      popupContent: { en: '' },
+      popupAttribution: 'Unknown',
+      popupMedia: '',
     };
     appendRoute(newRoute);
     setEditorState('none');
