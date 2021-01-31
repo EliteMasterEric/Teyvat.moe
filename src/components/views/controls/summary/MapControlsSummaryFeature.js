@@ -15,7 +15,7 @@ import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import MapControlSummaryFeatureMenu from '~/components/views/controls/summary/MapControlsSummaryFeatureMenu';
 
-const ICON_BORDER_IMAGE = require('~/images/controls/filter_border.png').default;
+const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
 const useStyles = makeStyles((_theme) => ({
   iconBorder: {
@@ -117,7 +117,8 @@ const _MapControlSummaryFeature = ({ featureKey, completedCount, displayed }) =>
 const mapStateToProps = (state, { featureKey }) => {
   return {
     displayed: state.displayed.features[featureKey] || state.options.showHiddenFeatures,
-    completedCount: _.keys(state.completed.features[featureKey]).length,
+    completedCount: _.filter(_.keys(state.completed.features), (key) => key.startsWith(featureKey))
+      .length,
   };
 };
 const mapDispatchToProps = (_dispatch) => ({});

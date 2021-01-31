@@ -11,10 +11,10 @@ import { connect } from 'react-redux';
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { Image } from '~/components/interface/Image';
+import { BLANK_IMAGE, Image } from '~/components/interface/Image';
 import { setFeatureDisplayed } from '~/redux/ducks/displayed';
 
-const ICON_BORDER_IMAGE = require('~/images/controls/filter_border.png').default;
+const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
 const useStyles = makeStyles((_theme) => ({
   iconBorder: {
@@ -98,6 +98,8 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
     setFeatureDisplayed(!active);
   };
 
+  const filterImg = mapFeature.icons.filter;
+
   return (
     <Box
       onClick={toggleFeature}
@@ -110,8 +112,10 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
       <Box className={classes.iconBorder}>
         <Image
           className={classes.icon}
-          srcPNG={getFilterIconURL(mapFeature.icons.filter, 'png')}
-          srcWebP={getFilterIconURL(mapFeature.icons.filter, 'webp')}
+          srcPNG={
+            filterImg && filterImg !== 'none' ? getFilterIconURL(filterImg, 'png') : BLANK_IMAGE
+          }
+          srcWebP={filterImg && filterImg !== 'none' ? getFilterIconURL(filterImg, 'webp') : null}
         />
       </Box>
       <Typography>{localizeField(mapFeature.name)}</Typography>

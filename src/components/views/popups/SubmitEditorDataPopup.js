@@ -25,7 +25,7 @@ import MapRegions from '~/components/data/MapRegions';
 import { t } from '~/components/i18n/Localization';
 import { SafeHTML } from '~/components/Util';
 import BorderBox from '~/components/interface/BorderBox';
-import { InputTextField } from '~/components/interface/Input';
+import { InputTextArea, InputTextField } from '~/components/interface/Input';
 import DialogTitle from '~/components/views/popups/DialogTitle';
 
 const useStyles = makeStyles({
@@ -45,6 +45,7 @@ const useStyles = makeStyles({
 
 const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionName, setSubmissionName] = React.useState('');
+  const [submissionDescription, setSubmissionDescription] = React.useState('');
   const [submissionRegion, setSubmissionRegion] = React.useState('');
   const [submissionCategory, setSubmissionCategory] = React.useState('');
   const [clusterMarkers, setClusterMarkers] = React.useState(false);
@@ -69,12 +70,18 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
     if (!isValid()) return;
 
     onConfirm({
+      format: 2,
+      enabled: true,
+      respawn: 'none',
       name: {
         en: submissionName,
       },
-      region: submissionRegion.value,
-      category: submissionCategory.value,
-      cluster: clusterMarkers,
+      description: {
+        en: submissionDescription,
+      },
+      region: submissionRegion,
+      category: submissionCategory,
+      cluster: clusterMarkers ? 'on' : 'off',
       icons: {
         filter: 'none',
         base: {
@@ -114,6 +121,13 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               value={submissionName}
               label={t('popup-submit-editor-data-feature-name')}
               onChange={setSubmissionName}
+              className={classes.formField}
+            />
+            <InputTextArea
+              rows={3}
+              value={submissionDescription}
+              label={t('popup-submit-editor-data-description')}
+              onChange={setSubmissionDescription}
               className={classes.formField}
             />
             <FormControl className={classes.formField}>

@@ -4,7 +4,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from '~/redux/ducks/index';
 import { rootMiddleware } from '~/redux/middleware';
-import { loadStateFromLocalStorage } from '../components/preferences/ReduxStore';
+import { loadStateFromLocalStorage } from '~/components/preferences/ReduxStore';
 import watchers from '~/redux/watchers';
 
 /**

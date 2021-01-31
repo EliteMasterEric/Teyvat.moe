@@ -7,6 +7,7 @@ import L from 'leaflet';
 import _ from 'lodash';
 
 import { MSF_FEATURE_SCHEMA, MSF_ROUTES_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
+import { BLANK_IMAGE } from '../interface/Image';
 
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
@@ -215,7 +216,12 @@ export const createGeoJSONLayer = (dataJSON) => {
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
 const iconsContext = require.context('../../images/icons', true, /\.(png|webp|svg)/);
-export const getFilterIconURL = (key, ext) => iconsContext(`./filter/${key}.${ext}`).default;
+export const getFilterIconURL = (key, ext) => {
+  if (key && key !== 'none') {
+    return iconsContext(`./filter/${key}.${ext}`).default;
+  }
+  return BLANK_IMAGE;
+};
 
 export const createMapIcon = ({
   key,
@@ -255,7 +261,7 @@ export const createMapIcon = ({
   const iconUrl = iconsContext(`./map/${key}.${ext}`, true).default;
 
   // Handle the niche case where cluster = true and marker = false.
-  const clusterIconUrl = clusterIcon !== '' ? getFilterIconURL(clusterIcon, ext) : undefined;
+  const clusterIconUrl = getFilterIconURL(clusterIcon, ext);
 
   return L.icon({
     className: `map-marker-${key}`,

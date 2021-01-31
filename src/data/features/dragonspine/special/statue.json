@@ -14,27 +14,62 @@
     "filter": "dragonspine-statue",
     "base": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     },
     "done": {
       "key": "statue",
-      "iconSize": [30, 46],
-      "shadowSize": [50, 64],
-      "iconAnchor": [15, 40],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -35]
+      "iconSize": [
+        30,
+        46
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        15,
+        40
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -35
+      ]
     }
   },
   "data": [
     {
-      "coordinates": [-39.26572, 60.05075],
-      "id": "9D7B5E84ECBF41F751DD353233F67BF58DFC35FE",
+      "coordinates": [
+        -30.50573,
+        42.85276
+      ],
+      "id": "71677AB218A4FA8B10736C65AC8DDF21AE62C28E",
       "importIds": {
-        "gm_legacy": ["dragonspineStatue/1"]
+        "gm_legacy": [
+          "dragonspineStatue/1"
+        ]
       },
       "popupAttribution": "MasterEric"
     }

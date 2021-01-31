@@ -8,7 +8,7 @@
     "en": "An ancient Shrine of Depths containing a Luxurious Chest, opened only with a special key."
   },
   "enabled": true,
-  "cluster": "off",
+  "cluster": "on",
   "respawn": "none",
   "icons": {
     "filter": "liyue-shrine",
@@ -21,9 +21,19 @@
   },
   "data": [
     {
-      "coordinates": [-35.10193, 43.80249],
-      "id": "CC423B0A94EF09A6C14DC3A5662B04A653E6AC11",
-      "importIds": { "gm_legacy": ["liyueShrine/1"], "yuanshen": ["3_1"] },
+      "coordinates": [
+        -26.7875,
+        31.29844
+      ],
+      "id": "5070284612C7461E12C3E90F662537A159792D30",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/1"
+        ],
+        "yuanshen": [
+          "3_1"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -34,9 +44,19 @@
       "popupMedia": "liyue/shrine/3_1"
     },
     {
-      "coordinates": [-33.56886, 37.26562],
-      "id": "37AD1AFC4F466D09B0A471A97FE7DC589194CA8B",
-      "importIds": { "gm_legacy": ["liyueShrine/2"], "yuanshen": ["3_2"] },
+      "coordinates": [
+        -25.46719,
+        26.65
+      ],
+      "id": "330203108B5BDA4788091B0DB306DFE359887BA1",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/2"
+        ],
+        "yuanshen": [
+          "3_2"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -47,9 +67,19 @@
       "popupMedia": "liyue/shrine/3_2"
     },
     {
-      "coordinates": [-41.04622, 49.49341],
-      "id": "66027246EA04A4606945F621CF14CCCEC25A21A9",
-      "importIds": { "gm_legacy": ["liyueShrine/3"], "yuanshen": ["3_3"] },
+      "coordinates": [
+        -32.1625,
+        35.34531
+      ],
+      "id": "AB05F619EE3BEDFA68EFB71CEB2F776D06FE1848",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/3"
+        ],
+        "yuanshen": [
+          "3_3"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -60,9 +90,19 @@
       "popupMedia": "liyue/shrine/3_3"
     },
     {
-      "coordinates": [-36.06686, 25.85083],
-      "id": "468D3030F0B9E0E7987F6B84C9597280A11D0410",
-      "importIds": { "gm_legacy": ["liyueShrine/4"], "yuanshen": ["3_4"] },
+      "coordinates": [
+        -27.63125,
+        18.53281
+      ],
+      "id": "4EE200B925C0B7318A3B0095374603B0386D9C6F",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/4"
+        ],
+        "yuanshen": [
+          "3_4"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -73,9 +113,19 @@
       "popupMedia": "liyue/shrine/3_4"
     },
     {
-      "coordinates": [-38.83115, 25.85083],
-      "id": "43B4758686B0082F0D2C3896FF5C9192321051BA",
-      "importIds": { "gm_legacy": ["liyueShrine/5"], "yuanshen": ["3_5"] },
+      "coordinates": [
+        -30.10781,
+        18.53281
+      ],
+      "id": "C4FB8336D0255C02D22054EB016E942FA3332017",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/5"
+        ],
+        "yuanshen": [
+          "3_5"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -86,9 +136,19 @@
       "popupMedia": "liyue/shrine/3_5"
     },
     {
-      "coordinates": [-40.68897, 24.37866],
-      "id": "697595756C590CB62D0E1142737191459B7874AB",
-      "importIds": { "gm_legacy": ["liyueShrine/6"], "yuanshen": ["3_6"] },
+      "coordinates": [
+        -31.82656,
+        17.48594
+      ],
+      "id": "50F234EDBA97691E9C6C476656BBE9DD62CCEB1B",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/6"
+        ],
+        "yuanshen": [
+          "3_6"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -99,9 +159,19 @@
       "popupMedia": "liyue/shrine/3_6"
     },
     {
-      "coordinates": [-46.98025, 21.9397],
-      "id": "E9C81293957F6C1481691A9554D386F70D490253",
-      "importIds": { "gm_legacy": ["liyueShrine/7"], "yuanshen": ["3_7"] },
+      "coordinates": [
+        -38.0375,
+        15.75156
+      ],
+      "id": "00079874501427932744C4010E9107CDF79FC8ED",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/7"
+        ],
+        "yuanshen": [
+          "3_7"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -112,9 +182,19 @@
       "popupMedia": "liyue/shrine/3_7"
     },
     {
-      "coordinates": [-51.76784, 29.14673],
-      "id": "3BA5BA9D60F57231DB2F53C595DB3B57EAC8D0B3",
-      "importIds": { "gm_legacy": ["liyueShrine/8"], "yuanshen": ["3_8"] },
+      "coordinates": [
+        -43.27188,
+        20.87656
+      ],
+      "id": "6AA9876C0FA7180310A0DD567740D346D3A00D6B",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/8"
+        ],
+        "yuanshen": [
+          "3_8"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -125,9 +205,19 @@
       "popupMedia": "liyue/shrine/3_8"
     },
     {
-      "coordinates": [-56.80088, 31.84937],
-      "id": "7BB55E9B3BBAA5D4F97B0B19A75A06D616F99155",
-      "importIds": { "gm_legacy": ["liyueShrine/9"], "yuanshen": ["3_9"] },
+      "coordinates": [
+        -49.4125,
+        22.79844
+      ],
+      "id": "A64337A7F365CE9C230B169A1004018D4B3BF527",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/9"
+        ],
+        "yuanshen": [
+          "3_9"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },
@@ -138,9 +228,19 @@
       "popupMedia": "liyue/shrine/3_9"
     },
     {
-      "coordinates": [-56.53526, 54.97559],
-      "id": "1A12F920CBB5D1F1EB48D0C1DA6AF71FBE28A83A",
-      "importIds": { "gm_legacy": ["liyueShrine/10"], "yuanshen": ["3_10"] },
+      "coordinates": [
+        -49.06875,
+        39.24375
+      ],
+      "id": "6424F2069707F4A559158EE5DB039B368D677018",
+      "importIds": {
+        "gm_legacy": [
+          "liyueShrine/10"
+        ],
+        "yuanshen": [
+          "3_10"
+        ]
+      },
       "popupTitle": {
         "zh": "地灵龛"
       },

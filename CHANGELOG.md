@@ -884,3 +884,31 @@ First major release of the rework, featuring a new interface developed in React.
   - Modified keys:
     - map-about-help-content-a: Now gives a general description of the app and a counter of markers and routes.
 
+# [ALPHA] v0.10.4 Data Migration
+
+- Added user preferences migration to move user completion data to the new marker storage format.
+  - Completion from v0.9 was previously not visible in v0.10.
+- Fixed a bug where the map was using Spherical Mercator projection, causing distances farther from the origin to be skewed.
+  - Apparently the mapping library the site uses defaults to assuming you're displaying a map of Earth, and therefore calculates distances as thought the map were based on a sphere.
+  - This required making a script to realign all the points on the map. If any of them seem skewed, please make an issue requesting a correction.
+- Redid importer for Yuanshen.site to work with new marker storage format.
+- Update the Editor to place markers in MSFv2 format.
+  - Added Description field to Editor Submission.
+- Updated localization files:
+  - meta-page-title-full: Removed [BETA] tag to make the title more concise
+  - popup-submit-editor-data-description: 
+
+# 0.10.5 Finalized v0.10 Release
+
+Here is a summary of major changes from v0.10.0-v0.10.4:
+- All Crimson Agates now have text descriptions and YouTube embeds.
+- Imported over 2,500 markers from Yuanshen.site, including chests from Dragonspine.
+  - Note that since Yuanshen.site does not distinguish between chest rarities by default, these still need to be sorted.
+- Markers submitted via the editor are now much easier to add to the main site.
+- Performed some of the backend work required to implement importers for AppSample and MapGenie.
+- Popups now display a switch to enable/disable completion status.
+- Added functionality to convey information to the user via "toast" notifications in the bottom-left corner.
+- Markers and routes can now be navigated to directly via hyperlink.
+  - The feature of the linked marker will be made visible if it isn't already.
+  - Popups now include a button to copy a hyperlink to the clipboard.
+- Added new Map Debug view (available to enable in the options) which displays the coordinates at the cursor.

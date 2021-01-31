@@ -15,9 +15,10 @@ import {
 } from '@material-ui/core';
 
 import { t } from '~/components/i18n/Localization';
-import { clearImportError } from '~/redux/ducks/import';
+import { clearImportError } from '~/redux/ducks/error';
 import { InputTextArea } from '~/components/interface/Input';
 import DialogTitle from '~/components/views/popups/DialogTitle';
+import { SafeHTML } from '~/components/Util';
 
 const useStyles = makeStyles({
   dialog: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles({
   },
 });
 
-const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearError }) => {
+const _ImportDataPopup = ({ title, content, onConfirm, trigger, error = '', clearError }) => {
   const [textarea, setTextarea] = React.useState('');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const classes = useStyles();
@@ -54,13 +55,15 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error, clearErro
       >
         <DialogTitle onClose={() => setIsDialogOpen(false)}>{title}</DialogTitle>
         <DialogContent>
-          <DialogContentText>{content}</DialogContentText>
-          <DialogContentText>{error}</DialogContentText>
+          <DialogContentText>
+            <SafeHTML>{content}</SafeHTML>
+          </DialogContentText>
           <InputTextArea
             text={textarea}
             onChange={(value) => setTextarea(value)}
             fullWidth
-            helperText={t('popup-import-hint')}
+            error={error !== ''}
+            helperText={error !== '' ? error : t('popup-import-hint')}
           />
         </DialogContent>
         <DialogActions>

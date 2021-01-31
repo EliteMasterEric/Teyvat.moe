@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getURLParams, setBrowserClipboard } from '~/components/Util';
 import { getElementPathById, getElementByPath } from '~/components/data/MapFeatures';
 import { setPositionAndZoom, setToast } from '~/redux/ducks/ui';
-import { t } from '../i18n/Localization';
+import { t } from '~/components/i18n/Localization';
 import { setFeatureDisplayed, setRouteDisplayed } from '~/redux/ducks/displayed';
 
 const HIGHLIGHT_ZOOM_LEVEL = 9;

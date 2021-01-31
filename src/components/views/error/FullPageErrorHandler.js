@@ -22,8 +22,8 @@ import { Image } from '~/components/interface/Image';
 import { openURLInWindow } from '~/components/Util';
 import { generateReportURL } from '~/components/views/error/ErrorReport';
 
-const iconPNG = require('~/images/brainjuice.png').default;
-const iconWEBP = require('~/images/brainjuice.webp').default;
+const iconPNG = require('../../../images/brainjuice.png').default;
+const iconWEBP = require('../../../images/brainjuice.webp').default;
 
 const useStyles = makeStyles((theme) => ({
   root: {

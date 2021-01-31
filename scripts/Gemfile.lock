@@ -1,0 +1,24 @@
+GIT
+  remote: git://github.com/MasterEric/spherical_mercator.git
+  revision: 269497e506753c041b5124133ffcc43c5203b6c2
+  branch: option-round
+  specs:
+    spherical_mercator (1.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json-next (1.2.1)
+    object_hash_rb (0.1.3)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  json-next
+  object_hash_rb
+  spherical_mercator!
+
+BUNDLED WITH
+   2.2.3

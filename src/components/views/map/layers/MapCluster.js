@@ -2,6 +2,9 @@ import L from 'leaflet';
 // Its very presence changes the behavior of L.
 import 'leaflet.markercluster';
 import _ from 'lodash';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { createPathComponent } from '@react-leaflet/core';
+
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { useMap } from 'react-leaflet';
@@ -34,21 +37,22 @@ export const onClusterFunction = (_zoom) => {
   return 24;
 };
 
-const CLUSTER_MARKER_ICON = require('~/images/icons/marker/marker_blue_bg.svg').default;
+const CLUSTER_MARKER_ICON = require('../../../../images/icons/marker/marker_blue_bg.svg').default;
 
 const createClusterIcon = (legacy) => (cluster) => {
   const childMarkers = cluster.getAllChildMarkers();
   const childCount = childMarkers.length;
   // For each cluster child element, check if completed = true; if so, add to the count.
-  const childCompletedCount = childMarkers.reduce((prev, marker) => {
+  const childMarkersCompleted = childMarkers.filter((marker) => {
     if (legacy) {
-      return prev + (marker?.options?.properties?.completed ? 1 : 0);
+      return marker?.options?.properties?.completed;
     }
-    // Else, new.
-    return prev + (marker?.options?.completed ? 1 : 0);
-  }, 0);
+    console.log(marker?.options?.completed);
+    return marker?.options?.completed;
+  });
+  console.log(childMarkersCompleted);
+  const childCompletedCount = childMarkersCompleted.length;
   const iconUrl = childMarkers[0]?.options?.icon?.options?.clusterIconUrl;
-  // childMarkers[0]?.options?.properties?.iconUrl
 
   const icon = (
     <>
@@ -61,6 +65,8 @@ const createClusterIcon = (legacy) => (cluster) => {
   );
 
   const iconHTML = ReactDOMServer.renderToString(icon);
+
+  // console.log(`clusterIcon: ${childCompletedCount}`);
 
   return L.divIcon({
     html: iconHTML,

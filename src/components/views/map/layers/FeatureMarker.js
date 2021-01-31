@@ -12,7 +12,7 @@ import { localizeField } from '~/components/i18n/FeatureLocalization';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
 import { clearFeatureMarkerCompleted, setFeatureMarkerCompleted } from '~/redux/ducks/completed';
 import { SafeHTML } from '~/components/Util';
-import { copyPermalink } from '../../PermalinkHandler';
+import { copyPermalink } from '~/components/views/PermalinkHandler';
 import { InputSwitch } from '~/components/interface/Input';
 
 const POPUP_WIDTH = '560';
@@ -100,10 +100,13 @@ const FeatureMedia = ({ media, allowExternalMedia }) => {
 
 const _FeatureMarker = ({
   marker,
+  markerKey,
   icons,
 
   completed,
   completedAlpha,
+
+  editable,
 
   markFeature,
   unmarkFeature,
@@ -135,6 +138,7 @@ const _FeatureMarker = ({
     // Calls on single clicks, not double clicks.
 
     // Trigger the popup to display only on single clicks.
+    console.log(event.target);
     event.target.openPopup();
   };
 
@@ -158,6 +162,9 @@ const _FeatureMarker = ({
     add: (event) => {
       // We will be triggering popups manually.
       event.target.off('click', event.target._openPopup);
+      if (editable) {
+        event.target.enableEdit();
+      }
     },
     click: (event) => {
       if (event.target.clicks === undefined) event.target.clicks = 0;
@@ -187,7 +194,8 @@ const _FeatureMarker = ({
       position={marker.coordinates}
       icon={icon}
       opacity={completed ? completedAlpha : 1}
-      completed={completed} // Used only by the progress display on the tracker.
+      id={markerKey}
+      completed={!!completed}
     >
       {/* A modern variant of MapPopupLegacy. */}
       <Popup maxWidth={540} minWidth={192} autoPan={false} keepInView={false}>
@@ -205,26 +213,28 @@ const _FeatureMarker = ({
           {content && content !== '' ? (
             <SafeHTML className={classes.popupContent}>{content}</SafeHTML>
           ) : null}
-          <Box className={classes.actionContainer}>
-            <Tooltip title={t('map-popup-completed-label')}>
-              <Box className={classes.innerActionContainer}>
-                <InputSwitch
-                  size="small"
-                  color="primary"
-                  label={<AssignmentTurnedInIcon />}
-                  value={Boolean(completed)}
-                  onChange={(value) => (value ? markFeature() : unmarkFeature())}
-                />
-              </Box>
-            </Tooltip>
-            <Tooltip title={t('map-popup-copy-permalink-label')}>
-              <Box className={classes.innerActionContainer}>
-                <IconButton onClick={onCopyPermalink}>
-                  <LinkIcon />
-                </IconButton>
-              </Box>
-            </Tooltip>
-          </Box>
+          {!editable ? (
+            <Box className={classes.actionContainer}>
+              <Tooltip title={t('map-popup-completed-label')}>
+                <Box className={classes.innerActionContainer}>
+                  <InputSwitch
+                    size="small"
+                    color="primary"
+                    label={<AssignmentTurnedInIcon />}
+                    value={Boolean(completed)}
+                    onChange={(value) => (value ? markFeature() : unmarkFeature())}
+                  />
+                </Box>
+              </Tooltip>
+              <Tooltip title={t('map-popup-copy-permalink-label')}>
+                <Box className={classes.innerActionContainer}>
+                  <IconButton onClick={onCopyPermalink}>
+                    <LinkIcon />
+                  </IconButton>
+                </Box>
+              </Tooltip>
+            </Box>
+          ) : null}
           {completed ? (
             <Typography className={classes.completedSubtitle}>
               {f('map-popup-completed-format', {
@@ -238,14 +248,14 @@ const _FeatureMarker = ({
   );
 };
 
-const mapStateToProps = (state, { feature, featureKey, marker }) => ({
-  completed: (state.completed.features[featureKey] ?? [])[marker.id],
+const mapStateToProps = (state, { markerKey, feature }) => ({
+  completed: state.completed.features[markerKey] ?? false,
   completedAlpha: state.options.completedAlpha,
   icons: feature.icons,
 });
-const mapDispatchToProps = (dispatch, { marker, featureKey }) => ({
-  markFeature: () => dispatch(setFeatureMarkerCompleted(featureKey, marker.id)),
-  unmarkFeature: () => dispatch(clearFeatureMarkerCompleted(featureKey, marker.id)),
+const mapDispatchToProps = (dispatch, { markerKey }) => ({
+  markFeature: () => dispatch(setFeatureMarkerCompleted(markerKey)),
+  unmarkFeature: () => dispatch(clearFeatureMarkerCompleted(markerKey)),
 });
 const FeatureMarker = connect(mapStateToProps, mapDispatchToProps)(_FeatureMarker);
 

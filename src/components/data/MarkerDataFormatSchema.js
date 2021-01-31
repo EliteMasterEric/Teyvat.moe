@@ -6,7 +6,7 @@ import Joi from 'joi';
 import _ from 'lodash';
 
 import MapRegions from '~/components/data/MapRegions';
-import { hashObject, isDev } from '../Util';
+import { hashObject, isDev } from '~/components/Util';
 
 export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([-_a-zA-Z0-9]+)(?:&.+)?$/;
 
@@ -24,6 +24,7 @@ const coordinate = Joi.array().items(Joi.number().precision(5).required()).lengt
 // If set to true, the hash of each set of coordinates will be calculated on load.
 // For every marker and route. Set this to true during development then turn it off after.
 const DEBUG_IDS = isDev();
+// const DEBUG_IDS = false;
 
 const sha1Hash = Joi.string().regex(/[A-Z0-9]{40}/);
 // The ID must be a hash of the 'coordinates' sibling key.
@@ -37,7 +38,10 @@ const MSF_MARKER_SCHEMA = Joi.object({
   coordinates: coordinate.required(),
   id: DEBUG_IDS ? msfId.required() : sha1Hash,
 
+  // Add the ability to correlate this marker with other markers.
+  // Note that this is a many-to-many relationship.
   importIds: {
+    // https://yuanshen.site/
     yuanshen: Joi.array()
       .items(
         Joi.string()
@@ -45,6 +49,7 @@ const MSF_MARKER_SCHEMA = Joi.object({
           .required()
       )
       .optional(),
+    // https://genshin-impact-map.appsample.com/#/
     appsample: Joi.array()
       .items(
         Joi.string()
@@ -52,6 +57,17 @@ const MSF_MARKER_SCHEMA = Joi.object({
           .required()
       )
       .optional(),
+    // https://mapgenie.io/genshin-impact/maps/teyvat
+    mapgenie: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[0-9]+/)
+          .allow('')
+        // .required()
+      )
+      .optional(),
+    // GenshinMap before Marker Storage Format added.
+    // Used to migrate data over.
     gm_legacy: Joi.array()
       .items(
         Joi.string()
@@ -59,6 +75,8 @@ const MSF_MARKER_SCHEMA = Joi.object({
           .required()
       )
       .optional(),
+    // GenshinMap after Marker Storage Format added.
+    // Used to allow for renaming of markers.
     gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
   },
 

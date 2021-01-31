@@ -14,7 +14,7 @@ import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import { setRouteDisplayed } from '~/redux/ducks/displayed';
 
-const ICON_BORDER_IMAGE = require('~/images/controls/filter_border.png').default;
+const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
 const useStyles = makeStyles((_theme) => ({
   iconBorder: {

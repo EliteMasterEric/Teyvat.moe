@@ -7,6 +7,10 @@ import clsx from 'clsx';
 import React from 'react';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
+// A 1 pixel by 1 pixel transparent image.
+export const BLANK_IMAGE =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+
 // Cache the result of supportsWebP.
 let support;
 /**

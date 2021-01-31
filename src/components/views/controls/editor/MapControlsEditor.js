@@ -49,7 +49,9 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
     <TabView displayed={displayed}>
       <BorderBox overflow="hidden auto">
         {editorData.feature.data.map((element, index) => {
-          const isRoute = element?.geometry?.type === 'LineString';
+          // If the first element is an array, rather than a coordinate,
+          // we have a set of multiple points in a route.
+          const isRoute = Array.isArray(element?.coordinates[0]);
 
           return isRoute ? (
             <MapControlsEditorRoute key={element?.id} index={index} route={element} />

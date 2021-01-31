@@ -7,7 +7,7 @@ import {
   useTheme,
 } from '@material-ui/core';
 import React from 'react';
-import { useDebouncedState, CloneProps } from '../Util';
+import { useDebouncedState, CloneProps } from '~/components/Util';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },

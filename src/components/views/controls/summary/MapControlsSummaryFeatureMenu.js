@@ -42,7 +42,7 @@ const _MapControlSummaryFeatureMenu = ({
   const classes = useStyles();
 
   const mapFeature = MapFeatures[featureKey];
-  const doesExpire = (mapFeature?.respawn ?? -1) !== -1;
+  const doesExpire = (mapFeature?.respawn ?? 'none') !== 'none';
 
   const [menuAnchor, setMenuAnchor] = React.useState(null);
 
@@ -104,21 +104,24 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
   return {
     clearAllFeature: () => dispatch(clearFeatureCompleted(featureKey)),
     clearExpiredFeature: () => {
-      const currentCompleted = store.getState().completed.features[featureKey];
-      const now = getUnixTimestamp();
-      const toClear = _.keys(
-        _.pickBy(currentCompleted, (markerTime) => {
-          // Is respawn set, and has the respawn time elapsed?
-          return (mapFeature?.respawn ?? -1) !== -1 && now - markerTime > mapFeature?.respawn;
-        })
+      const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
+        key.startsWith(featureKey)
       );
-      dispatch(clearFeatureMarkersCompleted(featureKey, toClear));
+      const now = getUnixTimestamp();
+      const toClear = _.filter(currentCompleted, (markerKey) => {
+        const completedTime = store.getState().completed.features[markerKey];
+        // Is respawn set, and has the respawn time elapsed?
+        return (mapFeature?.respawn ?? -1) !== -1 && now - completedTime > mapFeature?.respawn;
+      });
+      dispatch(clearFeatureMarkersCompleted(toClear));
     },
     locateFeature: () => {
-      const HIGHLIGHT_ZOOM_LEVEL = 8;
-      const completedMarkers = _.keys(store.getState().completed.features[featureKey]);
+      const HIGHLIGHT_ZOOM_LEVEL = 10;
+      const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
+        key.startsWith(featureKey)
+      );
       const uncompletedMarkers = _.filter(mapFeature.data, (value) => {
-        return !completedMarkers.includes(value.id);
+        return !currentCompleted.includes(`${featureKey}/${value.id}`);
       });
       const randomMarker = _.sample(uncompletedMarkers);
 
@@ -126,8 +129,8 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
       dispatch(
         setPositionAndZoom(
           {
-            lat: randomMarker.geometry.coordinates[0],
-            lng: randomMarker.geometry.coordinates[1],
+            lat: randomMarker.coordinates[0],
+            lng: randomMarker.coordinates[1],
           },
           HIGHLIGHT_ZOOM_LEVEL
         )

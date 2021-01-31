@@ -7,13 +7,13 @@
 
 import _ from 'lodash';
 
-import { DEFAULT_MAP_PREFERENCES } from '../../components/preferences/DefaultPreferences';
+import { DEFAULT_MAP_PREFERENCES } from '~/components/preferences/DefaultPreferences';
 import completedReducer, {
   CLEAR_FEATURE_COMPLETED,
-  CLEAR_FEATURE_MARKERS_COMPLETED,
   CLEAR_FEATURE_MARKER_COMPLETED,
-  SET_FEATURES_COMPLETED,
+  CLEAR_FEATURE_MARKERS_COMPLETED,
   SET_FEATURE_MARKER_COMPLETED,
+  SET_FEATURE_MARKERS_COMPLETED,
 } from '~/redux/ducks/completed';
 import displayedReducer, {
   SET_FEATURE_DISPLAYED,
@@ -21,25 +21,29 @@ import displayedReducer, {
 } from '~/redux/ducks/displayed';
 import uiReducer, {
   SET_CONTROLS_CATEGORY,
-  SET_CONTROLS_TAB,
-  SET_CONTROLS_REGION,
   SET_CONTROLS_OPEN,
-  SET_EDITOR_ENABLED,
+  SET_CONTROLS_REGION,
+  SET_CONTROLS_TAB,
   SET_DEBUG_ENABLED,
+  SET_EDITOR_ENABLED,
   SET_EDITOR_HIGHLIGHT,
-  SET_TOAST,
   SET_POSITION_AND_ZOOM,
+  SET_TOAST,
 } from '~/redux/ducks/ui';
 import optionsReducer, { SET_OPTIONS } from '~/redux/ducks/options';
 import editorReducer, {
+  APPEND_ELEMENT,
   CLEAR_EDITOR_DATA,
   REMOVE_ELEMENT,
   SET_ELEMENT_PROPERTY,
-  APPEND_ELEMENT,
 } from '~/redux/ducks/editor';
-import importReducer, { SET_STATE, SET_IMPORT_ERROR } from '~/redux/ducks/import';
+import errorReducer, { SET_IMPORT_ERROR } from '~/redux/ducks/error';
 
 // List action types.
+/**
+ * This action sets one or more attributes of the state directly.
+ */
+export const SET_STATE = 'genshinmap/prefs/SET_STATE';
 /**
  * This action resets the stored state to the default.
  */
@@ -48,7 +52,7 @@ export const CLEAR_STATE = 'genshinmap/prefs/CLEAR_STATE';
 /**
  * The default state of the application.
  */
-export const initialState = _.omit(DEFAULT_MAP_PREFERENCES, ['version']);
+export const initialState = _.omit(DEFAULT_MAP_PREFERENCES, []);
 
 /**
  * The state of the application is produced by reducers.
@@ -95,12 +99,12 @@ const rootReducer = (state = initialState, action) => {
       // Handle UI actions here.
       return uiReducer(state, action);
     case SET_IMPORT_ERROR:
-      return importReducer(state, action);
-    case SET_FEATURES_COMPLETED:
+      return errorReducer(state, action);
     case SET_FEATURE_MARKER_COMPLETED:
+    case SET_FEATURE_MARKERS_COMPLETED:
+    case CLEAR_FEATURE_COMPLETED:
     case CLEAR_FEATURE_MARKER_COMPLETED:
     case CLEAR_FEATURE_MARKERS_COMPLETED:
-    case CLEAR_FEATURE_COMPLETED:
       return completedReducer(state, action);
     case CLEAR_EDITOR_DATA:
     case REMOVE_ELEMENT:

@@ -7,40 +7,77 @@
 
 import _ from 'lodash';
 
-import localStorage from '~/components/preferences/local-storage';
+import { f } from '~/components/i18n/Localization';
 import {
-  DEFAULT_MAP_PREFERENCES,
   GENSHINMAP_DATA_VERSION,
-  LOCAL_STORAGE_KEY_RECOVERY,
+  DEFAULT_MAP_PREFERENCES,
   PREFERENCES_PREFIX,
 } from '~/components/preferences/DefaultPreferences';
-import { fromBase64, getUnixTimestamp, reloadWindow } from '~/components/Util';
+import { buildImportMapping } from '~/components/preferences/import/ImportDictionary';
+import { storeRecoveryData } from '~/components/preferences/import/Recovery';
+import { fromBase64 } from '~/components/Util';
+import { setToast } from '~/redux/ducks/ui';
 
-/**
- * When attempting to import data, via string or via local storage,
- * if the migration fails, we store data about the failure in local storage as well.
- */
-const storeRecoveryData = (json, message) => {
-  console.warn(`Storing data in recovery (version ${json?.version ?? '<BAD VERSION>'})`);
+export const importMarkerDataFromGMLegacy = (data) => {
+  const dataCompletedFeatures = data.completed.features;
 
-  // Look for the first unused recovery value.
-  let counter = 1;
-  let sentinel = false;
-  do {
-    if (!localStorage.get(LOCAL_STORAGE_KEY_RECOVERY.replace('%COUNTER%', counter))) {
-      sentinel = true;
-    } else {
-      counter += 1;
-    }
-  } while (!sentinel);
+  const dictionary = buildImportMapping('gm_legacy');
 
-  // Store in the first unused recovery value.
-  localStorage.set(LOCAL_STORAGE_KEY_RECOVERY.replace('%COUNTER%', counter), {
-    json,
-    message,
-    version: json?.version ?? '<BAD VERSION>',
-    timestamp: getUnixTimestamp(),
-  });
+  const missingEntries = [];
+  let totalEntries = 0;
+
+  // Map each externalsite entry to a GenshinMap entry.
+  const fullDataMapped = _.filter(
+    _.keys(dataCompletedFeatures).map((featureKey) => {
+      return _.keys(dataCompletedFeatures[featureKey]).map((markerKey) => {
+        const entry = `${featureKey}/${markerKey}`;
+        totalEntries += 1;
+        if (entry in dictionary) {
+          const timestamp = dataCompletedFeatures[featureKey][markerKey];
+          return [dictionary[entry], timestamp];
+        }
+        // Else, add to a list.
+        missingEntries.push(entry);
+        return [];
+      });
+    }),
+    _.size
+  );
+
+  const featureData = _.fromPairs(_.flatten(fullDataMapped));
+
+  const successfulEntries = _.keys(featureData).length;
+
+  const partialData = {
+    completed: {
+      features: featureData,
+    },
+  };
+
+  if (successfulEntries < totalEntries) {
+    // Some entries were missing.
+    console.warn(`Skipped over ${missingEntries} entries when importing.`);
+    console.warn(missingEntries);
+    storeRecoveryData(
+      missingEntries,
+      `[WARN] Could not import ${totalEntries - successfulEntries} entries.`
+    );
+    partialData.currentToast = {
+      ...DEFAULT_MAP_PREFERENCES.currentToast,
+      message: f('message-import-success-partial', {
+        success: successfulEntries,
+        count: totalEntries,
+      }),
+    };
+  } else {
+    // Else, complete success.
+    partialData.currentToast = {
+      ...DEFAULT_MAP_PREFERENCES.currentToast,
+      message: f('message-import-success', { count: totalEntries }),
+    };
+  }
+
+  return partialData;
 };
 
 /**
@@ -52,6 +89,7 @@ export const migrateData = (input, version) => {
   // eslint-disable-next-line prefer-const
   let output = input;
 
+  // By using case fallthrough, we move from
   /* eslint-disable no-fallthrough */
   switch (version) {
     default:
@@ -178,9 +216,19 @@ export const migrateData = (input, version) => {
         },
       };
     case 'GM_005':
+      /**
+       * This update makes the following changes:
+       * - Migrate marker storage format to MSFv2.
+       */
+      output = {
+        ...output,
+        ...importMarkerDataFromGMLegacy(output),
+      };
+    case GENSHINMAP_DATA_VERSION:
       // Migration is done.
       return {
         ...output,
+        version: GENSHINMAP_DATA_VERSION,
       };
   }
   /* eslint-enable no-fallthrough */
@@ -201,35 +249,4 @@ export const parseDataFromString = (input) => {
   const migratedData = migrateData(jsonData, versionPrefix);
 
   return migratedData;
-};
-
-/**
- * Import data from a current or former version of GenshinMap via string.
- * @param {*} input The input string.
- * @param {*} setMapPreferences The function to set the map preferences state once data has been migrated.
- */
-export const importDataFromString = (input, setMapPreferences) => {
-  try {
-    const decodedData = fromBase64(input);
-
-    const versionPrefix = decodedData.substring(0, GENSHINMAP_DATA_VERSION.length);
-
-    const jsonData = JSON.parse(decodedData.substring(PREFERENCES_PREFIX.length));
-
-    const migratedData = migrateData(jsonData, versionPrefix);
-
-    if (migratedData == null) return;
-
-    // Set the data.
-    setMapPreferences((old) => ({ ...old, ...jsonData }));
-    // Data change requires a page reload.
-    reloadWindow();
-  } catch (err) {
-    if (err.name === 'InvalidCharacterError') {
-      // There was an invalid character in the import string.
-      console.error('[ERROR] Invalid character in import string. Check the format and try again.');
-    } else {
-      console.error(err);
-    }
-  }
 };

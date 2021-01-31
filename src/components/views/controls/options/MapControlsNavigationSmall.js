@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 import MapRegions from '~/components/data/MapRegions';
 import MapControlsRegionButton from '~/components/views/controls/sidebar/MapControlsRegionButton';
 import { setControlsOpen } from '~/redux/ducks/ui';
-import MapControlsFoldButton from '../sidebar/MapControlsFoldButton';
+import MapControlsFoldButton from '~/components/views/controls/sidebar/MapControlsFoldButton';
 
 /**
  * The button next to the Map Controls.

@@ -9,7 +9,7 @@
     "en": "Mysterious beings who now only offer small treasures to those willing to follow them."
   },
   "enabled": true,
-  "cluster": "off",
+  "cluster": "variable",
   "respawn": "none",
   "icons": {
     "filter": "seelie",
@@ -23,10 +23,10 @@
   "data": [
     {
       "coordinates": [
-        -46.9754,
-        31.87435
+        -38.03244,
+        22.8162
       ],
-      "id": "32EF630BF49C583EC367888354AB894F6F978225",
+      "id": "C1BDB6D13012BD0A7195B95674B261EBDB6B3600",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/1046"
@@ -46,10 +46,10 @@
     },
     {
       "coordinates": [
-        -38.88248,
-        41.6272
+        -30.15469,
+        29.75156
       ],
-      "id": "849808ABEF3C89F973B6CE80B4C6885B463EAA6E",
+      "id": "3A427ED33AE0D8803DEE25BBC3D2FC319829B089",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/114"
@@ -69,10 +69,10 @@
     },
     {
       "coordinates": [
-        -39.98133,
-        41.41846
+        -31.16641,
+        29.60313
       ],
-      "id": "A2F7251FEA646C32AEDFD082E6A8DDDFC9D9A576",
+      "id": "88B91008E6C28CD66C42EB47D1DF0B012A16E135",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/116"
@@ -92,10 +92,10 @@
     },
     {
       "coordinates": [
-        -42.04113,
-        48.41675
+        -33.10781,
+        34.57969
       ],
-      "id": "13BD40599CBEC5DF6356E2CE80A15E9DF44FA46F",
+      "id": "1A2770BCFDA48B956E6610D633292F71214D8705",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/139"
@@ -115,10 +115,10 @@
     },
     {
       "coordinates": [
-        -44.38669,
-        48.75732
+        -35.39687,
+        34.82187
       ],
-      "id": "F75737C241CF51A28CA0E3C8B21D97153373BB3C",
+      "id": "7191598FBA6FB15BB8B40714008A644790B57BDA",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/141"
@@ -138,10 +138,10 @@
     },
     {
       "coordinates": [
-        -53.028,
-        51.71265
+        -44.74062,
+        36.92344
       ],
-      "id": "AA0E9D05B00F13B6FBAE3D6269930E8AD48C7038",
+      "id": "C9E059DD1D3B124A34D1785CCE6F86721CA62C89",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/161"
@@ -161,10 +161,10 @@
     },
     {
       "coordinates": [
-        -52.92215,
-        59.99634
+        -44.61562,
+        42.81406
       ],
-      "id": "72D5842BD3B4E02D891EA2A86C7F4DE98B6E9A6B",
+      "id": "831FFE7429511345A66438C9539905E29A4C9CA4",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/168"
@@ -184,10 +184,10 @@
     },
     {
       "coordinates": [
-        -53.80714,
-        60.04028
+        -45.67031,
+        42.84531
       ],
-      "id": "2D0926A006222387721D8C4171ABA87742567C84",
+      "id": "BEC6FD27E8EB680C322520CE4282E9E99397234E",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/169"
@@ -207,10 +207,10 @@
     },
     {
       "coordinates": [
-        -42.14711,
-        40.72632
+        -33.20937,
+        29.11094
       ],
-      "id": "4944DEB47E0858886A67DA155483A8E674C15446",
+      "id": "BC3363A2A8DDC38B667A0BDC3921FF393ACB724D",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/186"
@@ -230,10 +230,10 @@
     },
     {
       "coordinates": [
-        -45.42159,
-        39.66064
+        -36.43594,
+        28.35312
       ],
-      "id": "8CC964C84BCA88EF86C11DC75215FC3FAB80DC88",
+      "id": "423A0F3612D66169CE04B4B691E6971F79AECF07",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/195"
@@ -253,10 +253,10 @@
     },
     {
       "coordinates": [
-        -46.8677,
-        39.17725
+        -37.92031,
+        28.00938
       ],
-      "id": "E45A24ABE2A2FE9FD2986F46EABBE242FAD2AF5B",
+      "id": "271680F14232741ABACD837397A7ABF3E4762688",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/200"
@@ -270,10 +270,10 @@
     },
     {
       "coordinates": [
-        -49.73158,
-        43.73657
+        -40.98281,
+        31.25156
       ],
-      "id": "6B9153FA8BC60063584ECBF722394545E3016342",
+      "id": "1BBC931FCC0421419AB489A13E7DBBCB30FC42C5",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/211"
@@ -293,10 +293,10 @@
     },
     {
       "coordinates": [
-        -41.47566,
-        32.88208
+        -32.56875,
+        23.53281
       ],
-      "id": "4DC3790460D7271E8122B03360B7C546E1587FF9",
+      "id": "239FDB4C2BFB2B3FC1DB38C6EDC18B4B84397D5F",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/268"
@@ -316,10 +316,10 @@
     },
     {
       "coordinates": [
-        -45.15105,
-        32.00317
+        -36.1625,
+        22.90781
       ],
-      "id": "701B893229663C035642653820A6ADF7542A91F9",
+      "id": "BA2C4EBB5366DC1ECB7520284B8D3B8BF7E334F2",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/277"
@@ -339,10 +339,10 @@
     },
     {
       "coordinates": [
-        -30.76072,
-        34.40918
+        -23.10781,
+        24.61875
       ],
-      "id": "F07AE56436DEF819541EDE7842B8BF833FE747DA",
+      "id": "F493B81BDF5B7ABBAFF324103D1CEEF6AAA1E0C3",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/29"
@@ -362,10 +362,10 @@
     },
     {
       "coordinates": [
-        -48.56752,
-        20.66528
+        -39.71719,
+        14.84531
       ],
-      "id": "CA19274D58449E8056C14F162E7393C521CC3138",
+      "id": "15C35A2CF05EDD6F1286AA600478397F07765635",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/309"
@@ -385,10 +385,10 @@
     },
     {
       "coordinates": [
-        -45.45242,
-        19.95117
+        -36.46718,
+        14.3375
       ],
-      "id": "E78D235D60DF670CA37F2B82DD37FE7306E7DF37",
+      "id": "DF1FA0567050E15ABDE7762A437C6D731509E26A",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/319"
@@ -408,10 +408,10 @@
     },
     {
       "coordinates": [
-        -32.52829,
-        32.83813
+        -24.58438,
+        23.50156
       ],
-      "id": "38073EE9E3C0BD6BC261A334C369E274EB26775A",
+      "id": "2845E75994EF0F23A8EC69476332BECF1A5DF3B3",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/34"
@@ -431,10 +431,10 @@
     },
     {
       "coordinates": [
-        -42.87596,
-        21.41235
+        -33.9125,
+        15.37656
       ],
-      "id": "ACB73356D78F55ED12510449ADAADE62A4400AAA",
+      "id": "086BB5BC0E5DA341953BB781318A019E44765280",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/349"
@@ -454,10 +454,10 @@
     },
     {
       "coordinates": [
-        -45.31353,
-        22.30225
+        -36.32656,
+        16.00938
       ],
-      "id": "F5D445E88ADC1B3981B7A9C23D72A19C743CCD88",
+      "id": "97641DE5A949DC2C6117EE418B3A7B79A5EA026E",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/388"
@@ -477,10 +477,10 @@
     },
     {
       "coordinates": [
-        -43.04481,
-        27.22412
+        -34.07657,
+        19.50937
       ],
-      "id": "74E6B4564E3B9CDC8CB80E1D6814417BA176A47D",
+      "id": "1B2988CED1E04AEE3EBDFC45BEE7CA4503759D2E",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/406"
@@ -500,10 +500,10 @@
     },
     {
       "coordinates": [
-        -46.33934,
-        29.26758
+        -37.37343,
+        20.9625
       ],
-      "id": "25F8A10F931ACFF8CA1B8D258A926DA0BBEDEA62",
+      "id": "4445336EDDD9F6AC727EC53AE0D2238BE5CA691F",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/417"
@@ -523,10 +523,10 @@
     },
     {
       "coordinates": [
-        -44.84808,
-        25.47729
+        -35.85781,
+        18.26718
       ],
-      "id": "BDE57A59FF2A458F72605C6509C1630BBFD1227C",
+      "id": "2D5312E3C4A4A6FE7B5E91D7C0DA64EABD852C84",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/419"
@@ -546,10 +546,10 @@
     },
     {
       "coordinates": [
-        -31.63468,
-        37.37549
+        -23.83438,
+        26.72813
       ],
-      "id": "67AC5848AF648388956DE8CE2AE1670594D29451",
+      "id": "554AAA43D785ED374ED5B60B03F2859CF243C3A6",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/42"
@@ -569,10 +569,10 @@
     },
     {
       "coordinates": [
-        -39.62261,
-        28.59741
+        -30.83437,
+        20.48594
       ],
-      "id": "E13B65BEBAFB261C51C046714039DB734F771322",
+      "id": "ADA364019418794C3FBEA37935E555862E52500F",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/441"
@@ -592,10 +592,10 @@
     },
     {
       "coordinates": [
-        -36.17336,
-        28.32275
+        -27.725,
+        20.29062
       ],
-      "id": "59159CD3B897D436D36E5459E36B571B184C8777",
+      "id": "11B60EE58F78103702BF008347BD797722F5054F",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/472"
@@ -615,10 +615,10 @@
     },
     {
       "coordinates": [
-        -44.80133,
-        24.03809
+        -35.81094,
+        17.24375
       ],
-      "id": "57BB558C159778F7C1A686887AA17173E596DB82",
+      "id": "8F5EB060B2A7B00CFB318F3AA00BE7051FC23F82",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/475"
@@ -638,10 +638,10 @@
     },
     {
       "coordinates": [
-        -53.66417,
-        27.02637
+        -45.49844,
+        19.36875
       ],
-      "id": "0643AD85EDDAD85BCE9E700BAE2CFB7F77F6FBDF",
+      "id": "BDEFA7EEEC1047A63E6BE14ED4E96517E2DD2D4D",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/486"
@@ -661,10 +661,10 @@
     },
     {
       "coordinates": [
-        -53.60554,
-        31.94824
+        -45.42812,
+        22.86875
       ],
-      "id": "B678561F73809B0635C5DDEB685DAEF8F5F4AAE6",
+      "id": "1DA178923AFB5897A103365ED5B89E021166F927",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/532"
@@ -684,10 +684,10 @@
     },
     {
       "coordinates": [
-        -52.82932,
-        31.80542
+        -44.50625,
+        22.76719
       ],
-      "id": "E2386B952DBEB3BD4601EE93430678E4A9764F69",
+      "id": "7B16CED2954685935A50D8081B5D6685CBE29FEA",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/536"
@@ -707,10 +707,10 @@
     },
     {
       "coordinates": [
-        -54.74999,
-        30.90454
+        -46.81875,
+        22.12656
       ],
-      "id": "377B45A28D2A00882D1CDD188416D1DCC0E7048F",
+      "id": "71A1370CA3915B5B2FE9693443F1553C95C68687",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/544"
@@ -730,10 +730,10 @@
     },
     {
       "coordinates": [
-        -56.15167,
-        29.1687
+        -48.57656,
+        20.89219
       ],
-      "id": "8282F0C55456DB4A29ABE03FFF2789EEBC85E56C",
+      "id": "F23BDA4389AA49F4217F32DB04CCFC5878261D3B",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/549"
@@ -753,10 +753,10 @@
     },
     {
       "coordinates": [
-        -55.1569,
-        26.98792
+        -47.32265,
+        19.34141
       ],
-      "id": "D807792BD7CEAE1A8B8286037668DE11D17377F9",
+      "id": "66EAF3E5A0D49B34F90C6A367D5D31E80B86471A",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/552"
@@ -776,10 +776,10 @@
     },
     {
       "coordinates": [
-        -58.40171,
-        28.49854
+        -51.5375,
+        20.41563
       ],
-      "id": "2A9427A860ADE4F910E9107BD89388E6FD57D050",
+      "id": "99A15B8BBE18372188F87DEED005D711D9E80568",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/557"
@@ -799,10 +799,10 @@
     },
     {
       "coordinates": [
-        -58.62546,
-        26.0101
+        -51.84214,
+        18.64607
       ],
-      "id": "ED8AFFC9F85F2ABCF6864FC9A569712C612AE514",
+      "id": "E1C4AB7D1E754A16E13BF7D3CB0CC6E953202586",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/564"
@@ -822,10 +822,10 @@
     },
     {
       "coordinates": [
-        -57.66303,
-        35.60669
+        -50.54531,
+        25.47031
       ],
-      "id": "B877D30232D42DCDA81525E9AD7FFD59E8A579DB",
+      "id": "6C2CFB2240A5EE2B207E30F54711A6120F5C99BF",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/573"
@@ -845,10 +845,10 @@
     },
     {
       "coordinates": [
-        -58.933,
-        34.65088
+        -52.26406,
+        24.79063
       ],
-      "id": "24DE56CB08E2E4EBF70A964F1A3D339718E5A61B",
+      "id": "48D1664BDE933BEC9339C2763013C0F8D11C4BCA",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/580"
@@ -868,10 +868,10 @@
     },
     {
       "coordinates": [
-        -57.75108,
-        37.55127
+        -50.66251,
+        26.85313
       ],
-      "id": "1AD19BE4F7D118D48186D4C061BFC7DF02EBCACA",
+      "id": "B3A952CAB09332F47D26DE5FE11D8E6278EF5466",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/583"
@@ -891,10 +891,10 @@
     },
     {
       "coordinates": [
-        -54.79435,
-        37.22168
+        -46.87344,
+        26.61875
       ],
-      "id": "E7CB90583A3A706C81624B5FD671CECA2260096E",
+      "id": "A4902F51EAC3306BD99A377895052B7F75563B51",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/600"
@@ -914,10 +914,10 @@
     },
     {
       "coordinates": [
-        -55.6466,
-        35.85938
+        -47.93594,
+        25.65
       ],
-      "id": "78458F249F822E97658894449149B2DA41966AD3",
+      "id": "9B1C210906A5C579D6CEC48FFC2E9E7B537EA43D",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/604"
@@ -937,10 +937,10 @@
     },
     {
       "coordinates": [
-        -52.4694,
-        43.41797
+        -44.08438,
+        31.025
       ],
-      "id": "31C837F14C132464C10A9E0DA1335A2DA1ADDF42",
+      "id": "40319B119106B30E91C6ED419CA63FFA698C2E14",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/619"
@@ -960,10 +960,10 @@
     },
     {
       "coordinates": [
-        -36.33283,
-        37.80396
+        -27.86563,
+        27.03282
       ],
-      "id": "57D00ED969A5486BE3058469F5D2DE52CC7A0895",
+      "id": "2D0023111418E77C419D28B47C9D8559AAA3ADF7",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/626"
@@ -983,10 +983,10 @@
     },
     {
       "coordinates": [
-        -37.35269,
-        36.38672
+        -28.77187,
+        26.025
       ],
-      "id": "21FE65AD4B507DAFAD6CA859B8318840A1B49EBB",
+      "id": "9EDC2D452BE971B01DE144C67F2B911A946852A2",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/65"
@@ -1000,10 +1000,10 @@
     },
     {
       "coordinates": [
-        -35.17381,
-        38.82568
+        -26.85,
+        27.75937
       ],
-      "id": "60AFC30C92BFF2A8543FF557C619A6278D66956D",
+      "id": "F81184A7A14DC97D22031C886936932B9B9ACA6A",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/656"
@@ -1023,10 +1023,10 @@
     },
     {
       "coordinates": [
-        -45.56791,
-        47.10938
+        -36.58438,
+        33.65
       ],
-      "id": "63FC3042417A91F723D29A4AF7562EE92EE9B885",
+      "id": "A099A76E70342FAC9E526F5057AA1D2FA031F07D",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/674"
@@ -1046,10 +1046,10 @@
     },
     {
       "coordinates": [
-        -44.50434,
-        49.76807
+        -35.51406,
+        35.54063
       ],
-      "id": "0CBC9976F3180C848007E6BB83F25E882AB8289C",
+      "id": "1D923954BB5395A28BEA04C15DB2C2CF86D4D456",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/682"
@@ -1069,10 +1069,10 @@
     },
     {
       "coordinates": [
-        -43.10098,
-        46.16455
+        -34.13125,
+        32.97812
       ],
-      "id": "7DA29D1D8918324D00D61501209261296ACBA3E4",
+      "id": "E8AB50B5E3017E72D57C61DF9E5D670C3A36A17F",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/686"
@@ -1092,10 +1092,10 @@
     },
     {
       "coordinates": [
-        -56.3409,
-        36.36475
+        -48.81875,
+        26.00938
       ],
-      "id": "6BB07600C3F27918E09663C4F2C30C3C1212FE1D",
+      "id": "50F552A1C5DD965280F018B9E1C9697C57A269DF",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/737"
@@ -1115,10 +1115,10 @@
     },
     {
       "coordinates": [
-        -36.43896,
-        39.23218
+        -27.95937,
+        28.04844
       ],
-      "id": "5B0E524E7A6FE06AF48CE6A32E7EAC5A59F23AA8",
+      "id": "FA5183EAC1F65D1C644CA19F36BD00A3EB9F4B0C",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/76"
@@ -1138,10 +1138,10 @@
     },
     {
       "coordinates": [
-        -43.977,
-        24.5105
+        -34.99062,
+        17.57969
       ],
-      "id": "85A251678D64D1DBC1B8D3AEED910E844623135C",
+      "id": "CDB1BA6ECEC89BF3DFC9FA8DFB0A166B5474065A",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/775"
@@ -1161,10 +1161,10 @@
     },
     {
       "coordinates": [
-        -42.20411,
-        35.48584
+        -33.26406,
+        25.38438
       ],
-      "id": "227EFEA7E6C49841E8D34273916B4CA1F5D61734",
+      "id": "245B3D7F3BC8D9F792494142EEEAF6DD96131FC1",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/832"
@@ -1184,10 +1184,10 @@
     },
     {
       "coordinates": [
-        -32.31437,
-        36.08877
+        -24.40416,
+        25.81313
       ],
-      "id": "6045C3D1D4490EF145C1AC2B19C97BCC82ABFCB8",
+      "id": "78BF8AF41DE835BCB23762410E7A2FFDB3155129",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/907"
@@ -1207,10 +1207,10 @@
     },
     {
       "coordinates": [
-        -35.74651,
-        33.42041
+        -27.35,
+        23.91562
       ],
-      "id": "59AFBA2C6C6CEA445200C585A2D36C690E95FC30",
+      "id": "BEDEA5568798A5C17671D8056FD77EAE7AF5F831",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/92"
@@ -1224,10 +1224,10 @@
     },
     {
       "coordinates": [
-        -56.07817,
-        32.18994
+        -48.48282,
+        23.04062
       ],
-      "id": "B3FDEAEA63139431E110BE2668696D6B6963A587",
+      "id": "2D9F27F36F44644D39DD2DB11064739723ED4A78",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/921"
@@ -1247,10 +1247,10 @@
     },
     {
       "coordinates": [
-        -50.80175,
-        41.57164
+        -42.17342,
+        29.71206
       ],
-      "id": "FCCF82C2C00728CFD44D778072587E8116367DA1",
+      "id": "CE5B37F11A9E692630BFADECD5D3BC44AEC30B70",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/951"
@@ -1264,10 +1264,10 @@
     },
     {
       "coordinates": [
-        -57.35831,
-        34.91024
+        -50.14189,
+        24.97506
       ],
-      "id": "7ED046E21638CC91FBEA1C71479965312C61510E",
+      "id": "EF1667E9DAD995A4E10746C3748A9C2409CAA654",
       "importIds": {
         "gm_legacy": [
           "liyueSeelie/952"

@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.10.3-alpha",
+  "version": "0.10.4-alpha",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -34,6 +34,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "@react-leaflet/core": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist",
     "@reduxjs/toolkit": "^1.4.0",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
@@ -52,9 +53,9 @@
     "react-dropzone": "^11.2.4",
     "react-helmet-async": "^1.0.7",
     "react-lazy-load-image-component": "^1.5.0",
-    "react-leaflet": "^3.0.4",
+    "react-leaflet": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/react-leaflet?dist",
     "react-leaflet-markercluster": "^3.0.0-rc1",
-    "react-leaflet-textpath": "github:MasterEric/react-leaflet-textpath#dist",
+    "react-leaflet-textpath": "^2.0.0",
     "react-localization": "^1.0.15",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
