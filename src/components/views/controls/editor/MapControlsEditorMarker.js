@@ -57,7 +57,6 @@ const _MapControlsEditorMarker = ({
   deleteMarker,
 }) => {
   const classes = useStyles();
-  console.log(markerId);
 
   return (
     <Box display="flex" flexDirection="column" className={classes.markerBox}>

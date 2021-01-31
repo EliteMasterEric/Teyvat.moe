@@ -16,7 +16,6 @@ import {
 import { buildImportMapping } from '~/components/preferences/import/ImportDictionary';
 import { storeRecoveryData } from '~/components/preferences/import/Recovery';
 import { fromBase64 } from '~/components/Util';
-import { setToast } from '~/redux/ducks/ui';
 
 export const importMarkerDataFromGMLegacy = (data) => {
   const dataCompletedFeatures = data.completed.features;

@@ -4,14 +4,12 @@
  * For the logic managing the placement of markers and routes, see MapEditorHandler.
  */
 
-import L from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-editable';
 import 'leaflet-textpath';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { editorMarker, editorMarkerHighlight } from '~/components/views/map/LayerConstants';
 import RouteLine from './RouteLine';
 import FeatureMarker from './FeatureMarker';
 

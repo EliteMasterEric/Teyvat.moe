@@ -138,7 +138,6 @@ const _FeatureMarker = ({
     // Calls on single clicks, not double clicks.
 
     // Trigger the popup to display only on single clicks.
-    console.log(event.target);
     event.target.openPopup();
   };
 

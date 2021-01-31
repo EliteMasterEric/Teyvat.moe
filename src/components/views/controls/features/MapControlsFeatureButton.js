@@ -112,10 +112,8 @@ const _MapControlsFeatureButton = ({ featureKey, active, setFeatureDisplayed }) 
       <Box className={classes.iconBorder}>
         <Image
           className={classes.icon}
-          srcPNG={
-            filterImg && filterImg !== 'none' ? getFilterIconURL(filterImg, 'png') : BLANK_IMAGE
-          }
-          srcWebP={filterImg && filterImg !== 'none' ? getFilterIconURL(filterImg, 'webp') : null}
+          srcPNG={getFilterIconURL(filterImg, 'png')}
+          srcWebP={getFilterIconURL(filterImg, 'webp')}
         />
       </Box>
       <Typography>{localizeField(mapFeature.name)}</Typography>

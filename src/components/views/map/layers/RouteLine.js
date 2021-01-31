@@ -98,7 +98,7 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
   );
 };
 
-const _RouteLine = ({ route, editable = false, usePopup = true, allowExternalMedia = false }) => {
+const _RouteLine = ({ route, editable = false, allowExternalMedia = false }) => {
   // CSS classes.
   const classes = useStyles();
 

@@ -2,8 +2,6 @@ import L from 'leaflet';
 // Its very presence changes the behavior of L.
 import 'leaflet.markercluster';
 import _ from 'lodash';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { createPathComponent } from '@react-leaflet/core';
 
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -47,10 +45,8 @@ const createClusterIcon = (legacy) => (cluster) => {
     if (legacy) {
       return marker?.options?.properties?.completed;
     }
-    console.log(marker?.options?.completed);
     return marker?.options?.completed;
   });
-  console.log(childMarkersCompleted);
   const childCompletedCount = childMarkersCompleted.length;
   const iconUrl = childMarkers[0]?.options?.icon?.options?.clusterIconUrl;
 
