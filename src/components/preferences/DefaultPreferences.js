@@ -110,16 +110,6 @@ export const DEFAULT_MAP_PREFERENCES = {
   },
 
   /**
-   * The currently displayed SmartRoute feature.
-   * Not saved in local storage.
-   */
-  smartRoute: {
-    geometry: {
-      coordinates: [[]],
-    },
-  },
-
-  /**
    * The user preferences, as seen in the Options menu.
    */
   options: {

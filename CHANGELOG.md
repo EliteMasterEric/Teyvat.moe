@@ -892,7 +892,11 @@ First major release of the rework, featuring a new interface developed in React.
   - Apparently the mapping library the site uses defaults to assuming you're displaying a map of Earth, and therefore calculates distances as thought the map were based on a sphere.
   - This required making a script to realign all the points on the map. If any of them seem skewed, please make an issue requesting a correction.
 - Redid importer for Yuanshen.site to work with new marker storage format.
-- [ ] Update the Editor to place markers in MSFv2 format.
+- Update the Editor to place markers in MSFv2 format.
+  - Added Description field to Editor Submission.
+- Updated localization files:
+  - meta-page-title-full: Removed [BETA] tag to make the title more concise
+  - popup-submit-editor-data-description: 
 
 # 0.10.5 Finalized v0.10 Release
 

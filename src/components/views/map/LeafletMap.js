@@ -62,8 +62,8 @@ const _LeafletMap = () => {
       <WorldBorderLayer />
       <EditorLayer />
 
-      <Marker position={[0, 0]} />
-      <Marker position={[-64, 64]} />
+      <Marker editable position={[0, 0]} />
+      <Marker editable position={[-64, 64]} />
 
       {/* Controls the zoom buttons in the top left corner. */}
       <ZoomControl zoomInTitle="+" zoomOutTitle="-" />

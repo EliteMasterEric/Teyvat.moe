@@ -42,7 +42,7 @@ const _MapControlSummaryFeatureMenu = ({
   const classes = useStyles();
 
   const mapFeature = MapFeatures[featureKey];
-  const doesExpire = (mapFeature?.respawn ?? -1) !== -1;
+  const doesExpire = (mapFeature?.respawn ?? 'none') !== 'none';
 
   const [menuAnchor, setMenuAnchor] = React.useState(null);
 
@@ -116,7 +116,7 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
       dispatch(clearFeatureMarkersCompleted(toClear));
     },
     locateFeature: () => {
-      const HIGHLIGHT_ZOOM_LEVEL = 8;
+      const HIGHLIGHT_ZOOM_LEVEL = 10;
       const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
         key.startsWith(featureKey)
       );
@@ -129,8 +129,8 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
       dispatch(
         setPositionAndZoom(
           {
-            lat: randomMarker.geometry.coordinates[0],
-            lng: randomMarker.geometry.coordinates[1],
+            lat: randomMarker.coordinates[0],
+            lng: randomMarker.coordinates[1],
           },
           HIGHLIGHT_ZOOM_LEVEL
         )

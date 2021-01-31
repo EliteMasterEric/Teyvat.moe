@@ -98,11 +98,7 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
   );
 };
 
-const _RouteLine = ({
-  route,
-
-  allowExternalMedia = false,
-}) => {
+const _RouteLine = ({ route, editable = false, usePopup = true, allowExternalMedia = false }) => {
   // CSS classes.
   const classes = useStyles();
 
@@ -111,9 +107,18 @@ const _RouteLine = ({
   const title = localizeField(route.popupTitle);
   const content = localizeField(route.popupContent);
 
+  const eventHandlers = {
+    add: (event) => {
+      if (editable) {
+        event.target.enableEdit();
+      }
+    },
+  };
+
   return (
     <TextPath
       // Attributes passed to the parent Polyline.
+      eventHandlers={eventHandlers}
       positions={route.coordinates}
       color={route.routeColor}
       className={classes.mapRouteLine}
@@ -142,15 +147,17 @@ const _RouteLine = ({
           {content && content !== '' ? (
             <SafeHTML className={classes.popupContent}>{content}</SafeHTML>
           ) : null}
-          <Box className={classes.actionContainer}>
-            <Tooltip title={t('map-popup-copy-permalink-label')}>
-              <Box className={classes.innerActionContainer}>
-                <IconButton onClick={onCopyPermalink}>
-                  <LinkIcon />
-                </IconButton>
-              </Box>
-            </Tooltip>
-          </Box>
+          {!editable ? (
+            <Box className={classes.actionContainer}>
+              <Tooltip title={t('map-popup-copy-permalink-label')}>
+                <Box className={classes.innerActionContainer}>
+                  <IconButton onClick={onCopyPermalink}>
+                    <LinkIcon />
+                  </IconButton>
+                </Box>
+              </Tooltip>
+            </Box>
+          ) : null}
         </Box>
       </Popup>
     </TextPath>

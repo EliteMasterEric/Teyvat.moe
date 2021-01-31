@@ -72,20 +72,8 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     'editable:dragstart': (event) => {
       // Called when starting to drag a marker.
 
-      if (event.layer.feature === undefined) {
-        // This is a bad marker, remove it.
-        event.layer.remove();
-        return;
-      }
-
-      const isMarker = event.layer.feature.geometry.type === 'Point';
-      // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
-
-      if (isMarker) {
-        setCurrentEditable(event.layer);
-        setEditorState('dragMarker');
-        // return;
-      }
+      setCurrentEditable(event.layer);
+      setEditorState('dragMarker');
     },
 
     'editable:dragend': (event) => {
@@ -93,33 +81,22 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // and cancel the event that would occur.
 
       if (editorState === 'dragMarker') {
-        const marker = event.layer.feature;
+        const { id: markerId } = event.layer.options;
 
         // eslint-disable-next-line no-underscore-dangle
         const { _latlng: latlng } = event.layer;
 
         const newCoords = [latlng.lat, latlng.lng];
 
-        moveMarker(marker, newCoords);
+        moveMarker(markerId.split('/')[1], newCoords);
         setEditorState('none');
         setCurrentEditable(null);
       }
     },
 
     'editable:vertex:dragstart': (event) => {
-      if (event.layer.feature === undefined) {
-        // This is a bad route, remove it.
-        event.layer.remove();
-        return;
-      }
-
-      const isRoute = event.layer.feature.geometry.type === 'LineString';
-      // const isRouteVertex = event.layer.feature.geometry.type === "LineMarker";
-      if (isRoute) {
-        setCurrentEditable(event.layer);
-        setEditorState('dragRoute');
-        // return;
-      }
+      setCurrentEditable(event.layer);
+      setEditorState('dragRoute');
     },
 
     'editable:vertex:dragend': (event) => {
@@ -127,10 +104,10 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // and cancel the event that would occur.
 
       if (editorState === 'dragRoute') {
-        const route = event.layer.feature;
+        const { id: routeId } = event.layer.options;
         const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [vertex.lat, vertex.lng]);
 
-        moveRoute(route, newRouteLatLngs);
+        moveRoute(routeId.split('/')[1], newRouteLatLngs);
         setEditorState('none');
         setCurrentEditable(null);
       }
@@ -206,10 +183,14 @@ const mapStateToProps = (_state) => ({});
 const mapDispatchToProps = (dispatch) => ({
   appendMarker: (data) => dispatch(appendElement(data)),
   appendRoute: (data) => dispatch(appendElement(data)),
-  moveMarker: (marker, newCoords) =>
-    dispatch(setElementProperty(marker, 'geometry.coordinates', newCoords)),
-  moveRoute: (route, newCoordsList) =>
-    dispatch(setElementProperty(route, 'geometry.coordinates', newCoordsList)),
+  moveMarker: (id, newCoords) => {
+    dispatch(setElementProperty(id, 'coordinates', newCoords));
+    dispatch(setElementProperty(id, 'id', hashObject(newCoords)));
+  },
+  moveRoute: (id, newCoordsList) => {
+    dispatch(setElementProperty(id, 'coordinates', newCoordsList));
+    dispatch(setElementProperty(id, 'id', hashObject(newCoordsList)));
+  },
 });
 const MapEditorHandler = connect(mapStateToProps, mapDispatchToProps)(_MapEditorHandler);
 

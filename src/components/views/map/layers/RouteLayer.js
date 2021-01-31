@@ -8,14 +8,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import RouteLine from '~/components/views/map/layers/RouteLine';
 
-const _RouteLayer = ({ mapRoute, routeKey, displayed }) => {
+const _RouteLayer = ({ mapRoute, displayed }) => {
   // TODO: We hide by destroying it. Is there a better way?
   if (!displayed) return null;
 
   switch (mapRoute.format) {
     case 2:
       return mapRoute.data.map((route) => {
-        return <RouteLine key={route.id} route={route} feature={mapRoute} routeKey={routeKey} />;
+        return <RouteLine key={route.id} route={route} feature={mapRoute} />;
       });
     default:
       return null;

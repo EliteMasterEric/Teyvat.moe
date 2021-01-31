@@ -106,6 +106,8 @@ const _FeatureMarker = ({
   completed,
   completedAlpha,
 
+  editable,
+
   markFeature,
   unmarkFeature,
   allowExternalMedia = false,
@@ -136,6 +138,7 @@ const _FeatureMarker = ({
     // Calls on single clicks, not double clicks.
 
     // Trigger the popup to display only on single clicks.
+    console.log(event.target);
     event.target.openPopup();
   };
 
@@ -159,6 +162,9 @@ const _FeatureMarker = ({
     add: (event) => {
       // We will be triggering popups manually.
       event.target.off('click', event.target._openPopup);
+      if (editable) {
+        event.target.enableEdit();
+      }
     },
     click: (event) => {
       if (event.target.clicks === undefined) event.target.clicks = 0;
@@ -207,26 +213,28 @@ const _FeatureMarker = ({
           {content && content !== '' ? (
             <SafeHTML className={classes.popupContent}>{content}</SafeHTML>
           ) : null}
-          <Box className={classes.actionContainer}>
-            <Tooltip title={t('map-popup-completed-label')}>
-              <Box className={classes.innerActionContainer}>
-                <InputSwitch
-                  size="small"
-                  color="primary"
-                  label={<AssignmentTurnedInIcon />}
-                  value={Boolean(completed)}
-                  onChange={(value) => (value ? markFeature() : unmarkFeature())}
-                />
-              </Box>
-            </Tooltip>
-            <Tooltip title={t('map-popup-copy-permalink-label')}>
-              <Box className={classes.innerActionContainer}>
-                <IconButton onClick={onCopyPermalink}>
-                  <LinkIcon />
-                </IconButton>
-              </Box>
-            </Tooltip>
-          </Box>
+          {!editable ? (
+            <Box className={classes.actionContainer}>
+              <Tooltip title={t('map-popup-completed-label')}>
+                <Box className={classes.innerActionContainer}>
+                  <InputSwitch
+                    size="small"
+                    color="primary"
+                    label={<AssignmentTurnedInIcon />}
+                    value={Boolean(completed)}
+                    onChange={(value) => (value ? markFeature() : unmarkFeature())}
+                  />
+                </Box>
+              </Tooltip>
+              <Tooltip title={t('map-popup-copy-permalink-label')}>
+                <Box className={classes.innerActionContainer}>
+                  <IconButton onClick={onCopyPermalink}>
+                    <LinkIcon />
+                  </IconButton>
+                </Box>
+              </Tooltip>
+            </Box>
+          ) : null}
           {completed ? (
             <Typography className={classes.completedSubtitle}>
               {f('map-popup-completed-format', {

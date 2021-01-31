@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const _MapControlsEditorRoute = ({
-  index,
+  routeId,
   routeTitle,
   routeContent,
   routeMedia,
@@ -69,7 +69,7 @@ const _MapControlsEditorRoute = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('editor-elements-route-id', { id: index + 1 })}
+          {f('editor-elements-route-id', { id: routeId.substring(0, 7) })}
         </Typography>
 
         <Tooltip title={t('editor-delete-tooltip')}>
@@ -99,19 +99,20 @@ const _MapControlsEditorRoute = ({
 
 const mapStateToProps = (state, { route }) => ({
   highlighted: state.editorHighlight === route.id,
-  routeTitle: route.properties.popupTitle.en,
-  routeContent: route.properties.popupContent.en,
-  routeMedia: route.properties.popupMedia,
+  routeId: route.id,
+  routeTitle: route.popupTitle.en,
+  routeContent: route.popupContent.en,
+  routeMedia: route.popupMedia,
 });
 const mapDispatchToProps = (dispatch, { route }) => ({
   setRouteTitle: (value) => {
-    dispatch(setElementProperty(route, 'properties.popupTitle.en', value));
+    dispatch(setElementProperty(route.id, 'popupTitle.en', value));
   },
   setRouteContent: (value) => {
-    dispatch(setElementProperty(route, 'properties.popupContent.en', value));
+    dispatch(setElementProperty(route.id, 'popupContent.en', value));
   },
   setRouteMedia: (value) => {
-    dispatch(setElementProperty(route, 'properties.popupMedia', value));
+    dispatch(setElementProperty(route.id, 'popupMedia', value));
   },
 
   deleteRoute: () => dispatch(removeElement(route)),
@@ -123,8 +124,8 @@ const mapDispatchToProps = (dispatch, { route }) => ({
     dispatch(
       setPositionAndZoom(
         {
-          lat: route.geometry.coordinates[0][0],
-          lng: route.geometry.coordinates[0][1],
+          lat: route.coordinates[0][0],
+          lng: route.coordinates[0][1],
         },
         HIGHLIGHT_ZOOM_LEVEL
       )

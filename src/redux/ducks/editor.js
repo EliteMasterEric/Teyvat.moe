@@ -47,24 +47,19 @@ const editorReducer = (state, action) => {
         },
       };
     case APPEND_ELEMENT:
-      const newId = (state.editor.feature.data.length ?? 0) + 1;
-      const newElement = {
-        ...action.payload.element,
-        id: newId,
-      };
       return {
         ...state,
         editor: {
           ...state.editor,
           feature: {
             ...state.editor.feature,
-            data: [...state.editor.feature.data, newElement],
+            data: [...state.editor.feature.data, action.payload.element],
           },
         },
       };
     case SET_ELEMENT_PROPERTY:
       const editedEditorData = state.editor.feature.data.map((element) => {
-        if (element === action.payload.element) {
+        if (element.id === action.payload.id) {
           // Set a property. 'popupTitle.en' can set `popupTitle: { en: value }`
           return _.set(element, action.payload.propertyPath, action.payload.value);
         }
@@ -106,8 +101,8 @@ export const clearEditorData = () => {
  * @param {*} value
  * @returns An action to be dispatched.
  */
-export const setElementProperty = (originalElement, propertyPath, value) => {
-  return { type: SET_ELEMENT_PROPERTY, payload: { element: originalElement, propertyPath, value } };
+export const setElementProperty = (elementId, propertyPath, value) => {
+  return { type: SET_ELEMENT_PROPERTY, payload: { id: elementId, propertyPath, value } };
 };
 /**
  * Remove an editor element.
