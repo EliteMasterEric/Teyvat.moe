@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.10.4-alpha",
+  "version": "0.10.5",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -85,6 +85,7 @@
     "jsonc-loader": "^0.1.1",
     "prettier": "^2.1.2",
     "react-app-rewired": "^2.1.8",
+    "react-dev-utils": "^11.0.1",
     "serve": "^11.3.2"
   }
 }
