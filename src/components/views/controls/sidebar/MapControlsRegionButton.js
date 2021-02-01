@@ -12,6 +12,7 @@ import MapRegions from '~/components/data/MapRegions';
 import { t } from '~/components/i18n/Localization';
 import { setControlsRegion } from '~/redux/ducks/ui';
 import { VectorImage } from '~/components/interface/Image';
+import { importFromContext } from '~/components/Util';
 
 const controlsContext = require.context('../../../../images/controls', true);
 
@@ -51,7 +52,7 @@ const _MapControlsRegionButton = ({ regionKey, active, enableRegion }) => {
 
   const region = MapRegions[regionKey];
 
-  const svgSrc = controlsContext(`./region-${regionKey}.svg`).default;
+  const svgSrc = importFromContext(controlsContext, `./region-${regionKey}.svg`);
   const style = {
     backgroundColor: active ? '#fff' : region.color,
     border: active ? `4px solid ${region.color}` : '0px solid transparent',

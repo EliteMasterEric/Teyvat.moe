@@ -8,6 +8,7 @@ import _ from 'lodash';
 
 import { MSF_FEATURE_SCHEMA, MSF_ROUTES_SCHEMA } from '~/components/data/MarkerDataFormatSchema';
 import { BLANK_IMAGE } from '../interface/Image';
+import { importFromContext } from '../Util';
 
 const localizedField = Joi.object().pattern(/[-a-zA-Z0-9]+/, Joi.string().allow(''));
 
@@ -170,10 +171,7 @@ export const validateRouteData = (input) => {
 const featuresContext = require.context('../../data/features/', true, /.jsonc?$/);
 export const listFeatureKeys = () => featuresContext.keys();
 export const loadFeature = (key) => {
-  let featureData = featuresContext(key);
-  if (_.isEqual(Object.keys(featureData), ['default'])) {
-    featureData = featureData.default;
-  }
+  const featureData = importFromContext(featuresContext, key);
 
   const validation = validateFeatureData(featureData);
   if (validation == null || validation.error) {
@@ -187,10 +185,7 @@ export const loadFeature = (key) => {
 const routesContext = require.context('../../data/routes/', true, /.jsonc?$/);
 export const listRouteKeys = () => routesContext.keys();
 export const loadRoute = (key) => {
-  let routeData = routesContext(key);
-  if (_.isEqual(Object.keys(routeData), ['default'])) {
-    routeData = routeData.default;
-  }
+  const routeData = importFromContext(routesContext, key);
 
   const validation = validateRouteData(routeData);
   if (validation.error) {
@@ -218,7 +213,7 @@ export const createGeoJSONLayer = (dataJSON) => {
 const iconsContext = require.context('../../images/icons', true, /\.(png|webp|svg)/);
 export const getFilterIconURL = (key, ext) => {
   if (key && key !== 'none') {
-    return iconsContext(`./filter/${key}.${ext}`).default;
+    return importFromContext(iconsContext, `./filter/${key}.${ext}`);
   }
   return BLANK_IMAGE;
 };
@@ -238,8 +233,10 @@ export const createMapIcon = ({
     // This part is a little complex.
     // As a neat hack, the marker"s shadow is offset and used to implement the frame.
     // That way, the marker can be a separate icon from the image representing the item.
-    const shadowUrl = iconsContext(`./marker/marker_${done ? 'green' : 'white'}_bg.svg`, true)
-      .default;
+    const shadowUrl = importFromContext(
+      iconsContext,
+      `./marker/marker_${done ? 'green' : 'white'}_bg.svg`
+    );
 
     const iconHTML = `<div class='map-marker-container'>
       <img style='width: 40px; height: 40px;' class='map-marker-shadow' alt="" src="${shadowUrl}"/>
@@ -258,7 +255,7 @@ export const createMapIcon = ({
   }
 
   // Else, don't use the marker image.
-  const iconUrl = iconsContext(`./map/${key}.${ext}`, true).default;
+  const iconUrl = importFromContext(iconsContext, `./map/${key}.${ext}`);
 
   // Handle the niche case where cluster = true and marker = false.
   const clusterIconUrl = getFilterIconURL(clusterIcon, ext);

@@ -912,3 +912,8 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - The feature of the linked marker will be made visible if it isn't already.
   - Popups now include a button to copy a hyperlink to the clipboard.
 - Added new Map Debug view (available to enable in the options) which displays the coordinates at the cursor.
+
+# 0.10.6 Minor Bug Fixes
+
+- Fixed an issue that prevented the page from building properly.
+- Fixed an issue that caused the page from displaying as a blank white screen.

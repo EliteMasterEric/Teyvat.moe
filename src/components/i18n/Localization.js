@@ -7,6 +7,7 @@ import _ from 'lodash';
 import LocalizedStrings from 'react-localization';
 
 import { DEFAULT_LOCALE_FILE } from '~/components/preferences/DefaultPreferences';
+import { importFromContext } from '../Util';
 
 /**
  * The require context referencing all the localization files.
@@ -26,7 +27,7 @@ const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)
  */
 const i18nData = _.fromPairs(
   [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
-    return [getLocaleFromI18nFilePath(filePath), i18nContext(filePath).default];
+    return [getLocaleFromI18nFilePath(filePath), importFromContext(i18nContext, filePath)];
   })
 );
 

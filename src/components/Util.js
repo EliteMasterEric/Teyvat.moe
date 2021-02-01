@@ -284,3 +284,15 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
  * @param {*} children A function which takes the other props passed to this component as an argument.
  */
 export const CloneProps = ({ children, ...other }) => children(other);
+
+// Depending on the file type being imported, the main value desired
+// may or may not be in the .default property.
+// JSON isn't and JSONC is, for example.
+export const importFromContext = (context, key) => {
+  const importedModule = context(key);
+  if (_.isEqual(_.keys(importedModule), ['default'])) {
+    return importedModule.default;
+  }
+
+  return importedModule;
+};
