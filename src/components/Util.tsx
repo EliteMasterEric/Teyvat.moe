@@ -11,7 +11,7 @@ export const canUseDOM = () => {
   return typeof window !== 'undefined' && window.document && window.document.createElement;
 };
 
-let dev;
+let dev: boolean;
 export const isDev = () => {
   // Cache the result.
   if (typeof dev !== 'undefined') return dev;
@@ -33,25 +33,25 @@ export const isDev = () => {
 export const getURLParams = () => {
   if (typeof window === 'undefined') return {};
   const urlParams = new URLSearchParams(window.location.search);
-  const keys = Object.fromEntries([...urlParams.keys()].map((key) => [key, urlParams.getAll(key)]));
+  const keys = _.fromPairs([..._.keys(urlParams)].map((key) => [key, urlParams.getAll(key)]));
   return keys;
 };
 
 /**
  * Encode an input string in base64.
- * @param {String} input The string to encode.
- * @returns {String} The encoded string.
+ * @param {string} input The string to encode.
+ * @returns {string} The encoded string.
  */
-export const toBase64 = (input) => {
+export const toBase64 = (input: string): string => {
   return btoa(input);
 };
 
 /**
  * Decode an input string in base64.
- * @param {String} input The string to decode.
- * @returns {String} The decoded string.
+ * @param {string} input The string to decode.
+ * @returns {string} The decoded string.
  */
-export const fromBase64 = (input) => {
+export const fromBase64 = (input: string): string => {
   // Can't have newlines in it.
   return atob(input.replace(/[ \t\r\n\f]/g, ''));
 };
@@ -62,7 +62,7 @@ export const fromBase64 = (input) => {
  * @param {*} input The object to hash.
  * @returns {String} The hashed object.
  */
-export const hashObject = (input, options) => {
+export const hashObject = (input: any, options) => {
   try {
     const fullOptions = {
       algorithm: 'sha1',
@@ -78,7 +78,7 @@ export const hashObject = (input, options) => {
       // Used for debugging.
       let output = '';
       objectHash.writeToStream(input, fullOptions, {
-        write: (x) => {
+        write: (x: string) => {
           output += x;
         },
       });
@@ -106,9 +106,10 @@ export const hashObject = (input, options) => {
 
 /**
  * Checks whether the input string is a valid JSON blob.
- * @returns {Boolean} True if valid and false if invalid.
+ * @param {string} str The input string.
+ * @returns {boolean} True if str is valid JSON and false if invalid.
  */
-export const isValidJSON = (str) => {
+export const isValidJSON = (str: string): boolean => {
   try {
     JSON.parse(str);
   } catch (e) {
@@ -117,11 +118,11 @@ export const isValidJSON = (str) => {
   return true;
 };
 
-const jsonReplacer = (_key, value) => {
+const jsonReplacer = (_key: string, value: any) => {
   if (value instanceof Error) {
     const error = {};
 
-    Object.getOwnPropertyNames(value).forEach((key) => {
+    Object.getOwnPropertyNames(value).forEach((key: string) => {
       error[key] = value[key];
     });
 
@@ -135,10 +136,10 @@ const jsonReplacer = (_key, value) => {
  * Generate JSON of an object.
  * Includes handling for undefined types such as Error.
  *
- * @param {*} input The object to convert.
- * @returns {String} A JSON string representing the object.
+ * @param {any} input The object to convert.
+ * @returns {string} A JSON string representing the object.
  */
-export const generateJSON = (input) => {
+export const generateJSON = (input: any): string => {
   return JSON.stringify(input, jsonReplacer);
 };
 
@@ -146,18 +147,18 @@ export const generateJSON = (input) => {
  * Generate prettified JSON of an object, with spaces and line breaks.
  * Includes handling for undefined types such as Error.
  *
- * @param {*} input The object to convert.
- * @returns {String} Prettified JSON, with spacing and newlines.
+ * @param {any} input The object to convert.
+ * @returns {string} Prettified JSON, with spacing and newlines.
  */
-export const generatePrettyJSON = (input) => {
+export const generatePrettyJSON = (input: any): string => {
   return JSON.stringify(input, jsonReplacer, 2);
 };
 
 /**
  * Open a URL in another tab.
- * @param {String} url The URL to open.
+ * @param {string} url The URL to open.
  */
-export const openURLInWindow = (url) => {
+export const openURLInWindow = (url: any) => {
   if (window == null) return;
 
   const win = window.open(url, '_blank');
@@ -183,25 +184,28 @@ export const reloadWindow = () => {
 
 /**
  * Put the provided text into the clipboard.
- * @param {*} text The text to copy.
+ * @param {string} text The text to copy.
  * @returns A promise to write the data.
  */
-export const setBrowserClipboard = (text) => {
+export const setBrowserClipboard = (text: string): Promise<void> => {
   return clipboard.writeText(text);
 };
 
-export const getApplicationVersion = () => {
+/**
+ * @returns The current version of the app, as defined in package.json.
+ */
+export const getApplicationVersion = (): string => {
   return packageJson.version;
 };
 
 /**
  * https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#ECMAScript_.28JavaScript.2FActionScript.2C_etc..29
- * @param {*} lat Latitude
- * @param {*} lng Longitude
- * @param {*} zoom Zoom level
- * @returns {*} The x and y of the tile.
+ * @param {number} lat Latitude
+ * @param {number} lng Longitude
+ * @param {number} zoom Zoom level
+ * @returns {number[]} The x and y of the tile.
  */
-export const latLngToTile = (lat, lng, zoom) => {
+export const latLngToTile = (lat: number, lng: number, zoom: number): number[] => {
   return [
     Math.floor(
       ((1 -
@@ -220,8 +224,7 @@ export const latLngToTile = (lat, lng, zoom) => {
  * @param {*} children The child element should be only text.
  * @param {*} other You can pass other parameters, such as className, and they will be used by the
  */
-export const SafeHTML = ({ children, ...other }) => {
-  if (typeof children !== 'string') return <span>BAD INPUT TO SAFEHTML</span>;
+export const SafeHTML = ({ children, ...other }: { children: string }) => {
   const options = {
     allowedTags: ['b', 'i', 'em', 'strong', 'a'],
     allowedAttributes: {
@@ -246,10 +249,14 @@ export const SafeHTML = ({ children, ...other }) => {
  *   When setStateValue is called, and hasn't been called again after 300 milliseconds,
  *   onStateChanged will be called with the new value.
  */
-export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) => {
+export const useDebouncedState = <T extends unknown>(
+  defaultValue: T,
+  onStateChanged: (newValue: T) => void,
+  debounce: number = 300
+) => {
   // Create an internal local state, that is always correct.
   // The value will be committed to the state once it has been unchanged for <debounce> milliseconds.
-  const [stateValue, setStateValue] = React.useState(defaultValue);
+  const [stateValue, setStateValue] = React.useState<T>(defaultValue);
 
   React.useEffect(() => {
     setStateValue(defaultValue);
@@ -261,10 +268,14 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
   // The result is a function that never changes, that calls a function that constantly changes.
   // This allows the debounce function to hook onto the former and prevent repeated calls.
   // Thanks to: https://stackoverflow.com/questions/59183495/cant-get-lodash-debounce-to-work-properly-executed-multiple-times-reac
-  const onStateChangedRef = React.useRef();
-  onStateChangedRef.current = (newValue) => onStateChanged(newValue);
+  const onStateChangedRef = React.useRef<(newValue: T) => void>();
+  onStateChangedRef.current = (newValue: T) => onStateChanged(newValue);
   const onStateChangedDebounced = React.useCallback(
-    _.debounce((...args) => onStateChangedRef.current(...args), debounce),
+    _.debounce((newValue: T) => {
+      if (onStateChangedRef && onStateChangedRef.current) {
+        onStateChangedRef.current(newValue);
+      }
+    }, debounce),
     [debounce]
   );
 
@@ -283,12 +294,12 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
  *
  * @param {*} children A function which takes the other props passed to this component as an argument.
  */
-export const CloneProps = ({ children, ...other }) => children(other);
+export const CloneProps = ({ children, ...other }: { children: Function }) => children(other);
 
 // Depending on the file type being imported, the main value desired
 // may or may not be in the .default property.
 // JSON isn't and JSONC is, for example.
-export const importFromContext = (context, key) => {
+export const importFromContext = (context: any, key: String) => {
   const importedModule = context(key);
   if (_.isEqual(_.keys(importedModule), ['default'])) {
     return importedModule.default;
