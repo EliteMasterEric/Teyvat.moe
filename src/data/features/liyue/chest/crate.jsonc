@@ -1,8 +1,7 @@
 {
   "format": 2,
   "name": {
-    "en": "Crate",
-    "zh": ""
+    "en": "Crate"
   },
   "description": {
     "en": "An old floating crate containing Mora or Geo Sigils."
@@ -21,15 +20,10 @@
   },
   "data": [
     {
-      "coordinates": [
-        -27.1039,
-        20.0836
-      ],
+      "coordinates": [-27.1039, 20.0836],
       "id": "6DFADE8E6BDC160EBB04221A995670D8BF9303BB",
       "importIds": {
-        "gm_legacy": [
-          "liyueCrate/1"
-        ]
+        "gm_legacy": ["liyueCrate/1"]
       },
       "popupAttribution": "Unknown",
       "popupMedia": "liyue/crate/1",

@@ -4,7 +4,7 @@
     "en": "Hilichurl Camps"
   },
   "description": {
-    "en": ""
+    "en": "Efficiently navigates between several Hilichurl camps, to easily collect masks and arrowheads."
   },
   "enabled": true,
   "icons": {
@@ -13,32 +13,15 @@
   "data": [
     {
       "coordinates": [
-        [
-          -43.72499,
-          39.07969
-        ],
-        [
-          -43.70937,
-          40.36094
-        ],
-        [
-          -44.21719,
-          41.54063
-        ],
-        [
-          -44.76406,
-          42.67343
-        ],
-        [
-          -43.85781,
-          42.48594
-        ]
+        [-43.72499, 39.07969],
+        [-43.70937, 40.36094],
+        [-44.21719, 41.54063],
+        [-44.76406, 42.67343],
+        [-43.85781, 42.48594]
       ],
       "id": "CDB25F0AF54BA111540792441212D561FFB5364B",
       "importIds": {
-        "gm_legacy": [
-          "liyueHillichurl/1"
-        ]
+        "gm_legacy": ["liyueHillichurl/1"]
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
@@ -46,53 +29,23 @@
       },
       "popupContent": {
         "en": "This route takes you through several Hilichurl camps, with 17 Hilichurls, 6 Hilichurl Shooters, 4 Samachurls, and 4 Mitachurls."
-      },
-      "popupMedia": ""
+      }
     },
     {
       "coordinates": [
-        [
-          -27.75625,
-          27.06016
-        ],
-        [
-          -27.26016,
-          27.45078
-        ],
-        [
-          -27.45156,
-          26.72422
-        ],
-        [
-          -28.39297,
-          26.88437
-        ],
-        [
-          -28.02578,
-          28.18125
-        ],
-        [
-          -29.25625,
-          27.47422
-        ],
-        [
-          -28.51016,
-          25.48594
-        ],
-        [
-          -28.45547,
-          24.29453
-        ],
-        [
-          -27.81094,
-          24.72422
-        ]
+        [-27.75625, 27.06016],
+        [-27.26016, 27.45078],
+        [-27.45156, 26.72422],
+        [-28.39297, 26.88437],
+        [-28.02578, 28.18125],
+        [-29.25625, 27.47422],
+        [-28.51016, 25.48594],
+        [-28.45547, 24.29453],
+        [-27.81094, 24.72422]
       ],
       "id": "34D6FC4D055B488A9CD44F4776F70CF3CA4AF39E",
       "importIds": {
-        "gm_legacy": [
-          "liyueHillichurl/2"
-        ]
+        "gm_legacy": ["liyueHillichurl/2"]
       },
       "popupAttribution": "Unknown",
       "popupTitle": {
@@ -100,8 +53,7 @@
       },
       "popupContent": {
         "en": "This route winds through Wuwang Hill, providing 19 Hilichurls, 13 Hilichurl Shooters,  1 Samachurl, and 3 Mitachurls."
-      },
-      "popupMedia": ""
+      }
     }
   ]
 }

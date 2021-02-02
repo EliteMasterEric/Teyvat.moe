@@ -2,12 +2,11 @@
   "format": 2,
   "name": {
     "en": "Fatui Electro Cicin Mage",
-    "ru": "Маг цицинов Фатуи",
-    "zh": ""
+    "ru": "Маг цицинов Фатуи"
   },
   "description": {
-    "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.", 
-    "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон. "
+    "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.",
+    "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон."
   },
   "enabled": true,
   "cluster": "on",
@@ -23,18 +22,11 @@
   },
   "data": [
     {
-      "coordinates": [
-        -14.99062,
-        36.42343
-      ],
+      "coordinates": [-14.99062, 36.42343],
       "id": "C335A45E85346D6A787F4D3779A84CE42D0FEE58",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtFatuiElectroCicinMage/1"
-        ],
-        "yuanshen": [
-          "32_1"
-        ]
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/1"],
+        "yuanshen": ["32_1"]
       },
       "popupTitle": {
         "zh": "雷萤术士"
@@ -42,22 +34,14 @@
       "popupContent": {
         "zh": "这是一个雷萤术士"
       },
-      "popupMedia": "",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -23.1508,
-        40.48594
-      ],
+      "coordinates": [-23.1508, 40.48594],
       "id": "181502287301BAD2907868DEACDF857DE32DC360",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtFatuiElectroCicinMage/2"
-        ],
-        "yuanshen": [
-          "32_2"
-        ]
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/2"],
+        "yuanshen": ["32_2"]
       },
       "popupTitle": {
         "zh": "雷萤术士"
@@ -65,22 +49,14 @@
       "popupContent": {
         "zh": "这是一个雷萤术士"
       },
-      "popupMedia": "",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -12.27969,
-        50.37266
-      ],
+      "coordinates": [-12.27969, 50.37266],
       "id": "5CE9D1C3F590A4B9E3CB8A0A47562B23B3A0E066",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtFatuiElectroCicinMage/4"
-        ],
-        "yuanshen": [
-          "32_4"
-        ]
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/4"],
+        "yuanshen": ["32_4"]
       },
       "popupTitle": {
         "zh": "雷萤术士"
@@ -88,22 +64,14 @@
       "popupContent": {
         "zh": "这是一个雷萤术士"
       },
-      "popupMedia": "",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.86953,
-        44.79974
-      ],
+      "coordinates": [-27.86953, 44.79974],
       "id": "325886C987E8401C7683A5B1E518A4E6C6150B63",
       "importIds": {
-        "yuanshen": [
-          "32_3"
-        ],
-        "gm_legacy": [
-          "mondstadtFatuiElectroCicinMage/3"
-        ]
+        "yuanshen": ["32_3"],
+        "gm_legacy": ["mondstadtFatuiElectroCicinMage/3"]
       },
       "popupTitle": {
         "zh": "雷萤术士"

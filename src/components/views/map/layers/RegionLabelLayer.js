@@ -49,7 +49,7 @@ const RegionLabel = ({ featureData, zoomLevel }) => {
    */
   const style = {
     fontSize: `${zoomLevel * 0.25}em`,
-    '-webkit-text-stroke': `${zoomLevel * 0.125}px black`,
+    WebkitTextStroke: `${zoomLevel * 0.125}px black`,
     textStroke: `${zoomLevel * 0.125}px black`,
     top: `-${zoomLevel * 2}px`,
   };

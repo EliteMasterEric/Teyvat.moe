@@ -135,7 +135,7 @@ const VALIDATION_OPTIONS = {
 };
 
 export const validateFeatureData = (input) => {
-  if (input === undefined) {
+  if (input == null) {
     console.error(`Feature is undefined!`);
     return null;
   }

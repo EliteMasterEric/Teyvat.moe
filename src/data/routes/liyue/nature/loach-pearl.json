@@ -4,7 +4,7 @@
     "en": "Loach Pearls"
   },
   "description": {
-    "en": ""
+    "en": "Efficient route to collect Loach Pearls."
   },
   "enabled": true,
   "icons": {
@@ -13,81 +13,33 @@
   "data": [
     {
       "coordinates": [
-        [
-          -29.43203,
-          29.4
-        ],
-        [
-          -29.7914,
-          30.06406
-        ],
-        [
-          -30.56485,
-          29.47813
-        ],
-        [
-          -30.40859,
-          28.66953
-        ],
-        [
-          -30.95547,
-          29.31406
-        ],
-        [
-          -31.20547,
-          29.25547
-        ],
-        [
-          -31.23672,
-          29.04062
-        ],
-        [
-          -31.27187,
-          28.86094
-        ],
-        [
-          -31.45157,
-          28.85703
-        ],
-        [
-          -31.62343,
-          28.66172
-        ],
-        [
-          -31.82265,
-          28.63437
-        ],
-        [
-          -31.60782,
-          29.90781
-        ],
-        [
-          -31.37735,
-          29.88828
-        ],
-        [
-          -31.45938,
-          30.04844
-        ],
-        [
-          -31.58437,
-          30.07578
-        ]
+        [-29.43203, 29.4],
+        [-29.7914, 30.06406],
+        [-30.56485, 29.47813],
+        [-30.40859, 28.66953],
+        [-30.95547, 29.31406],
+        [-31.20547, 29.25547],
+        [-31.23672, 29.04062],
+        [-31.27187, 28.86094],
+        [-31.45157, 28.85703],
+        [-31.62343, 28.66172],
+        [-31.82265, 28.63437],
+        [-31.60782, 29.90781],
+        [-31.37735, 29.88828],
+        [-31.45938, 30.04844],
+        [-31.58437, 30.07578]
       ],
       "id": "F5F7CD98B7F351EA67C6522869AAB1B454879AA0",
       "importIds": {
-        "gm_legacy": [
-          "liyueLoachPearl/1"
-        ]
+        "gm_legacy": ["liyueLoachPearl/1"]
       },
-      "popupAttribution": "Unknown",
+      "popupAttribution": "MasterEric",
       "popupTitle": {
         "en": "Loach Pearls"
       },
       "popupContent": {
         "en": "Start at the Statue, then move along the coast, heading under the bridge to the pond, then back along the coast until you reach the small rock. Then, go across to the island and follow the coast there."
-      },
-      "popupMedia": ""
+      }
     }
   ]
 }

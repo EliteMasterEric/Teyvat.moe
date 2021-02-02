@@ -4,7 +4,7 @@
     "en": "Bamboo Shoots"
   },
   "description": {
-    "en": ""
+    "en": "Efficient route to collect Bamboo Shoots."
   },
   "enabled": true,
   "icons": {
@@ -13,69 +13,30 @@
   "data": [
     {
       "coordinates": [
-        [
-          -26.81875,
-          23.52891
-        ],
-        [
-          -26.25625,
-          23.41953
-        ],
-        [
-          -26.15078,
-          23.23984
-        ],
-        [
-          -25.9125,
-          23.1539
-        ],
-        [
-          -25.87344,
-          23.41953
-        ],
-        [
-          -25.67422,
-          23.43516
-        ],
-        [
-          -25.55703,
-          23.1539
-        ],
-        [
-          -25.41641,
-          23.44297
-        ],
-        [
-          -24.96719,
-          23.49766
-        ],
-        [
-          -24.83828,
-          23.43906
-        ],
-        [
-          -24.68203,
-          23.18125
-        ],
-        [
-          -24.35782,
-          23.12656
-        ]
+        [-26.81875, 23.52891],
+        [-26.25625, 23.41953],
+        [-26.15078, 23.23984],
+        [-25.9125, 23.1539],
+        [-25.87344, 23.41953],
+        [-25.67422, 23.43516],
+        [-25.55703, 23.1539],
+        [-25.41641, 23.44297],
+        [-24.96719, 23.49766],
+        [-24.83828, 23.43906],
+        [-24.68203, 23.18125],
+        [-24.35782, 23.12656]
       ],
       "id": "1B0171158585135DF92283F94319A1A3702D4EFC",
       "importIds": {
-        "gm_legacy": [
-          "liyueBambooShoot/1"
-        ]
+        "gm_legacy": ["liyueBambooShoot/1"]
       },
-      "popupAttribution": "Unknown",
+      "popupAttribution": "MasterEric",
       "popupTitle": {
         "en": "Bamboo Shoots"
       },
       "popupContent": {
         "en": "Follow the forest path, then head across the bridge and behind the house, collecting the marked bamboo shoots."
-      },
-      "popupMedia": ""
+      }
     }
   ]
 }

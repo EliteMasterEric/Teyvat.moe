@@ -917,3 +917,11 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 - Fixed an issue that prevented the page from building properly.
 - Fixed an issue that caused the page from displaying as a blank white screen.
+
+# 0.10.7 Translations
+- Imported translations as provided via GitHub:
+  - @Alkmaaar: Translated several Mondstadt features.
+- Cleaned up and reformatted feature and route files.
+- Fixed some warnings which appeared in the browser console.
+  - The `MouseEvent.mozPressure is deprecated` issue cannot be resolved and should be ignored. See: https://github.com/Leaflet/Leaflet/issues/3943
+- Fixed a bug where, in certain languages, some features would display with blank names.

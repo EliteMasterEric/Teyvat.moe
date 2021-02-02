@@ -5,7 +5,8 @@
     "ru": "Роскошный сундук"
   },
   "description": {
-    "en": "A gorgeous porcelain chest framed with gold. Contains powerful rewards."
+    "en": "A gorgeous porcelain chest framed with gold. Contains powerful rewards.",
+    "ru": "Прекрасный фарфоровый сундук обрамленный золотом. Содержит мощную награду."
   },
   "enabled": false,
   "cluster": "on",
@@ -21,15 +22,10 @@
   },
   "data": [
     {
-      "coordinates": [
-        -32.28359,
-        47.29453
-      ],
+      "coordinates": [-32.28359, 47.29453],
       "id": "1A60390E10CB97E93F80E691D6B727764ADB7F1C",
       "importIds": {
-        "gm_legacy": [
-          "dragonspineLuxuriousChest/15"
-        ]
+        "gm_legacy": ["dragonspineLuxuriousChest/15"]
       },
       "popupAttribution": "Unknown",
       "popupTitle": {

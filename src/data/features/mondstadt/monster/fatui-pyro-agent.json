@@ -5,7 +5,7 @@
     "ru": "Агент Фатуи"
   },
   "description": {
-    "en": "Agent of the Fatui who turn invisible to catch enemies off-guard. Drops Sacrificial Knife and Recruit's Insignia.", 
+    "en": "Agent of the Fatui who turn invisible to catch enemies off-guard. Drops Sacrificial Knife and Recruit's Insignia.",
     "ru": "Тайный Агент Фатуи, способен поймать врасплох, используя невидимость. Возможные награды: Царемониальный нож, Шеврон."
   },
   "enabled": true,
@@ -22,15 +22,10 @@
   },
   "data": [
     {
-      "coordinates": [
-        -25.68147,
-        42.15683
-      ],
+      "coordinates": [-25.68147, 42.15683],
       "id": "0D79669535C3BB8EBDFD809B6F308281EA2A9923",
       "importIds": {
-        "yuanshen": [
-          "133_1"
-        ]
+        "yuanshen": ["133_1"]
       },
       "popupTitle": {
         "zh": "债务处理人"

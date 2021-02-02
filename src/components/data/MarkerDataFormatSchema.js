@@ -16,18 +16,23 @@ const imagePath = Joi.string().regex(
 ); // Exclude the file extension.
 const youtubeUrl = Joi.string().regex(YOUTUBE_REGEX);
 
-const localizedField = Joi.object().pattern(/[a-z]{2}/, Joi.string().allow(''));
+// An object of language codes.
+// English is always mandatory. Translations are optional.
+const localizedField = Joi.object({
+  en: Joi.string().required(),
+}).pattern(/[a-z]{2}/, Joi.string().required());
+const optionalLocalizedField = Joi.object({
+  en: Joi.string(),
+}).pattern(/[a-z]{2}/, Joi.string());
 const clusterEnum = ['off', 'on', 'variable'];
 const respawnEnum = ['none', 'boss'];
 const coordinate = Joi.array().items(Joi.number().precision(5).required()).length(2);
 
 // If set to true, the hash of each set of coordinates will be calculated on load.
 // For every marker and route. Set this to true during development then turn it off after.
-const DEBUG_IDS = isDev();
-// const DEBUG_IDS = false;
 
 const sha1Hash = Joi.string().regex(/[A-Z0-9]{40}/);
-// The ID must be a hash of the 'coordinates' sibling key.
+// The ID must be a SHA1 hash of the 'coordinates' sibling key.
 const msfId = Joi.string().valid(
   Joi.ref('coordinates', {
     adjust: (coords) => hashObject(coords, {}),
@@ -36,7 +41,7 @@ const msfId = Joi.string().valid(
 
 const MSF_MARKER_SCHEMA = Joi.object({
   coordinates: coordinate.required(),
-  id: DEBUG_IDS ? msfId.required() : sha1Hash,
+  id: isDev() ? msfId.required() : sha1Hash,
 
   // Add the ability to correlate this marker with other markers.
   // Note that this is a many-to-many relationship.
@@ -80,16 +85,16 @@ const MSF_MARKER_SCHEMA = Joi.object({
     gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
   },
 
-  popupTitle: localizedField.optional(),
-  popupContent: localizedField.optional(),
+  popupTitle: optionalLocalizedField.optional(),
+  popupContent: optionalLocalizedField.optional(),
   popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
 
-  popupAttribution: Joi.string().required(),
+  popupAttribution: Joi.string().default('Unknown'),
 });
 
 const MSF_ROUTE_SCHEMA = Joi.object({
   coordinates: Joi.array().items(coordinate.required()).required(),
-  id: DEBUG_IDS ? msfId.required() : sha1Hash,
+  id: isDev() ? msfId.required() : sha1Hash,
 
   routeColor: Joi.string().default('#d32f2f'),
   routeText: Joi.string().default('  ►  '),
@@ -109,7 +114,7 @@ const MSF_ROUTE_SCHEMA = Joi.object({
   popupContent: localizedField.optional(),
   popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
 
-  popupAttribution: Joi.string().required(),
+  popupAttribution: Joi.string().default('Unknown'),
 });
 
 const MSF_ICON_SCHEMA = Joi.object({
@@ -168,7 +173,7 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
   name: localizedField.required(),
 
   // The localized description of the feature.
-  description: localizedField.optional(),
+  description: localizedField.required(),
 
   // Whether to cluster markers on the map.
   cluster: Joi.string()

@@ -289,10 +289,16 @@ export const CloneProps = ({ children, ...other }) => children(other);
 // may or may not be in the .default property.
 // JSON isn't and JSONC is, for example.
 export const importFromContext = (context, key) => {
-  const importedModule = context(key);
-  if (_.isEqual(_.keys(importedModule), ['default'])) {
-    return importedModule.default;
-  }
+  try {
+    const importedModule = context(key);
+    if (_.isEqual(_.keys(importedModule), ['default'])) {
+      return importedModule.default;
+    }
 
-  return importedModule;
+    return importedModule;
+  } catch (err) {
+    console.warn(`WARNING: Could not load module ${key}.`);
+    console.warn(err);
+    return null;
+  }
 };

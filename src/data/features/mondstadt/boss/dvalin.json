@@ -5,7 +5,7 @@
     "ru": "Двалин (Ужас бури)"
   },
   "description": {
-    "en": "The Dragon of the East. Can be fought once a week for special rewards.", 
+    "en": "The Dragon of the East. Can be fought once a week for special rewards.",
     "ru": "Дракон Востока. Можно сразиться раз в неделю для получения специальных наград."
   },
   "enabled": true,
@@ -24,15 +24,10 @@
   },
   "data": [
     {
-      "coordinates": [
-        -15.11563,
-        30.78281
-      ],
+      "coordinates": [-15.11563, 30.78281],
       "id": "4A3BD8EBF781483014C8B73B1CDE2DCF79DCCBAA",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtDvalin/1"
-        ]
+        "gm_legacy": ["mondstadtDvalin/1"]
       },
       "popupAttribution": "MasterEric"
     }
