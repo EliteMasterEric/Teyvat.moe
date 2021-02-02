@@ -5,6 +5,9 @@ import objectHash from 'object-hash';
 import React from 'react';
 import sanitizeHTML from 'sanitize-html';
 
+// It gets added to window.
+import { mapStackTrace } from 'sourcemapped-stacktrace';
+
 import packageJson from '~/../package.json';
 
 export const canUseDOM = () => {
@@ -17,13 +20,36 @@ export const isDev = () => {
   if (typeof dev !== 'undefined') return dev;
 
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    console.debug('Running in development environment.');
+    console.debug('Running in development environment (LOCAL).');
+    dev = true;
+  } else if (process.env.BRANCH && process.env.BRANCH === 'develop') {
+    console.debug('Running in development environment (NETLIFY).');
     dev = true;
   } else {
     dev = false;
   }
 
   return dev;
+};
+
+/**
+ * Applies a sourcemap to a given stack trace.
+ * @param {*} stackTrace The stack trace to parse.
+ * @returns A Promise to parse the stack trace asynchronously.
+ */
+export const applySourcemapToStackTrace = (stackTrace) => {
+  return new Promise((resolve, _reject) => {
+    mapStackTrace(
+      stackTrace,
+      (mappedStack) => {
+        const joinedStack = mappedStack.join('\n');
+        resolve(joinedStack);
+      },
+      {
+        filter: (_line) => true,
+      }
+    );
+  });
 };
 
 /**

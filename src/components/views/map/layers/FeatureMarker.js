@@ -190,7 +190,7 @@ const _FeatureMarker = ({
   return (
     <Marker
       eventHandlers={eventHandlers}
-      position={marker.coordinates}
+      position={marker?.coordinates}
       icon={icon}
       opacity={completed ? completedAlpha : 1}
       id={markerKey}

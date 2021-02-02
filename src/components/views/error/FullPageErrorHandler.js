@@ -19,7 +19,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { t } from '~/components/i18n/Localization';
 import { Image } from '~/components/interface/Image';
-import { openURLInWindow } from '~/components/Util';
+import { applySourcemapToStackTrace, openURLInWindow } from '~/components/Util';
 import { generateReportURL } from '~/components/views/error/ErrorReport';
 
 const iconPNG = require('../../../images/brainjuice.png').default;
@@ -69,19 +69,21 @@ const FullPageErrorHandler = ({ error, errorInfo }) => {
 
   const classes = useStyles();
 
-  let componentStack = (errorInfo?.componentStack ?? 'NO COMPONENT STACK').trim();
+  const untranslatedStack = (errorInfo?.componentStack ?? '').trim();
 
-  if (error.detail) {
-    componentStack += `\n---DETAIL---\n${error.detail}`;
-  }
-  if (error.original) {
-    componentStack += `\n---ORIGINAL---\n`;
-    componentStack += `${error.original.name}: ${error.original.message}\n`;
-    componentStack += `${error.original.stack}`;
-  }
+  const [componentStack, setComponentStack] = React.useState(null);
+
+  React.useEffect(async () => {
+    if (untranslatedStack !== '') {
+      const stack = await applySourcemapToStackTrace(untranslatedStack);
+      setComponentStack(stack);
+    }
+  }, [untranslatedStack]);
 
   const onSubmitError = () => {
-    openURLInWindow(generateReportURL(error.name, error.message, componentStack));
+    if (componentStack != null) {
+      openURLInWindow(generateReportURL(error.name, error.message, componentStack));
+    }
   };
 
   return (
@@ -109,9 +111,16 @@ const FullPageErrorHandler = ({ error, errorInfo }) => {
             <Grid item xs={12}>
               <Card>
                 <CardHeader title={`${error.name}: ${error.message}`} />
-                <CardContent>
-                  <pre className={classes.codeBox}>{componentStack}</pre>
-                </CardContent>
+                {componentStack !== '' ? (
+                  <CardContent>
+                    <pre className={classes.codeBox}>{componentStack}</pre>
+                  </CardContent>
+                ) : (
+                  <CardContent>
+                    <pre className={classes.codeBox}>...</pre>
+                  </CardContent>
+                )}
+
                 <CardActions>
                   <Button
                     onClick={onSubmitError}

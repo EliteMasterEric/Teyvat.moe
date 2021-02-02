@@ -53,7 +53,7 @@ export const navigateToMarkerById = (
     if (showToast != null) showToast(t('notification-permalink-route'));
   } else {
     setPositionAndZoom(
-      { lat: element.coordinates[0], lng: element.coordinates[1] },
+      { lat: element?.coordinates[0], lng: element?.coordinates[1] },
       HIGHLIGHT_ZOOM_LEVEL
     );
     // Display the route if it isn't already visible.

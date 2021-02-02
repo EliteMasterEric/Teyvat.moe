@@ -920,10 +920,18 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 # 0.10.7 Translations
 - Added a changelog tab to display partial information from this document in the app.
+- Made improvements to error reporting.
+  - The GitHub crash reporter will now attempt to export the user's current preferences and add them to the issue template.
+  - The GitHub crash reporter will now apply a sourcemap to the stack trace, if available
+    - NOTE: Make sure that sourcemaps are available on Netlify. This may require a Webpack change.
+  - These changes should help in the task of replicating and resolving issues.
+
 - Localization changes:
   - map-controls-tab-changelog: The name of the Changelog tab in the interface.
 - Imported translations as provided via GitHub:
   - @Alkmaaar: Translated several Mondstadt features.
+  - @xRitax: Translated Andrius to Japanese.
+  - @luanvilarim: Translated many features to Portuguese. 
 - Cleaned up and reformatted feature and route files.
 - Fixed some warnings which appeared in the browser console.
   - The `MouseEvent.mozPressure is deprecated` issue cannot be resolved and should be ignored. See: https://github.com/Leaflet/Leaflet/issues/3943

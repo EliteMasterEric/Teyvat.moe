@@ -124,8 +124,8 @@ const mapDispatchToProps = (dispatch, { route }) => ({
     dispatch(
       setPositionAndZoom(
         {
-          lat: route.coordinates[0][0],
-          lng: route.coordinates[0][1],
+          lat: route?.coordinates[0][0],
+          lng: route?.coordinates[0][1],
         },
         HIGHLIGHT_ZOOM_LEVEL
       )

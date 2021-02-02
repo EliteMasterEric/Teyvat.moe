@@ -1,6 +1,9 @@
 import newGithubIssueUrl from 'new-github-issue-url';
+import { exportDataJSON } from '~/components/preferences/DataExport';
 
 export const generateReportURL = (name, message, stackTrace) => {
+  const preferencesData = exportDataJSON();
+
   return newGithubIssueUrl({
     user: 'genshinmap',
     repo: 'genshinmap.github.io',
@@ -57,6 +60,17 @@ export const generateReportURL = (name, message, stackTrace) => {
 
 ${name} : ${message}
 ${stackTrace}
+
+\`\`\`
+
+**Current User Preferences**
+<!--
+  This is the current saved data as reported by the app.
+-->
+
+\`\`\`
+
+${preferencesData}
 
 \`\`\`
 

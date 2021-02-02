@@ -14,10 +14,6 @@ export const GENSHINMAP_DATA_VERSION = 'GM_006';
  * The default locale code if not specified by the browser or by the user.
  */
 export const DEFAULT_LOCALE_CODE = 'en';
-/**
- * The path, relative to ./data/i18n/, of the default locale code's language file.
- */
-export const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * The location to store the application data.

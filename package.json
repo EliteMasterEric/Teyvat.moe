@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.10.6",
+  "version": "0.10.7",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -63,7 +63,8 @@
     "react-tooltip": "^4.2.10",
     "react-world-flags": "^1.4.0",
     "redux": "^4.0.5",
-    "sanitize-html": "^2.1.2"
+    "sanitize-html": "^2.1.2",
+    "sourcemapped-stacktrace": "^1.1.11"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.12.1",

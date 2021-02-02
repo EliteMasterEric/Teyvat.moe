@@ -6,8 +6,13 @@
 import _ from 'lodash';
 import LocalizedStrings from 'react-localization';
 
-import { DEFAULT_LOCALE_FILE } from '~/components/preferences/DefaultPreferences';
+import { DEFAULT_LOCALE_CODE } from '~/components/preferences/DefaultPreferences';
 import { importFromContext } from '../Util';
+
+/**
+ * The path, relative to ./data/i18n/, of the default locale code's language file.
+ */
+const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * The require context referencing all the localization files.
@@ -20,7 +25,10 @@ const i18nContext = require.context('../../data/i18n/ui', true, /.json$/);
 const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
 
 // ex [./en-US.json, en-US].
-const getLocaleFromI18nFilePath = (string) => string.match(/\.\/([-_a-zA-Z0-9]+)\.json/)[1];
+const getLocaleFromI18nFilePath = (string) => {
+  const match = string.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
+  return match ? match[1] : 'UNKNOWN';
+};
 
 /**
  * A map of locales and JSON data objects, including the default locale (it must be moved to the front).

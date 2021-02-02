@@ -129,8 +129,8 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
       dispatch(
         setPositionAndZoom(
           {
-            lat: randomMarker.coordinates[0],
-            lng: randomMarker.coordinates[1],
+            lat: randomMarker?.coordinates[0],
+            lng: randomMarker?.coordinates[1],
           },
           HIGHLIGHT_ZOOM_LEVEL
         )

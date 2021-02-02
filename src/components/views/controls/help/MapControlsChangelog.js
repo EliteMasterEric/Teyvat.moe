@@ -16,7 +16,11 @@ import { SafeHTML } from '~/components/Util';
 
 const useStyles = makeStyles((theme) => ({
   subItem: {
-    paddingLeft: theme.spacing(4),
+    paddingLeft: theme.spacing(2),
+  },
+  header: {
+    fontSize: 24,
+    textAlign: 'center',
   },
 }));
 
@@ -25,16 +29,18 @@ const MapControlsChangelogVersion = ({ version, date, description }) => {
 
   const [open, setOpen] = React.useState(false);
 
+  const toggleOpen = () => setOpen((value) => !value);
+
   return (
     <>
-      <ListItem disableGutters button onClick={setOpen}>
+      <ListItem disableGutters button onClick={toggleOpen}>
         <ListItemText primary={version} secondary={date} />
         {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItem>
       <Collapse in={open}>
         <List dense disablePadding>
           {description.map((descriptionLine) => (
-            <ListItem disableGutters className={classes.subItem}>
+            <ListItem key={descriptionLine} disableGutters className={classes.subItem}>
               <ListItemText primary={descriptionLine} />
             </ListItem>
           ))}
@@ -47,6 +53,8 @@ const MapControlsChangelogVersion = ({ version, date, description }) => {
 const _MapControlsChangelog = ({ displayed, lang }) => {
   const changelogData = getChangelogData(lang);
 
+  const classes = useStyles();
+
   return (
     <TabView displayed={displayed}>
       <BorderBox overflow="hidden auto">
@@ -58,10 +66,13 @@ const _MapControlsChangelog = ({ displayed, lang }) => {
         {/* Quit if data couldn't be retrieved. */}
         {changelogData != null ? (
           <>
-            <Typography fontWeight="fontWeightBold">{t('map-controls-tab-changelog')}</Typography>
+            <Typography fontWeight="fontWeightBold" className={classes.header}>
+              {t('map-controls-tab-changelog')}
+            </Typography>
             <List dense disablePadding>
               {changelogData.map(({ version, date, description }) => (
                 <MapControlsChangelogVersion
+                  key={version}
                   version={version}
                   date={date}
                   description={description}

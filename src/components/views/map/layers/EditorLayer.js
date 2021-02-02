@@ -29,7 +29,7 @@ const _EditorLayer = ({ displayed, editorData }) => {
   };
 
   return editorData.map((element) => {
-    const isRoute = Array.isArray(element?.coordinates[0]);
+    const isRoute = element?.coordinates && Array.isArray(element?.coordinates[0]);
     return isRoute ? (
       <RouteLine key={element.id} route={element} editable />
     ) : (

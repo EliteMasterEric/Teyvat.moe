@@ -1,7 +1,7 @@
 /**
  * Provides the view which displays the Help tab of the map controls.
  */
-
+import { makeStyles } from '@material-ui/core';
 import React from 'react';
 import { connect } from 'react-redux';
 import { getMarkerCount, getRouteCount } from '~/components/data/MapFeatures';
@@ -17,11 +17,20 @@ const TABS = [
   { enabled: true, order: 12, label: t('map-controls-tab-help'), value: 'help' },
 ];
 
+const useStyles = makeStyles((_theme) => ({
+  tabBar: {
+    margin: 0,
+    marginBottom: 8,
+  },
+}));
+
 const _MapControlsHelp = ({ displayed }) => {
   const [helpTab, setHelpTab] = React.useState('changelog');
+  const classes = useStyles();
+
   return (
     <TabView displayed={displayed}>
-      <TabBar value={helpTab} onChange={setHelpTab} tabs={TABS} />
+      <TabBar value={helpTab} onChange={setHelpTab} tabs={TABS} className={classes.tabBar} />
       <MapControlsChangelog displayed={helpTab === 'changelog'} />
       <BorderBox displayed={helpTab === 'help'} overflow="hidden auto">
         <SafeHTML gutterBottom>

@@ -119,7 +119,7 @@ const _RouteLine = ({ route, editable = false, allowExternalMedia = false }) => 
     <TextPath
       // Attributes passed to the parent Polyline.
       eventHandlers={eventHandlers}
-      positions={route.coordinates}
+      positions={route?.coordinates}
       color={route.routeColor}
       className={classes.mapRouteLine}
       // Attributes passed to TextPath.setText.
