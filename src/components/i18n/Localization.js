@@ -12,7 +12,7 @@ import { importFromContext } from '../Util';
 /**
  * The require context referencing all the localization files.
  */
-const i18nContext = require.context('../../data/i18n', true, /.json$/);
+const i18nContext = require.context('../../data/i18n/ui', true, /.json$/);
 
 /**
  * A list of JSON file paths, excluding the default locale.

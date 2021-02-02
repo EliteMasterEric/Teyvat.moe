@@ -1,0 +1,29 @@
+/**
+ * This file contains the data used on the Changelog tab for the English language.
+ * Don't feel obligated to update this quickly, as it receives additions with each update.
+ */
+[
+  {
+    "version": "v0.10.7 - Changelog Tab",
+    "date": "February 2, 2021",
+    "description": [
+      "Added a changelog view to the Help tab.",
+      "@Alkmaaar: Added Russian translations from several languages."
+    ]
+  },
+  {
+    "version": "v0.10.6 - Rendering Fix",
+    "date": "January 31st, 2021",
+    "description": ["Fixed a bug which prevented the page from rendering."]
+  },
+  {
+    "version": "v0.10.5 - 2,500 New Markers",
+    "date": "January 30th, 2021",
+    "description": [
+      "Majorly revamped how markers are stored.",
+      "Imported over 2,500 markers from Yuanshen.site.",
+      "Added text descriptions and video embeds to all Crimson Agate markers.",
+      "Added the ability to navigate to markers via hyperlink."
+    ]
+  }
+]

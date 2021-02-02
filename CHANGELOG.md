@@ -919,6 +919,9 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed an issue that caused the page from displaying as a blank white screen.
 
 # 0.10.7 Translations
+- Added a changelog tab to display partial information from this document in the app.
+- Localization changes:
+  - map-controls-tab-changelog: The name of the Changelog tab in the interface.
 - Imported translations as provided via GitHub:
   - @Alkmaaar: Translated several Mondstadt features.
 - Cleaned up and reformatted feature and route files.

@@ -108,6 +108,7 @@ export const TabBar = ({
         ) : (
           <MaterialTab
             wrapped
+            key={tab.value}
             label={tab.label}
             value={tab.value}
             classes={{ root: classes.tab }}

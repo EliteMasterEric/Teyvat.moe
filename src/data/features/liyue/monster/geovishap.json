@@ -1,16 +1,16 @@
 {
   "format": 2,
   "name": {
-    "en": "Snowboar King"
+    "en": "Geovishap"
   },
   "description": {
-    "en": "The true king of Dragonspine. Drops Chilled Meat."
+    "en": "A matured Geovishap which can utilize elemental attacks."
   },
   "enabled": false,
-  "cluster": "off",
-  "respawn": "none",
+  "cluster": "on",
+  "respawn": 86400,
   "icons": {
-    "filter": "snowboar-king",
+    "filter": "geovishap",
     "base": {
       "marker": true
     },
@@ -18,5 +18,6 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+  ]
 }
