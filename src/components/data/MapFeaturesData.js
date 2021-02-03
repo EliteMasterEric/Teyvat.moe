@@ -156,6 +156,10 @@ export const validateFeatureData = (input) => {
  * If not valid, validation.error contains the error data.
  */
 export const validateRouteData = (input) => {
+  if (input == null) {
+    console.error(`Route is undefined!`);
+    return null;
+  }
   switch (input.format) {
     case 2:
       return MSF_ROUTES_SCHEMA.validate(input, { convert: true });
@@ -188,7 +192,7 @@ export const loadRoute = (key) => {
   const routeData = importFromContext(routesContext, key);
 
   const validation = validateRouteData(routeData);
-  if (validation.error) {
+  if (validation == null || validation.error) {
     console.warn(`ERROR during validation of route '${key}'`);
     console.warn(validation);
     return null;

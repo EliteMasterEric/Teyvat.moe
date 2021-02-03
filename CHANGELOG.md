@@ -918,14 +918,13 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed an issue that prevented the page from building properly.
 - Fixed an issue that caused the page from displaying as a blank white screen.
 
-# 0.10.7 Translations
+# 0.10.7 Changelog Tab and Translations
 - Added a changelog tab to display partial information from this document in the app.
 - Made improvements to error reporting.
   - The GitHub crash reporter will now attempt to export the user's current preferences and add them to the issue template.
   - The GitHub crash reporter will now apply a sourcemap to the stack trace, if available
     - NOTE: Make sure that sourcemaps are available on Netlify. This may require a Webpack change.
   - These changes should help in the task of replicating and resolving issues.
-
 - Localization changes:
   - map-controls-tab-changelog: The name of the Changelog tab in the interface.
 - Imported translations as provided via GitHub:

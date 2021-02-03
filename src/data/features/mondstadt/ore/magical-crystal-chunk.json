@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Magical Crystal Chunk",
-    "ru": "Магический кристальный обломок"
-  },
   "description": {
     "en": "Crystal eroded by Ley Line energy that requires Original Resin to refine into Mystic Enhancement Ore.",
     "ru": "Кристалл, омытый энергией Артерий Земли, который требует Первородную Смолу для усовершенствования в Волшебную руду усиления."
   },
   "enabled": true,
   "cluster": "on",
+  "name": {
+    "en": "Magical Crystal Chunk",
+    "ru": "Магический кристальный обломок",
+    "pt": "Pedaço de Cristal Mágico"
+  },
   "respawn": 259200,
   "icons": {
     "filter": "magical-crystal-chunk",

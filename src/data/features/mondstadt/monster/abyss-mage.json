@@ -1,16 +1,17 @@
 {
   "format": 2,
-  "name": {
-    "en": "Abyss Mage",
-    "ru": "Маг Бездны"
-  },
   "description": {
     "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches.",
     "ru": "Существа Бездны, которые в некоторой степени могут использовать в бою силу элементов. Вомзожные награды: ветви Артерий Земли."
   },
   "enabled": true,
   "cluster": "on",
-  "respawn": "none",
+  "respawn": 86400,
+  "name": {
+    "en": "Abyss Mage",
+    "ru": "Маг Бездны",
+    "pt": "Feiticeiro do Abismo"
+  },
   "icons": {
     "filter": "pyro-abyss-mage",
     "base": {

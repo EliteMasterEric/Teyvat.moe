@@ -2,7 +2,8 @@
   "format": 2,
   "name": {
     "en": "Domain",
-    "ru": "Подземелья"
+    "ru": "Подземелья",
+    "pt": "Domínio"
   },
   "description": {
     "en": "Complete the challenges to earn Artifact, Weapon Ascension, or Talent Level-Up rewards."
@@ -14,19 +15,49 @@
     "filter": "domain",
     "base": {
       "key": "domain",
-      "iconSize": [36, 36],
-      "shadowSize": [50, 64],
-      "iconAnchor": [18, 27],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -27]
+      "iconSize": [
+        36,
+        36
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        18,
+        27
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -27
+      ]
     },
     "done": {
       "key": "domain",
-      "iconSize": [36, 36],
-      "shadowSize": [50, 64],
-      "iconAnchor": [18, 27],
-      "shadowAnchor": [0, 62],
-      "popupAnchor": [0, -27]
+      "iconSize": [
+        36,
+        36
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        18,
+        27
+      ],
+      "shadowAnchor": [
+        0,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -27
+      ]
     }
   },
   "data": [

@@ -1,14 +1,15 @@
 {
   "format": 2,
-  "name": {
-    "en": "Fowl",
-    "ru": "Мясо Птицы"
-  },
   "description": {
     "en": "A fresh bird. Used in various recipes. Poor Timmy..."
   },
   "enabled": true,
   "cluster": "on",
+  "name": {
+    "en": "Fowl",
+    "ru": "Мясо Птицы",
+    "pt": "Carne de Ave"
+  },
   "respawn": 86400,
   "icons": {
     "filter": "fowl",

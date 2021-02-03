@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Hilichurl",
-    "ru": "Хиличурл"
-  },
   "description": {
     "en": "Basic Hilichurls who attack with claws or clubs. Drops Stained Masks.",
     "ru": "Примитивные человекообразные монстры, атакующие дубинами или когтями. Возможные награды: Окрашенные Маски."
   },
   "enabled": true,
   "cluster": "on",
+  "name": {
+    "en": "Hilichurl",
+    "pt": "Hilichurl",
+    "ru": "Хиличурл"
+  },
   "respawn": 86400,
   "icons": {
     "filter": "hilichurl",

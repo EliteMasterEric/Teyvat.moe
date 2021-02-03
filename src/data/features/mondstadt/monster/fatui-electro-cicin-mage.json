@@ -1,15 +1,16 @@
 {
-  "format": 2,
-  "name": {
-    "en": "Fatui Electro Cicin Mage",
-    "ru": "Маг цицинов Фатуи"
-  },
   "description": {
     "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.",
     "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон."
   },
   "enabled": true,
   "cluster": "on",
+  "format": 2,
+  "name": {
+    "en": "Fatui Electro Cicin Mage",
+    "ru": "Маг цицинов Фатуи",
+    "pt": "Fatui - Feiticeira Cicin Electro"
+  },
   "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",

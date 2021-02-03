@@ -2,7 +2,8 @@
   "format": 2,
   "name": {
     "en": "Teleporter",
-    "ru": "Телепорт"
+    "ru": "Телепорт",
+    "pt": "Ponto de Teleporte"
   },
   "description": {
     "en": "Activate to gain the ability to move here at will via the World Map."
@@ -14,19 +15,49 @@
     "filter": "teleporter",
     "base": {
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     },
     "done": {
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     }
   },
   "data": [

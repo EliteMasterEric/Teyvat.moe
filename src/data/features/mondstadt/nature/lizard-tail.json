@@ -1,15 +1,16 @@
 {
-  "format": 2,
-  "name": {
-    "en": "Lizard Tail",
-    "ru": "Хвост Ящерицы"
-  },
   "description": {
     "en": "A lizard tail that curled up after losing its owner. Used in Alchemy."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
+  "format": 2,
+  "name": {
+    "en": "Lizard Tail",
+    "ru": "Хвост Ящерицы",
+    "pt": "Cauda de Lagarto"
+  },
   "icons": {
     "filter": "lizard-tail",
     "base": {

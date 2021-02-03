@@ -1,34 +1,65 @@
 {
   "format": 2,
-  "name": {
-    "en": "Crimson Agate",
-    "zh": "绯红玉髓"
-  },
   "description": {
     "en": "Find in the world, in glowing Chests, or from the Crimson Wish missions, and redeem at the Frostbearing Tree for rewards."
   },
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
+  "name": {
+    "en": "Crimson Agate",
+    "zh": "绯红玉髓",
+    "pt": "Calcedônia Carmesim"
+  },
   "icons": {
     "filter": "crimson-agate",
     "base": {
       "key": "crimson-agate",
       "clusterIcon": "crimson-agate",
-      "iconSize": [24, 24],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        24,
+        24
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     },
     "done": {
       "key": "crimson-agate",
       "clusterIcon": "crimson-agate",
-      "iconSize": [24, 24],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        24,
+        24
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     }
   },
   "data": [

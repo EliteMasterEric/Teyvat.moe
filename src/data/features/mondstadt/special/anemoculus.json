@@ -1,10 +1,5 @@
 {
   "format": 2,
-  "name": {
-    "en": "Anemoculus",
-    "ru": "Анемокул",
-    "zh": "风神瞳"
-  },
   "description": {
     "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven.",
     "ru": "Собирайте их по всему миру и подносите Статуи Семи Архонтов для получения наград."
@@ -12,23 +7,59 @@
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
+  "name": {
+    "en": "Anemoculus",
+    "ru": "Анемокул",
+    "zh": "风神瞳",
+    "pt": "Anemoculus"
+  },
   "icons": {
     "filter": "anemoculus",
     "base": {
       "key": "anemoculus",
-      "iconSize": [31, 37],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        31,
+        37
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     },
     "done": {
       "key": "anemoculus",
-      "iconSize": [31, 37],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        31,
+        37
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     }
   },
   "data": [

@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Slime",
-    "ru": "Слайм"
-  },
   "description": {
     "en": "Beings of pure elemental energy. Drops Slime Condensate.",
     "ru": "Существа из чистой энергии стихий. Возможные награды: Слизь Слайма."
   },
   "enabled": true,
   "cluster": "on",
+  "name": {
+    "en": "Slime",
+    "ru": "Слайм",
+    "pt": "Slime"
+  },
   "respawn": 86400,
   "icons": {
     "filter": "slime",

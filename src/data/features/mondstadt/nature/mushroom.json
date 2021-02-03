@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Mushroom",
-    "ru": "Гриб"
-  },
   "description": {
     "en": "Hardy common fungi. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
+  "name": {
+    "en": "Mushroom",
+    "ru": "Гриб",
+    "pt": "Cogumelo"
+  },
   "icons": {
     "filter": "mushroom",
     "base": {

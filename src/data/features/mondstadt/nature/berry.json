@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Berry",
-    "ru": "Ягода"
-  },
   "description": {
     "en": "Small brightly-colored fruit used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
+  "name": {
+    "en": "Berry",
+    "pt": "Baga",
+    "ru": "Ягода"
+  },
   "icons": {
     "filter": "berry",
     "base": {

@@ -1,15 +1,16 @@
 {
   "format": 2,
-  "name": {
-    "en": "Crystal Core",
-    "ru": "Кристальное Ядро"
-  },
   "description": {
     "en": "The core of a Crystalfly. Used in Alchemy to craft Condensed Resin."
   },
   "enabled": true,
   "cluster": "variable",
   "respawn": "none",
+  "name": {
+    "en": "Crystal Core",
+    "ru": "Кристальное Ядро",
+    "pt": "Núcleo de Cristal"
+  },
   "icons": {
     "filter": "crystal-core",
     "base": {

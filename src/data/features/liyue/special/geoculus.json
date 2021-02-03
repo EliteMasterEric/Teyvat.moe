@@ -1,31 +1,62 @@
 {
   "format": 2,
-  "name": {
-    "en": "Geoculus"
-  },
   "description": {
     "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven."
   },
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
+  "name": {
+    "en": "Geoculus",
+    "pt": "Geoculus"
+  },
   "icons": {
     "filter": "geoculus",
     "base": {
       "key": "geoculus",
-      "iconSize": [34, 32],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        34,
+        32
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     },
     "done": {
       "key": "geoculus",
-      "iconSize": [34, 32],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 12],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -12]
+      "iconSize": [
+        34,
+        32
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        12
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -12
+      ]
     }
   },
   "data": [
