@@ -935,3 +935,9 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed some warnings which appeared in the browser console.
   - The `MouseEvent.mozPressure is deprecated` issue cannot be resolved and should be ignored. See: https://github.com/Leaflet/Leaflet/issues/3943
 - Fixed a bug where, in certain languages, some features would display with blank names.
+
+# 0.10.8
+
+- Fixed an issue where text markers appeared on the corners of the map.
+- Made additions and modifications to existing markers:
+  - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.

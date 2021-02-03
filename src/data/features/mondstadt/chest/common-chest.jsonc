@@ -2,8 +2,7 @@
   "format": 2,
   "name": {
     "en": "Common Chest",
-    "ru": "Обычный сундук",
-    "pt": "Baú Comum"
+    "ru": "Обычный сундук"
   },
   "description": {
     "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
@@ -1802,38 +1801,6 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-12.39682, 48.43824],
-      "id": "6254D12A165114589474532911A21AA78D57EE4B",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/329"],
-        "yuanshen": ["26_329"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个蒙德宝箱"
-      },
-      "popupMedia": "mondstadt/common-chest/26_329",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-12.64695, 48.68811],
-      "id": "725EABEB5BB61BF50319B68A9950CD474781FA9C",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/330"],
-        "yuanshen": ["26_330"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个飞行挑战获得的【精致宝箱】"
-      },
-      "popupMedia": "mondstadt/common-chest/26_330",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
       "coordinates": [-12.78765, 47.17327],
       "id": "61C733715F67FAB345334BF98BA8863BA9C123E7",
       "importIds": {
@@ -1847,22 +1814,6 @@
         "zh": "这是一个蒙德宝箱"
       },
       "popupMedia": "mondstadt/common-chest/26_332",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-12.94398, 48.41481],
-      "id": "BEC65C7DE2B65F5038E11A1D1920BFF0C56DF056",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/334"],
-        "yuanshen": ["26_334"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个击败怪物出现的【精致宝箱】"
-      },
-      "popupMedia": "mondstadt/common-chest/26_334",
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1882,52 +1833,31 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-13.39298, 48.44297],
-      "id": "7CC459D9BDE1E74B8BF026E8E173752435D62EA3",
+      "coordinates": [
+        -12.39973,
+        48.44492
+      ],
+      "id": "949BE8F3698AC6F47F4BD35B4A62D024981CF15A",
+      "popupAttribution": "specklet",
       "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/338"],
-        "yuanshen": ["26_338"]
+        "gm_legacy": [
+          "mondstadtCommonChest/329"
+        ],
+        "yuanshen": [
+          "26_329"
+        ],
+        "gm_msfv2": [
+          "6254D12A165114589474532911A21AA78D57EE4B"
+        ]
       },
       "popupTitle": {
         "zh": "蒙德宝箱"
       },
       "popupContent": {
-        "zh": "这是一个击败风史莱姆解锁的【精致宝箱】"
-      },
-      "popupMedia": "mondstadt/common-chest/26_338",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-13.43594, 48.61094],
-      "id": "2B798F23679F241D84210B120CCD41137D595017",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/339"],
-        "yuanshen": ["26_339"]
-      },
-      "popupTitle": {
-        "zh": "限时挑战"
-      },
-      "popupContent": {
-        "zh": "这是一个完成限时挑战出现的【精致宝箱】"
-      },
-      "popupMedia": "mondstadt/common-chest/26_339",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-14.03048, 47.89945],
-      "id": "35E3B3075840940DA9439340FB5D8D5B06209077",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/341"],
-        "yuanshen": ["26_341"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
+        "en": "Shoot anemo balloon in tree",
         "zh": "这是一个蒙德宝箱"
       },
-      "popupMedia": "mondstadt/common-chest/26_341",
-      "popupAttribution": "Yuanshen.site"
+      "popupMedia": "mondstadt/common-chest/949BE8F"
     },
     {
       "coordinates": [-14.26498, 46.56422],
@@ -1946,22 +1876,6 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-14.34315, 48.53194],
-      "id": "B74B254E82A1C66330A710BB1B63AA98537D57F8",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/344"],
-        "yuanshen": ["26_344"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个蒙德宝箱"
-      },
-      "popupMedia": "mondstadt/common-chest/26_344",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
       "coordinates": [-14.52293, 46.71257],
       "id": "04DC934D11D9FC2AB9A2D94E9E969C288846358B",
       "importIds": {
@@ -1975,22 +1889,6 @@
         "zh": "这是一个蒙德宝箱"
       },
       "popupMedia": "mondstadt/common-chest/26_345",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-15.16389, 48.44605],
-      "id": "14818ABEBB562A11036F7954E5141D16CA1ABCA6",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/349"],
-        "yuanshen": ["26_349"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个蒙德宝箱"
-      },
-      "popupMedia": "mondstadt/common-chest/26_349",
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2458,38 +2356,6 @@
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-12.35061, 51.17242],
-      "id": "7C6DD2BFFD704DDA32FA16920291D8758B740808",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/412"],
-        "yuanshen": ["26_412"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个击败怪物解锁的【精致宝箱】"
-      },
-      "popupMedia": "mondstadt/common-chest/26_412",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-13.14011, 51.43056],
-      "id": "881623FFC9580C170B5E74FF42934D8E3B760324",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/421"],
-        "yuanshen": ["26_421"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个蒙德宝箱"
-      },
-      "popupMedia": "mondstadt/common-chest/26_421",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
       "coordinates": [-15.28185, 49.72052],
       "id": "11FB8F02FA54C0E1EA17A2FA0E42E6E8B8B54820",
       "importIds": {
@@ -2847,22 +2713,6 @@
         "zh": "这是一个蒙德宝箱"
       },
       "popupMedia": "mondstadt/common-chest/26_48",
-      "popupAttribution": "Yuanshen.site"
-    },
-    {
-      "coordinates": [-12.50625, 49.45469],
-      "id": "4373FF3F3BAE2A3662614A8F8E11F28915B2056F",
-      "importIds": {
-        "gm_legacy": ["mondstadtCommonChest/482"],
-        "yuanshen": ["26_482"]
-      },
-      "popupTitle": {
-        "zh": "蒙德宝箱"
-      },
-      "popupContent": {
-        "zh": "这是一个蒙德宝箱"
-      },
-      "popupMedia": "mondstadt/common-chest/26_482",
       "popupAttribution": "Yuanshen.site"
     },
     {

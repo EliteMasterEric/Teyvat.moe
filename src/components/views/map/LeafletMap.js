@@ -29,10 +29,16 @@ import MapEditorHandler from '~/components/views/map/MapEditorHandler';
 import MapPositionHandler from '~/components/views/map/MapPositionHandler';
 
 import './LeafletMap.css';
+import { SET_IMPORT_ERROR } from '~/redux/ducks/error';
+import ErrorHandler from '../error/ErrorHandler';
 
 // A link back to the main repository.
 const ATTRIBUTION =
   "<a href='https://github.com/GenshinMap/genshinmap.github.io' rel='noreferrer' target='_blank'><span class='nf nf-fa-github' style='margin-right: 0.5em;'></span>Directions and Feedback</a>";
+
+const ErrorLayer = ({ error, errorInfo: _errorInfo }) => {
+  return <div key={error} />;
+};
 
 const _LeafletMap = () => {
   return (
@@ -62,9 +68,6 @@ const _LeafletMap = () => {
       <WorldBorderLayer />
       <EditorLayer />
 
-      <Marker editable position={[0, 0]} />
-      <Marker editable position={[-64, 64]} />
-
       {/* Controls the zoom buttons in the top left corner. */}
       <ZoomControl zoomInTitle="+" zoomOutTitle="-" />
       <DebugControls />
@@ -77,7 +80,11 @@ const _LeafletMap = () => {
           return null;
         }
 
-        return <FeatureLayer key={`Feature:${key}`} mapFeature={feature} featureKey={key} />;
+        return (
+          <ErrorHandler key={`Feature:${key}`} errorHandler={ErrorLayer}>
+            <FeatureLayer mapFeature={feature} featureKey={key} />
+          </ErrorHandler>
+        );
       })}
 
       {/* Display each available route. */}
@@ -88,7 +95,11 @@ const _LeafletMap = () => {
           return null;
         }
 
-        return <RouteLayer key={`Route:${key}`} routeKey={key} mapRoute={route} />;
+        return (
+          <ErrorHandler key={`Route:${key}`} errorHandler={ErrorLayer}>
+            <RouteLayer routeKey={key} mapRoute={route} />
+          </ErrorHandler>
+        );
       })}
     </MapContainer>
   );
