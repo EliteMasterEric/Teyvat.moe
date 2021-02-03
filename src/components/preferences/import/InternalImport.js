@@ -15,7 +15,54 @@ import {
 } from '~/components/preferences/DefaultPreferences';
 import { buildImportMapping } from '~/components/preferences/import/ImportDictionary';
 import { storeRecoveryData } from '~/components/preferences/import/Recovery';
-import { fromBase64 } from '~/components/Util';
+import { fromBase64, hashObject } from '~/components/Util';
+
+const demercateCoordinate = (coordinate) => {
+  // Spherical Mercator projection.
+  const size = 256 * 2 ** 1;
+  const d = size / 2;
+  const bc = size / 360;
+  const cc = size / (2 * Math.PI);
+  const fa = Math.min(Math.max(Math.sin((Math.PI / 180) * coordinate[1]), -0.9999), 0.9999); // Invert lon_lat[1].
+  const x = d + coordinate[0] * bc;
+  const y = d + 0.5 * Math.log((1 + fa) / (1 - fa)) * -cc;
+
+  return [x, y];
+};
+const ORIGIN = demercateCoordinate([0, 0]);
+
+const reprojectCoordinate = (coordinate) => {
+  const demercated = demercateCoordinate([coordinate[1], coordinate[0]]);
+  return [(demercated[1] - ORIGIN[1]) * -0.5 + -0.1, (demercated[0] - ORIGIN[0]) * 0.5 + 0.15];
+};
+
+export const importEditorDataFromGMLegacy = (data) => {
+  const editorElements = data.editor.feature.data;
+
+  const modifiedElements = editorElements.map((element) => {
+    const isRoute = Array.isArray(element.geometry.coordinates[0]);
+    const coordinates = isRoute
+      ? element.geometry.coordinates.map((coord) => reprojectCoordinate(coord))
+      : reprojectCoordinate(element.geometry.coordinates);
+    return {
+      coordinates,
+      id: hashObject(coordinates),
+      popupTitle: element.properties.popupTitle,
+      popupContent: element.properties.popupContent,
+      popupMedia: element.properties.popupMedia,
+      popupAttribution: 'Unknown',
+    };
+  });
+
+  return {
+    editorData: modifiedElements,
+    // Else, complete success.
+    currentToast: {
+      ...DEFAULT_MAP_PREFERENCES.currentToast,
+      message: f('message-import-success', { count: modifiedElements.length }),
+    },
+  };
+};
 
 export const importMarkerDataFromGMLegacy = (data) => {
   const dataCompletedFeatures = data.completed.features;
@@ -222,6 +269,23 @@ export const migrateData = (input, version) => {
       output = {
         ...output,
         ...importMarkerDataFromGMLegacy(output),
+      };
+    case 'GM_006':
+      /**
+       * This update makes the following changes:
+       * - Migrate editor data to MSFv2.
+       */
+      const { editorData, currentToast } = importEditorDataFromGMLegacy(output);
+      output = {
+        ...output,
+        currentToast,
+        editor: {
+          ...output.editor,
+          feature: {
+            ...output.editor.feature,
+            data: editorData,
+          },
+        },
       };
     case GENSHINMAP_DATA_VERSION:
       // Migration is done.

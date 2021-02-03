@@ -211,7 +211,7 @@ const _MapControlsOptions = ({
             onConfirm={importDataYuanshen}
           />
         </Box>
-        <Box className={classes.optionContainer}>
+        <Box className={classes.optionContainer} style={{ display: 'none' }}>
           <Typography className={classes.label}>{t('options-import-appsample')}</Typography>
           <ImportDataPopup
             title={t('options-import-appsample')}
@@ -224,7 +224,7 @@ const _MapControlsOptions = ({
             onConfirm={importDataAppSample}
           />
         </Box>
-        <Box className={classes.optionContainer}>
+        <Box className={classes.optionContainer} style={{ display: 'none' }}>
           <Typography className={classes.label}>{t('options-import-mapgenie')}</Typography>
           <ImportDataPopup
             title={t('options-import-mapgenie')}

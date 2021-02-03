@@ -7,7 +7,7 @@ import _ from 'lodash';
 import L from 'leaflet';
 import React from 'react';
 import { connect } from 'react-redux';
-import { AttributionControl, MapContainer, ZoomControl, Marker } from 'react-leaflet';
+import { AttributionControl, MapContainer, ZoomControl } from 'react-leaflet';
 
 import { MapFeatures, MapRoutes } from '~/components/data/MapFeatures';
 

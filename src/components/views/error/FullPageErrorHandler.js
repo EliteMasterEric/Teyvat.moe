@@ -14,7 +14,10 @@ import {
   Grid,
   Typography,
   makeStyles,
+  Collapse,
+  IconButton,
 } from '@material-ui/core';
+import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { t } from '~/components/i18n/Localization';
@@ -73,6 +76,9 @@ const FullPageErrorHandler = ({ error, errorInfo }) => {
 
   const [componentStack, setComponentStack] = React.useState(null);
 
+  const [errorExpanded, setErrorExpanded] = React.useState(false);
+  const toggleErrorExpanded = () => setErrorExpanded((value) => !value);
+
   React.useEffect(async () => {
     if (untranslatedStack !== '') {
       const stack = await applySourcemapToStackTrace(untranslatedStack);
@@ -110,14 +116,25 @@ const FullPageErrorHandler = ({ error, errorInfo }) => {
             </Grid>
             <Grid item xs={12}>
               <Card>
-                <CardHeader title={`${error.name}: ${error.message}`} />
+                <CardHeader
+                  title={`${error.name}: ${error.message}`}
+                  action={
+                    <IconButton aria-label="settings" onClick={toggleErrorExpanded}>
+                      {errorExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                    </IconButton>
+                  }
+                />
                 {componentStack !== '' ? (
                   <CardContent>
-                    <pre className={classes.codeBox}>{componentStack}</pre>
+                    <Collapse in={errorExpanded}>
+                      <pre className={classes.codeBox}>{componentStack}</pre>
+                    </Collapse>
                   </CardContent>
                 ) : (
                   <CardContent>
-                    <pre className={classes.codeBox}>...</pre>
+                    <Collapse in={errorExpanded}>
+                      <pre className={classes.codeBox}>{componentStack}</pre>
+                    </Collapse>
                   </CardContent>
                 )}
 

@@ -55,6 +55,7 @@
   "map-editor-marker-tooltip": "Marker",
   "map-editor-route-tooltip": "Route",
 
+  "editor": "Editor",
   "editor-image-upload-tooltip": "Click or drag/drop to upload to Imgur",
   "editor-image-upload-success": "Successfully uploaded image to Imgur.",
   "editor-image-upload-progress": "Uploading to Imgur...",
@@ -112,6 +113,7 @@
   "message-import-error-malformed-not-json": "Your import data appears to be malformed. Please check it and try again.",
   "message-import-error-generic": "An unknown error occurred while attempting to import the submitted data.",
 
+  "message-editor-import-success": "Successfully imported all {count} editor elements.",
   "message-import-success": "Successfully imported all {count} markers.",
   "message-import-success-partial": "Imported {success}/{count} markers",
 
@@ -153,6 +155,7 @@
 
   "error-handler-flavor": "Oh no, Paimon used up all her brain juice!",
   "error-handler-message": "GenshinMap experienced an error and had to close.",
+  "error-handler-component-message": "The {component} view has encountered a problem.",
   "error-handler-instruction": "Please click the link below to submit an error report.",
   "error-handler-submit": "Submit to GitHub"
 }

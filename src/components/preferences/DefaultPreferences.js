@@ -8,7 +8,7 @@ import { MAP_CENTER, DEFAULT_ZOOM } from '~/components/views/map/LayerConstants'
  * The data version.
  * Whenever the structure of mapPreferences changes, increment this.
  */
-export const GENSHINMAP_DATA_VERSION = 'GM_006';
+export const GENSHINMAP_DATA_VERSION = 'GM_007';
 
 /**
  * The default locale code if not specified by the browser or by the user.

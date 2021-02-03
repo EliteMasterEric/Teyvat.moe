@@ -18,7 +18,7 @@ const App = () => {
     <ThemeProvider theme={Theme}>
       <HelmetProvider>
         <CssBaseline>
-          <ErrorHandler errorHandler={FullPageErrorHandler}>
+          <ErrorHandler enabled={false} errorHandler={FullPageErrorHandler}>
             <Provider store={store}>
               <PageHeaders />
               <MainView />

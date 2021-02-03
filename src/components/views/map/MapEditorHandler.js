@@ -52,8 +52,8 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     const newRoute = {
       coordinates: latlngsFormatted,
       id,
-      routeColor: '#dafada',
-      routeText: '  ★  ',
+      routeColor: '#d32f2f',
+      routeText: '  ►  ',
       popupTitle: { en: '' },
       popupContent: { en: '' },
       popupAttribution: 'Unknown',

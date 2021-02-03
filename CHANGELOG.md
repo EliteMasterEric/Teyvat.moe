@@ -936,8 +936,13 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - The `MouseEvent.mozPressure is deprecated` issue cannot be resolved and should be ignored. See: https://github.com/Leaflet/Leaflet/issues/3943
 - Fixed a bug where, in certain languages, some features would display with blank names.
 
-# 0.10.8
+# 0.10.8 More Fixes
 
-- Fixed an issue where text markers appeared on the corners of the map.
+- Fixed a bug where routes would change color when placed.
+  - This is part of an upcoming feature which will allow recoloring routes.
+- Hid AppSample and MapGenie importers (they are still in development).
+- Even more improved error handling and reporting.
+  - Created a component error wrapper, currently applied to the Editor tab of the Map controls. If it crashes, only that part of the UI will display the error handler.
+- Fixed an issue where test markers appeared on the corners of the map.
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.

@@ -46,10 +46,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const _MapControlsEditorMarker = ({
-  markerId,
-  markerTitle,
-  markerContent,
-  markerMedia,
+  marker,
   highlightMarker,
   setMarkerTitle,
   setMarkerContent,
@@ -57,6 +54,12 @@ const _MapControlsEditorMarker = ({
   deleteMarker,
 }) => {
   const classes = useStyles();
+
+  console.log(marker);
+  const markerId = marker?.id;
+  const markerTitle = marker?.popupTitle?.en;
+  const markerContent = marker?.popupContent?.en;
+  const markerMedia = marker?.popupMedia;
 
   return (
     <Box display="flex" flexDirection="column" className={classes.markerBox}>
@@ -98,10 +101,6 @@ const _MapControlsEditorMarker = ({
 
 const mapStateToProps = (state, { marker }) => ({
   highlighted: state.editorHighlight === marker.id,
-  markerId: marker.id,
-  markerTitle: marker.popupTitle.en,
-  markerContent: marker.popupContent.en,
-  markerMedia: marker.popupMedia,
 });
 const mapDispatchToProps = (dispatch, { marker }) => ({
   setMarkerTitle: (value) => {

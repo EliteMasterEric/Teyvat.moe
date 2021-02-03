@@ -11,6 +11,9 @@ import React from 'react';
 
 /**
  * Wraps the component in a error boundary, and renders the error handler component in the event of an error.
+ *
+ * Note that this MUST wrap one or more components. If the direct child of the error handler throws an error,
+ * the error handler itself cannot render and the issue gets passed up to the parent.
  * @param {Component} children The components to render.
  * @param {Function<Component>} errorHandler If `component` crashes, create an instance of this type and render it instead.
  */
@@ -59,12 +62,13 @@ class ErrorHandler extends React.Component {
 
   render() {
     const { error, errorInfo } = this.state;
-    const { children, errorHandler } = this.props;
+    const { children, errorHandler, enabled = true } = this.props;
 
     // If there is an error, display the error handler
     // instead of the base page.
-    if (error) {
+    if (error && enabled) {
       console.error('Error caught, rendering error handler.');
+      console.error(errorHandler);
       return React.createElement(errorHandler, { error, errorInfo });
     }
 
@@ -74,3 +78,9 @@ class ErrorHandler extends React.Component {
 }
 
 export default ErrorHandler;
+
+export const handleError = (component, errorHandler) => (props) => {
+  return (
+    <ErrorHandler errorHandler={errorHandler}>{React.createElement(component, props)}</ErrorHandler>
+  );
+};
