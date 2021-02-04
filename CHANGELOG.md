@@ -938,13 +938,16 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 # 0.10.8 More Fixes
 
+- Editor data is now migrated to MSFv2.
+  - Incremented preferences version to GM_007.
+- Hid AppSample and MapGenie importers (they are still in development).
+- Fixed a bug which caused a "can't use useLeafletContext() outside a MapContainer" error.
+  - Ported from NPM to Yarn to allow forcing dependency resolution.
+  - There's a bug which prevents upgrading to berry.
 - Fixed a bug where routes would change color when placed.
   - This is part of an upcoming feature which will allow recoloring routes.
-- Hid AppSample and MapGenie importers (they are still in development).
 - Even more improved error handling and reporting.
   - Created a component error wrapper, currently applied to the Editor tab of the Map controls. If it crashes, only that part of the UI will display the error handler.
-- Ported from NPM to Yarn to allow forcing dependency resolution.
-  - There's a bug which prevents upgrading to berry.
 - Fixed an issue where test markers appeared on the corners of the map.
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.

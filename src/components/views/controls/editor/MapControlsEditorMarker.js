@@ -56,10 +56,10 @@ const _MapControlsEditorMarker = ({
   const classes = useStyles();
 
   console.log(marker);
-  const markerId = marker?.id;
-  const markerTitle = marker?.popupTitle?.en;
-  const markerContent = marker?.popupContent?.en;
-  const markerMedia = marker?.popupMedia;
+  const markerId = marker?.id ?? '';
+  const markerTitle = marker?.popupTitle?.en ?? '';
+  const markerContent = marker?.popupContent?.en ?? '';
+  const markerMedia = marker?.popupMedia ?? '';
 
   return (
     <Box display="flex" flexDirection="column" className={classes.markerBox}>

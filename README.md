@@ -10,8 +10,7 @@
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki">Wiki</a>
 <b>|</b>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/CHANGELOG.md">Changelog</a>
-<b>|</b>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Frequently-Asked-Questions#how-do-i-transfer-my-data-from-the-old-version-of-genshinmap">Where's my old data?</a>
+
   <br/><br/>
 <a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
 <a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
