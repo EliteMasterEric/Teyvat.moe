@@ -62,11 +62,11 @@ class ErrorHandler extends React.Component {
 
   render() {
     const { error, errorInfo } = this.state;
-    const { children, errorHandler, enabled = true } = this.props;
+    const { children, errorHandler } = this.props;
 
     // If there is an error, display the error handler
     // instead of the base page.
-    if (error && enabled) {
+    if (error) {
       console.error('Error caught, rendering error handler.');
       console.error(errorHandler);
       return React.createElement(errorHandler, { error, errorInfo });

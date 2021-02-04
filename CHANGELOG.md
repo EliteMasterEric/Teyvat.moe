@@ -943,6 +943,8 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Hid AppSample and MapGenie importers (they are still in development).
 - Even more improved error handling and reporting.
   - Created a component error wrapper, currently applied to the Editor tab of the Map controls. If it crashes, only that part of the UI will display the error handler.
+- Ported from NPM to Yarn to allow forcing dependency resolution.
+  - There's a bug which prevents upgrading to berry.
 - Fixed an issue where test markers appeared on the corners of the map.
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.

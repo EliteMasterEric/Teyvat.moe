@@ -2,7 +2,7 @@ import L from 'leaflet';
 import React from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { createTileLayerComponent } from '@react-leaflet/core';
+import { createTileLayerComponent, LeafletContext } from '@react-leaflet/core';
 
 import { useImageExtension } from '~/components/interface/Image';
 import {
@@ -14,6 +14,7 @@ import {
   MAP_LATLNG_OFFSET,
   MAP_CSS_OFFSET,
 } from '~/components/views/map/LayerConstants';
+import ErrorHandler from '../../error/ErrorHandler';
 
 /**
  * Create a new Leaflet object extending the existing TileLayer.
@@ -62,6 +63,14 @@ const createTileLayer = ({ url, ...options }, ctx) => {
 
 const AdvancedTileLayer = createTileLayerComponent(createTileLayer);
 
+const ErrorTileLayer = ({ error }) => {
+  return (
+    <div style={{ color: 'white', fontSize: 24 }}>
+      [TILELAYER ERROR]: {error.name}: {error.message}
+    </div>
+  );
+};
+
 const TileLayer = () => {
   // Check for WebP support.
   const ext = useImageExtension(true);
@@ -72,18 +81,20 @@ const TileLayer = () => {
   const tileUrl = TILE_URL.replace('{ext}', ext);
 
   return (
-    <AdvancedTileLayer
-      url={tileUrl}
-      noWrap
-      latLngOffset={MAP_LATLNG_OFFSET}
-      cssOffset={MAP_CSS_OFFSET}
-      bounds={MAP_BOUNDS}
-      errorTileUrl={`tiles/blank.${ext}`}
-      maxZoom={MAXIMUM_ZOOM}
-      minZoom={MINIMUM_ZOOM}
-      maxNativeZoom={MAXIMUM_NATIVE_ZOOM}
-      minNativeZoom={MINIMUM_ZOOM}
-    />
+    <ErrorHandler errorHandler={ErrorTileLayer}>
+      <AdvancedTileLayer
+        url={tileUrl}
+        noWrap
+        latLngOffset={MAP_LATLNG_OFFSET}
+        cssOffset={MAP_CSS_OFFSET}
+        bounds={MAP_BOUNDS}
+        errorTileUrl={`tiles/blank.${ext}`}
+        maxZoom={MAXIMUM_ZOOM}
+        minZoom={MINIMUM_ZOOM}
+        maxNativeZoom={MAXIMUM_NATIVE_ZOOM}
+        minNativeZoom={MINIMUM_ZOOM}
+      />
+    </ErrorHandler>
   );
 };
 
