@@ -3,6 +3,7 @@ require 'open-uri'
 require 'fileutils'
 require 'json'
 require 'json/next'
+require 'parallel'
 require 'optparse'
 require 'object_hash_rb' # Made by yours truely for this project!
 require 'pathname'
@@ -23,8 +24,19 @@ def write_file(filepath, data)
 end
 
 def download_file(url, destination)
+  FileUtils.makedirs(File.dirname(destination))
   download = URI.open(url)
   IO.copy_stream(download, destination)
+  return true
+rescue OpenURI::HTTPError => error
+  if error.io.status[0] == "404" then
+    # Gracefully skip the file.
+    puts("    DOWNLOAD FAILED: Bad URL.")
+    return false
+  end
+  # Else, cancel the script.
+  puts(error)
+  throw error
 end
 
 def truncate_number(input)
@@ -56,31 +68,50 @@ end
 
 def download_marker_media(input_json, absolute_name, output)
   output_json = deep_dup(input_json)
+  
+  download_success = false
 
   if (/\.(png|jpg)$/.match(output_json['popupMedia'])) then
     partial_id = output_json['id'][0, 7] # First 7 characters.
     output_fileext = File.extname(output_json['popupMedia'])
     output_filename = "#{output}/#{partial_id}#{output_fileext}"
     
-    puts("  Downloading image to #{absolute_name}/#{partial_id}")
+    puts("    Downloading image to #{absolute_name}/#{partial_id}")
 
-    download_file(output_json['popupMedia'], output_filename)
+    download_success = download_file(output_json['popupMedia'], output_filename)
     
-    output_json['popupMedia'] = "#{absolute_name}/#{partial_id}"
+    if download_success then
+      output_json['popupMedia'] = "#{absolute_name}/#{partial_id}"
+    else
+      # The URL was bad, remove it.
+      output_json.delete('popupMedia')
+    end
+    # True means the data changed.
+    [true, output_json]
+  else 
+    # False means the data didn't change.
+    return [false, output_json]
   end
-
-  # return the data.
-  output_json
 end
 
 def download_feature_media(input_json, absolute_name, output)
   # Duplicate the default feature, and merge our data in.
   output_json = deep_dup(input_json)
 
-  output_json['data'] = input_json['data'].map { |x| download_marker_media(x, absolute_name, output) }
+  # Works in parallel using multithreading. Cool!
+  mapped_data = Parallel.map(input_json['data']) do |x|
+    download_marker_media(x, absolute_name, output)
+  end
+  
+  any_success = mapped_data.any? {|pair| pair[0]}
 
   # Return data.
-  output_json
+  if any_success then
+    output_json['data'] = mapped_data.map {|pair| pair[1]}
+    return output_json
+  else
+    return nil
+  end
 end
 
 def process_data_file(input, output)
@@ -95,7 +126,12 @@ def process_data_file(input, output)
   media_path = build_media_path(input)
   output_json = download_feature_media(input_json, media_path, output)
 
-  write_file(File.join(output, File.basename(input)), JSON.pretty_generate(output_json))
+  if output_json.nil?
+    puts("  Ignoring JSON file, no data changed.")
+  else
+    puts("Writing JSON data...")
+    write_file(File.join(output, File.basename(input)), JSON.pretty_generate(output_json))
+  end
 end
 
 def parse_options
@@ -123,7 +159,8 @@ def main_dirmode(options)
     # Structure will match folder structure of input_path.
     input_extname = File.extname(input_path)
     input_basename = File.basename(input_path, input_extname)
-    output_path = File.join(options[:output], input_basename)
+    input_dirname = File.dirname(input_path)
+    output_path = File.join(options[:output], input_dirname, input_basename)
 
     # Display what is being processed.
     puts("Processing file #{input_path} into #{output_path}...")

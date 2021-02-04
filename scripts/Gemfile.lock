@@ -3,6 +3,7 @@ GEM
   specs:
     json-next (1.2.1)
     object_hash_rb (0.1.3)
+    parallel (1.20.1)
     spherical_mercator (1.1.1)
 
 PLATFORMS
@@ -12,6 +13,7 @@ PLATFORMS
 DEPENDENCIES
   json-next
   object_hash_rb
+  parallel
   spherical_mercator
 
 BUNDLED WITH

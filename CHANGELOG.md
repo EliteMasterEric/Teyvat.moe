@@ -940,6 +940,12 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 - Editor data is now migrated to MSFv2.
   - Incremented preferences version to GM_007.
+- Added localization strings:
+  - editor: The name of the Editor.
+  - message-editor-import-success: The popup which appears when importing Editor data.
+  - error-handler-component-message: The message displayed on the Component error handler, where {component} will be replaced with the translated name of the specific component which failed.
+- Fixed an issue where many markers had not had their images imported.
+  - This imports over 300 chest and other images from Yuanshen.site.
 - Hid AppSample and MapGenie importers (they are still in development).
 - Fixed a bug which caused a "can't use useLeafletContext() outside a MapContainer" error.
   - Ported from NPM to Yarn to allow forcing dependency resolution.
