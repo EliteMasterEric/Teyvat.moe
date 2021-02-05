@@ -7,6 +7,7 @@
     "url": "https://github.com/GenshinMap/genshinmap.github.io/issues"
   },
   "scripts": {
+    "preinstall": "yarn policies set-version 1.22.10",
     "start:dev": "npx react-app-rewired start",
     "start:prod": "npx serve -s build",
     "build": "npx react-app-rewired build",
@@ -39,6 +40,7 @@
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
+    "googleapis": "^67.0.0",
     "joi": "^17.3.0",
     "leaflet": "github:MasterEric/Leaflet#dist",
     "leaflet-draw": "^1.0.4",

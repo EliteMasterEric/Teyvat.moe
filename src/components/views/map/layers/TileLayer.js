@@ -2,7 +2,7 @@ import L from 'leaflet';
 import React from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { createTileLayerComponent, LeafletContext } from '@react-leaflet/core';
+import { createTileLayerComponent } from '@react-leaflet/core';
 
 import { useImageExtension } from '~/components/interface/Image';
 import {

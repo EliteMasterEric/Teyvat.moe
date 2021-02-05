@@ -11,7 +11,8 @@ import { t, f } from '~/components/i18n/Localization';
  */
 const IMGUR_UPLOAD_URL = 'https://api.imgur.com/3/image';
 /**
- * A public client ID used to anonymously upload an image.
+ * This is a PUBLIC API key used for Imgur services.
+ * It does not need to be placed in a keystore.
  */
 const CLIENT_ID = '0c84ca5aba54552';
 

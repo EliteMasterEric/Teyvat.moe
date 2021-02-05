@@ -55,7 +55,6 @@ const _MapControlsEditorMarker = ({
 }) => {
   const classes = useStyles();
 
-  console.log(marker);
   const markerId = marker?.id ?? '';
   const markerTitle = marker?.popupTitle?.en ?? '';
   const markerContent = marker?.popupContent?.en ?? '';
