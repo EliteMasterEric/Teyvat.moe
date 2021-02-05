@@ -40,7 +40,6 @@ export const importEditorDataFromGMLegacy = (data) => {
   const editorElements = data.editor.feature.data;
 
   const modifiedElements = editorElements.map((element) => {
-    console.log(element);
     const isRoute = Array.isArray(element.geometry.coordinates[0]);
     const coordinates = isRoute
       ? element.geometry.coordinates.map((coord) => reprojectCoordinate(coord))
