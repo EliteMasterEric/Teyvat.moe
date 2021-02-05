@@ -1,0 +1,7 @@
+[context.develop.environment]
+  YARN_VERSION = "1.22.10"
+  NODE_VERSION = "14"
+
+[context.master.environment]
+  YARN_VERSION = "1.22.10"
+  NODE_VERSION = "14"
