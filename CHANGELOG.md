@@ -957,3 +957,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed an issue where test markers appeared on the corners of the map.
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.
+
+# 0.11.0 Google Drive Sync
+
+- Authenticate on the 

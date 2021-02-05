@@ -13,6 +13,7 @@
   "map-controls-tab-features": "Features",
   "map-controls-tab-routes": "Routes",
   "map-controls-tab-editor-elements": "Elements",
+  "map-controls-tab-sync-import": "Sync and Import",
   "map-controls-tab-options": "Options",
 
   "category-event": "Event",
@@ -106,7 +107,6 @@
   "popup-submit-editor-data-subtitle-a": "A feature can only be in one category and one region.",
   "popup-submit-editor-data-subtitle-b": "Enable marker clustering for common features like Carrots, and disable for uncommon ones like Statues.",
   "popup-submit-editor-data-cluster-markers": "Cluster Markers?",
-  "popup-export-data-content": "Below is exported data for GenshinMap.",
   "popup-import-hint": "Paste data here...",
 
   "message-import-error-malformed-json": "Your import data appears to be malformed. Did you mean to select a different import option?",
@@ -157,5 +157,8 @@
   "error-handler-message": "GenshinMap experienced an error and had to close.",
   "error-handler-component-message": "The {component} view has encountered a problem.",
   "error-handler-instruction": "Please click the link below to submit an error report.",
-  "error-handler-submit": "Submit to GitHub"
+  "error-handler-submit": "Submit to GitHub",
+
+  "sync-google-drive": "Sync with Google Drive",
+  "popup-export-data-content": "The text box below contains.",
 }
