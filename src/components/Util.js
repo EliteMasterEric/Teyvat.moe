@@ -328,3 +328,7 @@ export const importFromContext = (context, key) => {
     return null;
   }
 };
+
+export const truncateFloat = (value, decimals = 0) => {
+  return Math.trunc(value * 10 ** decimals) / 10 ** decimals;
+};

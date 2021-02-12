@@ -8,6 +8,8 @@
   },
   "scripts": {
     "preinstall": "yarn policies set-version 1.22.10",
+    "install:dev": "yarn install --prod=false",
+    "install:prod": "yarn install --prod=true",
     "start:dev": "npx react-app-rewired start",
     "start:prod": "npx serve -s build",
     "build": "npx react-app-rewired build",

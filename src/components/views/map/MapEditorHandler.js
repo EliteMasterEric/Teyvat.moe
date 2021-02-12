@@ -12,7 +12,7 @@ import {
   lineTextProperties,
 } from '~/components/views/map/LayerConstants';
 import { appendElement, setElementProperty } from '~/redux/ducks/editor';
-import { hashObject } from '~/components/Util';
+import { hashObject, truncateFloat } from '~/components/Util';
 
 const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute }) => {
   // A separate state must be used because the type of currentEditable can't be determined
@@ -24,7 +24,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     const { _latlng: latlng } = editable;
 
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngFormatted = [latlng?.lat, latlng?.lng];
+    const latlngFormatted = [truncateFloat(latlng?.lat, 5), truncateFloat(latlng?.lng, 5)];
     const id = hashObject(latlngFormatted);
 
     // Switched to MSFv2.
@@ -114,6 +114,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     },
 
     'editable:drawing:commit': (_event) => {
+      console.log('drawing commit');
       if (editorState === 'createRoute') {
         placeRoute(currentEditable);
         return;
@@ -121,6 +122,9 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
       if (editorState === 'createMarker') {
         placeMarker(currentEditable);
+
+        // CTRL-click to place an additional marker.
+        // if (event.originalEvent.ctrlKey) {
       }
     },
 

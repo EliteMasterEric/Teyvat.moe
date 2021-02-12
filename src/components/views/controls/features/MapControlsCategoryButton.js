@@ -3,6 +3,7 @@
  * within the Features and Routes tabs of the Map controls.
  */
 
+import { makeStyles, Button } from '@material-ui/core';
 import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -12,18 +13,48 @@ import { getEmptyFeatureCategories, getEmptyRouteCategories } from '~/components
 import { t } from '~/components/i18n/Localization';
 import { setControlsCategory } from '~/redux/ducks/ui';
 
-import './MapControlsCategoryButton.css';
+const useStyles = makeStyles((_theme) => ({
+  categoryButton: {
+    margin: '4px 4px 4px 4px',
+    padding: '8px 4px 8px 4px',
+
+    flex: '1 0 25%',
+  },
+}));
 
 const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enableCategory }) => {
+  const classes = useStyles();
+
   const category = MapCategories[categoryKey];
   const displayed = (category?.enabled ?? true) && !categoryEmpty;
 
+  if (!displayed) return null;
+
+  const buttonStyle = {
+    backgroundColor: active
+      ? category?.style?.enabled?.bg
+      : category?.style?.disabled?.bg ?? '#FFF',
+    color: active ? category?.style?.enabled?.text : category?.style?.disabled?.text ?? '#000',
+    flexBasis: category?.style?.fullWidth ? '95%' : null,
+  };
+
+  return (
+    <Button
+      onClick={enableCategory}
+      variant="contained"
+      style={buttonStyle}
+      className={classes.categoryButton}
+    >
+      {t(category.nameKey)}
+    </Button>
+  );
+
+  // eslint-disable-next-line no-unreachable
   return (
     <div
       onClick={enableCategory}
       onKeyDown={enableCategory}
       role="button"
-      aria-label={active ? 'Close Filter Window' : 'Open Filter Window'}
       tabIndex={0}
       className={clsx(
         'map-controls-category',
@@ -31,13 +62,6 @@ const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enable
         'noselect',
         displayed ? '' : 'display-none'
       )}
-      style={{
-        minWidth: category?.style?.fullWidth ?? false ? '100%' : 0,
-        backgroundColor: active
-          ? category?.style?.enabled?.bg
-          : category?.style?.disabled?.bg ?? '#FFF',
-        color: active ? category?.style?.enabled?.text : category?.style?.disabled?.text ?? '#000',
-      }}
     >
       {t(category.nameKey)}
     </div>

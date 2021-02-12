@@ -156,6 +156,16 @@ const _FeatureMarker = ({
 
   const onCopyPermalink = () => copyPermalink(marker.id);
 
+  const onSwitchCompleted = (value) => {
+    if (value === !!completed) return;
+
+    if (value) {
+      markFeature();
+    } else {
+      unmarkFeature();
+    }
+  };
+
   /* eslint-disable no-param-reassign */
   const eventHandlers = {
     add: (event) => {
@@ -221,7 +231,7 @@ const _FeatureMarker = ({
                     color="primary"
                     label={<AssignmentTurnedInIcon />}
                     value={Boolean(completed)}
-                    onChange={(value) => (value ? markFeature() : unmarkFeature())}
+                    onChange={onSwitchCompleted}
                   />
                 </Box>
               </Tooltip>

@@ -98,7 +98,7 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
   );
 };
 
-const _RouteLine = ({ route, editable = false, allowExternalMedia = false }) => {
+const _RouteLine = ({ route, editable = false, allowExternalMedia = false, routeKey = '' }) => {
   // CSS classes.
   const classes = useStyles();
 
@@ -125,6 +125,7 @@ const _RouteLine = ({ route, editable = false, allowExternalMedia = false }) => 
       // Attributes passed to TextPath.setText.
       text={route.routeText}
       repeat
+      id={routeKey}
       attributes={{
         dy: 6,
         fill: route.routeColor,

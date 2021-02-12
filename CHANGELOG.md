@@ -957,3 +957,38 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed an issue where test markers appeared on the corners of the map.
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.
+
+# 0.10.9
+
+- Fixed the category buttons in the feature tap not using material components.
+- Updated the following features:
+  - Mondstadt (Domain): Cleaned up the positions to be more accurate.
+  - Mondstadt (Statue of the Seven): Cleaned up the positions to be more accurate.
+  - [ ] Mondstadt (Teleporter):
+  - [ ] Mondstadt (Shrine):
+  - [ ] Liyue (Domain):
+  - [ ] Liyue (Statue):
+  - [ ] Liyue (Teleporter):
+  - [ ] Liyue (Shrine):
+  - [ ] Mondstadt Bosses
+    - [ ] Positions
+    - [ ] Descriptions
+  - [ ] Liyue Bosses
+    - [ ] Positions
+    - [ ] Descriptions
+- [ ] World Border fixes
+- [ ] Map Graphic changes
+- [ ] Editor route editing fix
+- Fixed some issues with routes in the editor.
+- Fixed a bug where opening a marker popup would reset the completion time.
+- Fixed a bug where the editor would output bad coordinates.
+
+
+
+- Removed the "Cluster Markers" option from the editor submission form.
+- Created localization keys:
+  - social-visit-github: Visit us on GitHub
+  - social-visit-discord: Visit us on Discord
+- Removed localization keys:
+  - popup-submit-editor-data-subtitle-b
+  - popup-submit-editor-data-cluster-markers

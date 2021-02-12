@@ -6,7 +6,6 @@
 import {
   MenuItem,
   Select,
-  Switch,
   Button,
   Dialog,
   DialogContent,
@@ -16,7 +15,6 @@ import {
   FormControl,
   InputLabel,
   Typography,
-  Box,
 } from '@material-ui/core';
 import React, { useState } from 'react';
 
@@ -48,7 +46,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
   const [submissionDescription, setSubmissionDescription] = React.useState('');
   const [submissionRegion, setSubmissionRegion] = React.useState('');
   const [submissionCategory, setSubmissionCategory] = React.useState('');
-  const [clusterMarkers, setClusterMarkers] = React.useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const classes = useStyles();
 
@@ -81,7 +78,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
       },
       region: submissionRegion,
       category: submissionCategory,
-      cluster: clusterMarkers ? 'on' : 'off',
       icons: {
         filter: 'none',
         base: {
@@ -158,25 +154,6 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
             </FormControl>
             <Typography className={classes.subtitle} gutterBottom>
               {t('popup-submit-editor-data-subtitle-a')}
-            </Typography>
-            <Box
-              className={classes.formField}
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Typography className={classes.label} flexGrow={1}>
-                {t('popup-submit-editor-data-cluster-markers')}
-              </Typography>
-              <Switch
-                size="small"
-                color="primary"
-                onChange={(event) => setClusterMarkers(event.target.checked)}
-                checked={clusterMarkers}
-              />
-            </Box>
-            <Typography className={classes.subtitle} gutterBottom>
-              {t('popup-submit-editor-data-subtitle-b')}
             </Typography>
           </BorderBox>
         </DialogContent>
