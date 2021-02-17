@@ -40,27 +40,25 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('popup-clear-editor-data-title')}
-        </DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>{t('clear-editor-data')}</DialogTitle>
         <DialogContent>
-          <DialogContentText> {t('popup-clear-editor-data-content')}</DialogContentText>
+          <DialogContentText> {t('clear-editor-data-content')}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button
             variant="contained"
             size="large"
-            aria-label={t('popup-cancel')}
+            aria-label={t('cancel')}
             tabIndex={0}
             onClick={() => setIsDialogOpen(false)}
           >
-            {t('popup-cancel')}
+            {t('cancel')}
           </Button>
           <Button
             variant="contained"
             size="large"
             color="primary"
-            aria-label={t('popup-confirm')}
+            aria-label={t('confirm')}
             tabIndex={0}
             onClick={() => {
               onConfirm();
@@ -71,7 +69,7 @@ const ClearEditorDataPopup = ({ trigger, onConfirm }) => {
               setIsDialogOpen(false);
             }}
           >
-            {t('popup-confirm')}
+            {t('confirm')}
           </Button>
         </DialogActions>
       </Dialog>

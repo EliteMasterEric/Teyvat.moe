@@ -68,7 +68,7 @@ const _MapControlsOptionsLanguage = ({ options, setOverrideLang }) => {
 
   return (
     <BorderBox grow={false} direction="row" alignItems="center">
-      <Typography className={classes.label}>{t('options-language')}</Typography>
+      <Typography className={classes.label}>{t('language')}</Typography>
       <Select value={currentLangCode} onChange={(event) => setOverrideLang(event.target.value)}>
         {langOptions.map((lang) => (
           <MenuItem key={lang.value} value={lang.value}>

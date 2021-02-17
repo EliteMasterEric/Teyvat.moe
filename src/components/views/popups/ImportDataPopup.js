@@ -26,7 +26,16 @@ const useStyles = makeStyles({
   },
 });
 
-const _ImportDataPopup = ({ title, content, onConfirm, trigger, error = '', clearError }) => {
+const _ImportDataPopup = ({
+  title,
+  content,
+  contentSupports, // Leave null to avoid displaying.
+  bookmarklet = '',
+  onConfirm,
+  trigger,
+  error = '',
+  clearError,
+}) => {
   const [textarea, setTextarea] = React.useState('');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const classes = useStyles();
@@ -57,13 +66,20 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error = '', clea
         <DialogContent>
           <DialogContentText>
             <SafeHTML>{content}</SafeHTML>
+            {contentSupports && <SafeHTML>{contentSupports}</SafeHTML>}
+            {bookmarklet !== '' ? (
+              <>
+                <SafeHTML>{t('bookmarklet-content')}</SafeHTML>
+                <a href={bookmarklet}>{t('bookmarklet-click-link')}</a>
+              </>
+            ) : null}
           </DialogContentText>
           <InputTextArea
             text={textarea}
             onChange={(value) => setTextarea(value)}
             fullWidth
             error={error !== ''}
-            helperText={error !== '' ? error : t('popup-import-hint')}
+            helperText={error !== '' ? error : t('paste-here')}
           />
         </DialogContent>
         <DialogActions>
@@ -71,21 +87,21 @@ const _ImportDataPopup = ({ title, content, onConfirm, trigger, error = '', clea
             variant="contained"
             size="large"
             color="primary"
-            aria-label={t('popup-cancel')}
+            aria-label={t('cancel')}
             tabIndex={0}
             onClick={closePopup}
           >
-            {t('popup-cancel')}
+            {t('cancel')}
           </Button>
           <Button
             variant="contained"
             size="large"
             color="primary"
-            aria-label={t('popup-confirm')}
+            aria-label={t('confirm')}
             tabIndex={0}
             onClick={onClickConfirm}
           >
-            {t('popup-confirm')}
+            {t('confirm')}
           </Button>
         </DialogActions>
       </Dialog>

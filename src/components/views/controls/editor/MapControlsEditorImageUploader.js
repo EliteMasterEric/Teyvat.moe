@@ -109,7 +109,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
     if (fileRejections.length >= 1) {
       if (fileRejections[0]?.errors.length >= 1) {
         const errorCode = fileRejections[0]?.errors[0]?.code;
-        setErrorMsg(t(`editor-image-upload-error-${errorCode}`));
+        setErrorMsg(t(`image-upload-error-${errorCode}`));
       }
     }
   }, []);
@@ -135,13 +135,13 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
       case 'success':
         return (
           <Typography flexGrow={1} width="100%" fontSize="0.8em" color="green">
-            {t('editor-image-upload-success')}
+            {t('image-upload-success')}
           </Typography>
         );
       case 'progress':
         return (
           <Typography flexGrow={1} width="100%" fontSize="0.8em" color="orangered">
-            {t('editor-image-upload-progress')}
+            {t('image-upload-progress')}
           </Typography>
         );
       default:
@@ -160,8 +160,8 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
       <Box display="flex" flexDirection="row" alignItems="center" {...getRootProps()}>
         {/* The image URL. */}
         <InputTextField
-          label={t('editor-media-url-label')}
-          helperText={t('editor-media-url-help')}
+          label={t('media-url')}
+          helperText={t('media-url-hint')}
           FormHelperTextProps={{
             className: clsx(
               isDragActive
@@ -184,7 +184,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
         {/* The uploaded image. */}
         <input {...getInputProps()} />
 
-        <Tooltip title={t('editor-image-upload-tooltip')}>
+        <Tooltip title={t('image-upload-tooltip')}>
           <IconButton
             variant="contained"
             color="secondary"
@@ -201,7 +201,7 @@ const MapControlsEditorImageUploader = ({ elementMedia, setElementMedia }) => {
           >
             <CloudUploadIcon />
             <Typography className={classes.dropzoneButtonText}>
-              {t('editor-image-upload-dropzone')}
+              {t('image-upload-dropzone')}
             </Typography>
           </IconButton>
         </Tooltip>

@@ -34,8 +34,8 @@ const _MapControlSummary = ({ displayed, displayedFeatures }) => {
 
   return (
     <BorderBox displayed={displayed}>
-      <Typography className={classes.header}>{t('map-controls-tab-summary')}</Typography>
-      <Typography className={classes.subtitle}>{t('map-summary-subtitle')}</Typography>
+      <Typography className={classes.header}>{t('summary')}</Typography>
+      <Typography className={classes.subtitle}>{t('summary-subtitle')}</Typography>
       {displayedFeatures.map((featureKey) => (
         <MapControlSummaryFeature key={featureKey} featureKey={featureKey} />
       ))}

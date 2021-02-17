@@ -213,7 +213,7 @@ const _FeatureMarker = ({
             <Typography className={classes.popupTitle}>{title}</Typography>
           ) : (
             <Typography className={classes.popupTitle}>
-              {f('editor-elements-marker-id', { id: marker.id.substring(0, 7) })}
+              {f('marker-id-format', { id: marker.id.substring(0, 7) })}
             </Typography>
           )}
           <Box>
@@ -224,7 +224,7 @@ const _FeatureMarker = ({
           ) : null}
           {!editable ? (
             <Box className={classes.actionContainer}>
-              <Tooltip title={t('map-popup-completed-label')}>
+              <Tooltip title={t('completed')}>
                 <Box className={classes.innerActionContainer}>
                   <InputSwitch
                     size="small"
@@ -235,7 +235,7 @@ const _FeatureMarker = ({
                   />
                 </Box>
               </Tooltip>
-              <Tooltip title={t('map-popup-copy-permalink-label')}>
+              <Tooltip title={t('copy-permalink')}>
                 <Box className={classes.innerActionContainer}>
                   <IconButton onClick={onCopyPermalink}>
                     <LinkIcon />
@@ -246,7 +246,7 @@ const _FeatureMarker = ({
           ) : null}
           {completed ? (
             <Typography className={classes.completedSubtitle}>
-              {f('map-popup-completed-format', {
+              {f('completed-time-format', {
                 time: displayUnixTimestamp(completed),
               })}
             </Typography>

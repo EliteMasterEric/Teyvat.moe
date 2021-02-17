@@ -44,7 +44,7 @@ export const uploadImage = async (file) => {
       return response.data.data.link;
     })
     .catch((error) => {
-      let localizedString = f('editor-image-upload-error-generic', {
+      let localizedString = f('image-upload-error-generic', {
         code: error?.response?.status?.error?.code ?? '???',
       });
 
@@ -52,7 +52,7 @@ export const uploadImage = async (file) => {
         switch (error.response.status) {
           case 400:
             if (error.response.status.error.code === 1003)
-              localizedString = t('editor-image-upload-error-file-invalid-type');
+              localizedString = t('image-upload-error-file-invalid-type');
             break;
           default:
             console.error(error.response);

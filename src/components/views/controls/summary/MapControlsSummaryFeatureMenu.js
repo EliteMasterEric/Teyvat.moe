@@ -60,7 +60,7 @@ const _MapControlSummaryFeatureMenu = ({
       <IconButton
         classes={{ root: classes.menuButtonRoot }}
         variant="contained"
-        aria-label={t('map-summary-menu-open')}
+        aria-label={t('open-menu')}
         onClick={handleOpen}
       >
         <MenuIcon />
@@ -81,16 +81,16 @@ const _MapControlSummaryFeatureMenu = ({
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={locateFeature}>{t('map-summary-menu-locate')}</MenuItem>
+        <MenuItem onClick={locateFeature}>{t('locate')}</MenuItem>
         {doesExpire ? (
-          <MenuItem onClick={clearExpiredFeature}>{t('map-summary-menu-clear-expired')}</MenuItem>
+          <MenuItem onClick={clearExpiredFeature}>{t('clear-refreshed-markers')}</MenuItem>
         ) : null}
         {displayed ? (
-          <MenuItem onClick={hideFeature}>{t('map-summary-menu-hide-feature')}</MenuItem>
+          <MenuItem onClick={hideFeature}>{t('hide-feature')}</MenuItem>
         ) : (
-          <MenuItem onClick={showFeature}>{t('map-summary-menu-show-feature')}</MenuItem>
+          <MenuItem onClick={showFeature}>{t('show-feature')}</MenuItem>
         )}
-        <MenuItem onClick={clearAllFeature}>{t('map-summary-menu-clear-all')}</MenuItem>
+        <MenuItem onClick={clearAllFeature}>{t('clear-all')}</MenuItem>
       </Menu>
     </>
   );

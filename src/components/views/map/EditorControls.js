@@ -91,7 +91,7 @@ const _EditorControls = ({
             <MapCustomControlButton
               onClick={onDoneClick}
               className={classes.button}
-              tooltip={t('map-editor-done-tooltip')}
+              tooltip={t('done')}
             >
               <CheckCircleIcon />
             </MapCustomControlButton>
@@ -100,7 +100,7 @@ const _EditorControls = ({
             <MapCustomControlButton
               onClick={onCancelClick}
               className={classes.button}
-              tooltip={t('map-editor-cancel-tooltip')}
+              tooltip={t('cancel')}
             >
               <CancelIcon />
             </MapCustomControlButton>
@@ -113,14 +113,14 @@ const _EditorControls = ({
           <MapCustomControlButton
             onClick={onMarkerClick}
             className={classes.button}
-            tooltip={t('map-editor-marker-tooltip')}
+            tooltip={t('marker')}
           >
             <PlaceIcon />
           </MapCustomControlButton>
           <MapCustomControlButton
             onClick={onRouteClick}
             className={classes.button}
-            tooltip={t('map-editor-route-tooltip')}
+            tooltip={t('route')}
           >
             <TimelineIcon />
           </MapCustomControlButton>

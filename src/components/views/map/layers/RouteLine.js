@@ -139,7 +139,7 @@ const _RouteLine = ({ route, editable = false, allowExternalMedia = false, route
             <Typography className={classes.popupTitle}>{title}</Typography>
           ) : (
             <Typography className={classes.popupTitle}>
-              {f('editor-elements-route-id', { id: route.id.substring(0, 7) })}
+              {f('route-id-format', { id: route.id.substring(0, 7) })}
             </Typography>
           )}
           <Box>
@@ -150,7 +150,7 @@ const _RouteLine = ({ route, editable = false, allowExternalMedia = false, route
           ) : null}
           {!editable ? (
             <Box className={classes.actionContainer}>
-              <Tooltip title={t('map-popup-copy-permalink-label')}>
+              <Tooltip title={t('copy-permalink')}>
                 <Box className={classes.innerActionContainer}>
                   <IconButton onClick={onCopyPermalink}>
                     <LinkIcon />

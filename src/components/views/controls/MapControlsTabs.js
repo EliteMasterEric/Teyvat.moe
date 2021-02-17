@@ -9,6 +9,7 @@ import {
   Place as PlaceIcon,
   Satellite as SatelliteIcon,
   Settings as SettingsIcon,
+  Sync as SyncIcon,
   Timeline as TimelineIcon,
 } from '@material-ui/icons';
 import React from 'react';
@@ -30,51 +31,58 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
   const tabs = [
     {
       enabled: !editorEnabled,
-      label: t('map-controls-tab-help'),
+      label: t('help'),
       value: 'help',
       order: 11,
       icon: <LiveHelpIcon />,
     },
     {
       enabled: !editorEnabled,
-      label: t('map-controls-tab-summary'),
+      label: t('summary'),
       value: 'summary',
       order: 12,
       icon: <SatelliteIcon />,
     },
     {
       enabled: editorEnabled,
-      label: t('map-controls-tab-editor-help'),
+      label: t('editor-help'),
       value: 'help',
       order: 21,
       icon: <LiveHelpIcon />,
     },
     {
       enabled: editorEnabled,
-      label: t('map-controls-tab-editor-elements'),
+      label: t('editor-elements'),
       value: 'elements',
       order: 22,
       icon: <CreateIcon />,
     },
     {
       enabled: !editorEnabled,
-      label: t('map-controls-tab-features'),
+      label: t('features'),
       value: 'features',
       order: 31,
       icon: <PlaceIcon />,
     },
     {
       enabled: !editorEnabled,
-      label: t('map-controls-tab-routes'),
+      label: t('routes'),
       value: 'routes',
       order: 32,
       icon: <TimelineIcon />,
     },
     {
       enabled: true,
-      label: t('map-controls-tab-options'),
-      value: 'options',
+      label: t('sync-data'),
+      value: 'sync',
       order: 41,
+      icon: <SyncIcon />,
+    },
+    {
+      enabled: true,
+      label: t('options'),
+      value: 'options',
+      order: 42,
       icon: <SettingsIcon />,
     },
   ];
@@ -86,6 +94,7 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
       value={tab}
       onChange={setTab}
       tabs={tabs}
+      defaultTab="options"
       icons
     />
   );

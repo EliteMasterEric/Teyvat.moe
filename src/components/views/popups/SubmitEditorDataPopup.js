@@ -99,12 +99,10 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('popup-submit-editor-data-title')}
-        </DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>{t('submit-editor-data')}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            <SafeHTML>{t('popup-submit-editor-data-content')}</SafeHTML>
+            <SafeHTML>{t('submit-editor-data-content')}</SafeHTML>
           </DialogContentText>
           <BorderBox
             display="flex"
@@ -115,19 +113,19 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
           >
             <InputTextField
               value={submissionName}
-              label={t('popup-submit-editor-data-feature-name')}
+              label={t('feature-name')}
               onChange={setSubmissionName}
               className={classes.formField}
             />
             <InputTextArea
               rows={3}
               value={submissionDescription}
-              label={t('popup-submit-editor-data-description')}
+              label={t('feature-description')}
               onChange={setSubmissionDescription}
               className={classes.formField}
             />
             <FormControl className={classes.formField}>
-              <InputLabel>{t('popup-submit-editor-data-category')}</InputLabel>
+              <InputLabel>{t('category')}</InputLabel>
               <Select
                 value={submissionCategory}
                 onChange={(event) => setSubmissionCategory(event.target.value)}
@@ -140,7 +138,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               </Select>
             </FormControl>
             <FormControl className={classes.formField}>
-              <InputLabel>{t('popup-submit-editor-data-region')}</InputLabel>
+              <InputLabel>{t('region')}</InputLabel>
               <Select
                 value={submissionRegion}
                 onChange={(event) => setSubmissionRegion(event.target.value)}
@@ -153,7 +151,7 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
               </Select>
             </FormControl>
             <Typography className={classes.subtitle} gutterBottom>
-              {t('popup-submit-editor-data-subtitle-a')}
+              {t('submit-editor-data-subtitle-category-region')}
             </Typography>
           </BorderBox>
         </DialogContent>
@@ -161,22 +159,22 @@ const SubmitEditorDataPopup = ({ trigger, onConfirm }) => {
           <Button
             variant="contained"
             size="large"
-            aria-label={t('popup-cancel')}
+            aria-label={t('cancel')}
             tabIndex={0}
             onClick={() => setIsDialogOpen(false)}
           >
-            {t('popup-cancel')}
+            {t('cancel')}
           </Button>
           <Button
             variant="contained"
             size="large"
-            aria-label={t('popup-confirm')}
+            aria-label={t('confirm')}
             tabIndex={0}
             color="primary"
             onClick={onClickConfirm}
             disabled={!isValid()}
           >
-            {t('popup-confirm')}
+            {t('confirm')}
           </Button>
         </DialogActions>
       </Dialog>

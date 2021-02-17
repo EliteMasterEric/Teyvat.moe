@@ -277,6 +277,7 @@ export const useDebouncedState = (defaultValue, onStateChanged, debounce = 300) 
   // The value will be committed to the state once it has been unchanged for <debounce> milliseconds.
   const [stateValue, setStateValue] = React.useState(defaultValue);
 
+  // Whenever the value passed in changes, update the internal state.
   React.useEffect(() => {
     setStateValue(defaultValue);
   }, [defaultValue]);

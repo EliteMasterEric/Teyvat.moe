@@ -2,7 +2,7 @@
  * Provides the interface for the Editor tab in the Map controls.
  */
 
-import { Button } from '@material-ui/core';
+import { Button, Typography, makeStyles } from '@material-ui/core';
 import _ from 'lodash';
 import newGithubIssueUrl from 'new-github-issue-url';
 import React from 'react';
@@ -21,6 +21,19 @@ import BorderBox from '~/components/interface/BorderBox';
 import { TabView } from '~/components/interface/Tabs';
 import { handleError } from '~/components/views/error/ErrorHandler';
 import ComponentErrorHandler from '~/components/views/error/ComponentErrorHandler';
+
+const useStyles = makeStyles((_theme) => ({
+  header: {
+    fontSize: 24,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+}));
 
 const MapControlsEditorElements = handleError(({ elements }) => {
   return (
@@ -44,6 +57,8 @@ const MapControlsEditorElements = handleError(({ elements }) => {
 // shadow their associated action generators.
 /* eslint-disable no-shadow */
 const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }) => {
+  const classes = useStyles();
+
   const submitEditorData = async (formData) => {
     const dataObject = {
       ...formData,
@@ -67,6 +82,8 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
 
   return (
     <TabView displayed={displayed}>
+      <Typography className={classes.header}>{t('editor-elements')}</Typography>
+      <Typography className={classes.subtitle}>{t('editor-elements-subtitle')}</Typography>
       <MapControlsEditorElements elements={editorData.feature.data} />
       <ClearEditorDataPopup
         trigger={
@@ -75,10 +92,10 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
             variant="contained"
             size="large"
             color="primary"
-            aria-label="Clear"
+            aria-label={t('clear-editor-data')}
             tabIndex={0}
           >
-            {t('map-editor-button-clear')}
+            {t('clear-editor-data')}
           </Button>
         }
         onConfirm={() => {
@@ -94,10 +111,10 @@ const _MapControlsEditor = ({ displayed, editorData, resetTab, clearEditorData }
             variant="contained"
             size="large"
             color="primary"
-            aria-label="Clear"
+            aria-label={t('submit-editor-data')}
             tabIndex={0}
           >
-            {t('map-editor-button-submit')}
+            {t('submit-editor-data')}
           </Button>
         }
         onConfirm={submitEditorData}
@@ -111,7 +128,7 @@ const mapStateToProps = (state) => ({
   editorData: state.editor,
 });
 const mapDispatchToProps = (dispatch) => ({
-  resetTab: () => dispatch(setControlsTab('features')),
+  resetTab: () => dispatch(setControlsTab('help')),
   clearEditorData: () => dispatch(clearEditorData()),
 });
 const MapControlsEditor = connect(mapStateToProps, mapDispatchToProps)(_MapControlsEditor);

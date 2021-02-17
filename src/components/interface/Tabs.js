@@ -60,6 +60,8 @@ export const TabBar = ({
 
   const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
 
+  const sortedTabs = sortByOrder(tabs);
+
   // Fix indicator breaking when tabs dynamically change.
   const theme = useTheme();
   const actionRef = React.useRef();
@@ -89,7 +91,7 @@ export const TabBar = ({
       textColor="primary"
       {...other}
     >
-      {sortByOrder(tabs).map((tab) => {
+      {sortedTabs.map((tab) => {
         if (!tab.enabled) return null;
 
         return icons ? (

@@ -13,8 +13,8 @@ import { SafeHTML } from '~/components/Util';
 import MapControlsChangelog from './MapControlsChangelog';
 
 const TABS = [
-  { enabled: true, order: 11, label: t('map-controls-tab-changelog'), value: 'changelog' },
-  { enabled: true, order: 12, label: t('map-controls-tab-help'), value: 'help' },
+  { enabled: true, order: 11, label: t('changelog'), value: 'changelog' },
+  { enabled: true, order: 12, label: t('help'), value: 'help' },
 ];
 
 const useStyles = makeStyles((_theme) => ({
@@ -34,18 +34,12 @@ const _MapControlsHelp = ({ displayed }) => {
       <MapControlsChangelog displayed={helpTab === 'changelog'} />
       <BorderBox displayed={helpTab === 'help'} overflow="hidden auto">
         <SafeHTML gutterBottom>
-          {f('map-about-help-content-a', { markers: getMarkerCount(), routes: getRouteCount() })}
+          {f('help-description', { markers: getMarkerCount(), routes: getRouteCount() })}
         </SafeHTML>
+        <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
+        <SafeHTML gutterBottom>{t('help-contribute')}</SafeHTML>
 
-        <SafeHTML gutterBottom>{t('map-about-help-content-b')}</SafeHTML>
-
-        <SafeHTML gutterBottom>{t('map-about-help-content-c')}</SafeHTML>
-
-        <SafeHTML gutterBottom>{t('map-about-help-content-d')}</SafeHTML>
-
-        <SafeHTML gutterBottom>{t('map-about-help-content-e')}</SafeHTML>
-
-        <SafeHTML>{t('map-about-help-content-f')}</SafeHTML>
+        <SafeHTML>{t('help-content')}</SafeHTML>
       </BorderBox>
     </TabView>
   );

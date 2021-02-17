@@ -63,17 +63,17 @@ const _MapControlsEditorMarker = ({
   return (
     <Box display="flex" flexDirection="column" className={classes.markerBox}>
       <Box display="flex" flexDirection="row" alignItems="center">
-        <Tooltip title={t('editor-highlight-tooltip')}>
+        <Tooltip title={t('highlight')}>
           <IconButton className={classes.locateButton} onClick={highlightMarker}>
             <GpsFixedIcon />
           </IconButton>
         </Tooltip>
 
         <Typography className={classes.markerLabel}>
-          {f('editor-elements-marker-id', { id: markerId.substring(0, 7) })}
+          {f('marker-id-format', { id: markerId.substring(0, 7) })}
         </Typography>
 
-        <Tooltip title={t('editor-delete-tooltip')}>
+        <Tooltip title={t('delete')}>
           <IconButton className={classes.deleteButton} onClick={deleteMarker}>
             <DeleteIcon />
           </IconButton>
@@ -82,13 +82,13 @@ const _MapControlsEditorMarker = ({
 
       <InputTextField
         className={classes.textField}
-        label={t('editor-title-label')}
+        label={t('popup-title')}
         value={markerTitle}
         onChange={(value) => setMarkerTitle(value)}
       />
       <InputTextArea
         className={classes.textField}
-        label={t('editor-content-label')}
+        label={t('popup-content')}
         value={markerContent}
         rows={3}
         onChange={(value) => setMarkerContent(value)}

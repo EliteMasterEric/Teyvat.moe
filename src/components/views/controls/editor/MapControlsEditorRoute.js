@@ -62,17 +62,17 @@ const _MapControlsEditorRoute = ({
   return (
     <Box display="flex" flexDirection="column" className={classes.routeBox}>
       <Box display="flex" flexDirection="row" alignItems="center">
-        <Tooltip title={t('editor-highlight-tooltip')}>
+        <Tooltip title={t('highlight')}>
           <IconButton className={classes.locateButton} onClick={highlightRoute}>
             <GpsFixedIcon />
           </IconButton>
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('editor-elements-route-id', { id: routeId.substring(0, 7) })}
+          {f('route-id-format', { id: routeId.substring(0, 7) })}
         </Typography>
 
-        <Tooltip title={t('editor-delete-tooltip')}>
+        <Tooltip title={t('delete')}>
           <IconButton className={classes.deleteButton} onClick={deleteRoute}>
             <DeleteIcon />
           </IconButton>
@@ -81,13 +81,13 @@ const _MapControlsEditorRoute = ({
 
       <InputTextField
         className={classes.textField}
-        label={t('editor-title-label')}
+        label={t('popup-title')}
         value={routeTitle}
         onChange={(value) => setRouteTitle(value)}
       />
       <InputTextArea
         className={classes.textField}
-        label={t('editor-content-label')}
+        label={t('popup-content')}
         value={routeContent}
         rows={3}
         onChange={(value) => setRouteContent(value)}

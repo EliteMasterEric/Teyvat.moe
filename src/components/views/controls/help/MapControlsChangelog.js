@@ -59,15 +59,16 @@ const _MapControlsChangelog = ({ displayed, lang }) => {
     <TabView displayed={displayed}>
       <BorderBox overflow="hidden auto">
         <SafeHTML gutterBottom>
-          {f('map-about-help-content-a', { markers: getMarkerCount(), routes: getRouteCount() })}
+          {f('help-description', { markers: getMarkerCount(), routes: getRouteCount() })}
         </SafeHTML>
+        <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
+        <SafeHTML gutterBottom>{t('help-contribute')}</SafeHTML>
 
-        <SafeHTML gutterBottom>{t('map-about-help-content-b')}</SafeHTML>
         {/* Quit if data couldn't be retrieved. */}
         {changelogData != null ? (
           <>
             <Typography fontWeight="fontWeightBold" className={classes.header}>
-              {t('map-controls-tab-changelog')}
+              {t('changelog')}
             </Typography>
             <List dense disablePadding>
               {changelogData.map(({ version, date, description }) => (

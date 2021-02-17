@@ -81,7 +81,7 @@ const PageHeaders = () => {
     <Helmet>
       {/* DISPLAY */}
       {/* The title of the webpage as displayed in the tab name. */}
-      <title>{t('meta-page-title-full')}</title>
+      <title>{t('page-title-full')}</title>
 
       {/* SECURITY */}
       {/* Dictates how scripts can be loaded and from where. Prevents cross-site scripting attacks. */}

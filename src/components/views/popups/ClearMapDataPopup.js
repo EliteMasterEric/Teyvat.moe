@@ -30,34 +30,32 @@ const ClearMapDataPopup = ({ trigger, onConfirm }) => {
         open={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('popup-clear-map-data-title')}
-        </DialogTitle>
+        <DialogTitle onClose={() => setIsDialogOpen(false)}>{t('clear-map-data')}</DialogTitle>
         <DialogContent>
-          <DialogContentText>{t('popup-clear-map-data-content')}</DialogContentText>
+          <DialogContentText>{t('clear-map-data-content')}</DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button
             variant="contained"
             size="large"
-            aria-label={t('popup-cancel')}
+            aria-label={t('cancel')}
             tabIndex={0}
             onClick={() => setIsDialogOpen(false)}
           >
-            {t('popup-cancel')}
+            {t('cancel')}
           </Button>
           <Button
             variant="contained"
             size="large"
             color="primary"
-            aria-label={t('popup-confirm')}
+            aria-label={t('confirm')}
             tabIndex={0}
             onClick={() => {
               onConfirm();
               setIsDialogOpen(false);
             }}
           >
-            {t('popup-confirm')}
+            {t('confirm')}
           </Button>
         </DialogActions>
       </Dialog>

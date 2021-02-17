@@ -958,12 +958,33 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.
 
-# 0.10.9
+# 0.11.0 AppSample/MapGenie Migration and Editor QoL Features
 
-- Fixed the category buttons in the feature tap not using material components.
+- Added the Sync Data tab, along with AppSample and MapGenie importers.
+  - Moved the Import Data and Export Data options to the Sync Data tab.
+  - To import from AppSample, navigate to the Sync Data tab and click Migrate from AppSample.
+    - Then, right click the link to create a bookmark to the JavaScript. Then, navigate to the AppSample website, run the bookmarklet, and the data should be added to your clipboard. You can then return to GenshinMap and paste the data to import.
+    - Bookmarklets are sadly the only means to access the user's stored data, since modern web browsers are designed specifically to prevent websites from running JavaScript on other pages for security reasons.
+      - If you're curious or concerned about security, you can read the original source code of the bookmarklets in `scripts/bookmarklets`.
+- Added additional functionality to the editor.
+  - Hold CTRL while playing markers to place additional markers. No more placing markers one at a time!
+  - Hold CTRL while clicking the end of a route to extend the route.
+  - Thanks to Seth Lutske for the help with implementing this.
+- Updated the map graphic for version 1.3.0.
+  - Updated the mountain behind Tianqiu Valley where the Primo Geovishap resides.
+- Reworked the localization files.
+  - I kept experiencing places where I had to add more localization keys to add more content, or rename existing localization keys since they have been previously based on some context. Thus, I took the plunge and renamed a large number of localization keys in this update.
+  - The contents of the Help tabs are now in a single keys containing `\n` to split paragraphs.
+  - The names of keys that don't depend on a specific context (like `options-import-button: Import`) have been given more generic names (`import: Import`) that describe content rather than context, so they can more easily be moved around and reused.
+  - Added some new localization keys.
+  - I will update all of these on POEditor soon.
+- Fixed the category buttons in the feature/route tabs not using Material components.
 - Updated the following features:
-  - Mondstadt (Domain): Cleaned up the positions to be more accurate.
-  - Mondstadt (Statue of the Seven): Cleaned up the positions to be more accurate.
+  - Domain (Mondstadt): Cleaned up the positions to be more accurate.
+  - Statue of the Seven (Mondstadt): Cleaned up the positions to be more accurate.
+  - Fatui Pyro Agent (Liyue): Added a description for an annoying location in Mingyun Village.
+  - Anemoculus: Added AppSample importer IDs.
+- [ ] World Border fixes
   - [ ] Mondstadt (Teleporter):
   - [ ] Mondstadt (Shrine):
   - [ ] Liyue (Domain):
@@ -976,19 +997,11 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - [ ] Liyue Bosses
     - [ ] Positions
     - [ ] Descriptions
-- [ ] World Border fixes
-- [ ] Map Graphic changes
-- [ ] Editor route editing fix
-- Fixed some issues with routes in the editor.
+  - [ ] Primo Geovishap
+  - [ ] Geovishap
+- Removed the "Cluster Markers" option from the editor submission form.
+- Fixed a bug where removing a vector from a route would not be committed.
+- Fixed a bug where route vectors would have the wrong decimal precision.
 - Fixed a bug where opening a marker popup would reset the completion time.
 - Fixed a bug where the editor would output bad coordinates.
-
-
-
-- Removed the "Cluster Markers" option from the editor submission form.
-- Created localization keys:
-  - social-visit-github: Visit us on GitHub
-  - social-visit-discord: Visit us on Discord
-- Removed localization keys:
-  - popup-submit-editor-data-subtitle-b
-  - popup-submit-editor-data-cluster-markers
+- Fixed a bug where the editor would switch to an invalid tab when clearing the editor data.

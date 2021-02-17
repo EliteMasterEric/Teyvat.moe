@@ -71,12 +71,12 @@ const _DebugControls = ({ displayed, setPositionAndZoom }) => {
       className={clsx(displayed ? classes.show : classes.hide)}
     >
       <Box className={classes.container}>
-        <Typography className={classes.titleText}>{t('debug-title')}</Typography>
+        <Typography className={classes.titleText}>{t('debug')}</Typography>
         <Typography className={classes.positionText}>
           <ExploreIcon className={classes.positionIcon} />
           {mousePos.lat.toFixed(5)} X / {mousePos.lng.toFixed(5)} Y
         </Typography>
-        <InputTextField label={t('debug-navigate-by-id')} onChange={onNavigateToMarkerById} />
+        <InputTextField label={t('navigate-to-marker-by-id')} onChange={onNavigateToMarkerById} />
       </Box>
     </MapCustomControl>
   );

@@ -4,7 +4,6 @@
  */
 
 import { makeStyles, Button } from '@material-ui/core';
-import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
@@ -47,24 +46,6 @@ const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enable
     >
       {t(category.nameKey)}
     </Button>
-  );
-
-  // eslint-disable-next-line no-unreachable
-  return (
-    <div
-      onClick={enableCategory}
-      onKeyDown={enableCategory}
-      role="button"
-      tabIndex={0}
-      className={clsx(
-        'map-controls-category',
-        active ? 'map-controls-category-active' : '',
-        'noselect',
-        displayed ? '' : 'display-none'
-      )}
-    >
-      {t(category.nameKey)}
-    </div>
   );
 };
 

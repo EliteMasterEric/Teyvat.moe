@@ -11,7 +11,7 @@ import { t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
 import { Image, useImageExtension } from '~/components/interface/Image';
 import { isSmallScreen } from '~/components/interface/MediaQuery';
-import { SafeHTML } from '~/components/Util';
+import { isDev, SafeHTML } from '~/components/Util';
 import MapControlsHelp from '~/components/views/controls/help/MapControlsHelp';
 import MapControlsHelpEditor from '~/components/views/controls/help/MapControlsHelpEditor';
 import MapControlsSummary from '~/components/views/controls/summary/MapControlsSummary';
@@ -26,6 +26,7 @@ import MapControlsFoldButton from '~/components/views/controls/sidebar/MapContro
 import MapControlsRegions from '~/components/views/controls/sidebar/MapControlsRegions';
 import logoPNG from '~/images/controls/logo.png';
 import logoWebP from '~/images/controls/logo.webp';
+import MapControlsSync from './sync/MapControlsSync';
 
 const CONTROL_BOX_IMAGE_PNG = require('../../../images/controls/control_border.png').default;
 const CONTROL_BOX_IMAGE_WEBP = require('../../../images/controls/control_border.webp').default;
@@ -137,7 +138,9 @@ const _MapControls = ({ open }) => {
 
         <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
           <Image srcPNG={logoPNG} srcWebP={logoWebP} className={classes.logo} />
-          <SafeHTML className={classes.headerText}>{t('meta-page-title-short')}</SafeHTML>
+          <SafeHTML className={classes.headerText}>
+            {isDev() ? t('page-title-beta') : t('page-title')}
+          </SafeHTML>
         </Box>
 
         {small ? <MapControlsNavigationSmall /> : null}
@@ -157,6 +160,8 @@ const _MapControls = ({ open }) => {
         <MapControlsRoutes />
 
         <MapControlsEditor />
+
+        <MapControlsSync />
 
         <MapControlsOptions />
       </BorderBox>

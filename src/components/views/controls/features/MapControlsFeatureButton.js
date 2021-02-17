@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { getFilterIconURL } from '~/components/data/MapFeaturesData';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { BLANK_IMAGE, Image } from '~/components/interface/Image';
+import { Image } from '~/components/interface/Image';
 import { setFeatureDisplayed } from '~/redux/ducks/displayed';
 
 const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
