@@ -972,6 +972,8 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - Thanks to Seth Lutske for the help with implementing this.
 - Updated the map graphic for version 1.3.0.
   - Updated the mountain behind Tianqiu Valley where the Primo Geovishap resides.
+  - Added skipped changes to the Golden House area.
+  - Changed the area south of Dunyu Ruins and in the pass north of Mt. Tianheng.
 - Reworked the localization files.
   - I kept experiencing places where I had to add more localization keys to add more content, or rename existing localization keys since they have been previously based on some context. Thus, I took the plunge and renamed a large number of localization keys in this update.
   - The contents of the Help tabs are now in a single keys containing `\n` to split paragraphs.
