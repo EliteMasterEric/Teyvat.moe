@@ -4,11 +4,11 @@
     "en": "Geovishap"
   },
   "description": {
-    "en": "An Elite Monster. A matured Geovishap which can utilize elemental attacks."
+    "en": "These mature Geovishaps are much more intimidating than their Hatchling counterparts. Drops Bone Shards."
   },
-  "enabled": false,
-  "cluster": "on",
+  "enabled": true,
   "respawn": 86400,
+  "cluster": "on",
   "icons": {
     "filter": "geovishap",
     "base": {
@@ -18,5 +18,39 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-42.1336, 18.49533],
+      "id": "AF07502DACD353811A49DD374F62427ED4D12B70",
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-40.16378, 14.35192],
+      "id": "F3A6EE5A83617D1548FB012F6579AF6CA7E35865",
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-44.05261, 26.09483],
+      "id": "46F9DE763FC0B61B1AD2A43150E4F917D555BD76",
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-37.64238, 19.76585],
+      "id": "604A0DC0E79E4644EB2BB66AF553E51A61208581",
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-31.30049, 15.07024],
+      "id": "3B063E67E7C57754BB153F4D5B11EB84941A5FDD",
+      "popupContent": {
+        "en": "Located in the cave at the base of the cliff."
+      },
+      "popupAttribution": "MasterEric"
+    },
+    {
+      "coordinates": [-29.52167, 15.64475],
+      "id": "3A6FF67EF645096CFB475FB926E53DC04A716116",
+      "popupAttribution": "MasterEric"
+    }
+  ]
 }

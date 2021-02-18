@@ -1,7 +1,7 @@
 {
   "format": 2,
   "description": {
-    "en": "A monster formed from a vine that was imbued with the essence of biting frost within the Ley Lines. Drops Artifacts and Cryo Character Ascension Materials.",
+    "en": "A monster formed from a vine that was imbued with the essence of biting frost within the ley lines. Drops Cryo Character Level-Up Materials and Artifacts.",
     "ru": "Это чудовище появилось из отростка артерий земли, который впитал эссенцию пронизывающего холода. Выпадают Артефакты и материалы для возвышения Крио персонажей."
   },
   "enabled": true,
@@ -23,9 +23,13 @@
   },
   "data": [
     {
-      "coordinates": [-20.88906, 49.54844],
-      "id": "1F1F62D01108ACAFFC2899DBC949C8111BC9417D",
+      "coordinates": [
+        -20.8983,
+        49.59692
+      ],
+      "id": "826AED79A15C3C808B0D73C36F0804FA4B1976B6",
       "importIds": {
+        "gm_msfv2": ["1F1F62D01108ACAFFC2899DBC949C8111BC9417D"],
         "gm_legacy": ["mondstadtCryoRegisvine/1"]
       },
       "popupAttribution": "MasterEric"

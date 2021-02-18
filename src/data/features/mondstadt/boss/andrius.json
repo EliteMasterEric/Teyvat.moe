@@ -1,18 +1,18 @@
 {
   "format": 2,
-  "description": {
-    "en": "The Wolf of the North. Can be fought once a week for special rewards.",
-    "ru": "Волк Севера. Можно сразиться раз в неделю для получения специальных наград."
-  },
-  "enabled": true,
-  "cluster": "off",
-  "respawn": "boss",
   "name": {
     "en": "Andrius (Lupus Boreas)",
     "ru": "Андриус (Лупус Бореалис)",
     "ja": "アンドレアス (北風の王狼)",
     "pt": "Andrius (Lupus Boreas)"
   },
+  "description": {
+    "en": "The Wolf of the North. A noble soul that watches over Wolvendom. It is said that its powers were given to it by an ancient god. Drops random Character Level-Up Materials, Artifacts, and Weapon Prototypes.",
+    "ru": "Волк Севера. Можно сразиться раз в неделю для получения специальных наград."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "boss",
   "icons": {
     "filter": "andrius",
     "base": {
@@ -24,9 +24,10 @@
   },
   "data": [
     {
-      "coordinates": [-22.09219, 34.68906],
-      "id": "1A8D95BDC00D731B4E6B53FE6A4F5DE71CC6A836",
+      "coordinates": [-22.09708, 34.62614],
+      "id": "C0AB9CFADDE6FA56ACF9F3B18F3384291215AD26",
       "importIds": {
+        "gm_msfv2": ["1A8D95BDC00D731B4E6B53FE6A4F5DE71CC6A836"],
         "gm_legacy": ["mondstadtAndrius/1"]
       },
       "popupAttribution": "MasterEric"

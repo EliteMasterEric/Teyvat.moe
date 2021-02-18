@@ -74,7 +74,10 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
   const placeRoute = (editable) => {
     const { _latlngs: latlngs } = editable;
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngsFormatted = latlngs.map((latlng) => [latlng?.lat, latlng?.lng]);
+    const latlngsFormatted = latlngs.map((latlng) => [
+      truncateFloat(latlng?.lat, 5),
+      truncateFloat(latlng?.lng, 5),
+    ]);
     const id = hashObject(latlngsFormatted);
 
     // Switched to MSFv2.
@@ -95,7 +98,10 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
   const updateRoute = (event) => {
     const { id: routeId } = event.layer.options;
-    const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [vertex.lat, vertex.lng]);
+    const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
+      truncateFloat(vertex.lat, 5),
+      truncateFloat(vertex.lng, 5),
+    ]);
 
     moveRoute(routeId.split('/')[1], newRouteLatLngs);
     setEditorState('none');
@@ -124,7 +130,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
         // eslint-disable-next-line no-underscore-dangle
         const { _latlng: latlng } = event.layer;
 
-        const newCoords = [latlng.lat, latlng.lng];
+        const newCoords = [truncateFloat(latlng.lat, 5), truncateFloat(latlng.lng, 5)];
 
         moveMarker(markerId.split('/')[1], newCoords);
         setEditorState('none');
@@ -158,7 +164,10 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // Delete a vertex when it is clicked.
 
       const { id: routeId } = event.layer.options;
-      const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [vertex.lat, vertex.lng]);
+      const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
+        truncateFloat(vertex.lat, 5),
+        truncateFloat(vertex.lng, 5),
+      ]);
 
       moveRoute(routeId.split('/')[1], newRouteLatLngs);
       setEditorState('none');
@@ -263,6 +272,7 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(setElementProperty(id, 'id', hashObject(newCoords)));
   },
   moveRoute: (id, newCoordsList) => {
+    // setElementProperty(<id of element to change>, <property to change>, <new value>)
     dispatch(setElementProperty(id, 'coordinates', newCoordsList));
     dispatch(setElementProperty(id, 'id', hashObject(newCoordsList)));
   },

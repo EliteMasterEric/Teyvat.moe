@@ -44,7 +44,10 @@ const completedReducer = (state, action) => {
         ...state,
         completed: {
           ...state.completed,
-          ..._.fromPairs(_.map(action.payload.features, (id) => [id, action.payload.timestamp])),
+          features: {
+            ...state.completed.features,
+            ..._.fromPairs(_.map(action.payload.markers, (id) => [id, action.payload.timestamp])),
+          },
         },
       };
     case SET_FEATURE_MARKER_COMPLETED:

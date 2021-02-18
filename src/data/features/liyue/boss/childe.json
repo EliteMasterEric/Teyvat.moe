@@ -1,15 +1,15 @@
 {
   "format": 2,
-  "description": {
-    "en": "Tartaglia, the Eleventh of the Eleven Fatui Harbingers. Can be fought once a week for special rewards."
-  },
-  "enabled": true,
-  "cluster": "off",
-  "respawn": "boss",
   "name": {
     "en": "Childe",
     "pt": "Childe"
   },
+  "description": {
+    "en": "The memories of your duel with Childe of the Fatui in the depths of the Golden House remain fresh in your mind. Relive this duel, and you may yet learn something new... Drops random Character Level-Up Materials, Artifacts, and Weapon Prototypes."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "boss",
   "icons": {
     "filter": "childe",
     "base": {
@@ -21,15 +21,13 @@
   },
   "data": [
     {
-      "coordinates": [-52.25755, 29.5807],
-      "id": "703DB28EF588D2FD59E4672BAA5130B58E23AEF3",
+      "coordinates": [-52.29296, 29.44922],
+      "id": ["31CFAC8D68438142A040B551F20CBC9EFFA1012B"],
       "importIds": {
+        "gm_msfv2": ["703DB28EF588D2FD59E4672BAA5130B58E23AEF3"],
         "gm_legacy": ["liyueChilde/1"]
       },
-      "popupAttribution": "MasterEric",
-      "popupTitle": {
-        "en": "Childe"
-      }
+      "popupAttribution": "MasterEric"
     }
   ]
 }

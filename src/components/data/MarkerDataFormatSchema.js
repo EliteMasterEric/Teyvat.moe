@@ -21,9 +21,6 @@ const youtubeUrl = Joi.string().regex(YOUTUBE_REGEX);
 const localizedField = Joi.object({
   en: Joi.string().required(),
 }).pattern(/[a-z]{2}/, Joi.string().required());
-const optionalLocalizedField = Joi.object({
-  en: Joi.string(),
-}).pattern(/[a-z]{2}/, Joi.string());
 const clusterEnum = ['off', 'on', 'variable'];
 const respawnEnum = ['none', 'boss'];
 const coordinate = Joi.array().items(Joi.number().precision(5).required()).length(2);
@@ -85,8 +82,8 @@ const MSF_MARKER_SCHEMA = Joi.object({
     gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
   },
 
-  popupTitle: optionalLocalizedField.optional(),
-  popupContent: optionalLocalizedField.optional(),
+  popupTitle: localizedField.optional(),
+  popupContent: localizedField.optional(),
   popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
 
   popupAttribution: Joi.string().default('Unknown'),

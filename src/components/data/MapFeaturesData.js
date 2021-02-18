@@ -251,9 +251,9 @@ export const createMapIcon = ({
       className: `map-marker-${key}`,
       html: iconHTML,
       clusterIconUrl: iconUrl,
-      // iconSize: [24, 23], // size of the icon,
-      iconAnchor: [12, 34.5], // point of the icon which will correspond to marker"s location,
-      popupAnchor: [0, -34.5], // point from which the popup should open relative to the iconAnchor,
+      iconSize: [40, 40], // size of the icon,
+      iconAnchor: [20, 40], // point of the icon which will correspond to marker"s location,
+      popupAnchor: [0, -35], // point from which the popup should open relative to the iconAnchor,
       ...options,
     });
   }

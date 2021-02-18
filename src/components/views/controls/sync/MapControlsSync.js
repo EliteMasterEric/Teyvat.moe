@@ -97,7 +97,7 @@ const _MapControlsSync = ({
             onConfirm={importDataAppSample}
           />
         </Box>
-        <Box className={classes.optionContainer}>
+        <Box className={classes.optionContainer} style={{ display: 'none' }}>
           <Typography className={classes.label}>{t('migrate-mapgenie')}</Typography>
           <ImportDataPopup
             title={t('migrate-mapgenie')}

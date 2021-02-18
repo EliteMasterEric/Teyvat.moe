@@ -333,3 +333,25 @@ export const importFromContext = (context, key) => {
 export const truncateFloat = (value, decimals = 0) => {
   return Math.trunc(value * 10 ** decimals) / 10 ** decimals;
 };
+
+/**
+ * Given an array of key-value pairs, returns an object of key: [value] pairs.
+ * Appends to existing arrays to smoothly handle duplicates,
+ * and trims null and undefined values by default.
+ */
+export const fromPairsToArrays = (pairs, trimNulls = true) => {
+  const result = {};
+
+  _.forEach(pairs, ([key, value]) => {
+    const shouldSkip = trimNulls && value == null;
+    if (!shouldSkip) {
+      if (key in result) {
+        result[key] = [...result[key], value];
+      } else {
+        result[key] = [value];
+      }
+    }
+  });
+
+  return result;
+};

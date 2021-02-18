@@ -1,7 +1,7 @@
 {
   "format": 2,
   "description": {
-    "en": "Beth; an Anemo elemental life form who abandoned its former apperance to reach the highest level of elemental purity. Drops Artifacts and Anemo Character Ascension Materials."
+    "en": "Code name: Beth. A high-purity Anemo entity. Drops Anemo Character Level-Up Materials and Artifacts."
   },
   "enabled": true,
   "cluster": "off",
@@ -22,9 +22,13 @@
   },
   "data": [
     {
-      "coordinates": [-12.49063, 45.68906],
-      "id": "46A79AAE711BB761E219F27C1C815CF44640FBA6",
+      "coordinates": [
+        -12.42959,
+        45.6636
+      ],
+      "id": "97F5363611E79E8F12859DA80944988A97038022",
       "importIds": {
+        "gm_msfv2": ["46A79AAE711BB761E219F27C1C815CF44640FBA6"],
         "gm_legacy": ["mondstadtAnemoHypostasis/1"]
       },
       "popupAttribution": "MasterEric"

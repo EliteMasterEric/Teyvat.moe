@@ -1,17 +1,17 @@
 {
   "format": 2,
-  "description": {
-    "en": "The Dragon of the East. Can be fought once a week for special rewards.",
-    "ru": "Дракон Востока. Можно сразиться раз в неделю для получения специальных наград."
-  },
-  "enabled": true,
-  "cluster": "off",
-  "respawn": "boss",
   "name": {
     "en": "Dvalin (Stormterror)",
     "ru": "Двалин (Ужас бури)",
     "pt": "Dvalin (Stormterror)"
   },
+  "description": {
+    "en": "The Dragon of the East. Drops random Character Level-Up Materials, Artifacts, and Weapon Prototypes.",
+    "ru": "Дракон Востока. Можно сразиться раз в неделю для получения специальных наград."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "boss",
   "icons": {
     "filter": "dvalin",
     "base": {
@@ -23,9 +23,13 @@
   },
   "data": [
     {
-      "coordinates": [-15.11563, 30.78281],
-      "id": "4A3BD8EBF781483014C8B73B1CDE2DCF79DCCBAA",
+      "coordinates": [
+        -15.09364,
+        30.70634
+      ],
+      "id": "25AD0B336ABB16339A68F551CB9D99A741B5F972",
       "importIds": {
+        "gm_msfv2": ["4A3BD8EBF781483014C8B73B1CDE2DCF79DCCBAA"],
         "gm_legacy": ["mondstadtDvalin/1"]
       },
       "popupAttribution": "MasterEric"

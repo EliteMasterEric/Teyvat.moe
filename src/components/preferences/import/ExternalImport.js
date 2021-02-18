@@ -31,16 +31,18 @@ export const importMarkerDataFromSite = (dataString, importKey, setFeaturesCompl
     const missingEntries = [];
 
     // Map each externalsite entry to a GenshinMap entry.
-    const fullDataMapped = _.filter(
-      fullData.map((entry) => {
-        if (entry in dictionary) {
-          return dictionary[entry];
-        }
+    const fullDataMapped = _.flatten(
+      _.filter(
+        fullData.map((entry) => {
+          if (entry in dictionary) {
+            return dictionary[entry];
+          }
 
-        missingEntries.push(entry);
-        return '';
-      }),
-      _.size
+          missingEntries.push(entry);
+          return '';
+        }),
+        _.size
+      )
     );
 
     const successfulEntries = _.size(fullDataMapped);

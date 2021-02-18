@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
+import { fromPairsToArrays } from '~/components/Util';
 
 /**
  * Trawls the list of markers, scans for any markers that have corresponding IDs
@@ -14,8 +15,8 @@ export const buildImportMapping = (importKey) => {
   // Build mappings of keys to values, ignoring empty entries.
   const markersByFeature = _.filter(
     _.keys(MapFeatures).map((featureKey) => {
-      return MapFeatures[featureKey].data.map((element) => {
-        return [`${featureKey}/${element.id}`, element.importIds[importKey] ?? null]; // feature/id = [keys]
+      return MapFeatures?.[featureKey]?.data.map((element) => {
+        return [`${featureKey}/${element.id}`, element.importIds?.[importKey] ?? null]; // feature/id = [keys]
       });
     }),
     _.size
@@ -25,9 +26,7 @@ export const buildImportMapping = (importKey) => {
     return _.size(entry) && _.size(entry[1]);
   });
 
-  // const markerDictionary = _.fromPairs(markersFlattened);
-
-  const inverseMarkerDictionary = _.fromPairs(
+  const inverseMarkerDictionary = fromPairsToArrays(
     _.flatten(
       _.map(markersFlattened, (entry) => {
         const [gmKey, importValues] = entry;

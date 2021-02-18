@@ -1,7 +1,7 @@
 {
   "format": 2,
   "description": {
-    "en": "Aleph; an Electro elemental life form who abandoned its former apperance to reach the highest level of elemental purity. Drops Artifacts and Electro Character Ascension Materials.",
+    "en": "Code name: Aleph. A high-purity Electro entity. Drops Electro Character Level-Up Materials and Artifacts.",
     "ru": "Кодовое назание: Алеф. Высококоцентрированный Электро элемент. Выпадают Артефакты и материалы для вознесения Электро персонажей."
   },
   "enabled": true,
@@ -23,9 +23,10 @@
   },
   "data": [
     {
-      "coordinates": [-29.12344, 52.36094],
-      "id": "FBE0816739838FA0336DC613330F01265679E92E",
+      "coordinates": [-29.13498, 52.37562],
+      "id": "2D0D278783DE3248A7EED526E46BCABCF18F589C",
       "importIds": {
+        "gm_msfv2": ["FBE0816739838FA0336DC613330F01265679E92E"],
         "gm_legacy": ["mondstadtElectroHypostasis/1"]
       },
       "popupAttribution": "MasterEric"

@@ -958,9 +958,10 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Made additions and modifications to existing markers:
   - @specklet: Added new images and descriptions for 13 chests around Stormbearer Point.
 
-# 0.11.0 AppSample/MapGenie Migration and Editor QoL Features
+# 0.11.0 AppSample Migration and Editor QoL Features
 
-- Added the Sync Data tab, along with AppSample and MapGenie importers.
+- Added the Sync Data tab, along with an AppSample importer.
+  - Currently supports Crimson Agates (IDs were added in v0.10.0), Anemoculus, and Geoculus, with more coming soon.
   - Moved the Import Data and Export Data options to the Sync Data tab.
   - To import from AppSample, navigate to the Sync Data tab and click Migrate from AppSample.
     - Then, right click the link to create a bookmark to the JavaScript. Then, navigate to the AppSample website, run the bookmarklet, and the data should be added to your clipboard. You can then return to GenshinMap and paste the data to import.
@@ -974,6 +975,8 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - Updated the mountain behind Tianqiu Valley where the Primo Geovishap resides.
   - Added skipped changes to the Golden House area.
   - Changed the area south of Dunyu Ruins and in the pass north of Mt. Tianheng.
+- Updated the world border for version 1.3.0
+  - Fixed an issue where the world border was accidentally made jagged and square.
 - Reworked the localization files.
   - I kept experiencing places where I had to add more localization keys to add more content, or rename existing localization keys since they have been previously based on some context. Thus, I took the plunge and renamed a large number of localization keys in this update.
   - The contents of the Help tabs are now in a single keys containing `\n` to split paragraphs.
@@ -982,28 +985,27 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - I will update all of these on POEditor soon.
 - Fixed the category buttons in the feature/route tabs not using Material components.
 - Updated the following features:
+  - Geovishap (Liyue): Added 6 locations.
+  - Primo Geovishap: Added 1 location. Updated description.
+  - Childe (Liyue): Tweaked position and updated description.
+  - Pyro Regisvine (Liyue): Tweaked position and updated description.
+  - Oceanid (Liyue): Tweaked position and updated description.
+  - Geo Hypostasis (Liyue): Tweaked position and updated description.
+  - Andrius (Mondstadt): Tweaked position and updated description.
+  - Dvalin (Mondstadt): Tweaked position and updated description.
+  - Cryo Regisvine (Mondstadt): Tweaked position and updated description.
+  - Anemo Hypostasis (Mondstadt): Tweaked position and updated description.
+  - Electro Hypostasis (Mondstadt): Tweaked position and updated description.
+  - Anemoculus: Added AppSample importer IDs.
+  - Crimson Agate: Updated invalid AppSample IDs on 8 markers.
+  - Geoculus: Added AppSample importer IDs, and fixed one video link.
+  - Fatui Pyro Agent (Liyue): Added a description for an annoying location in Mingyun Village.
   - Domain (Mondstadt): Cleaned up the positions to be more accurate.
   - Statue of the Seven (Mondstadt): Cleaned up the positions to be more accurate.
-  - Fatui Pyro Agent (Liyue): Added a description for an annoying location in Mingyun Village.
-  - Anemoculus: Added AppSample importer IDs.
-- [ ] World Border fixes
-  - [ ] Mondstadt (Teleporter):
-  - [ ] Mondstadt (Shrine):
-  - [ ] Liyue (Domain):
-  - [ ] Liyue (Statue):
-  - [ ] Liyue (Teleporter):
-  - [ ] Liyue (Shrine):
-  - [ ] Mondstadt Bosses
-    - [ ] Positions
-    - [ ] Descriptions
-  - [ ] Liyue Bosses
-    - [ ] Positions
-    - [ ] Descriptions
-  - [ ] Primo Geovishap
-  - [ ] Geovishap
 - Removed the "Cluster Markers" option from the editor submission form.
 - Fixed a bug where removing a vector from a route would not be committed.
 - Fixed a bug where route vectors would have the wrong decimal precision.
 - Fixed a bug where opening a marker popup would reset the completion time.
 - Fixed a bug where the editor would output bad coordinates.
 - Fixed a bug where the editor would switch to an invalid tab when clearing the editor data.
+- Fixed a bug where anchors would shift a bit visually at further zoom levels. The tip of the anchor now points at the marker's exact location at all zoom levels.

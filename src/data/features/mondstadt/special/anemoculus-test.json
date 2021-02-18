@@ -1,0 +1,814 @@
+{
+  "format": 2,
+  "description": {
+    "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven.",
+    "ru": "Собирайте их по всему миру и подносите Статуи Семи Архонтов для получения наград."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "name": {
+    "en": "Anemoculus (TEST)",
+    "ru": "Анемокул",
+    "zh": "风神瞳",
+    "pt": "Anemoculus"
+  },
+  "icons": {
+    "filter": "anemoculus",
+    "base": {
+      "key": "anemoculus",
+      "iconSize": [31, 37],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 12],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -12]
+    },
+    "done": {
+      "key": "anemoculus",
+      "iconSize": [31, 37],
+      "shadowSize": [50, 64],
+      "iconAnchor": [12, 12],
+      "shadowAnchor": [4, 62],
+      "popupAnchor": [0, -12]
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-15.10782, 30.79844],
+      "id": "5C5F1D44F4C31DE724C10FEDCCB0821B67637D2D",
+      "importIds": {
+        "yuanshen": ["0_1"],
+        "gm_legacy": ["mondstadtAnemoculus/1"],
+        "appsample": ["307"]
+      },
+      "popupMedia": "https://youtu.be/ftGeNlEKIoE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.2875, 32.47031],
+      "id": "EFD18E4C764F1F2E6A7ECE8B8AA872449200EAB7",
+      "importIds": {
+        "yuanshen": ["0_2"],
+        "gm_legacy": ["mondstadtAnemoculus/2"],
+        "appsample": ["304"]
+      },
+      "popupMedia": "https://youtu.be/UKWDvkoyn_Y",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.75625, 29.00938],
+      "id": "B0F42D2F933D9B0FF61AE870164DD7E64D77E1D3",
+      "importIds": {
+        "yuanshen": ["0_3"],
+        "gm_legacy": ["mondstadtAnemoculus/3"],
+        "appsample": ["301"]
+      },
+      "popupMedia": "https://youtu.be/1cabjTBAYvE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.92813, 31.22812],
+      "id": "68B3EC20559B85B6D23449F105D95EC65CF7FC80",
+      "importIds": {
+        "yuanshen": ["0_4"],
+        "gm_legacy": ["mondstadtAnemoculus/4"],
+        "appsample": ["305"]
+      },
+      "popupMedia": "https://youtu.be/fdt4dfud1v8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.29531, 34.12656],
+      "id": "28DC45341286A14EF8E5F235B02FBBE952A171F0",
+      "importIds": {
+        "yuanshen": ["0_5"],
+        "gm_legacy": ["mondstadtAnemoculus/5"],
+        "appsample": ["312"]
+      },
+      "popupMedia": "https://youtu.be/HBLI7jxCg6Q",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.42031, 32.41563],
+      "id": "10D51E87D3ED9975D9B1890A4461F9A18AE57B9F",
+      "importIds": {
+        "yuanshen": ["0_6"],
+        "gm_legacy": ["mondstadtAnemoculus/6"],
+        "appsample": ["311"]
+      },
+      "popupMedia": "https://youtu.be/Uw1cUxSnytQ",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.82656, 30.30625],
+      "id": "7BCAA4D277CAB4B3A3561BB0530389A2445B8C05",
+      "importIds": {
+        "yuanshen": ["0_7"],
+        "gm_legacy": ["mondstadtAnemoculus/7"],
+        "appsample": ["310"]
+      },
+      "popupMedia": "https://youtu.be/fWgbLsrN5Lo",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.60781, 29.75156],
+      "id": "2007CC4FDFC8610FE320846987728B1B0FB2A748",
+      "importIds": {
+        "yuanshen": ["0_8"],
+        "gm_legacy": ["mondstadtAnemoculus/8"],
+        "appsample": ["309"]
+      },
+      "popupMedia": "https://youtu.be/9I5jezwgtoE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.20937, 30.32188],
+      "id": "CA536F9E9CB3D76A1DF7A9C6C913D14504B20D90",
+      "importIds": {
+        "yuanshen": ["0_9"],
+        "gm_legacy": ["mondstadtAnemoculus/9"],
+        "appsample": ["306"]
+      },
+      "popupMedia": "https://youtu.be/sJS92GFiynI",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.09218, 28.09532],
+      "id": "BCFE3DEBA4D095524BCC2D0CDF5A06375F458A4B",
+      "importIds": {
+        "yuanshen": ["0_10"],
+        "gm_legacy": ["mondstadtAnemoculus/10"],
+        "appsample": ["302"]
+      },
+      "popupMedia": "https://youtu.be/L74L4pTZTWA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.73672, 28.66563],
+      "id": "4BC38C2AC66248D7CF517002ECB3B303E9A6404C",
+      "importIds": {
+        "yuanshen": ["0_11"],
+        "gm_legacy": ["mondstadtAnemoculus/11"],
+        "appsample": ["303"]
+      },
+      "popupMedia": "https://youtu.be/U9py1Fe3_pM",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.975, 29.38438],
+      "id": "36412DC8E91821817B68EB5932D05AF7E7671F8A",
+      "importIds": {
+        "yuanshen": ["0_12"],
+        "gm_legacy": ["mondstadtAnemoculus/12"],
+        "appsample": ["308"]
+      },
+      "popupMedia": "https://youtu.be/GZXBpaWYAE0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.6625, 32.79063],
+      "id": "0DA3C693363F980BF929375DC851407EC437EAD5",
+      "importIds": {
+        "yuanshen": ["0_13"],
+        "gm_legacy": ["mondstadtAnemoculus/13"],
+        "appsample": ["320"]
+      },
+      "popupMedia": "https://youtu.be/p84ASJj5-Yk",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.475, 34.29062],
+      "id": "3636E488BA037795F9EF29D22268200A240B7E05",
+      "importIds": {
+        "yuanshen": ["0_14"],
+        "gm_legacy": ["mondstadtAnemoculus/14"],
+        "appsample": ["319"]
+      },
+      "popupMedia": "mondstadt/anemoculus/14",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.01406, 31.90781],
+      "id": "85D489616240BBA2AD162EEA22E8F5DCFF38B504",
+      "importIds": {
+        "yuanshen": ["0_15"],
+        "gm_legacy": ["mondstadtAnemoculus/15"],
+        "appsample": ["324"]
+      },
+      "popupMedia": "https://youtu.be/a3z-wjdo8yM",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.90469, 35.5875],
+      "id": "7F5177CF530357F57EC91C5ECE195A18AA7FC355",
+      "importIds": {
+        "yuanshen": ["0_16"],
+        "gm_legacy": ["mondstadtAnemoculus/16"],
+        "appsample": ["321"]
+      },
+      "popupMedia": "https://youtu.be/1uf5xXWo7EA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.475, 35.82969],
+      "id": "ED35C9764DD89B2A37CA57D5D545E68DCA5322C3",
+      "importIds": {
+        "yuanshen": ["0_17"],
+        "gm_legacy": ["mondstadtAnemoculus/17"],
+        "appsample": ["318"]
+      },
+      "popupMedia": "https://youtu.be/hRv5qJ1uDkE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.95938, 36.61094],
+      "id": "AB1AD76C23B1A9C43DE3BCC1EF6B26DC117B7F66",
+      "importIds": {
+        "yuanshen": ["0_18"],
+        "gm_legacy": ["mondstadtAnemoculus/18"],
+        "appsample": ["317"]
+      },
+      "popupMedia": "https://youtu.be/NtEiByP8VMI",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.17812, 36.67343],
+      "id": "78B8276EDE78E94E01E7A7958EFE8075DE081032",
+      "importIds": {
+        "yuanshen": ["0_19"],
+        "gm_legacy": ["mondstadtAnemoculus/19"],
+        "appsample": ["316"]
+      },
+      "popupMedia": "https://youtu.be/nSGOKj6MwSc",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.35781, 36.15782],
+      "id": "FC6539C4F3C77DF9704E6020BF66DB660165C55D",
+      "importIds": {
+        "yuanshen": ["0_20"],
+        "gm_legacy": ["mondstadtAnemoculus/20"],
+        "appsample": ["315"]
+      },
+      "popupMedia": "https://youtu.be/dzg_M4Xh0ro",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.74844, 36.06406],
+      "id": "125E6B9D1CAD386B0D910530F72D554CF2CC51F3",
+      "importIds": {
+        "yuanshen": ["0_21"],
+        "gm_legacy": ["mondstadtAnemoculus/21"],
+        "appsample": ["313"]
+      },
+      "popupMedia": "https://youtu.be/OHen2-RFO-A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.2875, 37.275],
+      "id": "E4838BC35464A5E0461AD90D984CCBF52043C7DA",
+      "importIds": {
+        "yuanshen": ["0_22"],
+        "gm_legacy": ["mondstadtAnemoculus/22"],
+        "appsample": ["314"]
+      },
+      "popupMedia": "https://youtu.be/qFiw5t9k5Xc",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.36562, 36.5875],
+      "id": "44F3E412AED0EF57C7B96CBAE91B2411F0ED10E9",
+      "importIds": {
+        "yuanshen": ["0_23"],
+        "gm_legacy": ["mondstadtAnemoculus/23"],
+        "appsample": ["322"]
+      },
+      "popupMedia": "https://youtu.be/UWwUGj2vNvA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.14687, 37.24375],
+      "id": "DD622747A802DD3B1C03124A04A89D1F79CC1DC9",
+      "importIds": {
+        "yuanshen": ["0_24"],
+        "gm_legacy": ["mondstadtAnemoculus/24"],
+        "appsample": ["323"]
+      },
+      "popupMedia": "mondstadt/anemoculus/24",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.9125, 36.525],
+      "id": "1E2F2FD3B8041A64AA00F03BA5DA7CC2D51D301B",
+      "importIds": {
+        "yuanshen": ["0_25"],
+        "gm_legacy": ["mondstadtAnemoculus/25"],
+        "appsample": ["325"]
+      },
+      "popupMedia": "https://youtu.be/TASmw3X0mKg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.00625, 36.95469],
+      "id": "37FCECEB64C9FC780AEABCAD41EF88EA8BD2C7C2",
+      "importIds": {
+        "yuanshen": ["0_26"],
+        "gm_legacy": ["mondstadtAnemoculus/26"],
+        "appsample": ["326"]
+      },
+      "popupContent": {
+        "en": "This oculus is on top of one of the pillars. Use fire to burn the brambles or glide over from an adjacent pillar.",
+        "ru": "Анемокул находится на вершине одного из столба. Необходимо использовать огонь для сжигания куста или просто перелететь на столб с другого места."
+      },
+      "popupMedia": "mondstadt/anemoculus/26",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.08437, 37.86094],
+      "id": "DB2F260125B09B5D3455A72AF45B0DE19F61A8CF",
+      "importIds": {
+        "yuanshen": ["0_27"],
+        "gm_legacy": ["mondstadtAnemoculus/27"],
+        "appsample": ["328"]
+      },
+      "popupTitle": {
+        "en": "#27: Springvale Cliff"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is located underneath the cliff. Jump off, perform a glide, then turn around and move under the cliff to grab the floating Geoculus.",
+        "ru": "Анемокул находится под нижней частью утёса. Необходимо прыгнуть вниз, использовав крылья, после повернуться кругом и направляться под утёс, для того, чтобы схватить парящий Анемокул."
+      },
+      "popupMedia": "mondstadt/anemoculus/DB2F260",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.0375, 39.91562],
+      "id": "D2714316A9E0773D6965BDA0B89D2DEAA61B362A",
+      "importIds": {
+        "yuanshen": ["0_28"],
+        "gm_legacy": ["mondstadtAnemoculus/28"],
+        "appsample": ["327"]
+      },
+      "popupMedia": "https://youtu.be/QGI5wQZoKBM",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.50625, 39.39219],
+      "id": "9F73D27FF6A9A6F4EA18712B150181A27F91930A",
+      "importIds": {
+        "yuanshen": ["0_29"],
+        "gm_legacy": ["mondstadtAnemoculus/29"],
+        "appsample": ["331"]
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward. The rings will quickly boost you upward to reach the Anemoculus.",
+        "ru": "Необходимо собрать три Анемогранума для создания потока воздуха вверх. Кольца позволят ускориться ввысь, чтобы собрать Анемокул."
+      },
+      "popupMedia": "https://youtu.be/F7w2amQxCMM",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.27969, 36.36094],
+      "id": "5A354C7B66192E0F9EF74888D362CDCA4F6C6AC7",
+      "importIds": {
+        "yuanshen": ["0_30"],
+        "gm_legacy": ["mondstadtAnemoculus/30"],
+        "appsample": ["329"]
+      },
+      "popupTitle": {
+        "en": "#30: Dawn Winery"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is located on the roof of the Winery. Climb from the front door to the balcony above it. From there, you can climb onto the roof, then to the left side where the Anemoculus is.",
+        "ru": "Анемокул расположено на крыше Винодельни. Можно взобраться по передней двери на балкон, а отткуда уже взобраться на крышу, где с левой стороны будет Анемокул."
+      },
+      "popupMedia": "mondstadt/anemoculus/30",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.34219, 35.06406],
+      "id": "3DB6471B2E9D4AABA8A927C3D9DA69980C539EAE",
+      "importIds": {
+        "yuanshen": ["0_31"],
+        "gm_legacy": ["mondstadtAnemoculus/31"],
+        "appsample": ["1387"]
+      },
+      "popupMedia": "https://youtu.be/Ih3t4D7MYOk",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.87344, 36.76719],
+      "id": "452EB5C17DE66139C1F005DEBA997C094EEA0A22",
+      "importIds": {
+        "yuanshen": ["0_32"],
+        "gm_legacy": ["mondstadtAnemoculus/32"],
+        "appsample": ["330"]
+      },
+      "popupTitle": {
+        "en": "#32: Springvale Anemogranum A"
+      },
+      "popupContent": {
+        "zh": "从旁边山坡上开风场获取"
+      },
+      "popupMedia": "https://youtu.be/LaYdxT6bxlk",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.69375, 40.93906],
+      "id": "44A740A1353CF72A5F1DA817C55C81E8C9DB6E97",
+      "importIds": {
+        "yuanshen": ["0_33"],
+        "gm_legacy": ["mondstadtAnemoculus/33"],
+        "appsample": ["332"]
+      },
+      "popupTitle": {
+        "en": "#33: Springvale Anemogranum B"
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus.",
+        "ru": "Необходимо собрать три Анемогранума для создания потока воздуха, следуя ему на крылья, можно легко схватить Анемокул."
+      },
+      "popupMedia": "mondstadt/anemoculus/33",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.6625, 42.06406],
+      "id": "B42DEEDD52502725424B73BDE11C63A055FDE9DF",
+      "importIds": {
+        "yuanshen": ["0_34"],
+        "gm_legacy": ["mondstadtAnemoculus/34"],
+        "appsample": ["333"]
+      },
+      "popupTitle": {
+        "en": "#34: Springvale Roof"
+      },
+      "popupMedia": "mondstadt/anemoculus/34",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.39688, 42.89219],
+      "id": "3D774B0BBBB6B5D862A7FAFDD24D12DA832A9E97",
+      "importIds": {
+        "yuanshen": ["0_35"],
+        "gm_legacy": ["mondstadtAnemoculus/35"],
+        "appsample": ["336"]
+      },
+      "popupTitle": {
+        "en": "#35: Southeast Springvale Cliff"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is located on a cliff nearby to Springvale. You can simply walk up and grab it."
+      },
+      "popupMedia": "mondstadt/anemoculus/35",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.71719, 43.75937],
+      "id": "AA9EDE8AE627D74E8698BA68F6B982A44CC63DD7",
+      "importIds": {
+        "yuanshen": ["0_36"],
+        "gm_legacy": ["mondstadtAnemoculus/36"],
+        "appsample": ["338"]
+      },
+      "popupTitle": {
+        "en": "#36: Gorge Cliff"
+      },
+      "popupMedia": "https://youtu.be/Wr1otEds8mg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.2875, 43.82969],
+      "id": "8E312A312E450D88ADC2E1FFD5C8FAD2867B3414",
+      "importIds": {
+        "yuanshen": ["0_37"],
+        "gm_legacy": ["mondstadtAnemoculus/37"],
+        "appsample": ["339"]
+      },
+      "popupTitle": {
+        "en": "#37: Gorge Anemogranum"
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
+      },
+      "popupMedia": "https://youtu.be/CKA85jpKXps",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.48281, 44.4],
+      "id": "78B1B073A11E220F511DBEEEBB77B146C80525FE",
+      "importIds": {
+        "yuanshen": ["0_38"],
+        "gm_legacy": ["mondstadtAnemoculus/38"],
+        "appsample": ["340"]
+      },
+      "popupTitle": {
+        "en": "#38: Gorge Boulder"
+      },
+      "popupContent": {
+        "en": "This Anemoculus is floating in the air. You can climb up to the top of the nearby boulder, jump off, and glide to retrieve it."
+      },
+      "popupMedia": "mondstadt/anemoculus/38",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.74062, 44.86094],
+      "id": "7991A22EB340C92B60DE5594F289BD08D3F26AAC",
+      "importIds": {
+        "yuanshen": ["0_39"],
+        "gm_legacy": ["mondstadtAnemoculus/39"],
+        "appsample": ["343"]
+      },
+      "popupMedia": "https://youtu.be/dIjqhdEQmFE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.75625, 46.43125],
+      "id": "CB19B4DC259061E142CEDB6F143A7F90556B287B",
+      "importIds": {
+        "yuanshen": ["0_40"],
+        "gm_legacy": ["mondstadtAnemoculus/40"],
+        "appsample": ["345"]
+      },
+      "popupMedia": "https://youtu.be/F7hoHoDPFvs",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.82656, 46.95469],
+      "id": "BC0F7F13CACD1E854199FD6F92B98FE0E6E8550C",
+      "importIds": {
+        "yuanshen": ["0_41"],
+        "gm_legacy": ["mondstadtAnemoculus/41"],
+        "appsample": ["348"]
+      },
+      "popupMedia": "mondstadt/anemoculus/41",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.88125, 46.5875],
+      "id": "03A71B96E7B37130A2ED12D369DEF8D36EB9411B",
+      "importIds": {
+        "yuanshen": ["0_42"],
+        "gm_legacy": ["mondstadtAnemoculus/42"],
+        "appsample": ["349"]
+      },
+      "popupContent": {
+        "en": "Collect the three Mysterious Anemogranum to create a wind gust upward, allowing you to glide up and grab the Anemoculus."
+      },
+      "popupMedia": "https://youtu.be/dJnc3Mr_kG0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.42031, 48.79063],
+      "id": "F756BB680ADA3D73B582DA8624E9B47E439B8545",
+      "importIds": {
+        "yuanshen": ["0_43"],
+        "gm_legacy": ["mondstadtAnemoculus/43"],
+        "appsample": ["353"]
+      },
+      "popupMedia": "https://youtu.be/_qPH8SI6pLs",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.12343, 47.29844],
+      "id": "47ADDF69F090957BE0E69F72CB1DDBB5998431C5",
+      "importIds": {
+        "yuanshen": ["0_44"],
+        "gm_legacy": ["mondstadtAnemoculus/44"],
+        "appsample": ["350"]
+      },
+      "popupMedia": "https://youtu.be/Su1cuPbqfow",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.88907, 49.73593],
+      "id": "B752C11282F8DD13FFE3600FE93D00B3BAE8E957",
+      "importIds": {
+        "yuanshen": ["0_45"],
+        "gm_legacy": ["mondstadtAnemoculus/45"],
+        "appsample": ["352"]
+      },
+      "popupMedia": "https://youtu.be/5DcK4HxsNdw",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.45937, 48.50937],
+      "id": "A0035AF784CF251912B88A23F76F8CA502857A39",
+      "importIds": {
+        "yuanshen": ["0_46"],
+        "gm_legacy": ["mondstadtAnemoculus/46"],
+        "appsample": ["351"]
+      },
+      "popupMedia": "https://youtu.be/VhbqERK9vjY",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.27969, 52.12656],
+      "id": "96B06253CFBAA2C53F3AFE0F819F329F45D50665",
+      "importIds": {
+        "yuanshen": ["0_47"],
+        "gm_legacy": ["mondstadtAnemoculus/47"],
+        "appsample": ["354"]
+      },
+      "popupMedia": "https://youtu.be/Nbcr7reBQ6A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.71719, 43.65781],
+      "id": "C1855020A00A27D7FB86A3644A84DF43870D4B5C",
+      "importIds": {
+        "yuanshen": ["0_48"],
+        "gm_legacy": ["mondstadtAnemoculus/48"],
+        "appsample": ["337"]
+      },
+      "popupMedia": "https://youtu.be/u4xgWVtjgRY",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.02969, 45.24375],
+      "id": "FF61711D592A4E61321A7C7D5CE9F4643F972A05",
+      "importIds": {
+        "yuanshen": ["0_49"],
+        "gm_legacy": ["mondstadtAnemoculus/49"],
+        "appsample": ["342"]
+      },
+      "popupMedia": "https://youtu.be/F4sMCaP0ZUI",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-23.38906, 46.15],
+      "id": "3F0CE0A4B768270EC407749CCAA567FF273450CD",
+      "importIds": {
+        "yuanshen": ["0_50"],
+        "gm_legacy": ["mondstadtAnemoculus/50"],
+        "appsample": ["344"]
+      },
+      "popupMedia": "mondstadt/anemoculus/50",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.37344, 45.36875],
+      "id": "3767565694921E76C1F628860CBB5BE869029766",
+      "importIds": {
+        "yuanshen": ["0_51"],
+        "gm_legacy": ["mondstadtAnemoculus/51"],
+        "appsample": ["341"]
+      },
+      "popupMedia": "https://www.youtube.com/watch?v=65IuX05dvAc",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.82656, 46.70469],
+      "id": "0CB575E176BBF576D2092FEBB1E4C5AA280F81E9",
+      "importIds": {
+        "yuanshen": ["0_52"],
+        "gm_legacy": ["mondstadtAnemoculus/52"],
+        "appsample": ["346"]
+      },
+      "popupMedia": "https://youtu.be/dXaDQlFZZy8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.24063, 45.32969],
+      "id": "E5BB924DBA511AEFEA7B41B8A84A3E6AA004E677",
+      "importIds": {
+        "yuanshen": ["0_53"],
+        "gm_legacy": ["mondstadtAnemoculus/53"],
+        "appsample": ["347"]
+      },
+      "popupMedia": "mondstadt/anemoculus/53",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.68593, 45.31406],
+      "id": "18F36069D59A4686DBEC938A6956C7A1B5F6A166",
+      "importIds": {
+        "yuanshen": ["0_54"],
+        "gm_legacy": ["mondstadtAnemoculus/54"],
+        "appsample": ["356"]
+      },
+      "popupMedia": "mondstadt/anemoculus/54",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.40469, 48.40781],
+      "id": "2801821F81322804F9384893F55598C0DED181FA",
+      "importIds": {
+        "yuanshen": ["0_55"],
+        "gm_legacy": ["mondstadtAnemoculus/55"],
+        "appsample": ["355"]
+      },
+      "popupMedia": "mondstadt/anemoculus/55",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.42813, 50.60313],
+      "id": "A704114A0CAED4B4FDA20D7147AADA3821C77680",
+      "importIds": {
+        "yuanshen": ["0_56"],
+        "gm_legacy": ["mondstadtAnemoculus/56"],
+        "appsample": ["357"]
+      },
+      "popupMedia": "mondstadt/anemoculus/56",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.69375, 49.2125],
+      "id": "681A3C22D998216CA65A7F000568B4C82F872FB1",
+      "importIds": {
+        "yuanshen": ["0_57"],
+        "gm_legacy": ["mondstadtAnemoculus/57"],
+        "appsample": ["358"]
+      },
+      "popupMedia": "https://youtu.be/t408wedYlbg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.93594, 44.61094],
+      "id": "374CEE9E9D5392BE9114B04FF31B165255DBF94C",
+      "importIds": {
+        "yuanshen": ["0_58"],
+        "gm_legacy": ["mondstadtAnemoculus/58"],
+        "appsample": ["363"]
+      },
+      "popupMedia": "https://youtu.be/1GrLLLimHYs",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.48281, 43.62657],
+      "id": "9381A73A33210C8BCD9582B0CCD917CA4070CCF9",
+      "importIds": {
+        "yuanshen": ["0_59"],
+        "gm_legacy": ["mondstadtAnemoculus/59"],
+        "appsample": ["362"]
+      },
+      "popupMedia": "https://youtu.be/fZfuDaGBfY4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.45156, 48.63828],
+      "id": "2C8C99C5E4A95F6D03D816A1D62CE45E9E1B9114",
+      "importIds": {
+        "yuanshen": ["0_60"],
+        "gm_legacy": ["mondstadtAnemoculus/60"],
+        "appsample": ["361"]
+      },
+      "popupMedia": "mondstadt/anemoculus/60",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.94375, 50.94688],
+      "id": "401191F8A272D086CC69AFECDCA92F61657C5A49",
+      "importIds": {
+        "yuanshen": ["0_61"],
+        "gm_legacy": ["mondstadtAnemoculus/61"],
+        "appsample": ["360"]
+      },
+      "popupMedia": "https://youtu.be/yo57sy-HwqQ",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.4125, 56.9625],
+      "id": "0EF40A005C7F8A89015B2AA294C0036F6E1DF6C3",
+      "importIds": {
+        "yuanshen": ["0_62"],
+        "gm_legacy": ["mondstadtAnemoculus/62"],
+        "appsample": ["359"]
+      },
+      "popupMedia": "https://youtu.be/XjU1JKupzvI",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.70938, 59.60313],
+      "id": "1171E6B29C7128C473F425C42D49B92A6FA0A4CA",
+      "importIds": {
+        "yuanshen": ["0_63"],
+        "gm_legacy": ["mondstadtAnemoculus/63"],
+        "appsample": ["364"]
+      },
+      "popupMedia": "https://youtu.be/fZfuDaGBfY4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.13906, 39.20468],
+      "id": "7DDF19E3C68504F9C00CD840432ED1E5B7DB828B",
+      "importIds": {
+        "yuanshen": ["0_64"],
+        "gm_legacy": ["mondstadtAnemoculus/64"],
+        "appsample": ["334"]
+      },
+      "popupMedia": "https://youtu.be/ZE-NYhyU44M",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.77969, 39.69687],
+      "id": "EBA0F96C58B9B6C16DEA6072ABD3086A85CE55D8",
+      "importIds": {
+        "yuanshen": ["0_65"],
+        "gm_legacy": ["mondstadtAnemoculus/65"],
+        "appsample": ["335"]
+      },
+      "popupMedia": "https://youtu.be/ZE-NYhyU44M",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}
