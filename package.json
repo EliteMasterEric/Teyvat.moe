@@ -37,7 +37,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
-    "@react-leaflet/core": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist",
+    "@react-leaflet/core": "file:./packages/react-leaflet/packages/core/",
     "@reduxjs/toolkit": "^1.4.0",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
@@ -57,7 +57,7 @@
     "react-dropzone": "^11.2.4",
     "react-helmet-async": "^1.0.7",
     "react-lazy-load-image-component": "^1.5.0",
-    "react-leaflet": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/react-leaflet?dist",
+    "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet/",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-leaflet-textpath": "^2.0.0",
     "react-localization": "^1.0.15",
@@ -94,7 +94,7 @@
     "serve": "^11.3.2"
   },
   "resolutions": {
-    "@react-leaflet/core": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist",
-    "react-leaflet": "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/react-leaflet?dist"
+    "@react-leaflet/core": "file:./packages/react-leaflet/packages/core",
+    "react-leaflet": "file:./packages/react-leaflet/packages/core"
   }
 }

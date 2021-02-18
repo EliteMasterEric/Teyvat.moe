@@ -1541,9 +1541,8 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@react-leaflet/core@^1.0.2", "@react-leaflet/core@https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist":
-  version "1.0.2"
-  resolved "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist#5bcf19eac8d670308a2159a9cc2a257205ec9c70"
+"@react-leaflet/core@^1.0.2", "@react-leaflet/core@file:./packages/react-leaflet/packages/core", "@react-leaflet/core@https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist":
+  version "69.0.0-eric"
 
 "@reduxjs/toolkit@^1.4.0":
   version "1.5.0"
@@ -9851,11 +9850,13 @@ react-leaflet-textpath@^2.0.0:
   dependencies:
     leaflet-textpath "^1.2.3"
 
-react-leaflet@^3.0.0, "react-leaflet@https://gitpkg.now.sh/MasterEric/react-leaflet/packages/react-leaflet?dist":
-  version "3.1.0"
-  resolved "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/react-leaflet?dist#e47fe3cd466ab388cecdb1dc42617c87fe860ab0"
+react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/core":
+  version "69.0.0-eric"
+
+"react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
+  version "69.0.0-eric"
   dependencies:
-    "@react-leaflet/core" "^1.0.2"
+    "@react-leaflet/core" "https://gitpkg.now.sh/MasterEric/react-leaflet/packages/core?dist"
 
 react-localization@^1.0.15:
   version "1.0.15"
