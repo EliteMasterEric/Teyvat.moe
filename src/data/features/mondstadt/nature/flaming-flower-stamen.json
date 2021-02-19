@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Flaming Flower Stamen",
+    "zh": "烈焰花",
+    "ru": "Пылающий Цветок (тычинка)",
+    "pt": "Flor Flamejante (Estame)"
+  },
   "description": {
     "en": "The stamen of a fiercely burning flower. Harvest using a Hydro skill. Used in Alchemy."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Flaming Flower Stamen",
-    "ru": "Пылающий Цветок (тычинка)",
-    "pt": "Flor Flamejante (Estame)"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "flaming-flower-stamen",
@@ -28,12 +29,6 @@
         "gm_legacy": ["mondstadtFlamingFlowerStamen/2"],
         "yuanshen": ["51_2"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtFlamingFlowerStamen/3"],
         "yuanshen": ["51_3"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,12 +47,6 @@
         "gm_legacy": ["mondstadtFlamingFlowerStamen/4"],
         "yuanshen": ["51_4"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtFlamingFlowerStamen/5"],
         "yuanshen": ["51_5"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -88,12 +65,6 @@
         "gm_legacy": ["mondstadtFlamingFlowerStamen/6"],
         "yuanshen": ["51_6"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -102,12 +73,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtFlamingFlowerStamen/7"],
         "yuanshen": ["51_7"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -118,12 +83,6 @@
         "gm_legacy": ["mondstadtFlamingFlowerStamen/8"],
         "yuanshen": ["51_8"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -132,12 +91,6 @@
       "importIds": {
         "yuanshen": ["51_1"],
         "gm_legacy": ["mondstadtFlamingFlowerStamen/1"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -148,12 +101,6 @@
         "yuanshen": ["51_9"],
         "gm_legacy": ["mondstadtFlamingFlowerStamen/9"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -162,12 +109,6 @@
       "importIds": {
         "yuanshen": ["51_10"],
         "gm_legacy": ["mondstadtFlamingFlowerStamen/10"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -178,12 +119,6 @@
         "yuanshen": ["51_11"],
         "gm_legacy": ["mondstadtFlamingFlowerStamen/11"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -193,12 +128,6 @@
         "yuanshen": ["51_12"],
         "gm_legacy": ["mondstadtFlamingFlowerStamen/12"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -206,12 +135,6 @@
       "id": "FC26C495A148A75585A6630C6021A7774EC34CF7",
       "importIds": {
         "yuanshen": ["51_13"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -221,12 +144,6 @@
       "importIds": {
         "yuanshen": ["51_14"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -234,12 +151,6 @@
       "id": "7509EC1C8CEA5BE00931B730C11D743DBD5EEDA7",
       "importIds": {
         "yuanshen": ["51_15"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -249,12 +160,6 @@
       "importIds": {
         "yuanshen": ["51_16"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花（山顶上）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -262,12 +167,6 @@
       "id": "4BE27008AC2B02FED19F51F9574834C961C2F166",
       "importIds": {
         "yuanshen": ["51_17"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -277,12 +176,6 @@
       "importIds": {
         "yuanshen": ["51_18"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -290,12 +183,6 @@
       "id": "7C95DF00769788545DEF5F92686E54A1118957BE",
       "importIds": {
         "yuanshen": ["51_19"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -305,12 +192,6 @@
       "importIds": {
         "yuanshen": ["51_20"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -318,12 +199,6 @@
       "id": "8E2F4C2062C54521C5ECFE65356B046428E10D6F",
       "importIds": {
         "yuanshen": ["51_21"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -333,12 +208,6 @@
       "importIds": {
         "yuanshen": ["51_22"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -346,12 +215,6 @@
       "id": "DB793784B1DB7F2AC4E3C7747FD6F8EE665A2276",
       "importIds": {
         "yuanshen": ["51_23"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -361,12 +224,6 @@
       "importIds": {
         "yuanshen": ["51_24"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "这是一朵烈焰花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -374,12 +231,6 @@
       "id": "32462E6DDE5DADB55E24F7DCE00EE6612D2AE524",
       "importIds": {
         "yuanshen": ["51_25"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -389,12 +240,6 @@
       "importIds": {
         "yuanshen": ["51_26"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -402,12 +247,6 @@
       "id": "4D22CADA88FF24A401275B22D6667DA6CDD0297C",
       "importIds": {
         "yuanshen": ["51_27"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -417,12 +256,6 @@
       "importIds": {
         "yuanshen": ["51_28"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -430,12 +263,6 @@
       "id": "691553FD70D1805E9B2A3F39E0F17507713A347E",
       "importIds": {
         "yuanshen": ["51_29"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -445,12 +272,6 @@
       "importIds": {
         "yuanshen": ["51_30"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -458,12 +279,6 @@
       "id": "B3C22C228E57174A3574D62702C798E37E04F9AA",
       "importIds": {
         "yuanshen": ["51_31"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -473,12 +288,6 @@
       "importIds": {
         "yuanshen": ["51_32"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -486,12 +295,6 @@
       "id": "25CDF0C1780D2417824AA9484A2887807BD43AB9",
       "importIds": {
         "yuanshen": ["51_33"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -501,12 +304,6 @@
       "importIds": {
         "yuanshen": ["51_34"]
       },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -514,12 +311,6 @@
       "id": "E63FD6E2B572213982220E576038E419C0041ED6",
       "importIds": {
         "yuanshen": ["51_35"]
-      },
-      "popupTitle": {
-        "zh": "烈焰花"
-      },
-      "popupContent": {
-        "zh": "是烈焰花哒！"
       },
       "popupAttribution": "Yuanshen.site"
     }

@@ -83,10 +83,7 @@ const completedReducer = (state, action) => {
         ...state,
         completed: {
           ...state.completed,
-          features: {
-            ...state.completed.features,
-            ...newMarkerFeatureData,
-          },
+          features: newMarkerFeatureData,
         },
       };
     case CLEAR_FEATURE_MARKER_COMPLETED:

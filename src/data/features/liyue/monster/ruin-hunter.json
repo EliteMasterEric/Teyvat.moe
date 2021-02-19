@@ -1,14 +1,15 @@
 {
   "format": 2,
+  "name": {
+    "en": "Ruin Hunter",
+    "zh": "遗迹猎者",
+    "pt": "Caçador das Ruínas"
+  },
   "description": {
     "en": "A giant alien war machine, said to be remnants from a lost ancient nation. Drops Chaos Device."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Ruin Hunter",
-    "pt": "Caçador das Ruínas"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "ruin-hunter",
@@ -27,12 +28,6 @@
         "gm_legacy": ["liyueRuinHunter/1"],
         "yuanshen": ["21_1"]
       },
-      "popupTitle": {
-        "zh": "遗迹猎者"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹猎者"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -41,12 +36,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinHunter/2"],
         "yuanshen": ["21_2"]
-      },
-      "popupTitle": {
-        "zh": "遗迹猎者"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹猎者"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -57,12 +46,6 @@
         "gm_legacy": ["liyueRuinHunter/3"],
         "yuanshen": ["21_3"]
       },
-      "popupTitle": {
-        "zh": "遗迹猎者"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹猎者"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
         "gm_legacy": ["liyueRuinHunter/4"],
         "yuanshen": ["21_4"]
       },
-      "popupTitle": {
-        "zh": "遗迹猎者"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹猎者"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -86,12 +63,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinHunter/5"],
         "yuanshen": ["21_5"]
-      },
-      "popupTitle": {
-        "zh": "遗迹猎者"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹猎者"
       },
       "popupAttribution": "Yuanshen.site"
     }

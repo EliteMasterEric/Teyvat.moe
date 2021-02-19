@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Whopperflower",
+    "ru": "Попрыгунья",
+    "zh": "骗骗花",
+    "pt": "Flor Gigante"
+  },
   "description": {
     "en": "A bizarre mimetic plant monster that harnesses the elements in combat. Drops Whopperflower Nectar.",
     "ru": "Изворотливо миметическое растение-монстр, которое использует в бою элементы. Возможные награды: Нектар Попрыгуньи."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Whopperflower",
-    "ru": "Попрыгунья",
-    "pt": "Flor Gigante"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "whopperflower",
@@ -29,12 +30,6 @@
         "gm_legacy": ["mondstadtWhopperflower/1"],
         "yuanshen": ["35_1"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -43,12 +38,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/2"],
         "yuanshen": ["35_2"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个烈焰骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -59,12 +48,6 @@
         "gm_legacy": ["mondstadtWhopperflower/3"],
         "yuanshen": ["35_3"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "捡完甜甜花后出现的冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -73,12 +56,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/4"],
         "yuanshen": ["35_4"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "捡完小灯草出现的冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -89,12 +66,6 @@
         "gm_legacy": ["mondstadtWhopperflower/5"],
         "yuanshen": ["35_5"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个火焰骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -103,12 +74,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/6"],
         "yuanshen": ["35_6"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "捡了薄荷出现的冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -119,12 +84,6 @@
         "gm_legacy": ["mondstadtWhopperflower/7"],
         "yuanshen": ["35_7"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -133,12 +92,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/8"],
         "yuanshen": ["35_8"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个火焰骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -149,12 +102,6 @@
         "gm_legacy": ["mondstadtWhopperflower/9"],
         "yuanshen": ["35_9"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -163,12 +110,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/10"],
         "yuanshen": ["35_10"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -179,12 +120,6 @@
         "gm_legacy": ["mondstadtWhopperflower/11"],
         "yuanshen": ["35_11"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "薄荷D是假的！（详情可看薄荷小剧场！）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -193,12 +128,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/12"],
         "yuanshen": ["35_12"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "薄荷D在撒谎，捡了就会出现冰霜骗骗花（详情看这里的薄荷，有小剧场彩蛋）"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -209,12 +138,6 @@
         "gm_legacy": ["mondstadtWhopperflower/13"],
         "yuanshen": ["35_13"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "捡了薄荷之后出现的冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -223,12 +146,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/14"],
         "yuanshen": ["35_14"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -239,12 +156,6 @@
         "gm_legacy": ["mondstadtWhopperflower/15"],
         "yuanshen": ["35_15"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "采集冰雾花出现的冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -253,12 +164,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/16"],
         "yuanshen": ["35_16"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个调查甜甜花出现的冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -269,12 +174,6 @@
         "gm_legacy": ["mondstadtWhopperflower/17"],
         "yuanshen": ["35_17"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -283,12 +182,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/18"],
         "yuanshen": ["35_18"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -299,12 +192,6 @@
         "gm_legacy": ["mondstadtWhopperflower/19"],
         "yuanshen": ["35_19"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -313,12 +200,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWhopperflower/20"],
         "yuanshen": ["35_20"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -329,12 +210,6 @@
         "gm_legacy": ["mondstadtWhopperflower/21"],
         "yuanshen": ["35_21"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "这是有一个冰霜骗骗花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -343,12 +218,6 @@
       "importIds": {
         "yuanshen": ["35_22"]
       },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "捡取3个甜甜花后出现"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -356,12 +225,6 @@
       "id": "F5045F8BB52418D69D731A400DCC267B03732C4D",
       "importIds": {
         "yuanshen": ["35_36"]
-      },
-      "popupTitle": {
-        "zh": "骗骗花-蒙德"
-      },
-      "popupContent": {
-        "zh": "调查薄荷出现的烈焰骗骗花"
       },
       "popupAttribution": "Yuanshen.site"
     }

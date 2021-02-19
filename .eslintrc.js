@@ -5,11 +5,13 @@ module.exports = {
   },
   settings: {
     // Import should respect ~ as './src'
-    'import/resolver': 'babel-plugin-root-import',
+    'import/resolver': {
+      'babel-plugin-root-import': {},
+    },
   },
   parser: '@babel/eslint-parser',
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['@babel', 'prettier', 'mui-unused-classes'],
+  plugins: ['@babel', 'prettier', 'mui-unused-classes', 'json-files'],
   rules: {
     /**
      * Set up basic formatting rules with the Prettier plugin.
@@ -45,9 +47,18 @@ module.exports = {
     'react/jsx-boolean-value': ['warn'],
 
     /**
+     * Validate Node JSON files.
+     */
+    'json-files/no-branch-in-dependencies': ['error'],
+    'json-files/require-engines': ['error'],
+    'json-files/require-license': ['error'],
+    'json-files/restrict-ranges': ['error'],
+    'json-files/sort-package-json': ['error'],
+
+    /**
      * Turn off rules I don't like, or that annoy me.
      */
-    'react/jsx-filename-extension': ['off'], // Allow JSX in .js files.
+    'react/jsx-filename-extension': ['off'], // Tried to turn this on but babel-plugin-root-import complains.
     'react/prop-types': ['off'], // I don't use TypeScript.
     'no-underscore-dangle': ['off'], // Allow dangling underscores in identifier names.
     'no-case-declarations': ['off'], // Allow variables to be declared in case blocks.

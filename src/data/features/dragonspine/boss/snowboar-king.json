@@ -4,9 +4,9 @@
     "en": "Snowboar King"
   },
   "description": {
-    "en": "The true king of Dragonspine. Drops Chilled Meat."
+    "en": "The true king of Dragonspine. Drops 6-10 Chilled Meat."
   },
-  "enabled": false,
+  "enabled": true,
   "cluster": "off",
   "respawn": "none",
   "icons": {
@@ -18,5 +18,18 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-32.3211, 43.86168],
+      "id": "AA31C1729E93F7E7872C25D8F6715F026969FD17",
+      "popupTitle": {
+        "en": "Snowboar King"
+      },
+      "popupContent": {
+        "en": "Thaw and kill the three nearby Boars to spawn."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": ""
+    }
+  ]
 }

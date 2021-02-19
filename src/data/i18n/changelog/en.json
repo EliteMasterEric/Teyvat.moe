@@ -1,8 +1,15 @@
-/**
- * This file contains the data used on the Changelog tab for the English language.
- * Don't feel obligated to update this quickly, as it receives additions with each update.
- */
 [
+  {
+    "version": "v0.11.1 - Chest Cleanup and Bug Fixes",
+    "date": "February 19, 2021",
+    "description": [
+      "Added Snowboar King (Dragonspine Boss)",
+      "Added Illumiscreen (Liyue Event)",
+      "Sorted 142 Chests from Common Chests (Dragonspine) based on rarity in Chinese description.",
+      "Fixed bug preventing 'Clear Refreshed Markers' from working.",
+      "Various other fixes."
+    ]
+  },
   {
     "version": "v0.11.0 - AppSample Migration, Editor QoL",
     "date": "February 17, 2021",

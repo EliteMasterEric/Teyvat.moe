@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Crystal Core",
+    "ru": "Кристальное Ядро",
+    "zh": "岩晶蝶",
+    "pt": "Núcleo de Cristal"
+  },
   "description": {
     "en": "The core of a Crystalfly. Used in Alchemy to craft Condensed Resin."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Crystal Core",
-    "ru": "Кристальное Ядро",
-    "pt": "Núcleo de Cristal"
-  },
   "icons": {
     "filter": "crystal-core",
     "base": {
@@ -27,12 +28,6 @@
       "importIds": {
         "yuanshen": ["60_1"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -40,12 +35,6 @@
       "id": "F5C8E18D57C9F2C7F93E84B37A63EB63BAF01E5F",
       "importIds": {
         "yuanshen": ["60_2"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,12 +44,6 @@
       "importIds": {
         "yuanshen": ["60_3"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "在上空有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -68,12 +51,6 @@
       "id": "2E4FF2B98F765755B49849F62E6B48128B96FDC9",
       "importIds": {
         "yuanshen": ["60_4"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "在上空有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -83,12 +60,6 @@
       "importIds": {
         "yuanshen": ["60_5"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -96,12 +67,6 @@
       "id": "ADDAB1DAC765137094C7F00578700E716AC90EA2",
       "importIds": {
         "yuanshen": ["60_6"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -111,12 +76,6 @@
       "importIds": {
         "yuanshen": ["60_7"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -124,12 +83,6 @@
       "id": "190ECF29439D7ECA0BE2121B8939ECC004871116",
       "importIds": {
         "yuanshen": ["60_8"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -139,12 +92,6 @@
       "importIds": {
         "yuanshen": ["60_9"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -152,12 +99,6 @@
       "id": "69A9EA2FA1C1AFEC6DC231873AF0533BBB5BB0F6",
       "importIds": {
         "yuanshen": ["60_10"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "山洞中关卡入口旁边有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -167,12 +108,6 @@
       "importIds": {
         "yuanshen": ["60_16"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -180,12 +115,6 @@
       "id": "6343A5CC4F9358F82F55C1D5A91A1A006555F502",
       "importIds": {
         "yuanshen": ["60_12"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -195,12 +124,6 @@
       "importIds": {
         "yuanshen": ["60_13"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -208,12 +131,6 @@
       "id": "93ACC1F54571C4D362D0B588F602AA1FA2837A26",
       "importIds": {
         "yuanshen": ["60_14"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -223,12 +140,6 @@
       "importIds": {
         "yuanshen": ["60_17"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -236,12 +147,6 @@
       "id": "BA361630304626655CB838D4DF1254A37E69BC12",
       "importIds": {
         "yuanshen": ["60_18"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -251,12 +156,6 @@
       "importIds": {
         "yuanshen": ["60_19"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -264,12 +163,6 @@
       "id": "CFF4F971846904C303EA1DF59988E821888B0FF3",
       "importIds": {
         "yuanshen": ["60_20"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -279,12 +172,6 @@
       "importIds": {
         "yuanshen": ["60_21"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -292,12 +179,6 @@
       "id": "7AA42088F44BF6C3A972F8A7ADF3BB4B5944F153",
       "importIds": {
         "yuanshen": ["60_22"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -307,12 +188,6 @@
       "importIds": {
         "yuanshen": ["60_23"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -320,12 +195,6 @@
       "id": "BE4E0F09F45093E5818F6A18AF1997979D074E45",
       "importIds": {
         "yuanshen": ["60_24"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -335,12 +204,6 @@
       "importIds": {
         "yuanshen": ["60_26"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -348,12 +211,6 @@
       "id": "D3C97A1A685BA57C2E32D69B28C4CC333D92A2D3",
       "importIds": {
         "yuanshen": ["60_27"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -363,12 +220,6 @@
       "importIds": {
         "yuanshen": ["60_28"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -376,12 +227,6 @@
       "id": "97709B6F758984E7AF3525388F75FB313A0D3826",
       "importIds": {
         "yuanshen": ["60_29"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -391,12 +236,6 @@
       "importIds": {
         "yuanshen": ["60_30"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -404,12 +243,6 @@
       "id": "C32E8D2BB141B0D2A53223A0EC7B2967BDA80AFE",
       "importIds": {
         "yuanshen": ["60_31"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -419,12 +252,6 @@
       "importIds": {
         "yuanshen": ["60_32"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -432,12 +259,6 @@
       "id": "E29BA09A188272648C56052C5A1FAA1D242FC2AB",
       "importIds": {
         "yuanshen": ["60_33"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -447,12 +268,6 @@
       "importIds": {
         "yuanshen": ["60_34"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -460,12 +275,6 @@
       "id": "405406F937AB752ADDA710C7C1BC6CBD95827FC1",
       "importIds": {
         "yuanshen": ["60_35"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -475,12 +284,6 @@
       "importIds": {
         "yuanshen": ["60_36"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -488,12 +291,6 @@
       "id": "454FDE70724FFCA442A8BE5D5BC226863AA70907",
       "importIds": {
         "yuanshen": ["60_37"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -503,12 +300,6 @@
       "importIds": {
         "yuanshen": ["60_38"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -516,12 +307,6 @@
       "id": "E2F550B8AEF6E9D101B48AB98151B884B6B20799",
       "importIds": {
         "yuanshen": ["60_39"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -531,12 +316,6 @@
       "importIds": {
         "yuanshen": ["60_40"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -544,12 +323,6 @@
       "id": "CEAE92BA5EE64D62B8BB4485CF82361B73418CF0",
       "importIds": {
         "yuanshen": ["60_41"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -559,12 +332,6 @@
       "importIds": {
         "yuanshen": ["60_42"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -573,12 +340,6 @@
       "importIds": {
         "yuanshen": ["60_43"]
       },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -586,12 +347,6 @@
       "id": "F00C98C04D0F2D3EF070DFC6D641213076A7746E",
       "importIds": {
         "yuanshen": ["60_44"]
-      },
-      "popupTitle": {
-        "zh": "岩晶蝶"
-      },
-      "popupContent": {
-        "zh": "这里有一只岩晶蝶"
       },
       "popupAttribution": "Yuanshen.site"
     }

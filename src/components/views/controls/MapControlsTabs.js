@@ -94,7 +94,6 @@ const _MapControlsTabs = ({ editorEnabled, tab, setTab, displayed }) => {
       value={tab}
       onChange={setTab}
       tabs={tabs}
-      defaultTab="options"
       icons
     />
   );

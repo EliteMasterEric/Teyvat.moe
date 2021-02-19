@@ -1,0 +1,95 @@
+{
+  "format": 2,
+  "enabled": true,
+  "respawn": "none",
+  "name": {
+    "en": "Illumiscreen"
+  },
+  "description": {
+    "en": "Precious Chests available only from special Event Quests during the Lantern Rite event."
+  },
+  "cluster": "variable",
+  "icons": {
+    "filter": "precious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-30.14843, 18.48437],
+      "id": "B796D0267EEB7EEAEAB89BBEEC877193A926F38F",
+      "popupTitle": {
+        "en": "Illumiscreen I: Glaze Lily"
+      },
+      "popupContent": {
+        "en": "This Precious Chest is located in a cave, on top of the Shrine, guarded by several unique Spider monsters."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/SpsBZGD.jpg"
+    },
+    {
+      "coordinates": [-25.40625, 26.66406],
+      "id": "91CB8BB23BC35D1A5B57E3878A20E892600915D2",
+      "popupTitle": {
+        "en": "Illumiscreen I: Glaze Lily"
+      },
+      "popupContent": {
+        "en": "This Precious Chest is located at the lower level at the base of the waterfall."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/jMwCC9a.jpg"
+    },
+    {
+      "coordinates": [-29.81250, 32.94531],
+      "id": "BDE1B9D3FFAF23BB060A389D0D14ACEA47D9E39E",
+      "popupTitle": {
+        "en": "Illumiscreen I: Glaze Lily"
+      },
+      "popupContent": {
+        "en": "There is a prompt to dig in the camp guarded by Treasure Hoarders. Interacting with it reveals the Precious Chest."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/L49LwRB.jpg"
+    },
+    {
+      "coordinates": [-33.01953, 15.63281],
+      "id": "71A1C09719FC07EA1D436BEA05755B1A027FA288",
+      "popupTitle": {
+        "en": "Illumiscreen II: Mora"
+      },
+      "popupContent": {
+        "en": "This Precious Chest is revealed after completing a Time Challenge. Glide up and shoot one of the explosive barrels to trigger all of them and complete the challenge quickly."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/XuiLpiX.jpg"
+    },
+    {
+      "coordinates": [-33.43359, 23.31640],
+      "id": "1FB5DD141DF4B8ED1437D82D090EC3A4FD0DA8D5",
+      "popupTitle": {
+        "en": "Illumiscreen II: Mora"
+      },
+      "popupContent": {
+        "en": "After defeating the nearby Hilichurls, dig at the indicated spot to reveal the Precious Chest."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/rvTQqQr.jpg"
+    },
+    {
+      "coordinates": [-35.32031, 30.11328],
+      "id": "DCDE42E356C468D99F2C1ABF461374A2064372FD",
+      "popupTitle": {
+        "en": "Illumiscreen II: Mora"
+      },
+      "popupContent": {
+        "en": "To create a wind gust to access the Precious Chest, guide the three nearby Seelies to their homes. As a bonus, you'll get three Exquisite Chests after. Pro Tip: You can use Elemental Sight on a Seelie Garden to get a hint at where the Seelie is."
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://i.imgur.com/krT4sDY.jpg"
+    }
+  ]
+}

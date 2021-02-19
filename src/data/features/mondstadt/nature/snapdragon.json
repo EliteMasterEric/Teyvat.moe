@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Snapdragon",
+    "zh": "金鱼草",
+    "ru": "Львиный Зев",
+    "pt": "Flor-Crânio-de-Dragão"
+  },
   "description": {
     "en": "As a spice, it can bring a wonderful flavor to dishes. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Snapdragon",
-    "ru": "Львиный Зев",
-    "pt": "Flor-Crânio-de-Dragão"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "snapdragon",
@@ -28,12 +29,6 @@
         "gm_legacy": ["mondstadtSnapdragon/1"],
         "yuanshen": ["61_1"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtSnapdragon/3"],
         "yuanshen": ["61_3"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,13 +47,6 @@
         "yuanshen": ["61_2"],
         "gm_legacy": ["mondstadtSnapdragon/2"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#2"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -73,13 +55,6 @@
       "importIds": {
         "yuanshen": ["61_4"],
         "gm_legacy": ["mondstadtSnapdragon/4"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#4"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -90,13 +65,6 @@
         "yuanshen": ["61_5"],
         "gm_legacy": ["mondstadtSnapdragon/5"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#5"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -105,13 +73,6 @@
       "importIds": {
         "yuanshen": ["61_6"],
         "gm_legacy": ["mondstadtSnapdragon/6"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#6"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -122,13 +83,6 @@
         "yuanshen": ["61_7"],
         "gm_legacy": ["mondstadtSnapdragon/7"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#7"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -136,13 +90,6 @@
       "id": "617B216248795E8755048EE45E4237C8B077FE35",
       "importIds": {
         "yuanshen": ["61_8"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#8"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -152,13 +99,6 @@
       "importIds": {
         "yuanshen": ["61_9"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#9"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -166,13 +106,6 @@
       "id": "20A36C1ABA7518187328DEB8D1DE6A89A2DC6CD4",
       "importIds": {
         "yuanshen": ["61_10"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#10"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -182,13 +115,6 @@
       "importIds": {
         "yuanshen": ["61_12"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#12"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -196,13 +122,6 @@
       "id": "36702D58084D5DAAE1986DB38BFCF3189F939163",
       "importIds": {
         "yuanshen": ["61_13"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#13"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -212,13 +131,6 @@
       "importIds": {
         "yuanshen": ["61_14"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#14"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -226,13 +138,6 @@
       "id": "C07CDE801F83012C6F97853DE0E8E4597AC5DD56",
       "importIds": {
         "yuanshen": ["61_15"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#15"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -242,13 +147,6 @@
       "importIds": {
         "yuanshen": ["61_16"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#16"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -256,13 +154,6 @@
       "id": "A638EEBB9BB795A17013D049DB83DCD9788F2DD8",
       "importIds": {
         "yuanshen": ["61_18"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#18"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -272,13 +163,6 @@
       "importIds": {
         "yuanshen": ["61_19"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#19"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -286,13 +170,6 @@
       "id": "58096CE7AD0AE8A99A1F1ED3954DCEE7B369544C",
       "importIds": {
         "yuanshen": ["61_20"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#20"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -302,13 +179,6 @@
       "importIds": {
         "yuanshen": ["61_21"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#21"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -316,13 +186,6 @@
       "id": "44EE5D537A5B8E4A6565759FF28D21CF454017FD",
       "importIds": {
         "yuanshen": ["61_22"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#22"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -332,13 +195,6 @@
       "importIds": {
         "yuanshen": ["61_23"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#23"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -347,13 +203,6 @@
       "importIds": {
         "yuanshen": ["61_24"]
       },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#24"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -361,13 +210,6 @@
       "id": "FFDC94CA8FA79CE8567BC4EA26A16C2232C99609",
       "importIds": {
         "yuanshen": ["61_25"]
-      },
-      "popupTitle": {
-        "zh": "金鱼草-蒙德",
-        "en": "#25"
-      },
-      "popupContent": {
-        "zh": "这里有一株金鱼草"
       },
       "popupAttribution": "Yuanshen.site"
     }

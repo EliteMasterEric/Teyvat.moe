@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -42,6 +42,7 @@
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
+    "eslint-plugin-json-files": "^0.8.1",
     "googleapis": "^67.0.0",
     "joi": "^17.3.0",
     "leaflet": "github:MasterEric/Leaflet#dist",
@@ -87,11 +88,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "jsonc-loader": "^0.1.1",
     "prettier": "^2.1.2",
     "react-app-rewired": "^2.1.8",
     "react-dev-utils": "^11.0.1",
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "resolutions": {
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core",

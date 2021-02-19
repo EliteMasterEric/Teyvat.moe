@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Berry",
+    "pt": "Baga",
+    "zh": "树莓",
+    "ru": "Ягода"
+  },
   "description": {
     "en": "Small brightly-colored fruit used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Berry",
-    "pt": "Baga",
-    "ru": "Ягода"
-  },
   "icons": {
     "filter": "berry",
     "base": {
@@ -27,12 +28,6 @@
       "importIds": {
         "yuanshen": ["91_1"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -40,12 +35,6 @@
       "id": "BEBD1A4DA7611454ACD735C038B2129A147258F1",
       "importIds": {
         "yuanshen": ["91_2"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,12 +44,6 @@
       "importIds": {
         "yuanshen": ["91_3"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -68,12 +51,6 @@
       "id": "BA7CA2D3FB462F35A1930AB55E9B60779F97F5F9",
       "importIds": {
         "yuanshen": ["91_4"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -83,12 +60,6 @@
       "importIds": {
         "yuanshen": ["91_5"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -97,12 +68,6 @@
       "importIds": {
         "yuanshen": ["91_7"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -110,12 +75,6 @@
       "id": "B99B7E157CF234E208787F51BC5C7713506C2A9D",
       "importIds": {
         "yuanshen": ["91_8"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -126,12 +85,6 @@
         "yuanshen": ["91_9"],
         "gm_legacy": ["mondstadtBerry/3"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -140,12 +93,6 @@
       "importIds": {
         "yuanshen": ["91_10"],
         "gm_legacy": ["mondstadtBerry/2"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -156,12 +103,6 @@
         "yuanshen": ["91_11"],
         "gm_legacy": ["mondstadtBerry/4"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -169,12 +110,6 @@
       "id": "0E0B6C6B7F8F349BDE26A39D5F1CEF589F5BAB0B",
       "importIds": {
         "yuanshen": ["91_12"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -184,12 +119,6 @@
       "importIds": {
         "yuanshen": ["91_13"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -198,12 +127,6 @@
       "importIds": {
         "yuanshen": ["91_14"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -211,12 +134,6 @@
       "id": "1199B21F9C97B8452A2EB0B305886CC7E97E10FD",
       "importIds": {
         "yuanshen": ["91_15"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -227,12 +144,6 @@
         "yuanshen": ["91_16"],
         "gm_legacy": ["mondstadtBerry/1"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -240,12 +151,6 @@
       "id": "C8AF9281772E5517298E905F20F0A84B8181BC18",
       "importIds": {
         "yuanshen": ["91_17"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -255,12 +160,6 @@
       "importIds": {
         "yuanshen": ["91_18"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -268,12 +167,6 @@
       "id": "99C6D405B3C00FB59315EB48CD425BB477BEDDEC",
       "importIds": {
         "yuanshen": ["91_19"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -283,12 +176,6 @@
       "importIds": {
         "yuanshen": ["91_20"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -296,12 +183,6 @@
       "id": "313D829AABA82CF1DD00FAEE5604E903FB9EA99B",
       "importIds": {
         "yuanshen": ["91_21"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -311,12 +192,6 @@
       "importIds": {
         "yuanshen": ["91_22"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -324,12 +199,6 @@
       "id": "0940729ED974888CC2C6AD970A78E755040BCC35",
       "importIds": {
         "yuanshen": ["91_23"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -339,12 +208,6 @@
       "importIds": {
         "yuanshen": ["91_24"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -352,12 +215,6 @@
       "id": "0DA0BC844AFD3F3BEEBB3206D3A0CD8C3304C7C5",
       "importIds": {
         "yuanshen": ["91_25"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -367,12 +224,6 @@
       "importIds": {
         "yuanshen": ["91_26"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -380,12 +231,6 @@
       "id": "E43347853F77BC9AFEED1CA87946AE6FE4706D32",
       "importIds": {
         "yuanshen": ["91_27"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -395,12 +240,6 @@
       "importIds": {
         "yuanshen": ["91_28"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -408,12 +247,6 @@
       "id": "905DE42BA492F129FE1A99E9CA109CF4024C892B",
       "importIds": {
         "yuanshen": ["91_29"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -423,12 +256,6 @@
       "importIds": {
         "yuanshen": ["91_30"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -436,12 +263,6 @@
       "id": "D7D553B5C4439C17C57704CB3733B6F0D5A8BEA9",
       "importIds": {
         "yuanshen": ["91_31"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -451,12 +272,6 @@
       "importIds": {
         "yuanshen": ["91_32"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "地上有 2 个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -464,12 +279,6 @@
       "id": "125EC41563758673A6D9FA53A6B0489B7BE47497",
       "importIds": {
         "yuanshen": ["91_33"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -479,12 +288,6 @@
       "importIds": {
         "yuanshen": ["91_34"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -492,12 +295,6 @@
       "id": "64B2932A855B4C36E9142DFF010BE9FFB0748ECC",
       "importIds": {
         "yuanshen": ["91_35"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -507,12 +304,6 @@
       "importIds": {
         "yuanshen": ["91_36"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -520,12 +311,6 @@
       "id": "0DB3BAB36C49D631E007A01CAD980501A4F05909",
       "importIds": {
         "yuanshen": ["91_37"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -535,12 +320,6 @@
       "importIds": {
         "yuanshen": ["91_38"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -548,12 +327,6 @@
       "id": "A6653C05015DCACA9596E3FEB181AD1C9EA59638",
       "importIds": {
         "yuanshen": ["91_39"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -563,12 +336,6 @@
       "importIds": {
         "yuanshen": ["91_40"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -576,12 +343,6 @@
       "id": "1859FFF078143E38A48E0558E7BDB0AB2E1DB57B",
       "importIds": {
         "yuanshen": ["91_41"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -591,12 +352,6 @@
       "importIds": {
         "yuanshen": ["91_42"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -604,12 +359,6 @@
       "id": "55D8E201728B614C74119DDB5DA03FC046073722",
       "importIds": {
         "yuanshen": ["91_43"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -619,12 +368,6 @@
       "importIds": {
         "yuanshen": ["91_44"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -632,12 +375,6 @@
       "id": "1FC121B326ADDCA6809C6D21A04055E987A9E5DA",
       "importIds": {
         "yuanshen": ["91_45"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -647,12 +384,6 @@
       "importIds": {
         "yuanshen": ["91_46"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -660,12 +391,6 @@
       "id": "BEA6FB97167CF3CB5A0B63659C5C0E4124959B17",
       "importIds": {
         "yuanshen": ["91_47"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -675,12 +400,6 @@
       "importIds": {
         "yuanshen": ["91_48"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -688,12 +407,6 @@
       "id": "D1228A4B5F9D179A654D45BE0BCF2ABD394B345C",
       "importIds": {
         "yuanshen": ["91_49"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -703,12 +416,6 @@
       "importIds": {
         "yuanshen": ["91_50"]
       },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -716,12 +423,6 @@
       "id": "AB4D2122D05A1AD7E7B0153378AA61F60BFE561C",
       "importIds": {
         "yuanshen": ["91_51"]
-      },
-      "popupTitle": {
-        "zh": "树莓"
-      },
-      "popupContent": {
-        "zh": "这里有3个树莓"
       },
       "popupAttribution": "Yuanshen.site"
     }

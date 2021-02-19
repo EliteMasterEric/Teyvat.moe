@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Pinecone",
+    "ru": "Сосновая Шишка",
+    "zh": "松果",
+    "pt": "Pinha"
+  },
   "description": {
     "en": "Filled with oil-rich seeds. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Pinecone",
-    "ru": "Сосновая Шишка",
-    "pt": "Pinha"
-  },
   "icons": {
     "filter": "pinecone",
     "base": {
@@ -27,12 +28,6 @@
       "importIds": {
         "yuanshen": ["90_1"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -40,12 +35,6 @@
       "id": "4D80196D2F7A207E630D45384010473F83063B75",
       "importIds": {
         "yuanshen": ["90_2"]
-      },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,12 +44,6 @@
       "importIds": {
         "yuanshen": ["90_3"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -68,12 +51,6 @@
       "id": "71B8A5C653A0502F979ADEA7CA225DA6418CD5E3",
       "importIds": {
         "yuanshen": ["90_4"]
-      },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -83,12 +60,6 @@
       "importIds": {
         "yuanshen": ["90_5"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -96,12 +67,6 @@
       "id": "E57D856F756F9243577195F3E2059C9063FF6990",
       "importIds": {
         "yuanshen": ["90_6"]
-      },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -111,12 +76,6 @@
       "importIds": {
         "yuanshen": ["90_7"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -124,12 +83,6 @@
       "id": "6EB6B52DBE05363BBC98E11179B49E43F50F7267",
       "importIds": {
         "yuanshen": ["90_8"]
-      },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -139,12 +92,6 @@
       "importIds": {
         "yuanshen": ["90_9"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -153,12 +100,6 @@
       "importIds": {
         "yuanshen": ["90_10"]
       },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -166,12 +107,6 @@
       "id": "1CAF8A269E30045B6C48DC4D73B5C80A3DFFA964",
       "importIds": {
         "yuanshen": ["90_11"]
-      },
-      "popupTitle": {
-        "zh": "松果"
-      },
-      "popupContent": {
-        "zh": "这是一个松果"
       },
       "popupAttribution": "Yuanshen.site"
     }

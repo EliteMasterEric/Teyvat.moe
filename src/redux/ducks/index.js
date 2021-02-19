@@ -48,6 +48,10 @@ export const SET_STATE = 'genshinmap/prefs/SET_STATE';
  * This action resets the stored state to the default.
  */
 export const CLEAR_STATE = 'genshinmap/prefs/CLEAR_STATE';
+/**
+ * Manually send {type: 'HACK_STATE', path: 'path.to[1].var', value: 'newValue' } in Redux Dev Tools.
+ */
+export const HACK_STATE = 'genshinmap/prefs/HACK_STATE';
 
 /**
  * The default state of the application.
@@ -111,6 +115,10 @@ const rootReducer = (state = initialState, action) => {
     case SET_ELEMENT_PROPERTY:
     case APPEND_ELEMENT:
       return editorReducer(state, action);
+    case 'HACK_STATE':
+      const mergeValue = action.state || action.value;
+      const mergeHack = action.path ? _.set(state, action.path, mergeValue) : mergeValue;
+      return mergeHack;
     case SET_STATE:
       return {
         ...state,

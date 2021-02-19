@@ -1,14 +1,15 @@
 {
   "format": 2,
+  "name": {
+    "en": "Silk Flower",
+    "zh": "霓裳花",
+    "pt": "Flor de Seda"
+  },
   "description": {
     "en": "A crimson flower that blooms like the rainbow clouds in Liyue. Used in Character Ascension."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Silk Flower",
-    "pt": "Flor de Seda"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "silk-flower",
@@ -27,12 +28,6 @@
         "gm_legacy": ["liyueSilkFlower/2"],
         "yuanshen": ["5_2"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -41,12 +36,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/3"],
         "yuanshen": ["5_3"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -57,12 +46,6 @@
         "gm_legacy": ["liyueSilkFlower/4"],
         "yuanshen": ["5_4"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -71,12 +54,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/5"],
         "yuanshen": ["5_5"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -87,12 +64,6 @@
         "gm_legacy": ["liyueSilkFlower/6"],
         "yuanshen": ["5_6"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -101,12 +72,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/7"],
         "yuanshen": ["5_7"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -117,12 +82,6 @@
         "gm_legacy": ["liyueSilkFlower/8"],
         "yuanshen": ["5_8"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -131,12 +90,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/9"],
         "yuanshen": ["5_9"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -147,12 +100,6 @@
         "gm_legacy": ["liyueSilkFlower/10"],
         "yuanshen": ["5_10"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -161,12 +108,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/11"],
         "yuanshen": ["5_11"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -177,12 +118,6 @@
         "gm_legacy": ["liyueSilkFlower/12"],
         "yuanshen": ["5_12"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -191,12 +126,6 @@
       "importIds": {
         "gm_legacy": ["liyueSilkFlower/13"],
         "yuanshen": ["5_13"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -207,12 +136,6 @@
         "gm_legacy": ["liyueSilkFlower/14"],
         "yuanshen": ["5_14"]
       },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -221,12 +144,6 @@
       "importIds": {
         "yuanshen": ["5_1"],
         "gm_legacy": ["liyueSilkFlower/1"]
-      },
-      "popupTitle": {
-        "zh": "霓裳花"
-      },
-      "popupContent": {
-        "zh": "这里有一束霓裳花"
       },
       "popupAttribution": "Yuanshen.site"
     }

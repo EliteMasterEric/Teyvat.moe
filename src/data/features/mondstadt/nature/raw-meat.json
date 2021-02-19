@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Raw Meat",
+    "zh": "兽肉",
+    "ru": "Сырое Мясо",
+    "pt": "Carne Crua"
+  },
   "description": {
     "en": "A fresh chunk of meat. Used in many Recipes."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Raw Meat",
-    "ru": "Сырое Мясо",
-    "pt": "Carne Crua"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "raw-meat",
@@ -27,10 +28,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/1"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: E555DFA"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.02578, 47.42344],
@@ -38,10 +36,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/2"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D4751BD"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.09609, 47.49766],
@@ -49,10 +44,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/3"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 3A81675"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.09609, 47.42344],
@@ -60,10 +52,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/4"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: F7A5A06"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.24063, 46.44687],
@@ -71,10 +60,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/5"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 12703FD"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.24453, 46.38438],
@@ -82,10 +68,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/6"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: EBA17A2"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.32656, 46.11875],
@@ -93,10 +76,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/7"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D54B949"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.32266, 46.04062],
@@ -104,10 +84,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/8"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: BFD257C"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.39297, 46.11875],
@@ -115,10 +92,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/9"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 22CFAA4"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.39297, 46.04062],
@@ -126,10 +100,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/10"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 66818DF"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.63906, 45.77891],
@@ -137,10 +108,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/11"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 7CE7783"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.64297, 45.7125],
@@ -148,10 +116,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/12"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 3DFA17B"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.63125, 44.18125],
@@ -159,10 +124,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/13"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 7C53B08"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.63125, 44.24766],
@@ -170,10 +132,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/14"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2908BB5"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.70547, 44.17734],
@@ -181,10 +140,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/15"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: AE8EAC5"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-16.70547, 44.24375],
@@ -192,10 +148,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/16"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: C411E38"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-15.38125, 43.775],
@@ -203,10 +156,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/17"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 509B738"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-15.38125, 43.84141],
@@ -214,10 +164,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/18"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 37193B7"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-18.82656, 44.38047],
@@ -225,10 +172,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/19"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 5F72A10"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-18.82656, 44.32188],
@@ -236,10 +180,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/20"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 1B0C993"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.86172, 48.56015],
@@ -247,10 +188,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/21"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: ABEB066"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-17.85781, 48.50547],
@@ -258,10 +196,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/22"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D8FDC27"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-18.44766, 47.15],
@@ -269,10 +204,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/23"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 925CABD"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-18.45156, 47.20468],
@@ -280,10 +212,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/24"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2778FC9"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-19.12735, 45.2125],
@@ -291,10 +220,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/25"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 417EE1F"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-19.13125, 45.2711],
@@ -302,10 +228,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/26"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: FE831F8"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.32656, 45.74765],
@@ -313,10 +236,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/27"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 4DBB33C"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.32656, 45.79844],
@@ -324,10 +244,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/28"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 04C799E"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.26015, 44.41953],
@@ -335,10 +252,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/29"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 7CD5B52"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.26015, 44.47813],
@@ -346,10 +260,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/30"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: FB3551B"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.55312, 43.66563],
@@ -357,10 +268,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/31"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 49E412E"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.55312, 43.72422],
@@ -368,10 +276,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/32"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: A7D2010"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-21.25625, 44.47031],
@@ -379,10 +284,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/33"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: BBC8639"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-21.26016, 44.525],
@@ -390,10 +292,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/34"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: E5CBB13"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-21.15469, 47.00547],
@@ -401,10 +300,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/35"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 6548C3C"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-24.06167, 47.3578],
@@ -412,10 +308,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/36"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 4088429"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.79922, 49.775],
@@ -423,10 +316,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/37"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 8EEC74A"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.79922, 49.8375],
@@ -434,10 +324,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/38"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: F29619D"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.86953, 49.83359],
@@ -445,10 +332,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/39"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 22B7674"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-20.87344, 49.775],
@@ -456,10 +340,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/40"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2507913"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.6586, 47.44297],
@@ -467,10 +348,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/41"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 39200A9"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.6586, 47.50156],
@@ -478,10 +356,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/42"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: B03E86B"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-23.32266, 46.5875],
@@ -489,10 +364,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/43"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 780ADBC"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-23.32266, 46.63828],
@@ -500,10 +372,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/44"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: A815B03"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.27969, 45.46641],
@@ -511,10 +380,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/45"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 46F6943"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.27969, 45.51719],
@@ -522,10 +388,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/46"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 72C1628"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.07656, 44.26718],
@@ -533,10 +396,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/47"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 3649364"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.07656, 44.32188],
@@ -544,10 +404,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/48"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D8EF859"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-21.01016, 43.42734],
@@ -555,10 +412,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/49"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 385FDC3"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-21.01407, 43.47813],
@@ -566,10 +420,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/50"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 4DD3A5A"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.20157, 43.3375],
@@ -577,10 +428,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/51"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 66773C5"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.20157, 43.39609],
@@ -588,10 +436,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/52"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 429C7A0"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.42421, 43.37656],
@@ -599,10 +444,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/53"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: AA0D1EE"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-22.42813, 43.43125],
@@ -610,10 +452,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/54"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: CF6D10C"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-13.11953, 48.42734],
@@ -621,10 +460,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/55"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 70349CC"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-15.30312, 44.38828],
@@ -632,10 +468,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/56"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: B532B01"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-15.30312, 44.43906],
@@ -643,10 +476,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/57"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 181610D"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-13.88906, 48.82187],
@@ -654,10 +484,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/58"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2CA0B8F"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-13.89297, 48.87656],
@@ -665,10 +492,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/59"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: B10291B"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-14.58828, 48.64219],
@@ -676,10 +500,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/60"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 53445F1"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-14.58828, 48.69297],
@@ -687,10 +508,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/61"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: D724EF7"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-14.76016, 48.11484],
@@ -698,10 +516,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/62"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: A5920AA"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-14.76016, 48.16953],
@@ -709,10 +524,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/63"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 7B03BFF"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-23.81094, 43.49375],
@@ -720,10 +532,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/64"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: DF0721A"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-23.81094, 43.54063],
@@ -731,10 +540,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/65"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: CB0FC3C"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-24.18984, 45.04453],
@@ -742,10 +548,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/66"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 08ED2D2"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-24.19375, 45.0914],
@@ -753,10 +556,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/67"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 125532E"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-24.4125, 45.61485],
@@ -764,10 +564,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/68"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 87EE000"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-24.41641, 45.66172],
@@ -775,10 +572,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/69"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 7B17460"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-25.23671, 45.72422],
@@ -786,10 +580,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/70"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 06F7E98"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-25.23671, 45.76719],
@@ -797,10 +588,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/71"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 6415120"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-25.82656, 46.92734],
@@ -808,10 +596,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/72"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: DD639BF"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-25.83047, 46.97422],
@@ -819,10 +604,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/73"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2A90007"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-26.83046, 46.1539],
@@ -830,10 +612,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/74"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 4A97960"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-26.82656, 46.19297],
@@ -841,10 +620,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/75"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: 2EBC598"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-13.09219, 48.44297],
@@ -852,10 +628,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/101"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: FB4CD0F"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-14.16641, 26.94688],
@@ -863,12 +636,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/102"],
         "yuanshen": ["75_2"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -879,12 +646,6 @@
         "gm_legacy": ["mondstadtRawMeat/103"],
         "yuanshen": ["75_3"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -893,12 +654,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/104"],
         "yuanshen": ["75_4"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -909,12 +664,6 @@
         "gm_legacy": ["mondstadtRawMeat/105"],
         "yuanshen": ["75_5"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -923,12 +672,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/106"],
         "yuanshen": ["75_6"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -939,12 +682,6 @@
         "gm_legacy": ["mondstadtRawMeat/107"],
         "yuanshen": ["75_7"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -953,12 +690,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/108"],
         "yuanshen": ["75_8"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -969,12 +700,6 @@
         "gm_legacy": ["mondstadtRawMeat/109"],
         "yuanshen": ["75_9"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -983,12 +708,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/110"],
         "yuanshen": ["75_10"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -999,12 +718,6 @@
         "gm_legacy": ["mondstadtRawMeat/111"],
         "yuanshen": ["75_11"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1013,12 +726,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/112"],
         "yuanshen": ["75_12"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1029,12 +736,6 @@
         "gm_legacy": ["mondstadtRawMeat/113"],
         "yuanshen": ["75_13"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1043,12 +744,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/114"],
         "yuanshen": ["75_14"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1059,12 +754,6 @@
         "gm_legacy": ["mondstadtRawMeat/115"],
         "yuanshen": ["75_15"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1074,12 +763,6 @@
         "gm_legacy": ["mondstadtRawMeat/116"],
         "yuanshen": ["75_16"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1088,10 +771,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/117"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: F375A12"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-13.58828, 45.29062],
@@ -1099,10 +779,7 @@
       "importIds": {
         "gm_legacy": ["mondstadtRawMeat/118"]
       },
-      "popupAttribution": "Yuanshen.site",
-      "popupTitle": {
-        "en": "MIGRATED MARKER: A04CE19"
-      }
+      "popupAttribution": "Yuanshen.site"
     },
     {
       "coordinates": [-25.75625, 44.12656],
@@ -1113,9 +790,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #20"
-      },
-      "popupContent": {
-        "zh": "松鼠：骗骗花在附近，危！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1129,9 +803,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #21"
       },
-      "popupContent": {
-        "zh": "这是一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1143,9 +814,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #25"
-      },
-      "popupContent": {
-        "zh": "这是一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1159,9 +827,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #27"
       },
-      "popupContent": {
-        "zh": "松鼠藏果五连鞭！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1173,9 +838,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #29"
-      },
-      "popupContent": {
-        "zh": "松鼠哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1189,9 +851,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #30"
       },
-      "popupContent": {
-        "zh": "松鼠哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1203,9 +862,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #31"
-      },
-      "popupContent": {
-        "zh": "松鼠哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1219,9 +875,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #32"
       },
-      "popupContent": {
-        "zh": "松鼠哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1233,9 +886,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #33"
-      },
-      "popupContent": {
-        "zh": "松鼠哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1249,9 +899,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #34"
       },
-      "popupContent": {
-        "zh": "松鼠哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1263,9 +910,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #35"
-      },
-      "popupContent": {
-        "zh": "松鼠哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1279,9 +923,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #36"
       },
-      "popupContent": {
-        "zh": "松鼠：这都能发现我？？？？"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1293,9 +934,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #37"
-      },
-      "popupContent": {
-        "zh": "野猪酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1309,9 +947,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #38"
       },
-      "popupContent": {
-        "zh": "击杀松鼠获得一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1323,9 +958,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #39"
-      },
-      "popupContent": {
-        "zh": "松鼠：旅行者，你不讲武德，耗子尾汁！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1339,9 +971,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #40"
       },
-      "popupContent": {
-        "zh": "野猪：我开足300马力疯狂跑，在我即将退场一瞬间，温蒂的箭射了过来，我大E了，没有闪！温蒂不讲武德，耗子尾汁！！！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1353,9 +982,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #41"
-      },
-      "popupContent": {
-        "zh": "野猪"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1369,9 +995,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #42"
       },
-      "popupContent": {
-        "zh": "松鼠"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1383,9 +1006,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #45"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1399,9 +1019,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #46"
       },
-      "popupContent": {
-        "zh": "藏在草丛里的狐狸，就一块肉！狐狸：别不知好歹！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1413,9 +1030,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #47"
-      },
-      "popupContent": {
-        "zh": "狐狸：别不知好歹！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1429,9 +1043,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #48"
       },
-      "popupContent": {
-        "zh": "狐狸：别不知好歹！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1443,9 +1054,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #49"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1459,9 +1067,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #50"
       },
-      "popupContent": {
-        "zh": "击杀狐狸获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1473,9 +1078,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #51"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1489,9 +1091,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #52"
       },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1503,9 +1102,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #53"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1519,9 +1115,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #54"
       },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1533,9 +1126,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #55"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1549,9 +1139,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #56"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1563,9 +1150,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #57"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1579,9 +1163,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #58"
       },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1593,9 +1174,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #59"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1609,9 +1187,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #60"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1623,9 +1198,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #61"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1639,9 +1211,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #62"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1653,9 +1222,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #63"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1669,9 +1235,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #64"
       },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1683,9 +1246,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #65"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1699,9 +1259,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #66"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1713,9 +1270,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #67"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1729,9 +1283,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #68"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1743,9 +1294,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #69"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1759,9 +1307,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #73"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1773,9 +1318,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #76"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1789,9 +1331,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #77"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1803,9 +1342,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #78"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1819,9 +1355,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #79"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1833,9 +1366,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #80"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1849,9 +1379,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #81"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1863,9 +1390,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #84"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1879,9 +1403,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #85"
       },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1893,9 +1414,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #86"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1909,9 +1427,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #87"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1923,9 +1438,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #90"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1939,9 +1451,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #95"
       },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1953,9 +1462,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #96"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1969,9 +1475,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #99"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1983,9 +1486,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #100"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1999,9 +1499,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #101"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2013,9 +1510,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #102"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2029,9 +1523,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #103"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2043,9 +1534,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #104"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2059,9 +1547,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #106"
       },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2073,9 +1558,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #107"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2089,9 +1571,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #108"
       },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2103,9 +1582,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #109"
-      },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2119,9 +1595,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #110"
       },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2133,9 +1606,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #111"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2149,9 +1619,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #112"
       },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2163,9 +1630,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #113"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2179,9 +1643,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #116"
       },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2193,9 +1654,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #117"
-      },
-      "popupContent": {
-        "zh": "击杀白鼬掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2209,9 +1667,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #118"
       },
-      "popupContent": {
-        "zh": "击杀白鼬掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2223,9 +1678,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #119"
-      },
-      "popupContent": {
-        "zh": "击杀白鼬掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2239,9 +1691,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #120"
       },
-      "popupContent": {
-        "zh": "击杀白鼬掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2253,9 +1702,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #121"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2269,9 +1715,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #122"
       },
-      "popupContent": {
-        "zh": "击杀白狐掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2283,9 +1726,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #123"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -2299,9 +1739,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #124"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2314,9 +1751,6 @@
         "zh": "兽肉",
         "en": "NEW MARKER: #125"
       },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -2328,9 +1762,6 @@
       "popupTitle": {
         "zh": "兽肉",
         "en": "NEW MARKER: #126"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     }

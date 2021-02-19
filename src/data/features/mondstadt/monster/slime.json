@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Slime",
+    "ru": "Слайм",
+    "zh": "史莱姆",
+    "pt": "Slime"
+  },
   "description": {
     "en": "Beings of pure elemental energy. Drops Slime Condensate.",
     "ru": "Существа из чистой энергии стихий. Возможные награды: Слизь Слайма."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Slime",
-    "ru": "Слайм",
-    "pt": "Slime"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "slime",
@@ -28,12 +29,6 @@
       "importIds": {
         "yuanshen": ["40_1"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -41,12 +36,6 @@
       "id": "8DA283748A9C26588BA1C722EBCEF9C17E48BC3F",
       "importIds": {
         "yuanshen": ["40_2"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -56,12 +45,6 @@
       "importIds": {
         "yuanshen": ["40_3"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -69,12 +52,6 @@
       "id": "10642BE5DEF5FA3D73DD51CDE384097ECE58C771",
       "importIds": {
         "yuanshen": ["40_4"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -84,12 +61,6 @@
       "importIds": {
         "yuanshen": ["40_5"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -97,12 +68,6 @@
       "id": "AA041BCC0962DF613AE6E8CA0C6B2DE74DA7FFD0",
       "importIds": {
         "yuanshen": ["40_6"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -112,12 +77,6 @@
       "importIds": {
         "yuanshen": ["40_7"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -125,12 +84,6 @@
       "id": "C57094F751C4FBCDDE9AF4366B41B5198A7D95F7",
       "importIds": {
         "yuanshen": ["40_8"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -140,12 +93,6 @@
       "importIds": {
         "yuanshen": ["40_9"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -153,12 +100,6 @@
       "id": "AF4CD9C7DCE7B5C441C3EF68219CFEFAD61AAC34",
       "importIds": {
         "yuanshen": ["40_10"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -168,12 +109,6 @@
       "importIds": {
         "yuanshen": ["40_11"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -181,12 +116,6 @@
       "id": "F1DE09623630737B547FC2B44B01301AECE9141C",
       "importIds": {
         "yuanshen": ["40_12"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -196,12 +125,6 @@
       "importIds": {
         "yuanshen": ["40_13"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -209,12 +132,6 @@
       "id": "AAFF849D0D91E30ACABD2B0BDDE7E354C8D8E2E3",
       "importIds": {
         "yuanshen": ["40_14"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -224,12 +141,6 @@
       "importIds": {
         "yuanshen": ["40_15"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -237,12 +148,6 @@
       "id": "A61CA88B579585097E125E7E44F42371651FC46B",
       "importIds": {
         "yuanshen": ["40_16"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -252,12 +157,6 @@
       "importIds": {
         "yuanshen": ["40_17"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -265,12 +164,6 @@
       "id": "D72D164A42F59E52812452F8075F9A57B558D504",
       "importIds": {
         "yuanshen": ["40_18"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -280,12 +173,6 @@
       "importIds": {
         "yuanshen": ["40_19"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -293,12 +180,6 @@
       "id": "1B08F7483AD7A2AE96DC86781AD45F56427FBCF6",
       "importIds": {
         "yuanshen": ["40_20"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -308,12 +189,6 @@
       "importIds": {
         "yuanshen": ["40_21"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只大型风史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -321,12 +196,6 @@
       "id": "D1AE8CF7E0D1F4658DA1CD6D410DD80A7E308E42",
       "importIds": {
         "yuanshen": ["40_22"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只岩史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -336,12 +205,6 @@
       "importIds": {
         "yuanshen": ["40_23"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只大型草史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -349,12 +212,6 @@
       "id": "1B8EE03015EA4EE7E9FE43124E9B45818188C660",
       "importIds": {
         "yuanshen": ["40_24"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -364,12 +221,6 @@
       "importIds": {
         "yuanshen": ["40_25"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -377,12 +228,6 @@
       "id": "BC11BC6B868750FC6F0D57A7068E89EF404F7540",
       "importIds": {
         "yuanshen": ["40_26"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -392,12 +237,6 @@
       "importIds": {
         "yuanshen": ["40_27"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -405,12 +244,6 @@
       "id": "C16EFED197F79F17AE90E5E6F63C5F16DF35B45C",
       "importIds": {
         "yuanshen": ["40_28"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -420,12 +253,6 @@
       "importIds": {
         "yuanshen": ["40_29"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -433,12 +260,6 @@
       "id": "C076611DDB10AC885E1BFD18CC62F5661CECC4CA",
       "importIds": {
         "yuanshen": ["40_30"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -448,12 +269,6 @@
       "importIds": {
         "yuanshen": ["40_31"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -461,12 +276,6 @@
       "id": "7912899168D1862F3034ADAFDA69BC87918199C3",
       "importIds": {
         "yuanshen": ["40_32"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -476,12 +285,6 @@
       "importIds": {
         "yuanshen": ["40_33"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -489,12 +292,6 @@
       "id": "FEBFC0F3D787AE7F374A9CB09385D721029CB19E",
       "importIds": {
         "yuanshen": ["40_34"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -504,12 +301,6 @@
       "importIds": {
         "yuanshen": ["40_35"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -517,12 +308,6 @@
       "id": "F4FA7AB44573B746196F6D64B248B916206594F8",
       "importIds": {
         "yuanshen": ["40_36"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -532,12 +317,6 @@
       "importIds": {
         "yuanshen": ["40_37"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -545,12 +324,6 @@
       "id": "F554CFA1C4FA48DFFD8EF66EB85BF429452417D5",
       "importIds": {
         "yuanshen": ["40_38"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -560,12 +333,6 @@
       "importIds": {
         "yuanshen": ["40_39"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -573,12 +340,6 @@
       "id": "9454EAA204ACE59A7A222CA6700AD780600EDCE6",
       "importIds": {
         "yuanshen": ["40_40"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -588,12 +349,6 @@
       "importIds": {
         "yuanshen": ["40_41"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -601,12 +356,6 @@
       "id": "7140C7860AD0D08C9272EAC06F4636FBDBDBD315",
       "importIds": {
         "yuanshen": ["40_42"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -616,12 +365,6 @@
       "importIds": {
         "yuanshen": ["40_43"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -629,12 +372,6 @@
       "id": "EAD18BE60F1C3ECF755D5F9D58BFE022F727721A",
       "importIds": {
         "yuanshen": ["40_44"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -644,12 +381,6 @@
       "importIds": {
         "yuanshen": ["40_45"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -657,12 +388,6 @@
       "id": "A5909C2AE4A735105901CFB8EB60B606F136A96B",
       "importIds": {
         "yuanshen": ["40_46"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -672,12 +397,6 @@
       "importIds": {
         "yuanshen": ["40_47"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -685,12 +404,6 @@
       "id": "B1FF9EC3137B97FC0601E6D4DBFDD8912B34C122",
       "importIds": {
         "yuanshen": ["40_48"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -700,12 +413,6 @@
       "importIds": {
         "yuanshen": ["40_49"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -713,12 +420,6 @@
       "id": "86A54A2013848CA1A43C1099EF73551E61050121",
       "importIds": {
         "yuanshen": ["40_50"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -728,12 +429,6 @@
       "importIds": {
         "yuanshen": ["40_51"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -741,12 +436,6 @@
       "id": "334692F31131093EA8DD9BD9BF4F6B48D2155F6A",
       "importIds": {
         "yuanshen": ["40_52"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -756,12 +445,6 @@
       "importIds": {
         "yuanshen": ["40_53"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -769,12 +452,6 @@
       "id": "834BE2EE31F399286B840E1760B085A984DA7185",
       "importIds": {
         "yuanshen": ["40_54"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -784,12 +461,6 @@
       "importIds": {
         "yuanshen": ["40_55"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -797,12 +468,6 @@
       "id": "30FB95748CE2155517A4A4E8FEE916BA47861DCF",
       "importIds": {
         "yuanshen": ["40_56"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -812,12 +477,6 @@
       "importIds": {
         "yuanshen": ["40_57"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -825,12 +484,6 @@
       "id": "2656D03FC838C494E11D504D301C2E7CA48E5D0C",
       "importIds": {
         "yuanshen": ["40_58"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -840,12 +493,6 @@
       "importIds": {
         "yuanshen": ["40_59"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -853,12 +500,6 @@
       "id": "180DFFECAEB933A756FD76B52A00F8072A215C0E",
       "importIds": {
         "yuanshen": ["40_60"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -868,12 +509,6 @@
       "importIds": {
         "yuanshen": ["40_61"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -881,12 +516,6 @@
       "id": "173B2DAF5F8C11B3F8717D38457EF90855251AD8",
       "importIds": {
         "yuanshen": ["40_62"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -896,12 +525,6 @@
       "importIds": {
         "yuanshen": ["40_63"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -909,12 +532,6 @@
       "id": "7D5D0BF49C52CB811541A513200D228BAA3EAE6A",
       "importIds": {
         "yuanshen": ["40_64"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -924,12 +541,6 @@
       "importIds": {
         "yuanshen": ["40_65"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -937,12 +548,6 @@
       "id": "E15D26EB5C2838CAD11CBC4FFC397BDADE988E28",
       "importIds": {
         "yuanshen": ["40_66"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -952,12 +557,6 @@
       "importIds": {
         "yuanshen": ["40_67"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -965,12 +564,6 @@
       "id": "5310D5256F917A982A156E1EF96C5E6D4EA56761",
       "importIds": {
         "yuanshen": ["40_68"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -980,12 +573,6 @@
       "importIds": {
         "yuanshen": ["40_69"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒火史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -993,12 +580,6 @@
       "id": "F9F93257F6D037C39939AA5752AE2EAD9918B867",
       "importIds": {
         "yuanshen": ["40_70"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的火史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1008,12 +589,6 @@
       "importIds": {
         "yuanshen": ["40_71"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的风史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1021,12 +596,6 @@
       "id": "D7CE3D621017414E5E8B683AA6D7FE7F6BB78AB7",
       "importIds": {
         "yuanshen": ["40_72"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的风史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1036,12 +605,6 @@
       "importIds": {
         "yuanshen": ["40_74"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的风史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1049,12 +612,6 @@
       "id": "488CBC3979DBF18DFFB08997BC3310036B383641",
       "importIds": {
         "yuanshen": ["40_75"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的史莱姆酱"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1064,12 +621,6 @@
       "importIds": {
         "yuanshen": ["40_76"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一坨萌萌哒的史莱姆酱"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1077,12 +628,6 @@
       "id": "1AB9C13FE4C42883BE51DFBE40B78FA4F66EC584",
       "importIds": {
         "yuanshen": ["40_77"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "萌王利姆露酱！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1092,12 +637,6 @@
       "importIds": {
         "yuanshen": ["40_86"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "萌王利姆露酱！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1105,12 +644,6 @@
       "id": "A01A624A8A443E440A111705F42B69D8628D56F0",
       "importIds": {
         "yuanshen": ["40_87"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1120,12 +653,6 @@
       "importIds": {
         "yuanshen": ["40_88"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1133,12 +660,6 @@
       "id": "914FA3453F619596738819A9F3D550FE6B406C24",
       "importIds": {
         "yuanshen": ["40_89"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "靠近电气水晶会出现雷史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1148,12 +669,6 @@
       "importIds": {
         "yuanshen": ["40_82"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "火史莱姆yo"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1161,12 +676,6 @@
       "id": "7FC1429BA4B2DBAD744BBE885B61299BABDB5A90",
       "importIds": {
         "yuanshen": ["40_83"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "火史莱姆yo"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1176,12 +685,6 @@
       "importIds": {
         "yuanshen": ["40_85"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "大型火史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1189,12 +692,6 @@
       "id": "6CD81D8FE75CE623BB88467C137B6D29766DD7EC",
       "importIds": {
         "yuanshen": ["40_90"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "Rock Slime！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1204,12 +701,6 @@
       "importIds": {
         "yuanshen": ["40_91"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1217,12 +708,6 @@
       "id": "75B4A53D11DE7FB464099EBD698BB1A4412C3348",
       "importIds": {
         "yuanshen": ["40_92"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1232,12 +717,6 @@
       "importIds": {
         "yuanshen": ["40_93"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1245,12 +724,6 @@
       "id": "A48D3DA0AB47AAEC54EDAC28BD218EC2E3E06536",
       "importIds": {
         "yuanshen": ["40_94"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "风利姆露哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1260,12 +733,6 @@
       "importIds": {
         "yuanshen": ["40_95"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "松鼠闪电四连鞭！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1273,12 +740,6 @@
       "id": "5D72D2129288F9106E2A69E87911F2B412FC011C",
       "importIds": {
         "yuanshen": ["40_96"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "松鼠闪电四连鞭！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1288,12 +749,6 @@
       "importIds": {
         "yuanshen": ["40_97"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "松鼠闪电四连鞭！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1301,12 +756,6 @@
       "id": "AAFDCC006B9EB7F2897CC7675D34A04E3E2F2D90",
       "importIds": {
         "yuanshen": ["40_98"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "松鼠闪电四连鞭！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1316,12 +765,6 @@
       "importIds": {
         "yuanshen": ["40_99"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1329,12 +772,6 @@
       "id": "874E9C0E9721A8FBB581B3439DAA884A02D7B6F8",
       "importIds": {
         "yuanshen": ["40_100"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1344,12 +781,6 @@
       "importIds": {
         "yuanshen": ["40_101"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "1只大型火史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1357,12 +788,6 @@
       "id": "7D08F83F8781C48A6BCF4878DA61596211545788",
       "importIds": {
         "yuanshen": ["40_102"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "三只火史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1372,12 +797,6 @@
       "importIds": {
         "yuanshen": ["40_103"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1385,12 +804,6 @@
       "id": "86D422D4D8F37DD854D753C541D08D4F088A62CB",
       "importIds": {
         "yuanshen": ["40_104"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1400,12 +813,6 @@
       "importIds": {
         "yuanshen": ["40_105"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1413,12 +820,6 @@
       "id": "1FE634A6625F205FF2BE321D9A563AD8AB3EA983",
       "importIds": {
         "yuanshen": ["40_106"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1428,12 +829,6 @@
       "importIds": {
         "yuanshen": ["40_107"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1441,12 +836,6 @@
       "id": "FB610604E2866CEAD5068902871D09D486AD95BE",
       "importIds": {
         "yuanshen": ["40_108"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1456,12 +845,6 @@
       "importIds": {
         "yuanshen": ["40_109"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "史莱姆哒！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1469,12 +852,6 @@
       "id": "C33304BB4F2AEB449A3E8306F16501DBB62A9E72",
       "importIds": {
         "yuanshen": ["40_110"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "草史莱姆哒！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1484,12 +861,6 @@
       "importIds": {
         "yuanshen": ["40_114"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "三个雷史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1497,12 +868,6 @@
       "id": "35663DE510FA7DAC8106616DF6DD7BDB7AB3E193",
       "importIds": {
         "yuanshen": ["40_115"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只大型水史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1512,12 +877,6 @@
       "importIds": {
         "yuanshen": ["40_116"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "三只小风史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1525,12 +884,6 @@
       "id": "A11C6324060706C1C0314E4CE77ACEC0C2AC5B27",
       "importIds": {
         "yuanshen": ["40_117"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只大型草史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1540,12 +893,6 @@
       "importIds": {
         "yuanshen": ["40_118"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "一只草史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1553,12 +900,6 @@
       "id": "258B2363A43FC94AAE818C3A37DFE7E878739A87",
       "importIds": {
         "yuanshen": ["40_120"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有3只火史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1568,12 +909,6 @@
       "importIds": {
         "yuanshen": ["40_121"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有3只火史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1581,12 +916,6 @@
       "id": "5947481A5BD98E7A03581496ECAA712B23BEC27C",
       "importIds": {
         "yuanshen": ["40_122"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有1只大型岩史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1596,12 +925,6 @@
       "importIds": {
         "yuanshen": ["40_125"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有3只风史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1609,12 +932,6 @@
       "id": "4AAEC356CFF1E141CED8FB7C3D85365279FF41FE",
       "importIds": {
         "yuanshen": ["40_126"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有1只大型火史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1624,12 +941,6 @@
       "importIds": {
         "yuanshen": ["40_129"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有2只水史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1637,12 +948,6 @@
       "id": "362508D7A8F2EA00559EC014DFFF7EF5974BC969",
       "importIds": {
         "yuanshen": ["40_130"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有3只水史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1652,12 +957,6 @@
       "importIds": {
         "yuanshen": ["40_131"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有2只冰史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1665,12 +964,6 @@
       "id": "19C899AAAB1E0CFAE98CF349C9318997A5F3DD42",
       "importIds": {
         "yuanshen": ["40_132"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有2只岩史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1680,12 +973,6 @@
       "importIds": {
         "yuanshen": ["40_134"]
       },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有2只冰史莱姆"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1693,12 +980,6 @@
       "id": "736BBDDC2094A369ED7F97BB46E3037964BF07A0",
       "importIds": {
         "yuanshen": ["40_135"]
-      },
-      "popupTitle": {
-        "zh": "史莱姆"
-      },
-      "popupContent": {
-        "zh": "这里有一大一小2只雷史莱姆"
       },
       "popupAttribution": "Yuanshen.site"
     }

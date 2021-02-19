@@ -1,14 +1,15 @@
 {
   "format": 2,
+  "name": {
+    "en": "Electro Crystal",
+    "zh": "电气水晶",
+    "pt": "Cristal Electro"
+  },
   "description": {
     "en": "Purple electric crystals used for various recipes. Use Pyro to create an Overload reaction in order to harvest."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Electro Crystal",
-    "pt": "Cristal Electro"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "electro-crystal",
@@ -27,12 +28,6 @@
         "gm_legacy": ["liyueElectroCrystal/1"],
         "yuanshen": ["54_1"]
       },
-      "popupTitle": {
-        "zh": "电气水晶"
-      },
-      "popupContent": {
-        "zh": "这是一块电气水晶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -41,12 +36,6 @@
       "importIds": {
         "gm_legacy": ["liyueElectroCrystal/2"],
         "yuanshen": ["54_2"]
-      },
-      "popupTitle": {
-        "zh": "电气水晶"
-      },
-      "popupContent": {
-        "zh": "这是一块电气水晶"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -57,12 +46,6 @@
         "gm_legacy": ["liyueElectroCrystal/3"],
         "yuanshen": ["54_3"]
       },
-      "popupTitle": {
-        "zh": "电气水晶"
-      },
-      "popupContent": {
-        "zh": "这是一块电气水晶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
         "gm_legacy": ["liyueElectroCrystal/4"],
         "yuanshen": ["54_4"]
       },
-      "popupTitle": {
-        "zh": "电气水晶"
-      },
-      "popupContent": {
-        "zh": "这是一块电气水晶"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -86,12 +63,6 @@
       "importIds": {
         "gm_legacy": ["liyueElectroCrystal/5"],
         "yuanshen": ["54_5"]
-      },
-      "popupTitle": {
-        "zh": "电气水晶"
-      },
-      "popupContent": {
-        "zh": "这是一块电气水晶"
       },
       "popupAttribution": "Yuanshen.site"
     }

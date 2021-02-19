@@ -11,9 +11,9 @@ import { importFromContext } from '../Util';
 /**
  * The require context referencing all the localization files.
  */
-const i18nContext = require.context('../../data/i18n/changelog', true, /.jsonc$/);
+const i18nContext = require.context('../../data/i18n/changelog', true, /.json$/);
 
-const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.jsonc`;
+const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 
 /**
  * A list of JSON file paths, excluding the default locale.
@@ -22,7 +22,7 @@ const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE)
 
 // ex [./en-US.json, en-US].
 const getLocaleFromI18nFilePath = (string) => {
-  const match = string.match(/\.\/([-_a-zA-Z0-9]+)\.jsonc/);
+  const match = string.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
   return match ? match[1] : 'UNKNOWN';
 };
 

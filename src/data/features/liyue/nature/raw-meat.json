@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Raw Meat",
+    "ru": "Сырое Мясо",
+    "zh": "兽肉",
+    "pt": "Carne Crua"
+  },
   "description": {
     "en": "A fresh chunk of meat. Used in many Recipes."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Raw Meat",
-    "ru": "Сырое Мясо",
-    "pt": "Carne Crua"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "raw-meat",
@@ -28,12 +29,6 @@
         "gm_legacy": ["liyueRawMeat/4"],
         "yuanshen": ["76_4"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["liyueRawMeat/5"],
         "yuanshen": ["76_5"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,12 +47,6 @@
         "gm_legacy": ["liyueRawMeat/6"],
         "yuanshen": ["76_6"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["liyueRawMeat/7"],
         "yuanshen": ["76_7"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -88,12 +65,6 @@
         "gm_legacy": ["liyueRawMeat/10"],
         "yuanshen": ["76_10"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -102,12 +73,6 @@
       "importIds": {
         "gm_legacy": ["liyueRawMeat/11"],
         "yuanshen": ["76_11"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -118,12 +83,6 @@
         "gm_legacy": ["liyueRawMeat/12"],
         "yuanshen": ["76_12"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -132,12 +91,6 @@
       "importIds": {
         "yuanshen": ["76_1"],
         "gm_legacy": ["liyueRawMeat/1"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -148,12 +101,6 @@
         "yuanshen": ["76_2"],
         "gm_legacy": ["liyueRawMeat/2"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -162,12 +109,6 @@
       "importIds": {
         "yuanshen": ["76_3"],
         "gm_legacy": ["liyueRawMeat/3"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -178,12 +119,6 @@
         "yuanshen": ["76_8"],
         "gm_legacy": ["liyueRawMeat/8"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -193,12 +128,6 @@
         "yuanshen": ["76_9"],
         "gm_legacy": ["liyueRawMeat/9"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -206,12 +135,6 @@
       "id": "F75B0CB466652A51C60A647AB2ACC0A412817848",
       "importIds": {
         "yuanshen": ["76_13"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -221,12 +144,6 @@
       "importIds": {
         "yuanshen": ["76_14"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -234,12 +151,6 @@
       "id": "FC87AFC9A72F6F4386FF494421A66932C78EB6C1",
       "importIds": {
         "yuanshen": ["76_15"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -249,12 +160,6 @@
       "importIds": {
         "yuanshen": ["76_16"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -262,12 +167,6 @@
       "id": "6B22E4AB137944D1E889B3EF3CE3FDCDBCEA7587",
       "importIds": {
         "yuanshen": ["76_17"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -277,12 +176,6 @@
       "importIds": {
         "yuanshen": ["76_18"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -290,12 +183,6 @@
       "id": "0BBF1AADF9B7456ACB758649AE36A38960A7409E",
       "importIds": {
         "yuanshen": ["76_19"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -305,12 +192,6 @@
       "importIds": {
         "yuanshen": ["76_20"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -318,12 +199,6 @@
       "id": "D5D570996077C6EAAC116B134E3F0ABA9BE95B86",
       "importIds": {
         "yuanshen": ["76_21"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -333,12 +208,6 @@
       "importIds": {
         "yuanshen": ["76_22"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -346,12 +215,6 @@
       "id": "699D16D46B006E574FF181BC028B20CCFD7F8BE6",
       "importIds": {
         "yuanshen": ["76_23"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -361,12 +224,6 @@
       "importIds": {
         "yuanshen": ["76_24"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -374,12 +231,6 @@
       "id": "259AD5C88C13681695A91FA62572A238CAAAE083",
       "importIds": {
         "yuanshen": ["76_25"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -389,12 +240,6 @@
       "importIds": {
         "yuanshen": ["76_26"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -402,12 +247,6 @@
       "id": "240572DA5F9B51DCFDFA56ED37070F6C971FB37D",
       "importIds": {
         "yuanshen": ["76_27"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -417,12 +256,6 @@
       "importIds": {
         "yuanshen": ["76_28"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -430,12 +263,6 @@
       "id": "BC42AA403E889AF67000C40C8C05D573F2FB46AB",
       "importIds": {
         "yuanshen": ["76_29"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -445,12 +272,6 @@
       "importIds": {
         "yuanshen": ["76_30"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -458,12 +279,6 @@
       "id": "DEF565B1157DDC4EAEF3661B8172514A77841FF3",
       "importIds": {
         "yuanshen": ["76_31"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -473,12 +288,6 @@
       "importIds": {
         "yuanshen": ["76_32"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -486,12 +295,6 @@
       "id": "6D902E905C56C55F9006F5A31F1AD1A611A372E4",
       "importIds": {
         "yuanshen": ["76_33"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -501,12 +304,6 @@
       "importIds": {
         "yuanshen": ["76_34"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -514,12 +311,6 @@
       "id": "FABC1EC099A081EAE01A2704EEFD8C26D8D67FF3",
       "importIds": {
         "yuanshen": ["76_35"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -529,12 +320,6 @@
       "importIds": {
         "yuanshen": ["76_36"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -542,12 +327,6 @@
       "id": "41EAA7D7F35680341D819D34A9F1218179E35A7B",
       "importIds": {
         "yuanshen": ["76_37"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -557,12 +336,6 @@
       "importIds": {
         "yuanshen": ["76_38"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -570,12 +343,6 @@
       "id": "9E512FEB4FBF6B9CED48A2F385ADFF0E29BA333F",
       "importIds": {
         "yuanshen": ["76_39"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -585,12 +352,6 @@
       "importIds": {
         "yuanshen": ["76_40"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -598,12 +359,6 @@
       "id": "1EC5396520D2CB4A68785222BC4C2DE00E51AE86",
       "importIds": {
         "yuanshen": ["76_41"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -613,12 +368,6 @@
       "importIds": {
         "yuanshen": ["76_42"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -626,12 +375,6 @@
       "id": "DC44776658A4D8F0704544A9E41BB2E9343CDE25",
       "importIds": {
         "yuanshen": ["76_43"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -641,12 +384,6 @@
       "importIds": {
         "yuanshen": ["76_44"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -654,12 +391,6 @@
       "id": "A41E66C83045C01EAB9340BF7DAF24991598D153",
       "importIds": {
         "yuanshen": ["76_45"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -669,12 +400,6 @@
       "importIds": {
         "yuanshen": ["76_46"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -682,12 +407,6 @@
       "id": "30F3AE1F480398C6EDF010A243EEBEE970652522",
       "importIds": {
         "yuanshen": ["76_47"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得两块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -697,12 +416,6 @@
       "importIds": {
         "yuanshen": ["76_48"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -710,12 +423,6 @@
       "id": "20492251C9241EAF837BB9C61E154D10B1D64EC7",
       "importIds": {
         "yuanshen": ["76_49"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪可以获得2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -725,12 +432,6 @@
       "importIds": {
         "yuanshen": ["76_50"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -738,12 +439,6 @@
       "id": "3F45030473471139B28A4DD90C266C4232ACA7C3",
       "importIds": {
         "yuanshen": ["76_51"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -753,12 +448,6 @@
       "importIds": {
         "yuanshen": ["76_52"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -766,12 +455,6 @@
       "id": "2540542EB93BF2CC75326AC46A50E04D7C189184",
       "importIds": {
         "yuanshen": ["76_53"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -781,12 +464,6 @@
       "importIds": {
         "yuanshen": ["76_54"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -794,12 +471,6 @@
       "id": "76AA65C828FA261FF5EB806040D15672D52D02F4",
       "importIds": {
         "yuanshen": ["76_55"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -809,12 +480,6 @@
       "importIds": {
         "yuanshen": ["76_56"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -822,12 +487,6 @@
       "id": "BF4C7914107933E0900B86CA7F4D51DC14102323",
       "importIds": {
         "yuanshen": ["76_57"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -837,12 +496,6 @@
       "importIds": {
         "yuanshen": ["76_58"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -850,12 +503,6 @@
       "id": "E34566E3DF7B05460F8BC8EFD1F7952EF496E651",
       "importIds": {
         "yuanshen": ["76_59"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -865,12 +512,6 @@
       "importIds": {
         "yuanshen": ["76_60"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -878,12 +519,6 @@
       "id": "A19EF84095533F033369A8A20D7D940081F57B22",
       "importIds": {
         "yuanshen": ["76_61"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -893,12 +528,6 @@
       "importIds": {
         "yuanshen": ["76_62"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -906,12 +535,6 @@
       "id": "62532C2D29BF99E065250FED5E3EC9A8E7E63781",
       "importIds": {
         "yuanshen": ["76_63"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -921,12 +544,6 @@
       "importIds": {
         "yuanshen": ["76_64"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -934,12 +551,6 @@
       "id": "08C9EDEDFB5C2845BF7F07C7B3D731D5572F610A",
       "importIds": {
         "yuanshen": ["76_65"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -949,12 +560,6 @@
       "importIds": {
         "yuanshen": ["76_66"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -962,12 +567,6 @@
       "id": "9B5C4F1E91CB7FE8474076A6745C5C922719F5D3",
       "importIds": {
         "yuanshen": ["76_67"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -977,12 +576,6 @@
       "importIds": {
         "yuanshen": ["76_68"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -990,12 +583,6 @@
       "id": "DBF3258488B538FD5CAF08277BBD955042570030",
       "importIds": {
         "yuanshen": ["76_69"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1005,12 +592,6 @@
       "importIds": {
         "yuanshen": ["76_70"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1018,12 +599,6 @@
       "id": "5D4EBC56B88D38A50779DB935A9F394F1223A8BD",
       "importIds": {
         "yuanshen": ["76_71"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1033,12 +608,6 @@
       "importIds": {
         "yuanshen": ["76_72"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1046,12 +615,6 @@
       "id": "7BDDE006E0E359EA5BCD5CF7CF2FDF33BDE10989",
       "importIds": {
         "yuanshen": ["76_73"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1061,12 +624,6 @@
       "importIds": {
         "yuanshen": ["76_74"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1074,12 +631,6 @@
       "id": "4CC8A90968F633DAFEF698C331C65978678EF7A4",
       "importIds": {
         "yuanshen": ["76_75"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1089,12 +640,6 @@
       "importIds": {
         "yuanshen": ["76_76"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1102,12 +647,6 @@
       "id": "26B830209864C4B6DCF3EE0D2705F3394964E212",
       "importIds": {
         "yuanshen": ["76_77"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1117,12 +656,6 @@
       "importIds": {
         "yuanshen": ["76_78"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1130,12 +663,6 @@
       "id": "13AC1E52DD62012B9C8395CE7E412509AF0BA381",
       "importIds": {
         "yuanshen": ["76_79"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1145,12 +672,6 @@
       "importIds": {
         "yuanshen": ["76_80"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠可以获得一块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1158,12 +679,6 @@
       "id": "CA68369BAF60BA93E1D4E7AFADD4B6489A6E79AA",
       "importIds": {
         "yuanshen": ["76_81"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1173,12 +688,6 @@
       "importIds": {
         "yuanshen": ["76_82"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1186,12 +695,6 @@
       "id": "AC6C2E2DD68B1E6F85FF88B2A72615AC4776CDDA",
       "importIds": {
         "yuanshen": ["76_83"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1201,12 +704,6 @@
       "importIds": {
         "yuanshen": ["76_84"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1214,12 +711,6 @@
       "id": "B56B0726125ADB9E6424926CD7E99B2909EF3324",
       "importIds": {
         "yuanshen": ["76_85"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1229,12 +720,6 @@
       "importIds": {
         "yuanshen": ["76_86"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1242,12 +727,6 @@
       "id": "CA1830809E6FFD15196F784A53C0B32FF0A25A8E",
       "importIds": {
         "yuanshen": ["76_87"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1257,12 +736,6 @@
       "importIds": {
         "yuanshen": ["76_88"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1270,12 +743,6 @@
       "id": "42CAC5561263A71A47FDB5D4E097C6862BD4C40F",
       "importIds": {
         "yuanshen": ["76_89"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀松鼠掉落1块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1285,12 +752,6 @@
       "importIds": {
         "yuanshen": ["76_90"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1298,12 +759,6 @@
       "id": "C62D0939D1EDF2FBA173F3A460BB92F97CFA6A5C",
       "importIds": {
         "yuanshen": ["76_91"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1313,12 +768,6 @@
       "importIds": {
         "yuanshen": ["76_92"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1326,12 +775,6 @@
       "id": "F1D22BD317A7141669803020B60ABA99AA68AA89",
       "importIds": {
         "yuanshen": ["76_93"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1341,12 +784,6 @@
       "importIds": {
         "yuanshen": ["76_94"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1354,12 +791,6 @@
       "id": "D9A4BA75E91EAD8F9D4837EE76630574F9150EE2",
       "importIds": {
         "yuanshen": ["76_95"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1369,12 +800,6 @@
       "importIds": {
         "yuanshen": ["76_96"]
       },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀狐狸掉落2块兽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1382,12 +807,6 @@
       "id": "E2C36C5408AA8A3585731342C92C6794E0E02675",
       "importIds": {
         "yuanshen": ["76_97"]
-      },
-      "popupTitle": {
-        "zh": "兽肉"
-      },
-      "popupContent": {
-        "zh": "击杀野猪掉落2块兽肉"
       },
       "popupAttribution": "Yuanshen.site"
     }

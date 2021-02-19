@@ -11,7 +11,14 @@
 
 // Previous versions of react-app-rewired contained all the methods we needed.
 // Version 2.0 moved these to their own package.
-const { addBabelPlugin, addWebpackModuleRule, override } = require('customize-cra');
+const {
+  addBabelPlugin,
+  addWebpackModuleRule,
+  override,
+  addWebpackResolve,
+  addWebpackPlugin,
+} = require('customize-cra');
+const Visualize = require('webpack-visualizer-plugin');
 
 module.exports = override(
   /**
@@ -28,12 +35,17 @@ module.exports = override(
     },
   ]),
   /**
-   * Add the jsonc loader. This plugin resolves JSONC (JSON with Comments) files
-   * into equivalent JSON objects.
-   * @see: https://www.npmjs.com/package/jsonc-loader
+   * Visualize bundle size.
    */
-  addWebpackModuleRule({
-    test: /\.jsonc$/,
-    use: 'jsonc-loader',
+  addWebpackPlugin(
+    new Visualize({
+      filename: './bundleStatistics.html',
+    })
+  ),
+  /**
+   * Allow any of the JS file extensions.
+   */
+  addWebpackResolve({
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   })
 );

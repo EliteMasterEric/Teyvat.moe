@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Mist Flower Corolla",
+    "zh": "冰雾花",
+    "ru": "Туманный Цветок (венчик)",
+    "pt": "Flor da Névoa (Corola)"
+  },
   "description": {
     "en": "A flower bud encased in solid ice. Harvest using Pyro skills. Used in Alchemy."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Mist Flower Corolla",
-    "ru": "Туманный Цветок (венчик)",
-    "pt": "Flor da Névoa (Corola)"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "mist-flower-corolla",
@@ -28,12 +29,6 @@
         "gm_legacy": ["mondstadtMistFlowerCorolla/1"],
         "yuanshen": ["49_1"]
       },
-      "popupTitle": {
-        "zh": "冰雾花"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtMistFlowerCorolla/2"],
         "yuanshen": ["49_2"]
-      },
-      "popupTitle": {
-        "zh": "冰雾花"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,12 +47,6 @@
         "gm_legacy": ["mondstadtMistFlowerCorolla/3"],
         "yuanshen": ["49_3"]
       },
-      "popupTitle": {
-        "zh": "冰雾花"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtMistFlowerCorolla/4"],
         "yuanshen": ["49_4"]
-      },
-      "popupTitle": {
-        "zh": "冰雾花"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -91,9 +68,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #5"
       },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -105,9 +79,6 @@
       "popupTitle": {
         "zh": "冰雾花",
         "en": "NEW MARKER: #6"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -121,9 +92,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #7"
       },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -135,9 +103,6 @@
       "popupTitle": {
         "zh": "冰雾花",
         "en": "NEW MARKER: #8"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -151,9 +116,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #9"
       },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -165,9 +127,6 @@
       "popupTitle": {
         "zh": "冰雾花",
         "en": "NEW MARKER: #10"
-      },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -181,9 +140,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #11"
       },
-      "popupContent": {
-        "zh": "这是一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -195,9 +151,6 @@
       "popupTitle": {
         "zh": "冰雾花",
         "en": "NEW MARKER: #12"
-      },
-      "popupContent": {
-        "zh": "在崖底的一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -211,9 +164,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #13"
       },
-      "popupContent": {
-        "zh": "一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -226,9 +176,6 @@
         "zh": "冰雾花",
         "en": "NEW MARKER: #14"
       },
-      "popupContent": {
-        "zh": "一朵冰雾花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -240,9 +187,6 @@
       "popupTitle": {
         "zh": "冰雾花",
         "en": "NEW MARKER: #15"
-      },
-      "popupContent": {
-        "zh": "一朵冰雾花"
       },
       "popupAttribution": "Yuanshen.site"
     }

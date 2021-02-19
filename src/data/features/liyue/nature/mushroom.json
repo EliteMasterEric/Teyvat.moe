@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Mushroom",
+    "zh": "蘑菇",
+    "ru": "Гриб",
+    "pt": "Cogumelo"
+  },
   "description": {
     "en": "Hardy common fungi. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Mushroom",
-    "ru": "Гриб",
-    "pt": "Cogumelo"
-  },
   "icons": {
     "filter": "mushroom",
     "base": {
@@ -27,12 +28,6 @@
       "importIds": {
         "yuanshen": ["86_1"]
       },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -40,12 +35,6 @@
       "id": "61F2F1E00C02E1A5F67B2C74FAB82ABE1F58F79E",
       "importIds": {
         "yuanshen": ["86_2"]
-      },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,12 +44,6 @@
       "importIds": {
         "yuanshen": ["86_3"]
       },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -68,12 +51,6 @@
       "id": "D7DBEBD08C161EF9846CA190CECB94E35147858E",
       "importIds": {
         "yuanshen": ["86_4"]
-      },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -83,12 +60,6 @@
       "importIds": {
         "yuanshen": ["86_5"]
       },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -97,12 +68,6 @@
       "importIds": {
         "yuanshen": ["86_6"]
       },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -110,12 +75,6 @@
       "id": "A0068051064A6697996250B0E20C7D855DC2175D",
       "importIds": {
         "yuanshen": ["86_7"]
-      },
-      "popupTitle": {
-        "zh": "蘑菇-璃月"
-      },
-      "popupContent": {
-        "zh": "这里有一株蘑菇"
       },
       "popupAttribution": "Yuanshen.site"
     }

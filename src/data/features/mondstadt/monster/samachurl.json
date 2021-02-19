@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Samachurl",
+    "ru": "Шамачурл",
+    "zh": "丘丘萨满",
+    "pt": "Samachurl"
+  },
   "description": {
     "en": "Spiritual leaders who wield elemental powers. Drops Divining Scroll.",
     "ru": "Шаманы хиличурлов. Могут призывать на помощь элементы. Возможные награды: Свиток божественной магии."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Samachurl",
-    "ru": "Шамачурл",
-    "pt": "Samachurl"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "samachurl",
@@ -28,12 +29,6 @@
       "importIds": {
         "yuanshen": ["95_1"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -41,12 +36,6 @@
       "id": "E82985CCAD924C4F39158B62B861FDF5AEB7C0D7",
       "importIds": {
         "yuanshen": ["95_2"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -56,12 +45,6 @@
       "importIds": {
         "yuanshen": ["95_3"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -69,12 +52,6 @@
       "id": "27E703DD9F6F03925D76EC76A1B38AE5166DDE84",
       "importIds": {
         "yuanshen": ["95_4"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -84,12 +61,6 @@
       "importIds": {
         "yuanshen": ["95_5"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -97,12 +68,6 @@
       "id": "312C9DA9509979CB2C47907D1D3F305547B04C4D",
       "importIds": {
         "yuanshen": ["95_6"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -112,12 +77,6 @@
       "importIds": {
         "yuanshen": ["95_7"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -125,12 +84,6 @@
       "id": "9202C0871403219B873E3B6090E61B6994F45E9C",
       "importIds": {
         "yuanshen": ["95_8"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -140,12 +93,6 @@
       "importIds": {
         "yuanshen": ["95_9"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -153,12 +100,6 @@
       "id": "50D64E64570F8EE5F57FC931CD3F2B65907966EA",
       "importIds": {
         "yuanshen": ["95_10"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -168,12 +109,6 @@
       "importIds": {
         "yuanshen": ["95_11"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -181,12 +116,6 @@
       "id": "171018A9F811357C821DE75C1DDE9D7D10F48C88",
       "importIds": {
         "yuanshen": ["95_12"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -196,12 +125,6 @@
       "importIds": {
         "yuanshen": ["95_13"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -209,12 +132,6 @@
       "id": "446EFE6FE3AF28A6E78A5A98E0220F6B5482E45D",
       "importIds": {
         "yuanshen": ["95_14"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只丘丘萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -224,12 +141,6 @@
       "importIds": {
         "yuanshen": ["95_15"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只QQ萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -237,12 +148,6 @@
       "id": "4C43C1821567C01B715A62FCA7834B0A2B347CB4",
       "importIds": {
         "yuanshen": ["95_16"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只QQ萨满"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -252,12 +157,6 @@
       "importIds": {
         "yuanshen": ["95_17"]
       },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只QQ萨满"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -265,12 +164,6 @@
       "id": "8EF3FF594AF35E78358B424E9197C9805C1E36BB",
       "importIds": {
         "yuanshen": ["95_18"]
-      },
-      "popupTitle": {
-        "zh": "丘丘萨满"
-      },
-      "popupContent": {
-        "zh": "这里有一只QQ萨满"
       },
       "popupAttribution": "Yuanshen.site"
     }

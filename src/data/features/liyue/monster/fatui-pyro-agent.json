@@ -1,16 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Fatui Pyro Agent",
+    "zh": "债务处理人",
+    "pt": "Fatui Agente Pyro"
+  },
   "description": {
     "en": "Agent of the Fatui who turn invisible to catch enemies off-guard. Drops Sacrificial Knife and Recruit's Insignia.",
     "ru": "Тайный Агент Фатуи, способен поймать врасплох, используя невидимость. Возможные награды: Царемониальный нож, Шеврон."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Fatui Pyro Agent",
-    "zh": "债务处理人",
-    "pt": "Fatui Agente Pyro"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "fatui-pyro-agent",
@@ -29,12 +29,6 @@
         "gm_legacy": ["liyueFatuiPyroAgent/1"],
         "yuanshen": ["23_1"]
       },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -43,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiPyroAgent/2"],
         "yuanshen": ["23_2"]
-      },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -59,12 +47,6 @@
         "gm_legacy": ["liyueFatuiPyroAgent/3"],
         "yuanshen": ["23_3"]
       },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -73,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiPyroAgent/4"],
         "yuanshen": ["23_4"]
-      },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -89,12 +65,6 @@
         "gm_legacy": ["liyueFatuiPyroAgent/5"],
         "yuanshen": ["23_5"]
       },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -103,12 +73,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiPyroAgent/7"],
         "yuanshen": ["23_7"]
-      },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -119,12 +83,6 @@
         "gm_legacy": ["liyueFatuiPyroAgent/9"],
         "yuanshen": ["23_9"]
       },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
-      "popupContent": {
-        "zh": "这是一个债务处理人"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -134,12 +92,8 @@
         "gm_legacy": ["liyueFatuiPyroAgent/10"],
         "yuanshen": ["23_10"]
       },
-      "popupTitle": {
-        "zh": "债务处理人"
-      },
       "popupContent": {
-        "en": "Note that this agent does not spawn until you are close to the tree.",
-        "zh": "这是一个债务处理人"
+        "en": "Note that this agent does not spawn until you are close to the tree."
       },
       "popupAttribution": "Yuanshen.site"
     }

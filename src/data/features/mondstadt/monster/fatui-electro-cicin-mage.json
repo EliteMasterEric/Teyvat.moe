@@ -1,16 +1,17 @@
 {
+  "format": 2,
+  "name": {
+    "en": "Fatui Electro Cicin Mage",
+    "ru": "Маг цицинов Фатуи",
+    "zh": "雷萤术士",
+    "pt": "Fatui - Feiticeira Cicin Electro"
+  },
   "description": {
     "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.",
     "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон."
   },
   "enabled": true,
   "cluster": "on",
-  "format": 2,
-  "name": {
-    "en": "Fatui Electro Cicin Mage",
-    "ru": "Маг цицинов Фатуи",
-    "pt": "Fatui - Feiticeira Cicin Electro"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
@@ -29,12 +30,6 @@
         "gm_legacy": ["mondstadtFatuiElectroCicinMage/1"],
         "yuanshen": ["32_1"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -43,12 +38,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtFatuiElectroCicinMage/2"],
         "yuanshen": ["32_2"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -59,12 +48,6 @@
         "gm_legacy": ["mondstadtFatuiElectroCicinMage/4"],
         "yuanshen": ["32_4"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -73,12 +56,6 @@
       "importIds": {
         "yuanshen": ["32_3"],
         "gm_legacy": ["mondstadtFatuiElectroCicinMage/3"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     }

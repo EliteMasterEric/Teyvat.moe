@@ -1009,3 +1009,21 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed a bug where the editor would output bad coordinates.
 - Fixed a bug where the editor would switch to an invalid tab when clearing the editor data.
 - Fixed a bug where anchors would shift a bit visually at further zoom levels. The tip of the anchor now points at the marker's exact location at all zoom levels.
+
+# 0.11.1 Chest Cleanup and Bug Fixes
+- Updated the following features:
+  - Illumiscreen (Liyue): Added 6 Lantern Rite Event Chests.
+  - Snowboar King (Dragonspine): Added 1 location.
+  - Common Chest (Dragonspine): Used Chinese translation to move 142 markers to Exquisite/Precious/Luxurious.
+  - Exquisite Chest (Dragonspine): Moved 104 markers from Common Chest (Dragonspine).
+  - Precious Chest (Dragonspine): Moved 37 markers from Common Chest (Dragonspine).
+  - Luxurious Chest (Dragonspine): Moved 6 markers from Common Chest (Dragonspine).
+- Added Chinese names for many features.
+- Removed unnecessary popups on many featuers.
+- Cleaned many up feature data files.
+- Improved contrast on some UI elements.
+- Fixed a bug where 'Clear Refreshed Markers' would not function properly.
+- Fixed an issue where the image inside the marker was slightly smaller than it should be.
+- Fixed an issue where the Japanese language would not be properly recognized by browser locale detection.
+- Fixed an issue where Dragonspine displayed Electro Cicin Mages rather than Cryo Cicin Mages.
+- Removed JSONC handler.

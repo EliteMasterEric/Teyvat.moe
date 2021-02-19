@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Ruin Guard",
+    "zh": "遗迹守卫",
+    "ru": "Страж Руин",
+    "pt": "Guarda das Ruínas"
+  },
   "description": {
     "en": "An ancient humanoid war machine, said to be remnants from a lost ancient nation. Drops Chaos Device."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Ruin Guard",
-    "ru": "Страж Руин",
-    "pt": "Guarda das Ruínas"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "ruin-guard",
@@ -28,12 +29,6 @@
         "gm_legacy": ["liyueRuinGuard/1"],
         "yuanshen": ["20_1"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/2"],
         "yuanshen": ["20_2"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,12 +47,6 @@
         "gm_legacy": ["liyueRuinGuard/3"],
         "yuanshen": ["20_3"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/4"],
         "yuanshen": ["20_4"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -88,12 +65,6 @@
         "gm_legacy": ["liyueRuinGuard/5"],
         "yuanshen": ["20_5"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -102,12 +73,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/6"],
         "yuanshen": ["20_6"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -118,12 +83,6 @@
         "gm_legacy": ["liyueRuinGuard/7"],
         "yuanshen": ["20_7"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -132,12 +91,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/8"],
         "yuanshen": ["20_8"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -148,12 +101,6 @@
         "gm_legacy": ["liyueRuinGuard/9"],
         "yuanshen": ["20_9"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -162,12 +109,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/11"],
         "yuanshen": ["20_11"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -178,12 +119,6 @@
         "gm_legacy": ["liyueRuinGuard/13"],
         "yuanshen": ["20_13"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -192,12 +127,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/14"],
         "yuanshen": ["20_14"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -208,12 +137,6 @@
         "gm_legacy": ["liyueRuinGuard/18"],
         "yuanshen": ["20_18"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -223,12 +146,6 @@
         "gm_legacy": ["liyueRuinGuard/19"],
         "yuanshen": ["20_19"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -237,12 +154,6 @@
       "importIds": {
         "gm_legacy": ["liyueRuinGuard/20"],
         "yuanshen": ["20_20"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     }

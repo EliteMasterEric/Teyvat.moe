@@ -1,17 +1,17 @@
 {
   "format": 2,
-  "description": {
-    "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches.",
-    "ru": "Существа Бездны, которые в некоторой степени могут использовать в бою силу элементов. Вомзожные награды: ветви Артерий Земли."
-  },
-  "enabled": true,
-  "cluster": "on",
   "name": {
     "en": "Abyss Mage",
     "ru": "Маг Бездны",
     "zh": "深渊法师",
     "pt": "Feiticeiro do Abismo"
   },
+  "description": {
+    "en": "The chaotic agents of the Abyss Order. Drops Ley Line Branches.",
+    "ru": "Существа Бездны, которые в некоторой степени могут использовать в бою силу элементов. Вомзожные награды: ветви Артерий Земли."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "pyro-abyss-mage",
@@ -30,12 +30,6 @@
         "gm_legacy": ["liyueAbyssMage/1"],
         "yuanshen": ["24_1"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -44,12 +38,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/3"],
         "yuanshen": ["24_3"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -60,12 +48,6 @@
         "gm_legacy": ["liyueAbyssMage/5"],
         "yuanshen": ["24_5"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -74,12 +56,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/6"],
         "yuanshen": ["24_6"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个火深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -90,12 +66,6 @@
         "gm_legacy": ["liyueAbyssMage/7"],
         "yuanshen": ["24_7"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -104,12 +74,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/8"],
         "yuanshen": ["24_8"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -120,12 +84,6 @@
         "gm_legacy": ["liyueAbyssMage/9"],
         "yuanshen": ["24_9"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -134,12 +92,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/10"],
         "yuanshen": ["24_10"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -150,12 +102,6 @@
         "gm_legacy": ["liyueAbyssMage/11"],
         "yuanshen": ["24_11"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个冰深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -164,12 +110,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/12"],
         "yuanshen": ["24_12"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个水深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -180,12 +120,6 @@
         "gm_legacy": ["liyueAbyssMage/14"],
         "yuanshen": ["24_14"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个山洞中的火深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -194,12 +128,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/15"],
         "yuanshen": ["24_15"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -210,12 +138,6 @@
         "gm_legacy": ["liyueAbyssMage/16"],
         "yuanshen": ["24_16"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -224,12 +146,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/17"],
         "yuanshen": ["24_17"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -240,12 +156,6 @@
         "gm_legacy": ["liyueAbyssMage/18"],
         "yuanshen": ["24_18"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -254,12 +164,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/22"],
         "yuanshen": ["24_22"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个水深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -270,12 +174,6 @@
         "gm_legacy": ["liyueAbyssMage/24"],
         "yuanshen": ["24_24"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个冰深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -284,12 +182,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/25"],
         "yuanshen": ["24_25"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -300,12 +192,6 @@
         "gm_legacy": ["liyueAbyssMage/26"],
         "yuanshen": ["24_26"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -314,12 +200,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/27"],
         "yuanshen": ["24_27"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -330,12 +210,6 @@
         "gm_legacy": ["liyueAbyssMage/28"],
         "yuanshen": ["24_28"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -344,12 +218,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/31"],
         "yuanshen": ["24_31"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -360,12 +228,6 @@
         "gm_legacy": ["liyueAbyssMage/32"],
         "yuanshen": ["24_32"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -374,12 +236,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/33"],
         "yuanshen": ["24_33"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -390,12 +246,6 @@
         "gm_legacy": ["liyueAbyssMage/34"],
         "yuanshen": ["24_34"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -404,12 +254,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/35"],
         "yuanshen": ["24_35"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -420,12 +264,6 @@
         "gm_legacy": ["liyueAbyssMage/36"],
         "yuanshen": ["24_36"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "山下矿洞里面的冰深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -434,12 +272,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/37"],
         "yuanshen": ["24_37"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -450,12 +282,6 @@
         "gm_legacy": ["liyueAbyssMage/38"],
         "yuanshen": ["24_38"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -464,12 +290,6 @@
       "importIds": {
         "gm_legacy": ["liyueAbyssMage/39", "liyueAbyssMage/40"],
         "yuanshen": ["24_40"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -480,12 +300,6 @@
         "gm_legacy": ["liyueAbyssMage/41"],
         "yuanshen": ["24_41"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -494,12 +308,6 @@
       "importIds": {
         "yuanshen": ["24_23"],
         "gm_legacy": ["liyueAbyssMage/23"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个水深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -510,12 +318,6 @@
         "yuanshen": ["24_42"],
         "gm_legacy": ["liyueAbyssMage/42"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -525,12 +327,6 @@
         "yuanshen": ["24_43"],
         "gm_legacy": ["liyueAbyssMage/43"]
       },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "攻击此处的丘丘人设施并击败出现的全部火史莱姆会出现火深渊法师"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -539,12 +335,6 @@
       "importIds": {
         "yuanshen": ["24_44"],
         "gm_legacy": ["liyueAbyssMage/44"]
-      },
-      "popupTitle": {
-        "zh": "深渊法师"
-      },
-      "popupContent": {
-        "zh": "这是一个深渊法师"
       },
       "popupAttribution": "Yuanshen.site"
     }

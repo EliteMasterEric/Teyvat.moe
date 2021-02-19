@@ -9,7 +9,7 @@
     "ru": "Роскошный сундук",
     "pt": "Baú Luxuoso"
   },
-  "enabled": false,
+  "enabled": true,
   "cluster": "on",
   "respawn": "none",
   "icons": {
@@ -36,6 +36,79 @@
         "en": "Break the Scarlet Quartz on the north cliff in Mondstadt, glide over, and break the ice to reveal the chest. Contains Crimson Agate."
       },
       "popupMedia": "https://www.youtube.com/watch?v=6ydUPk7fF-A"
+    },
+    {
+      "coordinates": [-34.32526, 38.98594],
+      "id": "F1080A72DAA310BFE926244ABD804E6A814AAE54",
+      "importIds": {
+        "yuanshen": ["26_601"]
+      },
+      "popupContent": {
+        "en": "解密并击败遗迹重机后开启的【Luxurious Chest】350阅历、4"
+      },
+      "popupMedia": "dragonspine/common-chest/F1080A7",
+      "popupAttribution": "Yuanshen.site"
+    },
+
+    {
+      "coordinates": [-29.8375, 36.02295],
+      "id": "DE6993F20FED1BF75D37A2FE03940F306951E053",
+      "importIds": {
+        "yuanshen": ["26_670"]
+      },
+      "popupContent": {
+        "en": "击败深渊法师后完成解谜解锁的【Luxurious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/DE6993F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.05587, 39.32615],
+      "id": "6DA7AD1A7A7623EE6A60C34BD685BE1A0413DD88",
+      "importIds": {
+        "yuanshen": ["26_687"]
+      },
+      "popupContent": {
+        "en": "平台上开启【Luxurious Chest】获得祭祀之匣"
+      },
+      "popupMedia": "dragonspine/common-chest/6DA7AD1",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.3706, 39.36881],
+      "id": "12EF91B76394F50189EA2A7FA5CD2B935317F6CA",
+      "importIds": {
+        "yuanshen": ["26_689"]
+      },
+      "popupContent": {
+        "en": "杀怪解锁【Luxurious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/12EF91B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.32266, 42.20599],
+      "id": "4F814B822C51BE73E4C6B9CF1DBE531512F8881F",
+      "importIds": {
+        "yuanshen": ["26_731"]
+      },
+      "popupContent": {
+        "en": "密室中的【Luxurious Chest】1"
+      },
+      "popupMedia": "dragonspine/common-chest/4F814B8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.95582, 40.67095],
+      "id": "FDB7E1D141B74ADACEDB1479171BAAF3B750C894",
+      "importIds": {
+        "yuanshen": ["26_732"]
+      },
+      "popupContent": {
+        "en": "秘境门口的【Luxurious Chest】内有【绯红玉髓】、20w摩拉"
+      },
+      "popupMedia": "dragonspine/common-chest/FDB7E1D",
+      "popupAttribution": "Yuanshen.site"
     }
   ]
 }

@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Sweet Flower",
+    "zh": "甜甜花",
+    "ru": "Цветок-сахарок",
+    "pt": "Flor Doce"
+  },
   "description": {
     "en": "Particularly fragrent flowers. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Sweet Flower",
-    "ru": "Цветок-сахарок",
-    "pt": "Flor Doce"
-  },
   "icons": {
     "filter": "sweet-flower",
     "base": {
@@ -28,12 +29,6 @@
         "gm_legacy": ["mondstadtSweetFlower/1"],
         "yuanshen": ["69_1"]
       },
-      "popupTitle": {
-        "zh": "甜甜花"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtSweetFlower/2"],
         "yuanshen": ["69_2"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,13 +47,6 @@
         "yuanshen": ["69_3"],
         "gm_legacy": ["mondstadtSweetFlower/10"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#3"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,13 +54,6 @@
       "id": "B07137F7D571FC4625FE852872E3A3866B1B57CA",
       "importIds": {
         "yuanshen": ["69_4"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#4"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -88,13 +63,6 @@
       "importIds": {
         "yuanshen": ["69_5"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#5"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -102,13 +70,6 @@
       "id": "5D187A8214D7B1B6E3D3FF339474BA440D7771B3",
       "importIds": {
         "yuanshen": ["69_6"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#6"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -118,13 +79,6 @@
       "importIds": {
         "yuanshen": ["69_7"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#7"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -133,13 +87,6 @@
       "importIds": {
         "yuanshen": ["69_8"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#8"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -147,13 +94,6 @@
       "id": "FAD3AA446A3ECE353365605ED8D75A6826286806",
       "importIds": {
         "yuanshen": ["69_9"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#9"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -164,13 +104,6 @@
         "yuanshen": ["69_10"],
         "gm_legacy": ["mondstadtSweetFlower/28"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#10"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -179,13 +112,6 @@
       "importIds": {
         "yuanshen": ["69_11"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#11"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -193,13 +119,6 @@
       "id": "82A60316C558785E826BE6C3A0390A506AB8C915",
       "importIds": {
         "yuanshen": ["69_12"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#12"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -210,13 +129,6 @@
         "yuanshen": ["69_13"],
         "gm_legacy": ["mondstadtSweetFlower/26"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#13"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -225,13 +137,6 @@
       "importIds": {
         "yuanshen": ["69_14"],
         "gm_legacy": ["mondstadtSweetFlower/27"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#14"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -242,13 +147,6 @@
         "yuanshen": ["69_15"],
         "gm_legacy": ["mondstadtSweetFlower/25"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#15"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -256,13 +154,6 @@
       "id": "D8F8AA914F084824F7643364CA089F26A92B31B6",
       "importIds": {
         "yuanshen": ["69_16"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#16"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -272,13 +163,6 @@
       "importIds": {
         "yuanshen": ["69_17"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#17"
-      },
-      "popupContent": {
-        "zh": "这是一朵蒙德甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -286,13 +170,6 @@
       "id": "7DDA31637D0ECB4C8BC2674A82D0D80954A9B835",
       "importIds": {
         "yuanshen": ["69_18"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#18"
-      },
-      "popupContent": {
-        "zh": "这是一朵骗骗甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -302,13 +179,6 @@
       "importIds": {
         "yuanshen": ["69_19"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#19"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -317,13 +187,6 @@
       "importIds": {
         "yuanshen": ["69_20"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#20"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -331,13 +194,6 @@
       "id": "CAE706E0090B6C383031B745CD7DD2D87084E8BC",
       "importIds": {
         "yuanshen": ["69_21"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#21"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -348,13 +204,6 @@
         "yuanshen": ["69_22"],
         "gm_legacy": ["mondstadtSweetFlower/24"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#22"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -362,13 +211,6 @@
       "id": "1081AFFAA67666FACEB8EBF1012B86F7123B7366",
       "importIds": {
         "yuanshen": ["69_23"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#23"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -378,13 +220,6 @@
       "importIds": {
         "yuanshen": ["69_24"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#24"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -392,13 +227,6 @@
       "id": "992047692FB1968908147F6173047BDA06DD393A",
       "importIds": {
         "yuanshen": ["69_25"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#25"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -408,13 +236,6 @@
       "importIds": {
         "yuanshen": ["69_26"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#26"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -422,13 +243,6 @@
       "id": "3002636360F446695AE37D6FD1D2BECE365C9073",
       "importIds": {
         "yuanshen": ["69_27"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#27"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -438,13 +252,6 @@
       "importIds": {
         "yuanshen": ["69_28"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#28"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -452,13 +259,6 @@
       "id": "6897D3CD1F37AA09372C0F99DF250C9A72ACB210",
       "importIds": {
         "yuanshen": ["69_29"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#29"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -468,13 +268,6 @@
       "importIds": {
         "yuanshen": ["69_30"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#30"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -482,13 +275,6 @@
       "id": "1DC7E80EBB6AAB9761F8B8BD4C10EDB8344CAC2E",
       "importIds": {
         "yuanshen": ["69_31"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#31"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -498,13 +284,6 @@
       "importIds": {
         "yuanshen": ["69_32"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#32"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -512,13 +291,6 @@
       "id": "6A6769B0A00345B0099B2E528A5A28B801328BD5",
       "importIds": {
         "yuanshen": ["69_33"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#33"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -528,13 +300,6 @@
       "importIds": {
         "yuanshen": ["69_34"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#34"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -542,13 +307,6 @@
       "id": "0BF3AB5FCB4B361D4ED17E18155781A065F65F98",
       "importIds": {
         "yuanshen": ["69_35"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#35"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -558,13 +316,6 @@
       "importIds": {
         "yuanshen": ["69_36"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#36"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -573,13 +324,6 @@
       "importIds": {
         "yuanshen": ["69_37"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#37"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -587,13 +331,6 @@
       "id": "324867D03B98EBEE20FA2F26656563F08F534737",
       "importIds": {
         "yuanshen": ["69_38"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#38"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -604,13 +341,6 @@
         "yuanshen": ["69_39"],
         "gm_legacy": ["mondstadtSweetFlower/4"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#39"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -620,13 +350,6 @@
         "yuanshen": ["69_40"],
         "gm_legacy": ["mondstadtSweetFlower/7"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#40"
-      },
-      "popupContent": {
-        "zh": "这是一朵长在石头上的甜甜花，怎么样？是不是特别神奇？"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -634,13 +357,6 @@
       "id": "30E5D149367FC140CD8A38545CE4075419B3357B",
       "importIds": {
         "yuanshen": ["69_41"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#41"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -651,13 +367,6 @@
         "yuanshen": ["69_42"],
         "gm_legacy": ["mondstadtSweetFlower/8"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#42"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -666,13 +375,6 @@
       "importIds": {
         "yuanshen": ["69_43"],
         "gm_legacy": ["mondstadtSweetFlower/9"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#43"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -683,13 +385,6 @@
         "yuanshen": ["69_44"],
         "gm_legacy": ["mondstadtSweetFlower/5"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#44"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -699,13 +394,6 @@
         "yuanshen": ["69_45"],
         "gm_legacy": ["mondstadtSweetFlower/6"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#45"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -713,13 +401,6 @@
       "id": "D7FF0560C89E1874B3CFE42EC3B7E3405C3AEA02",
       "importIds": {
         "yuanshen": ["69_46"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#46"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -729,13 +410,6 @@
       "importIds": {
         "yuanshen": ["69_47"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#47"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -743,13 +417,6 @@
       "id": "7A1C63C50ACA9F43225BC8B1C56DF5624CCA27C6",
       "importIds": {
         "yuanshen": ["69_48"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#48"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -759,13 +426,6 @@
       "importIds": {
         "yuanshen": ["69_49"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#49"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -773,13 +433,6 @@
       "id": "44B0754218428A5C1D90CBF62477DB4B37EBD2C7",
       "importIds": {
         "yuanshen": ["69_50"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#50"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花，每次挖矿的时候都没发现= ="
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -789,13 +442,6 @@
       "importIds": {
         "yuanshen": ["69_51"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#51"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -803,13 +449,6 @@
       "id": "58CDEB9E96E853C429A1D3B455D4E7A35AA7CF51",
       "importIds": {
         "yuanshen": ["69_52"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#52"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -819,13 +458,6 @@
       "importIds": {
         "yuanshen": ["69_53"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#53"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -833,13 +465,6 @@
       "id": "3B2212E91A9E2660948D781E792A6AA231C21BBA",
       "importIds": {
         "yuanshen": ["69_54"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#54"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -849,13 +474,6 @@
       "importIds": {
         "yuanshen": ["69_55"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#55"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -863,13 +481,6 @@
       "id": "6A463520F4732B8F35A3B638C3C95A700776D418",
       "importIds": {
         "yuanshen": ["69_56"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#56"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -879,13 +490,6 @@
       "importIds": {
         "yuanshen": ["69_57"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#57"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -893,13 +497,6 @@
       "id": "53E4A3567BBB5AE971425C2C17A954665FADD25B",
       "importIds": {
         "yuanshen": ["69_58"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#58"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -909,13 +506,6 @@
       "importIds": {
         "yuanshen": ["69_59"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#59"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -923,13 +513,6 @@
       "id": "A7494E070871AE1740350F9E8657F64A4814301F",
       "importIds": {
         "yuanshen": ["69_60"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#60"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -939,13 +522,6 @@
       "importIds": {
         "yuanshen": ["69_61"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#61"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -953,13 +529,6 @@
       "id": "6A80E22B37054614C6D4E5FE164D4C86CBDAD1F6",
       "importIds": {
         "yuanshen": ["69_62"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#62"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -969,13 +538,6 @@
       "importIds": {
         "yuanshen": ["69_63"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#63"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -983,13 +545,6 @@
       "id": "126A35BAE262DE863C557ACFE48274618CCBEB4E",
       "importIds": {
         "yuanshen": ["69_64"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#64"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -999,13 +554,6 @@
       "importIds": {
         "yuanshen": ["69_65"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#65"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1013,13 +561,6 @@
       "id": "3A814821A1C0470DA11A93C86E10C01522661787",
       "importIds": {
         "yuanshen": ["69_66"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#66"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1029,13 +570,6 @@
       "importIds": {
         "yuanshen": ["69_67"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#67"
-      },
-      "popupContent": {
-        "zh": "上面有愚人众三人组"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1043,13 +577,6 @@
       "id": "D80D8751607790C46B01FBEB9843570F3725C735",
       "importIds": {
         "yuanshen": ["69_68"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#68"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1059,13 +586,6 @@
       "importIds": {
         "yuanshen": ["69_69"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#69"
-      },
-      "popupContent": {
-        "zh": "这是一朵甜甜花"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1073,13 +593,6 @@
       "id": "FDAABDEA88C0C5A6C61DD22E7DD1747D29D81F38",
       "importIds": {
         "yuanshen": ["69_70"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#70"
-      },
-      "popupContent": {
-        "zh": "孤独の甜甜花内心OS：我猜没有旅行者会愿意来这，只为我这么一朵甜甜花的┭┮﹏┭┮"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1089,13 +602,6 @@
       "importIds": {
         "yuanshen": ["69_71"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#71"
-      },
-      "popupContent": {
-        "zh": "孤独の甜甜花内心OS：我猜没有旅行者会愿意来这，只为我这么一朵甜甜花的┭┮﹏┭┮"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1103,13 +609,6 @@
       "id": "CB8330FDAFF17408D5324DA2E590102C74748273",
       "importIds": {
         "yuanshen": ["69_72"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#72"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）别不识好歹！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1119,13 +618,6 @@
       "importIds": {
         "yuanshen": ["69_73"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#73"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）别不识好歹！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1133,13 +625,6 @@
       "id": "544B4B49775855F3280478AA64B0B0234C62DAC9",
       "importIds": {
         "yuanshen": ["69_74"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#74"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）别不识好歹！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1149,13 +634,6 @@
       "importIds": {
         "yuanshen": ["69_75"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#75"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）别不识好歹！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1163,13 +641,6 @@
       "id": "EF95B52C7BC5A3E8C976A9E7AD59C513B0381C22",
       "importIds": {
         "yuanshen": ["69_76"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#76"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）别不识好歹！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1179,13 +650,6 @@
       "importIds": {
         "yuanshen": ["69_77"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#77"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）：阿嚏！我知错了，旅行者快带我走！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1193,13 +657,6 @@
       "id": "08ED1F48C2637F7F190735F3F8656F19C68CEB55",
       "importIds": {
         "yuanshen": ["69_78"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#78"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）：阿嚏！我知错了，旅行者快带我走！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1209,13 +666,6 @@
       "importIds": {
         "yuanshen": ["69_79"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#79"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1223,13 +673,6 @@
       "id": "9423FD476AC02E7F228C1F4DDF1A3C6540399B86",
       "importIds": {
         "yuanshen": ["69_80"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#80"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1239,13 +682,6 @@
       "importIds": {
         "yuanshen": ["69_81"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#81"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1253,13 +689,6 @@
       "id": "36771FEDD5A978F4618C51C0508603F834FCBF41",
       "importIds": {
         "yuanshen": ["69_82"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#82"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1269,13 +698,6 @@
       "importIds": {
         "yuanshen": ["69_83"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#83"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1283,13 +705,6 @@
       "id": "C5ABF6854CCFF5BBE0882E4F3D4F12851F04DE23",
       "importIds": {
         "yuanshen": ["69_84"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#84"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1299,13 +714,6 @@
       "importIds": {
         "yuanshen": ["69_85"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#85"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1313,13 +721,6 @@
       "id": "88C7F757D85A62061BC18ABB3B66AD97A1B83B52",
       "importIds": {
         "yuanshen": ["69_86"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#86"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1329,13 +730,6 @@
       "importIds": {
         "yuanshen": ["69_87"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#87"
-      },
-      "popupContent": {
-        "zh": "甜甜花（酿鸡）"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1343,13 +737,6 @@
       "id": "38F0C6D04584E09CCD2AC9CC4E75C8F5B5C2379D",
       "importIds": {
         "yuanshen": ["69_88"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#88"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1359,13 +746,6 @@
       "importIds": {
         "yuanshen": ["69_89"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#89"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1373,13 +753,6 @@
       "id": "C07505D7061771459B142679AD1F8501D91A9ADC",
       "importIds": {
         "yuanshen": ["69_90"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#90"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1389,13 +762,6 @@
       "importIds": {
         "yuanshen": ["69_91"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#91"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1403,13 +769,6 @@
       "id": "3117DC5C149B680397EA178572B659FEBE4840E7",
       "importIds": {
         "yuanshen": ["69_92"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#92"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1419,13 +778,6 @@
       "importIds": {
         "yuanshen": ["69_93"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#93"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1433,13 +785,6 @@
       "id": "77A882F6AF80226C98F14E14AB13D665EE2FEC0F",
       "importIds": {
         "yuanshen": ["69_94"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#94"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1449,13 +794,6 @@
       "importIds": {
         "yuanshen": ["69_95"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#95"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1463,13 +801,6 @@
       "id": "CC6579A0DA51548B1E9E80B26B26DDAE19F15B9D",
       "importIds": {
         "yuanshen": ["69_96"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#96"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1479,13 +810,6 @@
       "importIds": {
         "yuanshen": ["69_97"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#97"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1493,13 +817,6 @@
       "id": "D9C92FDEDA1B4BCB4E1215EA6AAFC133A4D78D13",
       "importIds": {
         "yuanshen": ["69_98"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#98"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1509,13 +826,6 @@
       "importIds": {
         "yuanshen": ["69_99"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#99"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1523,13 +833,6 @@
       "id": "3C59275E18345929739DA0E5F11B6CFC876B4CF5",
       "importIds": {
         "yuanshen": ["69_100"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#100"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1539,13 +842,6 @@
       "importIds": {
         "yuanshen": ["69_101"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#101"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1553,13 +849,6 @@
       "id": "AD19A0DE16F294630660DED8F81D336BF1843F00",
       "importIds": {
         "yuanshen": ["69_102"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#102"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1569,13 +858,6 @@
       "importIds": {
         "yuanshen": ["69_103"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#103"
-      },
-      "popupContent": {
-        "zh": "被叶子挡住的甜甜花：Surprise！没想到吧！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1583,13 +865,6 @@
       "id": "2E4870FE04F65C7BBBB694D9C6256E482E5192BC",
       "importIds": {
         "yuanshen": ["69_104"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#104"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1599,13 +874,6 @@
       "importIds": {
         "yuanshen": ["69_105"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#105"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1613,13 +881,6 @@
       "id": "3A55CED0918FA4FDAA9D408F460B7F6DFD0F5FFB",
       "importIds": {
         "yuanshen": ["69_106"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#106"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1629,13 +890,6 @@
       "importIds": {
         "yuanshen": ["69_107"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#107"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1643,13 +897,6 @@
       "id": "2186480C3F1CD3D5D9A766277217F64D526240F8",
       "importIds": {
         "yuanshen": ["69_108"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#108"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1659,13 +906,6 @@
       "importIds": {
         "yuanshen": ["69_109"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#109"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1673,13 +913,6 @@
       "id": "3375D549D23B2591C75914A7753F5CCB820637DD",
       "importIds": {
         "yuanshen": ["69_110"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#110"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1689,13 +922,6 @@
       "importIds": {
         "yuanshen": ["69_111"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#111"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1703,13 +929,6 @@
       "id": "27F3FF6DC217496C5FD1E8FA6F45ACCE99BB80D7",
       "importIds": {
         "yuanshen": ["69_112"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#112"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1719,13 +938,6 @@
       "importIds": {
         "yuanshen": ["69_113"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#113"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1733,13 +945,6 @@
       "id": "8962F67E0F09323CABFB3BE64E8A3A518D0351DD",
       "importIds": {
         "yuanshen": ["69_114"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#114"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1749,13 +954,6 @@
       "importIds": {
         "yuanshen": ["69_115"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#115"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒哟！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1763,13 +961,6 @@
       "id": "6114DC04D1D97859F32474E17E18ED34E6DFA2C8",
       "importIds": {
         "yuanshen": ["69_116"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#116"
-      },
-      "popupContent": {
-        "zh": "星落湖最牛逼的甜甜花！不服来摘！！！"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1779,13 +970,6 @@
       "importIds": {
         "yuanshen": ["69_117"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#117"
-      },
-      "popupContent": {
-        "zh": "星落湖最牛逼的甜甜花！不服来摘！！！"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1793,13 +977,6 @@
       "id": "92442D9CEA9CBB964E63968CC31EC1278918A087",
       "importIds": {
         "yuanshen": ["69_118"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#118"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1809,13 +986,6 @@
       "importIds": {
         "yuanshen": ["69_119"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#119"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1823,13 +993,6 @@
       "id": "48FBEDC546D32D69909FDE8CF2FDF0F450DA65E6",
       "importIds": {
         "yuanshen": ["69_120"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#120"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1839,13 +1002,6 @@
       "importIds": {
         "yuanshen": ["69_121"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#121"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1853,13 +1009,6 @@
       "id": "84A8D9EABE9888BA11731D7F630FC723E1DC7EB9",
       "importIds": {
         "yuanshen": ["69_122"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#122"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1869,13 +1018,6 @@
       "importIds": {
         "yuanshen": ["69_123"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#123"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1883,13 +1025,6 @@
       "id": "94C2B6C81F856665E12E92966E8C9F10F9A23778",
       "importIds": {
         "yuanshen": ["69_124"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#124"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1899,13 +1034,6 @@
       "importIds": {
         "yuanshen": ["69_125"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#125"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1913,13 +1041,6 @@
       "id": "A85A4DDF2B972035FB44CF9B11B0B8153BBD29FA",
       "importIds": {
         "yuanshen": ["69_126"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#126"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1929,13 +1050,6 @@
       "importIds": {
         "yuanshen": ["69_127"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#127"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1943,13 +1057,6 @@
       "id": "1183D8868FFB15CBEDCCB137F64E54001B67DEA0",
       "importIds": {
         "yuanshen": ["69_128"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#128"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -1959,13 +1066,6 @@
       "importIds": {
         "yuanshen": ["69_129"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#129"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1974,13 +1074,6 @@
       "importIds": {
         "yuanshen": ["69_130"]
       },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#130"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -1988,13 +1081,6 @@
       "id": "6D0383CD4C0112324553F2777921F01404B9FF48",
       "importIds": {
         "yuanshen": ["69_131"]
-      },
-      "popupTitle": {
-        "zh": "甜甜花",
-        "en": "#131"
-      },
-      "popupContent": {
-        "zh": "甜甜花哒"
       },
       "popupAttribution": "Yuanshen.site"
     }

@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Fowl",
+    "zh": "禽肉",
+    "ru": "Мясо Птицы",
+    "pt": "Carne de Ave"
+  },
   "description": {
     "en": "A fresh bird. Used in various recipes. Poor Timmy..."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Fowl",
-    "ru": "Мясо Птицы",
-    "pt": "Carne de Ave"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "fowl",
@@ -28,12 +29,6 @@
         "gm_legacy": ["liyueFowl/1"],
         "yuanshen": ["78_1"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["liyueFowl/2"],
         "yuanshen": ["78_2"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -58,12 +47,6 @@
         "gm_legacy": ["liyueFowl/3"],
         "yuanshen": ["78_3"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -72,12 +55,6 @@
       "importIds": {
         "gm_legacy": ["liyueFowl/4"],
         "yuanshen": ["78_4"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -88,12 +65,6 @@
         "gm_legacy": ["liyueFowl/5"],
         "yuanshen": ["78_5"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -103,12 +74,6 @@
         "gm_legacy": ["liyueFowl/6"],
         "yuanshen": ["78_6"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有两只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -116,12 +81,6 @@
       "id": "2A02C4A6DA94B474C5CBEA2555E3C6514080A250",
       "importIds": {
         "yuanshen": ["78_7"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -131,12 +90,6 @@
       "importIds": {
         "yuanshen": ["78_8"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -144,12 +97,6 @@
       "id": "4DED432341AB2D9471F748347F97DE6ECAB5A352",
       "importIds": {
         "yuanshen": ["78_9"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -159,12 +106,6 @@
       "importIds": {
         "yuanshen": ["78_10"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -172,12 +113,6 @@
       "id": "06E64DC646521EAE22D181AAA2EF810F3424F15B",
       "importIds": {
         "yuanshen": ["78_11"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -187,12 +122,6 @@
       "importIds": {
         "yuanshen": ["78_12"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -200,12 +129,6 @@
       "id": "838A7D9AC99894196EFB0032EDCCC1AAD281F968",
       "importIds": {
         "yuanshen": ["78_13"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -215,12 +138,6 @@
       "importIds": {
         "yuanshen": ["78_14"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -228,12 +145,6 @@
       "id": "5492B1FA9CC49A61A21D0B277C95BE368B7BEA92",
       "importIds": {
         "yuanshen": ["78_15"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -243,12 +154,6 @@
       "importIds": {
         "yuanshen": ["78_16"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -256,12 +161,6 @@
       "id": "84ACCF5BF576258E3F4719BA29CAEBD6E6F773E8",
       "importIds": {
         "yuanshen": ["78_17"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -271,12 +170,6 @@
       "importIds": {
         "yuanshen": ["78_18"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -284,12 +177,6 @@
       "id": "EF748E799C5FEB074E73A72DEE97E808A1449BFC",
       "importIds": {
         "yuanshen": ["78_19"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -299,12 +186,6 @@
       "importIds": {
         "yuanshen": ["78_20"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只鸭子"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -312,12 +193,6 @@
       "id": "8938DAFC3D69093203B99F8E951AD936BFD4ABE1",
       "importIds": {
         "yuanshen": ["78_21"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -327,12 +202,6 @@
       "importIds": {
         "yuanshen": ["78_22"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -340,12 +209,6 @@
       "id": "D0115D6C88CFF0306D2A0467B01542468F150E60",
       "importIds": {
         "yuanshen": ["78_23"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -355,12 +218,6 @@
       "importIds": {
         "yuanshen": ["78_24"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -368,12 +225,6 @@
       "id": "C6569DFCDEC051DA97C5B415F8AA65723AFECE43",
       "importIds": {
         "yuanshen": ["78_25"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -383,12 +234,6 @@
       "importIds": {
         "yuanshen": ["78_26"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -396,12 +241,6 @@
       "id": "416903C83F72AB6D74CE1C36B210D1445ED61292",
       "importIds": {
         "yuanshen": ["78_27"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "这里有一只仙鹤"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -411,12 +250,6 @@
       "importIds": {
         "yuanshen": ["78_28"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处仙鹤掉落2禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -424,12 +257,6 @@
       "id": "0D06FAE100F895DFE4E3F73EE44B33FFB9262064",
       "importIds": {
         "yuanshen": ["78_29"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处仙鹤掉落2禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -439,12 +266,6 @@
       "importIds": {
         "yuanshen": ["78_30"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处仙鹤掉落2禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -452,12 +273,6 @@
       "id": "49F5A2A234E4E1B5A4079559733C92493E74F870",
       "importIds": {
         "yuanshen": ["78_31"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -467,12 +282,6 @@
       "importIds": {
         "yuanshen": ["78_32"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -480,12 +289,6 @@
       "id": "E10DAE4C58B4BD75EECDEE126509E1B7FF66912B",
       "importIds": {
         "yuanshen": ["78_33"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -495,12 +298,6 @@
       "importIds": {
         "yuanshen": ["78_34"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -508,12 +305,6 @@
       "id": "68CB4717617D9657F0FE7E687AD3D76B627708FB",
       "importIds": {
         "yuanshen": ["78_35"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -523,12 +314,6 @@
       "importIds": {
         "yuanshen": ["78_36"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -536,12 +321,6 @@
       "id": "98DC5C6DD10F9DC576EE0F0BCE51A6EB45D028F1",
       "importIds": {
         "yuanshen": ["78_37"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -551,12 +330,6 @@
       "importIds": {
         "yuanshen": ["78_38"]
       },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处小鸟掉落1块禽肉"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -564,12 +337,6 @@
       "id": "A904D2FC04B160FAD7AA8B14D77B3AC64DC35A26",
       "importIds": {
         "yuanshen": ["78_39"]
-      },
-      "popupTitle": {
-        "zh": "禽肉"
-      },
-      "popupContent": {
-        "zh": "击杀此处仙鹤掉落2块禽肉"
       },
       "popupAttribution": "Yuanshen.site"
     }

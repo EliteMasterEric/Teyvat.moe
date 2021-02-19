@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Fatui Skirmisher",
+    "ru": "Застрельщик Фатуи",
+    "zh": "先遣队",
+    "pt": "Soldado Fatui"
+  },
   "description": {
     "en": "Bulky combatants for the Fatui who wield various elemental powers. Drops Recruit's Insignia.",
     "ru": "Громоздкий боец Фатуи, который использует различные элементальный силы. Возможный награды: Шеврон."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Fatui Skirmisher",
-    "ru": "Застрельщик Фатуи",
-    "pt": "Soldado Fatui"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "fatui-skirmisher",
@@ -29,12 +30,6 @@
         "yuanshen": ["37_1"],
         "gm_legacy": ["mondstadtFatuiSkirmisher/1"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【雷锤】"
-      },
       "popupMedia": "mondstadt/fatui-skirmisher/617F1E6",
       "popupAttribution": "Yuanshen.site"
     },
@@ -44,12 +39,6 @@
       "importIds": {
         "yuanshen": ["37_29"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【风拳】"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -57,12 +46,6 @@
       "id": "F357FF5755D61CD31E63CB58F246775FB09BA6F8",
       "importIds": {
         "yuanshen": ["37_30"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【火铳】"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -72,12 +55,6 @@
       "importIds": {
         "yuanshen": ["37_3"],
         "gm_legacy": ["mondstadtFatuiSkirmisher/3"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【风拳】"
       },
       "popupMedia": "mondstadt/fatui-skirmisher/A442007",
       "popupAttribution": "Yuanshen.site"
@@ -89,12 +66,6 @@
         "yuanshen": ["37_4"],
         "gm_legacy": ["mondstadtFatuiSkirmisher/4"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【水铳】"
-      },
       "popupMedia": "mondstadt/fatui-skirmisher/6ADB0D9",
       "popupAttribution": "Yuanshen.site"
     },
@@ -103,12 +74,6 @@
       "id": "0AC8DFE0CB0BA998933726B807935C41B594B813",
       "importIds": {
         "yuanshen": ["37_31"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【冰铳】"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -119,12 +84,6 @@
         "yuanshen": ["37_2"],
         "gm_legacy": ["mondstadtFatuiSkirmisher/2"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【风拳】"
-      },
       "popupMedia": "mondstadt/fatui-skirmisher/76C9553",
       "popupAttribution": "Yuanshen.site"
     },
@@ -133,12 +92,6 @@
       "id": "70B8C1278024C4F96D23D2BB363033EFAB2C6C95",
       "importIds": {
         "yuanshen": ["37_6"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【岩使】"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -149,12 +102,6 @@
         "yuanshen": ["37_5"],
         "gm_legacy": ["mondstadtFatuiSkirmisher/5"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【火铳】"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -162,12 +109,6 @@
       "id": "E5D9C92DAF56D4A3EBDD7BD224A4D4BB188D2926",
       "importIds": {
         "yuanshen": ["37_13"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【冰铳】"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -177,12 +118,6 @@
       "importIds": {
         "yuanshen": ["37_14"]
       },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【雷锤】"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -190,12 +125,6 @@
       "id": "A44729C19F9C225BEF0601226176CD2A16011170",
       "importIds": {
         "yuanshen": ["37_15"]
-      },
-      "popupTitle": {
-        "zh": "蒙德先遣队"
-      },
-      "popupContent": {
-        "zh": "这是一个愚人众先遣队【冰铳】"
       },
       "popupAttribution": "Yuanshen.site"
     }

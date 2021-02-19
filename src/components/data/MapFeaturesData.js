@@ -244,7 +244,7 @@ export const createMapIcon = ({
 
     const iconHTML = `<div class='map-marker-container'>
       <img style='width: 40px; height: 40px;' class='map-marker-shadow' alt="" src="${shadowUrl}"/>
-      <img style='width: 23px; height: 23px;' class='map-marker-img' alt="" src='${iconUrl}'/>
+      <img style='width: 24.25px; height: 24.25px;' class='map-marker-img' alt="" src='${iconUrl}'/>
     </div>`;
 
     return L.divIcon({

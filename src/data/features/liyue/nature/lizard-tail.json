@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Lizard Tail",
+    "ru": "Хвост Ящерицы",
+    "zh": "蜥蜴尾巴",
+    "pt": "Cauda de Lagarto"
+  },
   "description": {
     "en": "A lizard tail that curled up after losing its owner. Used in Alchemy."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Lizard Tail",
-    "ru": "Хвост Ящерицы",
-    "pt": "Cauda de Lagarto"
-  },
   "icons": {
     "filter": "lizard-tail",
     "base": {
@@ -27,12 +28,6 @@
       "importIds": {
         "yuanshen": ["88_1"]
       },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "捕捉蜥蜴可以获得一个蜥蜴尾巴"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -40,12 +35,6 @@
       "id": "21DC92C94D0C72666A0324446CEB448F9F584795",
       "importIds": {
         "yuanshen": ["88_2"]
-      },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "捕捉蜥蜴可以获得一个蜥蜴尾巴"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,12 +44,6 @@
       "importIds": {
         "yuanshen": ["88_3"]
       },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "捕捉蜥蜴可以获得一个蜥蜴尾巴"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -68,12 +51,6 @@
       "id": "0C9437656B2D26EFEC6BB1197EBB09F60A3F19B2",
       "importIds": {
         "yuanshen": ["88_4"]
-      },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "捕捉蜥蜴可以获得一个蜥蜴尾巴"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -83,12 +60,6 @@
       "importIds": {
         "yuanshen": ["88_5"]
       },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "地下室内捕捉蜥蜴可以获得一个蜥蜴尾巴"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -96,12 +67,6 @@
       "id": "0EECD59DCA3661AA8239F3AA6ED65A2391D320A2",
       "importIds": {
         "yuanshen": ["88_6"]
-      },
-      "popupTitle": {
-        "zh": "蜥蜴尾巴-璃月"
-      },
-      "popupContent": {
-        "zh": "地下室内捕捉蜥蜴可以获得一个蜥蜴尾巴"
       },
       "popupAttribution": "Yuanshen.site"
     }

@@ -3,8 +3,7 @@ require 'object_hash_rb'
 
 # Modify this.
 INPUT_DATA = [
-  -18.49523,
-  39.56726
+  -35.32031, 30.11328
 ]
 
 def truncate_number(input)
@@ -13,11 +12,11 @@ def truncate_number(input)
 end
 
 def main
-  input = INPUT_DATA.map { |i| truncate_number(i.to_f) }
+  # input = INPUT_DATA.map { |i| truncate_number(i.to_f) }
 
-  puts(JSON.generate(input))
-  puts(ObjectHash.hash(input, algorithm: 'passthrough'))
-  puts(ObjectHash.hash(input, algorithm: 'sha1'))
+  puts(JSON.generate(INPUT_DATA))
+  puts(ObjectHash.hash(INPUT_DATA, algorithm: 'passthrough'))
+  puts(ObjectHash.hash(INPUT_DATA, algorithm: 'sha1'))
 end
 
 main

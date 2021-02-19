@@ -11,8 +11,6 @@ import MainView from '~/components/views/MainView';
 import PageHeaders from '~/components/views/PageHeaders';
 import store from '~/redux';
 
-import './NerdFonts.css';
-
 const App = () => {
   return (
     <ThemeProvider theme={Theme}>

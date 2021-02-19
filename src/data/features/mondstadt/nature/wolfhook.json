@@ -1,15 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Wolfhook",
+    "zh": "钩钩果",
+    "ru": "Волчий Крюк",
+    "pt": "Gancho do Lobo"
+  },
   "description": {
     "en": "A berry with thorns that often gets attached to a wolf's pelt. Used in Character Ascension."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Wolfhook",
-    "ru": "Волчий Крюк",
-    "pt": "Gancho do Lobo"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "wolfhook",
@@ -28,12 +29,6 @@
         "gm_legacy": ["mondstadtWolfhook/1"],
         "yuanshen": ["7_1"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupAttribution": "MasterEric"
     },
     {
@@ -42,12 +37,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/2"],
         "yuanshen": ["7_2"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-2",
       "popupAttribution": "MasterEric"
@@ -59,12 +48,6 @@
         "gm_legacy": ["mondstadtWolfhook/3"],
         "yuanshen": ["7_3"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-3",
       "popupAttribution": "MasterEric"
     },
@@ -74,12 +57,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/4"],
         "yuanshen": ["7_4"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-4",
       "popupAttribution": "MasterEric"
@@ -91,12 +68,6 @@
         "gm_legacy": ["mondstadtWolfhook/5"],
         "yuanshen": ["7_5"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-5",
       "popupAttribution": "MasterEric"
     },
@@ -106,12 +77,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/6"],
         "yuanshen": ["7_6"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-6",
       "popupAttribution": "MasterEric"
@@ -123,12 +88,6 @@
         "gm_legacy": ["mondstadtWolfhook/7"],
         "yuanshen": ["7_7"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-7",
       "popupAttribution": "MasterEric"
     },
@@ -138,12 +97,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/8"],
         "yuanshen": ["7_8"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-8",
       "popupAttribution": "MasterEric"
@@ -155,12 +108,6 @@
         "gm_legacy": ["mondstadtWolfhook/9"],
         "yuanshen": ["7_9"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-9",
       "popupAttribution": "MasterEric"
     },
@@ -170,12 +117,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/10"],
         "yuanshen": ["7_10"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-10",
       "popupAttribution": "MasterEric"
@@ -187,12 +128,6 @@
         "gm_legacy": ["mondstadtWolfhook/11"],
         "yuanshen": ["7_11"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupAttribution": "MasterEric"
     },
     {
@@ -201,12 +136,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/12"],
         "yuanshen": ["7_12"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-12",
       "popupAttribution": "MasterEric"
@@ -218,12 +147,6 @@
         "gm_legacy": ["mondstadtWolfhook/13"],
         "yuanshen": ["7_13"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-13",
       "popupAttribution": "MasterEric"
     },
@@ -233,12 +156,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/14"],
         "yuanshen": ["7_14"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-14",
       "popupAttribution": "MasterEric"
@@ -250,12 +167,6 @@
         "gm_legacy": ["mondstadtWolfhook/15"],
         "yuanshen": ["7_15"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-15",
       "popupAttribution": "MasterEric"
     },
@@ -265,12 +176,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/16"],
         "yuanshen": ["7_16"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-16",
       "popupAttribution": "MasterEric"
@@ -282,12 +187,6 @@
         "gm_legacy": ["mondstadtWolfhook/17"],
         "yuanshen": ["7_17"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-17",
       "popupAttribution": "MasterEric"
     },
@@ -297,9 +196,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/18"],
         "yuanshen": ["7_18"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
       },
       "popupContent": {
         "en": "WARNING: Couldn't find this one.",
@@ -314,12 +210,6 @@
         "gm_legacy": ["mondstadtWolfhook/19"],
         "yuanshen": ["7_19"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-19",
       "popupAttribution": "MasterEric"
     },
@@ -329,9 +219,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/20"],
         "yuanshen": ["7_20"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
       },
       "popupContent": {
         "en": "WARNING: Couldn't find this one.",
@@ -346,12 +233,6 @@
         "gm_legacy": ["mondstadtWolfhook/21"],
         "yuanshen": ["7_21"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-21",
       "popupAttribution": "MasterEric"
     },
@@ -361,12 +242,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/22"],
         "yuanshen": ["7_22"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-22",
       "popupAttribution": "MasterEric"
@@ -378,12 +253,6 @@
         "gm_legacy": ["mondstadtWolfhook/23"],
         "yuanshen": ["7_23"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-23",
       "popupAttribution": "MasterEric"
     },
@@ -393,12 +262,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/24"],
         "yuanshen": ["7_24"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-24",
       "popupAttribution": "MasterEric"
@@ -410,12 +273,6 @@
         "gm_legacy": ["mondstadtWolfhook/25"],
         "yuanshen": ["7_25"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-25",
       "popupAttribution": "MasterEric"
     },
@@ -425,12 +282,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/26"],
         "yuanshen": ["7_26"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-26",
       "popupAttribution": "MasterEric"
@@ -442,12 +293,6 @@
         "gm_legacy": ["mondstadtWolfhook/27"],
         "yuanshen": ["7_27"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-27",
       "popupAttribution": "MasterEric"
     },
@@ -457,12 +302,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/28"],
         "yuanshen": ["7_28"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-28",
       "popupAttribution": "MasterEric"
@@ -474,12 +313,6 @@
         "gm_legacy": ["mondstadtWolfhook/29"],
         "yuanshen": ["7_29"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-29",
       "popupAttribution": "MasterEric"
     },
@@ -489,12 +322,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/30"],
         "yuanshen": ["7_30"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-30",
       "popupAttribution": "MasterEric"
@@ -506,12 +333,6 @@
         "gm_legacy": ["mondstadtWolfhook/31"],
         "yuanshen": ["7_31"]
       },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupMedia": "mondstadt/wolfhook/wolfhook-31",
       "popupAttribution": "MasterEric"
     },
@@ -521,12 +342,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtWolfhook/33"],
         "yuanshen": ["7_33"]
-      },
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-33",
       "popupAttribution": "MasterEric"
@@ -539,12 +354,6 @@
         "gm_legacy": ["mondstadtWolfhook/32"]
       },
       "popupMedia": "mondstadt/wolfhook/wolfhook-32",
-      "popupTitle": {
-        "zh": "钩钩果"
-      },
-      "popupContent": {
-        "zh": "这是一个钩钩果"
-      },
       "popupAttribution": "MasterEric"
     }
   ]

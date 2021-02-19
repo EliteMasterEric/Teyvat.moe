@@ -111,7 +111,7 @@ const mapDispatchToProps = (dispatch, { featureKey }) => {
       const toClear = _.filter(currentCompleted, (markerKey) => {
         const completedTime = store.getState().completed.features[markerKey];
         // Is respawn set, and has the respawn time elapsed?
-        return (mapFeature?.respawn ?? -1) !== -1 && now - completedTime > mapFeature?.respawn;
+        return now - completedTime > mapFeature?.respawn;
       });
       dispatch(clearFeatureMarkersCompleted(toClear));
     },

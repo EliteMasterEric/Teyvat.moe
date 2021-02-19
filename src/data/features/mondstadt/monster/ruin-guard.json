@@ -1,16 +1,17 @@
 {
   "format": 2,
+  "name": {
+    "en": "Ruin Guard",
+    "ru": "Страж Руин",
+    "zh": "遗迹守卫",
+    "pt": "Guarda das Ruínas"
+  },
   "description": {
     "en": "An ancient humanoid war machine, said to be remnants from a lost ancient nation. Drops Chaos Device.",
     "ru": "Древний человекоподобный боевой механизм. Говорят, что такие механизмы были частью давно забытого древнего королевства. Возможные награды: Устройства Хаоса."
   },
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Ruin Guard",
-    "ru": "Страж Руин",
-    "pt": "Guarda das Ruínas"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "ruin-guard",
@@ -29,12 +30,6 @@
         "gm_legacy": ["mondstadtRuinGuard/1"],
         "yuanshen": ["29_1"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -43,12 +38,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRuinGuard/2"],
         "yuanshen": ["29_2"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -59,12 +48,6 @@
         "gm_legacy": ["mondstadtRuinGuard/3"],
         "yuanshen": ["29_3"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -73,12 +56,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRuinGuard/4"],
         "yuanshen": ["29_4"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -89,12 +66,6 @@
         "gm_legacy": ["mondstadtRuinGuard/5"],
         "yuanshen": ["29_5"]
       },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -103,12 +74,6 @@
       "importIds": {
         "gm_legacy": ["mondstadtRuinGuard/6"],
         "yuanshen": ["29_6"]
-      },
-      "popupTitle": {
-        "zh": "遗迹守卫"
-      },
-      "popupContent": {
-        "zh": "这是一个遗迹守卫"
       },
       "popupAttribution": "Yuanshen.site"
     }

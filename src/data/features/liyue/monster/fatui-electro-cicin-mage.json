@@ -1,17 +1,17 @@
 {
   "format": 2,
-  "description": {
-    "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.",
-    "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон."
-  },
-  "enabled": true,
-  "cluster": "on",
   "name": {
     "en": "Fatui Electro Cicin Mage",
     "ru": "Маг цицинов Фатуи",
     "zh": "雷萤术士",
     "pt": "Fatui - Feiticeira Cicin Electro"
   },
+  "description": {
+    "en": "Agent of the Fatui who summons flying Electro minions. Drops Mist Grass Pollen and Recruit's Insignia.",
+    "ru": "Маг Фатуи, которая умеет призывать в бой цицинов. Возможные награды: Пыльца туманного цветка, Шеврон."
+  },
+  "enabled": true,
+  "cluster": "on",
   "respawn": 86400,
   "icons": {
     "filter": "fatui-electro-cicin-mage",
@@ -30,12 +30,6 @@
         "gm_legacy": ["liyueFatuiElectroCicinMage/1"],
         "yuanshen": ["22_1"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -44,12 +38,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiElectroCicinMage/2"],
         "yuanshen": ["22_2"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -60,12 +48,6 @@
         "gm_legacy": ["liyueFatuiElectroCicinMage/3"],
         "yuanshen": ["22_3"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -74,12 +56,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiElectroCicinMage/4"],
         "yuanshen": ["22_4"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -90,12 +66,6 @@
         "gm_legacy": ["liyueFatuiElectroCicinMage/5"],
         "yuanshen": ["22_5"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -104,12 +74,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiElectroCicinMage/6"],
         "yuanshen": ["22_6"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -120,12 +84,6 @@
         "gm_legacy": ["liyueFatuiElectroCicinMage/8"],
         "yuanshen": ["22_8"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -135,12 +93,6 @@
         "gm_legacy": ["liyueFatuiElectroCicinMage/9"],
         "yuanshen": ["22_9"]
       },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
-      },
       "popupAttribution": "Yuanshen.site"
     },
     {
@@ -149,12 +101,6 @@
       "importIds": {
         "gm_legacy": ["liyueFatuiElectroCicinMage/10"],
         "yuanshen": ["22_10"]
-      },
-      "popupTitle": {
-        "zh": "雷萤术士"
-      },
-      "popupContent": {
-        "zh": "这是一个雷萤术士"
       },
       "popupAttribution": "Yuanshen.site"
     }

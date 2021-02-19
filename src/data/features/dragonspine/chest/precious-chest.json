@@ -1,19 +1,20 @@
 {
   "format": 2,
-  "description": {
-    "en": "A solid wooden chest framed with gold. Contains helpful rewards.",
-    "ru": "Прочный деревянный сундук обрамлённый золотом. Содержит полезные награды."
-  },
   "name": {
-    "en": "Precious Chest",
-    "ru": "Драгоценный сундук",
-    "pt": "Baú Precioso"
+    "en": "Common Chest",
+    "zh": "蒙德宝箱",
+    "ru": "Обычный сундук",
+    "pt": "Baú Comum"
   },
-  "enabled": false,
+  "description": {
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
+    "ru": "Дряхлый деревянный сундук скреплённый железом. Содержит скудную награду."
+  },
+  "enabled": true,
   "cluster": "variable",
   "respawn": "none",
   "icons": {
-    "filter": "precious-chest",
+    "filter": "common-chest",
     "base": {
       "marker": true
     },
@@ -21,5 +22,449 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-30.49672, 42.18431],
+      "id": "C3C3C29F94045917AF2104633961F8F97BFCB4E0",
+      "importIds": {
+        "yuanshen": ["26_544"]
+      },
+      "popupContent": {
+        "en": "击败机器人开启机关可开启的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/C3C3C29",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.36798, 43.0725],
+      "id": "1E121A40F10686EAF9D1CA44EA4EC10494C171FE",
+      "importIds": {
+        "yuanshen": ["26_551"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众解锁【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/1E121A4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.0323, 41.99375],
+      "id": "0F070533BDE36163E6B9F235B639AEE9DBE7F2F3",
+      "importIds": {
+        "yuanshen": ["26_566"]
+      },
+      "popupContent": {
+        "en": "完成限时击杀挑战出现的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/0F07053",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.10154, 42.20466],
+      "id": "C69CDD315165DDAD9D6A96882115CE9B92DFC86F",
+      "importIds": {
+        "yuanshen": ["26_573"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C69CDD3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.42031, 40.75156],
+      "id": "6A752AB3DB52A05DF36A8E5E3C7221AFDD7B3E4F",
+      "importIds": {
+        "yuanshen": ["26_576"]
+      },
+      "popupContent": {
+        "en": "触发四个机关出现【Precious Chest】内有白铁大剑"
+      },
+      "popupMedia": "dragonspine/common-chest/6A752AB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.34349, 40.72552],
+      "id": "2C2DED3FBA843844DF39B6511778CAA0D7C8453C",
+      "importIds": {
+        "yuanshen": ["26_580"]
+      },
+      "popupContent": {
+        "en": "击败遗迹重机出现的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2C2DED3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.3526, 40.7711],
+      "id": "CA2E8F71A9918A75ACF6C8208179675098164F2D",
+      "importIds": {
+        "yuanshen": ["26_581"]
+      },
+      "popupContent": {
+        "en": "击败遗迹重机出现的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CA2E8F7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.35391, 40.81146],
+      "id": "5E60FB934CF5E23697C37B975A27C184EA3501BC",
+      "importIds": {
+        "yuanshen": ["26_582"]
+      },
+      "popupContent": {
+        "en": "击败遗迹重机出现的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/5E60FB9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.28802, 43.83668],
+      "id": "4F8399BBDE5D368F10C0E8B323CC07E34C591965",
+      "importIds": {
+        "yuanshen": ["26_596"]
+      },
+      "popupContent": {
+        "en": "击败雪猪王解锁【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/4F8399B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.33082, 38.9512],
+      "id": "8AE4962C198FCC36FC6CC75CF7BD087DECCC6ED7",
+      "importIds": {
+        "yuanshen": ["26_602"]
+      },
+      "popupContent": {
+        "en": "解密并击败遗迹重机后开启的【Precious Chest】30阅历、1 绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/8AE4962",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.79427, 40.35225],
+      "id": "1F57A969B733118E00B75AD549187F9DAC2704A7",
+      "importIds": {
+        "yuanshen": ["26_609"]
+      },
+      "popupContent": {
+        "en": "从山洞最高处飞下来开启的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/1F57A96",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.31222, 44.52239],
+      "id": "236F4EDA8A17EE62DC31420B6D166F995E8878D8",
+      "importIds": {
+        "yuanshen": ["26_630"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/236F4ED",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.43273, 43.77805],
+      "id": "1E6CD5F4F09C8EA85BB40484F7E3DAF1598B3410",
+      "importIds": {
+        "yuanshen": ["26_641"]
+      },
+      "popupContent": {
+        "en": "点燃火把出现的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/1E6CD5F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.78618, 41.14481],
+      "id": "F353C7816FF29C2AB4A68FFBD762FD20E60BEFD5",
+      "importIds": {
+        "yuanshen": ["26_643"]
+      },
+      "popupContent": {
+        "en": "击杀盗宝团解锁【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/F353C78",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.45937, 37.88307],
+      "id": "63C1A853672ADF7BD0FA10FCF3E6FBFBC8E8D740",
+      "importIds": {
+        "yuanshen": ["26_651"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵激活冰元素柱解锁【Precious Chest】内含绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/63C1A85",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.83046, 37.3362],
+      "id": "8F15D370EB062BE86FA5BE751F05DAB9F60C45CC",
+      "importIds": {
+        "yuanshen": ["26_655"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/8F15D37",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.34218, 44.94297],
+      "id": "0D289162369E67F7A81632AE5FE843136ACA7D7D",
+      "importIds": {
+        "yuanshen": ["26_656"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/0D28916",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.21475, 41.63044],
+      "id": "BCD6F5826B72FB8B05C344DF3E0CDB71E189FEE8",
+      "importIds": {
+        "yuanshen": ["26_662"]
+      },
+      "popupContent": {
+        "en": "击败霜铠王解锁的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/BCD6F58",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.68533, 36.66247],
+      "id": "0E2F8FE347F2E606099E0B0B7D39EFC45F85EFC2",
+      "importIds": {
+        "yuanshen": ["26_663"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/0E2F8FE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.97686, 43.63625],
+      "id": "0D1652550ADCE853765BADD56AB2F66EEC1A2C62",
+      "importIds": {
+        "yuanshen": ["26_664"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/0D16525",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.45025, 44.3414],
+      "id": "3228F4D3F897D7B6E7514A1F29D0008754F05F7C",
+      "importIds": {
+        "yuanshen": ["26_667"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/3228F4D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.99782, 45.23653],
+      "id": "48A637D288710CD4497787726F3DCC22F5804666",
+      "importIds": {
+        "yuanshen": ["26_669"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/48A637D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.54789, 35.8303],
+      "id": "CA2AA113381E0874BBA8F8BAB42EA7C07208BBED",
+      "importIds": {
+        "yuanshen": ["26_674"]
+      },
+      "popupContent": {
+        "en": "杀怪解锁【Precious Chest】内含绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/CA2AA11",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.56473, 36.36419],
+      "id": "E58F1B7D4CA11B59A509C63BB71975CB55A24FBE",
+      "importIds": {
+        "yuanshen": ["26_683"]
+      },
+      "popupContent": {
+        "en": "击杀丘丘霜铠王【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E58F1B7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.475, 44.2776],
+      "id": "D5CD21D402ECD0F43C39F0177994AA00A557F537",
+      "importIds": {
+        "yuanshen": ["26_690"]
+      },
+      "popupContent": {
+        "en": "融化雪堆可以解开的解密 激活 元素方碑【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/D5CD21D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.83831, 38.21476],
+      "id": "070CDDE34D90E6B16F3A822A578F7F0D7A6C5C6E",
+      "importIds": {
+        "yuanshen": ["26_699"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众先遣队解锁【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/070CDDE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.49322, 43.93256],
+      "id": "2A071121B0E9098BC8489B43833B9C9C29F57E82",
+      "importIds": {
+        "yuanshen": ["26_718"]
+      },
+      "popupContent": {
+        "en": "山脚下击败火法师解锁的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2A07112",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.4164, 38.0198],
+      "id": "26D4E65F8BAC7BA55ABA7C5C56CD2369B845F18D",
+      "importIds": {
+        "yuanshen": ["26_728"]
+      },
+      "popupContent": {
+        "en": "激活冰方碑并用赤深之石打开机关完成解密获取的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/26D4E65",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.01575, 40.67654],
+      "id": "6224314B19872F0E0771A7C4FB2D5A5808C8700A",
+      "importIds": {
+        "yuanshen": ["26_738"]
+      },
+      "popupContent": {
+        "en": "完成解密后可直接开启的的【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/6224314",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.86038, 40.66172],
+      "id": "436AE1C4D5CB808C958E39991DB9D96EB41FCC38",
+      "importIds": {
+        "yuanshen": ["26_740"]
+      },
+      "popupContent": {
+        "en": "完成解密后可直接开启的的【Precious Chest】内有旅行剑"
+      },
+      "popupMedia": "dragonspine/common-chest/436AE1C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.87864, 40.59661],
+      "id": "DDFD65FA4D8531CC53947F32C0B3E385F1D9213B",
+      "importIds": {
+        "yuanshen": ["26_741"]
+      },
+      "popupContent": {
+        "en": "完成解密后可直接开启的【Precious Chest】内有反曲弓"
+      },
+      "popupMedia": "dragonspine/common-chest/DDFD65F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.57786, 41.76589],
+      "id": "8D2839355F22FC41ACC481C6487A51118B199B1A",
+      "importIds": {
+        "yuanshen": ["26_744"]
+      },
+      "popupContent": {
+        "en": "山顶上【Precious Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8D28393",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.93072, 40.96771],
+      "id": "AB5B471B07007881CFE773CCA99B04826EFA6AAF",
+      "importIds": {
+        "yuanshen": ["26_746"]
+      },
+      "popupContent": {
+        "en": "击败霜铠王解锁的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/AB5B471",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.00104, 41.4612],
+      "id": "C8C26073A07BEAFAAA62E4BD965CD4F191EF157D",
+      "importIds": {
+        "yuanshen": ["26_757"]
+      },
+      "popupContent": {
+        "en": "山腰获得赤深之石击碎坚冰并开启机关获得的【Precious Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/C8C2607",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.82988, 41.03784],
+      "id": "1D55EDEFF1001D8AF3AD05AEACEBB6B7A925DD05",
+      "importIds": {
+        "yuanshen": ["26_777"]
+      },
+      "popupContent": {
+        "en": "击败冰萤术士解锁的【Exquisite Chest】"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.22498, 41.72682],
+      "id": "DC3CF6167682BEABC7A5BDC21C8FF493A4A4B0DC",
+      "importIds": {
+        "yuanshen": ["26_785"]
+      },
+      "popupContent": {
+        "en": "累计喂白狐五天出现的【Precious Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/DC3CF61",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.71197, 41.36485],
+      "id": "C4456F1AD0D4AD4F3EA14E2FCAA8273B302A3F6F",
+      "importIds": {
+        "yuanshen": ["26_786"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C4456F1",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

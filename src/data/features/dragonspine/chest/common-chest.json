@@ -1,0 +1,1009 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Common Chest",
+    "zh": "蒙德宝箱",
+    "ru": "Обычный сундук",
+    "pt": "Baú Comum"
+  },
+  "description": {
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
+    "ru": "Дряхлый деревянный сундук скреплённый железом. Содержит скудную награду."
+  },
+  "enabled": true,
+  "cluster": "variable",
+  "respawn": "none",
+  "icons": {
+    "filter": "common-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [-30.72282, 42.37827],
+      "id": "54C5CF885CC5C45C29107FADE3E9385F501E3A02",
+      "importIds": {
+        "yuanshen": ["26_542"]
+      },
+      "popupContent": {
+        "en": "可以直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/54C5CF8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.63594, 41.875],
+      "id": "47E385B85B577CC80C9C300C2E0706379FA5F19B",
+      "importIds": {
+        "yuanshen": ["26_545"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/47E385B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.16901, 42.86223],
+      "id": "BEDD6346478580F3E8C4B330948B075B3BE5C20D",
+      "importIds": {
+        "yuanshen": ["26_547"]
+      },
+      "popupContent": {
+        "en": "这是一个桥上直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/BEDD634",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.28594, 42.83031],
+      "id": "47D90B2E8C145A89F259075ECD3D359A8EECE9AD",
+      "importIds": {
+        "yuanshen": ["26_548"]
+      },
+      "popupContent": {
+        "en": "桥下火元素融化解锁冰冻【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/47D90B2",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.54735, 41.23484],
+      "id": "80F3C64CF7E108CFC719D8B0F79172EE63756E77",
+      "importIds": {
+        "yuanshen": ["26_550"]
+      },
+      "popupContent": {
+        "en": "火元素融化解锁冰冻【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/80F3C64",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.84549, 42.5125],
+      "id": "260463AEAA53716B696CFFE7AD9FD099BBA87922",
+      "importIds": {
+        "yuanshen": ["26_553"]
+      },
+      "popupContent": {
+        "en": "赤深之石击碎坚冰出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/260463A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.82266, 42.42474],
+      "id": "FDE1E397EEEF53B7B1BA0252BD86218F78D8DBF3",
+      "importIds": {
+        "yuanshen": ["26_554"]
+      },
+      "popupContent": {
+        "en": "这是一个冰萤术士旁直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FDE1E39",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.37454, 43.39982],
+      "id": "C4ACA56EEBDE3AEE144A4270E5DBD2176C13A31E",
+      "importIds": {
+        "yuanshen": ["26_559"]
+      },
+      "popupContent": {
+        "en": "融化雪堆解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C4ACA56",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.23391, 42.99357],
+      "id": "C19D9D3639F92AF34C2D520C979D30E834A8528D",
+      "importIds": {
+        "yuanshen": ["26_562"]
+      },
+      "popupContent": {
+        "en": "这是一个【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C19D9D3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.90469, 42.37005],
+      "id": "FC40FF8DBB7D465FAF6529D059A164986E9DD258",
+      "importIds": {
+        "yuanshen": ["26_565"]
+      },
+      "popupContent": {
+        "en": "山腰上的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FC40FF8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.11042, 41.41302],
+      "id": "10C8979ECA60291AFAE399511F831705FF7E89AE",
+      "importIds": {
+        "yuanshen": ["26_568"]
+      },
+      "popupContent": {
+        "en": "融化雪堆可见【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/10C8979",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.55964, 39.85192],
+      "id": "E617BA33002CD4E3A7BB229B1F2A0BCD31D5895E",
+      "importIds": {
+        "yuanshen": ["26_577"]
+      },
+      "popupContent": {
+        "en": "融化雪堆解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E617BA3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.65206, 40.06802],
+      "id": "89EA1D9081B7823354B0B1F627DF86EEE18A3695",
+      "importIds": {
+        "yuanshen": ["26_578"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.39818, 40.75677],
+      "id": "FB60447134AF6FF0E7C6F65F71EF21176D42718C",
+      "importIds": {
+        "yuanshen": ["26_586"]
+      },
+      "popupContent": {
+        "en": "火元素攻击融化冰解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FB60447",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.54531, 38.75547],
+      "id": "A1410DF217F6CBCED0F782724DA2CD50D9E544C1",
+      "importIds": {
+        "yuanshen": ["26_588"]
+      },
+      "popupContent": {
+        "en": "这是一个【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A1410DF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.20026, 36.63307],
+      "id": "A4E7A48E2BF4C9B9F513B43F75EE8E297C155DC8",
+      "importIds": {
+        "yuanshen": ["26_592"]
+      },
+      "popupContent": {
+        "en": "融化坚冰解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A4E7A48",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.69896, 42.0836],
+      "id": "98506FDD2390EBF08B26ED5ED2BE7996D2CD6DCF",
+      "importIds": {
+        "yuanshen": ["26_606"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/98506FD",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.18919, 42.75594],
+      "id": "3DE7D69EBF2AE36B6F424AC6EB66DB6ECA2BB7E9",
+      "importIds": {
+        "yuanshen": ["26_611"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3DE7D69",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.39813, 41.65521],
+      "id": "DC2F0136709EF36481D4EE732D0309493AE3C99A",
+      "importIds": {
+        "yuanshen": ["26_613"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/DC2F013",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.81092, 43.81015],
+      "id": "BEB7FDC2A2B7FEDC9ACC40282F266CB3DC98DCC4",
+      "importIds": {
+        "yuanshen": ["26_617"]
+      },
+      "popupContent": {
+        "en": "融化冰块出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/BEB7FDC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.993, 43.66869],
+      "id": "5FA71215A610EF8043FB588153972B25FF5EE67F",
+      "importIds": {
+        "yuanshen": ["26_618"]
+      },
+      "popupContent": {
+        "en": "赤红之石融化坚冰出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/5FA7121",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.64297, 37.56797],
+      "id": "AF4AFF39F9F02942E3D032AE53B3261F72438A4B",
+      "importIds": {
+        "yuanshen": ["26_620"]
+      },
+      "popupContent": {
+        "en": "这是一个直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/AF4AFF3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.02728, 37.44135],
+      "id": "8C5C3192F1977324F55330B4DB2ABA7B3011F8FB",
+      "importIds": {
+        "yuanshen": ["26_621"]
+      },
+      "popupContent": {
+        "en": "这是一个直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8C5C319",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.9203, 43.06667],
+      "id": "CEBCDCC6E6A9032C5FA7A09ED66D35494DBECB91",
+      "importIds": {
+        "yuanshen": ["26_629"]
+      },
+      "popupContent": {
+        "en": "赤深之石融化坚冰出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CEBCDCC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.32134, 44.12136],
+      "id": "E2431013150EA5F6D0FAB930E683F9B94E8BC29F",
+      "importIds": {
+        "yuanshen": ["26_631"]
+      },
+      "popupContent": {
+        "en": "这是一个被冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E243101",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.28489, 44.75546],
+      "id": "98EE6968A04EB19517B270B837D426E011FED0E3",
+      "importIds": {
+        "yuanshen": ["26_632"]
+      },
+      "popupContent": {
+        "en": "这是一个被冰封印的【Common Chest】（小心寒冷值）"
+      },
+      "popupMedia": "dragonspine/common-chest/98EE696",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.35724, 44.20521],
+      "id": "F9CC3C671875D95786CF31E34810AA81CAC7BA59",
+      "importIds": {
+        "yuanshen": ["26_638"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/F9CC3C6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.30907, 44.48782],
+      "id": "836DC8A98A0B44B3D7205831D93028794872519A",
+      "importIds": {
+        "yuanshen": ["26_639"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/836DC8A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.70278, 40.71709],
+      "id": "77526CCD3BFBCD85F2EA0B4C19BDED1FB320FC65",
+      "importIds": {
+        "yuanshen": ["26_640"]
+      },
+      "popupContent": {
+        "en": "断桥下方火元素攻击解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/77526CC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.69767, 40.7466],
+      "id": "74EE60D305E4104A6445F13289C8A4BC5F2E6081",
+      "importIds": {
+        "yuanshen": ["26_642"]
+      },
+      "popupContent": {
+        "en": "断桥上【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/74EE60D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.57335, 41.3153],
+      "id": "4F720C1347DF3F6D5116FF2854BB21EB60C04F4E",
+      "importIds": {
+        "yuanshen": ["26_644"]
+      },
+      "popupContent": {
+        "en": "融化雪堆解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4F720C1",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.90655, 42.12478],
+      "id": "290DDDB6A02CBB80B94F0403F897CE7599ADF95B",
+      "importIds": {
+        "yuanshen": ["26_645"]
+      },
+      "popupContent": {
+        "en": "融化雪堆解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/290DDDB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.23281, 42.09661],
+      "id": "140F406CB850A2099CA48FC6673B8E9D61BFB110",
+      "importIds": {
+        "yuanshen": ["26_649"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/140F406",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.92321, 37.60602],
+      "id": "2A3F3DCE4E5615EAE98875DB4DABDE54D3E9DF3A",
+      "importIds": {
+        "yuanshen": ["26_654"]
+      },
+      "popupContent": {
+        "en": "洞穴上被冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2A3F3DC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.98687, 36.49473],
+      "id": "BED7BC6F691045DD5957E27174C6102733FF72F4",
+      "importIds": {
+        "yuanshen": ["26_657"]
+      },
+      "popupContent": {
+        "en": "这是一个【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/BED7BC6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.84347, 37.26199],
+      "id": "7194D5F7532D8B30AF6608C48F90FDA6885FBB8C",
+      "importIds": {
+        "yuanshen": ["26_666"]
+      },
+      "popupContent": {
+        "en": "融化雪堆解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/7194D5F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.12445, 45.57513],
+      "id": "8166DF5C3A86CFDACB38455F3BA3E398E1021CC4",
+      "importIds": {
+        "yuanshen": ["26_671"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8166DF5",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.96984, 44.78547],
+      "id": "FCC182AAABA703E3D51544EE1C4A57B2072A7A04",
+      "importIds": {
+        "yuanshen": ["26_673"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FCC182A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.96976, 35.25217],
+      "id": "7A5D41E6EE6AFE3987F7A4744178A63695F626E4",
+      "importIds": {
+        "yuanshen": ["26_675"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/7A5D41E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.80574, 36.47033],
+      "id": "DA71E805451B9600AFCD1F7405B0BFA4940F52AD",
+      "importIds": {
+        "yuanshen": ["26_677"]
+      },
+      "popupContent": {
+        "en": "营地内直接开启【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/DA71E80",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.14425, 37.3857],
+      "id": "C2638EBA2B6ABA4942449779347EE7FD812DD503",
+      "importIds": {
+        "yuanshen": ["26_680"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C2638EB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.93989, 37.31563],
+      "id": "9ABF5DA08700C1F63B78CB1323D95C703667FE12",
+      "importIds": {
+        "yuanshen": ["26_681"]
+      },
+      "popupContent": {
+        "en": "直接开启【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/9ABF5DA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.81863, 36.15715],
+      "id": "9D67C733D52EE474DF5613CD5C7FF5E9AF3292CD",
+      "importIds": {
+        "yuanshen": ["26_685"]
+      },
+      "popupContent": {
+        "en": "这是一个【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/9D67C73",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.92819, 36.30106],
+      "id": "CB09E377E2AF4F9B8520FCFA1DCE4B2409837695",
+      "importIds": {
+        "yuanshen": ["26_686"]
+      },
+      "popupContent": {
+        "en": "这是一个【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CB09E37",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.77053, 39.67735],
+      "id": "A67223733A72E7EB703F7D36E2F9C8819441A5A8",
+      "importIds": {
+        "yuanshen": ["26_688"]
+      },
+      "popupContent": {
+        "en": "这是一个直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A672237",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.58177, 38.68906],
+      "id": "6D6C55243FCAFB510A01903BB9CA83DD3DCD2FA6",
+      "importIds": {
+        "yuanshen": ["26_692"]
+      },
+      "popupContent": {
+        "en": "可直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/6D6C552",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.50625, 44.28542],
+      "id": "D50BF0C48DFC81C2138C48E5E86B477967098B44",
+      "importIds": {
+        "yuanshen": ["26_693"]
+      },
+      "popupContent": {
+        "en": "融化雪堆可以解开的解密 激活元素方碑出现【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D50BF0C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.41637, 44.2724],
+      "id": "2C0DCE81F8C0D3FDE5D8BF66D9431D3216AB23A6",
+      "importIds": {
+        "yuanshen": ["26_694"]
+      },
+      "popupContent": {
+        "en": "融化雪堆可以解开的解密 激活元素方碑出现【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2C0DCE8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.28879, 44.65651],
+      "id": "289DC7E91C1D87E0FA3F6AD37AAFD3514E81882C",
+      "importIds": {
+        "yuanshen": ["26_695"]
+      },
+      "popupContent": {
+        "en": "融化雪堆可以解开的解密 激活元素方碑出现【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/289DC7E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.91641, 38.19817],
+      "id": "5FF6F9604562FC8D8818320890496394F1217D16",
+      "importIds": {
+        "yuanshen": ["26_696"]
+      },
+      "popupContent": {
+        "en": "火元素攻击解锁冰冻的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/5FF6F96",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.03116, 38.98831],
+      "id": "F1F5EFFDD34796B0A4131CC50F87787736293636",
+      "importIds": {
+        "yuanshen": ["26_698"]
+      },
+      "popupContent": {
+        "en": "洞穴内可直接开启【Common Chest】防潮药剂3 耐寒药剂3 摩拉2w"
+      },
+      "popupMedia": "dragonspine/common-chest/F1F5EFF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.05442, 38.0771],
+      "id": "A75AFADEE512884CB434FD1E2897FC1C275745C2",
+      "importIds": {
+        "yuanshen": ["26_700"]
+      },
+      "popupContent": {
+        "en": "雪山山腰处可直接开启【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A75AFAD",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.36314, 40.14745],
+      "id": "9AF482776B3559FC37F9FF1DCC9BD7B96AE2D437",
+      "importIds": {
+        "yuanshen": ["26_702"]
+      },
+      "popupContent": {
+        "en": "这是一个可直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/9AF4827",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.02057, 40.82188],
+      "id": "43FA1A366DD76BB78D2854DC6CF0DDD73858CDB3",
+      "importIds": {
+        "yuanshen": ["26_704"]
+      },
+      "popupContent": {
+        "en": "洞穴内丘丘人挖掘处可挖掘的隐藏【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/43FA1A3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.7198, 39.17084],
+      "id": "14CB89E6741F330CA39DF9D8A1598E40CC838122",
+      "importIds": {
+        "yuanshen": ["26_709"]
+      },
+      "popupContent": {
+        "en": "融雪解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/14CB89E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.29824, 39.15992],
+      "id": "A79E4EB996F99F84B64BCB480E4F217BADD431E9",
+      "importIds": {
+        "yuanshen": ["26_710"]
+      },
+      "popupContent": {
+        "en": "可直接开启【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A79E4EB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.24781, 38.90049],
+      "id": "F1F73C060358F4D0962BCCFC8A8860A90780F3A6",
+      "importIds": {
+        "yuanshen": ["26_711"]
+      },
+      "popupContent": {
+        "en": "融雪出现冰骗骗花，击败解锁【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/F1F73C0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.40329, 39.99248],
+      "id": "B69C8F4975D920FDE65002D852F8A5E67998E11F",
+      "importIds": {
+        "yuanshen": ["26_712"]
+      },
+      "popupContent": {
+        "en": "雪山山腰【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B69C8F4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.78037, 42.09685],
+      "id": "0B9895F4A1DEB77BA8F71E25CA065F01FEF901AA",
+      "importIds": {
+        "yuanshen": ["26_719"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/0B9895F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.81648, 45.27589],
+      "id": "D4E115E763EB61D42A0CEE07010F9D560E13BB7D",
+      "importIds": {
+        "yuanshen": ["26_720"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D4E115E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.39167, 38.79713],
+      "id": "A279B6D5109940F952FEDED2813E8E3A2C3E4518",
+      "importIds": {
+        "yuanshen": ["26_724"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A279B6D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.14202, 37.65037],
+      "id": "A145AD78DF186FC012C4CBAFA7502D9780D82086",
+      "importIds": {
+        "yuanshen": ["26_727"]
+      },
+      "popupContent": {
+        "en": "半山腰被冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A145AD7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.28006, 38.28482],
+      "id": "629622C92B3087B00CF66A722D73BB23DA1E326A",
+      "importIds": {
+        "yuanshen": ["26_730"]
+      },
+      "popupContent": {
+        "en": "引爆此处全部冰炸弹出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/629622C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.74453, 41.47422],
+      "id": "658379B33405036F199BE3B198AE811860CC0C3D",
+      "importIds": {
+        "yuanshen": ["26_736"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/658379B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.1651, 41.30886],
+      "id": "22875BA1ECA101B967C64FA4DB6BE3B5354AF470",
+      "importIds": {
+        "yuanshen": ["26_743"]
+      },
+      "popupContent": {
+        "en": "赤深之石融化坚冰开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/22875BA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.03749, 40.51588],
+      "id": "C3C2B5CF1EE857F2DC2A5FD9F14DBA96C4879C72",
+      "importIds": {
+        "yuanshen": ["26_745"]
+      },
+      "popupContent": {
+        "en": "山顶上被冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C3C2B5C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.96718, 40.98073],
+      "id": "89166076A339A3221F2CAD86E03A4005134EB0DD",
+      "importIds": {
+        "yuanshen": ["26_748"]
+      },
+      "popupContent": {
+        "en": "击败霜铠王解锁的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8916607",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.23058, 40.63081],
+      "id": "625E3845D7BD9BE36FCA1F265EFCE590050AD2D6",
+      "importIds": {
+        "yuanshen": ["26_750"]
+      },
+      "popupContent": {
+        "en": "用赤深之石融化坚冰出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/625E384",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.42293, 41.78672],
+      "id": "57DC8009A75ABFD095521A3420228096E5C54C19",
+      "importIds": {
+        "yuanshen": ["26_751"]
+      },
+      "popupContent": {
+        "en": "赤深之石击碎坚冰开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/57DC800",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.89961, 36.18009],
+      "id": "A1011EE22400EF6F48A87C78F59809702F49091A",
+      "importIds": {
+        "yuanshen": ["26_752"]
+      },
+      "popupContent": {
+        "en": "可直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A1011EE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.98019, 41.45337],
+      "id": "2FE07E036F4BEB2219F0770B8719EE109D1C1347",
+      "importIds": {
+        "yuanshen": ["26_758"]
+      },
+      "popupContent": {
+        "en": "山腰获得赤深之石击碎坚冰并开启机关获得的【Common Chest】内有【绯红玉髓】"
+      },
+      "popupMedia": "dragonspine/common-chest/2FE07E0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.80285, 41.46311],
+      "id": "134D10B3EDB7106BF4E676AAFAAF7368EB0B6B03",
+      "importIds": {
+        "yuanshen": ["26_759"]
+      },
+      "popupContent": {
+        "en": "山腰获得赤深之石击碎坚冰出现的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/134D10B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.76537, 43.79323],
+      "id": "4813D7D2AA1B05176B22F222A7D57B457C089ACA",
+      "importIds": {
+        "yuanshen": ["26_760"]
+      },
+      "popupContent": {
+        "en": "这是一个冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4813D7D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.89036, 45.15001],
+      "id": "474296F37CBB7C3E50036FC1EEDA725DD4CE3B00",
+      "importIds": {
+        "yuanshen": ["26_764"]
+      },
+      "popupContent": {
+        "en": "可直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/474296F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.12345, 38.62396],
+      "id": "C9D366368E8ADB02B8312100E68BD983DCB5ADD1",
+      "importIds": {
+        "yuanshen": ["26_770"]
+      },
+      "popupContent": {
+        "en": "直接开启【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C9D3663",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.24841, 42.19817],
+      "id": "EE476E2A049CA2D12F65E15F1386CE6A6CB8FEC7",
+      "importIds": {
+        "yuanshen": ["26_771"]
+      },
+      "popupContent": {
+        "en": "山脊上被冰封印的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/EE476E2",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.87526, 40.12591],
+      "id": "E6D7FB619B52C250A6AF6B47F7CC28CB6546F9FB",
+      "importIds": {
+        "yuanshen": ["26_773"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E6D7FB6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.82988, 41.03784],
+      "id": "1D55EDEFF1001D8AF3AD05AEACEBB6B7A925DD05",
+      "importIds": {
+        "yuanshen": ["26_777"]
+      },
+      "popupContent": {
+        "en": "击败冰萤术士解锁的【Exquisite Chest】"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.34088, 38.80625],
+      "id": "5748F32FAD6FDA65DA85507DBA22A2A828C96337",
+      "importIds": {
+        "yuanshen": ["26_779"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/5748F32",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.94374, 43.13958],
+      "id": "D6B4269CCB131A101E4708DEFDB7870410497F5B",
+      "importIds": {
+        "yuanshen": ["26_782"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D6B4269",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.09138, 41.18954],
+      "id": "B8874338527C4E4560005C8E9C125DFF2D583D4C",
+      "importIds": {
+        "yuanshen": ["26_783"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Common Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B887433",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.71197, 41.36485],
+      "id": "C4456F1AD0D4AD4F3EA14E2FCAA8273B302A3F6F",
+      "importIds": {
+        "yuanshen": ["26_786"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C4456F1",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
+}

@@ -1,19 +1,20 @@
 {
   "format": 2,
   "name": {
-    "en": "Exquisite Chest",
-    "ru": "Богатый сундук",
-    "pt": "Baú Sofisticado"
+    "en": "Common Chest",
+    "zh": "蒙德宝箱",
+    "ru": "Обычный сундук",
+    "pt": "Baú Comum"
   },
   "description": {
-    "en": "A solid wooden chest held together with iron. Contains useful rewards.",
-    "ru": "Крепкий сундук из дерева скреплённый железом. Содержит полезные награды."
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
+    "ru": "Дряхлый деревянный сундук скреплённый железом. Содержит скудную награду."
   },
-  "enabled": false,
+  "enabled": true,
   "cluster": "variable",
   "respawn": "none",
   "icons": {
-    "filter": "exquisite-chest",
+    "filter": "common-chest",
     "base": {
       "marker": true
     },
@@ -21,5 +22,1253 @@
       "marker": true
     }
   },
-  "data": []
+  "data": [
+    {
+      "coordinates": [-30.83476, 42.68042],
+      "id": "CB2C60A7BBF9576282449F6953B1E1AFC4733FD6",
+      "importIds": {
+        "yuanshen": ["26_541"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CB2C60A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.91554, 43.31609],
+      "id": "75B16C5473B06CF662693D26F3AB95174E50E7F3",
+      "importIds": {
+        "yuanshen": ["26_546"]
+      },
+      "popupContent": {
+        "en": "驱赶仙灵解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/75B16C5",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.57657, 42.68646],
+      "id": "4BB565435A9831C9A24313FDC8246A432D243E64",
+      "importIds": {
+        "yuanshen": ["26_549"]
+      },
+      "popupContent": {
+        "en": "击杀盗宝团解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4BB5654",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.00831, 42.53874],
+      "id": "F9DB8F9DC76A4BAAB184C2ED88854A9A9EE91539",
+      "importIds": {
+        "yuanshen": ["26_552"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/F9DB8F9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.29461, 43.39663],
+      "id": "C99D4E6468CD4052F6E1409CEE41E304D37AA84E",
+      "importIds": {
+        "yuanshen": ["26_555"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C99D4E6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.92292, 42.14868],
+      "id": "3F00FE7E56F736EC1EBB672118077A6331CC41DF",
+      "importIds": {
+        "yuanshen": ["26_556"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3F00FE7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.86951, 42.04584],
+      "id": "B8063A9E6C330E633562A735099AA4914A62A657",
+      "importIds": {
+        "yuanshen": ["26_557"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B8063A9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.59741, 43.5771],
+      "id": "542969695D936EF06886BF5DC77848AECA3E6ED2",
+      "importIds": {
+        "yuanshen": ["26_558"]
+      },
+      "popupContent": {
+        "en": "破除坚冰解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/5429696",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.26667, 42.2802],
+      "id": "D7F938F63EB1A029BF897CCD3E0C8BC0FC85A40B",
+      "importIds": {
+        "yuanshen": ["26_560"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D7F938F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.39035, 42.10572],
+      "id": "ACA4C6EC4ACFB46323DB4FFB93B95C0F4FFA793E",
+      "importIds": {
+        "yuanshen": ["26_561"]
+      },
+      "popupContent": {
+        "en": "赤深之石融化坚冰出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/ACA4C6E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.88246, 42.13825],
+      "id": "EA342DF7EA369A158EC08A22BAEC642BC6766252",
+      "importIds": {
+        "yuanshen": ["26_563"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众先遣队【雷锤】出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/EA342DF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.07395, 41.89349],
+      "id": "B1826334CA07A4A9A745EF0210E72992090DD791",
+      "importIds": {
+        "yuanshen": ["26_564"]
+      },
+      "popupContent": {
+        "en": "击碎岩石并跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B182633",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.47238, 42.22942],
+      "id": "EA2F7662D76EA2CBE90DC57F0DBF1C151DA2FBED",
+      "importIds": {
+        "yuanshen": ["26_569"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/EA2F766",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.17159, 41.40913],
+      "id": "EC1EFE42E1772ECF7D3E97B64CFA83D78830E824",
+      "importIds": {
+        "yuanshen": ["26_570"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/EC1EFE4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.9882, 41.67543],
+      "id": "6D4243B3DF6682F7E460226FBD2241959C8253F8",
+      "importIds": {
+        "yuanshen": ["26_571"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁【Exquisite Chest】内有白铁大剑"
+      },
+      "popupMedia": "dragonspine/common-chest/6D4243B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.51014, 42.01068],
+      "id": "FBE376E7B7C50D7CA0909F184CCE40FAC1CCD847",
+      "importIds": {
+        "yuanshen": ["26_572"]
+      },
+      "popupContent": {
+        "en": "限时挑战出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FBE376E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.16119, 41.62786],
+      "id": "9B0AE5EAFB15CB4750120DF89AB8931C1F71EF49",
+      "importIds": {
+        "yuanshen": ["26_574"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/9B0AE5E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.52838, 40.75026],
+      "id": "1F68BEF4A0A5249E6FB9069E079ECD81C4C2BA22",
+      "importIds": {
+        "yuanshen": ["26_575"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/1F68BEF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.88955, 40.9236],
+      "id": "3C193ACB3F3C1D7B48B1F18322B827E2329E682A",
+      "importIds": {
+        "yuanshen": ["26_579"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3C193AC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.89163, 41.59141],
+      "id": "E9F980A542977780A7221C8DCBC53474CA4A318A",
+      "importIds": {
+        "yuanshen": ["26_583"]
+      },
+      "popupContent": {
+        "en": "下方洞穴内击杀愚人众先遣队解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E9F980A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.34594, 38.51875],
+      "id": "C33187A90AE32DE13B82E4CC920B038CC53C924F",
+      "importIds": {
+        "yuanshen": ["26_584"]
+      },
+      "popupContent": {
+        "en": "击杀冰萤术士解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C33187A",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.70304, 40.4937],
+      "id": "2B155A7EACC384F9FFF4029B00C7A98B40F62D72",
+      "importIds": {
+        "yuanshen": ["26_585"]
+      },
+      "popupContent": {
+        "en": "破除坚冰解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2B155A7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.03187, 38.96209],
+      "id": "36B47F9C24F9D1EAA4091D5A52A7518C35829893",
+      "importIds": {
+        "yuanshen": ["26_587"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/36B47F9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.88908, 38.22941],
+      "id": "52559ACCC970E4814118C145AC0605B58D9E7E85",
+      "importIds": {
+        "yuanshen": ["26_589"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/52559AC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.04663, 41.94818],
+      "id": "F8F44EBC77ED29609E7590ACCD88D0200E044530",
+      "importIds": {
+        "yuanshen": ["26_590"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】内有旅行剑"
+      },
+      "popupMedia": "dragonspine/common-chest/F8F44EB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.94494, 36.93198],
+      "id": "93D677F93D66761AC965E6F476E4E3E0D3D87F17",
+      "importIds": {
+        "yuanshen": ["26_591"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/93D677F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.62933, 37.96534],
+      "id": "2C4F989175F61066C1C2DD0B35336FF268B5B711",
+      "importIds": {
+        "yuanshen": ["26_593"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众先遣队解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2C4F989",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.43915, 40.40301],
+      "id": "B25F3929FFE1E955140ABCCA653D6A3C3352770F",
+      "importIds": {
+        "yuanshen": ["26_594"]
+      },
+      "popupContent": {
+        "en": "赤深之石融化坚冰出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B25F392",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.28949, 37.21924],
+      "id": "751AAAF56DA9D4A1CF5068211CF58B4BCB1A2D05",
+      "importIds": {
+        "yuanshen": ["26_595"]
+      },
+      "popupContent": {
+        "en": "击杀愚人众先遣队解锁【Exquisite Chest】内有绯红玉髓"
+      },
+      "popupMedia": "dragonspine/common-chest/751AAAF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.78416, 42.38991],
+      "id": "B535308BB6F3CC063AC807BFAF9CD012D9D1BE0E",
+      "importIds": {
+        "yuanshen": ["26_597"]
+      },
+      "popupContent": {
+        "en": "触发平台柱子上三个机关出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B535308",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.95677, 42.54324],
+      "id": "58BD1F389E6D00E2E37F825B439A90598A32F96F",
+      "importIds": {
+        "yuanshen": ["26_598"]
+      },
+      "popupContent": {
+        "en": "触发平台柱子上三个机关出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/58BD1F3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.7321, 42.60219],
+      "id": "050463D77FA82AF0FFA0D2D00503F861F71DD39A",
+      "importIds": {
+        "yuanshen": ["26_599"]
+      },
+      "popupContent": {
+        "en": "触发平台柱子上三个机关出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/050463D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.29662, 39.00938],
+      "id": "5524B02B14B900BF456FFBE3C3FE5DFFA075D04A",
+      "importIds": {
+        "yuanshen": ["26_600"]
+      },
+      "popupContent": {
+        "en": "解密并击败遗迹重机后开启的【Exquisite Chest】古老的考察日志 其之二"
+      },
+      "popupMedia": "dragonspine/common-chest/5524B02",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.8824, 39.07617],
+      "id": "9945DA7883BCBDFE3CD4705708A1615E035ABE34",
+      "importIds": {
+        "yuanshen": ["26_603"]
+      },
+      "popupContent": {
+        "en": "跟随标记指引出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/9945DA7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.03879, 41.06276],
+      "id": "5DF3C6D3FA8155F7DF3D3187168CE48518E2A4D9",
+      "importIds": {
+        "yuanshen": ["26_604"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Exquisite Chest】小心冰炸弹"
+      },
+      "popupMedia": "dragonspine/common-chest/5DF3C6D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.74714, 41.89089],
+      "id": "8CACC1806639E63B518797FFFEABDA3C3DE9086E",
+      "importIds": {
+        "yuanshen": ["26_605"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】内有【反曲弓】"
+      },
+      "popupMedia": "dragonspine/common-chest/8CACC18",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.83879, 41.62448],
+      "id": "8DC5E0DAE7202F102E36928CAF8259A8C94217F5",
+      "importIds": {
+        "yuanshen": ["26_607"]
+      },
+      "popupContent": {
+        "en": "最上层击败怪物解锁的【Exquisite Chest】30阅历"
+      },
+      "popupMedia": "dragonspine/common-chest/8DC5E0D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.94286, 41.27148],
+      "id": "0062AC64F9BC4DE65D81D3F317F767DF9C4895D7",
+      "importIds": {
+        "yuanshen": ["26_608"]
+      },
+      "popupContent": {
+        "en": "在底层击败怪物解锁的【Exquisite Chest】30阅历"
+      },
+      "popupMedia": "dragonspine/common-chest/0062AC6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.1352, 40.15471],
+      "id": "CDDF92BF1E5D45434B1D132F7713FB270427C114",
+      "importIds": {
+        "yuanshen": ["26_610"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CDDF92B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.67815, 44.73594],
+      "id": "904F9D295342575AEA35D90FDE600BAE26930EAA",
+      "importIds": {
+        "yuanshen": ["26_612"]
+      },
+      "popupContent": {
+        "en": "挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/904F9D2",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.98671, 41.874],
+      "id": "C15FC1F053ACC30F87DA724A638FFC0488B7F917",
+      "importIds": {
+        "yuanshen": ["26_614"]
+      },
+      "popupContent": {
+        "en": "击败三个骗骗花解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C15FC1F",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.01759, 41.99454],
+      "id": "38EE77942CDDE53B99DC8DAC1C178A38C0502560",
+      "importIds": {
+        "yuanshen": ["26_615"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/38EE779",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.52968, 43.17474],
+      "id": "D705F77BD378B7FBD3E8E3EB40DAD6289FC95CF3",
+      "importIds": {
+        "yuanshen": ["26_616"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D705F77",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.9188, 43.86795],
+      "id": "A79EEFCB916F60360724608F40438D196C103C57",
+      "importIds": {
+        "yuanshen": ["26_619"]
+      },
+      "popupContent": {
+        "en": "击败雷萤术士解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/A79EEFC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.83697, 38.59401],
+      "id": "BA23B7DA67F838E57672138BD5F996CADD39F36E",
+      "importIds": {
+        "yuanshen": ["26_625"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】内有反曲弓"
+      },
+      "popupMedia": "dragonspine/common-chest/BA23B7D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.06003, 39.40399],
+      "id": "B9ADB7E17148B621A6A71F21FF42E43AB3484B18",
+      "importIds": {
+        "yuanshen": ["26_626"]
+      },
+      "popupContent": {
+        "en": "这是一个【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B9ADB7E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.26797, 40.24114],
+      "id": "FD804E82C569582722B2FDDDE32A18D1057F1B78",
+      "importIds": {
+        "yuanshen": ["26_627"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/FD804E8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-27.59349, 40.12266],
+      "id": "48894B69D37A4AB608456B1E2FF8554AB27DDF88",
+      "importIds": {
+        "yuanshen": ["26_628"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/48894B6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.87083, 45.66823],
+      "id": "CAE15A6E17CF2E2A46F948896696F67C91903C11",
+      "importIds": {
+        "yuanshen": ["26_633"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/CAE15A6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.56856, 45.295],
+      "id": "20507F524435B7DCA3C93EA2DBEF450B72718D06",
+      "importIds": {
+        "yuanshen": ["26_634"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Exquisite Chest】内有【 白铁大剑】"
+      },
+      "popupMedia": "dragonspine/common-chest/20507F5",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.54001, 44.32761],
+      "id": "C98FFB100A018383023F896D9F43B4EAE3A261BB",
+      "importIds": {
+        "yuanshen": ["26_636"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C98FFB1",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-26.93472, 40.48731],
+      "id": "948E7FAF718D32E436FD69B6CA0353CA00121949",
+      "importIds": {
+        "yuanshen": ["26_637"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/948E7FA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.01425, 42.46817],
+      "id": "92E7715031A05FA9B96FE3E4542F0D9C81E3E224",
+      "importIds": {
+        "yuanshen": ["26_648"]
+      },
+      "popupContent": {
+        "en": "击杀怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/92E7715",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.30964, 42.06666],
+      "id": "7A1D9CDE9081DCE45771AB813A820CBDA285744B",
+      "importIds": {
+        "yuanshen": ["26_650"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/7A1D9CD",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.52579, 37.93515],
+      "id": "DF5AD21687FDA2A3D038B8C7ACCD7EE9E7F216B0",
+      "importIds": {
+        "yuanshen": ["26_652"]
+      },
+      "popupContent": {
+        "en": "底层的仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/DF5AD21",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.67322, 37.6529],
+      "id": "3D845CBD12F94C7DE94D0C3718687FC4DCA74BE5",
+      "importIds": {
+        "yuanshen": ["26_653"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3D845CB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.67437, 36.58066],
+      "id": "4AEC9BE2879D4C150C2F30F17988E40785734397",
+      "importIds": {
+        "yuanshen": ["26_658"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4AEC9BE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.71343, 36.75254],
+      "id": "B9893C9A9AC5021C836ABBF81519FF21564B222F",
+      "importIds": {
+        "yuanshen": ["26_659"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/B9893C9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.02708, 43.37916],
+      "id": "E5759B0466EAEB3A488D993080C31B1CDC84A22C",
+      "importIds": {
+        "yuanshen": ["26_661"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E5759B0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.77058, 43.45859],
+      "id": "BF944DA4DF37CB4CECC5D77F6CB8A486E14EE639",
+      "importIds": {
+        "yuanshen": ["26_665"]
+      },
+      "popupContent": {
+        "en": "引爆冰炸弹解锁的【Exquisite Chest】内有【反曲弓】"
+      },
+      "popupMedia": "dragonspine/common-chest/BF944DA",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.95808, 44.22159],
+      "id": "3E1CEDF8B130E7BD057C916B4B788824FB0E3390",
+      "importIds": {
+        "yuanshen": ["26_672"]
+      },
+      "popupContent": {
+        "en": "击败暴徒丘丘解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3E1CEDF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.0609, 36.90878],
+      "id": "2598FDFAFB75BA0F2F97E240D9A7B8BB8C3B274B",
+      "importIds": {
+        "yuanshen": ["26_676"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/2598FDF",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.05145, 36.61017],
+      "id": "AF29FDC3033441E933054785BCE55A1E20A8455A",
+      "importIds": {
+        "yuanshen": ["26_678"]
+      },
+      "popupContent": {
+        "en": "杀怪解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/AF29FDC",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.09441, 37.29377],
+      "id": "BF1445E4F5AEBD18A6BBEBA7F038875E78FC6886",
+      "importIds": {
+        "yuanshen": ["26_679"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/BF1445E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.74192, 37.70939],
+      "id": "3020D254885AF6B51AD3D54BEF4F11B26AEE5E00",
+      "importIds": {
+        "yuanshen": ["26_682"]
+      },
+      "popupContent": {
+        "en": "这是一个击败怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3020D25",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.01004, 35.60638],
+      "id": "8E80F7225D386B3A6E8466C93A767BCC24DB8E79",
+      "importIds": {
+        "yuanshen": ["26_684"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8E80F72",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.37606, 45.70753],
+      "id": "D8834A38CA59091CEF8A3812C6DD4C894237A021",
+      "importIds": {
+        "yuanshen": ["26_691"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D8834A3",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.22646, 38.92582],
+      "id": "357F9647DFC2779D2C1557435A973D55CD9B3C23",
+      "importIds": {
+        "yuanshen": ["26_697"]
+      },
+      "popupContent": {
+        "en": "击杀冰萤术士解锁【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/357F964",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.93072, 39.23464],
+      "id": "6E8F1A985FFCA7A7DF3C07C3E6E0F58963E301AE",
+      "importIds": {
+        "yuanshen": ["26_701"]
+      },
+      "popupContent": {
+        "en": "这是一个跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/6E8F1A9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.12344, 39.86875],
+      "id": "1ED68297B24FAF24F2E8F2DAFF80EF428FC72EAF",
+      "importIds": {
+        "yuanshen": ["26_707"]
+      },
+      "popupContent": {
+        "en": "这是一个仙灵宝箱【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/1ED6829",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.9164, 39.72291],
+      "id": "ADBC16EB5C880243240FED73B7D9CF53776280C5",
+      "importIds": {
+        "yuanshen": ["26_708"]
+      },
+      "popupContent": {
+        "en": "击败火深渊法师解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/ADBC16E",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.67422, 40.32578],
+      "id": "73971734A03C68636E27B45C59A867F1B5ABD176",
+      "importIds": {
+        "yuanshen": ["26_721"]
+      },
+      "popupContent": {
+        "en": "山洞内的【Exquisite Chest】需要击碎坚冰"
+      },
+      "popupMedia": "dragonspine/common-chest/7397173",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.57266, 38.62656],
+      "id": "D2798447DF69BCEB590B8EE9915DB3500D211340",
+      "importIds": {
+        "yuanshen": ["26_722"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵获得的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D279844",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.21072, 39.89741],
+      "id": "FFF9D91FF20B3BB9471EB887A6307F9CD687F2C0",
+      "importIds": {
+        "yuanshen": ["26_723"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战解锁【Exquisite Chest】内有旅行剑"
+      },
+      "popupMedia": "dragonspine/common-chest/FFF9D91",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.02187, 41.42474],
+      "id": "4638E669C990627AEA1D4C54FAB4C06AFAB906EA",
+      "importIds": {
+        "yuanshen": ["26_725"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4638E66",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-37.10042, 44.46952],
+      "id": "3636B3CF008AD766F115123207442343DC7F07C9",
+      "importIds": {
+        "yuanshen": ["26_726"]
+      },
+      "popupContent": {
+        "en": "限时抵达才能开启的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3636B3C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-34.43886, 37.78863],
+      "id": "DBF74C71F8F621E574B3017464AC84AF6FC262E4",
+      "importIds": {
+        "yuanshen": ["26_729"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/DBF74C7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.22762, 39.78063],
+      "id": "F5B324313336B2BBE7742D480AE5D6D28FEF7C69",
+      "importIds": {
+        "yuanshen": ["26_733"]
+      },
+      "popupContent": {
+        "en": "挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/F5B3243",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.80635, 41.38869],
+      "id": "56D7128683E1D28073B74F20BC82FF58BFD4C866",
+      "importIds": {
+        "yuanshen": ["26_734"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/56D7128",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.67942, 41.17474],
+      "id": "4F7886CE3627B22CB47DEEDF3E4989A9E8D192D1",
+      "importIds": {
+        "yuanshen": ["26_735"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/4F7886C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.91812, 40.36397],
+      "id": "911A6B7B2DA9421836A90797FCED7FC9AC5699AB",
+      "importIds": {
+        "yuanshen": ["26_737"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/911A6B7",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.9763, 40.56276],
+      "id": "038047869A0611516E79109CAC4212A22F010E54",
+      "importIds": {
+        "yuanshen": ["26_739"]
+      },
+      "popupContent": {
+        "en": "完成解密后可直接开启的的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/0380478",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.25754, 41.11745],
+      "id": "D9B8E4D4C4678C601D53E9F70D8010434B663AC6",
+      "importIds": {
+        "yuanshen": ["26_742"]
+      },
+      "popupContent": {
+        "en": "击败怪物解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D9B8E4D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.92422, 40.93125],
+      "id": "3DCF207A4DD4855E8FB29EEB95964CDDAF61C235",
+      "importIds": {
+        "yuanshen": ["26_747"]
+      },
+      "popupContent": {
+        "en": "击败霜铠王解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3DCF207",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.89557, 40.96902],
+      "id": "E71A311504484848708719834E446330AF89C8A4",
+      "importIds": {
+        "yuanshen": ["26_749"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E71A311",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.39594, 38.30284],
+      "id": "6688B87F481FD6E184FCD2DEE2F4C3785C586EA6",
+      "importIds": {
+        "yuanshen": ["26_753"]
+      },
+      "popupContent": {
+        "en": "击碎坚冰并跟随仙灵【Exquisite Chest】内有白铁大剑"
+      },
+      "popupMedia": "dragonspine/common-chest/6688B87",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.44279, 38.16219],
+      "id": "3101A2DF58EB2A7C93795FF74E8682E02ACAF618",
+      "importIds": {
+        "yuanshen": ["26_754"]
+      },
+      "popupContent": {
+        "en": "前置仙灵开门获得的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/3101A2D",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.47631, 38.23073],
+      "id": "92F127B00858BC06A2AF80895443A7AD634652F0",
+      "importIds": {
+        "yuanshen": ["26_755"]
+      },
+      "popupContent": {
+        "en": "前置仙灵开门获得的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/92F127B",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.64687, 41.91562],
+      "id": "E4A3BAB4C8DA329A0F01EA417B6E53DA2944B6F6",
+      "importIds": {
+        "yuanshen": ["26_761"]
+      },
+      "popupContent": {
+        "en": "山顶挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/E4A3BAB",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-33.49846, 35.57839],
+      "id": "C36D951FA9983C89DBDDD4A990C69F1D0606E874",
+      "importIds": {
+        "yuanshen": ["26_762"]
+      },
+      "popupContent": {
+        "en": "挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C36D951",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.75234, 41.29974],
+      "id": "031AED96CD7EB24BD29CE3C669117E8E3711F685",
+      "importIds": {
+        "yuanshen": ["26_766"]
+      },
+      "popupContent": {
+        "en": "挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/031AED9",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.2914, 42.94167],
+      "id": "33F51D05FFD991D00F661130B5B257D17224BB2E",
+      "importIds": {
+        "yuanshen": ["26_767"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/33F51D0",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.77204, 43.86619],
+      "id": "C8B8B1838F31AD20F80D5E1821D9C930062ED846",
+      "importIds": {
+        "yuanshen": ["26_768"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】内有白铁大剑"
+      },
+      "popupMedia": "dragonspine/common-chest/C8B8B18",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-32.24897, 42.41721],
+      "id": "84BDF17BA077F702C01C7550101B91F850AF1D5E",
+      "importIds": {
+        "yuanshen": ["26_769"]
+      },
+      "popupContent": {
+        "en": "跟随仙灵出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/84BDF17",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.06095, 43.90781],
+      "id": "7791CC45E42B30F6A0DE46E66BBD5A37F5CA8E1D",
+      "importIds": {
+        "yuanshen": ["26_772"]
+      },
+      "popupContent": {
+        "en": "限时挑战获得的【Exquisite Chest】内有白铁大剑"
+      },
+      "popupMedia": "dragonspine/common-chest/7791CC4",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-30.02551, 39.53985],
+      "id": "C6FC6A8831CBCA9A89BB4BD568F20091198C6BF6",
+      "importIds": {
+        "yuanshen": ["26_774"]
+      },
+      "popupContent": {
+        "en": "击杀霜铠王出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C6FC6A8",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-31.52182, 37.50898],
+      "id": "20B00DE3CEE7743FD3E7197783452AA7B2BC2D00",
+      "importIds": {
+        "yuanshen": ["26_775"]
+      },
+      "popupContent": {
+        "en": "挖掘出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/20B00DE",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.56092, 40.31275],
+      "id": "473F36CB029E520BB96EBD9DCDD2A2FF5C9B9D61",
+      "importIds": {
+        "yuanshen": ["26_776"]
+      },
+      "popupContent": {
+        "en": "击败冰萤术士解锁的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/473F36C",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.82988, 41.03784],
+      "id": "1D55EDEFF1001D8AF3AD05AEACEBB6B7A925DD05",
+      "importIds": {
+        "yuanshen": ["26_777"]
+      },
+      "popupContent": {
+        "en": "击败冰萤术士解锁的【Exquisite Chest】"
+      },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-29.9868, 43.71198],
+      "id": "EB96AED82DC7E8165A6F2592E590E89B83AC2536",
+      "importIds": {
+        "yuanshen": ["26_778"]
+      },
+      "popupContent": {
+        "en": "融化坚冰出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/EB96AED",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-35.38906, 43.79324],
+      "id": "ADF6039EB70D0B62B286F0B3A1B08324536D7CC5",
+      "importIds": {
+        "yuanshen": ["26_780"]
+      },
+      "popupContent": {
+        "en": "直接开启的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/ADF6039",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-36.14896, 39.90227],
+      "id": "8AD25F59E916B6B8F10DEB2D7D63F6257305891C",
+      "importIds": {
+        "yuanshen": ["26_781"]
+      },
+      "popupContent": {
+        "en": "到对面礁石后方获取赤深之石击碎坚冰开启的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/8AD25F5",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.7947, 36.46297],
+      "id": "D1F9CB6DD53D2E0D6635C5C0AB0B4E315A609335",
+      "importIds": {
+        "yuanshen": ["26_784"]
+      },
+      "popupContent": {
+        "en": "完成限时挑战出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/D1F9CB6",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-28.71197, 41.36485],
+      "id": "C4456F1AD0D4AD4F3EA14E2FCAA8273B302A3F6F",
+      "importIds": {
+        "yuanshen": ["26_786"]
+      },
+      "popupContent": {
+        "en": "融化雪堆出现的【Exquisite Chest】"
+      },
+      "popupMedia": "dragonspine/common-chest/C4456F1",
+      "popupAttribution": "Yuanshen.site"
+    }
+  ]
 }

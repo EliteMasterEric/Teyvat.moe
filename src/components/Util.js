@@ -314,7 +314,6 @@ export const CloneProps = ({ children, ...other }) => children(other);
 
 // Depending on the file type being imported, the main value desired
 // may or may not be in the .default property.
-// JSON isn't and JSONC is, for example.
 export const importFromContext = (context, key) => {
   try {
     const importedModule = context(key);
