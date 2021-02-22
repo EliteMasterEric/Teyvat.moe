@@ -136,6 +136,10 @@ const _FeatureMarker = ({
           key: icons?.base?.key ?? icons?.filter,
           completed,
         });
+  } else {
+    // Don't render the marker until we know
+    // whether to use WebP for the image or not.
+    return null;
   }
 
   const onSingleClick = (event) => {
