@@ -1027,3 +1027,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 - Fixed an issue where the Japanese language would not be properly recognized by browser locale detection.
 - Fixed an issue where Dragonspine displayed Electro Cicin Mages rather than Cryo Cicin Mages.
 - Removed JSONC handler.
+
+# 0.11.2 Tiny Fix
+- Remove Geoculus (TEST) feature.
+- Fixed a bug where markers would display a PNG image instead of a WebP image.

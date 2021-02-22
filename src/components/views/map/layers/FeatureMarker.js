@@ -116,23 +116,27 @@ const _FeatureMarker = ({
   const classes = useStyles();
 
   // WebP or PNG, based on support.
-  const ext = useImageExtension();
+  const ext = useImageExtension(true);
 
   // Build the icon for this marker.
   // Relies on completion status.
-  const icon = completed
-    ? createMapIcon({
-        ...icons?.done,
-        ext: icons?.done?.svg ?? false ? 'svg' : ext,
-        key: icons?.done?.key ?? icons?.filter,
-        completed,
-      })
-    : createMapIcon({
-        ...icons?.base,
-        ext: icons?.base?.svg ?? false ? 'svg' : ext,
-        key: icons?.base?.key ?? icons?.filter,
-        completed,
-      });
+
+  let icon = null;
+  if (ext) {
+    icon = completed
+      ? createMapIcon({
+          ...icons?.done,
+          ext: icons?.done?.svg ?? false ? 'svg' : ext,
+          key: icons?.done?.key ?? icons?.filter,
+          completed,
+        })
+      : createMapIcon({
+          ...icons?.base,
+          ext: icons?.base?.svg ?? false ? 'svg' : ext,
+          key: icons?.base?.key ?? icons?.filter,
+          completed,
+        });
+  }
 
   const onSingleClick = (event) => {
     // Calls on single clicks, not double clicks.
