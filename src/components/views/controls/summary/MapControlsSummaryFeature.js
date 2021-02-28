@@ -10,7 +10,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { MapFeatures } from '~/components/data/MapFeatures';
-import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { getFilterIconURL } from '~/components/data/FeatureData';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
 import MapControlSummaryFeatureMenu from '~/components/views/controls/summary/MapControlsSummaryFeatureMenu';

@@ -9,15 +9,15 @@ import { connect } from 'react-redux';
 import { t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
 import { TabView } from '~/components/interface/Tabs';
-import { importMarkerDataFromSite } from '~/components/preferences/import/ExternalImport';
+import { importMarkerDataFromSite } from '~/components/preferences/ExternalImport';
 import { exportDataJSON } from '~/components/preferences/DataExport';
 import { isValidJSON } from '~/components/Util';
-import ExportDataPopup from '~/components/views/popups/ExportDataPopup';
-import ImportDataPopup from '~/components/views/popups/ImportDataPopup';
-import { clearMapPreferences, setMapPreferences } from '~/redux/ducks';
-import { displayImportError } from '~/redux/ducks/error';
-import { parseDataFromString } from '~/components/preferences/import/InternalImport';
-import { setFeatureMarkersCompleted } from '~/redux/ducks/completed';
+import ExportDataPopup from '~/components/views/dialogs/ExportDataPopup';
+import ImportDataPopup from '~/components/views/dialogs/ImportDataPopup';
+import { clearMapPreferences, setMapPreferences } from '~/components/redux/ducks';
+import { displayImportError } from '~/components/redux/ducks/error';
+import { parseDataFromString } from '~/components/preferences/DataImport';
+import { setFeatureMarkersCompleted } from '~/components/redux/ducks/completed';
 
 import Bookmarklets from '~/data/core/bookmarklets.json';
 

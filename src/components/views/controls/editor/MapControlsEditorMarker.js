@@ -12,8 +12,8 @@ import { connect } from 'react-redux';
 import { f, t } from '~/components/i18n/Localization';
 import { InputTextArea, InputTextField } from '~/components/interface/Input';
 import MapControlsEditorImageUploader from '~/components/views/controls/editor/MapControlsEditorImageUploader';
-import { removeElement, setElementProperty } from '~/redux/ducks/editor';
-import { setEditorHighlight, setPositionAndZoom } from '~/redux/ducks/ui';
+import { removeElement, setElementProperty } from '~/components/redux/ducks/editor';
+import { setEditorHighlight, setPositionAndZoom } from '~/components/redux/ducks/ui';
 
 const useStyles = makeStyles((theme) => ({
   markerBox: {
@@ -55,7 +55,7 @@ const _MapControlsEditorMarker = ({
 }) => {
   const classes = useStyles();
 
-  const markerId = marker?.id ?? '';
+  const markerID = marker?.id ?? '';
   const markerTitle = marker?.popupTitle?.en ?? '';
   const markerContent = marker?.popupContent?.en ?? '';
   const markerMedia = marker?.popupMedia ?? '';
@@ -70,7 +70,7 @@ const _MapControlsEditorMarker = ({
         </Tooltip>
 
         <Typography className={classes.markerLabel}>
-          {f('marker-id-format', { id: markerId.substring(0, 7) })}
+          {f('marker-id-format', { id: markerID.substring(0, 7) })}
         </Typography>
 
         <Tooltip title={t('delete')}>

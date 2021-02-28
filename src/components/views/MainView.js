@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PermalinkHandler from '~/components/views/PermalinkHandler';
 import LeafletMap from '~/components/views/map/LeafletMap';
 import MapControls from '~/components/views/controls/MapControls';
-import Toast from '~/components/views/Toast';
+import Toast from '~/components/interface/Toast';
 
 const _MainView = () => {
   // Uncomment this to clear local storage.

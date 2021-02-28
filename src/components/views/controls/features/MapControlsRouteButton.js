@@ -9,10 +9,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { MapRoutes } from '~/components/data/MapFeatures';
-import { getFilterIconURL } from '~/components/data/MapFeaturesData';
+import { getFilterIconURL } from '~/components/data/FeatureData';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { Image } from '~/components/interface/Image';
-import { setRouteDisplayed } from '~/redux/ducks/displayed';
+import { setRouteDisplayed } from '~/components/redux/ducks/displayed';
 
 const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 

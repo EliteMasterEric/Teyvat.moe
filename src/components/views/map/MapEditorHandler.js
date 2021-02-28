@@ -11,7 +11,7 @@ import {
   lineProperties,
   lineTextProperties,
 } from '~/components/views/map/LayerConstants';
-import { appendElement, setElementProperty } from '~/redux/ducks/editor';
+import { appendElement, setElementProperty } from '~/components/redux/ducks/editor';
 import { hashObject, truncateFloat } from '~/components/Util';
 
 const MARKER_OPTIONS = {
@@ -97,13 +97,13 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
   };
 
   const updateRoute = (event) => {
-    const { id: routeId } = event.layer.options;
+    const { id: routeID } = event.layer.options;
     const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
       truncateFloat(vertex.lat, 5),
       truncateFloat(vertex.lng, 5),
     ]);
 
-    moveRoute(routeId.split('/')[1], newRouteLatLngs);
+    moveRoute(routeID.split('/')[1], newRouteLatLngs);
     setEditorState('none');
     setCurrentEditable(null);
   };
@@ -125,14 +125,14 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       // and cancel the event that would occur.
 
       if (editorState === 'editMarker') {
-        const { id: markerId } = event.layer.options;
+        const { id: markerID } = event.layer.options;
 
         // eslint-disable-next-line no-underscore-dangle
         const { _latlng: latlng } = event.layer;
 
         const newCoords = [truncateFloat(latlng.lat, 5), truncateFloat(latlng.lng, 5)];
 
-        moveMarker(markerId.split('/')[1], newCoords);
+        moveMarker(markerID.split('/')[1], newCoords);
         setEditorState('none');
         setCurrentEditable(null);
       }
@@ -163,13 +163,13 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     'editable:vertex:deleted': (event) => {
       // Delete a vertex when it is clicked.
 
-      const { id: routeId } = event.layer.options;
+      const { id: routeID } = event.layer.options;
       const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
         truncateFloat(vertex.lat, 5),
         truncateFloat(vertex.lng, 5),
       ]);
 
-      moveRoute(routeId.split('/')[1], newRouteLatLngs);
+      moveRoute(routeID.split('/')[1], newRouteLatLngs);
       setEditorState('none');
       setCurrentEditable(null);
     },

@@ -10,13 +10,13 @@ import { connect } from 'react-redux';
 import { t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
 import { Image, useImageExtension } from '~/components/interface/Image';
-import { isSmallScreen } from '~/components/interface/MediaQuery';
+import { useSmallScreen } from '~/components/interface/MediaHooks';
 import { isDev, SafeHTML } from '~/components/Util';
 import MapControlsHelp from '~/components/views/controls/help/MapControlsHelp';
 import MapControlsHelpEditor from '~/components/views/controls/help/MapControlsHelpEditor';
 import MapControlsSummary from '~/components/views/controls/summary/MapControlsSummary';
 import MapControlsCategories from '~/components/views/controls/features/MapControlsCategories';
-import MapControlsEditor from '~/components/views/controls/editor/MapControlsEditor';
+import MapControlsEditor from '~/components/views/controls/editor/ControlsTabEditor';
 import MapControlsFeatures from '~/components/views/controls/features/MapControlsFeatures';
 import MapControlsRoutes from '~/components/views/controls/features/MapControlsRoutes';
 import MapControlsTabs from '~/components/views/controls/MapControlsTabs';
@@ -121,7 +121,7 @@ const _MapControls = ({ open }) => {
 
   const classes = useStyles({});
 
-  const small = isSmallScreen();
+  const small = useSmallScreen();
 
   return (
     <Box className={classes.wrapper}>

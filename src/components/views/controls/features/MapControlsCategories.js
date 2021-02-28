@@ -6,10 +6,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MapCategories from '~/components/data/MapCategories';
 import BorderBox from '~/components/interface/BorderBox';
 import MapControlsCategoryButton from '~/components/views/controls/features/MapControlsCategoryButton';
-import { setControlsCategory, setControlsTab } from '~/redux/ducks/ui';
+import { setControlsCategory, setControlsTab } from '~/components/redux/ducks/ui';
+
+import MapCategories from '~/data/core/categories.json';
 
 const _MapControlsCategories = ({ displayed }) => {
   return (

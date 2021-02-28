@@ -10,11 +10,22 @@
     "preinstall": "yarn policies set-version 1.22.10",
     "install:dev": "yarn install --prod=false",
     "install:prod": "yarn install --prod=true",
-    "start:dev": "npx react-app-rewired start",
+    "start:dev": "snowpack dev --config snowpack.config.js",
+    "start:legacy": "npx react-app-rewired start",
     "start:prod": "npx serve -s build",
     "build": "npx react-app-rewired build",
     "predeploy": "npm run build",
+    "lint-js": "eslint --ext .js,.jsx,.ts,.tsx --ignore-pattern node_modules/",
+    "lint-md": "remark .",
+    "type-check": "tsc --pretty --noEmit",
+    "type-coverage": "typescript-coverage-report",
     "test": "echo \"This test is blank. Do not remove it, as it is required by TravisCI.\""
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      ["remark-lint-no-undefined-references", false]
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +50,7 @@
     "@material-ui/icons": "^4.11.2",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core/",
     "@reduxjs/toolkit": "^1.4.0",
+    "@snowpack/app-scripts-react": "^2.0.0",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
@@ -49,11 +61,13 @@
     "leaflet-draw": "^1.0.4",
     "leaflet-editable": "^1.2.0",
     "leaflet-textpath": "^1.2.3",
-    "leaflet.markercluster": "github:MasterEric/Leaflet.markercluster#dist",
+    "leaflet.markercluster": "file:./packages/leaflet.markercluster",
     "lodash": "^4.17.20",
     "new-github-issue-url": "^0.2.1",
+    "notistack": "^1.0.3",
     "object-hash": "^2.0.3",
     "react": "^17.0.1",
+    "react-adaptive-hooks": "^0.0.8",
     "react-dom": "^17.0.1",
     "react-dropzone": "^11.2.4",
     "react-helmet-async": "^1.0.7",
@@ -61,7 +75,7 @@
     "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet/",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-leaflet-textpath": "^2.0.0",
-    "react-localization": "^1.0.15",
+    "react-localization": "file:./packages/react-localization",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.0",
     "react-swipeable-views": "^0.13.9",
@@ -69,6 +83,7 @@
     "react-world-flags": "^1.4.0",
     "redux": "^4.0.5",
     "sanitize-html": "^2.1.2",
+    "snowpack": "^3.0.13",
     "sourcemapped-stacktrace": "^1.1.11"
   },
   "devDependencies": {
@@ -76,13 +91,22 @@
     "@babel/eslint-plugin": "^7.12.1",
     "@babel/plugin-proposal-optional-chaining": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
+    "@types/jest": "^26.0.20",
+    "@types/leaflet": "^1.5.23",
+    "@types/leaflet.markercluster": "^1.4.3",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/webpack-env": "^1.16.0",
+    "@typescript-eslint/parser": "^4.15.2",
     "babel-plugin-root-import": "^6.6.0",
     "customize-cra": "^1.0.0",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
-    "eslint-plugin-import": "^2.21.2",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-mui-unused-classes": "^1.0.3",
     "eslint-plugin-prettier": "^3.1.4",
@@ -91,11 +115,22 @@
     "prettier": "^2.1.2",
     "react-app-rewired": "^2.1.8",
     "react-dev-utils": "^11.0.1",
+    "remark-cli": "^9.0.0",
+    "remark-preset-lint-recommended": "^5.0.0",
     "serve": "^11.3.2",
+    "type-coverage": "^2.16.3",
+    "typescript": "^4.1.5",
+    "typescript-coverage-report": "^0.5.0",
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "resolutions": {
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core",
-    "react-leaflet": "file:./packages/react-leaflet/packages/core"
+    "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet",
+    "leaflet.markercluster": "file:./packages/leaflet.markercluster",
+    "react-localization": "file:./packages/react-localization"
+  },
+  "typeCoverage": {
+    "atLeast": 95,
+    "strict": true
   }
 }

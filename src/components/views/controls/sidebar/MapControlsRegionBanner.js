@@ -8,9 +8,9 @@ import clsx from 'clsx';
 import { connect } from 'react-redux';
 
 import { makeStyles, Box, Tooltip } from '@material-ui/core';
-import MapRegions from '~/components/data/MapRegions';
+import MapRegions from '~/data/core/regions.json';
 import { t } from '~/components/i18n/Localization';
-import { setControlsRegion } from '~/redux/ducks/ui';
+import { setControlsRegion } from '~/components/redux/ducks/ui';
 import { VectorImage } from '~/components/interface/Image';
 import { importFromContext } from '~/components/Util';
 

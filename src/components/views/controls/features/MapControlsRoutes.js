@@ -5,14 +5,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { getRouteKeysByFilter, sortByName } from '~/components/data/MapFeatures';
+import { getRouteKeysByFilter, sortRoutesByName } from '~/components/data/MapRoutes';
 import BorderBox from '~/components/interface/BorderBox';
 import MapControlsRouteButton from '~/components/views/controls/features/MapControlsRouteButton';
 
 const _MapControlsRoutes = ({ currentRegion, currentCategory, displayed }) => {
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
-      {sortByName(getRouteKeysByFilter(currentRegion, currentCategory)).map((key) => (
+      {sortRoutesByName(getRouteKeysByFilter(currentRegion, currentCategory)).map((key) => (
         <MapControlsRouteButton key={key} routeKey={key} />
       ))}
     </BorderBox>

@@ -1,6 +1,6 @@
 <p align='center'><img src="https://raw.githubusercontent.com/GenshinMap/genshinmap.github.io/master/assets/Social.png"></p>
 
----
+* * *
 
 <p align='center'>
 <a href="https://genshinmap.github.io/"><b>GenshinMap</b></a>
@@ -14,6 +14,9 @@
   <br/><br/>
 <a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
 <a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
+<a href="https://david-dm.org/GenshinMap/genshinmap.github.io"><img src="https://david-dm.org/GenshinMap/genshinmap.github.io.svg" alt="Dependencies"/></a>
+<a href="https://david-dm.org/GenshinMap/genshinmap.github.io#info=devDependencies"><img src="https://david-dm.org/plantain-00/type-coverage/dev-status.svg" alt="Dev Dependencies"/></a>
+<a href="https://github.com/GenshinMap/genshinmap.github.io/"><img src="https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2FGenshinMap%2Fgenshinmap.github.io%2Fmaster%2Fpackage.json" alt="Type Coverage"></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
 <a href="https://discord.gg/dF6VTFr9jK"><img src="https://img.shields.io/discord/807068732567453726?label=discord&logo=discord&logoColor=738adb" alt="Discord Server"/></a>
 <a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
@@ -31,9 +34,10 @@
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/es?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Spanish"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/th?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Thai"/></a>
 <a href="https://poeditor.com/join/project?hash=VNGpBHcrB0"><img src="https://img.shields.io/poeditor/progress/394831/vi?token=1362c61f5ab09d3fb015f19e77e437f1" alt="POEditor - Vietnamese"/></a>
+
 </p>
 
----
+* * *
 
 ## What is GenshinMap?
 
@@ -49,14 +53,14 @@ This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.g
 
 There are numerous other interactive maps available, but this map has the edge in the following ways:
 
-- **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
-- **Newest resources mapped**: Magical crystal chunks, meteorites, Crimson Agate, and more before other maps.
-- **Multiple Language Support**: The site currently supports English, French, Russian, and Indonesian, with more to come. If your language isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
-- **Track progress for free**: GenshinMap allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or even Chinese credentials to allow you to track your progress.
-- **Mobile friendly**: GenshinMap officially supports mobile devices and has a custom menu layout for them.
-- **Routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
-- **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Other sites have no submission functionality available, or may only have an email.
-- **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can create a fork or pull request. All other interactive map websites are closed source.
+-   **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
+-   **Newest resources mapped**: Magical crystal chunks, meteorites, Crimson Agate, and more before other maps.
+-   **Multiple Language Support**: The site currently supports English, French, Russian, and Indonesian, with more to come. If your language isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
+-   **Track progress for free**: GenshinMap allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or even Chinese credentials to allow you to track your progress.
+-   **Mobile friendly**: GenshinMap officially supports mobile devices and has a custom menu layout for them.
+-   **Routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
+-   **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Other sites have no submission functionality available, or may only have an email.
+-   **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can create a fork or pull request. All other interactive map websites are closed source.
 
 ## Credits
 

@@ -11,8 +11,8 @@ import { connect } from 'react-redux';
 
 import { f, t } from '~/components/i18n/Localization';
 import MapControlsEditorImageUploader from '~/components/views/controls/editor/MapControlsEditorImageUploader';
-import { removeElement, setElementProperty } from '~/redux/ducks/editor';
-import { setEditorHighlight, setPositionAndZoom } from '~/redux/ducks/ui';
+import { removeElement, setElementProperty } from '~/components/redux/ducks/editor';
+import { setEditorHighlight, setPositionAndZoom } from '~/components/redux/ducks/ui';
 
 import { InputTextArea, InputTextField } from '~/components/interface/Input';
 
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const _MapControlsEditorRoute = ({
-  routeId,
+  routeID,
   routeTitle,
   routeContent,
   routeMedia,
@@ -69,7 +69,7 @@ const _MapControlsEditorRoute = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('route-id-format', { id: routeId.substring(0, 7) })}
+          {f('route-id-format', { id: routeID.substring(0, 7) })}
         </Typography>
 
         <Tooltip title={t('delete')}>
@@ -99,7 +99,7 @@ const _MapControlsEditorRoute = ({
 
 const mapStateToProps = (state, { route }) => ({
   highlighted: state.editorHighlight === route.id,
-  routeId: route.id,
+  routeID: route.id,
   routeTitle: route.popupTitle.en,
   routeContent: route.popupContent.en,
   routeMedia: route.popupMedia,

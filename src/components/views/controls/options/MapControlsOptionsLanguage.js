@@ -11,7 +11,7 @@ import Flag from 'react-world-flags';
 import { getLanguageOptions } from '~/components/i18n/FeatureLocalization';
 import { getShortLocale, t } from '~/components/i18n/Localization';
 import BorderBox from '~/components/interface/BorderBox';
-import { setOverrideLang } from '~/redux/ducks/options';
+import { setOverrideLang } from '~/components/redux/ducks/options';
 
 const useStyles = makeStyles((_theme) => ({
   label: {

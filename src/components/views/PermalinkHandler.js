@@ -1,11 +1,16 @@
+/**
+ * Contains a handler which parses the URL,
+ * determines if a permalink to a marker was used,
+ * and returns
+ */
 import React from 'react';
 import { connect } from 'react-redux';
 
 import { getURLParams, setBrowserClipboard } from '~/components/Util';
-import { getElementPathById, getElementByPath } from '~/components/data/MapFeatures';
-import { setPositionAndZoom, setToast } from '~/redux/ducks/ui';
+import { getElementPathByID, getElementByPath } from '~/components/data/MapFeatures';
+import { setPositionAndZoom, setToast } from '~/components/redux/ducks/ui';
 import { t } from '~/components/i18n/Localization';
-import { setFeatureDisplayed, setRouteDisplayed } from '~/redux/ducks/displayed';
+import { setFeatureDisplayed, setRouteDisplayed } from '~/components/redux/ducks/displayed';
 
 const HIGHLIGHT_ZOOM_LEVEL = 9;
 
@@ -18,7 +23,7 @@ export const copyPermalink = (id) => {
 };
 
 /* eslint-disable no-shadow */
-export const navigateToMarkerById = (
+export const navigateToMarkerByID = (
   id,
   setPositionAndZoom,
   showToast = null,
@@ -26,7 +31,7 @@ export const navigateToMarkerById = (
   displayRoute = null
 ) => {
   // Find which group has the ID.
-  const elementPath = getElementPathById(id);
+  const elementPath = getElementPathByID(id);
   if (elementPath == null) {
     console.error(`Path not found for ID: ${id}`);
     if (showToast != null) showToast(t('notification-permalink-fail-id'));
@@ -34,7 +39,7 @@ export const navigateToMarkerById = (
   }
 
   // Get the element associated with the ID.
-  const [elementType, elementName, _elementId] = elementPath.split('/');
+  const [elementType, elementName, _elementID] = elementPath.split('/');
   const element = getElementByPath(elementPath);
   if (elementPath == null) {
     console.error(`Element not found for path: ${elementPath}`);
@@ -73,7 +78,7 @@ const _PermalinkHandler = ({ setPositionAndZoom, showToast, displayFeature, disp
     // End early if no ID was specified.
     if (id == null) return;
 
-    navigateToMarkerById(id, setPositionAndZoom, showToast, displayFeature, displayRoute);
+    navigateToMarkerByID(id, setPositionAndZoom, showToast, displayFeature, displayRoute);
   }, []);
 
   // Don't render anything.

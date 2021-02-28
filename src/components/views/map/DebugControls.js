@@ -14,8 +14,8 @@ import { t } from '~/components/i18n/Localization';
 import { InputTextField } from '~/components/interface/Input';
 
 import MapCustomControl from '~/components/views/map/MapCustomControl';
-import { setPositionAndZoom } from '~/redux/ducks/ui';
-import { navigateToMarkerById } from '~/components/views/PermalinkHandler';
+import { setPositionAndZoom } from '~/components/redux/ducks/ui';
+import { navigateToMarkerByID } from '~/components/views/PermalinkHandler';
 
 const useStyles = makeStyles((_theme) => ({
   show: {
@@ -59,10 +59,10 @@ const _DebugControls = ({ displayed, setPositionAndZoom }) => {
     },
   });
 
-  const onNavigateToMarkerById = (id) => {
+  const onNavigateToMarkerByID = (id) => {
     if (id === '' || id == null) return;
 
-    navigateToMarkerById(id, setPositionAndZoom);
+    navigateToMarkerByID(id, setPositionAndZoom);
   };
 
   return (
@@ -76,7 +76,7 @@ const _DebugControls = ({ displayed, setPositionAndZoom }) => {
           <ExploreIcon className={classes.positionIcon} />
           {mousePos.lat.toFixed(5)} X / {mousePos.lng.toFixed(5)} Y
         </Typography>
-        <InputTextField label={t('navigate-to-marker-by-id')} onChange={onNavigateToMarkerById} />
+        <InputTextField label={t('navigate-to-marker-by-id')} onChange={onNavigateToMarkerByID} />
       </Box>
     </MapCustomControl>
   );

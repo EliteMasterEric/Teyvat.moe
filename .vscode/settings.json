@@ -1,8 +1,23 @@
 {
   "git.ignoreLimitWarning": true,
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "mrmlnc.vscode-remark",
+    "editor.formatOnSave": true
   },
   "[python]": {
     "editor.formatOnSave": true,
@@ -15,5 +30,16 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/node_modules/**": true
-  }
+  },
+  "files.exclude": {
+    ".yarn/": true,
+    ".next/": true,
+    ".github/": true,
+    ".vscode/": true,
+    "out/": true
+  },
+  "eslint.workingDirectories": [
+    { "directory": "./src", "changeProcessCWD": true },
+    // { "directory": "./server", "changeProcessCWD": true }
+  ]
 }

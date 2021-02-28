@@ -1,3 +1,3 @@
 # images
 
-This folder contains graphical assets used by the site
+This folder contains graphical assets used by the site.

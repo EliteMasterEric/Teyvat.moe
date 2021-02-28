@@ -52,15 +52,21 @@
   <body>
     <noscript>Paimon thinks you need to enable JavaScript to use this application!</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+    <!-- 
+      add entry for snowpack, only used in dev, it is pruned in production.
     -->
+    <script>
+      if ('%MODE%' === 'development') {
+        // we wrap this in a function to prevent the variables from leaking out
+        (function() { 
+          console.log('[dev] injecting snowpack entry')
+          var snowpackEntryScript = document.createElement('script');
+          snowpackEntryScript.setAttribute('type', 'module');
+          snowpackEntryScript.setAttribute('src', '/_dist_/index.js');
+          document.head.appendChild(snowpackEntryScript);
+        }())
+      }
+    </script>
   </body>
 </html>

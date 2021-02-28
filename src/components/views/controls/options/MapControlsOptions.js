@@ -13,8 +13,8 @@ import { InputSlider } from '~/components/interface/Input';
 import { TabView } from '~/components/interface/Tabs';
 import { getApplicationVersion } from '~/components/Util';
 import MapControlsOptionsLanguage from '~/components/views/controls/options/MapControlsOptionsLanguage';
-import ClearMapDataPopup from '~/components/views/popups/ClearMapDataPopup';
-import { clearMapPreferences } from '~/redux/ducks';
+import ClearMapDataPopup from '~/components/views/dialogs/ClearMapDataPopup';
+import { clearMapPreferences } from '~/components/redux/ducks';
 import {
   setClusterMarkers,
   setCompletedAlpha,
@@ -24,8 +24,8 @@ import {
   setRegionLabelsEnabled,
   setShowHiddenFeatures,
   setWorldBorderEnabled,
-} from '~/redux/ducks/options';
-import { setDebugEnabled, setEditorEnabled } from '~/redux/ducks/ui';
+} from '~/components/redux/ducks/options';
+import { setDebugEnabled, setEditorEnabled } from '~/components/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {

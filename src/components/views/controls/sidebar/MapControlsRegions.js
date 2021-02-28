@@ -8,7 +8,7 @@ import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MapRegions from '~/components/data/MapRegions';
+import MapRegions from '~/data/core/regions.json';
 import MapControlsRegionBanner from '~/components/views/controls/sidebar/MapControlsRegionBanner';
 
 const useStyles = makeStyles((theme) => ({

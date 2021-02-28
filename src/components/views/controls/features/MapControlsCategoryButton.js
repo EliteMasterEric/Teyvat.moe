@@ -7,10 +7,11 @@ import { makeStyles, Button } from '@material-ui/core';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MapCategories from '~/components/data/MapCategories';
 import { getEmptyFeatureCategories, getEmptyRouteCategories } from '~/components/data/MapFeatures';
 import { t } from '~/components/i18n/Localization';
-import { setControlsCategory } from '~/redux/ducks/ui';
+import { setControlsCategory } from '~/components/redux/ducks/ui';
+
+import MapCategories from '~/data/core/categories.json';
 
 const useStyles = makeStyles((_theme) => ({
   categoryButton: {
@@ -21,20 +22,15 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enableCategory }) => {
+const _MapControlsCategoryButton = ({ active, style, nameKey, displayed, enableCategory }) => {
   const classes = useStyles();
-
-  const category = MapCategories[categoryKey];
-  const displayed = (category?.enabled ?? true) && !categoryEmpty;
 
   if (!displayed) return null;
 
   const buttonStyle = {
-    backgroundColor: active
-      ? category?.style?.enabled?.bg
-      : category?.style?.disabled?.bg ?? '#FFF',
-    color: active ? category?.style?.enabled?.text : category?.style?.disabled?.text ?? '#000',
-    flexBasis: category?.style?.fullWidth ? '95%' : null,
+    backgroundColor: active ? style?.enabled?.bg : style?.disabled?.bg ?? '#FFF',
+    color: active ? style?.enabled?.text : style?.disabled?.text ?? '#000',
+    flexBasis: style?.fullWidth ? '95%' : null,
   };
 
   return (
@@ -44,7 +40,7 @@ const _MapControlsCategoryButton = ({ active, categoryEmpty, categoryKey, enable
       style={buttonStyle}
       className={classes.categoryButton}
     >
-      {t(category.nameKey)}
+      {t(nameKey)}
     </Button>
   );
 };
@@ -53,6 +49,7 @@ const mapStateToProps = (
   { controlsTab, controlsRegion, controlsCategory, options: { overrideLang: lang } },
   { categoryKey }
 ) => {
+  const { enabled, style, nameKey } = MapCategories[categoryKey];
   // Check if the given category is empty for the active region.
   let categoryEmpty = true;
   switch (controlsTab) {
@@ -70,7 +67,9 @@ const mapStateToProps = (
   }
   return {
     active: controlsCategory === categoryKey,
-    categoryEmpty,
+    displayed: enabled && !categoryEmpty,
+    style,
+    nameKey,
     // Adding language to the props, even if it isn't used,
     // causes the component to re-render when the language changes.
     lang,

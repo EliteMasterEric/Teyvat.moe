@@ -29,7 +29,7 @@ import MapEditorHandler from '~/components/views/map/MapEditorHandler';
 import MapPositionHandler from '~/components/views/map/MapPositionHandler';
 
 import './LeafletMap.css';
-import { SET_IMPORT_ERROR } from '~/redux/ducks/error';
+import { SET_IMPORT_ERROR } from '~/components/redux/ducks/error';
 import ErrorHandler from '../error/ErrorHandler';
 
 // A link back to the main repository.

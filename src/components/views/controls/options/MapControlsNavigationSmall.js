@@ -10,9 +10,9 @@ import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import MapRegions from '~/components/data/MapRegions';
+import MapRegions from '~/data/core/regions.json';
 import MapControlsRegionButton from '~/components/views/controls/sidebar/MapControlsRegionButton';
-import { setControlsOpen } from '~/redux/ducks/ui';
+import { setControlsOpen } from '~/components/redux/ducks/ui';
 import MapControlsFoldButton from '~/components/views/controls/sidebar/MapControlsFoldButton';
 
 /**

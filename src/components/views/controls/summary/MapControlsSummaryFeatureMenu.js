@@ -13,10 +13,13 @@ import Tooltip from 'react-tooltip';
 import { MapFeatures } from '~/components/data/MapFeatures';
 import { t } from '~/components/i18n/Localization';
 import { getUnixTimestamp } from '~/components/Util';
-import store from '~/redux';
-import { clearFeatureCompleted, clearFeatureMarkersCompleted } from '~/redux/ducks/completed';
-import { setFeatureDisplayed } from '~/redux/ducks/displayed';
-import { setEditorHighlight, setPositionAndZoom } from '~/redux/ducks/ui';
+import store from '~/components/redux';
+import {
+  clearFeatureCompleted,
+  clearFeatureMarkersCompleted,
+} from '~/components/redux/ducks/completed';
+import { setFeatureDisplayed } from '~/components/redux/ducks/displayed';
+import { setEditorHighlight, setPositionAndZoom } from '~/components/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   menuButtonRoot: {

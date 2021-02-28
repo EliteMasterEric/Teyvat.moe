@@ -39,6 +39,7 @@ const _EditorLayer = ({ displayed, editorData }) => {
         feature={editorFeature}
         marker={element}
         editable
+        allowExternalMedia
       />
     );
   });

@@ -8,8 +8,8 @@ import clsx from 'clsx';
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { isSmallScreen } from '~/components/interface/MediaQuery';
-import { setControlsOpen } from '~/redux/ducks/ui';
+import { useSmallScreen } from '~/components/interface/MediaHooks';
+import { setControlsOpen } from '~/components/redux/ducks/ui';
 
 const useStyles = makeStyles((_theme) => ({
   fixedPosition: {
@@ -65,7 +65,7 @@ const _MapControlsFoldButton = ({ open, setOpen, button = false, fixedPosition =
   // Toggle isOpen.
   const toggleOpen = () => setOpen(!open);
 
-  const smallScreen = isSmallScreen();
+  const smallScreen = useSmallScreen();
   const hide = smallScreen && open && !button;
 
   return (
