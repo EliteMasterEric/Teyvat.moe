@@ -5,7 +5,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { CLEAR_PREFERENCES } from '~/components/redux/actions';
+import { clearPreferences, setPreferences } from '~/components/redux/actions';
 import { AppState } from '~/components/redux/types';
 
 // Define a type for the slice state
@@ -19,7 +19,9 @@ export const initialState: OptionsState = {
   regionLabelsEnabled: true, // Display text over notable regions.
   hideFeaturesInEditor: false, // Remove clutter while editing.
   hideRoutesInEditor: false, // Remove clutter while editing.
-  overrideLang: '', // Override the current language.
+  showHiddenFeaturesInSummary: false, // Display features in the summary tab with some markers
+  // completed, even when the feature is hidden.
+  overrideLang: null, // Override the current language.
 };
 
 export const optionsSlice = createSlice({
@@ -46,12 +48,21 @@ export const optionsSlice = createSlice({
     setHideRoutesInEditor: (state, action: PayloadAction<boolean>) => {
       state.hideRoutesInEditor = action.payload;
     },
-    setOverrideLang: (state, action: PayloadAction<string>) => {
+    setShowHiddenFeaturesInSummary: (state, action: PayloadAction<boolean>) => {
+      state.showHiddenFeaturesInSummary = action.payload;
+    },
+    setOverrideLang: (state, action: PayloadAction<OptionsState['overrideLang']>) => {
       state.overrideLang = action.payload;
     },
   },
   extraReducers: {
-    [CLEAR_PREFERENCES.toString()]: () => {
+    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+      return {
+        ...state,
+        ...action.payload.notify,
+      };
+    },
+    [clearPreferences.toString()]: () => {
       // Reset to the default state.
       return initialState;
     },
@@ -65,6 +76,7 @@ export const {
   setRegionLabelsEnabled,
   setHideFeaturesInEditor,
   setHideRoutesInEditor,
+  setShowHiddenFeaturesInSummary,
   setOverrideLang,
 } = optionsSlice.actions;
 
@@ -82,6 +94,8 @@ export const selectHideFeaturesInEditor = (state: AppState): boolean =>
   state.options.hideFeaturesInEditor;
 export const selectHideRoutesInEditor = (state: AppState): boolean =>
   state.options.hideRoutesInEditor;
+export const selectShowHiddenFeaturesInSummary = (state: AppState): boolean =>
+  state.options.showHiddenFeaturesInSummary;
 export const selectOverrideLang = (state: AppState): string => state.options.overrideLang;
 
 export default optionsSlice.reducer;

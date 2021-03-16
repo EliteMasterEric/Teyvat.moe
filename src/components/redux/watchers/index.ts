@@ -2,8 +2,8 @@
 /* eslint-disable no-restricted-imports */
 
 import { EnhancedStore } from '@reduxjs/toolkit';
-import localStorage from './localStorage';
 import localization from './localization';
+import localStorage from './localStorage';
 
 const watchers = [localStorage, localization];
 

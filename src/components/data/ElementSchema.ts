@@ -4,10 +4,10 @@
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
 import _ from 'lodash';
 
-import { MapCategory, MapRegion, Opaque } from '~/components/Types';
-import { hashObject, isDev } from '~/components/Util';
-
-import MapRegions from '~/data/core/regions.json';
+import { MapCategoryKey } from '~/components/data/MapCategories';
+import { MapRegionKey, MapRegionKeys } from '~/components/data/MapRegions';
+import { Opaque } from '~/components/Types';
+import { hashObject, isDev } from '~/components/util';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {
   abortEarly: true, // Stop validation at the first error.
@@ -22,8 +22,8 @@ export const VALIDATION_OPTIONS: ValidationOptions = {
 // A number used to indicate version changes.
 // Version changes are only needed for breaking changes, like restructuring,
 // not for new options that can be given optional defaults.
-const SCHEMA_VERSION = 2;
-type MSFSchemaVersion = Opaque<'MSFSchemaVersion', 2>;
+export const MSF_SCHEMA_VERSION = 2;
+export type MSFSchemaVersion = Opaque<'MSFSchemaVersion', 2>;
 
 /**
  * A regular expression which validates whether a string is a link to a YouTube video.
@@ -36,7 +36,7 @@ export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\
  * Must start with a game region.
  */
 const imagePath = Joi.string().regex(
-  new RegExp(`((?:${Object.keys(MapRegions).join('|')})/)*[-_a-zA-Z0-9]+`)
+  new RegExp(`((?:${MapRegionKeys.join('|')})/)*[-_a-zA-Z0-9]+`)
 ); // Exclude the file extension.
 /**
  * A URL linking to a YouTube video.
@@ -60,12 +60,12 @@ export type MSFLocalizedField = {
  * The type representing how markers should be clustered at far zoom levels.
  */
 const clusterEnum = ['off', 'on', 'variable'];
-type MSFCluster = 'off' | 'on' | 'variable';
+export type MSFCluster = 'off' | 'on' | 'variable';
 /**
  * The type representing when a marker will be able to be collected again.
  */
 const respawnEnum = ['none', 'boss'];
-type MSFRespawn = 'none' | 'boss' | number;
+export type MSFRespawn = 'none' | 'boss' | number;
 /**
  * The type representing a coordinate of a marker or route vector.
  */
@@ -167,7 +167,7 @@ const MSF_MARKER_SCHEMA = Joi.object({
   popupAttribution: Joi.string().default('Unknown'),
 });
 export interface MSFMarker {
-  id: MSFRouteID;
+  id: MSFMarkerID;
   coordinates: MSFCoordinate;
   importIds?: Record<MSFImportSite, MSFImportKey[]>;
 
@@ -276,6 +276,7 @@ type MSFMarkerIcon =
       key?: string;
     }
   | {
+      marker: false;
       key: string;
       svg?: boolean;
       iconSize: [number, number];
@@ -294,7 +295,7 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
   // A number equal to 2, used to indicate version changes.
   // Version changes are only needed for breaking changes, like restructuring,
   // not for new options that can be given optional defaults.
-  format: 2,
+  format: MSF_SCHEMA_VERSION,
 
   // Whether the feature is enabled or not. Now a mandatory boolean.
   enabled: Joi.boolean(),
@@ -325,6 +326,7 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
     .items(MSF_MARKER_SCHEMA) // Array can be empty.
     .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
+export type MSFFilterIcon = Opaque<'MSFFilterIcon', string>;
 export interface MSFFeature {
   format: MSFSchemaVersion;
   enabled?: boolean;
@@ -336,7 +338,7 @@ export interface MSFFeature {
   respawn: MSFRespawn;
 
   icons: {
-    filter: Opaque<'MSFFilterIcon', string>;
+    filter: MSFFilterIcon;
     base: MSFMarkerIcon;
     done: MSFMarkerIcon;
   };
@@ -346,15 +348,15 @@ export interface MSFFeature {
 export type MSFFeatureKey = Opaque<'MSFFeatureKey', string>;
 export interface MSFFeatureExtended extends MSFFeature {
   key: MSFFeatureKey;
-  region: MapRegion;
-  category: MapCategory;
+  region: MapRegionKey;
+  category: MapCategoryKey;
 }
 
 /**
  * Performs schema validation on an MSF feature.
  * @param input The data to validate.
  */
-export const validateFeatureData = (input: MSFFeature): ValidationResult => {
+export const validateFeatureData = (input: MSFFeature): ValidationResult | null => {
   if (input == null || !('format' in input) || !('name' in input)) {
     console.error(`Feature is undefined!`);
     return null;
@@ -375,7 +377,7 @@ export const validateFeatureData = (input: MSFFeature): ValidationResult => {
  * This schema represents a route group containing routes.
  */
 export const MSF_ROUTES_SCHEMA = Joi.object({
-  format: 2,
+  format: MSF_SCHEMA_VERSION,
 
   // Whether the feature is enabled or not. Now a mandatory boolean.
   enabled: Joi.boolean(),
@@ -414,14 +416,14 @@ export interface MSFRouteGroup {
 export type MSFRouteGroupKey = Opaque<'MSFRouteGroupKey', string>;
 export interface MSFRouteGroupExtended extends MSFRouteGroup {
   key: MSFRouteGroupKey;
-  region: MapRegion;
-  category: MapCategory;
+  region: MapRegionKey;
+  category: MapCategoryKey;
 }
 
 /**
  * Performs schema validation on an MSF route group.
  */
-export const validateRouteData = (input: MSFRouteGroup): ValidationResult => {
+export const validateRouteData = (input: MSFRouteGroup): ValidationResult | null => {
   if (input == null || !('format' in input) || !('name' in input)) {
     console.error(`Route is undefined!`);
     return null;

@@ -1,17 +1,16 @@
 import { Box, IconButton, Tooltip, Typography, makeStyles } from '@material-ui/core';
 import { Link as LinkIcon } from '@material-ui/icons';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';
 import TextPath from 'react-leaflet-textpath';
-import { connect } from 'react-redux';
 
+import { MSFRoute, YOUTUBE_REGEX } from '~/components/data/ElementSchema';
+import { localizeField } from '~/components/i18n/FeatureLocalization';
 import { f, t } from '~/components/i18n/Localization';
 import { Image } from '~/components/interface/Image';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
-import { SafeHTML } from '~/components/Util';
+import { SafeHTML } from '~/components/util';
 import { copyPermalink } from '~/components/views/PermalinkHandler';
-import { MSFRoute, MSFRouteKey, YOUTUBE_REGEX } from '~/components/data/ElementSchema';
 
 const POPUP_WIDTH = '560';
 
@@ -98,16 +97,16 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
   );
 };
 
-const _RouteLine = ({
-  route,
-  routeKey,
-  editable = false,
-  allowExternalMedia = false,
-}: {
+interface RouteLineProps {
   route: MSFRoute;
-  routeKey: MSFRouteKey;
   editable?: boolean;
   allowExternalMedia?: boolean;
+}
+
+const RouteLine: FunctionComponent<RouteLineProps> = ({
+  route,
+  editable = false,
+  allowExternalMedia = false,
 }) => {
   // CSS classes.
   const classes = useStyles();
@@ -135,7 +134,7 @@ const _RouteLine = ({
       // Attributes passed to TextPath.setText.
       text={route.routeText}
       repeat
-      id={routeKey}
+      id={route.id}
       attributes={{
         dy: 6,
         fill: route.routeColor,
@@ -174,9 +173,5 @@ const _RouteLine = ({
     </TextPath>
   );
 };
-
-const mapStateToProps = (_state) => ({});
-const mapDispatchToProps = (_dispatch) => ({});
-const RouteLine = connect(mapStateToProps, mapDispatchToProps)(_RouteLine);
 
 export default RouteLine;

@@ -1,14 +1,14 @@
 import { createLayerComponent } from '@react-leaflet/core';
-import { Marker, MarkerOptions } from 'leaflet';
+import { Marker as LeafletMarker, MarkerOptions as LeafletMarkerOptions } from 'leaflet';
 import { MarkerProps } from 'react-leaflet';
 
-interface LExtendedMarkerOptions extends MarkerOptions {
+interface LExtendedMarkerOptions extends LeafletMarkerOptions {
   clusterIconUrl: string;
   completed: boolean;
   markerKey: string;
 }
 
-export class LExtendedMarker extends Marker {
+export class LExtendedMarker extends LeafletMarker {
   clusterIconUrl: string;
   completed: boolean;
   markerKey: string;

@@ -7,7 +7,7 @@ import _ from 'lodash';
 import LocalizedStrings, { GlobalStrings } from 'react-localization';
 
 import { LocalizedString } from '~/components/Types';
-import { importFromContext } from '~/components/Util';
+import { importFromContext } from '~/components/util';
 
 /**
  * The path, relative to ./data/i18n/, of the default locale code's language file.

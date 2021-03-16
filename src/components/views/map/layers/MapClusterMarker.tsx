@@ -1,19 +1,28 @@
-import { Marker, MarkerCluster, Point, divIcon } from 'leaflet';
-// Its very presence changes the behavior of L.
-import 'leaflet.markercluster';
+// The fact that this is imported adds MarkerCluster to 'leaflet'.
+import 'packages/@types/leaflet.markercluster';
+import {
+  divIcon as LeafletDivIcon,
+  Marker as LeafletMarker,
+  MarkerCluster as LeafletMarkerCluster,
+  MarkerClusterGroup as LeafletMarkerClusterGroup,
+  Point,
+} from 'leaflet';
+
 import _ from 'lodash';
-import React, { ReactElement } from 'react';
+import React, { forwardRef, ReactNode } from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { useMap } from 'react-leaflet';
-import MarkerClusterGroup from 'react-leaflet-markercluster';
+import MarkerClusterGroup from 'react-leaflet-cluster';
 
 import { LExtendedMarker } from '~/components/views/map/layers/ExtendedMarker';
 
-export const offClusterFunction = (_zoom: number): number => {
+export type MapClusterFunction = (zoom: number) => number;
+
+export const offClusterFunction: MapClusterFunction = (_zoom) => {
   return 0; // Don't cluster.
 };
 
-export const variableClusterFunction = (zoom: number): number => {
+export const variableClusterFunction: MapClusterFunction = (zoom) => {
   // Use variable clustering based on zoom level.
   switch (zoom) {
     case 10:
@@ -32,13 +41,13 @@ export const variableClusterFunction = (zoom: number): number => {
   }
 };
 
-export const onClusterFunction = (_zoom: number): number => {
+export const onClusterFunction: MapClusterFunction = (_zoom) => {
   return 24;
 };
 
 const CLUSTER_MARKER_ICON = require('~/images/icons/marker/marker_blue_bg.svg').default;
 
-const createClusterIcon = (cluster: MarkerCluster): L.DivIcon => {
+const createClusterIcon = (cluster: LeafletMarkerCluster): L.DivIcon => {
   const childMarkers = cluster.getAllChildMarkers() as LExtendedMarker[];
   const childCount = childMarkers.length;
   // For each cluster child element, check if completed = true; if so, add to the count.
@@ -60,7 +69,7 @@ const createClusterIcon = (cluster: MarkerCluster): L.DivIcon => {
 
   const iconSize = 36 + childCount / 3;
 
-  return divIcon({
+  return LeafletDivIcon({
     html: iconHTML,
     className: 'map-marker-cluster',
     iconSize: [iconSize, iconSize], // size of the icon
@@ -69,55 +78,57 @@ const createClusterIcon = (cluster: MarkerCluster): L.DivIcon => {
   });
 };
 
-const MapClusterMarker = ({
-  children,
-  clusterFunction = offClusterFunction,
-}: {
-  children: any;
+interface MapClusterMarkerProps {
+  children?: ReactNode;
   clusterFunction: (zoom: number) => number;
-}): ReactElement => {
-  const map = useMap();
+}
 
-  const generateSpiderPoints = (
-    childMarkerCount: number,
-    _centerPoint: Point,
-    childMarkers: Marker[]
-  ) => {
-    const result = [];
+const MapClusterMarker = forwardRef<LeafletMarkerClusterGroup, MapClusterMarkerProps>(
+  ({ children = null, clusterFunction = offClusterFunction }, ref) => {
+    const map = useMap();
 
-    result.length = childMarkerCount;
+    const generateSpiderPoints = (
+      childMarkerCount: number,
+      _centerPoint: Point,
+      childMarkers: LeafletMarker[]
+    ): Point[] => {
+      const result = [];
 
-    for (let i = childMarkerCount - 1; i >= 0; i -= 1) {
-      // console.log(childMarkers[i]._latlng);
-      const childCenter = map.latLngToLayerPoint(childMarkers[i].getLatLng());
-      result[i] = new Point(childCenter.x, childCenter.y);
-    }
+      result.length = childMarkerCount;
 
-    return result;
-  };
+      for (let i = childMarkerCount - 1; i >= 0; i -= 1) {
+        // console.log(childMarkers[i]._latlng);
+        const childCenter = map.latLngToLayerPoint(childMarkers[i].getLatLng());
+        result[i] = new Point(childCenter.x, childCenter.y);
+      }
 
-  return (
-    <MarkerClusterGroup
-      disableClusteringAtZoom={8}
-      iconCreateFunction={createClusterIcon}
-      maxClusterRadius={clusterFunction}
-      // Configure how the coverage line is displayed.
-      polygonOptions={{
-        color: '#008E8A',
-        weight: 3,
-        dashArray: '8',
-        fillOpacity: 0.4,
-      }}
-      showCoverageOnHover
-      singleMarkerMode={false}
-      spiderfyOnEveryZoom // Spiderfy on click (all zoom levels)
-      spiderfyShapePositions={generateSpiderPoints}
-      zoomToBoundsOnClick={false}
-      chunkedLoading // Split the addLayers processing in to small intervals so that the page does not freeze.
-    >
-      {children}
-    </MarkerClusterGroup>
-  );
-};
+      return result;
+    };
+
+    return (
+      <MarkerClusterGroup
+        ref={ref}
+        disableClusteringAtZoom={8}
+        iconCreateFunction={createClusterIcon}
+        maxClusterRadius={clusterFunction}
+        // Configure how the coverage line is displayed.
+        polygonOptions={{
+          color: '#008E8A',
+          weight: 3,
+          dashArray: '8',
+          fillOpacity: 0.4,
+        }}
+        showCoverageOnHover
+        singleMarkerMode={false}
+        spiderfyOnEveryZoom // Spiderfy on click (all zoom levels)
+        spiderfyShapePositions={generateSpiderPoints}
+        zoomToBoundsOnClick={false}
+        chunkedLoading // Split the addLayers processing in to small intervals so that the page does not freeze.
+      >
+        {children}
+      </MarkerClusterGroup>
+    );
+  }
+);
 
 export default MapClusterMarker;

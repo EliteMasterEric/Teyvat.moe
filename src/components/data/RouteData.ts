@@ -4,7 +4,7 @@
 import _ from 'lodash';
 
 import { MSFRouteGroup, validateRouteData } from '~/components/data/ElementSchema';
-import { importFromContext, isDev } from '~/components/Util';
+import { importFromContext, isDev } from '~/components/util';
 
 const routesContext = require.context('../../data/routes/', true, /.json$/);
 export const listRouteFiles = (): string[] => routesContext.keys();

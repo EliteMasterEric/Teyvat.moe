@@ -12,38 +12,39 @@ import {
   makeStyles,
   useTheme,
 } from '@material-ui/core';
-import React, { ReactElement } from 'react';
+import React, { useRef, useEffect, ReactElement, FunctionComponent } from 'react';
 
-import { LocalizedString } from '~/components/i18n/Localization';
-import { Opaque } from '~/components/Types';
-import { CloneProps, useDebouncedState } from '~/components/Util';
+import { LocalizedString, Opaque } from '~/components/Types';
+import { CloneProps, useDebouncedState } from '~/components/util';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
 }));
 
-type TabValue = Opaque<'TabValue', string>;
+export type TabValue = Opaque<'TabValue', string>;
 export interface Tab {
   enabled: boolean;
   label: LocalizedString;
   value: TabValue;
   order: number;
-  icon: ReactElement;
+  icon?: ReactElement; // Icon may be blank.
+}
+
+interface TabViewProps {
+  children: React.ReactNode;
+  displayed: boolean;
+  grow?: boolean;
 }
 
 /**
  * A box view that can easily be hidden.
  */
-export const TabView = ({
+export const TabView: FunctionComponent<TabViewProps> = ({
   children,
   displayed,
   grow = false,
   ...other
-}: {
-  children: React.ReactNode;
-  displayed: boolean;
-  grow: boolean;
-}): ReactElement => {
+}) => {
   return (
     <Box
       display={displayed ? 'flex' : 'none'}
@@ -69,37 +70,38 @@ const sortByOrder = (array: Tab[]) => {
   });
 };
 
-/**
- * Debounced tab bar.
- * @param {*} tabs: {label: 'About', value: 'about', order: 0, enabled: true}
- * @param {String} scroll: 'auto', 'desktop', 'on', 'off'
- */
-export const TabBar = ({
-  displayed = true,
-  scroll = 'auto',
-  icons = false,
-  tabs,
-  value,
-  onChange,
-  ...other
-}: {
-  scroll: 'auto' | 'on' | 'off' | 'desktop';
+type TabBarProps = Omit<React.ComponentProps<typeof MaterialTabs>, 'onChange'> & {
   displayed: boolean;
   icons: boolean;
   tabs: Tab[];
   value: TabValue;
   onChange: (value: TabValue) => void;
-}): ReactElement => {
+};
+
+/**
+ * Debounced tab bar.
+ * @param {*} tabs: {label: 'About', value: 'about', order: 0, enabled: true}
+ * @param {String} scroll: 'auto', 'desktop', 'on', 'off'
+ */
+export const TabBar: FunctionComponent<TabBarProps> = ({
+  displayed = true,
+  scrollButtons = 'auto',
+  icons = false,
+  tabs,
+  value,
+  onChange,
+  ...other
+}) => {
   const classes = useStyles();
 
-  const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
+  const [currentValue, setCurrentValue] = useDebouncedState<TabValue>(value, onChange);
 
   const sortedTabs = sortByOrder(tabs);
 
   // Fix indicator breaking when tabs dynamically change.
   const theme = useTheme();
-  const actionRef = React.useRef<TabsActions | null>(null);
-  React.useEffect(() => {
+  const actionRef = useRef<TabsActions | null>(null);
+  useEffect(() => {
     const timeout = setTimeout(() => {
       if (actionRef?.current) {
         actionRef?.current.updateIndicator();
@@ -120,7 +122,7 @@ export const TabBar = ({
       onChange={(_event, newValue) => setCurrentValue(newValue)}
       centered
       variant="fullWidth"
-      scrollButtons={scroll}
+      scrollButtons={scrollButtons}
       indicatorColor="primary"
       textColor="primary"
       {...other}

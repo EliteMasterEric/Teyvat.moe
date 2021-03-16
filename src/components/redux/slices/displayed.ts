@@ -7,7 +7,7 @@ import _ from 'lodash';
 
 import { MSFFeatureKey, MSFRouteGroupKey } from '~/components/data/ElementSchema';
 import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { CLEAR_PREFERENCES } from '~/components/redux/actions';
+import { clearPreferences, setPreferences } from '~/components/redux/actions';
 import { AppState } from '~/components/redux/types';
 
 export type DisplayedState = GenshinMapPreferencesLatest['displayed'];
@@ -52,19 +52,25 @@ export const displayedSlice = createSlice({
       state.features[action.payload] =
         state.features[action.payload] === undefined ? true : !state.features[action.payload];
     },
-    setRouteDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
+    setRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
       state.routes[action.payload] = true;
     },
-    clearRouteDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
+    clearRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
       state.routes[action.payload] = false;
     },
-    toggleRouteDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
+    toggleRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
       state.routes[action.payload] =
         state.routes[action.payload] === undefined ? true : !state.routes[action.payload];
     },
   },
   extraReducers: {
-    [CLEAR_PREFERENCES.toString()]: () => {
+    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+      return {
+        ...state,
+        ...action.payload.displayed,
+      };
+    },
+    [clearPreferences.toString()]: () => {
       // Reset to the default state.
       return initialState;
     },
@@ -75,19 +81,19 @@ export const {
   setFeatureDisplayed,
   clearFeatureDisplayed,
   toggleFeatureDisplayed,
-  setRouteDisplayed,
-  clearRouteDisplayed,
-  toggleRouteDisplayed,
+  setRouteGroupDisplayed,
+  clearRouteGroupDisplayed,
+  toggleRouteGroupDisplayed,
 } = displayedSlice.actions;
 
 /**
  * Convenience function to retrieve a given value from the root state.
  * @param state
  */
-export const selectDisplayedFeatures = (state: AppState): string[] =>
-  _.keys(_.pickBy(state.displayed.features, (value) => value));
-export const selectDisplayedRouteGroups = (state: AppState): string[] =>
-  _.keys(_.pickBy(state.displayed.routes, (value) => value));
+export const selectDisplayedFeatures = (state: AppState): MSFFeatureKey[] =>
+  _.keys(_.pickBy(state.displayed.features, (value) => value)) as MSFFeatureKey[];
+export const selectDisplayedRouteGroups = (state: AppState): MSFRouteGroupKey[] =>
+  _.keys(_.pickBy(state.displayed.routes, (value) => value)) as MSFRouteGroupKey[];
 export const selectIsFeatureDisplayed = (state: AppState, featureKey: MSFFeatureKey): boolean =>
   state.displayed.features?.[featureKey] ?? false;
 export const selectIsRouteGroupDisplayed = (state: AppState, routeKey: MSFRouteGroupKey): boolean =>

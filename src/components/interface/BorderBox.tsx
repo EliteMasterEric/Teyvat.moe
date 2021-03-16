@@ -2,9 +2,9 @@
  * Provides a component to display a simple flex box with a stylized border.
  */
 
-import { Box, makeStyles } from '@material-ui/core';
+import { Box, BoxProps, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
-import React, { ReactElement } from 'react';
+import React, { FunctionComponent } from 'react';
 
 import { useImageExtension } from '~/components/interface/Image';
 
@@ -21,11 +21,21 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
+interface BorderBoxProps extends Partial<BoxProps> {
+  children: React.ReactNode;
+  displayed?: boolean;
+  direction?: 'column' | 'row';
+  grow?: boolean;
+  wrap?: boolean;
+  image?: any;
+  className?: string;
+}
+
 /**
  * Display a flex box with a fancy border.
  * @param {*} param0
  */
-const BorderBox = ({
+const BorderBox: FunctionComponent<BorderBoxProps> = ({
   children,
   displayed = true,
   direction = 'column',
@@ -34,15 +44,7 @@ const BorderBox = ({
   image = null,
   className = null,
   ...other
-}: {
-  children: React.ReactNode;
-  displayed: boolean;
-  direction: 'column' | 'row';
-  grow: boolean;
-  wrap: boolean;
-  image: null | any;
-  className: null | string;
-}): ReactElement => {
+}) => {
   const ext = useImageExtension();
 
   const borderBoxImage = ext === 'webp' ? BorderBoxImageWEBP : BorderBoxImagePNG;

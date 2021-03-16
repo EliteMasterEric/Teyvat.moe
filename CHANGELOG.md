@@ -1049,3 +1049,17 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 -   Remove Geoculus (TEST) feature.
 -   Fixed a bug where markers would display a PNG image instead of a WebP image.
+
+# 0.12.0 TypeScript Overhaul
+
+-   Migrated from React to Preact.
+    -   This should reduce the bundle size and improve performance.
+-   Migrated the entire project to TypeScript.
+    -   This should help in improving stability and reducing bugs.
+-   Reworked internal state storage to use Redux Toolkit. It is now more structured and easier to maintain.
+-   Improved performance when showing or hiding features.
+-   Removed attribution link in the bottom left corner.
+-   [ ] Fix bugged deletion of route vertexes (clicking)
+-   [ ] Replace ): ReactElement with FunctionComponent&lt;>
+-   [ ] Make all images use scroll position
+-   [ ] Improve ARIA/Accessibility/tab navigation

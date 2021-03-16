@@ -5,30 +5,34 @@
  * multiple costly state changes, resulting in performance issues.
  */
 
-import React, { ReactElement } from 'react';
 import {
   FormControlLabel,
   Slider as MaterialSlider,
   Switch as MaterialSwitch,
   TextField as MaterialTextField,
+  SwitchProps,
+  TextFieldProps,
 } from '@material-ui/core';
+import React, { FunctionComponent, ReactElement } from 'react';
 
-import { useDebouncedState } from '~/components/Util';
+import { useDebouncedState } from '~/components/util';
+
+interface InputTextFieldProps extends Omit<TextFieldProps, 'onChange'> {
+  value?: string;
+  onChange: (input: string) => void;
+  errorText?: string;
+}
 
 /**
  * A debounced text field.
  */
-export const InputTextField = ({
-  value,
+export const InputTextField: FunctionComponent<InputTextFieldProps> = ({
+  value = '',
   onChange,
-  errorText,
+  errorText = '',
   ...others
-}: {
-  value: string;
-  onChange: (input: string) => void;
-  errorText: string;
-}): ReactElement => {
-  const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
+}) => {
+  const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
 
   return (
     <MaterialTextField
@@ -36,48 +40,54 @@ export const InputTextField = ({
       onChange={(event) => setCurrentValue(event.target.value)}
       error={errorText !== undefined}
       helperText={errorText ?? ''}
+      variant={'outlined'}
       {...others}
     />
   );
 };
 
+interface InputTextAreaProps extends Omit<TextFieldProps, 'onChange'> {
+  value: string;
+  onChange: (value: string) => void;
+  rows?: number;
+}
+
 /**
  * A debounced text area.
  */
-export const InputTextArea = ({
+export const InputTextArea: FunctionComponent<InputTextAreaProps> = ({
   value,
   onChange,
   rows = 10,
   ...others
-}: {
-  value: string;
-  onChange: (value: string) => void;
-  rows: number;
-}): ReactElement => {
-  const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
+}) => {
+  const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
 
   return (
     <MaterialTextField
       multiline
       rows={rows}
       value={currentValue}
+      variant={'outlined'}
       onChange={(event) => setCurrentValue(event.target.value)}
       {...others}
     />
   );
 };
 
+type InputSliderProps = React.ComponentProps<typeof MaterialSlider> & {
+  value: number;
+  onChange: (value: number) => void;
+};
+
 /**
  * A debounced slider.
  */
-export const InputSlider = ({
+export const InputSlider: FunctionComponent<InputSliderProps> = ({
   value,
   onChange,
   ...others
-}: {
-  value: number;
-  onChange: (value: number) => void;
-}): ReactElement => {
+}) => {
   // Maintains the current state of the slider.
   // If the slider has gone a period without changing,
   // onChange will be called to propage the change to the local storage.
@@ -94,25 +104,27 @@ export const InputSlider = ({
   return <MaterialSlider value={currentValue} onChange={setInternalValue} {...others} />;
 };
 
+type InputSwitchProps = {
+  value: boolean;
+  onChange: (value: boolean) => void;
+  label: string | ReactElement;
+  labelPlacement?: 'start' | 'end' | 'top' | 'bottom';
+} & SwitchProps;
+
 /**
  * A debounced switch.
  */
-export const InputSwitch = ({
+export const InputSwitch: FunctionComponent<InputSwitchProps> = ({
   value = false,
   onChange,
   label = null,
   labelPlacement = 'start',
   ...others
-}: {
-  value: boolean;
-  onChange: (value: boolean) => void;
-  label: string;
-  labelPlacement: 'start' | 'end' | 'top' | 'bottom';
-}): ReactElement => {
+}) => {
   // Maintains the current state of the switch.
   // If the switch has gone a period without changing,
   // onChange will be called to propage the change to the local storage.
-  const [currentValue, setCurrentValue] = useDebouncedState(value, onChange);
+  const [currentValue, setCurrentValue] = useDebouncedState<boolean>(value, onChange);
 
   const control = (
     <MaterialSwitch

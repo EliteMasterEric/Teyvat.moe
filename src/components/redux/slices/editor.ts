@@ -6,11 +6,12 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
 import { MSFMarkerID, MSFRouteID } from '~/components/data/ElementSchema';
+import { MapCategoryKey } from '~/components/data/MapCategories';
+import { MapRegionKey } from '~/components/data/MapRegions';
 import { EditorMarker, EditorRoute } from '~/components/preferences/EditorDataSchema';
 import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { CLEAR_PREFERENCES } from '~/components/redux/actions';
+import { clearPreferences, setPreferences } from '~/components/redux/actions';
 import { AppState } from '~/components/redux/types';
-import { MapCategory, MapRegion } from '~/components/Types';
 
 export type EditorState = GenshinMapPreferencesLatest['editor'];
 
@@ -24,16 +25,24 @@ export const initialState: EditorState = {
   },
 };
 
-// Define a type using that initial state.
-
-type MarkerEditAction = {
+type MarkerReplaceAction = {
   existingId: MSFMarkerID;
   newMarker: EditorMarker;
 };
+type MarkerEditAction = {
+  existingId: MSFMarkerID;
+  markerProperty: string; // TODO: Validate this?;
+  propertyValue: any;
+};
 
-type RouteEditAction = {
+type RouteReplaceAction = {
   existingId: MSFRouteID;
   newRoute: EditorRoute;
+};
+type RouteEditAction = {
+  existingId: MSFRouteID;
+  routeProperty: string; // TODO: Validate this?
+  propertyValue: any;
 };
 
 export const editorSlice = createSlice({
@@ -45,34 +54,64 @@ export const editorSlice = createSlice({
     setFeatureName: (state, action: PayloadAction<string>) => {
       state.feature.name = action.payload;
     },
-    setFeatureCategory: (state, action: PayloadAction<MapCategory>) => {
+    setFeatureCategory: (state, action: PayloadAction<MapCategoryKey>) => {
       state.feature.category = action.payload;
     },
-    setFeatureRegion: (state, action: PayloadAction<MapRegion>) => {
+    setFeatureRegion: (state, action: PayloadAction<MapRegionKey>) => {
       state.feature.region = action.payload;
     },
     clearElements: (state) => {
       state.feature.data = [];
     },
-    editMarker: {
-      prepare: (key, marker) => {
-        return { payload: { existingId: key, newMarker: marker } };
+    replaceMarker: {
+      prepare: (id, marker) => {
+        return { payload: { existingId: id, newMarker: marker } };
       },
-      reducer: (state, action: PayloadAction<MarkerEditAction>) => {
+      reducer: (state, action: PayloadAction<MarkerReplaceAction>) => {
         state.feature.data = state.feature.data.map((marker) =>
           marker.id === action.payload.existingId ? action.payload.newMarker : marker
         );
       },
     },
-    editRoute: {
-      prepare: (key, route) => {
-        return { payload: { existingId: key, newRoute: route } };
+    editMarker: {
+      prepare: (id: MSFMarkerID, property: string, value) => {
+        return { payload: { existingId: id, markerProperty: property, propertyValue: value } };
       },
-      reducer: (state, action: PayloadAction<RouteEditAction>) => {
+      reducer: (state, action: PayloadAction<MarkerEditAction>) => {
+        _.forEach(state.feature.data, (marker) => {
+          if (marker.id === action.payload.existingId) {
+            _.set(marker, action.payload.markerProperty, action.payload.propertyValue);
+          }
+        });
+      },
+    },
+    replaceRoute: {
+      prepare: (id: MSFRouteID, route: EditorRoute) => {
+        return { payload: { existingId: id, newRoute: route } };
+      },
+      reducer: (state, action: PayloadAction<RouteReplaceAction>) => {
         state.feature.data = state.feature.data.map((route) =>
           route.id === action.payload.existingId ? action.payload.newRoute : route
         );
       },
+    },
+    editRoute: {
+      prepare: (id: MSFRouteID, property: string, value) => {
+        return { payload: { existingId: id, routeProperty: property, propertyValue: value } };
+      },
+      reducer: (state, action: PayloadAction<RouteEditAction>) => {
+        _.forEach(state.feature.data, (route) => {
+          if (route.id === action.payload.existingId) {
+            _.set(route, action.payload.routeProperty, action.payload.propertyValue);
+          }
+        });
+      },
+    },
+    removeMarker: (state, action: PayloadAction<MSFMarkerID>) => {
+      state.feature.data = _.filter(state.feature.data, (element) => element.id !== action.payload);
+    },
+    removeRoute: (state, action: PayloadAction<MSFRouteID>) => {
+      state.feature.data = _.filter(state.feature.data, (element) => element.id !== action.payload);
     },
     appendMarker: (state, action: PayloadAction<EditorMarker>) => {
       state.feature.data.push(action.payload);
@@ -82,24 +121,44 @@ export const editorSlice = createSlice({
     },
   },
   extraReducers: {
-    [CLEAR_PREFERENCES.toString()]: () => {
+    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+      return {
+        ...state,
+        ...action.payload.editor,
+      };
+    },
+    [clearPreferences.toString()]: () => {
       // Reset to the default state.
       return initialState;
     },
   },
 });
 
-export const { setFeatureName, setFeatureCategory, setFeatureRegion } = editorSlice.actions;
+export const {
+  setFeatureName,
+  setFeatureCategory,
+  setFeatureRegion,
+  clearElements,
+  replaceMarker,
+  replaceRoute,
+  removeMarker,
+  removeRoute,
+  appendMarker,
+  appendRoute,
+  editMarker,
+  editRoute,
+} = editorSlice.actions;
 
 /**
  * Convenience function to retrieve a given value from the root state.
  * @param state
  */
-export const selectFeatureName = (state: AppState): string => state.editor.feature.name;
-export const selectFeatureCategory = (state: AppState): MapCategory =>
+export const selectEditorFeatureName = (state: AppState): string => state.editor.feature.name;
+export const selectEditorFeatureCategory = (state: AppState): MapCategoryKey =>
   state.editor.feature.category;
-export const selectFeatureRegion = (state: AppState): MapRegion => state.editor.feature.region;
-export const selectFeatureData = (state: AppState): (EditorMarker | EditorRoute)[] =>
+export const selectEditorFeatureRegion = (state: AppState): MapRegionKey =>
+  state.editor.feature.region;
+export const selectEditorFeatureData = (state: AppState): (EditorMarker | EditorRoute)[] =>
   state.editor.feature.data;
 
 export default editorSlice.reducer;

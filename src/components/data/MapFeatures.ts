@@ -6,26 +6,31 @@
 
 import _ from 'lodash';
 
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from '~/components/data//MapCategories';
+import { isRegionKey, MapRegionKey } from '~/components/data//MapRegions';
 import { MSFFeatureExtended, MSFFeatureKey } from '~/components/data/ElementSchema';
 import { listFeatureFiles, loadFeature } from '~/components/data/FeatureData';
-import { MapCategory, MapRegion } from '~/components/Types';
-
-import MapCategories from '~/data/core/categories.json';
+import { filterNotEmpty } from '~/components/util';
 
 /**
  * Metadata regarding the map features.
  * Imported directly by listing the files from the Features folder.
  */
-export const MapFeatures: Record<MSFFeatureKey, MSFFeatureExtended> = _.fromPairs(
+const MapFeatures = _.fromPairs(
   listFeatureFiles()
     .map((relativePath) => {
-      const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
       const baseFeatureData = loadFeature(relativePath);
       if (baseFeatureData == null) return null; // Validation failed.
 
-      // crystal-chunk -> CrystalChunk
-      const correctedName = featureName
-        .split('.')[0] // Remove file extension.
+      const [_dot, featureRegion, featureCategory, featureName] = relativePath.split('/');
+      if (featureName == undefined) return null; // Invalid file name.
+      if (featureRegion == undefined || !isRegionKey(featureRegion)) return null;
+      if (featureCategory == undefined || !isCategoryKey(featureCategory)) return null;
+
+      const splitFeatureName = featureName.split('.');
+      if (splitFeatureName == undefined || splitFeatureName[0] == undefined) return null;
+
+      const correctedName = splitFeatureName[0] // Remove file extension.
         .split('-') // Break by words.
         .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
         .join(''); // Rejoin.
@@ -33,26 +38,36 @@ export const MapFeatures: Record<MSFFeatureKey, MSFFeatureExtended> = _.fromPair
       // CrystalChunk -> mondstadtCrystalChunk
       const fullName = `${featureRegion}${correctedName}`; // Prefix with region.
 
-      const featureData = {
+      const featureData: MSFFeatureExtended = {
         ...baseFeatureData,
-        key: fullName,
-        region: featureRegion,
-        category: featureCategory,
+        key: fullName as MSFFeatureKey,
+        region: featureRegion as MapRegionKey,
+        category: featureCategory as MapCategoryKey,
       };
 
-      return [fullName, featureData];
+      const result: [string, MSFFeatureExtended] = [fullName, featureData];
+
+      return result;
     })
-    .filter((value) => value) // Filter out nullable values
+    .filter(filterNotEmpty)
 );
+export const getMapFeature = (key: MSFFeatureKey): MSFFeatureExtended => {
+  const result = MapFeatures[key] ?? null;
+  if (result == null) throw Error(`Invalid map feature key ${key}`);
+  return result;
+};
+export const MapFeatureKeys = _.keys(MapFeatures) as MSFFeatureKey[];
 
 /**
  * For a given region, returns a map of a category key and a boolean value,
  * false if it contains at least one valid displayed route.
- * @param {*} region
+ * @param region
  */
-export const getEmptyFeatureCategories = (regionKey: MapRegion): Record<MapCategory, boolean> =>
-  _.fromPairs(
-    _.map(_.keys(MapCategories) as MapCategory[], (categoryKey) => {
+export const getEmptyFeatureCategories = (
+  regionKey: MapRegionKey
+): Record<MapCategoryKey, boolean> => {
+  const result = _.fromPairs(
+    _.map(MapCategoryKeys, (categoryKey) => {
       return [
         categoryKey,
         _.find(_.values(MapFeatures) as MSFFeatureExtended[], (mapFeature: MSFFeatureExtended) => {
@@ -64,28 +79,33 @@ export const getEmptyFeatureCategories = (regionKey: MapRegion): Record<MapCateg
         }) == undefined,
       ];
     })
-  ) as Record<MapCategory, boolean>;
+  ) as Record<MapCategoryKey, boolean>;
+  return result;
+};
 
-export const getFeatureKeysByFilter = (region: MapRegion, category: MapCategory): string[] => {
-  return _.keys(MapFeatures).filter((key) => {
-    const feature = MapFeatures[key];
+export const getFeatureKeysByFilter = (
+  region: MapRegionKey,
+  category: MapCategoryKey
+): MSFFeatureKey[] => {
+  return MapFeatureKeys.filter((key) => {
+    const feature = getMapFeature(key);
     return feature?.region === region && feature?.category === category && feature?.enabled;
   });
 };
 
-export const sortFeaturesByName = (data: string[]): string[] =>
+export const sortFeaturesByName = (data: MSFFeatureKey[]): MSFFeatureKey[] =>
   data.sort((a, b) => {
     // Sort the features alphabetically.
-    const textA = MapFeatures?.[a]?.name;
-    const textB = MapFeatures?.[b]?.name;
+    const textA = getMapFeature(a).name;
+    const textB = getMapFeature(b).name;
 
     if (textA < textB) return -1;
     return textA > textB ? 1 : 0;
   });
 
 export const getMarkerCount = (): number => {
-  return Object.keys(MapFeatures).reduce((sum, key, _index) => {
-    const feature = MapFeatures[key];
+  return MapFeatureKeys.reduce((sum, key, _index) => {
+    const feature = getMapFeature(key);
     return sum + feature.data.length;
   }, 0);
 };

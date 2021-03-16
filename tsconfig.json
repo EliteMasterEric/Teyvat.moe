@@ -89,6 +89,25 @@
     "noImplicitThis": true,
 
     /**
+     * Require all project files be either TS or TSX files.
+     */
+     "allowJs": false,
+     /**
+      * Require any nullable types to be explicitly defined as such.
+      */
+     "strictNullChecks": true,
+     /**
+     * Force all function parameters to have types.
+     * Setting the type to 'any' is allowed but must be explicitly chosen.
+     */
+    "noImplicitAny": true,
+
+    /**
+     * Raises an error when a property is defined in a class but not initialized in the constructor.
+     */
+     "strictPropertyInitialization": true,
+
+    /**
      * The baseUrl configuration option allows you to import
      * directly from the root of the project.
      */
@@ -97,35 +116,15 @@
       "~/*": ["src/*"],
     },
 
-    /**
-     * TO ENABLE:
-     * Enable these one at a time to improve application type safety.
-     */ 
+    "typeRoots": ["./node_modules/@types", "./packages/@types"],
 
-
-    /**
-     * Set to false to require all project files be either TS or TSX files.
-     */
-    "allowJs": true,
-    /**
-     * Set to true to require any nullable types to be explicitly defined as such.
-     */
-    "strictNullChecks": false,
     /**
      * Set to true to require accessing values of dynamically named properties
      * using indexed syntax, and disallowing dot syntax.
      * Added in TypeScript v4.2.
      */
     // "noPropertyAccessFromIndexSignature": true,
-    /**
-     * Set to true to force all function parameters to have types.
-     * Setting the type to 'any' is allowed but must be explicitly chosen.
-     */
-    "noImplicitAny": false,
-    /**
-     * Raises an error when a property is defined in a class but not initialized in the constructor.
-     */
-     "strictPropertyInitialization": false,
+
   },
   /**
    * The file globs to import.

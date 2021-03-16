@@ -5,10 +5,12 @@
 
 // Importing these libraries changes the behavior of leaflet to include new functions.
 // import 'leaflet.pattern';
-import React from 'react';
+import type { GeoJsonObject } from 'geojson';
+import { GeoJSON as GeoJSONLeaflet } from 'leaflet';
+import React, { useEffect, useRef } from 'react';
 import { GeoJSON, useMap } from 'react-leaflet';
 import { connect } from 'react-redux';
-import type { GeoJsonObject } from 'geojson';
+import { selectWorldBorderEnabled } from '~/components/redux/slices/options';
 
 const WorldBorderData: GeoJsonObject = require('~/data/core/world-border.json');
 
@@ -40,11 +42,21 @@ const _WorldBorderLayer = ({ displayed }) => {
   // through the use of a custom hook.
   const mapCurrent = useMap();
 
-  // TODO: We destroy the layer if it's hidden. Is there a more performant way?
-  if (!displayed) return null;
+  const layerRef = useRef<GeoJSONLeaflet>(undefined);
+
+  useEffect(() => {
+    if (typeof layerRef.current !== 'undefined') {
+      if (displayed) {
+        layerRef.current.addTo(mapCurrent);
+      } else {
+        layerRef.current.removeFrom(mapCurrent);
+      }
+    }
+  }, [mapCurrent, displayed]);
 
   return (
     <GeoJSON
+      ref={layerRef}
       // If the zoom level changes, the world border should reload.
       key={mapCurrent.getZoom()}
       style={{
@@ -59,9 +71,9 @@ const _WorldBorderLayer = ({ displayed }) => {
 };
 
 const mapStateToProps = (state) => ({
-  displayed: state.options.worldBorderEnabled,
+  displayed: selectWorldBorderEnabled(state),
 });
-const mapDispatchToProps = (_dispatch) => ({});
+const mapDispatchToProps = () => ({});
 const WorldBorderLayer = connect(mapStateToProps, mapDispatchToProps)(_WorldBorderLayer);
 
 export default WorldBorderLayer;

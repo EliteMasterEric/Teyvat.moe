@@ -93,13 +93,16 @@ module.exports = {
      * 6. "index" of the current directory
      * 7. "object"-imports (only available in TypeScript)
      */
-    'import/order': ['warn', {}],
-    'sort-imports': [
-      'error',
+    'import/order': [
+      'warn',
       {
-        ignoreDeclarationSort: true,
+        alphabetize: {
+          order: 'asc' /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */,
+          caseInsensitive: true /* ignore case. Options: [true, false] */,
+        },
       },
     ],
+    // 'sort-imports': [ 'error', { ignoreDeclarationSort: true, }, ],
 
     /**
      * Prohibit imports via relative paths.

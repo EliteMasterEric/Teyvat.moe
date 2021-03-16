@@ -4,7 +4,7 @@
 import _ from 'lodash';
 
 import { MSFFeature, validateFeatureData } from '~/components/data/ElementSchema';
-import { importFromContext, isDev } from '~/components/Util';
+import { importFromContext, isDev } from '~/components/util';
 
 const featuresContext = require.context('~/data/features/', true, /.json$/);
 export const listFeatureFiles = (): string[] => featuresContext.keys();

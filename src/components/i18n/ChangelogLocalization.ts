@@ -7,7 +7,7 @@ import _ from 'lodash';
 
 import { ChangelogData } from '~/components/data/ChangelogSchema';
 import { DEFAULT_LOCALE_CODE } from '~/components/i18n/Localization';
-import { importFromContext } from '~/components/Util';
+import { importFromContext } from '~/components/util';
 
 /**
  * The require context referencing all the localization files.

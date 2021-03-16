@@ -1,0 +1,9 @@
+{
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"dbaeumer.vscode-eslint", // ESLint - Code Linting for JS/TS
+		"esbenp.prettier-vscode", // Prettier - Style Linting for JS/TS
+		"mrmlnc.vscode-remark", // Remark - Lint
+		"sonarsource.sonarlint-vscode", // SonarLint - Code Smell Detection
+	]
+}

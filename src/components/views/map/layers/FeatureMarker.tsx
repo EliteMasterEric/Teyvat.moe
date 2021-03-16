@@ -1,22 +1,32 @@
 import { Box, IconButton, Tooltip, Typography, makeStyles } from '@material-ui/core';
 import { AssignmentTurnedIn as AssignmentTurnedInIcon, Link as LinkIcon } from '@material-ui/icons';
-import type { LeafletEventHandlerFn } from 'leaflet';
-import React from 'react';
+import type { LeafletEvent, LeafletEventHandlerFn } from 'leaflet';
+import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 
-import { YOUTUBE_REGEX } from '~/components/data/ElementSchema';
+import {
+  MSFFeatureExtended,
+  MSFFeatureKey,
+  MSFMarker,
+  MSFMarkerKey,
+  YOUTUBE_REGEX,
+} from '~/components/data/ElementSchema';
 import { createClusterIcon, createMapIcon } from '~/components/data/FeatureIcon';
-import { f, formatUnixTimestamp, t } from '~/components/i18n/Localization';
 import { localizeField } from '~/components/i18n/FeatureLocalization';
+import { f, formatUnixTimestamp, t } from '~/components/i18n/Localization';
 import { Image, useImageExtension } from '~/components/interface/Image';
 import { InputSwitch } from '~/components/interface/Input';
 import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
+import { AppDispatch } from '~/components/redux';
 import {
-  clearFeatureMarkerCompleted,
-  setFeatureMarkerCompleted,
-} from '~/components/redux/ducks/completed';
-import { SafeHTML } from '~/components/Util';
+  clearMarkerCompleted,
+  selectMarkerCompleted,
+  setMarkerCompleted,
+} from '~/components/redux/slices/completed';
+import { selectCompletedAlpha } from '~/components/redux/slices/options';
+import { AppState } from '~/components/redux/types';
+import { SafeHTML } from '~/components/util';
 import { ExtendedMarker } from '~/components/views/map/layers/ExtendedMarker';
 import { copyPermalink } from '~/components/views/PermalinkHandler';
 
@@ -101,12 +111,48 @@ const FeatureMedia = ({ media, allowExternalMedia }) => {
   );
 };
 
-const _FeatureMarker = ({
+interface FeatureMarkerBaseProps {
+  marker: MSFMarker;
+  featureKey: MSFFeatureKey;
+  icons: MSFFeatureExtended['icons'];
+  editable?: boolean;
+  allowExternalMedia?: boolean;
+}
+
+const mapStateToProps = (state: AppState, { marker, featureKey }: FeatureMarkerBaseProps) => {
+  const markerKey = `${featureKey}/${marker.id}` as MSFMarkerKey;
+
+  return {
+    completed: selectMarkerCompleted(state, markerKey),
+    completedAlpha: selectCompletedAlpha(state),
+  };
+};
+const mapDispatchToProps = (
+  dispatch: AppDispatch,
+  { marker, featureKey }: FeatureMarkerBaseProps
+) => {
+  const markerKey = `${featureKey}/${marker.id}` as MSFMarkerKey;
+
+  return {
+    markFeature: () => dispatch(setMarkerCompleted(markerKey)),
+    unmarkFeature: () => dispatch(clearMarkerCompleted(markerKey)),
+  };
+};
+const connector = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+  // Don't know why this is needed.
+  (a, b, c) => ({ ...a, ...b, ...c })
+);
+
+type FeatureMarkerProps = ConnectedProps<typeof connector>;
+
+const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   marker,
   featureKey,
   icons,
 
-  completed,
+  completed = undefined,
   completedAlpha,
 
   editable = false,
@@ -124,34 +170,50 @@ const _FeatureMarker = ({
   // Don't render the marker until we know whether to use WebP for the image or not.
   if (!ext) return null;
 
+  let svg = false;
+  let clusterIconName = '';
+
+  if (completed) {
+    // == false sucks but TypeScript needs it.
+    if (icons.done.marker == false) {
+      svg = icons.done.svg ?? false;
+      clusterIconName = icons.done.clusterIcon ?? '';
+    }
+  } else {
+    if (icons.base.marker == false) {
+      svg = icons.base.svg ?? false;
+      clusterIconName = icons.base.clusterIcon ?? '';
+    }
+  }
+
   // Build the icon for this marker. Relies on completion status.
   const icon = createMapIcon({
-    ...(completed ? icons?.done : icons?.base),
-    ext: (completed ? icons?.done?.svg : icons?.base?.svg) ?? false ? 'svg' : ext,
-    key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter,
-    completed,
+    marker: completed ? icons.done.marker : icons.base.marker,
+    done: !!completed,
+    ext: svg ? 'svg' : ext,
+    key: (completed ? icons.done.key : icons.base.key) ?? icons?.filter,
   });
 
   // Build the cluster icon for the marker. Also relies on completion status.
   const clusterIcon = createClusterIcon({
-    ...(completed ? icons?.done : icons?.base),
-    ext: (completed ? icons?.done?.svg : icons?.base?.svg) ?? false ? 'svg' : ext,
+    marker: completed ? icons.done.marker : icons.base.marker,
+    ext: svg ? 'svg' : ext,
     key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter,
-    completed,
+    clusterIcon: clusterIconName,
   });
 
   /**
    * Function which is called when the
    * @param event
    */
-  const onSingleClick = (event) => {
+  const onSingleClick = (event: LeafletEvent) => {
     // Calls on single clicks, not double clicks.
 
     // Trigger the popup to display only on single clicks.
     event.target.openPopup();
   };
 
-  const onDoubleClick = (_event) => {
+  const onDoubleClick = (_event: LeafletEvent) => {
     // Calls on double clicks, not single clicks.
 
     // Mark as completed.
@@ -269,22 +331,6 @@ const _FeatureMarker = ({
   );
 };
 
-const mapStateToProps = ({ options, completed }, { marker, featureKey }) => {
-  const key = `${featureKey}/${marker.id}`;
-
-  return {
-    completed: completed.features[key] ?? false,
-    completedAlpha: options.completedAlpha,
-  };
-};
-const mapDispatchToProps = (dispatch, { marker, feature }) => {
-  const key = `${feature.key}/${marker.id}`;
-
-  return {
-    markFeature: () => dispatch(setFeatureMarkerCompleted(key)),
-    unmarkFeature: () => dispatch(clearFeatureMarkerCompleted(key)),
-  };
-};
-const FeatureMarker = connect(mapStateToProps, mapDispatchToProps)(_FeatureMarker);
+const FeatureMarker = connector(_FeatureMarker);
 
 export default FeatureMarker;

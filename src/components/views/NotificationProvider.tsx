@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notistack';
-import React, { useEffect, useState, ReactElement } from 'react';
+import React, { useEffect, useState, ReactNode, ReactElement, FunctionComponent } from 'react';
 import { connect } from 'react-redux';
 import { AnyAction } from 'redux';
 
@@ -22,10 +22,10 @@ interface NotificationHandlerProps {
   notifications: Notification[];
   removeNotification: (key: SnackbarKey) => AnyAction;
 }
-const _NotificationHandler = ({
+const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
   notifications,
   removeNotification,
-}: NotificationHandlerProps): ReactElement => {
+}) => {
   /**
    * The functions which link with the NotificationProvider
    * to enqueue and dequeue the notifications.
@@ -97,7 +97,13 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
 });
 const NotificationHandler = connect(mapStateToProps, mapDispatchToProps)(_NotificationHandler);
 
-export const NotificationProvider = ({ children: React.ReactNode }): ReactElement => (
+interface NotificationProviderProps {
+  children: ReactNode;
+}
+
+export const NotificationProvider: FunctionComponent<NotificationProviderProps> = ({
+  children,
+}) => (
   <SnackbarProvider>
     <NotificationHandler />
     {children}

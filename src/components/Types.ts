@@ -1,5 +1,6 @@
-import MapCategories from '~/data/core/categories.json';
-import MapRegions from '~/data/core/regions.json';
+/**
+ * This folder defines and exports custom utility TypeScript types.
+ */
 
 /**
  * Defines a new type which, aside from storing a primative value,
@@ -7,7 +8,7 @@ import MapRegions from '~/data/core/regions.json';
  * This allows TypeScript to differentiate between different types of strings
  * without changing the compiler's output.
  *
- * Example: type Uuid = Opaque<"Uuid", string>;
+ * @example Opaque<"UUID", string>
  */
 export type Opaque<K, T> = T & { __TYPE__: K };
 
@@ -22,15 +23,16 @@ export type Mutable<T> = { -readonly [P in keyof T]: T[P] };
  * Readonly<T>: Creates a type that makes all the properties of the object unmodifiable.
  * React.ComponentProps<T>: Creates a type whose values are the props of a component.
  * ReturnType<T>: Creates a type whose values are the return type of a function.
+ * ts-toolkit.O.Paths<T>: Creates a type whose values are the object paths of a type.
+ *
+ * Also see ts-toolbelt:
+ * @see https://github.com/millsp/ts-toolbelt#documentation
  *
  * NOTE: Never use capital letter variants of primatives (String, Number, Boolean)
  */
 
 export type UnixTimestamp = Opaque<'UnixTimestamp', number>;
 export type LocalizedString = Opaque<'LocalizedString', string>;
-
-export type MapRegion = keyof typeof MapRegions;
-export type MapCategory = keyof typeof MapCategories;
 
 export type UIControlsTab =
   | 'help'

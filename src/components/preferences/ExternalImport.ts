@@ -1,11 +1,14 @@
 import _ from 'lodash';
 
+import { MSFImportSite } from '~/components/data/ElementSchema';
 import { f, t } from '~/components/i18n/Localization';
 import { buildImportMapping } from '~/components/preferences/ExternalImportDictionary';
-import { isValidJSON } from '~/components/Util';
-import { displayImportError } from '~/components/redux/dispatch/error';
-import { setToast } from '~/components/redux/dispatch/ui';
-import { MSFImportSite } from '~/components/data/ElementSchema';
+import {
+  displayImportError,
+  markMarkersCompleted,
+  sendNotification,
+} from '~/components/redux/dispatch';
+import { isValidJSON } from '~/components/util';
 
 /**
  * Import marker completion data from another site.
@@ -16,11 +19,7 @@ import { MSFImportSite } from '~/components/data/ElementSchema';
  * @param {*} showToast The function to call to display a notification.
  * @returns True for success or partial success, false for failure.
  */
-export const importMarkerDataFromSite = (
-  dataString: string,
-  importKey: MSFImportSite,
-  setFeaturesCompleted
-) => {
+export const importMarkerDataFromSite = (dataString: string, importKey: MSFImportSite): boolean => {
   // fullData is a JSON array of externalsite keys.
   try {
     if (!isValidJSON(dataString)) {
@@ -61,20 +60,23 @@ export const importMarkerDataFromSite = (
     const totalEntries = _.size(fullData);
 
     // Actually set the features as completed.
-    setFeaturesCompleted(fullDataMapped);
+    markMarkersCompleted(fullDataMapped);
 
     if (successfulEntries < totalEntries) {
       // Some entries were missing.
       console.warn(`Skipped over ${missingEntries} entries when importing.`);
       console.warn(missingEntries);
-      setToast(
-        f('message-import-success-partial', { success: successfulEntries, count: totalEntries })
+      sendNotification(
+        f('message-import-success-partial', {
+          success: successfulEntries.toString(),
+          count: totalEntries.toString(),
+        })
       );
       return true;
     }
 
     // Else, complete success.
-    setToast(f('message-import-success', { count: totalEntries }));
+    sendNotification(f('message-import-success', { count: totalEntries.toString() }));
     return true;
   } catch (e) {
     console.error(e);

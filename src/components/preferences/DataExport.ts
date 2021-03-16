@@ -8,13 +8,13 @@ import {
   GenshinMapPreferencesLatest,
   PREFERENCES_VERSION,
 } from '~/components/preferences/PreferencesSchema';
-import { LOCAL_STORAGE_KEY } from '~/components/preferences/ReduxStore';
-import { generateJSON, toBase64 } from '~/components/Util';
+import { PREFERENCES_STORAGE_KEY } from '~/components/preferences/ReduxStore';
+import { generateJSON, toBase64 } from '~/components/util';
 
 export const PREFERENCES_PREFIX = `${PREFERENCES_VERSION}~`;
 
 export const exportDataJSON = (
-  mapPreferences: GenshinMapPreferencesLatest = localStorage.get(LOCAL_STORAGE_KEY)
+  mapPreferences: GenshinMapPreferencesLatest = localStorage.get(PREFERENCES_STORAGE_KEY)
 ): string => {
   // Create a JSON string of the current preferences.
   const jsonData = generateJSON(mapPreferences);

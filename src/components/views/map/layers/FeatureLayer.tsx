@@ -4,10 +4,17 @@
 
 // Its very presence changes the behavior of L.
 import 'leaflet.markercluster';
+import { MarkerClusterGroup as LeafletMarkerClusterGroup } from 'leaflet';
 import _ from 'lodash';
-import React from 'react';
-import { connect } from 'react-redux';
-import { MSFFeatureExtended } from '~/components/data/ElementSchema';
+import React, { FunctionComponent, useEffect, useRef } from 'react';
+import { useMap } from 'react-leaflet';
+import { connect, ConnectedProps } from 'react-redux';
+import { MSFFeatureExtended, MSFFeatureKey } from '~/components/data/ElementSchema';
+import { MapFeatures } from '~/components/data/MapFeatures';
+import { selectIsFeatureDisplayed } from '~/components/redux/slices/displayed';
+import { selectHideFeaturesInEditor } from '~/components/redux/slices/options';
+import { selectEditorEnabled } from '~/components/redux/slices/ui';
+import { AppState } from '~/components/redux/types';
 
 import FeatureMarker from '~/components/views/map/layers/FeatureMarker';
 import MapClusterMarker, {
@@ -16,15 +23,41 @@ import MapClusterMarker, {
   variableClusterFunction,
 } from '~/components/views/map/layers/MapClusterMarker';
 
-const _FeatureLayer = ({
-  mapFeature,
-  displayed,
-}: {
-  mapFeature: MSFFeatureExtended;
-  displayed: boolean;
-}) => {
-  // TODO: We hide by destroying. Is there a better way?
-  if (!displayed) return null;
+interface FeatureLayerBaseProps {
+  featureKey: MSFFeatureKey;
+  mapFeature?: MSFFeatureExtended;
+}
+
+const mapStateToProps = (
+  state: AppState,
+  { featureKey, mapFeature = null }: FeatureLayerBaseProps
+) => {
+  const hideFeaturesInEditor = selectHideFeaturesInEditor(state);
+  const editorEnabled = selectEditorEnabled(state);
+  const featureDisplayed = selectIsFeatureDisplayed(state, featureKey);
+  return {
+    displayed: hideFeaturesInEditor && editorEnabled && featureDisplayed,
+    mapFeature: mapFeature !== null ? mapFeature : (MapFeatures[featureKey] as MSFFeatureExtended),
+  };
+};
+const mapDispatchToProps = () => ({});
+const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...c, ...b, ...a }));
+
+type FeatureLayerProps = ConnectedProps<typeof connector>;
+
+const _FeatureLayer: FunctionComponent<FeatureLayerProps> = ({ displayed, mapFeature }) => {
+  const map = useMap();
+  const layerRef = useRef<LeafletMarkerClusterGroup>(undefined);
+
+  useEffect(() => {
+    if (typeof layerRef.current !== 'undefined') {
+      if (displayed) {
+        layerRef.current.addTo(map);
+      } else {
+        layerRef.current.removeFrom(map);
+      }
+    }
+  }, [map, displayed]);
 
   // Choose the proper clustering function.
   let clusterFunction = null;
@@ -44,7 +77,7 @@ const _FeatureLayer = ({
   switch (mapFeature.format) {
     case 2:
       return (
-        <MapClusterMarker clusterFunction={clusterFunction}>
+        <MapClusterMarker ref={layerRef} clusterFunction={clusterFunction}>
           {mapFeature.data.map((marker) => {
             return (
               <FeatureMarker
@@ -62,14 +95,6 @@ const _FeatureLayer = ({
   }
 };
 
-const mapStateToProps = (state, { featureKey }) => ({
-  // Display the feature if the feature is enabled in the controls,
-  // and we aren't in the state of (editor on + hide features when editor is on)
-  displayed:
-    !((state.options.hideFeaturesInEditor ?? false) && (state.editorEnabled ?? false)) &&
-    (state.displayed.features[featureKey] ?? false),
-});
-const mapDispatchToProps = (_dispatch) => ({});
-const FeatureLayer = connect(mapStateToProps, mapDispatchToProps)(_FeatureLayer);
+const FeatureLayer = connector(_FeatureLayer);
 
 export default FeatureLayer;

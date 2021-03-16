@@ -5,12 +5,12 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MapFeatures } from '~/components/data/MapFeatures';
 import { MSFFeatureKey, MSFMarkerKey } from '~/components/data/ElementSchema';
+import { MapFeatures } from '~/components/data/MapFeatures';
 import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { CLEAR_PREFERENCES } from '~/components/redux/actions';
+import { clearPreferences, setPreferences } from '~/components/redux/actions';
 import { AppState } from '~/components/redux/types';
-import { getPreviousMondayReset, getUnixTimestamp } from '~/components/Util';
+import { getPreviousMondayReset, getUnixTimestamp } from '~/components/util';
 
 export type CompletedState = GenshinMapPreferencesLatest['completed'];
 
@@ -19,10 +19,12 @@ export const initialState: CompletedState = {
   features: {},
 };
 
-// Define a type using that initial state.
-
 type MarkerCompletedAction = {
   key: MSFMarkerKey;
+  timestamp: number;
+};
+type MarkersCompletedAction = {
+  keys: MSFMarkerKey[];
   timestamp: number;
 };
 
@@ -41,6 +43,17 @@ export const completedSlice = createSlice({
         state.features[action.payload.key] = action.payload.timestamp;
       },
     },
+    setMarkersCompleted: {
+      prepare: (keys: MSFMarkerKey[]) => {
+        return { payload: { keys, timestamp: getUnixTimestamp() } };
+      },
+
+      reducer: (state, action: PayloadAction<MarkersCompletedAction>) => {
+        _.forEach(action.payload.keys, (key: MSFMarkerKey) => {
+          state.features[key] = action.payload.timestamp;
+        });
+      },
+    },
     clearMarkerCompleted: (state, action: PayloadAction<MSFMarkerKey>) => {
       delete state.features[action.payload];
     },
@@ -55,7 +68,13 @@ export const completedSlice = createSlice({
     },
   },
   extraReducers: {
-    [CLEAR_PREFERENCES.toString()]: () => {
+    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+      return {
+        ...state,
+        ...action.payload.completed,
+      };
+    },
+    [clearPreferences.toString()]: () => {
       // Reset to the default state.
       return initialState;
     },
@@ -64,15 +83,18 @@ export const completedSlice = createSlice({
 
 export const {
   setMarkerCompleted,
+  setMarkersCompleted,
   clearMarkerCompleted,
   clearMarkersCompleted,
   clearFeatureCompleted,
 } = completedSlice.actions;
 
-/**
- * Convenience function to retrieve a given value from the root state.
- * @param state
+/*
+ * Convenience functions to retrieve a given value from the root state.
  */
+
+export const selectMarkerCompleted = (state: AppState, markerKey: MSFMarkerKey): number | null =>
+  state.completed.features[markerKey] ?? null;
 export const selectCompletedMarkers = (state: AppState): CompletedState['features'] =>
   state.completed.features;
 export const selectCompletedMarkersOfFeature = (

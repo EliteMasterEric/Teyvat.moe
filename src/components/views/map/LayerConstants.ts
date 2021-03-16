@@ -2,14 +2,14 @@
  * Provides a set of constant values and icons used by Leaflet.
  */
 
-import { LatLngTuple, PointTuple, icon, latLngBounds } from 'leaflet';
+import { LatLngTuple, icon as LeafletIcon, PointTuple, latLngBounds } from 'leaflet';
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-editable';
 import 'leaflet-textpath';
 import _ from 'lodash';
 
 // Center of the map.
-export const MAP_CENTER = [-32, 32];
+export const MAP_CENTER: LatLngTuple = [-32, 32];
 
 // Offset the TileLayer visually by a given LatLng value. Adheres to zoom level.
 const TILE_WIDTH = 32 / 3;
@@ -32,7 +32,7 @@ export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
 // export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
 export const MAP_BOUNDS = latLngBounds([0, 0], [-64, 64]);
 
-export const editorMarker = icon({
+export const editorMarker = LeafletIcon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
   shadowUrl: require('../../../images/icons/marker/marker_white_bg.svg').default, // Default value. Use options to override.
@@ -43,7 +43,7 @@ export const editorMarker = icon({
   popupAnchor: [0, -34.5], // point from which the popup should open relative to the iconAnchor
 });
 
-export const editorMarkerHighlight = icon({
+export const editorMarkerHighlight = LeafletIcon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
   shadowUrl: require('../../../images/icons/marker/marker_white_bg.svg').default, // Default value. Use options to override.
@@ -59,7 +59,7 @@ export const lineProperties = {
 };
 export const lineTextProperties = {
   repeat: true,
-  attributes: { dy: 6, fill: '#d32f2f', class: 'leaflet-map-route-text' },
+  attributes: { dy: '6', fill: '#d32f2f', class: 'leaflet-map-route-text' },
 };
 
 export const linePropertiesHighlight = {
@@ -67,7 +67,7 @@ export const linePropertiesHighlight = {
 };
 export const lineTextPropertiesHighlight = {
   repeat: true,
-  attributes: { dy: 6, fill: '#f57c00', class: 'leaflet-map-route-text' },
+  attributes: { dy: '6', fill: '#f57c00', class: 'leaflet-map-route-text' },
 };
 
 export const linePropertiesSmart = {

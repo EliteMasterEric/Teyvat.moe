@@ -1,18 +1,23 @@
-import React, { ReactElement } from 'react';
+import React, { FunctionComponent } from 'react';
 
-const YouTubeEmbed = ({
-  id,
-  width,
-  height,
-  start = null,
-  end = null,
-}: {
+interface YouTubeEmbedProps {
   id: string;
   width: number;
   height: number;
   start?: number;
   end?: number;
-}): ReactElement => {
+}
+
+/**
+ * Displays an embedded YouTube video.
+ */
+const YouTubeEmbed: FunctionComponent<YouTubeEmbedProps> = ({
+  id,
+  width,
+  height,
+  start = null,
+  end = null,
+}) => {
   const params: string[] = [];
   if (start != null) params.push(`start=${start}`);
   if (end != null) params.push(`end=${end}`);

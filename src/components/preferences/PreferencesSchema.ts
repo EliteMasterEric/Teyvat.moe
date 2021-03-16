@@ -5,6 +5,8 @@ import {
   MSFMarkerKey,
   MSFRouteGroupKey,
 } from '~/components/data/ElementSchema';
+import { MapCategoryKey } from '~/components/data/MapCategories';
+import { MapRegionKey } from '~/components/data/MapRegions';
 import {
   EditorMarker,
   EditorRoute,
@@ -14,7 +16,6 @@ import {
   LegacyEditorRoute,
 } from '~/components/preferences/EditorDataSchema';
 import { Notification } from '~/components/redux/slices/notify';
-import { MapCategory, MapRegion } from '~/components/Types';
 
 export const PREFERENCES_VERSION = 'GM_007';
 
@@ -29,7 +30,7 @@ export interface GM_001 {
     regionLabelsEnabled: boolean;
     hideFeaturesInEditor: boolean;
     hideRoutesInEditor: boolean;
-    overrideLang: string;
+    overrideLang: string | null;
   };
   displayed: {
     features: Record<MSFFeatureKey, boolean>;
@@ -95,7 +96,7 @@ export interface GM_006 {
   editor: GM_005['editor'];
   // Optional, used during loading to queue notifications to display,
   // indicating the success of data import.
-  notify: { notifications?: Notification[] };
+  notify: { notifications: Notification[] };
 }
 
 /**
@@ -103,7 +104,9 @@ export interface GM_006 {
  */
 export interface GM_007 {
   version: 'GM_007';
-  options: GM_006['options'];
+  options: GM_006['options'] & {
+    showHiddenFeaturesInSummary: boolean;
+  };
   displayed: GM_006['displayed'];
   completed: GM_006['completed'];
   // Optional, used during loading to queue notifications to display,
@@ -112,8 +115,8 @@ export interface GM_007 {
   editor: {
     feature: {
       name: string;
-      category: MapCategory;
-      region: MapRegion;
+      category: MapCategoryKey;
+      region: MapRegionKey;
       data: Array<EditorMarker | EditorRoute>;
     };
   };

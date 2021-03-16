@@ -1,65 +1,73 @@
-/**
- * The file lists all the Map features, regions, routes, and categories.
- * It directs how they are rendered on the map, how they display in the filter list,
- * and where the data for them is loaded from.
- */
-
 import _ from 'lodash';
 
-import { listRouteFiles, loadRoute } from '~/components/data/RouteData';
 import {
   MSFRouteGroupExtended,
   MSFRouteGroupKey,
   MSFRouteKey,
 } from '~/components/data/ElementSchema';
-import { MapCategory, MapRegion } from '~/components/Types';
-
-import MapCategories from '~/data/core/categories.json';
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from '~/components/data/MapCategories';
+import { isRegionKey, MapRegionKey } from '~/components/data/MapRegions';
+import { listRouteFiles, loadRoute } from '~/components/data/RouteData';
+import { filterNotEmpty } from '../util';
 
 /**
- * Metadata regarding the map features.
- * Imported directly by listing the files from the Features folder.
+ * Metadata regarding the map routes.
+ * Imported directly by listing the files from the routes folder.
  */
-export const MapRoutes: Record<MSFRouteKey, MSFRouteGroupExtended> = _.fromPairs(
+const MapRouteGroups = _.fromPairs(
   listRouteFiles()
     .map((relativePath) => {
-      const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
       const baseRouteData = loadRoute(relativePath);
       if (baseRouteData == null) return null; // Validation failed.
-      // crystal-chunk -> CrystalChunk
-      const correctedName = routeName
-        .split('.')[0] // Remove file extension.
+
+      const [_dot, routeRegion, routeCategory, routeName] = relativePath.split('/');
+      if (routeName == undefined) return null; // Invalid file name.
+      if (routeRegion == undefined || !isRegionKey(routeRegion)) return null;
+      if (routeCategory == undefined || !isCategoryKey(routeCategory)) return null;
+
+      const splitRouteName = routeName.split('.');
+      if (splitRouteName == undefined || splitRouteName[0] == undefined) return null;
+
+      const correctedName = splitRouteName[0] // Remove file extension.
         .split('-') // Break by words.
         .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
         .join(''); // Rejoin.
 
       // CrystalChunk -> mondstadtCrystalChunk
-      const fullName = `${routeRegion}${correctedName}` as MSFRouteGroupKey; // Prefix with region.
+      const fullName = `${routeRegion}${correctedName}`; // Prefix with region.
 
       const routeData: MSFRouteGroupExtended = {
         ...baseRouteData,
-        key: fullName,
-        region: <MapRegion>routeRegion,
-        category: <MapCategory>routeCategory,
+        key: fullName as MSFRouteKey,
+        region: routeRegion as MapRegionKey,
+        category: routeCategory as MapCategoryKey,
       };
 
-      return [fullName, routeData];
+      const result: [string, MSFRouteGroupExtended] = [fullName, routeData];
+
+      return result;
     })
-    .filter((value) => value) // Filter out nullable values
+    .filter(filterNotEmpty)
 );
+export const getMapRouteGroup = (key: MSFRouteGroupKey): MSFRouteGroupExtended => {
+  const result = MapRouteGroups[key] ?? null;
+  if (result == null) throw Error(`Invalid map route group key ${key}`);
+  return result;
+};
+export const MapRouteGroupKeys = _.keys(MapRouteGroups) as MSFRouteGroupKey[];
 
 /**
  * For a given region, returns a map of a category key and a boolean value,
  * false if it contains at least one valid displayed route.
  * @param region
  */
-export const getEmptyRouteCategories = (regionKey: MapRegion): Record<MapCategory, boolean> =>
+export const getEmptyRouteCategories = (regionKey: MapRegionKey): Record<MapCategoryKey, boolean> =>
   _.fromPairs(
-    _.map(_.keys(MapCategories) as MapCategory[], (categoryKey) => {
+    _.map(MapCategoryKeys, (categoryKey) => {
       return [
         categoryKey,
         _.find(
-          _.values(MapRoutes) as MSFRouteGroupExtended[],
+          _.values(MapRouteGroups) as MSFRouteGroupExtended[],
           (mapRoute: MSFRouteGroupExtended) => {
             return (
               mapRoute.category === categoryKey &&
@@ -70,28 +78,28 @@ export const getEmptyRouteCategories = (regionKey: MapRegion): Record<MapCategor
         ) == undefined,
       ];
     })
-  ) as Record<MapCategory, boolean>;
+  ) as Record<MapCategoryKey, boolean>;
 
-export const getRouteKeysByFilter = (region: string, category: string): string[] => {
-  return Object.keys(MapRoutes).filter((key) => {
-    const route = MapRoutes[key];
+export const getRouteKeysByFilter = (region: string, category: string): MSFRouteGroupKey[] => {
+  return MapRouteKeys.filter((key) => {
+    const route = MapRouteGroups[key];
     return route?.region === region && route?.category === category && route?.enabled;
   });
 };
 
-export const sortRoutesByName = (data: string[]): string[] =>
+export const sortRoutesByName = (data: MSFRouteGroupKey[]): MSFRouteGroupKey[] =>
   data.sort((a, b) => {
     // Sort the features alphabetically.
-    const textA = MapRoutes?.[a]?.name;
-    const textB = MapRoutes?.[b]?.name;
+    const textA = MapRouteGroups?.[a]?.name;
+    const textB = MapRouteGroups?.[b]?.name;
 
     if (textA < textB) return -1;
     return textA > textB ? 1 : 0;
   });
 
 export const getRouteCount = (): number => {
-  return Object.keys(MapRoutes).reduce((sum, key, _index) => {
-    const route = MapRoutes[key];
+  return MapRouteGroupKeys.reduce((sum, key, _index) => {
+    const route = MapRouteGroups[key];
     return sum + route.data.length;
   }, 0);
 };

@@ -3,10 +3,15 @@
  * Includes tooltip text.
  */
 import { TextField } from '@material-ui/core';
-import React, { ReactElement } from 'react';
+import React, { FunctionComponent } from 'react';
 import Tooltip from 'react-tooltip';
 
 import { t } from '~/components/i18n/Localization';
+
+interface CopyTextAreaProps {
+  text: string;
+  rows?: number;
+}
 
 /**
  * A text area which you can click to copy the contents of.
@@ -14,14 +19,7 @@ import { t } from '~/components/i18n/Localization';
  * @param {*} text The text to display in the textarea.
  * @param {*} others Any other parameters passed will be received by the text area.
  */
-const CopyTextArea = ({
-  text,
-  rows = 10,
-  ...others
-}: {
-  text: string;
-  rows: number;
-}): ReactElement => {
+const CopyTextArea: FunctionComponent<CopyTextAreaProps> = ({ text, rows = 5, ...others }) => {
   const copyText = (event) => {
     event.target.select();
     document.execCommand('copy');

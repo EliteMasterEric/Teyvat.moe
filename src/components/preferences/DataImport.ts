@@ -7,7 +7,14 @@
 
 import _ from 'lodash';
 
+import {
+  MSFFeatureKey,
+  MSFImportKey,
+  MSFMarkerID,
+  MSFMarkerKey,
+} from '~/components/data/ElementSchema';
 import { f } from '~/components/i18n/Localization';
+import { PREFERENCES_PREFIX } from '~/components/preferences/DataExport';
 import {
   EditorMarker,
   GM_002_EditorMarker,
@@ -30,16 +37,9 @@ import {
   PREFERENCES_VERSION,
 } from '~/components/preferences/PreferencesSchema';
 import { storeRecoveryData } from '~/components/preferences/Recovery';
-import { fromBase64, hashObject } from '~/components/Util';
-import {
-  MSFFeatureKey,
-  MSFImportKey,
-  MSFMarkerID,
-  MSFMarkerKey,
-} from '~/components/data/ElementSchema';
-import { PREFERENCES_PREFIX } from '~/components/preferences/DataExport';
 import { Notification, buildNotification } from '~/components/redux/slices/notify';
 import { AppState, initialState } from '~/components/redux/types';
+import { fromBase64, hashObject } from '~/components/util';
 
 const demercateCoordinate = (coordinate) => {
   // Spherical Mercator projection.
@@ -162,7 +162,7 @@ export const importMarkerDataFromGMLegacy = (
     console.warn(`Skipped over ${missingEntries} entries when importing.`);
     console.warn(missingEntries);
     storeRecoveryData(
-      missingEntries,
+      { missingEntries },
       `[WARN] Could not import ${totalEntries - successfulEntries} entries.`
     );
     partialData.notify.notifications.push([
@@ -211,7 +211,7 @@ export const migrateData = (
   switch (version) {
     default:
       console.error(`[ERROR] Could not identify preferences prefix ${version}`);
-      storeRecoveryData(input, `[ERROR] Could not identify preferences prefix ${version}`);
+      storeRecoveryData({ input }, `[ERROR] Could not identify preferences prefix ${version}`);
       return null;
     case 'GM_001':
       /*
@@ -367,6 +367,10 @@ export const migrateData = (
         ...output,
         version: 'GM_007',
         notifications,
+        options: {
+          ...initialState.options,
+          ...output.options,
+        },
         editor: {
           ...output.editor,
           feature: {

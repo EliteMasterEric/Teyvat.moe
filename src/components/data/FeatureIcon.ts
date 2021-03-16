@@ -1,8 +1,8 @@
-import { divIcon, icon } from 'leaflet';
+import { divIcon as LeafletDivIcon, icon as LeafletIcon } from 'leaflet';
 import _ from 'lodash';
 
 import { BLANK_IMAGE } from '~/components/interface/Image';
-import { importFromContext } from '~/components/Util';
+import { importFromContext } from '~/components/util';
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
 const iconsContext = require.context('../../images/icons', true, /\.(png|webp|svg)/);
@@ -20,9 +20,9 @@ export const createClusterIcon = ({
   ext = 'png',
 }: {
   key: string;
-  marker: boolean;
-  clusterIcon: string;
-  ext: string;
+  marker?: boolean;
+  clusterIcon?: string;
+  ext?: string;
 }): any => {
   if (marker) {
     return getFilterIconURL(key, ext);
@@ -40,7 +40,6 @@ export const createMapIcon = ({
 }: {
   key: string;
   marker: boolean;
-  clusterIcon: string;
   done: boolean;
   ext: string;
 }): L.Icon | L.DivIcon => {
@@ -61,7 +60,7 @@ export const createMapIcon = ({
       <img style='width: 24.25px; height: 24.25px;' class='map-marker-img' alt="" src='${iconUrl}'/>
     </div>`;
 
-    return divIcon({
+    return LeafletDivIcon({
       className: `map-marker-${key}`,
       html: iconHTML,
       iconSize: [40, 40], // size of the icon,
@@ -74,7 +73,7 @@ export const createMapIcon = ({
   // Else, don't use the marker image.
   const iconUrl = importFromContext(iconsContext, `./map/${key}.${ext}`);
 
-  return icon({
+  return LeafletIcon({
     className: `map-marker-${key}`,
     iconUrl,
     shadowUrl: '',

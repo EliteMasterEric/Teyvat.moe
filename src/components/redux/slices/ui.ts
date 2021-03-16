@@ -5,15 +5,17 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { MSFMarkerID, MSFRouteID } from '~/components/data/ElementSchema';
-import { CLEAR_PREFERENCES } from '~/components/redux/actions';
+import { MapCategoryKey } from '~/components/data/MapCategories';
+import { MapRegionKey } from '~/components/data/MapRegions';
+import { clearPreferences, setPreferences } from '~/components/redux/actions';
 import { AppState } from '~/components/redux/types';
-import { MapCategory, MapPosition, MapRegion, UIControlsTab } from '~/components/Types';
+import { MapPosition, UIControlsTab } from '~/components/Types';
 import { DEFAULT_ZOOM, MAP_CENTER } from '~/components/views/map/LayerConstants';
 
 export type UIState = {
   tab: UIControlsTab;
-  mapCategory: MapCategory;
-  mapRegion: MapRegion;
+  mapCategory: MapCategoryKey;
+  mapRegion: MapRegionKey;
 
   /**
    * Whether the map controls are open or collapsed.
@@ -67,10 +69,10 @@ export const uiSlice = createSlice({
     setTab: (state, action: PayloadAction<UIControlsTab>) => {
       state.tab = action.payload;
     },
-    setMapCategory: (state, action: PayloadAction<MapCategory>) => {
+    setMapCategory: (state, action: PayloadAction<MapCategoryKey>) => {
       state.mapCategory = action.payload;
     },
-    setMapRegion: (state, action: PayloadAction<MapRegion>) => {
+    setMapRegion: (state, action: PayloadAction<MapRegionKey>) => {
       state.mapRegion = action.payload;
     },
     setOpen: (state, action: PayloadAction<boolean>) => {
@@ -85,8 +87,13 @@ export const uiSlice = createSlice({
     clearMapHighlight: (state) => {
       state.mapHighlight = null;
     },
-    setMapPosition: (state, action: PayloadAction<MapPosition>) => {
-      state.mapPosition = action.payload;
+    setMapPosition: {
+      prepare: (latlng: MapPosition['latlng'], zoom: MapPosition['zoom']) => {
+        return { payload: { latlng, zoom } };
+      },
+      reducer: (state, action: PayloadAction<MapPosition>) => {
+        state.mapPosition = action.payload;
+      },
     },
     setEditorEnabled: (state, action: PayloadAction<boolean>) => {
       state.editorEnabled = action.payload;
@@ -102,7 +109,13 @@ export const uiSlice = createSlice({
     },
   },
   extraReducers: {
-    [CLEAR_PREFERENCES.toString()]: () => {
+    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+      return {
+        ...state,
+        ...action.payload.ui,
+      };
+    },
+    [clearPreferences.toString()]: () => {
       // Reset to the default state.
       return initialState;
     },
@@ -118,17 +131,35 @@ export const {
   setMapHighlight,
   clearMapHighlight,
   setMapPosition,
+  setEditorEnabled,
+  toggleEditorEnabled,
+  setEditorDebugEnabled,
+  toggleEditorDebugEnabled,
 } = uiSlice.actions;
 
 /**
  * Convenience functions to retrieve a given value from the root state.
  */
 export const selectTab = (state: AppState): UIControlsTab => state.ui.tab;
-export const selectMapCategory = (state: AppState): MapCategory => state.ui.mapCategory;
-export const selectMapRegion = (state: AppState): MapRegion => state.ui.mapRegion;
+export const selectIsTabDisplayed = (
+  state: AppState,
+  tab: UIControlsTab | UIControlsTab[]
+): boolean => {
+  return Array.isArray(tab) ? tab.includes(selectTab(state)) : selectTab(state) === tab;
+};
+export const selectMapCategory = (state: AppState): MapCategoryKey => state.ui.mapCategory;
+export const selectIsCategoryDisplayed = (state: AppState, category: MapCategoryKey): boolean =>
+  selectMapCategory(state) === category;
+export const selectMapRegion = (state: AppState): MapRegionKey => state.ui.mapRegion;
+export const selectIsRegionDisplayed = (state: AppState, region: MapRegionKey): boolean =>
+  selectMapRegion(state) === region;
 export const selectOpen = (state: AppState): boolean => state.ui.open;
 export const selectMapHighlight = (state: AppState): UIState['mapHighlight'] =>
   state.ui.mapHighlight;
+export const selectIsMarkerHighlighted = (state: AppState, markerID: MSFMarkerID): boolean =>
+  selectMapHighlight(state) == markerID;
+export const selectIsRouteHighlighted = (state: AppState, routeID: MSFRouteID): boolean =>
+  selectMapHighlight(state) == routeID;
 export const selectMapPosition = (state: AppState): MapPosition => state.ui.mapPosition;
 export const selectEditorEnabled = (state: AppState): boolean => state.ui.editorEnabled;
 export const selectEditorDebugEnabled = (state: AppState): boolean => state.ui.editorDebugEnabled;

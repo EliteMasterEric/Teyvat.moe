@@ -1,0 +1,26 @@
+{
+    "name": "@types/leaflet.markercluster",
+    "version": "69.0.0",
+    "description": "TypeScript definitions for Leaflet.markercluster",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Robert Imig",
+            "url": "https://github.com/rimig",
+            "githubUsername": "rimig"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/leaflet.markercluster"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/leaflet": "*"
+    },
+    "typesPublisherContentHash": "5e94e78c6af28b01c483660832536918078f698c5d208dc604cee073bdcab6ee",
+    "typeScriptVersion": "3.4"
+}

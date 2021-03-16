@@ -4,46 +4,61 @@
 
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-textpath';
-import React from 'react';
-import { connect } from 'react-redux';
-import { MSFRouteGroupExtended } from '~/components/data/ElementSchema';
+import { LayerGroup as LeafletLayerGroup } from 'leaflet';
+import React, { FunctionComponent, useEffect, useRef } from 'react';
+import { LayerGroup, useMap } from 'react-leaflet';
+import { connect, ConnectedProps } from 'react-redux';
+import { MSFRouteGroupExtended, MSFRouteGroupKey } from '~/components/data/ElementSchema';
+import { selectIsRouteGroupDisplayed } from '~/components/redux/slices/displayed';
+import { selectHideRoutesInEditor } from '~/components/redux/slices/options';
+import { selectEditorEnabled } from '~/components/redux/slices/ui';
+import { AppState } from '~/components/redux/types';
 import RouteLine from '~/components/views/map/layers/RouteLine';
 
-const _RouteLayer = ({
-  routeGroup,
-  displayed,
-}: {
+interface RouteLayerBaseProps {
+  routeKey: MSFRouteGroupKey;
   routeGroup: MSFRouteGroupExtended;
-  displayed: boolean;
-}) => {
-  // TODO: We hide by destroying it. Is there a better way?
-  if (!displayed) return null;
+}
+
+const mapStateToProps = (state: AppState, { routeKey }: RouteLayerBaseProps) => {
+  const hideRoutesInEditor = selectHideRoutesInEditor(state);
+  const editorEnabled = selectEditorEnabled(state);
+  const routeDisplayed = selectIsRouteGroupDisplayed(state, routeKey);
+  return { displayed: hideRoutesInEditor && editorEnabled && routeDisplayed };
+};
+const mapDispatchToProps = () => ({});
+const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+
+type RouteLayerProps = ConnectedProps<typeof connector>;
+
+const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed }) => {
+  const map = useMap();
+  const layerRef = useRef<LeafletLayerGroup>(undefined);
+
+  useEffect(() => {
+    if (typeof layerRef.current !== 'undefined') {
+      if (displayed) {
+        layerRef.current.addTo(map);
+      } else {
+        layerRef.current.removeFrom(map);
+      }
+    }
+  }, [map, displayed]);
 
   switch (routeGroup.format) {
     case 2:
-      return routeGroup.data.map((route) => {
-        return (
-          <RouteLine
-            key={route.id}
-            routeKey={`${routeGroup.key}/${route.id}`}
-            route={route}
-            feature={routeGroup}
-          />
-        );
-      });
+      return (
+        <LayerGroup ref={layerRef}>
+          {routeGroup.data.map((route) => {
+            return <RouteLine key={route.id} route={route} />;
+          })}
+        </LayerGroup>
+      );
     default:
       return null;
   }
 };
 
-const mapStateToProps = (state, { routeKey }) => ({
-  // Display the route if the route is enabled in the controls,
-  // and we aren't in the state of (editor on + hide routes when editor is on)
-  displayed:
-    !((state.options.hideRoutesInEditor ?? false) && (state.editorEnabled ?? false)) &&
-    state.displayed.routes[routeKey],
-});
-const mapDispatchToProps = (_dispatch) => ({});
-const RouteLayer = connect(mapStateToProps, mapDispatchToProps)(_RouteLayer);
+const RouteLayer = connector(_RouteLayer);
 
 export default RouteLayer;

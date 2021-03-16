@@ -4,14 +4,20 @@
  */
 
 import { makeStyles } from '@material-ui/core';
-import { divIcon, marker } from 'leaflet';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { GeoJSON } from 'react-leaflet';
-import { connect } from 'react-redux';
 import { GeoJsonObject } from 'geojson';
+import {
+  GeoJSON as GeoJSONLeaflet,
+  divIcon as LeafletDivIcon,
+  marker as LeafletMarker,
+} from 'leaflet';
+import React, { useEffect, useRef } from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { GeoJSON, useMap } from 'react-leaflet';
+import { connect } from 'react-redux';
 
 import { localizeField } from '~/components/i18n/FeatureLocalization';
+import { selectWorldBorderEnabled } from '~/components/redux/slices/options';
+import { selectMapPosition } from '~/components/redux/slices/ui';
 import { AppState } from '~/components/redux/types';
 
 // The data file which contains the information on the region label markers.
@@ -63,14 +69,27 @@ const RegionLabel = ({ featureData, zoomLevel }) => {
 const _RegionLabelLayer = ({ displayed, zoomLevel }) => {
   const classes = useStyles();
 
+  const map = useMap();
+  const layerRef = useRef<GeoJSONLeaflet>(undefined);
+
+  useEffect(() => {
+    if (typeof layerRef.current !== 'undefined') {
+      if (displayed) {
+        layerRef.current.addTo(map);
+      } else {
+        layerRef.current.removeFrom(map);
+      }
+    }
+  }, [map, displayed]);
+
   const pointToLayer = (featureData, latLng) => {
     const html = ReactDOMServer.renderToString(
       <RegionLabel featureData={featureData} zoomLevel={zoomLevel} />
     );
 
-    return marker([latLng.lng, latLng.lat], {
+    return LeafletMarker([latLng.lng, latLng.lat], {
       interactive: false, // Allow clicks to pass through.
-      icon: divIcon({
+      icon: LeafletDivIcon({
         html,
         className: classes.regionLabelMarker,
       }),
@@ -78,19 +97,21 @@ const _RegionLabelLayer = ({ displayed, zoomLevel }) => {
     });
   };
 
-  // TODO: We destroy the layer if it's hidden. Is there a more performant way?
-  if (!displayed) return null;
-
   return (
-    <GeoJSON key={zoomLevel} pointToLayer={pointToLayer} data={RegionLabelData as GeoJsonObject} />
+    <GeoJSON
+      ref={layerRef}
+      key={zoomLevel}
+      pointToLayer={pointToLayer}
+      data={RegionLabelData as GeoJsonObject}
+    />
   );
 };
 
 const mapStateToProps = (state: AppState) => ({
-  displayed: state.options.regionLabelsEnabled,
-  zoomLevel: state.ui.mapPosition.zoom,
+  displayed: selectWorldBorderEnabled(state),
+  zoomLevel: selectMapPosition(state).zoom,
 });
-const mapDispatchToProps = (_dispatch) => ({});
+const mapDispatchToProps = () => ({});
 const RegionLabelLayer = connect(mapStateToProps, mapDispatchToProps)(_RegionLabelLayer);
 
 export default RegionLabelLayer;

@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { fromPairsToArrays } from '~/components/Util';
 import { MSFImportKey, MSFImportSite, MSFMarkerKey } from '~/components/data/ElementSchema';
+import { getMapFeature, MapFeatureKeys, MapFeatures } from '~/components/data/MapFeatures';
+import { filterNotEmpty, fromPairsToArrays } from '~/components/util';
 
 /**
  * Trawls the list of markers, scans for any markers that have corresponding IDs
@@ -14,17 +14,17 @@ export const buildImportMapping = (
   importKey: MSFImportSite
 ): Record<MSFImportKey, MSFMarkerKey[]> => {
   // Build mappings of keys to values, ignoring empty entries.
-  const markersByFeature = _.keys(MapFeatures)
-    .map((featureKey) => {
-      return MapFeatures[featureKey].data.map((marker) => {
+  const markersByFeature = MapFeatureKeys.map((featureKey) => {
+    return getMapFeature(featureKey)
+      .data.map((marker) => {
         const entry: [MSFMarkerKey, MSFImportKey[] | null] = [
           <MSFMarkerKey>`${featureKey}/${marker.id}`,
           marker.importIds?.[importKey] ?? null,
         ];
         return entry; // feature/id = [keys]
-      });
-    })
-    .filter(_.size);
+      })
+      .filter(filterNotEmpty);
+  });
 
   const markersFlattened: [MSFMarkerKey, MSFImportKey[]][] = _.flatten(markersByFeature).filter(
     (entry) => {

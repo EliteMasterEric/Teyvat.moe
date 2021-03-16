@@ -1,12 +1,12 @@
+import { createTileLayerComponent } from '@react-leaflet/core';
 import { LatLngExpression, Point, PointExpression, TileLayer, TileLayerOptions } from 'leaflet';
-import React, { ReactElement } from 'react';
+import React, { FunctionComponent, ReactElement } from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { createTileLayerComponent } from '@react-leaflet/core';
 import { TileLayerProps } from 'react-leaflet';
 
-import ErrorHandler from '~/components/views/error/ErrorHandler';
 import { useImageExtension } from '~/components/interface/Image';
+import ErrorHandler from '~/components/views/error/ErrorHandler';
 import {
   MAP_BOUNDS,
   MAP_CSS_OFFSET,
@@ -82,7 +82,11 @@ const AdvancedTileLayerComponent = createTileLayerComponent<
   AdvancedTileLayerComponentProps
 >(createTileLayer);
 
-const ErrorTileLayer = ({ error }) => {
+interface ErrorTileLayerProps {
+  error: Error;
+}
+
+const ErrorTileLayer: FunctionComponent<ErrorTileLayerProps> = ({ error }) => {
   return (
     <div style={{ color: 'white', fontSize: 24 }}>
       [TILELAYER ERROR]: {error.name}: {error.message}
@@ -90,7 +94,7 @@ const ErrorTileLayer = ({ error }) => {
   );
 };
 
-const MainTileLayer = (): ReactElement => {
+const MainTileLayer: FunctionComponent = () => {
   // Check for WebP support.
   const ext = useImageExtension(true);
 
