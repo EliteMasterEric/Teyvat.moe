@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react';
 
-import { getMarkerCount } from '~/components/data/MapFeatures';
-import { getRouteCount } from '~/components/data/MapRoutes';
-import { f, t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { SafeHTML } from '~/components/util';
+import { getMarkerCount } from 'src/components/data/MapFeatures';
+import { getRouteCount } from 'src/components/data/MapRoutes';
+import { f, t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { SafeHTML } from 'src/components/util';
 
 type ControlsSubtabHelpProps = {
   displayed: boolean;

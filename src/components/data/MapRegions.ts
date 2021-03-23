@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import MapRegionRawData from '~/data/core/regions.json';
+import MapRegionRawData from 'src/data/core/regions.json';
 
 export type MapRegionKey = keyof typeof MapRegionRawData;
 

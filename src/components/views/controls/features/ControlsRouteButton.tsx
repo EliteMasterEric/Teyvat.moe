@@ -7,18 +7,19 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFRouteGroupKey } from '~/components/data/ElementSchema';
+import { MSFRouteGroupKey } from 'src/components/data/ElementSchema';
 
-import { getFilterIconURL } from '~/components/data/FeatureIcon';
-import { MapRouteGroups } from '~/components/data/MapRoutes';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { Image } from '~/components/interface/Image';
-import { AppDispatch } from '~/components/redux';
+import { getFilterIconURL } from 'src/components/data/FeatureIcon';
+import { getMapRouteGroup } from 'src/components/data/MapRoutes';
+import { localizeField } from 'src/components/i18n/FeatureLocalization';
+import { Image } from 'src/components/interface/Image';
+import { AppDispatch } from 'src/components/redux';
 import {
   selectIsRouteGroupDisplayed,
   toggleRouteGroupDisplayed,
-} from '~/components/redux/slices/displayed';
-import { AppState } from '~/components/redux/types';
+} from 'src/components/redux/slices/displayed';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
 
 const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
@@ -95,14 +96,21 @@ const mapStateToProps = (state: AppState, { routeKey }: ControlsRouteButtonBaseP
   active: selectIsRouteGroupDisplayed(state, routeKey),
   // Adding language to the props, even if it isn't used,
   // causes the component to re-render when the language changes.
-  lang: state.options.overrideLang,
+  lang: selectOverrideLang(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch, { routeKey }: ControlsRouteButtonBaseProps) => ({
   toggleRouteDisplayed: () => dispatch(toggleRouteGroupDisplayed(routeKey)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ControlsRouteButtonStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsRouteButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsRouteButtonStateProps,
+  ControlsRouteButtonDispatchProps,
+  ControlsRouteButtonBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsRouteButtonProps = ConnectedProps<typeof connector>;
+type ControlsRouteButtonProps = ConnectedProps<typeof connector> & ControlsRouteButtonBaseProps;
 
 /**
  * A button in the Filters, with the icon of a Map route on it.
@@ -115,10 +123,10 @@ const _ControlsRouteButton: FunctionComponent<ControlsRouteButtonProps> = ({
 }) => {
   const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
 
-  const mapRoute = MapRouteGroups[routeKey];
+  const mapRoute = getMapRouteGroup(routeKey);
 
   // Hide button if route is not enabled.
-  if (!mapRoute?.enabled ?? true) return null;
+  if (!mapRoute.enabled ?? true) return null;
 
   return (
     <Box

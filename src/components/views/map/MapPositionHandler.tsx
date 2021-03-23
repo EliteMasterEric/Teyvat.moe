@@ -9,11 +9,11 @@
 import { FunctionComponent, useEffect } from 'react';
 import { useMapEvents } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { AppDispatch } from '~/components/redux';
+import { AppDispatch } from 'src/components/redux';
 
-import { selectMapPosition, setMapPosition } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { MapPosition } from '~/components/Types';
+import { selectMapPosition, setMapPosition } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty, MapPosition } from 'src/components/Types';
 
 const mapStateToProps = (state: AppState) => ({
   mapPosition: selectMapPosition(state),
@@ -22,7 +22,14 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
   setPositionAndZoom: (position: MapPosition['latlng'], zoom: MapPosition['zoom']) =>
     dispatch(setMapPosition(position, zoom)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type MapPositionHandlerStateProps = ReturnType<typeof mapStateToProps>;
+type MapPositionHandlerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  MapPositionHandlerStateProps,
+  MapPositionHandlerDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type MapPositionHandlerProps = ConnectedProps<typeof connector>;
 

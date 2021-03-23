@@ -1,15 +1,15 @@
 import { configureStore, Dispatch } from '@reduxjs/toolkit';
 
-import { AppAction } from '~/components/redux/actions';
-import fullMiddleware from '~/components/redux/middleware';
+import { AppAction } from 'src/components/redux/actions';
+import fullMiddleware from 'src/components/redux/middleware';
 
-import reducer from '~/components/redux/slices';
-import completed from '~/components/redux/slices/completed';
-import displayed from '~/components/redux/slices/displayed';
-import editor from '~/components/redux/slices/editor';
-import options from '~/components/redux/slices/options';
+import reducer from 'src/components/redux/slices';
+import completed from 'src/components/redux/slices/completed';
+import displayed from 'src/components/redux/slices/displayed';
+import editor from 'src/components/redux/slices/editor';
+import options from 'src/components/redux/slices/options';
 
-import addWatchers from '~/components/redux/watchers';
+import addWatchers from 'src/components/redux/watchers';
 
 export const PREFERENCES_PERSISTENT_KEYS: string[] = [
   completed.name,

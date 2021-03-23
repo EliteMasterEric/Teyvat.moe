@@ -8,21 +8,26 @@ import newGithubIssueUrl from 'new-github-issue-url';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { TabView } from '~/components/interface/Tabs';
-import { EditorMarker, EditorRoute } from '~/components/preferences/EditorDataSchema';
-import { AppDispatch } from '~/components/redux';
-import { clearElements } from '~/components/redux/slices/editor';
-import { selectIsTabDisplayed, setTab } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from '~/components/util';
-import ControlsEditorMarker from '~/components/views/controls/editor/ControlsEditorMarker';
-import ControlsEditorRoute from '~/components/views/controls/editor/ControlsEditorRoute';
-import ClearEditorDataPopup from '~/components/views/dialogs/ClearEditorDataPopup';
-import SubmitEditorDataPopup from '~/components/views/dialogs/SubmitEditorDataPopup';
-import ComponentErrorHandler from '~/components/views/error/ComponentErrorHandler';
-import { handleError } from '~/components/views/error/ErrorHandler';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { TabView } from 'src/components/interface/Tabs';
+import {
+  EditorFeatureSubmission,
+  EditorMarker,
+  EditorRoute,
+} from 'src/components/preferences/EditorDataSchema';
+import { AppDispatch } from 'src/components/redux';
+import { clearElements, selectEditorFeatureData } from 'src/components/redux/slices/editor';
+import { selectIsTabDisplayed, setTab } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from 'src/components/util';
+import ControlsEditorMarker from 'src/components/views/controls/editor/ControlsEditorMarker';
+import ControlsEditorRoute from 'src/components/views/controls/editor/ControlsEditorRoute';
+import ClearEditorDataPopup from 'src/components/views/dialogs/ClearEditorDataPopup';
+import SubmitEditorDataPopup from 'src/components/views/dialogs/SubmitEditorDataPopup';
+import ComponentErrorHandler from 'src/components/views/error/ComponentErrorHandler';
+import { handleError } from 'src/components/views/error/ErrorHandler';
 
 const useStyles = makeStyles((_theme) => ({
   header: {
@@ -65,28 +70,35 @@ const ControlsEditorElements = handleError<ControlsEditorElementsProps>(({ eleme
 
 const mapStateToProps = (state: AppState) => ({
   displayed: selectIsTabDisplayed(state, 'elements'),
-  editorData: state.editor,
+  editorFeatureData: selectEditorFeatureData(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   resetTab: () => dispatch(setTab('help')),
   clearEditorData: () => dispatch(clearElements()),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabEditorStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabEditorDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsTabEditorStateProps,
+  ControlsTabEditorDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsTabEditorProps = ConnectedProps<typeof connector>;
 
 const _ControlsTabEditor: FunctionComponent<ControlsTabEditorProps> = ({
   displayed,
-  editorData,
+  editorFeatureData,
   resetTab,
   clearEditorData,
 }) => {
   const classes = useStyles();
 
-  const submitEditorData = async (formData) => {
+  const submitEditorData = async (formData: EditorFeatureSubmission) => {
     const dataObject = {
       ...formData,
-      data: editorData.feature.data,
+      data: editorFeatureData,
     };
 
     const jsonData = generatePrettyJSON(dataObject);
@@ -108,7 +120,7 @@ const _ControlsTabEditor: FunctionComponent<ControlsTabEditorProps> = ({
     <TabView displayed={displayed}>
       <Typography className={classes.header}>{t('editor-elements')}</Typography>
       <Typography className={classes.subtitle}>{t('editor-elements-subtitle')}</Typography>
-      <ControlsEditorElements elements={editorData.feature.data} />
+      <ControlsEditorElements elements={editorFeatureData} />
       <ClearEditorDataPopup
         trigger={
           <Button

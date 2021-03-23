@@ -5,13 +5,14 @@ import { makeStyles } from '@material-ui/core';
 import React, { memo, useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import { TabBar, TabValue, TabView } from '~/components/interface/Tabs';
-import { selectOverrideLang } from '~/components/redux/slices/options';
-import { selectEditorEnabled, selectIsTabDisplayed } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsSubtabChangelog from '~/components/views/controls/help/ControlsSubtabChangelog';
-import ControlsSubtabHelp from '~/components/views/controls/help/ControlsSubtabHelp';
+import { t } from 'src/components/i18n/Localization';
+import { TabBar, TabValue, TabView } from 'src/components/interface/Tabs';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { selectEditorEnabled, selectIsTabDisplayed } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import ControlsSubtabChangelog from 'src/components/views/controls/help/ControlsSubtabChangelog';
+import ControlsSubtabHelp from 'src/components/views/controls/help/ControlsSubtabHelp';
 
 const TABS = [
   { enabled: true, order: 11, label: t('changelog'), value: 'changelog' as TabValue },
@@ -32,7 +33,12 @@ const mapStateToProps = (state: AppState) => ({
   lang: selectOverrideLang(state),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabHelpStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabHelpDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<ControlsTabHelpStateProps, ControlsTabHelpDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
 
 type ControlsTabHelpProps = ConnectedProps<typeof connector>;
 

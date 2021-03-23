@@ -6,21 +6,24 @@ import { makeStyles, Box, Button, Typography } from '@material-ui/core';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { TabView } from '~/components/interface/Tabs';
-import { exportDataJSON } from '~/components/preferences/DataExport';
-import { parseDataFromString } from '~/components/preferences/DataImport';
-import { importMarkerDataFromSite } from '~/components/preferences/ExternalImport';
-import { AppDispatch } from '~/components/redux';
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { setImportError } from '~/components/redux/slices/error';
-import { AppState } from '~/components/redux/types';
-import { isValidJSON } from '~/components/util';
-import ExportDataPopup from '~/components/views/dialogs/ExportDataPopup';
-import ImportDataPopup from '~/components/views/dialogs/ImportDataPopup';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { TabView } from 'src/components/interface/Tabs';
+import { exportDataJSON } from 'src/components/preferences/DataExport';
+import { parseDataFromString } from 'src/components/preferences/DataImport';
+import { importMarkerDataFromSite } from 'src/components/preferences/ExternalImport';
+import { GM_007 } from 'src/components/preferences/PreferencesSchema';
+import { AppDispatch } from 'src/components/redux';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { setImportError } from 'src/components/redux/slices/error';
+import { selectIsTabDisplayed } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { isValidJSON } from 'src/components/util';
+import ExportDataPopup from 'src/components/views/dialogs/ExportDataPopup';
+import ImportDataPopup from 'src/components/views/dialogs/ImportDataPopup';
 
-import Bookmarklets from '~/data/core/bookmarklets.json';
+import Bookmarklets from 'src/data/core/bookmarklets.json';
 
 const useStyles = makeStyles((_theme) => ({
   label: {
@@ -37,16 +40,19 @@ const useStyles = makeStyles((_theme) => ({
     marginBottom: 8,
   },
 }));
-
 const mapStateToProps = (state: AppState) => ({
-  displayed: state.controlsTab === 'sync',
+  displayed: selectIsTabDisplayed(state, 'sync'),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   importPreferences: (data: string) => {
     try {
       const importedData = parseDataFromString(data);
-      dispatch(setPreferences(importedData));
-      return true;
+      if (importedData == null) {
+        return false;
+      } else {
+        dispatch(setPreferences(importedData));
+        return true;
+      }
     } catch (err) {
       switch (err.name) {
         case 'InvalidCharacterError':
@@ -67,7 +73,12 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
 
   clearState: () => dispatch(clearPreferences()),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabSyncStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabSyncDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<ControlsTabSyncStateProps, ControlsTabSyncDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
 
 type ControlsTabSyncProps = ConnectedProps<typeof connector>;
 

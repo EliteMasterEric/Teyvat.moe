@@ -5,18 +5,25 @@
 import React, { memo, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { AppDispatch } from '~/components/redux';
-import { selectEditorEnabled, selectIsTabDisplayed } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { SafeHTML } from '~/components/util';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { selectEditorEnabled, selectIsTabDisplayed } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { SafeHTML } from 'src/components/util';
 
 const mapStateToProps = (state: AppState) => ({
   displayed: selectIsTabDisplayed(state, 'help') && selectEditorEnabled(state),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabHelpEditorStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabHelpEditorDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsTabHelpEditorStateProps,
+  ControlsTabHelpEditorDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsTabHelpEditorProps = ConnectedProps<typeof connector>;
 

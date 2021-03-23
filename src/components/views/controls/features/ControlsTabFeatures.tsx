@@ -5,15 +5,16 @@
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { getFeatureKeysByFilter, sortFeaturesByName } from '~/components/data/MapFeatures';
-import BorderBox from '~/components/interface/BorderBox';
+import { getFeatureKeysByFilter, sortFeaturesByName } from 'src/components/data/MapFeatures';
+import BorderBox from 'src/components/interface/BorderBox';
 import {
   selectIsTabDisplayed,
   selectMapCategory,
   selectMapRegion,
-} from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsFeatureButton from '~/components/views/controls/features/ControlsFeatureButton';
+} from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import ControlsFeatureButton from 'src/components/views/controls/features/ControlsFeatureButton';
 
 const mapStateToProps = (state: AppState) => ({
   displayed: selectIsTabDisplayed(state, 'features'),
@@ -21,7 +22,14 @@ const mapStateToProps = (state: AppState) => ({
   currentRegion: selectMapRegion(state),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabFeaturesStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabFeaturesDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsTabFeaturesStateProps,
+  ControlsTabFeaturesDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsTabFeaturesProps = ConnectedProps<typeof connector>;
 

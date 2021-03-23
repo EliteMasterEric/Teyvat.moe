@@ -3,19 +3,17 @@
  */
 
 /**
- * Defines a new type which, aside from storing a primative value,
- * also stores a unique "TYPE" key.
- * This allows TypeScript to differentiate between different types of strings
- * without changing the compiler's output.
- *
- * @example Opaque<"UUID", string>
+ * Opaque<K, T> has been replaced with:
+ * ts-toolbelt.A.Type<T, K>
  */
-export type Opaque<K, T> = T & { __TYPE__: K };
+import { A } from 'ts-toolbelt';
 
 /**
  * Defines a new type which removes the readonly flag from the properties of a type.
  */
 export type Mutable<T> = { -readonly [P in keyof T]: T[P] };
+
+export type OpaqueKey<K extends string> = `~~OPAQUE:${K}${string}`;
 
 /**
  * Note these other utility types:
@@ -31,19 +29,26 @@ export type Mutable<T> = { -readonly [P in keyof T]: T[P] };
  * NOTE: Never use capital letter variants of primatives (String, Number, Boolean)
  */
 
-export type UnixTimestamp = Opaque<'UnixTimestamp', number>;
-export type LocalizedString = Opaque<'LocalizedString', string>;
+export type UnixTimestamp = A.Type<number, 'UnixTimestamp'>;
+export type LocalizedString = A.Type<string, 'LocalizedString'>;
 
-export type UIControlsTab =
-  | 'help'
-  | 'changelog'
-  | 'summary'
-  | 'editor-help'
-  | 'elements'
-  | 'features'
-  | 'routes'
-  | 'sync'
-  | 'options';
+export type Empty = Record<string, never>;
+
+const UIControlsTabs = [
+  'help',
+  'changelog',
+  'summary',
+  'editor-help',
+  'elements',
+  'features',
+  'routes',
+  'sync',
+  'options',
+] as const;
+export type UIControlsTab = typeof UIControlsTabs[number];
+export const distinguishUIControlsTab = (value: string): value is UIControlsTab => {
+  return UIControlsTabs.includes(value as UIControlsTab);
+};
 
 export type MapPosition = {
   latlng: {

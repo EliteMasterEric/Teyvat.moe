@@ -1,42 +1,41 @@
 import {
   MSFCluster,
   MSFCoordinate,
-  MSFCoordinates,
   MSFFeature,
+  MSFLocalizedField,
   MSFMarkerID,
   MSFPopupContent,
-  MSFPopupMedia,
   MSFPopupTitle,
   MSFRespawn,
   MSFRouteColor,
   MSFRouteID,
   MSFRouteText,
   MSFSchemaVersion,
-} from '~/components/data/ElementSchema';
-import { MapCategoryKey } from '~/components/data/MapCategories';
-import { MapRegionKey } from '~/components/data/MapRegions';
+} from 'src/components/data/ElementSchema';
+import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { MapRegionKey } from 'src/components/data/MapRegions';
 
 // Legacy data had a GeoJSON format.
 export interface LegacyEditorMarker {
   type: 'Feature';
   geometry: {
-    coordinates: MSFCoordinates;
+    coordinates: MSFCoordinate;
   };
   properties: {
     popupTitle?: MSFPopupTitle;
     popupContent?: MSFPopupContent;
-    popupMedia?: MSFPopupMedia;
+    popupMedia?: string;
   };
 }
 export interface LegacyEditorRoute {
   type: 'Feature';
   geometry: {
-    coordinates: MSFCoordinates;
+    coordinates: MSFCoordinate[];
   };
   properties: {
     popupTitle?: MSFPopupTitle;
     popupContent?: MSFPopupContent;
-    popupMedia?: MSFPopupMedia;
+    popupMedia?: string;
   };
 }
 // The popupImage element was later moved to
@@ -44,14 +43,14 @@ export interface GM_002_EditorMarker extends LegacyEditorMarker {
   properties: {
     popupTitle?: MSFPopupTitle;
     popupContent?: MSFPopupContent;
-    popupImage?: MSFPopupMedia;
+    popupImage?: string;
   };
 }
 export interface GM_002_EditorRoute extends LegacyEditorRoute {
   properties: {
     popupTitle?: MSFPopupTitle;
     popupContent?: MSFPopupContent;
-    popupImage?: MSFPopupMedia;
+    popupImage?: string;
   };
 }
 
@@ -60,27 +59,22 @@ export interface EditorMarker {
   coordinates: MSFCoordinate;
   id: MSFMarkerID;
 
-  popupTitle?: MSFPopupTitle;
-  popupContent?: MSFPopupContent;
-  popupMedia?: MSFPopupMedia;
-  popupAttribution?: 'Unknown';
+  popupTitle?: MSFLocalizedField;
+  popupContent?: MSFLocalizedField;
+  popupMedia?: string;
+  popupAttribution?: string;
 }
 export interface EditorRoute {
-  coordinates: MSFCoordinates;
+  coordinates: MSFCoordinate[];
   id: MSFRouteID;
 
-  subtype: {
-    test: string;
-    testb: string;
-  };
+  routeColor?: MSFRouteColor;
+  routeText?: MSFRouteText;
 
-  routeColor: MSFRouteColor;
-  routeText: MSFRouteText;
-
-  popupTitle?: MSFPopupTitle;
-  popupContent?: MSFPopupContent;
-  popupMedia?: MSFPopupMedia;
-  popupAttribution?: 'Unknown';
+  popupTitle?: MSFLocalizedField;
+  popupContent?: MSFLocalizedField;
+  popupMedia?: string;
+  popupAttribution?: string;
 }
 
 export const isMarker = (element: EditorMarker | EditorRoute): boolean => {

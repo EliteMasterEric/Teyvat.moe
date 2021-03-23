@@ -9,18 +9,18 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { f, t } from '~/components/i18n/Localization';
-import { InputTextArea, InputTextField } from '~/components/interface/Input';
-import { EditorRoute } from '~/components/preferences/EditorDataSchema';
-import { AppDispatch } from '~/components/redux';
-import { editRoute, removeRoute } from '~/components/redux/slices/editor';
+import { f, t } from 'src/components/i18n/Localization';
+import { InputTextArea, InputTextField } from 'src/components/interface/Input';
+import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
+import { AppDispatch } from 'src/components/redux';
+import { editRoute, removeRoute } from 'src/components/redux/slices/editor';
 import {
   selectIsRouteHighlighted,
   setMapHighlight,
   setMapPosition,
-} from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsEditorImageUploader from '~/components/views/controls/editor/ControlsEditorImageUploader';
+} from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import ControlsEditorImageUploader from 'src/components/views/controls/editor/ControlsEditorImageUploader';
 
 const useStyles = makeStyles((_theme) => ({
   routeBox: {
@@ -59,18 +59,18 @@ interface ControlsEditorRouteBaseProps {
 const mapStateToProps = (state: AppState, { route }: ControlsEditorRouteBaseProps) => ({
   highlighted: selectIsRouteHighlighted(state, route.id),
   routeID: route.id,
-  routeTitle: route.popupTitle.en, // TODO: Currently the editor only allows English.
-  routeContent: route.popupContent.en, // TODO: Currently the editor only allows English.
+  routeTitle: route?.popupTitle?.en ?? '', // TODO: Currently the editor only allows English.
+  routeContent: route?.popupContent?.en ?? '', // TODO: Currently the editor only allows English.
   routeMedia: route.popupMedia,
 });
 const mapDispatchToProps = (dispatch: AppDispatch, { route }: ControlsEditorRouteBaseProps) => ({
-  setRouteTitle: (value) => {
+  setRouteTitle: (value: string) => {
     dispatch(editRoute(route.id, 'popupTitle.en', value));
   },
-  setRouteContent: (value) => {
+  setRouteContent: (value: string) => {
     dispatch(editRoute(route.id, 'popupContent.en', value));
   },
-  setRouteMedia: (value) => {
+  setRouteMedia: (value: string) => {
     dispatch(editRoute(route.id, 'popupMedia', value));
   },
 
@@ -79,21 +79,31 @@ const mapDispatchToProps = (dispatch: AppDispatch, { route }: ControlsEditorRout
   highlightRoute: () => {
     const HIGHLIGHT_ZOOM_LEVEL = 8;
 
-    dispatch(setMapHighlight(route.id));
-    dispatch(
-      setMapPosition(
-        {
-          lat: route?.coordinates[0][0],
-          lng: route?.coordinates[0][1],
-        },
-        HIGHLIGHT_ZOOM_LEVEL
-      )
-    );
+    const routeStartingMarker = route.coordinates[0];
+    if (routeStartingMarker != null && routeStartingMarker.length >= 2) {
+      dispatch(setMapHighlight(route.id));
+      dispatch(
+        setMapPosition(
+          {
+            lat: routeStartingMarker[0],
+            lng: routeStartingMarker[1],
+          },
+          HIGHLIGHT_ZOOM_LEVEL
+        )
+      );
+    }
   },
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsEditorRouteStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsEditorRouteDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsEditorRouteStateProps,
+  ControlsEditorRouteDispatchProps,
+  ControlsEditorRouteBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsEditorRouteProps = ConnectedProps<typeof connector>;
+type ControlsEditorRouteProps = ConnectedProps<typeof connector> & ControlsEditorRouteBaseProps;
 
 const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
   routeID,
@@ -141,7 +151,10 @@ const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
         rows={3}
         onChange={(value) => setRouteContent(value)}
       />
-      <ControlsEditorImageUploader elementMedia={routeMedia} setElementMedia={setRouteMedia} />
+      <ControlsEditorImageUploader
+        elementMedia={routeMedia ?? ''}
+        setElementMedia={setRouteMedia}
+      />
     </Box>
   );
 };

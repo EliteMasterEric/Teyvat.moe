@@ -18,16 +18,16 @@ import sanitizeHTML from 'sanitize-html';
 import { mapStackTrace } from 'sourcemapped-stacktrace';
 
 // eslint-disable-next-line no-restricted-imports
-import packageJson from '~/../package.json';
+import packageJson from 'package.json';
 
 export const canUseDOM = (): boolean => {
-  return typeof window !== 'undefined' && !!window.document && !!window.document.createElement;
+  return window != null && !!window.document && !!window.document.createElement;
 };
 
-let dev: boolean | undefined = undefined;
+let dev: boolean | null = null;
 export const isDev = (): boolean => {
   // Cache the result.
-  if (typeof dev !== 'undefined') return dev;
+  if (dev != null) return dev;
 
   if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
     console.debug('Running in development environment (LOCAL).');
@@ -242,8 +242,7 @@ export const useDebouncedState = <T extends unknown>(
   // The result is a function that never changes, that calls a function that constantly changes.
   // This allows the debounce function to hook onto the former and prevent repeated calls.
   // Thanks to: https://stackoverflow.com/questions/59183495/cant-get-lodash-debounce-to-work-properly-executed-multiple-times-reac
-  const onStateChangedRef = useRef<(newValue: T) => void>(null);
-  onStateChangedRef.current = (newValue: T) => onStateChanged(newValue);
+  const onStateChangedRef = useRef((newValue: T) => onStateChanged(newValue));
   // useCallback is specifically designed for inline functions.
   // In other cases, useMemo should be used.
   const onStateChangedDebounced: _.DebouncedFunc<(newValue: T) => void> = useMemo(
@@ -303,13 +302,14 @@ export const fromPairsToArrays = (
   pairs: Array<[string, any]>,
   trimNulls = true
 ): Record<string, Array<any>> => {
-  const result = {};
+  const result: Record<string, Array<any>> = {};
 
   _.forEach(pairs, ([key, value]) => {
     const shouldSkip = trimNulls && value == null;
     if (!shouldSkip) {
-      if (key in result) {
-        result[key] = [...result[key], value];
+      const resultKey = result[key];
+      if (resultKey != null) {
+        result[key] = [...resultKey, value];
       } else {
         result[key] = [value];
       }

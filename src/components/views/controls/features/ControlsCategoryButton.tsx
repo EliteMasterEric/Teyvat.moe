@@ -6,20 +6,20 @@
 import { makeStyles, Button } from '@material-ui/core';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MapCategories, MapCategoryKey } from '~/components/data/MapCategories';
+import { getMapCategory, MapCategoryKey } from 'src/components/data/MapCategories';
 
-import { getEmptyFeatureCategories } from '~/components/data/MapFeatures';
-import { getEmptyRouteCategories } from '~/components/data/MapRoutes';
-import { t } from '~/components/i18n/Localization';
-import { AppDispatch } from '~/components/redux';
-import { selectOverrideLang } from '~/components/redux/slices/options';
+import { getEmptyFeatureCategories } from 'src/components/data/MapFeatures';
+import { getEmptyRouteCategories } from 'src/components/data/MapRoutes';
+import { t } from 'src/components/i18n/Localization';
+import { AppDispatch } from 'src/components/redux';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
 import {
   selectMapCategory,
   selectMapRegion,
   selectTab,
   setMapCategory,
-} from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
+} from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
 
 const useStyles = makeStyles((_theme) => ({
   categoryButton: {
@@ -37,7 +37,7 @@ interface ControlsCategoryButtonBaseProps {
 const mapStateToProps = (state: AppState, { categoryKey }: ControlsCategoryButtonBaseProps) => {
   const controlsTab = selectTab(state);
   const controlsRegion = selectMapRegion(state);
-  const { enabled: categoryEnabled, style, nameKey } = MapCategories[categoryKey];
+  const { enabled: categoryEnabled, style, nameKey } = getMapCategory(categoryKey);
   // Check if the given category is empty for the active region.
   let categoryEmpty = true;
   switch (controlsTab) {
@@ -69,9 +69,17 @@ const mapDispatchToProps = (
 ) => ({
   enableCategory: () => dispatch(setMapCategory(categoryKey)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsCategoryButtonStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsCategoryButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsCategoryButtonStateProps,
+  ControlsCategoryButtonDispatchProps,
+  ControlsCategoryButtonBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsCategoryButtonProps = ConnectedProps<typeof connector>;
+type ControlsCategoryButtonProps = ConnectedProps<typeof connector> &
+  ControlsCategoryButtonBaseProps;
 
 const _ControlsCategoryButton: FunctionComponent<ControlsCategoryButtonProps> = ({
   active,
@@ -85,9 +93,9 @@ const _ControlsCategoryButton: FunctionComponent<ControlsCategoryButtonProps> = 
   if (!displayed) return null;
 
   const buttonStyle = {
-    backgroundColor: active ? style?.enabled?.bg : style?.disabled?.bg ?? '#FFF',
-    color: active ? style?.enabled?.text : style?.disabled?.text ?? '#000',
-    flexBasis: style?.fullWidth ? '95%' : null,
+    backgroundColor: active ? style.enabled.bg : style.disabled.bg ?? '#FFF',
+    color: active ? style.enabled.text : style.disabled.text ?? '#000',
+    flexBasis: style.fullWidth ? '95%' : null,
   };
 
   return (

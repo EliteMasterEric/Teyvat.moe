@@ -1,16 +1,19 @@
 import { Box, IconButton, Tooltip, Typography, makeStyles } from '@material-ui/core';
 import { Link as LinkIcon } from '@material-ui/icons';
+import { LeafletEvent, LeafletEventHandlerFnMap } from 'leaflet';
 import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';
 import TextPath from 'react-leaflet-textpath';
 
-import { MSFRoute, YOUTUBE_REGEX } from '~/components/data/ElementSchema';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { f, t } from '~/components/i18n/Localization';
-import { Image } from '~/components/interface/Image';
-import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
-import { SafeHTML } from '~/components/util';
-import { copyPermalink } from '~/components/views/PermalinkHandler';
+import { YOUTUBE_REGEX } from 'src/components/data/ElementSchema';
+import { DEFAULT_ROUTE_COLOR, DEFAULT_ROUTE_TEXT } from 'src/components/data/MapRoutes';
+import { localizeField } from 'src/components/i18n/FeatureLocalization';
+import { f, t } from 'src/components/i18n/Localization';
+import { Image } from 'src/components/interface/Image';
+import YouTubeEmbed from 'src/components/interface/YouTubeEmbed';
+import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
+import { SafeHTML } from 'src/components/util';
+import { copyPermalink } from 'src/components/views/PermalinkHandler';
 
 const POPUP_WIDTH = '560';
 
@@ -50,14 +53,17 @@ const useStyles = makeStyles((_theme) => ({
     height: 192,
   },
 
-  mapRouteLine: {},
-
   mapRouteLineText: {
     fontSize: 20,
   },
 }));
 
-const RouteMedia = ({ media, allowExternalMedia }) => {
+interface RouteMediaProps {
+  media: string;
+  allowExternalMedia: boolean;
+}
+
+const RouteMedia: FunctionComponent<RouteMediaProps> = ({ media, allowExternalMedia }) => {
   const classes = useStyles();
 
   if (media == null || media === '') return null;
@@ -70,8 +76,8 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
     const isYouTube = media.match(YOUTUBE_REGEX);
     if (isYouTube) {
       const match = YOUTUBE_REGEX.exec(media);
-      if (match != null) {
-        const videoId = match[1];
+      const videoId = match != null && match[1];
+      if (videoId != null && !!videoId) {
         return <YouTubeEmbed id={videoId} width={560} height={315} />;
       }
     }
@@ -98,7 +104,7 @@ const RouteMedia = ({ media, allowExternalMedia }) => {
 };
 
 interface RouteLineProps {
-  route: MSFRoute;
+  route: EditorRoute;
   editable?: boolean;
   allowExternalMedia?: boolean;
 }
@@ -113,11 +119,11 @@ const RouteLine: FunctionComponent<RouteLineProps> = ({
 
   const onCopyPermalink = () => copyPermalink(route.id);
 
-  const title = localizeField(route.popupTitle);
-  const content = localizeField(route.popupContent);
+  const title = localizeField(route?.popupTitle);
+  const content = localizeField(route?.popupContent);
 
-  const eventHandlers = {
-    add: (event) => {
+  const eventHandlers: LeafletEventHandlerFnMap = {
+    add: (event: LeafletEvent) => {
       if (editable) {
         event.target.enableEdit();
       }
@@ -128,16 +134,14 @@ const RouteLine: FunctionComponent<RouteLineProps> = ({
     <TextPath
       // Attributes passed to the parent Polyline.
       eventHandlers={eventHandlers}
-      positions={route?.coordinates}
-      color={route.routeColor}
-      className={classes.mapRouteLine}
+      positions={route.coordinates}
       // Attributes passed to TextPath.setText.
-      text={route.routeText}
+      text={route.routeText ?? DEFAULT_ROUTE_TEXT}
       repeat
-      id={route.id}
+      // id={route.id}
       attributes={{
-        dy: 6,
-        fill: route.routeColor,
+        dy: '6',
+        fill: route.routeColor ?? DEFAULT_ROUTE_COLOR,
         class: classes.mapRouteLineText,
       }}
     >
@@ -152,7 +156,7 @@ const RouteLine: FunctionComponent<RouteLineProps> = ({
             </Typography>
           )}
           <Box>
-            <RouteMedia media={route.popupMedia} allowExternalMedia={allowExternalMedia} />
+            <RouteMedia media={route.popupMedia ?? ''} allowExternalMedia={allowExternalMedia} />
           </Box>
           {content && content !== '' ? (
             <SafeHTML className={classes.popupContent}>{content}</SafeHTML>

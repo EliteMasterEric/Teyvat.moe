@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet-async'; // Thread safe variant prevents warnings.
 
-import { t } from '~/components/i18n/Localization';
-import { isDev } from '~/components/util';
+import { t } from 'src/components/i18n/Localization';
+import { isDev } from 'src/components/util';
 
 // The site connects to these external APIs.
 const CONNECT_HOSTS = ['https://api.imgur.com'];

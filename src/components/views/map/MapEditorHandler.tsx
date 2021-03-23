@@ -1,24 +1,38 @@
-import { Layer } from 'leaflet';
+import { LatLng, LeafletMouseEvent, Marker, Polyline, VertexEvent } from 'leaflet';
 import _ from 'lodash';
-import React, { useEffect, useState } from 'react';
+import React, { FunctionComponent, MouseEventHandler, useEffect, useState } from 'react';
 import { useMapEvents } from 'react-leaflet';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 
 // Its presence modifies the behavior of Leaflet.
 import 'leaflet-editable';
 
-import { MSFMarkerID, MSFRouteID } from '~/components/data/ElementSchema';
-import { EditorMarker, EditorRoute } from '~/components/preferences/EditorDataSchema';
-import { appendMarker, appendRoute, editMarker, editRoute } from '~/components/redux/slices/editor';
-import { hashObject, truncateFloat } from '~/components/util';
-import EditorControls from '~/components/views/map/EditorControls';
+import {
+  MSFCoordinate,
+  MSFLocalizedString,
+  MSFMarkerID,
+  MSFPopupContent,
+  MSFPopupTitle,
+  MSFRouteID,
+} from 'src/components/data/ElementSchema';
+import { DEFAULT_ROUTE_COLOR, DEFAULT_ROUTE_TEXT } from 'src/components/data/MapRoutes';
+import { EditorMarker, EditorRoute } from 'src/components/preferences/EditorDataSchema';
+import { AppDispatch } from 'src/components/redux';
+import {
+  appendMarker,
+  appendRoute,
+  editMarker,
+  editRoute,
+} from 'src/components/redux/slices/editor';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { filterNotEmpty, hashObject, truncateFloat } from 'src/components/util';
+import EditorControls from 'src/components/views/map/EditorControls';
 import {
   editorMarkerHighlight,
   lineProperties,
   lineTextProperties,
-} from '~/components/views/map/LayerConstants';
-import { AppState } from '~/components/redux/types';
-import { AppDispatch } from '~/components/redux';
+} from 'src/components/views/map/LayerConstants';
 
 const MARKER_OPTIONS = {
   icon: editorMarkerHighlight,
@@ -26,12 +40,23 @@ const MARKER_OPTIONS = {
 
 const CONTROL_KEYS = ['ControlLeft', 'ControlRight', 'MetaLeft', 'MetaRight'];
 
+// Type guards.
+const distinguishMarker = (value: any): value is Marker => {
+  return !!(value as Marker).getLatLng;
+};
+const distinguishPolyline = (value: any): value is Polyline => {
+  return !!(value as Polyline).getLatLngs;
+};
+const distinguishVertexEvent = (value: any): value is VertexEvent => {
+  return !!(value as VertexEvent).vertex;
+};
+
 type EditorState = 'none' | 'createMarker' | 'createRoute' | 'editMarker' | 'editRoute';
 
 const mapStateToProps = (_state: AppState) => ({});
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  appendMarker: (data: EditorMarker): void => dispatch(appendMarker(data)),
-  appendRoute: (data: EditorRoute): void => dispatch(appendRoute(data)),
+  appendMarker: (data: EditorMarker) => dispatch(appendMarker(data)),
+  appendRoute: (data: EditorRoute) => dispatch(appendRoute(data)),
   moveMarker: (id: MSFMarkerID, newCoords: EditorMarker['coordinates']) => {
     dispatch(editMarker(id, 'coordinates', newCoords));
     dispatch(editMarker(id, 'id', hashObject(newCoords)));
@@ -42,22 +67,36 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
     dispatch(editRoute(id, 'id', hashObject(newCoordsList)));
   },
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type MapEditorHandlerStateProps = ReturnType<typeof mapStateToProps>;
+type MapEditorHandlerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  MapEditorHandlerStateProps,
+  MapEditorHandlerDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute }) => {
+type MapEditorHandlerProps = ConnectedProps<typeof connector>;
+
+const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
+  appendMarker,
+  appendRoute,
+  moveMarker,
+  moveRoute,
+}) => {
   // A separate state must be used because the type of currentEditable can't be determined
   // just by looking at it.
   const [editorState, setEditorState] = useState<EditorState>('none');
-  const [currentEditable, setCurrentEditable] = useState<Layer | null>(null);
+  const [currentEditable, setCurrentEditable] = useState<Marker | Polyline | null>(null);
 
   // Maintain the state of the CTRL key through event listeners.
   const [ctrlHeld, setCtrlHeld] = useState<boolean>(false);
-  const onKeyDown = (e) => {
+  const onKeyDown = (e: KeyboardEvent) => {
     if (CONTROL_KEYS.includes(e.code)) {
       setCtrlHeld(true);
     }
   };
-  const onKeyUp = (e) => {
+  const onKeyUp = (e: KeyboardEvent) => {
     if (CONTROL_KEYS.includes(e.code)) {
       setCtrlHeld(false);
     }
@@ -72,19 +111,24 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     };
   });
 
-  const placeMarker = (editable) => {
-    const { _latlng: latlng } = editable;
+  const placeMarker = (editable: Marker) => {
+    const latlng = editable.getLatLng();
 
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngFormatted = [truncateFloat(latlng?.lat, 5), truncateFloat(latlng?.lng, 5)];
-    const id = hashObject(latlngFormatted);
+    const latlngFormatted: MSFCoordinate = [
+      truncateFloat(latlng.lat, 5),
+      truncateFloat(latlng.lng, 5),
+    ];
+    const id = hashObject(latlngFormatted) as MSFMarkerID;
+    const popupTitle = { en: '' as MSFLocalizedString } as MSFPopupTitle;
+    const popupContent = { en: '' as MSFLocalizedString } as MSFPopupContent;
 
     // Switched to MSFv2.
     const newMarker = {
       coordinates: latlngFormatted,
       id,
-      popupTitle: { en: '' },
-      popupContent: { en: '' },
+      popupTitle,
+      popupContent,
       popupAttribution: 'Unknown',
       popupMedia: '',
     };
@@ -95,41 +139,49 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     // setCurrentEditable(null);
   };
 
-  const placeRoute = (editable) => {
-    const { _latlngs: latlngs } = editable;
+  const placeRoute = (editable: Polyline) => {
+    const latlngs = editable.getLatLngs();
+    if (latlngs[0] == null) return;
+
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngsFormatted = latlngs.map((latlng) => [
-      truncateFloat(latlng?.lat, 5),
-      truncateFloat(latlng?.lng, 5),
-    ]);
+    const latlngsFormatted = latlngs
+      .map((latlng: LatLng | LatLng[] | LatLng[][]): MSFCoordinate | null => {
+        if (Array.isArray(latlng)) return null;
+        return [truncateFloat(latlng.lat, 5), truncateFloat(latlng.lng, 5)];
+      })
+      .filter(filterNotEmpty);
+    if (latlngsFormatted.length == 0) return;
+
     const id = hashObject(latlngsFormatted);
+    const popupTitle = { en: '' as MSFLocalizedString } as MSFPopupTitle;
+    const popupContent = { en: '' as MSFLocalizedString } as MSFPopupContent;
 
     // Switched to MSFv2.
     const newRoute = {
       coordinates: latlngsFormatted,
-      id,
-      routeColor: '#d32f2f',
-      routeText: '  ►  ',
-      popupTitle: { en: '' },
-      popupContent: { en: '' },
+      id: id as MSFRouteID,
+      routeColor: DEFAULT_ROUTE_COLOR,
+      routeText: DEFAULT_ROUTE_TEXT,
+      popupTitle,
+      popupContent,
       popupAttribution: 'Unknown',
       popupMedia: '',
     };
     appendRoute(newRoute);
-    // setEditorState('none');
-    // setCurrentEditable(null);
   };
 
-  const updateRoute = (event) => {
-    const { id: routeID } = event.layer.options;
-    const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
-      truncateFloat(vertex.lat, 5),
-      truncateFloat(vertex.lng, 5),
-    ]);
+  const updateRoute = (event: VertexEvent) => {
+    const { id: routeID } = event.propagatedFrom.options;
+    // TODO: Fix this after TypeScript overhaul.
 
-    moveRoute(routeID.split('/')[1], newRouteLatLngs);
-    setEditorState('none');
-    setCurrentEditable(null);
+    //const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
+    //truncateFloat(vertex.lat, 5),
+    //truncateFloat(vertex.lng, 5),
+    //]);
+    //
+    //moveRoute(routeID.split('/')[1], newRouteLatLngs);
+    //setEditorState('none');
+    //setCurrentEditable(null);
   };
 
   /**
@@ -154,7 +206,10 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
         // eslint-disable-next-line no-underscore-dangle
         const { _latlng: latlng } = event.propagatedFrom;
 
-        const newCoords = [truncateFloat(latlng.lat, 5), truncateFloat(latlng.lng, 5)];
+        const newCoords: MSFCoordinate = [
+          truncateFloat(latlng.lat, 5),
+          truncateFloat(latlng.lng, 5),
+        ];
 
         moveMarker(markerID.split('/')[1], newCoords);
         setEditorState('none');
@@ -202,17 +257,21 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
     },
 
     'editable:drawing:commit': (event) => {
-      if (editorState === 'editRoute') {
+      if (editorState === 'none' || currentEditable == null) {
+        return;
+      }
+
+      if (editorState === 'editRoute' && distinguishVertexEvent(event)) {
         updateRoute(event);
         return;
       }
 
-      if (editorState === 'createRoute') {
+      if (editorState === 'createRoute' && distinguishPolyline(currentEditable)) {
         placeRoute(currentEditable);
         return;
       }
 
-      if (editorState === 'createMarker') {
+      if (editorState === 'createMarker' && distinguishMarker(currentEditable)) {
         placeMarker(currentEditable);
       }
     },
@@ -226,7 +285,7 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
       if (editorState === 'createMarker') {
         if (ctrlHeld) {
           // Place an additional marker.
-          const editable = map.editTools.startMarker(null, MARKER_OPTIONS);
+          const editable = map.editTools.startMarker(undefined, MARKER_OPTIONS);
           setCurrentEditable(editable);
           // return;
         }
@@ -247,20 +306,22 @@ const _MapEditorHandler = ({ appendMarker, appendRoute, moveMarker, moveRoute })
 
   const startEditorMarker = () => {
     setEditorState('createMarker');
-    const editable = map.editTools.startMarker(null, MARKER_OPTIONS);
+    const editable = map.editTools.startMarker(undefined, MARKER_OPTIONS);
     setCurrentEditable(editable);
   };
 
   const startEditorRoute = () => {
     setEditorState('createRoute');
-    const editable = map.editTools.startPolyline(null, lineProperties);
+    const editable = map.editTools.startPolyline(undefined, lineProperties);
     editable.setText('  ►  ', lineTextProperties);
     setCurrentEditable(editable);
   };
 
-  const commitDrawing = (event) => {
+  const commitDrawing: MouseEventHandler<HTMLDivElement> = (event) => {
+    // Let's hope this doesn't break things.
+    const leafletEvent = (event as unknown) as LeafletMouseEvent;
     // Finish the current drawing, saving any data it had.
-    map.editTools.commitDrawing(event);
+    map.editTools.commitDrawing(leafletEvent);
     setEditorState('none');
     setCurrentEditable(null);
   };

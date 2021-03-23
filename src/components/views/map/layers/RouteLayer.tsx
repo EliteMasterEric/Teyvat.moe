@@ -8,12 +8,12 @@ import { LayerGroup as LeafletLayerGroup } from 'leaflet';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFRouteGroupExtended, MSFRouteGroupKey } from '~/components/data/ElementSchema';
-import { selectIsRouteGroupDisplayed } from '~/components/redux/slices/displayed';
-import { selectHideRoutesInEditor } from '~/components/redux/slices/options';
-import { selectEditorEnabled } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import RouteLine from '~/components/views/map/layers/RouteLine';
+import { MSFRouteGroupExtended, MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { selectIsRouteGroupDisplayed } from 'src/components/redux/slices/displayed';
+import { selectHideRoutesInEditor } from 'src/components/redux/slices/options';
+import { selectEditorEnabled } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import RouteLine from 'src/components/views/map/layers/RouteLine';
 
 interface RouteLayerBaseProps {
   routeKey: MSFRouteGroupKey;
@@ -27,16 +27,23 @@ const mapStateToProps = (state: AppState, { routeKey }: RouteLayerBaseProps) => 
   return { displayed: hideRoutesInEditor && editorEnabled && routeDisplayed };
 };
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type RouteLayerStateProps = ReturnType<typeof mapStateToProps>;
+type RouteLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  RouteLayerStateProps,
+  RouteLayerDispatchProps,
+  RouteLayerBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type RouteLayerProps = ConnectedProps<typeof connector>;
+type RouteLayerProps = ConnectedProps<typeof connector> & RouteLayerBaseProps;
 
 const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed }) => {
   const map = useMap();
-  const layerRef = useRef<LeafletLayerGroup>(undefined);
+  const layerRef = useRef<LeafletLayerGroup | null>(null);
 
   useEffect(() => {
-    if (typeof layerRef.current !== 'undefined') {
+    if (layerRef.current != null) {
       if (displayed) {
         layerRef.current.addTo(map);
       } else {

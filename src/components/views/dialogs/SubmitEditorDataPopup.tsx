@@ -19,15 +19,15 @@ import {
 import _ from 'lodash';
 import React, { useState, cloneElement, FunctionComponent, ReactElement } from 'react';
 
-import { MSFFilterIcon, MSFSchemaVersion } from '~/components/data/ElementSchema';
-import { MapCategories, MapCategoryKey, MapCategoryKeys } from '~/components/data/MapCategories';
-import { MapRegions, MapRegionKey, MapRegionKeys } from '~/components/data/MapRegions';
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { InputTextArea, InputTextField } from '~/components/interface/Input';
-import { EditorFeatureSubmission } from '~/components/preferences/EditorDataSchema';
-import { SafeHTML } from '~/components/util';
-import DialogTitle from '~/components/views/dialogs/DialogTitle';
+import { MSFFilterIcon, MSFSchemaVersion } from 'src/components/data/ElementSchema';
+import { getMapCategory, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
+import { getMapRegion, MapRegionKey, MapRegionKeys } from 'src/components/data/MapRegions';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { InputTextArea, InputTextField } from 'src/components/interface/Input';
+import { EditorFeatureSubmission } from 'src/components/preferences/EditorDataSchema';
+import { SafeHTML } from 'src/components/util';
+import DialogTitle from 'src/components/views/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -58,8 +58,8 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
 }) => {
   const [submissionName, setSubmissionName] = useState<string>('');
   const [submissionDescription, setSubmissionDescription] = useState<string>('');
-  const [submissionRegion, setSubmissionRegion] = useState<MapRegionKey>(MapRegionKeys[0]);
-  const [submissionCategory, setSubmissionCategory] = useState<MapCategoryKey>(MapCategoryKeys[0]);
+  const [submissionRegion, setSubmissionRegion] = useState<MapRegionKey>('mondstadt');
+  const [submissionCategory, setSubmissionCategory] = useState<MapCategoryKey>('special');
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
 
@@ -68,13 +68,13 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
   };
 
   const regionOptions = MapRegionKeys.map((key) => {
-    const value = MapRegions[key];
-    return { value: key, label: t(value.nameKey) };
+    const value = getMapRegion(key);
+    return { value: key.toString(), label: t(value.nameKey) };
   });
 
   const categoryOptions = MapCategoryKeys.map((key) => {
-    const value = MapCategories[key];
-    return { value: key, label: t(value.nameKey) };
+    const value = getMapCategory(key);
+    return { value: key.toString(), label: t(value.nameKey) };
   });
 
   const onClickConfirm = () => {

@@ -5,14 +5,7 @@
 import { Tooltip, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import { DomEvent } from 'leaflet';
-import React, {
-  FunctionComponent,
-  PropsWithoutRef,
-  ReactElement,
-  ReactNode,
-  useCallback,
-  useRef,
-} from 'react';
+import React, { FunctionComponent, ReactNode, useCallback, useRef } from 'react';
 
 /**
  * @see https://github.com/LiveBy/react-leaflet-control/issues/44
@@ -34,11 +27,12 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-interface MapCustomControlButtonProps {
+type MapCustomControlButtonProps = React.HTMLAttributes<HTMLDivElement> & {
   children: ReactNode;
   className?: string;
   tooltip?: string;
-}
+  // other includes attributes passed to the div.
+};
 
 export const MapCustomControlButton: FunctionComponent<MapCustomControlButtonProps> = ({
   children,

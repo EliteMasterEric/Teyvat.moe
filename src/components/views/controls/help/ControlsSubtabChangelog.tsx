@@ -4,16 +4,18 @@
 
 import { List, ListItem, Typography, ListItemText, Collapse, makeStyles } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
-import React, { memo, useState } from 'react';
-import { connect } from 'react-redux';
+import React, { FunctionComponent, memo, useState } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
 
-import { getMarkerCount } from '~/components/data/MapFeatures';
-import { getRouteCount } from '~/components/data/MapRoutes';
-import { getChangelogData } from '~/components/i18n/ChangelogLocalization';
-import { t, f } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { TabView } from '~/components/interface/Tabs';
-import { SafeHTML } from '~/components/util';
+import { getMarkerCount } from 'src/components/data/MapFeatures';
+import { getRouteCount } from 'src/components/data/MapRoutes';
+import { getChangelogData } from 'src/components/i18n/ChangelogLocalization';
+import { t, f } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { TabView } from 'src/components/interface/Tabs';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
+import { SafeHTML } from 'src/components/util';
 
 const useStyles = makeStyles((theme) => ({
   subItem: {
@@ -26,7 +28,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ControlsSubtabChangelogVersion = ({ version, date, description }) => {
+interface ControlsSubtabChangelogBaseProps {
+  displayed?: boolean;
+}
+const mapStateToProps = (state: AppState) => ({
+  lang: selectOverrideLang(state),
+});
+const mapDispatchToProps = () => ({});
+type ControlsSubtabChangelogStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsSubtabChangelogDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsSubtabChangelogStateProps,
+  ControlsSubtabChangelogDispatchProps,
+  ControlsSubtabChangelogBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
+
+type ControlsSubtabChangelogProps = ConnectedProps<typeof connector> &
+  ControlsSubtabChangelogBaseProps;
+
+interface ControlsSubtabChangelogVersionProps {
+  version: string;
+  date: string;
+  description: string[];
+}
+
+const ControlsSubtabChangelogVersion: FunctionComponent<ControlsSubtabChangelogVersionProps> = ({
+  version,
+  date,
+  description,
+}) => {
   const classes = useStyles();
 
   const [open, setOpen] = useState(false);
@@ -51,7 +82,10 @@ const ControlsSubtabChangelogVersion = ({ version, date, description }) => {
   );
 };
 
-const _ControlsSubtabChangelog = ({ displayed, lang }) => {
+const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> = ({
+  displayed = false,
+  lang,
+}) => {
   const changelogData = getChangelogData(lang);
 
   const classes = useStyles();
@@ -89,13 +123,6 @@ const _ControlsSubtabChangelog = ({ displayed, lang }) => {
   );
 };
 
-const mapStateToProps = ({ options: { overrideLang: lang } }) => ({
-  lang,
-});
-const mapDispatchToProps = () => ({});
-const ControlsSubtabChangelog = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(memo(_ControlsSubtabChangelog));
+const ControlsSubtabChangelog = connector(memo(_ControlsSubtabChangelog));
 
 export default ControlsSubtabChangelog;

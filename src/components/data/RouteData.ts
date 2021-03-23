@@ -3,12 +3,12 @@
  */
 import _ from 'lodash';
 
-import { MSFRouteGroup, validateRouteData } from '~/components/data/ElementSchema';
-import { importFromContext, isDev } from '~/components/util';
+import { MSFRouteGroup, validateRouteData } from 'src/components/data/ElementSchema';
+import { importFromContext, isDev } from 'src/components/util';
 
 const routesContext = require.context('../../data/routes/', true, /.json$/);
 export const listRouteFiles = (): string[] => routesContext.keys();
-export const loadRoute = (key: string): MSFRouteGroup => {
+export const loadRoute = (key: string): MSFRouteGroup | null => {
   const routeData: MSFRouteGroup = importFromContext(routesContext, key);
 
   if (isDev()) {

@@ -20,11 +20,11 @@ import {
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { t } from '~/components/i18n/Localization';
-import { Image } from '~/components/interface/Image';
-import { applySourcemapToStackTrace, openURLInWindow } from '~/components/util';
-import { ErrorHandlerComponent } from '~/components/views/error/ErrorHandler';
-import { generateReportURL } from '~/components/views/error/ErrorReport';
+import { t } from 'src/components/i18n/Localization';
+import { Image } from 'src/components/interface/Image';
+import { applySourcemapToStackTrace, openURLInWindow } from 'src/components/util';
+import { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
+import { generateReportURL } from 'src/components/views/error/ErrorReport';
 
 const iconPNG = require('../../../images/brainjuice.png').default;
 const iconWEBP = require('../../../images/brainjuice.webp').default;
@@ -92,7 +92,9 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
 
   const onSubmitError = () => {
     if (componentStack != null) {
-      openURLInWindow(generateReportURL(error.name, error.message, componentStack));
+      openURLInWindow(
+        generateReportURL(error?.name ?? 'ERROR', error?.message ?? 'MESSAGE', componentStack)
+      );
     }
   };
 
@@ -121,7 +123,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
             <Grid item xs={12}>
               <Card>
                 <CardHeader
-                  title={`${error.name}: ${error.message}`}
+                  title={`${error?.name ?? 'ERROR'}: ${error?.message ?? 'MESSAGE'}`}
                   action={
                     <IconButton aria-label="settings" onClick={toggleErrorExpanded}>
                       {errorExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}

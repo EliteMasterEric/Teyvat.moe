@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 import localStorage from 'packages/local-storage';
-import { getUnixTimestamp } from '~/components/util';
+import { getUnixTimestamp } from 'src/components/util';
 
 export const LOCAL_STORAGE_KEY_RECOVERY = 'genshinmap-preferences-recovery-%COUNTER%';
 
@@ -10,7 +10,7 @@ export const LOCAL_STORAGE_KEY_RECOVERY = 'genshinmap-preferences-recovery-%COUN
  * if the migration fails, we store data about the failure in local storage as well.
  */
 export const storeRecoveryData = (json: Record<string, unknown>, message: string): void => {
-  console.warn(`Storing data in recovery (version ${json?.version ?? '<BAD VERSION>'})`);
+  console.warn(`Storing data in recovery (version ${json.version ?? '<BAD VERSION>'})`);
 
   // Look for the first unused recovery value.
   let counter = 1;
@@ -27,7 +27,7 @@ export const storeRecoveryData = (json: Record<string, unknown>, message: string
   localStorage.set(LOCAL_STORAGE_KEY_RECOVERY.replace('%COUNTER%', counter.toString()), {
     json,
     message,
-    version: json?.version ?? '<BAD VERSION>',
+    version: json.version ?? '<BAD VERSION>',
     timestamp: getUnixTimestamp(),
   });
 };

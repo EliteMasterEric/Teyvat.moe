@@ -5,12 +5,18 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFFeatureKey, MSFMarkerKey } from '~/components/data/ElementSchema';
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
-import { getPreviousMondayReset, getUnixTimestamp } from '~/components/util';
+import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { getMapFeature } from 'src/components/data/MapFeatures';
+import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
+import {
+  deleteRecord,
+  getPreviousMondayReset,
+  getUnixTimestamp,
+  getRecord,
+  setRecord,
+} from 'src/components/util';
 
 export type CompletedState = GenshinMapPreferencesLatest['completed'];
 
@@ -40,7 +46,7 @@ export const completedSlice = createSlice({
       },
 
       reducer: (state, action: PayloadAction<MarkerCompletedAction>) => {
-        state.features[action.payload.key] = action.payload.timestamp;
+        setRecord(state.features, action.payload.key, action.payload.timestamp);
       },
     },
     setMarkersCompleted: {
@@ -50,12 +56,12 @@ export const completedSlice = createSlice({
 
       reducer: (state, action: PayloadAction<MarkersCompletedAction>) => {
         _.forEach(action.payload.keys, (key: MSFMarkerKey) => {
-          state.features[key] = action.payload.timestamp;
+          setRecord(state.features, key, action.payload.timestamp);
         });
       },
     },
     clearMarkerCompleted: (state, action: PayloadAction<MSFMarkerKey>) => {
-      delete state.features[action.payload];
+      deleteRecord(state.features, action.payload);
     },
     clearMarkersCompleted: (state, action: PayloadAction<MSFMarkerKey[]>) => {
       state.features = _.pickBy(
@@ -94,7 +100,7 @@ export const {
  */
 
 export const selectMarkerCompleted = (state: AppState, markerKey: MSFMarkerKey): number | null =>
-  state.completed.features[markerKey] ?? null;
+  getRecord(state.completed.features, markerKey);
 export const selectCompletedMarkers = (state: AppState): CompletedState['features'] =>
   state.completed.features;
 export const selectCompletedMarkersOfFeature = (
@@ -106,8 +112,9 @@ export const selectExpiredMarkers = (state: AppState): CompletedState['features'
   const currentTime = getUnixTimestamp();
   return _.pickBy(state.completed.features, (completedTime: number, markerKey: MSFMarkerKey) => {
     const [featureKey, _markerID] = markerKey.split('/');
+    if (featureKey == null) return false;
 
-    const feature = MapFeatures[featureKey];
+    const feature = getMapFeature(featureKey as MSFFeatureKey);
     switch (feature.respawn) {
       case 'off':
         // Doesn't respawn, thus doesn't expire.

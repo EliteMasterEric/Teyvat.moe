@@ -5,10 +5,11 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFFeatureKey, MSFRouteGroupKey } from '~/components/data/ElementSchema';
-import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
+import { MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
+import { getRecord, setRecord } from 'src/components/util';
 
 export type DisplayedState = GenshinMapPreferencesLatest['displayed'];
 
@@ -43,24 +44,26 @@ export const displayedSlice = createSlice({
     // ImmerJS allows you to change the state by modifying state parameter object.
     // This provides automatic state merging.
     setFeatureDisplayed: (state, action: PayloadAction<MSFFeatureKey>) => {
-      state.features[action.payload] = true;
+      getRecord(state.features, action.payload);
     },
     clearFeatureDisplayed: (state, action: PayloadAction<MSFFeatureKey>) => {
-      state.features[action.payload] = false;
+      getRecord(state.features, action.payload);
     },
     toggleFeatureDisplayed: (state, action: PayloadAction<MSFFeatureKey>) => {
-      state.features[action.payload] =
-        state.features[action.payload] === undefined ? true : !state.features[action.payload];
+      setRecord(
+        state.features,
+        action.payload,
+        !(getRecord(state.features, action.payload) ?? false)
+      );
     },
     setRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
-      state.routes[action.payload] = true;
+      setRecord(state.routes, action.payload, true);
     },
     clearRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
-      state.routes[action.payload] = false;
+      setRecord(state.routes, action.payload, false);
     },
     toggleRouteGroupDisplayed: (state, action: PayloadAction<MSFRouteGroupKey>) => {
-      state.routes[action.payload] =
-        state.routes[action.payload] === undefined ? true : !state.routes[action.payload];
+      setRecord(state.routes, action.payload, !(getRecord(state.routes, action.payload) ?? false));
     },
   },
   extraReducers: {
@@ -95,8 +98,8 @@ export const selectDisplayedFeatures = (state: AppState): MSFFeatureKey[] =>
 export const selectDisplayedRouteGroups = (state: AppState): MSFRouteGroupKey[] =>
   _.keys(_.pickBy(state.displayed.routes, (value) => value)) as MSFRouteGroupKey[];
 export const selectIsFeatureDisplayed = (state: AppState, featureKey: MSFFeatureKey): boolean =>
-  state.displayed.features?.[featureKey] ?? false;
+  getRecord(state.displayed.features, featureKey, false);
 export const selectIsRouteGroupDisplayed = (state: AppState, routeKey: MSFRouteGroupKey): boolean =>
-  state.displayed.routes?.[routeKey] ?? false;
+  getRecord(state.displayed.routes, routeKey, false);
 
 export default displayedSlice.reducer;

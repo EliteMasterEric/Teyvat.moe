@@ -36,7 +36,7 @@ export const useSlowNetwork = (): boolean => {
   const DEFAULT = '4g'; // Value when the user's browser doesn't support the relevant API.
   const { effectiveConnectionType } = useNetworkStatus(DEFAULT);
 
-  return ['slow-2g', '2g', '3g'].includes(effectiveConnectionType);
+  return ['slow-2g', '2g', '3g'].includes(effectiveConnectionType ?? DEFAULT);
 };
 
 export const useDataSaver = (): boolean => {
@@ -46,5 +46,5 @@ export const useDataSaver = (): boolean => {
   const DEFAULT = false; // Value when the user's browser doesn't support the relevant API.
   const { saveData } = useSaveData(DEFAULT);
 
-  return saveData;
+  return saveData ?? DEFAULT;
 };

@@ -6,26 +6,28 @@
 
 import _ from 'lodash';
 
-import { MSFLocalizedField, MSFLocalizedString } from '~/components/data/ElementSchema';
+import { MSFLocalizedField, MSFLocalizedString } from 'src/components/data/ElementSchema';
 import {
   DEFAULT_LOCALE_CODE,
   getAvailableLanguages,
   getLocale,
   t,
-} from '~/components/i18n/Localization';
-import { LocalizedString } from '~/components/Types';
+} from 'src/components/i18n/Localization';
+import { LocalizedString } from 'src/components/Types';
 
 /**
  * Given a dict, fetch the appropriate key from 'field'
  * @param field A dictionary containing {'locale': 'value'} fields.
  * @returns {value} The value from 'field' whose key matches the current locale, or the default locale.
  */
-export const localizeField = (field: MSFLocalizedField): MSFLocalizedString => {
-  if (!field) return <MSFLocalizedString>'';
+export const localizeField = (field: MSFLocalizedField | undefined): MSFLocalizedString => {
+  if (typeof field === 'undefined') return <MSFLocalizedString>'';
 
   const currentLanguage = getLocale();
-  if (field[currentLanguage]) {
-    return field[currentLanguage];
+
+  const currentLanguageVal = field[currentLanguage];
+  if (currentLanguageVal != null) {
+    return currentLanguageVal;
   }
   // Else, fall back to default locale.
   if (field[DEFAULT_LOCALE_CODE]) {
@@ -37,7 +39,7 @@ export const localizeField = (field: MSFLocalizedField): MSFLocalizedString => {
 
 let languageOptions: { value: string; label: LocalizedString }[];
 export const getLanguageOptions = (): typeof languageOptions => {
-  if (typeof languageOptions !== 'undefined') return languageOptions;
+  if (languageOptions != null) return languageOptions;
 
   // Generate the list of language options.
   languageOptions = getAvailableLanguages().map((localeCode) => {

@@ -10,11 +10,11 @@ import {
 
 import _ from 'lodash';
 import React, { forwardRef, ReactNode } from 'react';
-import ReactDOMServer from 'react-dom/server';
+import { renderToString } from 'react-dom/server';
 import { useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
 
-import { LExtendedMarker } from '~/components/views/map/layers/ExtendedMarker';
+import { LExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker';
 
 export type MapClusterFunction = (zoom: number) => number;
 
@@ -52,12 +52,12 @@ const createClusterIcon = (cluster: LeafletMarkerCluster): L.DivIcon => {
   const childCount = childMarkers.length;
   // For each cluster child element, check if completed = true; if so, add to the count.
   const childMarkersCompleted = childMarkers.filter((marker) => {
-    return marker?.completed;
+    return marker.completed;
   });
   const childCompletedCount = childMarkersCompleted.length;
-  const iconUrl = childMarkers[0]?.clusterIconUrl;
+  const iconUrl = childMarkers?.[0]?.clusterIconUrl ?? '';
 
-  const iconHTML = ReactDOMServer.renderToString(
+  const iconHTML = renderToString(
     <>
       <img className="map-marker-cluster-marker" src={CLUSTER_MARKER_ICON} alt="" />
       <b className="map-marker-cluster-label">
@@ -92,14 +92,16 @@ const MapClusterMarker = forwardRef<LeafletMarkerClusterGroup, MapClusterMarkerP
       _centerPoint: Point,
       childMarkers: LeafletMarker[]
     ): Point[] => {
-      const result = [];
+      const result: Point[] = [];
 
-      result.length = childMarkerCount;
+      result.length = childMarkers.length;
 
-      for (let i = childMarkerCount - 1; i >= 0; i -= 1) {
-        // console.log(childMarkers[i]._latlng);
-        const childCenter = map.latLngToLayerPoint(childMarkers[i].getLatLng());
-        result[i] = new Point(childCenter.x, childCenter.y);
+      for (let i = childMarkers.length - 1; i >= 0; i -= 1) {
+        const childMarker = childMarkers[i];
+        if (childMarker != null) {
+          const childCenter = map.latLngToLayerPoint(childMarker.getLatLng());
+          result[i] = new Point(childCenter.x, childCenter.y);
+        }
       }
 
       return result;

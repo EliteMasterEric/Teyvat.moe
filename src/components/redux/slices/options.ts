@@ -4,9 +4,9 @@
  */
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
+import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
 
 // Define a type for the slice state
 export type OptionsState = GenshinMapPreferencesLatest['options'];
@@ -96,6 +96,6 @@ export const selectHideRoutesInEditor = (state: AppState): boolean =>
   state.options.hideRoutesInEditor;
 export const selectShowHiddenFeaturesInSummary = (state: AppState): boolean =>
   state.options.showHiddenFeaturesInSummary;
-export const selectOverrideLang = (state: AppState): string => state.options.overrideLang;
+export const selectOverrideLang = (state: AppState): string | null => state.options.overrideLang;
 
 export default optionsSlice.reducer;

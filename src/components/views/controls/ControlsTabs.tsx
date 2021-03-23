@@ -15,10 +15,13 @@ import {
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import { TabBar, TabValue } from '~/components/interface/Tabs';
-import { selectOverrideLang } from '~/components/redux/slices/options';
-import { selectEditorEnabled, selectTab, setTab } from '~/components/redux/slices/ui';
+import { t } from 'src/components/i18n/Localization';
+import { TabBar, TabValue } from 'src/components/interface/Tabs';
+import { AppDispatch } from 'src/components/redux';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { selectEditorEnabled, selectTab, setTab } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { distinguishUIControlsTab, Empty } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({
   tabBar: {
@@ -26,17 +29,26 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state: AppState) => ({
   editorEnabled: selectEditorEnabled(state),
   currentTab: selectTab(state),
   // Adding language to the props, even if it isn't used,
   // causes the component to re-render when the language changes.
   lang: selectOverrideLang(state),
 });
-const mapDispatchToProps = (dispatch) => ({
-  setTab: (tab) => dispatch(setTab(tab)),
+const mapDispatchToProps = (dispatch: AppDispatch) => ({
+  setTab: (tab: TabValue) => {
+    if (distinguishUIControlsTab(tab)) {
+      dispatch(setTab(tab));
+    }
+  },
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabsStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<ControlsTabsStateProps, ControlsTabsDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
 
 type ControlsTabsProps = ConnectedProps<typeof connector>;
 

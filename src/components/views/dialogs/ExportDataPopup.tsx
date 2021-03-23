@@ -6,8 +6,8 @@
 import { Dialog, DialogContent, DialogContentText, makeStyles } from '@material-ui/core';
 import React, { cloneElement, FunctionComponent, ReactElement, useState } from 'react';
 
-import CopyTextArea from '~/components/interface/CopyTextArea';
-import DialogTitle from '~/components/views/dialogs/DialogTitle';
+import CopyTextArea from 'src/components/interface/CopyTextArea';
+import DialogTitle from 'src/components/views/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {

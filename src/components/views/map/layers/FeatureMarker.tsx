@@ -8,27 +8,27 @@ import { connect, ConnectedProps } from 'react-redux';
 import {
   MSFFeatureExtended,
   MSFFeatureKey,
-  MSFMarker,
   MSFMarkerKey,
   YOUTUBE_REGEX,
-} from '~/components/data/ElementSchema';
-import { createClusterIcon, createMapIcon } from '~/components/data/FeatureIcon';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { f, formatUnixTimestamp, t } from '~/components/i18n/Localization';
-import { Image, useImageExtension } from '~/components/interface/Image';
-import { InputSwitch } from '~/components/interface/Input';
-import YouTubeEmbed from '~/components/interface/YouTubeEmbed';
-import { AppDispatch } from '~/components/redux';
+} from 'src/components/data/ElementSchema';
+import { createClusterIcon, createMapIcon } from 'src/components/data/FeatureIcon';
+import { localizeField } from 'src/components/i18n/FeatureLocalization';
+import { f, formatUnixTimestamp, t } from 'src/components/i18n/Localization';
+import { Image, useImageExtension } from 'src/components/interface/Image';
+import { InputSwitch } from 'src/components/interface/Input';
+import YouTubeEmbed from 'src/components/interface/YouTubeEmbed';
+import { EditorMarker } from 'src/components/preferences/EditorDataSchema';
+import { AppDispatch } from 'src/components/redux';
 import {
   clearMarkerCompleted,
   selectMarkerCompleted,
   setMarkerCompleted,
-} from '~/components/redux/slices/completed';
-import { selectCompletedAlpha } from '~/components/redux/slices/options';
-import { AppState } from '~/components/redux/types';
-import { SafeHTML } from '~/components/util';
-import { ExtendedMarker } from '~/components/views/map/layers/ExtendedMarker';
-import { copyPermalink } from '~/components/views/PermalinkHandler';
+} from 'src/components/redux/slices/completed';
+import { selectCompletedAlpha } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
+import { SafeHTML } from 'src/components/util';
+import { ExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker';
+import { copyPermalink } from 'src/components/views/PermalinkHandler';
 
 const useStyles = makeStyles((_theme) => ({
   popupContainer: {
@@ -71,7 +71,12 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const FeatureMedia = ({ media, allowExternalMedia }) => {
+interface FeatureMediaProps {
+  media?: string;
+  allowExternalMedia: boolean;
+}
+
+const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExternalMedia }) => {
   const classes = useStyles();
 
   if (media == null || media === '') return null;
@@ -86,7 +91,9 @@ const FeatureMedia = ({ media, allowExternalMedia }) => {
       const match = YOUTUBE_REGEX.exec(media);
       if (match != null) {
         const videoId = match[1];
-        return <YouTubeEmbed id={videoId} width={560} height={315} />;
+        if (videoId != null) {
+          return <YouTubeEmbed id={videoId} width={560} height={315} />;
+        }
       }
     }
 
@@ -112,9 +119,9 @@ const FeatureMedia = ({ media, allowExternalMedia }) => {
 };
 
 interface FeatureMarkerBaseProps {
-  marker: MSFMarker;
+  marker: EditorMarker;
   featureKey: MSFFeatureKey;
-  icons: MSFFeatureExtended['icons'];
+  icons: MSFFeatureExtended['icons'] | null;
   editable?: boolean;
   allowExternalMedia?: boolean;
 }
@@ -138,14 +145,16 @@ const mapDispatchToProps = (
     unmarkFeature: () => dispatch(clearMarkerCompleted(markerKey)),
   };
 };
-const connector = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-  // Don't know why this is needed.
-  (a, b, c) => ({ ...a, ...b, ...c })
-);
+type FeatureMarkerStateProps = ReturnType<typeof mapStateToProps>;
+type FeatureMarkerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  FeatureMarkerStateProps,
+  FeatureMarkerDispatchProps,
+  FeatureMarkerBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type FeatureMarkerProps = ConnectedProps<typeof connector>;
+type FeatureMarkerProps = ConnectedProps<typeof connector> & FeatureMarkerBaseProps;
 
 const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   marker,
@@ -174,31 +183,32 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   let clusterIconName = '';
 
   if (completed) {
-    // == false sucks but TypeScript needs it.
-    if (icons.done.marker == false) {
-      svg = icons.done.svg ?? false;
-      clusterIconName = icons.done.clusterIcon ?? '';
+    // == false sucks, but TypeScript needs it to guarantee
+    // the structure of the marker icon data.
+    if (icons?.done?.marker == false) {
+      svg = icons?.done?.svg ?? false;
+      clusterIconName = icons?.done?.clusterIcon ?? '';
     }
   } else {
-    if (icons.base.marker == false) {
-      svg = icons.base.svg ?? false;
-      clusterIconName = icons.base.clusterIcon ?? '';
+    if (icons?.base?.marker == false) {
+      svg = icons?.base?.svg ?? false;
+      clusterIconName = icons?.base?.clusterIcon ?? '';
     }
   }
 
   // Build the icon for this marker. Relies on completion status.
   const icon = createMapIcon({
-    marker: completed ? icons.done.marker : icons.base.marker,
+    marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
     done: !!completed,
     ext: svg ? 'svg' : ext,
-    key: (completed ? icons.done.key : icons.base.key) ?? icons?.filter,
+    key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
   });
 
   // Build the cluster icon for the marker. Also relies on completion status.
   const clusterIcon = createClusterIcon({
-    marker: completed ? icons.done.marker : icons.base.marker,
+    marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
     ext: svg ? 'svg' : ext,
-    key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter,
+    key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
     clusterIcon: clusterIconName,
   });
 
@@ -228,7 +238,9 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
 
   const onCopyPermalink = () => copyPermalink(marker.id);
 
-  const onSwitchCompleted = (value) => {
+  const onSwitchCompleted = (value: boolean): void => {
+    // If we switch to true but the marker is already completed,
+    // do nothing.
     if (value === !!completed) return;
 
     if (value) {
@@ -266,8 +278,8 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   };
   /* eslint-enable no-param-reassign */
 
-  const title = localizeField(marker.popupTitle);
-  const content = localizeField(marker.popupContent);
+  const title = localizeField(marker?.popupTitle);
+  const content = localizeField(marker?.popupContent);
 
   return (
     <ExtendedMarker
@@ -278,7 +290,7 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
       key={marker.id}
       markerKey={`${featureKey}/${marker.id}`}
       opacity={completed ? completedAlpha : 1}
-      position={marker?.coordinates}
+      position={marker.coordinates}
     >
       {/* A modern variant of MapPopupLegacy. */}
       <Popup maxWidth={540} minWidth={192} autoPan={false} keepInView={false}>

@@ -4,27 +4,30 @@
 
 import { Box, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { FunctionComponent } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { Image, useImageExtension } from '~/components/interface/Image';
-import { useSmallScreen } from '~/components/interface/MediaHooks';
-import { isDev, SafeHTML } from '~/components/util';
-import ControlsNavigationSmall from '~/components/views/controls/ControlsNavigationMobile';
-import ControlsTabs from '~/components/views/controls/ControlsTabs';
-import ControlsTabEditor from '~/components/views/controls/editor/ControlsTabEditor';
-import ControlsTabCategories from '~/components/views/controls/features/ControlsCategories';
-import ControlsTabFeatures from '~/components/views/controls/features/ControlsTabFeatures';
-import ControlsTabRoutes from '~/components/views/controls/features/ControlsTabRoutes';
-import ControlsTabHelp from '~/components/views/controls/help/ControlsTabHelp';
-import ControlsTabHelpEditor from '~/components/views/controls/help/ControlsTabHelpEditor';
-import ControlsTabOptions from '~/components/views/controls/options/ControlsTabOptions';
-import ControlsFoldButton from '~/components/views/controls/sidebar/ControlsFoldButton';
-import ControlsRegions from '~/components/views/controls/sidebar/ControlsRegions';
-import ControlsTabSummary from '~/components/views/controls/summary/ControlsTabSummary';
-import ControlsTabSync from '~/components/views/controls/sync/ControlsTabSync';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { Image, useImageExtension } from 'src/components/interface/Image';
+import { useSmallScreen } from 'src/components/interface/MediaHooks';
+import { selectOpen } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { isDev, SafeHTML } from 'src/components/util';
+import ControlsNavigationSmall from 'src/components/views/controls/ControlsNavigationMobile';
+import ControlsTabs from 'src/components/views/controls/ControlsTabs';
+import ControlsTabEditor from 'src/components/views/controls/editor/ControlsTabEditor';
+import ControlsTabCategories from 'src/components/views/controls/features/ControlsCategories';
+import ControlsTabFeatures from 'src/components/views/controls/features/ControlsTabFeatures';
+import ControlsTabRoutes from 'src/components/views/controls/features/ControlsTabRoutes';
+import ControlsTabHelp from 'src/components/views/controls/help/ControlsTabHelp';
+import ControlsTabHelpEditor from 'src/components/views/controls/help/ControlsTabHelpEditor';
+import ControlsTabOptions from 'src/components/views/controls/options/ControlsTabOptions';
+import ControlsFoldButton from 'src/components/views/controls/sidebar/ControlsFoldButton';
+import ControlsRegions from 'src/components/views/controls/sidebar/ControlsRegions';
+import ControlsTabSummary from 'src/components/views/controls/summary/ControlsTabSummary';
+import ControlsTabSync from 'src/components/views/controls/sync/ControlsTabSync';
 
 const CONTROL_BOX_IMAGE_PNG = require('../../../images/controls/control_border.png').default;
 const CONTROL_BOX_IMAGE_WEBP = require('../../../images/controls/control_border.webp').default;
@@ -114,7 +117,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const _Controls = ({ open }) => {
+const mapStateToProps = (state: AppState) => ({
+  open: selectOpen(state),
+});
+const mapDispatchToProps = () => ({});
+type ControlsStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<ControlsStateProps, ControlsDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+type ControlsProps = ConnectedProps<typeof connector>;
+
+const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
   const ext = useImageExtension();
 
   const borderBox = ext === 'webp' ? CONTROL_BOX_IMAGE_WEBP : CONTROL_BOX_IMAGE_PNG;
@@ -169,10 +185,6 @@ const _Controls = ({ open }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  open: state.controlsOpen,
-});
-const mapDispatchToProps = () => ({});
-const Controls = connect(mapStateToProps, mapDispatchToProps)(_Controls);
+const Controls = connector(_Controls);
 
 export default Controls;

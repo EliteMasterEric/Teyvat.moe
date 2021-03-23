@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import MapCategoryRawData from '~/data/core/categories.json';
+import MapCategoryRawData from 'src/data/core/categories.json';
 
 export type MapCategoryKey = keyof typeof MapCategoryRawData;
 

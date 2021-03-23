@@ -1,8 +1,8 @@
 import { divIcon as LeafletDivIcon, icon as LeafletIcon } from 'leaflet';
 import _ from 'lodash';
 
-import { BLANK_IMAGE } from '~/components/interface/Image';
-import { importFromContext } from '~/components/util';
+import { BLANK_IMAGE } from 'src/components/interface/Image';
+import { importFromContext } from 'src/components/util';
 
 // https://github.com/cyrilwanner/next-optimized-images/issues/16
 const iconsContext = require.context('../../images/icons', true, /\.(png|webp|svg)/);

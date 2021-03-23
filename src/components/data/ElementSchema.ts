@@ -3,11 +3,11 @@
  */
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
 import _ from 'lodash';
+import { A } from 'ts-toolbelt';
 
-import { MapCategoryKey } from '~/components/data/MapCategories';
-import { MapRegionKey, MapRegionKeys } from '~/components/data/MapRegions';
-import { Opaque } from '~/components/Types';
-import { hashObject, isDev } from '~/components/util';
+import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { MapRegionKey, MapRegionKeys } from 'src/components/data/MapRegions';
+import { hashObject, isDev } from 'src/components/util';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {
   abortEarly: true, // Stop validation at the first error.
@@ -23,7 +23,7 @@ export const VALIDATION_OPTIONS: ValidationOptions = {
 // Version changes are only needed for breaking changes, like restructuring,
 // not for new options that can be given optional defaults.
 export const MSF_SCHEMA_VERSION = 2;
-export type MSFSchemaVersion = Opaque<'MSFSchemaVersion', 2>;
+export type MSFSchemaVersion = A.Type<2, 'MSFSchemaVersion'>;
 
 /**
  * A regular expression which validates whether a string is a link to a YouTube video.
@@ -50,7 +50,7 @@ const youtubeUrl = Joi.string().regex(YOUTUBE_REGEX);
 const localizedField = Joi.object({
   en: Joi.string().required(),
 }).pattern(/[a-z]{2}/, Joi.string().required());
-export type MSFLocalizedString = Opaque<'MSFLocalizedString', string>;
+export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
 export type MSFLocalizedField = {
   en: MSFLocalizedString;
   [key: string]: MSFLocalizedString;
@@ -70,25 +70,22 @@ export type MSFRespawn = 'none' | 'boss' | number;
  * The type representing a coordinate of a marker or route vector.
  */
 const coordinate = Joi.array().items(Joi.number().precision(5).required()).length(2);
-export type MSFCoordinate = Opaque<'MSFCoordinate', [number, number]>;
+export type MSFCoordinate = [number, number];
 /**
  * The type representing a set of coordinates for a route.
  */
 const coordinates = Joi.array().items(coordinate.required()).required();
-export type MSFCoordinates = Opaque<'MSFCoordinates', [MSFCoordinate]>;
 
-export type MSFPopupTitle = Opaque<'MSFPopupTitle', MSFLocalizedField>;
-export type MSFPopupContent = Opaque<'MSFPopupContent', MSFLocalizedField>;
-export type MSFPopupMedia = Opaque<'MSFPopupMedia', string>;
-export type MSFPopupAttribution = Opaque<'MSFPopupAttribution', string>;
+export type MSFPopupTitle = A.Type<MSFLocalizedField, 'MSFPopupTitle'>;
+export type MSFPopupContent = A.Type<MSFLocalizedField, 'MSFPopupContent'>;
 
-export type MSFImportKey = Opaque<'MSFImportKey', string>;
+export type MSFImportKey = A.Type<string, 'MSFImportKey'>;
 export type MSFImportSite = 'yuanshen' | 'mapgenie' | 'appsample' | 'gm_legacy' | 'gm_msfv2';
 
-export type MSFMarkerID = Opaque<'MSFMarkerID', string>;
-export type MSFMarkerKey = Opaque<'MSFMarkerKey', string>;
-export type MSFRouteID = Opaque<'MSFRouteID', string>;
-export type MSFRouteKey = Opaque<'MSFRouteKey', string>;
+export type MSFMarkerID = A.Type<string, 'MSFMarkerID'>;
+export type MSFMarkerKey = A.Type<string, 'MSFMarkerKey'>;
+export type MSFRouteID = A.Type<string, 'MSFRouteID'>;
+export type MSFRouteKey = A.Type<string, 'MSFRouteKey'>;
 
 /**
  * If VALIDATE_HASHES is true, the hash of each marker's coordinates will be calculated on load.
@@ -173,9 +170,9 @@ export interface MSFMarker {
 
   popupTitle?: MSFPopupTitle;
   popupContent?: MSFPopupContent;
-  popupMedia?: MSFPopupMedia;
+  popupMedia?: string;
 
-  popupAttribution?: MSFPopupAttribution;
+  popupAttribution?: string;
 }
 
 /**
@@ -205,11 +202,11 @@ const MSF_ROUTE_SCHEMA = Joi.object({
 
   popupAttribution: Joi.string().default('Unknown'),
 });
-export type MSFRouteColor = Opaque<'MSFRouteColor', string>;
-export type MSFRouteText = Opaque<'MSFRouteText', string>;
+export type MSFRouteColor = A.Type<string, 'MSFRouteColor'>;
+export type MSFRouteText = A.Type<string, 'MSFRouteText'>;
 export interface MSFRoute {
   id: MSFRouteID;
-  coordinates: MSFCoordinates;
+  coordinates: MSFCoordinate[];
   importIds?: {
     gm_legacy?: MSFImportKey[];
     gm_msfv2?: MSFImportKey[];
@@ -220,9 +217,9 @@ export interface MSFRoute {
 
   popupTitle?: MSFPopupTitle;
   popupContent?: MSFPopupContent;
-  popupMedia?: MSFPopupMedia;
+  popupMedia?: string;
 
-  popupAttribution?: MSFPopupAttribution;
+  popupAttribution?: string;
 }
 
 /**
@@ -234,32 +231,41 @@ const MSF_MARKER_ICON_SCHEMA = Joi.object({
   // Specify these style keys if the simple marker style is not used.
   key: Joi.string()
     .regex(/[-a-z]+/)
-    .when('marker', { is: true, then: Joi.optional(), otherwise: Joi.required() }), // Optional but allowed if marker = true. Required if marker = false.
+    .when('marker', {
+      is: true,
+      then: Joi.optional(),
+      otherwise: Joi.required(),
+    }), // Optional but allowed if marker = true. Required if marker = false.
   svg: Joi.boolean().when('marker', {
     is: true,
     then: Joi.forbidden(),
     otherwise: Joi.optional().default(false),
   }), // Defaults to false.
-  iconSize: Joi.array()
-    .length(2)
-    .items(Joi.number())
-    .when('marker', { is: true, then: Joi.forbidden(), otherwise: Joi.required() }),
-  iconAnchor: Joi.array()
-    .length(2)
-    .items(Joi.number())
-    .when('marker', { is: true, then: Joi.forbidden(), otherwise: Joi.required() }),
-  shadowAnchor: Joi.array()
-    .length(2)
-    .items(Joi.number())
-    .when('marker', { is: true, then: Joi.forbidden(), otherwise: Joi.required() }),
-  shadowSize: Joi.array()
-    .length(2)
-    .items(Joi.number())
-    .when('marker', { is: true, then: Joi.forbidden(), otherwise: Joi.required() }),
-  popupAnchor: Joi.array()
-    .length(2)
-    .items(Joi.number())
-    .when('marker', { is: true, then: Joi.forbidden(), otherwise: Joi.required() }),
+  iconSize: Joi.array().length(2).items(Joi.number()).when('marker', {
+    is: true,
+    then: Joi.forbidden(),
+    otherwise: Joi.required(),
+  }),
+  iconAnchor: Joi.array().length(2).items(Joi.number()).when('marker', {
+    is: true,
+    then: Joi.forbidden(),
+    otherwise: Joi.required(),
+  }),
+  shadowAnchor: Joi.array().length(2).items(Joi.number()).when('marker', {
+    is: true,
+    then: Joi.forbidden(),
+    otherwise: Joi.required(),
+  }),
+  shadowSize: Joi.array().length(2).items(Joi.number()).when('marker', {
+    is: true,
+    then: Joi.forbidden(),
+    otherwise: Joi.required(),
+  }),
+  popupAnchor: Joi.array().length(2).items(Joi.number()).when('marker', {
+    is: true,
+    then: Joi.forbidden(),
+    otherwise: Joi.required(),
+  }),
   className: Joi.string()
     .regex(/[-a-zA-Z0-9]+/)
     .when('marker', { is: true, then: Joi.forbidden() })
@@ -268,7 +274,11 @@ const MSF_MARKER_ICON_SCHEMA = Joi.object({
   // This niche attribute is used when clusterMarkers is on but marker is false.
   clusterIcon: Joi.string()
     .regex(/[-a-z]+/)
-    .when('marker', { is: false, then: Joi.optional(), otherwise: Joi.forbidden() }), // Optional but allowed if marker = false. Otherwise forbidden.
+    .when('marker', {
+      is: false,
+      then: Joi.optional(),
+      otherwise: Joi.forbidden(),
+    }), // Optional but allowed if marker = false. Otherwise forbidden.
 });
 type MSFMarkerIcon =
   | {
@@ -326,7 +336,7 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
     .items(MSF_MARKER_SCHEMA) // Array can be empty.
     .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
-export type MSFFilterIcon = Opaque<'MSFFilterIcon', string>;
+export type MSFFilterIcon = A.Type<string, 'MSFFilterIcon'>;
 export interface MSFFeature {
   format: MSFSchemaVersion;
   enabled?: boolean;
@@ -345,7 +355,7 @@ export interface MSFFeature {
 
   data: Array<MSFMarker>;
 }
-export type MSFFeatureKey = Opaque<'MSFFeatureKey', string>;
+export type MSFFeatureKey = A.Type<string, 'MSFFeatureKey'>;
 export interface MSFFeatureExtended extends MSFFeature {
   key: MSFFeatureKey;
   region: MapRegionKey;
@@ -361,13 +371,13 @@ export const validateFeatureData = (input: MSFFeature): ValidationResult | null 
     console.error(`Feature is undefined!`);
     return null;
   }
-  switch (input?.format) {
+  switch (input.format) {
     case 2:
       return MSF_FEATURE_SCHEMA.validate(input, VALIDATION_OPTIONS);
     case 1:
     default:
       console.error(
-        `Feature (${JSON.stringify(input?.name)}) using outdated MSF version: ${input?.format}`
+        `Feature (${JSON.stringify(input.name)}) using outdated MSF version: ${input.format}`
       );
       return null;
   }
@@ -408,12 +418,12 @@ export interface MSFRouteGroup {
   description: MSFLocalizedField;
 
   icons: {
-    filter: Opaque<'MSFFilterIcon', string>;
+    filter: A.Type<string, 'MSFFilterIcon'>;
   };
 
   data: Array<MSFRoute>;
 }
-export type MSFRouteGroupKey = Opaque<'MSFRouteGroupKey', string>;
+export type MSFRouteGroupKey = A.Type<string, 'MSFRouteGroupKey'>;
 export interface MSFRouteGroupExtended extends MSFRouteGroup {
   key: MSFRouteGroupKey;
   region: MapRegionKey;

@@ -9,48 +9,52 @@ import _ from 'lodash';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFFeatureExtended, MSFFeatureKey } from '~/components/data/ElementSchema';
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { selectIsFeatureDisplayed } from '~/components/redux/slices/displayed';
-import { selectHideFeaturesInEditor } from '~/components/redux/slices/options';
-import { selectEditorEnabled } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
+import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { getMapFeature } from 'src/components/data/MapFeatures';
+import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
+import { selectHideFeaturesInEditor } from 'src/components/redux/slices/options';
+import { selectEditorEnabled } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
 
-import FeatureMarker from '~/components/views/map/layers/FeatureMarker';
+import FeatureMarker from 'src/components/views/map/layers/FeatureMarker';
 import MapClusterMarker, {
   offClusterFunction,
   onClusterFunction,
   variableClusterFunction,
-} from '~/components/views/map/layers/MapClusterMarker';
+} from 'src/components/views/map/layers/MapClusterMarker';
 
 interface FeatureLayerBaseProps {
   featureKey: MSFFeatureKey;
   mapFeature?: MSFFeatureExtended;
 }
 
-const mapStateToProps = (
-  state: AppState,
-  { featureKey, mapFeature = null }: FeatureLayerBaseProps
-) => {
+const mapStateToProps = (state: AppState, { featureKey, mapFeature }: FeatureLayerBaseProps) => {
   const hideFeaturesInEditor = selectHideFeaturesInEditor(state);
   const editorEnabled = selectEditorEnabled(state);
   const featureDisplayed = selectIsFeatureDisplayed(state, featureKey);
   return {
     displayed: hideFeaturesInEditor && editorEnabled && featureDisplayed,
-    mapFeature: mapFeature !== null ? mapFeature : (MapFeatures[featureKey] as MSFFeatureExtended),
+    mapFeature: mapFeature != null ? mapFeature : (getMapFeature(featureKey) as MSFFeatureExtended),
   };
 };
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...c, ...b, ...a }));
+type FeatureLayerStateProps = ReturnType<typeof mapStateToProps>;
+type FeatureLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  FeatureLayerStateProps,
+  FeatureLayerDispatchProps,
+  FeatureLayerBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type FeatureLayerProps = ConnectedProps<typeof connector>;
+type FeatureLayerProps = ConnectedProps<typeof connector> & FeatureLayerBaseProps;
 
 const _FeatureLayer: FunctionComponent<FeatureLayerProps> = ({ displayed, mapFeature }) => {
   const map = useMap();
-  const layerRef = useRef<LeafletMarkerClusterGroup>(undefined);
+  const layerRef = useRef<LeafletMarkerClusterGroup | null>(null);
 
   useEffect(() => {
-    if (typeof layerRef.current !== 'undefined') {
+    if (layerRef.current != null) {
       if (displayed) {
         layerRef.current.addTo(map);
       } else {

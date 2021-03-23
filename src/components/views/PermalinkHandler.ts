@@ -4,21 +4,21 @@
  * and returns
  */
 import { useEffect, FunctionComponent } from 'react';
-import { getElementPathById, getElementByPath } from '~/components/data/Element';
+import { getElementPathById, getElementByPath } from 'src/components/data/Element';
 import {
   MSFFeatureKey,
   MSFMarker,
   MSFRoute,
   MSFRouteGroupKey,
-} from '~/components/data/ElementSchema';
-import { t } from '~/components/i18n/Localization';
+} from 'src/components/data/ElementSchema';
+import { t } from 'src/components/i18n/Localization';
 import {
   moveToMapPosition,
   sendNotification,
   showFeature,
   showRouteGroup,
-} from '~/components/redux/dispatch';
-import { getURLParams, setBrowserClipboard } from '~/components/util';
+} from 'src/components/redux/dispatch';
+import { getURLParams, setBrowserClipboard } from 'src/components/util';
 
 const HIGHLIGHT_ZOOM_LEVEL = 9;
 
@@ -53,10 +53,13 @@ export const navigateToMarkerByID = (id: string): void => {
   if (elementType === 'route') {
     const route = element as MSFRoute;
     const routeGroupKey = elementName as MSFRouteGroupKey;
-    moveToMapPosition(
-      { lat: route.coordinates[0][0], lng: route.coordinates[0][1] },
-      HIGHLIGHT_ZOOM_LEVEL
-    );
+    const routeStartingMarker = route.coordinates[0];
+    if (routeStartingMarker != null && routeStartingMarker.length >= 2) {
+      moveToMapPosition(
+        { lat: routeStartingMarker[0], lng: routeStartingMarker[1] },
+        HIGHLIGHT_ZOOM_LEVEL
+      );
+    }
     // Display the route if it isn't already visible.
     showRouteGroup(routeGroupKey);
     sendNotification(t('notification-permalink-route'));
@@ -77,7 +80,7 @@ const PermalinkHandler: FunctionComponent = () => {
   // Navigate to the marked permalink when the map starts.
   useEffect(() => {
     const urlParams = getURLParams();
-    const id = (urlParams?.id ?? [null])[0];
+    const id = (urlParams.id ?? [null])[0];
     // End early if no ID was specified.
     if (id == null) return;
 

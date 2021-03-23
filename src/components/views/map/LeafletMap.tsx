@@ -9,30 +9,30 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { MapContainer, ZoomControl } from 'react-leaflet';
 
-import { MapFeatureKeys, MapFeatures } from '~/components/data/MapFeatures';
-import { MapRouteGroups, MapRouteKeys as MapRouteGroupKeys } from '~/components/data/MapRoutes';
-import ErrorHandler from '~/components/views/error/ErrorHandler';
-import DebugControls from '~/components/views/map/DebugControls';
+import { getMapFeature, MapFeatureKeys } from 'src/components/data/MapFeatures';
+import { getMapRouteGroup, MapRouteGroupKeys } from 'src/components/data/MapRoutes';
+import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
+import DebugControls from 'src/components/views/map/DebugControls';
 import {
   DEFAULT_ZOOM,
   MAP_BOUNDS,
   MAP_CENTER,
   MAXIMUM_ZOOM,
   MINIMUM_ZOOM,
-} from '~/components/views/map/LayerConstants';
-import EditorLayer from '~/components/views/map/layers/EditorLayer';
-import FeatureLayer from '~/components/views/map/layers/FeatureLayer';
-import RegionLabelLayer from '~/components/views/map/layers/RegionLabelLayer';
-import RouteLayer from '~/components/views/map/layers/RouteLayer';
-import TileLayer from '~/components/views/map/layers/TileLayer';
-import WorldBorderLayer from '~/components/views/map/layers/WorldBorderLayer';
-import MapEditorHandler from '~/components/views/map/MapEditorHandler';
-import MapPositionHandler from '~/components/views/map/MapPositionHandler';
+} from 'src/components/views/map/LayerConstants';
+import EditorLayer from 'src/components/views/map/layers/EditorLayer';
+import FeatureLayer from 'src/components/views/map/layers/FeatureLayer';
+import RegionLabelLayer from 'src/components/views/map/layers/RegionLabelLayer';
+import RouteLayer from 'src/components/views/map/layers/RouteLayer';
+import TileLayer from 'src/components/views/map/layers/TileLayer';
+import WorldBorderLayer from 'src/components/views/map/layers/WorldBorderLayer';
+import MapEditorHandler from 'src/components/views/map/MapEditorHandler';
+import MapPositionHandler from 'src/components/views/map/MapPositionHandler';
 
-import '~/components/views/map/LeafletMap.css';
+import 'src/components/views/map/LeafletMap.css';
 
-const ErrorLayer = ({ error, errorInfo: _errorInfo }) => {
-  return <div key={error} />;
+const ErrorLayer: ErrorHandlerComponent = ({ error, errorInfo: _errorInfo }) => {
+  return <div>{error?.name ?? 'NO ERROR DATA'}</div>;
 };
 
 const LeafletMap: FunctionComponent = () => {
@@ -67,7 +67,7 @@ const LeafletMap: FunctionComponent = () => {
 
       {/* Display each available feature. */}
       {MapFeatureKeys.map((key) => {
-        const feature = MapFeatures[key];
+        const feature = getMapFeature(key);
         if (!feature) {
           console.error(`ERROR: Feature '${key}' is not defined.`);
           return null;
@@ -82,7 +82,7 @@ const LeafletMap: FunctionComponent = () => {
 
       {/* Display each available route. */}
       {MapRouteGroupKeys.map((key) => {
-        const route = MapRouteGroups[key];
+        const route = getMapRouteGroup(key);
         if (!route) {
           console.error(`ERROR: Route '${key}' is not defined.`);
           return null;

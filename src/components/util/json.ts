@@ -11,12 +11,12 @@ export const isValidJSON = (str: string): boolean => {
   return true;
 };
 
-const jsonReplacer = (_key, value) => {
+const jsonReplacer = (_key: string, value: any) => {
   if (value instanceof Error) {
-    const error = {};
+    const error: { [key: string]: any } = {};
 
     Object.getOwnPropertyNames(value).forEach((key) => {
-      error[key] = value[key];
+      error[key] = value[key as keyof Error];
     });
 
     return error;

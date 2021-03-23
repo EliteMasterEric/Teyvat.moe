@@ -1,144 +1,51 @@
 {
   "compilerOptions": {
-    /**
-     * The type of browser to support. Most browsers support ES6.
-     */
     "target": "ES6",
-    /**
-     * The set of default type definitions.
-     */
-    "lib": ["dom", "dom.iterable", "esnext"],
-    /**
-     * Skip type checking of declaration files.
-     */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "skipLibCheck": true,
-    /**
-     * Prevents importing a file with the same name and different casing, on Windows.
-     */
     "forceConsistentCasingInFileNames": true,
-    /**
-     * Do not output JavaScript source code or sourcemaps.
-     * This allows TypeScript to merely act as a checker, while Babel/Webpack perform compilation.
-     */
     "noEmit": true,
     "declaration": false,
-    /**
-     * Provides interoperability between ES modules and CommonJS scripts.
-     */
     "esModuleInterop": true,
-    /**
-     * Sets the module type used by the project to ESNext.
-     */
     "module": "esnext",
-    /**
-     * Sets the module resolution strategy.
-     */
     "moduleResolution": "node",
-    /**
-     * Allows for 'import'ing JSON files, complete with type generation.
-     */
     "resolveJsonModule": true,
-    /**
-     * Provides warnings when transpilers cannot interpret files.
-     */
     "isolatedModules": true,
-    /*
-     * Allow default imports from modules with no default export
-     */
     "allowSyntheticDefaultImports": true,
-    /**
-     * Controls how JSX is emitted in TSX files.
-     * The default is to leave it as is.
-     */
-    "jsx": "preserve",
-    /**
-     * Enables a range of other options. I keep this off and toggle each option individually.
-     */
-    // "strict": false,
-    /**
-     * Force calls to `function.call()` to use the appropriate types for arguments.
-     */
+    "jsx": "react-jsx",
     "strictBindCallApply": true,
-    /**
-     * Forces types of function objects to be checked more carefully.
-     */
     "strictFunctionTypes": true,
-    /**
-     * Force 'use strict' ES5 syntax on all files.
-     */
     "alwaysStrict": true,
-    /**
-     * Ensure that if any branches of a function return a value,
-     * all branches must return a value.
-     */
     "noImplicitReturns": true,
-    /**
-     * Adds the possibility that a dynamically accessed property value is undefined,
-     * requiring type checking. 
-     */
     "noUncheckedIndexedAccess": true,
-    /**
-     * Already handled by ESLint.
-     */
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": false,
-    /**
-     * Prevent calls to 'this' where the object being referenced is unknown.
-     */
     "noImplicitThis": true,
-
-    /**
-     * Require all project files be either TS or TSX files.
-     */
-     "allowJs": false,
-     /**
-      * Require any nullable types to be explicitly defined as such.
-      */
-     "strictNullChecks": true,
-     /**
-     * Force all function parameters to have types.
-     * Setting the type to 'any' is allowed but must be explicitly chosen.
-     */
+    "allowJs": false,
+    "strictNullChecks": true,
     "noImplicitAny": true,
-
-    /**
-     * Raises an error when a property is defined in a class but not initialized in the constructor.
-     */
-     "strictPropertyInitialization": true,
-
-    /**
-     * The baseUrl configuration option allows you to import
-     * directly from the root of the project.
-     */
+    "strictPropertyInitialization": true,
     "baseUrl": "./",
-    "paths": {
-      "~/*": ["src/*"],
-    },
-
-    "typeRoots": ["./node_modules/@types", "./packages/@types"],
-
-    /**
-     * Set to true to require accessing values of dynamically named properties
-     * using indexed syntax, and disallowing dot syntax.
-     * Added in TypeScript v4.2.
-     */
-    // "noPropertyAccessFromIndexSignature": true,
-
+    "typeRoots": [
+      "./node_modules/@types",
+      "./packages/@types"
+    ],
+    "strict": true
   },
-  /**
-   * The file globs to import.
-   */
-  "include": ["src/**/*", "packages/**/*"],
-  /**
-   * The file globs to avoid importing.
-   * packages contains forks of other repos.
-   */
-  "exclude": ["node_modules", "dist", "build", "out", "packages"],
-  /**
-   * Import additional types for use with TypeScript.
-   * These types come from @types/ modules and are available GLOBALLY.
-   * Defaults to all installed @types/ packages.
-   */
-  // "types": []
+  "include": [
+    "src/**/*",
+    "packages/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "out",
+    "packages"
+  ]
 }

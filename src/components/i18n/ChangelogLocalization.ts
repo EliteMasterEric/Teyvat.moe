@@ -5,9 +5,9 @@
 
 import _ from 'lodash';
 
-import { ChangelogData } from '~/components/data/ChangelogSchema';
-import { DEFAULT_LOCALE_CODE } from '~/components/i18n/Localization';
-import { importFromContext } from '~/components/util';
+import { ChangelogData } from 'src/components/data/ChangelogSchema';
+import { DEFAULT_LOCALE_CODE } from 'src/components/i18n/Localization';
+import { importFromContext } from 'src/components/util';
 
 /**
  * The require context referencing all the localization files.
@@ -22,8 +22,8 @@ const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
 const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
 
 // ex [./en-US.json, en-US].
-const getLocaleFromI18nFilePath = (string) => {
-  const match = string.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
+const getLocaleFromI18nFilePath = (input: string) => {
+  const match = input.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
   return match ? match[1] : 'UNKNOWN';
 };
 
@@ -36,6 +36,11 @@ const i18nData = _.fromPairs(
   })
 );
 
-export const getChangelogData = (locale = 'en'): ChangelogData => {
-  return locale in i18nData ? i18nData[locale] : i18nData[DEFAULT_LOCALE_CODE];
+export const getChangelogData = (locale: string | null = null): ChangelogData => {
+  if (locale != null) {
+    if (locale in i18nData) {
+      return i18nData[locale];
+    }
+  }
+  return i18nData[DEFAULT_LOCALE_CODE];
 };

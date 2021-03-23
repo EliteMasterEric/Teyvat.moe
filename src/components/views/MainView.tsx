@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import Controls from '~/components/views/controls/Controls';
-import LeafletMap from '~/components/views/map/LeafletMap';
-import PermalinkHandler from '~/components/views/PermalinkHandler';
+import Controls from 'src/components/views/controls/Controls';
+import LeafletMap from 'src/components/views/map/LeafletMap';
+import PermalinkHandler from 'src/components/views/PermalinkHandler';
 
 const MainView: FunctionComponent = () => {
   return (

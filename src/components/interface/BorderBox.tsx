@@ -6,7 +6,7 @@ import { Box, BoxProps, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 
-import { useImageExtension } from '~/components/interface/Image';
+import { useImageExtension } from 'src/components/interface/Image';
 
 const BorderBoxImagePNG = require('~/images/controls/filter_container.png').default;
 const BorderBoxImageWEBP = require('~/images/controls/filter_container.webp').default;

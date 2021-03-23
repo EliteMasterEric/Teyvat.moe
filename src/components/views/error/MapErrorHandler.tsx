@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { ErrorHandlerComponent } from '~/components/views/error/ErrorHandler';
+import { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 
 /**
  * Rather than crashing the whole page, we can gracefully display a crash reporter for only part of it.

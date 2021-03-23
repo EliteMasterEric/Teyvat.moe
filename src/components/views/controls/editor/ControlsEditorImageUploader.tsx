@@ -9,10 +9,9 @@ import clsx from 'clsx';
 import React, { useState, useCallback, FunctionComponent } from 'react';
 import { useDropzone } from 'react-dropzone';
 
-import { uploadImage } from '~/components/api/imgur';
-import { MSFPopupMedia } from '~/components/data/ElementSchema';
-import { t } from '~/components/i18n/Localization';
-import { InputTextField } from '~/components/interface/Input';
+import { uploadImage } from 'src/components/api/imgur';
+import { t } from 'src/components/i18n/Localization';
+import { InputTextField } from 'src/components/interface/Input';
 
 const useStyles = makeStyles((_theme) => ({
   root: {
@@ -84,8 +83,8 @@ const useStyles = makeStyles((_theme) => ({
 }));
 
 interface ControlsEditorImageUploaderProps {
-  elementMedia: MSFPopupMedia;
-  setElementMedia: (value: MSFPopupMedia) => void;
+  elementMedia: string;
+  setElementMedia: (value: string) => void;
 }
 
 /**
@@ -109,11 +108,11 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
 
       uploadImage(acceptedFiles[0])
         .then((imageUrl) => {
-          setElementMedia(imageUrl as MSFPopupMedia);
+          setElementMedia(imageUrl);
           setErrorMsg('success');
         })
         .catch((error) => {
-          setErrorMsg(error?.localizedString);
+          setErrorMsg(error.localizedString);
         });
     },
     [setElementMedia]
@@ -124,8 +123,8 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
     setErrorMsg('error');
 
     if (fileRejections.length >= 1) {
-      if (fileRejections[0]?.errors.length >= 1) {
-        const errorCode = fileRejections[0]?.errors[0]?.code;
+      if (fileRejections[0].errors.length >= 1) {
+        const errorCode = fileRejections[0].errors[0].code;
         setErrorMsg(t(`image-upload-error-${errorCode}`));
       }
     }
@@ -195,7 +194,7 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
                 : [classes.animationOff]
             ),
           }}
-          onChange={(value) => setElementMedia(value as MSFPopupMedia)}
+          onChange={(value) => setElementMedia(value)}
         />
 
         {/* The uploaded image. */}

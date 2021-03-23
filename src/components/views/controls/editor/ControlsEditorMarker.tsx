@@ -9,18 +9,18 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { f, t } from '~/components/i18n/Localization';
-import { InputTextArea, InputTextField } from '~/components/interface/Input';
-import { EditorMarker } from '~/components/preferences/EditorDataSchema';
-import { AppDispatch } from '~/components/redux';
-import { editMarker, removeMarker } from '~/components/redux/slices/editor';
+import { f, t } from 'src/components/i18n/Localization';
+import { InputTextArea, InputTextField } from 'src/components/interface/Input';
+import { EditorMarker } from 'src/components/preferences/EditorDataSchema';
+import { AppDispatch } from 'src/components/redux';
+import { editMarker, removeMarker } from 'src/components/redux/slices/editor';
 import {
   selectIsMarkerHighlighted,
   setMapHighlight,
   setMapPosition,
-} from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsEditorImageUploader from '~/components/views/controls/editor/ControlsEditorImageUploader';
+} from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import ControlsEditorImageUploader from 'src/components/views/controls/editor/ControlsEditorImageUploader';
 
 const useStyles = makeStyles((_theme) => ({
   markerBox: {
@@ -59,20 +59,20 @@ interface ControlsEditorMarkerBaseProps {
 const mapStateToProps = (state: AppState, { marker }: ControlsEditorMarkerBaseProps) => ({
   highlighted: selectIsMarkerHighlighted(state, marker.id),
   markerID: marker.id,
-  markerTitle: marker.popupTitle.en, // TODO: Currently the editor only allows English.
-  markerContent: marker.popupContent.en, // TODO: Currently the editor only allows English.
+  markerTitle: marker?.popupTitle?.en ?? '', // TODO: Currently the editor only allows English.
+  markerContent: marker?.popupContent?.en ?? '', // TODO: Currently the editor only allows English.
   markerMedia: marker.popupMedia,
 });
 const mapDispatchToProps = (dispatch: AppDispatch, { marker }: ControlsEditorMarkerBaseProps) => ({
-  setMarkerTitle: (value) => {
-    if (marker.popupTitle.en === value) return;
+  setMarkerTitle: (value: string) => {
+    if (marker?.popupTitle?.en ?? '' === value) return;
     dispatch(editMarker(marker.id, 'popupTitle.en', value));
   },
-  setMarkerContent: (value) => {
-    if (marker.popupContent.en === value) return;
+  setMarkerContent: (value: string) => {
+    if (marker?.popupContent?.en ?? '' === value) return;
     dispatch(editMarker(marker.id, 'popupContent', value));
   },
-  setMarkerMedia: (value) => {
+  setMarkerMedia: (value: string) => {
     if (marker.popupMedia === value) return;
     dispatch(editMarker(marker.id, 'popupMedia', value));
   },
@@ -86,17 +86,24 @@ const mapDispatchToProps = (dispatch: AppDispatch, { marker }: ControlsEditorMar
     dispatch(
       setMapPosition(
         {
-          lat: marker?.coordinates[0],
-          lng: marker?.coordinates[1],
+          lat: marker.coordinates[0],
+          lng: marker.coordinates[1],
         },
         HIGHLIGHT_ZOOM_LEVEL
       )
     );
   },
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsEditorMarkerStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsEditorMarkerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsEditorMarkerStateProps,
+  ControlsEditorMarkerDispatchProps,
+  ControlsEditorMarkerBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsEditorMarkerProps = ConnectedProps<typeof connector>;
+type ControlsEditorMarkerProps = ConnectedProps<typeof connector> & ControlsEditorMarkerBaseProps;
 
 const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
   markerID,
@@ -145,7 +152,10 @@ const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
         rows={3}
         onChange={(value) => setMarkerContent(value)}
       />
-      <ControlsEditorImageUploader elementMedia={markerMedia} setElementMedia={setMarkerMedia} />
+      <ControlsEditorImageUploader
+        elementMedia={markerMedia ?? ''}
+        setElementMedia={setMarkerMedia}
+      />
     </Box>
   );
 };

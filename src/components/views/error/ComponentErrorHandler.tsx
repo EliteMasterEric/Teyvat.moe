@@ -17,14 +17,14 @@ import {
 } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react';
-import { f, t } from '~/components/i18n/Localization';
-import { Image } from '~/components/interface/Image';
-import { applySourcemapToStackTrace, openURLInWindow } from '~/components/util';
+import { f, t } from 'src/components/i18n/Localization';
+import { Image } from 'src/components/interface/Image';
+import { applySourcemapToStackTrace, openURLInWindow } from 'src/components/util';
 import {
   ErrorHandlerComponent,
   ErrorHandlerComponentProps,
-} from '~/components/views/error/ErrorHandler';
-import { generateReportURL } from '~/components/views/error/ErrorReport';
+} from 'src/components/views/error/ErrorHandler';
+import { generateReportURL } from 'src/components/views/error/ErrorReport';
 
 const iconPNG = require('../../../images/brainjuice.png').default;
 const iconWEBP = require('../../../images/brainjuice.webp').default;
@@ -92,7 +92,9 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
 
     const onSubmitError = () => {
       if (componentStack != null) {
-        openURLInWindow(generateReportURL(error.name, error.message, componentStack));
+        openURLInWindow(
+          generateReportURL(error?.name ?? 'ERROR', error?.message ?? 'MESSAGE', componentStack)
+        );
       }
     };
 
@@ -109,7 +111,9 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
           </Grid>
           <Grid item xs={12}>
             <Typography className={classes.subtitle}>
-              {f('error-handler-component-message', { component: t(componentKey) })}
+              {f('error-handler-component-message', {
+                component: t(componentKey),
+              })}
             </Typography>
             <Typography className={classes.instruction}>
               {t('error-handler-instruction')}
@@ -118,7 +122,7 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
           <Grid item xs={12}>
             <Card>
               <CardHeader
-                title={`${error.name}: ${error.message}`}
+                title={`${error?.name ?? 'ERROR'}: ${error?.message ?? 'MESSAGE'}`}
                 action={
                   <IconButton aria-label="settings" onClick={toggleErrorExpanded}>
                     {errorExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}

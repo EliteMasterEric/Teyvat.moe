@@ -10,14 +10,15 @@ import _ from 'lodash';
 import React, { useState, FunctionComponent } from 'react';
 import { useMapEvents } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { t } from '~/components/i18n/Localization';
-import { InputTextField } from '~/components/interface/Input';
+import { t } from 'src/components/i18n/Localization';
+import { InputTextField } from 'src/components/interface/Input';
 
-import { AppDispatch } from '~/components/redux';
-import { selectEditorDebugEnabled } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import MapCustomControl from '~/components/views/map/MapCustomControl';
-import { navigateToMarkerByID } from '~/components/views/PermalinkHandler';
+import { AppDispatch } from 'src/components/redux';
+import { selectEditorDebugEnabled } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import MapCustomControl from 'src/components/views/map/MapCustomControl';
+import { navigateToMarkerByID } from 'src/components/views/PermalinkHandler';
 
 const useStyles = makeStyles((_theme) => ({
   show: {
@@ -53,7 +54,12 @@ const mapStateToProps = (state: AppState) => ({
   displayed: selectEditorDebugEnabled(state),
 });
 const mapDispatchToProps = (_dispatch: AppDispatch) => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type DebugControlsStateProps = ReturnType<typeof mapStateToProps>;
+type DebugControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<DebugControlsStateProps, DebugControlsDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
 
 type DebugControlsProps = ConnectedProps<typeof connector>;
 

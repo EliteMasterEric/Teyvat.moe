@@ -7,9 +7,9 @@ import localStorage from 'packages/local-storage';
 import {
   GenshinMapPreferencesLatest,
   PREFERENCES_VERSION,
-} from '~/components/preferences/PreferencesSchema';
-import { PREFERENCES_STORAGE_KEY } from '~/components/preferences/ReduxStore';
-import { generateJSON, toBase64 } from '~/components/util';
+} from 'src/components/preferences/PreferencesSchema';
+import { PREFERENCES_STORAGE_KEY } from 'src/components/preferences/ReduxStore';
+import { generateJSON, toBase64 } from 'src/components/util';
 
 export const PREFERENCES_PREFIX = `${PREFERENCES_VERSION}~`;
 

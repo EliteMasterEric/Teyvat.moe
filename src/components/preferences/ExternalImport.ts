@@ -1,14 +1,14 @@
 import _ from 'lodash';
 
-import { MSFImportSite } from '~/components/data/ElementSchema';
-import { f, t } from '~/components/i18n/Localization';
-import { buildImportMapping } from '~/components/preferences/ExternalImportDictionary';
+import { MSFImportSite, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { f, t } from 'src/components/i18n/Localization';
+import { buildImportMapping } from 'src/components/preferences/ExternalImportDictionary';
 import {
   displayImportError,
   markMarkersCompleted,
   sendNotification,
-} from '~/components/redux/dispatch';
-import { isValidJSON } from '~/components/util';
+} from 'src/components/redux/dispatch';
+import { filterNotEmpty, isValidJSON } from 'src/components/util';
 
 /**
  * Import marker completion data from another site.
@@ -36,12 +36,12 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
     // Get the list of all externalsite keys, and their corresponding values.
     const dictionary = buildImportMapping(importKey);
 
-    const missingEntries = [];
+    const missingEntries: string[] = [];
 
     // Map each externalsite entry to a GenshinMap entry.
     const fullDataMapped = _.flatten(
-      _.filter(
-        fullData.map((entry: any) => {
+      fullData
+        .map((entry: any) => {
           if (typeof entry !== 'string') {
             return '';
           }
@@ -51,9 +51,10 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
 
           missingEntries.push(entry);
           return '';
-        }),
-        _.size
-      )
+        })
+        .filter((entry: MSFMarkerKey[] | '' | undefined): entry is MSFMarkerKey[] => {
+          return entry != '' && filterNotEmpty(entry);
+        })
     );
 
     const successfulEntries = _.size(fullDataMapped);
@@ -64,7 +65,7 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
 
     if (successfulEntries < totalEntries) {
       // Some entries were missing.
-      console.warn(`Skipped over ${missingEntries} entries when importing.`);
+      console.warn(`Skipped over ${missingEntries.length} entries when importing.`);
       console.warn(missingEntries);
       sendNotification(
         f('message-import-success-partial', {

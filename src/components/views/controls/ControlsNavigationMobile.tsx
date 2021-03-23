@@ -10,17 +10,25 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { MapRegionKeys, MapRegions } from '~/components/data/MapRegions';
-import { selectIsTabDisplayed, selectOpen } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsFoldButton from '~/components/views/controls/sidebar/ControlsFoldButton';
-import ControlsRegionButton from '~/components/views/controls/sidebar/ControlsRegionButton';
+import { MapRegionKeys, getMapRegion } from 'src/components/data/MapRegions';
+import { selectIsTabDisplayed, selectOpen } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import ControlsFoldButton from 'src/components/views/controls/sidebar/ControlsFoldButton';
+import ControlsRegionButton from 'src/components/views/controls/sidebar/ControlsRegionButton';
 
 const mapStateToProps = (state: AppState) => ({
   displayRegions: selectOpen(state) && selectIsTabDisplayed(state, ['features', 'routes']),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsNavigationMobileStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsNavigationMobileDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsNavigationMobileStateProps,
+  ControlsNavigationMobileDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsNavigationMobileProps = ConnectedProps<typeof connector>;
 
@@ -38,7 +46,7 @@ const _ControlsNavigationMobile: FunctionComponent<ControlsNavigationMobileProps
       <ControlsFoldButton button fixedPosition={false} />
       {displayRegions
         ? MapRegionKeys.map((key) =>
-            MapRegions[key]?.enabled ? <ControlsRegionButton key={key} regionKey={key} /> : null
+            getMapRegion(key).enabled ? <ControlsRegionButton key={key} regionKey={key} /> : null
           )
         : null}
     </Box>

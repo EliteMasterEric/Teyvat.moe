@@ -6,11 +6,11 @@ import _ from 'lodash';
 
 import localStorage from 'packages/local-storage';
 
-import { migrateData } from '~/components/preferences/DataImport';
-import { PREFERENCES_VERSION } from '~/components/preferences/PreferencesSchema';
-import { storeRecoveryData } from '~/components/preferences/Recovery';
-import { PREFERENCES_PERSISTENT_KEYS, CREDENTIALS_PERSISTENT_KEYS } from '~/components/redux';
-import { AppState, initialState } from '~/components/redux/types';
+import { migrateData } from 'src/components/preferences/DataImport';
+import { PREFERENCES_VERSION } from 'src/components/preferences/PreferencesSchema';
+import { storeRecoveryData } from 'src/components/preferences/Recovery';
+import { PREFERENCES_PERSISTENT_KEYS, CREDENTIALS_PERSISTENT_KEYS } from 'src/components/redux';
+import { AppState, initialState } from 'src/components/redux/types';
 
 export const PREFERENCES_STORAGE_KEY = 'genshinmap-preferences';
 export const CREDENTIALS_STORAGE_KEY = 'genshinmap-credentials';

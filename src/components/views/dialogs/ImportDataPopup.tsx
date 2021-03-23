@@ -14,14 +14,14 @@ import {
 import React, { cloneElement, FunctionComponent, ReactElement, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import { InputTextArea } from '~/components/interface/Input';
-import { AppDispatch } from '~/components/redux';
-import { clearImportError, selectImportError } from '~/components/redux/slices/error';
-import { AppState } from '~/components/redux/types';
+import { t } from 'src/components/i18n/Localization';
+import { InputTextArea } from 'src/components/interface/Input';
+import { AppDispatch } from 'src/components/redux';
+import { clearImportError, selectImportError } from 'src/components/redux/slices/error';
+import { AppState } from 'src/components/redux/types';
 
-import { SafeHTML } from '~/components/util';
-import DialogTitle from '~/components/views/dialogs/DialogTitle';
+import { SafeHTML } from 'src/components/util';
+import DialogTitle from 'src/components/views/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {
@@ -42,15 +42,22 @@ interface ImportDataPopupBaseProps {
   trigger: ReactElement<ImportDataPopupTriggerProps>;
 }
 
-const mapStateToProps = (state: AppState, _props: ImportDataPopupBaseProps) => ({
+const mapStateToProps = (state: AppState) => ({
   error: selectImportError(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   clearError: () => dispatch(clearImportError()),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ImportDataPopupStateProps = ReturnType<typeof mapStateToProps>;
+type ImportDataPopupDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ImportDataPopupStateProps,
+  ImportDataPopupDispatchProps,
+  ImportDataPopupBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ImportDataPopupProps = ConnectedProps<typeof connector>;
+type ImportDataPopupProps = ConnectedProps<typeof connector> & ImportDataPopupBaseProps;
 
 const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
   title,

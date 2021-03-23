@@ -4,13 +4,13 @@ import React, { FunctionComponent } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider as StoreProvider } from 'react-redux';
 
-import { store } from '~/components/redux';
-import Theme from '~/components/Theme';
-import ErrorHandler from '~/components/views/error/ErrorHandler';
-import FullPageErrorHandler from '~/components/views/error/FullPageErrorHandler';
-import MainView from '~/components/views/MainView';
-import { NotificationProvider } from '~/components/views/NotificationProvider';
-import PageHeaders from '~/components/views/PageHeaders';
+import { store } from 'src/components/redux';
+import Theme from 'src/components/Theme';
+import ErrorHandler from 'src/components/views/error/ErrorHandler';
+import FullPageErrorHandler from 'src/components/views/error/FullPageErrorHandler';
+import MainView from 'src/components/views/MainView';
+import { NotificationProvider } from 'src/components/views/NotificationProvider';
+import PageHeaders from 'src/components/views/PageHeaders';
 
 const App: FunctionComponent = () => {
   return (

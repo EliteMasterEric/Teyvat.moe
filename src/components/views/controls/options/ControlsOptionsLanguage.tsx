@@ -9,12 +9,13 @@ import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import Flag from 'react-world-flags';
 
-import { getLanguageOptions } from '~/components/i18n/FeatureLocalization';
-import { getShortLocale, t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { AppDispatch } from '~/components/redux';
-import { selectOverrideLang, setOverrideLang } from '~/components/redux/slices/options';
-import { AppState } from '~/components/redux/types';
+import { getLanguageOptions } from 'src/components/i18n/FeatureLocalization';
+import { getShortLocale, t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { AppDispatch } from 'src/components/redux';
+import { selectOverrideLang, setOverrideLang } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({
   label: {
@@ -65,7 +66,14 @@ const mapStateToProps = (state: AppState) => ({
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   setOverrideLang: (lang: string) => dispatch(setOverrideLang(lang)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsOptionsLanguageStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsOptionsLanguageDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsOptionsLanguageStateProps,
+  ControlsOptionsLanguageDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsOptionsLanguageProps = ConnectedProps<typeof connector>;
 

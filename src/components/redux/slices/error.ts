@@ -4,9 +4,9 @@
  */
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
-import { LocalizedString } from '~/components/Types';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
+import { LocalizedString } from 'src/components/Types';
 
 export type ErrorState = {
   importError: string | null;

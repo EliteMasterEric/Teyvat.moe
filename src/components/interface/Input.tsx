@@ -12,10 +12,11 @@ import {
   TextField as MaterialTextField,
   SwitchProps,
   TextFieldProps,
+  SliderTypeMap,
 } from '@material-ui/core';
 import React, { FunctionComponent, ReactElement } from 'react';
 
-import { useDebouncedState } from '~/components/util';
+import { useDebouncedState } from 'src/components/util';
 
 interface InputTextFieldProps extends Omit<TextFieldProps, 'onChange'> {
   value?: string;
@@ -75,7 +76,7 @@ export const InputTextArea: FunctionComponent<InputTextAreaProps> = ({
   );
 };
 
-type InputSliderProps = React.ComponentProps<typeof MaterialSlider> & {
+type InputSliderProps = Omit<React.ComponentProps<typeof MaterialSlider>, 'onChange'> & {
   value: number;
   onChange: (value: number) => void;
 };
@@ -93,9 +94,13 @@ export const InputSlider: FunctionComponent<InputSliderProps> = ({
   // onChange will be called to propage the change to the local storage.
   const [currentValue, setCurrentValue] = useDebouncedState<number>(value, onChange);
 
-  const setInternalValue = (_event, newValue: number | number[]) => {
+  const setInternalValue: SliderTypeMap['props']['onChange'] = (
+    _event,
+    newValue: number | number[]
+  ) => {
     if (Array.isArray(newValue)) {
-      setCurrentValue(newValue[0]);
+      const newInnerValue = newValue[0];
+      if (newInnerValue != null) setCurrentValue(newInnerValue);
     } else {
       setCurrentValue(newValue);
     }
@@ -104,12 +109,12 @@ export const InputSlider: FunctionComponent<InputSliderProps> = ({
   return <MaterialSlider value={currentValue} onChange={setInternalValue} {...others} />;
 };
 
-type InputSwitchProps = {
+type InputSwitchProps = Omit<SwitchProps, 'onChange'> & {
   value: boolean;
   onChange: (value: boolean) => void;
   label: string | ReactElement;
   labelPlacement?: 'start' | 'end' | 'top' | 'bottom';
-} & SwitchProps;
+};
 
 /**
  * A debounced switch.

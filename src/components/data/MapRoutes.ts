@@ -1,14 +1,18 @@
 import _ from 'lodash';
 
 import {
+  MSFRouteColor,
   MSFRouteGroupExtended,
   MSFRouteGroupKey,
-  MSFRouteKey,
-} from '~/components/data/ElementSchema';
-import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from '~/components/data/MapCategories';
-import { isRegionKey, MapRegionKey } from '~/components/data/MapRegions';
-import { listRouteFiles, loadRoute } from '~/components/data/RouteData';
-import { filterNotEmpty } from '../util';
+  MSFRouteText,
+} from 'src/components/data/ElementSchema';
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
+import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
+import { listRouteFiles, loadRoute } from 'src/components/data/RouteData';
+import { filterNotEmpty } from 'src/components/util';
+
+export const DEFAULT_ROUTE_TEXT = '  ►  ' as MSFRouteText;
+export const DEFAULT_ROUTE_COLOR = '#d32f2f' as MSFRouteColor;
 
 /**
  * Metadata regarding the map routes.
@@ -38,7 +42,7 @@ const MapRouteGroups = _.fromPairs(
 
       const routeData: MSFRouteGroupExtended = {
         ...baseRouteData,
-        key: fullName as MSFRouteKey,
+        key: fullName as MSFRouteGroupKey,
         region: routeRegion as MapRegionKey,
         category: routeCategory as MapCategoryKey,
       };
@@ -72,7 +76,7 @@ export const getEmptyRouteCategories = (regionKey: MapRegionKey): Record<MapCate
             return (
               mapRoute.category === categoryKey &&
               mapRoute.region == regionKey &&
-              (mapRoute?.enabled ?? true)
+              (mapRoute.enabled ?? true)
             );
           }
         ) == undefined,
@@ -81,17 +85,17 @@ export const getEmptyRouteCategories = (regionKey: MapRegionKey): Record<MapCate
   ) as Record<MapCategoryKey, boolean>;
 
 export const getRouteKeysByFilter = (region: string, category: string): MSFRouteGroupKey[] => {
-  return MapRouteKeys.filter((key) => {
-    const route = MapRouteGroups[key];
-    return route?.region === region && route?.category === category && route?.enabled;
+  return MapRouteGroupKeys.filter((key) => {
+    const route = getMapRouteGroup(key);
+    return route.region === region && route.category === category && route.enabled;
   });
 };
 
 export const sortRoutesByName = (data: MSFRouteGroupKey[]): MSFRouteGroupKey[] =>
   data.sort((a, b) => {
     // Sort the features alphabetically.
-    const textA = MapRouteGroups?.[a]?.name;
-    const textB = MapRouteGroups?.[b]?.name;
+    const textA = getMapRouteGroup(a).name;
+    const textB = getMapRouteGroup(b).name;
 
     if (textA < textB) return -1;
     return textA > textB ? 1 : 0;
@@ -99,7 +103,7 @@ export const sortRoutesByName = (data: MSFRouteGroupKey[]): MSFRouteGroupKey[] =
 
 export const getRouteCount = (): number => {
   return MapRouteGroupKeys.reduce((sum, key, _index) => {
-    const route = MapRouteGroups[key];
+    const route = getMapRouteGroup(key);
     return sum + route.data.length;
   }, 0);
 };

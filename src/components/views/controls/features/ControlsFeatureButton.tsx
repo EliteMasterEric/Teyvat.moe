@@ -7,19 +7,19 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFFeatureKey } from '~/components/data/ElementSchema';
+import { MSFFeatureKey } from 'src/components/data/ElementSchema';
 
-import { getFilterIconURL } from '~/components/data/FeatureIcon';
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { Image } from '~/components/interface/Image';
-import { AppDispatch } from '~/components/redux';
+import { getFilterIconURL } from 'src/components/data/FeatureIcon';
+import { getMapFeature } from 'src/components/data/MapFeatures';
+import { localizeField } from 'src/components/i18n/FeatureLocalization';
+import { Image } from 'src/components/interface/Image';
+import { AppDispatch } from 'src/components/redux';
 import {
   selectIsFeatureDisplayed,
   toggleFeatureDisplayed,
-} from '~/components/redux/slices/displayed';
-import { selectOverrideLang } from '~/components/redux/slices/options';
-import { AppState } from '~/components/redux/types';
+} from 'src/components/redux/slices/displayed';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
 
 const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
@@ -101,13 +101,18 @@ const mapDispatchToProps = (
   dispatch: AppDispatch,
   { featureKey }: ControlsFeatureButtonBaseProps
 ) => ({
-  toggleFeatureDisplayed: () => {
-    dispatch(toggleFeatureDisplayed(featureKey));
-  },
+  toggleFeatureDisplayed: () => dispatch(toggleFeatureDisplayed(featureKey)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ControlsFeatureButtonStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsFeatureButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsFeatureButtonStateProps,
+  ControlsFeatureButtonDispatchProps,
+  ControlsFeatureButtonBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsFeatureButtonProps = ConnectedProps<typeof connector>;
+type ControlsFeatureButtonProps = ConnectedProps<typeof connector> & ControlsFeatureButtonBaseProps;
 
 /**
  * A button in the Filters, with the icon of a Map feature on it.
@@ -121,10 +126,10 @@ const _ControlsFeatureButton: FunctionComponent<ControlsFeatureButtonProps> = ({
 }) => {
   const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
 
-  const mapFeature = MapFeatures[featureKey];
+  const mapFeature = getMapFeature(featureKey);
 
   // Hide button if feature is not enabled.
-  if (!mapFeature?.enabled) return null;
+  if (!mapFeature.enabled) return null;
 
   const filterImg = mapFeature.icons.filter;
 

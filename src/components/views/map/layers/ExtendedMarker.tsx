@@ -15,9 +15,9 @@ export class LExtendedMarker extends LeafletMarker {
 
   constructor(latlng: L.LatLngExpression, options?: LExtendedMarkerOptions) {
     super(latlng, options);
-    this.clusterIconUrl = options.clusterIconUrl;
-    this.completed = options.completed;
-    this.markerKey = options.markerKey;
+    this.clusterIconUrl = options?.clusterIconUrl ?? '';
+    this.completed = options?.completed ?? false;
+    this.markerKey = options?.markerKey ?? '';
   }
 
   setMarkerKey(markerKey: string): void {

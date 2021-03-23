@@ -1,27 +1,33 @@
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notistack';
-import React, { useEffect, useState, ReactNode, ReactElement, FunctionComponent } from 'react';
-import { connect } from 'react-redux';
-import { AnyAction } from 'redux';
+import React, { useEffect, useState, ReactNode, FunctionComponent } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
 
-import { AppDispatch } from '~/components/redux';
-import {
-  removeNotification,
-  Notification,
-  selectNotifications,
-} from '~/components/redux/slices/notify';
-import { AppState } from '~/components/redux/types';
+import { AppDispatch } from 'src/components/redux';
+import { removeNotification, selectNotifications } from 'src/components/redux/slices/notify';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+
+const mapStateToProps = (state: AppState) => ({
+  notifications: selectNotifications(state),
+});
+const mapDispatchToProps = (dispatch: AppDispatch) => ({
+  removeNotification: (key: SnackbarKey) => dispatch(removeNotification(key)),
+});
+type NotificationProviderStateProps = ReturnType<typeof mapStateToProps>;
+type NotificationProviderDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  NotificationProviderStateProps,
+  NotificationProviderDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
+type NotificationHandlerProps = ConnectedProps<typeof connector>;
 
 /**
- *
- *
  * Not a pure component, keeps an internal list
  * @param notifications The notifications to display.
  */
-interface NotificationHandlerProps {
-  notifications: Notification[];
-  removeNotification: (key: SnackbarKey) => AnyAction;
-}
 const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
   notifications,
   removeNotification,
@@ -54,6 +60,9 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
         return;
       }
 
+      // This notification is invalid.
+      if (notification.options.key == null) return;
+
       // Skip if we've already displayed this snackbar.
       if (_.includes(currentlyDisplayed, notification.options.key)) return;
 
@@ -66,8 +75,10 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
         },
         onExited: () => {
           // The notification has left. We can now remove it from the store.
-          removeNotification(notification.options.key);
-          removeDisplayed(notification.options.key);
+          if (notification.options.key != null) {
+            removeNotification(notification.options.key);
+            removeDisplayed(notification.options.key);
+          }
         },
       };
 
@@ -89,13 +100,7 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
   return null;
 };
 
-const mapStateToProps = (state: AppState) => ({
-  notifications: selectNotifications(state),
-});
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  removeNotification: (key: SnackbarKey) => dispatch(removeNotification(key)),
-});
-const NotificationHandler = connect(mapStateToProps, mapDispatchToProps)(_NotificationHandler);
+const NotificationHandler = connector(_NotificationHandler);
 
 interface NotificationProviderProps {
   children: ReactNode;

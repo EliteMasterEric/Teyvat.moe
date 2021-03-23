@@ -7,12 +7,12 @@ import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { f, t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { InputSlider } from '~/components/interface/Input';
-import { TabView } from '~/components/interface/Tabs';
-import { AppDispatch } from '~/components/redux';
-import { clearPreferences } from '~/components/redux/actions';
+import { f, t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { InputSlider } from 'src/components/interface/Input';
+import { TabView } from 'src/components/interface/Tabs';
+import { AppDispatch } from 'src/components/redux';
+import { clearPreferences } from 'src/components/redux/actions';
 import {
   selectClusterMarkers,
   selectCompletedAlpha,
@@ -29,18 +29,19 @@ import {
   setRegionLabelsEnabled,
   setShowHiddenFeaturesInSummary,
   setWorldBorderEnabled,
-} from '~/components/redux/slices/options';
+} from 'src/components/redux/slices/options';
 import {
   selectEditorDebugEnabled,
   selectEditorEnabled,
   selectIsTabDisplayed,
   setEditorDebugEnabled,
   setEditorEnabled,
-} from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { getApplicationVersion } from '~/components/util';
-import ControlsOptionsLanguage from '~/components/views/controls/options/ControlsOptionsLanguage';
-import ClearMapDataPopup from '~/components/views/dialogs/ClearMapDataPopup';
+} from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import { getApplicationVersion } from 'src/components/util';
+import ControlsOptionsLanguage from 'src/components/views/controls/options/ControlsOptionsLanguage';
+import ClearMapDataPopup from 'src/components/views/dialogs/ClearMapDataPopup';
 
 const useStyles = makeStyles((_theme) => ({
   subtitle: {
@@ -84,20 +85,28 @@ const mapStateToProps = (state: AppState) => ({
   editorDebugEnabled: selectEditorDebugEnabled(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setEditorEnabled: (enabled) => dispatch(setEditorEnabled(enabled)),
-  setCompletedAlpha: (alpha) => dispatch(setCompletedAlpha(alpha)),
-  setWorldBorderEnabled: (enabled) => dispatch(setWorldBorderEnabled(enabled)),
-  setRegionLabelsEnabled: (enabled) => dispatch(setRegionLabelsEnabled(enabled)),
-  setClusterMarkers: (enabled) => dispatch(setClusterMarkers(enabled)),
-  setHideFeaturesInEditor: (enabled) => dispatch(setHideFeaturesInEditor(enabled)),
-  setHideRoutesInEditor: (enabled) => dispatch(setHideRoutesInEditor(enabled)),
-  setShowHiddenFeaturesInSummary: (enabled) => dispatch(setShowHiddenFeaturesInSummary(enabled)),
-  setEditorDebugEnabled: (enabled) => dispatch(setEditorDebugEnabled(enabled)),
-  setOverrideLang: (lang) => dispatch(setOverrideLang(lang)),
+  setEditorEnabled: (enabled: boolean) => dispatch(setEditorEnabled(enabled)),
+  setCompletedAlpha: (alpha: number) => dispatch(setCompletedAlpha(alpha)),
+  setWorldBorderEnabled: (enabled: boolean) => dispatch(setWorldBorderEnabled(enabled)),
+  setRegionLabelsEnabled: (enabled: boolean) => dispatch(setRegionLabelsEnabled(enabled)),
+  setClusterMarkers: (enabled: boolean) => dispatch(setClusterMarkers(enabled)),
+  setHideFeaturesInEditor: (enabled: boolean) => dispatch(setHideFeaturesInEditor(enabled)),
+  setHideRoutesInEditor: (enabled: boolean) => dispatch(setHideRoutesInEditor(enabled)),
+  setShowHiddenFeaturesInSummary: (enabled: boolean) =>
+    dispatch(setShowHiddenFeaturesInSummary(enabled)),
+  setEditorDebugEnabled: (enabled: boolean) => dispatch(setEditorDebugEnabled(enabled)),
+  setOverrideLang: (lang: string) => dispatch(setOverrideLang(lang)),
 
   clearState: () => dispatch(clearPreferences()),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabOptionsStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabOptionsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsTabOptionsStateProps,
+  ControlsTabOptionsDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsTabOptionsProps = ConnectedProps<typeof connector>;
 
@@ -171,7 +180,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
             min={0.1}
             max={1}
             step={0.1}
-            onChange={(newValue) => setCompletedAlpha(newValue)}
+            onChange={(newValue: number) => setCompletedAlpha(newValue)}
             valueLabelDisplay="auto"
             valueLabelFormat={(value) => `${Math.round(value * 100)}%`}
           />

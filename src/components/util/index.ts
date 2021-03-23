@@ -4,6 +4,7 @@
 import { toBase64, fromBase64 } from './base64';
 import { filterNotEmpty } from './filterFunctions';
 import { generateJSON, generatePrettyJSON, isValidJSON } from './json';
+import { deleteRecord, getRecord, setRecord } from './record';
 import {
   applySourcemapToStackTrace,
   canUseDOM,
@@ -46,6 +47,9 @@ export {
   isValidJSON,
   latLngToTile,
   openURLInWindow,
+  getRecord,
+  setRecord,
+  deleteRecord,
   reloadWindow,
   SafeHTML,
   setBrowserClipboard,

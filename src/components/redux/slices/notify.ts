@@ -5,9 +5,9 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey } from 'notistack';
 
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
-import { LocalizedString } from '~/components/Types';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
+import { LocalizedString } from 'src/components/Types';
 
 interface NotificationOptions extends OptionsObject {
   // Override a mutability issue.

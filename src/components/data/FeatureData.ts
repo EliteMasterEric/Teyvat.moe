@@ -3,12 +3,12 @@
  */
 import _ from 'lodash';
 
-import { MSFFeature, validateFeatureData } from '~/components/data/ElementSchema';
-import { importFromContext, isDev } from '~/components/util';
+import { MSFFeature, validateFeatureData } from 'src/components/data/ElementSchema';
+import { importFromContext, isDev } from 'src/components/util';
 
-const featuresContext = require.context('~/data/features/', true, /.json$/);
+const featuresContext = require.context('src/data/features/', true, /.json$/);
 export const listFeatureFiles = (): string[] => featuresContext.keys();
-export const loadFeature = (key: string): MSFFeature => {
+export const loadFeature = (key: string): MSFFeature | null => {
   const featureData: MSFFeature = importFromContext(featuresContext, key);
 
   if (isDev()) {

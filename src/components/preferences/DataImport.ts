@@ -12,17 +12,19 @@ import {
   MSFImportKey,
   MSFMarkerID,
   MSFMarkerKey,
-} from '~/components/data/ElementSchema';
-import { f } from '~/components/i18n/Localization';
-import { PREFERENCES_PREFIX } from '~/components/preferences/DataExport';
+  MSFRouteID,
+} from 'src/components/data/ElementSchema';
+import { f } from 'src/components/i18n/Localization';
+import { PREFERENCES_PREFIX } from 'src/components/preferences/DataExport';
 import {
   EditorMarker,
+  EditorRoute,
   GM_002_EditorMarker,
   GM_002_EditorRoute,
   LegacyEditorMarker,
   LegacyEditorRoute,
-} from '~/components/preferences/EditorDataSchema';
-import { buildImportMapping } from '~/components/preferences/ExternalImportDictionary';
+} from 'src/components/preferences/EditorDataSchema';
+import { buildImportMapping } from 'src/components/preferences/ExternalImportDictionary';
 import {
   GM_001,
   GM_002,
@@ -35,13 +37,13 @@ import {
   GenshinMapPreferencesLatest,
   GenshinMapPreferencesVersion,
   PREFERENCES_VERSION,
-} from '~/components/preferences/PreferencesSchema';
-import { storeRecoveryData } from '~/components/preferences/Recovery';
-import { Notification, buildNotification } from '~/components/redux/slices/notify';
-import { AppState, initialState } from '~/components/redux/types';
-import { fromBase64, hashObject } from '~/components/util';
+} from 'src/components/preferences/PreferencesSchema';
+import { storeRecoveryData } from 'src/components/preferences/Recovery';
+import { Notification, buildNotification } from 'src/components/redux/slices/notify';
+import { AppState, initialState } from 'src/components/redux/types';
+import { fromBase64, getRecord, hashObject } from 'src/components/util';
 
-const demercateCoordinate = (coordinate) => {
+const demercateCoordinate = (coordinate: [number, number]): [number, number] => {
   // Spherical Mercator projection.
   const size = 256 * 2 ** 1;
   const d = size / 2;
@@ -55,29 +57,48 @@ const demercateCoordinate = (coordinate) => {
 };
 const ORIGIN = demercateCoordinate([0, 0]);
 
-const reprojectCoordinate = (coordinate) => {
+const reprojectCoordinate = (coordinate: [number, number]): [number, number] => {
   const demercated = demercateCoordinate([coordinate[1], coordinate[0]]);
   return [(demercated[1] - ORIGIN[1]) * -0.5 + -0.1, (demercated[0] - ORIGIN[0]) * 0.5 + 0.15];
 };
 
+// Type guards.
+const distinguishLegacyRoute = (value: any): value is LegacyEditorRoute => {
+  return Array.isArray((value as LegacyEditorRoute).geometry.coordinates[0]);
+};
+
 export const importEditorDataFromGMLegacy = (
   data: GM_006
-): { editorData: EditorMarker[]; notifications: Notification[] } => {
+): {
+  editorData: (EditorMarker | EditorRoute)[];
+  notifications: Notification[];
+} => {
   const editorElements = data.editor.feature.data;
 
   const modifiedElements = editorElements.map((element) => {
-    const isRoute = Array.isArray(element.geometry.coordinates[0]);
-    const coordinates = isRoute
-      ? element.geometry.coordinates.map((coord) => reprojectCoordinate(coord))
-      : reprojectCoordinate(element.geometry.coordinates);
-    return <EditorMarker>{
-      coordinates,
-      id: hashObject(coordinates),
-      popupTitle: element.properties.popupTitle,
-      popupContent: element.properties.popupContent,
-      popupMedia: element.properties.popupMedia,
-      popupAttribution: 'Unknown',
-    };
+    if (distinguishLegacyRoute(element)) {
+      const coordinates = element.geometry.coordinates.map((coord) => reprojectCoordinate(coord));
+      const id = hashObject(coordinates) as MSFRouteID;
+      return {
+        coordinates,
+        id,
+        popupTitle: element.properties.popupTitle,
+        popupContent: element.properties.popupContent,
+        popupMedia: element.properties.popupMedia,
+        popupAttribution: 'Unknown',
+      } as EditorRoute;
+    } else {
+      const coordinates = reprojectCoordinate(element.geometry.coordinates);
+      const id = hashObject(coordinates) as MSFMarkerID;
+      return {
+        coordinates,
+        id,
+        popupTitle: element.properties.popupTitle,
+        popupContent: element.properties.popupContent,
+        popupMedia: element.properties.popupMedia,
+        popupAttribution: 'Unknown',
+      } as EditorMarker;
+    }
   });
 
   return {
@@ -85,7 +106,9 @@ export const importEditorDataFromGMLegacy = (
     // Else, complete success.
     notifications: [
       buildNotification(
-        f('message-import-success', { count: modifiedElements.length.toString() }),
+        f('message-import-success', {
+          count: modifiedElements.length.toString(),
+        }),
         {
           variant: 'success',
         }
@@ -103,8 +126,11 @@ export const importMarkerDataFromGMLegacy = (
   >;
 
   const dictionary = buildImportMapping('gm_legacy');
+  const getDictionaryEntry = (key: MSFImportKey): MSFMarkerKey[] => {
+    return dictionary?.[key] ?? [];
+  };
 
-  const missingEntries = [];
+  const missingEntries: MSFImportKey[] = [];
   let totalEntries = 0;
 
   const featureDataUnmapped = _.fromPairs(
@@ -132,15 +158,16 @@ export const importMarkerDataFromGMLegacy = (
         _.entries(featureDataUnmapped) as [MSFImportKey, number][],
         (entry: [MSFImportKey, number]): ([MSFMarkerKey, number] | [])[] => {
           const [importKey, timestamp] = entry;
-          if (importKey in dictionary) {
-            const result = _.map(dictionary[importKey], (entry: MSFMarkerKey): [
-              MSFMarkerKey,
-              number
-            ] => [entry, timestamp]);
-            return result;
-          } else {
+          const dictionaryEntries = getDictionaryEntry(importKey);
+          if (dictionaryEntries.length == 0) {
+            missingEntries.push(importKey);
             return [];
           }
+          const result = _.map(dictionaryEntries, (entry: MSFMarkerKey): [MSFMarkerKey, number] => [
+            entry,
+            timestamp,
+          ]);
+          return result;
         }
       )
     )
@@ -153,19 +180,19 @@ export const importMarkerDataFromGMLegacy = (
       features: featureDataMapped,
     },
     notify: {
-      notifications: [],
+      notifications: [] as Notification[],
     },
   };
 
   if (successfulEntries < totalEntries) {
     // Some entries were missing.
-    console.warn(`Skipped over ${missingEntries} entries when importing.`);
+    console.warn(`Skipped over ${missingEntries.length} entries when importing.`);
     console.warn(missingEntries);
     storeRecoveryData(
       { missingEntries },
       `[WARN] Could not import ${totalEntries - successfulEntries} entries.`
     );
-    partialData.notify.notifications.push([
+    partialData.notify.notifications.push(
       buildNotification(
         f('message-import-success-partial', {
           success: successfulEntries.toString(),
@@ -174,11 +201,11 @@ export const importMarkerDataFromGMLegacy = (
         {
           variant: 'success',
         }
-      ),
-    ]);
+      )
+    );
   } else {
     // Else, complete success.
-    partialData.notify.notifications.push([
+    partialData.notify.notifications.push(
       buildNotification(
         f('message-import-success', {
           count: totalEntries.toString(),
@@ -186,8 +213,8 @@ export const importMarkerDataFromGMLegacy = (
         {
           variant: 'success',
         }
-      ),
-    ]);
+      )
+    );
   }
 
   return partialData;
@@ -202,7 +229,7 @@ export const migrateData = (
   input: GenshinMapPreferences,
   version: GenshinMapPreferencesVersion,
   defaultState: AppState = initialState
-): GenshinMapPreferencesLatest => {
+): GenshinMapPreferencesLatest | null => {
   // eslint-disable-next-line prefer-const
   let output: GenshinMapPreferences = input;
 
@@ -222,20 +249,20 @@ export const migrateData = (
         version: 'GM_002',
         options: {
           ...defaultState.options,
-          ...output.options,
+          ...output?.options,
         },
         displayed: {
           ...defaultState.displayed,
-          ...output.displayed,
+          ...output?.displayed,
         },
         completed: {
           ...defaultState.completed,
-          ...output.completed,
+          ...output?.completed,
         },
         editor: {
           feature: {
             ...defaultState.editor.feature,
-            data: output.editor.feature.data,
+            data: output?.editor?.feature?.data,
           },
         },
       };
@@ -249,20 +276,20 @@ export const migrateData = (
         ...output,
         version: 'GM_003',
         editor: {
-          ...output.editor,
+          ...output?.editor,
           feature: {
-            ...output.editor.feature,
+            ...output?.editor?.feature,
             data: _.map(
-              output.editor.feature.data,
+              output?.editor?.feature?.data,
               (
                 element: GM_002_EditorMarker | GM_002_EditorRoute
               ): LegacyEditorMarker | LegacyEditorRoute => {
                 return {
                   ...element,
                   properties: {
-                    popupTitle: element.properties.popupTitle,
-                    popupContent: element.properties.popupContent,
-                    popupMedia: element.properties.popupImage,
+                    popupTitle: element?.properties?.popupTitle,
+                    popupContent: element?.properties?.popupContent,
+                    popupMedia: element?.properties?.popupImage,
                   },
                 };
               }
@@ -281,9 +308,9 @@ export const migrateData = (
         ...output,
         version: 'GM_004',
         displayed: {
-          ...output.displayed,
+          ...output?.displayed,
           features: {
-            ..._.omit(output.displayed.features, [
+            ..._.omit(output?.displayed?.features, [
               'mondstadtHillichurl',
               'liyueHillichurl',
               'mondstadtHillichurlShooter',
@@ -291,12 +318,36 @@ export const migrateData = (
               'mondstadtWei',
               'liyueWei',
             ]),
-            mondstadtHilichurl: output.displayed.features?.['mondstadtHillichurl'],
-            liyueHilichurl: output.displayed.features?.['liyueHillichurl'],
-            mondstadtHilichurlShooter: output.displayed.features?.['mondstadtHillichurlShooter'],
-            liyueHilichurlShooter: output.displayed.features?.['liyueHillichurlShooter'],
-            mondstadtUnusualHilichurl: output.displayed.features?.['mondstadtWei'],
-            liyueUnusualHilichurl: output.displayed.features?.['liyueWei'],
+            mondstadtHilichurl: getRecord(
+              output?.displayed?.features,
+              'mondstadtHillichurl' as MSFFeatureKey,
+              false
+            ),
+            liyueHilichurl: getRecord(
+              output?.displayed?.features,
+              'liyueHillichurl' as MSFFeatureKey,
+              false
+            ),
+            mondstadtHilichurlShooter: getRecord(
+              output?.displayed?.features,
+              'mondstadtHillichurlShooter' as MSFFeatureKey,
+              false
+            ),
+            liyueHilichurlShooter: getRecord(
+              output?.displayed?.features,
+              'liyueHillichurlShooter' as MSFFeatureKey,
+              false
+            ),
+            mondstadtUnusualHilichurl: getRecord(
+              output?.displayed?.features,
+              'mondstadtWei' as MSFFeatureKey,
+              false
+            ),
+            liyueUnusualHilichurl: getRecord(
+              output?.displayed?.features,
+              'liyueWei' as MSFFeatureKey,
+              false
+            ),
           },
         },
         completed: {
@@ -310,12 +361,36 @@ export const migrateData = (
               'mondstadtWei',
               'liyueWei',
             ]),
-            mondstadtHilichurl: output.completed.features?.['mondstadtHillichurl'],
-            liyueHilichurl: output.completed.features?.['liyueHillichurl'],
-            mondstadtHilichurlShooter: output.completed.features?.['mondstadtHillichurlShooter'],
-            liyueHilichurlShooter: output.completed.features?.['liyueHillichurlShooter'],
-            mondstadtUnusualHilichurl: output.completed.features?.['mondstadtWei'],
-            liyueUnusualHilichurl: output.completed.features?.['liyueWei'],
+            mondstadtHilichurl: getRecord(
+              output.completed.features,
+              'mondstadtHillichurl' as MSFFeatureKey,
+              false
+            ),
+            liyueHilichurl: getRecord(
+              output.completed.features,
+              'liyueHillichurl' as MSFFeatureKey,
+              false
+            ),
+            mondstadtHilichurlShooter: getRecord(
+              output.completed.features,
+              'mondstadtHillichurlShooter' as MSFFeatureKey,
+              false
+            ),
+            liyueHilichurlShooter: getRecord(
+              output.completed.features,
+              'liyueHillichurlShooter' as MSFFeatureKey,
+              false
+            ),
+            mondstadtUnusualHilichurl: getRecord(
+              output.completed.features,
+              'mondstadtWei' as MSFFeatureKey,
+              false
+            ),
+            liyueUnusualHilichurl: getRecord(
+              output.completed.features,
+              'liyueWei' as MSFFeatureKey,
+              false
+            ),
           },
         },
       };
@@ -329,19 +404,35 @@ export const migrateData = (
         ...output,
         version: 'GM_005',
         displayed: {
-          ...output.displayed,
+          ...output?.displayed,
           features: {
-            ..._.omit(output.displayed.features, ['mondstadtMatsusake', 'liyueMatsusake']),
-            mondstadtMatsutake: output.displayed.features?.['mondstadtMatsusake'],
-            liyueMatsutake: output.displayed.features?.['liyueMatsusake'],
+            ..._.omit(output?.displayed?.features, ['mondstadtMatsusake', 'liyueMatsusake']),
+            mondstadtMatsutake: getRecord(
+              output.displayed.features,
+              'mondstadtMatsusake' as MSFFeatureKey,
+              false
+            ),
+            liyueMatsutake: getRecord(
+              output.displayed.features,
+              'liyueMatsusake' as MSFFeatureKey,
+              false
+            ),
           },
         },
         completed: {
-          ...output.completed,
+          ...output?.completed,
           features: {
-            ..._.omit(output.completed.features, ['mondstadtMatsusake', 'liyueMatsusake']),
-            mondstadtMatsutake: output.completed.features?.['mondstadtMatsusake'],
-            liyueMatsutake: output.completed.features?.['liyueMatsusake'],
+            ..._.omit(output?.completed?.features, ['mondstadtMatsusake', 'liyueMatsusake']),
+            mondstadtMatsutake: getRecord(
+              output.completed.features,
+              'mondstadtMatsusake' as MSFFeatureKey,
+              false
+            ),
+            liyueMatsutake: getRecord(
+              output.completed.features,
+              'liyueMatsusake' as MSFFeatureKey,
+              false
+            ),
           },
         },
       };
@@ -369,12 +460,12 @@ export const migrateData = (
         notifications,
         options: {
           ...initialState.options,
-          ...output.options,
+          ...output?.options,
         },
         editor: {
-          ...output.editor,
+          ...output?.editor,
           feature: {
-            ...output.editor.feature,
+            ...output?.editor?.feature,
             data: editorData,
           },
         },
@@ -394,7 +485,7 @@ export const migrateData = (
  * @param {*} input The input string.
  * @returns The newest data format.
  */
-export const parseDataFromString = (input: string): GenshinMapPreferencesLatest => {
+export const parseDataFromString = (input: string): GenshinMapPreferencesLatest | null => {
   const decodedData = fromBase64(input);
 
   const versionPrefix = decodedData.substring(

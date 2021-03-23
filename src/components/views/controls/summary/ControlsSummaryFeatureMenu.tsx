@@ -7,27 +7,27 @@ import { Menu, MenuItem, IconButton, makeStyles } from '@material-ui/core';
 import { Menu as MenuIcon } from '@material-ui/icons';
 import _ from 'lodash';
 import React, { useState, FunctionComponent } from 'react';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 import Tooltip from 'react-tooltip';
-import { MSFFeatureKey, MSFMarkerKey } from '~/components/data/ElementSchema';
+import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/ElementSchema';
 
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { t } from '~/components/i18n/Localization';
-import { AppDispatch, store } from '~/components/redux';
+import { getMapFeature } from 'src/components/data/MapFeatures';
+import { t } from 'src/components/i18n/Localization';
+import { AppDispatch, store } from 'src/components/redux';
 import {
   clearFeatureCompleted,
   clearMarkersCompleted,
   selectCompletedMarkersOfFeature,
   selectMarkerCompleted,
-} from '~/components/redux/slices/completed';
+} from 'src/components/redux/slices/completed';
 import {
   clearFeatureDisplayed,
   selectIsFeatureDisplayed,
   setFeatureDisplayed,
-} from '~/components/redux/slices/displayed';
-import { setMapHighlight, setMapPosition } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { getUnixTimestamp } from '~/components/util';
+} from 'src/components/redux/slices/displayed';
+import { setMapHighlight, setMapPosition } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { getUnixTimestamp } from 'src/components/util';
 
 const useStyles = makeStyles((_theme) => ({
   menuButtonRoot: {
@@ -39,19 +39,76 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-interface ControlsSummaryFeatureMenu {
+interface ControlsSummaryFeatureMenuBaseProps {
   featureKey: MSFFeatureKey;
-
-  displayed: boolean;
-
-  hideFeature: () => void;
-  showFeature: () => void;
-  clearAllFeature: () => void;
-  clearExpiredFeature: () => void;
-  locateFeature: () => void;
 }
 
-const _ControlsSummaryFeatureMenu: FunctionComponent<ControlsSummaryFeatureMenu> = ({
+const mapStateToProps = (state: AppState, { featureKey }: ControlsSummaryFeatureMenuBaseProps) => ({
+  displayed: selectIsFeatureDisplayed(state, featureKey),
+});
+const mapDispatchToProps = (
+  dispatch: AppDispatch,
+  { featureKey }: ControlsSummaryFeatureMenuBaseProps
+) => {
+  const mapFeature = getMapFeature(featureKey);
+  return {
+    clearAllFeature: () => dispatch(clearFeatureCompleted(featureKey)),
+    clearExpiredFeature: () => {
+      const currentCompleted = _.keys(
+        selectCompletedMarkersOfFeature(store.getState(), featureKey)
+      ) as MSFMarkerKey[];
+      const now = getUnixTimestamp();
+      const toClear = _.filter(currentCompleted, (markerKey) => {
+        const completedTime = selectMarkerCompleted(store.getState(), markerKey);
+        // Is respawn set, and has the respawn time elapsed?
+        return completedTime != null && now - completedTime > mapFeature.respawn;
+      });
+      dispatch(clearMarkersCompleted(toClear));
+    },
+    locateFeature: () => {
+      const HIGHLIGHT_ZOOM_LEVEL = 10;
+      const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
+        key.startsWith(featureKey)
+      );
+      const uncompletedMarkers = _.filter(mapFeature.data, (value) => {
+        return !currentCompleted.includes(`${featureKey}/${value.id}`);
+      });
+      const randomMarker = _.sample(uncompletedMarkers);
+
+      if (randomMarker != null) {
+        dispatch(setMapHighlight(randomMarker.id));
+        dispatch(
+          setMapPosition(
+            {
+              lat: randomMarker.coordinates[0],
+              lng: randomMarker.coordinates[1],
+            },
+            HIGHLIGHT_ZOOM_LEVEL
+          )
+        );
+      }
+    },
+    hideFeature: () => {
+      dispatch(clearFeatureDisplayed(featureKey));
+    },
+    showFeature: () => {
+      dispatch(setFeatureDisplayed(featureKey));
+    },
+  };
+};
+type ControlsSummaryFeatureMenuStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsSummaryFeatureMenuDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsSummaryFeatureMenuStateProps,
+  ControlsSummaryFeatureMenuDispatchProps,
+  ControlsSummaryFeatureMenuBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
+
+type ControlsSummaryFeatureMenuProps = ConnectedProps<typeof connector> &
+  ControlsSummaryFeatureMenuBaseProps;
+
+const _ControlsSummaryFeatureMenu: FunctionComponent<ControlsSummaryFeatureMenuProps> = ({
   featureKey,
 
   displayed,
@@ -64,12 +121,12 @@ const _ControlsSummaryFeatureMenu: FunctionComponent<ControlsSummaryFeatureMenu>
 }) => {
   const classes = useStyles();
 
-  const mapFeature = MapFeatures[featureKey];
-  const doesExpire = (mapFeature?.respawn ?? 'none') !== 'none';
+  const mapFeature = getMapFeature(featureKey);
+  const doesExpire = (mapFeature.respawn ?? 'none') !== 'none';
 
-  const [menuAnchor, setMenuAnchor] = useState(null);
+  const [menuAnchor, setMenuAnchor] = useState<HTMLButtonElement | null>(null);
 
-  const handleOpen = (event) => {
+  const handleOpen: React.MouseEventHandler<HTMLButtonElement> = (event) => {
     setMenuAnchor(event.currentTarget);
   };
 
@@ -114,60 +171,6 @@ const _ControlsSummaryFeatureMenu: FunctionComponent<ControlsSummaryFeatureMenu>
   );
 };
 
-const mapStateToProps = (state: AppState, { featureKey }: { featureKey: MSFFeatureKey }) => ({
-  displayed: selectIsFeatureDisplayed(state, featureKey),
-});
-const mapDispatchToProps = (
-  dispatch: AppDispatch,
-  { featureKey }: { featureKey: MSFFeatureKey }
-) => {
-  const mapFeature = MapFeatures[featureKey];
-  return {
-    clearAllFeature: () => dispatch(clearFeatureCompleted(featureKey)),
-    clearExpiredFeature: () => {
-      const currentCompleted = _.keys(
-        selectCompletedMarkersOfFeature(store.getState(), featureKey)
-      ) as MSFMarkerKey[];
-      const now = getUnixTimestamp();
-      const toClear = _.filter(currentCompleted, (markerKey) => {
-        const completedTime = selectMarkerCompleted(store.getState(), markerKey);
-        // Is respawn set, and has the respawn time elapsed?
-        return now - completedTime > mapFeature?.respawn;
-      });
-      dispatch(clearMarkersCompleted(toClear));
-    },
-    locateFeature: () => {
-      const HIGHLIGHT_ZOOM_LEVEL = 10;
-      const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
-        key.startsWith(featureKey)
-      );
-      const uncompletedMarkers = _.filter(mapFeature.data, (value) => {
-        return !currentCompleted.includes(`${featureKey}/${value.id}`);
-      });
-      const randomMarker = _.sample(uncompletedMarkers);
-
-      dispatch(setMapHighlight(randomMarker.id));
-      dispatch(
-        setMapPosition(
-          {
-            lat: randomMarker?.coordinates[0],
-            lng: randomMarker?.coordinates[1],
-          },
-          HIGHLIGHT_ZOOM_LEVEL
-        )
-      );
-    },
-    hideFeature: () => {
-      dispatch(clearFeatureDisplayed(featureKey));
-    },
-    showFeature: () => {
-      dispatch(setFeatureDisplayed(featureKey));
-    },
-  };
-};
-const ControlsSummaryFeatureMenu = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(_ControlsSummaryFeatureMenu);
+const ControlsSummaryFeatureMenu = connector(_ControlsSummaryFeatureMenu);
 
 export default ControlsSummaryFeatureMenu;

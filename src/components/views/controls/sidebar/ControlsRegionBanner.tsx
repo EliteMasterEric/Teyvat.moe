@@ -7,13 +7,13 @@ import { makeStyles, Box, Tooltip } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MapRegionKey, MapRegions } from '~/components/data/MapRegions';
-import { t } from '~/components/i18n/Localization';
-import { VectorImage } from '~/components/interface/Image';
-import { AppDispatch } from '~/components/redux';
-import { selectIsRegionDisplayed, setMapRegion } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { importFromContext } from '~/components/util';
+import { MapRegionKey, getMapRegion } from 'src/components/data/MapRegions';
+import { t } from 'src/components/i18n/Localization';
+import { VectorImage } from 'src/components/interface/Image';
+import { AppDispatch } from 'src/components/redux';
+import { selectIsRegionDisplayed, setMapRegion } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { importFromContext } from 'src/components/util';
 
 const controlsContext = require.context('../../../../images/controls', true);
 
@@ -61,16 +61,22 @@ interface ControlsRegionBannerBaseProps {
 const mapStateToProps = (state: AppState, { regionKey }: ControlsRegionBannerBaseProps) => ({
   active: selectIsRegionDisplayed(state, regionKey),
 });
-
 const mapDispatchToProps = (
   dispatch: AppDispatch,
   { regionKey }: ControlsRegionBannerBaseProps
 ) => ({
   enableRegion: () => dispatch(setMapRegion(regionKey)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ControlsRegionBannerStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsRegionBannerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsRegionBannerStateProps,
+  ControlsRegionBannerDispatchProps,
+  ControlsRegionBannerBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsRegionBannerProps = ConnectedProps<typeof connector>;
+type ControlsRegionBannerProps = ConnectedProps<typeof connector> & ControlsRegionBannerBaseProps;
 
 const _ControlsRegionBanner: FunctionComponent<ControlsRegionBannerProps> = ({
   regionKey,
@@ -79,7 +85,7 @@ const _ControlsRegionBanner: FunctionComponent<ControlsRegionBannerProps> = ({
 }) => {
   const classes = useStyles();
 
-  const region = MapRegions[regionKey];
+  const region = getMapRegion(regionKey);
 
   const svgSrc = importFromContext(controlsContext, `./region-${regionKey}.svg`);
   const style = {

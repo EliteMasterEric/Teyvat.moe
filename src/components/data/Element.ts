@@ -14,9 +14,9 @@ import {
   MSFMarker,
   MSFRoute,
   MSFRouteGroupKey,
-} from '~/components/data/ElementSchema';
-import { MapFeatureKeys, getMapFeature } from '~/components/data/MapFeatures';
-import { MapRouteGroupKeys, getMapRouteGroup } from '~/components/data/MapRoutes';
+} from 'src/components/data/ElementSchema';
+import { MapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
+import { MapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
 
 export const getElementPathById = (id: string): string | null => {
   let result = null;

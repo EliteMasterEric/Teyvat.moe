@@ -6,8 +6,8 @@
 import _ from 'lodash';
 import LocalizedStrings, { GlobalStrings } from 'react-localization';
 
-import { LocalizedString } from '~/components/Types';
-import { importFromContext } from '~/components/util';
+import { LocalizedString } from 'src/components/Types';
+import { importFromContext } from 'src/components/util';
 
 /**
  * The path, relative to ./data/i18n/, of the default locale code's language file.
@@ -26,8 +26,8 @@ const i18nContext = require.context('../../data/i18n/ui', true, /.json$/);
 const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
 
 // ex [./en-US.json, en-US].
-const getLocaleFromI18nFilePath = (string) => {
-  const match = string.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
+const getLocaleFromI18nFilePath = (input: string) => {
+  const match = input.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
   return match ? match[1] : 'UNKNOWN';
 };
 
@@ -50,7 +50,7 @@ const localizedStrings = new LocalizedStrings(i18nData, {
  * @param {*} key The localization key.
  * @returns {String} The localized string.
  */
-export const t = (key: string, locale: string = null): LocalizedString => {
+export const t = (key: string, locale?: string | undefined): LocalizedString => {
   // Use the current locale.
   return <LocalizedString>localizedStrings.getString(key, locale);
 };

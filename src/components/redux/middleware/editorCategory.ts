@@ -2,12 +2,12 @@ import { PayloadAction } from '@reduxjs/toolkit';
 import _ from 'lodash';
 import { Middleware } from 'redux';
 
-import { MapCategoryKey } from '~/components/data/MapCategories';
-import { getEmptyFeatureCategories } from '~/components/data/MapFeatures';
-import { getEmptyRouteCategories } from '~/components/data/MapRoutes';
-import { setMapCategory, setTab } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { UIControlsTab } from '~/components/Types';
+import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { getEmptyFeatureCategories } from 'src/components/data/MapFeatures';
+import { getEmptyRouteCategories } from 'src/components/data/MapRoutes';
+import { setMapCategory, setTab } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { UIControlsTab } from 'src/components/Types';
 
 /**
  * When switching tabs, also switch the map category
@@ -34,7 +34,9 @@ const emptyCategoryMiddleware: Middleware<unknown, AppState> = ({ dispatch, getS
             const categoryList = Object.keys(emptyFeatureCategories) as MapCategoryKey[];
             const usedCategory = _.find(categoryList, (key) => !emptyFeatureCategories[key]);
             // Dispatch an action to set the category.
-            dispatch(setMapCategory(usedCategory));
+            if (usedCategory != null) {
+              dispatch(setMapCategory(usedCategory));
+            }
           }
 
           // Pass on the original action without replacing or modifying it.
@@ -51,7 +53,9 @@ const emptyCategoryMiddleware: Middleware<unknown, AppState> = ({ dispatch, getS
             const categoryList = Object.keys(emptyRouteCategories) as MapCategoryKey[];
             const usedCategory = _.find(categoryList, (key) => !emptyRouteCategories[key]);
             // Dispatch an action to set the category.
-            dispatch(setMapCategory(usedCategory));
+            if (usedCategory != null) {
+              dispatch(setMapCategory(usedCategory));
+            }
           }
 
           // Pass on the action without replacing or modifying it.

@@ -8,10 +8,10 @@ import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { useSmallScreen } from '~/components/interface/MediaHooks';
-import { AppDispatch } from '~/components/redux';
-import { selectOpen, setOpen } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
+import { useSmallScreen } from 'src/components/interface/MediaHooks';
+import { AppDispatch } from 'src/components/redux';
+import { selectOpen, setOpen } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
 
 const useStyles = makeStyles((_theme) => ({
   fixedPosition: {
@@ -65,16 +65,18 @@ const mapStateToProps = (state: AppState, _props: ControlsFoldButtonBaseProps) =
   open: selectOpen(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setOpen: (open) => dispatch(setOpen(open)),
+  setOpen: (open: boolean) => dispatch(setOpen(open)),
 });
-const connector = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-  // Don't know why this is needed.
-  (a, b, c) => ({ ...a, ...b, ...c })
-);
+type ControlsFoldButtonStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsFoldButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsFoldButtonStateProps,
+  ControlsFoldButtonDispatchProps,
+  ControlsFoldButtonBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsFoldButtonProps = ConnectedProps<typeof connector>;
+type ControlsFoldButtonProps = ConnectedProps<typeof connector> & ControlsFoldButtonBaseProps;
 
 /**
  * The button next to the Map Controls.

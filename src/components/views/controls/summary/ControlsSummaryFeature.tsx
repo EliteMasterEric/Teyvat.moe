@@ -9,16 +9,16 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { MSFFeatureKey } from '~/components/data/ElementSchema';
-import { getFilterIconURL } from '~/components/data/FeatureIcon';
-import { MapFeatures } from '~/components/data/MapFeatures';
-import { localizeField } from '~/components/i18n/FeatureLocalization';
-import { Image } from '~/components/interface/Image';
-import { selectCompletedMarkersOfFeature } from '~/components/redux/slices/completed';
-import { selectIsFeatureDisplayed } from '~/components/redux/slices/displayed';
-import { selectShowHiddenFeaturesInSummary } from '~/components/redux/slices/options';
-import { AppState } from '~/components/redux/types';
-import ControlsSummaryFeatureMenu from '~/components/views/controls/summary/ControlsSummaryFeatureMenu';
+import { MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { getFilterIconURL } from 'src/components/data/FeatureIcon';
+import { getMapFeature } from 'src/components/data/MapFeatures';
+import { localizeField } from 'src/components/i18n/FeatureLocalization';
+import { Image } from 'src/components/interface/Image';
+import { selectCompletedMarkersOfFeature } from 'src/components/redux/slices/completed';
+import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
+import { selectShowHiddenFeaturesInSummary } from 'src/components/redux/slices/options';
+import { AppState } from 'src/components/redux/types';
+import ControlsSummaryFeatureMenu from 'src/components/views/controls/summary/ControlsSummaryFeatureMenu';
 
 const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
@@ -94,9 +94,17 @@ const mapStateToProps = (state: AppState, { featureKey }: ControlsSummaryFeature
   };
 };
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ControlsSummaryFeatureStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsSummaryFeatureDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsSummaryFeatureStateProps,
+  ControlsSummaryFeatureDispatchProps,
+  ControlsSummaryFeatureBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsSummaryFeatureProps = ConnectedProps<typeof connector>;
+type ControlsSummaryFeatureProps = ConnectedProps<typeof connector> &
+  ControlsSummaryFeatureBaseProps;
 
 const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = ({
   featureKey,
@@ -108,7 +116,7 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   if (!displayed) return null; // Feature is not displayed.
   if (completedCount === 0) return null; // No markers have been completed.
 
-  const mapFeature = MapFeatures[featureKey];
+  const mapFeature = getMapFeature(featureKey);
   if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
 
   // Total number of markers for this feature. Contrast with completedCount.

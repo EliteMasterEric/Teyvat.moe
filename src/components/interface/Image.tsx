@@ -19,7 +19,7 @@ let support: boolean;
  * NOTE: Only one method works: https://codesandbox.io/s/react-webp-test-kf8rw?file=/src/index.js:412-950
  */
 export const supportsWebP = async (): Promise<boolean> => {
-  if (typeof support !== 'undefined') return support;
+  if (support != null) return support;
 
   // If the browser doesn't has the method createImageBitmap, you can't display webp format
   if (!window.createImageBitmap) {
@@ -57,7 +57,7 @@ type ImageExtension = 'png' | 'webp';
  */
 export const useImageExtension = (block = false): ImageExtension | null => {
   const defaultValue: ImageExtension = 'png';
-  const [value, setValue] = useState<ImageExtension>(block ? null : defaultValue);
+  const [value, setValue] = useState<ImageExtension | null>(block ? null : defaultValue);
 
   // // Load once.
   useEffect(() => {
@@ -119,7 +119,7 @@ interface VectorImageProps {
   className?: string;
   placeholder?: ReactElement;
   alt?: string;
-  scrollPosition?: { x: number; y: number } | null;
+  scrollPosition?: { x: number; y: number };
 }
 
 /**
@@ -133,7 +133,7 @@ export const VectorImage: FunctionComponent<VectorImageProps> = ({
   className = '',
   placeholder = defaultPlaceholder,
   alt = '',
-  scrollPosition = null,
+  scrollPosition,
   ...others
 }) => {
   return (

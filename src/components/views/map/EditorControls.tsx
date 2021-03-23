@@ -11,11 +11,15 @@ import {
 } from '@material-ui/icons';
 import clsx from 'clsx';
 import _ from 'lodash';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { connect } from 'react-redux';
-import { t } from '~/components/i18n/Localization';
+import { t } from 'src/components/i18n/Localization';
+import { selectEditorEnabled } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
 
-import MapCustomControl, { MapCustomControlButton } from '~/components/views/map/MapCustomControl';
+import MapCustomControl, {
+  MapCustomControlButton,
+} from 'src/components/views/map/MapCustomControl';
 
 const useStyles = makeStyles((_theme) => ({
   toolbar: {},
@@ -47,30 +51,56 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const _EditorControls = ({
+type EditorControlsBaseProps = {
+  startEditorMarker: React.MouseEventHandler<HTMLDivElement>;
+  startEditorRoute: React.MouseEventHandler<HTMLDivElement>;
+  cancelEditor: React.MouseEventHandler<HTMLDivElement>;
+  commitEditor: React.MouseEventHandler<HTMLDivElement>;
+  showCancel: boolean;
+  showDone: boolean;
+};
+
+const mapStateToProps = (state: AppState, _props: EditorControlsBaseProps) => ({
+  displayed: selectEditorEnabled(state),
+});
+const mapDispatchToProps = () => ({});
+type EditorControlsStoreProps = ReturnType<typeof mapStateToProps>;
+type EditorControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  EditorControlsStoreProps,
+  EditorControlsDispatchProps,
+  EditorControlsBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
+
+type EditorControlsProps = EditorControlsBaseProps &
+  EditorControlsStoreProps &
+  EditorControlsDispatchProps;
+
+const _EditorControls: FunctionComponent<EditorControlsProps> = ({
+  displayed,
   startEditorMarker,
   startEditorRoute,
   cancelEditor,
   commitEditor,
-  displayed,
   showCancel,
   showDone,
 }) => {
   const classes = useStyles();
 
-  const onMarkerClick = (event) => {
+  const onMarkerClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     startEditorMarker(event);
   };
 
-  const onRouteClick = (event) => {
+  const onRouteClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     startEditorRoute(event);
   };
 
-  const onDoneClick = (event) => {
+  const onDoneClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     commitEditor(event);
   };
 
-  const onCancelClick = (event) => {
+  const onCancelClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     cancelEditor(event);
   };
 
@@ -127,10 +157,6 @@ const _EditorControls = ({
   );
 };
 
-const mapStateToProps = (state) => ({
-  displayed: state.editorEnabled,
-});
-const mapDispatchToProps = () => ({});
-const EditorControls = connect(mapStateToProps, mapDispatchToProps)(_EditorControls);
+const EditorControls = connector(_EditorControls);
 
 export default EditorControls;

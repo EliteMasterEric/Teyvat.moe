@@ -1,5 +1,5 @@
-import { savePreferencesToLocalStorage } from '~/components/preferences/ReduxStore';
-import { AppWatcher } from '~/components/redux/types';
+import { savePreferencesToLocalStorage } from 'src/components/preferences/ReduxStore';
+import { AppWatcher } from 'src/components/redux/types';
 
 /**
  * Save all the data to local storage whenever the state changes.

@@ -11,18 +11,11 @@ import {
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
-import React, {
-  cloneElement,
-  useState,
-  FunctionComponent,
-  ReactElement,
-  ComponentClass,
-  Component,
-} from 'react';
+import React, { cloneElement, useState, FunctionComponent, ReactElement } from 'react';
 
-import { t } from '~/components/i18n/Localization';
-import Theme from '~/components/Theme';
-import DialogTitle from '~/components/views/dialogs/DialogTitle';
+import { t } from 'src/components/i18n/Localization';
+import Theme from 'src/components/Theme';
+import DialogTitle from 'src/components/views/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {

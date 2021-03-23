@@ -8,22 +8,44 @@
 import 'leaflet-editable';
 import 'leaflet-textpath';
 import { LayerGroup as LeafletLayerGroup } from 'leaflet';
-import React, { useEffect, useRef } from 'react';
+import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 
-import { selectEditorFeatureData } from '~/components/redux/slices/editor';
-import { selectEditorEnabled } from '~/components/redux/slices/ui';
-import FeatureMarker from '~/components/views/map/layers/FeatureMarker';
-import RouteLine from '~/components/views/map/layers/RouteLine';
-import { MSFRouteKey } from '~/components/data/ElementSchema';
+import { MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
+import { selectEditorFeatureData } from 'src/components/redux/slices/editor';
+import { selectEditorEnabled } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import FeatureMarker from 'src/components/views/map/layers/FeatureMarker';
+import RouteLine from 'src/components/views/map/layers/RouteLine';
 
-const _EditorLayer = ({ displayed, editorData }) => {
+// Type guards.
+const distinguishRoute = (value: any): value is EditorRoute => {
+  return Array.isArray((value as EditorRoute).coordinates[0]);
+};
+
+const mapStateToProps = (state: AppState) => ({
+  displayed: selectEditorEnabled(state),
+  editorData: selectEditorFeatureData(state),
+});
+const mapDispatchToProps = () => ({});
+type EditorLayerStateProps = ReturnType<typeof mapStateToProps>;
+type EditorLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<EditorLayerStateProps, EditorLayerDispatchProps, Empty, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+type EditorLayerProps = ConnectedProps<typeof connector>;
+
+const _EditorLayer: FunctionComponent<EditorLayerProps> = ({ displayed, editorData }) => {
   const map = useMap();
-  const layerRef = useRef<LeafletLayerGroup>(undefined);
+  const layerRef = useRef<LeafletLayerGroup | null>(null);
 
   useEffect(() => {
-    if (typeof layerRef.current !== 'undefined') {
+    if (layerRef.current !== null) {
       if (displayed) {
         layerRef.current.addTo(map);
       } else {
@@ -32,34 +54,18 @@ const _EditorLayer = ({ displayed, editorData }) => {
     }
   }, [map, displayed]);
 
-  const editorFeature = {
-    icons: {
-      base: {
-        marker: true,
-      },
-      done: {
-        marker: true,
-      },
-    },
-  };
-
   return (
     <LayerGroup ref={layerRef}>
       {editorData.map((element) => {
-        const isRoute = element?.coordinates && Array.isArray(element?.coordinates[0]);
-        return isRoute ? (
-          <RouteLine
-            key={element.id}
-            routeKey={`editor/${element.id}` as MSFRouteKey}
-            route={element}
-            editable
-          />
+        return distinguishRoute(element) ? (
+          <RouteLine key={element.id} route={element} editable />
         ) : (
           <FeatureMarker
             key={element.id}
             marker={element}
-            featureKey="editor"
+            featureKey={'editor' as MSFFeatureKey}
             editable
+            icons={null}
             allowExternalMedia
           />
         );
@@ -68,11 +74,6 @@ const _EditorLayer = ({ displayed, editorData }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  displayed: selectEditorEnabled(state),
-  editorData: selectEditorFeatureData(state),
-});
-const mapDispatchToProps = () => ({});
-const EditorLayer = connect(mapStateToProps, mapDispatchToProps)(_EditorLayer);
+const EditorLayer = connector(_EditorLayer);
 
 export default EditorLayer;

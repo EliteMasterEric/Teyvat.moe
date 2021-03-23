@@ -4,9 +4,9 @@ import {
   MSFMarkerID,
   MSFMarkerKey,
   MSFRouteGroupKey,
-} from '~/components/data/ElementSchema';
-import { MapCategoryKey } from '~/components/data/MapCategories';
-import { MapRegionKey } from '~/components/data/MapRegions';
+} from 'src/components/data/ElementSchema';
+import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { MapRegionKey } from 'src/components/data/MapRegions';
 import {
   EditorMarker,
   EditorRoute,
@@ -14,8 +14,8 @@ import {
   GM_002_EditorRoute,
   LegacyEditorMarker,
   LegacyEditorRoute,
-} from '~/components/preferences/EditorDataSchema';
-import { Notification } from '~/components/redux/slices/notify';
+} from 'src/components/preferences/EditorDataSchema';
+import { Notification } from 'src/components/redux/slices/notify';
 
 export const PREFERENCES_VERSION = 'GM_007';
 

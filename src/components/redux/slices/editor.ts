@@ -5,13 +5,13 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFMarkerID, MSFRouteID } from '~/components/data/ElementSchema';
-import { MapCategoryKey } from '~/components/data/MapCategories';
-import { MapRegionKey } from '~/components/data/MapRegions';
-import { EditorMarker, EditorRoute } from '~/components/preferences/EditorDataSchema';
-import { GenshinMapPreferencesLatest } from '~/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from '~/components/redux/actions';
-import { AppState } from '~/components/redux/types';
+import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
+import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { MapRegionKey } from 'src/components/data/MapRegions';
+import { EditorMarker, EditorRoute } from 'src/components/preferences/EditorDataSchema';
+import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
+import { clearPreferences, setPreferences } from 'src/components/redux/actions';
+import { AppState } from 'src/components/redux/types';
 
 export type EditorState = GenshinMapPreferencesLatest['editor'];
 

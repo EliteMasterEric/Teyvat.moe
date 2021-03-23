@@ -8,10 +8,10 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { MapRegionKeys, MapRegions } from '~/components/data/MapRegions';
-import { selectIsTabDisplayed, selectOpen } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsRegionBanner from '~/components/views/controls/sidebar/ControlsRegionBanner';
+import { getMapRegion, MapRegionKeys } from 'src/components/data/MapRegions';
+import { selectIsTabDisplayed, selectOpen } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import ControlsRegionBanner from 'src/components/views/controls/sidebar/ControlsRegionBanner';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -85,9 +85,16 @@ const mapStateToProps = (state: AppState, { shouldDisplay = true }: ControlsRegi
   open: selectOpen(state),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsRegionsStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsRegionsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsRegionsStateProps,
+  ControlsRegionsDispatchProps,
+  ControlsRegionsBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsRegionsProps = ConnectedProps<typeof connector>;
+type ControlsRegionsProps = ConnectedProps<typeof connector> & ControlsRegionsBaseProps;
 
 const _ControlsRegions: FunctionComponent<ControlsRegionsProps> = ({ displayed, open }) => {
   const classes = useStyles();
@@ -101,7 +108,7 @@ const _ControlsRegions: FunctionComponent<ControlsRegionsProps> = ({ displayed, 
       )}
     >
       {MapRegionKeys.map((key) =>
-        MapRegions[key]?.enabled ? <ControlsRegionBanner key={key} regionKey={key} /> : null
+        getMapRegion(key).enabled ? <ControlsRegionBanner key={key} regionKey={key} /> : null
       )}
     </Box>
   );

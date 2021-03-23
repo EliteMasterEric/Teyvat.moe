@@ -6,11 +6,11 @@
 
 import _ from 'lodash';
 
-import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from '~/components/data//MapCategories';
-import { isRegionKey, MapRegionKey } from '~/components/data//MapRegions';
-import { MSFFeatureExtended, MSFFeatureKey } from '~/components/data/ElementSchema';
-import { listFeatureFiles, loadFeature } from '~/components/data/FeatureData';
-import { filterNotEmpty } from '~/components/util';
+import { isRegionKey, MapRegionKey } from 'src/components/data//MapRegions';
+import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { listFeatureFiles, loadFeature } from 'src/components/data/FeatureData';
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
+import { filterNotEmpty } from 'src/components/util';
 
 /**
  * Metadata regarding the map features.
@@ -74,7 +74,7 @@ export const getEmptyFeatureCategories = (
           return (
             mapFeature.category === categoryKey &&
             mapFeature.region == regionKey &&
-            (mapFeature?.enabled ?? true)
+            (mapFeature.enabled ?? true)
           );
         }) == undefined,
       ];
@@ -89,7 +89,7 @@ export const getFeatureKeysByFilter = (
 ): MSFFeatureKey[] => {
   return MapFeatureKeys.filter((key) => {
     const feature = getMapFeature(key);
-    return feature?.region === region && feature?.category === category && feature?.enabled;
+    return feature.region === region && feature.category === category && feature.enabled;
   });
 };
 

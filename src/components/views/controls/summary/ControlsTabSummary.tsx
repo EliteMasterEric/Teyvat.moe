@@ -7,12 +7,13 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { t } from '~/components/i18n/Localization';
-import BorderBox from '~/components/interface/BorderBox';
-import { selectDisplayedFeatures } from '~/components/redux/slices/displayed';
-import { selectIsTabDisplayed } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import ControlsSummaryFeature from '~/components/views/controls/summary/ControlsSummaryFeature';
+import { t } from 'src/components/i18n/Localization';
+import BorderBox from 'src/components/interface/BorderBox';
+import { selectDisplayedFeatures } from 'src/components/redux/slices/displayed';
+import { selectIsTabDisplayed } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { Empty } from 'src/components/Types';
+import ControlsSummaryFeature from 'src/components/views/controls/summary/ControlsSummaryFeature';
 
 const useStyles = makeStyles((_theme) => ({
   header: {
@@ -32,7 +33,14 @@ const mapStateToProps = (state: AppState) => ({
   displayed: selectIsTabDisplayed(state, 'summary'),
 });
 const mapDispatchToProps = () => ({});
-const connector = connect(mapStateToProps, mapDispatchToProps);
+type ControlsTabSummaryStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsTabSummaryDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsTabSummaryStateProps,
+  ControlsTabSummaryDispatchProps,
+  Empty,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
 type ControlsTabSummaryProps = ConnectedProps<typeof connector>;
 

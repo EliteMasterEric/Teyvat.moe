@@ -8,8 +8,8 @@ import {
 } from '@material-ui/core';
 import React, { cloneElement, FunctionComponent, useState, ReactElement } from 'react';
 
-import { t } from '~/components/i18n/Localization';
-import DialogTitle from '~/components/views/dialogs/DialogTitle';
+import { t } from 'src/components/i18n/Localization';
+import DialogTitle from 'src/components/views/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
   dialog: {

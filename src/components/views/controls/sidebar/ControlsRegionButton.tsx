@@ -9,13 +9,13 @@ import { makeStyles, Box, Tooltip } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MapRegionKey, MapRegions } from '~/components/data/MapRegions';
-import { t } from '~/components/i18n/Localization';
-import { VectorImage } from '~/components/interface/Image';
-import { AppDispatch } from '~/components/redux';
-import { selectIsRegionDisplayed, setMapRegion } from '~/components/redux/slices/ui';
-import { AppState } from '~/components/redux/types';
-import { importFromContext } from '~/components/util';
+import { MapRegionKey, getMapRegion } from 'src/components/data/MapRegions';
+import { t } from 'src/components/i18n/Localization';
+import { VectorImage } from 'src/components/interface/Image';
+import { AppDispatch } from 'src/components/redux';
+import { selectIsRegionDisplayed, setMapRegion } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
+import { importFromContext } from 'src/components/util';
 
 const controlsContext = require.context('../../../../images/controls', true);
 
@@ -50,21 +50,28 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-interface ControlsRegionButtonBaseTypes {
+interface ControlsRegionButtonBaseProps {
   regionKey: MapRegionKey;
 }
-const mapStateToProps = (state: AppState, { regionKey }: ControlsRegionButtonBaseTypes) => ({
+const mapStateToProps = (state: AppState, { regionKey }: ControlsRegionButtonBaseProps) => ({
   active: selectIsRegionDisplayed(state, regionKey),
 });
 const mapDispatchToProps = (
   dispatch: AppDispatch,
-  { regionKey }: ControlsRegionButtonBaseTypes
+  { regionKey }: ControlsRegionButtonBaseProps
 ) => ({
   enableRegion: () => dispatch(setMapRegion(regionKey)),
 });
-const connector = connect(mapStateToProps, mapDispatchToProps, (a, b, c) => ({ ...a, ...b, ...c }));
+type ControlsRegionButtonStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsRegionButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsRegionButtonStateProps,
+  ControlsRegionButtonDispatchProps,
+  ControlsRegionButtonBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
 
-type ControlsRegionButtonProps = ConnectedProps<typeof connector>;
+type ControlsRegionButtonProps = ConnectedProps<typeof connector> & ControlsRegionButtonBaseProps;
 
 const _ControlsRegionButton: FunctionComponent<ControlsRegionButtonProps> = ({
   regionKey,
@@ -73,7 +80,7 @@ const _ControlsRegionButton: FunctionComponent<ControlsRegionButtonProps> = ({
 }) => {
   const classes = useStyles();
 
-  const region = MapRegions[regionKey];
+  const region = getMapRegion(regionKey);
 
   const svgSrc = importFromContext(controlsContext, `./region-${regionKey}.svg`);
   const style = {

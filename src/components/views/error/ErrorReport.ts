@@ -1,5 +1,5 @@
 import newGithubIssueUrl from 'new-github-issue-url';
-import { exportDataJSON } from '~/components/preferences/DataExport';
+import { exportDataJSON } from 'src/components/preferences/DataExport';
 
 export const generateReportURL = (name: string, message: string, stackTrace: string): string => {
   const preferencesData = exportDataJSON();

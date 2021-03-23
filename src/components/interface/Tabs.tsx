@@ -14,14 +14,15 @@ import {
 } from '@material-ui/core';
 import React, { useRef, useEffect, ReactElement, FunctionComponent } from 'react';
 
-import { LocalizedString, Opaque } from '~/components/Types';
-import { CloneProps, useDebouncedState } from '~/components/util';
+import { A } from 'ts-toolbelt';
+import { LocalizedString } from 'src/components/Types';
+import { CloneProps, useDebouncedState } from 'src/components/util';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
 }));
 
-export type TabValue = Opaque<'TabValue', string>;
+export type TabValue = A.Type<string, 'TabValue'>;
 export interface Tab {
   enabled: boolean;
   label: LocalizedString;
@@ -103,8 +104,8 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
   const actionRef = useRef<TabsActions | null>(null);
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (actionRef?.current) {
-        actionRef?.current.updateIndicator();
+      if (actionRef.current) {
+        actionRef.current.updateIndicator();
       }
     }, theme.transitions.duration.enteringScreen);
 

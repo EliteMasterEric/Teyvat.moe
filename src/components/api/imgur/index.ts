@@ -4,7 +4,7 @@
 
 import axios, { AxiosRequestConfig } from 'axios';
 
-import { f, t } from '~/components/i18n/Localization';
+import { f, t } from 'src/components/i18n/Localization';
 
 /**
  * The URL to send a post request to.
@@ -46,16 +46,16 @@ export const uploadImage = async <T extends File>(file: T): Promise<string> => {
     })
     .catch((error) => {
       let localizedString = f('image-upload-error-generic', {
-        code: error?.response?.status?.error?.code ?? '???',
+        code: error.response.status.error.code ?? '???',
       });
 
-      switch (error?.response?.status) {
+      switch (error.response.status) {
         case 400:
-          if (error?.response?.status?.error?.code === 1003)
+          if (error.response.status.error.code === 1003)
             localizedString = t('image-upload-error-file-invalid-type');
           break;
         default:
-          console.error(error?.response);
+          console.error(error.response);
           break;
       }
 
