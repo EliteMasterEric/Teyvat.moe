@@ -1,15 +1,9 @@
-// The fact that this is imported adds MarkerCluster to 'leaflet'.
-import 'packages/@types/leaflet.markercluster';
-import {
-  divIcon as LeafletDivIcon,
-  Marker as LeafletMarker,
-  MarkerCluster as LeafletMarkerCluster,
-  MarkerClusterGroup as LeafletMarkerClusterGroup,
-  Point,
-} from 'leaflet';
+/* eslint-disable import/no-named-as-default-member */
+import leaflet from 'leaflet';
+import 'leaflet.markercluster';
 
 import _ from 'lodash';
-import React, { forwardRef, ReactNode } from 'react';
+import { forwardRef, ReactNode } from 'react';
 import { renderToString } from 'react-dom/server';
 import { useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
@@ -47,7 +41,7 @@ export const onClusterFunction: MapClusterFunction = (_zoom) => {
 
 const CLUSTER_MARKER_ICON = require('~/images/icons/marker/marker_blue_bg.svg').default;
 
-const createClusterIcon = (cluster: LeafletMarkerCluster): L.DivIcon => {
+const createClusterIcon = (cluster: leaflet.MarkerCluster): L.DivIcon => {
   const childMarkers = cluster.getAllChildMarkers() as LExtendedMarker[];
   const childCount = childMarkers.length;
   // For each cluster child element, check if completed = true; if so, add to the count.
@@ -69,7 +63,7 @@ const createClusterIcon = (cluster: LeafletMarkerCluster): L.DivIcon => {
 
   const iconSize = 36 + childCount / 3;
 
-  return LeafletDivIcon({
+  return leaflet.divIcon({
     html: iconHTML,
     className: 'map-marker-cluster',
     iconSize: [iconSize, iconSize], // size of the icon
@@ -83,16 +77,16 @@ interface MapClusterMarkerProps {
   clusterFunction: (zoom: number) => number;
 }
 
-const MapClusterMarker = forwardRef<LeafletMarkerClusterGroup, MapClusterMarkerProps>(
+const MapClusterMarker = forwardRef<leaflet.MarkerClusterGroup, MapClusterMarkerProps>(
   ({ children = null, clusterFunction = offClusterFunction }, ref) => {
     const map = useMap();
 
     const generateSpiderPoints = (
       childMarkerCount: number,
-      _centerPoint: Point,
-      childMarkers: LeafletMarker[]
-    ): Point[] => {
-      const result: Point[] = [];
+      _centerPoint: leaflet.Point,
+      childMarkers: leaflet.Marker[]
+    ): leaflet.Point[] => {
+      const result: leaflet.Point[] = [];
 
       result.length = childMarkers.length;
 
@@ -100,7 +94,7 @@ const MapClusterMarker = forwardRef<LeafletMarkerClusterGroup, MapClusterMarkerP
         const childMarker = childMarkers[i];
         if (childMarker != null) {
           const childCenter = map.latLngToLayerPoint(childMarker.getLatLng());
-          result[i] = new Point(childCenter.x, childCenter.y);
+          result[i] = leaflet.point(childCenter.x, childCenter.y);
         }
       }
 

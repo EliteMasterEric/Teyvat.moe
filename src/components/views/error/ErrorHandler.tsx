@@ -42,10 +42,10 @@ type ErrorHandlerState = {
 class ErrorHandler extends Component<ErrorHandlerProps, ErrorHandlerState> {
   constructor(props: ErrorHandlerProps) {
     super(props);
-    this.setState({
+    this.state = {
       error: null,
       errorInfo: null,
-    });
+    };
   }
 
   static getDerivedStateFromError(error: Error /* , errorPartialInfo, state */): ErrorHandlerState {
@@ -89,8 +89,7 @@ class ErrorHandler extends Component<ErrorHandlerProps, ErrorHandlerState> {
     // If there is an error, display the error handler
     // instead of the base page.
     if (error) {
-      console.error('Error caught, rendering error handler.');
-      console.error(errorHandler);
+      console.error('Error caught, rendering error handler...');
       return createElement(errorHandler, { error, errorInfo });
     }
 

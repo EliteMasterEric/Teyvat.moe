@@ -4,9 +4,8 @@
 
 import _ from 'lodash';
 
-import localStorage from 'packages/local-storage';
-
 import { migrateData } from 'src/components/preferences/DataImport';
+import localStorage from 'src/components/preferences/local-storage';
 import { PREFERENCES_VERSION } from 'src/components/preferences/PreferencesSchema';
 import { storeRecoveryData } from 'src/components/preferences/Recovery';
 import { PREFERENCES_PERSISTENT_KEYS, CREDENTIALS_PERSISTENT_KEYS } from 'src/components/redux';

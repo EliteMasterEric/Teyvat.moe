@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import localStorage from 'packages/local-storage';
+import localStorage from 'src/components/preferences/local-storage';
 import { getUnixTimestamp } from 'src/components/util';
 
 export const LOCAL_STORAGE_KEY_RECOVERY = 'genshinmap-preferences-recovery-%COUNTER%';

@@ -95,7 +95,7 @@ const _ControlsCategoryButton: FunctionComponent<ControlsCategoryButtonProps> = 
   const buttonStyle = {
     backgroundColor: active ? style.enabled.bg : style.disabled.bg ?? '#FFF',
     color: active ? style.enabled.text : style.disabled.text ?? '#000',
-    flexBasis: style.fullWidth ? '95%' : null,
+    flexBasis: style.fullWidth ? '95%' : 'auto',
   };
 
   return (

@@ -39,13 +39,13 @@
   },
   "include": [
     "src/**/*",
-    "packages/**/*"
+    "packages/@types/**/*"
   ],
   "exclude": [
     "node_modules",
     "dist",
     "build",
     "out",
-    "packages"
+    "packages/@types/**/v0"
   ]
 }

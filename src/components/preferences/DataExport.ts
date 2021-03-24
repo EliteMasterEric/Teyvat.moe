@@ -2,7 +2,7 @@
  * Handles the exporting of current site data as base64-encoded JSON, for later importing.
  */
 
-import localStorage from 'packages/local-storage';
+import localStorage from 'src/components/preferences/local-storage';
 
 import {
   GenshinMapPreferencesLatest,

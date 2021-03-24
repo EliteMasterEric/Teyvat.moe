@@ -117,7 +117,7 @@ const MSF_MARKER_SCHEMA = Joi.object({
 
   // Add the ability to correlate this marker with other markers.
   // Note that this is a many-to-many relationship.
-  importIds: {
+  importIds: Joi.object({
     // https://yuanshen.site/
     yuanshen: Joi.array()
       .items(
@@ -155,7 +155,7 @@ const MSF_MARKER_SCHEMA = Joi.object({
     // GenshinMap after Marker Storage Format added.
     // Used to allow for renaming of markers.
     gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
-  },
+  }).optional(),
 
   popupTitle: localizedField.optional(),
   popupContent: localizedField.optional(),
@@ -182,8 +182,8 @@ const MSF_ROUTE_SCHEMA = Joi.object({
   coordinates: coordinates.required(),
   id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
 
-  routeColor: Joi.string().default('#d32f2f'),
-  routeText: Joi.string().default('  ►  '),
+  routeColor: Joi.string().optional().default('#d32f2f'),
+  routeText: Joi.string().optional().default('  ►  '),
 
   importIds: {
     gm_legacy: Joi.array()
@@ -226,7 +226,7 @@ export interface MSFRoute {
  * This schema represents a marker's icon.
  */
 const MSF_MARKER_ICON_SCHEMA = Joi.object({
-  marker: Joi.boolean().optional().default(false), // Optional.
+  marker: Joi.boolean(),
 
   // Specify these style keys if the simple marker style is not used.
   key: Joi.string()

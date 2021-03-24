@@ -1,11 +1,11 @@
-import { LatLng, LeafletMouseEvent, Marker, Polyline, VertexEvent } from 'leaflet';
-import _ from 'lodash';
-import React, { FunctionComponent, MouseEventHandler, useEffect, useState } from 'react';
-import { useMapEvents } from 'react-leaflet';
-import { connect, ConnectedProps } from 'react-redux';
-
+import leaflet from 'leaflet';
 // Its presence modifies the behavior of Leaflet.
 import 'leaflet-editable';
+import 'leaflet-textpath';
+import _ from 'lodash';
+import { FunctionComponent, MouseEventHandler, useEffect, useState } from 'react';
+import { useMapEvents } from 'react-leaflet';
+import { connect, ConnectedProps } from 'react-redux';
 
 import {
   MSFCoordinate,
@@ -41,14 +41,14 @@ const MARKER_OPTIONS = {
 const CONTROL_KEYS = ['ControlLeft', 'ControlRight', 'MetaLeft', 'MetaRight'];
 
 // Type guards.
-const distinguishMarker = (value: any): value is Marker => {
-  return !!(value as Marker).getLatLng;
+const distinguishMarker = (value: any): value is leaflet.Marker => {
+  return !!(value as leaflet.Marker).getLatLng;
 };
-const distinguishPolyline = (value: any): value is Polyline => {
-  return !!(value as Polyline).getLatLngs;
+const distinguishPolyline = (value: any): value is leaflet.Polyline => {
+  return !!(value as leaflet.Polyline).getLatLngs;
 };
-const distinguishVertexEvent = (value: any): value is VertexEvent => {
-  return !!(value as VertexEvent).vertex;
+const distinguishVertexEvent = (value: any): value is leaflet.VertexEvent => {
+  return !!(value as leaflet.VertexEvent).vertex;
 };
 
 type EditorState = 'none' | 'createMarker' | 'createRoute' | 'editMarker' | 'editRoute';
@@ -87,7 +87,9 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   // A separate state must be used because the type of currentEditable can't be determined
   // just by looking at it.
   const [editorState, setEditorState] = useState<EditorState>('none');
-  const [currentEditable, setCurrentEditable] = useState<Marker | Polyline | null>(null);
+  const [currentEditable, setCurrentEditable] = useState<leaflet.Marker | leaflet.Polyline | null>(
+    null
+  );
 
   // Maintain the state of the CTRL key through event listeners.
   const [ctrlHeld, setCtrlHeld] = useState<boolean>(false);
@@ -111,7 +113,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     };
   });
 
-  const placeMarker = (editable: Marker) => {
+  const placeMarker = (editable: leaflet.Marker) => {
     const latlng = editable.getLatLng();
 
     // Note this is not reversed because it corresponds to direct map coordinates.
@@ -139,16 +141,26 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     // setCurrentEditable(null);
   };
 
-  const placeRoute = (editable: Polyline) => {
+  const placeRoute = (editable: leaflet.Polyline) => {
     const latlngs = editable.getLatLngs();
     if (latlngs[0] == null) return;
 
+    const filterLatLng = (latlng: any): latlng is leaflet.LatLng => {
+      return !Array.isArray(latlng);
+    };
+    const latlngsFiltered = _.filter(latlngs, filterLatLng);
+
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngsFormatted = latlngs
-      .map((latlng: LatLng | LatLng[] | LatLng[][]): MSFCoordinate | null => {
-        if (Array.isArray(latlng)) return null;
-        return [truncateFloat(latlng.lat, 5), truncateFloat(latlng.lng, 5)];
-      })
+    const latlngsFormatted = latlngsFiltered
+      .map(
+        (latlng: leaflet.LatLng): MSFCoordinate => {
+          const result: MSFCoordinate = [
+            truncateFloat(latlng.lat, 5),
+            truncateFloat(latlng.lng, 5),
+          ];
+          return result;
+        }
+      )
       .filter(filterNotEmpty);
     if (latlngsFormatted.length == 0) return;
 
@@ -170,7 +182,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     appendRoute(newRoute);
   };
 
-  const updateRoute = (event: VertexEvent) => {
+  const updateRoute = (event: leaflet.VertexEvent) => {
     const { id: routeID } = event.propagatedFrom.options;
     // TODO: Fix this after TypeScript overhaul.
 
@@ -319,7 +331,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
   const commitDrawing: MouseEventHandler<HTMLDivElement> = (event) => {
     // Let's hope this doesn't break things.
-    const leafletEvent = (event as unknown) as LeafletMouseEvent;
+    const leafletEvent = (event as unknown) as leaflet.LeafletMouseEvent;
     // Finish the current drawing, saving any data it had.
     map.editTools.commitDrawing(leafletEvent);
     setEditorState('none');

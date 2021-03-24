@@ -1052,13 +1052,14 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 # 0.12.0 TypeScript Overhaul
 
--   Migrated from React to Preact.
-    -   This should reduce the bundle size and improve performance.
--   Migrated the entire project to TypeScript.
-    -   This should help in improving stability and reducing bugs.
+-   Migrated the entire project to TypeScript, and refactored a lot of code to account for issues.
+    -   This took like a month to do but I think it was worthwhile. Every place where Typescript validates input values means fewer bugs and improved stability.
+    -   Hopefully I can go another couple months without refactoring the entire app again.
 -   Reworked internal state storage to use Redux Toolkit. It is now more structured and easier to maintain.
 -   Improved performance when showing or hiding features.
 -   Removed attribution link in the bottom left corner.
+-   [ ]   Migrate from React to Preact.
+    -   This should reduce the bundle size and improve performance.
 -   [ ] Fix bugged deletion of route vertexes (clicking)
 -   [ ] Replace ): ReactElement with FunctionComponent&lt;>
 -   [ ] Make all images use scroll position

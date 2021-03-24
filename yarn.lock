@@ -2671,6 +2671,14 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/leaflet-textpath@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/leaflet-textpath/-/leaflet-textpath-1.2.0.tgz#de550a3218847d3da59cded1e33f59621c9aeea3"
+  integrity sha512-8oIgauEIqIO57iPsUa7P1DtmfL/drfwBXPwsbVBn9RmdqNrxqLN9jb7+2QRqKqKOMdha6892Em00hb9kWVWRjQ==
+  dependencies:
+    "@types/leaflet" "*"
+    "@types/react" "*"
+
 "@types/leaflet.markercluster@*":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@types/leaflet.markercluster/-/leaflet.markercluster-1.4.4.tgz#4b4772c86182923e920061a0c25cb3e53543ad35"
@@ -8903,7 +8911,7 @@ leaflet.markercluster@^1.4.1, "leaflet.markercluster@file:./packages/leaflet.mar
   version "1.69.1"
 
 leaflet@^1.6.0, "leaflet@file:./packages/leaflet":
-  version "1.69.1"
+  version "1.7.1"
 
 leven@^3.1.0:
   version "3.1.0"
@@ -11471,7 +11479,7 @@ react-leaflet-markercluster@^3.0.0-rc1:
 react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
   version "3.69.2-eric"
   dependencies:
-    "@react-leaflet/core" "file:../../../.cache/yarn/v6/npm-react-leaflet-3.69.2-eric-7a8a6442-af30-4155-bba1-93be3de03842-1616523070204/node_modules/core"
+    "@react-leaflet/core" "file:../../../.cache/yarn/v6/npm-react-leaflet-3.69.2-eric-07324447-bdd6-4e49-b8dc-7125825e5b68-1616527593289/node_modules/core"
 
 "react-localization@file:./packages/react-localization":
   version "1.0.15"

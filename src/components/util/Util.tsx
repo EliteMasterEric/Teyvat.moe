@@ -18,7 +18,7 @@ import sanitizeHTML from 'sanitize-html';
 import { mapStackTrace } from 'sourcemapped-stacktrace';
 
 // eslint-disable-next-line no-restricted-imports
-import packageJson from 'package.json';
+import packageJson from '../../../package.json';
 
 export const canUseDOM = (): boolean => {
   return window != null && !!window.document && !!window.document.createElement;
