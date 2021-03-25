@@ -8,38 +8,32 @@ Since the files in this folder are loaded dynamically, you can simply create a n
 
 Formatting is done like so:
 
-```
-{
-  bread:"bread",
-  butter:"butter",
-  question:"I'd like {0} and {1}, or just {0}"
-  ...
-  login: 'login',
-  onlyForMembers: 'You have to {0} in order to use our app',
-  bold: 'bold',
-  iAmText: 'I am {0} text',
-  ...
-  january: 'January',
-  currentDate: 'The current date is {month} {day}, {year}!'
-}
-```
+    {
+      bread:"bread",
+      butter:"butter",
+      question:"I'd like {0} and {1}, or just {0}"
+      ...
+      login: 'login',
+      onlyForMembers: 'You have to {0} in order to use our app',
+      bold: 'bold',
+      iAmText: 'I am {0} text',
+      ...
+      january: 'January',
+      currentDate: 'The current date is {month} {day}, {year}!'
+    }
 
 In code, certain strings in brackets will be replaced with their intended values, like so:
 
-```
-f('currentDate', {
-  month: t('january'),
-  day: 12,
-  year: 2018
-});
-```
+    f('currentDate', {
+      month: t('january'),
+      day: 12,
+      year: 2018
+    });
 
 ## HTML Tags
 
 Simple HTML can be for many translated strings. Only certain simple tags such as `<b>, <i>, <em>, and <a>` are allowed.
 
-```
-{
-  "contribute": "Click to learn <a href=\"https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing\">how to contribute.</a>",
-}
-```
+    {
+      "contribute": "Click to learn <a href=\"https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing\">how to contribute.</a>",
+    }
