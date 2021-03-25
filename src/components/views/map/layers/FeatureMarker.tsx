@@ -198,6 +198,7 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
 
   // Build the icon for this marker. Relies on completion status.
   const icon = createMapIcon({
+    ...(completed ? icons?.done : icons?.base),
     marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
     done: !!completed,
     ext: svg ? 'svg' : ext,

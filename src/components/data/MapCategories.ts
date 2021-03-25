@@ -5,7 +5,7 @@ export type MapCategoryKey = keyof typeof MapCategoryRawData;
 
 export interface MapCategory {
   nameKey: string;
-  enabled?: boolean;
+  enabled: boolean;
   style: {
     fullWidth?: boolean;
     disabled: {

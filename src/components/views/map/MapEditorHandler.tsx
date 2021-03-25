@@ -183,17 +183,16 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   };
 
   const updateRoute = (event: leaflet.VertexEvent) => {
-    const { id: routeID } = event.propagatedFrom.options;
-    // TODO: Fix this after TypeScript overhaul.
+    console.log(event);
+    const { id: routeID } = event.layer.options;
 
-    //const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
-    //truncateFloat(vertex.lat, 5),
-    //truncateFloat(vertex.lng, 5),
-    //]);
-    //
-    //moveRoute(routeID.split('/')[1], newRouteLatLngs);
-    //setEditorState('none');
-    //setCurrentEditable(null);
+    const newRouteLatLngs = event.vertex.latlngs.map(
+      (vertex): MSFCoordinate => [truncateFloat(vertex.lat, 5), truncateFloat(vertex.lng, 5)]
+    );
+
+    moveRoute(routeID.split('/')[1], newRouteLatLngs);
+    setEditorState('none');
+    setCurrentEditable(null);
   };
 
   /**
@@ -253,17 +252,14 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
     'editable:vertex:deleted': (event) => {
       // Delete a vertex when it is clicked.
-
-      const { id: routeID } = event.propagatedFrom.options;
-
-      // TODO: Fix this after TypeScript overhaul.
       console.log(event);
-      // const newRouteLatLngs = event.vertex.latlngs.map((vertex) => [
-      //   truncateFloat(vertex.lat, 5),
-      //   truncateFloat(vertex.lng, 5),
-      // ]);
+      const { id: routeID } = event.layer.options;
 
-      // moveRoute(routeID.split('/')[1], newRouteLatLngs);
+      const newRouteLatLngs = event.vertex.latlngs.map(
+        (vertex): MSFCoordinate => [truncateFloat(vertex.lat, 5), truncateFloat(vertex.lng, 5)]
+      );
+
+      moveRoute(routeID.split('/')[1], newRouteLatLngs);
       setEditorState('none');
       setCurrentEditable(null);
     },

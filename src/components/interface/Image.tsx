@@ -32,7 +32,15 @@ export const supportsWebP = async (): Promise<boolean> => {
     'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoCAAEAAQAcJaQAA3AA/v3AgAA=';
 
   // Retrieve the Image in Blob Format
-  const blob = await fetch(webpData).then((r) => r.blob());
+  const blob = await fetch(webpData)
+    .then((r) => r.blob())
+    .catch((_reason) => null);
+
+  // If building the image blob fails, return false.
+  if (blob == null) {
+    support = false;
+    return support;
+  }
 
   // If the createImageBitmap method succeeds, return true, otherwise false
   return createImageBitmap(blob).then(
@@ -62,13 +70,14 @@ export const useImageExtension = (block = false): ImageExtension | null => {
   // // Load once.
   useEffect(() => {
     const onMount = async () => {
-      let mounted = true;
+      // let mounted = true;
       // Fetch the preferences from local storage, by key.
       const result = await supportsWebP();
-      if (mounted) setValue(result ? 'webp' : defaultValue);
-      return () => {
-        mounted = false;
-      };
+      //if (mounted)
+      setValue(result ? 'webp' : defaultValue);
+      //return () => {
+      //  mounted = false;
+      //};
     };
     onMount();
   }, []);

@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.11.2",
+  "version": "0.12.0-alpha",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -10,6 +10,7 @@
     "preinstall": "yarn policies set-version 1.22.10",
     "install:dev": "yarn install --prod=false",
     "install:prod": "yarn install --prod=true",
+    "install:check": "yarn install --check-files --prod=false",
     "start:dev": "npx react-app-rewired start",
     "start:prod": "npx serve -s build",
     "build": "npx react-app-rewired build",

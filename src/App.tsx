@@ -1,6 +1,6 @@
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Provider as StoreProvider } from 'react-redux';
 
@@ -23,17 +23,17 @@ const App: FunctionComponent = () => {
           <HelmetProvider>
             {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}
             <CssBaseline>
-              {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
-              <ErrorHandler errorHandler={FullPageErrorHandler}>
-                {/* NotificationProvider handles the Notistack.
-                    Must be a child of StoreProvider since Redux handles notifications. */}
-                <NotificationProvider>
+              {/* NotificationProvider handles the Notistack.
+                  Must be a child of StoreProvider since Redux handles notifications. */}
+              <NotificationProvider>
+                {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
+                <ErrorHandler errorHandler={FullPageErrorHandler}>
                   {/* PageHeaders uses the HelmetProvider to inject page title, among other attributes. */}
                   <PageHeaders />
                   {/* MainView provides the actual map content. */}
                   <MainView />
-                </NotificationProvider>
-              </ErrorHandler>
+                </ErrorHandler>
+              </NotificationProvider>
             </CssBaseline>
           </HelmetProvider>
         </ThemeProvider>

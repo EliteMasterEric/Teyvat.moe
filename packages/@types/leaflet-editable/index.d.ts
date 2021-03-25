@@ -361,6 +361,9 @@ declare module 'leaflet' {
      * Handler for dragging path vertices.
      */
     interface VertexMarker extends Marker {
+        latlng: LatLng;
+        latlngs: LatLng[];
+        editor: PathEditor;
         /**
          * Delete a vertex and the related LatLng.
          */

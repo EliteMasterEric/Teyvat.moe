@@ -103,7 +103,7 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
 const NotificationHandler = connector(_NotificationHandler);
 
 interface NotificationProviderProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export const NotificationProvider: FunctionComponent<NotificationProviderProps> = ({

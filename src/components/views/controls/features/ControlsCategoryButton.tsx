@@ -90,7 +90,9 @@ const _ControlsCategoryButton: FunctionComponent<ControlsCategoryButtonProps> = 
 }) => {
   const classes = useStyles();
 
-  if (!displayed) return null;
+  if (!displayed) {
+    return null;
+  }
 
   const buttonStyle = {
     backgroundColor: active ? style.enabled.bg : style.disabled.bg ?? '#FFF',

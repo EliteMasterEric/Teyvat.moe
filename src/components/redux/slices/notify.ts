@@ -113,7 +113,7 @@ export const buildNotification = (
       persist: false,
       preventDuplicate: false,
       variant: 'default',
-      action: {},
+      action: null, // Action must be a valid react node.
       ...options,
     },
   };

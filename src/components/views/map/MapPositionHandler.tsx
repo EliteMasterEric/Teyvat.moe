@@ -44,11 +44,13 @@ const _MapPositionHandler: FunctionComponent<MapPositionHandlerProps> = ({
   const map = useMapEvents({
     dragend: () => {
       if (!map) return;
-      setPositionAndZoom(map.getCenter(), map.getZoom());
+      const position = map.getCenter();
+      setPositionAndZoom({ lat: position.lat, lng: position.lng }, map.getZoom());
     },
     zoomend: () => {
       if (!map) return;
-      setPositionAndZoom(map.getCenter(), map.getZoom());
+      const position = map.getCenter();
+      setPositionAndZoom({ lat: position.lat, lng: position.lng }, map.getZoom());
     },
   });
 
