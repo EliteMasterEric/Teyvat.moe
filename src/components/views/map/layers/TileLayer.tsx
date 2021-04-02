@@ -217,12 +217,12 @@ const MainTileLayer: FunctionComponent = () => {
 
   // Wait until we get confirmation of WebP support.
   if (ext == null) {
-    console.log('WebP support not determined, postponing');
+    console.warn('WebP support not determined, postponing');
     return null;
   }
 
   const tileUrl = TILE_URL.replace('{ext}', ext);
-  console.log(`Rendering tile layer using url '${tileUrl}'`);
+  console.warn(`Rendering tile layer using url '${tileUrl}'`);
 
   return (
     <ErrorHandler errorHandler={ErrorTileLayer}>

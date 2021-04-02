@@ -73,6 +73,7 @@ export const useImageExtension = (block = false): ImageExtension | null => {
       // let mounted = true;
       // Fetch the preferences from local storage, by key.
       const result = await supportsWebP();
+      console.warn(`WEBP support processing complete: ${result}`);
       //if (mounted)
       setValue(result ? 'webp' : defaultValue);
       //return () => {

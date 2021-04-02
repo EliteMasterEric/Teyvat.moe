@@ -183,7 +183,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   };
 
   const updateRoute = (event: leaflet.VertexEvent) => {
-    console.log(event);
     const { id: routeID } = event.layer.options;
 
     const newRouteLatLngs = event.vertex.latlngs.map(
@@ -252,7 +251,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
     'editable:vertex:deleted': (event) => {
       // Delete a vertex when it is clicked.
-      console.log(event);
       const { id: routeID } = event.layer.options;
 
       const newRouteLatLngs = event.vertex.latlngs.map(

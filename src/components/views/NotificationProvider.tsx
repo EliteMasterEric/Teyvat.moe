@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notistack';
-import React, { useEffect, useState, ReactNode, FunctionComponent } from 'react';
+import React, { useEffect, useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { AppDispatch } from 'src/components/redux';
