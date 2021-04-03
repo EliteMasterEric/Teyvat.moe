@@ -17,6 +17,7 @@ import sanitizeHTML from 'sanitize-html';
 // It gets added to window.
 import { mapStackTrace } from 'sourcemapped-stacktrace';
 
+// The app version is defined in only one location.
 // eslint-disable-next-line no-restricted-imports
 import packageJson from '../../../package.json';
 

@@ -19,15 +19,13 @@ import {
 } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import Head from 'next/head';
+
 import { t } from 'src/components/i18n/Localization';
-import { Image } from 'src/components/interface/Image';
+import { NextImage } from 'src/components/interface/Image';
 import { applySourcemapToStackTrace, openURLInWindow } from 'src/components/util';
 import { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import { generateReportURL } from 'src/components/views/error/ErrorReport';
-
-const iconPNG = require('../../../images/brainjuice.png').default;
-const iconWEBP = require('../../../images/brainjuice.webp').default;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,10 +34,6 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     backgroundColor: theme.palette.primary.dark,
     color: '#FFF',
-  },
-  icon: {
-    height: '30vh',
-    width: 'auto',
   },
   title: {
     fontSize: '3em',
@@ -100,16 +94,16 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         {/* DISPLAY */}
         {/* The title of the webpage as displayed in the tab name. */}
         <title>{t('meta-page-title-full')}</title>
-      </Helmet>
+      </Head>
       <div className={classes.root}>
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} alignContent="center">
-              <Image srcPNG={iconPNG} srcWebP={iconWEBP} className={classes.icon} />
+              <NextImage src="/images/brainjuice.png" layout="intrinsic" width={335} height={302} />
               <Typography variant="h1" className={classes.title}>
                 {t('error-handler-flavor')}
               </Typography>

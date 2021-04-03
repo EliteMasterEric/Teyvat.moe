@@ -9,7 +9,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
-import { Image, useImageExtension } from 'src/components/interface/Image';
+import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
 import { useSmallScreen } from 'src/components/interface/MediaHooks';
 import { selectOpen } from 'src/components/redux/slices/ui';
 import { AppState } from 'src/components/redux/types';
@@ -28,11 +28,6 @@ import ControlsFoldButton from 'src/components/views/controls/sidebar/ControlsFo
 import ControlsRegions from 'src/components/views/controls/sidebar/ControlsRegions';
 import ControlsTabSummary from 'src/components/views/controls/summary/ControlsTabSummary';
 import ControlsTabSync from 'src/components/views/controls/sync/ControlsTabSync';
-
-const CONTROL_BOX_IMAGE_PNG = require('../../../images/controls/control_border.png').default;
-const CONTROL_BOX_IMAGE_WEBP = require('../../../images/controls/control_border.webp').default;
-const logoPNG = require('../../../images/controls/logo.png').default;
-const logoWebP = require('../../../images/controls/logo.webp').default;
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -111,8 +106,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   logo: {
-    width: 40,
-    height: 40,
     margin: '0 8px 0 0',
   },
 }));
@@ -131,18 +124,14 @@ const connector = connect<ControlsStateProps, ControlsDispatchProps, Empty, AppS
 type ControlsProps = ConnectedProps<typeof connector>;
 
 const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
-  const ext = useImageExtension();
-
-  const borderBox = ext === 'webp' ? CONTROL_BOX_IMAGE_WEBP : CONTROL_BOX_IMAGE_PNG;
-
-  const classes = useStyles({});
+  const classes = useStyles();
 
   const small = useSmallScreen();
 
   return (
     <Box className={classes.wrapper}>
       <BorderBox
-        image={borderBox}
+        src={getNextImageUrl('/images/controls/control_border.png', 96, 96)}
         className={clsx(
           classes.main,
           small ? classes.mainSmall : null,
@@ -153,7 +142,7 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
         <ControlsRegions shouldDisplay={!small} />
 
         <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-          <Image srcPNG={logoPNG} srcWebP={logoWebP} className={classes.logo} />
+          <NextImage src="/images/logo.png" className={classes.logo} width={40} height={40} />
           <SafeHTML className={classes.headerText}>
             {isDev() ? t('page-title-beta') : t('page-title')}
           </SafeHTML>

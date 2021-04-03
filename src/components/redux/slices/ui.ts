@@ -6,11 +6,11 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';
 import { AppState } from 'src/components/redux/types';
 import { MapPosition, UIControlsTab } from 'src/components/Types';
-import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/views/map/LayerConstants';
 
 export type UIState = {
   tab: UIControlsTab;

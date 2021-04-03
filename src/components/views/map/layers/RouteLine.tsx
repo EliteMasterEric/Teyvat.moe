@@ -9,7 +9,7 @@ import { YOUTUBE_REGEX } from 'src/components/data/ElementSchema';
 import { DEFAULT_ROUTE_COLOR, DEFAULT_ROUTE_TEXT } from 'src/components/data/MapRoutes';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { f, t } from 'src/components/i18n/Localization';
-import { Image } from 'src/components/interface/Image';
+import { NextImage } from 'src/components/interface/Image';
 import YouTubeEmbed from 'src/components/interface/YouTubeEmbed';
 import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
 import { SafeHTML } from 'src/components/util';
@@ -86,7 +86,7 @@ const RouteMedia: FunctionComponent<RouteMediaProps> = ({ media, allowExternalMe
     if (allowExternalMedia) {
       // Display external images in the editor,
       // since it is assumed this user submitted it.
-      return <Image srcPNG={media} className={classes.popupMediaImage} />;
+      return <img src={media} className={classes.popupMediaImage} />;
     }
 
     // Prevent displaying external images for security reasons.
@@ -95,10 +95,11 @@ const RouteMedia: FunctionComponent<RouteMediaProps> = ({ media, allowExternalMe
 
   // Else, use an image from public/comments.
   return (
-    <Image
+    <NextImage
       className={classes.popupMediaImage}
-      srcPNG={`/comments/${media}.png`}
-      srcWebP={`/comments/${media}.webp`}
+      src={`/images/comments/${media}.png`}
+      width={192}
+      height={192}
     />
   );
 };

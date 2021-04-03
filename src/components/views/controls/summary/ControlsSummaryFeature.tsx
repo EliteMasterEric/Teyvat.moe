@@ -10,17 +10,14 @@ import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { MSFFeatureKey } from 'src/components/data/ElementSchema';
-import { getFilterIconURL } from 'src/components/data/FeatureIcon';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
-import { Image } from 'src/components/interface/Image';
+import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
 import { selectCompletedMarkersOfFeature } from 'src/components/redux/slices/completed';
 import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
 import { selectShowHiddenFeaturesInSummary } from 'src/components/redux/slices/options';
 import { AppState } from 'src/components/redux/types';
 import ControlsSummaryFeatureMenu from 'src/components/views/controls/summary/ControlsSummaryFeatureMenu';
-
-const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
 interface StyleProps {
   bgImage: string;
@@ -38,8 +35,6 @@ const useStyles = makeStyles((_theme) => ({
   },
   icon: {
     position: 'absolute',
-    width: 70,
-    height: 70,
     top: 2,
     left: 2,
   },
@@ -111,7 +106,9 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   completedCount,
   displayed,
 }) => {
-  const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
+  const classes = useStyles({
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 96, 96),
+  });
 
   if (!displayed) return null; // Feature is not displayed.
   if (completedCount === 0) return null; // No markers have been completed.
@@ -125,10 +122,11 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   return (
     <Box className={clsx(classes.featureRoot)}>
       <Box className={classes.iconBorder}>
-        <Image
+        <NextImage
+          src={`/images/icons/filter/${mapFeature.icons.filter}.png`}
           className={classes.icon}
-          srcPNG={getFilterIconURL(mapFeature.icons.filter, 'png')}
-          srcWebP={getFilterIconURL(mapFeature.icons.filter, 'webp')}
+          width={70}
+          height={70}
         />
       </Box>
       <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>

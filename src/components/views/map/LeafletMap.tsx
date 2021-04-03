@@ -9,17 +9,12 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { MapContainer, ZoomControl } from 'react-leaflet';
 
+import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { getMapFeature, MapFeatureKeys } from 'src/components/data/MapFeatures';
 import { getMapRouteGroup, MapRouteGroupKeys } from 'src/components/data/MapRoutes';
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import DebugControls from 'src/components/views/map/DebugControls';
-import {
-  DEFAULT_ZOOM,
-  MAP_BOUNDS,
-  MAP_CENTER,
-  MAXIMUM_ZOOM,
-  MINIMUM_ZOOM,
-} from 'src/components/views/map/LayerConstants';
+import { MAP_BOUNDS, MAXIMUM_ZOOM, MINIMUM_ZOOM } from 'src/components/views/map/LayerConstants';
 import EditorLayer from 'src/components/views/map/layers/EditorLayer';
 import FeatureLayer from 'src/components/views/map/layers/FeatureLayer';
 import RegionLabelLayer from 'src/components/views/map/layers/RegionLabelLayer';

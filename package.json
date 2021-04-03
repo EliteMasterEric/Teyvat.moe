@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.12.0-alpha",
+  "version": "0.12.1-alpha",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -11,9 +11,10 @@
     "install:dev": "yarn install --prod=false",
     "install:prod": "yarn install --prod=true",
     "install:check": "yarn install --check-files --prod=false",
-    "start:dev": "npx react-app-rewired start",
-    "start:prod": "npx serve -s build",
-    "build": "npx react-app-rewired build",
+    "start:dev": "npx next dev",
+    "start:prod": "npx next start",
+    "build": "npx next build",
+    "export": "npx next export",
     "predeploy": "npm run build",
     "lint": "npm run lint:ts && npm run lint:md",
     "lint:ts": "eslint src --ext .ts,.tsx --ignore-pattern node_modules/",
@@ -54,11 +55,9 @@
     "@material-ui/icons": "^4.11.2",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core/",
     "@reduxjs/toolkit": "^1.4.0",
-    "@snowpack/app-scripts-react": "^2.0.0",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
-    "eslint-plugin-json-files": "^0.8.1",
     "geojson": "^0.5.0",
     "googleapis": "^67.0.0",
     "joi": "^17.3.0",
@@ -69,27 +68,24 @@
     "leaflet.markercluster": "file:./packages/leaflet.markercluster",
     "lodash": "^4.17.21",
     "new-github-issue-url": "^0.2.1",
+    "next": "latest",
     "notistack": "^1.0.3",
     "object-hash": "^2.0.3",
-    "react": "^17.0.1",
+    "react": "latest",
     "react-adaptive-hooks": "^0.0.8",
-    "react-dom": "^17.0.1",
+    "react-dom": "latest",
     "react-dropzone": "^11.2.4",
-    "react-helmet-async": "^1.0.7",
-    "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet/",
     "react-leaflet-cluster": "^1.0.2",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-leaflet-textpath": "file:./packages/react-leaflet-textpath",
     "react-localization": "file:./packages/react-localization",
     "react-redux": "^7.2.2",
-    "react-scripts": "^4.0.3",
     "react-swipeable-views": "^0.13.9",
     "react-tooltip": "^4.2.10",
     "react-world-flags": "^1.4.0",
     "redux": "^4.0.5",
     "sanitize-html": "^2.1.2",
-    "snowpack": "^3.0.13",
     "sourcemapped-stacktrace": "^1.1.11"
   },
   "devDependencies": {
@@ -127,8 +123,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^6.4.0",
     "prettier": "^2.2.1",
-    "react-app-rewired": "^2.1.8",
     "react-dev-utils": "^11.0.1",
     "remark-cli": "^9.0.0",
     "remark-preset-lint-recommended": "^5.0.0",
@@ -137,6 +134,7 @@
     "type-coverage": "^2.16.3",
     "typescript": "^4.1.5",
     "typescript-coverage-report": "^0.5.0",
+    "url-loader": "^4.1.1",
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "resolutions": {
@@ -146,12 +144,15 @@
     "react-localization": "file:./packages/react-localization",
     "leaflet.markercluster": "file:./packages/leaflet.markercluster",
     "leaflet-textpath": "file:./packages/leaflet.textpath",
-    "leaflet": "file:./packages/leaflet"
+    "leaflet": "file:./packages/leaflet",
+    "webpack": "^5.30.0"
   },
   "typeCoverage": {
     "atLeast": 95,
     "strict": true,
-    "ignoreFiles": ["packages/**/*"],
+    "ignoreFiles": [
+      "packages/**/*"
+    ],
     "outputDir": "build/type-coverage"
   }
 }

@@ -5,11 +5,9 @@
 import { Box, BoxProps, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
+import { getNextImageUrl } from 'src/components/interface/Image';
 
-import { useImageExtension } from 'src/components/interface/Image';
-
-const BorderBoxImagePNG = require('~/images/controls/filter_container.png').default;
-const BorderBoxImageWEBP = require('~/images/controls/filter_container.webp').default;
+const DEFAULT_IMAGE = getNextImageUrl('/images/controls/filter_container.png', 96, 96);
 
 const useStyles = makeStyles((_theme) => ({
   borderBox: {
@@ -27,7 +25,7 @@ interface BorderBoxProps extends Partial<BoxProps> {
   direction?: 'column' | 'row';
   grow?: boolean;
   wrap?: boolean;
-  image?: any;
+  src?: string;
   className?: string;
 }
 
@@ -41,15 +39,11 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   direction = 'column',
   grow = true,
   wrap = false,
-  image = null,
+  src,
   className = null,
   ...other
 }) => {
-  const ext = useImageExtension();
-
-  const borderBoxImage = ext === 'webp' ? BorderBoxImageWEBP : BorderBoxImagePNG;
-
-  const classes = useStyles({ img: image !== null ? image : borderBoxImage });
+  const classes = useStyles({ img: src != null ? src : DEFAULT_IMAGE });
 
   return (
     <Box

@@ -6,7 +6,6 @@ import { FunctionComponent } from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { TileLayerProps } from 'react-leaflet';
 
-import { useImageExtension } from 'src/components/interface/Image';
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import {
   MAP_BOUNDS,
@@ -15,6 +14,7 @@ import {
   MAXIMUM_NATIVE_ZOOM,
   MAXIMUM_ZOOM,
   MINIMUM_ZOOM,
+  TILE_BLANK,
   TILE_URL,
 } from 'src/components/views/map/LayerConstants';
 
@@ -212,28 +212,18 @@ const ErrorTileLayer: ErrorHandlerComponent = ({ error }) => {
 };
 
 const MainTileLayer: FunctionComponent = () => {
-  // Check for WebP support.
-  const ext = useImageExtension(true);
-
-  // Wait until we get confirmation of WebP support.
-  if (ext == null) {
-    console.warn('WebP support not determined, postponing');
-    return null;
-  }
-
-  const tileUrl = TILE_URL.replace('{ext}', ext);
-  console.warn(`Rendering tile layer using url '${tileUrl}'`);
+  console.warn(`Rendering tile layer using url '${TILE_URL}'`);
 
   return (
     <ErrorHandler errorHandler={ErrorTileLayer}>
       <AdvancedTileLayerComponent
-        url={tileUrl}
+        url={TILE_URL}
         noWrap
         pane="tilePane"
         latLngOffset={MAP_LATLNG_OFFSET}
         cssOffset={MAP_CSS_OFFSET}
         bounds={MAP_BOUNDS}
-        errorTileUrl={`tiles/blank.${ext}`}
+        errorTileUrl={TILE_BLANK}
         maxZoom={MAXIMUM_ZOOM}
         minZoom={MINIMUM_ZOOM}
         maxNativeZoom={MAXIMUM_NATIVE_ZOOM}

@@ -28,11 +28,8 @@ import { AppState } from 'src/components/redux/types';
 import { Empty } from 'src/components/Types';
 import { filterNotEmpty, hashObject, truncateFloat } from 'src/components/util';
 import EditorControls from 'src/components/views/map/EditorControls';
-import {
-  editorMarkerHighlight,
-  lineProperties,
-  lineTextProperties,
-} from 'src/components/views/map/LayerConstants';
+import { lineProperties, lineTextProperties } from 'src/components/views/map/LayerConstants';
+import { editorMarkerHighlight } from 'src/components/views/map/layers/FeatureIcon';
 
 const MARKER_OPTIONS = {
   icon: editorMarkerHighlight,

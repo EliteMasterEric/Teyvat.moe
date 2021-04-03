@@ -6,7 +6,7 @@
 
 import _ from 'lodash';
 
-import { isRegionKey, MapRegionKey } from 'src/components/data//MapRegions';
+import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
 import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/ElementSchema';
 import { listFeatureFiles, loadFeature } from 'src/components/data/FeatureData';
 import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
