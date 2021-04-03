@@ -39,7 +39,7 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
             {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
             <ErrorHandler errorHandler={FullPageErrorHandler}>
               {/* Component provides the actual map content. */}
-              <Component {...pageProps} />;
+              <Component {...pageProps} />
             </ErrorHandler>
           </NotificationProvider>
         </ThemeProvider>

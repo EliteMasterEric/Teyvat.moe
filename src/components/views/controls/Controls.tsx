@@ -142,7 +142,13 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
         <ControlsRegions shouldDisplay={!small} />
 
         <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-          <NextImage src="/images/logo.png" className={classes.logo} width={40} height={40} />
+          <NextImage
+            src="/images/logo.png"
+            className={classes.logo}
+            width={40}
+            height={40}
+            priority
+          />
           <SafeHTML className={classes.headerText}>
             {isDev() ? t('page-title-beta') : t('page-title')}
           </SafeHTML>

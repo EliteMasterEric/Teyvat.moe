@@ -26,4 +26,5 @@ export const getMapCategory = (key: MapCategoryKey): MapCategory => {
   return result;
 };
 export const MapCategoryKeys = _.keys(MapCategoryRawData) as MapCategoryKey[];
-export const isCategoryKey = (value: string): boolean => value in MapCategoryRawData;
+export const isCategoryKey = (value: string): value is MapCategoryKey =>
+  value in MapCategoryRawData;

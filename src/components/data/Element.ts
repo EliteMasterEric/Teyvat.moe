@@ -15,14 +15,14 @@ import {
   MSFRoute,
   MSFRouteGroupKey,
 } from 'src/components/data/ElementSchema';
-import { MapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
+import { getMapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
 import { MapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
 
 export const getElementPathById = (id: string): string | null => {
   let result = null;
 
   // Search the features.
-  MapFeatureKeys.forEach((featureKey: MSFFeatureKey) => {
+  getMapFeatureKeys().forEach((featureKey: MSFFeatureKey) => {
     const feature = getMapFeature(featureKey);
     const matchingMarkers = feature.data.filter((element) => element.id.startsWith(id));
     if (matchingMarkers[0] !== undefined) {

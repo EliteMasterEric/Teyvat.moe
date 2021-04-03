@@ -103,7 +103,13 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} alignContent="center">
-              <NextImage src="/images/brainjuice.png" layout="intrinsic" width={335} height={302} />
+              <NextImage
+                src="/images/brainjuice.png"
+                layout="intrinsic"
+                width={335}
+                height={302}
+                priority
+              />
               <Typography variant="h1" className={classes.title}>
                 {t('error-handler-flavor')}
               </Typography>

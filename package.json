@@ -124,7 +124,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.0",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^6.4.0",
+    "next-transpile-modules": "file:./packages/next-transpile-modules",
     "prettier": "^2.2.1",
     "react-dev-utils": "^11.0.1",
     "remark-cli": "^9.0.0",
@@ -145,6 +145,7 @@
     "leaflet.markercluster": "file:./packages/leaflet.markercluster",
     "leaflet-textpath": "file:./packages/leaflet.textpath",
     "leaflet": "file:./packages/leaflet",
+    "next-transpile-modules": "file:./packages/next-transpile-modules",
     "webpack": "^5.30.0"
   },
   "typeCoverage": {

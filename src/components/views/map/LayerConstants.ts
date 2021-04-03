@@ -24,8 +24,8 @@ export const MAXIMUM_ZOOM = 10;
 
 // Format used to fetch the URL of a tile. z is the zoom level, x and y are the coordinates.
 // export const TILE_URL = 'tiles/Map_{z}_{x}_{y}.{ext}';
-export const TILE_URL = getNextImageUrl('images/tiles/Map_{z}_{x}_{y}.png', 256, 256);
-export const TILE_BLANK = getNextImageUrl('images/tiles/blank.png', 256, 256);
+export const TILE_URL = getNextImageUrl('/images/tiles/Map_{z}_{x}_{y}.png', 256, 256);
+export const TILE_BLANK = getNextImageUrl('/images/tiles/blank.png', 256, 256);
 
 // Observable bounds of the map.
 // export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);

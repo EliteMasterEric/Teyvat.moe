@@ -95,7 +95,13 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
       <>
         <Grid container spacing={3}>
           <Grid item xs={3} alignContent="center">
-            <NextImage src="/images/brainjuice.png" layout="intrinsic" width={335} height={302} />
+            <NextImage
+              src="/images/brainjuice.png"
+              layout="intrinsic"
+              width={335}
+              height={302}
+              priority
+            />
           </Grid>
           <Grid item xs={9} alignItems="center" style={{ display: 'flex' }}>
             <Typography variant="h1" className={classes.title}>

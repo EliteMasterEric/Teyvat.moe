@@ -6,10 +6,21 @@ import _ from 'lodash';
 import { MSFFeature, validateFeatureData } from 'src/components/data/ElementSchema';
 import { importFromContext, isDev } from 'src/components/util';
 
-const featuresContext = require.context('src/data/features/', true, /.json$/);
-export const listFeatureFiles = (): string[] => featuresContext.keys();
-export const loadFeature = (key: string): MSFFeature | null => {
+const featuresContext = require.context(
+  'src/data/features/',
+  true,
+  /.json$/,
+  'lazy-once' // webpackMode
+);
+// Synchronous, returns an array of gathered paths.
+export const listFeatureFiles = featuresContext.keys();
+
+// Asynchronous, resovles to the module.
+export const loadFeature = async (key: string): Promise<MSFFeature | null> => {
+  // This import must be relative.
   const featureData: MSFFeature = importFromContext(featuresContext, key);
+  const fileName = key.split('./')[1];
+  // const featureData = await import(`src/data/features/${fileName}`);
 
   if (isDev()) {
     // In development, validate the data before returning.

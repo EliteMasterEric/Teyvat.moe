@@ -2,6 +2,7 @@
  * Handles the section of the state that stores the transient state
  * of the user interface, such as current tab or map position.
  */
+import _ from 'lodash';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
 import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
@@ -37,6 +38,15 @@ export type UIState = {
    * Whether to show the editor debug window.
    */
   editorDebugEnabled: boolean;
+
+  /**
+   * The status of different parts of the UI.
+   */
+  loading: {
+    features: boolean;
+    routes: boolean;
+    tiles: boolean;
+  };
 };
 
 // Define the initial state
@@ -56,6 +66,12 @@ export const initialState: UIState = {
   },
   editorEnabled: false,
   editorDebugEnabled: false,
+
+  loading: {
+    features: true,
+    routes: true,
+    tiles: true,
+  },
 };
 
 // Define a type using that initial state.
@@ -107,6 +123,18 @@ export const uiSlice = createSlice({
     toggleEditorDebugEnabled: (state) => {
       state.editorDebugEnabled = !state.editorEnabled;
     },
+    setLoading: {
+      prepare: (key: keyof UIState['loading'], status: boolean) => {
+        const payload = { [key]: status };
+        return { payload };
+      },
+      reducer: (state, action: PayloadAction<Partial<UIState['loading']>>) => {
+        state.loading = {
+          ...state.loading,
+          ...action.payload,
+        };
+      },
+    },
   },
   extraReducers: {
     [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
@@ -135,6 +163,7 @@ export const {
   toggleEditorEnabled,
   setEditorDebugEnabled,
   toggleEditorDebugEnabled,
+  setLoading,
 } = uiSlice.actions;
 
 /**
@@ -163,5 +192,13 @@ export const selectIsRouteHighlighted = (state: AppState, routeID: MSFRouteID): 
 export const selectMapPosition = (state: AppState): MapPosition => state.ui.mapPosition;
 export const selectEditorEnabled = (state: AppState): boolean => state.ui.editorEnabled;
 export const selectEditorDebugEnabled = (state: AppState): boolean => state.ui.editorDebugEnabled;
+export const selectLoading = (state: AppState, key: keyof UIState['loading']): boolean =>
+  state.ui.loading?.[key] ?? true;
+/**
+ * Returns true if NONE of the ui.loading values are true.
+ * @returns
+ */
+export const selectFullyLoaded = (state: AppState): boolean =>
+  !_.values(state.ui.loading).some((v) => v);
 
 export default uiSlice.reducer;

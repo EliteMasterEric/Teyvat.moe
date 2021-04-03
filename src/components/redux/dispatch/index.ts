@@ -9,7 +9,7 @@ import {
   enqueueNotification,
   Notification,
 } from 'src/components/redux/slices/notify';
-import { setMapPosition } from 'src/components/redux/slices/ui';
+import { setLoading, setMapPosition } from 'src/components/redux/slices/ui';
 import { LocalizedString, MapPosition } from 'src/components/Types';
 
 const dispatchAction = (action: AppAction): void => {
@@ -41,4 +41,16 @@ export const showRouteGroup = (key: MSFRouteGroupKey): void => {
 
 export const moveToMapPosition = (pos: MapPosition['latlng'], zoom: MapPosition['zoom']): void => {
   dispatchAction(setMapPosition(pos, zoom));
+};
+
+export const setLoadingFeatures = (status: boolean): void => {
+  dispatchAction(setLoading('features', status));
+};
+
+export const setLoadingRoutes = (status: boolean): void => {
+  dispatchAction(setLoading('routes', status));
+};
+
+export const setLoadingTiles = (status: boolean): void => {
+  dispatchAction(setLoading('tiles', status));
 };

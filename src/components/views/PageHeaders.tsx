@@ -121,6 +121,8 @@ const PageHeadersNext: FunctionComponent = () => {
         crossOrigin="anonymous"
       />
       <link rel="stylesheet" href="/index.css" />
+      <link rel="stylesheet" href="/LeafletMap.css" />
+
       {/*
        * ANALYSIS
        * Verify ownership to enable the Google Search Console.

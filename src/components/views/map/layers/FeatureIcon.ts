@@ -33,9 +33,9 @@ export const createMapIcon = ({
   ...options
 }: {
   key: string;
-  marker: boolean;
-  done: boolean;
-  ext: string;
+  marker?: boolean;
+  done?: boolean;
+  ext?: string;
 }): L.Icon | L.DivIcon => {
   if (marker) {
     // Use the marker image.

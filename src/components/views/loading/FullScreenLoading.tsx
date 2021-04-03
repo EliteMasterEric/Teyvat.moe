@@ -60,6 +60,7 @@ const FullScreenLoading: FunctionComponent = () => {
       <div className={classes.loadingBody}>
         {/* Use a bare PNG image. No weird WEBP handling should prevent rendering this. */}
         <NextImage
+          priority
           src={'/images/controls/logo.png'}
           width={80}
           height={80}
