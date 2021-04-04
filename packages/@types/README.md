@@ -1,0 +1,1 @@
+If an existing package was modified, and includes changes that break type checking because the library uses DefinitelyTyped (no issues will occur if the main repo uses TypeScript), download the relevant `@types/<LIBRARY>` library, copy the type definition here, then modify it.

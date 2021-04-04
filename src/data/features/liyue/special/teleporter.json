@@ -15,6 +15,7 @@
   "icons": {
     "filter": "teleporter",
     "base": {
+      "marker": false,
       "key": "teleporter",
       "iconSize": [25, 35],
       "shadowSize": [50, 64],
@@ -23,6 +24,7 @@
       "popupAnchor": [0, -36]
     },
     "done": {
+      "marker": false,
       "key": "teleporter",
       "iconSize": [25, 35],
       "shadowSize": [50, 64],

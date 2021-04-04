@@ -4,26 +4,29 @@ The goal of this new data format is to make IDs easier to handle (non-incrementa
 
 Generating marker ID:
 
-1. Take the coordinates of the marker or route, as an array, limiting accuracy to 5 decimals.
+1.  Take the coordinates of the marker or route, as an array, limiting accuracy to 5 decimals.
 
-- Marker: `[ -38.50948, 61.18835 ]`
-- Route: `[ [ -38.50948, 61.18835 ], [ -39.50948, 63.18835 ] ]`
+-   Marker: `[ -38.50948, 61.18835 ]`
+-   Route: `[ [ -38.50948, 61.18835 ], [ -39.50948, 63.18835 ] ]`
 
-2. Convert this string to a SHA1-hash using the `object-hash` library.
+2.  Convert this string to a SHA1-hash using the `object-hash` library.
 
-- Marker
+-   Marker
 
-* JSON Data: `[ -38.50948, 61.18835 ]`
-* Object Hash flatten -> `array:2:number:-38.50948number:61.18835`
-* SHA1 Hash -> `67AF58A74B7A1952D1FFF8BFF67CBA34773AEEE2`
+-   JSON Data: `[ -38.50948, 61.18835 ]`
 
-- Route
+-   Object Hash flatten -> `array:2:number:-38.50948number:61.18835`
 
-* JSON Data: `[ [ -38.50948, 61.18835 ], [ -39.50948, 63.18835 ] ]`
-* Object Hash flatten -> `array:2:array:2:number:-38.50948number:61.18835array:2:number:-39.50948number:63.18835`
-* SHA1 Hash -> `A86FCE1719E3646DD11BB1570FCD4E1640E6B6D6`
+-   SHA1 Hash -> `67AF58A74B7A1952D1FFF8BFF67CBA34773AEEE2`
 
-3. Use it as the ID.
+-   Route
+
+
+-   JSON Data: `[ [ -38.50948, 61.18835 ], [ -39.50948, 63.18835 ] ]`
+-   Object Hash flatten -> `array:2:array:2:number:-38.50948number:61.18835array:2:number:-39.50948number:63.18835`
+-   SHA1 Hash -> `A86FCE1719E3646DD11BB1570FCD4E1640E6B6D6`
+
+3.  Use it as the ID.
 
 Final data format example.:
 

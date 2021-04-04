@@ -1,0 +1,16 @@
+{
+  "react-redux connector": {
+    "prefix": "connector",
+    "scope": "javascript,typescript,typescriptreact",
+    "body": [
+      "type ${TM_FILENAME_BASE:Component}StateProps = ReturnType<typeof mapStateToProps>;",
+      "type ${TM_FILENAME_BASE:Component}DispatchProps = ReturnType<typeof mapDispatchToProps>;",
+      "const connector = connect<${TM_FILENAME_BASE:Component}StateProps, ${TM_FILENAME_BASE:Component}DispatchProps, ${TM_FILENAME_BASE:Component}BaseProps, AppState>(mapStateToProps, mapDispatchToProps);",
+      "",
+      "type ${TM_FILENAME_BASE:Component}Props = ConnectedProps<typeof connector> & ${TM_FILENAME_BASE:Component}BaseProps;",
+    ],
+    "description": "react-redux connect wrapper."
+  },
+}
+
+

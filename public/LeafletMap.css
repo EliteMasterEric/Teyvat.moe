@@ -1,0 +1,131 @@
+/*
+ * Since Leaflet uses these class names directly,
+ * and does not do so within components, hooks cannot be called,
+ * and useStyles cannot replace this file.
+ */
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background-color: #2c6973;
+}
+
+.leaflet-map-route-text {
+  color: #d32f2f;
+  font-size: 20px;
+}
+
+.leaflet-top.leaflet-left.leaflet-top-left-offset {
+  /* Fix custom controls overlapping the zoom buttons. */
+  top: 80px;
+}
+
+.leaflet-bottom.leaflet-left.leaflet-bottom-left-offset {
+  /* Fix custom controls overlapping the attribution. */
+  bottom: 24px;
+}
+
+.map-marker-popup {
+  /* The main content of the popup. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-marker-popup-title {
+  /* The title of the popup. */
+  font-size: 16px;
+  text-align: center;
+}
+
+.map-marker-popup-content {
+  /* The text description of the popup. */
+  font-size: 1em;
+}
+
+.map-marker-popup-completion-time {
+  /* The 'Marked at <TIME>' text. */
+  text-align: center;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.map-marker-popup-image {
+  /* The media image displayed by the popup. */
+  margin: 4px 0 4px 0;
+  width: 192px;
+  height: 192px;
+  /* TODO Is there some easy way to clip off the sides instead of squashing the image? */
+}
+
+/* Below are related to the display of markers. */
+
+.map-marker-cluster {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  z-index: 1000 !important; /* Put on top of other stuff so hovering doesn't break. */
+}
+
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+  font: 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.marker-cluster span {
+  line-height: 30px;
+}
+
+.map-marker-cluster-svg {
+  width: 100%;
+  height: 100%;
+  z-index: 0 !important;
+}
+
+.map-marker-cluster-img {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  top: 14%;
+  z-index: 100;
+}
+
+.map-marker-cluster-label {
+  position: absolute;
+  top: -21px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 5px;
+  border-radius: 10px;
+  padding-bottom: 1px;
+  pointer-events: none;
+}
+
+.map-marker-cluster-marker {
+  width: 100%;
+  height: 100%;
+}
+
+.map-marker-container {
+  position: relative;
+}
+
+.map-marker-shadow {
+  width: 40px;
+  height: 40px;
+}
+
+.map-marker-img {
+  color: #f57c00;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}

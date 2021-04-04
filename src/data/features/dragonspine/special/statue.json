@@ -14,6 +14,7 @@
   "icons": {
     "filter": "dragonspine-statue",
     "base": {
+      "marker": false,
       "key": "statue",
       "iconSize": [30, 46],
       "shadowSize": [50, 64],
@@ -22,6 +23,7 @@
       "popupAnchor": [0, -35]
     },
     "done": {
+      "marker": false,
       "key": "statue",
       "iconSize": [30, 46],
       "shadowSize": [50, 64],
