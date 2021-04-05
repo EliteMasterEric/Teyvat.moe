@@ -16,7 +16,7 @@ import {
   MSFRouteGroupKey,
 } from 'src/components/data/ElementSchema';
 import { getMapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
-import { MapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
+import { getMapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
 
 export const getElementPathById = (id: string): string | null => {
   let result = null;
@@ -32,7 +32,7 @@ export const getElementPathById = (id: string): string | null => {
   if (result !== null) return result;
 
   // Search the routes.
-  MapRouteGroupKeys.forEach((routeKey) => {
+  getMapRouteGroupKeys().forEach((routeKey) => {
     const routes = getMapRouteGroup(routeKey);
     const matchingRoutes = routes.data.filter((element) => element.id.startsWith(id));
     if (matchingRoutes[0] !== undefined) {

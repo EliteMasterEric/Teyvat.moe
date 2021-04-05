@@ -3,6 +3,7 @@
  * determines if a permalink to a marker was used,
  * and returns
  */
+import { useRouter } from 'next/router';
 import { useEffect, FunctionComponent } from 'react';
 import { getElementPathById, getElementByPath } from 'src/components/data/Element';
 import {
@@ -18,7 +19,8 @@ import {
   showFeature,
   showRouteGroup,
 } from 'src/components/redux/dispatch';
-import { getURLParams, setBrowserClipboard } from 'src/components/util';
+import { setBrowserClipboard } from 'src/components/util';
+import { setPermalinkId } from 'src/components/redux/slices/ui';
 
 const HIGHLIGHT_ZOOM_LEVEL = 9;
 
@@ -77,14 +79,15 @@ export const navigateToMarkerByID = (id: string): void => {
 };
 
 const PermalinkHandler: FunctionComponent = () => {
+  const nextRouter = useRouter();
+
   // Navigate to the marked permalink when the map starts.
   useEffect(() => {
-    const urlParams = getURLParams();
-    const id = (urlParams.id ?? [null])[0];
-    // End early if no ID was specified.
-    if (id == null) return;
+    const { id } = nextRouter.query;
+    // End early if 0 or 2+ IDs were specified.
+    if (id == null || Array.isArray(id)) return;
 
-    navigateToMarkerByID(id);
+    setPermalinkId(id);
   }, []);
 
   // Don't render anything.

@@ -1,22 +1,45 @@
+import { connect, ConnectedProps } from 'react-redux';
 import React, { FunctionComponent } from 'react';
 
-import { getMarkerCount } from 'src/components/data/MapFeatures';
-import { getRouteCount } from 'src/components/data/MapRoutes';
 import { f, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
+import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/ui';
+import { AppState } from 'src/components/redux/types';
 import { SafeHTML } from 'src/components/util';
 
-type ControlsSubtabHelpProps = {
+interface ControlsSubtabHelpBaseProps {
   displayed: boolean;
-};
+}
 
-const ControlsSubtabHelp: FunctionComponent<ControlsSubtabHelpProps> = ({ displayed }) => {
+const mapStateToProps = (state: AppState, props: ControlsSubtabHelpBaseProps) => ({
+  lang: selectOverrideLang(state),
+  markerCount: selectMapMarkerCount(state),
+  routeCount: selectMapRouteCount(state),
+});
+const mapDispatchToProps = () => ({});
+type ControlsSubtabHelpStateProps = ReturnType<typeof mapStateToProps>;
+type ControlsSubtabHelpDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<
+  ControlsSubtabHelpStateProps,
+  ControlsSubtabHelpDispatchProps,
+  ControlsSubtabHelpBaseProps,
+  AppState
+>(mapStateToProps, mapDispatchToProps);
+
+type ControlsSubtabHelpProps = ConnectedProps<typeof connector> & ControlsSubtabHelpBaseProps;
+
+const _ControlsSubtabHelp: FunctionComponent<ControlsSubtabHelpProps> = ({
+  displayed,
+  markerCount,
+  routeCount,
+}) => {
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
       <SafeHTML gutterBottom>
         {f('help-description', {
-          markers: getMarkerCount().toString(),
-          routes: getRouteCount().toString(),
+          markers: (markerCount ?? '#').toString(),
+          routes: (routeCount ?? '#').toString(),
         })}
       </SafeHTML>
       <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
@@ -26,5 +49,7 @@ const ControlsSubtabHelp: FunctionComponent<ControlsSubtabHelpProps> = ({ displa
     </BorderBox>
   );
 };
+
+const ControlsSubtabHelp = connector(_ControlsSubtabHelp);
 
 export default ControlsSubtabHelp;

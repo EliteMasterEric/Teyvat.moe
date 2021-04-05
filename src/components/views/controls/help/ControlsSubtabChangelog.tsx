@@ -7,13 +7,12 @@ import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@mat
 import React, { FunctionComponent, memo, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { getMarkerCount } from 'src/components/data/MapFeatures';
-import { getRouteCount } from 'src/components/data/MapRoutes';
 import { getChangelogData } from 'src/components/i18n/ChangelogLocalization';
 import { t, f } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/ui';
 import { AppState } from 'src/components/redux/types';
 import { SafeHTML } from 'src/components/util';
 
@@ -33,6 +32,8 @@ interface ControlsSubtabChangelogBaseProps {
 }
 const mapStateToProps = (state: AppState) => ({
   lang: selectOverrideLang(state),
+  markerCount: selectMapMarkerCount(state),
+  routeCount: selectMapRouteCount(state),
 });
 const mapDispatchToProps = () => ({});
 type ControlsSubtabChangelogStateProps = ReturnType<typeof mapStateToProps>;
@@ -85,6 +86,8 @@ const ControlsSubtabChangelogVersion: FunctionComponent<ControlsSubtabChangelogV
 const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> = ({
   displayed = false,
   lang,
+  markerCount,
+  routeCount,
 }) => {
   const changelogData = getChangelogData(lang);
 
@@ -95,8 +98,8 @@ const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> 
       <BorderBox overflow="hidden auto">
         <SafeHTML gutterBottom>
           {f('help-description', {
-            markers: getMarkerCount().toString(),
-            routes: getRouteCount().toString(),
+            markers: (markerCount ?? '#').toString(),
+            routes: (routeCount ?? '#').toString(),
           })}
         </SafeHTML>
         <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>

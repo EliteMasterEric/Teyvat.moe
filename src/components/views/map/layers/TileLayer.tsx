@@ -1,6 +1,6 @@
 /* eslint-disable import/no-named-as-default-member */
 import { createTileLayerComponent, LeafletContextInterface } from '@react-leaflet/core';
-import leaflet from 'leaflet';
+import leaflet, { LeafletEventHandlerFn } from 'leaflet';
 import { FunctionComponent } from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -218,7 +218,11 @@ const ErrorTileLayer: ErrorHandlerComponent = ({ error }) => {
   );
 };
 
-const MainTileLayer: FunctionComponent = () => {
+interface MainTileLayerProps {
+  onLoaded: LeafletEventHandlerFn;
+}
+
+const MainTileLayer: FunctionComponent<MainTileLayerProps> = ({ onLoaded }) => {
   console.warn(`Rendering tile layer using url '${TILE_URL}'`);
 
   return (
@@ -226,6 +230,9 @@ const MainTileLayer: FunctionComponent = () => {
       <AdvancedTileLayerComponent
         url={TILE_URL}
         noWrap
+        eventHandlers={{
+          load: onLoaded,
+        }}
         pane="tilePane"
         latLngOffset={MAP_LATLNG_OFFSET}
         cssOffset={MAP_CSS_OFFSET}

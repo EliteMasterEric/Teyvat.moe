@@ -93,7 +93,7 @@ const PageHeadersNext: FunctionComponent = () => {
         name="description"
         content="Interactive map of Teyvat allows you to find Anemoculus, Geoculus, Waypoints, Regional Specialties, Chests, and more for Genshin Impact."
       />
-      <link rel="apple-touch-icon" href="/logo192.png" />
+      <link rel="apple-touch-icon" href="/images/logo.png" />
       {/*
        * manifest.json provides metadata used when your web app is installed on a
        * user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

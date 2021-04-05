@@ -1,4 +1,5 @@
 import { LinearProgress, Typography, makeStyles } from '@material-ui/core';
+import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { f, t } from 'src/components/i18n/Localization';
 import { NextImage } from 'src/components/interface/Image';
@@ -13,6 +14,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+  },
+
+  alwaysOnTop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 10000,
   },
 
   loadingHeader: {
@@ -51,17 +59,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FullScreenLoading: FunctionComponent = () => {
+interface FullScreenLoadingProps {
+  displayed?: boolean;
+}
+
+const FullScreenLoading: FunctionComponent<FullScreenLoadingProps> = ({ displayed = true }) => {
   const classes = useStyles();
 
+  if (!displayed) return null;
+
   return (
-    <div className={classes.background}>
+    <div className={clsx(classes.background, classes.alwaysOnTop)}>
       <div className={classes.loadingHeader} />
       <div className={classes.loadingBody}>
         {/* Use a bare PNG image. No weird WEBP handling should prevent rendering this. */}
         <NextImage
           priority
-          src={'/images/controls/logo.png'}
+          src={'/images/logo.png'}
           width={80}
           height={80}
           className={classes.logo}

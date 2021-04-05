@@ -2,10 +2,11 @@
 /* eslint-disable no-restricted-imports */
 
 import { EnhancedStore } from '@reduxjs/toolkit';
+import initialization from './initialization';
 import localization from './localization';
 import localStorage from './localStorage';
 
-const watchers = [localStorage, localization];
+const watchers = [initialization, localStorage, localization];
 
 const addWatchers = (store: EnhancedStore): void => {
   // Call these functions whenever the store changes.

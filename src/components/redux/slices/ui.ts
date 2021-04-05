@@ -39,13 +39,25 @@ export type UIState = {
    */
   editorDebugEnabled: boolean;
 
+  mapStats: {
+    markerCount: number | null;
+    routeCount: number | null;
+  };
+
+  permalinkId: string | null;
+
   /**
    * The status of different parts of the UI.
    */
   loading: {
-    features: boolean;
-    routes: boolean;
-    tiles: boolean;
+    initializedLoading: boolean;
+
+    loadMapFeatures: boolean;
+    loadMapRoutes: boolean;
+    loadLeafletTiles: boolean;
+    countMapFeatures: boolean;
+    countMapRoutes: boolean;
+    handlePermalinks: boolean;
   };
 };
 
@@ -67,12 +79,26 @@ export const initialState: UIState = {
   editorEnabled: false,
   editorDebugEnabled: false,
 
+  mapStats: {
+    markerCount: null,
+    routeCount: null,
+  },
+
+  permalinkId: null,
+
   loading: {
-    features: true,
-    routes: true,
-    tiles: true,
+    initializedLoading: false,
+
+    loadMapFeatures: false,
+    loadMapRoutes: false,
+    loadLeafletTiles: false,
+    countMapFeatures: false,
+    countMapRoutes: false,
+    handlePermalinks: true, // Set to false later.
   },
 };
+
+export type SetLoadingAction = Partial<UIState['loading']>;
 
 // Define a type using that initial state.
 
@@ -128,12 +154,24 @@ export const uiSlice = createSlice({
         const payload = { [key]: status };
         return { payload };
       },
-      reducer: (state, action: PayloadAction<Partial<UIState['loading']>>) => {
+      reducer: (state, action: PayloadAction<SetLoadingAction>) => {
         state.loading = {
           ...state.loading,
           ...action.payload,
         };
       },
+    },
+    setMapMarkerCount: (state, action: PayloadAction<number>) => {
+      state.mapStats.markerCount = action.payload;
+      state.loading.countMapFeatures = true;
+    },
+    setMapRouteCount: (state, action: PayloadAction<number>) => {
+      state.mapStats.routeCount = action.payload;
+      state.loading.countMapRoutes = true;
+    },
+    setPermalinkId: (state, action: PayloadAction<string>) => {
+      state.permalinkId = action.payload;
+      state.loading.handlePermalinks = false;
     },
   },
   extraReducers: {
@@ -164,6 +202,9 @@ export const {
   setEditorDebugEnabled,
   toggleEditorDebugEnabled,
   setLoading,
+  setMapMarkerCount,
+  setMapRouteCount,
+  setPermalinkId,
 } = uiSlice.actions;
 
 /**
@@ -195,10 +236,14 @@ export const selectEditorDebugEnabled = (state: AppState): boolean => state.ui.e
 export const selectLoading = (state: AppState, key: keyof UIState['loading']): boolean =>
   state.ui.loading?.[key] ?? true;
 /**
- * Returns true if NONE of the ui.loading values are true.
+ * Returns true if NONE of the ui.loading values are false.
  * @returns
  */
 export const selectFullyLoaded = (state: AppState): boolean =>
-  !_.values(state.ui.loading).some((v) => v);
+  _.values(state.ui.loading).every((v) => v);
+export const selectMapMarkerCount = (state: AppState): number | null =>
+  state.ui.mapStats.markerCount;
+export const selectMapRouteCount = (state: AppState): number | null => state.ui.mapStats.routeCount;
+export const selectPermalinkID = (state: AppState): string | null => state.ui.permalinkId;
 
 export default uiSlice.reducer;

@@ -3,6 +3,7 @@
  * along with region labels, world border, editor data, and feature and map data.
  */
 
+import { makeStyles } from '@material-ui/core';
 import { CRS } from 'leaflet';
 import 'leaflet-editable';
 import _ from 'lodash';
@@ -11,7 +12,7 @@ import { MapContainer, ZoomControl } from 'react-leaflet';
 
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/MapFeatures';
-import { getMapRouteGroup, MapRouteGroupKeys } from 'src/components/data/MapRoutes';
+import { getMapRouteGroup, getMapRouteGroupKeys } from 'src/components/data/MapRoutes';
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import DebugControls from 'src/components/views/map/DebugControls';
 import { MAP_BOUNDS, MAXIMUM_ZOOM, MINIMUM_ZOOM } from 'src/components/views/map/LayerConstants';
@@ -23,16 +24,32 @@ import TileLayer from 'src/components/views/map/layers/TileLayer';
 import WorldBorderLayer from 'src/components/views/map/layers/WorldBorderLayer';
 import MapEditorHandler from 'src/components/views/map/MapEditorHandler';
 import MapPositionHandler from 'src/components/views/map/MapPositionHandler';
+import { setLoadingTiles } from 'src/components/redux/dispatch';
 
-import 'src/components/data/Initialize';
+const useStyles = makeStyles((_theme) => ({
+  main: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '100vh',
+  },
+}));
 
 const ErrorLayer: ErrorHandlerComponent = ({ error, errorInfo: _errorInfo }) => {
   return <div>{error?.name ?? 'NO ERROR DATA'}</div>;
 };
 
-const LeafletMap: FunctionComponent = () => {
+const LeafletMap: FunctionComponent = ({}) => {
+  const classes = useStyles();
+
+  const onTileLayerLoaded = () => {
+    setLoadingTiles(true);
+  };
+
   return (
     <MapContainer
+      className={classes.main}
       maxBounds={MAP_BOUNDS}
       center={MAP_CENTER}
       zoom={DEFAULT_ZOOM}
@@ -50,7 +67,7 @@ const LeafletMap: FunctionComponent = () => {
       {/* Handles events related to the map editing, and renders the editor controls.. */}
       <MapEditorHandler />
       {/* Controls the actual map image. */}
-      <TileLayer />
+      <TileLayer onLoaded={onTileLayerLoaded} />
 
       <RegionLabelLayer />
       <WorldBorderLayer />
@@ -76,7 +93,7 @@ const LeafletMap: FunctionComponent = () => {
       })}
 
       {/* Display each visible route. */}
-      {MapRouteGroupKeys.map((key) => {
+      {getMapRouteGroupKeys().map((key) => {
         const route = getMapRouteGroup(key);
         if (!route) {
           console.error(`ERROR: Route '${key}' is not defined.`);

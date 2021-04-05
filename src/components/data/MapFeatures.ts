@@ -57,13 +57,12 @@ export const initializeAllMapFeatures = () => {
   const loaderPromises = listFeatureFiles().map(async (featureFilePath) => {
     const result = await initializeMapFeature(featureFilePath);
     if (result != null) {
-      console.warn(`Appending loaded MapFeature: ${result[0]}`);
       MapFeatures[result[0]] = result[1];
     }
   });
   Promise.all(loaderPromises).then(() => {
     console.warn(`MapFeatures reports fully loaded. Key count: ${getMapFeatureKeys().length}`);
-    setLoadingFeatures(false);
+    setLoadingFeatures(true);
   });
 };
 export const getMapFeature = (key: MSFFeatureKey): MSFFeatureExtended => {
@@ -117,10 +116,3 @@ export const sortFeaturesByName = (data: MSFFeatureKey[]): MSFFeatureKey[] =>
     if (textA < textB) return -1;
     return textA > textB ? 1 : 0;
   });
-
-export const getMarkerCount = (): number => {
-  return getMapFeatureKeys().reduce((sum, key, _index) => {
-    const feature = getMapFeature(key);
-    return sum + feature.data.length;
-  }, 0);
-};

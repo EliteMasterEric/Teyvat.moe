@@ -27,23 +27,26 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      {/* StoreProvider allows hooks and components to access the Redux store. */}
-      <StoreProvider store={store}>
-        {/* ThemeProvider allows for child components to access the Material UI theme. */}
-        <ThemeProvider theme={Theme}>
-          {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}
-          <CssBaseline />
-          {/* NotificationProvider handles the Notistack.
+      {/* Make the app be the exact page height. */}
+      <div style={{ height: '100vh', width: '100vw' }}>
+        {/* StoreProvider allows hooks and components to access the Redux store. */}
+        <StoreProvider store={store}>
+          {/* ThemeProvider allows for child components to access the Material UI theme. */}
+          <ThemeProvider theme={Theme}>
+            {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}
+            <CssBaseline />
+            {/* NotificationProvider handles the Notistack.
               Must be a child of StoreProvider since Redux handles notifications. */}
-          <NotificationProvider>
-            {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
-            <ErrorHandler errorHandler={FullPageErrorHandler}>
-              {/* Component provides the actual map content. */}
-              <Component {...pageProps} />
-            </ErrorHandler>
-          </NotificationProvider>
-        </ThemeProvider>
-      </StoreProvider>
+            <NotificationProvider>
+              {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
+              <ErrorHandler errorHandler={FullPageErrorHandler}>
+                {/* Component provides the actual map content. */}
+                <Component {...pageProps} />
+              </ErrorHandler>
+            </NotificationProvider>
+          </ThemeProvider>
+        </StoreProvider>
+      </div>
     </>
   );
 };

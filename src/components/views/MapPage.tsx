@@ -1,8 +1,11 @@
 import dynamic from 'next/dynamic';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
 
 import FullScreenLoading from 'src/components/views/loading/FullScreenLoading';
 import PermalinkHandler from 'src/components/views/PermalinkHandler';
+import { selectFullyLoaded } from '../redux/slices/ui';
+import { AppState } from '../redux/types';
 
 const Controls = dynamic(
   () =>
@@ -13,7 +16,22 @@ const Controls = dynamic(
     )
 );
 
-const MainView: FunctionComponent = () => {
+const mapStateToProps = (state: AppState) => {
+  return {
+    fullyLoaded: selectFullyLoaded(state),
+  };
+};
+const mapDispatchToProps = () => ({});
+type MapPageStateProps = ReturnType<typeof mapStateToProps>;
+type MapPageDispatchProps = ReturnType<typeof mapDispatchToProps>;
+const connector = connect<MapPageStateProps, MapPageDispatchProps, {}, AppState>(
+  mapStateToProps,
+  mapDispatchToProps
+);
+
+type MapPageProps = ConnectedProps<typeof connector>;
+
+const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
   const LeafletMap = dynamic(
     () =>
       import(
@@ -22,7 +40,6 @@ const MainView: FunctionComponent = () => {
         'src/components/views/map/LeafletMap'
       ),
     {
-      loading: () => <FullScreenLoading />,
       /**
        * This prevents the LeafletMap from being rendered by the SSR engine.
        * Important because Node can't handle Leaflet.
@@ -33,6 +50,7 @@ const MainView: FunctionComponent = () => {
 
   return (
     <>
+      <FullScreenLoading displayed={!fullyLoaded} />
       <LeafletMap />
       <Controls />
       <PermalinkHandler />
@@ -40,7 +58,9 @@ const MainView: FunctionComponent = () => {
   );
 };
 
-export default MainView;
+const MapPage = connector(_MapPage);
+
+export default MapPage;
 
 /*
   import FullScreenLoading from 'src/components/views/loading/FullScreenLoading';
