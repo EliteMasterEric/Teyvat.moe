@@ -120,7 +120,7 @@ const _ControlsFeatureButton: FunctionComponent<ControlsFeatureButtonProps> = ({
   toggleFeatureDisplayed,
 }) => {
   const classes = useStyles({
-    bgImage: getNextImageUrl('/images/controls/filter_border.png', 96, 96),
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 70, 70),
   });
 
   const mapFeature = getMapFeature(featureKey);

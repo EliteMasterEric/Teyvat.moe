@@ -1066,3 +1066,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 -   Improved performance when showing or hiding features.
 -   Removed attribution link in the bottom left corner.
 
+# 0.12.2 Localization Fixes.
+
+- [ ] Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.
+

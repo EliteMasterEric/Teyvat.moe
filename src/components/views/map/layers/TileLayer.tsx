@@ -156,7 +156,6 @@ class AdvancedTileLayer extends leaflet.TileLayer {
   }
 
   convertLatLngToPixelOffset(position: leaflet.LatLngExpression): leaflet.Point {
-    // console.log(this._map.());
     return this._map.project(position);
   }
   // Gets the position (in CSS pixels) of a given tile.

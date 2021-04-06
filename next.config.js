@@ -23,6 +23,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const baseConfig = {
   // Target must be serverless to run on Netlify.
   target: 'serverless',
+
+  // Provides source maps in production.
+  productionBrowserSourceMaps: true,
+
   future: {
     webpack5: true,
   },
@@ -34,6 +38,9 @@ const baseConfig = {
         loader: 'url-loader',
       },
     });
+
+    // TODO: Undo this.
+    config.optimization.minimize = false;
 
     return config;
   },

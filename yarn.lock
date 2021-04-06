@@ -2625,7 +2625,7 @@ commander@^5.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-5.1.0.tgz#46abbd1652f8e059bddaef99bbdcb2ad9cf179ae"
   integrity sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==
 
-commander@^6.0.0, commander@^6.2.0:
+commander@^6.2.0:
   version "6.2.1"
   resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
@@ -5595,18 +5595,6 @@ next-compose-plugins@^2.2.1:
   resolved "https://registry.npmjs.org/next-compose-plugins/-/next-compose-plugins-2.2.1.tgz#020fc53f275a7e719d62521bef4300fbb6fde5ab"
   integrity sha512-OjJ+fV15FXO2uQXQagLD4C0abYErBjyjE0I0FHpOEIB8upw0hg1ldFP6cqHTJBH1cZqy96OeR3u1dJ+Ez2D4Bg==
 
-next-on-netlify@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.npmjs.org/next-on-netlify/-/next-on-netlify-2.9.0.tgz#9d66fc65802e26d41bd7fcc5eb9a73326708a5e2"
-  integrity sha512-1M93P6VEvsDCzpx2bt6lRmnoLTd47YbVIrH6O2xb2Cptd6bJF+uACP3tdtD7Jv7HrCkfMqbGYalEeHAc/0RwKA==
-  dependencies:
-    "@sls-next/lambda-at-edge" "^1.5.2"
-    chokidar "^3.5.1"
-    commander "^6.0.0"
-    debounce-fn "^4.0.0"
-    fs-extra "^9.0.1"
-    jimp "^0.16.1"
-
 "next-transpile-modules@file:./packages/next-transpile-modules":
   version "6.4.0"
   dependencies:
@@ -6599,7 +6587,7 @@ react-leaflet-markercluster@^3.0.0-rc1:
 react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
   version "3.69.2-eric"
   dependencies:
-    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-5fdff419-0ae5-4ccf-b389-232ba8badd13-1617683957916/node_modules/core"
+    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-cbe27cfe-984d-4b66-b4ec-cf1b0ad06e7b-1617687384324/node_modules/core"
 
 "react-localization@file:./packages/react-localization":
   version "1.0.15"
