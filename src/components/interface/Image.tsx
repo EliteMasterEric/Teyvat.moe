@@ -4,8 +4,8 @@
  */
 
 import clsx from 'clsx';
+import NextImageBase, { ImageProps } from 'next/image';
 import React, { ReactElement, useEffect, useState, FunctionComponent } from 'react';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 // A 1 pixel by 1 pixel transparent image.
 export const BLANK_IMAGE =
@@ -58,6 +58,7 @@ export const supportsWebP = async (): Promise<boolean> => {
 type ImageExtension = 'png' | 'webp';
 
 /**
+ * @deprecated Causes major performance issues. Use NextJS image optimization instead.
  * Returns the image extension to use.
  * Built on a React state, so only valid in component body.
  * @param {boolean} block If true, useImageExtension will be null until the value is determined.
@@ -86,69 +87,13 @@ export const useImageExtension = (block = false): ImageExtension | null => {
   return value;
 };
 
-const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
-
-interface ImageProps {
-  srcPNG: any; // require(image)
-  srcWebP?: any; // require(image)
-  className?: string;
-  alt?: string; // ARIA text
-  scrollPosition?: undefined | { x: number; y: number };
-  placeholder?: ReactElement;
-}
-
-/**
- * React still has no standard solution for everything you need.
- * This component handles lazy loading, placeholdering, and more.
- * @param {*} scrollPosition Call trackWindowScroll on the higher order component to add a 'scrollPosition'
- *   property you can pass to this to reduce performance issues.
- */
-// The current placeholder is an empty span.
-export const Image: FunctionComponent<ImageProps> = ({
-  srcPNG,
-  srcWebP = null,
-  className = '',
-  alt = '',
-  scrollPosition = undefined,
-  placeholder = defaultPlaceholder,
-  ...others
-}) => {
-  return (
-    <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
-      <picture>
-        {srcWebP ? <source srcSet={srcWebP} type="image/webp" /> : null}
-        <source srcSet={srcPNG} />
-        <img {...others} alt={alt} className={clsx(className)} src={srcPNG} />
-      </picture>
-    </LazyLoadComponent>
-  );
+export const getNextImageUrl = (src: string, width: number, height: number): string => {
+  return `/_next/image?url=${src}&w=${width}&h=${height}&q=100`;
 };
 
-interface VectorImageProps {
-  srcSVG: any;
-  className?: string;
-  placeholder?: ReactElement;
-  alt?: string;
-  scrollPosition?: { x: number; y: number };
-}
+const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
 
-/**
- * React still has no standard solution for everything you need.
- * This component handles lazy loading, placeholdering, and more.
- * @param {*} scrollPosition Call trackWindowScroll on the higher order component to add a 'scrollPosition'
- *   property you can pass to this to reduce performance issues.
- */
-export const VectorImage: FunctionComponent<VectorImageProps> = ({
-  srcSVG,
-  className = '',
-  placeholder = defaultPlaceholder,
-  alt = '',
-  scrollPosition,
-  ...others
-}) => {
-  return (
-    <LazyLoadComponent scrollPosition={scrollPosition} placeholder={placeholder}>
-      <img {...others} alt={alt} className={clsx(className)} src={srcSVG} />
-    </LazyLoadComponent>
-  );
+type NextImageProps = ImageProps;
+export const NextImage: FunctionComponent<NextImageProps> = (props) => {
+  return <NextImageBase {...props} />;
 };

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import { MSFImportSite, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { MSFImportSite, MSFMarkerKey } from 'src/components/data/Element';
 import { f, t } from 'src/components/i18n/Localization';
 import { buildImportMapping } from 'src/components/preferences/ExternalImportDictionary';
 import {

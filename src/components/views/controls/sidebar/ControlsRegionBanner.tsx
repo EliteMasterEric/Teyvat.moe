@@ -9,13 +9,9 @@ import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { MapRegionKey, getMapRegion } from 'src/components/data/MapRegions';
 import { t } from 'src/components/i18n/Localization';
-import { VectorImage } from 'src/components/interface/Image';
 import { AppDispatch } from 'src/components/redux';
 import { selectIsRegionDisplayed, setMapRegion } from 'src/components/redux/slices/ui';
 import { AppState } from 'src/components/redux/types';
-import { importFromContext } from 'src/components/util';
-
-const controlsContext = require.context('../../../../images/controls', true);
 
 const useStyles = makeStyles((_theme) => ({
   banner: {
@@ -87,7 +83,7 @@ const _ControlsRegionBanner: FunctionComponent<ControlsRegionBannerProps> = ({
 
   const region = getMapRegion(regionKey);
 
-  const svgSrc = importFromContext(controlsContext, `./region-${regionKey}.svg`);
+  const svgSrc = `/images/controls/region-${regionKey}.svg`;
   const style = {
     backgroundColor: active ? '#fff' : region.color,
     borderLeft: active ? `8px solid ${region.color}` : '0px solid transparent',
@@ -101,8 +97,8 @@ const _ControlsRegionBanner: FunctionComponent<ControlsRegionBannerProps> = ({
         onClick={enableRegion}
         alignItems="center"
       >
-        <VectorImage
-          srcSVG={svgSrc}
+        <img
+          src={svgSrc}
           className={clsx(
             classes.bannerImage,
             active ? classes.bannerImageActive : classes.bannerImageInactive

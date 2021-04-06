@@ -4,53 +4,88 @@
  */
 
 import _ from 'lodash';
-import LocalizedStrings, { GlobalStrings } from 'react-localization';
+import LocalizedStrings from 'react-localization';
 
-import { LocalizedString } from 'src/components/Types';
-import { importFromContext } from 'src/components/util';
+import { LocalizedString, ValueOf } from 'src/components/Types';
+import { getKeys, importFromContext } from 'src/components/util';
 
+import languageCoreData from 'src/data/i18n/ui/_core.json';
 /**
  * The path, relative to ./data/i18n/, of the default locale code's language file.
  */
 export const DEFAULT_LOCALE_CODE = 'en';
-const DEFAULT_LOCALE_FILE = `./${DEFAULT_LOCALE_CODE}.json`;
+
+export type LanguageCode = keyof typeof languageCoreData;
+export const languageCodeList: LanguageCode[] = getKeys(languageCoreData);
+const distinguishLanguageCode = (input: any): input is LanguageCode => input in languageCodeList;
+type LanguageCoreDataValue = ValueOf<typeof languageCoreData>;
+export type LanguageFlag = LanguageCoreDataValue['flag'];
+
+/**
+ * @param source 'en'
+ * @param target 'fr'
+ * @returns 'Anglais'
+ */
+type CoreName = Omit<{ [key in LanguageCode]?: string }, 'en'> & { en: string };
+export const getLanguageName = (source: string, target: LanguageCode): string => {
+  if (!distinguishLanguageCode(source)) return 'UNKNOWN SOURCE';
+  const coreName = languageCoreData[source].name as CoreName;
+  return coreName?.[target] ?? coreName.en;
+};
+
+/**
+ * Load the English locale synchronously.
+ */
+const DEFAULT_LOCALE = require('src/data/i18n/ui/en.json');
+
+type LocalizationData = typeof DEFAULT_LOCALE;
+type LocalizationKey = keyof LocalizationData;
 
 /**
  * The require context referencing all the localization files.
  */
-const i18nContext = require.context('../../data/i18n/ui', true, /.json$/);
-
-/**
- * A list of JSON file paths, excluding the default locale.
- */
-const i18nKeys = i18nContext.keys().filter((key) => key !== DEFAULT_LOCALE_FILE);
-
-// ex [./en-US.json, en-US].
-const getLocaleFromI18nFilePath = (input: string) => {
-  const match = input.match(/\.\/([-_a-zA-Z0-9]+)\.json/);
-  return match ? match[1] : 'UNKNOWN';
-};
-
-/**
- * A map of locales and JSON data objects, including the default locale (it must be moved to the front).
- */
-const i18nData: GlobalStrings<LocalizedString> = _.fromPairs(
-  [DEFAULT_LOCALE_FILE, ...i18nKeys].map((filePath) => {
-    return [getLocaleFromI18nFilePath(filePath), importFromContext(i18nContext, filePath)];
-  })
+const i18nContext = require.context(
+  'src/data/i18n/ui',
+  true,
+  /\.json$/,
+  'lazy' // webpackMode: One bundle per language.
 );
 
-const localizedStrings = new LocalizedStrings(i18nData, {
-  pseudo: false, // Enable while testing to find unlocalized strings.
-  logsEnabled: true,
-});
+const localizedStrings = new LocalizedStrings(
+  { en: DEFAULT_LOCALE },
+  {
+    pseudo: false, // Enable while testing to find unlocalized strings.
+    logsEnabled: true,
+  }
+);
+
+const appendLanguage = (localizationData: LocalizationData, languageCode: string) => {
+  localizedStrings.setContent(
+    Object.assign({}, localizedStrings.getContent(), {
+      [languageCode]: localizationData,
+    })
+  );
+};
+
+const loadLanguage = async (languageCode: string) => {
+  const localizationData = await importFromContext(i18nContext, `./${languageCode}.json`);
+  if (localizationData != null) {
+    appendLanguage(localizationData, languageCode);
+  } else {
+    console.error(`Failed to load language ${localizationData}`);
+  }
+};
+
+const isLanguageLoaded = (languageCode: string) => {
+  return languageCode in localizedStrings.getContent();
+};
 
 /**
  * 'T'ranslate the given localization key.
  * @param {*} key The localization key.
  * @returns {String} The localized string.
  */
-export const t = (key: string, locale?: string | undefined): LocalizedString => {
+export const t = (key: LocalizationKey, locale?: string | undefined): LocalizedString => {
   // Use the current locale.
   return <LocalizedString>localizedStrings.getString(key, locale);
 };
@@ -61,7 +96,7 @@ export const t = (key: string, locale?: string | undefined): LocalizedString => 
  * @param  {...any} options Placeholder values. Can be JSX! Nice.
  * @returns {String} The formatted string.
  */
-export const f = (key: string, options: Record<string, string>): LocalizedString => {
+export const f = (key: LocalizationKey, options: Record<string, string>): LocalizedString => {
   return <LocalizedString>localizedStrings.formatString(t(key), options);
 };
 
@@ -84,18 +119,13 @@ export const getShortLocale = (): string => {
 };
 
 /**
- * Retrieve the list of available languges
- * @returns {String} A list of locale strings.
- */
-export const getAvailableLanguages = (): string[] => {
-  return localizedStrings.getAvailableLanguages();
-};
-
-/**
  * Replace the currently selected locale with the specified one.
  * @param {String} lang The new locale code.
  */
-export const overrideLocale = (lang: string): void => {
+export const overrideLocale = async (lang: string): Promise<void> => {
+  if (!isLanguageLoaded(lang)) {
+    await loadLanguage(lang);
+  }
   localizedStrings.setLanguage(lang);
 };
 

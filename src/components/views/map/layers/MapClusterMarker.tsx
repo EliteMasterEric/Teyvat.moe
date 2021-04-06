@@ -39,8 +39,6 @@ export const onClusterFunction: MapClusterFunction = (_zoom) => {
   return 24;
 };
 
-const CLUSTER_MARKER_ICON = require('~/images/icons/marker/marker_blue_bg.svg').default;
-
 const createClusterIcon = (cluster: leaflet.MarkerCluster): L.DivIcon => {
   const childMarkers = cluster.getAllChildMarkers() as LExtendedMarker[];
   const childCount = childMarkers.length;
@@ -53,7 +51,11 @@ const createClusterIcon = (cluster: leaflet.MarkerCluster): L.DivIcon => {
 
   const iconHTML = renderToString(
     <>
-      <img className="map-marker-cluster-marker" src={CLUSTER_MARKER_ICON} alt="" />
+      <img
+        className="map-marker-cluster-marker"
+        src="/images/icons/marker/marker_blue_bg.svg"
+        alt=""
+      />
       <b className="map-marker-cluster-label">
         {childCompletedCount}/{childCount}
       </b>

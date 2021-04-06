@@ -4,16 +4,16 @@
 
 import { List, ListItem, Typography, ListItemText, Collapse, makeStyles } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
-import React, { FunctionComponent, memo, useState } from 'react';
+import React, { FunctionComponent, memo, useEffect, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import { ChangelogData } from 'src/components/data/ChangelogSchema';
 
-import { getMarkerCount } from 'src/components/data/MapFeatures';
-import { getRouteCount } from 'src/components/data/MapRoutes';
 import { getChangelogData } from 'src/components/i18n/ChangelogLocalization';
-import { t, f } from 'src/components/i18n/Localization';
+import { t, f, LanguageCode } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { selectOverrideLang } from 'src/components/redux/slices/options';
+import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/ui';
 import { AppState } from 'src/components/redux/types';
 import { SafeHTML } from 'src/components/util';
 
@@ -33,6 +33,8 @@ interface ControlsSubtabChangelogBaseProps {
 }
 const mapStateToProps = (state: AppState) => ({
   lang: selectOverrideLang(state),
+  markerCount: selectMapMarkerCount(state),
+  routeCount: selectMapRouteCount(state),
 });
 const mapDispatchToProps = () => ({});
 type ControlsSubtabChangelogStateProps = ReturnType<typeof mapStateToProps>;
@@ -85,41 +87,53 @@ const ControlsSubtabChangelogVersion: FunctionComponent<ControlsSubtabChangelogV
 const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> = ({
   displayed = false,
   lang,
+  markerCount,
+  routeCount,
 }) => {
-  const changelogData = getChangelogData(lang);
+  const [changelogData, setChangelogData] = useState<ChangelogData | null>(null);
+
+  // Perform an asynchronous operation to fetch the changelog data,
+  // for the appropriate language.
+  useEffect(() => {
+    const loadChangelogData = async (langCode: LanguageCode | null) => {
+      const data = await getChangelogData(langCode);
+      setChangelogData(data);
+    };
+    loadChangelogData(lang);
+  }, [lang]);
 
   const classes = useStyles();
 
   return (
-    <TabView displayed={displayed}>
-      <BorderBox overflow="hidden auto">
-        <SafeHTML gutterBottom>
-          {f('help-description', {
-            markers: getMarkerCount().toString(),
-            routes: getRouteCount().toString(),
-          })}
-        </SafeHTML>
-        <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
-        <SafeHTML gutterBottom>{t('help-contribute')}</SafeHTML>
+    <BorderBox overflow="hidden auto" displayed={displayed}>
+      <SafeHTML gutterBottom>
+        {f('help-description', {
+          markers: (markerCount ?? '#').toString(),
+          routes: (routeCount ?? '#').toString(),
+        })}
+      </SafeHTML>
+      <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
+      <SafeHTML gutterBottom>{t('help-contribute')}</SafeHTML>
 
-        {/* Quit if data couldn't be retrieved. */}
-        {changelogData != null ? (
-          <>
-            <Typography className={classes.header}>{t('changelog')}</Typography>
-            <List dense disablePadding>
-              {changelogData.map(({ version, date, description }) => (
-                <ControlsSubtabChangelogVersion
-                  key={version}
-                  version={version}
-                  date={date}
-                  description={description}
-                />
-              ))}
-            </List>
-          </>
-        ) : null}
-      </BorderBox>
-    </TabView>
+      {/* Quit if data couldn't be retrieved. */}
+      {changelogData != null ? (
+        <>
+          <Typography className={classes.header}>{t('changelog')}</Typography>
+          <List dense disablePadding>
+            {changelogData.map(({ version, date, description }) => (
+              <ControlsSubtabChangelogVersion
+                key={version}
+                version={version}
+                date={date}
+                description={description}
+              />
+            ))}
+          </List>
+        </>
+      ) : (
+        <Typography className={classes.header}>{t('no-changelog-data-for-locale')}</Typography>
+      )}
+    </BorderBox>
   );
 };
 

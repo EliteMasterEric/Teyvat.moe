@@ -16,6 +16,8 @@ export const PREFERENCES_PERSISTENT_KEYS: string[] = [
   displayed.name,
   editor.name,
   options.name,
+  // ui stores info about the current session.
+  // notify stores temporary notifications in queue.
 ];
 export const CREDENTIALS_PERSISTENT_KEYS: string[] = [];
 

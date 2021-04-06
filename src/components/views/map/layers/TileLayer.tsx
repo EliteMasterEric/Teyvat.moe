@@ -1,12 +1,11 @@
 /* eslint-disable import/no-named-as-default-member */
 import { createTileLayerComponent, LeafletContextInterface } from '@react-leaflet/core';
-import leaflet from 'leaflet';
+import leaflet, { LeafletEventHandlerFn } from 'leaflet';
 import { FunctionComponent } from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { TileLayerProps } from 'react-leaflet';
 
-import { useImageExtension } from 'src/components/interface/Image';
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import {
   MAP_BOUNDS,
@@ -15,6 +14,7 @@ import {
   MAXIMUM_NATIVE_ZOOM,
   MAXIMUM_ZOOM,
   MINIMUM_ZOOM,
+  TILE_BLANK,
   TILE_URL,
 } from 'src/components/views/map/LayerConstants';
 
@@ -182,11 +182,18 @@ type AdvancedTileLayerParam = leaflet.TileLayerOptions & {
   url: string;
 };
 
+const onTileLayerLoad = () => {
+  console.warn('LEAFLET reports AdvancedTileLayer has loaded.');
+};
+
 const createTileLayer = (
   { url, ...options }: AdvancedTileLayerParam,
   ctx: LeafletContextInterface
 ) => {
   const instance = new AdvancedTileLayer(url, options);
+
+  instance.on('load', onTileLayerLoad);
+
   return { instance, context: { ...ctx, overlayContainer: instance } };
 };
 
@@ -211,29 +218,26 @@ const ErrorTileLayer: ErrorHandlerComponent = ({ error }) => {
   );
 };
 
-const MainTileLayer: FunctionComponent = () => {
-  // Check for WebP support.
-  const ext = useImageExtension(true);
+interface MainTileLayerProps {
+  onLoaded: LeafletEventHandlerFn;
+}
 
-  // Wait until we get confirmation of WebP support.
-  if (ext == null) {
-    console.warn('WebP support not determined, postponing');
-    return null;
-  }
-
-  const tileUrl = TILE_URL.replace('{ext}', ext);
-  console.warn(`Rendering tile layer using url '${tileUrl}'`);
+const MainTileLayer: FunctionComponent<MainTileLayerProps> = ({ onLoaded }) => {
+  console.warn(`Rendering tile layer using url '${TILE_URL}'`);
 
   return (
     <ErrorHandler errorHandler={ErrorTileLayer}>
       <AdvancedTileLayerComponent
-        url={tileUrl}
+        url={TILE_URL}
         noWrap
+        eventHandlers={{
+          load: onLoaded,
+        }}
         pane="tilePane"
         latLngOffset={MAP_LATLNG_OFFSET}
         cssOffset={MAP_CSS_OFFSET}
         bounds={MAP_BOUNDS}
-        errorTileUrl={`tiles/blank.${ext}`}
+        errorTileUrl={TILE_BLANK}
         maxZoom={MAXIMUM_ZOOM}
         minZoom={MINIMUM_ZOOM}
         maxNativeZoom={MAXIMUM_NATIVE_ZOOM}

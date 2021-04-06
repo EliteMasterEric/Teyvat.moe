@@ -3,6 +3,7 @@
  * as selected in the options menu.
  */
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { LanguageCode } from 'src/components/i18n/Localization';
 
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';
@@ -96,6 +97,7 @@ export const selectHideRoutesInEditor = (state: AppState): boolean =>
   state.options.hideRoutesInEditor;
 export const selectShowHiddenFeaturesInSummary = (state: AppState): boolean =>
   state.options.showHiddenFeaturesInSummary;
-export const selectOverrideLang = (state: AppState): string | null => state.options.overrideLang;
+export const selectOverrideLang = (state: AppState): LanguageCode | null =>
+  state.options.overrideLang;
 
 export default optionsSlice.reducer;

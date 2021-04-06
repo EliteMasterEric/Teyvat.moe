@@ -1,13 +1,4 @@
 {
-  "presets": ["@babel/preset-react"],
-  "plugins": [
-    ["@babel/plugin-proposal-optional-chaining", {}],
-    [
-      "babel-plugin-root-import",
-      {
-        "rootPathPrefix": "~",
-        "rootPathSuffix": "src"
-      }
-    ]
-  ]
+  "presets": ["next/babel"],
+  "plugins": ["lodash"]
 }

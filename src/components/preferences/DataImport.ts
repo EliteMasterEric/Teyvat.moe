@@ -13,7 +13,7 @@ import {
   MSFMarkerID,
   MSFMarkerKey,
   MSFRouteID,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { f } from 'src/components/i18n/Localization';
 import { PREFERENCES_PREFIX } from 'src/components/preferences/DataExport';
 import {

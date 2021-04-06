@@ -5,7 +5,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/Element';
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';
 import { AppState } from 'src/components/redux/types';
@@ -99,7 +99,13 @@ export const selectDisplayedRouteGroups = (state: AppState): MSFRouteGroupKey[] 
   _.keys(_.pickBy(state.displayed.routes, (value) => value)) as MSFRouteGroupKey[];
 export const selectIsFeatureDisplayed = (state: AppState, featureKey: MSFFeatureKey): boolean =>
   getRecord(state.displayed.features, featureKey, false);
-export const selectIsRouteGroupDisplayed = (state: AppState, routeKey: MSFRouteGroupKey): boolean =>
-  getRecord(state.displayed.routes, routeKey, false);
+export const selectIsRouteGroupDisplayed = (
+  state: AppState,
+  routeKey: MSFRouteGroupKey
+): boolean => {
+  console.log(state.displayed.routes);
+  console.log(routeKey);
+  return getRecord(state.displayed.routes, routeKey, false);
+};
 
 export default displayedSlice.reducer;

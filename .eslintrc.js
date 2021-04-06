@@ -111,7 +111,10 @@ module.exports = {
     'no-restricted-imports': [
       'error',
       {
-        patterns: ['.*'],
+        patterns: [
+          '.*', // No relative imports.
+          'src/components/util/*', // Import only the index Util module.
+        ],
       },
     ],
 

@@ -49,18 +49,18 @@ const _ControlsTabHelp: FunctionComponent<ControlsTabHelpProps> = ({ displayed }
   const classes = useStyles();
 
   return (
-    <TabView displayed={displayed}>
+    <>
       <TabBar
-        displayed
+        displayed={displayed}
         icons={false}
         value={helpTab}
         onChange={setHelpTab}
         tabs={TABS}
         className={classes.tabBar}
       />
-      <ControlsSubtabChangelog displayed={helpTab === 'changelog'} />
-      <ControlsSubtabHelp displayed={helpTab === 'help'} />
-    </TabView>
+      <ControlsSubtabChangelog displayed={displayed && helpTab === 'changelog'} />
+      <ControlsSubtabHelp displayed={displayed && helpTab === 'help'} />
+    </>
   );
 };
 

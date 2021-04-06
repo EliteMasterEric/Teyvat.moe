@@ -7,12 +7,11 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { MSFRouteGroupKey } from 'src/components/data/Element';
 
-import { getFilterIconURL } from 'src/components/data/FeatureIcon';
 import { getMapRouteGroup } from 'src/components/data/MapRoutes';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
-import { Image } from 'src/components/interface/Image';
+import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
 import { AppDispatch } from 'src/components/redux';
 import {
   selectIsRouteGroupDisplayed,
@@ -20,8 +19,6 @@ import {
 } from 'src/components/redux/slices/displayed';
 import { selectOverrideLang } from 'src/components/redux/slices/options';
 import { AppState } from 'src/components/redux/types';
-
-const ICON_BORDER_IMAGE = require('../../../../images/controls/filter_border.png').default;
 
 interface StyleProps {
   bgImage: string;
@@ -39,8 +36,6 @@ const useStyles = makeStyles((_theme) => ({
   },
   icon: {
     position: 'absolute',
-    width: 70,
-    height: 70,
     top: 2,
     left: 2,
   },
@@ -121,7 +116,9 @@ const _ControlsRouteButton: FunctionComponent<ControlsRouteButtonProps> = ({
   active,
   toggleRouteDisplayed,
 }) => {
-  const classes = useStyles({ bgImage: ICON_BORDER_IMAGE });
+  const classes = useStyles({
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 96, 96),
+  });
 
   const mapRoute = getMapRouteGroup(routeKey);
 
@@ -134,10 +131,11 @@ const _ControlsRouteButton: FunctionComponent<ControlsRouteButtonProps> = ({
       className={clsx(classes.routeRoot, classes.noselect, active ? classes.routeRootActive : null)}
     >
       <Box className={classes.iconBorder}>
-        <Image
+        <NextImage
+          src={`/images/icons/filter/${mapRoute.icons.filter}.png`}
           className={classes.icon}
-          srcPNG={getFilterIconURL(mapRoute.icons.filter, 'png')}
-          srcWebP={getFilterIconURL(mapRoute.icons.filter, 'webp')}
+          width={70}
+          height={70}
         />
       </Box>
       <Typography>{localizeField(mapRoute.name)}</Typography>

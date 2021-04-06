@@ -18,7 +18,7 @@ import {
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react';
 import { f, t } from 'src/components/i18n/Localization';
-import { Image } from 'src/components/interface/Image';
+import { NextImage } from 'src/components/interface/Image';
 import { applySourcemapToStackTrace, openURLInWindow } from 'src/components/util';
 import {
   ErrorHandlerComponent,
@@ -26,14 +26,7 @@ import {
 } from 'src/components/views/error/ErrorHandler';
 import { generateReportURL } from 'src/components/views/error/ErrorReport';
 
-const iconPNG = require('../../../images/brainjuice.png').default;
-const iconWEBP = require('../../../images/brainjuice.webp').default;
-
 const useStyles = makeStyles((_theme) => ({
-  icon: {
-    width: '100%',
-    height: 'auto',
-  },
   title: {
     fontSize: '1.5em',
     fontWeight: 400,
@@ -102,7 +95,13 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
       <>
         <Grid container spacing={3}>
           <Grid item xs={3} alignContent="center">
-            <Image srcPNG={iconPNG} srcWebP={iconWEBP} className={classes.icon} />
+            <NextImage
+              src="/images/brainjuice.png"
+              layout="intrinsic"
+              width={335}
+              height={302}
+              priority
+            />
           </Grid>
           <Grid item xs={9} alignItems="center" style={{ display: 'flex' }}>
             <Typography variant="h1" className={classes.title}>

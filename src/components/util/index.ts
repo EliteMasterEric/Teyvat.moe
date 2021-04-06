@@ -4,6 +4,7 @@
 import { toBase64, fromBase64 } from './base64';
 import { filterNotEmpty } from './filterFunctions';
 import { generateJSON, generatePrettyJSON, isValidJSON } from './json';
+import { getKeys } from './object';
 import { deleteRecord, getRecord, setRecord } from './record';
 import {
   applySourcemapToStackTrace,
@@ -31,14 +32,17 @@ export {
   applySourcemapToStackTrace,
   canUseDOM,
   CloneProps,
+  deleteRecord,
   filterNotEmpty,
   fromBase64,
   fromPairsToArrays,
   generateJSON,
   generatePrettyJSON,
   getApplicationVersion,
+  getKeys,
   getPreviousDailyReset,
   getPreviousMondayReset,
+  getRecord,
   getUnixTimestamp,
   getURLParams,
   hashObject,
@@ -47,12 +51,10 @@ export {
   isValidJSON,
   latLngToTile,
   openURLInWindow,
-  getRecord,
-  setRecord,
-  deleteRecord,
   reloadWindow,
   SafeHTML,
   setBrowserClipboard,
+  setRecord,
   toBase64,
   truncateFloat,
   useDebouncedState,

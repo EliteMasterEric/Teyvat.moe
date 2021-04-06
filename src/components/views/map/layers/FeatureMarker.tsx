@@ -10,11 +10,10 @@ import {
   MSFFeatureKey,
   MSFMarkerKey,
   YOUTUBE_REGEX,
-} from 'src/components/data/ElementSchema';
-import { createClusterIcon, createMapIcon } from 'src/components/data/FeatureIcon';
+} from 'src/components/data/Element';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { f, formatUnixTimestamp, t } from 'src/components/i18n/Localization';
-import { Image, useImageExtension } from 'src/components/interface/Image';
+import { NextImage } from 'src/components/interface/Image';
 import { InputSwitch } from 'src/components/interface/Input';
 import YouTubeEmbed from 'src/components/interface/YouTubeEmbed';
 import { EditorMarker } from 'src/components/preferences/EditorDataSchema';
@@ -28,6 +27,7 @@ import { selectCompletedAlpha } from 'src/components/redux/slices/options';
 import { AppState } from 'src/components/redux/types';
 import { SafeHTML } from 'src/components/util';
 import { ExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker';
+import { createClusterIcon, createMapIcon } from 'src/components/views/map/layers/FeatureIcon';
 import { copyPermalink } from 'src/components/views/PermalinkHandler';
 
 const useStyles = makeStyles((_theme) => ({
@@ -66,8 +66,7 @@ const useStyles = makeStyles((_theme) => ({
   },
   popupMediaImage: {
     margin: '4px 0 4px 0',
-    width: 192,
-    height: 192,
+    // objectFit: 'cover',
   },
 }));
 
@@ -101,7 +100,7 @@ const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExtern
     if (allowExternalMedia) {
       // Display external images in the editor,
       // since it is assumed this user submitted it.
-      return <Image srcPNG={media} className={classes.popupMediaImage} />;
+      return <img src={media} className={classes.popupMediaImage} />;
     }
 
     // Prevent displaying external images for security reasons.
@@ -110,10 +109,11 @@ const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExtern
 
   // Else, use an image from public/comments.
   return (
-    <Image
+    <NextImage
       className={classes.popupMediaImage}
-      srcPNG={`/comments/${media}.png`}
-      srcWebP={`/comments/${media}.webp`}
+      src={`/images/comments/${media}.png`}
+      width={192}
+      height={192}
     />
   );
 };
@@ -173,12 +173,6 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   // CSS classes.
   const classes = useStyles();
 
-  // WebP or PNG, based on support.
-  const ext = useImageExtension(true);
-
-  // Don't render the marker until we know whether to use WebP for the image or not.
-  if (!ext) return null;
-
   let svg = false;
   let clusterIconName = '';
 
@@ -201,14 +195,14 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
     ...(completed ? icons?.done : icons?.base),
     marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
     done: !!completed,
-    ext: svg ? 'svg' : ext,
+    ext: svg ? 'svg' : 'png',
     key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
   });
 
   // Build the cluster icon for the marker. Also relies on completion status.
   const clusterIcon = createClusterIcon({
     marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
-    ext: svg ? 'svg' : ext,
+    ext: svg ? 'svg' : 'png',
     key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
     clusterIcon: clusterIconName,
   });

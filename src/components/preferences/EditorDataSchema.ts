@@ -11,7 +11,7 @@ import {
   MSFRouteID,
   MSFRouteText,
   MSFSchemaVersion,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 

@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { f, t } from 'src/components/i18n/Localization';
+import { f, LanguageCode, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { InputSlider } from 'src/components/interface/Input';
 import { TabView } from 'src/components/interface/Tabs';
@@ -95,7 +95,7 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
   setShowHiddenFeaturesInSummary: (enabled: boolean) =>
     dispatch(setShowHiddenFeaturesInSummary(enabled)),
   setEditorDebugEnabled: (enabled: boolean) => dispatch(setEditorDebugEnabled(enabled)),
-  setOverrideLang: (lang: string) => dispatch(setOverrideLang(lang)),
+  setOverrideLang: (lang: LanguageCode) => dispatch(setOverrideLang(lang)),
 
   clearState: () => dispatch(clearPreferences()),
 });

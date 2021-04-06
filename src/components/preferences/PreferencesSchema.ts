@@ -4,7 +4,7 @@ import {
   MSFMarkerID,
   MSFMarkerKey,
   MSFRouteGroupKey,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import {
@@ -16,6 +16,7 @@ import {
   LegacyEditorRoute,
 } from 'src/components/preferences/EditorDataSchema';
 import { Notification } from 'src/components/redux/slices/notify';
+import { LanguageCode } from '../i18n/Localization';
 
 export const PREFERENCES_VERSION = 'GM_007';
 
@@ -30,7 +31,7 @@ export interface GM_001 {
     regionLabelsEnabled: boolean;
     hideFeaturesInEditor: boolean;
     hideRoutesInEditor: boolean;
-    overrideLang: string | null;
+    overrideLang: LanguageCode | null;
   };
   displayed: {
     features: Record<MSFFeatureKey, boolean>;

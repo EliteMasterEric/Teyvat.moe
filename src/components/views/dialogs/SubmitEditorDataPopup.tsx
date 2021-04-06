@@ -19,7 +19,7 @@ import {
 import _ from 'lodash';
 import React, { useState, cloneElement, FunctionComponent, ReactElement } from 'react';
 
-import { MSFFilterIcon, MSFSchemaVersion } from 'src/components/data/ElementSchema';
+import { MSFFilterIcon, MSFSchemaVersion } from 'src/components/data/Element';
 import { getMapCategory, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
 import { getMapRegion, MapRegionKey, MapRegionKeys } from 'src/components/data/MapRegions';
 import { t } from 'src/components/i18n/Localization';

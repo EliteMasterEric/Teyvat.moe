@@ -2,15 +2,16 @@
  * Handles the section of the state that stores the transient state
  * of the user interface, such as current tab or map position.
  */
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import _ from 'lodash';
+import { PayloadAction, createSlice, Slice } from '@reduxjs/toolkit';
 
-import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
+import { MSFMarkerID, MSFRouteID } from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
+import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';
 import { AppState } from 'src/components/redux/types';
 import { MapPosition, UIControlsTab } from 'src/components/Types';
-import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/views/map/LayerConstants';
 
 export type UIState = {
   tab: UIControlsTab;
@@ -37,6 +38,27 @@ export type UIState = {
    * Whether to show the editor debug window.
    */
   editorDebugEnabled: boolean;
+
+  mapStats: {
+    markerCount: number | null;
+    routeCount: number | null;
+  };
+
+  permalinkId: string | null;
+
+  /**
+   * The status of different parts of the UI.
+   */
+  loading: {
+    initializedLoading: boolean;
+
+    loadMapFeatures: boolean;
+    loadMapRoutes: boolean;
+    loadLeafletTiles: boolean;
+    countMapFeatures: boolean;
+    countMapRoutes: boolean;
+    handlePermalinks: boolean;
+  };
 };
 
 // Define the initial state
@@ -56,7 +78,27 @@ export const initialState: UIState = {
   },
   editorEnabled: false,
   editorDebugEnabled: false,
+
+  mapStats: {
+    markerCount: null,
+    routeCount: null,
+  },
+
+  permalinkId: null,
+
+  loading: {
+    initializedLoading: false,
+
+    loadMapFeatures: false,
+    loadMapRoutes: false,
+    loadLeafletTiles: false,
+    countMapFeatures: false,
+    countMapRoutes: false,
+    handlePermalinks: true, // Set to false later.
+  },
 };
+
+export type SetLoadingAction = Partial<UIState['loading']>;
 
 // Define a type using that initial state.
 
@@ -107,6 +149,30 @@ export const uiSlice = createSlice({
     toggleEditorDebugEnabled: (state) => {
       state.editorDebugEnabled = !state.editorEnabled;
     },
+    setLoading: {
+      prepare: (key: keyof UIState['loading'], status: boolean) => {
+        const payload = { [key]: status };
+        return { payload };
+      },
+      reducer: (state, action: PayloadAction<SetLoadingAction>) => {
+        state.loading = {
+          ...state.loading,
+          ...action.payload,
+        };
+      },
+    },
+    setMapMarkerCount: (state, action: PayloadAction<number>) => {
+      state.mapStats.markerCount = action.payload;
+      state.loading.countMapFeatures = true;
+    },
+    setMapRouteCount: (state, action: PayloadAction<number>) => {
+      state.mapStats.routeCount = action.payload;
+      state.loading.countMapRoutes = true;
+    },
+    setPermalinkId: (state, action: PayloadAction<string>) => {
+      state.permalinkId = action.payload;
+      state.loading.handlePermalinks = false;
+    },
   },
   extraReducers: {
     [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
@@ -135,6 +201,10 @@ export const {
   toggleEditorEnabled,
   setEditorDebugEnabled,
   toggleEditorDebugEnabled,
+  setLoading,
+  setMapMarkerCount,
+  setMapRouteCount,
+  setPermalinkId,
 } = uiSlice.actions;
 
 /**
@@ -163,5 +233,17 @@ export const selectIsRouteHighlighted = (state: AppState, routeID: MSFRouteID): 
 export const selectMapPosition = (state: AppState): MapPosition => state.ui.mapPosition;
 export const selectEditorEnabled = (state: AppState): boolean => state.ui.editorEnabled;
 export const selectEditorDebugEnabled = (state: AppState): boolean => state.ui.editorDebugEnabled;
+export const selectLoading = (state: AppState, key: keyof UIState['loading']): boolean =>
+  state.ui.loading?.[key] ?? true;
+/**
+ * Returns true if NONE of the ui.loading values are false.
+ * @returns
+ */
+export const selectFullyLoaded = (state: AppState): boolean =>
+  _.values(state.ui.loading).every((v) => v);
+export const selectMapMarkerCount = (state: AppState): number | null =>
+  state.ui.mapStats.markerCount;
+export const selectMapRouteCount = (state: AppState): number | null => state.ui.mapStats.routeCount;
+export const selectPermalinkID = (state: AppState): string | null => state.ui.permalinkId;
 
 export default uiSlice.reducer;

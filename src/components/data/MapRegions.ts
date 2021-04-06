@@ -16,4 +16,4 @@ export const getMapRegion = (key: MapRegionKey): MapRegion => {
   return result;
 };
 export const MapRegionKeys = _.keys(MapRegionRawData) as MapRegionKey[];
-export const isRegionKey = (value: string): boolean => value in MapRegionRawData;
+export const isRegionKey = (value: string): value is MapRegionKey => value in MapRegionRawData;

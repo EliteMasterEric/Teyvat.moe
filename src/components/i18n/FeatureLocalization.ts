@@ -6,11 +6,13 @@
 
 import _ from 'lodash';
 
-import { MSFLocalizedField, MSFLocalizedString } from 'src/components/data/ElementSchema';
+import { MSFLocalizedField, MSFLocalizedString } from 'src/components/data/Element';
 import {
   DEFAULT_LOCALE_CODE,
-  getAvailableLanguages,
+  getLanguageName,
   getLocale,
+  LanguageCode,
+  languageCodeList,
   t,
 } from 'src/components/i18n/Localization';
 import { LocalizedString } from 'src/components/Types';
@@ -37,14 +39,8 @@ export const localizeField = (field: MSFLocalizedField | undefined): MSFLocalize
   return <MSFLocalizedString>'';
 };
 
-let languageOptions: { value: string; label: LocalizedString }[];
-export const getLanguageOptions = (): typeof languageOptions => {
-  if (languageOptions != null) return languageOptions;
-
-  // Generate the list of language options.
-  languageOptions = getAvailableLanguages().map((localeCode) => {
-    return { value: localeCode, label: t('language', localeCode) };
+export const getLanguageOptions = (source: string) => {
+  return languageCodeList.map((lang) => {
+    return { value: lang, label: getLanguageName(source, lang) };
   });
-
-  return languageOptions;
 };

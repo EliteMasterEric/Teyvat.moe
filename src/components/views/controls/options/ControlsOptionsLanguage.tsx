@@ -7,10 +7,10 @@ import { makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
 import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import Flag from 'react-world-flags';
 
 import { getLanguageOptions } from 'src/components/i18n/FeatureLocalization';
-import { getShortLocale, t } from 'src/components/i18n/Localization';
+import { getShortLocale, LanguageCode, t } from 'src/components/i18n/Localization';
+import { getLanguageFlag } from 'src/components/i18n/Flags';
 import BorderBox from 'src/components/interface/BorderBox';
 import { AppDispatch } from 'src/components/redux';
 import { selectOverrideLang, setOverrideLang } from 'src/components/redux/slices/options';
@@ -26,45 +26,11 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-/**
- * Renders the current value of the Language.
- * @param {*} value The locale code.
- * @param {*} label The locale name.
- * @param {*} context 'menu' or 'value'
- * @param {*} inputValue
- * @param {*} selectValue
- */
-const FormatFlag = ({ value }: { value: string }) => {
-  const classes = useStyles();
-
-  // Flag overrides.
-  let flagCode = value;
-  switch (flagCode) {
-    case 'en':
-      // 'en' should display the United States flag.
-      flagCode = 'us';
-      break;
-    case 'ko':
-      // 'ko' should display the South Korean flag.
-      flagCode = 'kr';
-      break;
-    case 'zh':
-      // 'zh' should display the Chinese flag.
-      flagCode = 'cn';
-      break;
-    default:
-      // No override.
-      break;
-  }
-
-  return <Flag code={flagCode} height={16} width={30} className={classes.flag} />;
-};
-
 const mapStateToProps = (state: AppState) => ({
   overrideLang: selectOverrideLang(state),
 });
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setOverrideLang: (lang: string) => dispatch(setOverrideLang(lang)),
+  setOverrideLang: (lang: LanguageCode) => dispatch(setOverrideLang(lang)),
 });
 type ControlsOptionsLanguageStateProps = ReturnType<typeof mapStateToProps>;
 type ControlsOptionsLanguageDispatchProps = ReturnType<typeof mapDispatchToProps>;
@@ -83,11 +49,15 @@ const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> 
 }) => {
   const classes = useStyles();
 
-  const langOptions = getLanguageOptions();
   const currentLangCode = overrideLang !== null ? overrideLang : getShortLocale();
+  const langOptions = getLanguageOptions(currentLangCode);
 
   const onLangChange: SelectInputProps['onChange'] = (event) => {
-    if (typeof event.target.value === 'string') setOverrideLang(event.target.value);
+    const distinguish = (value: any): value is LanguageCode => typeof value === 'string';
+    const langCode = event.target.value;
+    if (!distinguish(langCode)) return;
+
+    setOverrideLang(langCode);
   };
 
   return (
@@ -96,7 +66,7 @@ const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> 
       <Select value={currentLangCode} onChange={onLangChange}>
         {langOptions.map((lang) => (
           <MenuItem key={lang.value} value={lang.value}>
-            <FormatFlag value={lang.value} />
+            <img src={getLanguageFlag(lang.value)} />
             {lang.label}
           </MenuItem>
         ))}

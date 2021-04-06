@@ -12,7 +12,7 @@ import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureKey } from 'src/components/data/Element';
 import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
 import { selectEditorFeatureData } from 'src/components/redux/slices/editor';
 import { selectEditorEnabled } from 'src/components/redux/slices/ui';

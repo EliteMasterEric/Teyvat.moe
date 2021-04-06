@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
-import { MSFImportKey, MSFImportSite, MSFMarkerKey } from 'src/components/data/ElementSchema';
-import { getMapFeature, MapFeatureKeys } from 'src/components/data/MapFeatures';
+import { MSFImportKey, MSFImportSite, MSFMarkerKey } from 'src/components/data/Element';
+import { getMapFeature, getMapFeatureKeys } from 'src/components/data/MapFeatures';
 import { filterNotEmpty, fromPairsToArrays } from 'src/components/util';
 
 /**
@@ -12,7 +12,7 @@ import { filterNotEmpty, fromPairsToArrays } from 'src/components/util';
  */
 export const buildImportMapping = (importKey: MSFImportSite): { [key: string]: MSFMarkerKey[] } => {
   // Build mappings of keys to values, ignoring empty entries.
-  const markersByFeature = MapFeatureKeys.map((featureKey) => {
+  const markersByFeature = getMapFeatureKeys().map((featureKey) => {
     return getMapFeature(featureKey)
       .data.map((marker) => {
         const entry: [MSFMarkerKey, MSFImportKey[] | null] = [
