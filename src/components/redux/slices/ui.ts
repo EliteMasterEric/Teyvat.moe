@@ -3,9 +3,9 @@
  * of the user interface, such as current tab or map position.
  */
 import _ from 'lodash';
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice, Slice } from '@reduxjs/toolkit';
 
-import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
+import { MSFMarkerID, MSFRouteID } from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { MapRegionKey } from 'src/components/data/MapRegions';

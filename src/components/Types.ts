@@ -15,6 +15,8 @@ export type Mutable<T> = { -readonly [P in keyof T]: T[P] };
 
 export type OpaqueKey<K extends string> = `~~OPAQUE:${K}${string}`;
 
+export type ValueOf<T> = T[keyof T];
+
 /**
  * Note these other utility types:
  * Partial<T>: Creates a type that makes all the properties of the object optional.

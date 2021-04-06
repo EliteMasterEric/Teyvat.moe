@@ -5,7 +5,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFMarkerID, MSFRouteID } from 'src/components/data/ElementSchema';
+import { MSFMarkerID, MSFRouteID } from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import { EditorMarker, EditorRoute } from 'src/components/preferences/EditorDataSchema';

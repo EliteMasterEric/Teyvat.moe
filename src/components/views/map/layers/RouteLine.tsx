@@ -5,7 +5,7 @@ import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';
 import TextPath from 'react-leaflet-textpath';
 
-import { YOUTUBE_REGEX } from 'src/components/data/ElementSchema';
+import { YOUTUBE_REGEX } from 'src/components/data/Element';
 import { DEFAULT_ROUTE_COLOR, DEFAULT_ROUTE_TEXT } from 'src/components/data/MapRoutes';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { f, t } from 'src/components/i18n/Localization';
@@ -133,14 +133,17 @@ const RouteLine: FunctionComponent<RouteLineProps> = ({
 
   return (
     <TextPath
-      // Attributes passed to the parent Polyline.
+      // Options passed to the parent Polyline.
+      pathOptions={{
+        color: route.routeColor ?? DEFAULT_ROUTE_COLOR,
+      }}
       eventHandlers={eventHandlers}
       positions={route.coordinates}
       // Attributes passed to TextPath.setText.
       text={route.routeText ?? DEFAULT_ROUTE_TEXT}
       repeat
-      // id={route.id}
       attributes={{
+        // Attributes to apply to the text.
         dy: '6',
         fill: route.routeColor ?? DEFAULT_ROUTE_COLOR,
         class: classes.mapRouteLineText,

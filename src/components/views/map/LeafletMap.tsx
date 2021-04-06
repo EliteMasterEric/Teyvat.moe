@@ -33,6 +33,7 @@ const useStyles = makeStyles((_theme) => ({
     left: 0,
     width: '100vw',
     height: '100vh',
+    zIndex: 0,
   },
 }));
 
@@ -101,7 +102,7 @@ const LeafletMap: FunctionComponent = ({}) => {
         }
 
         return (
-          <ErrorHandler key={`Route:${key}`} errorHandler={ErrorLayer}>
+          <ErrorHandler key={`route:${key}`} errorHandler={ErrorLayer}>
             <RouteLayer routeKey={key} routeGroup={route} />
           </ErrorHandler>
         );

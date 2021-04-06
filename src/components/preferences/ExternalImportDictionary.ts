@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import { MSFImportKey, MSFImportSite, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { MSFImportKey, MSFImportSite, MSFMarkerKey } from 'src/components/data/Element';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/MapFeatures';
 import { filterNotEmpty, fromPairsToArrays } from 'src/components/util';
 

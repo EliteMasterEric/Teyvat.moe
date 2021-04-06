@@ -2,12 +2,17 @@
  * Contains data for map feature loading and validation.
  */
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
-import _ from 'lodash';
-import { A } from 'ts-toolbelt';
-
-import { MapCategoryKey } from 'src/components/data/MapCategories';
-import { MapRegionKey, MapRegionKeys } from 'src/components/data/MapRegions';
+import { MapRegionKeys } from 'src/components/data/MapRegions';
 import { hashObject, isDev } from 'src/components/util';
+import _ from 'lodash';
+import {
+  clusterEnum,
+  MSFFeature,
+  MSFRouteGroup,
+  MSF_SCHEMA_VERSION,
+  respawnEnum,
+  YOUTUBE_REGEX,
+} from './Element';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {
   abortEarly: true, // Stop validation at the first error.
@@ -19,18 +24,20 @@ export const VALIDATION_OPTIONS: ValidationOptions = {
   noDefaults: true, // When true, don't insert default values into the validated object.
 };
 
-// A number used to indicate version changes.
-// Version changes are only needed for breaking changes, like restructuring,
-// not for new options that can be given optional defaults.
-export const MSF_SCHEMA_VERSION = 2;
-export type MSFSchemaVersion = A.Type<2, 'MSFSchemaVersion'>;
+/**
+ * If VALIDATE_HASHES is true, the hash of each marker's coordinates will be calculated on load.
+ * Set this to true to validate features before publishing.
+ * Set this to false to improve performance.
+ */
+const VALIDATE_HASHES = isDev();
 
 /**
- * A regular expression which validates whether a string is a link to a YouTube video.
- * If there is a match, the first capture group represents the video ID (?v=<ID>).
+ * An object of language codes.
+ * English is always mandatory. Translations are optional.
  */
-export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([-_a-zA-Z0-9]+)(?:&.+)?$/;
-
+const localizedField = Joi.object({
+  en: Joi.string().required(),
+}).pattern(/[a-z]{2}/, Joi.string().required());
 /**
  * A path to an image in the comments folder.
  * Must start with a game region.
@@ -42,58 +49,14 @@ const imagePath = Joi.string().regex(
  * A URL linking to a YouTube video.
  */
 const youtubeUrl = Joi.string().regex(YOUTUBE_REGEX);
-
-/**
- * An object of language codes.
- * English is always mandatory. Translations are optional.
- */
-const localizedField = Joi.object({
-  en: Joi.string().required(),
-}).pattern(/[a-z]{2}/, Joi.string().required());
-export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
-export type MSFLocalizedField = {
-  en: MSFLocalizedString;
-  [key: string]: MSFLocalizedString;
-};
-
-/**
- * The type representing how markers should be clustered at far zoom levels.
- */
-const clusterEnum = ['off', 'on', 'variable'];
-export type MSFCluster = 'off' | 'on' | 'variable';
-/**
- * The type representing when a marker will be able to be collected again.
- */
-const respawnEnum = ['none', 'boss'];
-export type MSFRespawn = 'none' | 'boss' | number;
 /**
  * The type representing a coordinate of a marker or route vector.
  */
 const coordinate = Joi.array().items(Joi.number().precision(5).required()).length(2);
-export type MSFCoordinate = [number, number];
 /**
  * The type representing a set of coordinates for a route.
  */
 const coordinates = Joi.array().items(coordinate.required()).required();
-
-export type MSFPopupTitle = A.Type<MSFLocalizedField, 'MSFPopupTitle'>;
-export type MSFPopupContent = A.Type<MSFLocalizedField, 'MSFPopupContent'>;
-
-export type MSFImportKey = A.Type<string, 'MSFImportKey'>;
-export type MSFImportSite = 'yuanshen' | 'mapgenie' | 'appsample' | 'gm_legacy' | 'gm_msfv2';
-
-export type MSFMarkerID = A.Type<string, 'MSFMarkerID'>;
-export type MSFMarkerKey = A.Type<string, 'MSFMarkerKey'>;
-export type MSFRouteID = A.Type<string, 'MSFRouteID'>;
-export type MSFRouteKey = A.Type<string, 'MSFRouteKey'>;
-
-/**
- * If VALIDATE_HASHES is true, the hash of each marker's coordinates will be calculated on load.
- * Set this to true to validate features before publishing.
- * Set this to false to improve performance.
- */
-const VALIDATE_HASHES = isDev();
-
 /**
  * Validates that the input is a SHA1 hash.
  */
@@ -107,120 +70,6 @@ const msfId = Joi.string().valid(
     adjust: (coords) => hashObject(coords, {}),
   })
 );
-
-/**
- * This schema represents a marker in a feature.
- */
-const MSF_MARKER_SCHEMA = Joi.object({
-  id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
-  coordinates: coordinate.required(),
-
-  // Add the ability to correlate this marker with other markers.
-  // Note that this is a many-to-many relationship.
-  importIds: Joi.object({
-    // https://yuanshen.site/
-    yuanshen: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[0-9]+_[0-9]+/)
-          .required()
-      )
-      .optional(),
-    // https://genshin-impact-map.appsample.com/#/
-    appsample: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[0-9]+/)
-          .required()
-      )
-      .optional(),
-    // https://mapgenie.io/genshin-impact/maps/teyvat
-    mapgenie: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[0-9]+/)
-          .allow('')
-        // .required()
-      )
-      .optional(),
-    // GenshinMap before Marker Storage Format added.
-    // Used to migrate data over.
-    gm_legacy: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[a-zA-Z]+\/[0-9]+/)
-          .required()
-      )
-      .optional(),
-    // GenshinMap after Marker Storage Format added.
-    // Used to allow for renaming of markers.
-    gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
-  }).optional(),
-
-  popupTitle: localizedField.optional(),
-  popupContent: localizedField.optional(),
-  popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
-
-  popupAttribution: Joi.string().default('Unknown'),
-});
-export interface MSFMarker {
-  id: MSFMarkerID;
-  coordinates: MSFCoordinate;
-  importIds?: Record<MSFImportSite, MSFImportKey[]>;
-
-  popupTitle?: MSFPopupTitle;
-  popupContent?: MSFPopupContent;
-  popupMedia?: string;
-
-  popupAttribution?: string;
-}
-
-/**
- * This schema represents a route in a route group.
- */
-const MSF_ROUTE_SCHEMA = Joi.object({
-  coordinates: coordinates.required(),
-  id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
-
-  routeColor: Joi.string().optional().default('#d32f2f'),
-  routeText: Joi.string().optional().default('  ►  '),
-
-  importIds: {
-    gm_legacy: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[a-zA-Z]+\/[0-9]+/)
-          .required()
-      )
-      .optional(),
-    gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
-  },
-
-  popupTitle: localizedField.optional(),
-  popupContent: localizedField.optional(),
-  popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
-
-  popupAttribution: Joi.string().default('Unknown'),
-});
-export type MSFRouteColor = A.Type<string, 'MSFRouteColor'>;
-export type MSFRouteText = A.Type<string, 'MSFRouteText'>;
-export interface MSFRoute {
-  id: MSFRouteID;
-  coordinates: MSFCoordinate[];
-  importIds?: {
-    gm_legacy?: MSFImportKey[];
-    gm_msfv2?: MSFImportKey[];
-  };
-
-  routeColor?: MSFRouteColor;
-  routeText?: MSFRouteText;
-
-  popupTitle?: MSFPopupTitle;
-  popupContent?: MSFPopupContent;
-  popupMedia?: string;
-
-  popupAttribution?: string;
-}
 
 /**
  * This schema represents a marker's icon.
@@ -280,23 +129,90 @@ const MSF_MARKER_ICON_SCHEMA = Joi.object({
       otherwise: Joi.forbidden(),
     }), // Optional but allowed if marker = false. Otherwise forbidden.
 });
-type MSFMarkerIcon =
-  | {
-      marker: true;
-      key?: string;
-    }
-  | {
-      marker: false;
-      key: string;
-      svg?: boolean;
-      iconSize: [number, number];
-      iconAnchor: [number, number];
-      shadowSize: [number, number];
-      shadowAnchor: [number, number];
-      popupAnchor: [number, number];
-      className?: string;
-      clusterIcon?: string;
-    };
+
+/**
+ * This schema represents a route in a route group.
+ */
+const MSF_ROUTE_SCHEMA = Joi.object({
+  coordinates: coordinates.required(),
+  id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
+
+  routeColor: Joi.string().optional().default('#d32f2f'),
+  routeText: Joi.string().optional().default('  ►  '),
+
+  importIds: {
+    gm_legacy: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[a-zA-Z]+\/[0-9]+/)
+          .required()
+      )
+      .optional(),
+    gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
+  },
+
+  popupTitle: localizedField.optional(),
+  popupContent: localizedField.optional(),
+  popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
+
+  popupAttribution: Joi.string().default('Unknown'),
+});
+
+/**
+ * This schema represents a marker in a feature.
+ */
+const MSF_MARKER_SCHEMA = Joi.object({
+  id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
+  coordinates: coordinate.required(),
+
+  // Add the ability to correlate this marker with other markers.
+  // Note that this is a many-to-many relationship.
+  importIds: Joi.object({
+    // https://yuanshen.site/
+    yuanshen: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[0-9]+_[0-9]+/)
+          .required()
+      )
+      .optional(),
+    // https://genshin-impact-map.appsample.com/#/
+    appsample: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[0-9]+/)
+          .required()
+      )
+      .optional(),
+    // https://mapgenie.io/genshin-impact/maps/teyvat
+    mapgenie: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[0-9]+/)
+          .allow('')
+        // .required()
+      )
+      .optional(),
+    // GenshinMap before Marker Storage Format added.
+    // Used to migrate data over.
+    gm_legacy: Joi.array()
+      .items(
+        Joi.string()
+          .regex(/[a-zA-Z]+\/[0-9]+/)
+          .required()
+      )
+      .optional(),
+    // GenshinMap after Marker Storage Format added.
+    // Used to allow for renaming of markers.
+    gm_msfv2: Joi.array().items(sha1Hash.required()).optional(),
+  }).optional(),
+
+  popupTitle: localizedField.optional(),
+  popupContent: localizedField.optional(),
+  popupMedia: Joi.alternatives(imagePath.allow(''), youtubeUrl).optional(),
+
+  popupAttribution: Joi.string().default('Unknown'),
+});
 
 /**
  * This schema represents a feature containing markers.
@@ -336,31 +252,6 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
     .items(MSF_MARKER_SCHEMA) // Array can be empty.
     .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
-export type MSFFilterIcon = A.Type<string, 'MSFFilterIcon'>;
-export interface MSFFeature {
-  format: MSFSchemaVersion;
-  enabled?: boolean;
-
-  name: MSFLocalizedField;
-  description: MSFLocalizedField;
-
-  cluster: MSFCluster;
-  respawn: MSFRespawn;
-
-  icons: {
-    filter: MSFFilterIcon;
-    base: MSFMarkerIcon;
-    done: MSFMarkerIcon;
-  };
-
-  data: Array<MSFMarker>;
-}
-export type MSFFeatureKey = A.Type<string, 'MSFFeatureKey'>;
-export interface MSFFeatureExtended extends MSFFeature {
-  key: MSFFeatureKey;
-  region: MapRegionKey;
-  category: MapCategoryKey;
-}
 
 /**
  * Performs schema validation on an MSF feature.
@@ -410,25 +301,6 @@ export const MSF_ROUTES_SCHEMA = Joi.object({
     .items(MSF_ROUTE_SCHEMA) // Array can be empty.
     .unique((a, b) => a.id === b.id), // IDs must be unique.
 });
-export interface MSFRouteGroup {
-  format: MSFSchemaVersion;
-  enabled?: boolean;
-
-  name: MSFLocalizedField;
-  description: MSFLocalizedField;
-
-  icons: {
-    filter: A.Type<string, 'MSFFilterIcon'>;
-  };
-
-  data: Array<MSFRoute>;
-}
-export type MSFRouteGroupKey = A.Type<string, 'MSFRouteGroupKey'>;
-export interface MSFRouteGroupExtended extends MSFRouteGroup {
-  key: MSFRouteGroupKey;
-  region: MapRegionKey;
-  category: MapCategoryKey;
-}
 
 /**
  * Performs schema validation on an MSF route group.

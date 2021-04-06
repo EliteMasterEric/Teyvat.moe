@@ -14,7 +14,7 @@ import {
   MSFPopupContent,
   MSFPopupTitle,
   MSFRouteID,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { DEFAULT_ROUTE_COLOR, DEFAULT_ROUTE_TEXT } from 'src/components/data/MapRoutes';
 import { EditorMarker, EditorRoute } from 'src/components/preferences/EditorDataSchema';
 import { AppDispatch } from 'src/components/redux';

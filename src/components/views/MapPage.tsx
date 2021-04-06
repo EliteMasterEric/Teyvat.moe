@@ -1,11 +1,13 @@
+import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import React, { FunctionComponent, useEffect } from 'react';
+import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import FullScreenLoading from 'src/components/views/loading/FullScreenLoading';
 import PermalinkHandler from 'src/components/views/PermalinkHandler';
 import { selectFullyLoaded } from '../redux/slices/ui';
 import { AppState } from '../redux/types';
+import { t } from '../i18n/Localization';
 
 const Controls = dynamic(
   () =>
@@ -50,6 +52,10 @@ const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
 
   return (
     <>
+      <Head>
+        {/* The title of the webpage as displayed in the tab name. */}
+        <title>{t('page-title-full')}</title>
+      </Head>
       <FullScreenLoading displayed={!fullyLoaded} />
       <LeafletMap />
       <Controls />

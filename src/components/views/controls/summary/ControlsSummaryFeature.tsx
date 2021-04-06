@@ -9,7 +9,7 @@ import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { getNextImageUrl, NextImage } from 'src/components/interface/Image';

@@ -46,9 +46,12 @@ export const TabView: FunctionComponent<TabViewProps> = ({
   grow = false,
   ...other
 }) => {
+  if (!displayed) return null;
+
   return (
     <Box
-      display={displayed ? 'flex' : 'none'}
+      // display={displayed ? 'flex' : 'none'}
+      display="flex"
       flexDirection="column"
       flexGrow={1}
       height={grow ? 'auto' : '100%'}

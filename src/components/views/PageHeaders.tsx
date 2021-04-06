@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 // import { Helmet } from 'react-helmet-async'; // Thread safe variant prevents warnings.
 // import Head from 'next/head';
 
-import { t } from 'src/components/i18n/Localization';
 import Theme from 'src/components/Theme';
 import { isDev } from 'src/components/util';
 
@@ -81,8 +80,6 @@ const PageHeadersNext: FunctionComponent = () => {
 
   return (
     <>
-      {/* The title of the webpage as displayed in the tab name. */}
-      <title>{t('page-title-full')}</title>
       {/* DISPLAY */}
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />

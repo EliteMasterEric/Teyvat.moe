@@ -7,10 +7,9 @@
 import _ from 'lodash';
 
 import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
-import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/Element';
 import { listFeatureFiles, loadFeature } from 'src/components/data/FeatureData';
 import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
-import { filterNotEmpty } from 'src/components/util';
 import { setLoadingFeatures } from '../redux/dispatch';
 
 /**

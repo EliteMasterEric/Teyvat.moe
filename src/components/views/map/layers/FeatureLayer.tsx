@@ -9,7 +9,7 @@ import _ from 'lodash';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
 import { selectHideFeaturesInEditor } from 'src/components/redux/slices/options';

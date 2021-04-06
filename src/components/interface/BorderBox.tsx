@@ -45,10 +45,13 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
 }) => {
   const classes = useStyles({ img: src != null ? src : DEFAULT_IMAGE });
 
+  if (!displayed) return null;
+
   return (
     <Box
       className={clsx(classes.borderBox, className)}
-      display={displayed ? 'flex' : 'none'}
+      // display={displayed ? 'flex' : 'none'}
+      display="flex"
       flexDirection={direction}
       flexGrow={grow ? '1' : '0'}
       flexWrap={wrap ? 'wrap' : 'none'}

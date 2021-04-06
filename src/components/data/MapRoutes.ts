@@ -5,7 +5,7 @@ import {
   MSFRouteGroupExtended,
   MSFRouteGroupKey,
   MSFRouteText,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
 import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
 import { listRouteFiles, loadRoute } from 'src/components/data/RouteData';

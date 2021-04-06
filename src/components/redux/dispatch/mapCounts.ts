@@ -11,9 +11,7 @@ const performMapMarkersCount = (): number => {
 };
 
 export const countMapMarkers = () => {
-  console.warn('Counting map markers...');
   const count = performMapMarkersCount();
-  console.warn(`Done! Found ${count}.`);
   dispatchAction(setMapMarkerCount(count));
 };
 
@@ -25,8 +23,6 @@ const performMapRoutesCount = (): number => {
 };
 
 export const countMapRoutes = () => {
-  console.warn('Counting map markers...');
   const count = performMapRoutesCount();
-  console.warn(`Done! Found ${count}.`);
-  dispatchAction(setMapRouteCount());
+  dispatchAction(setMapRouteCount(count));
 };

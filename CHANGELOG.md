@@ -1050,17 +1050,19 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 -   Remove Geoculus (TEST) feature.
 -   Fixed a bug where markers would display a PNG image instead of a WebP image.
 
-# 0.12.0 TypeScript Overhaul
+# 0.12.1 Major Backend Overhauls
 
+- This update took over a month to get out, but for good reason. I've been working on a lot of sweeping changes to optimize the site and the dev build was not functional for large swaths of that time.
 -   Migrated the entire project to TypeScript, and refactored a lot of code to account for issues.
     -   This took like a month to do but I think it was worthwhile. Every place where Typescript validates input values means fewer bugs and improved stability.
     -   Hopefully I can go another couple months without refactoring the entire app again.
+-   Migrated the entire project to NextJS.
+    -   This provides benefits such as automatic WebP optimization and improved Webpack bundling (which allows for asynchronous loading of language data!).
+    -   Split feature and route JSON data into two bundles so they are fetched only after page load.
+    -   Split non-English language and changelog JSON data into their own JSON data bundles so they are only fetched when the client requests them.
+    -   Split dev-only validation into a separate bundle such that it isn't loaded in production.
+    - Switched from react-world-flags to svg-country-flags and reworked logic to improve tree shaking. This change alone saved about a megabyte in page size.
 -   Reworked internal state storage to use Redux Toolkit. It is now more structured and easier to maintain.
 -   Improved performance when showing or hiding features.
 -   Removed attribution link in the bottom left corner.
--   [ ]   Migrate from React to Preact.
-    -   This should reduce the bundle size and improve performance.
--   [ ] Fix bugged deletion of route vertexes (clicking)
--   [ ] Replace ): ReactElement with FunctionComponent&lt;>
--   [ ] Make all images use scroll position
--   [ ] Improve ARIA/Accessibility/tab navigation
+

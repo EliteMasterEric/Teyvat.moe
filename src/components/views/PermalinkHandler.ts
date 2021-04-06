@@ -6,12 +6,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, FunctionComponent } from 'react';
 import { getElementPathById, getElementByPath } from 'src/components/data/Element';
-import {
-  MSFFeatureKey,
-  MSFMarker,
-  MSFRoute,
-  MSFRouteGroupKey,
-} from 'src/components/data/ElementSchema';
+import { MSFFeatureKey, MSFMarker, MSFRoute, MSFRouteGroupKey } from 'src/components/data/Element';
 import { t } from 'src/components/i18n/Localization';
 import {
   moveToMapPosition,

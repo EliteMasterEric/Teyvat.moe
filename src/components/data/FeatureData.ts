@@ -3,7 +3,7 @@
  */
 import _ from 'lodash';
 
-import { MSFFeature, validateFeatureData } from 'src/components/data/ElementSchema';
+import { MSFFeature } from 'src/components/data/Element';
 import { importFromContext, isDev } from 'src/components/util';
 
 const featuresContext = require.context(
@@ -23,6 +23,13 @@ export const loadFeature = async (key: string): Promise<MSFFeature | null> => {
 
   if (isDev()) {
     // In development, validate the data before returning.
+    // Load this async so Joi only gets used in development.
+    const { validateFeatureData } = await import(
+      /* webpackChunkName: "schema-validation" */
+      /* webpackMode: "lazy" */
+      'src/components/data/ElementSchema'
+    );
+
     const validation = validateFeatureData(featureData);
     if (validation == null || validation.error) {
       console.warn(`ERROR during validation of feature '${key}'`);

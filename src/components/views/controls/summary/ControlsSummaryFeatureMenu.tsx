@@ -9,7 +9,7 @@ import _ from 'lodash';
 import React, { useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import Tooltip from 'react-tooltip';
-import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/Element';
 
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { t } from 'src/components/i18n/Localization';

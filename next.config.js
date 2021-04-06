@@ -15,6 +15,11 @@ const withTM = require('next-transpile-modules')([
   'react-leaflet-cluster', // Contains global CSS.
 ]);
 
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  // enabled: process.env.ANALYZE === 'true',
+  enabled: true,
+});
+
 const baseConfig = {
   future: {
     webpack5: true,
@@ -38,4 +43,10 @@ const baseConfig = {
   },
 };
 
-module.exports = withPlugins([withTM], baseConfig);
+module.exports = withPlugins(
+  [
+    withTM,
+    // withBundleAnalyzer
+  ],
+  baseConfig
+);

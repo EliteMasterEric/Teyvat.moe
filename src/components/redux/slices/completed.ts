@@ -5,7 +5,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/ElementSchema';
+import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';

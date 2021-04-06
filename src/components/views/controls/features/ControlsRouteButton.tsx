@@ -7,7 +7,7 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { MSFRouteGroupKey } from 'src/components/data/Element';
 
 import { getMapRouteGroup } from 'src/components/data/MapRoutes';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';

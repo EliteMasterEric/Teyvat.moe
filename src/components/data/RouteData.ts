@@ -3,7 +3,7 @@
  */
 import _ from 'lodash';
 
-import { MSFRouteGroup, validateRouteData } from 'src/components/data/ElementSchema';
+import { MSFRouteGroup } from 'src/components/data/Element';
 import { importFromContext, isDev } from 'src/components/util';
 
 const routesContext = require.context(
@@ -19,6 +19,14 @@ export const loadRoute = async (key: string): Promise<MSFRouteGroup | null> => {
   const routeData: MSFRouteGroup = await importFromContext(routesContext, key);
 
   if (isDev()) {
+    // In development, validate the data before returning.
+    // Load this async so Joi only gets used in development.
+    const { validateRouteData } = await import(
+      /* webpackChunkName: "schema-validation" */
+      /* webpackMode: "lazy" */
+      'src/components/data/ElementSchema'
+    );
+
     const validation = validateRouteData(routeData);
     if (validation == null || validation.error) {
       console.warn(`ERROR during validation of route '${key}'`);

@@ -10,7 +10,7 @@ import {
   MSFFeatureKey,
   MSFMarkerKey,
   YOUTUBE_REGEX,
-} from 'src/components/data/ElementSchema';
+} from 'src/components/data/Element';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { f, formatUnixTimestamp, t } from 'src/components/i18n/Localization';
 import { NextImage } from 'src/components/interface/Image';

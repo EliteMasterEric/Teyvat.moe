@@ -1,4 +1,4 @@
-import { MSFMarkerKey, MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { MSFMarkerKey, MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/Element';
 import { store } from 'src/components/redux';
 import { AppAction } from 'src/components/redux/actions';
 import { LocalizedString, MapPosition } from 'src/components/Types';

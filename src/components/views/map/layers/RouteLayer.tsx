@@ -8,7 +8,7 @@ import { LayerGroup as LeafletLayerGroup } from 'leaflet';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { MSFRouteGroupExtended, MSFRouteGroupKey } from 'src/components/data/ElementSchema';
+import { MSFRouteGroupExtended, MSFRouteGroupKey } from 'src/components/data/Element';
 import { selectIsRouteGroupDisplayed } from 'src/components/redux/slices/displayed';
 import { selectHideRoutesInEditor } from 'src/components/redux/slices/options';
 import { selectEditorEnabled } from 'src/components/redux/slices/ui';
@@ -24,7 +24,7 @@ const mapStateToProps = (state: AppState, { routeKey }: RouteLayerBaseProps) => 
   const hideRoutesInEditor = selectHideRoutesInEditor(state);
   const editorEnabled = selectEditorEnabled(state);
   const routeDisplayed = selectIsRouteGroupDisplayed(state, routeKey);
-  return { displayed: hideRoutesInEditor && editorEnabled && routeDisplayed };
+  return { displayed: !(hideRoutesInEditor && editorEnabled) && routeDisplayed };
 };
 const mapDispatchToProps = () => ({});
 type RouteLayerStateProps = ReturnType<typeof mapStateToProps>;
@@ -41,6 +41,8 @@ type RouteLayerProps = ConnectedProps<typeof connector> & RouteLayerBaseProps;
 const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed }) => {
   const map = useMap();
   const layerRef = useRef<LeafletLayerGroup | null>(null);
+
+  console.log(`${routeGroup.key}: ${displayed}`);
 
   useEffect(() => {
     if (layerRef.current != null) {
