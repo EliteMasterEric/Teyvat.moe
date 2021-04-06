@@ -103,8 +103,6 @@ export const selectIsRouteGroupDisplayed = (
   state: AppState,
   routeKey: MSFRouteGroupKey
 ): boolean => {
-  console.log(state.displayed.routes);
-  console.log(routeKey);
   return getRecord(state.displayed.routes, routeKey, false);
 };
 

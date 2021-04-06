@@ -182,17 +182,11 @@ type AdvancedTileLayerParam = leaflet.TileLayerOptions & {
   url: string;
 };
 
-const onTileLayerLoad = () => {
-  console.warn('LEAFLET reports AdvancedTileLayer has loaded.');
-};
-
 const createTileLayer = (
   { url, ...options }: AdvancedTileLayerParam,
   ctx: LeafletContextInterface
 ) => {
   const instance = new AdvancedTileLayer(url, options);
-
-  instance.on('load', onTileLayerLoad);
 
   return { instance, context: { ...ctx, overlayContainer: instance } };
 };

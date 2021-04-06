@@ -62,9 +62,6 @@ export const initializeAllMapRouteGroups = () => {
     }
   });
   Promise.all(loaderPromises).then(() => {
-    console.warn(
-      `MapRouteGroups reports fully loaded. Key count: ${getMapRouteGroupKeys().length}`
-    );
     setLoadingRoutes(true);
   });
 };

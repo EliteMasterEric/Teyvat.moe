@@ -60,7 +60,6 @@ export const initializeAllMapFeatures = () => {
     }
   });
   Promise.all(loaderPromises).then(() => {
-    console.warn(`MapFeatures reports fully loaded. Key count: ${getMapFeatureKeys().length}`);
     setLoadingFeatures(true);
   });
 };

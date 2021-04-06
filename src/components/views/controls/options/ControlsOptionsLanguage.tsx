@@ -22,6 +22,8 @@ const useStyles = makeStyles((_theme) => ({
     flexGrow: 1,
   },
   flag: {
+    width: 16,
+    height: 30,
     margin: '0 8px 0 0',
   },
 }));
@@ -66,7 +68,7 @@ const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> 
       <Select value={currentLangCode} onChange={onLangChange}>
         {langOptions.map((lang) => (
           <MenuItem key={lang.value} value={lang.value}>
-            <img src={getLanguageFlag(lang.value)} />
+            <img className={classes.flag} src={getLanguageFlag(lang.value)} />
             {lang.label}
           </MenuItem>
         ))}
