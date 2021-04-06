@@ -1050,7 +1050,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 -   Remove Geoculus (TEST) feature.
 -   Fixed a bug where markers would display a PNG image instead of a WebP image.
 
-# 0.12.1 Major Backend Overhauls
+# 0.12.1 Major Site Overhauls
 
 - This update took over a month to get out, but for good reason. I've been working on a lot of sweeping changes to optimize the site and the dev build was not functional for large swaths of that time.
 -   Migrated the entire project to TypeScript, and refactored a lot of code to account for issues.

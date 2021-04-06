@@ -17,10 +17,12 @@ const withTM = require('next-transpile-modules')([
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   // enabled: process.env.ANALYZE === 'true',
-  enabled: true,
+  enabled: false,
 });
 
 const baseConfig = {
+  // Target must be serverless to run on Netlify.
+  target: 'serverless',
   future: {
     webpack5: true,
   },
@@ -43,10 +45,4 @@ const baseConfig = {
   },
 };
 
-module.exports = withPlugins(
-  [
-    withTM,
-    // withBundleAnalyzer
-  ],
-  baseConfig
-);
+module.exports = withPlugins([withTM, withBundleAnalyzer], baseConfig);
