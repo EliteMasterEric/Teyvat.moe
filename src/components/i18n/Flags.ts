@@ -17,6 +17,7 @@ const languageFlags: { [key in LanguageCode]: any } = {
   th: require(`svg-country-flags/svg/th.svg`).default,
   vi: require(`svg-country-flags/svg/vi.svg`).default,
   zh: require(`svg-country-flags/svg/cn.svg`).default,
+  'zh-tw': require(`svg-country-flags/svg/tw.svg`).default,
 };
 
 export const getLanguageFlag = (code: LanguageCode) => languageFlags[code];

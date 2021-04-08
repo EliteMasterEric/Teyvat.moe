@@ -1,79 +1,80 @@
 export default {
-  "de": {
-    "name": {
-      "en": "German",
-      "de": "Deutsch"
+  de: {
+    name: {
+      en: 'German',
+      de: 'Deutsch',
     },
-    "flag": "de"
   },
-  "en": {
-    "name": {
-      "en": "English"
+  en: {
+    name: {
+      en: 'English',
+      fr: 'Anglais',
     },
-    "flag": "us"
   },
-  "es": {
-    "name": {
-      "en": "Spanish",
-      "es": "Español"
+  es: {
+    name: {
+      en: 'Spanish',
+      es: 'Español',
     },
-    "flag": "es"
   },
-  "fr": {
-    "name": {
-      "en": "French",
-      "fr": "Français"
+  fr: {
+    name: {
+      en: 'French',
+      fr: 'Français',
     },
-    "flag": "fr"
   },
-  "id": {
-    "name": {
-      "en": "Indonesian",
-      "id": "Bahasa Indonesia"
+  id: {
+    name: {
+      en: 'Indonesian',
+      id: 'Bahasa Indonesia',
     },
-    "flag": "id"
   },
-  "ja": {
-    "name": {
-      "en": "Japanese",
-      "ja": "日本語"
+  ja: {
+    name: {
+      en: 'Japanese',
+      ja: '日本語',
     },
-    "flag": "ja"
   },
-  "ko": {
-    "name": {
-      "en": "Korean"
+  ko: {
+    name: {
+      en: 'Korean',
+      ko: '한국어',
     },
-    "flag": "kr"
   },
-  "pt": {
-    "name": {
-      "en": "Portuguese"
+  pt: {
+    name: {
+      en: 'Portuguese',
+      pt: 'Português',
     },
-    "flag": "pt"
   },
-  "ru": {
-    "name": {
-      "en": "Russian"
+  ru: {
+    name: {
+      en: 'Russian',
+      ru: 'Русский',
     },
-    "flag": "ru"
   },
-  "th": {
-    "name": {
-      "en": "Thai"
+  th: {
+    name: {
+      en: 'Thai',
+      th: 'ไทย',
     },
-    "flag": "th"
   },
-  "vi": {
-    "name": {
-      "en": "Vietnamese"
+  vi: {
+    name: {
+      en: 'Vietnamese',
+      vi: 'Tiếng Việt',
     },
-    "flag": "vi"
   },
-  "zh": {
-    "name": {
-      "en": "Chinese"
+  zh: {
+    name: {
+      en: 'Chinese',
+      zh: '中文',
     },
-    "flag": "cn"
-  }
-} as const
+  },
+  'zh-tw': {
+    name: {
+      en: 'Chinese (Taiwan)',
+      'zh-tw': '',
+    },
+  },
+} as const;

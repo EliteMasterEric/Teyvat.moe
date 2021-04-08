@@ -1152,4 +1152,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 # 0.12.3 Translation Fixes
 
-- [ ] Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.
+- Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.
+- Added Chinese (Taiwan) language.
+- Imported partial translations from POEditor.
+  - Translations in all non-English languages need some cleanup now. Please contribute if you can!
