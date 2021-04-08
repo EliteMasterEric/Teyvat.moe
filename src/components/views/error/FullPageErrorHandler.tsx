@@ -151,7 +151,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                     color="secondary"
                     variant="contained"
                   >
-                    {t('error-handler-submit')}
+                    {t('submit-to-github')}
                   </Button>
                 </CardActions>
               </Card>

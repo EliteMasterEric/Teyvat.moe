@@ -1150,3 +1150,6 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   - Geoculus (Liyue): Added Yuanshen IDs to 131 markers.
 - Fixed some minor bugs.
 
+# 0.12.3 Translation Fixes
+
+- [ ] Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.

@@ -185,13 +185,13 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
           <Button
             variant="contained"
             size="large"
-            aria-label={t('confirm')}
+            aria-label={t('submit-to-github')}
             tabIndex={0}
             color="primary"
             onClick={onClickConfirm}
             disabled={!isValid()}
           >
-            {t('confirm')}
+            {t('submit-to-github')}
           </Button>
         </DialogActions>
       </Dialog>

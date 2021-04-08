@@ -28,7 +28,7 @@ export type LanguageFlag = LanguageCoreDataValue['flag'];
  */
 type CoreName = Omit<{ [key in LanguageCode]?: string }, 'en'> & { en: string };
 export const getLanguageName = (source: string, target: LanguageCode): string => {
-  if (!distinguishLanguageCode(source)) return 'UNKNOWN SOURCE';
+  if (!distinguishLanguageCode(source)) return `UNKNOWN SOURCE ${source}`;
   const coreName = languageCoreData[source].name as CoreName;
   return coreName?.[target] ?? coreName.en;
 };

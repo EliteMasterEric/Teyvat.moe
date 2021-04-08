@@ -149,7 +149,7 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
                   color="secondary"
                   variant="contained"
                 >
-                  {t('error-handler-submit')}
+                  {t('submit-to-github')}
                 </Button>
               </CardActions>
             </Card>
