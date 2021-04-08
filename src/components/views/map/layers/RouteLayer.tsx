@@ -42,8 +42,6 @@ const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed
   const map = useMap();
   const layerRef = useRef<LeafletLayerGroup | null>(null);
 
-  console.log(`${routeGroup.key}: ${displayed}`);
-
   useEffect(() => {
     if (layerRef.current != null) {
       if (displayed) {

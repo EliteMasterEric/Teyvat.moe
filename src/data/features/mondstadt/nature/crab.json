@@ -1,17 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Crab",
+    "ru": "Краб",
+    "pt": "Caranguejo"
+  },
   "description": {
     "en": "A shelled creature that lives near the ocean. Used for high-rarity Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Crab",
-    "ru": "Краб",
-    "zh": "螃蟹",
-    "pt": "Caranguejo"
-  },
   "icons": {
     "filter": "crab",
     "base": {
@@ -524,6 +523,78 @@
       "importIds": {
         "yuanshen": ["65_63"]
       },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.12736, 55.72812],
+      "id": "AE9484F3E96B0DE752844ABA717367708FFB52C1",
+      "importIds": {
+        "yuanshen": ["65_64"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_64.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.97248, 55.88829],
+      "id": "508EA7A8FF1CA2FE1E37BC7E0E0EB1C2C1C7CEB2",
+      "importIds": {
+        "yuanshen": ["65_65"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_65.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.0857, 56.01848],
+      "id": "15117C583050F2C533D35CC465FB9151126BBADC",
+      "importIds": {
+        "yuanshen": ["65_66"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_66.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.52968, 31.59531],
+      "id": "56B9094BED366A33521177BF2000479584560ED2",
+      "importIds": {
+        "yuanshen": ["65_67"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_67.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.61953, 31.56407],
+      "id": "027FB54725C6D6A4F7A404B49AB8EB63005F8FDD",
+      "importIds": {
+        "yuanshen": ["65_68"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_68.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.92422, 30.78672],
+      "id": "A3B7C4093F855782D9A88C266C5411EEFAC8251F",
+      "importIds": {
+        "yuanshen": ["65_69"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_69.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-22.2289, 48.96641],
+      "id": "D2DB3F67E425061CC16002831417FAD101944227",
+      "importIds": {
+        "yuanshen": ["65_70"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_70.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.05181, 46.66432],
+      "id": "87BD7796789C32436B5FA9EFC038ED8F192D310A",
+      "importIds": {
+        "yuanshen": ["65_71"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/65_71.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

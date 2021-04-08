@@ -1,16 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Frog",
+    "ru": "Лягушка",
+    "pt": "Sapo"
+  },
   "description": {
     "en": "Full of energy, they secrete a substance that will keep you full of vitality. Used in Alchemy."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Frog",
-    "ru": "Лягушка",
-    "pt": "Sapo"
-  },
   "icons": {
     "filter": "frog",
     "base": {
@@ -30,7 +30,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #1"
+        "en": "#1"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -43,7 +43,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #2"
+        "en": "#2"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -55,7 +55,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #3"
+        "en": "#3"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -67,7 +67,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #4"
+        "en": "#4"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -79,7 +79,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #5"
+        "en": "#5"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -91,7 +91,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #6"
+        "en": "#6"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -103,7 +103,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #7"
+        "en": "#7"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -115,7 +115,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #8"
+        "en": "#8"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -127,7 +127,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #9"
+        "en": "#9"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -139,7 +139,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #10"
+        "en": "#10"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -151,7 +151,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #11"
+        "en": "#11"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -163,7 +163,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #12"
+        "en": "#12"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -175,7 +175,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #13"
+        "en": "#13"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -187,7 +187,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #14"
+        "en": "#14"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -199,7 +199,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #15"
+        "en": "#15"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -211,7 +211,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #16"
+        "en": "#16"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -223,7 +223,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #17"
+        "en": "#17"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -235,7 +235,7 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #18"
+        "en": "#18"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -247,8 +247,17 @@
       },
       "popupTitle": {
         "zh": "青蛙",
-        "en": "NEW MARKER: #19"
+        "en": "#19"
       },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.23281, 31.82187],
+      "id": "6A19A16E4099AAEEA3E6B36D493CF97B274C7C4D",
+      "importIds": {
+        "yuanshen": ["67_20"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/67_20.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

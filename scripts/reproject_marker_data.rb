@@ -25,14 +25,12 @@ OFFSET = [
 ]
 MERCATOR = SphericalMercator.new(size: 256, round: false)
 ORIGIN = MERCATOR.px([0.0,0.0], 1.0)
-puts(ORIGIN)
 def reproject_point(point)
   projected = MERCATOR.px([point[1], point[0]], 1.0)
   translated = [(projected[0] - ORIGIN[0]) * MULTIPLIER[0] + OFFSET[0],
     (projected[1] - ORIGIN[1]) * MULTIPLIER[1] + OFFSET[1]]
   return [translated[1], translated[0]]
 end
-puts(reproject_point([-66.5, 90]))
 
 def write_file(filepath, data)
   # Create parent directory of file.

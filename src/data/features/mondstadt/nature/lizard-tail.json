@@ -1,16 +1,16 @@
 {
-  "description": {
-    "en": "A lizard tail that curled up after losing its owner. Used in Alchemy."
-  },
-  "enabled": true,
-  "cluster": "on",
-  "respawn": "none",
   "format": 2,
   "name": {
     "en": "Lizard Tail",
     "ru": "Хвост Ящерицы",
     "pt": "Cauda de Lagarto"
   },
+  "description": {
+    "en": "A lizard tail that curled up after losing its owner. Used in Alchemy."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
   "icons": {
     "filter": "lizard-tail",
     "base": {
@@ -29,7 +29,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #1"
+        "en": "#1"
       },
       "popupMedia": "mondstadt/lizard-tail/AF7A1AE",
       "popupAttribution": "Yuanshen.site"
@@ -42,7 +42,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #2"
+        "en": "#2"
       },
       "popupMedia": "mondstadt/lizard-tail/4557306",
       "popupAttribution": "Yuanshen.site"
@@ -55,7 +55,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #3"
+        "en": "#3"
       },
       "popupMedia": "mondstadt/lizard-tail/F7EC965",
       "popupAttribution": "Yuanshen.site"
@@ -68,7 +68,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #4"
+        "en": "#4"
       },
       "popupMedia": "mondstadt/lizard-tail/03B85C7",
       "popupAttribution": "Yuanshen.site"
@@ -81,7 +81,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #5"
+        "en": "#5"
       },
       "popupMedia": "mondstadt/lizard-tail/A2D10D0",
       "popupAttribution": "Yuanshen.site"
@@ -94,7 +94,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #6"
+        "en": "#6"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -106,7 +106,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #7"
+        "en": "#7"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -118,7 +118,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #8"
+        "en": "#8"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -130,7 +130,7 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #9"
+        "en": "#9"
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -142,8 +142,404 @@
       },
       "popupTitle": {
         "zh": "蜥蜴尾巴",
-        "en": "NEW MARKER: #10"
+        "en": "#10"
       },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-24.83828, 41.39219],
+      "id": "3ECA54EB006C9E4D6DE39CA8EDA955CA43377847",
+      "importIds": {
+        "yuanshen": ["87_11"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_11.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-20.60782, 31.99766],
+      "id": "680FDFE91B4146A68657A766C41E36395E6B10B0",
+      "importIds": {
+        "yuanshen": ["87_12"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_12.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.58828, 33.22812],
+      "id": "596118F8471DF22EAD69CEC2C7EDF981BA4861AE",
+      "importIds": {
+        "yuanshen": ["87_13"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_13.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.975, 33.31797],
+      "id": "CE3667B0796A63E6C7531FA297125ED03D433A09",
+      "importIds": {
+        "yuanshen": ["87_14"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_14.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.04922, 32.37266],
+      "id": "1BBF5F5B8A0BD22AB634BED162C2D73B80C12D55",
+      "importIds": {
+        "yuanshen": ["87_15"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_15.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.38125, 32.78281],
+      "id": "620805FAC0F26214EDF99DCD545AD1C1E0E67EA2",
+      "importIds": {
+        "yuanshen": ["87_16"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_16.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.27709, 30.22813],
+      "id": "6B4E2AF2B9B6C382E4A7D9F2150F764026BBF4A2",
+      "importIds": {
+        "yuanshen": ["87_18"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_18.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.95282, 30.31434],
+      "id": "E4E4A1B34AA8C542A36BAFAC9918F2CCC56C3149",
+      "importIds": {
+        "yuanshen": ["87_19"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_19.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.86172, 30.42083],
+      "id": "98C9D264F37F63441098AF63049D884604EFCDC7",
+      "importIds": {
+        "yuanshen": ["87_20"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_20.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.29487, 29.68162],
+      "id": "3A9664115471DA62B66BAA58A676633027E46BD6",
+      "importIds": {
+        "yuanshen": ["87_21"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_21.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.8682, 29.58751],
+      "id": "B06706BE15BF6E0BC2B728514298B77B9E84CC5B",
+      "importIds": {
+        "yuanshen": ["87_22"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_22.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.83139, 32.79895],
+      "id": "E89A772F68EE99D306050CED3D4B36CE9497166E",
+      "importIds": {
+        "yuanshen": ["87_23"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_23.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.24585, 32.75938],
+      "id": "E8AC1CAC8FFFF0FD9E82A825C9B4D75BA786776A",
+      "importIds": {
+        "yuanshen": ["87_24"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_24.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.41771, 32.54322],
+      "id": "F10A8C7835203344791415E5911F481A7265E717",
+      "importIds": {
+        "yuanshen": ["87_25"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_25.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-25.38255, 40.97292],
+      "id": "0A4697FE441D040F343E0A49D98D88B2A2AF9BB5",
+      "importIds": {
+        "yuanshen": ["87_26"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_26.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.87083, 45.43385],
+      "id": "D270E9CB9C1A255A99D4D994D3519E0079D7B900",
+      "importIds": {
+        "yuanshen": ["87_27"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_27.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.0174, 33.31047],
+      "id": "0E37A2E6118D977FAB680439FBF77B758B8383E9",
+      "importIds": {
+        "yuanshen": ["87_28"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_28.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.39558, 29.83619],
+      "id": "4786C3314681762280C3D3D3A86898046EA127D4",
+      "importIds": {
+        "yuanshen": ["87_29"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_29.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.45417, 30.53411],
+      "id": "01D818A6D27DCB063EDD079CEC2A8F22374D8FB2",
+      "importIds": {
+        "yuanshen": ["87_30"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_30.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.95547, 31.00808],
+      "id": "1012A9B5B3880971DCF1E7396B48E4C6FDDB9FE8",
+      "importIds": {
+        "yuanshen": ["87_31"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_31.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.94765, 31.04193],
+      "id": "3ABDFEBEC15ECDD0210DB6D1D17692BAC5D060FA",
+      "importIds": {
+        "yuanshen": ["87_32"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_32.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.96719, 31.01068],
+      "id": "B8941AE83E1546D369C8AEB250281DD67932076A",
+      "importIds": {
+        "yuanshen": ["87_33"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_33.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-11.97239, 31.04453],
+      "id": "2267FB7E04B200B9BFC9B9B757669003F4D7E577",
+      "importIds": {
+        "yuanshen": ["87_34"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_34.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.49362, 29.90822],
+      "id": "29C9AF4EA9D7CECAC25B50C315050D4C4D44AE98",
+      "importIds": {
+        "yuanshen": ["87_35"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_35.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.32136, 43.88958],
+      "id": "C0C9F6661504DC3274240BF57DFCFFE694A09F24",
+      "importIds": {
+        "yuanshen": ["87_36"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_36.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-18.40209, 48.84922],
+      "id": "2B33769FD8AF49630D610970061B9314A2A1E736",
+      "importIds": {
+        "yuanshen": ["87_37"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_37.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-17.17422, 32.34141],
+      "id": "3E134F1CE931A9265478A05092CAD1D201E69428",
+      "importIds": {
+        "yuanshen": ["87_38"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_38.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.20547, 33.7125],
+      "id": "6CEBD8607BE928E3DEB56846CA3C8C5FE63FCF76",
+      "importIds": {
+        "yuanshen": ["87_39"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_39.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.89687, 32.28672],
+      "id": "D82F53DF194CE20A3228A5AA6B50718DAFEA3DDC",
+      "importIds": {
+        "yuanshen": ["87_40"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_40.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.91641, 32.28672],
+      "id": "EC01726FAEBF9A760722FFF66EC15F746EF676DB",
+      "importIds": {
+        "yuanshen": ["87_41"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_41.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.40078, 32.73203],
+      "id": "E9F6073A6867892DD4F6BFAAC26CD8CB7C90C05C",
+      "importIds": {
+        "yuanshen": ["87_42"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_42.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.58437, 29.95078],
+      "id": "9840FB74F59A343A0E616D97909E760B7CCFAB47",
+      "importIds": {
+        "yuanshen": ["87_43"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_43.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.76015, 28.91172],
+      "id": "42E9E06CFF65C0094B03E896E15503E9DD565E04",
+      "importIds": {
+        "yuanshen": ["87_44"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_44.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.42422, 29.55625],
+      "id": "D9E7B03E62DFD0CB88D0423BF21E1E7B362FD15A",
+      "importIds": {
+        "yuanshen": ["87_45"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_45.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.60516, 29.61485],
+      "id": "22386E7D3190F83236BD74354BD4AF26A13377CD",
+      "importIds": {
+        "yuanshen": ["87_46"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_46.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.8539, 29.83359],
+      "id": "FB2666AA81E0888D30B5169896D8A62E8296BA7D",
+      "importIds": {
+        "yuanshen": ["87_47"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_47.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.92422, 29.81406],
+      "id": "E9773C1F51586F544CE2BE7ECA2D0BDF08CB2305",
+      "importIds": {
+        "yuanshen": ["87_48"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_48.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-14.12343, 31.90391],
+      "id": "F1C181BCC41DDB15142DFB8F81994D7965554477",
+      "importIds": {
+        "yuanshen": ["87_49"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_49.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.44766, 30.13047],
+      "id": "D72FC10518AB045CFA278C2621C2C382241D5817",
+      "importIds": {
+        "yuanshen": ["87_50"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_50.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-13.7211, 30.25156],
+      "id": "A6D8911009BC84B68A03767515C2588A0A5362A0",
+      "importIds": {
+        "yuanshen": ["87_51"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_51.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.20678, 49.06016],
+      "id": "8DDE3E43398AA4946E5EAD49947F0C85633857BB",
+      "importIds": {
+        "yuanshen": ["87_52"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_52.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-15.34478, 49.00678],
+      "id": "8415E0F28C9F8F64C838F826C3E778301E804533",
+      "importIds": {
+        "yuanshen": ["87_53"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_53.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-16.89819, 29.32448],
+      "id": "C65E9F7F66D97852AE20661DFE29D15A4E18F942",
+      "importIds": {
+        "yuanshen": ["87_54"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_54.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-12.49714, 32.90392],
+      "id": "89EF40BEE2B615218CE08C38878F0CB1B67CD205",
+      "importIds": {
+        "yuanshen": ["87_55"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/87_55.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

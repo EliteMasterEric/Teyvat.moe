@@ -3,7 +3,7 @@
  * within the Features tab of the Map controls.
  */
 
-import { makeStyles, Box, Typography } from '@material-ui/core';
+import { makeStyles, createStyles, Box, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
@@ -23,65 +23,67 @@ import { AppState } from 'src/components/redux/types';
 interface StyleProps {
   bgImage: string;
 }
-const useStyles = makeStyles((_theme) => ({
-  iconBorder: {
-    position: 'absolute',
-    top: -1,
-    left: -37,
-    width: 79,
-    height: 79,
-    /* This URL MUST start with a '/' to indicate it is an absolute URL. */
-    background: ({ bgImage }: StyleProps) => `url(${bgImage}) no-repeat`,
-    backgroundSize: '100% 100%',
-  },
-  icon: {
-    position: 'absolute',
-    top: 2,
-    left: 2,
-  },
-  noselect: {
-    // Prevent selecting the text.
-    '-webkit-touch-callout': 'none' /* iOS Safari */,
-    '-webkit-user-select': 'none' /* Safari */,
-    '-khtml-user-select': 'none' /* Konqueror HTML */,
-    '-moz-user-select': 'none' /* Firefox */,
-    '-ms-user-select': 'none' /* Internet Explorer/Edge */,
-    'user-select':
-      'none' /* Non-prefixed version, currently
+const useStyles = makeStyles(
+  createStyles({
+    iconBorder: {
+      position: 'absolute',
+      top: -1,
+      left: -37,
+      width: 80,
+      height: 80,
+      /* This URL MUST start with a '/' to indicate it is an absolute URL. */
+      background: ({ bgImage }: StyleProps) => `url(${bgImage}) no-repeat`,
+      backgroundSize: '100% 100%',
+    },
+    icon: {
+      position: 'absolute',
+      top: '2px !important',
+      left: '2px !important',
+    },
+    noselect: {
+      // Prevent selecting the text.
+      '-webkit-touch-callout': 'none' /* iOS Safari */,
+      '-webkit-user-select': 'none' /* Safari */,
+      '-khtml-user-select': 'none' /* Konqueror HTML */,
+      '-moz-user-select': 'none' /* Firefox */,
+      '-ms-user-select': 'none' /* Internet Explorer/Edge */,
+      'user-select':
+        'none' /* Non-prefixed version, currently
                                     supported by Chrome and Opera */,
-  },
-  featureRoot: {
-    // Position relative so the frame image can be positioned absolutely.
-    position: 'relative',
-    // Make space for the image.
-    margin: '0 0 10px 37px',
-    width: 'calc(100% - 43px)',
-    height: 74,
-    // Prevent the box getting squished.
-    flexShrink: 0,
+    },
+    featureRoot: {
+      // Position relative so the frame image can be positioned absolutely.
+      position: 'relative',
+      // Make space for the image.
+      margin: '0 0 10px 37px',
+      width: 'calc(100% - 43px)',
+      height: 74,
+      // Prevent the box getting squished.
+      flexShrink: 0,
 
-    border: '1px solid #d2c6bb',
-    cursor: 'pointer',
-    color: '#78583d',
+      border: '1px solid #d2c6bb',
+      cursor: 'pointer',
+      color: '#78583d',
 
-    background: 'linear-gradient(270deg, #ffffff -95.11%, rgba(255, 255, 255, 0) 100%), #f0e9e2',
+      background: 'linear-gradient(270deg, #ffffff -95.11%, rgba(255, 255, 255, 0) 100%), #f0e9e2',
 
-    // Align the text.
-    padding: '0 8px 0 48px',
+      // Align the text.
+      padding: '0 8px 0 48px',
 
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
 
-    fontSize: 18,
-    boxSizing: 'border-box',
-  },
-  featureRootActive: {
-    background:
-      'linear-gradient(270deg, rgba(171, 143, 119, 0.5) -46.99%, rgba(143, 110, 76, 0.5) 198.5%), #ab8f77',
-    color: '#f2f0ee',
-  },
-}));
+      fontSize: 18,
+      boxSizing: 'border-box',
+    },
+    featureRootActive: {
+      background:
+        'linear-gradient(270deg, rgba(171, 143, 119, 0.5) -46.99%, rgba(143, 110, 76, 0.5) 198.5%), #ab8f77',
+      color: '#f2f0ee',
+    },
+  })
+);
 
 interface ControlsFeatureButtonBaseProps {
   featureKey: MSFFeatureKey;
@@ -120,7 +122,7 @@ const _ControlsFeatureButton: FunctionComponent<ControlsFeatureButtonProps> = ({
   toggleFeatureDisplayed,
 }) => {
   const classes = useStyles({
-    bgImage: getNextImageUrl('/images/controls/filter_border.png', 70, 70),
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 80, 80),
   });
 
   const mapFeature = getMapFeature(featureKey);

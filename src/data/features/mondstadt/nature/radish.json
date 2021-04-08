@@ -1,16 +1,16 @@
 {
   "format": 2,
+  "name": {
+    "en": "Radish",
+    "ru": "Редис",
+    "pt": "Rabanete"
+  },
   "description": {
     "en": "Rich in fiber and nutrients. Used in Recipes."
   },
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Radish",
-    "ru": "Редис",
-    "pt": "Rabanete"
-  },
   "icons": {
     "filter": "radish",
     "base": {
@@ -22,182 +22,257 @@
   },
   "data": [
     {
-      "coordinates": [-22.81745, 41.2802],
+      "coordinates": [
+        -22.81745,
+        41.2802
+      ],
       "id": "F5DFF0CFB49E0ED52583C3C012C97658F01BECB5",
       "importIds": {
-        "yuanshen": ["81_1"]
+        "yuanshen": [
+          "81_1"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #1"
+        "en": "#1"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-22.7966, 41.34922],
+      "coordinates": [
+        -22.7966,
+        41.34922
+      ],
       "id": "0CA3ADAABE23D05B26E4AA351F3E108624DE131F",
       "importIds": {
-        "yuanshen": ["81_2"]
+        "yuanshen": [
+          "81_2"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #2"
+        "en": "#2"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-22.86171, 41.33359],
+      "coordinates": [
+        -22.86171,
+        41.33359
+      ],
       "id": "EFE1BA1D224114F7A7D7AA6B5518D7F5BDBCD97E",
       "importIds": {
-        "yuanshen": ["81_3"]
+        "yuanshen": [
+          "81_3"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #3"
+        "en": "#3"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.12734, 37.0211],
+      "coordinates": [
+        -25.12734,
+        37.0211
+      ],
       "id": "2E0730C05609BC4FB4F6AD639090D9E42ED333CF",
       "importIds": {
-        "yuanshen": ["81_4"]
+        "yuanshen": [
+          "81_4"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #4"
+        "en": "#4"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.09219, 37.07578],
+      "coordinates": [
+        -25.09219,
+        37.07578
+      ],
       "id": "F6B503513C26121638A9FC5FA7E853189DEE15DD",
       "importIds": {
-        "yuanshen": ["81_5"]
+        "yuanshen": [
+          "81_5"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #5"
+        "en": "#5"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.1625, 37.025],
+      "coordinates": [
+        -25.1625,
+        37.025
+      ],
       "id": "CA1E006E860B1B3F4E3EEA6F43F0F814E992301D",
       "importIds": {
-        "yuanshen": ["81_6"]
+        "yuanshen": [
+          "81_6"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #6"
+        "en": "#6"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.13516, 37.0875],
+      "coordinates": [
+        -25.13516,
+        37.0875
+      ],
       "id": "D3277667C5AAC7595C12182CC02AD54F6208AAE7",
       "importIds": {
-        "yuanshen": ["81_7"]
+        "yuanshen": [
+          "81_7"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #7"
+        "en": "#7"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.21328, 36.2789],
+      "coordinates": [
+        -25.21328,
+        36.2789
+      ],
       "id": "339EEAA4F567C6432ABBE51843CD5EAAA76F3ED2",
       "importIds": {
-        "yuanshen": ["81_8"]
+        "yuanshen": [
+          "81_8"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #8"
+        "en": "#8"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.23671, 36.31406],
+      "coordinates": [
+        -25.23671,
+        36.31406
+      ],
       "id": "BD67DDF5578463132ACE43D82B7C4F118BA955FB",
       "importIds": {
-        "yuanshen": ["81_9"]
+        "yuanshen": [
+          "81_9"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #9"
+        "en": "#9"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.26016, 36.27501],
+      "coordinates": [
+        -25.26016,
+        36.27501
+      ],
       "id": "573DC9AA2B8192EC2A8F97AAF1DAA7692FE12104",
       "importIds": {
-        "yuanshen": ["81_10"]
+        "yuanshen": [
+          "81_10"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #10"
+        "en": "#10"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-25.23671, 36.24375],
+      "coordinates": [
+        -25.23671,
+        36.24375
+      ],
       "id": "A4BE005F4EB85D75C1A34B5849D44E7F6021BDC2",
       "importIds": {
-        "yuanshen": ["81_11"]
+        "yuanshen": [
+          "81_11"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #11"
+        "en": "#11"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-22.30313, 41.86484],
+      "coordinates": [
+        -22.30313,
+        41.86484
+      ],
       "id": "150AA3BDEB11C051261B53E3B69A3BDA22781275",
       "importIds": {
-        "yuanshen": ["81_12"]
+        "yuanshen": [
+          "81_12"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #12"
+        "en": "#12"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-23.21328, 41.38047],
+      "coordinates": [
+        -23.21328,
+        41.38047
+      ],
       "id": "6C868D2A53D08A4AC18F1C6A2F9BDBB3E6F7467D",
       "importIds": {
-        "yuanshen": ["81_13"]
+        "yuanshen": [
+          "81_13"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #13"
+        "en": "#13"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-23.26016, 41.37266],
+      "coordinates": [
+        -23.26016,
+        41.37266
+      ],
       "id": "810FFE222C872ADD11B237F6C52B1E16FFDE84C4",
       "importIds": {
-        "yuanshen": ["81_14"]
+        "yuanshen": [
+          "81_14"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #14"
+        "en": "#14"
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-23.24453, 41.32969],
+      "coordinates": [
+        -23.24453,
+        41.32969
+      ],
       "id": "7160066769F09CF2F2460C2D707EBF96500596CA",
       "importIds": {
-        "yuanshen": ["81_15"]
+        "yuanshen": [
+          "81_15"
+        ]
       },
       "popupTitle": {
         "zh": "白萝卜-蒙德",
-        "en": "NEW MARKER: #15"
+        "en": "#15"
       },
       "popupAttribution": "Yuanshen.site"
     }

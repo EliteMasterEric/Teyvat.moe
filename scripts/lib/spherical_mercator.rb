@@ -72,9 +72,7 @@ class SphericalMercator
       cc = (size / (2 * Math::PI))
       ac = size
       f = [[Math.sin(D2R * lon_lat[1]), -0.9999].max, 0.9999].min
-      puts(Math.sin(D2R * lon_lat[1]))
       x = d + lon_lat[0] * bc
-      puts(x)
       y = d + 0.5 * Math.log((1 + f) / (1 - f)) * -cc
       (x > ac) && (x = ac)
       (y > ac) && (y = ac)

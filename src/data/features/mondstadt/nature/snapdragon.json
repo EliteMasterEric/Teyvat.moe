@@ -2,7 +2,6 @@
   "format": 2,
   "name": {
     "en": "Snapdragon",
-    "zh": "金鱼草",
     "ru": "Львиный Зев",
     "pt": "Flor-Crânio-de-Dragão"
   },
@@ -113,7 +112,7 @@
       "coordinates": [-24.36953, 47.7125],
       "id": "A9A4B9778C047A14C8A72EE94A1D60C9238B1925",
       "importIds": {
-        "yuanshen": ["61_12"]
+        "yuanshen": ["61_11", "61_12"]
       },
       "popupAttribution": "Yuanshen.site"
     },
@@ -211,6 +210,24 @@
       "importIds": {
         "yuanshen": ["61_25"]
       },
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-19.00625, 47.43125],
+      "id": "46F6153734CC1FA5B1FED304B6484B9951DCF579",
+      "importIds": {
+        "yuanshen": ["61_17"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_17.jpg",
+      "popupAttribution": "Yuanshen.site"
+    },
+    {
+      "coordinates": [-21.20937, 39.79063],
+      "id": "98138E1660C56716BE25239336A3644F12AD758B",
+      "importIds": {
+        "yuanshen": ["61_26"]
+      },
+      "popupMedia": "https://yuanshen.site/comment_png/61_26.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]
