@@ -31,8 +31,10 @@ export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\
 
 export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
 export type MSFLocalizedField = {
-  en: MSFLocalizedString;
   [key: string]: MSFLocalizedString;
+} & {
+  _code?: string; // Optional code used for automated translation.
+  en: MSFLocalizedString; // EN language is required.
 };
 
 /**

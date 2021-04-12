@@ -1,18 +1,38 @@
 {
   "format": 2,
+  "name": {
+    "_code": "4071443412",
+    "zh": "散失的风神瞳",
+    "de": "Verlorener Anemoculus",
+    "en": "Anemoculus",
+    "es": "Anemóculus perdido",
+    "fr": "Anémoculus",
+    "id": "Anemoculus",
+    "ja": "失われた風神の瞳",
+    "ko": "바람 신의 눈동자",
+    "pt": "Anemoculus",
+    "ru": "Анемокул",
+    "th": "Anemoculus",
+    "vi": "Phong Thần Đồng"
+  },
   "description": {
-    "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven.",
-    "ru": "Собирайте их по всему миру и подносите Статуи Семи Архонтов для получения наград."
+    "_code": "4079477317",
+    "zh": "浓烈的风元素能量积聚成的物质。献给风的神像，能弥补它在漫长岁月中散失的力量。",
+    "de": "Ein Gebilde aus verdichteter Anemo-Energie. Übergib es der Anemo-Statue, um ihre über die Jahre verlorene Kraft wiederaufzubauen.",
+    "en": "A substance that has accumulated intense Anemo energy. Offer it to the Statue and help reinstate the power it has lost over the years.",
+    "es": "Una sustancia que ha acumulado una intensa energía Anemo. Ofrécela a la Estatua para recuperar la energía perdida a lo largo de los años.",
+    "fr": "De l'énergie Anémo accumulée au fil du temps qui a fini par durcir. Faites-en une offrande à la Statue et restaurez son pouvoir qui s'est amenuisé avec le temps.",
+    "id": "Sebuah benda yang di dalamnya tersimpan kekuatan Anemo yang kuat. Persembahkan ke patung Anemo untuk memulihkan kekuatannya yang telah lama hilang.",
+    "ja": "強烈な風元素エネルギーを集積させた物質。風の神像に捧げると、長い年月で失われた風の神像の力を補える。",
+    "ko": "진한 바람 원소 에너지가 모여 형성된 물질. 바람의 신상에 제물로 바치면 오랜 시간이 흐르며 잃어버렸던 힘을 찾을 수 있다",
+    "pt": "Uma substância que acumulou intensa energia Anemo. Ofereça à Estátua para recuperar a energia perdida ao longo dos anos.",
+    "ru": "Вещество, накопившее большое количество энергии Анемо. Предложите его статуе и помогите восстановить силу, которую она потеряла за это время.",
+    "th": "สสารที่ได้รวบรวมพลังงานธาตุลมเข้มข้นไว้ นำมันไปถวายให้กับรูปปั้นเพื่อช่วยฟื้นฟูพลังของรูปปั้นที่เสียไปเมื่อนานมาแล้ว",
+    "vi": "Vật chất được kết tinh từ năng lượng Nguyên Tố Phong. Hiến dâng cho tượng Phong Thần, có thể giúp bù đắp năng lượng đã mất theo thời gian."
   },
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
-  "name": {
-    "en": "Anemoculus",
-    "ru": "Анемокул",
-    "zh": "风神瞳",
-    "pt": "Anemoculus"
-  },
   "icons": {
     "filter": "anemoculus",
     "base": {

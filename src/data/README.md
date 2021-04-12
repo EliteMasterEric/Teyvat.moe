@@ -44,7 +44,6 @@ Simple HTML can be for many translated strings. Only certain simple tags such as
       "contribute": "Click to learn <a href=\"https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing\">how to contribute.</a>",
     }
 
-
 ## data/features
 
 Contains JSON data describing markers, with locations of features.

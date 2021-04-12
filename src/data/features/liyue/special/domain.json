@@ -1,9 +1,19 @@
 {
   "format": 2,
   "name": {
+    "_code": "4043227537",
+    "zh": "秘境",
+    "de": "Sphäre",
     "en": "Domain",
-    "ru": "Подземелья",
-    "pt": "Domínio"
+    "es": "Dominio",
+    "fr": "Donjon",
+    "id": "Domain",
+    "ja": "秘境",
+    "ko": "비경",
+    "pt": "Domínio",
+    "ru": "Подземелье",
+    "th": "ดันเจี้ยน",
+    "vi": "Bí Cảnh"
   },
   "description": {
     "en": "Complete the challenges to earn Artifact, Weapon Ascension, or Talent Level-Up rewards."
@@ -46,6 +56,7 @@
       "popupContent": {
         "en": "This Artifact domain drops the Crimson Witch of Flames, Lavawalker, Martial Artist, and Defender's Will sets. Trigger all four Pyro braziers to enter."
       },
+      "tags": ["artifacts"],
       "popupMedia": "liyue/domain/zhou-formula"
     },
     {
@@ -61,6 +72,7 @@
       "popupContent": {
         "en": "This domain drops Weapon ascension materials."
       },
+      "tags": ["weapon-ascension-material"],
       "popupMedia": "liyue/domain/lianshan-formula"
     },
     {
@@ -106,6 +118,7 @@
       "popupContent": {
         "en": "This Artifact domain drops the Heart of Bravery, Archaic Petra, and Retracing Bolide sets."
       },
+      "tags": ["artifacts"],
       "popupMedia": "liyue/domain/guyun"
     },
     {
@@ -136,6 +149,7 @@
       "popupContent": {
         "en": "This domain drops Talent level-up materials."
       },
+      "tags": ["character-talent-material"],
       "popupMedia": "liyue/domain/taishan-mansion"
     },
     {
@@ -151,6 +165,7 @@
       "popupContent": {
         "en": "This Artifact domain drops the Bloodstained Chivalry, Gambler, and Noblesse Oblige sets."
       },
+      "tags": ["artifacts"],
       "popupMedia": "liyue/domain/clear-pool"
     }
   ]

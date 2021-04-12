@@ -1,17 +1,39 @@
 {
   "format": 2,
-  "description": {
-    "en": "The light-emitting part of a firefly. Used in Alchemy."
+  "name": {
+    "_code": "1065211836",
+    "zh": "发光髓",
+    "de": "Leuchtmark",
+    "en": "Luminescent Spine",
+    "es": "Coraza fluorescente",
+    "fr": "Abdomen luminescent",
+    "id": "Luminescent Spine",
+    "ja": "発光髄",
+    "ko": "반딧불 정수",
+    "pt": "Espinha Luminescente",
+    "ru": "Светящееся брюшко",
+    "th": "Luminiscent Spine",
+    "vi": "Tủy Phát Sáng"
   },
+  "description": {
+    "_code": "794410533",
+    "zh": "萤火虫发出磷光的部位。对它而言是求偶的器官，对人则是能强健力量的良药。",
+    "de": "Der leuchtende Teil von Glühwürmchen, die ihn zur Balz verwenden. Stärkt den menschlichen Körper.",
+    "en": "The light-emitting part of a firefly. Used for courtship, and in medicine to help recover strength.",
+    "es": "La parte emisora de luz de una luciérnaga. El órgano de cortejo para el insecto y el elixir de fuerza para el humano.",
+    "fr": "Partie émettrice de lumière chez une luciole qui permet de séduire en période de reproduction. Son ingestion améliore la force chez les humains.",
+    "id": "Bagian dari kunang-kunang yang memancarkan cahaya. Mereka menggunakannya untuk menarik lawan jenis, dan di dalam dunia pengobatan, digunakan untuk meningkatkan kekuatan.",
+    "ja": "ホタルの光を放つ部位。ホタルにとっては求婚のための器官でもある。人にとっては滋養強壮の良薬。",
+    "ko": "반딧불이 빛을 내는 부위. 짝을 찾고자 할 때 빛이 나며, 정력에 좋다는 소문이 있다",
+    "pt": "A parte luminosa de um vagalume. É o seu orgão de cortejo e o elixir da força para os humanos.",
+    "ru": "Часть светлячка, которая испускает свет. Популярна среди влюблённых и в качестве медицинского препарата.",
+    "th": "แมลงตัวเล็กที่ปล่อยแสงออกมาได้ สำหรับมันแล้วคือเครื่องมือเพื่อการหาคู่ แต่สำหรับผู้คนแล้วมันคือยาชูกำลังชั้นดี",
+    "vi": "Bộ phận phát sáng của đom đóm. Đối với nó là cơ quan tìm bạn tình, nhưng là loài thuốc quý với con người."
+  },
+  "tags": ["alchemy-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Luminescent Spine",
-    "ru": "Светящееся Брюшко",
-    "zh": "萤火虫",
-    "pt": "Espinha Luminescente"
-  },
   "icons": {
     "filter": "luminescent-spine",
     "base": {

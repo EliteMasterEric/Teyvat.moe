@@ -1,16 +1,39 @@
 {
   "format": 2,
-  "description": {
-    "en": "Rich in fiber and nutrients. Used in Recipes."
+  "name": {
+    "_code": "1137755308",
+    "zh": "白萝卜",
+    "de": "Rettich",
+    "en": "Radish",
+    "es": "Rábano",
+    "fr": "Radis",
+    "id": "Radish",
+    "ja": "ダイコン",
+    "ko": "흰 무",
+    "pt": "Rabanete Branco",
+    "ru": "Редис",
+    "th": "Radish",
+    "vi": "Củ Cải Trắng"
   },
+  "description": {
+    "_code": "2503153389",
+    "zh": "纤维分明的草本植物。易于种植与收获的作物，富含纤维与营养。",
+    "de": "Eine sehr fasrige Wurzel. Sie ist sehr einfach anzubauen und zu ernten. Außerdem ist sie reich an Ballast- und Nährstoffen.",
+    "en": "Rich in fiber and nutrients. Easy to grow and harvest.",
+    "es": "Rico en fibra y nutrientes, y muy fácil de cultivar y cosechar.",
+    "fr": "Un légume riche en fibres et en nutriments. Facile à cultiver et à récolter.",
+    "id": "Sayuran yang kaya akan nutrisi dan serat. Mudah untuk ditanam dan dipanen.",
+    "ja": "食べ物繊維のはっきりした草本植物。栽培も収穫も容易な作物、食べ物繊維と栄養に富んでいる。",
+    "ko": "섬유질이 풍부한 초본식물. 쉽게 재배할 수 있으며, 섬유질과 영양가가 풍부하다",
+    "pt": "Rico em fibras e nutrientes. Fácil de plantar e colher.",
+    "ru": "Растение, богатое клетчаткой. Легко культивируется.",
+    "th": "พืชหัวที่สามารถเพาะปลูก และเก็บเกี่ยวได้ง่าย อุดมไปด้วย เส้นใยและสารอาหาร",
+    "vi": "Là thực vật có nhiều dinh dưỡng. Dễ trồng và thu hoạch, có hàm lượng vitamin cao."
+  },
+  "tags": ["cooking-ingredient"],
   "enabled": false,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Radish",
-    "ru": "Редис",
-    "pt": "Rabanete"
-  },
   "icons": {
     "filter": "radish",
     "base": {

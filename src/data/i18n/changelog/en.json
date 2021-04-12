@@ -1,7 +1,32 @@
 [
   {
+    "version": "v0.12.4 - Marker Format and Feature Translation",
+    "date": "April 8, 2021",
+    "description": [
+      "Added the ability for markers to store additional tags.",
+      "Added full translations for many features and labels, courtesy of Dimbreath."
+    ]
+  },
+  {
+    "version": "v0.12.3 - Translation Fixes",
+    "date": "April 8, 2021",
+    "description": [
+      "Fixed issues with other languages having broken translation files.",
+      "Added new translation keys to POEditor.",
+      "If you know a foreign language, please click the link above to learn how to contribute!."
+    ]
+  },
+  {
+    "version": "v0.12.2 - Yuanshen Import",
+    "date": "April 8, 2021",
+    "description": [
+      "Migrated 2,458 markers from the latest version of Yuanshen.site.",
+      "New markers mainly include nature and ore features."
+    ]
+  },
+  {
     "version": "v0.12.1 - Major Revamp",
-    "date": "April ??, 2021",
+    "date": "April 5, 2021",
     "description": [
       "Rewrote the app into TypeScript. This should improve stability and reduce regressions.",
       "Rewrote the app to utilize Next.js for improved page load speeds.",

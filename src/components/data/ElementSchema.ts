@@ -1,5 +1,7 @@
 /**
  * Contains data for map feature loading and validation.
+ * This code (and thus the Joi library) should only be loaded
+ * on the client during development.
  */
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
 import { MapRegionKeys } from 'src/components/data/MapRegions';
@@ -13,6 +15,7 @@ import {
   respawnEnum,
   YOUTUBE_REGEX,
 } from './Element';
+import { MapTags } from './MapTags';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {
   abortEarly: true, // Stop validation at the first error.
@@ -36,6 +39,7 @@ const VALIDATE_HASHES = isDev();
  * English is always mandatory. Translations are optional.
  */
 const localizedField = Joi.object({
+  _code: Joi.string().optional(), // Code used for translation.
   en: Joi.string().required(),
 }).pattern(/[a-z]{2}/, Joi.string().required());
 /**
@@ -70,6 +74,11 @@ const msfId = Joi.string().valid(
     adjust: (coords) => hashObject(coords, {}),
   })
 );
+
+/**
+ * A list containing at least one item from the tags.json file.
+ */
+const tagList = Joi.array().items(Joi.alternatives(MapTags).required()).optional();
 
 /**
  * This schema represents a marker's icon.
@@ -137,6 +146,8 @@ const MSF_ROUTE_SCHEMA = Joi.object({
   coordinates: coordinates.required(),
   id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
 
+  tags: tagList,
+
   routeColor: Joi.string().optional().default('#d32f2f'),
   routeText: Joi.string().optional().default('  ►  '),
 
@@ -164,6 +175,8 @@ const MSF_ROUTE_SCHEMA = Joi.object({
 const MSF_MARKER_SCHEMA = Joi.object({
   id: VALIDATE_HASHES ? msfId.required() : sha1Hash,
   coordinates: coordinate.required(),
+
+  tags: tagList,
 
   // Add the ability to correlate this marker with other markers.
   // Note that this is a many-to-many relationship.
@@ -232,6 +245,8 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
   // The localized description of the feature.
   description: localizedField.required(),
 
+  tags: tagList,
+
   // Whether to cluster markers on the map.
   cluster: Joi.string().valid(...clusterEnum),
 
@@ -288,6 +303,8 @@ export const MSF_ROUTES_SCHEMA = Joi.object({
 
   // The localized description of the feature.
   description: localizedField.optional(),
+
+  tags: tagList,
 
   icons: {
     // A key for a file

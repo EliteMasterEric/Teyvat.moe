@@ -1,13 +1,36 @@
 {
   "format": 2,
   "name": {
+    "_code": "701846742",
+    "zh": "禽肉",
+    "de": "Rohes Geflügel",
     "en": "Fowl",
-    "ru": "Мясо Птицы",
-    "pt": "Carne de Ave"
+    "es": "Carne de ave",
+    "fr": "Volaille",
+    "id": "Fowl",
+    "ja": "鳥肉",
+    "ko": "새고기",
+    "pt": "Carne de Ave",
+    "ru": "Мясо птицы",
+    "th": "Fowl",
+    "vi": "Thịt Gia Cầm"
   },
   "description": {
-    "en": "A fresh bird. Used in various recipes. Poor Timmy..."
+    "_code": "870212629",
+    "zh": "禽类的新鲜肉块。经过适当处理可以制成让人精神一振的佳肴。",
+    "de": "Ein frisches Stück rohes Geflügel, das seinen Geschmack mit der richtigen Zubereitung besonders entfaltet.",
+    "en": "A fresh chunk of fowl. Handled properly, it can make a hearty meal.",
+    "es": "Carne de ave fresca. Si se prepara correctamente, puede ser una buena comida para mejorar el estado de ánimo.",
+    "fr": "Un morceau de viande fraîche qui peut être cuisiné.",
+    "id": "Daging burung unggas yang segar. Saat diolah dengan baik, dapat dibuat menjadi masakan yang lezat.",
+    "ja": "鳥類の新鮮な肉。適切な料理をすると元気みなぎる食事になる。",
+    "ko": "조류의 신선한 고기. 적절히 조리하면 정신이 번쩍 드는 맛있는 요리가 된다",
+    "pt": "Carne de ave fresca. Se feita corretamente pode fazer um prato saudável.",
+    "ru": "Свежее мясо птицы. Из него можно приготовить что-нибудь вкусненькое.",
+    "th": "เนื้อสดของสัตว์ปีก สามารถนำมาทำอาหารได้หากรู้วิธี",
+    "vi": "Thịt gia cầm tươi ngon, khi qua xử lý sẽ tạo nên món ngon khó cưỡng."
   },
+  "tags": ["cooking-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": 86400,

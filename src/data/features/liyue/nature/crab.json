@@ -1,17 +1,39 @@
 {
   "format": 2,
-  "description": {
-    "en": "A shelled creature that lives near the ocean. Used for high-rarity Recipes."
+  "name": {
+    "_code": "2522076596",
+    "zh": "螃蟹",
+    "de": "Krebs",
+    "en": "Crab",
+    "es": "Cangrejo",
+    "fr": "Crabe",
+    "id": "Crab",
+    "ja": "カニ",
+    "ko": "꽃게",
+    "pt": "Caranguejo",
+    "ru": "Краб",
+    "th": "Crab",
+    "vi": "Cua"
   },
+  "description": {
+    "_code": "118535661",
+    "zh": "生活在近海区的甲壳类动物。细嫩鲜美的肉质，能够很容易地被加工成美味佳肴。",
+    "de": "Ein Krustentier, das in der Nähe des Meeres lebt. Unter der harten Schale verbirgt sich zartes Fleisch, das zu einer Delikatesse verarbeitet werden kann.",
+    "en": "A shelled creature that lives near the ocean. Its flaky, delicious meat can easily be made into tasty dishes.",
+    "es": "Una criatura con caparazón que vive cerca del océano. Su carne tierna y deliciosa se utiliza para crear sabrosos platos.",
+    "fr": "Un petit crustacé qui vit près de la mer. Sa chair tendre et délicieuse peut être utilisée en cuisine.",
+    "id": "Hewan yang berhabitat di dekat lautan, memiliki cangkang yang keras. Dagingnya yang manis dan halus dapat dengan mudah dibuat menjadi berbagai masakan lezat.",
+    "ja": "近海エリアに生息する甲殻類動物。きめ細やかで美しい肉質をしており、簡単に美味しい食事に加工できる。",
+    "ko": "근해에 사는 갑각류. 부드럽고 신선한 육질을 조리하면 맛있는 요리가 된다",
+    "pt": "Um crustáceo que vive ao redor do oceano. Sua carne é macia e deliciosa, usada para fazer pratos saborosos.",
+    "ru": "Ракообразные, которые обитают у берегов океана. Из их нежного мяса получаются замечательные блюда.",
+    "th": "สิ่งมีชีวิตมีกระดองที่ใช้ชีวิตบริเวณทะเล เนื้อนุ่มๆของมันสามารถนำมาทำอาหารแสนอร่อยได้อย่างดี",
+    "vi": "Động vật giáp xác sống gần biển. Thịt tươi mềm, rất dễ nấu thành món ngon."
+  },
+  "tags": ["cooking-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Crab",
-    "pt": "Caranguejo",
-    "zh": "螃蟹",
-    "ru": "Краб"
-  },
   "icons": {
     "filter": "crab",
     "base": {

@@ -1,16 +1,39 @@
 {
   "format": 2,
-  "description": {
-    "en": "A rare fungus that grows near pine trees. Used in Recipes."
+  "name": {
+    "_code": "365650886",
+    "zh": "松茸",
+    "de": "Matsutake",
+    "en": "Matsutake",
+    "es": "Matsutake",
+    "fr": "Matsutake",
+    "id": "Matsutake",
+    "ja": "松茸",
+    "ko": "송이버섯",
+    "pt": "Matsutake",
+    "ru": "Мацутакэ",
+    "th": "Matsutake",
+    "vi": "Nhung Tùng"
   },
+  "description": {
+    "_code": "525072093",
+    "zh": "与松树伴生的珍稀菌类，散发的淡雅鲜香暴露了它的位置。",
+    "de": "Eine seltene Pilzart, die an oder in der Nähe von Kiefern wächst und ihre Stellung durch den unverkennbaren Duft verrät.",
+    "en": "A rare fungus that generally grows on or near pine trees. Its delicate aroma gives away its location.",
+    "es": "Un hongo poco común que suele crecer cerca de los pinos. Su delicado aroma revela su ubicación.",
+    "fr": "Un mycète qui pousse sur ou près des pins. On peut le trouver facilement grâce à son odeur particulière.",
+    "id": "Jamur langka yang biasanya tumbuh di sekitar pohon pinus. Aromanya yang harum dapat menuntunmu ke lokasi jamur ini berada.",
+    "ja": "マツの木と一緒に育つ珍しいキノコ類。ほのかに優雅な香りを放ち、自らの位置を知らせている。",
+    "ko": "소나무 근처에서 자라는 버섯. 은은하게 퍼지는 향기로 어디에 있는지 찾아낼 수 있다",
+    "pt": "Um fungo raro que geralmente cresce sobre ou perto de pinheiros. Seu aroma delicado revela sua localização.",
+    "ru": "Этот редкий гриб обычно растёт вблизи сосен. Его легко обнаружить по специфичному запаху.",
+    "th": "เห็ดราหายากที่มักจะขึ้นกับต้นสน กลิ่นหอมของมันจะบ่งบอกตำแหน่ง ของมันให้รู้",
+    "vi": "Nấm quý mọc trên cây tùng, mùi hương thoang thoảng phát ra đã khiến nó bị phát hiện."
+  },
+  "tags": ["cooking-ingredient"],
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
-  "name": {
-    "en": "Matsutake",
-    "ru": "Мацутакэ",
-    "pt": "Matsutake"
-  },
   "icons": {
     "filter": "matsutake",
     "base": {

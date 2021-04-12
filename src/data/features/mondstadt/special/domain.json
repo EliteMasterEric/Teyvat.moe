@@ -1,9 +1,19 @@
 {
   "format": 2,
   "name": {
-    "pt": "Domínio",
+    "_code": "4043227537",
+    "zh": "秘境",
+    "de": "Sphäre",
     "en": "Domain",
-    "ru": "Подземелья"
+    "es": "Dominio",
+    "fr": "Donjon",
+    "id": "Domain",
+    "ja": "秘境",
+    "ko": "비경",
+    "pt": "Domínio",
+    "ru": "Подземелье",
+    "th": "ดันเจี้ยน",
+    "vi": "Bí Cảnh"
   },
   "description": {
     "en": "Complete the challenges to earn Artifact, Weapon Ascension, or Talent Level-Up rewards."
@@ -111,6 +121,7 @@
       "popupContent": {
         "en": "This Artifact domain drops the Thunderfury, Thundersoother, and Resolution of Sojourner sets."
       },
+      "tags": ["artifacts"],
       "popupMedia": "mondstadt/domain/midsummer-courtyard"
     },
     {
@@ -127,6 +138,7 @@
       "popupContent": {
         "en": "This Artifact domain drops the Viridescent Venerer, Maiden Beloved, and Tiny Miracle sets."
       },
+      "tags": ["artifacts"],
       "popupMedia": "mondstadt/domain/valley-of-remembrance"
     },
     {
@@ -143,6 +155,7 @@
       "popupContent": {
         "en": "This domain drops Talent level-up materials."
       },
+      "tags": ["character-talent-material"],
       "popupMedia": "mondstadt/domain/forsaken-rift"
     },
     {
@@ -159,6 +172,7 @@
       "popupContent": {
         "en": "This domain drops Weapon ascension materials. Guide the four Seelies in this area to their gardens to unlock the Anemo pillar, then activate that to open the domain."
       },
+      "tags": ["weapon-ascension-material"],
       "popupMedia": "mondstadt/domain/cecilia-garden"
     }
   ]

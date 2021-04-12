@@ -1,9 +1,19 @@
 {
   "format": 2,
   "name": {
-    "pt": "Domínio",
+    "_code": "4043227537",
+    "zh": "秘境",
+    "de": "Sphäre",
     "en": "Domain",
-    "ru": "Подземелья"
+    "es": "Dominio",
+    "fr": "Donjon",
+    "id": "Domain",
+    "ja": "秘境",
+    "ko": "비경",
+    "pt": "Domínio",
+    "ru": "Подземелье",
+    "th": "ดันเจี้ยน",
+    "vi": "Bí Cảnh"
   },
   "description": {
     "en": "Complete the challenges to earn Artifact, Weapon Ascension, or Talent Level-Up rewards."
@@ -39,6 +49,7 @@
       "importIds": {
         "gm_legacy": ["dragonspineDomain/1"]
       },
+      "tags": ["artifacts"],
       "popupAttribution": "MasterEric"
     }
   ]

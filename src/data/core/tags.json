@@ -1,0 +1,310 @@
+{
+  "time-trial": {
+    "enabled": true,
+    "name": {
+      "_code": "2134498146",
+      "zh": "限时到达",
+      "de": "Zeitherausforderung",
+      "en": "Time Trial",
+      "es": "Desafío contrarreloj",
+      "fr": "Contre-la-montre",
+      "id": "Waktu Tantangan",
+      "ja": "時間内到着",
+      "ko": "제한 시간 내에 도착하기",
+      "pt": "Contra o Tempo",
+      "ru": "Испытания на время",
+      "th": "บททดสอบจับเวลา",
+      "vi": "Đã đến giờ"
+    }
+  },
+  "seelie": {
+    "enabled": true,
+    "name": {
+      "_code": "2548043279",
+      "zh": "仙灵",
+      "de": "Seelie",
+      "en": "Seelie",
+      "es": "Seelie",
+      "fr": "Fées",
+      "id": "Seelie",
+      "ja": "仙霊",
+      "ko": "선령",
+      "pt": "Seelie",
+      "ru": "Феи",
+      "th": "Seelie",
+      "vi": "Tiên Linh"
+    }
+  },
+  "balloon-flowers": {
+    "_comment": "This phrase never appears alone in the game's text.",
+    "enabled": true,
+    "name": {
+      "en": "Bloatty Floaties"
+    }
+  },
+  "anemo-clover-pinwheel": {
+    "_comment": "Only referred to as 'mechanism' in-game.",
+    "enabled": true,
+    "name": {
+      "en": "Anemo Clover Pinwheel"
+    }
+  },
+  "geo-pressure-plate": {
+    "_comment": "Not referred to in-game.",
+    "enabled": true,
+    "name": {
+      "en": "Geo Pressure Plate"
+    }
+  },
+  "elemental-monument": {
+    "enabled": true,
+    "name": {
+      "_code": "845872687",
+      "en": "Elemental Monuments",
+      "zh": "元素方碑",
+      "de": "Elementarstelen",
+      "es": "Monumentos elementales",
+      "fr": "Stèles élémentaires",
+      "id": "Monumen Elemental",
+      "ja": "元素石碑",
+      "ko": "원소 비석",
+      "pt": "Monumentos Elementais",
+      "ru": "Элементальные монументы",
+      "th": "Elemental Monument",
+      "vi": "Bia Nguyên Tố"
+    }
+  },
+  "anemo-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Anemo)"
+    }
+  },
+  "geo-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Geo)"
+    }
+  },
+  "hydro-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Hydro)"
+    }
+  },
+  "cryo-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Cryo)"
+    }
+  },
+  "electro-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Electro)"
+    }
+  },
+  "pyro-elemental-monument": {
+    "enabled": true,
+    "parent": "elemental-monument",
+    "name": {
+      "en": "Elemental Monument (Pyro)"
+    }
+  },
+  "defeat-enemies": {
+    "enabled": true,
+    "name": {
+      "en": "Defeat Enemies"
+    }
+  },
+  "crimson-agate": {
+    "enabled": true,
+    "name": {
+      "en": "Contains Crimson Agate"
+    }
+  },
+  "shatter-amber": {
+    "enabled": true,
+    "name": {
+      "en": "Shatter Amber"
+    }
+  },
+  "melt-snow": {
+    "enabled": true,
+    "name": {
+      "en": "Melt Snow"
+    }
+  },
+  "compass-enabled": {
+    "enabled": true,
+    "name": {
+      "en": "Detectable with Compass"
+    }
+  },
+  "compass-disabled": {
+    "enabled": true,
+    "name": {
+      "en": "Not Detectable with Compass"
+    }
+  },
+  "ingredient": {
+    "enabled": true,
+    "name": {
+      "_code": "4103276454",
+      "zh": "烹饪材料",
+      "de": "Zutaten",
+      "en": "Ingredients",
+      "es": "Ingredientes",
+      "fr": "Ingrédients de la recette",
+      "id": "Bahan",
+      "ja": "食材",
+      "ko": "요리 재료",
+      "pt": "Ingredientes",
+      "ru": "Ингредиенты:",
+      "th": "ส่วนประกอบ",
+      "vi": "Nguyên Liệu Nấu"
+    }
+  },
+  "cooking-ingredient": {
+    "enabled": true,
+    "parent": "ingredient",
+    "name": {
+      "_code": "3226411374",
+      "zh": "食材",
+      "de": "Zutat",
+      "en": "Cooking Ingredient",
+      "es": "Ingrediente culinario",
+      "fr": "Ingrédient",
+      "id": "Bahan Masak",
+      "ja": "食材",
+      "ko": "식자재",
+      "pt": "Ingrediente",
+      "ru": "Кухонный ингредиент",
+      "th": "วัตถุดิบประกอบอาหาร",
+      "vi": "Nguyên Liệu Thực Phẩm"
+    }
+  },
+  "smithing-ingredient": {
+    "enabled": true,
+    "parent": "ingredient",
+    "name": {
+      "en": "Smithing Ingredient"
+    }
+  },
+  "furniture-ingredient": {
+    "enabled": true,
+    "parent": "ingredient",
+    "name": {
+      "en": "Furniture Ingredient"
+    }
+  },
+  "alchemy-ingredient": {
+    "_comment": "Not referred to in-game.",
+    "enabled": true,
+    "parent": "ingredient",
+    "name": {
+      "en": "Alchemy Ingredient"
+    }
+  },
+  "character-ascension-material": {
+    "enabled": true,
+    "name": {
+      "_code": "709753093",
+      "zh": "角色突破素材。",
+      "de": "Material für den Figurenaufstieg.",
+      "en": "Character Ascension Material.",
+      "es": "Material de ascensión de personaje",
+      "fr": "Matériau d'élévation de personnage.",
+      "id": "Material Ascension Karakter.",
+      "ja": "キャラクターの突破用アイテム。",
+      "ko": "캐릭터 돌파 소재",
+      "pt": "Material de Ascensão de Personagem.",
+      "ru": "Материал возвышения персонажа.",
+      "th": "วัสดุเลื่อนขั้นตัวละคร",
+      "vi": "Nguyên Liệu Đột Phá Nhân Vật"
+    }
+  },
+  "weapon-ascension-material": {
+    "enabled": true,
+    "name": {
+      "_code": "1308126214",
+      "zh": "武器突破素材",
+      "de": "Material zum Aufstieg von Waffen",
+      "en": "Weapon Ascension Material",
+      "es": "Material de ascensión de arma",
+      "fr": "Matériau d'élévation d'arme",
+      "id": "Material Ascension Senjata",
+      "ja": "武器突破素材",
+      "ko": "무기 돌파 소재",
+      "pt": "Material de Ascensão de Armas",
+      "ru": "Возвышение оружия",
+      "th": "วัสดุเลื่อนขั้นอาวุธ",
+      "vi": "Nguyên Liệu Đột Phá Vũ Khí"
+    }
+  },
+  "character-weapon-material": {
+    "enabled": true,
+    "name": {
+      "_code": "3480222366",
+      "zh": "角色与武器培养素材",
+      "de": "Material zur Verbesserung von Figuren und Waffen",
+      "en": "Character and Weapon Enhancement Material",
+      "es": "Material de mejora de personaje y arma",
+      "fr": "Matériau d'amélioration de personnage et d'arme",
+      "id": "Material Penguatan Karakter dan Senjata",
+      "ja": "キャラと武器育成素材",
+      "ko": "캐릭터와 무기 육성 소재",
+      "pt": "Material de Fortalecimento de Arma e Personagem",
+      "ru": "Повышение уровня персонажей/оружия",
+      "th": "วัสดุยกระดับตัวละครและอาวุธ",
+      "vi": "Nguyên Liệu Bồi Dưỡng Nhân Vật Và Vũ Khí"
+    }
+  },
+  "character-talent-material": {
+    "enabled": true,
+    "name": {
+      "_code": "3609653678",
+      "zh": "角色天赋素材",
+      "de": "Material für Figurentalente",
+      "en": "Character Talent Material",
+      "es": "Material de talento de personaje",
+      "fr": "Matériau d'aptitude de personnage",
+      "id": "Material Talenta Karakter",
+      "ja": "キャラクター天賦素材",
+      "ko": "캐릭터 특성 소재",
+      "pt": "Material de Talento do Personagem",
+      "ru": "Таланты персонажей",
+      "th": "วัสดุพรสวรรค์ของตัวละคร",
+      "vi": "Nguyên Liệu Thiên Phú Nhân Vật"
+    }
+  },
+  "artifacts": {
+    "enabled": true,
+    "name": {
+      "_code": "3881906994",
+      "zh": "圣遗物",
+      "de": "Artefakte",
+      "en": "Artifacts",
+      "es": "Artefactos",
+      "fr": "Artéfacts",
+      "id": "Artefak",
+      "ja": "聖遺物",
+      "ko": "성유물",
+      "pt": "Artefatos",
+      "ru": "Артефакты",
+      "th": "อาร์ติแฟกต์",
+      "vi": "Thánh Di Vật"
+    }
+  },
+  "weekly-boss": {
+    "enabled": true,
+    "name": {
+      "en": "Weekly Bosses"
+    }
+  }
+}

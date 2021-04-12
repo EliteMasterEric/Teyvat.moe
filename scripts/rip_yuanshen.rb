@@ -112,8 +112,8 @@ FEATURE_TRANSLATION = {
   JS_JH_LY: 'liyueCrystalCore',
   JS_JYC_MD: 'mondstadtSnapdragon',
   JS_JYC_LY: 'liyueSnapdragon',
-  JS_HDCB_MD: 'mondstadtButterflyWing',
-  JS_HDCB_LY: 'liyueButterflyWing',
+  JS_HDCB_MD: 'mondstadtButterflyWings',
+  JS_HDCB_LY: 'liyueButterflyWings',
   JS_PX_MD: 'mondstadtCrab',
   JS_PX_LY: 'liyueCrab',
   JS_QW_MD: 'mondstadtFrog',
@@ -173,7 +173,7 @@ FEATURE_TRANSLATION = {
   JS_QD_MD: 'liyueBirdEgg', # They flipped these.
   JS_QD_LY: 'mondstadtBirdEgg', # They flipped these.
   JS_YZY: 'liyueGeoSigil',
-  JS_XYKS: 'mondstadtStarsilver',
+  JS_XYKS: 'dragonspineStarsilver',
   JS_SX_MD: 'mondstadtStatue',
   JS_SX_LY: 'liyueStatue',
   JS_CSD_MD: 'mondstadtTeleporter',

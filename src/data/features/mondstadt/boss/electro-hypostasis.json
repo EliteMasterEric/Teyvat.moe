@@ -1,16 +1,38 @@
 {
   "format": 2,
-  "description": {
-    "en": "Code name: Aleph. A high-purity Electro entity. Drops Electro Character Level-Up Materials and Artifacts.",
-    "ru": "Кодовое назание: Алеф. Высококоцентрированный Электро элемент. Выпадают Артефакты и материалы для вознесения Электро персонажей."
+  "name": {
+    "_code": "2296454212",
+    "zh": "无相之雷",
+    "de": "Elektro-Hypostase",
+    "en": "Electro Hypostasis",
+    "es": "Hipostasis Electro",
+    "fr": "Hypostase Électro",
+    "id": "Electro Hypostasis",
+    "ja": "無相の雷",
+    "ko": "무상의 뇌전",
+    "pt": "Hypostasis Electro",
+    "ru": "Электро гипостазис",
+    "th": "Electro Hypostasis",
+    "vi": "Lôi Nguyên Bản"
   },
+  "description": {
+    "_code": "3072367245",
+    "zh": "代号为「阿莱夫」的高级雷元素生命。\\n无相元素是顶尖的元素构造体，会在元素能量喷涌的位置，或元素地脉阻塞的地点形成。\\n不同的无相元素会基于其元素特性，进化出歼敌方式。",
+    "de": "Ein höheres Elektro-Wesen mit der Bezeichnung „Alep“.\\nDie Hypostasen sind höchst reine elementare Gestalten, die sich an Stellen bilden, wo elementare Kräfte überschäumen oder der Fluss der Elemente gestört ist.\\nDie jeweils verantwortlichen Elemente bestimmen den Charakter der Hypostase, die ein gefährliches Ausmaß annehmen kann.",
+    "en": "Code name: Aleph. A high-purity Electro entity.\\nElemental hypostases are the highest forms of elemental structures, usually formed either at a location bursting with elemental energy or at a clogged ley line.\\nElemental hypostases have developed defensive mechanisms based on their elemental attributes.",
+    "es": "Nombre en clave: Aleph. Un ser Electro de gran pureza.\\nLa estructura elemental de los Hipostasis Elementales es la más pura de todas. Generalmente se forman en un lugar con Energía Elemental explosiva, o en una línea ley elemental obstruida.\\nLos Hipostasis Elementales han desarrollado mecanismos defensivos basados en su atributo elemental.",
+    "fr": "Nom de code : « Alep ». Un être supérieur de l'élément Électro.\\nLes Hypostases sont des structures élémentaires de la forme la plus aboutie, qui se forment généralement dans les lieux emplis d'énergie élémentaire ou le long de lignes énergétiques congestionnées.\\nLes Hypostases élémentaires ont développé chacune différents mécanismes défensifs s'appuyant sur leurs attributs élémentaires respectifs.",
+    "id": "Code name: Aleph. Sebuah organisme Electro dengan tingkat kemurnian tinggi.\\nElemental Hypostasis adalah wujud tertinggi struktur elemental yang biasanya terbentuk di lokasi dengan luapan energi elemental, atau lempengan bumi dengan aliran elemental yang tersendat.\\nElemental Hypostasis memiliki mekanisme pertahanan tubuh yang sesuai dengan elemental mereka.",
+    "ja": "高純度の雷元素生命体、コードネーム「アレフ」。\\n無相元素は最高の元素構造を有する物体で、元素エネルギーが噴出する所や元素地脈がふさがれている所に形成する。\\n異なる無相元素は元素の特性によって攻撃方法も違いが出る。",
+    "ko": "코드 네임이 「알레프」인 고급 번개 원소 생명체.\\n무상의 원소는 최상급의 원소 구조체로 원소 에너지가 뿜어져 나오거나 원소 지맥이 막혀있는 지점에서 형성된다.\\n무상의 원소는 원소 유형에 따라 적을 섬멸하는 방식이 진화한다",
+    "pt": "Codinome: Aleph. Uma entidade Electro de alta pureza.\\nAs Hypostasis elementais são as formas mais altas de estrutura elemental que geralmente são formadas em um local com energia elemental ou em uma Linha Ley elemental obstruída.\\nAs Hypostasis Elementais desenvolveram mecanismos defensivos com base em seus atributos elementais.",
+    "ru": "Кодовое название: Алеф. Высококонцентрированный Электро элемент.\\nЭлементальный гипостазис - это высшая форма элементальной структуры, которая формируется в местах с зашкаливающей элементальной энергией или с тяжёлой проходимостью элементов.\\nЭлементальный гипостазис разработал защитные механизмы, основанные на его элементе.",
+    "th": "โค้ดเนม: \"Aleph\" สิ่งมีชีวิตธาตุไฟฟ้าระดับสูง\\nElemental Hypostasis นั้นเป็นรูปแบบสูงสุดของโครงสร้างธาตุ ที่โดยปกติแล้วมักจะเกิดขึ้นในสถานที่ที่มีการระเบิดของพลังงานธาตุ หรือสถานที่ที่มีการอุดตันของธาตุ\\nElemental Hypostasis ที่แตกต่างกัน จะพัฒนาวิธีการทำลายศัตรูโดยอาศัยคุณลักษณะทางธาตุของพวกมันเป็นหลัก",
+    "vi": "Biệt danh \"Aleph\" - sinh mệnh Nguyên Tố lôi cao cấp. \\nNguyên tố nguyên bản là vật cấu tạo Nguyên Tố cao nhất, được hình thành nơi phun trào năng lượng nguyên tố hoặc nơi ách tắc nguyên tố trong lòng đất. \\nCác Nguyên Tố nguyên bản khác nhau phụ thuộc vào thuộc tính của Nguyên Tố đó, tiến hóa ra cách tiêu diệt kẻ địch."
+  },
+  "tags": ["artifacts", "character-ascension-material"],
   "enabled": true,
   "cluster": "off",
-  "name": {
-    "en": "Electro Hypostasis",
-    "ru": "Электро гипостазис",
-    "pt": "Hypostasis Electro"
-  },
   "respawn": 180,
   "icons": {
     "filter": "electro-hypostasis",

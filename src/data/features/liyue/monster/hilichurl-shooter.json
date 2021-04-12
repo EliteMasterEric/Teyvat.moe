@@ -1,16 +1,38 @@
 {
   "format": 2,
-  "description": {
-    "en": "Hilichurls who have learned to use bows to attack at range, sometimes with elemental powers. Drops Arrowheads.",
-    "ru": "Хиличурлы, которые атакуют на расстоянии с помощью арбалета, иногда используя стихии. Возможные награды: Наконечник стрелы."
+  "name": {
+    "_code": "301072329",
+    "zh": "射手丘丘人",
+    "de": "Hilichurl-Schütze",
+    "en": "Hilichurl Shooter",
+    "es": "Hilichurl Ballestero",
+    "fr": "Arbalétrier Brutocollinus",
+    "id": "Hilichurl Shooter",
+    "ja": "ヒルチャール·射手",
+    "ko": "츄츄 궁수",
+    "pt": "Hilichurl Atirador",
+    "ru": "Хиличурл стрелок",
+    "th": "Hilichurl Shooter",
+    "vi": "Xạ Thủ Hilichurl"
   },
+  "description": {
+    "_code": "1216892164",
+    "zh": "提瓦特荒野中游荡的原始住民。\\n手持简陋弩机的丘丘人射手。丘丘人实际上并不具备制造弩的工艺水平。因此，一般认为，在丘丘人背后，存在着操控丘丘人，并为它们提供设备物资的组织。而与丘丘人走得很近的深渊法师尤为可疑。",
+    "de": "Die primitiven, umherziehenden Bewohner der Wildnis von Teyvat.\\nHilichurl-Schützen führen einfache Armbrüste mit sich, allerdings verfügen sie nicht über das handwerkliche Geschick, diese auch herzustellen. Aus diesem Grund glaubt man, dass sie von einer Organisation im Verborgenen gesteuert werden, die sie mit Ausrüstung und Materialien versorgt. Besonders verdächtig sind hierbei die Abgrundmagier, die die Hilichurle häufig begleiten.",
+    "en": "The primitive wandering inhabitants of Teyvat's wildernesses.\\nHilichurl archers who wield simple crossbows. Hilichurls do not, in truth, possess the craftsmanship needed to build crossbows. As such, it is commonly believed that there is an organization that controls the hilichurls from behind the scenes and furnishes them with equipment and material supplies. The Abyss Mages that often accompany these hilichurls are especially suspicious.",
+    "es": "Los habitantes primitivos de Teyvat.\\nUn Hilichurl que utiliza una ballesta sencilla para atacar. En realidad, los Hilichurls no poseen el nivel de habilidad necesario para fabricar ballestas, por lo que se sospecha que alguien los dirige y les proporciona armas y recursos. Los principales sospechosos son los Magos del Abismo...",
+    "fr": "Résident d'origine des contrées sauvages de Teyvat.\\nBrutocollinus maniant l'arbalète. En vérité, les Brutocollinus ne disposent pas des connaissances techniques suffisantes à la fabrication d'une arbalète. Il est donc fort probable qu'une organisation qui tire les ficelles dans l'ombre les équipe de ces instruments. Les Mages de l'Abîme qui accompagnent souvent ces Brutocollinus sont particulièrement suspects.",
+    "id": "Penduduk primitif yang mengembara di alam liar Teyvat.\\nHilichurl pemanah dengan busur sederhana terdapat di tangannya. Hilichurl sejatinya tidak memiliki keahlian yang dibutuhkan untuk membuat busur. Dengan kenyataan tersebut, orang-orang umumnya meyakini bahwa pasti terdapat sebuah organisasi yang mengontrol dan menjadi dalang dari aksi-aksi Hilichurl ini, dan mereka mempersenjatai para Hilichurl, menyediakan peralatan dan persediaan material. Para Abyss Mage yang sering berdampingan dengan para Hilichurl ini memang patut dicurigai.",
+    "ja": "テイワットの荒野を彷徨う原始住民。\\n安っぽい弩を持つヒルチャールの弓使い。実際、ヒルチャールに弩を作成する技術はない。それ故、彼らの後ろには、きっとヒルチャールを操り、機器や物資を提供する組織が存在しているだろう。もっとも疑わしいのは、ヒルチャールと頻繁に接触しているアビスの魔術師だ。",
+    "ko": "티바트 황야에 떠도는 원주민.\\n엉성한 석궁을 들고 있는 츄츄족 사격수. 사실 츄츄족은 석궁을 만들 수 있는 실력이 없어, 츄츄족에게 물자를 공급하며 그들을 조종하는 배후가 있다고 본다. 츄츄족과 가까운 심연 메이지가 가장 의심스럽다",
+    "pt": "Os habitantes primitivos que vagam pelas regiões selvagens de Teyvat.\\nArqueiros Hilichurls que empunham simples balestras. Hilichurls não possuem, na verdade, a destreza necessária para construir tais balestras. Como tal, acredita-se geralmente que existe uma organização que controla os Hilichurls por trás e os fornece com equipamentos e suprimentos de material. Os Feiticeiros do Abismo que frequentemente acompanham estes Hilichurls são particularmente suspeitos.",
+    "ru": "Примитивные кочевые представители Тейватской фауны.\\nХиличурлы-стрелки, вооруженные простыми арбалетами. Откровенно говоря, хиличурлы не владеют искусством создания арбалетов. Из этого следует вывод, что их контролирует другая организация, которая поставляет им оружие и материалы. Подозрение падает на Магов Бездны, часто сопровождающих хиличурлов.",
+    "th": "เผ่าพันธุ์ที่มีมาแต่โบราณซึ่งร่อนเร่อยู่ในถิ่นทุรกันดารของ Teyvat\\nนักธนูในหมู่ Hilichurl ซึ่งถือหน้าไม้ธรรมดาทั่วไป ในความเป็นจริงแล้ว Hilichurl นั้นไม่มีทักษะถึงขั้นทำหน้าไม้ได้ ดังนั้นโดยทั่วไปจึงเชื่อกันว่าเบื้องหลังของพวก Hilichurl มีองค์กรที่คอยควบคุม Hilichurl และจัดหาอุปกรณ์และวัสดุให้พวกมัน ซึ่งพวก Abyss Mage ที่มักจะอยู่ด้วยกันกับพวก Hilichurl นั้นน่าสงสัยเป็นพิเศษ",
+    "vi": "Cư dân nguyên thủy lang thang nơi hoang dã ở Teyvat.\\nXạ thủ Hilichurl tay cầm cung nỏ đơn giản. Hilichurl trên thực tế không có trình độ thủ công có thể chế tạo cung nỏ. Do vậy, thường cho rằng, phía sau Hilichurl có tổ chức khác điều khiển, và cung cấp vật tư thiết bị cho chúng. Mà Pháp Sư Vực Sâu ở gần Hilichurl là khả nghi nhất."
+  },
+  "tags": ["character-weapon-materials"],
   "enabled": false,
   "cluster": "on",
-  "name": {
-    "en": "Hilichurl Shooter",
-    "pt": "Arqueiro Hilichurl",
-    "ru": "Хиличурл-стрелок"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "hilichurl-shooter",

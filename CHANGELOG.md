@@ -1052,7 +1052,7 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 
 # 0.12.1 Major Site Overhauls
 
-- This update took over a month to get out, but for good reason. I've been working on a lot of sweeping changes to optimize the site and the dev build was not functional for large swaths of that time.
+-   This update took over a month to get out, but for good reason. I've been working on a lot of sweeping changes to optimize the site and the dev build was not functional for large swaths of that time.
 -   Migrated the entire project to TypeScript, and refactored a lot of code to account for issues.
     -   This took like a month to do but I think it was worthwhile. Every place where Typescript validates input values means fewer bugs and improved stability.
     -   Hopefully I can go another couple months without refactoring the entire app again.
@@ -1061,98 +1061,110 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
     -   Split feature and route JSON data into two bundles so they are fetched only after page load.
     -   Split non-English language and changelog JSON data into their own JSON data bundles so they are only fetched when the client requests them.
     -   Split dev-only validation into a separate bundle such that it isn't loaded in production.
-    - Switched from react-world-flags to svg-country-flags and reworked logic to improve tree shaking. This change alone saved about a megabyte in page size.
+    -   Switched from react-world-flags to svg-country-flags and reworked logic to improve tree shaking. This change alone saved about a megabyte in page size.
 -   Reworked internal state storage to use Redux Toolkit. It is now more structured and easier to maintain.
 -   Improved performance when showing or hiding features.
 -   Removed attribution link in the bottom left corner.
 
 # 0.12.2 Yuanshen Import
 
-- Imported 2,458 markers from Yuanshen.site (Fetched on April 6, 2021).
-  - Abyss Mage (Liyue): Imported 3 new markers.
-  - Fatui Skirmisher (Liyue): Imported 4 new markers.
-  - Hilichurl (Liyue): Imported 7 new markers.
-  - Ruin Guard (Liyue): Imported 2 new markers.
-  - Slime (Liyue): Imported 30 new markers.
-  - Whopperflower (Liyue): Imported 10 new markers.
-  - Apple (Liyue): Imported 2 new markers.
-  - Berry (Liyue): Imported 26 new markers.
-  - Bird Egg (Liyue): Imported 83 new markers.
-  - Carrot (Liyue): Imported 9 new markers.
-  - Crab (Liyue): Imported 16 new markers.
-  - Crystal Core (Liyue): Imported 11 new markers.
-  - Fish (Liyue): Imported 128 new markers.
-  - Flaming Flower Stamen (Liyue): Imported 16 new markers.
-  - Fowl (Liyue): Imported 45 new markers.
-  - Frog (Liyue): Imported 37 new markers.
-  - Glaze Lily (Liyue): Imported 5 new markers.
-  - Horsetail (Liyue): Imported 3 new markers.
-  - Jueyun Chili (Liyue): Imported 3 new markers.
-  - Lizard Tail (Liyue): Imported 34 new markers.
-  - Loach Pearl (Liyue): Imported 2 new markers.
-  - Lotus Head (Liyue): Imported 10 new markers.
-  - Luminescent Spine (Liyue): Imported 37 new markers.
-  - Matsutake (Liyue): Imported 17 new markers.
-  - Mist Flower Corolla (Liyue): Imported 11 new markers.
-  - Matsutake (Liyue): Imported 17 new markers.
-  - Mushroom (Liyue): Imported 12 new markers.
-  - Pinecone (Liyue): Imported 10 new markers.
-  - Qingxin (Liyue): Imported 14 new markers.
-  - Radish (Liyue): Imported 5 new markers.
-  - Raw Meat (Liyue): Imported 43 new markers.
-  - Snapdragon (Liyue): Imported 10 new markers.
-  - Starconch (Liyue): Imported 1 new marker.
-  - Sunsettia (Liyue): Imported 84 new markers.
-  - Sweet Flower (Liyue): Imported 52 new markers.
-  - Violetgrass (Liyue): Imported 8 new markers.
-  - Cor Lapis (Liyue): Imported 9 new markers.
-  - Electro Crytal (Liyue): Imported 8 new markers.
-  - Iron Chunk (Liyue): Imported 130 new markers.
-  - Magical Crystal Chunk (Liyue): Imported 4 new markers.
-  - White Iron Chunk (Liyue): Imported 2 new markers.
-  - Abyss Mage (Mondstadt): Imported 4 new markers.
-  - Fatui Electro Cicin Mage (Mondstadt): Imported 6 new markers.
-  - Fatui Skirmisher (Mondstadt): Imported 24 new markers.
-  - Hilichurl (Mondstadt): Imported 12 new markers.
-  - Mitachurl (Mondstadt): Imported 14 new markers.
-  - Ruin Guard (Mondstadt): Imported 1 new marker.
-  - Samachurl (Mondstadt): Imported 12 new markers.
-  - Slime (Mondstadt): Imported 61 new markers.
-  - Whopperflower (Mondstadt): Imported 14 new markers.
-  - Apple (Mondstadt): Imported 11 new markers.
-  - Berry (Mondstadt): Imported 29 new markers.
-  - Bird Egg (Mondstadt): Imported 34 new markers.
-  - Calla Lily (Mondstadt): Imported 4 new markers.
-  - Carrot (Mondstadt): Imported 7 new markers.
-  - Crab (Mondstadt): Imported 8 new markers.
-  - Crystal Core (Mondstadt): Imported 49 new markers.
-  - Dandelion Seed (Mondstadt): Imported 2 new markers.
-  - Fish (Mondstadt): Imported 72 new markers.
-  - Flaming Flower Stamen (Mondstadt): Imported 12 new markers.
-  - Fowl (Mondstadt): Imported 33 new markers.
-  - Frog (Mondstadt): Imported 1 new markers.
-  - Lizard Tail (Mondstadt): Imported 44 new markers.
-  - Luminescent Spine (Mondstadt): Imported 26 new markers.
-  - Matsutake (Mondstadt): Imported 65 new markers.
-  - Mint (Mondstadt): Imported 165 new markers.
-  - Mist Flower Corolla (Mondstadt): Imported 13 new markers.
-  - Mushroom (Mondstadt): Imported 133 new markers.
-  - Pinecone (Mondstadt): Imported 155 new markers.
-  - Raw Meat (Mondstadt): Imported 83 new markers.
-  - Small Lamp Grass (Mondstadt): Imported 1 new markers.
-  - Snapdragon (Mondstadt): Imported 3 new markers.
-  - Sunsettia (Mondstadt): Imported 40 new markers.
-  - Sweet Flower (Mondstadt): Imported 123 new markers.
-  - Electro Crystal (Mondstadt): Imported 1 new markers.
-  - Iron Chunk (Mondstadt): Imported 220 new markers.
-  - Magical Crystal Chunk (Mondstadt): Imported 13 new markers.
-  - White Iron Chunk (Mondstadt): Imported 3 new markers.
-  - Geoculus (Liyue): Added Yuanshen IDs to 131 markers.
-- Fixed some minor bugs.
+-   Imported 2,458 markers from Yuanshen.site (Fetched on April 6, 2021).
+    -   Abyss Mage (Liyue): Imported 3 new markers.
+    -   Fatui Skirmisher (Liyue): Imported 4 new markers.
+    -   Hilichurl (Liyue): Imported 7 new markers.
+    -   Ruin Guard (Liyue): Imported 2 new markers.
+    -   Slime (Liyue): Imported 30 new markers.
+    -   Whopperflower (Liyue): Imported 10 new markers.
+    -   Apple (Liyue): Imported 2 new markers.
+    -   Berry (Liyue): Imported 26 new markers.
+    -   Bird Egg (Liyue): Imported 83 new markers.
+    -   Carrot (Liyue): Imported 9 new markers.
+    -   Crab (Liyue): Imported 16 new markers.
+    -   Crystal Core (Liyue): Imported 11 new markers.
+    -   Fish (Liyue): Imported 128 new markers.
+    -   Flaming Flower Stamen (Liyue): Imported 16 new markers.
+    -   Fowl (Liyue): Imported 45 new markers.
+    -   Frog (Liyue): Imported 37 new markers.
+    -   Glaze Lily (Liyue): Imported 5 new markers.
+    -   Horsetail (Liyue): Imported 3 new markers.
+    -   Jueyun Chili (Liyue): Imported 3 new markers.
+    -   Lizard Tail (Liyue): Imported 34 new markers.
+    -   Loach Pearl (Liyue): Imported 2 new markers.
+    -   Lotus Head (Liyue): Imported 10 new markers.
+    -   Luminescent Spine (Liyue): Imported 37 new markers.
+    -   Matsutake (Liyue): Imported 17 new markers.
+    -   Mist Flower Corolla (Liyue): Imported 11 new markers.
+    -   Matsutake (Liyue): Imported 17 new markers.
+    -   Mushroom (Liyue): Imported 12 new markers.
+    -   Pinecone (Liyue): Imported 10 new markers.
+    -   Qingxin (Liyue): Imported 14 new markers.
+    -   Radish (Liyue): Imported 5 new markers.
+    -   Raw Meat (Liyue): Imported 43 new markers.
+    -   Snapdragon (Liyue): Imported 10 new markers.
+    -   Starconch (Liyue): Imported 1 new marker.
+    -   Sunsettia (Liyue): Imported 84 new markers.
+    -   Sweet Flower (Liyue): Imported 52 new markers.
+    -   Violetgrass (Liyue): Imported 8 new markers.
+    -   Cor Lapis (Liyue): Imported 9 new markers.
+    -   Electro Crytal (Liyue): Imported 8 new markers.
+    -   Iron Chunk (Liyue): Imported 130 new markers.
+    -   Magical Crystal Chunk (Liyue): Imported 4 new markers.
+    -   White Iron Chunk (Liyue): Imported 2 new markers.
+    -   Abyss Mage (Mondstadt): Imported 4 new markers.
+    -   Fatui Electro Cicin Mage (Mondstadt): Imported 6 new markers.
+    -   Fatui Skirmisher (Mondstadt): Imported 24 new markers.
+    -   Hilichurl (Mondstadt): Imported 12 new markers.
+    -   Mitachurl (Mondstadt): Imported 14 new markers.
+    -   Ruin Guard (Mondstadt): Imported 1 new marker.
+    -   Samachurl (Mondstadt): Imported 12 new markers.
+    -   Slime (Mondstadt): Imported 61 new markers.
+    -   Whopperflower (Mondstadt): Imported 14 new markers.
+    -   Apple (Mondstadt): Imported 11 new markers.
+    -   Berry (Mondstadt): Imported 29 new markers.
+    -   Bird Egg (Mondstadt): Imported 34 new markers.
+    -   Calla Lily (Mondstadt): Imported 4 new markers.
+    -   Carrot (Mondstadt): Imported 7 new markers.
+    -   Crab (Mondstadt): Imported 8 new markers.
+    -   Crystal Core (Mondstadt): Imported 49 new markers.
+    -   Dandelion Seed (Mondstadt): Imported 2 new markers.
+    -   Fish (Mondstadt): Imported 72 new markers.
+    -   Flaming Flower Stamen (Mondstadt): Imported 12 new markers.
+    -   Fowl (Mondstadt): Imported 33 new markers.
+    -   Frog (Mondstadt): Imported 1 new markers.
+    -   Lizard Tail (Mondstadt): Imported 44 new markers.
+    -   Luminescent Spine (Mondstadt): Imported 26 new markers.
+    -   Matsutake (Mondstadt): Imported 65 new markers.
+    -   Mint (Mondstadt): Imported 165 new markers.
+    -   Mist Flower Corolla (Mondstadt): Imported 13 new markers.
+    -   Mushroom (Mondstadt): Imported 133 new markers.
+    -   Pinecone (Mondstadt): Imported 155 new markers.
+    -   Raw Meat (Mondstadt): Imported 83 new markers.
+    -   Small Lamp Grass (Mondstadt): Imported 1 new markers.
+    -   Snapdragon (Mondstadt): Imported 3 new markers.
+    -   Sunsettia (Mondstadt): Imported 40 new markers.
+    -   Sweet Flower (Mondstadt): Imported 123 new markers.
+    -   Electro Crystal (Mondstadt): Imported 1 new markers.
+    -   Iron Chunk (Mondstadt): Imported 220 new markers.
+    -   Magical Crystal Chunk (Mondstadt): Imported 13 new markers.
+    -   White Iron Chunk (Mondstadt): Imported 3 new markers.
+    -   Geoculus (Liyue): Added Yuanshen IDs to 131 markers.
+-   Fixed some minor bugs.
 
 # 0.12.3 Translation Fixes
 
-- Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.
-- Added Chinese (Taiwan) language.
-- Imported partial translations from POEditor.
-  - Translations in all non-English languages need some cleanup now. Please contribute if you can!
+-   Overhauled the POEditor entries to match the many changes to i18n in versions 0.11 and 0.12.
+-   Added Chinese (Taiwan) language.
+-   Imported partial translations from POEditor.
+    -   Translations in all non-English languages need some cleanup now. Please contribute if you can!
+
+# 0.12.4 Extended Marker Format
+
+-   Translated many features and labels to all in-game languages. Many thanks to Dimbreath for their Genshin Impact data mining! The following was translated:
+    -   All map labels.
+    -   Almost all feature names.
+    -   Most feature descriptions.
+    -   Some marker popup titles and descriptions.
+-   Added new attributes to the Marker Storage Format.
+    -   Any localized text attribute may now include the \_code property. These values optional values correspond to the TextMap file in Dimbreath's repo and are used to automatically populate the required values. 
+    -   Any marker may now include the optional `tags` attribute. These correspond to the tags in the `src/data/core/tags.json` file. This is currently only stored in JSON data, but in future updates this will be used to power a marker filtering feature.
+-   Removed `webp` files, as these are auto-generated by NextJS.

@@ -1,17 +1,39 @@
 {
   "format": 2,
-  "description": {
-    "en": "A versatile food used in various Recipes."
+  "name": {
+    "_code": "2577348708",
+    "zh": "鸟蛋",
+    "de": "Vogelei",
+    "en": "Bird Egg",
+    "es": "Huevo de pájaro",
+    "fr": "Œuf d'oiseau",
+    "id": "Bird Egg",
+    "ja": "鳥の卵",
+    "ko": "새알",
+    "pt": "Ovo de Pássaro",
+    "ru": "Яйцо",
+    "th": "Bird Egg",
+    "vi": "Trứng Chim"
   },
+  "description": {
+    "_code": "783346733",
+    "zh": "拥有无限可能性的禽类的卵，能带来一整天所需的蛋白质。",
+    "de": "Ein Ei mit einst schier unendlichen Möglichkeiten. Nun bietet es dir eine Tagesration an Protein.",
+    "en": "An incredibly versatile ingredient that can supply all of your daily protein needs.",
+    "es": "Este huevo ofrece un sinfín de posibilidades culinarias. Puede aportar la dosis diaria de proteínas para una persona adulta.",
+    "fr": "Cet œuf renfermait une infinité de possibilités, mais dans son état actuel, il constituera votre apport quotidien de protéines.",
+    "id": "Telur yang memiliki potensi tanpa batas, juga dapat memberikan kebutuhan protein untuk satu hari.",
+    "ja": "無限の可能性を持つ鳥類の卵。一日に必要なたんぱく質を摂取できる。",
+    "ko": "무한한 가능성을 가지고 있는 조류의 알. 하루 동안 필요한 단백질을 제공한다",
+    "pt": "Um ingrediente incrivelmente versátil com todas as proteínas diárias que você precisa.",
+    "ru": "Универсальный ингредиент, содержащий в себе дневную дозу протеина.",
+    "th": "ไข่ของสัตว์ปีกที่เต็มไปด้วยความเป็นไปได้อันไร้ขีดจำกัด อุดมไปด้วยโปรตีนมากมายที่ร่างกายต้องการในหนึ่งวัน",
+    "vi": "Trứng gia cầm có thể bổ sung dinh dưỡng cho cả ngày dài."
+  },
+  "tags": ["cooking-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
-  "name": {
-    "en": "Bird Egg",
-    "pt": "Ovo de Pássaro",
-    "zh": "鸟蛋",
-    "ru": "Яйцо"
-  },
   "icons": {
     "filter": "bird-egg",
     "base": {

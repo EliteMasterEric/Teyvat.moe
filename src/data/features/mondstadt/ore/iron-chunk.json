@@ -1,14 +1,36 @@
 {
   "format": 2,
   "name": {
+    "_code": "665344318",
+    "zh": "铁块",
+    "de": "Brocken Eisen",
     "en": "Iron Chunk",
+    "es": "Pedazo de hierro",
+    "fr": "Morceau de fer",
+    "id": "Iron Chunk",
+    "ja": "鉄の塊",
+    "ko": "철광",
+    "pt": "Pedaço de ferro",
     "ru": "Обломок железа",
-    "pt": "Pedaço de Ferro"
+    "th": "Iron Chunk",
+    "vi": "Mảnh Sắt"
   },
   "description": {
-    "en": "Abundantly available, low-quality metal used for Enhancement Ore.",
-    "ru": "Доступлен в изобилии, низкокачественный металл, используемый для изготовления Обычной руды усиления"
+    "_code": "832274041",
+    "zh": "铁的矿石原石，在拥有相应技能的工匠手中能绽放光采。通常来说，地表上的矿石昭示着此地深处丰富的矿脉。",
+    "de": "Ein Klumpen Eisenerz, der in den Händen eines begabten Schmieds zu einer ganzen Reihe an nützlichen Gegenständen werden kann. Das Vorhandensein von Mineralerzen an der Oberfläche deutet in der Regel auf reichlich Erzadern im Untergrund hin.",
+    "en": "This iron ore can be turned into a multitude of handy items in the hands of a skilled craftsman. Mineral ores' presence on the surface usually indicates abundant ore veins underneath.",
+    "es": "Un pedazo de hierro en bruto que se puede transformar en muchos objetos distintos si se deja en manos de un herrero habilidoso. Normalmente, la presencia de minerales en la superficie indica la existencia de ricas vetas bajo la tierra.",
+    "fr": "Ce minerai de fer peut être transformé en une multitude d'objets utiles entre les mains d'un artisan qualifié. La présence de minerais en surface indique généralement la présence de riches filons souterrains.",
+    "id": "Di tangan pengrajin yang handal, bijih besi ini dapat diolah menjadi berbagai benda berguna. Konon katanya, banyaknya bebatuan mineral di permukaan tanah menandakan sumber mineral yang berlimpah jauh di dalam tanah.",
+    "ja": "鉄の鉱石。相応の技術を持った職人の手にかかれば、輝きを放つでしょう。通常、地表上の鉱石は、付近の地下には豊富な鉱脈があることを意味する。",
+    "ko": "철광석. 뛰어난 대장장이에게 가면 빛을 발할 수 있다. 보통 철광석 주위의 깊은 곳에 풍부한 광맥이 있다",
+    "pt": "Um Pedaço de Ferro que pode ser transformado em vários itens nas mãos de um artesão hábil. É conhecimento comum que a presença de minérios na superfície indica veios abundantes abaixo dela.",
+    "ru": "Опытный ремесленник может сделать из этих обломков железной руды кучу разных полезных вещей. Обычно наличие руды на поверхности говорит о богатой жиле под землёй.",
+    "th": "ก้อนเหล็กวัตถุดิบที่สามารถนำไปแปรรูปเป็นอุปกรณ์ข้าวของเครื่องใช้ต่าง ๆ ได้หลากหลายโดยช่างเหล็กที่มีความสามารถ โดยทั่วไปแร่บนพื้นผิวจะบ่งบอกถึงความอุดมสมบูรณ์ของแร่ที่อยู่ลึกลงไปในพื้นดินบริเวณนั้น",
+    "vi": "Khoáng thạch của sắt, trong tay thợ thủ công lành nghề có thể phát ra hào quang. Khoáng Thạch trên bề mặt trái đất thường sẽ biểu thị mạch khoáng phong phú nằm sâu trong lòng đất."
   },
+  "tags": ["smithing-ingredient", "furniture-ingredient"],
   "enabled": false,
   "cluster": "on",
   "respawn": 86400,

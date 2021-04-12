@@ -1,15 +1,36 @@
 {
   "format": 2,
   "name": {
+    "_code": "2057452708",
+    "zh": "魔晶块",
+    "de": "Brocken magisches Kristall",
     "en": "Magical Crystal Chunk",
+    "es": "Pedazo de cristal mágico",
+    "fr": "Éclat de cristal magique",
+    "id": "Magical Crystal Chunk",
+    "ja": "魔晶の塊",
+    "ko": "마법 수정석 조각",
+    "pt": "Pedaço de Cristal Mágico",
     "ru": "Магический кристальный обломок",
-    "zh": "魔晶矿",
-    "pt": "Pedaço de Cristal Mágico"
+    "th": "Magical Crystal Chunk",
+    "vi": "Mảnh Ma Tinh"
   },
   "description": {
-    "en": "Crystal eroded by Ley Line energy that requires Original Resin to refine into Mystic Enhancement Ore.",
-    "zh": "魔晶矿刷新位置"
+    "_code": "361570885",
+    "zh": "可以通过「委托锻造」，利用原粹树脂，提炼成武器经验材料。\\n受地脉的能量侵蚀的水晶矿，寻常手段无法处理。",
+    "de": "Kann bei Schmieden mithilfe von ursprünglichem Harz zu Waffen-EP-Material verarbeitet werden.\\nDiese von elementarer Energie durchdrungenen Kristalle können nicht mit gewöhnlichen Mitteln bearbeitet werden.",
+    "en": "These crystal chunks can be refined into Weapon EXP materials by using Original Resin.\\nCrystals from mines that were eroded by the energy of the Ley Lines cannot be processed by ordinary means.",
+    "es": "Estos trozos de cristal pueden ser refinados y convertidos en Materiales de EXP de Arma utilizando Resina original.\\nLos cristales de las minas que fueron erosionados por la energía de las líneas ley no pueden ser procesados por medios ordinarios.",
+    "fr": "Ces éclats peuvent être raffinés en EXP d'arme avec de la Résine originelle.\\nLe travail de ces cristaux, formés sous l'influence des lignes énergétiques, requiert un grand savoir-faire.",
+    "id": "Crystal Chunk dapat diforge menjadi material EXP Senjata dengan menggunakan Original Resin.\\nCrystal dari tambang yang terkikis oleh energi Ley Line tidak bisa diproses dengan cara biasa.",
+    "ja": "「鍛造依頼」において天然樹脂を消費して武器強化素材を精錬することができます。\\n地脈のエネルギーに侵蝕された水晶鉱は普通の方法では処理できません。",
+    "ko": "「단조 의뢰」를 통해 퓨어 레진을 정제하여 무기 경험치 재료를 얻을 수 있다.\\n일반적인 방법으론 지맥의 에너지에 침식당한 수정 광석을 처리할 수 없다",
+    "pt": "Esses pedaços de cristal podem ser refinados em materiais de EXP de armas usando a resina original.\\nOs cristais de minas que foram corroídos pela energia das linhas Ley não podem ser processados por meios comuns.",
+    "ru": "Эти обломки кристаллов могут быть переработаны в материалы опыта оружия с помощью Первородной смолы.\\nТакие кристаллы из шахт впитали энергию артерий земли и не могут быть обработаны обычными методами.",
+    "th": "สามารถปรับปรุงเป็นวัสดุประสบการณ์อาวุธได้ผ่านการ \"สั่งทำอาวุธ\" โดยใช้ Original Resin\\nCrystal Ore ที่ถูกกัดเซาะด้วยพลังงานของ Ley Lines นั้นจะไม่สามารถจัดการได้ด้วยวิธีทั่วไป",
+    "vi": "Có thể thông qua ủy thác rèn, dùng Nhựa Nguyên Chất luyện thành nguyên liệu EXP Vũ Khí.\\nMỏ pha lê bị năng lượng địa mạch ăn mòn, tay nghề bình thường sẽ không thể xử lý."
   },
+  "tags": ["smithing-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": 259200,

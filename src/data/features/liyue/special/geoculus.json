@@ -1,15 +1,38 @@
 {
   "format": 2,
+  "name": {
+    "_code": "3020361284",
+    "zh": "散失的岩神瞳",
+    "de": "Verlorener Geoculus",
+    "en": "Geoculus",
+    "es": "Geóculus perdido",
+    "fr": "Géoculus",
+    "id": "Geoculus",
+    "ja": "失われた岩神の瞳",
+    "ko": "바위 신의 눈동자",
+    "pt": "Geoculus",
+    "ru": "Геокул",
+    "th": "Geoculus",
+    "vi": "Nham Thần Đồng"
+  },
   "description": {
-    "en": "Collect these in the world, and redeem them for rewards at the Statue of the Seven."
+    "_code": "693877725",
+    "zh": "浓烈的岩元素能量积聚成的物质。献给岩的神像，能弥补它在漫长岁月中散失的力量。",
+    "de": "Ein Gebilde aus verdichteter Geo-Energie. Übergib es der Geo-Statue, um ihre über die Jahre verlorene Kraft wiederaufzubauen.",
+    "en": "A substance that has accumulated intense Geo energy. Offer it to the Statue and help reinstate the power it has lost over the years.",
+    "es": "Una sustancia que ha acumulado una intensa energía Geo. Ofrécela a la Estatua para recuperar la energía perdida a lo largo de los años.",
+    "fr": "De l'énergie Géo accumulée au fil du temps qui a fini par durcir. Faites-en une offrande à la Statue et restaurez son pouvoir qui s'est amenuisé avec le temps.",
+    "id": "Cairan yang telah mengakumulasi energi Geo yang kuat. Berikan ke Patung untuk membantu mengembalikan kekuatan yang telah hilang selama bertahun-tahun.",
+    "ja": "濃い岩元素エネルギーが蓄積した物質。岩の神像に奉納すると、神像が長い年月の中で失われた力を補うことができる。",
+    "ko": "진한 바위 원소 에너지가 모여 만들어진 물질. 바위의 신상에 제물로 바치면 오랜 시간이 흐르며 잃어버렸던 힘을 찾을 수 있다",
+    "pt": "Uma substância que acumulou intensa energia Geo. Ofereça-o à Estátua e ajude a restabelecer o poder que perdeu ao longo dos anos.",
+    "ru": "Вещество, которое накопило плотную энергию Гео. Предложите его статуе семи Архонтов и помогите ей восстановить утерянную силу.",
+    "th": "แร่ธาตุอันแข็งแกร่งที่ได้รวบรวมพลังงานของผืนดินเอาไว้ มอบให้แก่รูปปั้นหินเพื่อช่วยฟื้นพลังที่หายไปนานหลายปีของมันกลับมา",
+    "vi": "Vật chất được kết tinh từ năng lượng Nguyên Tố Nham. Hiến dâng cho tượng Nham Thần, có thể giúp bù đắp năng lượng đã mất theo thời gian."
   },
   "enabled": true,
   "cluster": "off",
   "respawn": "none",
-  "name": {
-    "en": "Geoculus",
-    "pt": "Geoculus"
-  },
   "icons": {
     "filter": "geoculus",
     "base": {
@@ -326,7 +349,6 @@
       "id": "4BEE64DA580DA16BAB564478AFCCB98E39BD7305",
       "importIds": {
         "gm_legacy": ["liyueGeoculus/127"],
-        "yuanshen": ["1_127"],
         "yuanshen": ["1_127"],
         "appsample": ["2676"]
       },

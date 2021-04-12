@@ -1,0 +1,46 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "2492759708",
+    "zh": "兽肉",
+    "de": "Rohes Fleisch",
+    "en": "Raw Meat",
+    "fr": "Viande crue",
+    "id": "Raw Meat",
+    "ja": "獣肉",
+    "ko": "짐승고기",
+    "pt": "Carne Crua",
+    "ru": "Сырое мясо",
+    "th": "Raw Meat",
+    "vi": "Thịt Rừng"
+  },
+  "description": {
+    "_code": "3982212023",
+    "zh": "兽类的新鲜肉块。经过适当处理可以制成让人元气满满的美食。",
+    "de": "Ein frisches Stück rohes Fleisch, das mit der richtigen Zubereitung zu einer nahrhaften Mahlzeit wird.",
+    "en": "A fresh chunk of meat. Handled properly, it can be used to make delicious food.",
+    "es": "Un trozo de carne fresca. Si se prepara correctamente, se puede utilizar para cocinar alimentos deliciosos.",
+    "fr": "Un morceau de viande fraîche qui peut être cuisiné.",
+    "id": "Sepotong daging yang segar. Saat diolah dengan baik, dapat dibuat menjadi masakan yang lezat.",
+    "ja": "ケモノ類の新鮮な肉。適切な料理をすると元気モリモリの食事になる。",
+    "ko": "짐승의 신선한 고깃덩이. 적절히 조리하면 원기를 충전할 수 있는 맛있는 요리가 된다",
+    "pt": "Um pedaço de carne fresca. Se feita adequadamente pode ser usada para fazer pratos deliciosos.",
+    "ru": "Свежий кусок мяса. Из него можно приготовить разные вкусные блюда.",
+    "th": "ก้อนเนื้อสดของสัตว์อสูร สามารถนำมาทำเป็นอาหารได้หากทำอย่างถูกวิธี",
+    "vi": "Thịt thú tươi ngon, khi qua xử lý sẽ tạo nên món ngon khó cưỡng."
+  },
+  "tags": ["cooking-ingredient"],
+  "enabled": false,
+  "cluster": "on",
+  "respawn": 86400,
+  "icons": {
+    "filter": "raw-meat",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": []
+}

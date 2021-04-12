@@ -1,14 +1,35 @@
 {
   "format": 2,
   "name": {
+    "_code": "142699974",
+    "zh": "水晶块",
+    "de": "Brocken Kristall",
     "en": "Crystal Chunk",
+    "fr": "Morceau de cristal",
+    "id": "Crystal Chunk",
+    "ja": "水晶の塊",
+    "ko": "수정덩이",
+    "pt": "Pedaço de Cristal",
     "ru": "Обломок кристалла",
-    "pt": "Pedaço de Cristal"
+    "th": "Crystal Chunk",
+    "vi": "Mảnh Pha Lê"
   },
   "description": {
-    "en": "Light blue crystals used to forge Mystic Enhancement Ore as well as some weapons.",
-    "ru": "Светло-голубые кристаллы, используемые для ковки Волшебной руды усиления, а также некоторых видов оружия"
+    "_code": "4227079165",
+    "zh": "未经削切的晶体。在专门处理后，才能真正展现价值吧。",
+    "de": "Ein ungeschliffener Kristall, der erst nach Bearbeitung durch qualifizierte Handwerker seinen wahren Wert zeigt.",
+    "en": "An uncut crystal. Only professional craftsmanship can bring out its true value.",
+    "es": "Cristal bruto. Solo un profesional podrá sacar su auténtico valor.",
+    "fr": "Cristal brut. Seul un professionnel pourra faire ressortir sa vraie valeur.",
+    "id": "Sebongkah kristal mentah yang belum diolah. Nilainya hanya akan meningkat setelah diolah secara presisi.",
+    "ja": "加工していないクリスタルの塊。専門的な処理を施すと、本当の価値を発揮します。",
+    "ko": "가공되지 않은 결정체. 세공을 해야 진정한 가치를 알 수 있다",
+    "pt": "Cristais não moldados. Apenas um profissional poderá trazer o seu verdadeiro valor.",
+    "ru": "Необработанные кристаллы. Только профессиональный ремесленник может выявить его истинную ценность.",
+    "th": "ก้อนคริสตัลที่ยังไม่ผ่านการเจียระไน ช่างฝีมือที่ชำนาญแล้วเท่านั้นที่จะดึงเอาคุณค่าที่แท้จริงของมันออกมาได้",
+    "vi": "Tinh thể chưa qua gọt giũa. Sau khi xử lý mới có thể tỏ rõ giá trị."
   },
+  "tags": ["smithing-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": 259200,

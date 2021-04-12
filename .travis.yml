@@ -1,17 +1,24 @@
 language: node_js
 node_js:
-  - 'stable'
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $github_token
+  github_token: "$github_token"
   local_dir: build
-  # Push the build artifacts to the gh-pages branch if the deployment is on 'master'.
   on:
     branch: master
+addons:
+  sonarcloud:
+    organization: "genshinmap"
+    token:
+      secure: gT9XDaCqTZnZ/rzQ/4nUlc+ZM2vAdImJt7KhbErt9bJwe/rkUemEG+wil6mNOtqosYlSI6tVWQqzok+Gq8BJgawGbCKTzsA44yMXa2iLeQrS8nvxJej9t9VhDNTAJYYyZMLdMZFrBNanu0YVyT7oPQP8jYPqk5QTeuaKpzmUdDq0hVOx2eOCaEcv2QxOsyIy7esSCnbVSPQ5k9FyFHjO6QiemZyGj7S9nz41pG0ES0bq6RIZikTHjcslJ6xK7b1cCzT1JpCSxedyYL4Wp9STYu1fYTr2SyWK5QGYipFairksQyyNJDzV8ip+lVIqkB0mvFJkbinZlN/93Ww4xnWkMgbnMwcdI2EOK5kLF5bAia/4XrBTG39aoh/Un+t10a8zemjWCY906fbsLi1t3MbUp15xXRoS5ACoA0xPXerhPe9MdlOQPG2DUIlWmkHoLrK1bTAzsNMUr2tz1lCZk5PzK+8on1m6u0xEHUmV70f8xeFrfO3uOSmOPnKHZWr3VqaRBaLDiJgCDzw1qmhBQHphIksXlzl/XWB59X47VdCriri7BOabPmBjkzKEndFqlZshWJx/4MW5DSTPzGBw3hWkE2UYEWakCtVyA8owkvC5KM0TYToQzHzyj7jOYfVpHUJ9oAwse864FF2Xl7l7+LdfSgHzZ3erJCOt3MvHXhBNu2U=
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner

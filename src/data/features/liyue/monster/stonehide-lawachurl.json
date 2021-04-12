@@ -1,14 +1,37 @@
 {
   "format": 2,
-  "description": {
-    "en": "Powerful boss Hilichurls with a Geo carapace."
+  "name": {
+    "_code": "3207163591",
+    "zh": "丘丘岩盔王",
+    "de": "Steinhaut-Lawachurl",
+    "en": "Stonehide Lawachurl",
+    "fr": "Chef Brutorocheux",
+    "id": "Stonehelm, Hilichurl Chieftain",
+    "ja": "ヒルチャール·岩兜の王",
+    "ko": "츄츄 바위왕",
+    "pt": "Lawachurl da Pedra Oculta",
+    "ru": "Лавачурл с каменным панцирем",
+    "th": "Stonehide Lawachurl",
+    "vi": "Vua Mũ Đá Hilichurl"
   },
+  "description": {
+    "_code": "2679728316",
+    "zh": "千嶂中漫行的神秘「王者」。\\n被同胞称为「Lawa」的庞大丘丘人。环境中增生的岩元素化成了它们身体的一部分，仿佛血肉与皮肤皆由不移的山岩雕琢而成。",
+    "de": "Ein mysteriöser „Herr“ der Hilichurle, der zwischen unzähligen Gipfeln umherstapft.\\nDieser riesige Hilichurl wird von seinen Brüdern „Lawa“ genannt. Die überschwänglichen Geo-Energien in der Umgebung haben sich auf sein Fleisch, Blut und die Haut ausgewirkt, die aussieht wie aus Stein gehauen.",
+    "en": "A mysterious \"lord\" of hilichurls that walks between a thousand peaks.\\nThis huge hilichurl is referred to as a \"lawa\" by its brethren. The abundant Geo energies in the environment have become part of their flesh, blood, and skin, which look as if they were chiseled out of mountain rock.",
+    "es": "Un misterioso rey de los Hilichurls que deambula por las montañas rocosas.\\nSe trata de una criatura de gran tamaño a la que los demás Hilichurls llaman Lawa. El elemento Geo presente en el entorno se fusionó con su cuerpo, y su carne y su piel parecen hechas de roca.",
+    "fr": "Un mystérieux « chef » Brutocollinus qui erre sur les sommets.\\nCet énorme Brutocollinus est désigné sous le nom de « Lawa » par ses congénères. L'énergie Géo qui abonde dans son environnement a imprégné sa chair, son sang et sa peau, si bien qu'on dirait qu'il a été taillé dans la roche même qui l'entoure.",
+    "id": "Seekor \"raja\" misterius yang berkeliaran di antara puncak bebatuan.\\nSeekor Hilichurl raksasa yang dipanggil \"Lawa\" oleh kawan sejenisnya. Energi Geo yang berlimpah di habitat tempatnya hidup telah menjadi bagian dari tubuh dan darah mereka. Sehingga membuat mereka seolah-olah diukir dari bebatuan.",
+    "ja": "山々を歩き回る謎の「王者」。\\n同胞から「Lawa」と呼ばれる巨大なヒルチャール。周囲に満ちた岩元素は体の一部となり、血肉と皮膚は彫り上げた不動の岩みたいだ。",
+    "ko": "산속을 어슬렁거리는 의문의 「왕」.\\n동료들이 「Lawa」라고 부르는 거대 츄츄족. 환경 속에서 증식된 바위 원소가 그들의 신체 일부가 되어 마치 혈육과 피부가 부동의 바위로 조각된 것만 같다",
+    "pt": "Um misterioso \"chefe\" dos Hilichurls que caminha entre milhares de montanhas.\\nEste enorme Hilichurl é chamado de \"Lawa\" por seus companheiros. As energias Geo abundantes no meio ambiente tornaram-se parte de sua carne, sangue e pele, que parecem como se fossem esculpidas na rocha da montanha.",
+    "ru": "Загадочный «вождь», обитающий среди тысячи скал.\\nЭтого огромного хиличурла собратья называют «лава». Избыточная Гео энергия стала частью их плоти, поэтому они словно высечены из камня.",
+    "th": "\"ราชา\" ลึกลับผู้สัญจรไปมาท่ามกลางยอดเขานับพัน\\nHilichurl ตัวใหญ่ยักษ์ซึ่งถูกเรียกโดยเหล่าพวกพ้องว่า \"Lawa\" ธาตุหินที่แพร่กระจายในสิ่งแวดล้อมนั้น ได้กลายเป็นส่วนหนึ่งของร่างกายของพวกมันไปแล้ว ราวกับว่ากล้ามเนื้อและผิวหนังได้ถูกแกะสลักออกมาจากหินผาที่สงบนิ่ง",
+    "vi": "\"Vương giả\" thần bí bước đi trên đỉnh núi.\\nHilichurl to lớn được đồng bào gọi là \"Lawa\". Nguyên tố Nham sản sinh trong môi trường đã trở thành một phần cơ thể của chúng, dường như da thịt đều được điêu khắc từ núi non."
+  },
+  "tags": ["artifacts", "character-weapon-material", "weapon-ascension-material"],
   "enabled": false,
   "cluster": "on",
-  "name": {
-    "en": "Stonehide Lawachurl",
-    "pt": "Rei Hilichurl"
-  },
   "respawn": 86400,
   "icons": {
     "filter": "stonehide-lawachurl",

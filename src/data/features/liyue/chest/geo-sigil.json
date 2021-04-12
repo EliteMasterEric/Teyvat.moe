@@ -1,11 +1,34 @@
 {
   "format": 2,
   "name": {
+    "_code": "3999941556",
+    "zh": "岩之印",
+    "de": "Geo-Siegel",
     "en": "Geo Sigil",
-    "pt": "Selo Geo"
+    "es": "Insignia Geo",
+    "fr": "Sceau Géo",
+    "id": "Geo Sigil",
+    "ja": "岩の印",
+    "ko": "바위의 인장",
+    "pt": "Selo Geo",
+    "ru": "Печать Гео",
+    "th": "Geo Sigil",
+    "vi": "Ấn Nham"
   },
   "description": {
-    "en": "A sigil embedded in a cliff face, valued by certain jewellers."
+    "_code": "3148865853",
+    "zh": "受到璃月大地的岩石认可，获授的印记。\\n用来在璃月港内特定的地方兑换特殊道具。",
+    "de": "Ein Zeichen für die Anerkennung der Felsen von Liyue.\\nKann an bestimmten Orten in Liyue gegen besondere Objekte eingetauscht werden.",
+    "en": "An insignia that shows the recognition of the cliffs of Liyue.\\nCan be exchanged for special items in Liyue.",
+    "es": "Una insignia que muestra el reconocimiento de las montañas de Liyue.\\nPuede ser intercambiada por objetos especiales en Liyue.",
+    "fr": "Un insigne reconnu par le rocher de Liyue.\\nS'échange contre des objets spéciaux dans un lieu spécifique de Liyue.",
+    "id": "Lencana yang menunjukkan pengakuan tebing Liyue.\\nDapat ditukar untuk item khusus di Liyue.",
+    "ja": "璃月の岩に認められ、授かった印記。\\n璃月港の記念品ショップで特別なアイテムと交換できる。",
+    "ko": "리월 대지의 암석의 허락을 받아 부여받은 표식.\\n리월항의 특정 장소에서 특수한 아이템을 교환할 수 있다",
+    "pt": "Uma insígnia que mostra o reconhecimento dos penhascos de Liyue.\\nPode ser trocada por itens especiais em Liyue.",
+    "ru": "Символ признания скалистыми горами гавани Ли Юэ.\\nМожно обменять на особые предметы в Ли Юэ.",
+    "th": "เครื่องหมายผาหินแห่ง Liyue \\nใช้สำหรับแลกเปลี่ยนไอเทมพิเศษ ในสถานที่เฉพาะของ Liyue",
+    "vi": "Dấu ấn nhận được khi có được sự chấp nhận của nham thạch vùng Liyue.\\nDùng để đổi vật phẩm đặc biệt ở cảng Liyue."
   },
   "enabled": true,
   "cluster": "on",
@@ -126,6 +149,15 @@
         "en": "On the mountain on the right of the Domain of Forgery"
       },
       "popupMedia": "liyue/geo-sigil/9"
+    },
+    {
+      "coordinates": [-27.1039, 20.0836],
+      "id": "6DFADE8E6BDC160EBB04221A995670D8BF9303BB",
+      "importIds": {
+        "gm_legacy": ["liyueCrate/1"]
+      },
+      "popupAttribution": "Unknown",
+      "popupMedia": "liyue/crate/1"
     }
   ]
 }

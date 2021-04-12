@@ -1,13 +1,35 @@
 {
   "format": 2,
   "name": {
-    "en": "Lotus Head",
+    "_code": "3205384366",
     "zh": "莲蓬",
-    "pt": "Lótus"
+    "de": "Lotosfrucht",
+    "en": "Lotus Head",
+    "fr": "Fruit du lotus",
+    "id": "Lotus Head",
+    "ja": "ハスの花托",
+    "ko": "연꽃받침",
+    "pt": "Cabeças de Lótus",
+    "ru": "Чашечка лотоса",
+    "th": "Lotus Head",
+    "vi": "Đài Sen"
   },
   "description": {
-    "en": "An aquatic plant native to Liyue that grows and blooms in pairs. Used in Alchemy and Cooking."
+    "_code": "1746504493",
+    "zh": "璃月水生的泽芝，花开两株。一株盛放芳香，一株莲蓬清苦。据说能入药。",
+    "de": "Eine Pflanze mit zwei Stängeln, die in stehenden Gewässern rund um Liyue wächst. Ein Stängel duftet angenehm, der andere ist bitter. Eignet sich angeblich gut für Medizin.",
+    "en": "An aquatic plant native to Liyue that grows and blooms in pairs. One is fragrant, and the other bitter. It's said to make a good herbal medicine.",
+    "es": "Una planta acuática originaria de Liyue que crece y florece en parejas. Una de ellas es aromática, mientras que la otra es amarga. Se dice que es una buena hierba medicinal.",
+    "fr": "Une plante aquatique originaire de Liyue qui pousse par deux. L'une d'elle dégage un doux parfum floral, tandis que l'autre porte un fruit amer. On dit que c'est une bonne plante médicinale.",
+    "id": "Tumbuhan akuatik dari Liyue yang tumbuh dan mekar berpasangan. Satunya harum dan satunya pahit. Dikatakan bagus menjadi obat herbal.",
+    "ja": "璃月地域の水辺に咲くハスは二つの花が咲く。一つは香りを放ち、もう一つは少し苦い花托になる。薬にも使えるらしい。",
+    "ko": "리월의 수생 연꽃으로 한 줄기에 두 송이의 꽃이 핀다. 한 송이는 향긋한 향을 내뿜고, 다른 한 송이는 씁쓸한 맛이 나며 약으로 쓰인다고 한다",
+    "pt": "Uma planta aquática originária de Liyue que cresce e floresce em pares. Uma delas é aromática enquanto que a outra é amarga. Dizem que é boa como erva medicinal.",
+    "ru": "Водяное растение Ли Юэ, растущее и цветущее только в парах. Один из них преисполнен ароматом, в то время как другой - горечью. Говорят, что из чашечек лотоса получаются отличные лекарства.",
+    "th": "ส่วนฝักของพืชน้ำแห่งเมือง Liyue ที่จะขึ้นและบานเป็นคู่ ๆ ดอกหนึ่งมีความหอม อีกดอกมีความขม ว่ากันว่าสามารถนำมาทำยาได้",
+    "vi": "Hoa sen sinh trưởng trên nước ở Liyue, hoa nở hai đóa, một đóa tỏa ngát hương thơm, một đóa đài sen thanh đắng. Nghe nói có thể dùng làm thuốc."
   },
+  "tags": ["alchemy-ingredient", "cooking-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": 172800,

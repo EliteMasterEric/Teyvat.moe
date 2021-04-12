@@ -1,15 +1,38 @@
 {
   "format": 2,
-  "description": {
-    "en": "A fresh young bamboo shoot with an exotic aroma. Used in Recipes."
+  "name": {
+    "_code": "222473598",
+    "zh": "竹笋",
+    "de": "Bambussprosse",
+    "en": "Bamboo Shoot",
+    "es": "Brote de bambú",
+    "fr": "Pousse de bambou",
+    "id": "Bamboo Shoot",
+    "ja": "タケノコ",
+    "ko": "죽순",
+    "pt": "Broto de Bambu",
+    "ru": "Побеги бамбука",
+    "th": "Bamboo Shoot",
+    "vi": "Măng Trúc"
   },
+  "description": {
+    "_code": "3902769349",
+    "zh": "新鲜生长出土的竹子嫩芽。有着奇妙的芳香，是只有竹子生长的地方才会出产的美味食材。",
+    "de": "Eine frisch dem Boden entronnene Bambussprosse. Diese Zutat mit einem exotischen Aroma ist nur in Gegenden zu finden, wo Bambus wächst.",
+    "en": "A fresh young bamboo shoot, straight out of the ground. It is a delicious cooking ingredient with an exotic aroma, found exclusively in bamboo-growing regions.",
+    "es": "Un brote de bambú fresco que despide una fragancia muy peculiar. Es un ingrediente delicioso que solo puede encontrarse en zonas con bambú.",
+    "fr": "Une pousse de bambou qui vient tout juste de naître. Elle dégage un parfum particulier et ne peut qu'être trouvée dans les forêts de bambou.",
+    "id": "Tunas bambu muda segar, yang berasal langsung dari tanah. Ini adalah bahan masakan lezat dengan aroma yang eksotis, dapat ditemukan secara eksklusif di daerah penanaman bambu.",
+    "ja": "新鮮な採りたての筍の芽、不思議ないい匂いがする。筍が生えるところにしか育てられない美味しい食材。",
+    "ko": "새로이 자란 신선한 대나무의 어린순. 기묘한 향을 풍기며, 대나무가 나는 지역에서만 나오는 맛있는 식자재이다",
+    "pt": "Um broto de bambu que acabou de sair do chão, bem fresquinho. Este ingrediente com um aroma exótico só pode ser encontrado em áreas onde o bambu cresce.",
+    "ru": "Молодые побеги бамбука. Источают приятный аромат и могут использоваться в приготовлении блюд. Можно найти только в местах, где растёт бамбук.",
+    "th": "หน่ออ่อนของต้นไผ่ที่งอกขึ้นมาใหม่ ๆ นั้นมีกลิ่นหอมมาก มีเพียงที่ ๆ ต้นไผ่เจริญเติบโตได้เท่านั้นจึงจะมีวัตถุดิบทำอาหารที่แสนอร่อยนี้",
+    "vi": "Chồi non cây trúc nhô lên khỏi mặt đất. Có mùi thơm kỳ diệu, là nguyên liệu thơm ngon của riêng những nơi có trúc sinh trưởng."
+  },
+  "tags": ["cooking-ingredient"],
   "enabled": true,
   "cluster": "on",
-  "name": {
-    "en": "Bamboo Shoot",
-    "zh": "笋",
-    "pt": "Broto de Bambu"
-  },
   "respawn": 172800,
   "icons": {
     "filter": "bamboo-shoot",

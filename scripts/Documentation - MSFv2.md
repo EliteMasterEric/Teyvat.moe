@@ -46,8 +46,13 @@ Final data format example.:
   /*
    * name {Object} The display name of the feature or route.
    *   Localized. Format has not changed since the first marker storage format.
+   *   The _code attribute is used by the rip_localization script.
+   *   Find the appropriate code from the TextMap file to replace with all appropriate language values.
    */
-  "name": { "en": "Crimson Agate" },
+  "name": { 
+    "_code": "3351602148",
+    "en": "Crimson Agate"
+  },
   /*
    * description {Object} A description of the feature or route.
    *   Optional. Localized.
