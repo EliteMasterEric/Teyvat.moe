@@ -30,7 +30,9 @@
     "th": "หินคริสตัลที่อุดมด้วยพลังงานไฟฟ้า มันสามารถรวบรวมไฟฟ้าจากอากาศรอบ ๆ ตัวได้ เมื่อลูบจะทำให้รู้สึกชา หากมีอุปกรณ์ที่สอดคล้องกัน บางทีคุณอาจทำอะไรบางอย่างกับธาตุไฟฟ้าที่มีอยู่ในนั้นได้...?",
     "vi": "Tinh thạch có điện lực cao, được kết tinh từ điện trong khắp đại lục, chạm vào có cảm giác tê liệt. Nếu có thiết bị tương ứng, có lẽ sẽ làm được gì đó với nguyên tố điện trong đó nhỉ?"
   },
-  "tags": ["alchemy-ingredient"],
+  "tags": [
+    "alchemy-ingredient"
+  ],
   "enabled": true,
   "cluster": "on",
   "respawn": 172800,
@@ -45,120 +47,187 @@
   },
   "data": [
     {
-      "coordinates": [-41.6625, 25.72422],
+      "coordinates": [
+        -41.6625,
+        25.72422
+      ],
       "id": "3671B0E0CBC344E15E10F48634542ABE4595D131",
       "importIds": {
-        "gm_legacy": ["liyueElectroCrystal/1"],
-        "yuanshen": ["54_1"]
+        "gm_legacy": [
+          "liyueElectroCrystal/1"
+        ],
+        "yuanshen": [
+          "54_1"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-41.68984, 25.80234],
+      "coordinates": [
+        -41.68984,
+        25.80234
+      ],
       "id": "C3E8C9409FE9CEE018B5EF44248F1E5E36173CA5",
       "importIds": {
-        "gm_legacy": ["liyueElectroCrystal/2"],
-        "yuanshen": ["54_2"]
+        "gm_legacy": [
+          "liyueElectroCrystal/2"
+        ],
+        "yuanshen": [
+          "54_2"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-41.7836, 25.75156],
+      "coordinates": [
+        -41.7836,
+        25.75156
+      ],
       "id": "C09C8D7959ADB23AD25BFFA952EE2837393C93EE",
       "importIds": {
-        "gm_legacy": ["liyueElectroCrystal/3"],
-        "yuanshen": ["54_3"]
+        "gm_legacy": [
+          "liyueElectroCrystal/3"
+        ],
+        "yuanshen": [
+          "54_3"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-27.95547, 17.89219],
+      "coordinates": [
+        -27.95547,
+        17.89219
+      ],
       "id": "060BD80E2EE28417E7F7715068142D244FE265EF",
       "importIds": {
-        "gm_legacy": ["liyueElectroCrystal/4"],
-        "yuanshen": ["54_4"]
+        "gm_legacy": [
+          "liyueElectroCrystal/4"
+        ],
+        "yuanshen": [
+          "54_4"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-28.01407, 17.91172],
+      "coordinates": [
+        -28.01407,
+        17.91172
+      ],
       "id": "13353D6FAA97F2642FCF9646853BB102D705982F",
       "importIds": {
-        "gm_legacy": ["liyueElectroCrystal/5"],
-        "yuanshen": ["54_5"]
+        "gm_legacy": [
+          "liyueElectroCrystal/5"
+        ],
+        "yuanshen": [
+          "54_5"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-38.78879, 23.9026],
+      "coordinates": [
+        -38.78879,
+        23.9026
+      ],
       "id": "D56DDD175A36EC40A2BE20F153A07726BC7654BF",
       "importIds": {
-        "yuanshen": ["54_6"]
+        "yuanshen": [
+          "54_6"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_6.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-38.73409, 23.92601],
+      "coordinates": [
+        -38.73409,
+        23.92601
+      ],
       "id": "290FA48424D600A2D9643FF7A0A6EB8727EA2B9D",
       "importIds": {
-        "yuanshen": ["54_7"]
+        "yuanshen": [
+          "54_7"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_7.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-45.30963, 42.66953],
+      "coordinates": [
+        -45.30963,
+        42.66953
+      ],
       "id": "95389A785450A43393503679F7878993C6A201BA",
       "importIds": {
-        "yuanshen": ["54_8"]
+        "yuanshen": [
+          "54_8"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_8.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-45.25625, 42.63438],
+      "coordinates": [
+        -45.25625,
+        42.63438
+      ],
       "id": "42B86067E541723998C12F2B4D9FD0F84B38C3CD",
       "importIds": {
-        "yuanshen": ["54_9"]
+        "yuanshen": [
+          "54_9"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_9.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-40.46718, 23.47683],
+      "coordinates": [
+        -40.46718,
+        23.47683
+      ],
       "id": "E05FCD9574CE6735E602C73881F0668B16E50371",
       "importIds": {
-        "yuanshen": ["54_10"]
+        "yuanshen": [
+          "54_10"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_10.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-33.92872, 20.53964],
+      "coordinates": [
+        -33.92872,
+        20.53964
+      ],
       "id": "71E98DD153A61C061135D033867C1C7F04A0A2C5",
       "importIds": {
-        "yuanshen": ["54_11"]
+        "yuanshen": [
+          "54_11"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_11.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-40.76146, 30.4638],
+      "coordinates": [
+        -40.76146,
+        30.4638
+      ],
       "id": "C36CFEFE47F2F12B8BBA21BD5F6C43A076CA58B3",
       "importIds": {
-        "yuanshen": ["54_12"]
+        "yuanshen": [
+          "54_12"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_12.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-40.68074, 30.44687],
+      "coordinates": [
+        -40.68074,
+        30.44687
+      ],
       "id": "ED0405021CEE101E8654C7391730F9D8F11AF9BE",
       "importIds": {
-        "yuanshen": ["54_13"]
+        "yuanshen": [
+          "54_13"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/54_13.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

@@ -142,7 +142,6 @@ def parse_options
 
     opts.on('-i', '--input INPUT', 'Input file/folder to process') { |i| options[:input] = i }
     opts.on('-o', '--output OUTPUT', 'Output folder to place processed files') { |o| options[:output] = o }
-    opts.on('-c', '--copy', 'Copy files which are new. Otherwise, ignore files which are new.') { |c| options[:copy] = c }
   end.parse!
 
   # Validate and reorganize options.

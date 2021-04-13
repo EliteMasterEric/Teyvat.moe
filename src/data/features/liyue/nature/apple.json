@@ -30,7 +30,9 @@
     "th": "ผลไม้ที่ทั้งกรอบและหอม รสชาติเยี่ยมไม่ว่าจะทานสดหรือ หมักเป็นไวน์",
     "vi": "Trái cây giòn ngọt, ăn sống hay ủ rượu đều rất ngon."
   },
-  "tags": ["cooking-ingredient"],
+  "tags": [
+    "cooking-ingredient"
+  ],
   "enabled": true,
   "cluster": "on",
   "respawn": "none",
@@ -45,61 +47,94 @@
   },
   "data": [
     {
-      "coordinates": [-24.41593, 23.97862],
+      "coordinates": [
+        -24.41593,
+        23.97862
+      ],
       "id": "FDD01E47A8399CC343F2A6DE343375AEB6944FE8",
       "importIds": {
-        "yuanshen": ["110_1"]
+        "yuanshen": [
+          "110_1"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-24.41593, 24.00206],
+      "coordinates": [
+        -24.41593,
+        24.00206
+      ],
       "id": "62A96A31B598EBCC82E16C41E8CBD1D31CF5DAF8",
       "importIds": {
-        "yuanshen": ["110_2"]
+        "yuanshen": [
+          "110_2"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-46.12212, 21.40001],
+      "coordinates": [
+        -46.12212,
+        21.40001
+      ],
       "id": "FB20453A0270BFB7D2DB251DC1BCF8C5921DDD55",
       "importIds": {
-        "yuanshen": ["110_3"]
+        "yuanshen": [
+          "110_3"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-36.14688, 28.97552],
+      "coordinates": [
+        -36.14688,
+        28.97552
+      ],
       "id": "43F5C6D6B16F6D14547C0AD814E6F811BE8897D0",
       "importIds": {
-        "yuanshen": ["110_4"]
+        "yuanshen": [
+          "110_4"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-36.13776, 28.94558],
+      "coordinates": [
+        -36.13776,
+        28.94558
+      ],
       "id": "BE8DF48BB356467EEDBD6F28102057EC9F16EB79",
       "importIds": {
-        "yuanshen": ["110_5"]
+        "yuanshen": [
+          "110_5"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-28.24107, 27.88624],
+      "coordinates": [
+        -28.24107,
+        27.88624
+      ],
       "id": "126974CD994CB02DA8E9B82199729BE0CEF5A377",
       "importIds": {
-        "yuanshen": ["110_6"]
+        "yuanshen": [
+          "110_6"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/110_6.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-23.00364, 23.26849],
+      "coordinates": [
+        -23.00364,
+        23.26849
+      ],
       "id": "1290BE397429978CC01029294FB8432EA2784089",
       "importIds": {
-        "yuanshen": ["110_7"]
+        "yuanshen": [
+          "110_7"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/110_7.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

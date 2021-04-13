@@ -30,7 +30,9 @@
     "th": "พืชหัวที่สามารถเพาะปลูก และเก็บเกี่ยวได้ง่าย อุดมไปด้วย เส้นใยและสารอาหาร",
     "vi": "Là thực vật có nhiều dinh dưỡng. Dễ trồng và thu hoạch, có hàm lượng vitamin cao."
   },
-  "tags": ["cooking-ingredient"],
+  "tags": [
+    "cooking-ingredient"
+  ],
   "enabled": false,
   "cluster": "on",
   "respawn": "none",
@@ -45,48 +47,68 @@
   },
   "data": [
     {
-      "coordinates": [-27.4268, 30.89609],
+      "coordinates": [
+        -27.4268,
+        30.89609
+      ],
       "id": "BEEBDED9EEAC7DA72D9220F64B52AD1B05AB05F0",
       "importIds": {
-        "yuanshen": ["82_1"]
+        "yuanshen": [
+          "82_1"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/82_1.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-27.43722, 30.92604],
+      "coordinates": [
+        -27.43722,
+        30.92604
+      ],
       "id": "08333BD910DED6C396832CD6EA7590DC43D96515",
       "importIds": {
-        "yuanshen": ["82_2"]
+        "yuanshen": [
+          "82_2"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/82_2.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-27.39293, 30.9026],
+      "coordinates": [
+        -27.39293,
+        30.9026
+      ],
       "id": "E7650434B0A4F734E8DAD1C9C011781939578B89",
       "importIds": {
-        "yuanshen": ["82_3"]
+        "yuanshen": [
+          "82_3"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/82_3.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-27.39425, 30.92603],
+      "coordinates": [
+        -27.39425,
+        30.92603
+      ],
       "id": "83DF6524FA1B9F8BB691C069553C3E0A949AD239",
       "importIds": {
-        "yuanshen": ["82_4"]
+        "yuanshen": [
+          "82_4"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/82_4.jpg",
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-42.21978, 21.0289],
+      "coordinates": [
+        -42.21978,
+        21.0289
+      ],
       "id": "5DA83E7560AA3B3722973AE2781C25A9B9CA9700",
       "importIds": {
-        "yuanshen": ["82_5"]
+        "yuanshen": [
+          "82_5"
+        ]
       },
-      "popupMedia": "https://yuanshen.site/comment_png/82_5.jpg",
       "popupAttribution": "Yuanshen.site"
     }
   ]

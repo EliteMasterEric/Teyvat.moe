@@ -1,7 +1,19 @@
 {
   "format": 2,
   "name": {
-    "_comment": "999139950"
+    "_code": "999139950",
+    "zh": "霓裳花",
+    "de": "Seidenblume",
+    "en": "Silk Flower",
+    "es": "Flor de seda",
+    "fr": "Fleur de soie",
+    "id": "Silk Flower",
+    "ja": "霓裳花",
+    "ko": "예상꽃",
+    "pt": "Flor de Seda",
+    "ru": "Шелковица",
+    "th": "Silk Flower",
+    "vi": "Hoa Nghê Thường"
   },
   "description": {
     "_code": "538673225",
@@ -18,7 +30,10 @@
     "th": "ดอกไม้สีแดงที่เบ่งบานราวกับหมู่เมฆสีกุหลาบของ Liyue สามารถนำมาทำเป็นสิ่งทอที่นุ่มลื่นราวกับน้ำได้ โดย \"สมาคมการค้า Feiyun\" นั้น เป็นยักษ์ใหญ่ในการผลิตผ้าไหมและสิ่งทอของ Liyue ซึ่งมีเรื่องเล่ากันว่า ทางสมาคมได้ทำโรงเพาะเลี้ยงขึ้นมาอย่างลับ ๆ ที่ไหนสักแห่ง เพื่ออาศัยปริมาณการเพาะเลี้ยงและคุณภาพที่ไม่เหมือนใครของดอกไม้นี้ มาทำให้ไม่มีใครในอุตสาหกรรมเดียวกันสู้พวกเขาได้",
     "vi": "Hoa đỏ thắm nở rực rỡ như những đám mây ở Liyue, có thể tạo thành vải dệt mỏng manh như nước. Thương Hội Phi Vân ở Liyue là một gã khổng lồ trong lĩnh vực sản xuất lụa và dệt. Nghe đồn Thương Hội có một vườn ươm Hoa Nghê Thường bí mật ở đâu đó trong đại lục, với sản lượng và kết cấu của chủng hoa đặc biệt này, người trong ngành sẽ không ai bì được."
   },
-  "tags": ["character-ascension-material", "furniture-ingredient"],
+  "tags": [
+    "character-ascension-material",
+    "furniture-ingredient"
+  ],
   "enabled": true,
   "cluster": "on",
   "respawn": 172800,
@@ -33,128 +48,226 @@
   },
   "data": [
     {
-      "coordinates": [-48.3539, 27.68516],
+      "coordinates": [
+        -48.3539,
+        27.68516
+      ],
       "id": "EC43DED32C0CBD028FDA86492B92CB2C33696C47",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/2"],
-        "yuanshen": ["5_2"]
+        "gm_legacy": [
+          "liyueSilkFlower/2"
+        ],
+        "yuanshen": [
+          "5_2"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-48.43984, 27.5797],
+      "coordinates": [
+        -48.43984,
+        27.5797
+      ],
       "id": "CDD96BAE788281E6ED4207DC8776E67B5C574A47",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/3"],
-        "yuanshen": ["5_3"]
+        "gm_legacy": [
+          "liyueSilkFlower/3"
+        ],
+        "yuanshen": [
+          "5_3"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-49.16641, 27.50937],
+      "coordinates": [
+        -49.16641,
+        27.50937
+      ],
       "id": "77584538C55EE5C6EE2DC3643F356188B0D989CA",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/4"],
-        "yuanshen": ["5_4"]
+        "gm_legacy": [
+          "liyueSilkFlower/4"
+        ],
+        "yuanshen": [
+          "5_4"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-49.11173, 27.66953],
+      "coordinates": [
+        -49.11173,
+        27.66953
+      ],
       "id": "75B5D9307A37F1B4EEF6BA32B2192F0D6BA9155F",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/5"],
-        "yuanshen": ["5_5"]
+        "gm_legacy": [
+          "liyueSilkFlower/5"
+        ],
+        "yuanshen": [
+          "5_5"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-48.9242, 27.87266],
+      "coordinates": [
+        -48.9242,
+        27.87266
+      ],
       "id": "61DA671FD1B50E7685548F5D5AFBB370742AC619",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/6"],
-        "yuanshen": ["5_6"]
+        "gm_legacy": [
+          "liyueSilkFlower/6"
+        ],
+        "yuanshen": [
+          "5_6"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-48.87731, 27.88049],
+      "coordinates": [
+        -48.87731,
+        27.88049
+      ],
       "id": "46673E568E64D3E8B49558425E9AAFAD94275231",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/7"],
-        "yuanshen": ["5_7"]
+        "gm_legacy": [
+          "liyueSilkFlower/7"
+        ],
+        "yuanshen": [
+          "5_7"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-32.04201, 28.15782],
+      "coordinates": [
+        -32.04201,
+        28.15782
+      ],
       "id": "8D0BA2551579F6A90EF94893B59680F19A59C448",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/8"],
-        "yuanshen": ["5_8"]
+        "gm_legacy": [
+          "liyueSilkFlower/8"
+        ],
+        "yuanshen": [
+          "5_8"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-32.23743, 28.53281],
+      "coordinates": [
+        -32.23743,
+        28.53281
+      ],
       "id": "CB08A41470B03B6726D660782F060F6D124E0968",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/9"],
-        "yuanshen": ["5_9"]
+        "gm_legacy": [
+          "liyueSilkFlower/9"
+        ],
+        "yuanshen": [
+          "5_9"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-32.94876, 29.16562],
+      "coordinates": [
+        -32.94876,
+        29.16562
+      ],
       "id": "CED3C8F36A4371ABD4847E843CC74F78C5A92393",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/10"],
-        "yuanshen": ["5_10"]
+        "gm_legacy": [
+          "liyueSilkFlower/10"
+        ],
+        "yuanshen": [
+          "5_10"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-33.05819, 28.99375],
+      "coordinates": [
+        -33.05819,
+        28.99375
+      ],
       "id": "E2816934C19D3A155BB174D839C8C71B381CF752",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/11"],
-        "yuanshen": ["5_11"]
+        "gm_legacy": [
+          "liyueSilkFlower/11"
+        ],
+        "yuanshen": [
+          "5_11"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-33.30052, 29.29844],
+      "coordinates": [
+        -33.30052,
+        29.29844
+      ],
       "id": "00C71698DAA2D98D1010C36BF79321F6F36A2C3A",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/12"],
-        "yuanshen": ["5_12"]
+        "gm_legacy": [
+          "liyueSilkFlower/12"
+        ],
+        "yuanshen": [
+          "5_12"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-33.53502, 29.15],
+      "coordinates": [
+        -33.53502,
+        29.15
+      ],
       "id": "3D3F864633B03F8C67F8E1ECF33A71851F276872",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/13"],
-        "yuanshen": ["5_13"]
+        "gm_legacy": [
+          "liyueSilkFlower/13"
+        ],
+        "yuanshen": [
+          "5_13"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-33.77733, 29.37656],
+      "coordinates": [
+        -33.77733,
+        29.37656
+      ],
       "id": "E977BE2614B660C945C517B824E2678A7FDCC7BC",
       "importIds": {
-        "gm_legacy": ["liyueSilkFlower/14"],
-        "yuanshen": ["5_14"]
+        "gm_legacy": [
+          "liyueSilkFlower/14"
+        ],
+        "yuanshen": [
+          "5_14"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [-48.20808, 26.94818],
+      "coordinates": [
+        -48.20808,
+        26.94818
+      ],
       "id": "2CC6D1588B62A6F99277003E544613DF7E5F97E8",
       "importIds": {
-        "yuanshen": ["5_1"],
-        "gm_legacy": ["liyueSilkFlower/1"]
+        "yuanshen": [
+          "5_1"
+        ],
+        "gm_legacy": [
+          "liyueSilkFlower/1"
+        ]
       },
       "popupAttribution": "Yuanshen.site"
     }

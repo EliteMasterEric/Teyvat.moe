@@ -101,10 +101,15 @@ const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExtern
       // Display external images in the editor,
       // since it is assumed this user submitted it.
       return <img src={media} className={classes.popupMediaImage} />;
+    } else {
+      // Prevent displaying external images for security reasons.
+      return (
+        <>
+          <Typography>{t('popup-media-external-warning')}</Typography>
+          <Typography>{media}</Typography>
+        </>
+      );
     }
-
-    // Prevent displaying external images for security reasons.
-    return <span>{media}</span>;
   }
 
   // Else, use an image from public/comments.

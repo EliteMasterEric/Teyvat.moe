@@ -6,7 +6,7 @@ require 'pathname'
 
 MIGRATED_DATA_DIR = "./output/migrated/"
 # You need to reproject the Yuanshen data before calling this.
-# Call ruby ./reproject_marker_data.rb --input ./output/yuanshen/data/ --output ./output/yuanshen/data-reprojected/
+# ruby ./reproject_marker_data.rb --input ./output/yuanshen/data/ --output ./output/yuanshen/data-reprojected/
 YUANSHEN_DATA_DIR = "./output/yuanshen/data-reprojected/"
 OUTPUT_DIR = "./output/merged/"
 
