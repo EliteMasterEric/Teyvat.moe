@@ -55,15 +55,11 @@ const _FeatureLayer: FunctionComponent<FeatureLayerProps> = ({ displayed, mapFea
   const map = useMap();
   const layerRef = useRef<LeafletMarkerClusterGroup | null>(null);
 
-  useEffect(() => {
-    if (layerRef.current != null) {
-      if (displayed) {
-        layerRef.current.addTo(map);
-      } else {
-        layerRef.current.removeFrom(map);
-      }
-    }
-  }, [map, displayed]);
+  // TODO: Is there an ideal way to do this?
+  // Simply using display=none means that all markers get loaded
+  // before the page can load, but returning null
+  // means the markers get reloaded when the layer is re-enabled.
+  if (!displayed) return null;
 
   // Choose the proper clustering function.
   let clusterFunction = null;

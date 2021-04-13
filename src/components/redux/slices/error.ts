@@ -32,8 +32,11 @@ export const errorSlice = createSlice({
       state.importError = initialState.importError;
     },
     clearErrors: (state) => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      state = initialState;
+      //For Immer specifically, you can either mutate the contents
+      // of the Proxy-wrapped state value as long as it's an object or array,
+      // or you can return an entirely new value, but not both at once.
+
+      return initialState;
     },
   },
   extraReducers: {

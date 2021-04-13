@@ -57,36 +57,6 @@ export const supportsWebP = async (): Promise<boolean> => {
 
 type ImageExtension = 'png' | 'webp';
 
-/**
- * @deprecated Causes major performance issues. Use NextJS image optimization instead.
- * Returns the image extension to use.
- * Built on a React state, so only valid in component body.
- * @param {boolean} block If true, useImageExtension will be null until the value is determined.
- *   Else, the value will be the default extension.
- */
-export const useImageExtension = (block = false): ImageExtension | null => {
-  const defaultValue: ImageExtension = 'png';
-  const [value, setValue] = useState<ImageExtension | null>(block ? null : defaultValue);
-
-  // // Load once.
-  useEffect(() => {
-    const onMount = async () => {
-      // let mounted = true;
-      // Fetch the preferences from local storage, by key.
-      const result = await supportsWebP();
-      console.warn(`WEBP support processing complete: ${result}`);
-      //if (mounted)
-      setValue(result ? 'webp' : defaultValue);
-      //return () => {
-      //  mounted = false;
-      //};
-    };
-    onMount();
-  }, []);
-
-  return value;
-};
-
 export const getNextImageUrl = (src: string, width: number, height: number): string => {
   return `/_next/image?url=${src}&w=${width}&h=${height}&q=100`;
 };

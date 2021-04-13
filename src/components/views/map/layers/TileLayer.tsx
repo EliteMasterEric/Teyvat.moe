@@ -216,8 +216,6 @@ interface MainTileLayerProps {
 }
 
 const MainTileLayer: FunctionComponent<MainTileLayerProps> = ({ onLoaded }) => {
-  console.warn(`Rendering tile layer using url '${TILE_URL}'`);
-
   return (
     <ErrorHandler errorHandler={ErrorTileLayer}>
       <AdvancedTileLayerComponent

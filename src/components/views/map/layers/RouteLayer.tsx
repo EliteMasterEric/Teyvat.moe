@@ -40,22 +40,13 @@ type RouteLayerProps = ConnectedProps<typeof connector> & RouteLayerBaseProps;
 
 const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed }) => {
   const map = useMap();
-  const layerRef = useRef<LeafletLayerGroup | null>(null);
 
-  useEffect(() => {
-    if (layerRef.current != null) {
-      if (displayed) {
-        layerRef.current.addTo(map);
-      } else {
-        layerRef.current.removeFrom(map);
-      }
-    }
-  }, [map, displayed]);
+  if (!displayed) return null;
 
   switch (routeGroup.format) {
     case 2:
       return (
-        <LayerGroup ref={layerRef}>
+        <LayerGroup>
           {routeGroup.data.map((route) => {
             return <RouteLine key={route.id} route={route} />;
           })}

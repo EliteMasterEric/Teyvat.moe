@@ -1175,3 +1175,5 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
 -   Added schema validation for feature/marker tags.
 -   Fixed issues with several bad feature tags.
 -   Added new localization string which displays when marker media isn't downloaded properly.
+-   Fixed several Sonar linting warnings.
+-   Switched back to only loading visible layers for improved performance on start (but slower performance when toggling).

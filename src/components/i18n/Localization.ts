@@ -17,7 +17,8 @@ export const DEFAULT_LOCALE_CODE = 'en';
 
 export type LanguageCode = keyof typeof languageCoreData;
 export const languageCodeList: LanguageCode[] = getKeys(languageCoreData);
-const distinguishLanguageCode = (input: any): input is LanguageCode => input in languageCodeList;
+const distinguishLanguageCode = (input: any): input is LanguageCode =>
+  languageCodeList.includes(input);
 
 /**
  * @param source 'en'

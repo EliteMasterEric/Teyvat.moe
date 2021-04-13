@@ -22,7 +22,6 @@ export const variableClusterFunction: MapClusterFunction = (zoom) => {
     case 10:
     case 9:
     case 8:
-    default:
       return 0;
     case 7:
       return 25;
@@ -32,6 +31,8 @@ export const variableClusterFunction: MapClusterFunction = (zoom) => {
       return 80;
     case 4:
       return 100;
+    default:
+      return 0;
   }
 };
 

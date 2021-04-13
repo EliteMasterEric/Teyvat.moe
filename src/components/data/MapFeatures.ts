@@ -106,11 +106,4 @@ export const getFeatureKeysByFilter = (
 };
 
 export const sortFeaturesByName = (data: MSFFeatureKey[]): MSFFeatureKey[] =>
-  data.sort((a, b) => {
-    // Sort the features alphabetically.
-    const textA = getMapFeature(a).name;
-    const textB = getMapFeature(b).name;
-
-    if (textA < textB) return -1;
-    return textA > textB ? 1 : 0;
-  });
+  _.sortBy(data, (a) => getMapFeature(a).name);

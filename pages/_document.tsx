@@ -33,7 +33,7 @@ import PageHeaders from 'src/components/views/PageHeaders';
 // 3. app.render
 // 4. page.render
 
-class MyDocument extends Document {
+class _document extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     // Render app and page and get the context of the page with collected side effects.
     const sheets = new ServerStyleSheets();
@@ -70,4 +70,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default _document;

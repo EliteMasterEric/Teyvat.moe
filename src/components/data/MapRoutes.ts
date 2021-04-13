@@ -61,9 +61,14 @@ export const initializeAllMapRouteGroups = () => {
       MapRouteGroups[result[0]] = result[1];
     }
   });
-  Promise.all(loaderPromises).then(() => {
-    setLoadingRoutes(true);
-  });
+  Promise.all(loaderPromises)
+    .then(() => {
+      setLoadingRoutes(true);
+    })
+    .catch((e) => {
+      console.error('Caught error initializing route groups.');
+      console.error(e);
+    });
 };
 export const getMapRouteGroup = (key: MSFRouteGroupKey): MSFRouteGroupExtended => {
   const result = MapRouteGroups[key] ?? null;

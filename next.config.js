@@ -1,10 +1,9 @@
 // Allows use of multiple plugins.
 const withPlugins = require('next-compose-plugins');
 
-// TODO: react-leaflet-cluster can't be imported without this.
-// Maybe a fix to next-transpile-modules will help?
-// Try to remove this eventually to take advantage of built-in CSS support.
-// https://github.com/martpie/next-transpile-modules/issues/146
+/**
+ * Outdated, use built-in CSS support instead.
+ */
 // const withCSS = require('@zeit/next-css');
 
 /**
@@ -40,7 +39,6 @@ const baseConfig = {
       },
     });
 
-    // TODO: Undo this.
     // config.optimization.minimize = false;
 
     return config;

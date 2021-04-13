@@ -67,8 +67,3 @@ const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
 const MapPage = connector(_MapPage);
 
 export default MapPage;
-
-/*
-  import FullScreenLoading from 'src/components/views/loading/FullScreenLoading';
-  <FullScreenLoading />
-*/

@@ -1,6 +1,4 @@
 import React, { FunctionComponent } from 'react';
-// import { Helmet } from 'react-helmet-async'; // Thread safe variant prevents warnings.
-// import Head from 'next/head';
 
 import Theme from 'src/components/Theme';
 import { isDev } from 'src/components/util';

@@ -15,7 +15,7 @@ import { NotificationProvider } from 'src/components/views/NotificationProvider'
 // import 'leaflet.markercluster/dist/MarkerCluster.css';
 // import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
-const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
+const _app: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -51,4 +51,4 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default _app;

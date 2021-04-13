@@ -156,17 +156,17 @@ export const importMarkerDataFromGMLegacy = (
     _.flatten(
       _.map(
         _.entries(featureDataUnmapped) as [MSFImportKey, number][],
-        (entry: [MSFImportKey, number]): ([MSFMarkerKey, number] | [])[] => {
-          const [importKey, timestamp] = entry;
+        (featureDataEntry: [MSFImportKey, number]): ([MSFMarkerKey, number] | [])[] => {
+          const [importKey, timestamp] = featureDataEntry;
           const dictionaryEntries = getDictionaryEntry(importKey);
           if (dictionaryEntries.length == 0) {
             missingEntries.push(importKey);
             return [];
           }
-          const result = _.map(dictionaryEntries, (entry: MSFMarkerKey): [MSFMarkerKey, number] => [
-            entry,
-            timestamp,
-          ]);
+          const result = _.map(dictionaryEntries, (dictEntry: MSFMarkerKey): [
+            MSFMarkerKey,
+            number
+          ] => [dictEntry, timestamp]);
           return result;
         }
       )
@@ -236,10 +236,6 @@ export const migrateData = (
   // By using case fallthrough, we move from
   /* eslint-disable no-fallthrough */
   switch (version) {
-    default:
-      console.error(`[ERROR] Could not identify preferences prefix ${version}`);
-      storeRecoveryData({ input }, `[ERROR] Could not identify preferences prefix ${version}`);
-      return null;
     case 'GM_001':
       /*
        * This update adds many new options, so defaults are injected.
@@ -476,6 +472,10 @@ export const migrateData = (
         ...output,
         version: PREFERENCES_VERSION,
       };
+    default:
+      console.error(`[ERROR] Could not identify preferences prefix ${version}`);
+      storeRecoveryData({ input }, `[ERROR] Could not identify preferences prefix ${version}`);
+      return null;
   }
   /* eslint-enable no-fallthrough */
 };
