@@ -108,45 +108,45 @@ export const uiSlice = createSlice({
   reducers: {
     // ImmerJS allows you to change the state by modifying state parameter object.
     // This provides automatic state merging.
-    setTab: (state, action: PayloadAction<UIControlsTab>) => {
+    setTab: (state: UIState, action: PayloadAction<UIControlsTab>) => {
       state.tab = action.payload;
     },
-    setMapCategory: (state, action: PayloadAction<MapCategoryKey>) => {
+    setMapCategory: (state: UIState, action: PayloadAction<MapCategoryKey>) => {
       state.mapCategory = action.payload;
     },
-    setMapRegion: (state, action: PayloadAction<MapRegionKey>) => {
+    setMapRegion: (state: UIState, action: PayloadAction<MapRegionKey>) => {
       state.mapRegion = action.payload;
     },
-    setOpen: (state, action: PayloadAction<boolean>) => {
+    setOpen: (state: UIState, action: PayloadAction<boolean>) => {
       state.open = action.payload;
     },
-    toggleOpen: (state) => {
+    toggleOpen: (state: UIState) => {
       state.open = !state.open;
     },
-    setMapHighlight: (state, action: PayloadAction<MSFMarkerID | MSFRouteID>) => {
+    setMapHighlight: (state: UIState, action: PayloadAction<MSFMarkerID | MSFRouteID>) => {
       state.mapHighlight = action.payload;
     },
-    clearMapHighlight: (state) => {
+    clearMapHighlight: (state: UIState) => {
       state.mapHighlight = null;
     },
     setMapPosition: {
       prepare: (latlng: MapPosition['latlng'], zoom: MapPosition['zoom']) => {
         return { payload: { latlng, zoom } };
       },
-      reducer: (state, action: PayloadAction<MapPosition>) => {
+      reducer: (state: UIState, action: PayloadAction<MapPosition>) => {
         state.mapPosition = action.payload;
       },
     },
-    setEditorEnabled: (state, action: PayloadAction<boolean>) => {
+    setEditorEnabled: (state: UIState, action: PayloadAction<boolean>) => {
       state.editorEnabled = action.payload;
     },
-    toggleEditorEnabled: (state) => {
+    toggleEditorEnabled: (state: UIState) => {
       state.editorEnabled = !state.editorEnabled;
     },
-    setEditorDebugEnabled: (state, action: PayloadAction<boolean>) => {
+    setEditorDebugEnabled: (state: UIState, action: PayloadAction<boolean>) => {
       state.editorDebugEnabled = action.payload;
     },
-    toggleEditorDebugEnabled: (state) => {
+    toggleEditorDebugEnabled: (state: UIState) => {
       state.editorDebugEnabled = !state.editorEnabled;
     },
     setLoading: {
@@ -154,28 +154,28 @@ export const uiSlice = createSlice({
         const payload = { [key]: status };
         return { payload };
       },
-      reducer: (state, action: PayloadAction<SetLoadingAction>) => {
+      reducer: (state: UIState, action: PayloadAction<SetLoadingAction>) => {
         state.loading = {
           ...state.loading,
           ...action.payload,
         };
       },
     },
-    setMapMarkerCount: (state, action: PayloadAction<number>) => {
+    setMapMarkerCount: (state: UIState, action: PayloadAction<number>) => {
       state.mapStats.markerCount = action.payload;
       state.loading.countMapFeatures = true;
     },
-    setMapRouteCount: (state, action: PayloadAction<number>) => {
+    setMapRouteCount: (state: UIState, action: PayloadAction<number>) => {
       state.mapStats.routeCount = action.payload;
       state.loading.countMapRoutes = true;
     },
-    setPermalinkId: (state, action: PayloadAction<string>) => {
+    setPermalinkId: (state: UIState, action: PayloadAction<string>) => {
       state.permalinkId = action.payload;
       state.loading.handlePermalinks = false;
     },
   },
   extraReducers: {
-    [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
+    [setPreferences.toString()]: (state: UIState, action: PayloadAction<Partial<AppState>>) => {
       return {
         ...state,
         ...action.payload.ui,
@@ -187,6 +187,8 @@ export const uiSlice = createSlice({
     },
   },
 });
+
+export const name = uiSlice.name;
 
 export const {
   setTab,

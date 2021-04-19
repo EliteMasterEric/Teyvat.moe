@@ -34,13 +34,17 @@ const _ControlsSubtabHelp: FunctionComponent<ControlsSubtabHelpProps> = ({
   markerCount,
   routeCount,
 }) => {
+  const counted = markerCount != null && routeCount != null;
+
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
       <SafeHTML gutterBottom>
-        {f('help-description', {
-          markers: (markerCount ?? '#').toString(),
-          routes: (routeCount ?? '#').toString(),
-        })}
+        {counted
+          ? f('help-description', {
+              markers: (markerCount ?? '#').toString(),
+              routes: (routeCount ?? '#').toString(),
+            })
+          : null}
       </SafeHTML>
       <SafeHTML gutterBottom>{t('help-migrate')}</SafeHTML>
       <SafeHTML gutterBottom>{t('help-contribute')}</SafeHTML>

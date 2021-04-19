@@ -80,6 +80,8 @@ export const displayedSlice = createSlice({
   },
 });
 
+export const name = displayedSlice.name;
+
 export const {
   setFeatureDisplayed,
   clearFeatureDisplayed,

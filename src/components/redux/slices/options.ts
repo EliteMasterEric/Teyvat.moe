@@ -70,6 +70,8 @@ export const optionsSlice = createSlice({
   },
 });
 
+export const name = optionsSlice.name;
+
 export const {
   setCompletedAlpha,
   setClusterMarkers,

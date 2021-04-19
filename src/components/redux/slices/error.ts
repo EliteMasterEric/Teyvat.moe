@@ -53,6 +53,8 @@ export const errorSlice = createSlice({
   },
 });
 
+export const name = errorSlice.name;
+
 export const { setImportError, clearImportError, clearErrors } = errorSlice.actions;
 
 /**

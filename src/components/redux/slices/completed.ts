@@ -2,7 +2,7 @@
  * Handles the section of the state that stores the transient state
  * of the user interface, such as current tab or map position.
  */
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice, Slice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
 import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/Element';
@@ -34,7 +34,7 @@ type MarkersCompletedAction = {
   timestamp: number;
 };
 
-export const completedSlice = createSlice({
+export const completedSlice: Slice = createSlice({
   name: 'completed',
   initialState,
   reducers: {
@@ -86,6 +86,8 @@ export const completedSlice = createSlice({
     },
   },
 });
+
+export const name = completedSlice.name;
 
 export const {
   setMarkerCompleted,

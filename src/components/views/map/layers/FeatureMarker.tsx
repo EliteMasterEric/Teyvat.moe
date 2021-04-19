@@ -27,7 +27,11 @@ import { selectCompletedAlpha } from 'src/components/redux/slices/options';
 import { AppState } from 'src/components/redux/types';
 import { SafeHTML } from 'src/components/util';
 import { ExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker';
-import { createClusterIcon, createMapIcon } from 'src/components/views/map/layers/FeatureIcon';
+import {
+  createClusterIcon,
+  createMapIcon,
+  editorMarker,
+} from 'src/components/views/map/layers/FeatureIcon';
 import { copyPermalink } from 'src/components/views/PermalinkHandler';
 
 const useStyles = makeStyles((_theme) => ({
@@ -196,13 +200,16 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   }
 
   // Build the icon for this marker. Relies on completion status.
-  const icon = createMapIcon({
-    ...(completed ? icons?.done : icons?.base),
-    marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
-    done: !!completed,
-    ext: svg ? 'svg' : 'png',
-    key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
-  });
+  const icon =
+    icons == null
+      ? editorMarker
+      : createMapIcon({
+          ...(completed ? icons?.done : icons?.base),
+          marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
+          done: !!completed,
+          ext: svg ? 'svg' : 'png',
+          key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
+        });
 
   // Build the cluster icon for the marker. Also relies on completion status.
   const clusterIcon = createClusterIcon({

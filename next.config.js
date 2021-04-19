@@ -39,7 +39,7 @@ const baseConfig = {
       },
     });
 
-    // config.optimization.minimize = false;
+    config.optimization.minimize = false;
 
     return config;
   },

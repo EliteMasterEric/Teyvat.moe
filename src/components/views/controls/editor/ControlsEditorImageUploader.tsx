@@ -15,7 +15,7 @@ import { InputTextField } from 'src/components/interface/Input';
 
 const useStyles = makeStyles((_theme) => ({
   root: {
-    margin: '8px 0 0 0',
+    margin: '0 0 0 0',
   },
   dropzoneButtonRoot: {
     backgroundColor: '#313131',

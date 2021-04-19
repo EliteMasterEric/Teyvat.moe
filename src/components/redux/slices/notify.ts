@@ -80,6 +80,8 @@ export const notifySlice = createSlice({
   },
 });
 
+export const name = notifySlice.name;
+
 export const {
   enqueueNotification,
   dismissNotification,

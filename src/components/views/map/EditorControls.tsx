@@ -12,6 +12,7 @@ import {
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
+import { useMap } from 'react-leaflet';
 import { connect } from 'react-redux';
 import { t } from 'src/components/i18n/Localization';
 import { selectEditorEnabled } from 'src/components/redux/slices/ui';
@@ -103,6 +104,8 @@ const _EditorControls: FunctionComponent<EditorControlsProps> = ({
   const onCancelClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     cancelEditor(event);
   };
+
+  const map = useMap();
 
   return (
     <MapCustomControl

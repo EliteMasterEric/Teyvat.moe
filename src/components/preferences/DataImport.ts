@@ -230,6 +230,9 @@ export const migrateData = (
   version: GenshinMapPreferencesVersion,
   defaultState: AppState = initialState
 ): GenshinMapPreferencesLatest | null => {
+  console.warn('Migrating data...');
+  console.warn(input);
+
   // eslint-disable-next-line prefer-const
   let output: GenshinMapPreferences = input;
 
@@ -258,7 +261,7 @@ export const migrateData = (
         editor: {
           feature: {
             ...defaultState.editor.feature,
-            data: output?.editor?.feature?.data,
+            ...output?.editor?.feature,
           },
         },
       };

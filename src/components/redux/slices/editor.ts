@@ -134,6 +134,8 @@ export const editorSlice = createSlice({
   },
 });
 
+export const name = editorSlice.name;
+
 export const {
   setFeatureName,
   setFeatureCategory,

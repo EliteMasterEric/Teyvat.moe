@@ -1397,12 +1397,10 @@
 "@react-leaflet/core@^1.0.2", "@react-leaflet/core@file:./packages/react-leaflet/packages/core", "@react-leaflet/core@file:packages/react-leaflet/packages/core":
   version "69.0.0-eric"
 
-"@reduxjs/toolkit@^1.4.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.5.0.tgz#1025c1ccb224d1fc06d8d98a61f6717d57e6d477"
-  integrity sha512-E/FUraRx+8guw9Hlg/Ja8jI/hwCrmIKed8Annt9YsZw3BQp+F24t5I5b2OWR6pkEHY4hn1BgP08FrTZFRKsdaQ==
+"@reduxjs/toolkit@file:./packages/redux-toolkit":
+  version "1.5.1"
   dependencies:
-    immer "^8.0.0"
+    immer "^9.0.1"
     redux "^4.0.0"
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
@@ -4357,10 +4355,10 @@ immer@7.0.9:
   resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.9.tgz#28e7552c21d39dd76feccd2b800b7bc86ee4a62e"
   integrity sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A==
 
-immer@^8.0.0:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
-  integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==
+immer@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.npmjs.org/immer/-/immer-9.0.1.tgz#1116368e051f9a0fd188c5136b6efb74ed69c57f"
+  integrity sha512-7CCw1DSgr8kKYXTYOI1qMM/f5qxT5vIVMeGLDCDX8CSxsggr1Sjdoha4OhsP0AZ1UvWbyZlILHvLjaynuu02Mg==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -6520,7 +6518,7 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-dom@latest:
+react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -6587,7 +6585,7 @@ react-leaflet-markercluster@^3.0.0-rc1:
 react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
   version "3.69.2-eric"
   dependencies:
-    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-cbe27cfe-984d-4b66-b4ec-cf1b0ad06e7b-1617687384324/node_modules/core"
+    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-d91354e8-91db-4e8d-b993-9312fe123a79-1618802914421/node_modules/core"
 
 "react-localization@file:./packages/react-localization":
   version "1.0.15"
@@ -6687,7 +6685,7 @@ react@^16.13.1:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-react@latest:
+react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

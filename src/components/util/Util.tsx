@@ -197,9 +197,11 @@ export const latLngToTile = (lat: number, lng: number, zoom: number): [number, n
  * @param other You can pass other parameters, such as className, and they will be used by the
  */
 type SafeHTMLProps = Omit<React.ComponentProps<typeof Typography>, 'children'> & {
-  children: string;
+  children: string | null;
 };
 export const SafeHTML: FunctionComponent<SafeHTMLProps> = ({ children, ...other }) => {
+  if (children == null) return null;
+
   const options = {
     allowedTags: ['b', 'i', 'em', 'strong', 'a'],
     allowedAttributes: {

@@ -29,10 +29,10 @@ import { Empty } from 'src/components/Types';
 import { filterNotEmpty, hashObject, truncateFloat } from 'src/components/util';
 import EditorControls from 'src/components/views/map/EditorControls';
 import { lineProperties, lineTextProperties } from 'src/components/views/map/LayerConstants';
-import { editorMarkerHighlight } from 'src/components/views/map/layers/FeatureIcon';
+import { editorMarker } from 'src/components/views/map/layers/FeatureIcon';
 
 const MARKER_OPTIONS = {
-  icon: editorMarkerHighlight,
+  icon: editorMarker,
 };
 
 const CONTROL_KEYS = ['ControlLeft', 'ControlRight', 'MetaLeft', 'MetaRight'];
@@ -98,6 +98,10 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   const onKeyUp = (e: KeyboardEvent) => {
     if (CONTROL_KEYS.includes(e.code)) {
       setCtrlHeld(false);
+      if (editorState !== 'none') {
+        // Releasing CTRL should end the current multi-placement.
+        cancelDrawing();
+      }
     }
   };
   useEffect(() => {
@@ -180,6 +184,10 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   };
 
   const updateRoute = (event: leaflet.VertexEvent) => {
+    console.log('UROUTE:LAYER');
+    console.log(event.layer);
+    console.log('UROUTE:PROPFROM');
+    console.log(event.propagatedFrom);
     const { id: routeID } = event.layer.options;
 
     const newRouteLatLngs = event.vertex.latlngs.map(
@@ -198,8 +206,11 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     // Events from Leaflet.Editable
     'editable:dragstart': (event) => {
       // Called when starting to drag a marker.
-
-      setCurrentEditable(event.propagatedFrom);
+      console.log('MDRAG:LAYER');
+      console.log(event.layer);
+      console.log('MDRAG:PROPFROM');
+      console.log(event.propagatedFrom);
+      setCurrentEditable(event.layer);
       setEditorState('editMarker');
     },
 
@@ -208,24 +219,31 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       // and cancel the event that would occur.
 
       if (editorState === 'editMarker') {
-        const { id: markerID } = event.propagatedFrom.options;
-
         // eslint-disable-next-line no-underscore-dangle
-        const { _latlng: latlng } = event.propagatedFrom;
+        console.log('MDEND:LAYER');
+        console.log(event.layer);
+        console.log('MDEND:PROPFROM');
+        console.log(event.propagatedFrom);
+        const { _latlng: latlng } = event.layer;
+        const { markerKey } = event.layer.options;
 
         const newCoords: MSFCoordinate = [
           truncateFloat(latlng.lat, 5),
           truncateFloat(latlng.lng, 5),
         ];
 
-        moveMarker(markerID.split('/')[1], newCoords);
+        moveMarker(markerKey.split('/')[1], newCoords);
         setEditorState('none');
         setCurrentEditable(null);
       }
     },
 
     'editable:vertex:dragstart': (event) => {
-      setCurrentEditable(event.propagatedFrom);
+      console.log('VDRAG:LAYER');
+      console.log(event.layer);
+      console.log('VDRAG:PROPFROM');
+      console.log(event.propagatedFrom);
+      setCurrentEditable(event.layer);
       setEditorState('editRoute');
     },
 
@@ -247,6 +265,10 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     },
 
     'editable:vertex:deleted': (event) => {
+      console.log('DELV:LAYER');
+      console.log(event.layer);
+      console.log('DELV:PROPFROM');
+      console.log(event.propagatedFrom);
       // Delete a vertex when it is clicked.
       const { id: routeID } = event.layer.options;
 
@@ -285,13 +307,11 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       // to the editor data in editable:drawing:commit.
       event.layer.remove();
 
-      if (editorState === 'createMarker') {
-        if (ctrlHeld) {
-          // Place an additional marker.
-          const editable = map.editTools.startMarker(undefined, MARKER_OPTIONS);
-          setCurrentEditable(editable);
-          // return;
-        }
+      if (editorState === 'createMarker' && ctrlHeld) {
+        // Place an additional marker.
+        const editable = map.editTools.startMarker(undefined, MARKER_OPTIONS);
+        setCurrentEditable(editable);
+        // return;
       } else {
         // Else, fall through and finish off the current marker.
         setEditorState('none');
@@ -299,13 +319,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       }
     },
   });
-
-  // Releasing Control will end the current drawing.
-  useEffect(() => {
-    if (!ctrlHeld && editorState === 'createMarker') {
-      map.editTools.stopDrawing();
-    }
-  }, [ctrlHeld, map.editTools, editorState]);
 
   const startEditorMarker = () => {
     setEditorState('createMarker');

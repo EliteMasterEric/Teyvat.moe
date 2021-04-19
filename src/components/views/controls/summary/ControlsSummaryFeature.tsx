@@ -125,8 +125,8 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
         <NextImage
           src={`/images/icons/filter/${mapFeature.icons.filter}.png`}
           className={classes.icon}
-          width={70}
-          height={70}
+          width={80}
+          height={80}
         />
       </Box>
       <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>

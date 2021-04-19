@@ -1,10 +1,16 @@
 /* eslint-disable import/no-named-as-default-member */
-import { createTileLayerComponent, LeafletContextInterface } from '@react-leaflet/core';
+import {
+  createTileLayerComponent,
+  LeafletContextInterface,
+  withPane,
+  useLeafletContext,
+  useEventHandlers,
+} from '@react-leaflet/core';
 import leaflet, { LeafletEventHandlerFn } from 'leaflet';
 import { FunctionComponent } from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { TileLayerProps } from 'react-leaflet';
+import { TileLayer, TileLayerProps } from 'react-leaflet';
 
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import {
@@ -185,9 +191,27 @@ const createTileLayer = (
   { url, ...options }: AdvancedTileLayerParam,
   ctx: LeafletContextInterface
 ) => {
-  const instance = new AdvancedTileLayer(url, options);
+  console.warn('Creating tile layer props...');
+  console.warn(ctx);
+  const instance = new AdvancedTileLayer(url, withPane(options, ctx));
 
+  //
   return { instance, context: { ...ctx, overlayContainer: instance } };
+};
+
+const updateTileLayer = (
+  layer: AdvancedTileLayer,
+  props: AdvancedTileLayerParam,
+  prevProps: AdvancedTileLayerParam
+) => {
+  console.warn('Updating tile layer props...');
+  const { opacity, zIndex } = props;
+  if (opacity != null && opacity !== prevProps.opacity) {
+    layer.setOpacity(opacity);
+  }
+  if (zIndex != null && zIndex !== prevProps.zIndex) {
+    layer.setZIndex(zIndex);
+  }
 };
 
 interface AdvancedTileLayerComponentProps extends TileLayerProps {
@@ -199,7 +223,7 @@ interface AdvancedTileLayerComponentProps extends TileLayerProps {
 const AdvancedTileLayerComponent = createTileLayerComponent<
   AdvancedTileLayer,
   AdvancedTileLayerComponentProps
->(createTileLayer);
+>(createTileLayer, updateTileLayer);
 
 const ErrorTileLayer: ErrorHandlerComponent = ({ error }) => {
   if (error == null) return null;
@@ -224,7 +248,6 @@ const MainTileLayer: FunctionComponent<MainTileLayerProps> = ({ onLoaded }) => {
         eventHandlers={{
           load: onLoaded,
         }}
-        pane="tilePane"
         latLngOffset={MAP_LATLNG_OFFSET}
         cssOffset={MAP_CSS_OFFSET}
         bounds={MAP_BOUNDS}

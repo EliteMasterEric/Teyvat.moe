@@ -44,12 +44,10 @@ export const loadStateFromLocalStorage = (defaultValue = initialState): AppState
   };
 
   try {
-    // If the stored data is a string instead of a JSON blob...
-    if (typeof storedData === 'string') {
-      // Parse the JSON. This fixes a bug.
-      storedData = JSON.parse(storedData);
+    if (storedData === {}) {
+      console.warn('Local storage data was empty. Using defaults.');
+      return defaultValue;
     }
-
     if (!('version' in storedData)) {
       throw Error('Stored data has no version.');
     }
@@ -68,7 +66,8 @@ export const loadStateFromLocalStorage = (defaultValue = initialState): AppState
     // If null was returned, return the default value.
     return defaultValue;
   } catch (e) {
-    console.error('An error occurred while parsing local storage.');
+    console.error('[ERROR] An error occurred while parsing local storage.');
+    console.error(`[ERROR] ${e.message}`);
     storeRecoveryData(storedData, `[ERROR] ${e.message}`);
     return defaultValue;
   }

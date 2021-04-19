@@ -31,7 +31,7 @@ interface FeatureLayerBaseProps {
 const mapStateToProps = (state: AppState, { featureKey, mapFeature }: FeatureLayerBaseProps) => {
   const hideFeaturesInEditor = selectHideFeaturesInEditor(state);
   const editorEnabled = selectEditorEnabled(state);
-  const shouldDisplayAnyFeatures = !editorEnabled || (hideFeaturesInEditor && editorEnabled);
+  const shouldDisplayAnyFeatures = !(hideFeaturesInEditor && editorEnabled);
 
   const featureDisplayed = selectIsFeatureDisplayed(state, featureKey);
   return {

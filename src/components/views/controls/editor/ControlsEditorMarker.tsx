@@ -30,6 +30,7 @@ const useStyles = makeStyles((_theme) => ({
     margin: '4px 4px 4px 0px',
   },
   textField: {
+    margin: '8px 0 0 0',
     width: '100%',
   },
   markerLabel: {
@@ -70,7 +71,7 @@ const mapDispatchToProps = (dispatch: AppDispatch, { marker }: ControlsEditorMar
   },
   setMarkerContent: (value: string) => {
     if (marker?.popupContent?.en ?? '' === value) return;
-    dispatch(editMarker(marker.id, 'popupContent', value));
+    dispatch(editMarker(marker.id, 'popupContent.en', value));
   },
   setMarkerMedia: (value: string) => {
     if (marker.popupMedia === value) return;

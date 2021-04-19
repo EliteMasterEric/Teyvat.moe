@@ -54,7 +54,7 @@
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core/",
-    "@reduxjs/toolkit": "^1.4.0",
+    "@reduxjs/toolkit": "file:./packages/redux-toolkit",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
@@ -72,9 +72,9 @@
     "next": "latest",
     "notistack": "^1.0.3",
     "object-hash": "^2.0.3",
-    "react": "latest",
+    "react": "^17.0.2",
     "react-adaptive-hooks": "^0.0.8",
-    "react-dom": "latest",
+    "react-dom": "^17.0.2",
     "react-dropzone": "^11.2.4",
     "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet/",
     "react-leaflet-cluster": "^1.0.2",
@@ -141,6 +141,7 @@
     "url-loader": "^4.1.1"
   },
   "resolutions": {
+    "@reduxjs/toolkit": "file:./packages/redux-toolkit",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core",
     "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet",
     "react-leaflet-textpath": "file:./packages/react-leaflet-textpath",

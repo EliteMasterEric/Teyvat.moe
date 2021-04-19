@@ -33,23 +33,24 @@ const connector = connect<MapPageStateProps, MapPageDispatchProps, {}, AppState>
 
 type MapPageProps = ConnectedProps<typeof connector>;
 
-const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
-  const LeafletMap = dynamic(
-    () =>
-      import(
-        /* webpackChunkName: "gm-leaflet-map" */
-        /* webpackMode: "lazy" */
-        'src/components/views/map/LeafletMap'
-      ),
-    {
-      /**
-       * This prevents the LeafletMap from being rendered by the SSR engine.
-       * Important because Node can't handle Leaflet.
-       */
-      ssr: false,
-    }
-  );
+const LeafletMap = dynamic(
+  () =>
+    import(
+      /* webpackChunkName: "gm-leaflet-map" */
+      /* webpackMode: "lazy" */
+      'src/components/views/map/LeafletMap'
+    ),
+  {
+    /**
+     * This prevents the LeafletMap from being rendered by the SSR engine.
+     * Important because Node can't handle Leaflet.
+     */
+    ssr: false,
+    loading: () => <div>Loading LeafletMap...</div>,
+  }
+);
 
+const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
   return (
     <>
       <Head>

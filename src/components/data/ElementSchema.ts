@@ -64,7 +64,7 @@ const coordinates = Joi.array().items(coordinate.required()).required();
 /**
  * Validates that the input is a SHA1 hash.
  */
-const sha1Hash = Joi.string().regex(/[A-Z0-9]{40}/);
+const sha1Hash = Joi.string().regex(/[A-F0-9]{40}/);
 /**
  * Validates that the input is a SHA1 hash, specifically of the marker's coordinates.
  *

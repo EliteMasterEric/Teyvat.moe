@@ -88,7 +88,7 @@ export const editorMarker = LeafletIcon({
 export const editorMarkerHighlight = LeafletIcon({
   className: `map-marker-editor`,
   iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // Transparent pixel.
-  shadowUrl: '/images/icons/marker/marker_white_bg.svg', // Default value. Use options to override.
+  shadowUrl: '/images/icons/marker/marker_green_bg.svg', // Default value. Use options to override.
   iconSize: [24, 24], // size of the icon
   shadowSize: [40, 40], // size of the shadow
   iconAnchor: [12, 34.5], // point of the icon which will correspond to marker's location
