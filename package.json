@@ -1,6 +1,6 @@
 {
   "name": "genshin-map",
-  "version": "0.12.4-alpha",
+  "version": "0.13.0-alpha",
   "license": "GPL-3.0",
   "homepage": "https://genshinmap.github.io/",
   "bugs": {
@@ -58,6 +58,7 @@
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
+    "gapi-script": "^1.2.0",
     "geojson": "^0.5.0",
     "googleapis": "^67.0.0",
     "joi": "^17.3.0",
@@ -96,6 +97,9 @@
     "@babel/preset-react": "^7.12.1",
     "@netlify/plugin-nextjs": "^3.0.3",
     "@next/bundle-analyzer": "^10.1.3",
+    "@types/gapi.auth2": "^0.0.54",
+    "@types/gapi.client": "^1.0.4",
+    "@types/gapi.client.drive": "^3.0.13",
     "@types/geojson": "^7946.0.7",
     "@types/jest": "^26.0.20",
     "@types/leaflet": "^1.7.0",

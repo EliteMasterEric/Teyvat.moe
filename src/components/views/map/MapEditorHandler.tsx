@@ -184,10 +184,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   };
 
   const updateRoute = (event: leaflet.VertexEvent) => {
-    console.log('UROUTE:LAYER');
-    console.log(event.layer);
-    console.log('UROUTE:PROPFROM');
-    console.log(event.propagatedFrom);
     const { id: routeID } = event.layer.options;
 
     const newRouteLatLngs = event.vertex.latlngs.map(
@@ -206,10 +202,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     // Events from Leaflet.Editable
     'editable:dragstart': (event) => {
       // Called when starting to drag a marker.
-      console.log('MDRAG:LAYER');
-      console.log(event.layer);
-      console.log('MDRAG:PROPFROM');
-      console.log(event.propagatedFrom);
       setCurrentEditable(event.layer);
       setEditorState('editMarker');
     },
@@ -220,10 +212,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
       if (editorState === 'editMarker') {
         // eslint-disable-next-line no-underscore-dangle
-        console.log('MDEND:LAYER');
-        console.log(event.layer);
-        console.log('MDEND:PROPFROM');
-        console.log(event.propagatedFrom);
         const { _latlng: latlng } = event.layer;
         const { markerKey } = event.layer.options;
 
@@ -239,10 +227,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     },
 
     'editable:vertex:dragstart': (event) => {
-      console.log('VDRAG:LAYER');
-      console.log(event.layer);
-      console.log('VDRAG:PROPFROM');
-      console.log(event.propagatedFrom);
       setCurrentEditable(event.layer);
       setEditorState('editRoute');
     },
@@ -265,10 +249,6 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     },
 
     'editable:vertex:deleted': (event) => {
-      console.log('DELV:LAYER');
-      console.log(event.layer);
-      console.log('DELV:PROPFROM');
-      console.log(event.propagatedFrom);
       // Delete a vertex when it is clicked.
       const { id: routeID } = event.layer.options;
 

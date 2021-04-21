@@ -1,3 +1,4 @@
+import { GoogleLoginResponse } from 'react-google-login';
 import {
   CompletedState,
   initialState as completedInitialState,
@@ -20,6 +21,8 @@ import {
   initialState as optionsInitialState,
 } from 'src/components/redux/slices/options';
 import { UIState, initialState as uiInitialState } from 'src/components/redux/slices/ui';
+
+export type AuthGoogleProfile = GoogleLoginResponse['profileObj'];
 
 export type AppState = {
   completed: CompletedState;

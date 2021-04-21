@@ -145,5 +145,28 @@
   "social-visit-github": "Visit us on GitHub",
   "sync-data": "Sync Data",
   "sync-google-drive": "Sync with Google Drive",
-  "popup-media-external-warning": "WARNING: Marker references external media. Please copy the permalink for this marker and report the issue on GitHub."
+  
+  "popup-media-external-warning": "WARNING: Marker references external media. Please copy the permalink for this marker and report the issue on GitHub.",
+  
+  "disabled": "Disabled",
+  "sign-in": "Sign In",
+  "sign-out": "Sign Out",
+  "save-to-cloud": "Save to Cloud",
+  "load-from-cloud": "Load from Cloud",
+  "login-google": "Sign In with Google",
+
+  "welcome-format": "Welcome, {user}.",
+  "auth-sign-out-success": "Signed out successfully.",
+  
+  "auth-logout-failure-generic": "An unknown error occurred while attempting to sign out.",
+  "google-login-success": "You are signed in to Google.",
+  "auth-error-google-origin": "An origin error occurred while setting up Google integration.",
+  "auth-error-google-generic": "An unknown error occurred while setting up Google integration.",
+
+  "google-drive-prompt": "Sign in to save your preferences and marker completion status in the cloud.",
+  
+  "google-drive-load-success": "Loaded preferences from Google Drive successfully.",
+  "google-drive-load-failure-generic": "An error occurred while loading preferences from Google Drive.",
+  "google-drive-save-success": "Saved preferences to Google Drive successfully.",
+  "google-drive-save-failure-generic": "An error occurred while saving preferences to Google Drive."
 }

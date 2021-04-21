@@ -1299,6 +1299,13 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
 
+"@maxim_mazurok/gapi.client.drive@latest":
+  version "3.0.20210412"
+  resolved "https://registry.npmjs.org/@maxim_mazurok/gapi.client.drive/-/gapi.client.drive-3.0.20210412.tgz#bd29565faeac274ae42910ddd5a273e62975047e"
+  integrity sha512-qhhSVsTt16DkluWDvXH25IRY5sdQhoRiY5zGoB19RmERoSjAIYARzUw7SPG2PQtW5sKME/p5JSUxmn59vnkSxQ==
+  dependencies:
+    "@types/gapi.client" "*"
+
 "@netlify/plugin-nextjs@^3.0.3":
   version "3.0.3"
   resolved "https://registry.npmjs.org/@netlify/plugin-nextjs/-/plugin-nextjs-3.0.3.tgz#fb0087f6eff2156bf1b64fdc3d02040923a22d56"
@@ -1460,6 +1467,30 @@
     "@babel/runtime" "^7.1.2"
     prop-types "^15.7.2"
     react-is "^16.6.3"
+
+"@types/gapi.auth2@^0.0.54":
+  version "0.0.54"
+  resolved "https://registry.npmjs.org/@types/gapi.auth2/-/gapi.auth2-0.0.54.tgz#812207fb213fde4f2d74e6f0abd9da7ba34782ac"
+  integrity sha512-4HEphaKsGndb9+tnd2PBBmxloaij04iYXVsjgHpFxqbPFt5Le6pasoh5g5BEtwp/YEm9xDbzssp44BYR2/7RcQ==
+  dependencies:
+    "@types/gapi" "*"
+
+"@types/gapi.client.drive@^3.0.13":
+  version "3.0.13"
+  resolved "https://registry.npmjs.org/@types/gapi.client.drive/-/gapi.client.drive-3.0.13.tgz#5cdb97952890be17785dff7514b4c6b89df05313"
+  integrity sha512-JFkHqQj9RA8MpvfvwdX8VU0Sbu7FMGqBR9dAmkocekWdD/y5Z/a/A6Y37EEqKW/dT8t7F3RpgUDUPlhp3snAlw==
+  dependencies:
+    "@maxim_mazurok/gapi.client.drive" latest
+
+"@types/gapi.client@*", "@types/gapi.client@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/@types/gapi.client/-/gapi.client-1.0.4.tgz#f766c9e30c17fc315d68039e3148f19bea19f643"
+  integrity sha512-MVC0ukq+bVfmQnrkaJdyFBJVuQ7W9QtqH4aGqQaEmLBj/fwsbQ7IMk8M6q2LffEoKlYBuJNpGz4nTnckthoIpg==
+
+"@types/gapi@*":
+  version "0.0.39"
+  resolved "https://registry.npmjs.org/@types/gapi/-/gapi-0.0.39.tgz#bc7fa8cd0cb175b36e3609790fb2ed73a33f6881"
+  integrity sha512-R1TZeZbvvbIC60DBJMhuOEivQHzOQtzl3uMDOOENTYQTSSDB6oEMpJo8HVPOTWivdUTbyEcB5qQOVr/JCKRlCQ==
 
 "@types/geojson@*", "@types/geojson@^7946.0.7":
   version "7946.0.7"
@@ -3899,6 +3930,11 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+gapi-script@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/gapi-script/-/gapi-script-1.2.0.tgz#8106ad0abb36661ce4fab62ef6efada288d7169e"
+  integrity sha512-NKTVKiIwFdkO1j1EzcrWu/Pz7gsl1GmBmgh+qhuV2Ytls04W/Eg5aiBL91SCiBM9lU0PMu7p1hTVxhh1rPT5Lw==
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -6585,7 +6621,7 @@ react-leaflet-markercluster@^3.0.0-rc1:
 react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
   version "3.69.2-eric"
   dependencies:
-    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-d91354e8-91db-4e8d-b993-9312fe123a79-1618802914421/node_modules/core"
+    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-8b6da366-0839-443b-8fb7-e5e5ebf9fd48-1618969394266/node_modules/core"
 
 "react-localization@file:./packages/react-localization":
   version "1.0.15"
@@ -6748,7 +6784,7 @@ recursive-readdir@2.2.2:
 
 redux-thunk@^2.3.0:
   version "2.3.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  resolved "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
   integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
 
 redux@^4.0.0, redux@^4.0.5:
@@ -7049,7 +7085,7 @@ require-package-name@^2.0.1:
 
 reselect@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  resolved "https://registry.npmjs.org/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
   integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
 
 resolve-from@^4.0.0:

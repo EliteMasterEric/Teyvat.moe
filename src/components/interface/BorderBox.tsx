@@ -11,15 +11,20 @@ const DEFAULT_IMAGE = getNextImageUrl('/images/controls/filter_container.png', 9
 
 const useStyles = makeStyles((_theme) => ({
   borderBox: {
-    borderImage: ({ img }: { img: any }) => `url(${img}) 32 round`,
     border: '16px solid transparent',
     boxSizing: 'border-box',
     marginBottom: 12,
     marginRight: 12,
   },
+  boxShow: {
+    display: 'flex',
+  },
+  boxHide: {
+    display: 'none',
+  },
 }));
 
-interface BorderBoxProps extends Partial<BoxProps> {
+interface BorderBoxProps extends Partial<Omit<BoxProps, 'flexDirection'>> {
   children: React.ReactNode;
   displayed?: boolean;
   direction?: 'column' | 'row';
@@ -39,19 +44,16 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   direction = 'column',
   grow = true,
   wrap = false,
-  src,
+  src = DEFAULT_IMAGE,
   className = null,
   ...other
 }) => {
-  const classes = useStyles({ img: src != null ? src : DEFAULT_IMAGE });
-
-  if (!displayed) return null;
+  const classes = useStyles();
 
   return (
     <Box
-      className={clsx(classes.borderBox, className)}
-      // display={displayed ? 'flex' : 'none'}
-      display="flex"
+      className={clsx(displayed ? classes.boxShow : classes.boxHide, classes.borderBox, className)}
+      style={{ borderImage: `url(${src}) 32 round` }}
       flexDirection={direction}
       flexGrow={grow ? '1' : '0'}
       flexWrap={wrap ? 'wrap' : 'none'}

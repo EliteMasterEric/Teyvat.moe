@@ -1,3 +1,4 @@
+import { disableGoogle, setGoogleProfile, clearGoogleProfile } from './auth';
 import {
   sendNotification,
   displayImportError,
@@ -17,18 +18,21 @@ import {
 import { countMapMarkers, countMapRoutes } from './mapCounts';
 
 export {
-  sendNotification,
-  displayImportError,
-  markMarkersCompleted,
-  showFeature,
-  showRouteGroup,
-  moveToMapPosition,
-  setLoadingInitialized,
-  setLoadingFeatures,
-  setLoadingFeatureCount,
-  setLoadingRoutes,
-  setLoadingRouteCount,
-  setLoadingTiles,
+  clearGoogleProfile,
   countMapMarkers,
   countMapRoutes,
+  disableGoogle,
+  displayImportError,
+  markMarkersCompleted,
+  moveToMapPosition,
+  sendNotification,
+  setGoogleProfile,
+  setLoadingFeatureCount,
+  setLoadingFeatures,
+  setLoadingInitialized,
+  setLoadingRouteCount,
+  setLoadingRoutes,
+  setLoadingTiles,
+  showFeature,
+  showRouteGroup,
 };

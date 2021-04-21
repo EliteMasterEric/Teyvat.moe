@@ -10,7 +10,7 @@ import { connect, ConnectedProps } from 'react-redux';
 import { t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { selectDisplayedFeatures } from 'src/components/redux/slices/displayed';
-import { selectIsTabDisplayed } from 'src/components/redux/slices/ui';
+import { selectIsTabDisplayed, selectMapDataLoaded } from 'src/components/redux/slices/ui';
 import { AppState } from 'src/components/redux/types';
 import { Empty } from 'src/components/Types';
 import ControlsSummaryFeature from 'src/components/views/controls/summary/ControlsSummaryFeature';
@@ -30,6 +30,7 @@ const useStyles = makeStyles((_theme) => ({
 
 const mapStateToProps = (state: AppState) => ({
   displayedFeatures: selectDisplayedFeatures(state),
+  mapDataLoaded: selectMapDataLoaded(state),
   displayed: selectIsTabDisplayed(state, 'summary'),
 });
 const mapDispatchToProps = () => ({});
@@ -52,6 +53,7 @@ type ControlsTabSummaryProps = ConnectedProps<typeof connector>;
 
 const _ControlsTabSummary: FunctionComponent<ControlsTabSummaryProps> = ({
   displayed,
+  mapDataLoaded,
   displayedFeatures,
 }) => {
   const classes = useStyles();
@@ -60,9 +62,10 @@ const _ControlsTabSummary: FunctionComponent<ControlsTabSummaryProps> = ({
     <BorderBox displayed={displayed}>
       <Typography className={classes.header}>{t('summary')}</Typography>
       <Typography className={classes.subtitle}>{t('summary-subtitle')}</Typography>
-      {displayedFeatures.map((featureKey) => (
-        <ControlsSummaryFeature key={featureKey} featureKey={featureKey} />
-      ))}
+      {mapDataLoaded &&
+        displayedFeatures.map((featureKey) => (
+          <ControlsSummaryFeature key={featureKey} featureKey={featureKey} />
+        ))}
     </BorderBox>
   );
 };

@@ -10,7 +10,7 @@ import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { AppState, AuthGoogleProfile } from 'src/components/redux/types';
 import { MapPosition, UIControlsTab } from 'src/components/Types';
 
 export type UIState = {
@@ -59,6 +59,42 @@ export type UIState = {
     countMapRoutes: boolean;
     handlePermalinks: boolean;
   };
+
+  /**
+   * The status of third-party authentication.
+   */
+  auth: {
+    /**
+     * Integration with Google.
+     */
+    google: {
+      /**
+       * If false, disable the Google sign-in button.
+       * Used when GAPI experiences a fatal error.
+       */
+      enabled: boolean;
+      /**
+       * Starts as false, becomes true when the client loads.
+       */
+      initialized: boolean;
+      /**
+       * When the login is successful, a profile object is returned.
+       * isSignedIn can be deduced by `profile != null`.
+       */
+      profile: AuthGoogleProfile | null;
+      /**
+       * Whether a save or load operation is in progress.
+       * Give an indication to the user based on this value.
+       */
+      inProgress: boolean;
+    };
+    github: {
+      /**
+       * I false, disable GitHub integration.
+       */
+      enabled: boolean;
+    };
+  };
 };
 
 // Define the initial state
@@ -95,6 +131,18 @@ export const initialState: UIState = {
     countMapFeatures: false,
     countMapRoutes: false,
     handlePermalinks: true, // Set to false later.
+  },
+
+  auth: {
+    google: {
+      enabled: true,
+      initialized: false,
+      profile: null,
+      inProgress: false,
+    },
+    github: {
+      enabled: false,
+    },
   },
 };
 
@@ -173,6 +221,18 @@ export const uiSlice = createSlice({
       state.permalinkId = action.payload;
       state.loading.handlePermalinks = false;
     },
+    disableGoogleAuth: (state: UIState) => {
+      state.auth.google.enabled = false;
+    },
+    setGoogleAuthProfile: (state: UIState, action: PayloadAction<AuthGoogleProfile | null>) => {
+      state.auth.google.profile = action.payload;
+    },
+    initializeGoogleClient: (state: UIState) => {
+      state.auth.google.initialized = true;
+    },
+    setGoogleClientInProgress: (state: UIState, action: PayloadAction<boolean>) => {
+      state.auth.google.inProgress = action.payload;
+    },
   },
   extraReducers: {
     [setPreferences.toString()]: (state: UIState, action: PayloadAction<Partial<AppState>>) => {
@@ -181,9 +241,17 @@ export const uiSlice = createSlice({
         ...action.payload.ui,
       };
     },
-    [clearPreferences.toString()]: () => {
+    [clearPreferences.toString()]: (state: UIState) => {
       // Reset to the default state.
-      return initialState;
+      return {
+        ...initialState,
+
+        // Don't reset UI loading and auth status.
+        // TODO: Figure out if that fixes the issue when clearing preferences in the options menu,
+        // and if this causes any new issues.
+        loading: state.loading,
+        auth: state.auth,
+      };
     },
   },
 });
@@ -207,6 +275,10 @@ export const {
   setMapMarkerCount,
   setMapRouteCount,
   setPermalinkId,
+  disableGoogleAuth,
+  setGoogleAuthProfile,
+  setGoogleClientInProgress,
+  initializeGoogleClient,
 } = uiSlice.actions;
 
 /**
@@ -243,9 +315,18 @@ export const selectLoading = (state: AppState, key: keyof UIState['loading']): b
  */
 export const selectFullyLoaded = (state: AppState): boolean =>
   _.values(state.ui.loading).every((v) => v);
+export const selectMapDataLoaded = (state: AppState): boolean =>
+  state.ui.loading.loadMapFeatures && state.ui.loading.loadMapRoutes;
 export const selectMapMarkerCount = (state: AppState): number | null =>
   state.ui.mapStats.markerCount;
 export const selectMapRouteCount = (state: AppState): number | null => state.ui.mapStats.routeCount;
 export const selectPermalinkID = (state: AppState): string | null => state.ui.permalinkId;
+export const selectAuthGoogleEnabled = (state: AppState): boolean => state.ui.auth.google.enabled;
+export const selectAuthGoogleProfile = (state: AppState): AuthGoogleProfile | null =>
+  state.ui.auth.google.profile;
+export const selectAuthGoogleInitialized = (state: AppState): boolean =>
+  state.ui.auth.google.initialized;
+export const selectGoogleClientInProgress = (state: AppState): boolean =>
+  state.ui.auth.google.inProgress;
 
 export default uiSlice.reducer;

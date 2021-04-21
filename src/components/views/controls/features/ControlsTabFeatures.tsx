@@ -38,6 +38,7 @@ const _ControlsTabFeatures: FunctionComponent<ControlsTabFeaturesProps> = ({
   currentCategory,
   displayed,
 }) => {
+  console.log(displayed);
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
       {sortFeaturesByName(getFeatureKeysByFilter(currentRegion, currentCategory)).map((key) => (

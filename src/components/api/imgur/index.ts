@@ -14,7 +14,7 @@ const IMGUR_UPLOAD_URL = 'https://api.imgur.com/3/image';
  * This is a PUBLIC API key used for Imgur services.
  * It does not need to be placed in a keystore.
  */
-const CLIENT_ID = '0c84ca5aba54552';
+const IMGUR_API_CLIENT_ID = '0c84ca5aba54552';
 
 const createFormData = <T extends File>(file: T): FormData => {
   const formData = new FormData();
@@ -35,7 +35,7 @@ export const uploadImage = async <T extends File>(file: T): Promise<string> => {
     method: 'post',
     url: IMGUR_UPLOAD_URL,
     headers: {
-      Authorization: `Client-ID ${CLIENT_ID}`,
+      Authorization: `Client-ID ${IMGUR_API_CLIENT_ID}`,
     },
     data: formData,
   };

@@ -6,45 +6,25 @@ import _ from 'lodash';
 
 import { migrateData } from 'src/components/preferences/DataImport';
 import localStorage from 'src/components/preferences/local-storage';
-import { PREFERENCES_VERSION } from 'src/components/preferences/PreferencesSchema';
 import { storeRecoveryData } from 'src/components/preferences/Recovery';
-import { PREFERENCES_PERSISTENT_KEYS, CREDENTIALS_PERSISTENT_KEYS } from 'src/components/redux';
 import { AppState, initialState } from 'src/components/redux/types';
+import { buildPreferencesForStorage } from './Serialize';
 
 export const PREFERENCES_STORAGE_KEY = 'genshinmap-preferences';
 export const CREDENTIALS_STORAGE_KEY = 'genshinmap-credentials';
 
-const buildPreferencesForLocalStorage = (state: AppState) => {
-  return {
-    ..._.pick(state, PREFERENCES_PERSISTENT_KEYS),
-    version: PREFERENCES_VERSION,
-  };
-};
-
-const buildCredentialsForLocalStorage = (state: AppState) => {
-  return {
-    ..._.pick(state, CREDENTIALS_PERSISTENT_KEYS),
-    version: PREFERENCES_VERSION,
-  };
-};
-
 export const savePreferencesToLocalStorage = (state: AppState): void => {
-  localStorage.set(PREFERENCES_STORAGE_KEY, buildPreferencesForLocalStorage(state));
-};
-
-export const saveCredentialsToLocalStorage = (state: AppState): void => {
-  localStorage.set(CREDENTIALS_STORAGE_KEY, buildCredentialsForLocalStorage(state));
+  localStorage.set(PREFERENCES_STORAGE_KEY, buildPreferencesForStorage(state));
 };
 
 export const loadStateFromLocalStorage = (defaultValue = initialState): AppState => {
   // Fetch the stored data. If it's empty, return the default data.
   let storedData = {
     ...(localStorage.get(PREFERENCES_STORAGE_KEY) ?? {}),
-    ...(localStorage.get(CREDENTIALS_STORAGE_KEY) ?? {}),
   };
 
   try {
-    if (storedData === {}) {
+    if (storedData == {}) {
       console.warn('Local storage data was empty. Using defaults.');
       return defaultValue;
     }
@@ -74,9 +54,5 @@ export const loadStateFromLocalStorage = (defaultValue = initialState): AppState
 };
 
 export const resetPreferencesInLocalStorage = (): void => {
-  localStorage.set(PREFERENCES_STORAGE_KEY, buildPreferencesForLocalStorage(initialState));
-};
-
-export const resetCredentialsInLocalStorage = (): void => {
-  localStorage.set(CREDENTIALS_STORAGE_KEY, buildCredentialsForLocalStorage(initialState));
+  localStorage.set(PREFERENCES_STORAGE_KEY, buildPreferencesForStorage(initialState));
 };

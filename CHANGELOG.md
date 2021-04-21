@@ -1192,11 +1192,13 @@ Here is a summary of major changes from v0.10.0-v0.10.4:
   -   Fixed a critical bug where Preferences were not stored correctly.
   -   Fixed a runtime error which sometimes occurred when moving markers.
   -   Fixed a bug where the Summary tab does not display feature frame.
-  -   [] Adding then removing media creates a broken image display.
-  -   [] Media and title fields in editor elements tab display red.
-  -   [] "Copy Permalink" popup occasionally lingers when the window is closed
-  -   [] 
-  -   [] Unhandled Runtime Error
-        TypeError: event.propagatedFrom is undefined
-          214 |       if (editorState === 'editMarker') {
-          215 |         const { id: markerID } = event.propagatedFrom.options;
+
+# 0.13.0-alpha Google Sync
+The long-postponed feature is finally here!
+
+- Added a Google Login button to the Sync Data tab.
+  - Click to authenticate with Google and allow GenshinMap to access your Google Drive.
+  - You can click the buttons to upload and download your data.
+  - GenshinMap stores your data in a secure application data folder. Only GenshinMap can access this data, and GenshinMap cannot access your personal data outside of this folder. You can clear your data from your Google account by uninstalling the app from your MyDrive.
+- Fixed several bugs:
+  - Fixed a bug where UI options weren't being loaded properly.

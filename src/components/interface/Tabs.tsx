@@ -17,9 +17,12 @@ import React, { useRef, useEffect, ReactElement, FunctionComponent } from 'react
 import { A } from 'ts-toolbelt';
 import { LocalizedString } from 'src/components/Types';
 import { CloneProps, useDebouncedState } from 'src/components/util';
+import clsx from 'clsx';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
+  showTab: { display: 'flex' },
+  hideTab: { display: 'none' },
 }));
 
 export type TabValue = A.Type<string, 'TabValue'>;
@@ -46,12 +49,11 @@ export const TabView: FunctionComponent<TabViewProps> = ({
   grow = false,
   ...other
 }) => {
-  if (!displayed) return null;
+  const classes = useStyles();
 
   return (
     <Box
-      // display={displayed ? 'flex' : 'none'}
-      display="flex"
+      className={clsx(displayed ? classes.showTab : classes.hideTab)}
       flexDirection="column"
       flexGrow={1}
       height={grow ? 'auto' : '100%'}

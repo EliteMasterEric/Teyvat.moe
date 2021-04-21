@@ -60,7 +60,7 @@ export const optionsSlice = createSlice({
     [setPreferences.toString()]: (state, action: PayloadAction<Partial<AppState>>) => {
       return {
         ...state,
-        ...action.payload.notify,
+        ...action.payload.options,
       };
     },
     [clearPreferences.toString()]: () => {

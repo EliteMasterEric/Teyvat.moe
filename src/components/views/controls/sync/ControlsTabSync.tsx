@@ -3,10 +3,12 @@
  */
 
 import { makeStyles, Box, Button, Typography } from '@material-ui/core';
+import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
+import ControlsSyncAuthGoogle from 'src/components/views/controls/sync/ControlsSyncAuthGoogle';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { exportDataJSON } from 'src/components/preferences/DataExport';
@@ -24,13 +26,17 @@ import ExportDataPopup from 'src/components/views/dialogs/ExportDataPopup';
 import ImportDataPopup from 'src/components/views/dialogs/ImportDataPopup';
 
 import Bookmarklets from 'src/data/core/bookmarklets.json';
+import ControlsSyncUploadGoogle from './ControlsSyncUploadGoogle';
 
-const useStyles = makeStyles((_theme) => ({
+const useStyles = makeStyles((theme) => ({
   label: {
     flexGrow: 1,
   },
   button: {
     width: 140,
+  },
+  padBottom: {
+    marginBottom: 8,
   },
   optionContainer: {
     display: 'flex',
@@ -107,7 +113,14 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
 
   return (
     <TabView grow displayed={displayed}>
-      <BorderBox grow={false} overflow="show">
+      <BorderBox grow={false} overflow="show" direction="column">
+        <Typography className={clsx(classes.label, classes.padBottom)}>
+          {t('sync-google-drive')}
+        </Typography>
+        <ControlsSyncAuthGoogle />
+        <ControlsSyncUploadGoogle />
+      </BorderBox>
+      <BorderBox grow={false} overflow="show" direction="column">
         <Box className={classes.optionContainer}>
           <Typography className={classes.label}>{t('migrate-yuanshen')}</Typography>
           <ImportDataPopup

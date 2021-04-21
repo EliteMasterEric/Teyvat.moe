@@ -27,16 +27,16 @@ const useStyles = makeStyles((_theme) => ({
     position: 'absolute',
     top: -1,
     left: -37,
-    width: 79,
-    height: 79,
+    width: 80,
+    height: 80,
     /* This URL MUST start with a '/' to indicate it is an absolute URL. */
     background: ({ bgImage }: StyleProps) => `url(${bgImage}) no-repeat`,
     backgroundSize: '100% 100%',
   },
   icon: {
     position: 'absolute',
-    top: 2,
-    left: 2,
+    top: '2px !important',
+    left: '2px !important',
   },
   label: {
     textAlign: 'center',
@@ -107,7 +107,7 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   displayed,
 }) => {
   const classes = useStyles({
-    bgImage: getNextImageUrl('/images/controls/filter_border.png', 70, 70),
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 80, 80),
   });
 
   if (!displayed) return null; // Feature is not displayed.
@@ -122,12 +122,13 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   return (
     <Box className={clsx(classes.featureRoot)}>
       <Box className={classes.iconBorder}>
-        <NextImage
-          src={`/images/icons/filter/${mapFeature.icons.filter}.png`}
-          className={classes.icon}
-          width={80}
-          height={80}
-        />
+        <div className={classes.icon}>
+          <NextImage
+            src={`/images/icons/filter/${mapFeature.icons.filter}.png`}
+            width={70}
+            height={70}
+          />
+        </div>
       </Box>
       <Box flexDirection="column" display="flex" flexGrow={1} marginRight={2}>
         <Typography className={classes.label}>{localizeField(mapFeature.name)}</Typography>

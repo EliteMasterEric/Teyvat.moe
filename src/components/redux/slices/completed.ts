@@ -34,7 +34,7 @@ type MarkersCompletedAction = {
   timestamp: number;
 };
 
-export const completedSlice: Slice = createSlice({
+export const completedSlice = createSlice({
   name: 'completed',
   initialState,
   reducers: {

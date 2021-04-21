@@ -22,12 +22,7 @@ import {
 import { AppState } from 'src/components/redux/types';
 
 const useStyles = makeStyles((_theme) => ({
-  categoryButton: {
-    margin: '4px 4px 4px 4px',
-    padding: '8px 4px 8px 4px',
-
-    flex: '1 0 25%',
-  },
+  categoryButton: {},
 }));
 
 interface ControlsCategoryButtonBaseProps {
@@ -98,6 +93,11 @@ const _ControlsCategoryButton: FunctionComponent<ControlsCategoryButtonProps> = 
     backgroundColor: active ? style.enabled.bg : style.disabled.bg ?? '#FFF',
     color: active ? style.enabled.text : style.disabled.text ?? '#000',
     flexBasis: style.fullWidth ? '95%' : 'auto',
+
+    // Moved down here from makeStyles because styles were breaking.
+    margin: '4px 4px 4px 4px',
+    padding: '8px 4px 8px 4px',
+    flex: '1 0 25%',
   };
 
   return (
