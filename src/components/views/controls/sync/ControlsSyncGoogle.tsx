@@ -1,11 +1,11 @@
 import { Box, Button, LinearProgress } from '@material-ui/core';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import ControlsSyncAuthGoogle from './ControlsSyncAuthGoogle';
 import { t } from 'src/components/i18n/Localization';
 import { loadPreferencesFromDrive } from 'src/components/preferences/google/LoadDrive';
 import { savePreferencesToDrive } from 'src/components/preferences/google/SaveDrive';
-import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { AppDispatch, store } from 'src/components/redux';
+import { store } from 'src/components/redux';
 import { setPreferences } from 'src/components/redux/Actions';
 import { sendNotification } from 'src/components/redux/dispatch';
 import {
@@ -63,8 +63,11 @@ const _ControlsSyncUploadGoogle: FunctionComponent<ControlsSyncUploadGoogleProps
       });
   };
 
+  const auth = <ControlsSyncAuthGoogle />;
+  let upload = null;
+
   if (googleAuthProfile != null) {
-    return googleClientInProgress ? (
+    upload = googleClientInProgress ? (
       <LinearProgress />
     ) : (
       <Box display="flex" justifyContent="space-between">
@@ -82,9 +85,14 @@ const _ControlsSyncUploadGoogle: FunctionComponent<ControlsSyncUploadGoogleProps
         </Button>
       </Box>
     );
-  } else {
-    return null;
   }
+
+  return (
+    <>
+      {auth}
+      {upload}
+    </>
+  );
 };
 
 const ControlsSyncUploadGoogle = connector(_ControlsSyncUploadGoogle);

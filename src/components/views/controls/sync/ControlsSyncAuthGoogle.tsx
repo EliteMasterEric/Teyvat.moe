@@ -5,15 +5,12 @@ import ControlsSyncProfileGoogle from './ControlsSyncProfileGoogle';
 import { attemptGoogleSignIn, loadGoogleAPI } from 'src/components/api/google';
 import { t } from 'src/components/i18n/Localization';
 import { NextImage } from 'src/components/interface/Image';
-import { AppDispatch } from 'src/components/redux';
 import {
-  disableGoogleAuth,
   selectAuthGoogleEnabled,
   selectAuthGoogleInitialized,
   selectAuthGoogleProfile,
-  setGoogleAuthProfile,
 } from 'src/components/redux/slices/Interface';
-import { AppState, AuthGoogleProfile } from 'src/components/redux/Types';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({

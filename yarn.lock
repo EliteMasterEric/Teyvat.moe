@@ -5423,10 +5423,8 @@ leaflet-draw@^1.0.4:
   resolved "https://registry.yarnpkg.com/leaflet-draw/-/leaflet-draw-1.0.4.tgz#45be92f378ed253e7202fdeda1fcc71885198d46"
   integrity sha512-rsQ6saQO5ST5Aj6XRFylr5zvarWgzWnrg46zQ1MEOEIHsppdC/8hnN8qMoFvACsPvTioAuysya/TVtog15tyAQ==
 
-leaflet-editable@^1.2.0:
+"leaflet-editable@file:./packages/Leaflet.Editable":
   version "1.2.0"
-  resolved "https://registry.yarnpkg.com/leaflet-editable/-/leaflet-editable-1.2.0.tgz#a3a01001764ba58ea923381ee6a1c814708a0b84"
-  integrity sha512-wG11JwpL8zqIbypTop6xCRGagMuWw68ihYu4uqrqc5Ep0wnEJeyob7NB2Rt5t74Oih4rwJ3OfwaGbzdowOGfYQ==
 
 leaflet-textpath@^1.2.3, "leaflet-textpath@file:./packages/leaflet.textpath":
   version "1.69.3"
@@ -6987,10 +6985,10 @@ react-leaflet-markercluster@^3.0.0-rc1:
 react-leaflet@^3.0.0, "react-leaflet@file:./packages/react-leaflet/packages/react-leaflet":
   version "3.69.2-eric"
   dependencies:
-    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-3bfcf2bc-3b46-4f03-b95c-3ec21cf78ba8-1619050322597/node_modules/core"
+    "@react-leaflet/core" "file:C:/Users/eric/AppData/Local/Yarn/Cache/v6/npm-react-leaflet-3.69.2-eric-e924fed6-2bd7-47a0-85a5-52ebd491e443-1619116908737/node_modules/core"
 
 "react-localization@file:./packages/react-localization":
-  version "1.0.15"
+  version "1.0.17"
   dependencies:
     localized-strings "^0.2.0"
 

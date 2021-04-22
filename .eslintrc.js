@@ -160,10 +160,9 @@ module.exports = {
       {
         case: 'pascalCase',
         ignore: [
+          /^next\.config\.js$/,
           /^\.eslintrc\.js$/, // Ignore config files.
-          /\.md/, // Ignore markdown files.
-          /^[A-Za-z]{2}\.(j|t)tsx?$/, // Ignore 2-letter file names.
-          /UI\.ts/,
+          /\.md$/, // Ignore markdown files.
         ],
       },
     ],

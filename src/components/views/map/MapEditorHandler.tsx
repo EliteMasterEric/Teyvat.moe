@@ -183,7 +183,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   const updateRoute = (event: leaflet.VertexEvent) => {
     console.log('UPDATE ROUTE');
     console.log(event);
-    const { id: routeID } = event.layer.options;
+    const { id: routeID } = event.propagatedFrom.options;
 
     const newRouteLatLngs = _.map(
       event.vertex.latlngs,
@@ -202,7 +202,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     // Events from Leaflet.Editable
     'editable:dragstart': (event) => {
       // Called when starting to drag a marker.
-      setCurrentEditable(event.layer);
+      setCurrentEditable(event.propagatedFrom);
       setEditorState('editMarker');
     },
 
@@ -212,7 +212,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
       if (editorState === 'editMarker') {
         // eslint-disable-next-line no-underscore-dangle
-        const { _latlng: latlng, options } = event.layer;
+        const { _latlng: latlng, options } = event.propagatedFrom;
 
         const newCoords: MSFCoordinate = [
           truncateFloat(latlng.lat, 5),
@@ -226,7 +226,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     },
 
     'editable:vertex:dragstart': (event) => {
-      setCurrentEditable(event.layer);
+      setCurrentEditable(event.propagatedFrom);
       setEditorState('editRoute');
     },
 
@@ -249,7 +249,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
     'editable:vertex:deleted': (event) => {
       // Delete a vertex when it is clicked.
-      const { id: routeID } = event.layer.options;
+      const { id: routeID } = event.propagatedFrom.options;
 
       const newRouteLatLngs = _.map(
         event.vertex.latlngs,
@@ -285,7 +285,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       // Drawing has been ended. Remove the layer.
       // If the layer was drawn successfully, it will have been added
       // to the editor data in editable:drawing:commit.
-      event.layer.remove();
+      event.propagatedFrom.remove();
 
       if (editorState === 'createMarker' && ctrlHeld) {
         // Place an additional marker.

@@ -4,17 +4,16 @@
 
 import { makeStyles, Box, Button, Typography } from '@material-ui/core';
 import clsx from 'clsx';
+import dynamic from 'next/dynamic';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import ControlsSyncUploadGoogle from './ControlsSyncUploadGoogle';
 import { t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { exportDataJSON } from 'src/components/preferences/DataExport';
 import { parseDataFromString } from 'src/components/preferences/DataImport';
 import { importMarkerDataFromSite } from 'src/components/preferences/ExternalImport';
-import { GM_007 } from 'src/components/preferences/PreferencesSchema';
 import { AppDispatch } from 'src/components/redux';
 import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
 import { setImportError } from 'src/components/redux/slices/Error';
@@ -22,11 +21,24 @@ import { selectIsTabDisplayed } from 'src/components/redux/slices/Interface';
 import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import { isValidJSON } from 'src/components/util';
-import ControlsSyncAuthGoogle from 'src/components/views/controls/sync/ControlsSyncAuthGoogle';
 import ExportDataPopup from 'src/components/views/dialogs/ExportDataPopup';
 import ImportDataPopup from 'src/components/views/dialogs/ImportDataPopup';
 
 import Bookmarklets from 'src/data/core/bookmarklets.json';
+
+/**
+ * Since the GAPI requires a window element,
+ * ensure all Google sync functionality is only loaded on the client.
+ */
+const ControlsSyncGoogle = dynamic(
+  () =>
+    import(
+      /* webpackChunkName: "gm-auth-google" */
+      /* webpackMode: "lazy" */
+      'src/components/views/controls/sync/ControlsSyncGoogle'
+    ),
+  { ssr: false }
+);
 
 const useStyles = makeStyles((_theme) => ({
   label: {
@@ -101,8 +113,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
         <Typography className={clsx(classes.label, classes.padBottom)}>
           {t('sync-google-drive')}
         </Typography>
-        <ControlsSyncAuthGoogle />
-        <ControlsSyncUploadGoogle />
+        <ControlsSyncGoogle />
       </BorderBox>
       <BorderBox grow={false} overflow="show" direction="column">
         <Box className={classes.optionContainer}>

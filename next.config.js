@@ -16,7 +16,7 @@ const withTM = require('next-transpile-modules')([
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   // enabled: process.env.ANALYZE === 'true',
-  enabled: false,
+  enabled: true,
 });
 
 const baseConfig = {
