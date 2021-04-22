@@ -49,6 +49,6 @@ export const deleteRecord = <T extends string | number | symbol, R extends unkno
   key: T
 ): R | undefined => {
   const value = record?.[key];
-  delete record?.[key];
+  delete record[key];
   return value;
 };

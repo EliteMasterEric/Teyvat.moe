@@ -135,13 +135,7 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
                     <pre className={classes.codeBox}>{componentStack}</pre>
                   </Collapse>
                 </CardContent>
-              ) : (
-                <CardContent>
-                  <Collapse in={errorExpanded}>
-                    <pre className={classes.codeBox}>{componentStack}</pre>
-                  </Collapse>
-                </CardContent>
-              )}
+              ) : null}
 
               <CardActions>
                 <Button

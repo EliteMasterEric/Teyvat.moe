@@ -137,13 +137,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                       <pre className={classes.codeBox}>{componentStack}</pre>
                     </Collapse>
                   </CardContent>
-                ) : (
-                  <CardContent>
-                    <Collapse in={errorExpanded}>
-                      <pre className={classes.codeBox}>{componentStack}</pre>
-                    </Collapse>
-                  </CardContent>
-                )}
+                ) : null}
 
                 <CardActions>
                   <Button

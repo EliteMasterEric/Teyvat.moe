@@ -55,8 +55,8 @@ const distinguishVertexEvent = (value: any): value is leaflet.VertexEvent => {
 type EditorState = 'none' | 'createMarker' | 'createRoute' | 'editMarker' | 'editRoute';
 
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  appendMarker: (data: EditorMarker) => dispatch(appendMarker(data)),
-  appendRoute: (data: EditorRoute) => dispatch(appendRoute(data)),
+  appendMarkerConnect: (data: EditorMarker) => dispatch(appendMarker(data)),
+  appendRouteConnect: (data: EditorRoute) => dispatch(appendRoute(data)),
   moveMarker: (id: MSFMarkerID, newCoords: EditorMarker['coordinates']) => {
     dispatch(editMarker(id, 'coordinates', newCoords));
     dispatch(editMarker(id, 'id', hashObject(newCoords)));
@@ -76,8 +76,8 @@ const connector = connect<Empty, MapEditorHandlerDispatchProps, Empty, AppState>
 type MapEditorHandlerProps = ConnectedProps<typeof connector>;
 
 const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
-  appendMarker,
-  appendRoute,
+  appendMarkerConnect,
+  appendRouteConnect,
   moveMarker,
   moveRoute,
 }) => {
@@ -136,7 +136,7 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       popupMedia: '',
     };
 
-    appendMarker(newMarker);
+    appendMarkerConnect(newMarker);
     // Done later.
     // setEditorState('none');
     // setCurrentEditable(null);
@@ -177,10 +177,12 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       popupAttribution: 'Unknown',
       popupMedia: '',
     };
-    appendRoute(newRoute);
+    appendRouteConnect(newRoute);
   };
 
   const updateRoute = (event: leaflet.VertexEvent) => {
+    console.log('UPDATE ROUTE');
+    console.log(event);
     const { id: routeID } = event.layer.options;
 
     const newRouteLatLngs = _.map(
