@@ -12,12 +12,13 @@ import {
   makeStyles,
   useTheme,
 } from '@material-ui/core';
+import clsx from 'clsx';
+import _ from 'lodash';
 import React, { useRef, useEffect, ReactElement, FunctionComponent } from 'react';
-
 import { A } from 'ts-toolbelt';
+
 import { LocalizedString } from 'src/components/Types';
 import { CloneProps, useDebouncedState } from 'src/components/util';
-import clsx from 'clsx';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
@@ -106,11 +107,11 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
 
   // Fix indicator breaking when tabs dynamically change.
   const theme = useTheme();
-  const actionRef = useRef<TabsActions | null>(null);
+  const actionReference = useRef<TabsActions | null>(null);
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (actionRef.current) {
-        actionRef.current.updateIndicator();
+      if (actionReference.current) {
+        actionReference.current.updateIndicator();
       }
     }, theme.transitions.duration.enteringScreen);
 
@@ -123,7 +124,7 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
 
   return (
     <MaterialTabs
-      action={actionRef}
+      action={actionReference}
       value={currentValue}
       onChange={(_event, newValue) => setCurrentValue(newValue)}
       centered
@@ -133,7 +134,7 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
       textColor="primary"
       {...other}
     >
-      {sortedTabs.map((tab) => {
+      {_.map(sortedTabs, (tab) => {
         if (!tab.enabled) return null;
 
         return icons ? (

@@ -4,8 +4,8 @@
  */
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 import { LocalizedString } from 'src/components/Types';
 
 export type ErrorState = {
@@ -31,7 +31,7 @@ export const errorSlice = createSlice({
     clearImportError: (state) => {
       state.importError = initialState.importError;
     },
-    clearErrors: (state) => {
+    clearErrors: () => {
       //For Immer specifically, you can either mutate the contents
       // of the Proxy-wrapped state value as long as it's an object or array,
       // or you can return an entirely new value, but not both at once.

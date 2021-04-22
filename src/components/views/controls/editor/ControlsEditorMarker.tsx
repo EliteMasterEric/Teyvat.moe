@@ -13,13 +13,13 @@ import { f, t } from 'src/components/i18n/Localization';
 import { InputTextArea, InputTextField } from 'src/components/interface/Input';
 import { EditorMarker } from 'src/components/preferences/EditorDataSchema';
 import { AppDispatch } from 'src/components/redux';
-import { editMarker, removeMarker } from 'src/components/redux/slices/editor';
+import { editMarker, removeMarker } from 'src/components/redux/slices/Editor';
 import {
   selectIsMarkerHighlighted,
   setMapHighlight,
   setMapPosition,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import ControlsEditorImageUploader from 'src/components/views/controls/editor/ControlsEditorImageUploader';
 
 const useStyles = makeStyles((_theme) => ({
@@ -107,7 +107,7 @@ const connector = connect<
 type ControlsEditorMarkerProps = ConnectedProps<typeof connector> & ControlsEditorMarkerBaseProps;
 
 const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
-  markerID,
+  markerID: markerId,
   markerTitle,
   markerContent,
   markerMedia,
@@ -130,7 +130,7 @@ const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
         </Tooltip>
 
         <Typography className={classes.markerLabel}>
-          {f('marker-id-format', { id: markerID.substring(0, 7) })}
+          {f('marker-id-format', { id: markerId.slice(0, 7) })}
         </Typography>
 
         <Tooltip title={t('delete')}>

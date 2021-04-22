@@ -6,10 +6,10 @@ import React, { memo, useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
-import { TabBar, TabValue, TabView } from 'src/components/interface/Tabs';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
-import { selectEditorEnabled, selectIsTabDisplayed } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { TabBar, TabValue } from 'src/components/interface/Tabs';
+import { selectEditorEnabled, selectIsTabDisplayed } from 'src/components/redux/slices/Interface';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import ControlsSubtabChangelog from 'src/components/views/controls/help/ControlsSubtabChangelog';
 import ControlsSubtabHelp from 'src/components/views/controls/help/ControlsSubtabHelp';
@@ -32,13 +32,8 @@ const mapStateToProps = (state: AppState) => ({
   // causes the component to re-render when the language changes.
   lang: selectOverrideLang(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsTabHelpStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabHelpDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<ControlsTabHelpStateProps, ControlsTabHelpDispatchProps, Empty, AppState>(
-  mapStateToProps,
-  mapDispatchToProps
-);
+const connector = connect<ControlsTabHelpStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type ControlsTabHelpProps = ConnectedProps<typeof connector>;
 

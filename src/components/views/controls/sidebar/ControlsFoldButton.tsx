@@ -10,8 +10,8 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { useSmallScreen } from 'src/components/interface/MediaHooks';
 import { AppDispatch } from 'src/components/redux';
-import { selectOpen, setOpen } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectOpen, setOpen } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 
 const useStyles = makeStyles((_theme) => ({
   fixedPosition: {
@@ -61,14 +61,14 @@ interface ControlsFoldButtonBaseProps {
   fixedPosition?: boolean;
 }
 
-const mapStateToProps = (state: AppState, _props: ControlsFoldButtonBaseProps) => ({
+const mapStateToProps = (state: AppState) => ({
   open: selectOpen(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setOpen: (open: boolean) => dispatch(setOpen(open)),
-});
+const mapDispatchToProps = {
+  setOpen,
+};
 type ControlsFoldButtonStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsFoldButtonDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type ControlsFoldButtonDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   ControlsFoldButtonStateProps,
   ControlsFoldButtonDispatchProps,

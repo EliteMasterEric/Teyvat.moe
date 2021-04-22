@@ -13,13 +13,13 @@ import { f, t } from 'src/components/i18n/Localization';
 import { InputTextArea, InputTextField } from 'src/components/interface/Input';
 import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
 import { AppDispatch } from 'src/components/redux';
-import { editRoute, removeRoute } from 'src/components/redux/slices/editor';
+import { editRoute, removeRoute } from 'src/components/redux/slices/Editor';
 import {
   selectIsRouteHighlighted,
   setMapHighlight,
   setMapPosition,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import ControlsEditorImageUploader from 'src/components/views/controls/editor/ControlsEditorImageUploader';
 
 const useStyles = makeStyles((_theme) => ({
@@ -106,7 +106,7 @@ const connector = connect<
 type ControlsEditorRouteProps = ConnectedProps<typeof connector> & ControlsEditorRouteBaseProps;
 
 const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
-  routeID,
+  routeID: routeId,
   routeTitle,
   routeContent,
   routeMedia,
@@ -128,7 +128,7 @@ const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('route-id-format', { id: routeID.substring(0, 7) })}
+          {f('route-id-format', { id: routeId.slice(0, 7) })}
         </Typography>
 
         <Tooltip title={t('delete')}>

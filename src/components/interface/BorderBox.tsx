@@ -5,7 +5,7 @@
 import { Box, BoxProps, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
-import { getNextImageUrl } from 'src/components/interface/Image';
+import { getNextImageUrl } from './Image';
 
 const DEFAULT_IMAGE = getNextImageUrl('/images/controls/filter_container.png', 96, 96);
 
@@ -30,7 +30,7 @@ interface BorderBoxProps extends Partial<Omit<BoxProps, 'flexDirection'>> {
   direction?: 'column' | 'row';
   grow?: boolean;
   wrap?: boolean;
-  src?: string;
+  source?: string;
   className?: string;
 }
 
@@ -44,7 +44,7 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   direction = 'column',
   grow = true,
   wrap = false,
-  src = DEFAULT_IMAGE,
+  source = DEFAULT_IMAGE,
   className = null,
   ...other
 }) => {
@@ -53,7 +53,7 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   return (
     <Box
       className={clsx(displayed ? classes.boxShow : classes.boxHide, classes.borderBox, className)}
-      style={{ borderImage: `url(${src}) 32 round` }}
+      style={{ borderImage: `url(${source}) 32 round` }}
       flexDirection={direction}
       flexGrow={grow ? '1' : '0'}
       flexWrap={wrap ? 'wrap' : 'none'}

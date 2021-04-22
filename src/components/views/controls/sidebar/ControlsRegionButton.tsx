@@ -12,8 +12,8 @@ import { connect, ConnectedProps } from 'react-redux';
 import { MapRegionKey, getMapRegion } from 'src/components/data/MapRegions';
 import { t } from 'src/components/i18n/Localization';
 import { AppDispatch } from 'src/components/redux';
-import { selectIsRegionDisplayed, setMapRegion } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectIsRegionDisplayed, setMapRegion } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 
 const useStyles = makeStyles((_theme) => ({
   banner: {
@@ -78,7 +78,7 @@ const _ControlsRegionButton: FunctionComponent<ControlsRegionButtonProps> = ({
 
   const region = getMapRegion(regionKey);
 
-  const svgSrc = `/images/controls/region-${regionKey}.svg`;
+  const svgSource = `/images/controls/region-${regionKey}.svg`;
   const style = {
     backgroundColor: active ? '#fff' : region.color,
     border: active ? `4px solid ${region.color}` : '0px solid transparent',
@@ -93,7 +93,7 @@ const _ControlsRegionButton: FunctionComponent<ControlsRegionButtonProps> = ({
         alignItems="center"
       >
         <img
-          src={svgSrc}
+          src={svgSource}
           className={clsx(
             classes.bannerImage,
             active ? classes.bannerImageActive : classes.bannerImageInactive

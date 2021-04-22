@@ -3,9 +3,9 @@
  * including WebP support detection and a lazy loading, WebP-sensitive image component.
  */
 
-import clsx from 'clsx';
+import _ from 'lodash';
 import NextImageBase, { ImageProps } from 'next/image';
-import React, { ReactElement, useEffect, useState, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 
 // A 1 pixel by 1 pixel transparent image.
 export const BLANK_IMAGE =
@@ -34,7 +34,7 @@ export const supportsWebP = async (): Promise<boolean> => {
   // Retrieve the Image in Blob Format
   const blob = await fetch(webpData)
     .then((r) => r.blob())
-    .catch((_reason) => null);
+    .catch(_.constant(null));
 
   // If building the image blob fails, return false.
   if (blob == null) {
@@ -55,13 +55,9 @@ export const supportsWebP = async (): Promise<boolean> => {
   );
 };
 
-type ImageExtension = 'png' | 'webp';
-
-export const getNextImageUrl = (src: string, width: number, height: number): string => {
-  return `/_next/image?url=${src}&w=${width}&h=${height}&q=100`;
+export const getNextImageUrl = (source: string, width: number, height: number): string => {
+  return `/_next/image?url=${source}&w=${width}&h=${height}&q=100`;
 };
-
-const defaultPlaceholder = <span style={{ width: 64, height: 64 }} />;
 
 type NextImageProps = ImageProps;
 export const NextImage: FunctionComponent<NextImageProps> = (props) => {

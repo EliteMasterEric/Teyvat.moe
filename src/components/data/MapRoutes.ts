@@ -1,16 +1,11 @@
 import _ from 'lodash';
 
-import {
-  MSFRouteColor,
-  MSFRouteGroupExtended,
-  MSFRouteGroupKey,
-  MSFRouteText,
-} from 'src/components/data/Element';
-import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
-import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
-import { listRouteFiles, loadRoute } from 'src/components/data/RouteData';
-import { filterNotEmpty } from 'src/components/util';
-import { setLoadingRoutes } from '../redux/dispatch';
+import { MSFRouteColor, MSFRouteGroupExtended, MSFRouteGroupKey, MSFRouteText } from './Element';
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from './MapCategories';
+import { isRegionKey, MapRegionKey } from './MapRegions';
+import { listRouteFiles, loadRoute } from './RouteData';
+import { setLoadingRoutes } from 'src/components/redux/dispatch';
+import { getRecord, setRecord } from 'src/components/util';
 
 export const DEFAULT_ROUTE_TEXT = '  ►  ' as MSFRouteText;
 export const DEFAULT_ROUTE_COLOR = '#d32f2f' as MSFRouteColor;
@@ -19,63 +14,66 @@ export const DEFAULT_ROUTE_COLOR = '#d32f2f' as MSFRouteColor;
  * Metadata regarding the map routes.
  * Imported directly by listing the files from the routes folder.
  */
-const MapRouteGroups: { [key: string]: MSFRouteGroupExtended } = {};
+const MapRouteGroups: Record<MSFRouteGroupKey, MSFRouteGroupExtended> = {};
 
 const initializeMapRouteGroup = async (
   routeGroupFilePath: string
-): Promise<[string, MSFRouteGroupExtended] | null> => {
+): Promise<[MSFRouteGroupKey, MSFRouteGroupExtended] | null> => {
   const baseRouteData = await loadRoute(routeGroupFilePath);
   if (baseRouteData == null) return null; // Validation failed.
 
-  const [_dot, routeRegion, routeCategory, routeName] = routeGroupFilePath.split('/');
+  const [_dot, routeRegion, routeCategory, routeName] = _.split(routeGroupFilePath, '/');
   if (routeName == undefined) return null; // Invalid file name.
   if (routeRegion == undefined || !isRegionKey(routeRegion)) return null;
   if (routeCategory == undefined || !isCategoryKey(routeCategory)) return null;
 
-  const splitRouteName = routeName.split('.');
+  const splitRouteName = _.split(routeName, '.');
   if (splitRouteName == undefined || splitRouteName[0] == undefined) return null;
 
-  const correctedName = splitRouteName[0] // Remove file extension.
-    .split('-') // Break by words.
-    .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
+  const correctedName = _.map(
+    // Break by words.
+    _.split(splitRouteName[0], '-'),
+    (s) => _.toUpper(s.charAt(0)) + s.slice(1)
+  ) // Convert to Title case.
     .join(''); // Rejoin.
 
   // CrystalChunk -> mondstadtCrystalChunk
-  const fullName = `${routeRegion}${correctedName}`; // Prefix with region.
+  const fullName = `${routeRegion}${correctedName}` as MSFRouteGroupKey; // Prefix with region.
 
   const routeData: MSFRouteGroupExtended = {
     ...baseRouteData,
-    key: fullName as MSFRouteGroupKey,
+    key: fullName,
     region: routeRegion as MapRegionKey,
     category: routeCategory as MapCategoryKey,
   };
 
-  const result: [string, MSFRouteGroupExtended] = [fullName, routeData];
+  const result: [MSFRouteGroupKey, MSFRouteGroupExtended] = [fullName, routeData];
 
   return result;
 };
-export const initializeAllMapRouteGroups = () => {
-  const loaderPromises = listRouteFiles().map(async (routeFilePath) => {
+export const initializeAllMapRouteGroups = (): void => {
+  const loaderPromises = _.map(listRouteFiles(), async (routeFilePath) => {
     const result = await initializeMapRouteGroup(routeFilePath);
     if (result != null) {
-      MapRouteGroups[result[0]] = result[1];
+      setRecord(MapRouteGroups, result[0], result[1]);
     }
   });
   Promise.all(loaderPromises)
     .then(() => {
       setLoadingRoutes(true);
     })
-    .catch((e) => {
+    .catch((error) => {
       console.error('Caught error initializing route groups.');
-      console.error(e);
+      console.error(error);
     });
 };
 export const getMapRouteGroup = (key: MSFRouteGroupKey): MSFRouteGroupExtended => {
-  const result = MapRouteGroups[key] ?? null;
-  if (result == null) throw Error(`Invalid map route group key ${key}`);
+  const result = getRecord(MapRouteGroups, key);
+  if (result == null) throw new Error(`Invalid map route group key ${key}`);
   return result;
 };
-export const getMapRouteGroupKeys = () => _.keys(MapRouteGroups) as MSFRouteGroupKey[];
+export const getMapRouteGroupKeys = (): MSFRouteGroupKey[] =>
+  _.keys(MapRouteGroups) as MSFRouteGroupKey[];
 
 /**
  * For a given region, returns a map of a category key and a boolean value,
@@ -102,10 +100,10 @@ export const getEmptyRouteCategories = (regionKey: MapRegionKey): Record<MapCate
   ) as Record<MapCategoryKey, boolean>;
 
 export const getRouteKeysByFilter = (region: string, category: string): MSFRouteGroupKey[] => {
-  return getMapRouteGroupKeys().filter((key) => {
+  return _.filter(getMapRouteGroupKeys(), (key) => {
     const route = getMapRouteGroup(key);
     return route.region === region && route.category === category && route.enabled;
-  });
+  }) as MSFRouteGroupKey[]; // IDK why this needs a cast.
 };
 
 export const sortRoutesByName = (data: MSFRouteGroupKey[]): MSFRouteGroupKey[] =>

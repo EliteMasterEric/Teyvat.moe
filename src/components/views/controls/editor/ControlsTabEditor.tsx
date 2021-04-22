@@ -17,9 +17,9 @@ import {
   EditorRoute,
 } from 'src/components/preferences/EditorDataSchema';
 import { AppDispatch } from 'src/components/redux';
-import { clearElements, selectEditorFeatureData } from 'src/components/redux/slices/editor';
-import { selectIsTabDisplayed, setTab } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { clearElements, selectEditorFeatureData } from 'src/components/redux/slices/Editor';
+import { selectIsTabDisplayed, setTab } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import { generatePrettyJSON, openURLInWindow, setBrowserClipboard } from 'src/components/util';
 import ControlsEditorMarker from 'src/components/views/controls/editor/ControlsEditorMarker';
@@ -49,10 +49,10 @@ interface ControlsEditorElementsProps {
 const ControlsEditorElements = handleError<ControlsEditorElementsProps>(({ elements }) => {
   return (
     <BorderBox overflow="hidden auto">
-      {elements.map((element, _index) => {
+      {_.map(elements, (element, _index) => {
         // If the first element is an array, rather than a coordinate,
         // we have a set of multiple points in a route.
-        const isRoute = Array.isArray(element.coordinates[0]);
+        const isRoute = _.isArray(element.coordinates[0]);
 
         if (isRoute) {
           // Safe to cast here.

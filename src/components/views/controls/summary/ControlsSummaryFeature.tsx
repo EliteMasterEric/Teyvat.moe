@@ -13,10 +13,11 @@ import { MSFFeatureKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
 import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
-import { selectCompletedMarkersOfFeature } from 'src/components/redux/slices/completed';
-import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
-import { selectShowHiddenFeaturesInSummary } from 'src/components/redux/slices/options';
-import { AppState } from 'src/components/redux/types';
+import { selectCompletedMarkersOfFeature } from 'src/components/redux/slices/Completed';
+import { selectIsFeatureDisplayed } from 'src/components/redux/slices/Displayed';
+import { selectShowHiddenFeaturesInSummary } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 import ControlsSummaryFeatureMenu from 'src/components/views/controls/summary/ControlsSummaryFeatureMenu';
 
 interface StyleProps {
@@ -88,15 +89,13 @@ const mapStateToProps = (state: AppState, { featureKey }: ControlsSummaryFeature
     completedCount: _.keys(selectCompletedMarkersOfFeature(state, featureKey)).length,
   };
 };
-const mapDispatchToProps = () => ({});
 type ControlsSummaryFeatureStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsSummaryFeatureDispatchProps = ReturnType<typeof mapDispatchToProps>;
 const connector = connect<
   ControlsSummaryFeatureStateProps,
-  ControlsSummaryFeatureDispatchProps,
+  Empty,
   ControlsSummaryFeatureBaseProps,
   AppState
->(mapStateToProps, mapDispatchToProps);
+>(mapStateToProps);
 
 type ControlsSummaryFeatureProps = ConnectedProps<typeof connector> &
   ControlsSummaryFeatureBaseProps;
@@ -117,7 +116,7 @@ const _ControlsSummaryFeature: FunctionComponent<ControlsSummaryFeatureProps> = 
   if (!mapFeature) return null; // Feature is not valid (CHECK THE CONSOLE).
 
   // Total number of markers for this feature. Contrast with completedCount.
-  const totalCount = Object.keys(mapFeature.data).length;
+  const totalCount = _.keys(mapFeature.data).length;
 
   return (
     <Box className={clsx(classes.featureRoot)}>

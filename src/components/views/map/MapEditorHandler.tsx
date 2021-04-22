@@ -23,10 +23,10 @@ import {
   appendRoute,
   editMarker,
   editRoute,
-} from 'src/components/redux/slices/editor';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Editor';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
-import { filterNotEmpty, hashObject, truncateFloat } from 'src/components/util';
+import { hashObject, truncateFloat } from 'src/components/util';
 import EditorControls from 'src/components/views/map/EditorControls';
 import { lineProperties, lineTextProperties } from 'src/components/views/map/LayerConstants';
 import { editorMarker } from 'src/components/views/map/layers/FeatureIcon';
@@ -35,7 +35,11 @@ const MARKER_OPTIONS = {
   icon: editorMarker,
 };
 
-const CONTROL_KEYS = ['ControlLeft', 'ControlRight', 'MetaLeft', 'MetaRight'];
+/**
+ * Defines the set of key names which count as holding down the Control key.
+ * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v30.0.0/docs/rules/prefer-set-has.md
+ */
+const CONTROL_KEYS = new Set(['ControlLeft', 'ControlRight', 'MetaLeft', 'MetaRight']);
 
 // Type guards.
 const distinguishMarker = (value: any): value is leaflet.Marker => {
@@ -50,7 +54,6 @@ const distinguishVertexEvent = (value: any): value is leaflet.VertexEvent => {
 
 type EditorState = 'none' | 'createMarker' | 'createRoute' | 'editMarker' | 'editRoute';
 
-const mapStateToProps = (_state: AppState) => ({});
 const mapDispatchToProps = (dispatch: AppDispatch) => ({
   appendMarker: (data: EditorMarker) => dispatch(appendMarker(data)),
   appendRoute: (data: EditorRoute) => dispatch(appendRoute(data)),
@@ -64,14 +67,11 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
     dispatch(editRoute(id, 'id', hashObject(newCoordsList)));
   },
 });
-type MapEditorHandlerStateProps = ReturnType<typeof mapStateToProps>;
 type MapEditorHandlerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  MapEditorHandlerStateProps,
-  MapEditorHandlerDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<Empty, MapEditorHandlerDispatchProps, Empty, AppState>(
+  null,
+  mapDispatchToProps
+);
 
 type MapEditorHandlerProps = ConnectedProps<typeof connector>;
 
@@ -90,13 +90,13 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
   // Maintain the state of the CTRL key through event listeners.
   const [ctrlHeld, setCtrlHeld] = useState<boolean>(false);
-  const onKeyDown = (e: KeyboardEvent) => {
-    if (CONTROL_KEYS.includes(e.code)) {
+  const onKeyDown = (event: KeyboardEvent) => {
+    if (CONTROL_KEYS.has(event.code)) {
       setCtrlHeld(true);
     }
   };
-  const onKeyUp = (e: KeyboardEvent) => {
-    if (CONTROL_KEYS.includes(e.code)) {
+  const onKeyUp = (event: KeyboardEvent) => {
+    if (CONTROL_KEYS.has(event.code)) {
       setCtrlHeld(false);
       if (editorState !== 'none') {
         // Releasing CTRL should end the current multi-placement.
@@ -146,24 +146,21 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
     const latlngs = editable.getLatLngs();
     if (latlngs[0] == null) return;
 
-    const filterLatLng = (latlng: any): latlng is leaflet.LatLng => {
-      return !Array.isArray(latlng);
-    };
+    const filterLatLng = (latlng: any): latlng is leaflet.LatLng => !_.isArray(latlng);
     const latlngsFiltered = _.filter(latlngs, filterLatLng);
 
     // Note this is not reversed because it corresponds to direct map coordinates.
-    const latlngsFormatted = latlngsFiltered
-      .map(
-        (latlng: leaflet.LatLng): MSFCoordinate => {
-          const result: MSFCoordinate = [
-            truncateFloat(latlng.lat, 5),
-            truncateFloat(latlng.lng, 5),
-          ];
-          return result;
-        }
-      )
-      .filter(filterNotEmpty);
-    if (latlngsFormatted.length == 0) return;
+    const latlngsFormatted = _.filter(
+      _.map(
+        latlngsFiltered,
+        (latlng: leaflet.LatLng): MSFCoordinate => [
+          truncateFloat(latlng.lat, 5),
+          truncateFloat(latlng.lng, 5),
+        ]
+      ),
+      (value) => !_.isNil(value)
+    );
+    if (latlngsFormatted.length === 0) return;
 
     const id = hashObject(latlngsFormatted);
     const popupTitle = { en: '' as MSFLocalizedString } as MSFPopupTitle;
@@ -186,11 +183,12 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
   const updateRoute = (event: leaflet.VertexEvent) => {
     const { id: routeID } = event.layer.options;
 
-    const newRouteLatLngs = event.vertex.latlngs.map(
+    const newRouteLatLngs = _.map(
+      event.vertex.latlngs,
       (vertex): MSFCoordinate => [truncateFloat(vertex.lat, 5), truncateFloat(vertex.lng, 5)]
     );
 
-    moveRoute(routeID.split('/')[1], newRouteLatLngs);
+    moveRoute(_.get(_.split(routeID, '/'), 1) as MSFRouteID, newRouteLatLngs);
     setEditorState('none');
     setCurrentEditable(null);
   };
@@ -212,15 +210,14 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
 
       if (editorState === 'editMarker') {
         // eslint-disable-next-line no-underscore-dangle
-        const { _latlng: latlng } = event.layer;
-        const { markerKey } = event.layer.options;
+        const { _latlng: latlng, options } = event.layer;
 
         const newCoords: MSFCoordinate = [
           truncateFloat(latlng.lat, 5),
           truncateFloat(latlng.lng, 5),
         ];
 
-        moveMarker(markerKey.split('/')[1], newCoords);
+        moveMarker(_.get(_.split(options.markerKey, '/'), 1) as MSFMarkerID, newCoords);
         setEditorState('none');
         setCurrentEditable(null);
       }
@@ -252,11 +249,12 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
       // Delete a vertex when it is clicked.
       const { id: routeID } = event.layer.options;
 
-      const newRouteLatLngs = event.vertex.latlngs.map(
+      const newRouteLatLngs = _.map(
+        event.vertex.latlngs,
         (vertex): MSFCoordinate => [truncateFloat(vertex.lat, 5), truncateFloat(vertex.lng, 5)]
       );
 
-      moveRoute(routeID.split('/')[1], newRouteLatLngs);
+      moveRoute(_.get(_.split(routeID, '/'), 1) as MSFRouteID, newRouteLatLngs);
       setEditorState('none');
       setCurrentEditable(null);
     },
@@ -340,8 +338,8 @@ const _MapEditorHandler: FunctionComponent<MapEditorHandlerProps> = ({
         startEditorRoute={startEditorRoute}
         cancelEditor={cancelDrawing}
         commitEditor={commitDrawing}
-        showCancel={['createMarker', 'createRoute'].includes(editorState)}
-        showDone={['createRoute'].includes(editorState)}
+        showCancel={_.includes(['createMarker', 'createRoute'], editorState)}
+        showDone={_.includes(['createRoute'], editorState)}
       />
     </>
   );

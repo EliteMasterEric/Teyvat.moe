@@ -29,10 +29,7 @@
     "th": "เครื่องจักรสงครามโบราณ ที่มีรูปร่างของมนุษย์\\nว่ากันว่ามันเป็นเครื่องจักรสงคราม ที่หลงเหลืออยู่จากอาณาจักรที่ล่มสลายไปเมื่อนานมาแล้ว แต่ก็มีบางคนที่คิดว่าจุดประสงค์ในการสร้างเครื่องจักรเหล่านี้ ไม่ได้ใช้เพื่อสงคราม แต่เพื่อปกป้องโบราณสถานที่หลงเหลืออยู่\\nถึงแม้ว่านี่จะเป็นสิ่งที่ไม่สามารถเข้าใจได้เลย ว่าทำไมพวกมันถึงใช้การโจมตีไฟที่มีพลังทำลายล้างสูง ในโบราณสถานที่พวกมันเฝ้าปกป้องอยู่...",
     "vi": "Máy chiến đấu hình người cổ xưa. \\nTương truyền là cỗ máy chiến tranh sau khi đất nước bị diệt vong còn sót lại, cũng có người cho rằng, cỗ máy này được tạo ra với mục đích ban đầu không phải là chiến đấu, mà vì bảo vệ di tích xưa kia còn lưu lại. \\nTuy khó có thể giải thích, tại sao chúng lại ở đây bảo vệ di tích, sử dụng hỏa lực phát nổ tấn công là được mà..."
   },
-  "tags": [
-    "weapon-ascension-material",
-    "artifacts"
-  ],
+  "tags": ["weapon-ascension-material", "artifacts"],
   "enabled": true,
   "cluster": "on",
   "respawn": 86400,
@@ -47,268 +44,153 @@
   },
   "data": [
     {
-      "coordinates": [
-        -33.4125,
-        34.79844
-      ],
+      "coordinates": [-33.4125, 34.79844],
       "id": "09B69059300A7BBBD304325ED90E66D65444B6BF",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/1"
-        ],
-        "yuanshen": [
-          "20_1"
-        ]
+        "gm_legacy": ["liyueRuinGuard/1"],
+        "yuanshen": ["20_1"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.99945,
-        37.41421
-      ],
+      "coordinates": [-36.99945, 37.41421],
       "id": "138B993E7438D5D4157995E2708CD0FF0FF41D41",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/2"
-        ],
-        "yuanshen": [
-          "20_2"
-        ]
+        "gm_legacy": ["liyueRuinGuard/2"],
+        "yuanshen": ["20_2"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -43.5071,
-        31.32636
-      ],
+      "coordinates": [-43.5071, 31.32636],
       "id": "9A31A388A75693A4DFF2546E0D96A9028D40509D",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/3"
-        ],
-        "yuanshen": [
-          "20_3"
-        ]
+        "gm_legacy": ["liyueRuinGuard/3"],
+        "yuanshen": ["20_3"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.54532,
-        22.84531
-      ],
+      "coordinates": [-44.54532, 22.84531],
       "id": "224CC7C1AE04743467A7A8B86B2120933F001FF9",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/4"
-        ],
-        "yuanshen": [
-          "20_4"
-        ]
+        "gm_legacy": ["liyueRuinGuard/4"],
+        "yuanshen": ["20_4"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.2328,
-        39.62657
-      ],
+      "coordinates": [-46.2328, 39.62657],
       "id": "B7AC52431BC357F7FFEA09BB3DDFC04F74648D8C",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/5"
-        ],
-        "yuanshen": [
-          "20_5"
-        ]
+        "gm_legacy": ["liyueRuinGuard/5"],
+        "yuanshen": ["20_5"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.54532,
-        39.64219
-      ],
+      "coordinates": [-46.54532, 39.64219],
       "id": "A688541CF5BD102F07C0C26AB380E83E6B26FE7B",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/6"
-        ],
-        "yuanshen": [
-          "20_6"
-        ]
+        "gm_legacy": ["liyueRuinGuard/6"],
+        "yuanshen": ["20_6"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.52188,
-        39.3375
-      ],
+      "coordinates": [-46.52188, 39.3375],
       "id": "AA3DED4B8F2327C2BE81007F4C5A03ADB4CCC59C",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/7"
-        ],
-        "yuanshen": [
-          "20_7"
-        ]
+        "gm_legacy": ["liyueRuinGuard/7"],
+        "yuanshen": ["20_7"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.71327,
-        39.43125
-      ],
+      "coordinates": [-46.71327, 39.43125],
       "id": "2B7155186147D1025E1CCF64DD112CDF753DD39D",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/8"
-        ],
-        "yuanshen": [
-          "20_8"
-        ]
+        "gm_legacy": ["liyueRuinGuard/8"],
+        "yuanshen": ["20_8"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.09219,
-        20.56407
-      ],
+      "coordinates": [-46.09219, 20.56407],
       "id": "2A48BDB1515C5FF2605C08B5F3E6D781659E94E1",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/9"
-        ],
-        "yuanshen": [
-          "20_9"
-        ]
+        "gm_legacy": ["liyueRuinGuard/9"],
+        "yuanshen": ["20_9"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.37344,
-        20.10312
-      ],
+      "coordinates": [-46.37344, 20.10312],
       "id": "62994057EB48615B70593389FBEA282985E69947",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/11"
-        ],
-        "yuanshen": [
-          "20_11"
-        ]
+        "gm_legacy": ["liyueRuinGuard/11"],
+        "yuanshen": ["20_11"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -40.15469,
-        27.06406
-      ],
+      "coordinates": [-40.15469, 27.06406],
       "id": "1777E6C560AD688CD8B37AD08BFC626570D8D5AF",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/13"
-        ],
-        "yuanshen": [
-          "20_13"
-        ]
+        "gm_legacy": ["liyueRuinGuard/13"],
+        "yuanshen": ["20_13"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.65469,
-        20.16561
-      ],
+      "coordinates": [-37.65469, 20.16561],
       "id": "3C472A9F13E9A875D9DC6A825B18EB673288474D",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/14"
-        ],
-        "yuanshen": [
-          "20_14"
-        ]
+        "gm_legacy": ["liyueRuinGuard/14"],
+        "yuanshen": ["20_14"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.40006,
-        20.38769
-      ],
+      "coordinates": [-33.40006, 20.38769],
       "id": "B81D07C9B8601B61E82B9EC315CAB41716334593",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/18"
-        ],
-        "yuanshen": [
-          "20_18"
-        ]
+        "gm_legacy": ["liyueRuinGuard/18"],
+        "yuanshen": ["20_18"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.12224,
-        20.48142
-      ],
+      "coordinates": [-32.12224, 20.48142],
       "id": "F22494EB25A9EDFF5900900F2C993E1886ECE6CE",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/19"
-        ],
-        "yuanshen": [
-          "20_19"
-        ]
+        "gm_legacy": ["liyueRuinGuard/19"],
+        "yuanshen": ["20_19"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -45.48162,
-        19.72678
-      ],
+      "coordinates": [-45.48162, 19.72678],
       "id": "CC7F7BD8ADB7759C9DB9CF283AAFEF301247519F",
       "importIds": {
-        "gm_legacy": [
-          "liyueRuinGuard/20"
-        ],
-        "yuanshen": [
-          "20_20"
-        ]
+        "gm_legacy": ["liyueRuinGuard/20"],
+        "yuanshen": ["20_20"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.67032,
-        22.17734
-      ],
+      "coordinates": [-34.67032, 22.17734],
       "id": "9FBF80F43FE6E6FC231187BF698ECB7DBDBBC6C0",
       "importIds": {
-        "yuanshen": [
-          "20_21"
-        ]
+        "yuanshen": ["20_21"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.88125,
-        22.0289
-      ],
+      "coordinates": [-34.88125, 22.0289],
       "id": "CC9F2217BB7EBBC8BD3583B34D9B4919CEE6660A",
       "importIds": {
-        "yuanshen": [
-          "20_22"
-        ]
+        "yuanshen": ["20_22"]
       },
       "popupAttribution": "Yuanshen.site"
     }

@@ -4,11 +4,11 @@
 
 import _ from 'lodash';
 
-import { migrateData } from 'src/components/preferences/DataImport';
-import localStorage from 'src/components/preferences/local-storage';
-import { storeRecoveryData } from 'src/components/preferences/Recovery';
-import { AppState, initialState } from 'src/components/redux/types';
+import { migrateData } from './DataImport';
+import { storeRecoveryData } from './Recovery';
 import { buildPreferencesForStorage } from './Serialize';
+import localStorage from 'src/components/preferences/local-storage';
+import { AppState, initialState } from 'src/components/redux/Types';
 
 export const PREFERENCES_STORAGE_KEY = 'genshinmap-preferences';
 export const CREDENTIALS_STORAGE_KEY = 'genshinmap-credentials';
@@ -19,17 +19,17 @@ export const savePreferencesToLocalStorage = (state: AppState): void => {
 
 export const loadStateFromLocalStorage = (defaultValue = initialState): AppState => {
   // Fetch the stored data. If it's empty, return the default data.
-  let storedData = {
+  const storedData = {
     ...(localStorage.get(PREFERENCES_STORAGE_KEY) ?? {}),
   };
 
   try {
-    if (storedData == {}) {
-      console.warn('Local storage data was empty. Using defaults.');
+    if (_.isEmpty(storedData)) {
+      // Local storage data was empty. Using defaults.
       return defaultValue;
     }
     if (!('version' in storedData)) {
-      throw Error('Stored data has no version.');
+      throw new Error('Stored data has no version.');
     }
 
     // Migrate the data. If it can't be parsed, it'll go into a recovery local-storage key,
@@ -45,10 +45,10 @@ export const loadStateFromLocalStorage = (defaultValue = initialState): AppState
     }
     // If null was returned, return the default value.
     return defaultValue;
-  } catch (e) {
+  } catch (error) {
     console.error('[ERROR] An error occurred while parsing local storage.');
-    console.error(`[ERROR] ${e.message}`);
-    storeRecoveryData(storedData, `[ERROR] ${e.message}`);
+    console.error(`[ERROR] ${error.message}`);
+    storeRecoveryData(storedData, `[ERROR] ${error.message}`);
     return defaultValue;
   }
 };

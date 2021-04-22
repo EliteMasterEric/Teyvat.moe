@@ -42,9 +42,9 @@ export const MapCustomControlButton: FunctionComponent<MapCustomControlButtonPro
 }) => {
   const classes = useStyles();
 
-  const innerRef = useRef(null);
-  const refCb = useCallback((node) => {
-    if (innerRef.current) {
+  const innerReference = useRef(null);
+  const referenceCallback = useCallback((node) => {
+    if (innerReference.current) {
       // Make sure to cleanup any events/references added to the last instance
     }
 
@@ -57,12 +57,12 @@ export const MapCustomControlButton: FunctionComponent<MapCustomControlButtonPro
     }
 
     // Save a reference to the node
-    innerRef.current = node;
+    innerReference.current = node;
   }, []);
 
   return (
     <Tooltip title={tooltip}>
-      <div ref={refCb} className={clsx(classes.button, className)} {...other}>
+      <div ref={referenceCallback} className={clsx(classes.button, className)} {...other}>
         {children}
       </div>
     </Tooltip>

@@ -1,5 +1,5 @@
-import { setLoading } from '../slices/ui';
-import { dispatchAction } from './base';
+import { dispatchAction } from './Base';
+import { setLoading } from 'src/components/redux/slices/Interface';
 
 export const setLoadingInitialized = (status: boolean): void => {
   dispatchAction(setLoading('initializedLoading', status));

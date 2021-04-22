@@ -67,12 +67,12 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
     return submissionName !== '';
   };
 
-  const regionOptions = MapRegionKeys.map((key) => {
+  const regionOptions = _.map(MapRegionKeys, (key) => {
     const value = getMapRegion(key);
     return { value: key.toString(), label: t(value.nameKey) };
   });
 
-  const categoryOptions = MapCategoryKeys.map((key) => {
+  const categoryOptions = _.map(MapCategoryKeys, (key) => {
     const value = getMapCategory(key);
     return { value: key.toString(), label: t(value.nameKey) };
   });
@@ -123,7 +123,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
           </DialogContentText>
           <BorderBox
             display="flex"
-            flexDirection="column"
+            direction="column"
             flexWrap="wrap"
             alignItems="center"
             justifyContent="center"
@@ -147,7 +147,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
                 value={submissionCategory}
                 onChange={(event) => setSubmissionCategory(event.target.value as MapCategoryKey)}
               >
-                {categoryOptions.map((category) => (
+                {_.map(categoryOptions, (category) => (
                   <MenuItem key={category.value} value={category.value}>
                     {category.label}
                   </MenuItem>
@@ -160,7 +160,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
                 value={submissionRegion}
                 onChange={(event) => setSubmissionRegion(event.target.value as MapRegionKey)}
               >
-                {regionOptions.map((region) => (
+                {_.map(regionOptions, (region) => (
                   <MenuItem key={region.value} value={region.value}>
                     {region.label}
                   </MenuItem>

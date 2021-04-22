@@ -1,12 +1,13 @@
 import _ from 'lodash';
-import { PREFERENCES_PERSISTENT_KEYS } from '../redux';
-import { AppState } from '../redux/types';
-import { PREFERENCES_VERSION } from './PreferencesSchema';
+import { GenshinMapPreferencesLatest, PREFERENCES_VERSION } from './PreferencesSchema';
+import { PREFERENCES_PERSISTENT_KEYS } from 'src/components/redux';
+import { AppState } from 'src/components/redux/Types';
 
-export const buildPreferencesForStorage = (state: AppState) => {
+export const buildPreferencesForStorage = (state: AppState): GenshinMapPreferencesLatest => {
   return {
     ..._.pick(state, PREFERENCES_PERSISTENT_KEYS),
     version: PREFERENCES_VERSION,
+    // TODO: Add current unix timestamp here.
   };
 };
 

@@ -22,9 +22,9 @@ import {
   clearMarkerCompleted,
   selectMarkerCompleted,
   setMarkerCompleted,
-} from 'src/components/redux/slices/completed';
-import { selectCompletedAlpha } from 'src/components/redux/slices/options';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Completed';
+import { selectCompletedAlpha } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { SafeHTML } from 'src/components/util';
 import { ExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker';
 import {
@@ -101,19 +101,14 @@ const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExtern
     }
 
     // Else, it's an external image.
-    if (allowExternalMedia) {
-      // Display external images in the editor,
-      // since it is assumed this user submitted it.
-      return <img src={media} className={classes.popupMediaImage} />;
-    } else {
-      // Prevent displaying external images for security reasons.
-      return (
-        <>
-          <Typography>{t('popup-media-external-warning')}</Typography>
-          <Typography>{media}</Typography>
-        </>
-      );
-    }
+    return allowExternalMedia ? (
+      <img src={media} className={classes.popupMediaImage} />
+    ) : (
+      <>
+        <Typography>{t('popup-media-external-warning')}</Typography>
+        <Typography>{media}</Typography>
+      </>
+    );
   }
 
   // Else, use an image from public/comments.
@@ -165,12 +160,24 @@ const connector = connect<
 
 type FeatureMarkerProps = ConnectedProps<typeof connector> & FeatureMarkerBaseProps;
 
+/**
+ * Function which is called when the marker is single clicked.
+ *
+ * @param event The associated LeafletEvent.
+ */
+const onSingleClick = (event: LeafletEvent) => {
+  // Calls on single clicks, not double clicks.
+
+  // Trigger the popup to display only on single clicks.
+  event.target.openPopup();
+};
+
 const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   marker,
   featureKey,
   icons,
 
-  completed = undefined,
+  completed,
   completedAlpha,
 
   editable = false,
@@ -214,21 +221,10 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
   // Build the cluster icon for the marker. Also relies on completion status.
   const clusterIcon = createClusterIcon({
     marker: (completed ? icons?.done?.marker : icons?.base?.marker) ?? true,
-    ext: svg ? 'svg' : 'png',
+    extension: svg ? 'svg' : 'png',
     key: (completed ? icons?.done?.key : icons?.base?.key) ?? icons?.filter ?? '',
     clusterIcon: clusterIconName,
   });
-
-  /**
-   * Function which is called when the
-   * @param event
-   */
-  const onSingleClick = (event: LeafletEvent) => {
-    // Calls on single clicks, not double clicks.
-
-    // Trigger the popup to display only on single clicks.
-    event.target.openPopup();
-  };
 
   const onDoubleClick = (_event: LeafletEvent) => {
     // Calls on double clicks, not single clicks.
@@ -306,7 +302,7 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
             <Typography className={classes.popupTitle}>{title}</Typography>
           ) : (
             <Typography className={classes.popupTitle}>
-              {f('marker-id-format', { id: marker.id.substring(0, 7) })}
+              {f('marker-id-format', { id: marker.id.slice(0, 7) })}
             </Typography>
           )}
           <Box>

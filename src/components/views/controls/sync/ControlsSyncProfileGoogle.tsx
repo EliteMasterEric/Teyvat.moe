@@ -1,12 +1,11 @@
 import { Avatar, Box, IconButton, Typography, makeStyles, Tooltip } from '@material-ui/core';
+import LogoutIcon from '@material-ui/icons/ExitToApp';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { attemptGoogleSignOut } from 'src/components/api/google';
 import { f, t } from 'src/components/i18n/Localization';
-import { AppDispatch } from 'src/components/redux';
-import LogoutIcon from '@material-ui/icons/ExitToApp';
-import { selectAuthGoogleProfile } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectAuthGoogleProfile } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,15 +24,10 @@ const useStyles = makeStyles((theme) => ({
 const mapStateToProps = (state: AppState) => ({
   googleAuthProfile: selectAuthGoogleProfile(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({});
 type ControlsSyncProfileGoogleStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsSyncProfileGoogleDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  ControlsSyncProfileGoogleStateProps,
-  ControlsSyncProfileGoogleDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<ControlsSyncProfileGoogleStateProps, Empty, Empty, AppState>(
+  mapStateToProps
+);
 
 type ControlsSyncProfileGoogleProps = ConnectedProps<typeof connector>;
 
@@ -41,11 +35,6 @@ const _ControlsSyncProfileGoogle: FunctionComponent<ControlsSyncProfileGooglePro
   googleAuthProfile,
 }) => {
   const classes = useStyles();
-
-  const onClickSignout = () => {
-    console.log('[GOOGLE] Signing out...');
-    attemptGoogleSignOut();
-  };
 
   // Don't display if not logged in.
   if (googleAuthProfile == null) return null;
@@ -67,7 +56,12 @@ const _ControlsSyncProfileGoogle: FunctionComponent<ControlsSyncProfileGooglePro
           {t('google-login-success')}
         </Typography>
         <Tooltip title={t('sign-out')}>
-          <IconButton className={classes.logoutButton} onClick={onClickSignout}>
+          <IconButton
+            className={classes.logoutButton}
+            onClick={() => {
+              attemptGoogleSignOut();
+            }}
+          >
             <LogoutIcon />
           </IconButton>
         </Tooltip>

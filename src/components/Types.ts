@@ -6,6 +6,7 @@
  * Opaque<K, T> has been replaced with:
  * ts-toolbelt.A.Type<T, K>
  */
+import _ from 'lodash';
 import { A } from 'ts-toolbelt';
 
 /**
@@ -49,7 +50,7 @@ const UIControlsTabs = [
 ] as const;
 export type UIControlsTab = typeof UIControlsTabs[number];
 export const distinguishUIControlsTab = (value: string): value is UIControlsTab => {
-  return UIControlsTabs.includes(value as UIControlsTab);
+  return _.includes(UIControlsTabs, value as UIControlsTab);
 };
 
 export type MapPosition = {

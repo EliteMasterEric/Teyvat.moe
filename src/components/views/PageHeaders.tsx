@@ -1,42 +1,49 @@
+import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 
 import Theme from 'src/components/Theme';
 import { isDev } from 'src/components/util';
 
 // The site connects to these external APIs.
-const CONNECT_HOSTS = ['https://api.imgur.com'];
+const CONNECT_HOSTS = ['https://api.imgur.com'] as const;
 // This site fetches style data from these domains.
-const STYLE_HOSTS = ['https://cdnjs.cloudflare.com'];
+const STYLE_HOSTS = ['https://cdnjs.cloudflare.com'] as const;
 // This site imports iframes from these domains.
-const FRAME_HOSTS = ['https://www.youtube.com'];
+const FRAME_HOSTS = ['https://www.youtube.com'] as const;
 
 // The base Content Security Policy.
 // <HOST> is replaced with a list of valid web hosts.
 // <CONNECT> is replaced with a list of domains the host connects to.
 // 'frame-ancestors' is not supported when delivered via meta element.
-const CSP_BASE = `
-  default-src 'none';
-  base-uri 'self';
-  block-all-mixed-content;
-  child-src 'none';
-  connect-src 'self' data: <CONNECT>;
-  font-src 'self';
-  manifest-src 'self';
-  form-action 'self';
-  frame-src <FRAME>;
-  img-src 'self' data: https://*;
-  media-src 'none';
-  object-src 'self';
-  script-src 'self';
-  style-src 'unsafe-inline' 'self' <STYLE>;
+const CSP_REPLACEMENTS = [
+  [/<CONNECT>/g, CONNECT_HOSTS.join(' ')],
+  [/<STYLE>/g, STYLE_HOSTS.join(' ')],
+  [/<FRAME>/g, FRAME_HOSTS.join(' ')],
+] as const;
+const CSP = _.reduce(
+  CSP_REPLACEMENTS,
+  (csp, [pattern, replacement]) => _.replace(csp, pattern, replacement),
+  `
+default-src 'none';
+base-uri 'self';
+block-all-mixed-content;
+child-src 'none';
+connect-src 'self' data: <CONNECT>;
+font-src 'self';
+manifest-src 'self';
+form-action 'self';
+frame-src <FRAME>;
+img-src 'self' data: https://*;
+media-src 'none';
+object-src 'self';
+script-src 'self';
+style-src 'unsafe-inline' 'self' <STYLE>;
 `
-  .replace(/<CONNECT>/g, CONNECT_HOSTS.join(' '))
-  .replace(/<STYLE>/g, STYLE_HOSTS.join(' '))
-  .replace(/<FRAME>/g, FRAME_HOSTS.join(' '));
+);
 
 // Edit, append, or replace this with any pages this site will be hosted on.
-const VALID_HOSTS = ['genshinmap.github.io', 'genshin-map-beta.netlify.app'];
-const CSP_HOSTS = CSP_BASE.replace(/<HOST>/g, VALID_HOSTS.join(' '));
+const VALID_HOSTS = ['genshinmap.github.io', 'genshin-map-beta.netlify.app'] as const;
+const CSP_HOSTS = _.replace(CSP, /<HOST>/g, VALID_HOSTS.join(' '));
 
 const PERMISSIONS_POLICY = `
   clipboard-write 'self';

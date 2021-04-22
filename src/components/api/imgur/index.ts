@@ -59,10 +59,10 @@ export const uploadImage = async <T extends File>(file: T): Promise<string> => {
           break;
       }
 
-      const newErr = {
+      const newError = {
         ...error,
         localizedString,
       };
-      throw newErr;
+      throw newError;
     });
 };

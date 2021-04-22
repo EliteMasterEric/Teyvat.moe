@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { getRecord } from '../util';
+import { getRecord } from 'src/components/util';
 import tagData from 'src/data/core/tags.json';
 
 type TagMetadata = {

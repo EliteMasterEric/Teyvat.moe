@@ -30,9 +30,7 @@
     "th": "สามารถปรับปรุงเป็นวัสดุประสบการณ์อาวุธได้ผ่านการ \"สั่งทำอาวุธ\" โดยใช้ Original Resin\\nCrystal Ore ที่ถูกกัดเซาะด้วยพลังงานของ Ley Lines นั้นจะไม่สามารถจัดการได้ด้วยวิธีทั่วไป",
     "vi": "Có thể thông qua ủy thác rèn, dùng Nhựa Nguyên Chất luyện thành nguyên liệu EXP Vũ Khí.\\nMỏ pha lê bị năng lượng địa mạch ăn mòn, tay nghề bình thường sẽ không thể xử lý."
   },
-  "tags": [
-    "smithing-ingredient"
-  ],
+  "tags": ["smithing-ingredient"],
   "enabled": true,
   "cluster": "on",
   "respawn": 259200,
@@ -47,18 +45,11 @@
   },
   "data": [
     {
-      "coordinates": [
-        -48.48672,
-        26.15
-      ],
+      "coordinates": [-48.48672, 26.15],
       "id": "1EC393FA2FC2EF6D6A0F07C35ABA24BD639E4086",
       "importIds": {
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/1"
-        ],
-        "yuanshen": [
-          "101_17"
-        ]
+        "gm_legacy": ["liyueMagicalCrystalChunk/1"],
+        "yuanshen": ["101_17"]
       },
       "popupContent": {
         "en": "This Rich Ore Reserve is located on Mt. Tianheng, near the teleporter.",
@@ -68,18 +59,11 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -46.54532,
-        40.07578
-      ],
+      "coordinates": [-46.54532, 40.07578],
       "id": "3562EC5C40DD402D4C6BEFC3AD778B84492DBA40",
       "importIds": {
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/3"
-        ],
-        "yuanshen": [
-          "101_22"
-        ]
+        "gm_legacy": ["liyueMagicalCrystalChunk/3"],
+        "yuanshen": ["101_22"]
       },
       "popupContent": {
         "en": "This Rich Ore Reserve is located at a rock on the shoreline of Guyun Stone Pillars.",
@@ -89,18 +73,11 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -47.49843,
-        40.78281
-      ],
+      "coordinates": [-47.49843, 40.78281],
       "id": "A9057B96DDC19A2D8E561153C24BF96841C883DD",
       "importIds": {
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/4"
-        ],
-        "yuanshen": [
-          "101_21"
-        ]
+        "gm_legacy": ["liyueMagicalCrystalChunk/4"],
+        "yuanshen": ["101_21"]
       },
       "popupContent": {
         "en": "This Rich Ore Reserve is located at a small island to the south of Guyun Stone Pillars.",
@@ -110,18 +87,11 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -49.02187,
-        26.20468
-      ],
+      "coordinates": [-49.02187, 26.20468],
       "id": "5BEDA97B5EAF0EA760532FDF1E883A73BAE7FE1A",
       "importIds": {
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/5"
-        ],
-        "yuanshen": [
-          "101_16"
-        ]
+        "gm_legacy": ["liyueMagicalCrystalChunk/5"],
+        "yuanshen": ["101_16"]
       },
       "popupContent": {
         "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng.",
@@ -131,18 +101,11 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -48.975,
-        26.20468
-      ],
+      "coordinates": [-48.975, 26.20468],
       "id": "D8F3F7AF4A06B5BC42474268C8517E2F22D17411",
       "importIds": {
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/6"
-        ],
-        "yuanshen": [
-          "101_16"
-        ]
+        "gm_legacy": ["liyueMagicalCrystalChunk/6"],
+        "yuanshen": ["101_16"]
       },
       "popupContent": {
         "en": "This Crystal ore node is located just south of the other Magical Crystal node on Mt. Tianheng.",
@@ -152,265 +115,163 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -34.21198,
-        15.78541
-      ],
+      "coordinates": [-34.21198, 15.78541],
       "id": "038BD89761049A8BE05B4BFD3397026E752EDB15",
       "importIds": {
-        "yuanshen": [
-          "101_1"
-        ]
+        "yuanshen": ["101_1"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.95477,
-        17.66612
-      ],
+      "coordinates": [-32.95477, 17.66612],
       "id": "418F2042C741D77D0F9343F76BD921EFEF6F77EB",
       "importIds": {
-        "yuanshen": [
-          "101_2"
-        ]
+        "yuanshen": ["101_2"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.1742,
-        17.91823
-      ],
+      "coordinates": [-33.1742, 17.91823],
       "id": "F22FB625B9558D706AE44B1C1F0D59FC2A7A81BD",
       "importIds": {
-        "yuanshen": [
-          "101_3"
-        ]
+        "yuanshen": ["101_3"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -31.23281,
-        15.04845
-      ],
+      "coordinates": [-31.23281, 15.04845],
       "id": "F8AA88C83671B879C724C0A825653A4526A8844E",
       "importIds": {
-        "yuanshen": [
-          "101_4"
-        ]
+        "yuanshen": ["101_4"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.20938,
-        18.32448
-      ],
+      "coordinates": [-34.20938, 18.32448],
       "id": "7BE3085646117AF476F1DAFDB0DA350BA1F2A55B",
       "importIds": {
-        "yuanshen": [
-          "101_5"
-        ]
+        "yuanshen": ["101_5"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.78801,
-        16.80505
-      ],
+      "coordinates": [-34.78801, 16.80505],
       "id": "079C33FA7E1164913C712CD8A86A249C6CDDE834",
       "importIds": {
-        "yuanshen": [
-          "101_6"
-        ]
+        "yuanshen": ["101_6"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.24914,
-        16.48337
-      ],
+      "coordinates": [-34.24914, 16.48337],
       "id": "A88C8ABA83471987CC017E91896694D472D601E5",
       "importIds": {
-        "yuanshen": [
-          "101_7"
-        ]
+        "yuanshen": ["101_7"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.73412,
-        16.64609
-      ],
+      "coordinates": [-33.73412, 16.64609],
       "id": "F9F7966A7747C26D453F8672DC15EC88F0805138",
       "importIds": {
-        "yuanshen": [
-          "101_8"
-        ]
+        "yuanshen": ["101_8"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.029,
-        15.01756
-      ],
+      "coordinates": [-39.029, 15.01756],
       "id": "319B7A86C6649275FAC3873770028BDA701E4D9D",
       "importIds": {
-        "yuanshen": [
-          "101_9"
-        ]
+        "yuanshen": ["101_9"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.04531,
-        21.31797
-      ],
+      "coordinates": [-46.04531, 21.31797],
       "id": "FEEE22791D38135E1E23EBF7848BADA5B4D08FED",
       "importIds": {
-        "yuanshen": [
-          "101_10"
-        ]
+        "yuanshen": ["101_10"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.34907,
-        20.46682
-      ],
+      "coordinates": [-46.34907, 20.46682],
       "id": "A0EA449792477C1F3CCA46D59585F1C3B7CBB2C3",
       "importIds": {
-        "yuanshen": [
-          "101_11"
-        ]
+        "yuanshen": ["101_11"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.58609,
-        20.77797
-      ],
+      "coordinates": [-49.58609, 20.77797],
       "id": "7DCF4E297199447C5E1721A19739DF670DC4EF92",
       "importIds": {
-        "yuanshen": [
-          "101_12"
-        ]
+        "yuanshen": ["101_12"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -52.02191,
-        21.5471
-      ],
+      "coordinates": [-52.02191, 21.5471],
       "id": "344DBD6566431C9154B38A211FCF7B9ECFB17433",
       "importIds": {
-        "yuanshen": [
-          "101_13"
-        ]
+        "yuanshen": ["101_13"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.64174,
-        22.79583
-      ],
+      "coordinates": [-49.64174, 22.79583],
       "id": "922B07C9FB196D7FE2D6FCE88E7A40F34A8FEC72",
       "importIds": {
-        "yuanshen": [
-          "101_14"
-        ]
+        "yuanshen": ["101_14"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.84348,
-        24.04584
-      ],
+      "coordinates": [-50.84348, 24.04584],
       "id": "57BCCF5BA81E21EBA845DFC7A775DA003464BE66",
       "importIds": {
-        "yuanshen": [
-          "101_15"
-        ]
+        "yuanshen": ["101_15"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.69048,
-        25.04888
-      ],
+      "coordinates": [-39.69048, 25.04888],
       "id": "CAEC89CEB70946FB60FF55A5B8B85DAE9C843ECC",
       "importIds": {
-        "yuanshen": [
-          "101_18"
-        ]
+        "yuanshen": ["101_18"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -45.99792,
-        24.95511
-      ],
+      "coordinates": [-45.99792, 24.95511],
       "id": "EFA76D6926CDEEBBCFAE3841564E9EE0DD3F3AB1",
       "importIds": {
-        "yuanshen": [
-          "101_19"
-        ]
+        "yuanshen": ["101_19"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -52.03127,
-        18.79496
-      ],
+      "coordinates": [-52.03127, 18.79496],
       "id": "13733194378364C0CD065DCD9EC585656F6D70A0",
       "importIds": {
-        "yuanshen": [
-          "101_20"
-        ]
+        "yuanshen": ["101_20"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -43.51348,
-        39.3889
-      ],
+      "coordinates": [-43.51348, 39.3889],
       "id": "C6E115A37403C94D9B278E208D8476CED4651215",
       "importIds": {
-        "yuanshen": [
-          "101_23"
-        ]
+        "yuanshen": ["101_23"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -45.529,
-        40.88486
-      ],
+      "coordinates": [-45.529, 40.88486],
       "id": "70C616AD47C9755A1ECD45F0366EBEF5E8106874",
       "importIds": {
-        "yuanshen": [
-          "101_24"
-        ],
-        "gm_legacy": [
-          "liyueMagicalCrystalChunk/2"
-        ]
+        "yuanshen": ["101_24"],
+        "gm_legacy": ["liyueMagicalCrystalChunk/2"]
       },
       "popupContent": {
         "en": "This Rich Ore Reserve is located at the Guyun Stone Pillars, on a boat to the west of the Domain.",
@@ -420,54 +281,34 @@
       "popupAttribution": "MasterEric"
     },
     {
-      "coordinates": [
-        -30.29141,
-        21.23594
-      ],
+      "coordinates": [-30.29141, 21.23594],
       "id": "A1C20B3C26EFD59ADC6481F4877730EA103A1B1D",
       "importIds": {
-        "yuanshen": [
-          "101_25"
-        ]
+        "yuanshen": ["101_25"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -40.18205,
-        20.6448
-      ],
+      "coordinates": [-40.18205, 20.6448],
       "id": "0FE02DE1A1AF0EF4F6AE0C5C11E8C5AF982CBD31",
       "importIds": {
-        "yuanshen": [
-          "101_26"
-        ]
+        "yuanshen": ["101_26"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -35.74063,
-        16.87266
-      ],
+      "coordinates": [-35.74063, 16.87266],
       "id": "8BEC0C7235B953796362CEB37D2B00BB13F19FB8",
       "importIds": {
-        "yuanshen": [
-          "101_27"
-        ]
+        "yuanshen": ["101_27"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -35.7875,
-        17.1461
-      ],
+      "coordinates": [-35.7875, 17.1461],
       "id": "D45F527FF1C11001EDD795CDA64836E47362E675",
       "importIds": {
-        "yuanshen": [
-          "101_28"
-        ]
+        "yuanshen": ["101_28"]
       },
       "popupAttribution": "Yuanshen.site"
     }

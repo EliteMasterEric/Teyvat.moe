@@ -1,1 +1,2 @@
-export const getKeys = Object.keys as <T extends object>(obj: T) => Array<keyof T>;
+// eslint-disable-next-line @typescript-eslint/ban-types
+export const getKeys = Object.keys as <T extends object>(object: T) => Array<keyof T>;

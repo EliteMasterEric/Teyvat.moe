@@ -7,15 +7,7 @@
 
 import _ from 'lodash';
 
-import {
-  MSFFeatureKey,
-  MSFImportKey,
-  MSFMarkerID,
-  MSFMarkerKey,
-  MSFRouteID,
-} from 'src/components/data/Element';
-import { f } from 'src/components/i18n/Localization';
-import { PREFERENCES_PREFIX } from 'src/components/preferences/DataExport';
+import { PREFERENCES_PREFIX } from './DataExport';
 import {
   EditorMarker,
   EditorRoute,
@@ -23,8 +15,8 @@ import {
   GM_002_EditorRoute,
   LegacyEditorMarker,
   LegacyEditorRoute,
-} from 'src/components/preferences/EditorDataSchema';
-import { buildImportMapping } from 'src/components/preferences/ExternalImportDictionary';
+} from './EditorDataSchema';
+import { buildImportMapping } from './ExternalImportDictionary';
 import {
   GM_001,
   GM_002,
@@ -37,10 +29,18 @@ import {
   GenshinMapPreferencesLatest,
   GenshinMapPreferencesVersion,
   PREFERENCES_VERSION,
-} from 'src/components/preferences/PreferencesSchema';
-import { storeRecoveryData } from 'src/components/preferences/Recovery';
-import { Notification, buildNotification } from 'src/components/redux/slices/notify';
-import { AppState, initialState } from 'src/components/redux/types';
+} from './PreferencesSchema';
+import { storeRecoveryData } from './Recovery';
+import {
+  MSFFeatureKey,
+  MSFImportKey,
+  MSFMarkerID,
+  MSFMarkerKey,
+  MSFRouteID,
+} from 'src/components/data/Element';
+import { f } from 'src/components/i18n/Localization';
+import { Notification, buildNotification } from 'src/components/redux/slices/Notify';
+import { AppState, initialState } from 'src/components/redux/Types';
 import { fromBase64, getRecord, hashObject } from 'src/components/util';
 
 const demercateCoordinate = (coordinate: [number, number]): [number, number] => {
@@ -64,7 +64,7 @@ const reprojectCoordinate = (coordinate: [number, number]): [number, number] => 
 
 // Type guards.
 const distinguishLegacyRoute = (value: any): value is LegacyEditorRoute => {
-  return Array.isArray((value as LegacyEditorRoute).geometry.coordinates[0]);
+  return _.isArray((value as LegacyEditorRoute).geometry.coordinates[0]);
 };
 
 export const importEditorDataFromGMLegacy = (
@@ -75,9 +75,11 @@ export const importEditorDataFromGMLegacy = (
 } => {
   const editorElements = data.editor.feature.data;
 
-  const modifiedElements = editorElements.map((element) => {
+  const modifiedElements = _.map(editorElements, (element) => {
     if (distinguishLegacyRoute(element)) {
-      const coordinates = element.geometry.coordinates.map((coord) => reprojectCoordinate(coord));
+      const coordinates = _.map(element.geometry.coordinates, (coord) =>
+        reprojectCoordinate(coord)
+      );
       const id = hashObject(coordinates) as MSFRouteID;
       return {
         coordinates,
@@ -134,42 +136,38 @@ export const importMarkerDataFromGMLegacy = (
   let totalEntries = 0;
 
   const featureDataUnmapped = _.fromPairs(
-    _.flatten(
-      _.map(
-        _.entries(dataCompletedFeatures) as [MSFFeatureKey, Record<MSFMarkerID, number>][],
-        (entry) => {
-          const [featureKey, featureMarkers] = entry;
-          const subEntries = _.entries(featureMarkers) as [MSFMarkerID, number][];
-          totalEntries += subEntries.length;
-          const subResult = _.map(subEntries, (subEntry): [MSFImportKey, number] => {
-            const [markerID, timestamp] = subEntry;
-            const markerKey = `${featureKey}/${markerID}` as MSFImportKey;
-            return [markerKey, timestamp];
-          });
-          return subResult;
-        }
-      )
+    _.flatMap(
+      _.toPairs(dataCompletedFeatures) as [MSFFeatureKey, Record<MSFMarkerID, number>][],
+      (entry) => {
+        const [featureKey, featureMarkers] = entry;
+        const subEntries = _.toPairs(featureMarkers) as [MSFMarkerID, number][];
+        totalEntries += subEntries.length;
+        const subResult = _.map(subEntries, (subEntry): [MSFImportKey, number] => {
+          const [markerID, timestamp] = subEntry;
+          const markerKey = `${featureKey}/${markerID}` as MSFImportKey;
+          return [markerKey, timestamp];
+        });
+        return subResult;
+      }
     )
   ) as Record<MSFImportKey, number>;
 
   const featureDataMapped = _.fromPairs(
-    _.flatten(
-      _.map(
-        _.entries(featureDataUnmapped) as [MSFImportKey, number][],
-        (featureDataEntry: [MSFImportKey, number]): ([MSFMarkerKey, number] | [])[] => {
-          const [importKey, timestamp] = featureDataEntry;
-          const dictionaryEntries = getDictionaryEntry(importKey);
-          if (dictionaryEntries.length == 0) {
-            missingEntries.push(importKey);
-            return [];
-          }
-          const result = _.map(dictionaryEntries, (dictEntry: MSFMarkerKey): [
-            MSFMarkerKey,
-            number
-          ] => [dictEntry, timestamp]);
-          return result;
+    _.flatMap(
+      _.toPairs(featureDataUnmapped) as [MSFImportKey, number][],
+      (featureDataEntry: [MSFImportKey, number]): ([MSFMarkerKey, number] | [])[] => {
+        const [importKey, timestamp] = featureDataEntry;
+        const dictionaryEntries = getDictionaryEntry(importKey);
+        if (dictionaryEntries.length === 0) {
+          missingEntries.push(importKey);
+          return [];
         }
-      )
+        const result = _.map(dictionaryEntries, (dictEntry: MSFMarkerKey): [
+          MSFMarkerKey,
+          number
+        ] => [dictEntry, timestamp]);
+        return result;
+      }
     )
   ) as Record<MSFMarkerKey, number>;
 
@@ -491,13 +489,13 @@ export const migrateData = (
 export const parseDataFromString = (input: string): GenshinMapPreferencesLatest | null => {
   const decodedData = fromBase64(input);
 
-  const versionPrefix = decodedData.substring(
+  const versionPrefix = decodedData.slice(
     0,
-    PREFERENCES_VERSION.length
+    Math.max(0, PREFERENCES_VERSION.length)
   ) as GenshinMapPreferencesVersion;
 
   const jsonData = JSON.parse(
-    decodedData.substring(PREFERENCES_PREFIX.length)
+    decodedData.slice(PREFERENCES_PREFIX.length)
   ) as GenshinMapPreferences;
 
   const migratedData = migrateData(jsonData, versionPrefix);

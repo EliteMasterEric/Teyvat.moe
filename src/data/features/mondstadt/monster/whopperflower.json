@@ -30,9 +30,7 @@
     "th": "มอนสเตอร์รูปแบบพืชที่จะโจมตีเหยื่อแบบไม่ให้ได้ตั้งตัว ซึ่งใช้ธาตุไฟในการล่าเหยื่อของมัน\\nในโลกของ Teyvat นั้น มีพืชที่เป็นหนึ่งเดียวกับธาตุอยู่ ด้วยเหตุนี้พวกมันที่ได้รับสติปัญญามานั้นจึงมีความต้องการ \"สารอาหาร\" ที่เพิ่มขึ้นเป็นอย่างมาก...",
     "vi": "Ma vật giống với thực vật, xuất quỷ nhập thần, dùng nguyên tố Hỏa để tấn công con mồi.\\nTrong thế giới Teyvat, chúng là loại thực vật có nguyên tố. Cho nên yêu cầu đối với \"dinh dưỡng\" cũng cao hơn..."
   },
-  "tags": [
-    "character-weapon-material"
-  ],
+  "tags": ["character-weapon-material"],
   "enabled": true,
   "cluster": "on",
   "respawn": 86400,
@@ -47,546 +45,319 @@
   },
   "data": [
     {
-      "coordinates": [
-        -16.33828,
-        28.12266
-      ],
+      "coordinates": [-16.33828, 28.12266],
       "id": "30E82128B4E1ED4DD6C86E649D0ED649245A32A1",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/1"
-        ],
-        "yuanshen": [
-          "35_1"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/1"],
+        "yuanshen": ["35_1"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -12.62344,
-        31.56015
-      ],
+      "coordinates": [-12.62344, 31.56015],
       "id": "13309BE3A11C69AB213BC164213993D15D3A6B78",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/2"
-        ],
-        "yuanshen": [
-          "35_2"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/2"],
+        "yuanshen": ["35_2"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -25.1625,
-        34.51328
-      ],
+      "coordinates": [-25.1625, 34.51328],
       "id": "8CF7AFCBE696C3E7A93A4DDE9FE55404BB3935D6",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/3"
-        ],
-        "yuanshen": [
-          "35_3"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/3"],
+        "yuanshen": ["35_3"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.52968,
-        33.36094
-      ],
+      "coordinates": [-26.52968, 33.36094],
       "id": "E294C445EACC283A92FD3E764B212A48C34F66A0",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/4"
-        ],
-        "yuanshen": [
-          "35_4"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/4"],
+        "yuanshen": ["35_4"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -16.40468,
-        48.57969
-      ],
+      "coordinates": [-16.40468, 48.57969],
       "id": "35D9CB2A2175B21081CDC5D734E1E286A8EFF10E",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/5"
-        ],
-        "yuanshen": [
-          "35_5"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/5"],
+        "yuanshen": ["35_5"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -21.48281,
-        48.69687
-      ],
+      "coordinates": [-21.48281, 48.69687],
       "id": "35A3294A760BECEF1E02A4B9BE2D5658210FE2F3",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/6"
-        ],
-        "yuanshen": [
-          "35_6"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/6"],
+        "yuanshen": ["35_6"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -20.92813,
-        49.06797
-      ],
+      "coordinates": [-20.92813, 49.06797],
       "id": "6DBD9E697AAB997002CA662581ED54912A763F1F",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/7"
-        ],
-        "yuanshen": [
-          "35_7"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/7"],
+        "yuanshen": ["35_7"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -24.64687,
-        42.54063
-      ],
+      "coordinates": [-24.64687, 42.54063],
       "id": "DB654AC0E5F9EC5B2E94F6E184D97798BC67F6A4",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/8"
-        ],
-        "yuanshen": [
-          "35_8"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/8"],
+        "yuanshen": ["35_8"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -24.81094,
-        43.12656
-      ],
+      "coordinates": [-24.81094, 43.12656],
       "id": "C8C045D888EDB3FEE6C230840541AF9101338BF5",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/9"
-        ],
-        "yuanshen": [
-          "35_9"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/9"],
+        "yuanshen": ["35_9"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.05703,
-        44.41172
-      ],
+      "coordinates": [-26.05703, 44.41172],
       "id": "297A48488AB9740D86F61D3D1451A375DCDB7222",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/10"
-        ],
-        "yuanshen": [
-          "35_10"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/10"],
+        "yuanshen": ["35_10"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.64688,
-        44.87656
-      ],
+      "coordinates": [-26.64688, 44.87656],
       "id": "8A4745518C690D833BA7B71DE7A93C61A5AF13AB",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/11"
-        ],
-        "yuanshen": [
-          "35_11"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/11"],
+        "yuanshen": ["35_11"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.43985,
-        45.9625
-      ],
+      "coordinates": [-28.43985, 45.9625],
       "id": "3183948EB9145965615140420F2DA345F3A06A93",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/12"
-        ],
-        "yuanshen": [
-          "35_12"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/12"],
+        "yuanshen": ["35_12"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -24.39313,
-        44.75587
-      ],
+      "coordinates": [-24.39313, 44.75587],
       "id": "B8891960A6AD5947F7151AEBB20E75B930526274",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/13"
-        ],
-        "yuanshen": [
-          "35_13"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/13"],
+        "yuanshen": ["35_13"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.14297,
-        52.48985
-      ],
+      "coordinates": [-27.14297, 52.48985],
       "id": "58A0F1B9D753779021794216434C760C4D3735C0",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/14"
-        ],
-        "yuanshen": [
-          "35_14"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/14"],
+        "yuanshen": ["35_14"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -16.80234,
-        35.12212
-      ],
+      "coordinates": [-16.80234, 35.12212],
       "id": "1585A727030E08CDE66A510B461F60291B7CAA7E",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/15"
-        ],
-        "yuanshen": [
-          "35_15"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/15"],
+        "yuanshen": ["35_15"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -14.19397,
-        49.35705
-      ],
+      "coordinates": [-14.19397, 49.35705],
       "id": "32F8E37D554480FD1DA013320C8E0A88292778BA",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/16"
-        ],
-        "yuanshen": [
-          "35_16"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/16"],
+        "yuanshen": ["35_16"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -22.00235,
-        49.0211
-      ],
+      "coordinates": [-22.00235, 49.0211],
       "id": "872CD953B4AD430D581D94B491C35460DF63CA7F",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/17"
-        ],
-        "yuanshen": [
-          "35_17"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/17"],
+        "yuanshen": ["35_17"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -29.23985,
-        50.35158
-      ],
+      "coordinates": [-29.23985, 50.35158],
       "id": "4E022B48296E7BC43E876556FB42E136F5C06321",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/18"
-        ],
-        "yuanshen": [
-          "35_18"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/18"],
+        "yuanshen": ["35_18"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -29.00556,
-        49.14088
-      ],
+      "coordinates": [-29.00556, 49.14088],
       "id": "3DF02DFDE0F2432FA18A177DF0527F7B8B3D38B3",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/19"
-        ],
-        "yuanshen": [
-          "35_19"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/19"],
+        "yuanshen": ["35_19"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -19.93538,
-        34.14143
-      ],
+      "coordinates": [-19.93538, 34.14143],
       "id": "5809853E59822F88C673A1942A7F3AFCD55D422A",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/20"
-        ],
-        "yuanshen": [
-          "35_20"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/20"],
+        "yuanshen": ["35_20"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -12.47813,
-        46.80547
-      ],
+      "coordinates": [-12.47813, 46.80547],
       "id": "93CFC0863A1803405800C04EAEEC0AD003A37668",
       "importIds": {
-        "gm_legacy": [
-          "mondstadtWhopperflower/21"
-        ],
-        "yuanshen": [
-          "35_21"
-        ]
+        "gm_legacy": ["mondstadtWhopperflower/21"],
+        "yuanshen": ["35_21"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -13.55703,
-        44.57578
-      ],
+      "coordinates": [-13.55703, 44.57578],
       "id": "2C5BEA1886E934D85BAB22CD90C5C3F2A40A9F1E",
       "importIds": {
-        "yuanshen": [
-          "35_22"
-        ]
+        "yuanshen": ["35_22"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -25.44892,
-        41.48463
-      ],
+      "coordinates": [-25.44892, 41.48463],
       "id": "F5045F8BB52418D69D731A400DCC267B03732C4D",
       "importIds": {
-        "yuanshen": [
-          "35_36"
-        ]
+        "yuanshen": ["35_36"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.94726,
-        42.3873
-      ],
+      "coordinates": [-27.94726, 42.3873],
       "id": "6FD8C6D3D0DDB595619D3E93917AEB49D3505FAA",
       "importIds": {
-        "yuanshen": [
-          "35_24"
-        ]
+        "yuanshen": ["35_24"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.05096,
-        40.82101
-      ],
+      "coordinates": [-33.05096, 40.82101],
       "id": "51C0338D9DEC66DB75FDF3FD2AAC710BA27EC0C3",
       "importIds": {
-        "yuanshen": [
-          "35_25"
-        ]
+        "yuanshen": ["35_25"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.44504,
-        37.88437
-      ],
+      "coordinates": [-32.44504, 37.88437],
       "id": "F06AD2AEFC453E905A90654F9C162A303C832F57",
       "importIds": {
-        "yuanshen": [
-          "35_29"
-        ]
+        "yuanshen": ["35_29"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.42124,
-        36.99412
-      ],
+      "coordinates": [-32.42124, 36.99412],
       "id": "8AF1C20F1722C241FAAFB13178F711AB212CB213",
       "importIds": {
-        "yuanshen": [
-          "35_31"
-        ]
+        "yuanshen": ["35_31"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.79966,
-        41.81219
-      ],
+      "coordinates": [-28.79966, 41.81219],
       "id": "6A48681EAE0FB33F1B7DC6AC0EBCF34796706A19",
       "importIds": {
-        "yuanshen": [
-          "35_32"
-        ]
+        "yuanshen": ["35_32"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -29.28386,
-        44.23003
-      ],
+      "coordinates": [-29.28386, 44.23003],
       "id": "E362315980DD97706F249466E65B48C9BC16E88C",
       "importIds": {
-        "yuanshen": [
-          "35_33"
-        ]
+        "yuanshen": ["35_33"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.9042,
-        41.62708
-      ],
+      "coordinates": [-27.9042, 41.62708],
       "id": "9B545C401A59782232A949C2358BE4E10BF294D4",
       "importIds": {
-        "yuanshen": [
-          "35_34"
-        ]
+        "yuanshen": ["35_34"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.92682,
-        41.60703
-      ],
+      "coordinates": [-27.92682, 41.60703],
       "id": "0EBF641CD078793A4EF5AEE3BB3426A21F3362E8",
       "importIds": {
-        "yuanshen": [
-          "35_35"
-        ]
+        "yuanshen": ["35_35"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.71422,
-        39.61788
-      ],
+      "coordinates": [-30.71422, 39.61788],
       "id": "0E450057C82BB29B887B314F865716B43B042802",
       "importIds": {
-        "yuanshen": [
-          "35_37"
-        ]
+        "yuanshen": ["35_37"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.21198,
-        43.33951
-      ],
+      "coordinates": [-30.21198, 43.33951],
       "id": "B6273AE95136F5F06B51600CB5129C51ECE3521C",
       "importIds": {
-        "yuanshen": [
-          "35_38"
-        ]
+        "yuanshen": ["35_38"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.20156,
-        39.89869
-      ],
+      "coordinates": [-27.20156, 39.89869],
       "id": "AAC734B78943FF89DDF391660077CDC8A261CF70",
       "importIds": {
-        "yuanshen": [
-          "35_39"
-        ]
+        "yuanshen": ["35_39"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.20026,
-        35.00808
-      ],
+      "coordinates": [-26.20026, 35.00808],
       "id": "6A7BC1635217C525D0152773B581CC070811D905",
       "importIds": {
-        "yuanshen": [
-          "35_40"
-        ]
+        "yuanshen": ["35_40"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.0375,
-        43.88828
-      ],
+      "coordinates": [-28.0375, 43.88828],
       "id": "94F6763B1C7163006A9974FF1C45655C9AAF86BE",
       "importIds": {
-        "yuanshen": [
-          "35_41"
-        ]
+        "yuanshen": ["35_41"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.01015,
-        36.29062
-      ],
+      "coordinates": [-33.01015, 36.29062],
       "id": "8738C13F5E6694EA3BA38D3D551317D6B00006B3",
       "importIds": {
-        "yuanshen": [
-          "35_42"
-        ]
+        "yuanshen": ["35_42"]
       },
       "popupAttribution": "Yuanshen.site"
     }

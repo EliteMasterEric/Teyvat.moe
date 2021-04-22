@@ -30,9 +30,7 @@
     "th": "เผ่าพันธุ์ที่มีมาแต่โบราณซึ่งร่อนเร่อยู่ในถิ่นทุรกันดารของ Teyvat\\nมีโครงสร้างที่คล้ายกันกับมนุษย์ แต่สูญเสียสติปัญญาและจิตวิญญาณ ตามบันทึกแสดงให้เห็นว่าพวกมันปรากฏอยู่บนโลกมาแล้วกว่าพันปี แต่กลับไร้ซึ่งประวัติศาสตร์และอารยธรรม\\nนับตั้งแต่เกิดภัยพิบัติมืดเมื่อห้าร้อยปีก่อน พวกมันก็ได้แพร่กระจายไปทั่วทุกมุมโลก แม้ว่าจะอ่อนแอและขาดความเป็นองค์กร แต่บางครั้งก็อาจทำให้ผู้คนเดือดร้อนได้ไม่น้อยเหมือนกัน",
     "vi": "Cư dân nguyên thủy lang thang nơi hoang dã ở Teyvat.\\nCũng tương tự nền văn minh nhân loại, nhưng đã mất đi trí năng và linh tính. Theo ghi chép, đã xuất hiện trên đại lục hơn ngàn năm rồi, nhưng chưa có lịch sử và văn minh.\\nTừ sau tai họa cách đây 500 năm, đột nhiên xuất hiện khắp mọi nơi. Tuy rằng sức mạnh yếu, thiếu tổ chức, nhưng có khi cũng gây ra nhiều phiền phức cho con người."
   },
-  "tags": [
-    "character-weapon-material"
-  ],
+  "tags": ["character-weapon-material"],
   "enabled": true,
   "cluster": "on",
   "respawn": 86400,
@@ -47,125 +45,76 @@
   },
   "data": [
     {
-      "coordinates": [
-        -32.81425,
-        30.46553
-      ],
+      "coordinates": [-32.81425, 30.46553],
       "id": "95C9BA2C5CC5AEEF121CFB1C04B4DFAFD7A2F7AA",
       "importIds": {
-        "gm_legacy": [
-          "liyueHilichurl/1"
-        ],
-        "yuanshen": [
-          "94_1"
-        ]
+        "gm_legacy": ["liyueHilichurl/1"],
+        "yuanshen": ["94_1"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.84153,
-        28.9541
-      ],
+      "coordinates": [-28.84153, 28.9541],
       "id": "10095D38CEEC0B6BEE050CFF5B3B42FB2CA3C663",
       "importIds": {
-        "gm_legacy": [
-          "liyueHilichurl/2"
-        ],
-        "yuanshen": [
-          "94_2"
-        ]
+        "gm_legacy": ["liyueHilichurl/2"],
+        "yuanshen": ["94_2"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.26015,
-        37.28803
-      ],
+      "coordinates": [-27.26015, 37.28803],
       "id": "2AC0327D57C1508018DB851622CC6DE894A1365F",
       "importIds": {
-        "yuanshen": [
-          "94_3"
-        ]
+        "yuanshen": ["94_3"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.52486,
-        23.22853
-      ],
+      "coordinates": [-33.52486, 23.22853],
       "id": "56C6532CFDA266E739EA2C752CCF7DB660A5C809",
       "importIds": {
-        "yuanshen": [
-          "94_4"
-        ]
+        "yuanshen": ["94_4"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.54476,
-        23.28731
-      ],
+      "coordinates": [-33.54476, 23.28731],
       "id": "CD0B85E9FF61E66DD0302920534549C9F824F118",
       "importIds": {
-        "yuanshen": [
-          "94_5"
-        ]
+        "yuanshen": ["94_5"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.30183,
-        27.29193
-      ],
+      "coordinates": [-38.30183, 27.29193],
       "id": "A5435810C59A75305EE4C2AE0C46A2E772676481",
       "importIds": {
-        "yuanshen": [
-          "94_6"
-        ]
+        "yuanshen": ["94_6"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.4172,
-        19.21678
-      ],
+      "coordinates": [-47.4172, 19.21678],
       "id": "C1E3A818218E4534B2C8EC3DDBE40FE4F308BC7B",
       "importIds": {
-        "yuanshen": [
-          "94_7"
-        ]
+        "yuanshen": ["94_7"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.24766,
-        27.7143
-      ],
+      "coordinates": [-28.24766, 27.7143],
       "id": "32F3F0CF201FB65330BF81B776C0D8888372CC1D",
       "importIds": {
-        "yuanshen": [
-          "94_8"
-        ]
+        "yuanshen": ["94_8"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -25.63515,
-        30.63308
-      ],
+      "coordinates": [-25.63515, 30.63308],
       "id": "02AA6C0E7A777CC1DE604A221F7122C61D624FFA",
       "importIds": {
-        "yuanshen": [
-          "94_9"
-        ]
+        "yuanshen": ["94_9"]
       },
       "popupAttribution": "Yuanshen.site"
     }

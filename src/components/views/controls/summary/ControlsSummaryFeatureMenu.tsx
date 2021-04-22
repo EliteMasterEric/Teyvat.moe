@@ -19,14 +19,14 @@ import {
   clearMarkersCompleted,
   selectCompletedMarkersOfFeature,
   selectMarkerCompleted,
-} from 'src/components/redux/slices/completed';
+} from 'src/components/redux/slices/Completed';
 import {
   clearFeatureDisplayed,
   selectIsFeatureDisplayed,
   setFeatureDisplayed,
-} from 'src/components/redux/slices/displayed';
-import { setMapHighlight, setMapPosition } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Displayed';
+import { setMapHighlight, setMapPosition } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { getUnixTimestamp } from 'src/components/util';
 
 const useStyles = makeStyles((_theme) => ({
@@ -67,11 +67,14 @@ const mapDispatchToProps = (
     },
     locateFeature: () => {
       const HIGHLIGHT_ZOOM_LEVEL = 10;
-      const currentCompleted = _.filter(_.keys(store.getState().completed.features), (key) =>
-        key.startsWith(featureKey)
+      // Sets are more efficient for lookups.
+      const currentCompleted = new Set(
+        _.filter(_.keys(store.getState().completed.features), (key) =>
+          _.startsWith(key, featureKey)
+        )
       );
       const uncompletedMarkers = _.filter(mapFeature.data, (value) => {
-        return !currentCompleted.includes(`${featureKey}/${value.id}`);
+        return !currentCompleted.has(`${featureKey}/${value.id}`);
       });
       const randomMarker = _.sample(uncompletedMarkers);
 

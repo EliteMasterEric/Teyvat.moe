@@ -12,11 +12,11 @@ import {
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
-import { useMap } from 'react-leaflet';
-import { connect } from 'react-redux';
+import { connect, ConnectedProps } from 'react-redux';
 import { t } from 'src/components/i18n/Localization';
-import { selectEditorEnabled } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectEditorEnabled } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 
 import MapCustomControl, {
   MapCustomControlButton,
@@ -61,22 +61,15 @@ type EditorControlsBaseProps = {
   showDone: boolean;
 };
 
-const mapStateToProps = (state: AppState, _props: EditorControlsBaseProps) => ({
+const mapStateToProps = (state: AppState) => ({
   displayed: selectEditorEnabled(state),
 });
-const mapDispatchToProps = () => ({});
 type EditorControlsStoreProps = ReturnType<typeof mapStateToProps>;
-type EditorControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  EditorControlsStoreProps,
-  EditorControlsDispatchProps,
-  EditorControlsBaseProps,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<EditorControlsStoreProps, Empty, EditorControlsBaseProps, AppState>(
+  mapStateToProps
+);
 
-type EditorControlsProps = EditorControlsBaseProps &
-  EditorControlsStoreProps &
-  EditorControlsDispatchProps;
+type EditorControlsProps = ConnectedProps<typeof connector> & EditorControlsBaseProps;
 
 const _EditorControls: FunctionComponent<EditorControlsProps> = ({
   displayed,
@@ -104,8 +97,6 @@ const _EditorControls: FunctionComponent<EditorControlsProps> = ({
   const onCancelClick: React.MouseEventHandler<HTMLDivElement> = (event) => {
     cancelEditor(event);
   };
-
-  const map = useMap();
 
   return (
     <MapCustomControl

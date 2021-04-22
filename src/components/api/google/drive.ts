@@ -4,22 +4,19 @@
  */
 
 import { gapi } from 'gapi-script';
-import { result } from 'lodash';
-import { t } from 'src/components/i18n/Localization';
-import { sendNotification } from 'src/components/redux/dispatch';
 
-export const handleDriveError = (err: gapi.client.HttpRequestRejected) => {
+export const handleDriveError = (error: gapi.client.HttpRequestRejected): void => {
   console.error('[GOOGLE] An error occurred while interacting with Google Drive.');
-  switch (err.status) {
+  switch (error.status) {
     case 403:
       console.error(
         '[GOOGLE] A 403 Forbidden error occurred. Are your permissions configured improperly?'
       );
-      console.error(`[GOOGLE] ${err?.result?.error?.message}`);
+      console.error(`[GOOGLE] ${error?.result?.error?.message}`);
       break;
     default:
-      console.error(`[GOOGLE] A ${err.status} error occurred.`);
-      console.error(err);
+      console.error(`[GOOGLE] A ${error.status} error occurred.`);
+      console.error(error);
       break;
   }
 };
@@ -42,7 +39,7 @@ const createBlankFile = async (filename: string): Promise<string | null> => {
       fields: 'id',
     })
     .then((response) => {
-      console.log('[GOOGLE] Created a new blank file.');
+      console.debug('[GOOGLE] Created a new blank file.');
       return response?.result?.id ?? null;
     });
 };
@@ -50,10 +47,7 @@ const createBlankFile = async (filename: string): Promise<string | null> => {
 /**
  * Will create the file if it doesn't exist.
  */
-const getIdByFilename = async (
-  filename: string,
-  create: boolean = true
-): Promise<string | null> => {
+const getIdByFilename = async (filename: string, create = true): Promise<string | null> => {
   return gapi.client.drive.files
     .list({
       q: `name='${filename}'`, // Search query.
@@ -63,19 +57,19 @@ const getIdByFilename = async (
     })
     .then((response: any) => {
       const files = response.result.files;
-      if (files.length == 0) {
+      if (files.length === 0) {
         if (create) {
           // Create a new file and return its ID.
-          console.log('[GOOGLE] Creating new file and returning its ID.');
+          console.debug('[GOOGLE] Creating new file and returning its ID.');
           return createBlankFile(filename);
         } else {
-          console.log('[GOOGLE] No file existed. Returning null.');
+          console.debug('[GOOGLE] No file existed. Returning null.');
           // No file exists.
           return null;
         }
       } else {
         // Else use an existing file.
-        console.log('[GOOGLE] Reusing an existing file.');
+        console.debug('[GOOGLE] Reusing an existing file.');
         return files[0].id;
       }
     });
@@ -100,7 +94,7 @@ const updateContentsById = async (fileId: string, body: string) => {
       body,
     })
     .then((response) => {
-      console.log('[GOOGLE] File upload successful.');
+      console.debug('[GOOGLE] File upload successful.');
       return response;
     });
 };
@@ -112,52 +106,36 @@ const downloadContentsById = async (fileId: string) => {
       alt: 'media', // Get the file contents too, not just metadata.
     })
     .then((response) => {
-      console.log('[GOOGLE] File download successful.');
+      console.debug('[GOOGLE] File download successful.');
       return response;
     });
 };
 
-export const createOrUpdateFile = async (filename: string, contents: string) => {
+export const createOrUpdateFile = async (
+  filename: string,
+  contents: string
+): Promise<ReturnType<typeof updateContentsById> | null> => {
   return getIdByFilename(filename).then((fileId: string | null) => {
     if (fileId != null) {
-      console.log(`[GOOGLE] Updating file ID ${fileId}...`);
+      console.debug(`[GOOGLE] Updating file ID ${fileId}...`);
       return updateContentsById(fileId, contents);
     } else {
-      console.log('[GOOGLE] Failed to create new file to update.');
+      console.debug('[GOOGLE] Failed to create new file to update.');
       return null;
     }
   });
 };
 
-export const getFileContents = async (filename: string) => {
+export const getFileContents = async (
+  filename: string
+): Promise<gapi.client.Response<gapi.client.drive.File> | null> => {
   return getIdByFilename(filename, false).then((fileId: string | null) => {
     if (fileId != null) {
-      console.log(`[GOOGLE] Retrieving contents of file ID ${fileId}...`);
+      console.debug(`[GOOGLE] Retrieving contents of file ID ${fileId}...`);
       return downloadContentsById(fileId);
     } else {
-      console.log('[GOOGLE] Attempted to retrieve contents of a file that did not exist.');
+      console.debug('[GOOGLE] Attempted to retrieve contents of a file that did not exist.');
       return null;
     }
   });
-};
-
-export const listFiles = () => {
-  gapi.client.drive.files
-    .list({
-      spaces: 'appDataFolder', // Search only our application data folder.
-      pageSize: 10,
-      fields: 'nextPageToken, files(id, name)',
-    })
-    .then((response: any) => {
-      console.log('Listing files completed.');
-      var files = response.result.files;
-      if (files && files.length > 0) {
-        for (var i = 0; i < files.length; i++) {
-          var file = files[i];
-          console.log(file.name + ' (' + file.id + ')');
-        }
-      } else {
-        console.log('No files found.');
-      }
-    });
 };

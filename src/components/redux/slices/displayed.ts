@@ -7,8 +7,8 @@ import _ from 'lodash';
 
 import { MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/Element';
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 import { getRecord, setRecord } from 'src/components/util';
 
 export type DisplayedState = GenshinMapPreferencesLatest['displayed'];
@@ -96,9 +96,9 @@ export const {
  * @param state
  */
 export const selectDisplayedFeatures = (state: AppState): MSFFeatureKey[] =>
-  _.keys(_.pickBy(state.displayed.features, (value) => value)) as MSFFeatureKey[];
+  _.keys(_.pickBy(state.displayed.features)) as MSFFeatureKey[];
 export const selectDisplayedRouteGroups = (state: AppState): MSFRouteGroupKey[] =>
-  _.keys(_.pickBy(state.displayed.routes, (value) => value)) as MSFRouteGroupKey[];
+  _.keys(_.pickBy(state.displayed.routes)) as MSFRouteGroupKey[];
 export const selectIsFeatureDisplayed = (state: AppState, featureKey: MSFFeatureKey): boolean =>
   getRecord(state.displayed.features, featureKey, false);
 export const selectIsRouteGroupDisplayed = (

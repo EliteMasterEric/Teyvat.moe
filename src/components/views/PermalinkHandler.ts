@@ -3,10 +3,18 @@
  * determines if a permalink to a marker was used,
  * and returns
  */
+import _ from 'lodash';
 import { useRouter } from 'next/router';
 import { useEffect, FunctionComponent } from 'react';
-import { getElementPathById, getElementByPath } from 'src/components/data/Element';
-import { MSFFeatureKey, MSFMarker, MSFRoute, MSFRouteGroupKey } from 'src/components/data/Element';
+import {
+  getElementPathById,
+  getElementByPath,
+  MSFFeatureKey,
+  MSFMarker,
+  MSFRoute,
+  MSFRouteGroupKey,
+} from 'src/components/data/Element';
+
 import { t } from 'src/components/i18n/Localization';
 import {
   moveToMapPosition,
@@ -14,8 +22,8 @@ import {
   showFeature,
   showRouteGroup,
 } from 'src/components/redux/dispatch';
+import { setPermalinkId } from 'src/components/redux/slices/Interface';
 import { setBrowserClipboard } from 'src/components/util';
-import { setPermalinkId } from 'src/components/redux/slices/ui';
 
 const HIGHLIGHT_ZOOM_LEVEL = 9;
 
@@ -38,7 +46,7 @@ export const navigateToMarkerByID = (id: string): void => {
   }
 
   // Get the element associated with the ID.
-  const [elementType, elementName, _elementID] = elementPath.split('/');
+  const [elementType, elementName, _elementID] = _.split(elementPath, '/');
   const element = getElementByPath(elementPath);
   if (elementPath == null) {
     console.error(`Element not found for path: ${elementPath}`);
@@ -80,10 +88,10 @@ const PermalinkHandler: FunctionComponent = () => {
   useEffect(() => {
     const { id } = nextRouter.query;
     // End early if 0 or 2+ IDs were specified.
-    if (id == null || Array.isArray(id)) return;
+    if (id == null || _.isArray(id)) return;
 
     setPermalinkId(id);
-  }, []);
+  }, [nextRouter.query]);
 
   // Don't render anything.
   return null;

@@ -5,8 +5,8 @@
 
 import _ from 'lodash';
 
+import { DEFAULT_LOCALE_CODE, LanguageCode } from './Localization';
 import { ChangelogData } from 'src/components/data/ChangelogSchema';
-import { DEFAULT_LOCALE_CODE, LanguageCode } from 'src/components/i18n/Localization';
 import { importFromContext } from 'src/components/util';
 
 /**

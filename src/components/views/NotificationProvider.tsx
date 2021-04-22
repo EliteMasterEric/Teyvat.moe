@@ -3,19 +3,18 @@ import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notis
 import React, { useEffect, useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { AppDispatch } from 'src/components/redux';
-import { removeNotification, selectNotifications } from 'src/components/redux/slices/notify';
-import { AppState } from 'src/components/redux/types';
+import { removeNotification, selectNotifications } from 'src/components/redux/slices/Notify';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 const mapStateToProps = (state: AppState) => ({
   notifications: selectNotifications(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  removeNotification: (key: SnackbarKey) => dispatch(removeNotification(key)),
-});
+const mapDispatchToProps = {
+  removeNotification,
+};
 type NotificationProviderStateProps = ReturnType<typeof mapStateToProps>;
-type NotificationProviderDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type NotificationProviderDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   NotificationProviderStateProps,
   NotificationProviderDispatchProps,
@@ -82,10 +81,9 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
         },
       };
 
+      // Else, we need to enqueue this snackbar.
       enqueueSnackbar(notification.message, notificationOptions);
       addDisplayed(notification.options.key);
-
-      // Else, we need to enqueue this snackbar.
     });
   }, [
     notifications,

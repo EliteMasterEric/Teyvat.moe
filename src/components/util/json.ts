@@ -1,23 +1,25 @@
+import _ from 'lodash';
+
 /**
  * Checks whether the input string is a valid JSON blob.
  * @returns True if valid and false if invalid.
  */
-export const isValidJSON = (str: string): boolean => {
+export const isValidJSON = (string: string): boolean => {
   try {
-    JSON.parse(str);
-  } catch (e) {
+    JSON.parse(string);
+  } catch {
     return false;
   }
   return true;
 };
 
 const jsonReplacer = (_key: string, value: any) => {
-  if (value instanceof Error) {
+  if (_.isError(value)) {
     const error: { [key: string]: any } = {};
 
-    Object.getOwnPropertyNames(value).forEach((key) => {
+    for (const key of Object.getOwnPropertyNames(value)) {
       error[key] = value[key as keyof Error];
-    });
+    }
 
     return error;
   }

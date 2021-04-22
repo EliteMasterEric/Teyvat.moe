@@ -36,34 +36,34 @@ interface ExtendedMarkerProps extends MarkerProps {
 }
 
 export const ExtendedMarker = createLayerComponent<LExtendedMarker, ExtendedMarkerProps>(
-  ({ position, ...options }, ctx) => {
+  ({ position, ...options }, context) => {
     const instance = new LExtendedMarker(position, options);
-    return { instance, context: { ...ctx, overlayContainer: instance } };
+    return { instance, context: { ...context, overlayContainer: instance } };
   },
-  function updateMarker(marker, props, prevProps) {
-    if (props.position !== prevProps.position) {
+  function updateMarker(marker, props, previousProps) {
+    if (props.position !== previousProps.position) {
       marker.setLatLng(props.position);
     }
-    if (props.icon != null && props.icon !== prevProps.icon) {
+    if (props.icon != null && props.icon !== previousProps.icon) {
       marker.setIcon(props.icon);
     }
-    if (props.zIndexOffset != null && props.zIndexOffset !== prevProps.zIndexOffset) {
+    if (props.zIndexOffset != null && props.zIndexOffset !== previousProps.zIndexOffset) {
       marker.setZIndexOffset(props.zIndexOffset);
     }
-    if (props.opacity != null && props.opacity !== prevProps.opacity) {
+    if (props.opacity != null && props.opacity !== previousProps.opacity) {
       marker.setOpacity(props.opacity);
     }
-    if (marker.dragging != null && props.draggable !== prevProps.draggable) {
+    if (marker.dragging != null && props.draggable !== previousProps.draggable) {
       if (props.draggable === true) {
         marker.dragging.enable();
       } else {
         marker.dragging.disable();
       }
     }
-    if (props.markerKey !== prevProps.markerKey) {
+    if (props.markerKey !== previousProps.markerKey) {
       marker.setMarkerKey(props.markerKey);
     }
-    if (props.completed !== prevProps.completed) {
+    if (props.completed !== previousProps.completed) {
       marker.setCompleted(props.completed);
     }
   }

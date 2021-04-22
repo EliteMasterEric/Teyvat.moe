@@ -4,6 +4,7 @@
 
 import { List, ListItem, Typography, ListItemText, Collapse, makeStyles } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
+import _ from 'lodash';
 import React, { FunctionComponent, memo, useEffect, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { ChangelogData } from 'src/components/data/ChangelogSchema';
@@ -11,10 +12,10 @@ import { ChangelogData } from 'src/components/data/ChangelogSchema';
 import { getChangelogData } from 'src/components/i18n/ChangelogLocalization';
 import { t, f, LanguageCode } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
-import { TabView } from 'src/components/interface/Tabs';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
-import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/Interface';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 import { SafeHTML } from 'src/components/util';
 
 const useStyles = makeStyles((theme) => ({
@@ -36,15 +37,13 @@ const mapStateToProps = (state: AppState) => ({
   markerCount: selectMapMarkerCount(state),
   routeCount: selectMapRouteCount(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsSubtabChangelogStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsSubtabChangelogDispatchProps = ReturnType<typeof mapDispatchToProps>;
 const connector = connect<
   ControlsSubtabChangelogStateProps,
-  ControlsSubtabChangelogDispatchProps,
+  Empty,
   ControlsSubtabChangelogBaseProps,
   AppState
->(mapStateToProps, mapDispatchToProps);
+>(mapStateToProps);
 
 type ControlsSubtabChangelogProps = ConnectedProps<typeof connector> &
   ControlsSubtabChangelogBaseProps;
@@ -73,7 +72,7 @@ const ControlsSubtabChangelogVersion: FunctionComponent<ControlsSubtabChangelogV
       </ListItem>
       <Collapse in={open}>
         <List dense disablePadding>
-          {description.map((descriptionLine) => (
+          {_.map(description, (descriptionLine) => (
             <ListItem key={descriptionLine} disableGutters className={classes.subItem}>
               <ListItemText primary={descriptionLine} />
             </ListItem>
@@ -120,7 +119,7 @@ const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> 
         <>
           <Typography className={classes.header}>{t('changelog')}</Typography>
           <List dense disablePadding>
-            {changelogData.map(({ version, date, description }) => (
+            {_.map(changelogData, ({ version, date, description }) => (
               <ControlsSubtabChangelogVersion
                 key={version}
                 version={version}

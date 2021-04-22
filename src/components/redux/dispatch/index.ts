@@ -1,4 +1,10 @@
-import { disableGoogle, setGoogleProfile, clearGoogleProfile } from './auth';
+import {
+  initializeGoogle,
+  disableGoogle,
+  setGoogleProfile,
+  clearGoogleProfile,
+  setGoogleInProgress,
+} from './Auth';
 import {
   sendNotification,
   displayImportError,
@@ -6,7 +12,7 @@ import {
   showFeature,
   showRouteGroup,
   moveToMapPosition,
-} from './base';
+} from './Base';
 import {
   setLoadingInitialized,
   setLoadingFeatures,
@@ -14,10 +20,11 @@ import {
   setLoadingRoutes,
   setLoadingRouteCount,
   setLoadingTiles,
-} from './loading';
-import { countMapMarkers, countMapRoutes } from './mapCounts';
+} from './Loading';
+import { countMapMarkers, countMapRoutes } from './MapCounts';
 
 export {
+  initializeGoogle,
   clearGoogleProfile,
   countMapMarkers,
   countMapRoutes,
@@ -27,6 +34,7 @@ export {
   moveToMapPosition,
   sendNotification,
   setGoogleProfile,
+  setGoogleInProgress,
   setLoadingFeatureCount,
   setLoadingFeatures,
   setLoadingInitialized,

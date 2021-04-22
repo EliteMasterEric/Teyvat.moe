@@ -6,8 +6,8 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { LanguageCode } from 'src/components/i18n/Localization';
 
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 
 // Define a type for the slice state
 export type OptionsState = GenshinMapPreferencesLatest['options'];

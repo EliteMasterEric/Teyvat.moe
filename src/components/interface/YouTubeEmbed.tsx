@@ -18,12 +18,12 @@ const YouTubeEmbed: FunctionComponent<YouTubeEmbedProps> = ({
   start = null,
   end = null,
 }) => {
-  const params: string[] = [];
-  if (start != null) params.push(`start=${start}`);
-  if (end != null) params.push(`end=${end}`);
+  const parameters: string[] = [];
+  if (start != null) parameters.push(`start=${start}`);
+  if (end != null) parameters.push(`end=${end}`);
 
   let url = `https://www.youtube.com/embed/${id}`;
-  if (params.length > 0) url += params.join('&');
+  if (parameters.length > 0) url += parameters.join('&');
 
   return (
     <iframe

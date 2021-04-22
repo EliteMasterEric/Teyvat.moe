@@ -12,7 +12,14 @@ import BorderBox from 'src/components/interface/BorderBox';
 import { InputSlider } from 'src/components/interface/Input';
 import { TabView } from 'src/components/interface/Tabs';
 import { AppDispatch } from 'src/components/redux';
-import { clearPreferences } from 'src/components/redux/actions';
+import { clearPreferences } from 'src/components/redux/Actions';
+import {
+  selectEditorDebugEnabled,
+  selectEditorEnabled,
+  selectIsTabDisplayed,
+  setEditorDebugEnabled,
+  setEditorEnabled,
+} from 'src/components/redux/slices/Interface';
 import {
   selectClusterMarkers,
   selectCompletedAlpha,
@@ -29,15 +36,8 @@ import {
   setRegionLabelsEnabled,
   setShowHiddenFeaturesInSummary,
   setWorldBorderEnabled,
-} from 'src/components/redux/slices/options';
-import {
-  selectEditorDebugEnabled,
-  selectEditorEnabled,
-  selectIsTabDisplayed,
-  setEditorDebugEnabled,
-  setEditorEnabled,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import { getApplicationVersion } from 'src/components/util';
 import ControlsOptionsLanguage from 'src/components/views/controls/options/ControlsOptionsLanguage';
@@ -84,23 +84,21 @@ const mapStateToProps = (state: AppState) => ({
   showHiddenFeaturesInSummary: selectShowHiddenFeaturesInSummary(state),
   editorDebugEnabled: selectEditorDebugEnabled(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setEditorEnabled: (enabled: boolean) => dispatch(setEditorEnabled(enabled)),
-  setCompletedAlpha: (alpha: number) => dispatch(setCompletedAlpha(alpha)),
-  setWorldBorderEnabled: (enabled: boolean) => dispatch(setWorldBorderEnabled(enabled)),
-  setRegionLabelsEnabled: (enabled: boolean) => dispatch(setRegionLabelsEnabled(enabled)),
-  setClusterMarkers: (enabled: boolean) => dispatch(setClusterMarkers(enabled)),
-  setHideFeaturesInEditor: (enabled: boolean) => dispatch(setHideFeaturesInEditor(enabled)),
-  setHideRoutesInEditor: (enabled: boolean) => dispatch(setHideRoutesInEditor(enabled)),
-  setShowHiddenFeaturesInSummary: (enabled: boolean) =>
-    dispatch(setShowHiddenFeaturesInSummary(enabled)),
-  setEditorDebugEnabled: (enabled: boolean) => dispatch(setEditorDebugEnabled(enabled)),
-  setOverrideLang: (lang: LanguageCode) => dispatch(setOverrideLang(lang)),
-
-  clearState: () => dispatch(clearPreferences()),
-});
+const mapDispatchToProps = {
+  setEditorEnabled,
+  setCompletedAlpha,
+  setWorldBorderEnabled,
+  setRegionLabelsEnabled,
+  setClusterMarkers,
+  setHideFeaturesInEditor,
+  setHideRoutesInEditor,
+  setShowHiddenFeaturesInSummary,
+  setEditorDebugEnabled,
+  setOverrideLang,
+  clearPreferences,
+};
 type ControlsTabOptionsStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabOptionsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type ControlsTabOptionsDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   ControlsTabOptionsStateProps,
   ControlsTabOptionsDispatchProps,
@@ -133,7 +131,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
   setShowHiddenFeaturesInSummary,
   setEditorDebugEnabled,
 
-  clearState,
+  clearPreferences,
 }) => {
   const classes = useStyles();
 
@@ -244,7 +242,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
                 {t('clear')}
               </Button>
             }
-            onConfirm={clearState}
+            onConfirm={clearPreferences}
           />
         </Box>
       </BorderBox>

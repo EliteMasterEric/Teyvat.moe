@@ -2,14 +2,14 @@
  * Handles the section of the state that stores the transient state
  * of the user interface, such as current tab or map position.
  */
-import { PayloadAction, createSlice, Slice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
 import { MSFFeatureKey, MSFMarkerKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 import {
   deleteRecord,
   getPreviousMondayReset,
@@ -55,22 +55,19 @@ export const completedSlice = createSlice({
       },
 
       reducer: (state, action: PayloadAction<MarkersCompletedAction>) => {
-        _.forEach(action.payload.keys, (key: MSFMarkerKey) => {
+        for (const key in action.payload.keys) {
           setRecord(state.features, key, action.payload.timestamp);
-        });
+        }
       },
     },
     clearMarkerCompleted: (state, action: PayloadAction<MSFMarkerKey>) => {
       deleteRecord(state.features, action.payload);
     },
     clearMarkersCompleted: (state, action: PayloadAction<MSFMarkerKey[]>) => {
-      state.features = _.pickBy(
-        state.features,
-        (_value, key) => !action.payload.includes(<MSFMarkerKey>key)
-      );
+      state.features = _.pickBy(state.features, (_value, key) => !_.includes(action.payload, key));
     },
     clearFeatureCompleted: (state, action: PayloadAction<MSFFeatureKey>) => {
-      state.features = _.pickBy(state.features, (_value, key) => key.startsWith(action.payload));
+      state.features = _.pickBy(state.features, (_value, key) => _.startsWith(key, action.payload));
     },
   },
   extraReducers: {
@@ -109,11 +106,11 @@ export const selectCompletedMarkersOfFeature = (
   state: AppState,
   featureKey: MSFFeatureKey
 ): CompletedState['features'] =>
-  _.pickBy(state.completed.features, (_value, key) => key.startsWith(featureKey));
+  _.pickBy(state.completed.features, (_value, key) => _.startsWith(key, featureKey));
 export const selectExpiredMarkers = (state: AppState): CompletedState['features'] => {
   const currentTime = getUnixTimestamp();
   return _.pickBy(state.completed.features, (completedTime: number, markerKey: MSFMarkerKey) => {
-    const [featureKey, _markerID] = markerKey.split('/');
+    const [featureKey, _markerID] = _.split(markerKey, '/');
     if (featureKey == null) return false;
 
     const feature = getMapFeature(featureKey as MSFFeatureKey);
@@ -137,6 +134,6 @@ export const selectExpiredMarkersOfFeature = (
   state: AppState,
   featureKey: MSFFeatureKey
 ): CompletedState['features'] =>
-  _.pickBy(selectExpiredMarkers(state), (value, key) => key.startsWith(featureKey));
+  _.pickBy(selectExpiredMarkers(state), (_value, key) => _.startsWith(key, featureKey));
 
 export default completedSlice.reducer;

@@ -13,6 +13,7 @@ import { MapContainer, ZoomControl } from 'react-leaflet';
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/MapFeatures';
 import { getMapRouteGroup, getMapRouteGroupKeys } from 'src/components/data/MapRoutes';
+import { setLoadingTiles } from 'src/components/redux/dispatch';
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import DebugControls from 'src/components/views/map/DebugControls';
 import { MAP_BOUNDS, MAXIMUM_ZOOM, MINIMUM_ZOOM } from 'src/components/views/map/LayerConstants';
@@ -24,7 +25,6 @@ import TileLayer from 'src/components/views/map/layers/TileLayer';
 import WorldBorderLayer from 'src/components/views/map/layers/WorldBorderLayer';
 import MapEditorHandler from 'src/components/views/map/MapEditorHandler';
 import MapPositionHandler from 'src/components/views/map/MapPositionHandler';
-import { setLoadingTiles } from 'src/components/redux/dispatch';
 
 const useStyles = makeStyles((_theme) => ({
   main: {
@@ -41,12 +41,12 @@ const ErrorLayer: ErrorHandlerComponent = ({ error, errorInfo: _errorInfo }) => 
   return <div>{error?.name ?? 'NO ERROR DATA'}</div>;
 };
 
-const LeafletMap: FunctionComponent = ({}) => {
-  const classes = useStyles();
+const onTileLayerLoaded = () => {
+  setLoadingTiles(true);
+};
 
-  const onTileLayerLoaded = () => {
-    setLoadingTiles(true);
-  };
+const LeafletMap: FunctionComponent = () => {
+  const classes = useStyles();
 
   return (
     <MapContainer
@@ -79,7 +79,7 @@ const LeafletMap: FunctionComponent = ({}) => {
       <DebugControls />
 
       {/* Display each visible feature. */}
-      {getMapFeatureKeys().map((key) => {
+      {_.map(getMapFeatureKeys(), (key) => {
         const feature = getMapFeature(key);
         if (!feature) {
           console.error(`ERROR: Feature '${key}' is not defined.`);
@@ -94,7 +94,7 @@ const LeafletMap: FunctionComponent = ({}) => {
       })}
 
       {/* Display each visible route. */}
-      {getMapRouteGroupKeys().map((key) => {
+      {_.map(getMapRouteGroupKeys(), (key) => {
         const route = getMapRouteGroup(key);
         if (!route) {
           console.error(`ERROR: Route '${key}' is not defined.`);

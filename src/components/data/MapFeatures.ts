@@ -6,11 +6,11 @@
 
 import _ from 'lodash';
 
-import { isRegionKey, MapRegionKey } from 'src/components/data/MapRegions';
-import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/Element';
-import { listFeatureFiles, loadFeature } from 'src/components/data/FeatureData';
-import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from 'src/components/data/MapCategories';
-import { setLoadingFeatures } from '../redux/dispatch';
+import { MSFFeatureExtended, MSFFeatureKey } from './Element';
+import { listFeatureFiles, loadFeature } from './FeatureData';
+import { isCategoryKey, MapCategoryKey, MapCategoryKeys } from './MapCategories';
+import { isRegionKey, MapRegionKey } from './MapRegions';
+import { setLoadingFeatures } from 'src/components/redux/dispatch';
 
 /**
  * Metadata regarding the map features.
@@ -26,17 +26,18 @@ const initializeMapFeature = async (
   const baseFeatureData = await loadFeature(featureFilePath);
   if (baseFeatureData == null) return null; // Validation failed.
 
-  const [_dot, featureRegion, featureCategory, featureName] = featureFilePath.split('/');
+  const [_dot, featureRegion, featureCategory, featureName] = _.split(featureFilePath, '/');
   if (featureName == undefined) return null; // Invalid file name.
   if (featureRegion == undefined || !isRegionKey(featureRegion)) return null;
   if (featureCategory == undefined || !isCategoryKey(featureCategory)) return null;
 
-  const splitFeatureName = featureName.split('.');
+  const splitFeatureName = _.split(featureName, '.');
   if (splitFeatureName == undefined || splitFeatureName[0] == undefined) return null;
 
-  const correctedName = splitFeatureName[0] // Remove file extension.
-    .split('-') // Break by words.
-    .map((s) => s.charAt(0).toUpperCase() + s.substr(1)) // Convert to Title case.
+  const correctedName = _.map(
+    _.split(splitFeatureName[0], '-'),
+    (s) => _.toUpper(s.charAt(0)) + s.slice(1)
+  ) // Convert to Title case.
     .join(''); // Rejoin.
 
   // CrystalChunk -> mondstadtCrystalChunk
@@ -52,8 +53,8 @@ const initializeMapFeature = async (
   const result: [string, MSFFeatureExtended] = [fullName, featureData];
   return result;
 };
-export const initializeAllMapFeatures = () => {
-  const loaderPromises = listFeatureFiles().map(async (featureFilePath) => {
+export const initializeAllMapFeatures = (): void => {
+  const loaderPromises = _.map(listFeatureFiles(), async (featureFilePath) => {
     const result = await initializeMapFeature(featureFilePath);
     if (result != null) {
       MapFeatures[result[0]] = result[1];
@@ -65,10 +66,10 @@ export const initializeAllMapFeatures = () => {
 };
 export const getMapFeature = (key: MSFFeatureKey): MSFFeatureExtended => {
   const result = MapFeatures[key] ?? null;
-  if (result == null) throw Error(`Invalid map feature key ${key}`);
+  if (result == null) throw new Error(`Invalid map feature key ${key}`);
   return result;
 };
-export const getMapFeatureKeys = () => _.keys(MapFeatures) as MSFFeatureKey[];
+export const getMapFeatureKeys = (): MSFFeatureKey[] => _.keys(MapFeatures) as MSFFeatureKey[];
 
 /**
  * For a given region, returns a map of a category key and a boolean value,
@@ -99,10 +100,10 @@ export const getFeatureKeysByFilter = (
   region: MapRegionKey,
   category: MapCategoryKey
 ): MSFFeatureKey[] => {
-  return getMapFeatureKeys().filter((key) => {
+  return _.filter(getMapFeatureKeys(), (key: MSFFeatureKey) => {
     const feature = getMapFeature(key);
     return feature.region === region && feature.category === category && feature.enabled;
-  });
+  }) as MSFFeatureKey[]; // IDK what's wrong with Lodash, why do I need this cast?
 };
 
 export const sortFeaturesByName = (data: MSFFeatureKey[]): MSFFeatureKey[] =>

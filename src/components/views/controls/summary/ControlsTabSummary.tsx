@@ -9,9 +9,9 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
-import { selectDisplayedFeatures } from 'src/components/redux/slices/displayed';
-import { selectIsTabDisplayed, selectMapDataLoaded } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectDisplayedFeatures } from 'src/components/redux/slices/Displayed';
+import { selectIsTabDisplayed, selectMapDataLoaded } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import ControlsSummaryFeature from 'src/components/views/controls/summary/ControlsSummaryFeature';
 
@@ -33,15 +33,8 @@ const mapStateToProps = (state: AppState) => ({
   mapDataLoaded: selectMapDataLoaded(state),
   displayed: selectIsTabDisplayed(state, 'summary'),
 });
-const mapDispatchToProps = () => ({});
 type ControlsTabSummaryStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabSummaryDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  ControlsTabSummaryStateProps,
-  ControlsTabSummaryDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<ControlsTabSummaryStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type ControlsTabSummaryProps = ConnectedProps<typeof connector>;
 
@@ -63,7 +56,7 @@ const _ControlsTabSummary: FunctionComponent<ControlsTabSummaryProps> = ({
       <Typography className={classes.header}>{t('summary')}</Typography>
       <Typography className={classes.subtitle}>{t('summary-subtitle')}</Typography>
       {mapDataLoaded &&
-        displayedFeatures.map((featureKey) => (
+        _.map(displayedFeatures, (featureKey) => (
           <ControlsSummaryFeature key={featureKey} featureKey={featureKey} />
         ))}
     </BorderBox>

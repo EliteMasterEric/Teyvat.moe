@@ -2,7 +2,7 @@ import _ from 'lodash';
 
 import { MSFImportKey, MSFImportSite, MSFMarkerKey } from 'src/components/data/Element';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/MapFeatures';
-import { filterNotEmpty, fromPairsToArrays } from 'src/components/util';
+import { fromPairsToArrays } from 'src/components/util';
 
 /**
  * Trawls the list of markers, scans for any markers that have corresponding IDs
@@ -12,32 +12,34 @@ import { filterNotEmpty, fromPairsToArrays } from 'src/components/util';
  */
 export const buildImportMapping = (importKey: MSFImportSite): { [key: string]: MSFMarkerKey[] } => {
   // Build mappings of keys to values, ignoring empty entries.
-  const markersByFeature = getMapFeatureKeys().map((featureKey) => {
-    return getMapFeature(featureKey)
-      .data.map((marker) => {
+  const markersByFeature = _.map(getMapFeatureKeys(), (featureKey) => {
+    return _.filter(
+      _.map(getMapFeature(featureKey).data, (marker) => {
         const entry: [MSFMarkerKey, MSFImportKey[] | null] = [
           <MSFMarkerKey>`${featureKey}/${marker.id}`,
           marker?.importIds?.[importKey] ?? null,
         ];
         return entry; // feature/id = [keys]
-      })
-      .filter(filterNotEmpty);
+      }),
+      (value) => !_.isNil(value)
+    );
   });
 
-  const markersFlattened = _.flatten(markersByFeature).filter((entry) => {
+  const markersFlattened = _.filter(_.flatten(markersByFeature), (entry) => {
     const importKeys = entry[1];
     return importKeys == null;
   });
 
   const inverseMarkerDictionary = fromPairsToArrays(
     _.flatten(
-      markersFlattened
-        .map((entry) => {
+      _.filter(
+        _.map(markersFlattened, (entry) => {
           const [gmKey, importValues] = entry;
           if (importValues == null) return null;
-          return <[MSFImportKey, MSFMarkerKey][]>importValues.map((value) => [value, gmKey]);
-        })
-        .filter(filterNotEmpty)
+          return <[MSFImportKey, MSFMarkerKey][]>_.map(importValues, (value) => [value, gmKey]);
+        }),
+        (value): value is [MSFImportKey, MSFMarkerKey][] => !_.isNil(value)
+      )
     )
   ) as Record<MSFImportKey, MSFMarkerKey[]>;
 

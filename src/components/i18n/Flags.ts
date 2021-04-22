@@ -20,4 +20,5 @@ const languageFlags: { [key in LanguageCode]: any } = {
   'zh-tw': require(`svg-country-flags/svg/tw.svg`).default,
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const getLanguageFlag = (code: LanguageCode) => languageFlags[code];

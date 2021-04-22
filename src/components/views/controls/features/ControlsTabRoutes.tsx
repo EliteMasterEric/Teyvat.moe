@@ -2,6 +2,7 @@
  * Provides the interface for the Routes tab of the Map controls.
  */
 
+import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
@@ -11,8 +12,8 @@ import {
   selectIsTabDisplayed,
   selectMapCategory,
   selectMapRegion,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import ControlsRouteButton from 'src/components/views/controls/features/ControlsRouteButton';
 
@@ -21,15 +22,8 @@ const mapStateToProps = (state: AppState) => ({
   currentCategory: selectMapCategory(state),
   currentRegion: selectMapRegion(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsTabRoutesStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabRoutesDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  ControlsTabRoutesStateProps,
-  ControlsTabRoutesDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<ControlsTabRoutesStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type ControlsTabRoutesProps = ConnectedProps<typeof connector>;
 
@@ -40,7 +34,7 @@ const _ControlsTabRoutes: FunctionComponent<ControlsTabRoutesProps> = ({
 }) => {
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
-      {sortRoutesByName(getRouteKeysByFilter(currentRegion, currentCategory)).map((key) => (
+      {_.map(sortRoutesByName(getRouteKeysByFilter(currentRegion, currentCategory)), (key) => (
         <ControlsRouteButton key={key} routeKey={key} />
       ))}
     </BorderBox>

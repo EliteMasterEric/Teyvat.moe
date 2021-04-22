@@ -1,24 +1,19 @@
-// Allow for relative imports here for simplicity.
-/* eslint-disable no-restricted-imports */
-
-import { toBase64, fromBase64 } from './base64';
-import { filterNotEmpty } from './filterFunctions';
-import { generateJSON, generatePrettyJSON, isValidJSON } from './json';
-import { getKeys } from './object';
-import { deleteRecord, getRecord, setRecord } from './record';
+import { toBase64, fromBase64 } from './Base64';
+import { isDevelopment, applySourcemapToStackTrace } from './Environment';
+import { generateJSON, generatePrettyJSON, isValidJSON } from './Json';
+import { getKeys } from './Object';
+import { getApplicationVersion } from './Package';
+import { deleteRecord, getRecord, setRecord } from './Record';
 import {
-  applySourcemapToStackTrace,
   canUseDOM,
   CloneProps,
   fromPairsToArrays,
-  getApplicationVersion,
   getPreviousDailyReset,
   getPreviousMondayReset,
   getUnixTimestamp,
-  getURLParams,
+  getURLParameters,
   hashObject,
   importFromContext,
-  isDev,
   latLngToTile,
   openURLInWindow,
   reloadWindow,
@@ -33,7 +28,6 @@ export {
   canUseDOM,
   CloneProps,
   deleteRecord,
-  filterNotEmpty,
   fromBase64,
   fromPairsToArrays,
   generateJSON,
@@ -44,10 +38,10 @@ export {
   getPreviousMondayReset,
   getRecord,
   getUnixTimestamp,
-  getURLParams,
+  getURLParameters as getURLParams,
   hashObject,
   importFromContext,
-  isDev,
+  isDevelopment as isDev,
   isValidJSON,
   latLngToTile,
   openURLInWindow,

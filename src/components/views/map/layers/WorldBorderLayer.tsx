@@ -10,8 +10,8 @@ import { GeoJSON as GeoJSONLeaflet } from 'leaflet';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { GeoJSON, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
-import { selectWorldBorderEnabled } from 'src/components/redux/slices/options';
-import { AppState } from 'src/components/redux/types';
+import { selectWorldBorderEnabled } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 const WorldBorderData: GeoJsonObject = require('src/data/core/world-border.json');
@@ -42,15 +42,8 @@ const worldBorderPattern = new L.StripePattern({
 const mapStateToProps = (state: AppState) => ({
   displayed: selectWorldBorderEnabled(state),
 });
-const mapDispatchToProps = () => ({});
 type WorldBorderLayerStateProps = ReturnType<typeof mapStateToProps>;
-type WorldBorderLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  WorldBorderLayerStateProps,
-  WorldBorderLayerDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<WorldBorderLayerStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type WorldBorderLayerProps = ConnectedProps<typeof connector>;
 
@@ -59,21 +52,21 @@ const _WorldBorderLayer: FunctionComponent<WorldBorderLayerProps> = ({ displayed
   // through the use of a custom hook.
   const mapCurrent = useMap();
 
-  const layerRef = useRef<GeoJSONLeaflet | null>(null);
+  const layerReference = useRef<GeoJSONLeaflet | null>(null);
 
   useEffect(() => {
-    if (layerRef.current != null) {
+    if (layerReference.current != undefined) {
       if (displayed) {
-        layerRef.current.addTo(mapCurrent);
+        layerReference.current.addTo(mapCurrent);
       } else {
-        layerRef.current.removeFrom(mapCurrent);
+        layerReference.current.removeFrom(mapCurrent);
       }
     }
   }, [mapCurrent, displayed]);
 
   return (
     <GeoJSON
-      ref={layerRef}
+      ref={layerReference}
       // If the zoom level changes, the world border should reload.
       key={mapCurrent.getZoom()}
       style={{

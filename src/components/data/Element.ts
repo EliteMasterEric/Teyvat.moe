@@ -9,13 +9,13 @@
  * routeKey: mondstadtCecilia/ABCD123456
  * routePath: route/mondstadtCecilia/ABCD123456
  */
-import { getMapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
-import { getMapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
+import _ from 'lodash';
 import { A } from 'ts-toolbelt';
 
-import { MapCategoryKey } from 'src/components/data/MapCategories';
-import { MapRegionKey, MapRegionKeys } from 'src/components/data/MapRegions';
-import { hashObject, isDev } from 'src/components/util';
+import { MapCategoryKey } from './MapCategories';
+import { getMapFeatureKeys, getMapFeature } from './MapFeatures';
+import { MapRegionKey } from './MapRegions';
+import { getMapRouteGroupKeys, getMapRouteGroup } from './MapRoutes';
 
 // A number used to indicate version changes.
 // Version changes are only needed for breaking changes, like restructuring,
@@ -27,7 +27,7 @@ export type MSFSchemaVersion = A.Type<2, 'MSFSchemaVersion'>;
  * A regular expression which validates whether a string is a link to a YouTube video.
  * If there is a match, the first capture group represents the video ID (?v=<ID>).
  */
-export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([-_a-zA-Z0-9]+)(?:&.+)?$/;
+export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([\w-]+)(?:&.+)?$/;
 
 export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
 export type MSFLocalizedField = {
@@ -165,23 +165,23 @@ export const getElementPathById = (id: string): string | null => {
   let result = null;
 
   // Search the features.
-  getMapFeatureKeys().forEach((featureKey: MSFFeatureKey) => {
-    const feature = getMapFeature(featureKey);
-    const matchingMarkers = feature.data.filter((element) => element.id.startsWith(id));
-    if (matchingMarkers[0] !== undefined) {
-      result = `feature/${featureKey}/${matchingMarkers[0].id}`;
+  for (const featureKey in getMapFeatureKeys()) {
+    const feature = getMapFeature(featureKey as MSFFeatureKey);
+    const matchingMarkers = _.find(feature.data, (element) => _.startsWith(element.id, id));
+    if (matchingMarkers !== undefined) {
+      result = `feature/${featureKey}/${matchingMarkers.id}`;
     }
-  });
+  }
   if (result !== null) return result;
 
   // Search the routes.
-  getMapRouteGroupKeys().forEach((routeKey) => {
+  for (const routeKey of getMapRouteGroupKeys()) {
     const routes = getMapRouteGroup(routeKey);
-    const matchingRoutes = routes.data.filter((element) => element.id.startsWith(id));
-    if (matchingRoutes[0] !== undefined) {
-      result = `route/${routeKey}/${matchingRoutes[0].id}`;
+    const matchingRoutes = _.find(routes.data, (element) => _.startsWith(element.id, id));
+    if (matchingRoutes !== undefined) {
+      result = `route/${routeKey}/${matchingRoutes.id}`;
     }
-  });
+  }
   if (result !== null) return result;
 
   // Couldn't find it.
@@ -189,19 +189,21 @@ export const getElementPathById = (id: string): string | null => {
 };
 
 export const getElementByPath = (path: string): MSFMarker | MSFRoute | null => {
-  const [type, name, id] = path.split('/');
+  const [type, name, id] = _.split(path, '/');
   switch (type) {
     case 'feature':
       const featureKey = name as MSFFeatureKey;
       const feature = getMapFeature(featureKey);
-      const markers = feature.data.filter((m) => m.id === id);
-      if (markers[0] !== undefined) return markers[0];
+      // Check that the property 'id' matches the value id.
+      const markers = _.find(feature.data, ['id', id]);
+      if (markers !== undefined) return markers;
       break;
     case 'route':
       const routeGroupKey = name as MSFRouteGroupKey;
       const route = getMapRouteGroup(routeGroupKey);
-      const routes = route.data.filter((r) => r.id === id);
-      if (routes[0] !== undefined) return routes[0];
+      // Check that the property 'id' matches the value id.
+      const routes = _.find(route.data, ['id', id]);
+      if (routes !== undefined) return routes;
       break;
     default:
       console.error(`Unknown type ${type}.`);

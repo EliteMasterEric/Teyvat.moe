@@ -1,5 +1,5 @@
 import { overrideLocale } from 'src/components/i18n/Localization';
-import { AppState, AppWatcher } from 'src/components/redux/types';
+import { AppState, AppWatcher } from 'src/components/redux/Types';
 
 /**
  * Swap the language of the Localization components whenever the user changes it.

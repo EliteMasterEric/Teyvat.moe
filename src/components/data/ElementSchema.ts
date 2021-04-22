@@ -4,8 +4,6 @@
  * on the client during development.
  */
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
-import { MapRegionKeys } from 'src/components/data/MapRegions';
-import { hashObject, isDev } from 'src/components/util';
 import _ from 'lodash';
 import {
   clusterEnum,
@@ -15,7 +13,9 @@ import {
   respawnEnum,
   YOUTUBE_REGEX,
 } from './Element';
+import { MapRegionKeys } from './MapRegions';
 import { MapTags } from './MapTags';
+import { hashObject, isDev } from 'src/components/util';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {
   abortEarly: true, // Stop validation at the first error.
@@ -64,7 +64,7 @@ const coordinates = Joi.array().items(coordinate.required()).required();
 /**
  * Validates that the input is a SHA1 hash.
  */
-const sha1Hash = Joi.string().regex(/[A-F0-9]{40}/);
+const sha1Hash = Joi.string().regex(/[\dA-F]{40}/);
 /**
  * Validates that the input is a SHA1 hash, specifically of the marker's coordinates.
  *
@@ -88,7 +88,7 @@ const MSF_MARKER_ICON_SCHEMA = Joi.object({
 
   // Specify these style keys if the simple marker style is not used.
   key: Joi.string()
-    .regex(/[-a-z]+/)
+    .regex(/[a-z-]+/)
     .when('marker', {
       is: true,
       then: Joi.optional(),
@@ -125,13 +125,13 @@ const MSF_MARKER_ICON_SCHEMA = Joi.object({
     otherwise: Joi.required(),
   }),
   className: Joi.string()
-    .regex(/[-a-zA-Z0-9]+/)
+    .regex(/[\dA-Za-z-]+/)
     .when('marker', { is: true, then: Joi.forbidden() })
     .optional(), // Optional, but forbidden if marker = true.
 
   // This niche attribute is used when clusterMarkers is on but marker is false.
   clusterIcon: Joi.string()
-    .regex(/[-a-z]+/)
+    .regex(/[a-z-]+/)
     .when('marker', {
       is: false,
       then: Joi.optional(),
@@ -155,7 +155,7 @@ const MSF_ROUTE_SCHEMA = Joi.object({
     gm_legacy: Joi.array()
       .items(
         Joi.string()
-          .regex(/[a-zA-Z]+\/[0-9]+/)
+          .regex(/[A-Za-z]+\/\d+/)
           .required()
       )
       .optional(),
@@ -185,24 +185,16 @@ const MSF_MARKER_SCHEMA = Joi.object({
     yuanshen: Joi.array()
       .items(
         Joi.string()
-          .regex(/[0-9]+_[0-9]+/)
+          .regex(/\d+_\d+/)
           .required()
       )
       .optional(),
     // https://genshin-impact-map.appsample.com/#/
-    appsample: Joi.array()
-      .items(
-        Joi.string()
-          .regex(/[0-9]+/)
-          .required()
-      )
-      .optional(),
+    appsample: Joi.array().items(Joi.string().regex(/\d+/).required()).optional(),
     // https://mapgenie.io/genshin-impact/maps/teyvat
     mapgenie: Joi.array()
       .items(
-        Joi.string()
-          .regex(/[0-9]+/)
-          .allow('')
+        Joi.string().regex(/\d+/).allow('')
         // .required()
       )
       .optional(),
@@ -211,7 +203,7 @@ const MSF_MARKER_SCHEMA = Joi.object({
     gm_legacy: Joi.array()
       .items(
         Joi.string()
-          .regex(/[a-zA-Z]+\/[0-9]+/)
+          .regex(/[A-Za-z]+\/\d+/)
           .required()
       )
       .optional(),
@@ -256,7 +248,7 @@ export const MSF_FEATURE_SCHEMA = Joi.object({
   icons: {
     // A key for a file
     filter: Joi.string()
-      .regex(/[-a-zA-Z0-9]+/)
+      .regex(/[\dA-Za-z-]+/)
       .required(),
     base: MSF_MARKER_ICON_SCHEMA.required(),
     done: MSF_MARKER_ICON_SCHEMA.required(),
@@ -309,7 +301,7 @@ export const MSF_ROUTES_SCHEMA = Joi.object({
   icons: {
     // A key for a file
     filter: Joi.string()
-      .regex(/[-a-zA-Z0-9]+/)
+      .regex(/[\dA-Za-z-]+/)
       .required(),
   },
 

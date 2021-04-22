@@ -1,16 +1,14 @@
-// Allow for relative imports here for simplicity.
-/* eslint-disable no-restricted-imports */
-
 import { EnhancedStore } from '@reduxjs/toolkit';
-import initialization from './initialization';
-import localization from './localization';
-import localStorage from './localStorage';
+
+import initialization from './Initialization';
+import localization from './Localization';
+import localStorage from './LocalStorage';
 
 const watchers = [initialization, localStorage, localization];
 
 const addWatchers = (store: EnhancedStore): void => {
   // Call these functions whenever the store changes.
-  watchers.forEach((watcherFunction) => {
+  for (const watcherFunction of watchers) {
     const listen = () => {
       watcherFunction(store.getState());
     };
@@ -18,7 +16,7 @@ const addWatchers = (store: EnhancedStore): void => {
     listen();
     // Call every time the store changes.
     store.subscribe(listen);
-  });
+  }
 };
 
 export default addWatchers;

@@ -14,63 +14,21 @@ import React, {
 
 import sanitizeHTML from 'sanitize-html';
 
-// It gets added to window.
-import { mapStackTrace } from 'sourcemapped-stacktrace';
-
-// The app version is defined in only one location.
-// eslint-disable-next-line no-restricted-imports
-import packageJson from '../../../package.json';
-
 export const canUseDOM = (): boolean => {
   return window != null && !!window.document && !!window.document.createElement;
-};
-
-let dev: boolean | null = null;
-export const isDev = (): boolean => {
-  // Cache the result.
-  if (dev != null) return dev;
-
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    console.debug('Running in development environment (LOCAL).');
-    dev = true;
-  } else if (process.env.BRANCH && process.env.BRANCH === 'develop') {
-    console.debug('Running in development environment (NETLIFY).');
-    dev = true;
-  } else {
-    dev = false;
-  }
-
-  return dev;
-};
-
-/**
- * Applies a sourcemap to a given stack trace.
- * @param stackTrace The stack trace to parse.
- * @returns A Promise to parse the stack trace asynchronously.
- */
-export const applySourcemapToStackTrace = (stackTrace: string): Promise<string> => {
-  return new Promise((resolve, _reject) => {
-    mapStackTrace(
-      stackTrace,
-      (mappedStack) => {
-        const joinedStack = mappedStack.join('\n');
-        resolve(joinedStack);
-      },
-      {
-        filter: (_line) => true,
-      }
-    );
-  });
 };
 
 /**
  * For url https://localhost:3000?id=test&id=test2&query=fun
  * Returns {"id": ["test", "test2"], "query": ["fun"]}
  */
-export const getURLParams = (): Record<string, Array<string>> => {
+export const getURLParameters = (): Record<string, Array<string>> => {
   if (typeof window === 'undefined') return {};
-  const urlParams = new URLSearchParams(window.location.search);
-  const keys = Object.fromEntries([...urlParams.keys()].map((key) => [key, urlParams.getAll(key)]));
+  const urlParameters = new URLSearchParams(window.location.search);
+  const urlParameterKeys = [...urlParameters.keys()];
+  const keys = Object.fromEntries(
+    _.map(urlParameterKeys, (key) => [key, urlParameters.getAll(key)])
+  );
   return keys;
 };
 
@@ -112,14 +70,14 @@ export const hashObject = (input: unknown, options?: ObjectHashOptions): string 
     let result = ObjectHash(input, fullOptions);
 
     // Convert to uppercase.
-    if (fullOptions.upperCase) result = result.toUpperCase();
+    if (fullOptions.upperCase) result = _.toUpper(result);
 
     // Print the result.
     if (fullOptions.debug) console.debug(result);
 
     // Return the result.
     return result;
-  } catch (err) {
+  } catch {
     console.error(input);
     throw new Error(`Could not hash data: ${input}`);
   }
@@ -160,14 +118,6 @@ export const reloadWindow = (): void => {
  */
 export const setBrowserClipboard = (text: string): Promise<void> => {
   return clipboard.writeText(text);
-};
-
-/**
- * Fetches the current application version from the package.json file.
- * @returns {string} The package version.
- */
-export const getApplicationVersion = (): string => {
-  return packageJson.version;
 };
 
 /**
@@ -245,11 +195,11 @@ export const useDebouncedState = <T extends unknown>(
   // The result is a function that never changes, that calls a function that constantly changes.
   // This allows the debounce function to hook onto the former and prevent repeated calls.
   // Thanks to: https://stackoverflow.com/questions/59183495/cant-get-lodash-debounce-to-work-properly-executed-multiple-times-reac
-  const onStateChangedRef = useRef((newValue: T) => onStateChanged(newValue));
+  const onStateChangedReference = useRef((newValue: T) => onStateChanged(newValue));
   // useCallback is specifically designed for inline functions.
   // In other cases, useMemo should be used.
   const onStateChangedDebounced: _.DebouncedFunc<(newValue: T) => void> = useMemo(
-    () => _.debounce((newValue: T) => onStateChangedRef.current(newValue), debounce),
+    () => _.debounce((newValue: T) => onStateChangedReference.current(newValue), debounce),
     [debounce]
   );
 
@@ -285,9 +235,9 @@ export const importFromContext = (context: __WebpackModuleApi.RequireContext, ke
     }
 
     return importedModule;
-  } catch (err) {
+  } catch (error) {
     console.warn(`WARNING: Could not load module ${key}.`);
-    console.warn(err);
+    console.warn(error);
     return null;
   }
 };
@@ -307,7 +257,7 @@ export const fromPairsToArrays = (
 ): Record<string, Array<any>> => {
   const result: Record<string, Array<any>> = {};
 
-  _.forEach(pairs, ([key, value]) => {
+  for (const [key, value] of pairs) {
     const shouldSkip = trimNulls && value == null;
     if (!shouldSkip) {
       const resultKey = result[key];
@@ -317,7 +267,7 @@ export const fromPairsToArrays = (
         result[key] = [value];
       }
     }
-  });
+  }
 
   return result;
 };
@@ -328,16 +278,16 @@ export const fromPairsToArrays = (
 export const getPreviousMondayReset = (): Date => {
   const date = new Date();
   const day = date.getDay();
-  const prevMonday = new Date();
+  const previousMonday = new Date();
   if (date.getDay() == 0) {
-    prevMonday.setDate(date.getDate() - 7);
+    previousMonday.setDate(date.getDate() - 7);
   } else {
-    prevMonday.setDate(date.getDate() - (day - 1));
+    previousMonday.setDate(date.getDate() - (day - 1));
   }
   // Reset at 9 AM UTC = 4 AM EST.
-  prevMonday.setUTCHours(9, 0, 0);
+  previousMonday.setUTCHours(9, 0, 0);
 
-  return prevMonday;
+  return previousMonday;
 };
 
 export const getPreviousDailyReset = (): Date => {

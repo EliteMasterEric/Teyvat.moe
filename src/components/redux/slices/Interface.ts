@@ -2,15 +2,15 @@
  * Handles the section of the state that stores the transient state
  * of the user interface, such as current tab or map position.
  */
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
-import { PayloadAction, createSlice, Slice } from '@reduxjs/toolkit';
 
 import { MSFMarkerID, MSFRouteID } from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/MapConstants';
 import { MapRegionKey } from 'src/components/data/MapRegions';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState, AuthGoogleProfile } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState, AuthGoogleProfile } from 'src/components/redux/Types';
 import { MapPosition, UIControlsTab } from 'src/components/Types';
 
 export type UIState = {
@@ -289,7 +289,7 @@ export const selectIsTabDisplayed = (
   state: AppState,
   tab: UIControlsTab | UIControlsTab[]
 ): boolean => {
-  return Array.isArray(tab) ? tab.includes(selectTab(state)) : selectTab(state) === tab;
+  return _.isArray(tab) ? _.includes(tab, selectTab(state)) : selectTab(state) === tab;
 };
 export const selectMapCategory = (state: AppState): MapCategoryKey => state.ui.mapCategory;
 export const selectIsCategoryDisplayed = (state: AppState, category: MapCategoryKey): boolean =>
@@ -313,8 +313,7 @@ export const selectLoading = (state: AppState, key: keyof UIState['loading']): b
  * Returns true if NONE of the ui.loading values are false.
  * @returns
  */
-export const selectFullyLoaded = (state: AppState): boolean =>
-  _.values(state.ui.loading).every((v) => v);
+export const selectFullyLoaded = (state: AppState): boolean => _.every(_.values(state.ui.loading));
 export const selectMapDataLoaded = (state: AppState): boolean =>
   state.ui.loading.loadMapFeatures && state.ui.loading.loadMapRoutes;
 export const selectMapMarkerCount = (state: AppState): number | null =>

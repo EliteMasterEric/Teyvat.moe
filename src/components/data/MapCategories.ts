@@ -22,7 +22,7 @@ export interface MapCategory {
 const MapCategories: Record<MapCategoryKey, MapCategory> = MapCategoryRawData;
 export const getMapCategory = (key: MapCategoryKey): MapCategory => {
   const result = MapCategories[key] ?? null;
-  if (result == null) throw Error(`Invalid map category key ${key}`);
+  if (result == null) throw new Error(`Invalid map category key ${key}`);
   return result;
 };
 export const MapCategoryKeys = _.keys(MapCategoryRawData) as MapCategoryKey[];

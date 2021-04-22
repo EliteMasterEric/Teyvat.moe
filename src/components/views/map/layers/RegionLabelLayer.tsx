@@ -17,9 +17,9 @@ import { GeoJSON, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { localizeField } from 'src/components/i18n/FeatureLocalization';
-import { selectWorldBorderEnabled } from 'src/components/redux/slices/options';
-import { selectMapPosition } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectMapPosition } from 'src/components/redux/slices/Interface';
+import { selectWorldBorderEnabled } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 // The data file which contains the information on the region label markers.
@@ -77,15 +77,8 @@ const mapStateToProps = (state: AppState) => ({
   displayed: selectWorldBorderEnabled(state),
   zoomLevel: selectMapPosition(state).zoom,
 });
-const mapDispatchToProps = () => ({});
 type RegionLabelLayerStateProps = ReturnType<typeof mapStateToProps>;
-type RegionLabelLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  RegionLabelLayerStateProps,
-  RegionLabelLayerDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<RegionLabelLayerStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type RegionLabelLayerProps = ConnectedProps<typeof connector>;
 
@@ -93,14 +86,14 @@ const _RegionLabelLayer: FunctionComponent<RegionLabelLayerProps> = ({ displayed
   const classes = useStyles();
 
   const map = useMap();
-  const layerRef = useRef<GeoJSONLeaflet | null>(null);
+  const layerReference = useRef<GeoJSONLeaflet | null>(null);
 
   useEffect(() => {
-    if (layerRef.current != null) {
+    if (layerReference.current != null) {
       if (displayed) {
-        layerRef.current.addTo(map);
+        layerReference.current.addTo(map);
       } else {
-        layerRef.current.removeFrom(map);
+        layerReference.current.removeFrom(map);
       }
     }
   }, [map, displayed]);
@@ -120,7 +113,7 @@ const _RegionLabelLayer: FunctionComponent<RegionLabelLayerProps> = ({ displayed
 
   return (
     <GeoJSON
-      ref={layerRef}
+      ref={layerReference}
       key={zoomLevel}
       pointToLayer={pointToLayer}
       data={RegionLabelData as GeoJsonObject}

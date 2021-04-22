@@ -16,7 +16,7 @@ export const storeRecoveryData = (json: Record<string, unknown>, message: string
   let counter = 1;
   let sentinel = false;
   do {
-    if (!localStorage.get(LOCAL_STORAGE_KEY_RECOVERY.replace('%COUNTER%', counter.toString()))) {
+    if (!localStorage.get(_.replace(LOCAL_STORAGE_KEY_RECOVERY, '%COUNTER%', counter.toString()))) {
       sentinel = true;
     } else {
       counter += 1;
@@ -24,7 +24,7 @@ export const storeRecoveryData = (json: Record<string, unknown>, message: string
   } while (!sentinel);
 
   // Store in the first unused recovery value.
-  localStorage.set(LOCAL_STORAGE_KEY_RECOVERY.replace('%COUNTER%', counter.toString()), {
+  localStorage.set(_.replace(LOCAL_STORAGE_KEY_RECOVERY, '%COUNTER%', counter.toString()), {
     json,
     message,
     version: json.version ?? '<BAD VERSION>',

@@ -18,10 +18,10 @@ import { connect, ConnectedProps } from 'react-redux';
 import { t } from 'src/components/i18n/Localization';
 import { TabBar, TabValue } from 'src/components/interface/Tabs';
 import { AppDispatch } from 'src/components/redux';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
-import { selectEditorEnabled, selectTab, setTab } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
-import { distinguishUIControlsTab, Empty } from 'src/components/Types';
+import { selectEditorEnabled, selectTab, setTab } from 'src/components/redux/slices/Interface';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
+import { distinguishUIControlsTab, Empty, UIControlsTab } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({
   tabBar: {
@@ -36,15 +36,11 @@ const mapStateToProps = (state: AppState) => ({
   // causes the component to re-render when the language changes.
   lang: selectOverrideLang(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setTab: (tab: TabValue) => {
-    if (distinguishUIControlsTab(tab)) {
-      dispatch(setTab(tab));
-    }
-  },
-});
+const mapDispatchToProps = {
+  setTab,
+};
 type ControlsTabsStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabsDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type ControlsTabsDispatchProps = typeof mapDispatchToProps;
 const connector = connect<ControlsTabsStateProps, ControlsTabsDispatchProps, Empty, AppState>(
   mapStateToProps,
   mapDispatchToProps
@@ -123,7 +119,7 @@ const _ControlsTabs: FunctionComponent<ControlsTabsProps> = ({
       className={classes.tabBar}
       displayed
       value={currentTab as TabValue}
-      onChange={setTab}
+      onChange={(value) => setTab(value as UIControlsTab)}
       tabs={tabList}
       icons
     />

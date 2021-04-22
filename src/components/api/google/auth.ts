@@ -6,22 +6,26 @@
  */
 
 import { gapi } from 'gapi-script';
-import { t } from 'src/components/i18n/Localization';
-import { sendNotification, setGoogleProfile } from 'src/components/redux/dispatch';
-import { clearGoogleProfile, initializeGoogle } from 'src/components/redux/dispatch/auth';
-import {
-  getGoogleAuthEnabled,
-  getGoogleAuthInitialized,
-  getGoogleAuthProfile,
-} from 'src/components/redux/getter/auth';
-import { disableGoogleAuth } from 'src/components/redux/slices/ui';
 import {
   GOOGLE_API_CLIENT_ID,
   GOOGLE_API_KEY,
   GOOGLE_API_LIBRARIES,
   GOOGLE_AUTH_SCOPES,
   GOOGLE_DISCOVERY_DOCS,
-} from './constants';
+} from './Constants';
+import { t } from 'src/components/i18n/Localization';
+import {
+  sendNotification,
+  setGoogleProfile,
+  clearGoogleProfile,
+  initializeGoogle,
+} from 'src/components/redux/dispatch';
+import {
+  getGoogleAuthEnabled,
+  getGoogleAuthInitialized,
+  getGoogleAuthProfile,
+} from 'src/components/redux/getter/Auth';
+import { disableGoogleAuth } from 'src/components/redux/slices/Interface';
 
 type GoogleResponseError = {
   error: string;
@@ -33,11 +37,11 @@ type GoogleResponseError = {
  * @param callback Called immediately when the API has finished loading successfully.
  *   Optional.
  */
-export const loadGoogleAPI = (callback?: () => void) => {
+export const loadGoogleAPI = (callback?: () => void): void => {
   gapi.load(GOOGLE_API_LIBRARIES, () => {
     // Called once the required JS for basic authentication
     // is loaded into memory.
-    console.log('[GOOGLE] Libraries are loaded.');
+    console.debug('[GOOGLE] Libraries are loaded.');
 
     // Initialize the client with the appropriate API key, client ID, and scopes.
     gapi.client
@@ -48,7 +52,7 @@ export const loadGoogleAPI = (callback?: () => void) => {
         scope: GOOGLE_AUTH_SCOPES,
       })
       .then(() => {
-        console.log('[GOOGLE] Client is initialized.');
+        console.debug('[GOOGLE] Client is initialized.');
         // Set the flag in Redux indicating Google is ready.
         initializeGoogle();
 
@@ -69,17 +73,18 @@ const attemptGoogleAutoSignIn = () => {
   if (authInstance) {
     if (authInstance.isSignedIn.get()) {
       // The user is already signed in! Store the profile.
-      console.info('[GOOGLE] User is already authenticated.');
+      console.debug('[GOOGLE] User has already authenticated in a previous session.');
       handleGoogleSignInSuccess(authInstance.currentUser.get());
+      // TODO: Download preferences here.
     }
   } else {
     console.error('[GOOGLE] Error during auto-signin: OAuth2 library not loaded.');
   }
 };
 
-const handleGoogleSignInSuccess = (res: gapi.auth2.GoogleUser) => {
-  console.log('[GOOGLE] Received user profile info.');
-  const basicProfile = res.getBasicProfile();
+const handleGoogleSignInSuccess = (response: gapi.auth2.GoogleUser) => {
+  console.debug('[GOOGLE] Received user profile info.');
+  const basicProfile = response.getBasicProfile();
   // const authResponse = res.getAuthResponse(true);
 
   setGoogleProfile({
@@ -95,7 +100,7 @@ const handleGoogleSignInSuccess = (res: gapi.auth2.GoogleUser) => {
 };
 
 const handleGoogleSignOutSuccess = () => {
-  console.log('[GOOGLE] Client sign out successful.');
+  console.debug('[GOOGLE] Client sign out successful.');
   gapi.auth2.getAuthInstance().disconnect();
   clearGoogleProfile();
   sendNotification(t('auth-sign-out-success'));
@@ -122,7 +127,7 @@ const handleGoogleFailure = (response: GoogleResponseError) => {
   disableGoogleAuth();
 };
 
-export const attemptGoogleSignIn = () => {
+export const attemptGoogleSignIn = (): void => {
   if (getGoogleAuthEnabled()) {
     if (getGoogleAuthInitialized()) {
       gapi.auth2
@@ -137,8 +142,8 @@ export const attemptGoogleSignIn = () => {
           // prompt: consent,
         })
         .then(
-          (res) => handleGoogleSignInSuccess(res),
-          (err) => handleGoogleFailure(err)
+          (response) => handleGoogleSignInSuccess(response),
+          (error) => handleGoogleFailure(error)
         );
     } else {
       console.warn('[GOOGLE] Attempted to sign in when API was uninitialized.');
@@ -148,7 +153,7 @@ export const attemptGoogleSignIn = () => {
   }
 };
 
-export const attemptGoogleSignOut = () => {
+export const attemptGoogleSignOut = (): void => {
   if (getGoogleAuthProfile() != null) {
     if (getGoogleAuthInitialized()) {
       gapi.auth2
@@ -157,7 +162,7 @@ export const attemptGoogleSignOut = () => {
         .signOut()
         .then(
           () => handleGoogleSignOutSuccess(),
-          (err: GoogleResponseError) => handleGoogleFailure(err)
+          (error: GoogleResponseError) => handleGoogleFailure(error)
         );
     } else {
       console.warn('[GOOGLE] Attempted to sign out when API was uninitialized.');

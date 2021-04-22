@@ -10,8 +10,8 @@ import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { MapRegionKey } from 'src/components/data/MapRegions';
 import { EditorMarker, EditorRoute } from 'src/components/preferences/EditorDataSchema';
 import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 
 export type EditorState = GenshinMapPreferencesLatest['editor'];
 
@@ -68,7 +68,7 @@ export const editorSlice = createSlice({
         return { payload: { existingId: id, newMarker: marker } };
       },
       reducer: (state, action: PayloadAction<MarkerReplaceAction>) => {
-        state.feature.data = state.feature.data.map((marker) =>
+        state.feature.data = _.map(state.feature.data, (marker) =>
           marker.id === action.payload.existingId ? action.payload.newMarker : marker
         );
       },
@@ -90,7 +90,7 @@ export const editorSlice = createSlice({
         return { payload: { existingId: id, newRoute: route } };
       },
       reducer: (state, action: PayloadAction<RouteReplaceAction>) => {
-        state.feature.data = state.feature.data.map((route) =>
+        state.feature.data = _.map(state.feature.data, (route) =>
           route.id === action.payload.existingId ? action.payload.newRoute : route
         );
       },
@@ -108,10 +108,10 @@ export const editorSlice = createSlice({
       },
     },
     removeMarker: (state, action: PayloadAction<MSFMarkerID>) => {
-      state.feature.data = _.filter(state.feature.data, (element) => element.id !== action.payload);
+      state.feature.data = _.reject(state.feature.data, (element) => element.id == action.payload);
     },
     removeRoute: (state, action: PayloadAction<MSFRouteID>) => {
-      state.feature.data = _.filter(state.feature.data, (element) => element.id !== action.payload);
+      state.feature.data = _.reject(state.feature.data, (element) => element.id == action.payload);
     },
     appendMarker: (state, action: PayloadAction<EditorMarker>) => {
       state.feature.data.push(action.payload);

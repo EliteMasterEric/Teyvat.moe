@@ -1,34 +1,30 @@
-import {
-  CombinedState,
-  configureStore,
-  ConfigureStoreOptions,
-  Dispatch,
-  Middleware,
-  PreloadedState,
-} from '@reduxjs/toolkit';
+import { CombinedState, configureStore, Dispatch, PreloadedState } from '@reduxjs/toolkit';
+import { NoInfer } from 'ts-toolbelt/out/Function/NoInfer';
 
-import { AppAction } from 'src/components/redux/actions';
+import { loadStateFromLocalStorage } from 'src/components/preferences/ReduxStore';
+import { AppAction } from 'src/components/redux/Actions';
 import fullMiddleware from 'src/components/redux/middleware';
 
-import reducer from 'src/components/redux/slices';
-import { name as completed } from 'src/components/redux/slices/completed';
-import { name as displayed } from 'src/components/redux/slices/displayed';
-import { name as editor } from 'src/components/redux/slices/editor';
-import { name as options } from 'src/components/redux/slices/options';
+import reducer from 'src/components/redux/Reducer';
+import { name as completed } from 'src/components/redux/slices/Completed';
+import { name as displayed } from 'src/components/redux/slices/Displayed';
+import { name as editor } from 'src/components/redux/slices/Editor';
+import { name as options } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 
 import addWatchers from 'src/components/redux/watchers';
-import { NoInfer } from 'ts-toolbelt/out/Function/NoInfer';
-import { loadStateFromLocalStorage } from '../preferences/ReduxStore';
-import { AppState } from './types';
 
-export const PREFERENCES_PERSISTENT_KEYS: string[] = [
+/**
+ * These preferences key should be stored when serializing.
+ */
+export const PREFERENCES_PERSISTENT_KEYS = [
   completed,
   displayed,
   editor,
   options,
   // ui stores info about the current session.
   // notify stores temporary notifications in queue.
-];
+] as const;
 
 /**
  * Initialize a maintained global state, while also configuring Redux Dev Tools for inspection.

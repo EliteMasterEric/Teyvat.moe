@@ -1,16 +1,10 @@
 /* eslint-disable import/no-named-as-default-member */
-import {
-  createTileLayerComponent,
-  LeafletContextInterface,
-  withPane,
-  useLeafletContext,
-  useEventHandlers,
-} from '@react-leaflet/core';
+import { createTileLayerComponent, LeafletContextInterface, withPane } from '@react-leaflet/core';
 import leaflet, { LeafletEventHandlerFn } from 'leaflet';
 import { FunctionComponent } from 'react';
 // This has to be installed if react-leaflet is.
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { TileLayer, TileLayerProps } from 'react-leaflet';
+import { TileLayerProps } from 'react-leaflet';
 
 import ErrorHandler, { ErrorHandlerComponent } from 'src/components/views/error/ErrorHandler';
 import {
@@ -183,33 +177,33 @@ class AdvancedTileLayer extends leaflet.TileLayer {
   }
 }
 
-type AdvancedTileLayerParam = leaflet.TileLayerOptions & {
+type AdvancedTileLayerParameters = leaflet.TileLayerOptions & {
   url: string;
 };
 
 const createTileLayer = (
-  { url, ...options }: AdvancedTileLayerParam,
-  ctx: LeafletContextInterface
+  { url, ...options }: AdvancedTileLayerParameters,
+  context: LeafletContextInterface
 ) => {
   console.warn('Creating tile layer props...');
-  console.warn(ctx);
-  const instance = new AdvancedTileLayer(url, withPane(options, ctx));
+  console.warn(context);
+  const instance = new AdvancedTileLayer(url, withPane(options, context));
 
   //
-  return { instance, context: { ...ctx, overlayContainer: instance } };
+  return { instance, context: { ...context, overlayContainer: instance } };
 };
 
 const updateTileLayer = (
   layer: AdvancedTileLayer,
-  props: AdvancedTileLayerParam,
-  prevProps: AdvancedTileLayerParam
+  props: AdvancedTileLayerParameters,
+  previousProps: AdvancedTileLayerParameters
 ) => {
   console.warn('Updating tile layer props...');
   const { opacity, zIndex } = props;
-  if (opacity != null && opacity !== prevProps.opacity) {
+  if (opacity != undefined && opacity !== previousProps.opacity) {
     layer.setOpacity(opacity);
   }
-  if (zIndex != null && zIndex !== prevProps.zIndex) {
+  if (zIndex != undefined && zIndex !== previousProps.zIndex) {
     layer.setZIndex(zIndex);
   }
 };
@@ -226,7 +220,7 @@ const AdvancedTileLayerComponent = createTileLayerComponent<
 >(createTileLayer, updateTileLayer);
 
 const ErrorTileLayer: ErrorHandlerComponent = ({ error }) => {
-  if (error == null) return null;
+  if (error == undefined) return null;
 
   return (
     <div style={{ color: 'white', fontSize: 24 }}>

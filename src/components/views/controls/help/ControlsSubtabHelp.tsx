@@ -1,31 +1,30 @@
-import { connect, ConnectedProps } from 'react-redux';
 import React, { FunctionComponent } from 'react';
+import { connect, ConnectedProps } from 'react-redux';
 
 import { f, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
-import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectMapMarkerCount, selectMapRouteCount } from 'src/components/redux/slices/Interface';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 import { SafeHTML } from 'src/components/util';
 
 interface ControlsSubtabHelpBaseProps {
   displayed: boolean;
 }
 
-const mapStateToProps = (state: AppState, props: ControlsSubtabHelpBaseProps) => ({
+const mapStateToProps = (state: AppState) => ({
   lang: selectOverrideLang(state),
   markerCount: selectMapMarkerCount(state),
   routeCount: selectMapRouteCount(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsSubtabHelpStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsSubtabHelpDispatchProps = ReturnType<typeof mapDispatchToProps>;
 const connector = connect<
   ControlsSubtabHelpStateProps,
-  ControlsSubtabHelpDispatchProps,
+  Empty,
   ControlsSubtabHelpBaseProps,
   AppState
->(mapStateToProps, mapDispatchToProps);
+>(mapStateToProps);
 
 type ControlsSubtabHelpProps = ConnectedProps<typeof connector> & ControlsSubtabHelpBaseProps;
 

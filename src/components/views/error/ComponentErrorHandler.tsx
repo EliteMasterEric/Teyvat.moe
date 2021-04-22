@@ -16,6 +16,7 @@ import {
   IconButton,
 } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
+import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import { f, t } from 'src/components/i18n/Localization';
 import { NextImage } from 'src/components/interface/Image';
@@ -66,7 +67,7 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
 
     const classes = useStyles();
 
-    const untranslatedStack = (errorInfo?.componentStack ?? '').trim();
+    const untranslatedStack = _.trim(errorInfo?.componentStack ?? '');
 
     const [componentStack, setComponentStack] = useState<string | null>(null);
 

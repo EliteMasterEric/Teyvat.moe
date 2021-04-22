@@ -1,12 +1,16 @@
 import { MSFMarkerKey, MSFFeatureKey, MSFRouteGroupKey } from 'src/components/data/Element';
 import { store } from 'src/components/redux';
-import { AppAction } from 'src/components/redux/actions';
+import { AppAction } from 'src/components/redux/Actions';
+import { setMarkersCompleted } from 'src/components/redux/slices/Completed';
+import { setFeatureDisplayed, setRouteGroupDisplayed } from 'src/components/redux/slices/Displayed';
+import { setImportError } from 'src/components/redux/slices/Error';
+import { setMapPosition } from 'src/components/redux/slices/Interface';
+import {
+  enqueueNotification,
+  buildNotification,
+  Notification,
+} from 'src/components/redux/slices/Notify';
 import { LocalizedString, MapPosition } from 'src/components/Types';
-import { setMarkersCompleted } from '../slices/completed';
-import { setFeatureDisplayed, setRouteGroupDisplayed } from '../slices/displayed';
-import { setImportError } from '../slices/error';
-import { enqueueNotification, buildNotification, Notification } from '../slices/notify';
-import { setMapPosition } from '../slices/ui';
 
 export const dispatchAction = (action: AppAction): void => {
   store.dispatch(action);

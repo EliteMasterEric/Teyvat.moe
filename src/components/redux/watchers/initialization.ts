@@ -1,7 +1,7 @@
 import { initializeAllMapFeatures } from 'src/components/data/MapFeatures';
 import { initializeAllMapRouteGroups } from 'src/components/data/MapRoutes';
-import { AppState, AppWatcher } from 'src/components/redux/types';
-import { setLoadingInitialized } from '../dispatch';
+import { setLoadingInitialized } from 'src/components/redux/dispatch';
+import { AppState, AppWatcher } from 'src/components/redux/Types';
 
 /**
  * Triggers the initialization once the app state has loaded.

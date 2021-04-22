@@ -1,13 +1,14 @@
-import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
+import { t } from 'src/components/i18n/Localization';
+import { selectFullyLoaded } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 import FullScreenLoading from 'src/components/views/loading/FullScreenLoading';
 import PermalinkHandler from 'src/components/views/PermalinkHandler';
-import { selectFullyLoaded } from '../redux/slices/ui';
-import { AppState } from '../redux/types';
-import { t } from '../i18n/Localization';
 
 const Controls = dynamic(
   () =>
@@ -23,13 +24,8 @@ const mapStateToProps = (state: AppState) => {
     fullyLoaded: selectFullyLoaded(state),
   };
 };
-const mapDispatchToProps = () => ({});
 type MapPageStateProps = ReturnType<typeof mapStateToProps>;
-type MapPageDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<MapPageStateProps, MapPageDispatchProps, {}, AppState>(
-  mapStateToProps,
-  mapDispatchToProps
-);
+const connector = connect<MapPageStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type MapPageProps = ConnectedProps<typeof connector>;
 

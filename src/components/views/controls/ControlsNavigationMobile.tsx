@@ -11,8 +11,8 @@ import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { MapRegionKeys, getMapRegion } from 'src/components/data/MapRegions';
-import { selectIsTabDisplayed, selectOpen } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectIsTabDisplayed, selectOpen } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import ControlsFoldButton from 'src/components/views/controls/sidebar/ControlsFoldButton';
 import ControlsRegionButton from 'src/components/views/controls/sidebar/ControlsRegionButton';
@@ -20,15 +20,10 @@ import ControlsRegionButton from 'src/components/views/controls/sidebar/Controls
 const mapStateToProps = (state: AppState) => ({
   displayRegions: selectOpen(state) && selectIsTabDisplayed(state, ['features', 'routes']),
 });
-const mapDispatchToProps = () => ({});
 type ControlsNavigationMobileStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsNavigationMobileDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  ControlsNavigationMobileStateProps,
-  ControlsNavigationMobileDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<ControlsNavigationMobileStateProps, Empty, Empty, AppState>(
+  mapStateToProps
+);
 
 type ControlsNavigationMobileProps = ConnectedProps<typeof connector>;
 
@@ -45,7 +40,7 @@ const _ControlsNavigationMobile: FunctionComponent<ControlsNavigationMobileProps
     <Box display="flex" flexGrow="0" justifyContent="center" flexWrap="wrap">
       <ControlsFoldButton button fixedPosition={false} />
       {displayRegions
-        ? MapRegionKeys.map((key) =>
+        ? _.map(MapRegionKeys, (key) =>
             getMapRegion(key).enabled ? <ControlsRegionButton key={key} regionKey={key} /> : null
           )
         : null}

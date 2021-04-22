@@ -5,8 +5,9 @@
  */
 /* eslint-disable no-restricted-imports */
 
-import stub from './stub';
-import { on as trackingOn, off as trackingOff } from './tracking';
+import _ from 'lodash';
+import stub from './Stub';
+import { on as trackingOn, off as trackingOff } from './Tracking';
 
 let ls = 'localStorage' in global && global.localStorage ? global.localStorage : stub;
 
@@ -26,13 +27,13 @@ const set = (key: string, value: any) => {
   try {
     // Avoid accidently setting null and undefined values as strings "null" and "undefined".
     // See: https://github.com/bevacqua/local-storage/pull/32
-    if (value === null || value === undefined) {
+    if (_.isNil(value)) {
       remove(key);
       return true;
     }
     ls.setItem(key, JSON.stringify(value));
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 };
@@ -54,7 +55,7 @@ const backend = (store: any) => {
  * @returns {object} Dictionary of all local storage values.
  */
 const keys = () => {
-  return Object.keys(ls);
+  return _.keys(ls);
 };
 
 /**
@@ -66,9 +67,9 @@ const values = () => {
   const lsKeys = keys();
 
   // eslint-disable-next-line no-cond-assign
-  lsKeys.forEach((lsKey) => {
+  for (const lsKey of lsKeys) {
     lsValues.push(localStorage.getItem(lsKey));
-  });
+  }
 
   return lsValues;
 };
@@ -88,9 +89,9 @@ const all = () => {
   // if i = 0 (aka a new user) because it used some weird language trick with i--.
 
   // It has seen been rewritten.
-  lsKeys.forEach((lsKey) => {
+  for (const lsKey of lsKeys) {
     archive[lsKey] = ls.getItem(lsKey);
-  });
+  }
 
   return archive;
 };

@@ -5,8 +5,8 @@ import { Middleware } from 'redux';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { getEmptyFeatureCategories } from 'src/components/data/MapFeatures';
 import { getEmptyRouteCategories } from 'src/components/data/MapRoutes';
-import { setMapCategory, setTab } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { setMapCategory, setTab } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { UIControlsTab } from 'src/components/Types';
 import { getKeys } from 'src/components/util';
 

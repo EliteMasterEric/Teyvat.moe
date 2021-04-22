@@ -99,20 +99,20 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
   const classes = useStyles();
 
   // The success or failure message to display.
-  const [errorMsg, setErrorMsg] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   // Call when the files were accepted (correct file type etc.), and can be uploaded.
   const onDropAccepted = useCallback(
     (acceptedFiles) => {
-      setErrorMsg('progress');
+      setErrorMessage('progress');
 
       uploadImage(acceptedFiles[0])
         .then((imageUrl) => {
           setElementMedia(imageUrl);
-          setErrorMsg('success');
+          setErrorMessage('success');
         })
         .catch((error) => {
-          setErrorMsg(error.localizedString);
+          setErrorMessage(error.localizedString);
         });
     },
     [setElementMedia]
@@ -120,13 +120,11 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
 
   // Call when the files were rejected (bad file type etc.).
   const onDropRejected = useCallback((fileRejections) => {
-    setErrorMsg('error');
+    setErrorMessage('error');
 
-    if (fileRejections.length >= 1) {
-      if (fileRejections[0].errors.length >= 1) {
-        const errorCode = fileRejections[0].errors[0].code;
-        setErrorMsg(t(`image-upload-error-${errorCode}`));
-      }
+    if (fileRejections.length > 0 && fileRejections[0].errors.length > 0) {
+      const errorCode = fileRejections[0].errors[0].code;
+      setErrorMessage(t(`image-upload-error-${errorCode}`));
     }
   }, []);
 
@@ -145,7 +143,7 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
   };
 
   const message = () => {
-    switch (errorMsg) {
+    switch (errorMessage) {
       case '':
         return null;
       case 'success':
@@ -163,7 +161,7 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
       default:
         return (
           <Typography className={classes.imageUploadMessage} style={{ color: 'red' }}>
-            {errorMsg}
+            {errorMessage}
           </Typography>
         );
     }

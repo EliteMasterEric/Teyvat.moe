@@ -16,9 +16,8 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
 import { InputTextArea } from 'src/components/interface/Input';
-import { AppDispatch } from 'src/components/redux';
-import { clearImportError, selectImportError } from 'src/components/redux/slices/error';
-import { AppState } from 'src/components/redux/types';
+import { clearImportError, selectImportError } from 'src/components/redux/slices/Error';
+import { AppState } from 'src/components/redux/Types';
 
 import { SafeHTML } from 'src/components/util';
 import DialogTitle from 'src/components/views/dialogs/DialogTitle';
@@ -45,11 +44,11 @@ interface ImportDataPopupBaseProps {
 const mapStateToProps = (state: AppState) => ({
   error: selectImportError(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  clearError: () => dispatch(clearImportError()),
-});
+const mapDispatchToProps = {
+  clearImportError,
+};
 type ImportDataPopupStateProps = ReturnType<typeof mapStateToProps>;
-type ImportDataPopupDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type ImportDataPopupDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   ImportDataPopupStateProps,
   ImportDataPopupDispatchProps,
@@ -67,13 +66,13 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
   onConfirm,
   trigger,
   error = '',
-  clearError,
+  clearImportError,
 }) => {
   const [textarea, setTextarea] = useState<string>('');
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
   const closePopup = () => {
-    clearError();
+    clearImportError();
     setIsDialogOpen(false);
   };
 
@@ -94,7 +93,7 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
         fullWidth
         maxWidth="lg"
         onClose={() => {
-          clearError();
+          clearImportError();
           setIsDialogOpen(false);
         }}
       >

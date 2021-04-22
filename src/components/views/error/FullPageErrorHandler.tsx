@@ -18,8 +18,9 @@ import {
   IconButton,
 } from '@material-ui/core';
 import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
-import React, { useEffect, useState } from 'react';
+import _ from 'lodash';
 import Head from 'next/head';
+import React, { useEffect, useState } from 'react';
 
 import { t } from 'src/components/i18n/Localization';
 import { NextImage } from 'src/components/interface/Image';
@@ -67,7 +68,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
 
   const classes = useStyles();
 
-  const untranslatedStack = (errorInfo?.componentStack ?? '').trim();
+  const untranslatedStack = _.trim(errorInfo?.componentStack ?? '');
 
   const [componentStack, setComponentStack] = useState<string | null>(null);
 

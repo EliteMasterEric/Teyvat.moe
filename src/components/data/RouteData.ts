@@ -3,7 +3,7 @@
  */
 import _ from 'lodash';
 
-import { MSFRouteGroup } from 'src/components/data/Element';
+import { MSFRouteGroup } from './Element';
 import { importFromContext, isDev } from 'src/components/util';
 
 const routesContext = require.context(
@@ -24,7 +24,7 @@ export const loadRoute = async (key: string): Promise<MSFRouteGroup | null> => {
     const { validateRouteData } = await import(
       /* webpackChunkName: "schema-validation" */
       /* webpackMode: "lazy" */
-      'src/components/data/ElementSchema'
+      './ElementSchema'
     );
 
     const validation = validateRouteData(routeData);

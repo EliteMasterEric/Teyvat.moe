@@ -4,6 +4,7 @@
  */
 
 import { useMediaQuery } from '@material-ui/core';
+import _ from 'lodash';
 import { useNetworkStatus } from 'react-adaptive-hooks/network';
 import { useSaveData } from 'react-adaptive-hooks/save-data';
 
@@ -36,7 +37,7 @@ export const useSlowNetwork = (): boolean => {
   const DEFAULT = '4g'; // Value when the user's browser doesn't support the relevant API.
   const { effectiveConnectionType } = useNetworkStatus(DEFAULT);
 
-  return ['slow-2g', '2g', '3g'].includes(effectiveConnectionType ?? DEFAULT);
+  return _.includes(['slow-2g', '2g', '3g'], effectiveConnectionType ?? DEFAULT);
 };
 
 export const useDataSaver = (): boolean => {

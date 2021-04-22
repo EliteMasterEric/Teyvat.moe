@@ -6,16 +6,16 @@
 import 'leaflet.markercluster';
 import { MarkerClusterGroup as LeafletMarkerClusterGroup } from 'leaflet';
 import _ from 'lodash';
-import React, { FunctionComponent, useEffect, useRef } from 'react';
-import { useMap } from 'react-leaflet';
+import React, { FunctionComponent, useRef } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { MSFFeatureExtended, MSFFeatureKey } from 'src/components/data/Element';
 import { getMapFeature } from 'src/components/data/MapFeatures';
-import { selectIsFeatureDisplayed } from 'src/components/redux/slices/displayed';
-import { selectHideFeaturesInEditor } from 'src/components/redux/slices/options';
-import { selectEditorEnabled } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectIsFeatureDisplayed } from 'src/components/redux/slices/Displayed';
+import { selectEditorEnabled } from 'src/components/redux/slices/Interface';
+import { selectHideFeaturesInEditor } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 
+import { Empty } from 'src/components/Types';
 import FeatureMarker from 'src/components/views/map/layers/FeatureMarker';
 import MapClusterMarker, {
   offClusterFunction,
@@ -39,21 +39,15 @@ const mapStateToProps = (state: AppState, { featureKey, mapFeature }: FeatureLay
     mapFeature: mapFeature != null ? mapFeature : (getMapFeature(featureKey) as MSFFeatureExtended),
   };
 };
-const mapDispatchToProps = () => ({});
 type FeatureLayerStateProps = ReturnType<typeof mapStateToProps>;
-type FeatureLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  FeatureLayerStateProps,
-  FeatureLayerDispatchProps,
-  FeatureLayerBaseProps,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<FeatureLayerStateProps, Empty, FeatureLayerBaseProps, AppState>(
+  mapStateToProps
+);
 
 type FeatureLayerProps = ConnectedProps<typeof connector> & FeatureLayerBaseProps;
 
 const _FeatureLayer: FunctionComponent<FeatureLayerProps> = ({ displayed, mapFeature }) => {
-  const map = useMap();
-  const layerRef = useRef<LeafletMarkerClusterGroup | null>(null);
+  const layerReference = useRef<LeafletMarkerClusterGroup | null>(null);
 
   // TODO: Is there an ideal way to do this?
   // Simply using display=none means that all markers get loaded
@@ -79,8 +73,8 @@ const _FeatureLayer: FunctionComponent<FeatureLayerProps> = ({ displayed, mapFea
   switch (mapFeature.format) {
     case 2:
       return (
-        <MapClusterMarker ref={layerRef} clusterFunction={clusterFunction}>
-          {mapFeature.data.map((marker) => {
+        <MapClusterMarker ref={layerReference} clusterFunction={clusterFunction}>
+          {_.map(mapFeature.data, (marker) => {
             return (
               <FeatureMarker
                 key={marker.id}

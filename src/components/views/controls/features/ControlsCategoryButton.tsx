@@ -12,14 +12,14 @@ import { getEmptyFeatureCategories } from 'src/components/data/MapFeatures';
 import { getEmptyRouteCategories } from 'src/components/data/MapRoutes';
 import { t } from 'src/components/i18n/Localization';
 import { AppDispatch } from 'src/components/redux';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
 import {
   selectMapCategory,
   selectMapRegion,
   selectTab,
   setMapCategory,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Interface';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 
 const useStyles = makeStyles((_theme) => ({
   categoryButton: {},

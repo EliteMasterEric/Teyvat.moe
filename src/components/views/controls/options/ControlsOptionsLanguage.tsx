@@ -5,16 +5,17 @@
 
 import { makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
 import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
+import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { getLanguageOptions } from 'src/components/i18n/FeatureLocalization';
-import { getShortLocale, LanguageCode, t } from 'src/components/i18n/Localization';
 import { getLanguageFlag } from 'src/components/i18n/Flags';
+import { getShortLocale, LanguageCode, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { AppDispatch } from 'src/components/redux';
-import { selectOverrideLang, setOverrideLang } from 'src/components/redux/slices/options';
-import { AppState } from 'src/components/redux/types';
+import { selectOverrideLang, setOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({
@@ -31,11 +32,11 @@ const useStyles = makeStyles((_theme) => ({
 const mapStateToProps = (state: AppState) => ({
   overrideLang: selectOverrideLang(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setOverrideLang: (lang: LanguageCode) => dispatch(setOverrideLang(lang)),
-});
+const mapDispatchToProps = {
+  setOverrideLang,
+};
 type ControlsOptionsLanguageStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsOptionsLanguageDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type ControlsOptionsLanguageDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   ControlsOptionsLanguageStateProps,
   ControlsOptionsLanguageDispatchProps,
@@ -44,6 +45,8 @@ const connector = connect<
 >(mapStateToProps, mapDispatchToProps);
 
 type ControlsOptionsLanguageProps = ConnectedProps<typeof connector>;
+
+const distinguishLanguageCode = (value: any): value is LanguageCode => _.isString(value);
 
 const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> = ({
   overrideLang,
@@ -55,9 +58,8 @@ const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> 
   const langOptions = getLanguageOptions(currentLangCode);
 
   const onLangChange: SelectInputProps['onChange'] = (event) => {
-    const distinguish = (value: any): value is LanguageCode => typeof value === 'string';
     const langCode = event.target.value;
-    if (!distinguish(langCode)) return;
+    if (!distinguishLanguageCode(langCode)) return;
 
     setOverrideLang(langCode);
   };
@@ -66,7 +68,7 @@ const _ControlsOptionsLanguage: FunctionComponent<ControlsOptionsLanguageProps> 
     <BorderBox grow={false} direction="row" alignItems="center">
       <Typography className={classes.label}>{t('language')}</Typography>
       <Select value={currentLangCode} onChange={onLangChange}>
-        {langOptions.map((lang) => (
+        {_.map(langOptions, (lang) => (
           <MenuItem key={lang.value} value={lang.value}>
             <img className={classes.flag} src={getLanguageFlag(lang.value)} />
             {lang.label}

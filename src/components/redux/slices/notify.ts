@@ -5,8 +5,8 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey } from 'notistack';
 
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { AppState } from 'src/components/redux/Types';
 import { LocalizedString } from 'src/components/Types';
 
 interface NotificationOptions extends OptionsObject {
@@ -45,7 +45,7 @@ export const notifySlice = createSlice({
     },
     dismissNotification: (state, action: PayloadAction<SnackbarKey>) => {
       // Dismiss all notifications whose key matches the provided value.
-      state.notifications = state.notifications.map((notification) =>
+      state.notifications = _.map(state.notifications, (notification) =>
         notification.options.key === action.payload
           ? { ...notification, dismissed: true }
           : notification
@@ -53,7 +53,7 @@ export const notifySlice = createSlice({
     },
     dismissAllNotifications: (state) => {
       // Dismiss all queued notifications.
-      state.notifications = state.notifications.map((notification) => ({
+      state.notifications = _.map(state.notifications, (notification) => ({
         ...notification,
         dismissed: true,
       }));
@@ -61,8 +61,9 @@ export const notifySlice = createSlice({
     removeNotification: (state, action: PayloadAction<SnackbarKey>) => {
       // Remove the notification from the state.
       // Called internally once the dismissal animation is complete.
-      state.notifications = state.notifications.filter(
-        (notification) => notification.options.key !== action.payload
+      state.notifications = _.reject(
+        state.notifications,
+        (notification) => notification.options.key == action.payload
       );
     },
   },
@@ -111,7 +112,7 @@ export const buildNotification = (
     dismissed: false,
     message,
     options: {
-      key: new Date().getTime() + Math.random(),
+      key: Date.now() + Math.random(),
       persist: false,
       preventDuplicate: false,
       variant: 'default',

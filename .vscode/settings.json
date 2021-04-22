@@ -16,10 +16,6 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "mrmlnc.vscode-remark",
-    "editor.formatOnSave": true
-  },
   "[python]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2
@@ -65,5 +61,9 @@
     "**/vendor/**",
     "./packages/**",
   ],
-  "editor.snippetSuggestions": "top"
+  "editor.snippetSuggestions": "top",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"]
 }

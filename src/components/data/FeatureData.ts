@@ -3,7 +3,7 @@
  */
 import _ from 'lodash';
 
-import { MSFFeature } from 'src/components/data/Element';
+import { MSFFeature } from './Element';
 import { importFromContext, isDev } from 'src/components/util';
 
 const featuresContext = require.context(
@@ -13,7 +13,7 @@ const featuresContext = require.context(
   'lazy-once' // webpackMode
 );
 // Synchronous, returns an array of gathered paths.
-export const listFeatureFiles = () => featuresContext.keys();
+export const listFeatureFiles = (): string[] => featuresContext.keys();
 
 // Asynchronous, resovles to the module.
 export const loadFeature = async (key: string): Promise<MSFFeature | null> => {
@@ -27,7 +27,7 @@ export const loadFeature = async (key: string): Promise<MSFFeature | null> => {
     const { validateFeatureData } = await import(
       /* webpackChunkName: "schema-validation" */
       /* webpackMode: "lazy" */
-      'src/components/data/ElementSchema'
+      './ElementSchema'
     );
 
     const validation = validateFeatureData(featureData);

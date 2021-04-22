@@ -1,8 +1,10 @@
-import { Box, Typography } from '@material-ui/core';
+import { Box, Typography, makeStyles } from '@material-ui/core';
 import React, { FunctionComponent, useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import ControlsSyncProfileGoogle from './ControlsSyncProfileGoogle';
 import { attemptGoogleSignIn, loadGoogleAPI } from 'src/components/api/google';
 import { t } from 'src/components/i18n/Localization';
+import { NextImage } from 'src/components/interface/Image';
 import { AppDispatch } from 'src/components/redux';
 import {
   disableGoogleAuth,
@@ -10,13 +12,11 @@ import {
   selectAuthGoogleInitialized,
   selectAuthGoogleProfile,
   setGoogleAuthProfile,
-} from 'src/components/redux/slices/ui';
-import { AppState, AuthGoogleProfile } from 'src/components/redux/types';
-import { NextImage } from 'src/components/interface/Image';
-import ControlsSyncProfileGoogle from './ControlsSyncProfileGoogle';
+} from 'src/components/redux/slices/Interface';
+import { AppState, AuthGoogleProfile } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 
-import { makeStyles } from '@material-ui/core';
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((_theme) => ({
   googleSignIn: {
     cursor: 'pointer',
   },
@@ -33,19 +33,13 @@ const mapStateToProps = (state: AppState) => ({
   authGoogleInitialized: selectAuthGoogleInitialized(state),
   googleLoggedIn: selectAuthGoogleProfile(state) != null,
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  disableGoogleAuth: () => dispatch(disableGoogleAuth()),
-  setGoogleAuthProfile: (profile: AuthGoogleProfile) => dispatch(setGoogleAuthProfile(profile)),
-  clearGoogleAuthProfile: () => dispatch(setGoogleAuthProfile(null)),
-});
 type ControlsSyncAuthGoogleStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsSyncAuthGoogleDispatchProps = ReturnType<typeof mapDispatchToProps>;
 const connector = connect<
   ControlsSyncAuthGoogleStateProps,
-  ControlsSyncAuthGoogleDispatchProps,
+  Empty,
   ControlsSyncAuthGoogleBaseProps,
   AppState
->(mapStateToProps, mapDispatchToProps);
+>(mapStateToProps);
 
 type ControlsSyncAuthGoogleProps = ConnectedProps<typeof connector> &
   ControlsSyncAuthGoogleBaseProps;
@@ -61,34 +55,27 @@ const _ControlsSyncAuthGoogle: FunctionComponent<ControlsSyncAuthGoogleProps> = 
     loadGoogleAPI();
   }, []);
 
-  const onGoogleLoginClick = () => {
-    console.log('[GOOGLE] Login button clicked.');
-    attemptGoogleSignIn();
-  };
-
   if (googleLoggedIn) {
     return <ControlsSyncProfileGoogle />;
   } else {
-    if (authGoogleInitialized) {
-      return (
-        <Box>
-          <Typography variant="subtitle2">{t('google-drive-prompt')}</Typography>
-          <NextImage
-            onClick={onGoogleLoginClick}
-            className={classes.googleSignIn}
-            src="/images/social/google-signin.png"
-            width={200}
-            height={48}
-          />
-        </Box>
-      );
-    } else {
-      return (
-        <Box>
-          <Typography>{t('loading')}</Typography>
-        </Box>
-      );
-    }
+    return authGoogleInitialized ? (
+      <Box>
+        <Typography variant="subtitle2">{t('google-drive-prompt')}</Typography>
+        <NextImage
+          onClick={() => {
+            attemptGoogleSignIn();
+          }}
+          className={classes.googleSignIn}
+          src="/images/social/google-signin.png"
+          width={200}
+          height={48}
+        />
+      </Box>
+    ) : (
+      <Box>
+        <Typography>{t('loading')}</Typography>
+      </Box>
+    );
   }
 };
 

@@ -8,55 +8,51 @@
 import 'leaflet-editable';
 import 'leaflet-textpath';
 import { LayerGroup as LeafletLayerGroup } from 'leaflet';
+import _ from 'lodash';
 import React, { FunctionComponent, useEffect, useRef } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { MSFFeatureKey } from 'src/components/data/Element';
 import { EditorRoute } from 'src/components/preferences/EditorDataSchema';
-import { selectEditorFeatureData } from 'src/components/redux/slices/editor';
-import { selectEditorEnabled } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectEditorFeatureData } from 'src/components/redux/slices/Editor';
+import { selectEditorEnabled } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import FeatureMarker from 'src/components/views/map/layers/FeatureMarker';
 import RouteLine from 'src/components/views/map/layers/RouteLine';
 
 // Type guards.
 const distinguishRoute = (value: any): value is EditorRoute => {
-  return Array.isArray((value as EditorRoute).coordinates[0]);
+  return _.isArray((value as EditorRoute).coordinates[0]);
 };
 
 const mapStateToProps = (state: AppState) => ({
   displayed: selectEditorEnabled(state),
   editorData: selectEditorFeatureData(state),
 });
-const mapDispatchToProps = () => ({});
 type EditorLayerStateProps = ReturnType<typeof mapStateToProps>;
-type EditorLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<EditorLayerStateProps, EditorLayerDispatchProps, Empty, AppState>(
-  mapStateToProps,
-  mapDispatchToProps
-);
+const connector = connect<EditorLayerStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type EditorLayerProps = ConnectedProps<typeof connector>;
 
 const _EditorLayer: FunctionComponent<EditorLayerProps> = ({ displayed, editorData }) => {
   const map = useMap();
-  const layerRef = useRef<LeafletLayerGroup | null>(null);
+  const layerReference = useRef<LeafletLayerGroup | null>(null);
 
   useEffect(() => {
-    if (layerRef.current !== null) {
+    if (layerReference.current !== null) {
       if (displayed) {
-        layerRef.current.addTo(map);
+        layerReference.current.addTo(map);
       } else {
-        layerRef.current.removeFrom(map);
+        layerReference.current.removeFrom(map);
       }
     }
   }, [map, displayed]);
 
   return (
-    <LayerGroup ref={layerRef}>
-      {editorData.map((element) => {
+    <LayerGroup ref={layerReference}>
+      {_.map(editorData, (element) => {
         return distinguishRoute(element) ? (
           <RouteLine key={element.id} route={element} editable />
         ) : (

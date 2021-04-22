@@ -1,28 +1,32 @@
+import { dispatchAction } from './Base';
 import { getMapFeatureKeys, getMapFeature } from 'src/components/data/MapFeatures';
 import { getMapRouteGroupKeys, getMapRouteGroup } from 'src/components/data/MapRoutes';
-import { setMapMarkerCount, setMapRouteCount } from '../slices/ui';
-import { dispatchAction } from './base';
+import { setMapMarkerCount, setMapRouteCount } from 'src/components/redux/slices/Interface';
 
 const performMapMarkersCount = (): number => {
-  return getMapFeatureKeys().reduce((sum, key, _index) => {
+  let result = 0;
+  for (const key of getMapFeatureKeys()) {
     const feature = getMapFeature(key);
-    return sum + feature.data.length;
-  }, 0);
+    result += feature.data.length;
+  }
+  return result;
 };
 
-export const countMapMarkers = () => {
+export const countMapMarkers = (): void => {
   const count = performMapMarkersCount();
   dispatchAction(setMapMarkerCount(count));
 };
 
 const performMapRoutesCount = (): number => {
-  return getMapRouteGroupKeys().reduce((sum, key, _index) => {
+  let result = 0;
+  for (const key of getMapRouteGroupKeys()) {
     const route = getMapRouteGroup(key);
-    return sum + route.data.length;
-  }, 0);
+    result += route.data.length;
+  }
+  return result;
 };
 
-export const countMapRoutes = () => {
+export const countMapRoutes = (): void => {
   const count = performMapRoutesCount();
   dispatchAction(setMapRouteCount(count));
 };

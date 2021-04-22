@@ -1,6 +1,18 @@
 module.exports = {
+  // Ignore eslintrc.js files in parent directories.
+  root: true,
+  // Use a parser compatible with TypeScript.
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react-hooks', 'prettier', 'mui-unused-classes', 'import'],
+  plugins: [
+    '@typescript-eslint',
+    'react-hooks',
+    'prettier', // Ensures compatibility with Prettier.
+    'mui-unused-classes', // Prevents unused classes in makeStyles.
+    'import', // Special rules to clean up and standardize imports.
+    'unicorn', // Various awesome rules.
+    'react-redux', // Various rules to enforce best practices for react-redux.
+    'lodash', // Various rules to enforce best practices for lodash.
+  ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -12,6 +24,9 @@ module.exports = {
     'plugin:import/typescript',
     'prettier',
     'prettier/@typescript-eslint',
+    'plugin:unicorn/recommended',
+    'plugin:react-redux/recommended',
+    'plugin:lodash/recommended',
   ],
   settings: {
     react: {
@@ -106,17 +121,87 @@ module.exports = {
 
     /**
      * Prohibit imports via relative paths.
-     * Use ~/ instead.
      */
     'no-restricted-imports': [
       'error',
       {
         patterns: [
-          '.*', // No relative imports.
+          '../**/*', // No relative imports.
+          './**/*', // No relative imports.
+          '**/index', // Don't import the index explicitly.
           'src/components/util/*', // Import only the index Util module.
+          '!./*',
         ],
       },
     ],
+
+    /**
+     * Enforce Rules of Hooks.
+     *
+     * @see: https://github.com/facebook/react/blob/c11015ff4f610ac2924d1fc6d569a17657a404fd/packages/eslint-plugin-react-hooks/src/RulesOfHooks.js
+     */
+    'react-hooks/rules-of-hooks': 'error',
+
+    /**
+     * Verify the list of the dependencies for Hooks like useEffect and similar.
+     *
+     * @see: https://github.com/facebook/react/blob/1204c789776cb01fbaf3e9f032e7e2ba85a44137/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
+     */
+    'react-hooks/exhaustive-deps': 'error',
+
+    /**
+     * Use Pascal file name casing where applicable.
+     * Ignores index.js because that can't be renamed.
+     *
+     * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
+     */
+    'unicorn/filename-case': [
+      'warn',
+      {
+        case: 'pascalCase',
+        ignore: [
+          /^\.eslintrc\.js$/, // Ignore config files.
+          /\.md/, // Ignore markdown files.
+          /^[A-Za-z]{2}\.(j|t)tsx?$/, // Ignore 2-letter file names.
+          /UI\.ts/,
+        ],
+      },
+    ],
+    /**'
+     * Using complete words results in more readable code.
+     * Not everyone knows all your abbreviations. Code is written only once, but read many times.
+     *
+     * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
+     */
+    'unicorn/prevent-abbreviations': [
+      'warn',
+      {
+        replacements: {
+          props: false,
+        },
+        ignore: ['i18n'],
+      },
+    ],
+    /**
+     * There are reasons to eliminate nulls from your code completely,
+     * but this has issues with React (for example, a functional component can't return undefined).
+     *
+     * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
+     */
+    'unicorn/no-null': ['off'],
+
+    /**
+     * Use the lodash equivalent method wherever possible.
+     * Compared to native methods, lodash methods are always available, have better performance,
+     * and always have the same output.
+     */
+    'lodash/prefer-lodash-method': ['error'],
+
+    /**
+     * Enforce usage of 'import _ from lodash' rather than importing members.
+     * A Babel plugin is installed to transpile this and enable tree shaking.
+     */
+    'lodash/import-scope': ['warn', 'full'],
 
     /**
      * Make less severe/important issues throw warnings instead of breaking the program.
@@ -127,16 +212,8 @@ module.exports = {
     'object-shorthand': ['warn'],
     'react/jsx-boolean-value': ['warn'],
 
-    // Enforce Rules of Hooks
-    // https://github.com/facebook/react/blob/c11015ff4f610ac2924d1fc6d569a17657a404fd/packages/eslint-plugin-react-hooks/src/RulesOfHooks.js
-    'react-hooks/rules-of-hooks': 'error',
-
-    // Verify the list of the dependencies for Hooks like useEffect and similar
-    // https://github.com/facebook/react/blob/1204c789776cb01fbaf3e9f032e7e2ba85a44137/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
-    'react-hooks/exhaustive-deps': 'error',
-
     /**
-     * Turn off rules I don't like, or that annoy me.
+     * Turn off annoying rules I don't like.
      */
     'react/jsx-filename-extension': ['off'], // Tried to turn this on but babel-plugin-root-import complains.
     'no-underscore-dangle': ['off'], // Allow dangling underscores in identifier names.

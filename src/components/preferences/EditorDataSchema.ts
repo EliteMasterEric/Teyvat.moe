@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import {
   MSFCluster,
   MSFCoordinate,
@@ -77,11 +78,11 @@ export interface EditorRoute {
   popupAttribution?: string;
 }
 
-export const isMarker = (element: EditorMarker | EditorRoute): boolean => {
-  return !Array.isArray(element.coordinates);
+export const isMarker = (element: EditorMarker | EditorRoute): element is EditorMarker => {
+  return !_.isArray(element.coordinates);
 };
-export const isRoute = (element: EditorMarker | EditorRoute): boolean => {
-  return Array.isArray(element.coordinates);
+export const isRoute = (element: EditorMarker | EditorRoute): element is EditorRoute => {
+  return _.isArray(element.coordinates);
 };
 
 export type EditorFeatureSubmission = {

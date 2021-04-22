@@ -30,11 +30,7 @@
     "th": "Hilichurl ร่างใหญ่ที่ใช้หินเป็นโล่กำบัง\\nสำหรับพวก Hilichurl แล้ว สิ่งที่สำคัญที่สุดก็คือการได้กินเนื้อและต่อสู้เพื่อให้ร่างกายแข็งแกร่งขึ้น\\nหากสามารถเปลี่ยนเป็นนักรบที่ทั้งใหญ่และแข็งแกร่งอย่าง Mitachurl ได้ล่ะก็ จะได้กินเนื้อมากมาย ต่อสู้ได้มากขึ้น และยกโล่หินขนาดใหญ่ (เกือบ) ที่ทำลายไม่ได้อีกด้วย",
     "vi": "Hilichurl Lớn dùng nham thạch làm khiên.\\nĐối với Hilichurl mà nói, việc quan trọng nhất là ăn và đánh nhau, làm cho mình trở nên mạnh hơn.\\nNếu có thể trở thành chiến sĩ hùng mạnh như Bạo Đồ Hilichurl, thì sẽ được ăn nhiều thịt hơn, đánh nhiều hơn, giơ cao tấm khiên (dường như) kiên cố không thể bị phá vỡ."
   },
-  "tags": [
-    "artifacts",
-    "character-weapon-material",
-    "weapon-ascension-material"
-  ],
+  "tags": ["artifacts", "character-weapon-material", "weapon-ascension-material"],
   "enabled": true,
   "cluster": "on",
   "respawn": 86400,
@@ -49,986 +45,557 @@
   },
   "data": [
     {
-      "coordinates": [
-        -26.20938,
-        29.11875
-      ],
+      "coordinates": [-26.20938, 29.11875],
       "id": "40ECBDBBCCED5448F497EDB8417D1AAE5A2012F4",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/2"
-        ],
-        "yuanshen": [
-          "25_2"
-        ]
+        "gm_legacy": ["liyueMitachurl/2"],
+        "yuanshen": ["25_2"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -25.22732,
-        27.69139
-      ],
+      "coordinates": [-25.22732, 27.69139],
       "id": "7602837D3D38B9C89C9493D3B4CF3183AFAA954F",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/3"
-        ],
-        "yuanshen": [
-          "25_3"
-        ]
+        "gm_legacy": ["liyueMitachurl/3"],
+        "yuanshen": ["25_3"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.62344,
-        26.78281
-      ],
+      "coordinates": [-28.62344, 26.78281],
       "id": "63AE6C80938CD05243029FA734193765AD17E0E2",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/4"
-        ],
-        "yuanshen": [
-          "25_4"
-        ]
+        "gm_legacy": ["liyueMitachurl/4"],
+        "yuanshen": ["25_4"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.42031,
-        25.49375
-      ],
+      "coordinates": [-28.42031, 25.49375],
       "id": "ADF2E1840F61EE2F7952AA7297B18D2914898E31",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/5"
-        ],
-        "yuanshen": [
-          "25_5"
-        ]
+        "gm_legacy": ["liyueMitachurl/5"],
+        "yuanshen": ["25_5"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.19766,
-        24.33359
-      ],
+      "coordinates": [-28.19766, 24.33359],
       "id": "E3604DABCA6DFF475E33591CBDBD8A3DA4185D08",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/6"
-        ],
-        "yuanshen": [
-          "25_6"
-        ]
+        "gm_legacy": ["liyueMitachurl/6"],
+        "yuanshen": ["25_6"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -27.20937,
-        33.30625
-      ],
+      "coordinates": [-27.20937, 33.30625],
       "id": "3004B1EDD03904F6B93F66C4467DEAC5B2DF79E0",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/7"
-        ],
-        "yuanshen": [
-          "25_7"
-        ]
+        "gm_legacy": ["liyueMitachurl/7"],
+        "yuanshen": ["25_7"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -28.86563,
-        33.5875
-      ],
+      "coordinates": [-28.86563, 33.5875],
       "id": "404B95998D9256A7A723D181DCF997C3C02714E9",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/8"
-        ],
-        "yuanshen": [
-          "25_8"
-        ]
+        "gm_legacy": ["liyueMitachurl/8"],
+        "yuanshen": ["25_8"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.35,
-        35.22812
-      ],
+      "coordinates": [-32.35, 35.22812],
       "id": "AF08E272EB1BA5D490805318A7F9DE432B5A17CB",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/9"
-        ],
-        "yuanshen": [
-          "25_9"
-        ]
+        "gm_legacy": ["liyueMitachurl/9"],
+        "yuanshen": ["25_9"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.27182,
-        31.45078
-      ],
+      "coordinates": [-32.27182, 31.45078],
       "id": "91856B6C49D3505E789CE57AD9F7B9AE662087BA",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/10"
-        ],
-        "yuanshen": [
-          "25_10"
-        ]
+        "gm_legacy": ["liyueMitachurl/10"],
+        "yuanshen": ["25_10"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.89684,
-        32.63437
-      ],
+      "coordinates": [-33.89684, 32.63437],
       "id": "1EE52778064EA3F324A0E6F0EE84368DAFBAB155",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/11"
-        ],
-        "yuanshen": [
-          "25_11"
-        ]
+        "gm_legacy": ["liyueMitachurl/11"],
+        "yuanshen": ["25_11"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.0375,
-        38.63437
-      ],
+      "coordinates": [-37.0375, 38.63437],
       "id": "B61F2E652EAD18F7B997604E2AC8E8BC700B17E0",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/12"
-        ],
-        "yuanshen": [
-          "25_12"
-        ]
+        "gm_legacy": ["liyueMitachurl/12"],
+        "yuanshen": ["25_12"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.2875,
-        32.42344
-      ],
+      "coordinates": [-38.2875, 32.42344],
       "id": "163BC564F6FC606376195BABBC79F2C78F1E5562",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/13"
-        ],
-        "yuanshen": [
-          "25_13"
-        ]
+        "gm_legacy": ["liyueMitachurl/13"],
+        "yuanshen": ["25_13"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.56474,
-        33.03272
-      ],
+      "coordinates": [-38.56474, 33.03272],
       "id": "7FE497FAA9B4F90AA9728DE69AAC3C022E37A671",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/14"
-        ],
-        "yuanshen": [
-          "25_14"
-        ]
+        "gm_legacy": ["liyueMitachurl/14"],
+        "yuanshen": ["25_14"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -43.67813,
-        41.61094
-      ],
+      "coordinates": [-43.67813, 41.61094],
       "id": "A59699277F6000488BE566C60DD9C8710B7053E7",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/15"
-        ],
-        "yuanshen": [
-          "25_15"
-        ]
+        "gm_legacy": ["liyueMitachurl/15"],
+        "yuanshen": ["25_15"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.61562,
-        42.69688
-      ],
+      "coordinates": [-44.61562, 42.69688],
       "id": "2FE76A46CAC845A725729CCA54BCF4B502DF31C8",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/16"
-        ],
-        "yuanshen": [
-          "25_16"
-        ]
+        "gm_legacy": ["liyueMitachurl/16"],
+        "yuanshen": ["25_16"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.79917,
-        42.7203
-      ],
+      "coordinates": [-44.79917, 42.7203],
       "id": "B1360AED44A2011179420F277562C5409BB0FC3D",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/17"
-        ],
-        "yuanshen": [
-          "25_17"
-        ]
+        "gm_legacy": ["liyueMitachurl/17"],
+        "yuanshen": ["25_17"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.2875,
-        27.15782
-      ],
+      "coordinates": [-44.2875, 27.15782],
       "id": "AF5F0B4E647695B32094C67EF4DBB6FD5DF78C57",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/18"
-        ],
-        "yuanshen": [
-          "25_18"
-        ]
+        "gm_legacy": ["liyueMitachurl/18"],
+        "yuanshen": ["25_18"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -46.49062,
-        26.07969
-      ],
+      "coordinates": [-46.49062, 26.07969],
       "id": "0C76A4754FDC54B80566C3293C45E5B58B885B6F",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/19"
-        ],
-        "yuanshen": [
-          "25_19"
-        ]
+        "gm_legacy": ["liyueMitachurl/19"],
+        "yuanshen": ["25_19"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.24062,
-        26.20468
-      ],
+      "coordinates": [-47.24062, 26.20468],
       "id": "26E636DD910FC795BB93618263E044739982BB87",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/20"
-        ],
-        "yuanshen": [
-          "25_20"
-        ]
+        "gm_legacy": ["liyueMitachurl/20"],
+        "yuanshen": ["25_20"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.38906,
-        26.35312
-      ],
+      "coordinates": [-48.38906, 26.35312],
       "id": "A7E046F412E5F730FE840E6F49D4396DAC553011",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/21"
-        ],
-        "yuanshen": [
-          "25_21"
-        ]
+        "gm_legacy": ["liyueMitachurl/21"],
+        "yuanshen": ["25_21"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.225,
-        23.24375
-      ],
+      "coordinates": [-48.225, 23.24375],
       "id": "F70A997928C3B3F7536EC17FFCB68A098693FC3C",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/22"
-        ],
-        "yuanshen": [
-          "25_22"
-        ]
+        "gm_legacy": ["liyueMitachurl/22"],
+        "yuanshen": ["25_22"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -48.00626,
-        22.53281
-      ],
+      "coordinates": [-48.00626, 22.53281],
       "id": "89673868FA9C50C2DC7A68C11EB7A42BEDB1B93C",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/23"
-        ],
-        "yuanshen": [
-          "25_23"
-        ]
+        "gm_legacy": ["liyueMitachurl/23"],
+        "yuanshen": ["25_23"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -51.67031,
-        22.50156
-      ],
+      "coordinates": [-51.67031, 22.50156],
       "id": "F5ED10B135F614C954A44AB3FBEABBEA9AC7F6FA",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/24"
-        ],
-        "yuanshen": [
-          "25_24"
-        ]
+        "gm_legacy": ["liyueMitachurl/24"],
+        "yuanshen": ["25_24"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -51.6,
-        22.60313
-      ],
+      "coordinates": [-51.6, 22.60313],
       "id": "8970D12DAF09449FD0927377FE23D04F080AEC5F",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/25"
-        ],
-        "yuanshen": [
-          "25_25"
-        ]
+        "gm_legacy": ["liyueMitachurl/25"],
+        "yuanshen": ["25_25"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -51.49063,
-        21.01719
-      ],
+      "coordinates": [-51.49063, 21.01719],
       "id": "45AD02F992E91B988EC58F7E2A20F83BEE0F57A3",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/26"
-        ],
-        "yuanshen": [
-          "25_26"
-        ]
+        "gm_legacy": ["liyueMitachurl/26"],
+        "yuanshen": ["25_26"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -52.19375,
-        18.97814
-      ],
+      "coordinates": [-52.19375, 18.97814],
       "id": "E6F4AFCF8ADB17AEEA5C5421E4627FCA52483BD4",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/27"
-        ],
-        "yuanshen": [
-          "25_27"
-        ]
+        "gm_legacy": ["liyueMitachurl/27"],
+        "yuanshen": ["25_27"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -51.93595,
-        18.7281
-      ],
+      "coordinates": [-51.93595, 18.7281],
       "id": "AD408E5C1A30A28BA05D231A9D59C108083ECF0E",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/28"
-        ],
-        "yuanshen": [
-          "25_28"
-        ]
+        "gm_legacy": ["liyueMitachurl/28"],
+        "yuanshen": ["25_28"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -50.19374,
-        19.0875
-      ],
+      "coordinates": [-50.19374, 19.0875],
       "id": "C7071128BD5B166E106032160C1DBE9F1097C938",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/29"
-        ],
-        "yuanshen": [
-          "25_29"
-        ]
+        "gm_legacy": ["liyueMitachurl/29"],
+        "yuanshen": ["25_29"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.88125,
-        19.65781
-      ],
+      "coordinates": [-49.88125, 19.65781],
       "id": "0B496F660903654DA14DADCAA3C90B64F34FEA76",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/30"
-        ],
-        "yuanshen": [
-          "25_30"
-        ]
+        "gm_legacy": ["liyueMitachurl/30"],
+        "yuanshen": ["25_30"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -40.475,
-        22.15
-      ],
+      "coordinates": [-40.475, 22.15],
       "id": "F20F5354777C393B7C05973472850446C4DB6EA9",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/34"
-        ],
-        "yuanshen": [
-          "25_34"
-        ]
+        "gm_legacy": ["liyueMitachurl/34"],
+        "yuanshen": ["25_34"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.89688,
-        25.57187
-      ],
+      "coordinates": [-38.89688, 25.57187],
       "id": "9E7DA91E97D9CDD3524FA694FDD59694B18BC1B9",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/35"
-        ],
-        "yuanshen": [
-          "25_35"
-        ]
+        "gm_legacy": ["liyueMitachurl/35"],
+        "yuanshen": ["25_35"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.74493,
-        22.46543
-      ],
+      "coordinates": [-38.74493, 22.46543],
       "id": "0E6DA3DC08B77B5A88678B55FD8DCF6EEE96A894",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/36"
-        ],
-        "yuanshen": [
-          "25_36"
-        ]
+        "gm_legacy": ["liyueMitachurl/36"],
+        "yuanshen": ["25_36"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -38.00625,
-        19.88437
-      ],
+      "coordinates": [-38.00625, 19.88437],
       "id": "131CF3E65955FABB41539B35A884D357644836A7",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/37"
-        ],
-        "yuanshen": [
-          "25_37"
-        ]
+        "gm_legacy": ["liyueMitachurl/37"],
+        "yuanshen": ["25_37"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.35781,
-        16.47031
-      ],
+      "coordinates": [-37.35781, 16.47031],
       "id": "3DB893C39BAFA27E3EC507D6670BC78F12011521",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/39"
-        ],
-        "yuanshen": [
-          "25_39"
-        ]
+        "gm_legacy": ["liyueMitachurl/39"],
+        "yuanshen": ["25_39"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.27971,
-        14.16172
-      ],
+      "coordinates": [-39.27971, 14.16172],
       "id": "FCB2A9F5942ADB707C2EF9F558046B4831A741AA",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/40"
-        ],
-        "yuanshen": [
-          "25_40"
-        ]
+        "gm_legacy": ["liyueMitachurl/40"],
+        "yuanshen": ["25_40"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.7875,
-        16.29844
-      ],
+      "coordinates": [-36.7875, 16.29844],
       "id": "6B02C1A3819D6BE54D7F3EF037D2D2C37A835891",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/41"
-        ],
-        "yuanshen": [
-          "25_41"
-        ]
+        "gm_legacy": ["liyueMitachurl/41"],
+        "yuanshen": ["25_41"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.61563,
-        16.07969
-      ],
+      "coordinates": [-36.61563, 16.07969],
       "id": "9EBB4731BCDCFC6AE1638DA0E0B440AD792605F0",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/42"
-        ],
-        "yuanshen": [
-          "25_42"
-        ]
+        "gm_legacy": ["liyueMitachurl/42"],
+        "yuanshen": ["25_42"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.44375,
-        15.85313
-      ],
+      "coordinates": [-36.44375, 15.85313],
       "id": "FE13665C4034EAFD2A9EFEA340A1ACF21A29D002",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/43"
-        ],
-        "yuanshen": [
-          "25_43"
-        ]
+        "gm_legacy": ["liyueMitachurl/43"],
+        "yuanshen": ["25_43"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.225,
-        25.85313
-      ],
+      "coordinates": [-37.225, 25.85313],
       "id": "E2DC7E12A47ABB3D5EE51DCF20EE582EE6CF38C6",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/44"
-        ],
-        "yuanshen": [
-          "25_44"
-        ]
+        "gm_legacy": ["liyueMitachurl/44"],
+        "yuanshen": ["25_44"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.19375,
-        25.025
-      ],
+      "coordinates": [-36.19375, 25.025],
       "id": "40560DD5CA1DDDC696669668415B529E353535BD",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/46"
-        ],
-        "yuanshen": [
-          "25_46"
-        ]
+        "gm_legacy": ["liyueMitachurl/46"],
+        "yuanshen": ["25_46"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -35.88125,
-        27.09532
-      ],
+      "coordinates": [-35.88125, 27.09532],
       "id": "C3DE02901E63B176F4BCF13A24672B5A6A63CC0E",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/47"
-        ],
-        "yuanshen": [
-          "25_47"
-        ]
+        "gm_legacy": ["liyueMitachurl/47"],
+        "yuanshen": ["25_47"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.99843,
-        24.48594
-      ],
+      "coordinates": [-33.99843, 24.48594],
       "id": "9A00E996523B55BEF3936FB92BB686E991F88C6C",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/48"
-        ],
-        "yuanshen": [
-          "25_48"
-        ]
+        "gm_legacy": ["liyueMitachurl/48"],
+        "yuanshen": ["25_48"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -32.60392,
-        22.50158
-      ],
+      "coordinates": [-32.60392, 22.50158],
       "id": "C3B27B000239C8186D41DF828887D8800FE92364",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/50"
-        ],
-        "yuanshen": [
-          "25_50"
-        ]
+        "gm_legacy": ["liyueMitachurl/50"],
+        "yuanshen": ["25_50"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -31.08436,
-        21.31796
-      ],
+      "coordinates": [-31.08436, 21.31796],
       "id": "71E82DBE22222593897D4BDC0C0757F96E085658",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/51"
-        ],
-        "yuanshen": [
-          "25_51"
-        ]
+        "gm_legacy": ["liyueMitachurl/51"],
+        "yuanshen": ["25_51"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -35.83438,
-        23.68125
-      ],
+      "coordinates": [-35.83438, 23.68125],
       "id": "4DCBAC2D7FAB10074697687189C8D03059D0C786",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/53"
-        ],
-        "yuanshen": [
-          "25_53"
-        ]
+        "gm_legacy": ["liyueMitachurl/53"],
+        "yuanshen": ["25_53"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.95938,
-        29.04844
-      ],
+      "coordinates": [-37.95938, 29.04844],
       "id": "5DA0ECDE3E57530876CE785819DFABD71923B7CE",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/54"
-        ],
-        "yuanshen": [
-          "25_54"
-        ]
+        "gm_legacy": ["liyueMitachurl/54"],
+        "yuanshen": ["25_54"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -31.80312,
-        30.29062
-      ],
+      "coordinates": [-31.80312, 30.29062],
       "id": "6AB65B7CFDF2DB848F4C364998B570EF86179270",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/55"
-        ],
-        "yuanshen": [
-          "25_55"
-        ]
+        "gm_legacy": ["liyueMitachurl/55"],
+        "yuanshen": ["25_55"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.21719,
-        25.87656
-      ],
+      "coordinates": [-26.21719, 25.87656],
       "id": "17A161D23E4D52A34F12662D54DE4C63E2B58A53",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/56"
-        ],
-        "yuanshen": [
-          "25_56"
-        ]
+        "gm_legacy": ["liyueMitachurl/56"],
+        "yuanshen": ["25_56"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.2875,
-        25.85313
-      ],
+      "coordinates": [-26.2875, 25.85313],
       "id": "FE929E02D3CD948D33FCDF4E9DE26C63B6406B57",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/57"
-        ],
-        "yuanshen": [
-          "25_57"
-        ]
+        "gm_legacy": ["liyueMitachurl/57"],
+        "yuanshen": ["25_57"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -26.26408,
-        25.93516
-      ],
+      "coordinates": [-26.26408, 25.93516],
       "id": "2751EB7227879FC43AE235419BAE48E695BDB4AA",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/58"
-        ],
-        "yuanshen": [
-          "25_58"
-        ]
+        "gm_legacy": ["liyueMitachurl/58"],
+        "yuanshen": ["25_58"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -33.17031,
-        33.49375
-      ],
+      "coordinates": [-33.17031, 33.49375],
       "id": "484B91000A44058E3B289A1A298CAE372B1572ED",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/59"
-        ],
-        "yuanshen": [
-          "25_59"
-        ]
+        "gm_legacy": ["liyueMitachurl/59"],
+        "yuanshen": ["25_59"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -34.48281,
-        34.4
-      ],
+      "coordinates": [-34.48281, 34.4],
       "id": "8D36777D33D250A65D3586A6E4E910A4BBB807BF",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/60"
-        ],
-        "yuanshen": [
-          "25_60"
-        ]
+        "gm_legacy": ["liyueMitachurl/60"],
+        "yuanshen": ["25_60"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.00625,
-        28.49375
-      ],
+      "coordinates": [-30.00625, 28.49375],
       "id": "DD9313EAF4E6FC00D7037F701ED6AF7CBDDE7B21",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/61"
-        ],
-        "yuanshen": [
-          "25_61"
-        ]
+        "gm_legacy": ["liyueMitachurl/61"],
+        "yuanshen": ["25_61"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -47.14688,
-        19.48985
-      ],
+      "coordinates": [-47.14688, 19.48985],
       "id": "48E7896DF54790CA64D35380FCFD319222BF25B4",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/62"
-        ],
-        "yuanshen": [
-          "25_62"
-        ]
+        "gm_legacy": ["liyueMitachurl/62"],
+        "yuanshen": ["25_62"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -36.0161,
-        37.03982
-      ],
+      "coordinates": [-36.0161, 37.03982],
       "id": "5F1E227A99B5101361031DA413AD9D46B50975D0",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/63"
-        ],
-        "yuanshen": [
-          "25_63"
-        ]
+        "gm_legacy": ["liyueMitachurl/63"],
+        "yuanshen": ["25_63"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.6297,
-        42.2347
-      ],
+      "coordinates": [-44.6297, 42.2347],
       "id": "8EBED874D459A12C9187975E0BCDC89DFB3D8121",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/64"
-        ],
-        "yuanshen": [
-          "25_64"
-        ]
+        "gm_legacy": ["liyueMitachurl/64"],
+        "yuanshen": ["25_64"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -44.14928,
-        41.58267
-      ],
+      "coordinates": [-44.14928, 41.58267],
       "id": "60E44B9641DD0CB1732E319326579A7C5964502F",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/65"
-        ],
-        "yuanshen": [
-          "25_65"
-        ]
+        "gm_legacy": ["liyueMitachurl/65"],
+        "yuanshen": ["25_65"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -30.41446,
-        18.3601
-      ],
+      "coordinates": [-30.41446, 18.3601],
       "id": "DC1FEED1A04F6B14DC84E5F266AC6F2911DD923A",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/66"
-        ],
-        "yuanshen": [
-          "25_66"
-        ]
+        "gm_legacy": ["liyueMitachurl/66"],
+        "yuanshen": ["25_66"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -37.56787,
-        19.7818
-      ],
+      "coordinates": [-37.56787, 19.7818],
       "id": "D0A7012C14763F37A2F72D8FC458E419ADE290F9",
       "importIds": {
-        "gm_legacy": [
-          "liyueMitachurl/67"
-        ],
-        "yuanshen": [
-          "25_67"
-        ]
+        "gm_legacy": ["liyueMitachurl/67"],
+        "yuanshen": ["25_67"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.95938,
-        18.57187
-      ],
+      "coordinates": [-49.95938, 18.57187],
       "id": "CE8229937B6ECA3FE40626510FB6427CFC4B0591",
       "importIds": {
-        "yuanshen": [
-          "25_68"
-        ]
+        "yuanshen": ["25_68"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -49.49063,
-        18.79063
-      ],
+      "coordinates": [-49.49063, 18.79063],
       "id": "33FC3222ACA9CF320CA2CC193AC0DE25BC520A06",
       "importIds": {
-        "yuanshen": [
-          "25_69",
-          "25_70"
-        ]
+        "yuanshen": ["25_69", "25_70"]
       },
       "popupAttribution": "Yuanshen.site"
     },
     {
-      "coordinates": [
-        -39.76406,
-        23.14218
-      ],
+      "coordinates": [-39.76406, 23.14218],
       "id": "EEE0B6C685E683E34FF795DC9EB066758360E087",
       "importIds": {
-        "yuanshen": [
-          "25_71"
-        ]
+        "yuanshen": ["25_71"]
       },
       "popupAttribution": "Yuanshen.site"
     }

@@ -1,5 +1,6 @@
-import { attemptGoogleSignOut, attemptGoogleSignIn, loadGoogleAPI } from './auth';
-import { getFileContents, createOrUpdateFile, handleDriveError, listFiles } from './drive';
+/* eslint-disable no-restricted-imports */
+import { attemptGoogleSignOut, attemptGoogleSignIn, loadGoogleAPI } from './Auth';
+import { getFileContents, createOrUpdateFile, handleDriveError } from './Drive';
 
 export {
   attemptGoogleSignOut,
@@ -7,6 +8,5 @@ export {
   loadGoogleAPI,
   getFileContents,
   createOrUpdateFile,
-  listFiles,
   handleDriveError,
 };

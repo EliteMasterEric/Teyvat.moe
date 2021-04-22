@@ -1,26 +1,26 @@
 import { divIcon as LeafletDivIcon, icon as LeafletIcon } from 'leaflet';
 import _ from 'lodash';
 
-import { BLANK_IMAGE, getNextImageUrl } from 'src/components/interface/Image';
+import { getNextImageUrl } from 'src/components/interface/Image';
 
 export const createClusterIcon = ({
   key,
   marker = false,
   clusterIcon = '',
-  ext = 'png',
+  extension = 'png',
 }: {
   key: string;
   marker?: boolean;
   clusterIcon?: string;
-  ext?: string;
+  extension?: string;
 }): any => {
   if (marker) {
-    return ext != 'png'
-      ? `/images/icons/filter/${key}.${ext}`
+    return extension != 'png'
+      ? `/images/icons/filter/${key}.${extension}`
       : getNextImageUrl(`/images/icons/filter/${key}.png`, 24, 24);
   } else {
-    return ext != 'png'
-      ? `/images/icons/filter/${clusterIcon}.${ext}`
+    return extension != 'png'
+      ? `/images/icons/filter/${clusterIcon}.${extension}`
       : getNextImageUrl(`/images/icons/filter/${clusterIcon}.png`, 24, 24);
   }
 };
@@ -29,7 +29,7 @@ export const createMapIcon = ({
   key,
   marker = false,
   done = false,
-  ext = 'png',
+  ext: extension = 'png',
   ...options
 }: {
   key: string;
@@ -40,8 +40,8 @@ export const createMapIcon = ({
   if (marker) {
     // Use the marker image.
     const iconUrl =
-      ext != 'png'
-        ? `/images/icons/filter/${key}.${ext}`
+      extension != 'png'
+        ? `/images/icons/filter/${key}.${extension}`
         : getNextImageUrl(`/images/icons/filter/${key}.png`, 24, 24);
 
     // This part is a little complex.
@@ -65,7 +65,7 @@ export const createMapIcon = ({
   }
 
   // Else, don't use the marker image.
-  const iconUrl = `/images/icons/map/${key}.${ext}`;
+  const iconUrl = `/images/icons/map/${key}.${extension}`;
 
   return LeafletIcon({
     className: `map-marker-${key}`,

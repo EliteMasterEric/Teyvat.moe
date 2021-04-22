@@ -1,6 +1,7 @@
-import { useRef, useEffect, FunctionComponent, MouseEventHandler, PropsWithChildren } from 'react';
+import { FunctionComponent, PropsWithChildren } from 'react';
+import { Empty } from 'src/components/Types';
 
-type ContextMenuHandlerBaseProps = {};
+type ContextMenuHandlerBaseProps = Empty;
 type ContextMenuHandlerProps = PropsWithChildren<ContextMenuHandlerBaseProps>;
 
 /**
@@ -9,10 +10,12 @@ type ContextMenuHandlerProps = PropsWithChildren<ContextMenuHandlerBaseProps>;
  * @returns
  */
 const ContextMenuHandler: FunctionComponent<ContextMenuHandlerProps> = ({ children }) => {
-  const onContextMenu: MouseEventHandler<HTMLDivElement> = (event) => {};
-
   return (
-    <div onContextMenu={onContextMenu}>
+    <div
+      onContextMenu={(_event) => {
+        console.debug('Opened context menu.');
+      }}
+    >
       {/*  */}
       {children}
     </div>

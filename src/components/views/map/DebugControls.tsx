@@ -12,10 +12,8 @@ import { useMapEvents } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 import { t } from 'src/components/i18n/Localization';
 import { InputTextField } from 'src/components/interface/Input';
-
-import { AppDispatch } from 'src/components/redux';
-import { selectEditorDebugEnabled } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectEditorDebugEnabled } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import MapCustomControl from 'src/components/views/map/MapCustomControl';
 import { navigateToMarkerByID } from 'src/components/views/PermalinkHandler';
@@ -53,13 +51,8 @@ const useStyles = makeStyles((_theme) => ({
 const mapStateToProps = (state: AppState) => ({
   displayed: selectEditorDebugEnabled(state),
 });
-const mapDispatchToProps = (_dispatch: AppDispatch) => ({});
 type DebugControlsStateProps = ReturnType<typeof mapStateToProps>;
-type DebugControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<DebugControlsStateProps, DebugControlsDispatchProps, Empty, AppState>(
-  mapStateToProps,
-  mapDispatchToProps
-);
+const connector = connect<DebugControlsStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type DebugControlsProps = ConnectedProps<typeof connector>;
 
@@ -74,12 +67,6 @@ const _DebugControls: FunctionComponent<DebugControlsProps> = ({ displayed }) =>
     },
   });
 
-  const onNavigateToMarkerByID = (id: string) => {
-    if (id === '' || id == null) return;
-
-    navigateToMarkerByID(id);
-  };
-
   return (
     <MapCustomControl
       position="bottomleft"
@@ -91,7 +78,14 @@ const _DebugControls: FunctionComponent<DebugControlsProps> = ({ displayed }) =>
           <ExploreIcon className={classes.positionIcon} />
           {mousePos.lat.toFixed(5)} X / {mousePos.lng.toFixed(5)} Y
         </Typography>
-        <InputTextField label={t('navigate-to-marker-by-id')} onChange={onNavigateToMarkerByID} />
+        <InputTextField
+          label={t('navigate-to-marker-by-id')}
+          onChange={(id: string) => {
+            if (id === '' || id == null) return;
+
+            navigateToMarkerByID(id);
+          }}
+        />
       </Box>
     </MapCustomControl>
   );

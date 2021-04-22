@@ -16,9 +16,9 @@ import { AppDispatch } from 'src/components/redux';
 import {
   selectIsFeatureDisplayed,
   toggleFeatureDisplayed,
-} from 'src/components/redux/slices/displayed';
-import { selectOverrideLang } from 'src/components/redux/slices/options';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Displayed';
+import { selectOverrideLang } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
 
 interface StyleProps {
   bgImage: string;

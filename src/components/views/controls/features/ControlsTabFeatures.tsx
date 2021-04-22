@@ -2,6 +2,7 @@
  * Provides the interface for the Features tab of the Map controls.
  */
 
+import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
@@ -11,8 +12,8 @@ import {
   selectIsTabDisplayed,
   selectMapCategory,
   selectMapRegion,
-} from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+} from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import ControlsFeatureButton from 'src/components/views/controls/features/ControlsFeatureButton';
 
@@ -21,15 +22,8 @@ const mapStateToProps = (state: AppState) => ({
   currentCategory: selectMapCategory(state),
   currentRegion: selectMapRegion(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsTabFeaturesStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabFeaturesDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  ControlsTabFeaturesStateProps,
-  ControlsTabFeaturesDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<ControlsTabFeaturesStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type ControlsTabFeaturesProps = ConnectedProps<typeof connector>;
 
@@ -38,10 +32,9 @@ const _ControlsTabFeatures: FunctionComponent<ControlsTabFeaturesProps> = ({
   currentCategory,
   displayed,
 }) => {
-  console.log(displayed);
   return (
     <BorderBox displayed={displayed} overflow="hidden auto">
-      {sortFeaturesByName(getFeatureKeysByFilter(currentRegion, currentCategory)).map((key) => (
+      {_.map(sortFeaturesByName(getFeatureKeysByFilter(currentRegion, currentCategory)), (key) => (
         <ControlsFeatureButton key={key} featureKey={key} />
       ))}
     </BorderBox>

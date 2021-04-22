@@ -1,14 +1,14 @@
 import _ from 'lodash';
 
+import { buildImportMapping } from './ExternalImportDictionary';
 import { MSFImportSite, MSFMarkerKey } from 'src/components/data/Element';
 import { f, t } from 'src/components/i18n/Localization';
-import { buildImportMapping } from 'src/components/preferences/ExternalImportDictionary';
 import {
   displayImportError,
   markMarkersCompleted,
   sendNotification,
 } from 'src/components/redux/dispatch';
-import { filterNotEmpty, isValidJSON } from 'src/components/util';
+import { isValidJSON } from 'src/components/util';
 
 /**
  * Import marker completion data from another site.
@@ -28,7 +28,7 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
     }
 
     const fullData = JSON.parse(dataString);
-    if (!Array.isArray(fullData)) {
+    if (!_.isArray(fullData)) {
       displayImportError(t('message-import-error-malformed-json'));
       return false;
     }
@@ -40,9 +40,9 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
 
     // Map each externalsite entry to a GenshinMap entry.
     const fullDataMapped = _.flatten(
-      fullData
-        .map((entry: any) => {
-          if (typeof entry !== 'string') {
+      _.filter(
+        _.map(fullData, (entry: any) => {
+          if (_.isString(entry)) {
             return '';
           }
           if (entry in dictionary) {
@@ -51,10 +51,11 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
 
           missingEntries.push(entry);
           return '';
-        })
-        .filter((entry: MSFMarkerKey[] | '' | undefined): entry is MSFMarkerKey[] => {
-          return entry != '' && filterNotEmpty(entry);
-        })
+        }),
+        (entry: MSFMarkerKey[] | '' | undefined): entry is MSFMarkerKey[] => {
+          return entry != '' && !_.isNil(entry);
+        }
+      )
     );
 
     const successfulEntries = _.size(fullDataMapped);
@@ -79,8 +80,8 @@ export const importMarkerDataFromSite = (dataString: string, importKey: MSFImpor
     // Else, complete success.
     sendNotification(f('message-import-success', { count: totalEntries.toString() }));
     return true;
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
     displayImportError(t('message-import-error-generic'));
     return false;
   }

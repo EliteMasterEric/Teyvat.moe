@@ -14,6 +14,7 @@ import {
   TextFieldProps,
   SliderTypeMap,
 } from '@material-ui/core';
+import _ from 'lodash';
 import React, { FunctionComponent, ReactElement } from 'react';
 
 import { useDebouncedState } from 'src/components/util';
@@ -98,7 +99,7 @@ export const InputSlider: FunctionComponent<InputSliderProps> = ({
     _event,
     newValue: number | number[]
   ) => {
-    if (Array.isArray(newValue)) {
+    if (_.isArray(newValue)) {
       const newInnerValue = newValue[0];
       if (newInnerValue != null) setCurrentValue(newInnerValue);
     } else {

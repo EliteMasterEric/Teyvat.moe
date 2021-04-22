@@ -12,9 +12,7 @@ import { LExtendedMarker } from 'src/components/views/map/layers/ExtendedMarker'
 
 export type MapClusterFunction = (zoom: number) => number;
 
-export const offClusterFunction: MapClusterFunction = (_zoom) => {
-  return 0; // Don't cluster.
-};
+export const offClusterFunction: MapClusterFunction = _.constant(0);
 
 export const variableClusterFunction: MapClusterFunction = (zoom) => {
   // Use variable clustering based on zoom level.
@@ -36,17 +34,13 @@ export const variableClusterFunction: MapClusterFunction = (zoom) => {
   }
 };
 
-export const onClusterFunction: MapClusterFunction = (_zoom) => {
-  return 24;
-};
+export const onClusterFunction: MapClusterFunction = _.constant(24);
 
 const createClusterIcon = (cluster: leaflet.MarkerCluster): L.DivIcon => {
   const childMarkers = cluster.getAllChildMarkers() as LExtendedMarker[];
   const childCount = childMarkers.length;
-  // For each cluster child element, check if completed = true; if so, add to the count.
-  const childMarkersCompleted = childMarkers.filter((marker) => {
-    return marker.completed;
-  });
+  // Filter by the 'completed' property of each marker.
+  const childMarkersCompleted = _.filter(childMarkers, 'completed');
   const childCompletedCount = childMarkersCompleted.length;
   const iconUrl = childMarkers?.[0]?.clusterIconUrl ?? '';
 
@@ -81,11 +75,11 @@ interface MapClusterMarkerProps {
 }
 
 const MapClusterMarker = forwardRef<leaflet.MarkerClusterGroup, MapClusterMarkerProps>(
-  ({ children = null, clusterFunction = offClusterFunction }, ref) => {
+  ({ children = null, clusterFunction = offClusterFunction }, reference) => {
     const map = useMap();
 
     const generateSpiderPoints = (
-      childMarkerCount: number,
+      _childMarkerCount: number,
       _centerPoint: leaflet.Point,
       childMarkers: leaflet.Marker[]
     ): leaflet.Point[] => {
@@ -93,11 +87,11 @@ const MapClusterMarker = forwardRef<leaflet.MarkerClusterGroup, MapClusterMarker
 
       result.length = childMarkers.length;
 
-      for (let i = childMarkers.length - 1; i >= 0; i -= 1) {
-        const childMarker = childMarkers[i];
+      for (let index = childMarkers.length - 1; index >= 0; index -= 1) {
+        const childMarker = childMarkers[index];
         if (childMarker != null) {
           const childCenter = map.latLngToLayerPoint(childMarker.getLatLng());
-          result[i] = leaflet.point(childCenter.x, childCenter.y);
+          result[index] = leaflet.point(childCenter.x, childCenter.y);
         }
       }
 
@@ -106,7 +100,7 @@ const MapClusterMarker = forwardRef<leaflet.MarkerClusterGroup, MapClusterMarker
 
     return (
       <MarkerClusterGroup
-        ref={ref}
+        ref={reference}
         disableClusteringAtZoom={8}
         iconCreateFunction={createClusterIcon}
         maxClusterRadius={clusterFunction}

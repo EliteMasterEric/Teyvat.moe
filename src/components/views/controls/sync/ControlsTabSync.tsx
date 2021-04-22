@@ -7,8 +7,8 @@ import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
+import ControlsSyncUploadGoogle from './ControlsSyncUploadGoogle';
 import { t } from 'src/components/i18n/Localization';
-import ControlsSyncAuthGoogle from 'src/components/views/controls/sync/ControlsSyncAuthGoogle';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { exportDataJSON } from 'src/components/preferences/DataExport';
@@ -16,19 +16,19 @@ import { parseDataFromString } from 'src/components/preferences/DataImport';
 import { importMarkerDataFromSite } from 'src/components/preferences/ExternalImport';
 import { GM_007 } from 'src/components/preferences/PreferencesSchema';
 import { AppDispatch } from 'src/components/redux';
-import { clearPreferences, setPreferences } from 'src/components/redux/actions';
-import { setImportError } from 'src/components/redux/slices/error';
-import { selectIsTabDisplayed } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { clearPreferences, setPreferences } from 'src/components/redux/Actions';
+import { setImportError } from 'src/components/redux/slices/Error';
+import { selectIsTabDisplayed } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import { isValidJSON } from 'src/components/util';
+import ControlsSyncAuthGoogle from 'src/components/views/controls/sync/ControlsSyncAuthGoogle';
 import ExportDataPopup from 'src/components/views/dialogs/ExportDataPopup';
 import ImportDataPopup from 'src/components/views/dialogs/ImportDataPopup';
 
 import Bookmarklets from 'src/data/core/bookmarklets.json';
-import ControlsSyncUploadGoogle from './ControlsSyncUploadGoogle';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((_theme) => ({
   label: {
     flexGrow: 1,
   },
@@ -59,8 +59,8 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
         dispatch(setPreferences(importedData));
         return true;
       }
-    } catch (err) {
-      switch (err.name) {
+    } catch (error) {
+      switch (error.name) {
         case 'InvalidCharacterError':
           if (isValidJSON(data)) {
             dispatch(setImportError(t('message-import-error-malformed-json')));
@@ -69,8 +69,8 @@ const mapDispatchToProps = (dispatch: AppDispatch) => ({
           }
           break;
         default:
-          console.error(err);
-          console.error(err.name);
+          console.error(error);
+          console.error(error.name);
           dispatch(setImportError(t('message-import-error-generic')));
       }
       return false;
@@ -95,22 +95,6 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
 }) => {
   const classes = useStyles();
 
-  const importDataYuanshen = (dataString: string) => {
-    return importMarkerDataFromSite(dataString, 'yuanshen');
-  };
-
-  const importDataMapGenie = (dataString: string) => {
-    return importMarkerDataFromSite(dataString, 'mapgenie');
-  };
-
-  const importDataAppSample = (dataString: string) => {
-    return importMarkerDataFromSite(dataString, 'appsample');
-  };
-
-  const importDataGenshinMap = (dataString: string) => {
-    return importPreferences(dataString);
-  };
-
   return (
     <TabView grow displayed={displayed}>
       <BorderBox grow={false} overflow="show" direction="column">
@@ -132,7 +116,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={importDataYuanshen}
+            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'yuanshen')}
           />
         </Box>
         <Box className={classes.optionContainer}>
@@ -147,7 +131,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={importDataAppSample}
+            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'appsample')}
           />
         </Box>
         <Box className={classes.optionContainer} style={{ display: 'none' }}>
@@ -162,7 +146,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={importDataMapGenie}
+            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'mapgenie')}
           />
         </Box>
       </BorderBox>
@@ -177,7 +161,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('import')}
               </Button>
             }
-            onConfirm={importDataGenshinMap}
+            onConfirm={(dataString: string) => importPreferences(dataString)}
           />
         </Box>
         <Box className={classes.optionContainer}>

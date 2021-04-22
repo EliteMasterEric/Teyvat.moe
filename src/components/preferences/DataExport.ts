@@ -2,13 +2,9 @@
  * Handles the exporting of current site data as base64-encoded JSON, for later importing.
  */
 
+import { GenshinMapPreferencesLatest, PREFERENCES_VERSION } from './PreferencesSchema';
+import { PREFERENCES_STORAGE_KEY } from './ReduxStore';
 import localStorage from 'src/components/preferences/local-storage';
-
-import {
-  GenshinMapPreferencesLatest,
-  PREFERENCES_VERSION,
-} from 'src/components/preferences/PreferencesSchema';
-import { PREFERENCES_STORAGE_KEY } from 'src/components/preferences/ReduxStore';
 import { generateJSON, toBase64 } from 'src/components/util';
 
 export const PREFERENCES_PREFIX = `${PREFERENCES_VERSION}~`;

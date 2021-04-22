@@ -2,25 +2,30 @@
  * Handles listeners for local-storage.
  */
 
-const listeners: { [key: string]: ListenerFn[] } = {};
+import _ from 'lodash';
+
+const listeners: { [key: string]: ListenerFunction[] } = {};
 const listening = false;
 
-const change = (e: StorageEvent) => {
-  if (!e) {
-    // eslint-disable-next-line no-param-reassign
-    if (global.event != null) {
-      e = global.event as StorageEvent;
-    }
+const change = (event: StorageEvent) => {
+  if (
+    !event && // eslint-disable-next-line no-param-reassign
+    global.event != null
+  ) {
+    event = global.event as StorageEvent;
   }
-  if (e.key == null) return;
+  if (event.key == null) return;
 
-  const all = listeners[e.key];
-  const fire = (listener: ListenerFn) => {
-    listener(JSON.parse(e?.newValue ?? ''), JSON.parse(e?.oldValue ?? ''), e?.url ?? '');
-  };
+  const all = listeners[event.key];
   if (all) {
-    // Fire each listener.
-    all.forEach(fire);
+    // Fire each listener function.
+    _.forEach(all, (listener) => {
+      listener(
+        JSON.parse(event?.newValue ?? ''),
+        JSON.parse(event?.oldValue ?? ''),
+        event?.url ?? ''
+      );
+    });
   }
 };
 
@@ -40,23 +45,23 @@ function listen() {
  * @param {*} key The local storage key.
  * @param {*} fn A function that takes (newData, oldData, url)
  */
-type ListenerFn = (newData: any, oldData: any, url: string) => void;
-export const on = (key: string, fn: ListenerFn): void => {
+type ListenerFunction = (newData: any, oldData: any, url: string) => void;
+export const on = (key: string, function_: ListenerFunction): void => {
   const ls = listeners[key];
   if (ls != null) {
-    listeners[key] = [...ls, fn];
+    listeners[key] = [...ls, function_];
   } else {
-    listeners[key] = [fn];
+    listeners[key] = [function_];
   }
   if (listening === false) {
     listen();
   }
 };
 
-export const off = (key: string, fn: ListenerFn): void => {
+export const off = (key: string, function_: ListenerFunction): void => {
   const ns = listeners[key];
   if (ns != null && ns.length > 1) {
-    ns.splice(ns.indexOf(fn), 1);
+    ns.splice(ns.indexOf(function_), 1);
   } else {
     listeners[key] = [];
   }

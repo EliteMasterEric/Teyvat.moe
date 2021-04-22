@@ -4,15 +4,16 @@
 
 // Importing these libraries changes the behavior of leaflet to include new functions.
 import 'leaflet-textpath';
-import { LayerGroup as LeafletLayerGroup } from 'leaflet';
-import React, { FunctionComponent, useEffect, useRef } from 'react';
-import { LayerGroup, useMap } from 'react-leaflet';
+import _ from 'lodash';
+import React, { FunctionComponent } from 'react';
+import { LayerGroup } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 import { MSFRouteGroupExtended, MSFRouteGroupKey } from 'src/components/data/Element';
-import { selectIsRouteGroupDisplayed } from 'src/components/redux/slices/displayed';
-import { selectHideRoutesInEditor } from 'src/components/redux/slices/options';
-import { selectEditorEnabled } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectIsRouteGroupDisplayed } from 'src/components/redux/slices/Displayed';
+import { selectEditorEnabled } from 'src/components/redux/slices/Interface';
+import { selectHideRoutesInEditor } from 'src/components/redux/slices/Options';
+import { AppState } from 'src/components/redux/Types';
+import { Empty } from 'src/components/Types';
 import RouteLine from 'src/components/views/map/layers/RouteLine';
 
 interface RouteLayerBaseProps {
@@ -26,28 +27,21 @@ const mapStateToProps = (state: AppState, { routeKey }: RouteLayerBaseProps) => 
   const routeDisplayed = selectIsRouteGroupDisplayed(state, routeKey);
   return { displayed: !(hideRoutesInEditor && editorEnabled) && routeDisplayed };
 };
-const mapDispatchToProps = () => ({});
 type RouteLayerStateProps = ReturnType<typeof mapStateToProps>;
-type RouteLayerDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<
-  RouteLayerStateProps,
-  RouteLayerDispatchProps,
-  RouteLayerBaseProps,
-  AppState
->(mapStateToProps, mapDispatchToProps);
+const connector = connect<RouteLayerStateProps, Empty, RouteLayerBaseProps, AppState>(
+  mapStateToProps
+);
 
 type RouteLayerProps = ConnectedProps<typeof connector> & RouteLayerBaseProps;
 
 const _RouteLayer: FunctionComponent<RouteLayerProps> = ({ routeGroup, displayed }) => {
-  const map = useMap();
-
   if (!displayed) return null;
 
   switch (routeGroup.format) {
     case 2:
       return (
         <LayerGroup>
-          {routeGroup.data.map((route) => {
+          {_.map(routeGroup.data, (route) => {
             return <RouteLine key={route.id} route={route} />;
           })}
         </LayerGroup>

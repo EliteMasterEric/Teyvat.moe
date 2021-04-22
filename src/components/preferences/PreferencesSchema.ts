@@ -1,4 +1,12 @@
 import {
+  EditorMarker,
+  EditorRoute,
+  GM_002_EditorMarker,
+  GM_002_EditorRoute,
+  LegacyEditorMarker,
+  LegacyEditorRoute,
+} from './EditorDataSchema';
+import {
   MSFFeatureKey,
   MSFImportKey,
   MSFMarkerID,
@@ -7,16 +15,8 @@ import {
 } from 'src/components/data/Element';
 import { MapCategoryKey } from 'src/components/data/MapCategories';
 import { MapRegionKey } from 'src/components/data/MapRegions';
-import {
-  EditorMarker,
-  EditorRoute,
-  GM_002_EditorMarker,
-  GM_002_EditorRoute,
-  LegacyEditorMarker,
-  LegacyEditorRoute,
-} from 'src/components/preferences/EditorDataSchema';
-import { Notification } from 'src/components/redux/slices/notify';
-import { LanguageCode } from '../i18n/Localization';
+import { LanguageCode } from 'src/components/i18n/Localization';
+import { Notification } from 'src/components/redux/slices/Notify';
 
 export const PREFERENCES_VERSION = 'GM_007';
 
@@ -112,7 +112,7 @@ export interface GM_007 {
   completed: GM_006['completed'];
   // Optional, used during loading to queue notifications to display,
   // indicating the success of data import.
-  notify: GM_006['notify'];
+  notify?: GM_006['notify'];
   editor: {
     feature: {
       name: string;

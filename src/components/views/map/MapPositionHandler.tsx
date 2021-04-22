@@ -11,19 +11,18 @@ import { useMapEvents } from 'react-leaflet';
 import { connect, ConnectedProps } from 'react-redux';
 import { AppDispatch } from 'src/components/redux';
 
-import { selectMapPosition, setMapPosition } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectMapPosition, setMapPosition } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty, MapPosition } from 'src/components/Types';
 
 const mapStateToProps = (state: AppState) => ({
   mapPosition: selectMapPosition(state),
 });
-const mapDispatchToProps = (dispatch: AppDispatch) => ({
-  setPositionAndZoom: (position: MapPosition['latlng'], zoom: MapPosition['zoom']) =>
-    dispatch(setMapPosition(position, zoom)),
-});
+const mapDispatchToProps = {
+  setMapPosition,
+};
 type MapPositionHandlerStateProps = ReturnType<typeof mapStateToProps>;
-type MapPositionHandlerDispatchProps = ReturnType<typeof mapDispatchToProps>;
+type MapPositionHandlerDispatchProps = typeof mapDispatchToProps;
 const connector = connect<
   MapPositionHandlerStateProps,
   MapPositionHandlerDispatchProps,
@@ -35,7 +34,7 @@ type MapPositionHandlerProps = ConnectedProps<typeof connector>;
 
 const _MapPositionHandler: FunctionComponent<MapPositionHandlerProps> = ({
   mapPosition,
-  setPositionAndZoom,
+  setMapPosition,
 }) => {
   /**
    * Every time the user drags or zooms to a position on the map,
@@ -45,12 +44,12 @@ const _MapPositionHandler: FunctionComponent<MapPositionHandlerProps> = ({
     dragend: () => {
       if (!map) return;
       const position = map.getCenter();
-      setPositionAndZoom({ lat: position.lat, lng: position.lng }, map.getZoom());
+      setMapPosition({ lat: position.lat, lng: position.lng }, map.getZoom());
     },
     zoomend: () => {
       if (!map) return;
       const position = map.getCenter();
-      setPositionAndZoom({ lat: position.lat, lng: position.lng }, map.getZoom());
+      setMapPosition({ lat: position.lat, lng: position.lng }, map.getZoom());
     },
   });
 

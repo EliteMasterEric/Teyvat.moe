@@ -6,7 +6,7 @@
 import _ from 'lodash';
 import LocalizedStrings from 'react-localization';
 
-import { LocalizedString, ValueOf } from 'src/components/Types';
+import { LocalizedString } from 'src/components/Types';
 import { getKeys, importFromContext } from 'src/components/util';
 
 import languageCoreData from 'src/data/i18n/ui/_core.json';
@@ -18,7 +18,7 @@ export const DEFAULT_LOCALE_CODE = 'en';
 export type LanguageCode = keyof typeof languageCoreData;
 export const languageCodeList: LanguageCode[] = getKeys(languageCoreData);
 const distinguishLanguageCode = (input: any): input is LanguageCode =>
-  languageCodeList.includes(input);
+  _.includes(languageCodeList, input);
 
 /**
  * @param source 'en'
@@ -60,7 +60,7 @@ const localizedStrings = new LocalizedStrings(
 
 const appendLanguage = (localizationData: LocalizationData, languageCode: string) => {
   localizedStrings.setContent(
-    Object.assign({}, localizedStrings.getContent(), {
+    _.assign({}, localizedStrings.getContent(), {
       [languageCode]: localizationData,
     })
   );
@@ -112,8 +112,8 @@ export const getLocale = (): string => {
  */
 export const getShortLocale = (): string => {
   const language = getLocale();
-  const idx = language.indexOf('-');
-  const auxLang = idx >= 0 ? language.substring(0, idx) : language;
+  const index = language.indexOf('-');
+  const auxLang = index >= 0 ? language.slice(0, Math.max(0, index)) : language;
   return auxLang;
 };
 

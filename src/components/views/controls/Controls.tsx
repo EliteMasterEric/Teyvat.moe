@@ -11,8 +11,8 @@ import { t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
 import { useSmallScreen } from 'src/components/interface/MediaHooks';
-import { selectOpen } from 'src/components/redux/slices/ui';
-import { AppState } from 'src/components/redux/types';
+import { selectOpen } from 'src/components/redux/slices/Interface';
+import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 import { isDev, SafeHTML } from 'src/components/util';
 import ControlsNavigationSmall from 'src/components/views/controls/ControlsNavigationMobile';
@@ -113,13 +113,8 @@ const useStyles = makeStyles((theme) => ({
 const mapStateToProps = (state: AppState) => ({
   open: selectOpen(state),
 });
-const mapDispatchToProps = () => ({});
 type ControlsStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsDispatchProps = ReturnType<typeof mapDispatchToProps>;
-const connector = connect<ControlsStateProps, ControlsDispatchProps, Empty, AppState>(
-  mapStateToProps,
-  mapDispatchToProps
-);
+const connector = connect<ControlsStateProps, Empty, Empty, AppState>(mapStateToProps);
 
 type ControlsProps = ConnectedProps<typeof connector>;
 
@@ -131,7 +126,7 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
   return (
     <Box className={classes.wrapper}>
       <BorderBox
-        src={getNextImageUrl('/images/controls/control_border.png', 96, 96)}
+        source={getNextImageUrl('/images/controls/control_border.png', 96, 96)}
         className={clsx(
           classes.main,
           small ? classes.mainSmall : null,
