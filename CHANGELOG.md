@@ -1210,5 +1210,6 @@ The long-postponed feature is finally here!
 -   Improved code quality and revamped code style.
     -   Realized that ESLint was crashing, fixed it, subsequently had to fix lots of linting issues.
     -   Added several plugins to standardize code style and reduce code smells.
+    -   Fixed capitalization of several filenames. Had to do this on Linux because Windows sucks.
 -   Fixed several bugs:
     -   Fixed a bug where UI options weren't being loaded properly.
