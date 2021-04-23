@@ -141,7 +141,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
         {f('version-format', { version: getApplicationVersion() })}
       </Typography>
       <ControlsOptionsLanguage />
-      <BorderBox overflow="show">
+      <BorderBox direction="column" overflow="show">
         <Box className={classes.optionContainer}>
           <Typography className={classes.label}>{t('options-editor-enable')}</Typography>
           <Switch
@@ -170,7 +170,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           />
         </Box>
       </BorderBox>
-      <BorderBox overflow="show">
+      <BorderBox direction="column" overflow="show">
         <Box className={classes.optionContainer}>
           <Typography className={classes.label}>{t('options-completed-opacity')}</Typography>
           <InputSlider
@@ -231,7 +231,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           />
         </Box>
       </BorderBox>
-      <BorderBox overflow="show">
+      <BorderBox direction="column" overflow="show">
         <Box className={classes.optionContainer}>
           <Typography className={clsx(classes.label, classes.labelWarning)}>
             {t('options-clear-data')}

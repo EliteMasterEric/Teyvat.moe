@@ -233,5 +233,11 @@ module.exports = {
         'no-restricted-imports': 'off',
       },
     },
+    {
+      files: ['packages/*.js', 'packages/*.ts'],
+      rules: {
+        'unicorn/filename-case': 'off',
+      },
+    },
   ],
 };

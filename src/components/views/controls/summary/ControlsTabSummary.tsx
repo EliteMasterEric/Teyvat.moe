@@ -52,7 +52,7 @@ const _ControlsTabSummary: FunctionComponent<ControlsTabSummaryProps> = ({
   const classes = useStyles();
 
   return (
-    <BorderBox displayed={displayed}>
+    <BorderBox direction="column" displayed={displayed}>
       <Typography className={classes.header}>{t('summary')}</Typography>
       <Typography className={classes.subtitle}>{t('summary-subtitle')}</Typography>
       {mapDataLoaded &&

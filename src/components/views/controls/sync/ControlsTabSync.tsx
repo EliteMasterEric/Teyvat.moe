@@ -116,7 +116,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
         <ControlsSyncGoogle />
       </BorderBox>
       <BorderBox grow={false} overflow="show" direction="column">
-        <Box className={classes.optionContainer}>
+        <div className={classes.optionContainer}>
           <Typography className={classes.label}>{t('migrate-yuanshen')}</Typography>
           <ImportDataPopup
             title={t('migrate-yuanshen')}
@@ -129,8 +129,8 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             }
             onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'yuanshen')}
           />
-        </Box>
-        <Box className={classes.optionContainer}>
+        </div>
+        <div className={classes.optionContainer}>
           <Typography className={classes.label}>{t('migrate-appsample')}</Typography>
           <ImportDataPopup
             title={t('migrate-appsample')}
@@ -144,8 +144,8 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             }
             onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'appsample')}
           />
-        </Box>
-        <Box className={classes.optionContainer} style={{ display: 'none' }}>
+        </div>
+        <div className={classes.optionContainer} style={{ display: 'none' }}>
           <Typography className={classes.label}>{t('migrate-mapgenie')}</Typography>
           <ImportDataPopup
             title={t('migrate-mapgenie')}
@@ -159,9 +159,9 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             }
             onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'mapgenie')}
           />
-        </Box>
+        </div>
       </BorderBox>
-      <BorderBox grow={false} overflow="show">
+      <BorderBox grow={false} overflow="show" direction="column">
         <Box className={classes.optionContainer}>
           <Typography className={classes.label}>{t('import-data')}</Typography>
           <ImportDataPopup

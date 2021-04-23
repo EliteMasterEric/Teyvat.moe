@@ -126,6 +126,7 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
   return (
     <Box className={classes.wrapper}>
       <BorderBox
+        direction="column"
         source={getNextImageUrl('/images/controls/control_border.png', 96, 96)}
         className={clsx(
           classes.main,

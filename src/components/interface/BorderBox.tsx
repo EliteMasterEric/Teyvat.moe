@@ -27,7 +27,7 @@ const useStyles = makeStyles((_theme) => ({
 interface BorderBoxProps extends Partial<Omit<BoxProps, 'flexDirection'>> {
   children: React.ReactNode;
   displayed?: boolean;
-  direction?: 'column' | 'row';
+  direction: 'column' | 'row';
   grow?: boolean;
   wrap?: boolean;
   source?: string;
@@ -41,7 +41,7 @@ interface BorderBoxProps extends Partial<Omit<BoxProps, 'flexDirection'>> {
 const BorderBox: FunctionComponent<BorderBoxProps> = ({
   children,
   displayed = true,
-  direction = 'column',
+  direction,
   grow = true,
   wrap = false,
   source = DEFAULT_IMAGE,
@@ -53,8 +53,7 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   return (
     <Box
       className={clsx(displayed ? classes.boxShow : classes.boxHide, classes.borderBox, className)}
-      style={{ borderImage: `url(${source}) 32 round` }}
-      flexDirection={direction}
+      style={{ borderImage: `url(${source}) 32 round`, flexDirection: direction }}
       flexGrow={grow ? '1' : '0'}
       flexWrap={wrap ? 'wrap' : 'none'}
       {...other}

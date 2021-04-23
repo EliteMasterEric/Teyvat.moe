@@ -33,7 +33,7 @@ const _ControlsTabFeatures: FunctionComponent<ControlsTabFeaturesProps> = ({
   displayed,
 }) => {
   return (
-    <BorderBox displayed={displayed} overflow="hidden auto">
+    <BorderBox direction="column" displayed={displayed} overflow="hidden auto">
       {_.map(sortFeaturesByName(getFeatureKeysByFilter(currentRegion, currentCategory)), (key) => (
         <ControlsFeatureButton key={key} featureKey={key} />
       ))}

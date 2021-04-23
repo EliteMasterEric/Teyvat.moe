@@ -36,7 +36,7 @@ const _ControlsSubtabHelp: FunctionComponent<ControlsSubtabHelpProps> = ({
   const counted = markerCount != null && routeCount != null;
 
   return (
-    <BorderBox displayed={displayed} overflow="hidden auto">
+    <BorderBox direction="column" displayed={displayed} overflow="hidden auto">
       <SafeHTML gutterBottom>
         {counted
           ? f('help-description', {

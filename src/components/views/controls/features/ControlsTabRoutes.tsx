@@ -33,7 +33,7 @@ const _ControlsTabRoutes: FunctionComponent<ControlsTabRoutesProps> = ({
   displayed,
 }) => {
   return (
-    <BorderBox displayed={displayed} overflow="hidden auto">
+    <BorderBox direction="column" displayed={displayed} overflow="hidden auto">
       {_.map(sortRoutesByName(getRouteKeysByFilter(currentRegion, currentCategory)), (key) => (
         <ControlsRouteButton key={key} routeKey={key} />
       ))}

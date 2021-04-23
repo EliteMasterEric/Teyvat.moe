@@ -105,7 +105,7 @@ const _ControlsSubtabChangelog: FunctionComponent<ControlsSubtabChangelogProps> 
   const classes = useStyles();
 
   return (
-    <BorderBox overflow="hidden auto" displayed={displayed}>
+    <BorderBox direction="column" overflow="hidden auto" displayed={displayed}>
       <SafeHTML gutterBottom>
         {f('help-description', {
           markers: (markerCount ?? '#').toString(),

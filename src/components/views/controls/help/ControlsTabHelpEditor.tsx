@@ -22,7 +22,7 @@ type ControlsTabHelpEditorProps = ConnectedProps<typeof connector>;
 
 const _ControlsTabHelpEditor: FunctionComponent<ControlsTabHelpEditorProps> = ({ displayed }) => {
   return (
-    <BorderBox displayed={displayed} overflow="hidden auto">
+    <BorderBox direction="column" displayed={displayed} overflow="hidden auto">
       <SafeHTML>{t('help-editor-content')}</SafeHTML>
     </BorderBox>
   );

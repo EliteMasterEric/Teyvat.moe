@@ -48,7 +48,7 @@ interface ControlsEditorElementsProps {
 
 const ControlsEditorElements = handleError<ControlsEditorElementsProps>(({ elements }) => {
   return (
-    <BorderBox overflow="hidden auto">
+    <BorderBox direction="column" overflow="hidden auto">
       {_.map(elements, (element, _index) => {
         // If the first element is an array, rather than a coordinate,
         // we have a set of multiple points in a route.
