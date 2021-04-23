@@ -4,7 +4,7 @@
  */
 
 import { Menu, MenuItem, IconButton, makeStyles } from '@material-ui/core';
-import { Menu as MenuIcon } from '@material-ui/icons';
+import MenuIcon from '@material-ui/icons/Menu';
 import _ from 'lodash';
 import React, { useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

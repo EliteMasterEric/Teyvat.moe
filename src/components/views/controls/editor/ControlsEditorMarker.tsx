@@ -4,7 +4,8 @@
  */
 
 import { Box, Tooltip, IconButton, makeStyles, Typography } from '@material-ui/core';
-import { Delete as DeleteIcon, GpsFixed as GpsFixedIcon } from '@material-ui/icons';
+import DeleteIcon from '@material-ui/icons/Delete';
+import GpsFixedIcon from '@material-ui/icons/GpsFixed';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

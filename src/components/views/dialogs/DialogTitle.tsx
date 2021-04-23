@@ -8,7 +8,7 @@ import {
   Typography,
   IconButton,
 } from '@material-ui/core';
-import { Close as CloseIcon } from '@material-ui/icons';
+import CloseIcon from '@material-ui/icons/Close';
 import React, { ReactNode, FunctionComponent } from 'react';
 
 const useStyles = makeStyles((theme) => ({

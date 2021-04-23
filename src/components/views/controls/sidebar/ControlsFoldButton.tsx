@@ -3,13 +3,13 @@
  */
 
 import { makeStyles, Box } from '@material-ui/core';
-import { HighlightOff as HighlightOffIcon, FastRewind as FastRewindIcon } from '@material-ui/icons';
+import FastRewindIcon from '@material-ui/icons/FastRewind';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { useSmallScreen } from 'src/components/interface/MediaHooks';
-import { AppDispatch } from 'src/components/redux';
 import { selectOpen, setOpen } from 'src/components/redux/slices/Interface';
 import { AppState } from 'src/components/redux/Types';
 

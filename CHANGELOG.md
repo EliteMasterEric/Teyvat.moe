@@ -1213,3 +1213,5 @@ The long-postponed feature is finally here!
     -   Fixed capitalization of several filenames. Had to do this on Linux because Windows sucks.
 -   Fixed several bugs:
     -   Fixed a bug where UI options weren't being loaded properly.
+    -   Refined bundle naming protocol for easier diagnosis of page size issues.
+    - Performed tree shaking of @material-ui/icons

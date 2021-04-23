@@ -1,5 +1,5 @@
 import { Box, IconButton, Tooltip, Typography, makeStyles } from '@material-ui/core';
-import { Link as LinkIcon } from '@material-ui/icons';
+import LinkIcon from '@material-ui/icons/Link';
 import { LeafletEvent, LeafletEventHandlerFnMap } from 'leaflet';
 import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';

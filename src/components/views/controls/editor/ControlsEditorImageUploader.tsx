@@ -4,7 +4,7 @@
  */
 
 import { Box, IconButton, Tooltip, makeStyles, Typography } from '@material-ui/core';
-import { CloudUpload as CloudUploadIcon } from '@material-ui/icons';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import clsx from 'clsx';
 import React, { useState, useCallback, FunctionComponent } from 'react';
 import { useDropzone } from 'react-dropzone';

@@ -3,12 +3,10 @@
  */
 
 import { makeStyles } from '@material-ui/core';
-import {
-  Cancel as CancelIcon,
-  CheckCircle as CheckCircleIcon,
-  Place as PlaceIcon,
-  Timeline as TimelineIcon,
-} from '@material-ui/icons';
+import CancelIcon from '@material-ui/icons/Cancel';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import PlaceIcon from '@material-ui/icons/Place';
+import TimelineIcon from '@material-ui/icons/Timeline';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';

@@ -3,7 +3,8 @@
  */
 
 import { List, ListItem, Typography, ListItemText, Collapse, makeStyles } from '@material-ui/core';
-import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import _ from 'lodash';
 import React, { FunctionComponent, memo, useEffect, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

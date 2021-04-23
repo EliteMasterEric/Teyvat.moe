@@ -4,8 +4,9 @@ import { PREFERENCES_PERSISTENT_KEYS } from 'src/components/redux';
 import { AppState } from 'src/components/redux/Types';
 
 export const buildPreferencesForStorage = (state: AppState): GenshinMapPreferencesLatest => {
+  const persistentState = _.pick(state, PREFERENCES_PERSISTENT_KEYS);
   return {
-    ..._.pick(state, PREFERENCES_PERSISTENT_KEYS),
+    ...persistentState,
     version: PREFERENCES_VERSION,
     // TODO: Add current unix timestamp here.
   };

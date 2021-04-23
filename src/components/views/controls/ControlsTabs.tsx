@@ -3,25 +3,23 @@
  */
 
 import { makeStyles } from '@material-ui/core';
-import {
-  Create as CreateIcon,
-  LiveHelp as LiveHelpIcon,
-  Place as PlaceIcon,
-  Satellite as SatelliteIcon,
-  Settings as SettingsIcon,
-  Sync as SyncIcon,
-  Timeline as TimelineIcon,
-} from '@material-ui/icons';
+import CreateIcon from '@material-ui/icons/Create';
+import LiveHelpIcon from '@material-ui/icons/LiveHelp';
+import PlaceIcon from '@material-ui/icons/Place';
+import SatelliteIcon from '@material-ui/icons/Satellite';
+import SettingsIcon from '@material-ui/icons/Settings';
+import SyncIcon from '@material-ui/icons/Sync';
+import TimelineIcon from '@material-ui/icons/Timeline';
+
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { t } from 'src/components/i18n/Localization';
 import { TabBar, TabValue } from 'src/components/interface/Tabs';
-import { AppDispatch } from 'src/components/redux';
 import { selectEditorEnabled, selectTab, setTab } from 'src/components/redux/slices/Interface';
 import { selectOverrideLang } from 'src/components/redux/slices/Options';
 import { AppState } from 'src/components/redux/Types';
-import { distinguishUIControlsTab, Empty, UIControlsTab } from 'src/components/Types';
+import { Empty, UIControlsTab } from 'src/components/Types';
 
 const useStyles = makeStyles((_theme) => ({
   tabBar: {

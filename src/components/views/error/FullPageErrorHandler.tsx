@@ -17,7 +17,8 @@ import {
   Collapse,
   IconButton,
 } from '@material-ui/core';
-import { ExpandLess as ExpandLessIcon, ExpandMore as ExpandMoreIcon } from '@material-ui/icons';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import _ from 'lodash';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';

@@ -3,7 +3,7 @@
  */
 
 import { Box, Typography, makeStyles } from '@material-ui/core';
-import { Explore as ExploreIcon } from '@material-ui/icons';
+import ExploreIcon from '@material-ui/icons/Explore';
 import clsx from 'clsx';
 import { LatLngLiteral } from 'leaflet';
 import _ from 'lodash';
