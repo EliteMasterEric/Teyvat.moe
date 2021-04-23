@@ -44,14 +44,14 @@ const baseConfig = {
      * @param {*} pathData
      * @returns {string} The filename to use.
      */
-    config.output.filename = '[name].[contenthash].bundle.js';
+    // config.output.filename = '[name].[contenthash].bundle.js';
 
     /**
      * This option determines the name of non-initial chunk files.
      * @param {*} pathData
      * @returns {string} The filename to use.
      */
-    config.output.chunkFilename = '[name].[contenthash].chunk.js';
+    // config.output.chunkFilename = '[name].[contenthash].chunk.js';
 
     // IDK why but this fixes a bug.
     config.optimization.minimize = false;
