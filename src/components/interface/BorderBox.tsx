@@ -3,7 +3,6 @@
  */
 
 import { Box, BoxProps, makeStyles } from '@material-ui/core';
-import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { getNextImageUrl } from './Image';
 
@@ -45,14 +44,16 @@ const BorderBox: FunctionComponent<BorderBoxProps> = ({
   grow = true,
   wrap = false,
   source = DEFAULT_IMAGE,
-  className = null,
+  className,
   ...other
 }) => {
   const classes = useStyles();
 
   return (
     <Box
-      className={clsx(displayed ? classes.boxShow : classes.boxHide, classes.borderBox, className)}
+      className={`${classes.borderBox} ${
+        displayed ? classes.boxShow : classes.boxHide
+      } ${className}`}
       style={{ borderImage: `url(${source}) 32 round`, flexDirection: direction }}
       flexGrow={grow ? '1' : '0'}
       flexWrap={wrap ? 'wrap' : 'none'}

@@ -25,7 +25,7 @@ const CopyTextArea: FunctionComponent<CopyTextAreaProps> = ({ text, rows = 5, ..
       <Tooltip />
       <TextField
         fullWidth
-        data-tip={t('popup-click-to-copy')}
+        data-tip={t('map-ui:popup-click-to-copy')}
         multiline
         InputProps={{
           readOnly: true,

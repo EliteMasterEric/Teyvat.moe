@@ -14,18 +14,17 @@ import {
   GOOGLE_DISCOVERY_DOCS,
 } from './Constants';
 import { t } from 'src/components/i18n/Localization';
+import { sendNotification } from 'src/components/redux/slices/common/notify/Dispatch';
 import {
-  sendNotification,
-  setGoogleProfile,
-  clearGoogleProfile,
-  initializeGoogle,
-} from 'src/components/redux/dispatch';
+  dispatchDisableGoogleAuth,
+  dispatchSetGoogleAuthProfile,
+  dispatchInitializeGoogleClient,
+} from 'src/components/redux/slices/map/auth/Dispatch';
 import {
-  getGoogleAuthEnabled,
-  getGoogleAuthInitialized,
-  getGoogleAuthProfile,
-} from 'src/components/redux/getter/Auth';
-import { disableGoogleAuth } from 'src/components/redux/slices/Interface';
+  getGoogleEnabled,
+  getGoogleInitialized,
+  getGoogleProfile,
+} from 'src/components/redux/slices/map/auth/Getter';
 
 type GoogleResponseError = {
   error: string;
@@ -54,7 +53,7 @@ export const loadGoogleAPI = (callback?: () => void): void => {
       .then(() => {
         console.debug('[GOOGLE] Client is initialized.');
         // Set the flag in Redux indicating Google is ready.
-        initializeGoogle();
+        dispatchInitializeGoogleClient();
 
         // Attempt to automatically sign in using browser cookies (is it cookies?).
         attemptGoogleAutoSignIn();
@@ -87,7 +86,7 @@ const handleGoogleSignInSuccess = (response: gapi.auth2.GoogleUser) => {
   const basicProfile = response.getBasicProfile();
   // const authResponse = res.getAuthResponse(true);
 
-  setGoogleProfile({
+  dispatchSetGoogleAuthProfile({
     googleId: basicProfile.getId(),
     imageUrl: basicProfile.getImageUrl(),
     email: basicProfile.getEmail(),
@@ -96,14 +95,14 @@ const handleGoogleSignInSuccess = (response: gapi.auth2.GoogleUser) => {
     familyName: basicProfile.getFamilyName(),
   });
 
-  sendNotification(t('google-login-success'));
+  sendNotification(t('map-ui:google-login-success'));
 };
 
 const handleGoogleSignOutSuccess = () => {
   console.debug('[GOOGLE] Client sign out successful.');
   gapi.auth2.getAuthInstance().disconnect();
-  clearGoogleProfile();
-  sendNotification(t('auth-sign-out-success'));
+  dispatchSetGoogleAuthProfile(null);
+  sendNotification(t('map-ui:auth-sign-out-success'));
 };
 
 const handleGoogleFailure = (response: GoogleResponseError) => {
@@ -112,7 +111,7 @@ const handleGoogleFailure = (response: GoogleResponseError) => {
     case 'idpiframe_initialization_failed':
       console.error('[GOOGLE] Origin has not been whitelisted for this client ID.');
       console.error(response.details);
-      sendNotification(t('auth-error-google-origin'));
+      sendNotification(t('map-ui:auth-error-google-origin'));
       break;
     case 'popup_closed_by_user':
       console.warn('[GOOGLE] The user closed the login popup. Safe to ignore.');
@@ -120,16 +119,16 @@ const handleGoogleFailure = (response: GoogleResponseError) => {
     default:
       console.error('[GOOGLE] UNKNOWN FAILURE');
       console.error(response);
-      sendNotification(t('auth-error-google-generic'));
+      sendNotification(t('map-ui:auth-error-google-generic'));
       break;
   }
   // Disable the button so nothing else breaks.
-  disableGoogleAuth();
+  dispatchDisableGoogleAuth();
 };
 
 export const attemptGoogleSignIn = (): void => {
-  if (getGoogleAuthEnabled()) {
-    if (getGoogleAuthInitialized()) {
+  if (getGoogleEnabled()) {
+    if (getGoogleInitialized()) {
       gapi.auth2
         .getAuthInstance()
         // This call will create a new Google login window.
@@ -154,8 +153,8 @@ export const attemptGoogleSignIn = (): void => {
 };
 
 export const attemptGoogleSignOut = (): void => {
-  if (getGoogleAuthProfile() != null) {
-    if (getGoogleAuthInitialized()) {
+  if (getGoogleProfile() != null) {
+    if (getGoogleInitialized()) {
       gapi.auth2
         .getAuthInstance()
         // This call will create a new Google login window.

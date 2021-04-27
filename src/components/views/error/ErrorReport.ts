@@ -1,8 +1,8 @@
 import newGithubIssueUrl from 'new-github-issue-url';
-import { exportDataJSON } from 'src/components/preferences/DataExport';
+import { exportMapDataJSON } from 'src/components/preferences/map/DataExport';
 
 export const generateReportURL = (name: string, message: string, stackTrace: string): string => {
-  const preferencesData = exportDataJSON();
+  const preferencesData = exportMapDataJSON();
 
   return newGithubIssueUrl({
     user: 'genshinmap',

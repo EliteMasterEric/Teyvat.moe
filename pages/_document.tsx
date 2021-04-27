@@ -1,3 +1,4 @@
+import { ServerStyleSheets } from '@material-ui/core/styles';
 import Document, {
   DocumentContext,
   Html,
@@ -6,9 +7,7 @@ import Document, {
   NextScript,
   DocumentInitialProps,
 } from 'next/document';
-import React from 'react';
-import { ServerStyleSheets } from '@material-ui/core/styles';
-
+import React, { Children } from 'react';
 import PageHeaders from 'src/components/views/PageHeaders';
 
 // Resolution order
@@ -34,29 +33,28 @@ import PageHeaders from 'src/components/views/PageHeaders';
 // 4. page.render
 
 class _document extends Document {
-  static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
+  static async getInitialProps(context: DocumentContext): Promise<DocumentInitialProps> {
     // Render app and page and get the context of the page with collected side effects.
     const sheets = new ServerStyleSheets();
-    const originalRenderPage = ctx.renderPage;
+    const originalRenderPage = context.renderPage;
 
-    ctx.renderPage = () =>
+    context.renderPage = () =>
       originalRenderPage({
         enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
       });
 
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(context);
 
     return {
       ...initialProps,
       // Styles fragment is rendered after the app and page rendering finish.
-      styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+      styles: [...Children.toArray(initialProps.styles), sheets.getStyleElement()],
     };
   }
 
   render(): JSX.Element {
     return (
       <Html>
-        {/* Adds necessary headers for caching. */}
         <Head>
           <PageHeaders />
         </Head>

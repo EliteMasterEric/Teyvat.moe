@@ -1,9 +1,9 @@
+import { SSRConfig } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import React, { FunctionComponent } from 'react';
 
-import MapPageComponent from 'src/components/views/MapPage';
-
-const MapPage: FunctionComponent = () => {
-  return <MapPageComponent />;
+const IndexPage: FunctionComponent = () => {
+  return <div>Hello World</div>;
 };
 
-export default MapPage;
+export default IndexPage;

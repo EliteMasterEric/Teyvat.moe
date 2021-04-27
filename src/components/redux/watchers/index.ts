@@ -1,6 +1,6 @@
 import { EnhancedStore } from '@reduxjs/toolkit';
 
-import initialization from './Initialization';
+import initialization from './LoadInitialization';
 import localization from './Localization';
 import localStorage from './LocalStorage';
 

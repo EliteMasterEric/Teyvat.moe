@@ -13,3 +13,60 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = '''
+      default-src 'none';
+      base-uri 'self';
+      block-all-mixed-content;
+      child-src 'none';
+      connect-src 'self' data: https://api.imgur.com;
+      font-src 'self';
+      manifest-src 'self';
+      form-action 'self';
+      frame-src https://www.youtube.com;
+      img-src 'self' data: https://*;
+      media-src 'none';
+      object-src 'self';
+      script-src 'self';
+      style-src 'unsafe-inline' 'self' https://cdnjs.cloudflare.com;'''
+
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    Permissions-Policy = '''
+      clipboard-write 'self';
+      layout-animations 'self';
+
+      accelerometer 'none';
+      ambient-light-sensor 'none';
+      autoplay 'none';
+      battery 'none';
+      camera 'none';
+      display-capture 'none';
+      document-domain 'none';
+      encrypted-media 'none';
+      execution-while-not-rendered 'none';
+      execution-while-out-of-viewport 'none';
+      fullscreen 'none';
+      geolocation 'none';
+      gyroscope 'none';
+      legacy-image-formats 'none';
+      magnetometer 'none';
+      microphone 'none';
+      midi 'none';
+      navigation-override 'none';
+      oversized-images 'none';
+      payment 'none';
+      picture-in-picture 'none';
+      publickey-credentials-get 'none';
+      screen-wake-lock 'none';
+      sync-xhr 'none';
+      usb 'none';
+      vr  'none';
+      wake-lock 'none';
+      web-share 'none';
+      xr-spatial-tracking 'none';'''

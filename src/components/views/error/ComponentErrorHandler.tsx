@@ -107,17 +107,17 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
           </Grid>
           <Grid item xs={9} alignItems="center" style={{ display: 'flex' }}>
             <Typography variant="h1" className={classes.title}>
-              {t('error-handler-flavor')}
+              {t('map-ui:error-handler-flavor')}
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography className={classes.subtitle}>
-              {f('error-handler-component-message', {
+              {f('map-ui:error-handler-component-message', {
                 component: t(componentKey),
               })}
             </Typography>
             <Typography className={classes.instruction}>
-              {t('error-handler-instruction')}
+              {t('map-ui:error-handler-instruction')}
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -145,7 +145,7 @@ const ComponentErrorHandler = (componentKey: string): ErrorHandlerComponent => {
                   color="secondary"
                   variant="contained"
                 >
-                  {t('submit-to-github')}
+                  {t('map-ui:submit-to-github')}
                 </Button>
               </CardActions>
             </Card>

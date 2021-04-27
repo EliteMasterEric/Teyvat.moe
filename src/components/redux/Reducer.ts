@@ -1,19 +1,16 @@
-import completed from 'src/components/redux/slices/Completed';
-import displayed from 'src/components/redux/slices/Displayed';
-import editor from 'src/components/redux/slices/Editor';
-import error from 'src/components/redux/slices/Error';
-import ui from 'src/components/redux/slices/Interface';
-import notify from 'src/components/redux/slices/Notify';
-import options from 'src/components/redux/slices/Options';
+import { AnyAction } from '@reduxjs/toolkit';
+import _ from 'lodash';
+import initialState from './InitialState';
+import { AppState } from './Types';
+import {
+  reducer as commonReducer,
+  selectNamespaceCommon,
+} from 'src/components/redux/slices/common';
+import { reducer as mapReducer, selectNamespaceMap } from 'src/components/redux/slices/map';
 
-const slicesReducer = {
-  completed,
-  displayed,
-  editor,
-  error,
-  notify,
-  options,
-  ui,
-};
+const reducer = (currentState: AppState = initialState, action: AnyAction): AppState => ({
+  common: commonReducer(selectNamespaceCommon(currentState), action),
+  map: mapReducer(selectNamespaceMap(currentState), action),
+});
 
-export default slicesReducer;
+export default reducer;

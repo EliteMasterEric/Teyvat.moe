@@ -45,14 +45,14 @@ export const uploadImage = async <T extends File>(file: T): Promise<string> => {
       return response.data.data.link;
     })
     .catch((error) => {
-      let localizedString = f('image-upload-error-generic', {
+      let localizedString = f('map-ui:image-upload-error-generic', {
         code: error.response.status.error.code ?? '???',
       });
 
       switch (error.response.status) {
         case 400:
           if (error.response.status.error.code === 1003)
-            localizedString = t('image-upload-error-file-invalid-type');
+            localizedString = t('map-ui:image-upload-error-file-invalid-type');
           break;
         default:
           console.error(error.response);

@@ -3,7 +3,8 @@ import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notis
 import React, { useEffect, useState, FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { removeNotification, selectNotifications } from 'src/components/redux/slices/Notify';
+import { removeNotification } from 'src/components/redux/slices/common/notify/Actions';
+import { selectNotifications } from 'src/components/redux/slices/common/notify/Selector';
 import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 

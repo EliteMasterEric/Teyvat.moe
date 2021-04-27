@@ -9,7 +9,10 @@
 // By using this complex type we get a dynamic return type.
 // If a default value is not specified, the function can return null.
 type getRecordType = {
-  <T extends string | number | symbol, R extends unknown>(record: Record<T, R>, key: T): R | null;
+  <T extends string | number | symbol, R extends unknown>(
+    record: Record<T, R> | null,
+    key: T
+  ): R | null;
   <T extends string | number | symbol, R extends unknown>(
     record: Record<T, R>,
     key: T,
@@ -17,7 +20,7 @@ type getRecordType = {
   ): R;
 };
 export const getRecord: getRecordType = <T extends string | number | symbol, R extends unknown>(
-  record: Record<T, R>,
+  record: Record<T, R> | null,
   key: T,
   defaultValue: R | null = null
 ) => {

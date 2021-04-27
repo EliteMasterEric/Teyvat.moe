@@ -2,10 +2,14 @@ import { PayloadAction } from '@reduxjs/toolkit';
 import _ from 'lodash';
 import { Middleware } from 'redux';
 
-import { MapCategoryKey } from 'src/components/data/MapCategories';
-import { getEmptyFeatureCategories } from 'src/components/data/MapFeatures';
-import { getEmptyRouteCategories } from 'src/components/data/MapRoutes';
-import { setMapCategory, setTab } from 'src/components/redux/slices/Interface';
+import { MapCategoryKey } from 'src/components/data/map/MapCategories';
+import { getEmptyFeatureCategories } from 'src/components/data/map/MapFeatures';
+import { getEmptyRouteCategories } from 'src/components/data/map/MapRoutes';
+import { setMapCategory, setTab } from 'src/components/redux/slices/map/interface/Actions';
+import {
+  selectMapCategory,
+  selectMapRegion,
+} from 'src/components/redux/slices/map/interface/Selector';
 import { AppState } from 'src/components/redux/Types';
 import { UIControlsTab } from 'src/components/Types';
 import { getKeys } from 'src/components/util';
@@ -25,9 +29,9 @@ const emptyCategoryMiddleware: Middleware<unknown, AppState> = ({ dispatch, getS
     switch (setTabAction.payload) {
       case 'features':
         const emptyFeatureCategories: Record<MapCategoryKey, boolean> = getEmptyFeatureCategories(
-          currentState.ui.mapRegion
+          selectMapRegion(currentState)
         );
-        if (emptyFeatureCategories[currentState.ui.mapCategory]) {
+        if (emptyFeatureCategories[selectMapCategory(currentState)]) {
           // We are switching to the 'Features' tab, but the current category is empty!!!
           // We need to dispatch an action to switch to the next available category.
 
@@ -44,9 +48,9 @@ const emptyCategoryMiddleware: Middleware<unknown, AppState> = ({ dispatch, getS
         return next(action);
       case 'routes':
         const emptyRouteCategories: Record<MapCategoryKey, boolean> = getEmptyRouteCategories(
-          currentState.ui.mapRegion
+          selectMapRegion(currentState)
         );
-        if (emptyRouteCategories[currentState.ui.mapCategory]) {
+        if (emptyRouteCategories[selectMapCategory(currentState)]) {
           // We are switching to the 'Routes' tab, but the current category is empty!!!
           // We need to dispatch an action to switch to the next available category.
 

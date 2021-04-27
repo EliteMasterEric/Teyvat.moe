@@ -1,25 +1,25 @@
 import { GOOGLE_DRIVE_PREFERENCES_FILENAME } from './Constants';
 import { createOrUpdateFile, handleDriveError } from 'src/components/api/google';
 import { t } from 'src/components/i18n/Localization';
-import { serializeAppState } from 'src/components/preferences/Serialize';
-import { sendNotification } from 'src/components/redux/dispatch';
-import { setGoogleInProgress } from 'src/components/redux/dispatch/Auth';
-import { AppState } from 'src/components/redux/Types';
+import { serializeMapState } from 'src/components/preferences/map/Serialize';
+import { sendNotification } from 'src/components/redux/slices/common/notify/Dispatch';
+import { dispatchSetGoogleClientInProgress } from 'src/components/redux/slices/map/auth/Dispatch';
+import { MapState } from 'src/components/redux/slices/map/Types';
 
-export const savePreferencesToDrive = (state: AppState): void => {
-  setGoogleInProgress(true);
+export const saveMapPreferencesToDrive = (state: MapState): void => {
+  dispatchSetGoogleClientInProgress(true);
 
-  const serializedState = serializeAppState(state);
+  const serializedState = serializeMapState(state);
 
   createOrUpdateFile(GOOGLE_DRIVE_PREFERENCES_FILENAME, serializedState)
     .then((_response) => {
-      sendNotification(t('google-drive-save-success'));
+      sendNotification(t('map-ui:google-drive-save-success'));
     })
     .catch((error) => {
-      sendNotification(t('google-drive-save-failure-generic'));
+      sendNotification(t('map-ui:google-drive-save-failure-generic'));
       handleDriveError(error);
     })
     .finally(() => {
-      setGoogleInProgress(false);
+      dispatchSetGoogleClientInProgress(false);
     });
 };

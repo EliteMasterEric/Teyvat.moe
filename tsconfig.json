@@ -7,9 +7,13 @@
     "declaration": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "jsx": "preserve",
-    "lib": [ "dom", "DOM.Iterable", "esnext" ],
+    "lib": [
+      "dom",
+      "DOM.Iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -21,7 +25,10 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "resolveJsonModule": true,
-    "rootDirs": [ "src/", "pages/" ],
+    "rootDirs": [
+      "src/",
+      "pages/"
+    ],
     "skipLibCheck": true,
     "strict": true,
     "strictBindCallApply": true,
@@ -29,7 +36,11 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "esnext",
-    "typeRoots": [ "./node_modules/@types", "./packages/@types" ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./packages/@types"
+    ],
+    "isolatedModules": true
   },
   "include": [
     "src/**/*.ts",

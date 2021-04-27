@@ -19,9 +19,16 @@ const withTM = require('next-transpile-modules')([
   'react-leaflet-cluster', // Contains global CSS.
 ]);
 
+/**
+ * Include internationalization configuration.
+ */
+const { i18n } = require('./next-i18next.config');
+
 const baseConfig = {
   // Target must be serverless to run on Netlify.
-  target: 'serverless',
+  //target: 'serverless',
+  // Target must be experimental-serverless-trace to work with next-i18next.
+  target: 'experimental-serverless-trace',
 
   // Provides source maps in production.
   // These are used to improve stack traces in error reports.
@@ -58,6 +65,7 @@ const baseConfig = {
 
     return config;
   },
+  i18n,
   images: {
     loader: 'default',
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

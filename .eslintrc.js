@@ -143,13 +143,6 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
 
     /**
-     * Verify the list of the dependencies for Hooks like useEffect and similar.
-     *
-     * @see: https://github.com/facebook/react/blob/1204c789776cb01fbaf3e9f032e7e2ba85a44137/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
-     */
-    'react-hooks/exhaustive-deps': 'error',
-
-    /**
      * Use Pascal file name casing where applicable.
      * Ignores index.js because that can't be renamed.
      *
@@ -161,6 +154,7 @@ module.exports = {
         case: 'pascalCase',
         ignore: [
           /^next\.config\.js$/,
+          /^next-i18next\.config\.js$/,
           /^\.eslintrc\.js$/, // Ignore config files.
           /\.md$/, // Ignore markdown files.
         ],
@@ -188,6 +182,11 @@ module.exports = {
      * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
      */
     'unicorn/no-null': ['off'],
+
+    /**
+     * There are reasons to use the for...of block, but I prefer Lodash's method.
+     */
+    'unicorn/no-array-for-each': ['off'],
 
     /**
      * Use the lodash equivalent method wherever possible.
@@ -222,6 +221,7 @@ module.exports = {
     'global-require': ['off'], // Local requires are used to reference images.
     'react/jsx-props-no-spreading': ['off'], // I don't mind passing spread properties using {...other} in JSX.
     'max-classes-per-file': ['off'], // I don't mind having multiple classes in one file, to keep them organized.
+    'react-hooks/exhaustive-deps': ['off'],
   },
   /**
    * Allow overriding the above rules for specific file path globs.
@@ -231,6 +231,12 @@ module.exports = {
       files: ['*.test.js'],
       rules: {
         'no-restricted-imports': 'off',
+      },
+    },
+    {
+      files: ['pages/*.js', 'pages/*.ts', 'pages/*.tsx'],
+      rules: {
+        'unicorn/filename-case': 'off',
       },
     },
     {

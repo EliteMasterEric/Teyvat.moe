@@ -99,7 +99,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
       <Head>
         {/* DISPLAY */}
         {/* The title of the webpage as displayed in the tab name. */}
-        <title>{t('meta-page-title-full')}</title>
+        <title>{t('map-ui:page-title-map-full')}</title>
       </Head>
       <div className={classes.root}>
         <Container>
@@ -113,13 +113,13 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                 priority
               />
               <Typography variant="h1" className={classes.title}>
-                {t('error-handler-flavor')}
+                {t('error:error-handler-flavor')}
               </Typography>
               <Typography variant="h2" className={classes.subtitle}>
-                {t('error-handler-message')}
+                {t('error:error-handler-message')}
               </Typography>
               <Typography variant="h3" className={classes.instruction}>
-                {t('error-handler-instruction')}
+                {t('error:error-handler-instruction')}
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -147,7 +147,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                     color="secondary"
                     variant="contained"
                   >
-                    {t('submit-to-github')}
+                    {t('map-ui:submit-to-github')}
                   </Button>
                 </CardActions>
               </Card>

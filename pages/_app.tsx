@@ -1,5 +1,6 @@
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { appWithTranslation } from 'next-i18next';
 import { AppProps } from 'next/app';
 import React, { FunctionComponent } from 'react';
 import { Provider as StoreProvider } from 'react-redux';
@@ -10,20 +11,11 @@ import ErrorHandler from 'src/components/views/error/ErrorHandler';
 import FullPageErrorHandler from 'src/components/views/error/FullPageErrorHandler';
 import { NotificationProvider } from 'src/components/views/NotificationProvider';
 
-// Global styles.
-// Already imported by react-leaflet-cluster.
-// import 'leaflet.markercluster/dist/MarkerCluster.css';
-// import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
-
 const _app: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
-  React.useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector('#jss-server-side');
-    if (jssStyles != null && jssStyles.parentElement != null) {
-      console.log('MATERIAL-UI: Remove server-side injected CSS.');
-      jssStyles.parentElement.removeChild(jssStyles);
-    }
-  }, []);
+  // TODO: Remove server-side JSS styles.
+  // Normally you'd call 'useEffect' to call jssStyles.parentElement.removeChild(jssStyles);
+  // However, I was experiencing an unknown bug where the old class names weren't being replaced
+  // with the new ones, so I just got rid of the call so that the old class names would work.
 
   return (
     <>
@@ -51,4 +43,4 @@ const _app: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default _app;
+export default appWithTranslation(_app);

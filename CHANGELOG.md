@@ -1207,6 +1207,7 @@ The long-postponed feature is finally here!
     -   GenshinMap stores your data in a secure application data folder. Only GenshinMap can access this data, and GenshinMap cannot access your personal data outside of this folder. You can clear your data from your Google account by uninstalling the app from your MyDrive.
 
 # 0.13.1-alpha Additional Code Cleanup
+
 -   Improved code quality and revamped code style.
     -   Realized that ESLint was crashing, fixed it, subsequently had to fix lots of linting issues.
     -   Added several plugins to standardize code style and reduce code smells.
@@ -1214,4 +1215,11 @@ The long-postponed feature is finally here!
 -   Fixed several bugs:
     -   Fixed a bug where UI options weren't being loaded properly.
     -   Refined bundle naming protocol for easier diagnosis of page size issues.
-    - Performed tree shaking of @material-ui/icons
+    -   Performed tree shaking of @material-ui/icons
+
+# 0.13.2 Backend Reworks and Performance Improvements
+
+-   Moved map to a /map subpage.
+-   Redid how the Redux state was structured and how preferences are retrieved.
+-   Replaced localization engine with react-i18n for improved performance.
+-   Memoized lots of components to prevent re-renders.

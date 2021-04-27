@@ -1,11 +1,11 @@
 import { GOOGLE_DRIVE_PREFERENCES_FILENAME } from './Constants';
 import { getFileContents, handleDriveError } from 'src/components/api/google/Drive';
-import { migrateData } from 'src/components/preferences/DataImport';
-import { GenshinMapPreferencesLatest } from 'src/components/preferences/PreferencesSchema';
-import { setGoogleInProgress } from 'src/components/redux/dispatch';
+import { migrateMapData } from 'src/components/preferences/map/DataImport';
+import { GenshinMapPreferencesLatest } from 'src/components/preferences/map/PreferencesSchema';
+import { dispatchSetGoogleClientInProgress } from 'src/components/redux/slices/map/auth/Dispatch';
 
-export const loadPreferencesFromDrive = async (): Promise<GenshinMapPreferencesLatest | null> => {
-  setGoogleInProgress(true);
+export const loadMapPreferencesFromDrive = async (): Promise<GenshinMapPreferencesLatest | null> => {
+  dispatchSetGoogleClientInProgress(true);
 
   return getFileContents(GOOGLE_DRIVE_PREFERENCES_FILENAME)
     .then((response) => {
@@ -26,13 +26,13 @@ export const loadPreferencesFromDrive = async (): Promise<GenshinMapPreferencesL
         return null;
       }
 
-      return migrateData(storedData, storedData.version);
+      return migrateMapData(storedData, storedData.version);
     })
     .catch((error) => {
       handleDriveError(error);
       return null;
     })
     .finally(() => {
-      setGoogleInProgress(false);
+      dispatchSetGoogleClientInProgress(false);
     });
 };

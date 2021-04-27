@@ -1,3 +1,9 @@
+/**
+ * This file mainly contains styles that can't be done in code,
+ * or are inconvenient to do in code.
+ */
+
+/* Set the page-wide style. */
 body,
 body > textarea {
   width: 100vw;
@@ -15,24 +21,6 @@ body > textarea {
   height: 100%;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
-/* A convenience class, used in various places. */
-.display-none {
-  display: none !important;
-}
-.flex-grow {
-  flex-grow: 1;
-}
-
 /** Firefox workaround for https://github.com/Leaflet/Leaflet/issues/4686 */
 .leaflet-fade-anim .leaflet-tile,
 .leaflet-zoom-anim .leaflet-zoom-animated {
@@ -45,7 +33,90 @@ body > textarea {
   cursor: pointer;
 }
 
-/* SVGs should fill with the current text color. */
+/* SVGs should fill with the current text color by default. */
 svg {
   fill: currentColor;
 }
+
+/* Fix custom controls overlapping the zoom buttons. */
+.leaflet-top.leaflet-left.leaflet-top-left-offset {
+  top: 80px;
+}
+
+/* Fix custom controls overlapping the attribution. */
+.leaflet-bottom.leaflet-left.leaflet-bottom-left-offset {
+  bottom: 24px;
+}
+
+/**
+ * Force style for marker clusters.
+ * display:flex makes all the elements align properly.
+ */
+.map-marker-cluster {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  z-index: 1000 !important; /* Put on top of other stuff so hovering doesn't break. */
+}
+/**
+ * Force cluster markers to render correctly.
+ * This style cannot be set in code.
+ */
+.map-marker-cluster-marker {
+  width: 100%;
+  height: 100%;
+}
+/**
+ * Force the label on cluster markers to render correctly.
+ * This style cannot be set in code.
+ */
+.map-marker-cluster-label {
+  position: absolute;
+  top: -21px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 5px;
+  border-radius: 10px;
+  padding-bottom: 1px;
+  pointer-events: none;
+}
+/**
+ * Force the item icon on cluster markes to render correctly.
+ * This style cannot be set in code.
+ */
+.map-marker-cluster-img {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  top: 14%;
+  z-index: 100;
+}
+
+/**
+ * Used for default markers.
+ */
+.map-marker-container {
+  position: relative;
+}
+/*
+ * The default marker image needs this but custom images don't.
+ * Don't worry, coordinates are correct.
+ */
+.map-marker-img {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+/**
+ * Force the shadow size for default markers.
+ */
+.map-marker-shadow {
+  width: 40px;
+  height: 40px;
+}
+
+/**
+ * This is valid as well, but currently unused.
+ * Custom markers use a class that provides their key, for custom styling if needed.
+ */
+.map-marker-domain {}
