@@ -84,8 +84,9 @@ const PageHeaders = () => {
       <title>{t('page-title-full')}</title>
 
       {/* SECURITY */}
-      {/* Dictates how scripts can be loaded and from where. Prevents cross-site scripting attacks. */}
+      {/* Dictates how scripts can be loaded and from where. Prevents cross-site scripting attacks.
       <meta httpEquiv="Content-Security-Policy" content={debugCSP ? '' : CSP_HOSTS} />
+      */}
       {/* States that sites should not attempt to load CSS files as JavaScript. */}
       <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
       {/* Prevent sites from loading this page in an iframe. Prevents clickjacking attacks. */}
