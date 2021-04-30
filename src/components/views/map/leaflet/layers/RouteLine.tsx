@@ -156,7 +156,7 @@ const RouteLine: FunctionComponent<RouteLineProps> = ({
             <Typography className={classes.popupTitle}>{title}</Typography>
           ) : (
             <Typography className={classes.popupTitle}>
-              {f('route-id-format', { id: route.id.slice(0, 7) })}
+              {f('map-ui:route-id-format', { id: route.id.slice(0, 7) })}
             </Typography>
           )}
           <Box>

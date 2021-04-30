@@ -1,6 +1,6 @@
 import { Box, Button, LinearProgress, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
 import { loadMapPreferencesFromDrive } from 'src/components/preferences/google/LoadDrive';
@@ -81,6 +81,10 @@ const _ControlsSyncUploadGoogle: FunctionComponent<ControlsSyncUploadGoogleProps
       });
   };
 
+  const triggerSaveMapPreferences = useCallback(() => {
+    saveMapPreferencesToDrive(selectNamespaceMap(store.getState()));
+  }, []);
+
   const auth = <ControlsSyncAuthGoogle />;
   let upload = null;
 
@@ -89,17 +93,11 @@ const _ControlsSyncUploadGoogle: FunctionComponent<ControlsSyncUploadGoogleProps
       <LinearProgress />
     ) : (
       <Box display="flex" justifyContent="space-between">
-        <Button
-          variant="contained"
-          size="small"
-          onClick={() => {
-            saveMapPreferencesToDrive(selectNamespaceMap(store.getState()));
-          }}
-        >
-          {t('map-ui:save-to-cloud')}
+        <Button variant="contained" size="small" onClick={triggerSaveMapPreferences}>
+          {t('save-to-cloud')}
         </Button>
         <Button variant="contained" size="small" onClick={onGoogleLoad}>
-          {t('map-ui:load-from-cloud')}
+          {t('load-from-cloud')}
         </Button>
       </Box>
     );

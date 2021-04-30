@@ -6,6 +6,7 @@ import { Box, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
+import Link from 'next/link';
 
 import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
@@ -108,6 +109,14 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     margin: '0 8px 0 0',
   },
+
+  headerLink: {
+    cursor: 'pointer',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 }));
 
 const mapStateToProps = (state: AppState) => ({
@@ -137,19 +146,21 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
         <ControlsFoldButton />
         <ControlsRegions shouldDisplay={!small} />
 
-        <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-          <NextImage
-            src="/images/logo.png"
-            className={classes.logo}
-            width={40}
-            height={40}
-            priority
-          />
-          <LocalizedSafeHTML
-            i18nKey={isDev() ? 'page-title-beta' : 'page-title'}
-            className={classes.headerText}
-          />
-        </Box>
+        <Link href="/">
+          <div className={classes.headerLink}>
+            <NextImage
+              src="/images/logo.png"
+              className={classes.logo}
+              width={40}
+              height={40}
+              priority
+            />
+            <LocalizedSafeHTML
+              i18nKey={isDev() ? 'page-title-beta' : 'page-title'}
+              className={classes.headerText}
+            />
+          </div>
+        </Link>
 
         {small ? <ControlsNavigationSmall /> : null}
 

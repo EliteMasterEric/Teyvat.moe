@@ -131,14 +131,14 @@ const _EditorControls: FunctionComponent<EditorControlsProps> = ({
           <MapCustomControlButton
             onClick={onMarkerClick}
             className={classes.button}
-            tooltip={t('marker')}
+            tooltip={t('map-ui:marker')}
           >
             <PlaceIcon />
           </MapCustomControlButton>
           <MapCustomControlButton
             onClick={onRouteClick}
             className={classes.button}
-            tooltip={t('route')}
+            tooltip={t('map-ui:route')}
           >
             <TimelineIcon />
           </MapCustomControlButton>

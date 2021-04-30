@@ -84,7 +84,6 @@ const attemptGoogleAutoSignIn = () => {
 const handleGoogleSignInSuccess = (response: gapi.auth2.GoogleUser) => {
   console.debug('[GOOGLE] Received user profile info.');
   const basicProfile = response.getBasicProfile();
-  // const authResponse = res.getAuthResponse(true);
 
   dispatchSetGoogleAuthProfile({
     googleId: basicProfile.getId(),

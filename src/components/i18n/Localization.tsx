@@ -6,6 +6,7 @@
 import { Typography, TypographyProps } from '@material-ui/core';
 import _ from 'lodash';
 import { useTranslation, i18n } from 'next-i18next';
+import Router from 'next/router';
 import React, { FunctionComponent } from 'react';
 
 import { LocalizedString } from 'src/components/Types';
@@ -175,11 +176,8 @@ export const LocalizedTypography: FunctionComponent<LocalizedTypographyProps> = 
   values,
   ...options
 }) => {
-  const { t, i18n, ready } = useTranslation(['core', 'map-ui', 'error']);
-  console.log(t);
-  console.log(i18n);
-  console.log(ready);
-  return <Typography {...options}>{t(i18nKey, values)}</Typography>;
+  const { t: translate } = useTranslation();
+  return <Typography {...options}>{translate(i18nKey, values)}</Typography>;
 };
 
 export const LocalizedSafeHTML: FunctionComponent<LocalizedTypographyProps> = ({
@@ -187,6 +185,13 @@ export const LocalizedSafeHTML: FunctionComponent<LocalizedTypographyProps> = ({
   values,
   ...options
 }) => {
-  const { t } = useTranslation();
-  return <SafeHTML {...options}>{t(i18nKey, values)}</SafeHTML>;
+  const { t: translate } = useTranslation();
+  return <SafeHTML {...options}>{translate(i18nKey, values)}</SafeHTML>;
+};
+
+/**
+ * You can use next/router to transition between locales.
+ */
+export const routeToLanguage = (locale: string): void => {
+  console.log(Router.pathname);
 };

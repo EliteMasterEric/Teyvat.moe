@@ -11,7 +11,7 @@ import {
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
-import React, { cloneElement, useState, FunctionComponent, ReactElement } from 'react';
+import React, { cloneElement, useState, FunctionComponent, ReactElement, useCallback } from 'react';
 
 import { t } from 'src/components/i18n/Localization';
 import Theme from 'src/components/Theme';
@@ -40,20 +40,28 @@ const ClearEditorDataPopup: FunctionComponent<ClearEditorDataPopupProps> = ({
 }) => {
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
+
+  const openDialog = useCallback(() => {
+    setIsDialogOpen(true);
+  }, []);
+
+  const closeDialog = useCallback(() => {
+    setIsDialogOpen(false);
+  }, []);
+
+  const finishDialog = useCallback(() => {
+    onConfirm();
+    closeDialog();
+  }, []);
+
   return (
     <>
       {cloneElement(trigger, {
         className: classes.button,
-        onClick: () => setIsDialogOpen(true),
+        onClick: openDialog,
       })}
-      <Dialog
-        PaperProps={{ className: classes.dialog }}
-        open={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
-      >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('map-ui:clear-editor-data')}
-        </DialogTitle>
+      <Dialog PaperProps={{ className: classes.dialog }} open={isDialogOpen} onClose={closeDialog}>
+        <DialogTitle onClose={closeDialog}>{t('map-ui:clear-editor-data')}</DialogTitle>
         <DialogContent>
           <DialogContentText> {t('map-ui:clear-editor-data-content')}</DialogContentText>
         </DialogContent>
@@ -63,7 +71,7 @@ const ClearEditorDataPopup: FunctionComponent<ClearEditorDataPopupProps> = ({
             size="large"
             aria-label={t('cancel')}
             tabIndex={0}
-            onClick={() => setIsDialogOpen(false)}
+            onClick={closeDialog}
           >
             {t('cancel')}
           </Button>
@@ -73,14 +81,8 @@ const ClearEditorDataPopup: FunctionComponent<ClearEditorDataPopupProps> = ({
             color="primary"
             aria-label={t('confirm')}
             tabIndex={0}
-            onClick={() => {
-              onConfirm();
-              setIsDialogOpen(false);
-            }}
-            onKeyDown={() => {
-              onConfirm();
-              setIsDialogOpen(false);
-            }}
+            onClick={finishDialog}
+            onKeyDown={finishDialog}
           >
             {t('confirm')}
           </Button>

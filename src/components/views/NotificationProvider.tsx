@@ -1,37 +1,19 @@
 import _ from 'lodash';
 import { OptionsObject, SnackbarKey, SnackbarProvider, useSnackbar } from 'notistack';
 import React, { useEffect, useState, FunctionComponent } from 'react';
-import { connect, ConnectedProps } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { removeNotification } from 'src/components/redux/slices/common/notify/Actions';
 import { selectNotifications } from 'src/components/redux/slices/common/notify/Selector';
-import { AppState } from 'src/components/redux/Types';
-import { Empty } from 'src/components/Types';
-
-const mapStateToProps = (state: AppState) => ({
-  notifications: selectNotifications(state),
-});
-const mapDispatchToProps = {
-  removeNotification,
-};
-type NotificationProviderStateProps = ReturnType<typeof mapStateToProps>;
-type NotificationProviderDispatchProps = typeof mapDispatchToProps;
-const connector = connect<
-  NotificationProviderStateProps,
-  NotificationProviderDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
-type NotificationHandlerProps = ConnectedProps<typeof connector>;
 
 /**
  * Not a pure component, keeps an internal list
  * @param notifications The notifications to display.
  */
-const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
-  notifications,
-  removeNotification,
-}) => {
+const NotificationHandler: FunctionComponent = () => {
+  const notifications = useSelector(selectNotifications);
+  const dispatch = useDispatch();
+
   /**
    * The functions which link with the NotificationProvider
    * to enqueue and dequeue the notifications.
@@ -76,7 +58,7 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
         onExited: () => {
           // The notification has left. We can now remove it from the store.
           if (notification.options.key != null) {
-            removeNotification(notification.options.key);
+            dispatch(removeNotification(notification.options.key));
             removeDisplayed(notification.options.key);
           }
         },
@@ -98,8 +80,6 @@ const _NotificationHandler: FunctionComponent<NotificationHandlerProps> = ({
   // Has no actual render presence.
   return null;
 };
-
-const NotificationHandler = connector(_NotificationHandler);
 
 interface NotificationProviderProps {
   children: React.ReactNode;

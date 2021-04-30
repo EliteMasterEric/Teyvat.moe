@@ -7,7 +7,7 @@ import { Box, Tooltip, IconButton, makeStyles } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import GpsFixedIcon from '@material-ui/icons/GpsFixed';
 import _ from 'lodash';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
@@ -118,6 +118,9 @@ const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
 }) => {
   const classes = useStyles();
 
+  const setTitleValue = useCallback((value) => setMarkerTitle(value), [setMarkerTitle]);
+  const setContentValue = useCallback((value) => setMarkerContent(value), [setMarkerContent]);
+
   return (
     <Box display="flex" flexDirection="column" className={classes.markerBox}>
       <Box display="flex" flexDirection="row" alignItems="center">
@@ -144,14 +147,14 @@ const _ControlsEditorMarker: FunctionComponent<ControlsEditorMarkerProps> = ({
         className={classes.textField}
         label={t('map-ui:popup-title')}
         value={markerTitle}
-        onChange={(value) => setMarkerTitle(value)}
+        onChange={setTitleValue}
       />
       <InputTextArea
         className={classes.textField}
         label={t('map-ui:popup-content')}
         value={markerContent}
         rows={3}
-        onChange={(value) => setMarkerContent(value)}
+        onChange={setContentValue}
       />
       <ControlsEditorImageUploader
         elementMedia={markerMedia ?? ''}

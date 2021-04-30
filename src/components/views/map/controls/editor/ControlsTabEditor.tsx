@@ -5,7 +5,7 @@
 import { Button, makeStyles } from '@material-ui/core';
 import _ from 'lodash';
 import newGithubIssueUrl from 'new-github-issue-url';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
@@ -118,6 +118,11 @@ const _ControlsTabEditor: FunctionComponent<ControlsTabEditorProps> = ({
     openURLInWindow(url);
   };
 
+  const onConfirm = useCallback(() => {
+    clearEditorData();
+    resetTab();
+  }, [clearEditorData, resetTab]);
+
   return (
     <TabView displayed={displayed}>
       <LocalizedTypography i18nKey="map-ui:editor-elements" className={classes.header} />
@@ -136,10 +141,7 @@ const _ControlsTabEditor: FunctionComponent<ControlsTabEditorProps> = ({
             {t('map-ui:clear-editor-data')}
           </Button>
         }
-        onConfirm={() => {
-          clearEditorData();
-          resetTab();
-        }}
+        onConfirm={onConfirm}
       />
 
       <SubmitEditorDataPopup

@@ -12,13 +12,19 @@ import {
   makeStyles,
   useTheme,
 } from '@material-ui/core';
-import clsx from 'clsx';
 import _ from 'lodash';
-import React, { useRef, useEffect, ReactElement, FunctionComponent } from 'react';
+import React, {
+  useRef,
+  useEffect,
+  ReactElement,
+  FunctionComponent,
+  useCallback,
+  useMemo,
+} from 'react';
 import { A } from 'ts-toolbelt';
 
 import { LocalizedString } from 'src/components/Types';
-import { CloneProps, useDebouncedState } from 'src/components/util';
+import { useDebouncedState } from 'src/components/util';
 
 const useStyles = makeStyles((_theme) => ({
   tab: { minWidth: 0 },
@@ -54,7 +60,7 @@ export const TabView: FunctionComponent<TabViewProps> = ({
 
   return (
     <Box
-      className={clsx(displayed ? classes.showTab : classes.hideTab)}
+      className={displayed ? classes.showTab : classes.hideTab}
       flexDirection="column"
       flexGrow={1}
       height={grow ? 'auto' : '100%'}
@@ -102,8 +108,9 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
   const classes = useStyles();
 
   const [currentValue, setCurrentValue] = useDebouncedState<TabValue>(value, onChange);
-
-  const sortedTabs = sortByOrder(tabs);
+  const onValueChange = useCallback((_event, newValue) => setCurrentValue(newValue), [
+    setCurrentValue,
+  ]);
 
   // Fix indicator breaking when tabs dynamically change.
   const theme = useTheme();
@@ -120,13 +127,41 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
     };
   }, [tabs, theme]);
 
+  const renderTab = useCallback(
+    (tab) => {
+      const label = icons ? <Tooltip title={tab.label}>{tab.icon}</Tooltip> : tab.label;
+
+      return (
+        <MaterialTab
+          wrapped
+          key={tab.value}
+          label={label}
+          value={tab.value}
+          classes={{ root: classes.tab }}
+        />
+      );
+    },
+    [icons]
+  );
+
+  const renderedTabs = useMemo(() => {
+    const sortedTabs = sortByOrder(tabs);
+
+    const result = _.map(sortedTabs, (tab) => {
+      if (!tab.enabled) return null;
+      return renderTab(tab);
+    });
+
+    return result;
+  }, [renderTab, tabs]);
+
   if (!displayed) return null;
 
   return (
     <MaterialTabs
       action={actionReference}
       value={currentValue}
-      onChange={(_event, newValue) => setCurrentValue(newValue)}
+      onChange={onValueChange}
       centered
       variant="fullWidth"
       scrollButtons={scrollButtons}
@@ -134,32 +169,7 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
       textColor="primary"
       {...other}
     >
-      {_.map(sortedTabs, (tab) => {
-        if (!tab.enabled) return null;
-
-        return icons ? (
-          <CloneProps key={tab.value} value={tab.value}>
-            {(tabProps) => (
-              <Tooltip title={tab.label}>
-                <MaterialTab
-                  wrapped
-                  icon={tab.icon}
-                  classes={{ root: classes.tab }}
-                  {...tabProps}
-                />
-              </Tooltip>
-            )}
-          </CloneProps>
-        ) : (
-          <MaterialTab
-            wrapped
-            key={tab.value}
-            label={tab.label}
-            value={tab.value}
-            classes={{ root: classes.tab }}
-          />
-        );
-      })}
+      {renderedTabs}
     </MaterialTabs>
   );
 };

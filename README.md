@@ -1,25 +1,22 @@
-<p align='center'><img src="https://raw.githubusercontent.com/GenshinMap/genshinmap.github.io/master/assets/Social.png"></p>
+<p align='center'><img src="https://raw.githubusercontent.com/Teyvat-Moe/teyvat.moe/master/assets/Social.png"></p>
 
 * * *
 
 <p align='center'>
-<a href="https://genshinmap.github.io/"><b>GenshinMap</b></a>
+<a href="https://teyvat.moe/"><b>Teyvat.moe</b></a>
 <b>|</b>
-<a href="https://genshin-map-beta.netlify.app/">Beta Site</a>
+<a href="https://beta.teyvat.moe/"><b>Beta Site</b></a>
 <b>|</b>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki">Wiki</a>
+<a href="https://github.com/Teyvat-Moe/Teyvat.moe/wiki">Wiki</a>
 <b>|</b>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/CHANGELOG.md">Changelog</a>
+<a href="https://github.com/Teyvat-Moe/Teyvat.moe/blob/master/CHANGELOG.md">Changelog</a>
 
   <br/><br/>
-<a href="https://travis-ci.org/github/GenshinMap/genshinmap.github.io/"><img src="https://travis-ci.org/GenshinMap/genshinmap.github.io.svg?branch=master" alt="Travis"/></a>
-<a href="https://genshin-map-beta.netlify.app/"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
-<a href="https://david-dm.org/GenshinMap/genshinmap.github.io"><img src="https://david-dm.org/GenshinMap/genshinmap.github.io.svg" alt="Dependencies"/></a>
-<a href="https://david-dm.org/GenshinMap/genshinmap.github.io#info=devDependencies"><img src="https://david-dm.org/plantain-00/type-coverage/dev-status.svg" alt="Dev Dependencies"/></a>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/"><img src="https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2FGenshinMap%2Fgenshinmap.github.io%2Fmaster%2Fpackage.json" alt="Type Coverage"></a>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
+<a href="https://travis-ci.com/github/Teyvat-Moe/Teyvat.moe"><img src="https://api.travis-ci.com/Teyvat-Moe/Teyvat.moe.svg?branch=master" alt="TravisCI"/></a>
+<a href="https://beta.teyvat.moe"><img src="https://img.shields.io/netlify/e37c5eca-62e5-480d-922b-301ab8c4994a?label=beta%20build" alt="Netlify"/></a>
+<a href="https://github.com/Teyvat-Moe/Teyvat.moe/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-green.svg" alt="Software License"/></a>
 <a href="https://discord.gg/dF6VTFr9jK"><img src="https://img.shields.io/discord/807068732567453726?label=discord&logo=discord&logoColor=738adb" alt="Discord Server"/></a>
-<a href="https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+<a href="https://github.com/Teyvat-Moe/Teyvat.moe/wiki/Contributing"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
   <br/><br/>
 <b><a href="https://poeditor.com/projects/view?id=394831">Translation</a></b>
   <br/>
@@ -39,32 +36,35 @@
 
 * * *
 
-## What is GenshinMap?
+## What is Teyvat.moe?
 
-GenshinMap is a free open-source interactive map for [Genshin Impact](https://genshin.mihoyo.com/), powered by React, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
+Teyvat.moe is a free interactive web app for [Genshin Impact](https://genshin.mihoyo.com/), powered by NextJS, [LeafletJS](https://leafletjs.com/reference-1.7.1.html), and community contributions.
 
-The map includes a full, high-resolution in-game map, with options to display markers for the locations as well as routes to assist navigation between them. It includes features to mark items as completed (saving the data in local storage), as well as a powerful and user-friendly editor to submit new marker collections and routes for the site.
+The site includes a full, high-resolution in-game map, with options to display markers for the locations as well as routes to assist navigation between them. It includes features to mark items as completed (saving the data in local storage or on Google Drive), as well as a powerful and user-friendly editor to submit new marker collections and routes for the site.
 
-There are easy tools available to allow users to contribute their own markers or routes to the map. See [Contributing](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing) for more information.
+There are easy tools available to allow users to contribute their own markers or routes to the map. See [Contributing](https://github.com/Teyvat-Moe/teyvat.moe/wiki/Contributing) for more information.
 
-This project is open source. [Issues](https://github.com/GenshinMap/genshinmap.github.io/issues) and [pull requests](https://github.com/GenshinMap/genshinmap.github.io/pulls) are welcome and highly appreciated.
+This project is open source. [Issues](https://github.com/Teyvat-Moe/teyvat.moe/issues) and [pull requests](https://github.com/Teyvat-Moe/teyvat.moe/pulls) are welcome and highly appreciated.
 
-## Why GenshinMap?
+## Why Teyvat.moe?
 
 There are numerous other interactive maps available, but this map has the edge in the following ways:
 
--   **Advertisment free**: Since this site is hosted through Github Pages, there are no financial costs associated with hosting. Other sites have numerous advertisements.
--   **Newest resources mapped**: Magical crystal chunks, meteorites, Crimson Agate, and more before other maps.
--   **Multiple Language Support**: The site currently supports English, French, Russian, and Indonesian, with more to come. If your language isn't supported, [learn how to contribute](https://github.com/GenshinMap/genshinmap.github.io/wiki/Contributing#how-to-localize-the-site). Other map sites are only available in one or two languages.
--   **Track progress for free**: GenshinMap allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or even Chinese credentials to allow you to track your progress.
--   **Mobile friendly**: GenshinMap officially supports mobile devices and has a custom menu layout for them.
--   **Routes**: GenshinMap is the only map which includes a dedicated tab for community-created farming routes, overlayed with existing markers.
--   **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Other sites have no submission functionality available, or may only have an email.
--   **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map isn't being updated frequently, or it's missing a feature you want, you can create a fork or pull request. All other interactive map websites are closed source.
+-   **Advertisment free**: This site is hosted without advertisements, unlike other apps.
+-   **Newest resources mapped**: Plants, monsters, chests, collectibles, and more before other maps.
+-   **Multiple Language Support**: The site currently supports a variety of languages. If your language isn't supported, [learn how to contribute](https://github.com/Teyvat-Moe/teyvat.moe/wiki/Contributing#how-to-localize-the-site). Most map sites are only available in one or two languages, and some do not support English.
+-   **Track progress for free**: The site allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or require your email to allow you to track your progress.
+-   **Synced across devices**: Sign in with Google to sync your progress between multiple devices.
+-   **Mobile friendly**: The site officially supports mobile devices and has a custom menu layout for them.
+-   **Routes**: The site is includes a dedicated tab for community-created farming routes, overlayed with existing markers.
+-   **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Most other sites have no submission functionality available, or have a process which is undocumented, vague, or confusing.
+-   **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map is missing a feature you want, you can create a fork or pull request. All other known map websites are closed source.
 
 ## Credits
 
 This project was originally a translated mirror of [a Chinese language map](http://www.yuanshen.site/), but later the source code was completely rewritten to facilitate expansion and feature enhancements.
+
+This project utilizes ripped data courtesy of [Dimbreath](https://github.com/Dimbreath/GenshinData/), major thanks to them.
 
 ## Licensing
 

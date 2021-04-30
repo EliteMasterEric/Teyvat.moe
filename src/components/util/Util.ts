@@ -1,5 +1,3 @@
-import { Typography } from '@material-ui/core';
-
 import * as clipboard from 'clipboard-polyfill/text';
 import _ from 'lodash';
 import ObjectHash from 'object-hash';
@@ -11,8 +9,6 @@ import React, {
   FunctionComponent,
   ReactElement,
 } from 'react';
-
-import sanitizeHTML from 'sanitize-html';
 
 export const canUseDOM = (): boolean => {
   return window != null && !!window.document && !!window.document.createElement;
@@ -139,32 +135,6 @@ export const latLngToTile = (lat: number, lng: number, zoom: number): [number, n
   ];
 };
 
-/**
- * This component renders the internal text while supporting HTML tags.
- * Strips any unsafe tags such as scripts for security.
- *
- * @param children The child element should be only text.
- * @param other You can pass other parameters, such as className, and they will be used by the
- */
-type SafeHTMLProps = Omit<React.ComponentProps<typeof Typography>, 'children'> & {
-  children: string | null;
-};
-export const SafeHTML: FunctionComponent<SafeHTMLProps> = ({ children, ...other }) => {
-  if (children == null) return null;
-
-  const options = {
-    allowedTags: ['b', 'i', 'em', 'strong', 'a'],
-    allowedAttributes: {
-      a: ['href'],
-    },
-    allowedIframeHostnames: ['www.youtube.com'],
-  };
-  // Never fear, no danger here! We sanitized this text before rendering it.
-  // eslint-disable-next-line react/no-danger
-  return (
-    <Typography dangerouslySetInnerHTML={{ __html: sanitizeHTML(children, options) }} {...other} />
-  );
-};
 /**
  * A React state which attaches to a debounced callback.
  * @param defaultValue The default state value.

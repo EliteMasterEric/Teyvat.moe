@@ -17,7 +17,14 @@ import {
   Typography,
 } from '@material-ui/core';
 import _ from 'lodash';
-import React, { useState, cloneElement, FunctionComponent, ReactElement } from 'react';
+import React, {
+  useState,
+  cloneElement,
+  FunctionComponent,
+  ReactElement,
+  useCallback,
+  useMemo,
+} from 'react';
 
 import { MSFFilterIcon, MSFSchemaVersion } from 'src/components/data/map/Element';
 import {
@@ -30,7 +37,6 @@ import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { InputTextArea, InputTextField } from 'src/components/interface/Input';
 import { EditorFeatureSubmission } from 'src/components/preferences/map/EditorDataSchema';
-import { SafeHTML } from 'src/components/util';
 import DialogTitle from 'src/components/views/map/dialogs/DialogTitle';
 
 const useStyles = makeStyles({
@@ -67,22 +73,34 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
 
-  const isValid = () => {
+  const isValid = useMemo(() => {
     return submissionName !== '';
-  };
+  }, [submissionName]);
 
-  const regionOptions = _.map(MapRegionKeys, (key) => {
-    const value = getMapRegion(key);
-    return { value: key.toString(), label: t(value.nameKey) };
-  });
+  const regionOptions = useMemo(
+    () =>
+      _.map(MapRegionKeys, (key) => {
+        const value = getMapRegion(key);
+        return { value: key.toString(), label: t(value.nameKey) };
+      }),
+    [MapRegionKeys]
+  );
 
-  const categoryOptions = _.map(MapCategoryKeys, (key) => {
-    const value = getMapCategory(key);
-    return { value: key.toString(), label: t(value.nameKey) };
-  });
+  const categoryOptions = useMemo(
+    () =>
+      _.map(MapCategoryKeys, (key) => {
+        const value = getMapCategory(key);
+        return { value: key.toString(), label: t(value.nameKey) };
+      }),
+    [MapCategoryKeys]
+  );
+
+  const closeDialog = useCallback(() => {
+    setIsDialogOpen(false);
+  }, []);
 
   const onClickConfirm = () => {
-    if (!isValid()) return;
+    if (!isValid) return;
 
     const formData: EditorFeatureSubmission = {
       format: 2 as MSFSchemaVersion,
@@ -108,21 +126,24 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
       },
     };
 
+    closeDialog();
     onConfirm(formData);
-    setIsDialogOpen(false);
   };
+
+  const modifySubmissionCategory = useCallback(
+    (event) => setSubmissionCategory(event.target.value as MapCategoryKey),
+    [setSubmissionCategory]
+  );
+  const modifySubmissionRegion = useCallback(
+    (event) => setSubmissionRegion(event.target.value as MapRegionKey),
+    [setSubmissionRegion]
+  );
 
   return (
     <>
       {cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
-      <Dialog
-        PaperProps={{ className: classes.dialog }}
-        open={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
-      >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('map-ui:submit-editor-data')}
-        </DialogTitle>
+      <Dialog PaperProps={{ className: classes.dialog }} open={isDialogOpen} onClose={closeDialog}>
+        <DialogTitle onClose={closeDialog}>{t('map-ui:submit-editor-data')}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             <LocalizedSafeHTML i18nKey="map-ui:submit-editor-data-content" />
@@ -149,10 +170,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
             />
             <FormControl className={classes.formField}>
               <InputLabel>{t('category')}</InputLabel>
-              <Select
-                value={submissionCategory}
-                onChange={(event) => setSubmissionCategory(event.target.value as MapCategoryKey)}
-              >
+              <Select value={submissionCategory} onChange={modifySubmissionCategory}>
                 {_.map(categoryOptions, (category) => (
                   <MenuItem key={category.value} value={category.value}>
                     {category.label}
@@ -162,10 +180,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
             </FormControl>
             <FormControl className={classes.formField}>
               <InputLabel>{t('region')}</InputLabel>
-              <Select
-                value={submissionRegion}
-                onChange={(event) => setSubmissionRegion(event.target.value as MapRegionKey)}
-              >
+              <Select value={submissionRegion} onChange={modifySubmissionRegion}>
                 {_.map(regionOptions, (region) => (
                   <MenuItem key={region.value} value={region.value}>
                     {region.label}
@@ -184,7 +199,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
             size="large"
             aria-label={t('cancel')}
             tabIndex={0}
-            onClick={() => setIsDialogOpen(false)}
+            onClick={closeDialog}
           >
             {t('cancel')}
           </Button>
@@ -195,7 +210,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
             tabIndex={0}
             color="primary"
             onClick={onClickConfirm}
-            disabled={!isValid()}
+            disabled={!isValid}
           >
             {t('map-ui:submit-to-github')}
           </Button>

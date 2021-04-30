@@ -15,7 +15,7 @@ import {
   SliderTypeMap,
 } from '@material-ui/core';
 import _ from 'lodash';
-import React, { FunctionComponent, ReactElement } from 'react';
+import React, { FunctionComponent, ReactElement, useCallback } from 'react';
 
 import { useDebouncedState } from 'src/components/util';
 
@@ -35,11 +35,14 @@ export const InputTextField: FunctionComponent<InputTextFieldProps> = ({
   ...others
 }) => {
   const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
+  const onValueChange = useCallback((event) => setCurrentValue(event.target.value), [
+    setCurrentValue,
+  ]);
 
   return (
     <MaterialTextField
       value={currentValue}
-      onChange={(event) => setCurrentValue(event.target.value)}
+      onChange={onValueChange}
       error={errorText !== undefined}
       helperText={errorText ?? ''}
       variant={'outlined'}
@@ -64,6 +67,9 @@ export const InputTextArea: FunctionComponent<InputTextAreaProps> = ({
   ...others
 }) => {
   const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
+  const onValueChange = useCallback((event) => setCurrentValue(event.target.value), [
+    setCurrentValue,
+  ]);
 
   return (
     <MaterialTextField
@@ -71,7 +77,7 @@ export const InputTextArea: FunctionComponent<InputTextAreaProps> = ({
       rows={rows}
       value={currentValue}
       variant={'outlined'}
-      onChange={(event) => setCurrentValue(event.target.value)}
+      onChange={onValueChange}
       {...others}
     />
   );
@@ -131,14 +137,11 @@ export const InputSwitch: FunctionComponent<InputSwitchProps> = ({
   // If the switch has gone a period without changing,
   // onChange will be called to propage the change to the local storage.
   const [currentValue, setCurrentValue] = useDebouncedState<boolean>(value, onChange);
+  const onValueChange = useCallback((_event, newValue) => setCurrentValue(newValue), [
+    setCurrentValue,
+  ]);
 
-  const control = (
-    <MaterialSwitch
-      checked={currentValue}
-      onChange={(_event, newValue) => setCurrentValue(newValue)}
-      {...others}
-    />
-  );
+  const control = <MaterialSwitch checked={currentValue} onChange={onValueChange} {...others} />;
 
   return label ? (
     <FormControlLabel label={label} labelPlacement={labelPlacement} control={control} />

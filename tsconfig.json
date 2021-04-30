@@ -48,7 +48,7 @@
     "pages/**/*.ts",
     "pages/**/*.tsx",
     "packages/@types/**/*"
-  ],
+, "test/ElementSchema.ts"  ],
   "exclude": [
     "node_modules",
     ".next",

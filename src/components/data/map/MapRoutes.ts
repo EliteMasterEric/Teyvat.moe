@@ -109,11 +109,4 @@ export const getRouteKeysByFilter = (region: string, category: string): MSFRoute
 };
 
 export const sortRoutesByName = (data: MSFRouteGroupKey[]): MSFRouteGroupKey[] =>
-  data.sort((a, b) => {
-    // Sort the features alphabetically.
-    const textA = getMapRouteGroup(a).name;
-    const textB = getMapRouteGroup(b).name;
-
-    if (textA < textB) return -1;
-    return textA > textB ? 1 : 0;
-  });
+  _.sortBy(data, (a) => getMapRouteGroup(a).name);

@@ -171,6 +171,8 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
     }
   };
 
+  const changeElementMedia = useCallback((value) => setElementMedia(value), []);
+
   // Note that react-dropzone overrides classNames,
   // meaning that inline styles must be used.
   return (
@@ -196,7 +198,7 @@ const ControlsEditorImageUploader: FunctionComponent<ControlsEditorImageUploader
                 : [classes.animationOff]
             ),
           }}
-          onChange={(value) => setElementMedia(value)}
+          onChange={changeElementMedia}
         />
 
         {/* The uploaded image. */}

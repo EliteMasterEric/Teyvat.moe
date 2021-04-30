@@ -45,7 +45,7 @@ const _ControlsSyncProfileGoogle: FunctionComponent<ControlsSyncProfileGooglePro
         <Avatar alt={googleAuthProfile.name} src={googleAuthProfile.imageUrl} />
         <Box display="flex" className={classes.profileWelcome} flexDirection="column">
           <Typography variant="h5">
-            {f('welcome-format', { user: googleAuthProfile.givenName })}
+            {f('map-ui:welcome-format', { user: googleAuthProfile.givenName })}
           </Typography>
           <Typography variant="subtitle2">{googleAuthProfile.email}</Typography>
         </Box>
@@ -55,13 +55,8 @@ const _ControlsSyncProfileGoogle: FunctionComponent<ControlsSyncProfileGooglePro
         <Typography className={classes.centerVertical} variant="body2">
           {t('map-ui:google-login-success')}
         </Typography>
-        <Tooltip title={t('map-ui:sign-out')}>
-          <IconButton
-            className={classes.logoutButton}
-            onClick={() => {
-              attemptGoogleSignOut();
-            }}
-          >
+        <Tooltip title={t('core:sign-out')}>
+          <IconButton className={classes.logoutButton} onClick={attemptGoogleSignOut}>
             <LogoutIcon />
           </IconButton>
         </Tooltip>

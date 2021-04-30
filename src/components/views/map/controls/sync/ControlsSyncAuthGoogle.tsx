@@ -59,9 +59,7 @@ const _ControlsSyncAuthGoogle: FunctionComponent<ControlsSyncAuthGoogleProps> = 
       <Box>
         <Typography variant="subtitle2">{t('map-ui:google-drive-prompt')}</Typography>
         <NextImage
-          onClick={() => {
-            attemptGoogleSignIn();
-          }}
+          onClick={attemptGoogleSignIn}
           className={classes.googleSignIn}
           src="/images/social/google-signin.png"
           width={200}

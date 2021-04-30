@@ -4,7 +4,7 @@
 
 import { makeStyles, Box, Button } from '@material-ui/core';
 import dynamic from 'next/dynamic';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { t, LocalizedTypography } from 'src/components/i18n/Localization';
@@ -110,6 +110,19 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
 }) => {
   const classes = useStyles();
 
+  const onMigrateYuanshen = useCallback(
+    (dataString: string) => importMarkerDataFromSite(dataString, 'yuanshen'),
+    []
+  );
+  const onMigrateAppSample = useCallback(
+    (dataString: string) => importMarkerDataFromSite(dataString, 'appsample'),
+    []
+  );
+  const onMigrateMapGenie = useCallback(
+    (dataString: string) => importMarkerDataFromSite(dataString, 'mapgenie'),
+    []
+  );
+
   return (
     <TabView grow displayed={displayed}>
       <BorderBox grow={false} overflow="show" direction="column">
@@ -127,7 +140,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'yuanshen')}
+            onConfirm={onMigrateYuanshen}
           />
         </div>
         <div className={classes.optionContainer}>
@@ -142,7 +155,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'appsample')}
+            onConfirm={onMigrateAppSample}
           />
         </div>
         <div className={classes.optionContainer} style={{ display: 'none' }}>
@@ -157,7 +170,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('migrate')}
               </Button>
             }
-            onConfirm={(dataString: string) => importMarkerDataFromSite(dataString, 'mapgenie')}
+            onConfirm={onMigrateMapGenie}
           />
         </div>
       </BorderBox>
@@ -172,7 +185,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
                 {t('import')}
               </Button>
             }
-            onConfirm={(dataString: string) => importPreferences(dataString)}
+            onConfirm={importPreferences}
           />
         </Box>
         <Box className={classes.optionContainer}>

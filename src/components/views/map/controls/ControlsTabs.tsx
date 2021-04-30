@@ -11,7 +11,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import SyncIcon from '@material-ui/icons/Sync';
 import TimelineIcon from '@material-ui/icons/Timeline';
 
-import React, { FunctionComponent, useMemo } from 'react';
+import React, { FunctionComponent, useCallback, useMemo } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { getLocale, isI18nLoaded, t } from 'src/components/i18n/Localization';
@@ -116,12 +116,14 @@ const _ControlsTabs: FunctionComponent<ControlsTabsProps> = ({
     [editorEnabled, isI18nLoaded(), getLocale()]
   );
 
+  const setTabValue = useCallback((value) => setTab(value as UIControlsTab), []);
+
   return (
     <TabBar
       className={classes.tabBar}
       displayed
       value={currentTab as TabValue}
-      onChange={(value) => setTab(value as UIControlsTab)}
+      onChange={setTabValue}
       tabs={tabList}
       icons
     />

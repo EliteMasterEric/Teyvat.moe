@@ -6,7 +6,7 @@ import {
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
-import React, { cloneElement, FunctionComponent, useState, ReactElement } from 'react';
+import React, { cloneElement, FunctionComponent, useState, ReactElement, useCallback } from 'react';
 
 import { t } from 'src/components/i18n/Localization';
 import DialogTitle from 'src/components/views/map/dialogs/DialogTitle';
@@ -28,6 +28,13 @@ interface ClearMapDataPopupProps {
 const ClearMapDataPopup: FunctionComponent<ClearMapDataPopupProps> = ({ trigger, onConfirm }) => {
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
+
+  const closeDialog = useCallback(() => setIsDialogOpen(false), []);
+  const finishDialog = useCallback(() => {
+    onConfirm();
+    closeDialog();
+  }, []);
+
   return (
     <div>
       {cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
@@ -36,11 +43,9 @@ const ClearMapDataPopup: FunctionComponent<ClearMapDataPopupProps> = ({ trigger,
         maxWidth="lg"
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
+        onClose={closeDialog}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>
-          {t('map-ui:clear-map-data')}
-        </DialogTitle>
+        <DialogTitle onClose={closeDialog}>{t('map-ui:clear-map-data')}</DialogTitle>
         <DialogContent>
           <DialogContentText>{t('map-ui:clear-map-data-content')}</DialogContentText>
         </DialogContent>
@@ -50,7 +55,7 @@ const ClearMapDataPopup: FunctionComponent<ClearMapDataPopupProps> = ({ trigger,
             size="large"
             aria-label={t('cancel')}
             tabIndex={0}
-            onClick={() => setIsDialogOpen(false)}
+            onClick={closeDialog}
           >
             {t('cancel')}
           </Button>
@@ -60,10 +65,7 @@ const ClearMapDataPopup: FunctionComponent<ClearMapDataPopupProps> = ({ trigger,
             color="primary"
             aria-label={t('confirm')}
             tabIndex={0}
-            onClick={() => {
-              onConfirm();
-              setIsDialogOpen(false);
-            }}
+            onClick={finishDialog}
           >
             {t('confirm')}
           </Button>

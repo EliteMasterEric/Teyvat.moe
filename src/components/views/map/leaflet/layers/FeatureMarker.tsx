@@ -303,7 +303,7 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
             <Typography className={classes.popupTitle}>{title}</Typography>
           ) : (
             <Typography className={classes.popupTitle}>
-              {f('marker-id-format', { id: marker.id.slice(0, 7) })}
+              {f('map-ui:marker-id-format', { id: marker.id.slice(0, 7) })}
             </Typography>
           )}
           <Box>
@@ -336,7 +336,7 @@ const _FeatureMarker: FunctionComponent<FeatureMarkerProps> = ({
           ) : null}
           {completed ? (
             <Typography className={classes.completedSubtitle}>
-              {f('completed-time-format', {
+              {f('map-ui:completed-time-format', {
                 time: formatUnixTimestamp(completed),
               })}
             </Typography>

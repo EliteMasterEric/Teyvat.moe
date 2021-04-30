@@ -7,7 +7,7 @@ import { Box, Tooltip, IconButton, makeStyles, Typography } from '@material-ui/c
 import DeleteIcon from '@material-ui/icons/Delete';
 import GpsFixedIcon from '@material-ui/icons/GpsFixed';
 import _ from 'lodash';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { f, t } from 'src/components/i18n/Localization';
@@ -116,6 +116,9 @@ const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
 }) => {
   const classes = useStyles();
 
+  const setTitleValue = useCallback((value) => setRouteTitle(value), [setRouteTitle]);
+  const setTitleContent = useCallback((value) => setRouteContent(value), [setRouteContent]);
+
   return (
     <Box display="flex" flexDirection="column" className={classes.routeBox}>
       <Box display="flex" flexDirection="row" alignItems="center">
@@ -126,7 +129,7 @@ const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
         </Tooltip>
 
         <Typography className={classes.routeLabel}>
-          {f('route-id-format', { id: routeId.slice(0, 7) })}
+          {f('map-ui:route-id-format', { id: routeId.slice(0, 7) })}
         </Typography>
 
         <Tooltip title={t('map-ui:delete')}>
@@ -140,14 +143,14 @@ const _ControlsEditorRoute: FunctionComponent<ControlsEditorRouteProps> = ({
         className={classes.textField}
         label={t('map-ui:popup-title')}
         value={routeTitle}
-        onChange={(value) => setRouteTitle(value)}
+        onChange={setTitleValue}
       />
       <InputTextArea
         className={classes.textField}
         label={t('map-ui:popup-content')}
         value={routeContent}
         rows={3}
-        onChange={(value) => setRouteContent(value)}
+        onChange={setTitleContent}
       />
       <ControlsEditorImageUploader
         elementMedia={routeMedia ?? ''}

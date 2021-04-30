@@ -11,7 +11,7 @@ import {
   DialogActions,
   makeStyles,
 } from '@material-ui/core';
-import React, { cloneElement, FunctionComponent, ReactElement, useState } from 'react';
+import React, { cloneElement, FunctionComponent, ReactElement, useCallback, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
@@ -72,10 +72,13 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
   const [textarea, setTextarea] = useState<string>('');
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
   const classes = useStyles();
-  const closePopup = () => {
+
+  const onOpen = useCallback(() => setIsDialogOpen(true), []);
+
+  const onClose = useCallback(() => {
     clearImportError();
     setIsDialogOpen(false);
-  };
+  }, []);
 
   const onClickConfirm = () => {
     // Returns true if import was successful.
@@ -83,22 +86,20 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
 
     // If import was successful, close the popup window.
     // Else, leave the popup window open so we can display the import error.
-    if (success) closePopup();
+    if (success) onClose();
   };
+
   return (
     <div>
-      {cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
+      {cloneElement(trigger, { onClick: onOpen })}
       <Dialog
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
         fullWidth
         maxWidth="lg"
-        onClose={() => {
-          clearImportError();
-          setIsDialogOpen(false);
-        }}
+        onClose={onClose}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>{title}</DialogTitle>
+        <DialogTitle onClose={onClose}>{title}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             <SafeHTML>{content}</SafeHTML>
@@ -112,7 +113,7 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
           </DialogContentText>
           <InputTextArea
             value={textarea}
-            onChange={(value) => setTextarea(value)}
+            onChange={setTextarea}
             fullWidth
             error={error !== ''}
             helperText={error !== '' ? error : t('map-ui:paste-here')}
@@ -125,7 +126,7 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
             color="primary"
             aria-label={t('cancel')}
             tabIndex={0}
-            onClick={closePopup}
+            onClick={onClose}
           >
             {t('cancel')}
           </Button>

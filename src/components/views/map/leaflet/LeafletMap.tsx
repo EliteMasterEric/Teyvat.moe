@@ -8,7 +8,7 @@ import { CRS } from 'leaflet';
 import 'leaflet-editable';
 import _ from 'lodash';
 import React, { FunctionComponent, useCallback } from 'react';
-import { MapContainer, ZoomControl } from 'react-leaflet';
+import { MapContainer, ZoomControl, Popup } from 'react-leaflet';
 
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/map/MapConstants';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/map/MapFeatures';

@@ -1,4 +1,4 @@
-import { FunctionComponent, PropsWithChildren } from 'react';
+import { FunctionComponent, PropsWithChildren, useCallback } from 'react';
 import { Empty } from 'src/components/Types';
 
 type ContextMenuHandlerBaseProps = Empty;
@@ -10,12 +10,12 @@ type ContextMenuHandlerProps = PropsWithChildren<ContextMenuHandlerBaseProps>;
  * @returns
  */
 const ContextMenuHandler: FunctionComponent<ContextMenuHandlerProps> = ({ children }) => {
+  const onContextMenu = useCallback((_event) => {
+    console.debug('Opened context menu.');
+  }, []);
+
   return (
-    <div
-      onContextMenu={(_event) => {
-        console.debug('Opened context menu.');
-      }}
-    >
+    <div onContextMenu={onContextMenu}>
       {/*  */}
       {children}
     </div>

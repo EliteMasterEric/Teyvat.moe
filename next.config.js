@@ -3,11 +3,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: false,
 });
 
-/**
- * Outdated, use built-in CSS support instead.
- */
-// const withCSS = require('@zeit/next-css');
-
 // Allows use of multiple plugins.
 const withPlugins = require('next-compose-plugins');
 
@@ -45,20 +40,6 @@ const baseConfig = {
         loader: 'url-loader',
       },
     });
-
-    /**
-     * This option determines the name of initial bundle files.
-     * @param {*} pathData
-     * @returns {string} The filename to use.
-     */
-    // config.output.filename = '[name].[contenthash].bundle.js';
-
-    /**
-     * This option determines the name of non-initial chunk files.
-     * @param {*} pathData
-     * @returns {string} The filename to use.
-     */
-    // config.output.chunkFilename = '[name].[contenthash].chunk.js';
 
     // IDK why but this fixes a bug.
     config.optimization.minimize = false;

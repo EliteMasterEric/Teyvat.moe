@@ -4,8 +4,8 @@
 
 import { makeStyles, Box, Button, Switch, Typography } from '@material-ui/core';
 import clsx from 'clsx';
-import React, { FunctionComponent } from 'react';
-import { connect, ConnectedProps } from 'react-redux';
+import React, { FunctionComponent, useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
@@ -26,7 +26,6 @@ import {
   setCompletedAlpha,
   setHideFeaturesInEditor,
   setHideRoutesInEditor,
-  setOverrideLang,
   setRegionLabelsEnabled,
   setShowHiddenFeaturesInSummary,
   setWorldBorderEnabled,
@@ -40,9 +39,8 @@ import {
   selectShowHiddenFeaturesInSummary,
   selectWorldBorderEnabled,
 } from 'src/components/redux/slices/map/options/Selector';
-
 import { AppState } from 'src/components/redux/Types';
-import { Empty } from 'src/components/Types';
+
 import { getApplicationVersion } from 'src/components/util';
 import ControlsOptionsLanguage from 'src/components/views/map/controls/options/ControlsOptionsLanguage';
 import ClearMapDataPopup from 'src/components/views/map/dialogs/ClearMapDataPopup';
@@ -72,69 +70,61 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const mapStateToProps = (state: AppState) => ({
-  displayed: selectIsTabDisplayed(state, 'options'),
+const isOptionsDisplayed = (state: AppState) => selectIsTabDisplayed(state, 'options');
 
-  editorEnabled: selectEditorEnabled(state),
-  completedAlpha: selectCompletedAlpha(state),
-  worldBorderEnabled: selectWorldBorderEnabled(state),
-  regionLabelsEnabled: selectRegionLabelsEnabled(state),
-  clusterMarkers: selectClusterMarkers(state),
-  hideFeaturesInEditor: selectHideFeaturesInEditor(state),
-  hideRoutesInEditor: selectHideRoutesInEditor(state),
-  showHiddenFeaturesInSummary: selectShowHiddenFeaturesInSummary(state),
-  editorDebugEnabled: selectEditorDebugEnabled(state),
-});
-const mapDispatchToProps = {
-  setEditorEnabled,
-  setCompletedAlpha,
-  setWorldBorderEnabled,
-  setRegionLabelsEnabled,
-  setClusterMarkers,
-  setHideFeaturesInEditor,
-  setHideRoutesInEditor,
-  setShowHiddenFeaturesInSummary,
-  setEditorDebugEnabled,
-  setOverrideLang,
-  clearPreferences,
-};
-type ControlsTabOptionsStateProps = ReturnType<typeof mapStateToProps>;
-type ControlsTabOptionsDispatchProps = typeof mapDispatchToProps;
-const connector = connect<
-  ControlsTabOptionsStateProps,
-  ControlsTabOptionsDispatchProps,
-  Empty,
-  AppState
->(mapStateToProps, mapDispatchToProps);
-
-type ControlsTabOptionsProps = ConnectedProps<typeof connector>;
-
-const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
-  displayed,
-
-  editorEnabled,
-  hideFeaturesInEditor,
-  hideRoutesInEditor,
-  completedAlpha,
-  clusterMarkers,
-  worldBorderEnabled,
-  regionLabelsEnabled,
-  showHiddenFeaturesInSummary,
-  editorDebugEnabled,
-
-  setEditorEnabled,
-  setHideFeaturesInEditor,
-  setHideRoutesInEditor,
-  setCompletedAlpha,
-  setClusterMarkers,
-  setWorldBorderEnabled,
-  setRegionLabelsEnabled,
-  setShowHiddenFeaturesInSummary,
-  setEditorDebugEnabled,
-
-  clearPreferences,
-}) => {
+const ControlsTabOptions: FunctionComponent = () => {
   const classes = useStyles();
+
+  const dispatch = useDispatch();
+
+  const displayed = useSelector(isOptionsDisplayed);
+  const editorEnabled = useSelector(selectEditorEnabled);
+  const hideFeaturesInEditor = useSelector(selectHideFeaturesInEditor);
+  const hideRoutesInEditor = useSelector(selectHideRoutesInEditor);
+  const completedAlpha = useSelector(selectCompletedAlpha);
+  const clusterMarkers = useSelector(selectClusterMarkers);
+  const worldBorderEnabled = useSelector(selectWorldBorderEnabled);
+  const regionLabelsEnabled = useSelector(selectRegionLabelsEnabled);
+  const showHiddenFeaturesInSummary = useSelector(selectShowHiddenFeaturesInSummary);
+  const editorDebugEnabled = useSelector(selectEditorDebugEnabled);
+
+  const changeEditorEnabled = useCallback((_event, value) => dispatch(setEditorEnabled(value)), [
+    setEditorEnabled,
+  ]);
+  const changeCompletedAlpha = useCallback((value) => dispatch(setCompletedAlpha(value)), [
+    setCompletedAlpha,
+  ]);
+  const changeWorldBorderEnabled = useCallback(
+    (_event, value) => dispatch(setWorldBorderEnabled(value)),
+    [setWorldBorderEnabled]
+  );
+  const changeRegionLabelsEnabled = useCallback(
+    (_event, value) => dispatch(setRegionLabelsEnabled(value)),
+    []
+  );
+  const changeClusterMarkers = useCallback(
+    (_event, value) => dispatch(setClusterMarkers(value)),
+    []
+  );
+  const changeHideFeaturesInEditor = useCallback(
+    (_event, value) => dispatch(setHideFeaturesInEditor(value)),
+    []
+  );
+  const changeHideRoutesInEditor = useCallback(
+    (_event, value) => dispatch(setHideRoutesInEditor(value)),
+    []
+  );
+  const changeShowHiddenFeaturesInSummary = useCallback(
+    (_event, value) => dispatch(setShowHiddenFeaturesInSummary(value)),
+    []
+  );
+  const changeEditorDebugEnabled = useCallback(
+    (_event, value) => dispatch(setEditorDebugEnabled(value)),
+    []
+  );
+  const triggerClearPreferences = useCallback(() => dispatch(clearPreferences()), []);
+
+  const formatValueLabel = useCallback((value) => `${Math.round(value * 100)}%`, []);
 
   return (
     <TabView grow displayed={displayed}>
@@ -151,7 +141,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setEditorEnabled(event.target.checked)}
+            onChange={changeEditorEnabled}
             checked={editorEnabled}
           />
         </Box>
@@ -163,7 +153,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setHideFeaturesInEditor(event.target.checked)}
+            onChange={changeHideFeaturesInEditor}
             checked={hideFeaturesInEditor}
           />
         </Box>
@@ -175,7 +165,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setHideRoutesInEditor(event.target.checked)}
+            onChange={changeHideRoutesInEditor}
             checked={hideRoutesInEditor}
           />
         </Box>
@@ -191,9 +181,9 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
             min={0.1}
             max={1}
             step={0.1}
-            onChange={(newValue: number) => setCompletedAlpha(newValue)}
+            onChange={changeCompletedAlpha}
             valueLabelDisplay="auto"
-            valueLabelFormat={(value) => `${Math.round(value * 100)}%`}
+            valueLabelFormat={formatValueLabel}
           />
         </Box>
         <Box className={classes.optionContainer}>
@@ -201,7 +191,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setClusterMarkers(event.target.checked)}
+            onChange={changeClusterMarkers}
             checked={clusterMarkers}
           />
         </Box>
@@ -210,7 +200,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setWorldBorderEnabled(event.target.checked)}
+            onChange={changeWorldBorderEnabled}
             checked={worldBorderEnabled}
           />
         </Box>
@@ -219,7 +209,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setRegionLabelsEnabled(event.target.checked)}
+            onChange={changeRegionLabelsEnabled}
             checked={regionLabelsEnabled}
           />
         </Box>
@@ -230,7 +220,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setShowHiddenFeaturesInSummary(event.target.checked)}
+            onChange={changeShowHiddenFeaturesInSummary}
             checked={showHiddenFeaturesInSummary}
           />
         </Box>
@@ -239,7 +229,7 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
           <Switch
             size="small"
             color="primary"
-            onChange={(event) => setEditorDebugEnabled(event.target.checked)}
+            onChange={changeEditorDebugEnabled}
             checked={editorDebugEnabled}
           />
         </Box>
@@ -255,14 +245,12 @@ const _ControlsTabOptions: FunctionComponent<ControlsTabOptionsProps> = ({
                 {t('clear')}
               </Button>
             }
-            onConfirm={clearPreferences}
+            onConfirm={triggerClearPreferences}
           />
         </Box>
       </BorderBox>
     </TabView>
   );
 };
-
-const ControlsTabOptions = connector(_ControlsTabOptions);
 
 export default ControlsTabOptions;

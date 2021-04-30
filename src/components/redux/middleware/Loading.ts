@@ -16,12 +16,6 @@ import { selectLoading } from 'src/components/redux/slices/map/loading/Selector'
 import { AppState } from 'src/components/redux/Types';
 import { navigateToMarkerByID } from 'src/components/views/map/PermalinkHandler';
 
-let handledPermalinks = false;
-const handlePermalinks = (id: string | null) => {
-  if (handledPermalinks || id == null) return;
-  handledPermalinks = true;
-};
-
 /**
  * Handle cases where one initialization step depends on another.
  */
@@ -64,7 +58,7 @@ const initializationMiddleware: Middleware<unknown, AppState> = ({ dispatch, get
         if (permalinkId == null) {
           dispatch(setLoading('handlePermalinks', 'skip'));
         } else {
-          navigateToMarkerByID();
+          navigateToMarkerByID(permalinkId);
         }
       }
 

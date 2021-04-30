@@ -4,7 +4,7 @@
  */
 
 import { Dialog, DialogContent, DialogContentText, makeStyles } from '@material-ui/core';
-import React, { cloneElement, FunctionComponent, ReactElement, useState } from 'react';
+import React, { cloneElement, FunctionComponent, ReactElement, useCallback, useState } from 'react';
 
 import CopyTextArea from 'src/components/interface/CopyTextArea';
 import DialogTitle from 'src/components/views/map/dialogs/DialogTitle';
@@ -36,22 +36,25 @@ const ExportDataPopup: FunctionComponent<ExportDataPopupProps> = ({
   const classes = useStyles();
 
   // When the popup opens, update the contents.
-  const onOpen = () => {
+  const performOpen = () => {
     setData(fetchData());
   };
 
+  const onOpen = useCallback(() => setIsDialogOpen(true), []);
+  const onClose = useCallback(() => setIsDialogOpen(false), []);
+
   return (
     <div>
-      {cloneElement(trigger, { onClick: () => setIsDialogOpen(true) })}
+      {cloneElement(trigger, { onClick: onOpen })}
       <Dialog
         PaperProps={{ className: classes.dialog }}
         open={isDialogOpen}
-        onEntering={onOpen}
+        onEntering={performOpen}
         fullWidth
         maxWidth="lg"
-        onClose={() => setIsDialogOpen(false)}
+        onClose={onClose}
       >
-        <DialogTitle onClose={() => setIsDialogOpen(false)}>{title}</DialogTitle>
+        <DialogTitle onClose={onClose}>{title}</DialogTitle>
         <DialogContent>
           <DialogContentText>{message}</DialogContentText>
           <CopyTextArea text={data} rows={4} />

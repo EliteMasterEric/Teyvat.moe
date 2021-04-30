@@ -1,7 +1,7 @@
 /**
  * Contains data for map feature loading and validation.
- * This code (and thus the Joi library) should only be loaded
- * on the client during development.
+ * This code (and thus the Joi library) should only be loaded during testing.
+ * It lags too much to run this on the client, even in development.
  */
 import Joi, { ValidationOptions, ValidationResult } from 'joi';
 import _ from 'lodash';
@@ -12,9 +12,9 @@ import {
   MSF_SCHEMA_VERSION,
   respawnEnum,
   YOUTUBE_REGEX,
-} from './Element';
-import { MapRegionKeys } from './MapRegions';
-import { MapTags } from './MapTags';
+} from 'src/components/data/map/Element';
+import { MapRegionKeys } from 'src/components/data/map/MapRegions';
+import { MapTags } from 'src/components/data/map/MapTags';
 import { hashObject, isDev } from 'src/components/util';
 
 export const VALIDATION_OPTIONS: ValidationOptions = {

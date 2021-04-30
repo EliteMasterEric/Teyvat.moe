@@ -3,7 +3,7 @@
  * Includes tooltip text.
  */
 import { TextField } from '@material-ui/core';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useCallback } from 'react';
 import Tooltip from 'react-tooltip';
 
 import { t } from 'src/components/i18n/Localization';
@@ -20,6 +20,10 @@ interface CopyTextAreaProps {
  * @param {*} others Any other parameters passed will be received by the text area.
  */
 const CopyTextArea: FunctionComponent<CopyTextAreaProps> = ({ text, rows = 5, ...others }) => {
+  const onClick = useCallback((event) => {
+    (event.target as HTMLInputElement).select();
+    document.execCommand('copy');
+  }, []);
   return (
     <>
       <Tooltip />
@@ -31,10 +35,7 @@ const CopyTextArea: FunctionComponent<CopyTextAreaProps> = ({ text, rows = 5, ..
           readOnly: true,
         }}
         inputProps={{ style: { cursor: 'pointer' } }}
-        onClick={(event) => {
-          (event.target as HTMLInputElement).select();
-          document.execCommand('copy');
-        }}
+        onClick={onClick}
         rows={rows}
         value={text}
         {...others}

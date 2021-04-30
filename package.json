@@ -1,10 +1,10 @@
 {
-  "name": "genshin-map",
-  "version": "0.13.2-alpha",
+  "name": "teyvat.moe",
+  "version": "1.0",
   "license": "GPL-3.0",
-  "homepage": "https://genshinmap.github.io/",
+  "homepage": "https://teyvat.moe/",
   "bugs": {
-    "url": "https://github.com/GenshinMap/genshinmap.github.io/issues"
+    "url": "https://github.com/Teyvat-Moe/teyvat.moe/issues"
   },
   "scripts": {
     "preinstall": "yarn policies set-version 1.22.10",
@@ -100,7 +100,7 @@
     "@babel/eslint-plugin": "^7.12.1",
     "@babel/plugin-proposal-optional-chaining": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
-    "@netlify/plugin-nextjs": "^3.0.3",
+    "@netlify/plugin-nextjs": "^3.1.0-experimental-odb.2",
     "@next/bundle-analyzer": "^10.1.3",
     "@types/gapi.auth2": "^0.0.54",
     "@types/gapi.client": "^1.0.4",

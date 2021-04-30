@@ -4,6 +4,7 @@ import { generateJSON, generatePrettyJSON, isValidJSON } from './Json';
 import { getKeys } from './Object';
 import { getApplicationVersion } from './Package';
 import { deleteRecord, getRecord, setRecord } from './Record';
+import { SafeHTML } from './SafeHtml';
 import {
   canUseDOM,
   CloneProps,
@@ -17,7 +18,6 @@ import {
   latLngToTile,
   openURLInWindow,
   reloadWindow,
-  SafeHTML,
   setBrowserClipboard,
   truncateFloat,
   useDebouncedState,

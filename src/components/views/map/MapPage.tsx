@@ -51,7 +51,7 @@ const _MapPage: FunctionComponent<MapPageProps> = ({ fullyLoaded }) => {
     <>
       <Head>
         {/* The title of the webpage as displayed in the tab name. */}
-        <title>{t('map-ui:page-title-map-full')}</title>
+        <title>{t('pages:page-title-map-full')}</title>
       </Head>
       <FullScreenLoading displayed={!fullyLoaded} />
       <LeafletMap />
