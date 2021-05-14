@@ -36,10 +36,11 @@ export type InterfaceState = {
   editorDebugEnabled: boolean;
 
   /**
-   * We have transitioned from one-popup-per-marker to a single popup,
+   * TODO: Transition from one-popup-per-marker to a single popup,
    * which is hidden when closed, and is re-used when selecting other markers.
+   * This saves on performance.
    */
-  mapPopup: {
+  mapPopup?: {
     /**
      * The position for the popup to display in.
      */
