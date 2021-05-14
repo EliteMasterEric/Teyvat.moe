@@ -9,7 +9,7 @@ module.exports = {
     'prettier', // Ensures compatibility with Prettier.
     'mui-unused-classes', // Prevents unused classes in makeStyles.
     'import', // Special rules to clean up and standardize imports.
-    'unicorn', // Various awesome rules.
+    // 'unicorn', // Various awesome rules.
     'react-redux', // Various rules to enforce best practices for react-redux.
     'lodash', // Various rules to enforce best practices for lodash.
   ],
@@ -24,7 +24,7 @@ module.exports = {
     'plugin:import/typescript',
     'prettier',
     'prettier/@typescript-eslint',
-    'plugin:unicorn/recommended',
+    // 'plugin:unicorn/recommended',
     'plugin:react-redux/recommended',
     'plugin:lodash/recommended',
   ],
@@ -148,6 +148,7 @@ module.exports = {
      *
      * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
      */
+    /*
     'unicorn/filename-case': [
       'warn',
       {
@@ -160,12 +161,14 @@ module.exports = {
         ],
       },
     ],
+    */
     /**'
      * Using complete words results in more readable code.
      * Not everyone knows all your abbreviations. Code is written only once, but read many times.
      *
      * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
      */
+    /*
     'unicorn/prevent-abbreviations': [
       'warn',
       {
@@ -175,18 +178,19 @@ module.exports = {
         ignore: ['i18n'],
       },
     ],
+    */
     /**
      * There are reasons to eliminate nulls from your code completely,
      * but this has issues with React (for example, a functional component can't return undefined).
      *
      * @see: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
      */
-    'unicorn/no-null': ['off'],
+    //'unicorn/no-null': ['off'],
 
     /**
      * There are reasons to use the for...of block, but I prefer Lodash's method.
      */
-    'unicorn/no-array-for-each': ['off'],
+    //'unicorn/no-array-for-each': ['off'],
 
     /**
      * Use the lodash equivalent method wherever possible.
@@ -236,13 +240,13 @@ module.exports = {
     {
       files: ['pages/*.js', 'pages/*.ts', 'pages/*.tsx'],
       rules: {
-        'unicorn/filename-case': 'off',
+        //'unicorn/filename-case': 'off',
       },
     },
     {
       files: ['packages/*.js', 'packages/*.ts'],
       rules: {
-        'unicorn/filename-case': 'off',
+        //'unicorn/filename-case': 'off',
       },
     },
   ],

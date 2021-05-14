@@ -1223,3 +1223,15 @@ The long-postponed feature is finally here!
 -   Redid how the Redux state was structured and how preferences are retrieved.
 -   Replaced localization engine with react-i18n for improved performance.
 -   Memoized lots of components to prevent re-renders.
+
+# 1.0.0 Teyvat.moe
+
+- Migrated website domain.
+- Old site (https://genshinmap.github.io/) is now a stub for redirection and data migration.
+- A bunch of other features and performance improvements that were previously only on the beta site are now public. Scroll through the changelogs for v0.12 and v0.13 for more details.
+
+# 1.0.1 GenshinMap Migrator
+
+- Added a button to migrate from GenshinMap.
+  - Use this if you're here from genshinmap.github.io. If you're on Firefox you may have to click 2 buttons.
+- Added proper instructions and link to the Yuanshen.site migrator.

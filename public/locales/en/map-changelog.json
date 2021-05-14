@@ -1,10 +1,29 @@
 {
   "data": [
     {
-      "version": "v1.0.0 - Soft Launch",
-      "date": "April 27, 2021",
+      "version": "v1.0.1 - GenshinMap Migrator",
+      "date": "May 13, 2021",
       "description": [
-        "We are now Teyvat.moe."
+        "Added a button to migrate from GenshinMap.",
+        "Cleaned up the Yuanshen.site migrator."
+      ]
+    },
+    {
+      "version": "v1.0.0 - Soft Launch",
+      "date": "May 5, 2021",
+      "description": [
+        "We are now Teyvat.moe.",
+        "Old site is now a stub for redirection and data migration."
+      ]
+    },
+    {
+      "version": "v0.13.2 - Performance Improvements",
+      "date": "April 26, 2021",
+      "description": [
+        "Moved map to the /map page, and made the index a directory. This is a surprise tool that will help us later.",
+        "Several major improvements to page performance.",
+        "Redid localization backend.",
+        "Redid storage of local state."
       ]
     },
     {

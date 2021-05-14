@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "allowJs": false,
+    // Set for Bifrost, which isn't ported.
+    "allowJs": true,
+    "checkJs": false,
+    
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": "./",
@@ -48,7 +51,7 @@
     "pages/**/*.ts",
     "pages/**/*.tsx",
     "packages/@types/**/*"
-, "test/ElementSchema.ts"  ],
+  ],
   "exclude": [
     "node_modules",
     ".next",

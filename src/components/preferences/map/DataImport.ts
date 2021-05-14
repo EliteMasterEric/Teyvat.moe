@@ -194,7 +194,7 @@ export const importMapMarkerDataFromGMLegacy = (
     );
     partialData.notify.notifications.push(
       buildNotification(
-        f('message-import-success-partial', {
+        f('map-ui:message-import-success-partial', {
           success: successfulEntries.toString(),
           count: totalEntries.toString(),
         }),
@@ -207,7 +207,7 @@ export const importMapMarkerDataFromGMLegacy = (
     // Else, complete success.
     partialData.notify.notifications.push(
       buildNotification(
-        f('message-import-success', {
+        f('map-ui:message-import-success', {
           count: totalEntries.toString(),
         }),
         {

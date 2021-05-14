@@ -8,6 +8,7 @@ import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
 import { t, LocalizedTypography } from 'src/components/i18n/Localization';
+import BifrostMigrator from 'src/components/interface/BifrostMigrator';
 import BorderBox from 'src/components/interface/BorderBox';
 import { TabView } from 'src/components/interface/Tabs';
 import { exportMapDataJSON } from 'src/components/preferences/map/DataExport';
@@ -135,6 +136,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             title={t('map-ui:migrate-yuanshen')}
             content={t('map-ui:migrate-yuanshen-content')}
             contentSupports={t('map-ui:migrate-yuanshen-support')}
+            externalLink="https://yuanshen.site/backfall.html"
             trigger={
               <Button className={classes.button} variant="contained" size="small">
                 {t('migrate')}
@@ -158,6 +160,7 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             onConfirm={onMigrateAppSample}
           />
         </div>
+        {/* TODO: Add enough MapGenie marker support to enable this. */}
         <div className={classes.optionContainer} style={{ display: 'none' }}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:migrate-mapgenie" />
           <ImportDataPopup
@@ -173,6 +176,9 @@ const _ControlsTabSync: FunctionComponent<ControlsTabSyncProps> = ({
             onConfirm={onMigrateMapGenie}
           />
         </div>
+      </BorderBox>
+      <BorderBox grow={false} overflow="show" direction="column">
+        <BifrostMigrator />
       </BorderBox>
       <BorderBox grow={false} overflow="show" direction="column">
         <Box className={classes.optionContainer}>

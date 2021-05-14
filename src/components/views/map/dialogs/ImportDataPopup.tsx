@@ -38,6 +38,7 @@ interface ImportDataPopupBaseProps {
   content: string;
   contentSupports?: string;
   bookmarklet?: string;
+  externalLink?: string;
   onConfirm: (textarea: string) => boolean;
   trigger: ReactElement<ImportDataPopupTriggerProps>;
 }
@@ -64,6 +65,7 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
   content,
   contentSupports = null, // Leave null to avoid displaying.
   bookmarklet = '',
+  externalLink = '',
   onConfirm,
   trigger,
   error = '',
@@ -108,6 +110,13 @@ const _ImportDataPopup: FunctionComponent<ImportDataPopupProps> = ({
               <>
                 <LocalizedSafeHTML i18nKey="map-ui:bookmarklet-content" />
                 <a href={bookmarklet}>{t('map-ui:bookmarklet-click-link')}</a>
+              </>
+            ) : null}
+            {externalLink !== '' ? (
+              <>
+                <a href={externalLink} target="_blank" rel="noopener noreferrer">
+                  {t('map-ui:click-me')}
+                </a>
               </>
             ) : null}
           </DialogContentText>
