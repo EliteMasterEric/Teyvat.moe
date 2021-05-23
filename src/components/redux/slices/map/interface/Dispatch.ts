@@ -5,6 +5,9 @@ import { dispatchAction } from 'src/components/redux/Dispatch';
 import { MapPosition } from 'src/components/Types';
 
 const performMapMarkersCount = (): number => {
+  if (!getMapFeatureKeys) {
+    return 0;
+  }
   let result = 0;
   for (const key of getMapFeatureKeys()) {
     const feature = getMapFeature(key);

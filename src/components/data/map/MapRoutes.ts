@@ -52,7 +52,9 @@ const initializeMapRouteGroup = async (
   return result;
 };
 export const initializeAllMapRouteGroups = (): void => {
-  dispatchSetLoading('loadMapRoutes', 'progress');
+  if (dispatchSetLoading) {
+    dispatchSetLoading('loadMapRoutes', 'progress');
+  }
   const loaderPromises = _.map(listRouteFiles(), async (routeFilePath) => {
     const result = await initializeMapRouteGroup(routeFilePath);
     if (result != null) {

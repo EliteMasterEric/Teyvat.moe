@@ -40,7 +40,7 @@ const useStyles = makeStyles((_theme) => ({
   },
 }));
 
-const GENSHINMAP_MIGRATION_URL = 'http://genshinmap.github.io/migrate';
+const GENSHINMAP_MIGRATION_URL = 'https://genshinmap.github.io/migrate';
 const GENSHINMAP_IFRAME_ID = 'bifrost-bridge-frame-genshinmap';
 
 const initializeBifrost = async () => {
