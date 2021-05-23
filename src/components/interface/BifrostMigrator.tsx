@@ -78,7 +78,7 @@ const BifrostMigrator: FunctionComponent = () => {
   const [bifrostClient, setBifrostClient] = useState<BifrostCors | null>(null);
 
   const onPressMigrate = async () => {
-    // console.info('[BIFROST] Injecting iframe for BifrostMigrator...');
+    // console.info('[BIFROST-MIGRATOR] Injecting iframe for BifrostMigrator...');
 
     const iframeElement = document.createElement('iframe');
     iframeElement.src = GENSHINMAP_MIGRATION_URL;
@@ -90,11 +90,11 @@ const BifrostMigrator: FunctionComponent = () => {
         setBifrostClient(bfClient);
 
         // console.info(
-        //   '[BIFROST] Client object initialized after loading iframe. Requesting storage...'
+        //   '[BIFROST-MIGRATOR] Client object initialized after loading iframe. Requesting storage...'
         // );
 
         if (bfClient == null) {
-          console.error('[BIFROST] Client was null.');
+          console.error('[BIFROST-MIGRATOR] Client was null.');
           return;
         }
 
@@ -104,12 +104,12 @@ const BifrostMigrator: FunctionComponent = () => {
             dataJson = JSON.parse(data);
           } catch (error) {
             if (error instanceof SyntaxError) {
-              console.error('[BIFROST] Failed to parse JSON response.');
+              console.error('[BIFROST-MIGRATOR] Failed to parse JSON response.');
             }
           }
 
           if (dataJson == null) {
-            console.warn('Could not retrieve Bifrost data.');
+            console.warn('[BIFROST-MIGRATOR] Could not retrieve Bifrost data.');
             sendNotification(t('message-import-error-generic'));
             return;
           }

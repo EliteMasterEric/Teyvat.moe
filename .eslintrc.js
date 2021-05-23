@@ -244,9 +244,11 @@ module.exports = {
       },
     },
     {
-      files: ['packages/*.js', 'packages/*.ts'],
+      files: ['packages/*.js', 'packages/*.ts', 'packages/**/*.js', 'packages/**/*.ts'],
       rules: {
         //'unicorn/filename-case': 'off',
+        'lodash/prefer-lodash-method': 'off',
+        'lodash/prefer-lodash-typecheck': 'off',
       },
     },
   ],
