@@ -1,5 +1,5 @@
 import { CssBaseline } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider, StylesProvider } from '@material-ui/core/styles';
 import { appWithTranslation } from 'next-i18next';
 import { AppProps } from 'next/app';
 import React, { FunctionComponent } from 'react';
@@ -21,20 +21,22 @@ const _app: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
     <>
       {/* StoreProvider allows hooks and components to access the Redux store. */}
       <StoreProvider store={store}>
-        {/* ThemeProvider allows for child components to access the Material UI theme. */}
-        <ThemeProvider theme={Theme}>
-          {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}
-          <CssBaseline />
-          {/* NotificationProvider handles the Notistack.
+        <StylesProvider injectFirst>
+          {/* ThemeProvider allows for child components to access the Material UI theme. */}
+          <ThemeProvider theme={Theme}>
+            {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}
+            <CssBaseline />
+            {/* NotificationProvider handles the Notistack.
               Must be a child of StoreProvider since Redux handles notifications. */}
-          <NotificationProvider>
-            {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
-            <ErrorHandler errorHandler={FullPageErrorHandler}>
-              {/* Component provides the actual map content. */}
-              <Component {...pageProps} />
-            </ErrorHandler>
-          </NotificationProvider>
-        </ThemeProvider>
+            <NotificationProvider>
+              {/* ErrorHandler provides a fallback interface to use if the web page crashes. */}
+              <ErrorHandler errorHandler={FullPageErrorHandler}>
+                {/* Component provides the actual map content. */}
+                <Component {...pageProps} />
+              </ErrorHandler>
+            </NotificationProvider>
+          </ThemeProvider>
+        </StylesProvider>
       </StoreProvider>
     </>
   );
