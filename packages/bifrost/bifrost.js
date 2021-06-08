@@ -178,7 +178,7 @@ class BifrostCors {
                 this.postponeStorageAccess = null;
               } else {
                 console.debug(
-                  `[BIFROST ${window.location.origin}] NULL postponed storage response.`
+                  `[BIFROST ${window.location.origin}] Access granted, but no postponed storage response.`
                 );
               }
             })
