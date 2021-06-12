@@ -1,6 +1,4 @@
 {
-  "page-title-map-full": "$t(core:page-title) - $(pages:page-map)",
-  
   "editor-help": "Editor Help",
   "features": "Features",
   "routes": "Routes",
@@ -13,15 +11,6 @@
   "category-special": "Special",
   "category-ore": "Ore",
   "category-chest": "Chest",
-  "region-mondstadt": "Mondstadt",
-  "region-liyue": "Liyue",
-  "region-dragonspine": "Dragonspine",
-  "region-inazuma": "Inazuma",
-  "region-sumeru": "Sumeru",
-  "region-fontaine": "Fontaine",
-  "region-natlan": "Natlan",
-  "region-snezhnaya": "Snezhnaya",
-  "region-khaenriah": "Khaenri'ah",
   "clear-editor-data": "Clear Editor Data",
   "submit-editor-data": "Submit Editor Data",
   "image-upload-tooltip": "Click or drag/drop to upload to Imgur",
@@ -133,6 +122,12 @@
   "google-login-success": "You are signed in to Google.",
   "auth-error-google-origin": "An origin error occurred while setting up Google integration.",
   "auth-error-google-generic": "An unknown error occurred while setting up Google integration.",
+
+  "github-login-success": "You are signed in to GitHub.",
+  "auth-error-github-origin": "An origin error occurred while setting up GitHub integration.",
+  "auth-error-github-generic": "An unknown error occurred while setting up GitHub integration.",
+
+  "github-prompt": "Sign in with GitHub to easily contribute new markers and routes to the site.",
 
   "google-drive-prompt": "Sign in to save your preferences and marker completion status in the cloud.",
 

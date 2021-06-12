@@ -70,9 +70,9 @@ const HomePage: FunctionComponent = () => {
           width={80}
           height={80}
           className={classes.logo}
-          alt={t('page-title')}
+          alt={t('pages:page-title')}
         />
-        <Typography variant="h3">{t('page-title')}</Typography>
+        <Typography variant="h3">{t('pages:page-title')}</Typography>
       </div>
       <div className={classes.homeBody}>
         <Grid container justify="center" spacing={2}>

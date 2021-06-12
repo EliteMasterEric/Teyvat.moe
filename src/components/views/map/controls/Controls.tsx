@@ -4,9 +4,9 @@
 
 import { Box, makeStyles } from '@material-ui/core';
 import clsx from 'clsx';
+import Link from 'next/link';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import Link from 'next/link';
 
 import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
@@ -156,7 +156,7 @@ const _Controls: FunctionComponent<ControlsProps> = ({ open }) => {
               priority
             />
             <LocalizedSafeHTML
-              i18nKey={isDev() ? 'page-title-beta' : 'page-title'}
+              i18nKey={isDev() ? 'pages:page-title-beta' : 'pages:page-title'}
               className={classes.headerText}
             />
           </div>
