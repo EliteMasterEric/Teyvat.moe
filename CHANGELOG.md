@@ -1240,3 +1240,7 @@ The long-postponed feature is finally here!
 
 - Updated the world map graphic for 1.6.
 - Added the Archipelago map to the east of Teyvat.
+  - No markers for it yet, sadly.
+- Fixed a bug with the GenshinMap migrator.
+- Fixed a bug where server-generated styles would not work correctly, causing the layout to break.
+- Removed some unnecessary local submodules (the corresponding packages have been fixed).
