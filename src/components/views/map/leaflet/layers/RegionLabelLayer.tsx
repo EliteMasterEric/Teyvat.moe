@@ -18,7 +18,7 @@ import { connect, ConnectedProps } from 'react-redux';
 
 import { localizeField } from 'src/components/i18n/map/FeatureLocalization';
 import { selectMapPosition } from 'src/components/redux/slices/map/interface/Selector';
-import { selectWorldBorderEnabled } from 'src/components/redux/slices/map/options/Selector';
+import { selectRegionLabelsEnabled } from 'src/components/redux/slices/map/options/Selector';
 import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
 
@@ -74,7 +74,7 @@ const RegionLabel: FunctionComponent<RegionLabelProps> = ({ featureData, zoomLev
 };
 
 const mapStateToProps = (state: AppState) => ({
-  displayed: selectWorldBorderEnabled(state),
+  displayed: selectRegionLabelsEnabled(state),
   zoomLevel: selectMapPosition(state).zoom,
 });
 type RegionLabelLayerStateProps = ReturnType<typeof mapStateToProps>;

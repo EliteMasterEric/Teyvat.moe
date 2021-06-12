@@ -38,7 +38,8 @@ const useStyles = makeStyles((_theme) => ({
     width: '100vw',
     height: '100vh',
     zIndex: 0,
-    backgroundColor: '#2c6973',
+    // backgroundColor: '#2c6973',
+    backgroundColor: '#121621',
   },
 }));
 
@@ -88,7 +89,7 @@ const LeafletMap: FunctionComponent = () => {
       />
 
       <RegionLabelLayer />
-      <WorldBorderLayer />
+      {/* <WorldBorderLayer /> */}
       <EditorLayer />
 
       {/* Controls the zoom buttons in the top left corner. */}

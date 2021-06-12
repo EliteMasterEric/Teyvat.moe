@@ -33,9 +33,10 @@ generate_tiles() {
 
     # Flatten and reposition.
     # Fetch images up to zoom level 5 + 2 = 7
-    for z in {0..5};
+    # ARCHIPELAGO: Change to 6 + 1
+    for z in {0..6};
     do
-        oz=$((${z}+2))
+        oz=$((${z}+1))
         # Zoom Level 4 = 0-15.
         tile_count=$(((2**${z})-1))
         # tile_offset=$(((2**${z})*2))
@@ -81,7 +82,9 @@ generate_size 16384
 # generate_size 32768
 
 # At each zoom level, each tile is divided in four, and its size (length of the edge, given by the tileSize option) doubles, quadrupling the area.
-generate_tiles 8192
+# generate_tiles 8192
+# ARCHIPELAGO: Use the one with double width.
+generate_tiles 16384
 
 # Disabled due to loss of image quality.
 # optimize_images

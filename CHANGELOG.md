@@ -1235,3 +1235,8 @@ The long-postponed feature is finally here!
 - Added a button to migrate from GenshinMap.
   - Use this if you're here from genshinmap.github.io. If you're on Firefox you may have to click 2 buttons.
 - Added proper instructions and link to the Yuanshen.site migrator.
+
+# 1.1.0 What's An Archipewago?
+
+- Updated the world map graphic for 1.6.
+- Added the Archipelago map to the east of Teyvat.

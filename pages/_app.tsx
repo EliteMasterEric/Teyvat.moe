@@ -27,7 +27,7 @@ const _app: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
     <>
       {/* StoreProvider allows hooks and components to access the Redux store. */}
       <StoreProvider store={store}>
-        <StylesProvider injectFirst generateClassName={generateClassName}>
+        <StylesProvider generateClassName={generateClassName}>
           {/* ThemeProvider allows for child components to access the Material UI theme. */}
           <ThemeProvider theme={Theme}>
             {/* CSSBaseline injects a basic cascading style sheet for use by Material UI styling. */}

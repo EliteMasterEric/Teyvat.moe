@@ -1,41 +1,102 @@
 {
   "mondstadt": {
-    "nameKey": "map-ui:region-mondstadt",
+    "name": {
+      "_code": "2379846137",
+      "en": "Mondstadt",
+      "ja": "モンド",
+      "ru": "Мондштадт",
+      "zh": "蒙德",
+      "zh-tw": "蒙德"
+    },
     "enabled": true,
     "color": "#408867"
   },
   "liyue": {
-    "nameKey": "map-ui:region-liyue",
+    "name": {
+      "_code": "2343126805",
+      "en": "Liyue",
+      "ja": "璃月",
+      "ru": "Ли Юэ",
+      "zh": "璃月",
+      "zh-tw": "璃月"
+    },
     "enabled": true,
     "color": "#A28339"
   },
   "dragonspine": {
-    "nameKey": "map-ui:region-dragonspine",
+    "name": {
+      "_code": "2794992439",
+      "de": "Drachengrat",
+      "en": "Dragonspine",
+      "fr": "Monts Dosdragon",
+      "ja": "ドラゴンスパイン",
+      "pt": "Espinha do Dragão",
+      "ru": "Драконий хребет",
+      "zh": "龙脊雪山",
+      "zh-tw": "龍脊雪山"
+    },
     "enabled": true,
     "color": "#394984"
   },
+  "archipelago": {
+    "name": {
+      "_code": "514439353",
+      "en": "Golden Apple Archipelago"
+    },
+    "enabled": true,
+    "color": "#257C85"
+  },
   "inazuma": {
-    "nameKey": "map-ui:region-inazuma",
+    "name": {
+      "_code": "751451623",
+      "en": "Inazuma",
+      "ja": "稲妻",
+      "ru": "Инадзума",
+      "zh": "稻妻",
+      "zh-tw": "稻妻"
+    },
     "enabled": false,
     "color": "#663F5C"
   },
   "sumeru": {
-    "nameKey": "map-ui:region-sumeru",
+    "name": {
+      "en": "Sumeru",
+      "ja": "スメール",
+      "ru": "Сумеру",
+      "zh": "须弥"
+    },
     "enabled": false,
     "color": "#2A5220"
   },
   "fontaine": {
-    "nameKey": "map-ui:region-fontaine",
+    "name": {
+      "en": "Fontaine",
+      "ja": "フォンテーヌ",
+      "ru": "Фонтейн",
+      "zh": "枫丹"
+    },
     "enabled": false,
     "color": "#295B6C"
   },
   "natlan": {
-    "nameKey": "map-ui:region-natlan",
+    "name": {
+      "de": "Netlan",
+      "en": "Natlan",
+      "ja": "ナタ",
+      "ru": "Натлан",
+      "zh": "穆纳塔"
+    },
     "enabled": false,
     "color": "#408867"
   },
   "snezhnaya": {
-    "nameKey": "map-ui:region-snezhnaya",
+    "name": {
+      "en": "Snezhnaya",
+      "ja": "スネージナヤ",
+      "ru": "Снежная",
+      "zh": "至冬",
+      "zh-tw": "至冬"
+    },
     "enabled": false,
     "color": "#257C85"
   }

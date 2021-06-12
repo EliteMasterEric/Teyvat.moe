@@ -34,6 +34,7 @@ import {
 } from 'src/components/data/map/MapCategories';
 import { getMapRegion, MapRegionKey, MapRegionKeys } from 'src/components/data/map/MapRegions';
 import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
+import { localizeField } from 'src/components/i18n/map/FeatureLocalization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { InputTextArea, InputTextField } from 'src/components/interface/Input';
 import { EditorFeatureSubmission } from 'src/components/preferences/map/EditorDataSchema';
@@ -81,7 +82,7 @@ const SubmitEditorDataPopup: FunctionComponent<SubmitEditorDataPopupProps> = ({
     () =>
       _.map(MapRegionKeys, (key) => {
         const value = getMapRegion(key);
-        return { value: key.toString(), label: t(value.nameKey) };
+        return { value: key.toString(), label: localizeField(value.name) };
       }),
     [MapRegionKeys]
   );

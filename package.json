@@ -54,7 +54,7 @@
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core/",
-    "@reduxjs/toolkit": "file:./packages/redux-toolkit",
+    "@reduxjs/toolkit": "^1.6.0",
     "axios": "^0.21.0",
     "clipboard-polyfill": "^3.0.1",
     "clsx": "^1.1.1",
@@ -70,7 +70,6 @@
     "leaflet-editable": "file:./packages/Leaflet.Editable",
     "leaflet-textpath": "file:./packages/leaflet.textpath",
     "leaflet.markercluster": "file:./packages/leaflet.markercluster",
-    "localized-strings": "file:./packages/localized-strings/",
     "lodash": "^4.17.21",
     "new-github-issue-url": "^0.2.1",
     "next": "latest",
@@ -86,7 +85,6 @@
     "react-leaflet-cluster": "^1.0.2",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-leaflet-textpath": "file:./packages/react-leaflet-textpath",
-    "react-localization": "file:./packages/react-localization",
     "react-redux": "^7.2.2",
     "react-swipeable-views": "^0.13.9",
     "react-tooltip": "^4.2.10",
@@ -141,7 +139,7 @@
     "eslint-plugin-react-redux": "^3.3.2",
     "eslint-plugin-unicorn": "^30.0.0",
     "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "file:./packages/next-transpile-modules",
+    "next-transpile-modules": "^7.2.0",
     "prettier": "^2.2.1",
     "react-dev-utils": "^11.0.1",
     "remark-cli": "^9.0.0",
@@ -154,17 +152,13 @@
     "url-loader": "^4.1.1"
   },
   "resolutions": {
-    "@reduxjs/toolkit": "file:./packages/redux-toolkit",
     "@react-leaflet/core": "file:./packages/react-leaflet/packages/core",
     "react-leaflet": "file:./packages/react-leaflet/packages/react-leaflet",
     "react-leaflet-textpath": "file:./packages/react-leaflet-textpath",
-    "react-localization": "file:./packages/react-localization",
     "leaflet-editable": "file:./packages/Leaflet.Editable",
     "leaflet.markercluster": "file:./packages/leaflet.markercluster",
     "leaflet-textpath": "file:./packages/leaflet.textpath",
-    "leaflet": "file:./packages/leaflet",
-    "localized-strings": "file:./packages/localized-strings/",
-    "next-transpile-modules": "file:./packages/next-transpile-modules"
+    "leaflet": "file:./packages/leaflet"
   },
   "typeCoverage": {
     "atLeast": 95,

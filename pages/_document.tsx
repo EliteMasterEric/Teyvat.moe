@@ -1,4 +1,4 @@
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import { createGenerateClassName, ServerStyleSheets } from '@material-ui/core/styles';
 import Document, {
   DocumentContext,
   Html,
@@ -9,6 +9,12 @@ import Document, {
 } from 'next/document';
 import React, { Children } from 'react';
 import PageHeaders from 'src/components/views/PageHeaders';
+
+const generateClassName = createGenerateClassName({
+  disableGlobal: false, // Disable generation of deterministic class names.
+  productionPrefix: 'muicss', // The string used to prefix the class names in production.
+  seed: 'archon', // String uniquely identifying the generator.
+});
 
 // Resolution order
 //
@@ -35,11 +41,16 @@ import PageHeaders from 'src/components/views/PageHeaders';
 class _document extends Document {
   static async getInitialProps(context: DocumentContext): Promise<DocumentInitialProps> {
     // Render app and page and get the context of the page with collected side effects.
-    const sheets = new ServerStyleSheets();
+    const sheets = new ServerStyleSheets({
+      // injectFirst: true,
+      generateClassName,
+    });
     const originalRenderPage = context.renderPage;
 
     context.renderPage = () =>
       originalRenderPage({
+        // The method wraps your React node in a provider element.
+        // It collects the style sheets during the rendering so they can be later sent to the client.
         enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
       });
 
@@ -59,7 +70,7 @@ class _document extends Document {
           <PageHeaders />
         </Head>
         <body>
-          {/* Gets replaced with the actual page content. */}
+          {/* Main gets replaced with the actual page content. */}
           <Main />
           <NextScript />
         </body>

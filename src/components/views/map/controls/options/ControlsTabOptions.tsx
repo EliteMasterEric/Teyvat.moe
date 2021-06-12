@@ -88,12 +88,14 @@ const ControlsTabOptions: FunctionComponent = () => {
   const showHiddenFeaturesInSummary = useSelector(selectShowHiddenFeaturesInSummary);
   const editorDebugEnabled = useSelector(selectEditorDebugEnabled);
 
-  const changeEditorEnabled = useCallback((_event, value) => dispatch(setEditorEnabled(value)), [
-    setEditorEnabled,
-  ]);
-  const changeCompletedAlpha = useCallback((value) => dispatch(setCompletedAlpha(value)), [
-    setCompletedAlpha,
-  ]);
+  const changeEditorEnabled = useCallback(
+    (_event, value) => dispatch(setEditorEnabled(value)),
+    [setEditorEnabled]
+  );
+  const changeCompletedAlpha = useCallback(
+    (value) => dispatch(setCompletedAlpha(value)),
+    [setCompletedAlpha]
+  );
   const changeWorldBorderEnabled = useCallback(
     (_event, value) => dispatch(setWorldBorderEnabled(value)),
     [setWorldBorderEnabled]
@@ -195,6 +197,7 @@ const ControlsTabOptions: FunctionComponent = () => {
             checked={clusterMarkers}
           />
         </Box>
+        {/*
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-world-border" />
           <Switch
@@ -204,6 +207,7 @@ const ControlsTabOptions: FunctionComponent = () => {
             checked={worldBorderEnabled}
           />
         </Box>
+        */}
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-region-labels" />
           <Switch

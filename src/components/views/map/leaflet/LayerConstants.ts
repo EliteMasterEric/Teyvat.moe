@@ -29,7 +29,8 @@ export const TILE_BLANK = getNextImageUrl('/images/tiles/blank.png', 256, 256);
 
 // Observable bounds of the map.
 // export const MAP_BOUNDS = L.latLngBounds([0, 0], [-66.5, 90]);
-export const MAP_BOUNDS = latLngBounds([0, 0], [-64, 64]);
+//export const MAP_BOUNDS = latLngBounds([0, 0], [-64, 64]);
+export const MAP_BOUNDS = latLngBounds([0, 0], [-64, 128]);
 
 export const lineProperties = {
   color: '#d32f2f', // Red

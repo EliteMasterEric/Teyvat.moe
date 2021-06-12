@@ -1,10 +1,11 @@
 import _ from 'lodash';
+import { MSFLocalizedField } from './Element';
 import MapRegionRawData from 'src/data/core/regions.json';
 
 export type MapRegionKey = keyof typeof MapRegionRawData;
 
 export interface MapRegion {
-  nameKey: string;
+  name: MSFLocalizedField;
   enabled: boolean;
   color: string;
 }
