@@ -9,6 +9,7 @@ import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { MapRegionKey, getMapRegion } from 'src/components/data/map/MapRegions';
 import { t } from 'src/components/i18n/Localization';
+import { localizeField } from 'src/components/i18n/map/FeatureLocalization';
 import { AppDispatch } from 'src/components/redux';
 import { setMapRegion } from 'src/components/redux/slices/map/interface/Actions';
 import { selectIsRegionDisplayed } from 'src/components/redux/slices/map/interface/Selector';
@@ -91,7 +92,7 @@ const _ControlsRegionBanner: FunctionComponent<ControlsRegionBannerProps> = ({
   };
 
   return (
-    <Tooltip title={t(region.nameKey)}>
+    <Tooltip title={localizeField(region.name)}>
       <Box
         className={clsx(classes.banner, active ? classes.bannerActive : classes.bannerInactive)}
         style={style}

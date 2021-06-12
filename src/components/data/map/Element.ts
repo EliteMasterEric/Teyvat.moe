@@ -27,7 +27,8 @@ export type MSFSchemaVersion = A.Type<2, 'MSFSchemaVersion'>;
  * A regular expression which validates whether a string is a link to a YouTube video.
  * If there is a match, the first capture group represents the video ID (?v=<ID>).
  */
-export const YOUTUBE_REGEX = /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([\w-]+)(?:&.+)?$/;
+export const YOUTUBE_REGEX =
+  /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([\w-]+)(?:&.+)?$/;
 
 export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
 export type MSFLocalizedField = {

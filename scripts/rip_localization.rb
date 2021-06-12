@@ -9,7 +9,7 @@ require 'optparse'
 require 'pathname'
 
 I18N_PATH = "./DimbreathData/TextMap/"
-I18N_NAME = "Text%s.json"
+I18N_NAME = "TextMap%s.json"
 I18N_LOCALES = {
   "CHS": "zh",
   "DE": "de",
@@ -17,8 +17,10 @@ I18N_LOCALES = {
   "ES": "es",
   "FR": "fr",
   "ID": "id",
-  "JA": "ja",
-  "KO": "ko",
+  # "JA": "ja",
+  "JP": "ja",
+  # "KO": "ko",
+  "KR": "ko",
   "PT": "pt",
   "RU": "ru",
   "TH": "th",
