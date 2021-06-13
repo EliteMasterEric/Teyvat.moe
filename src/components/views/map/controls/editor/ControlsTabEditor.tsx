@@ -2,7 +2,8 @@
  * Provides the interface for the Editor tab in the Map controls.
  */
 
-import { Button, makeStyles } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import newGithubIssueUrl from 'new-github-issue-url';
 import React, { FunctionComponent, useCallback } from 'react';

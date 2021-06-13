@@ -2,9 +2,10 @@
  * Provides the button which closes the Map controls.
  */
 
-import { makeStyles, Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import FastRewindIcon from '@material-ui/icons/FastRewind';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

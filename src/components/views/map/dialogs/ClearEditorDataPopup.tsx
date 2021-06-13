@@ -3,14 +3,8 @@
  * when clicking "Clear Editor Data" in the Editor tab of the map controls.
  */
 
-import {
-  Button,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  makeStyles,
-} from '@material-ui/core';
+import { Button, Dialog, DialogContent, DialogContentText, DialogActions } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { cloneElement, useState, FunctionComponent, ReactElement, useCallback } from 'react';
 
 import { t } from 'src/components/i18n/Localization';

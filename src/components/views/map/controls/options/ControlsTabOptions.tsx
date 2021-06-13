@@ -2,7 +2,8 @@
  * Provides the interface for the Options tab of the map controls.
  */
 
-import { makeStyles, Box, Button, Switch, Typography } from '@material-ui/core';
+import { Box, Button, Switch, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

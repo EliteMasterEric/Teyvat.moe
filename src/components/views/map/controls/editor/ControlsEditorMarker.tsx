@@ -3,9 +3,10 @@
  * in the Editor tab of the map Controls.
  */
 
-import { Box, Tooltip, IconButton, makeStyles } from '@material-ui/core';
+import { Box, Tooltip, IconButton } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
 import GpsFixedIcon from '@material-ui/icons/GpsFixed';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

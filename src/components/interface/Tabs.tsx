@@ -9,9 +9,9 @@ import {
   Tabs as MaterialTabs,
   TabsActions,
   Tooltip,
-  makeStyles,
   useTheme,
 } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, {
   useRef,
@@ -108,9 +108,10 @@ export const TabBar: FunctionComponent<TabBarProps> = ({
   const classes = useStyles();
 
   const [currentValue, setCurrentValue] = useDebouncedState<TabValue>(value, onChange);
-  const onValueChange = useCallback((_event, newValue) => setCurrentValue(newValue), [
-    setCurrentValue,
-  ]);
+  const onValueChange = useCallback(
+    (_event, newValue) => setCurrentValue(newValue),
+    [setCurrentValue]
+  );
 
   // Fix indicator breaking when tabs dynamically change.
   const theme = useTheme();

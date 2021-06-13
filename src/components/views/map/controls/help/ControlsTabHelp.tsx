@@ -1,7 +1,7 @@
 /**
  * Provides the view which displays the Help tab of the map controls.
  */
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { memo, useState, FunctionComponent, useMemo } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 

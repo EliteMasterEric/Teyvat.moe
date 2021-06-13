@@ -4,11 +4,12 @@
 
 import {
   DialogTitle as MuiDialogTitle,
-  makeStyles,
   Typography,
   IconButton,
+  makeStyles,
 } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
+
 import React, { ReactNode, FunctionComponent } from 'react';
 
 const useStyles = makeStyles((theme) => ({

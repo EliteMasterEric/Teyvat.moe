@@ -2,7 +2,8 @@
  * Provides a component to display a simple flex box with a stylized border.
  */
 
-import { Box, BoxProps, makeStyles } from '@material-ui/core';
+import { Box, BoxProps } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { getNextImageUrl } from './Image';

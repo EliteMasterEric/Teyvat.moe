@@ -1,5 +1,6 @@
-import { Avatar, Box, IconButton, Typography, makeStyles, Tooltip } from '@material-ui/core';
+import { Avatar, Box, IconButton, Typography, Tooltip, makeStyles } from '@material-ui/core';
 import LogoutIcon from '@material-ui/icons/ExitToApp';
+
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { attemptGoogleSignOut } from 'src/components/api/google';

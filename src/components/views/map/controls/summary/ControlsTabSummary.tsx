@@ -2,7 +2,7 @@
  * Provides the view which displays the About > Summary tab of the map controls.
  */
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

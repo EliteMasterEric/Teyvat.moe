@@ -2,7 +2,8 @@
  * Provides the interface for the Options tab of the map controls.
  */
 
-import { makeStyles, Box, Button } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import dynamic from 'next/dynamic';
 import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

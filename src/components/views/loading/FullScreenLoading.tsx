@@ -1,4 +1,5 @@
 import { LinearProgress, Typography, makeStyles } from '@material-ui/core';
+
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { f, t } from 'src/components/i18n/Localization';

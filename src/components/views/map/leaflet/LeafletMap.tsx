@@ -3,12 +3,12 @@
  * along with region labels, world border, editor data, and feature and map data.
  */
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import { CRS } from 'leaflet';
 import 'leaflet-editable';
 import _ from 'lodash';
 import React, { FunctionComponent, useCallback } from 'react';
-import { MapContainer, ZoomControl, Popup } from 'react-leaflet';
+import { MapContainer, ZoomControl } from 'react-leaflet';
 
 import { DEFAULT_ZOOM, MAP_CENTER } from 'src/components/data/map/MapConstants';
 import { getMapFeature, getMapFeatureKeys } from 'src/components/data/map/MapFeatures';

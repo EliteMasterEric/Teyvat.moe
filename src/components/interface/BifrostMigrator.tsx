@@ -7,7 +7,8 @@
  * @see: https://developer.mozilla.org/en-US/docs/Web/API/Document/requestStorageAccess
  */
 
-import { Box, Button, makeStyles } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { useState, FunctionComponent, LegacyRef, ReactElement } from 'react';
 import BifrostCors from 'packages/bifrost/bifrost';
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
@@ -75,7 +76,7 @@ const BifrostMigrator: FunctionComponent = () => {
 
   const [bifrostPortal, setBifrostPortal] = useState<ReactElement | null>(null);
 
-  const [bifrostClient, setBifrostClient] = useState<BifrostCors | null>(null);
+  const [_bifrostClient, setBifrostClient] = useState<BifrostCors | null>(null);
 
   const onPressMigrate = async () => {
     // console.info('[BIFROST-MIGRATOR] Injecting iframe for BifrostMigrator...');

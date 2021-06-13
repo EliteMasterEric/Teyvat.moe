@@ -1,4 +1,4 @@
-import { createGenerateClassName, ServerStyleSheets } from '@material-ui/core/styles';
+import { createGenerateClassName, ServerStyleSheets } from '@material-ui/styles';
 import Document, {
   DocumentContext,
   Html,
@@ -43,7 +43,7 @@ class _document extends Document {
     // Render app and page and get the context of the page with collected side effects.
     const sheets = new ServerStyleSheets({
       // injectFirst: true,
-      generateClassName,
+      serverGenerateClassName: generateClassName,
     });
     const originalRenderPage = context.renderPage;
 
@@ -54,7 +54,11 @@ class _document extends Document {
         enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
       });
 
+    console.info(`Performing SSR for path ${context.pathname} (${context.locale})`);
+
     const initialProps = await Document.getInitialProps(context);
+
+    console.info(sheets.getStyleElement().props?.dangerouslySetInnerHTML?.__html.substr(0, 1000));
 
     return {
       ...initialProps,

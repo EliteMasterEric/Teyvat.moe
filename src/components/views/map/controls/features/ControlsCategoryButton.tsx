@@ -3,7 +3,8 @@
  * within the Features and Routes tabs of the Map controls.
  */
 
-import { makeStyles, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import { getMapCategory, MapCategoryKey } from 'src/components/data/map/MapCategories';

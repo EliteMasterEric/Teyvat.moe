@@ -3,7 +3,8 @@
  * in the About > Summary tab of the map controls.
  */
 
-import { Box, makeStyles, Typography, LinearProgress } from '@material-ui/core';
+import { Box, Typography, LinearProgress } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';

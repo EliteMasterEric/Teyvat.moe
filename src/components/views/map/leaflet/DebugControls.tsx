@@ -2,8 +2,9 @@
  * Map control which display debug information to the user.
  */
 
-import { Typography, makeStyles } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import ExploreIcon from '@material-ui/icons/Explore';
+import { makeStyles } from '@material-ui/styles';
 import { LatLngLiteral } from 'leaflet';
 import _ from 'lodash';
 import React, { useState, FunctionComponent, memo, useCallback } from 'react';

@@ -11,11 +11,11 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
-  makeStyles,
   FormControl,
   InputLabel,
   Typography,
 } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, {
   useState,

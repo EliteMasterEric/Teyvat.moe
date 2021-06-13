@@ -2,7 +2,8 @@
  * Provides the ability to inject a custom control onto a Leaflet map.
  */
 
-import { Tooltip, makeStyles } from '@material-ui/core';
+import { Tooltip } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import { DomEvent } from 'leaflet';
 import React, { FunctionComponent, ReactNode, useCallback, useRef } from 'react';

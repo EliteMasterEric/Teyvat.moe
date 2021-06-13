@@ -3,7 +3,8 @@
  * within the Features tab of the Map controls.
  */
 
-import { makeStyles, createStyles, Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
+import { makeStyles, createStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
@@ -45,8 +46,7 @@ const useStyles = makeStyles(
       '-khtml-user-select': 'none' /* Konqueror HTML */,
       '-moz-user-select': 'none' /* Firefox */,
       '-ms-user-select': 'none' /* Internet Explorer/Edge */,
-      'user-select':
-        'none' /* Non-prefixed version, currently
+      'user-select': 'none' /* Non-prefixed version, currently
                                     supported by Chrome and Opera */,
     },
     featureRoot: {

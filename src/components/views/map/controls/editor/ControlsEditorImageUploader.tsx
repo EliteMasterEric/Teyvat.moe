@@ -3,8 +3,9 @@
  * in the Editor tab of the map Controls.
  */
 
-import { Box, IconButton, Tooltip, makeStyles, Typography } from '@material-ui/core';
+import { Box, IconButton, Tooltip, Typography } from '@material-ui/core';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { useState, useCallback, FunctionComponent } from 'react';
 import { useDropzone } from 'react-dropzone';

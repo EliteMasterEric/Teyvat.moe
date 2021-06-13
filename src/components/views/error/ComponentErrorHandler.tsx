@@ -11,12 +11,12 @@ import {
   CardHeader,
   Grid,
   Typography,
-  makeStyles,
   Collapse,
   IconButton,
 } from '@material-ui/core';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, { useState, useEffect } from 'react';
 import { f, t } from 'src/components/i18n/Localization';

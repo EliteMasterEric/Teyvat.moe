@@ -1,4 +1,5 @@
-import { Box, Typography, makeStyles } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { FunctionComponent, useEffect } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 import ControlsSyncProfileGoogle from './ControlsSyncProfileGoogle';

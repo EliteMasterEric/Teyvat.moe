@@ -3,14 +3,8 @@
  * when clicking "Import Data" or "Import Legacy Data" in the Options tab of the map controls.
  */
 
-import {
-  Button,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  makeStyles,
-} from '@material-ui/core';
+import { Button, Dialog, DialogContent, DialogContentText, DialogActions } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { cloneElement, FunctionComponent, ReactElement, useCallback, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 

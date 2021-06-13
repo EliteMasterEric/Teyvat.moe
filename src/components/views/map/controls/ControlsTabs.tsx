@@ -2,7 +2,6 @@
  * Provides the interface for the tabs at the top of the Map controls.
  */
 
-import { makeStyles } from '@material-ui/core';
 import CreateIcon from '@material-ui/icons/Create';
 import LiveHelpIcon from '@material-ui/icons/LiveHelp';
 import PlaceIcon from '@material-ui/icons/Place';
@@ -10,6 +9,7 @@ import SatelliteIcon from '@material-ui/icons/Satellite';
 import SettingsIcon from '@material-ui/icons/Settings';
 import SyncIcon from '@material-ui/icons/Sync';
 import TimelineIcon from '@material-ui/icons/Timeline';
+import { makeStyles } from '@material-ui/styles';
 
 import React, { FunctionComponent, useCallback, useMemo } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

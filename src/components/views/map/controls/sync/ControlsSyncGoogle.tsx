@@ -1,4 +1,5 @@
-import { Box, Button, LinearProgress, makeStyles } from '@material-ui/core';
+import { Box, Button, LinearProgress } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent, useCallback } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

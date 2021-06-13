@@ -3,8 +3,9 @@
  * in the Options tab of the map controls.
  */
 
-import { makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
+import { MenuItem, Select, Typography } from '@material-ui/core';
 import { SelectInputProps } from '@material-ui/core/Select/SelectInput';
+import { makeStyles } from '@material-ui/styles';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';

@@ -5,10 +5,11 @@
 import { List, ListItem, Typography, ListItemText, Collapse, makeStyles } from '@material-ui/core';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import _ from 'lodash';
 import React, { FunctionComponent, memo, useMemo, useState } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
-import { t, f, isI18nLoaded, LocalizedSafeHTML } from 'src/components/i18n/Localization';
+import { t, isI18nLoaded, LocalizedSafeHTML } from 'src/components/i18n/Localization';
 import { getChangelogData } from 'src/components/i18n/map/ChangelogLocalization';
 import BorderBox from 'src/components/interface/BorderBox';
 import {

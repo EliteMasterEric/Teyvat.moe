@@ -3,19 +3,20 @@
  */
 
 import { Box, makeStyles } from '@material-ui/core';
+
 import clsx from 'clsx';
 import Link from 'next/link';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { LocalizedSafeHTML, t } from 'src/components/i18n/Localization';
+import { LocalizedSafeHTML } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
 import { getNextImageUrl, NextImage } from 'src/components/interface/Image';
 import { useSmallScreen } from 'src/components/interface/MediaHooks';
 import { selectOpen } from 'src/components/redux/slices/map/interface/Selector';
 import { AppState } from 'src/components/redux/Types';
 import { Empty } from 'src/components/Types';
-import { isDev, SafeHTML } from 'src/components/util';
+import { isDev } from 'src/components/util';
 import ControlsNavigationSmall from 'src/components/views/map/controls/ControlsNavigationMobile';
 import ControlsTabs from 'src/components/views/map/controls/ControlsTabs';
 import ControlsTabEditor from 'src/components/views/map/controls/editor/ControlsTabEditor';

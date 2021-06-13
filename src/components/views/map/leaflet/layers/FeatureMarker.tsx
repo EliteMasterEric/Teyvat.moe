@@ -1,6 +1,7 @@
-import { Box, IconButton, Tooltip, Typography, makeStyles } from '@material-ui/core';
+import { Box, IconButton, Tooltip, Typography } from '@material-ui/core';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import LinkIcon from '@material-ui/icons/Link';
+import { makeStyles } from '@material-ui/styles';
 import type { LeafletEvent, LeafletEventHandlerFn } from 'leaflet';
 import React, { FunctionComponent } from 'react';
 import { Popup } from 'react-leaflet';

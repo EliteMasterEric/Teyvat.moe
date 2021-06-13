@@ -3,7 +3,7 @@
  * on the Leaflet map.
  */
 
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import { GeoJsonObject, Feature, Point } from 'geojson';
 import {
   GeoJSON as GeoJSONLeaflet,

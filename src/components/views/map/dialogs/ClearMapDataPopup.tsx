@@ -1,11 +1,5 @@
-import {
-  Button,
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  makeStyles,
-} from '@material-ui/core';
+import { Button, Dialog, DialogContent, DialogContentText, DialogActions } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { cloneElement, FunctionComponent, useState, ReactElement, useCallback } from 'react';
 
 import { t } from 'src/components/i18n/Localization';

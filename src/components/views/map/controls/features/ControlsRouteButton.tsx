@@ -3,7 +3,8 @@
  * within the Routes tab of the Map controls.
  */
 
-import { makeStyles, Box, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent } from 'react';
 import { connect, ConnectedProps } from 'react-redux';
@@ -27,8 +28,8 @@ const useStyles = makeStyles((_theme) => ({
     position: 'absolute',
     top: -1,
     left: -37,
-    width: 79,
-    height: 79,
+    width: 80,
+    height: 80,
     /* This URL MUST start with a '/' to indicate it is an absolute URL. */
     background: ({ bgImage }: StyleProps) => `url(${bgImage}) no-repeat`,
     backgroundSize: '100% 100%',
@@ -45,8 +46,7 @@ const useStyles = makeStyles((_theme) => ({
     '-khtml-user-select': 'none' /* Konqueror HTML */,
     '-moz-user-select': 'none' /* Firefox */,
     '-ms-user-select': 'none' /* Internet Explorer/Edge */,
-    'user-select':
-      'none' /* Non-prefixed version, currently
+    'user-select': 'none' /* Non-prefixed version, currently
                                     supported by Chrome and Opera */,
   },
   routeRoot: {
@@ -116,7 +116,7 @@ const _ControlsRouteButton: FunctionComponent<ControlsRouteButtonProps> = ({
   toggleRouteDisplayed,
 }) => {
   const classes = useStyles({
-    bgImage: getNextImageUrl('/images/controls/filter_border.png', 96, 96),
+    bgImage: getNextImageUrl('/images/controls/filter_border.png', 80, 80),
   });
 
   const mapRoute = getMapRouteGroup(routeKey);

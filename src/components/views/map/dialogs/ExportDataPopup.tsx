@@ -3,7 +3,8 @@
  * when clicking "Export Data" or "Export Legacy Data" in the Options tab of the map controls.
  */
 
-import { Dialog, DialogContent, DialogContentText, makeStyles } from '@material-ui/core';
+import { Dialog, DialogContent, DialogContentText } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import React, { cloneElement, FunctionComponent, ReactElement, useCallback, useState } from 'react';
 
 import CopyTextArea from 'src/components/interface/CopyTextArea';

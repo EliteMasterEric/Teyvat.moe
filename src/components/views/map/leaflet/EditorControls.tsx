@@ -2,11 +2,11 @@
  * Provides the Leaflet controls at the top left of the map.
  */
 
-import { makeStyles } from '@material-ui/core';
 import CancelIcon from '@material-ui/icons/Cancel';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import PlaceIcon from '@material-ui/icons/Place';
 import TimelineIcon from '@material-ui/icons/Timeline';
+import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import _ from 'lodash';
 import React, { FunctionComponent } from 'react';
