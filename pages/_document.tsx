@@ -58,8 +58,6 @@ class _document extends Document {
 
     const initialProps = await Document.getInitialProps(context);
 
-    console.info(sheets.getStyleElement().props?.dangerouslySetInnerHTML?.__html.substr(0, 1000));
-
     return {
       ...initialProps,
       // Styles fragment is rendered after the app and page rendering finish.

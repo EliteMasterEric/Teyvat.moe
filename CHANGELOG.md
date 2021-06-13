@@ -1247,3 +1247,14 @@ The long-postponed feature is finally here!
 - Removed some unnecessary local submodules (the corresponding packages have been fixed).
 - Updated the localization files.
 - Removed Herobrine.
+
+# 1.1.1 Bug Fixes
+
+- Added map markers for the Golden Apple Archipelago.
+  - Teleporter (Special): Added 7 markers.
+- Added map labels for the Golden Apple Archipelago.
+- Reduced the number of print calls made by the GenshinMap migrator.
+- Fixed a bug where the title would read `page title` instead of `Teyvat.moe`
+- Fixed a bug where certain external libraries would not load due to improper CORS configuration.
+- Fixed a bug where user data would not be loaded from local storage properly.
+- Fixed a visual bug with the switches in the Options tab.

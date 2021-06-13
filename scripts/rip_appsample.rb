@@ -52,10 +52,12 @@ def truncate_number(input)
 end
 
 MULTIPLIER = [
-  0.668132, -0.653547
+  # 0.668132, -0.653547
+  1, -1
 ]
 OFFSET = [
-  35.49, -31.6808
+  # 35.49, -31.6808 # Teyvat
+  64 + 35.49 - 3.13572, -31.6808 - 0.55621 # Archipelago
 ]
 MERCATOR = SphericalMercator.new(size: 256, round: false)
 ORIGIN = MERCATOR.px([0.0,0.0], 1.0)
