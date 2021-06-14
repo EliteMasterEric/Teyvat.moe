@@ -1,0 +1,195 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "297561694",
+    "zh": "珍贵的宝箱",
+    "de": "Wertvolle Truhe",
+    "en": "Precious Chest",
+    "es": "Cofre valioso",
+    "fr": "Coffre précieux",
+    "id": "Precious Chest",
+    "ja": "貴重な宝箱",
+    "ko": "진귀한 보물상자",
+    "pt": "Baú Precioso",
+    "ru": "Драгоценный сундук",
+    "th": "Precious Chest",
+    "vi": "Rương Siêu Cấp"
+  },
+  "description": {
+    "en": "A solid wooden chest framed with gold. Contains helpful rewards.",
+    "ru": "Прочный деревянный сундук обрамлённый золотом. Содержит полезные награды."
+  },
+  "enabled": true,
+  "cluster": "variable",
+  "respawn": "none",
+  "icons": {
+    "filter": "precious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -9.67903,
+        107.73825
+      ],
+      "id": "E39AF0B4A1C67310FD66CAA725522AE3259B31B0",
+      "importIds": {
+        "hoyolab": [
+          "45_11559"
+        ],
+        "appsample": [
+          "14264"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/precious-chest/E39AF0B",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.67385,
+        107.69166
+      ],
+      "id": "36746276E1E16E8E3714BF545083497FDE99FB9B",
+      "importIds": {
+        "hoyolab": [
+          "45_11558"
+        ],
+        "appsample": [
+          "14264"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/precious-chest/3674627",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.69975,
+        107.76932
+      ],
+      "id": "63EFBDF517160E11587889CF7B5D1886D80D5102",
+      "importIds": {
+        "hoyolab": [
+          "45_11555"
+        ],
+        "appsample": [
+          "14264"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/precious-chest/63EFBDF",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -17.38696,
+        108.87717
+      ],
+      "id": "EDED9B59E7D4C5E53FBF8EA1B8312FC46CD4CE03",
+      "importIds": {
+        "hoyolab": [
+          "45_11513"
+        ],
+        "appsample": [
+          "14304"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/50e2bd8a854b9028ba40fcd5f03b2d7c_7761511883922819705.gif",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -40.47549,
+        80.86814
+      ],
+      "id": "C03D82638072D1A6926E86ABDF9D411E5E2053E7",
+      "tags": [
+        "painted-wall"
+      ],
+      "importIds": {
+        "hoyolab": [
+          "187_11496"
+        ],
+        "appsample": [
+          "14230"
+        ]
+      },
+      "popupTitle": {
+        "en": "Painted Wall"
+      },
+      "popupContent": {
+        "en": "Rewards a Precious Chest"
+      },
+      "popupMedia": "archipelago/precious-chest/C03D826",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.22507,
+        97.94358
+      ],
+      "id": "B78E2E1A9E40475D1A20115245418E27AD635947",
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "importIds": {
+        "hoyolab": [
+          "188_11614"
+        ]
+      },
+      "popupContent": {
+        "en": "Rewards a Precious Chest. Complete the nearby Common Chest then restart the game."
+      },
+      "popupMedia": "archipelago/harpastum-chest/B78E2E1",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.95895,
+        89.15841
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "7DABD5167F5FD14D1B8F9570B119F58AD2A69C56",
+      "importIds": {
+        "hoyolab": [
+          "188_11427"
+        ],
+        "appsample": [
+          "14148"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Precious Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=0s",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

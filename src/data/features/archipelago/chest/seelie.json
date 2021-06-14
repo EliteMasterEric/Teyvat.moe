@@ -1,0 +1,64 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "2548043279",
+    "zh": "仙灵",
+    "de": "Seelie",
+    "en": "Seelie",
+    "es": "Seelie",
+    "fr": "Fées",
+    "id": "Seelie",
+    "ja": "仙霊",
+    "ko": "선령",
+    "pt": "Seelie",
+    "ru": "Феи",
+    "th": "Seelie",
+    "vi": "Tiên Linh"
+  },
+  "description": {
+    "_code": "2045092446",
+    "zh": "那些时隐时现的神奇生物被称为「仙灵」，会为追随它的人献上小小的宝藏。\\n据说，在遥远的过去，它们是很喜欢引导人类的伟大种族。",
+    "de": "Die fantastischen Wesen, die plötzlich auftauchen und genauso plötzlich wieder verschwinden, werden „Seelien“ genannt. Sie geben den Menschen, die bereit sind, ihnen zu folgen, eine kleine Belohnung.\\nIn grauer Vorzeit sollen sie als mächtiges Volk die Menschheit angeführt haben.",
+    "en": "Now you see them, now you don't. Once a mighty race that lived to guide mankind, now the most Seelie offer is a little treasure to willing followers.",
+    "es": "Ahora los ves, ahora no los ves. Los Seelies guían hacia pequeños tesoros a las personas dispuestas a seguirlos.\\nSe dice que, en el pasado, fueron una poderosa raza que vivía para guiar a la humanidad.",
+    "fr": "Ces petites créatures qu'on appelle « Fées » apparaissent et disparaissent. Autrefois, elles étaient le guide de l'humanité, mais de nos jours, elles aiment attirer les voyageurs curieux.",
+    "id": "Makhluk misterius yang terkadang menampakkan diri mereka di alam liar, makhluk bernama Seelie ini sebelumnya berjaya, dan menjadi penuntun manusia ke kemakmuran, namun kini yang ditawarkan Seelie hanyalah harta-harta kecil bagi mereka yang memiliki hati mengikuti.",
+    "ja": "現れたり消えたりする神秘的な生物は「仙霊」と呼ばれ、追いかけてくる人に小さな宝物をあげる。\\n伝説によると、はるか昔、彼らは人類を導く偉大な種族であった。",
+    "ko": "언뜻 보였다 사라지는 신기한 생물을 「선령」이라 부르며, 이를 쫓는 자는 보물을 얻게 됩니다.\\n그들은 먼 옛날, 인류를 이끌었던 위대한 종족이었다고 합니다",
+    "pt": "Os Seelie vistos de vez em quando oferecem aos seguidores tesouros pequenos.\\nDizem que antes eram uma raça que costumava guiar a humanidade.",
+    "ru": "Этих маленьких волшебных существ называют феями. Следующим за ними путешественникам они указывают на скрытые от людских глаз сокровища. Говорят, что в далёкие времена феи были великой расой, единственной целью которой являлась помощь человечеству.",
+    "th": "สิ่งมีชีวิตมหัศจรรย์ที่บางครั้งหลบซ่อน บางครั้งปรากฏกายให้เห็นนั้นเรียกว่าวิญญาณเซียน \"Seelie\" ซึ่งจะมอบสมบัติเล็กน้อย ๆ ให้กับคนที่ติดตามมัน\\nว่ากันว่า ในอดีตอันไกลโพ้น พวกมันเคยเป็นเผ่าพันธุ์ที่ยิ่งใหญ่ที่คอยชี้นำมนุษย์",
+    "vi": "Những sinh vật thần kỳ lúc ẩn lúc hiện kia được gọi là \"Tiên Linh\", sẽ dành cho người bằng lòng theo đuổi chúng chút báu vật nho nhỏ.\\nNghe nói trong quá khứ xa xôi, chúng là chủng tộc vĩ đại thích hướng dẫn cho loài người."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "seelie",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -43.77923,
+        96.40087
+      ],
+      "id": "EA13F6EB5DEBC0F08C00CBB67B91C02079D26586",
+      "importIds": {
+        "hoyolab": [
+          "18_11588"
+        ]
+      },
+      "popupContent": {
+        "en":"Starts a quest which rewards a Luxurious Chest back in Mondstadt."
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=284s",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

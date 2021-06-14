@@ -29,6 +29,7 @@ import {
   GenshinMapPreferencesLatest,
   GenshinMapPreferencesVersion,
   PREFERENCES_VERSION,
+  GM_008,
 } from './PreferencesSchema';
 import { storeMapRecoveryData } from './Recovery';
 import {
@@ -43,7 +44,7 @@ import { buildNotification } from 'src/components/redux/slices/common/notify/Dis
 import { Notification } from 'src/components/redux/slices/common/notify/Types';
 import initialMapState from 'src/components/redux/slices/map/InitialState';
 import { MapState } from 'src/components/redux/slices/map/Types';
-import { fromBase64, getRecord, hashObject } from 'src/components/util';
+import { fromBase64, getRecord, getUnixTimestamp, hashObject } from 'src/components/util';
 
 const demercateCoordinate = (coordinate: [number, number]): [number, number] => {
   // Spherical Mercator projection.
@@ -164,10 +165,10 @@ export const importMapMarkerDataFromGMLegacy = (
           missingEntries.push(importKey);
           return [];
         }
-        const result = _.map(dictionaryEntries, (dictEntry: MSFMarkerKey): [
-          MSFMarkerKey,
-          number
-        ] => [dictEntry, timestamp]);
+        const result = _.map(
+          dictionaryEntries,
+          (dictEntry: MSFMarkerKey): [MSFMarkerKey, number] => [dictEntry, timestamp]
+        );
         return result;
       }
     )
@@ -230,8 +231,7 @@ export const migrateMapData = (
   version: GenshinMapPreferencesVersion,
   defaultState: MapState = initialMapState
 ): GenshinMapPreferencesLatest | null => {
-  console.warn('Migrating data...');
-  console.warn(input);
+  console.debug('Migrating data...');
 
   // eslint-disable-next-line prefer-const
   let output: GenshinMapPreferences = input;
@@ -467,6 +467,17 @@ export const migrateMapData = (
             ...output?.editor?.feature,
             data: editorData,
           },
+        },
+      };
+    case 'GM_007':
+      output = output as GM_007;
+      output = <GM_008>{
+        ...output,
+        version: 'GM_008',
+        timestamp: getUnixTimestamp(),
+        displayed: {
+          ...output.displayed,
+          archipelagoTeleporter: true,
         },
       };
     case PREFERENCES_VERSION:

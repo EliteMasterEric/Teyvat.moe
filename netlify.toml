@@ -23,11 +23,12 @@
       font-src 'self';
       manifest-src 'self';
       form-action 'self';
-      frame-src https://www.youtube.com;
+      frame-src https://www.youtube.com https://genshinmap.github.io/;
       img-src 'self' data: https://*;
       media-src 'none';
       object-src 'self';
-      script-src 'self';
+      script-src 'self' https://apis.google.com/;
+      prefetch-src 'self';
       frame-ancestors 'self' https://genshinmap.github.io/;
       style-src 'unsafe-inline' 'self' https://cdnjs.cloudflare.com;'''
 
@@ -37,7 +38,6 @@
     Permissions-Policy = '''
       clipboard-write 'self';
       layout-animations 'self';
-
       accelerometer 'none';
       ambient-light-sensor 'none';
       autoplay 'none';

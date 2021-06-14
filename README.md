@@ -52,13 +52,13 @@ There are numerous other interactive maps available, but this map has the edge i
 
 -   **Advertisment free**: This site is hosted without advertisements, unlike other apps.
 -   **Newest resources mapped**: Plants, monsters, chests, collectibles, and more before other maps.
--   **Multiple Language Support**: The site currently supports a variety of languages. If your language isn't supported, [learn how to contribute](https://github.com/Teyvat-Moe/teyvat.moe/wiki/Contributing#how-to-localize-the-site). Most map sites are only available in one or two languages, and some do not support English.
--   **Track progress for free**: The site allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may require a 'pro' subscription or require your email to allow you to track your progress.
+-   **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Most other sites have no submission functionality available, or have a process which is undocumented, vague, or confusing.
+-   **Multiple Language Support**: The site currently supports a variety of languages. If your language isn't supported or is missing values, [learn how to contribute](https://github.com/Teyvat-Moe/teyvat.moe/wiki/Contributing#how-to-localize-the-site). Most map sites are only available in one or two languages, and some do not support English.
+-   **Track progress for free**: The site allows you to flag markers of any type as completed, view progress, locate uncompleted markers, and clear markers as resources respawn. Other sites may only display the markers (without allowing you to check them off), only allow checking off certain markers, or require a 'pro' subscription to save markers.
 -   **Synced across devices**: Sign in with Google to sync your progress between multiple devices.
 -   **Mobile friendly**: The site officially supports mobile devices and has a custom menu layout for them.
 -   **Routes**: The site is includes a dedicated tab for community-created farming routes, overlayed with existing markers.
--   **Community submission process**: If a feature or marker is missing from the map, there is an open review process available to add to it, using a built-in map editor to create an issue here on GitHub. Most other sites have no submission functionality available, or have a process which is undocumented, vague, or confusing.
--   **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map is missing a feature you want, you can create a fork or pull request. All other known map websites are closed source.
+-   **Free, open-source software**: The project seeks to update its markers frequently, and welcomes community contributions. If the map is missing functionality you want, you can create a fork or pull request. All other known map websites are closed source.
 
 ## Credits
 

@@ -28,7 +28,8 @@ export type MSFSchemaVersion = A.Type<2, 'MSFSchemaVersion'>;
  * If there is a match, the first capture group represents the video ID (?v=<ID>).
  */
 export const YOUTUBE_REGEX =
-  /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([\w-]+)(?:&.+)?$/;
+  /^(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/watch\?v=|youtu\.?be\/)([\w-]+)(?:(?:\?|&)t=([0-9]+)s)?$/;
+// /^https:\/\/youtu.be\/([\w-]+)(?:\?t=([0-9]+)s)?$/
 
 export type MSFLocalizedString = A.Type<string, 'MSFLocalizedString'>;
 export type MSFLocalizedField = {

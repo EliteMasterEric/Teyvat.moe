@@ -1,0 +1,93 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "763988094",
+    "zh": "华丽的宝箱",
+    "de": "Luxuriöse Truhe",
+    "en": "Luxurious Chest",
+    "es": "Cofre lujoso",
+    "fr": "Coffre luxueux",
+    "id": "Luxurious Chest",
+    "ja": "豪華な宝箱",
+    "ko": "화려한 보물상자",
+    "pt": "Baú Luxuoso",
+    "ru": "Роскошный сундук",
+    "th": "Luxurious Chest",
+    "vi": "Rương Hiếm"
+  },
+  "description": {
+    "en": "A gorgeous porcelain chest framed with gold. Contains powerful rewards.",
+    "ru": "Прекрасный фарфоровый сундук обрамленный золотом. Содержит мощную награду."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "luxurious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -21.28236,
+        92.34737
+      ],
+      "id": "2BA4F4AECD242CED03E3DB7212F10FBE5173909E",
+      "importIds": {
+        "hoyolab": [
+          "46_11544"
+        ],
+        "appsample": [
+          "14275"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/luxurious-chest/2BA4F4A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.57251,
+        89.91423
+      ],
+      "id": "30F20036A1CCFBDE46D433647DD24CAA93E56B1A",
+      "importIds": {
+        "hoyolab": [
+          "46_11529"
+        ],
+        "appsample": [
+          "14290"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/luxurious-chest/30F2003",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.90625,
+        105.53125
+      ],
+      "id": "A5198AD8DCD2333CF2D5F1EA659792F9B6BDB81A",
+      "popupTitle": {
+        "en": "They Who Hear The Sea"
+      },
+      "popupContent": {
+        "en": "Reward for the end of the questline"
+      },
+      "popupAttribution": "MasterEric",
+      "popupMedia": "https://youtu.be/qsT9rStw-ms"
+    }
+  ]
+}

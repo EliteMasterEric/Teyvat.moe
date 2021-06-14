@@ -13,6 +13,7 @@ import {
   SwitchProps,
   TextFieldProps,
   SliderTypeMap,
+  makeStyles,
 } from '@material-ui/core';
 import _ from 'lodash';
 import React, { FunctionComponent, ReactElement, useCallback } from 'react';
@@ -35,9 +36,10 @@ export const InputTextField: FunctionComponent<InputTextFieldProps> = ({
   ...others
 }) => {
   const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
-  const onValueChange = useCallback((event) => setCurrentValue(event.target.value), [
-    setCurrentValue,
-  ]);
+  const onValueChange = useCallback(
+    (event) => setCurrentValue(event.target.value),
+    [setCurrentValue]
+  );
 
   return (
     <MaterialTextField
@@ -67,9 +69,10 @@ export const InputTextArea: FunctionComponent<InputTextAreaProps> = ({
   ...others
 }) => {
   const [currentValue, setCurrentValue] = useDebouncedState<string>(value, onChange);
-  const onValueChange = useCallback((event) => setCurrentValue(event.target.value), [
-    setCurrentValue,
-  ]);
+  const onValueChange = useCallback(
+    (event) => setCurrentValue(event.target.value),
+    [setCurrentValue]
+  );
 
   return (
     <MaterialTextField
@@ -119,9 +122,16 @@ export const InputSlider: FunctionComponent<InputSliderProps> = ({
 type InputSwitchProps = Omit<SwitchProps, 'onChange'> & {
   value: boolean;
   onChange: (value: boolean) => void;
-  label: string | ReactElement;
+  label?: string | ReactElement;
   labelPlacement?: 'start' | 'end' | 'top' | 'bottom';
+  debounce?: number;
 };
+
+const useStyles = makeStyles(() => ({
+  inputSwitchBase: {
+    padding: 4,
+  },
+}));
 
 /**
  * A debounced switch.
@@ -131,17 +141,29 @@ export const InputSwitch: FunctionComponent<InputSwitchProps> = ({
   onChange,
   label = null,
   labelPlacement = 'start',
+  debounce,
   ...others
 }) => {
+  const classes = useStyles();
   // Maintains the current state of the switch.
   // If the switch has gone a period without changing,
   // onChange will be called to propage the change to the local storage.
-  const [currentValue, setCurrentValue] = useDebouncedState<boolean>(value, onChange);
-  const onValueChange = useCallback((_event, newValue) => setCurrentValue(newValue), [
-    setCurrentValue,
-  ]);
+  const [currentValue, setCurrentValue] = useDebouncedState<boolean>(value, onChange, debounce);
+  const onValueChange = useCallback(
+    (_event, newValue) => setCurrentValue(newValue),
+    [setCurrentValue]
+  );
 
-  const control = <MaterialSwitch checked={currentValue} onChange={onValueChange} {...others} />;
+  const control = (
+    <MaterialSwitch
+      checked={currentValue}
+      onChange={onValueChange}
+      classes={{
+        switchBase: classes.inputSwitchBase,
+      }}
+      {...others}
+    />
+  );
 
   return label ? (
     <FormControlLabel label={label} labelPlacement={labelPlacement} control={control} />

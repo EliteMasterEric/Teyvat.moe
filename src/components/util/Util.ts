@@ -93,14 +93,6 @@ export const openURLInWindow = (url: string): void => {
 };
 
 /**
- * Retrieve the current Unix timestamp, in seconds.
- * @returns A Unix timestamp, in seconds.
- */
-export const getUnixTimestamp = (): number => {
-  return Math.floor(Date.now() / 1000);
-};
-
-/**
  * Reload the browser window.
  */
 export const reloadWindow = (): void => {

@@ -1247,3 +1247,68 @@ The long-postponed feature is finally here!
 - Removed some unnecessary local submodules (the corresponding packages have been fixed).
 - Updated the localization files.
 - Removed Herobrine.
+
+# 1.1.1 Bug Fixes
+
+- Added map markers for the Golden Apple Archipelago.
+  - Teleporter (Special): Added 7 markers.
+- Added map labels for the Golden Apple Archipelago.
+- Reduced the number of print calls made by the GenshinMap migrator.
+- Fixed a bug where the title would read `page title` instead of `Teyvat.moe`
+- Fixed a bug where certain external libraries would not load due to improper CORS configuration.
+- Fixed a bug where user data would not be loaded from local storage properly.
+- Fixed a visual bug with the switches in the Options tab.
+
+# 1.2.0 Archipelago Markers
+
+- Added 263 new markers for the Golden Apple Archipelago.
+  - Electro Crystal (Ore): Added 5 markers.
+    - Can be imported from AppSample.
+  - Sea Ganoderma (Nature): Added 52 markers.
+    - Can be imported from AppSample.
+  - Starconch (Nature): Added 4 markers.
+    - Can be imported from AppSample.
+  - Echoing Conch (Event): Added 28 markers.
+    - Can be imported from AppSample.
+  - Time Trial Challenge (Chest): Added 10 markers.
+    - Can be imported from AppSample.
+  - Common Chest (Chest): Added 38 markers.
+    - Can be imported from AppSample.
+    - 5 of these chests are not found on AppSample.
+  - Exquisite Chest (Chest): Added 29 markers.
+    - Can be imported from AppSample.
+  - Precious Chest (Chest): Added 4 markers.
+    - Can be imported from AppSample.
+  - Luxurious Chest (Chest): Added 2 markers.
+    - Can be imported from AppSample.
+  - Harpastum Chest (Chest): Added 19 markers.
+    - Can be imported from AppSample.
+  - Seelie (Chest): Added 1 marker.
+    - Not available in AppSample.
+  - Glimmering Beacon (Special): Added 56 markers.
+    - Not available in AppSample.
+  - Waverider Waypoint (Special): Added 15 markers.
+    - Not available in AppSample.
+- Yuanshen.site does not currently include the new regions from the 1.6 update and thus there are no new markers to import from it.
+- Replaced temporary icon for Sea Ganoderma.
+
+# 1.2.1 More Chests
+- Added new markers.
+  - Added 16 Painted Wall markers to their respective Chest categories.
+    - Added 2 Common Chests.
+    - Added 13 Exquisite Chests.
+    - Added 1 Precious Chest.
+  - Added 1 Luxurious Chest, with video embed.
+  - Added 18 Harpastum Chests to their respective Chest categories, with video embeds for guides.
+    - Added 9 Common Chests.
+    - Added 7 Exquisite Chests.
+    - Added 2 Precious Chests.
+  - We are now more complete than AppSample or MapGenie, and only slightly less complete than HoyoLab.
+- Updated existing markers.
+  - Added 1 video guide for Seelie.
+- Imported media for chests.
+- Timestamp is now stored when saving preferences to local storage, or when exporting to clipboard or Google Drive.
+- Fixed a bug where the home page had no title set.
+- Fixed a bug where feature icons would clip outside the border of the image button
+- Fixed a bug where YouTube embeds would not initialize at a specific timestamp if was is provided.
+- Hid the Illumiscreen chests from the Event category in Liyue.

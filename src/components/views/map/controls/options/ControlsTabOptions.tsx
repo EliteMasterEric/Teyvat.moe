@@ -2,7 +2,7 @@
  * Provides the interface for the Options tab of the map controls.
  */
 
-import { Box, Button, Switch, Typography } from '@material-ui/core';
+import { Box, Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import clsx from 'clsx';
 import React, { FunctionComponent, useCallback } from 'react';
@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { LocalizedTypography, t } from 'src/components/i18n/Localization';
 import BorderBox from 'src/components/interface/BorderBox';
-import { InputSlider } from 'src/components/interface/Input';
+import { InputSlider, InputSwitch } from 'src/components/interface/Input';
 import { TabView } from 'src/components/interface/Tabs';
 import { clearPreferences } from 'src/components/redux/slices/common/core/Actions';
 import {
@@ -89,17 +89,9 @@ const ControlsTabOptions: FunctionComponent = () => {
   const showHiddenFeaturesInSummary = useSelector(selectShowHiddenFeaturesInSummary);
   const editorDebugEnabled = useSelector(selectEditorDebugEnabled);
 
-  const changeEditorEnabled = useCallback(
-    (_event, value) => dispatch(setEditorEnabled(value)),
-    [setEditorEnabled]
-  );
   const changeCompletedAlpha = useCallback(
     (value) => dispatch(setCompletedAlpha(value)),
     [setCompletedAlpha]
-  );
-  const changeWorldBorderEnabled = useCallback(
-    (_event, value) => dispatch(setWorldBorderEnabled(value)),
-    [setWorldBorderEnabled]
   );
   const changeRegionLabelsEnabled = useCallback(
     (_event, value) => dispatch(setRegionLabelsEnabled(value)),
@@ -107,10 +99,6 @@ const ControlsTabOptions: FunctionComponent = () => {
   );
   const changeClusterMarkers = useCallback(
     (_event, value) => dispatch(setClusterMarkers(value)),
-    []
-  );
-  const changeHideFeaturesInEditor = useCallback(
-    (_event, value) => dispatch(setHideFeaturesInEditor(value)),
     []
   );
   const changeHideRoutesInEditor = useCallback(
@@ -141,11 +129,12 @@ const ControlsTabOptions: FunctionComponent = () => {
       <BorderBox direction="column" overflow="show" grow={false}>
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-editor-enable" />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeEditorEnabled}
-            checked={editorEnabled}
+            debounce={100}
+            value={editorEnabled}
+            onChange={(value: boolean) => dispatch(setEditorEnabled(value))}
           />
         </Box>
         <Box className={classes.optionContainer}>
@@ -153,11 +142,12 @@ const ControlsTabOptions: FunctionComponent = () => {
             className={classes.label}
             i18nKey="map-ui:options-editor-hide-features"
           />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeHideFeaturesInEditor}
-            checked={hideFeaturesInEditor}
+            debounce={100}
+            value={hideFeaturesInEditor}
+            onChange={(value: boolean) => dispatch(setHideFeaturesInEditor(value))}
           />
         </Box>
         <Box className={classes.optionContainer}>
@@ -165,11 +155,12 @@ const ControlsTabOptions: FunctionComponent = () => {
             className={classes.label}
             i18nKey="map-ui:options-editor-hide-routes"
           />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeHideRoutesInEditor}
-            checked={hideRoutesInEditor}
+            debounce={100}
+            value={hideRoutesInEditor}
+            onChange={(value: boolean) => dispatch(setHideRoutesInEditor(value))}
           />
         </Box>
       </BorderBox>
@@ -191,51 +182,56 @@ const ControlsTabOptions: FunctionComponent = () => {
         </Box>
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-cluster-markers" />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeClusterMarkers}
-            checked={clusterMarkers}
+            debounce={100}
+            value={clusterMarkers}
+            onChange={(value: boolean) => dispatch(setClusterMarkers(value))}
           />
         </Box>
         {/*
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-world-border" />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeWorldBorderEnabled}
-            checked={worldBorderEnabled}
+            debounce={100}
+            value={worldBorderEnabled}
+            onChange={(value: boolean) => dispatch(setWorldBorderEnabled(value))}
           />
         </Box>
         */}
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-region-labels" />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeRegionLabelsEnabled}
-            checked={regionLabelsEnabled}
+            debounce={100}
+            value={regionLabelsEnabled}
+            onChange={(value: boolean) => dispatch(setRegionLabelsEnabled(value))}
           />
         </Box>
         <Box className={classes.optionContainer}>
           <Typography className={clsx(classes.label, classes.labelLong)}>
             {t('map-ui:options-show-hidden-features')}
           </Typography>
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeShowHiddenFeaturesInSummary}
-            checked={showHiddenFeaturesInSummary}
+            debounce={100}
+            value={showHiddenFeaturesInSummary}
+            onChange={(value: boolean) => dispatch(setShowHiddenFeaturesInSummary(value))}
           />
         </Box>
         <Box className={classes.optionContainer}>
           <LocalizedTypography className={classes.label} i18nKey="map-ui:options-display-debug" />
-          <Switch
+          <InputSwitch
             size="small"
             color="primary"
-            onChange={changeEditorDebugEnabled}
-            checked={editorDebugEnabled}
+            debounce={100}
+            value={editorDebugEnabled}
+            onChange={(value: boolean) => dispatch(setEditorDebugEnabled(value))}
           />
         </Box>
       </BorderBox>

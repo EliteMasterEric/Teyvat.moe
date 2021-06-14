@@ -96,8 +96,9 @@ const FeatureMedia: FunctionComponent<FeatureMediaProps> = ({ media, allowExtern
       const match = YOUTUBE_REGEX.exec(media);
       if (match != null) {
         const videoId = match[1];
+        const videoTs = parseInt(match[2] ?? '0', 10);
         if (videoId != null) {
-          return <YouTubeEmbed id={videoId} width={560} height={315} />;
+          return <YouTubeEmbed id={videoId} width={560} height={315} start={videoTs} />;
         }
       }
     }

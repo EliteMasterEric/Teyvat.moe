@@ -21,8 +21,10 @@ end
 
 def parse_pathname(input)
   name = File.basename(input, '.json')
-  region = input.split('/')[0]
-  category = input.split('/')[1]
+  category_path = File.dirname(input)
+  category = File.basename(category_path)
+  region_path = File.dirname(category_path)
+  region = File.basename(region_path)
 
   [name, region, category]
 end
@@ -31,8 +33,9 @@ def deep_dup(input)
   Marshal.load(Marshal.dump(input))
 end
 
-def read_genshinmap(name)
-  JSON.parse(File.open("#{GENSHINMAP_DATA_DIR}/#{name}.json", 'r:UTF-8').read)
+def read_genshinmap(name, region, category)
+  puts("#{GENSHINMAP_DATA_DIR}/#{region}/#{category}/#{name}.json")
+  JSON.parse(File.open("#{GENSHINMAP_DATA_DIR}/#{region}/#{category}/#{name}.json", 'r:UTF-8').read)
 rescue Errno::ENOENT
   nil
 end
@@ -124,8 +127,8 @@ def merge_data(input_genshinmap, input_appsample)
   output_json
 end
 
-def read_data(name)
-  input_genshinmap = read_genshinmap(name)
+def read_data(name, region, category)
+  input_genshinmap = read_genshinmap(name, region, category)
   input_appsample = read_appsample(name)
 
   if input_genshinmap.nil?
@@ -153,14 +156,14 @@ def iterate_data(options)
 
     # Read the migrated and yuanshen files.
     puts("[INFO]: Reading #{region}/#{category}: #{name}")
-    input_genshinmap, input_appsample = read_data(name)
+    input_genshinmap, input_appsample = read_data(name, region, category)
     next if input_genshinmap.nil? || input_appsample.nil?
 
     # Merge the two JSONs.
     puts("  [INFO]: Merging data...")
     output_json = merge_data(input_genshinmap, input_appsample)
     
-    output_path = File.join(OUTPUT_DIR, input_path)
+    output_path = File.join(OUTPUT_DIR, region, category, "#{name}.json")
     write_file(output_path, JSON.pretty_generate(output_json))
   end
 end
@@ -181,6 +184,8 @@ def parse_options
 
   OptionParser.new do |opts|
     opts.banner = 'Usage: merge_gm_appsample.rb [options]'
+
+    opts.on('-c', '--chests', 'If enabled, process chests only. If disabled, do not process chests at all.') { |i| options[:chests] = i }
   end.parse!
 
   # Validate and reorganize options.

@@ -1,0 +1,48 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Mural"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "mural",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -42.97124,
+        98.80295
+      ],
+      "id": "023CD598DC6DB06FF2385239E896FA8276D47AE4",
+      "importIds": {
+        "hoyolab": [
+          "193_11528"
+        ]
+      },
+      "popupMedia": "archipelago/mural/023CD59",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.53936,
+        91.04797
+      ],
+      "id": "EC8A54F1FD801D82F00BEBF53B449A6BF7595E83",
+      "importIds": {
+        "hoyolab": [
+          "193_11519"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/f0359f819f4500dea96447663a3d426e_646000948760230992.gif",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

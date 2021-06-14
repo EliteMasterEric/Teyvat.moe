@@ -1,0 +1,114 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "1463427644",
+    "zh": "星螺",
+    "de": "Sternmuschel",
+    "en": "Starconch",
+    "es": "Caracola estelar",
+    "fr": "Conque d'étoile",
+    "id": "Starconch",
+    "ja": "星螺",
+    "ko": "별소라",
+    "pt": "Conchas Estreladas",
+    "ru": "Звёздная ракушка",
+    "th": "Starconch",
+    "vi": "Ốc Sao"
+  },
+  "description": {
+    "_code": "2199597669",
+    "zh": "随着海潮来到沙滩上的螺。将耳朵凑近空壳，能听见海充满思念的呼唤。",
+    "de": "Eine Muschel, die die Flut an den Strand gespült hat. Hält man sie ans Ohr, hört man das verheißungsvolle Rauschen des Meeres.",
+    "en": "Empty seashells brought ashore by the tides. Hold it close to your ear, and hear the longing calls of the sea.",
+    "fr": "Un coquillage creux échoué sur la plage. Plaquez-le contre votre oreille et vous entendrez l'appel de la mer.",
+    "id": "Kerang kosong yang dibawa ke pantai oleh ombak pasang. Dekatkan ke telinga, dan kamu akan mendengar suara lautan.",
+    "ja": "潮と共に砂浜についた螺。よく聞けば、思いが溢れる海の叫びが聞こえる。",
+    "ko": "해류를 타고 바닷가로 떠밀려 온 소라. 빈 껍데기를 귓가에 대면 무언가를 그리워하는 듯한 바다의 소리를 들을 수 있다",
+    "pt": "Conchas do mar vazias trazidas para terra pelas marés. Segure-o perto do ouvido e ouça os apelos do mar.",
+    "ru": "Пустая ракушка, которую принесло на берег с приливом. Приложите её к уху и вы услышите зов тоскующего моря.",
+    "th": "เปลือกหอยที่ถูกพัดมาจากทะเลถึงหาดทราย เพียงแค่นำมันมาแนบกับหู ก็จะได้ยินเสียงร้องเรียกจากทะเล",
+    "vi": "Ốc dạt vào bờ theo những cơn thủy triều. Đặt vào gần tai có thể nghe được tiếng gọi của biển.",
+    "es": "Caracola vacía arrastrada por la marea hasta la orilla de una playa. Acércatela al oído y escucha los anhelos del mar."
+  },
+  "tags": [
+    "character-ascension-material"
+  ],
+  "enabled": true,
+  "cluster": "on",
+  "respawn": 172800,
+  "icons": {
+    "filter": "starconch",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -39.62453,
+        108.94861
+      ],
+      "id": "553BD1AEAE9F483B64689D6606A783D2D62AFA71",
+      "importIds": {
+        "hoyolab": [
+          "78_11457"
+        ],
+        "appsample": [
+          "14215"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.63174,
+        108.32014
+      ],
+      "id": "88513A5264FFAAC97A76FFC433584739A79B5537",
+      "importIds": {
+        "hoyolab": [
+          "78_11362"
+        ],
+        "appsample": [
+          "14102"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.64728,
+        108.36155
+      ],
+      "id": "900FFC2F933307B3883219F85EA3280403833D3A",
+      "importIds": {
+        "hoyolab": [
+          "78_11361"
+        ],
+        "appsample": [
+          "14103"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.71879,
+        108.54274
+      ],
+      "id": "1CCFB2A7238F90876EF612ED6459470CE89959D5",
+      "importIds": {
+        "hoyolab": [
+          "78_11360"
+        ],
+        "appsample": [
+          "14104"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

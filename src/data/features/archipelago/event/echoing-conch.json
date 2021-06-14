@@ -1,0 +1,586 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "720056990",
+    "en": "Echoing Conch",
+    "zh": "回声海螺",
+    "de": "Echoschnecke",
+    "es": "Caracola resonante",
+    "fr": "Conque d'écho",
+    "id": "Keong Bergema",
+    "ja": "余韻のホラガイ",
+    "ko": "메아리 소라",
+    "pt": "Concha Ecoante",
+    "ru": "Раковина эха",
+    "th": "หอยสังข์สะท้อนเสียง",
+    "vi": "Ốc Biển Vọng Âm"
+  },
+  "description": {
+    "_code": "1332005070",
+    "zh": "散落在金苹果群岛各地的「回声海螺」记录着过往的声音。收集「回声海螺」，即可聆听许多不为人知的故事…",
+    "de": "Die Echoschnecken, die im Goldapfelarchipel verstreut sind, versiegeln Stimmen der Vergangenheit in sich. Sammle diese Schnecken und lausche allen möglichen unbekannten Geschichten ...",
+    "en": "The Echoing Conches scattered throughout the Golden Apple Archipelago seal voices of the past within them. Collect these Echoing Conches to listen to all manner of unknown tales...",
+    "es": "Las caracolas resonantes dispersas por todo el Archipiélago Manzana Dorada encierran unos ecos del pasado. Si las recoges, podrás escuchar unas historias que nadie conoce.",
+    "fr": "Les conques d'écho éparpillées à travers l'Archipel de la pomme dorée contiennent des souvenirs du passé. Collectez-les pour découvrir des histoires oubliées de tous...",
+    "id": "\"Keong Bergema\" yang tersebar di segala penjuru Golden Apple Archipelago menyimpan suara-suara dari masa lampau. Kamu bisa mengumpulkan \"Keong Bergema\" dan mendengarkan segala macam kisah yang tak pernah didengar...",
+    "ja": "金リンゴ群島の各地に散らばっている「余韻のホラガイ」、過去の声が記録されてある。「余韻のホラガイ」を集め、知られていない物語に耳を傾けよう。",
+    "ko": "금사과 제도 곳곳에 흩어져 있는 「메아리 소라」에는 과거의 소리가 저장되어 있습니다. 「메아리 소라」를 수집하면 알려지지 않은 이야기들을 들을 수 있습니다…",
+    "pt": "As Conchas Ecoantes espalhadas por todo o lado no Arquipélago de Maçã Dourada registram os sons do passado. Se você coletar Conchas Ecoantes, poderá ouvir muitas história que ninguém conhece...",
+    "ru": "В разбросанных по архипелагу Золотого Яблока эхо-раковинах заключаются голоса из прошлого. Собирайте эхо-раковины, чтобы услышать неведомые истории...",
+    "th": "\"หอยสังข์สะท้อนเสียง\" ที่กระจายอยู่ตามที่ต่าง ๆ ในหมู่เกาะ Golden Apple Archipelago ได้บันทึกเสียงที่เคยเกิดขึ้นในอดีตเอาไว้ การรวบรวม \"หอยสังข์สะท้อนเสียง\" จะทำให้สามารถรับฟังเรื่องราวมากมายที่ไม่มีใครเคยรู้ได้...",
+    "vi": "\"Ốc Biển Vọng Âm\" nằm rải rác ở khắp nơi trên Quần Đảo Táo Vàng, chứa đựng những âm thanh trong quá khứ. Thu thập \"Ốc Biển Vọng Âm\" sẽ có thể nghe thấy rất nhiều câu chuyện chưa ai được biết đến..."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "echoing-conch",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -36.95202,
+        111.93671
+      ],
+      "id": "5D7CE73A752232F8C10A98DF294988BE6FF8A237",
+      "importIds": {
+        "appsample": [
+          "14105"
+        ],
+        "hoyolab": [
+          "182_11359"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/5D7CE73",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -36.37185,
+        109.0273
+      ],
+      "id": "FA27A9E2BF79213B76B994C6721AE74A89F910E9",
+      "importIds": {
+        "hoyolab": [
+          "182_11358"
+        ],
+        "appsample": [
+          "14106"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/FA27A9E",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.50997,
+        99.98845
+      ],
+      "id": "A74E8C8D47E338BC0CA98C44D06598B2A8DEFD86",
+      "importIds": {
+        "hoyolab": [
+          "182_11357"
+        ],
+        "appsample": [
+          "14107"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.37529,
+        99.0152
+      ],
+      "id": "22FBBAD39DEDCEDD0011906841C49114C49DB49D",
+      "importIds": {
+        "hoyolab": [
+          "182_11356"
+        ],
+        "appsample": [
+          "14108"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.56177,
+        96.16791
+      ],
+      "id": "47BC6FC283B37D3E5D3C87CAC81BD94CF91C1C81",
+      "importIds": {
+        "hoyolab": [
+          "182_11355"
+        ],
+        "appsample": [
+          "14109"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -40.66094,
+        80.84433
+      ],
+      "id": "26CCB184875DCD142E4E939A92509C46FCB9FCD5",
+      "importIds": {
+        "hoyolab": [
+          "182_11354"
+        ],
+        "appsample": [
+          "14110"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.65925,
+        89.68645
+      ],
+      "id": "EDB42ED7CA1BA3C554AC2330706766501454E985",
+      "importIds": {
+        "hoyolab": [
+          "182_11353"
+        ],
+        "appsample": [
+          "14111"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.9074,
+        90.93926
+      ],
+      "id": "05846DDD02497449A1E31052FD4F1008D427EE71",
+      "importIds": {
+        "hoyolab": [
+          "182_11352"
+        ],
+        "appsample": [
+          "14112"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/05846DD",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.8292,
+        98.19725
+      ],
+      "id": "56FFF490AAC5C60E1AF7089E259B73190DE28075",
+      "importIds": {
+        "hoyolab": [
+          "182_11351"
+        ],
+        "appsample": [
+          "14113"
+        ]
+      },
+      "popupTitle": {
+        "_code": "2590509875"
+      },
+      "popupMedia": "https://youtu.be/vEGqBq6tD0E?t=0",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.3477,
+        98.65282
+      ],
+      "id": "085B5FA9D2EA254674EA1672496AD715B1C47266",
+      "importIds": {
+        "hoyolab": [
+          "182_11350"
+        ],
+        "appsample": [
+          "14114"
+        ]
+      },
+      "popupTitle": {
+        "_code": "1592453779"
+      },
+      "popupMedia": "https://youtu.be/vEGqBq6tD0E?t=46",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -31.14,
+        108.30253
+      ],
+      "id": "2BFF32F08BF20D0403A86D9F7CC11F7652602656",
+      "importIds": {
+        "hoyolab": [
+          "182_11349"
+        ],
+        "appsample": [
+          "14115"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/2BFF32F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.62324,
+        108.03851
+      ],
+      "id": "C11EE44B1A48C9223E3AE260232DD0CC169D955F",
+      "importIds": {
+        "hoyolab": [
+          "182_11348"
+        ],
+        "appsample": [
+          "14116"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/C11EE44",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.25546,
+        102.94963
+      ],
+      "id": "CED4955A0550A92430C6C844DB4F493DCB78D66E",
+      "importIds": {
+        "hoyolab": [
+          "182_11347"
+        ],
+        "appsample": [
+          "14117"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/CED4955",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.21945,
+        97.81934
+      ],
+      "id": "8D663F4B2E418B6A4FF6EA3794545E5633D78828",
+      "importIds": {
+        "hoyolab": [
+          "182_11346"
+        ],
+        "appsample": [
+          "14118"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/8D663F4",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.37485,
+        96.79432
+      ],
+      "id": "1527F3DF98212F9BBFD067EF4E7C802CF64EFFAC",
+      "importIds": {
+        "hoyolab": [
+          "182_11345"
+        ],
+        "appsample": [
+          "14119"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/1527F3D",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.42172,
+        104.01607
+      ],
+      "id": "345D25A7CDC12D4C2BCA09C5462D2B8893E1D7B8",
+      "importIds": {
+        "hoyolab": [
+          "182_11344"
+        ],
+        "appsample": [
+          "14120"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/1470c960b021ca386b50b3a43bf760a3_3820008149607312081.gif",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.1679,
+        102.87716
+      ],
+      "id": "16D0E3463EEA4D02B143F8CB24DBD01D27EAAEB8",
+      "importIds": {
+        "hoyolab": [
+          "182_11343"
+        ],
+        "appsample": [
+          "14121"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/16D0E34",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.38571,
+        102.42677
+      ],
+      "id": "03EE67686BFCBD57E94CD025559536F0F12F6FE8",
+      "importIds": {
+        "hoyolab": [
+          "182_11342"
+        ],
+        "appsample": [
+          "14122"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/03EE676",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -17.37142,
+        108.83058
+      ],
+      "id": "EBBCEA411BB1F4CEC1E796C0F46EE2A72818E276",
+      "importIds": {
+        "appsample": [
+          "14123"
+        ],
+        "hoyolab": [
+          "182_11341"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/EBBCEA4",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.65014,
+        91.44142
+      ],
+      "id": "3814A4A753915C39A829715398BB70B1697DAF3F",
+      "importIds": {
+        "hoyolab": [
+          "182_11340"
+        ],
+        "appsample": [
+          "14124"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/3814A4A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.11684,
+        92.0264
+      ],
+      "id": "F5DB9E5CEECA16AF35F64171822B578177E6BD5A",
+      "importIds": {
+        "hoyolab": [
+          "182_11339"
+        ],
+        "appsample": [
+          "14125"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/F5DB9E5",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -16.64621,
+        82.50093
+      ],
+      "id": "2DB7F1EB35E9823BA65A535B1DE40D40FE8949FD",
+      "importIds": {
+        "appsample": [
+          "14126"
+        ],
+        "hoyolab": [
+          "182_11338"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupMedia": "archipelago/echoing-conch/2DB7F1E",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.21895,
+        106.12307
+      ],
+      "id": "C3AC8370C08B020F9AB26F87F8CF3276E50EFFBA",
+      "importIds": {
+        "hoyolab": [
+          "182_11337"
+        ],
+        "appsample": [
+          "14127"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/echoing-conch/C3AC837",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.14875,
+        104.74212
+      ],
+      "id": "303EC06C06E590216A31528B893F2D7EE1048155",
+      "importIds": {
+        "hoyolab": [
+          "182_11247"
+        ],
+        "appsample": [
+          "14128"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/echoing-conch/303EC06",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.93405,
+        103.86594
+      ],
+      "id": "61E7D8D3E3ACD9041FA49DFD80D8619087FE8CDA",
+      "importIds": {
+        "hoyolab": [
+          "182_11246"
+        ],
+        "appsample": [
+          "14129"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/echoing-conch/61E7D8D",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.38715,
+        106.79088
+      ],
+      "id": "06E56FAEA274E30F69943F9B87B37768E19FE3FB",
+      "importIds": {
+        "hoyolab": [
+          "182_11245"
+        ],
+        "appsample": [
+          "14130"
+        ]
+      },
+      "popupTitle": {
+        "_code": "3453842675"
+      },
+      "popupMedia": "https://youtu.be/sH6c7kSQ_Bg?t=503",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.89129,
+        106.00811
+      ],
+      "id": "FB1BF31E1FC2C01F032D674B42976C5A56AD7D87",
+      "importIds": {
+        "hoyolab": [
+          "182_11244"
+        ],
+        "appsample": [
+          "14131"
+        ]
+      },
+      "popupTitle": {
+        "_code": "1998150107"
+      },
+      "popupMedia": "https://youtu.be/vEGqBq6tD0E?t=79",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.34398,
+        93.45435
+      ],
+      "id": "6749783C25538614B676CA07153FEE076D56CD9B",
+      "importIds": {
+        "hoyolab": [
+          "182_11243"
+        ],
+        "appsample": [
+          "14132"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "archipelago/echoing-conch/6749783",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

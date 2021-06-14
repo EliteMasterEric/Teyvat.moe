@@ -53,12 +53,11 @@ class BifrostCors {
     //======================={ + B I F R O S T - L I S T N E R + }=========================
 
     window.addEventListener('message', (e) => {
-      console.log(`[BIFROST ${window.location.origin}] Message received from the other side.`);
+      // console.log(`[BIFROST ${window.location.origin}] Message received from the other side.`);
       if (e.origin === this.address.origin) {
-        console.log(
+        console.debug(
           `[BIFROST ${window.location.origin}] Message was received from our destination.`
         );
-        console.log(e);
         if (e.data.type.includes('request')) {
           let requestType = e.data.type.replace('request', 'postback').replace(/-/g, '_');
           this.heimdall(requestType, e.data.value);
@@ -68,14 +67,11 @@ class BifrostCors {
             this.bifrostBridge('bifrost-response', true, true);
             this.socketListner(e.data.value);
           } else {
-            console.group('Error - Bifrost-Cors');
-            console.error('Message Thread not init -- Bifrost-Cors');
-            console.log('You.developer ? dig into lib at line 37 : Raise a issue');
-            console.groupEnd();
+            console.error(`[BIFROST ${window.location.origin}] Socket listener not defined.`);
           }
         }
       } else {
-        console.warn(
+        console.debug(
           `[BIFROST ${window.location.origin}] Unauthorized message host. Expected '${this.address.origin}', got ${e.origin}. Ignoring message...`
         );
       }
@@ -206,8 +202,8 @@ class BifrostCors {
         }
       });
     } else {
-      console.warn(
-        `[BIFROST ${window.location.origin}] Storage access not needed. We can continue.`
+      console.debug(
+        `[BIFROST ${window.location.origin}] Storage access not needed in this browser. We can continue.`
       );
       this.storageAccess = true;
     }

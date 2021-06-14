@@ -52,21 +52,21 @@ def truncate_number(input)
 end
 
 MULTIPLIER = [
-  0.668132, -0.653547
+  # 0.668132, -0.653547 # Teyvat
+  0.9999996603, -0.9957792023 # Archipelago
 ]
 OFFSET = [
-  35.49, -31.6808
+  # 35.49, -31.6808 # Teyvat
+  96.35427529, -32.25831515 # Archipelago
 ]
 MERCATOR = SphericalMercator.new(size: 256, round: false)
 ORIGIN = MERCATOR.px([0.0,0.0], 1.0)
-puts(ORIGIN)
 def reproject_point(point)
   projected = MERCATOR.px([point[1], point[0]], 1.0)
   translated = [(projected[0] - ORIGIN[0]) * MULTIPLIER[0] + OFFSET[0],
     (projected[1] - ORIGIN[1]) * MULTIPLIER[1] + OFFSET[1]]
   return [translated[1], translated[0]]
 end
-puts(reproject_point([-66.5, 90]))
 
 def convert_coordinates(coordinate)
   #return coordinate
@@ -89,7 +89,7 @@ end
 # ChilledMeat => chilled-meat
 # Unknown20 => unknown-20
 def slugify(input)
-  input.gsub(/(.)([A-Z]|[0-9]+)/,'\1-\2').downcase
+  input.gsub(/(.)([A-Z]|[0-9]+)/,'\1-\2').gsub(/ /, '').downcase
 end
 
 def download_to_path(url, path)

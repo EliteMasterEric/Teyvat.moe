@@ -1,0 +1,268 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "2520270535",
+    "zh": "传送锚点",
+    "de": "Teleportationspunkt",
+    "en": "Teleport Waypoint",
+    "fr": "Point de téléportation",
+    "id": "Teleport Waypoint",
+    "ja": "ワープポイント",
+    "ko": "워프 포인트",
+    "pt": "Ponto de Teleporte",
+    "ru": "Точка телепортации",
+    "th": "จุดเทเลพอร์ต",
+    "vi": "Điểm dịch chuyển",
+    "es": "Punto de teletransporte"
+  },
+  "description": {
+    "_code": "2837951267",
+    "zh": "选择传送锚点，以传送到相应位置",
+    "de": "Wähle den Teleportationspunkt, um dich zu der jeweiligen Stelle zu teleportieren.",
+    "en": "Select a Teleport Waypoint to teleport to that location",
+    "es": "Selecciona un Punto de teletransporte para teletransportarte a esa ubicación",
+    "fr": "Sélectionnez un point de téléportation pour vous rendre à la destination correspondante.",
+    "id": "Pilih Teleport Waypoint untuk pergi ke lokasi tersebut.",
+    "ja": "ワープポイントを選択するとその位置にワープできる",
+    "ko": "워프 포인트를 선택해 해당 위치로 워프할 수 있습니다",
+    "pt": "Selecione um Ponto de Teleporte para se teleportar para essa localização",
+    "ru": "Выберите точку телепортации, чтобы переместиться к ней.",
+    "th": "เลือกจุดหมายเทเลพอร์ต เพื่อเทเลพอร์ตไปยังที่นั่น",
+    "vi": "Chọn điểm dịch chuyển, để chuyển đến vị trí tương ứng"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "teleporter",
+    "base": {
+      "marker": false,
+      "key": "teleporter",
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
+    },
+    "done": {
+      "marker": false,
+      "key": "teleporter",
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -37.72866,
+        106.5631
+      ],
+      "id": "9F05C65F1CBB0DFBE2D37A7BA649797CDF039428",
+      "importIds": {
+        "appsample": [
+          "14078"
+        ],
+        "hoyolab": [
+          "3_11185"
+        ]
+      },
+      "popupTitle": {
+        "_code": "1372595483",
+        "en": "Pudding Isle",
+        "zh": "布丁岛",
+        "de": "Pudding-Insel",
+        "es": "Isla Flan",
+        "fr": "Îles du flan",
+        "id": "Pudding Isle",
+        "ja": "プリン島",
+        "ko": "푸딩섬",
+        "pt": "Ilha Pudim",
+        "ru": "Остров пудинга",
+        "th": "Pudding Isle",
+        "vi": "Đảo Pudding"
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -42.13358,
+        95.84177
+      ],
+      "id": "BF4BF819265F9EADB4A94B4C4D13910E9EDB19CB",
+      "importIds": {
+        "appsample": [
+          "14079"
+        ],
+        "hoyolab": [
+          "3_11184"
+        ]
+      },
+      "popupTitle": {
+        "_code": "397098307",
+        "en": "Minacious Isle",
+        "zh": "危危岛",
+        "de": "Insel der Gefahren",
+        "es": "Isla del Peligro",
+        "fr": "Îles funestes",
+        "id": "Minacious Isle",
+        "ja": "ハラハラ島",
+        "ko": "위태위태섬",
+        "pt": "Ilha Perigosa",
+        "ru": "Опасный остров",
+        "th": "Minacious Isle",
+        "vi": "Đảo Nguy Nan"
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -29.27,
+        91.4
+      ],
+      "id": "DFB0F434DF704F28B96DD73D02C5F643AA8FC0BD",
+      "importIds": {
+        "appsample": [
+          "14080"
+        ],
+        "hoyolab": [
+          "3_11183"
+        ]
+      },
+      "popupTitle": {
+        "_code": "2093856115",
+        "en": "Broken Isle",
+        "zh": "破破岛",
+        "de": "Ruinen-Insel",
+        "es": "Isla Partida",
+        "fr": "Îles brisées",
+        "id": "Broken Isle",
+        "ja": "ボロボロ島",
+        "ko": "너덜너덜섬",
+        "pt": "Ilha Abandonada",
+        "ru": "Изломанный остров",
+        "th": "Broken Isle",
+        "vi": "Đảo Vỡ Vụn"
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -23.16915,
+        104.23143
+      ],
+      "id": "FE0602802765CE8A4741C2A66678C3044F73AF82",
+      "importIds": {
+        "appsample": [
+          "14236"
+        ],
+        "hoyolab": [
+          "3_11490"
+        ]
+      },
+      "popupTitle": {
+        "_code": "478064886",
+        "en": "Twinning Isle",
+        "zh": "双双岛",
+        "de": "Zwillingsinseln",
+        "es": "Islas Hermanas",
+        "fr": "Îles jumelles",
+        "id": "Twinning Isle",
+        "ja": "フタフタ島",
+        "ko": "쌍둥이 섬",
+        "pt": "Ilhas Gêmeas",
+        "ru": "Парный остров",
+        "th": "Twinning Isle",
+        "vi": "Đảo Song Sinh"
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -29.48031,
+        99.79691
+      ],
+      "id": "70AF093DDCBFEE1D1B4D37D794003BB9A36B43FF",
+      "importIds": {
+        "appsample": [
+          "14239"
+        ],
+        "hoyolab": [
+          "3_11487"
+        ]
+      },
+      "popupTitle": {
+        "en": "Center Island"
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -22.08798,
+        93.00069
+      ],
+      "id": "586DA8B67B05833E2EEBC5BC0A8B7D92AD9BB005",
+      "importIds": {
+        "appsample": [
+          "14240"
+        ],
+        "hoyolab": [
+          "3_11486"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "AppSample.com"
+    },
+    {
+      "coordinates": [
+        -36.75979,
+        89.73304
+      ],
+      "id": "1BA26A6564658FF11AC5DA5FA5235C250F0CEAF3",
+      "importIds": {
+        "appsample": [
+          "14244"
+        ],
+        "hoyolab": [
+          "3_11482"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupAttribution": "AppSample.com"
+    }
+  ]
+}

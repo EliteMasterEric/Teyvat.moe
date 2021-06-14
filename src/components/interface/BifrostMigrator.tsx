@@ -85,6 +85,7 @@ const BifrostMigrator: FunctionComponent = () => {
     iframeElement.src = GENSHINMAP_MIGRATION_URL;
     iframeElement.className = classes.portalIframe;
     iframeElement.id = GENSHINMAP_IFRAME_ID;
+    iframeElement.referrerPolicy = 'origin'; // Include the origin URL.
     iframeElement.onload = () => {
       setTimeout(async () => {
         const bfClient = await initializeBifrost();

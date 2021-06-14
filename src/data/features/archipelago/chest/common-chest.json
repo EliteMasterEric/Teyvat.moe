@@ -1,0 +1,950 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "853807230",
+    "zh": "普通的宝箱",
+    "de": "Einfache Truhe",
+    "en": "Common Chest",
+    "es": "Cofre común",
+    "fr": "Coffre ordinaire",
+    "id": "Common Chest",
+    "ja": "普通の宝箱",
+    "ko": "평범한 보물상자",
+    "pt": "Baú Comum",
+    "ru": "Обычный сундук",
+    "th": "Common Chest",
+    "vi": "Rương Thường"
+  },
+  "description": {
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
+    "ru": "Дряхлый деревянный сундук скреплённый железом. Содержит скудную награду."
+  },
+  "enabled": true,
+  "cluster": "variable",
+  "respawn": "none",
+  "icons": {
+    "filter": "common-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -45.47042,
+        96.55307
+      ],
+      "id": "E9CDB495B8F8296BD9493F2840BF67F495E62AAD",
+      "importIds": {
+        "hoyolab": [
+          "17_11602"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/E9CDB49",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.80895,
+        94.21623
+      ],
+      "id": "1D082994BD2E6C833DA8E8D6266B42B194F84BA7",
+      "importIds": {
+        "hoyolab": [
+          "17_11601"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/1D08299",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.03811,
+        91.99017
+      ],
+      "id": "B23F8C6A70E0A960C0BBF8B6F53364581C2313AB",
+      "importIds": {
+        "hoyolab": [
+          "17_11600"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/B23F8C6",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.93146,
+        91.93426
+      ],
+      "id": "C7C2B8C07990D2CD0878E0367DE6760BF8DC5C0A",
+      "importIds": {
+        "hoyolab": [
+          "17_11599"
+        ],
+        "appsample": [
+          "14018"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.85971,
+        97.05627
+      ],
+      "id": "FB5BD0A71B52CA40BF31276046CB2060EFC60494",
+      "importIds": {
+        "hoyolab": [
+          "17_11597"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/FB5BD0A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.71879,
+        96.58724
+      ],
+      "id": "9668C9A10B32EF90B419B3DC9F59F40EA92E561F",
+      "importIds": {
+        "hoyolab": [
+          "17_11596"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/9668C9A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.41876,
+        96.13685
+      ],
+      "id": "925387A0F245589D1479CAA02AFD17FB4BB7C64D",
+      "importIds": {
+        "hoyolab": [
+          "17_11595"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/925387A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.99694,
+        94.04332
+      ],
+      "id": "92EC848FC3906FD4B93664BA40EDFDEC27711569",
+      "importIds": {
+        "hoyolab": [
+          "17_11580"
+        ],
+        "appsample": [
+          "14247"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/92EC848",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.48737,
+        107.63989
+      ],
+      "id": "B81DE862BBB45A8872FB7280E35B81E4FDE5C387",
+      "importIds": {
+        "hoyolab": [
+          "17_11557"
+        ],
+        "appsample": [
+          "14263"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/B81DE86",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.7412,
+        107.51565
+      ],
+      "id": "1A2CD7176C17AA7DEB4AAC7C3648E66420C2CC7B",
+      "importIds": {
+        "hoyolab": [
+          "17_11556"
+        ],
+        "appsample": [
+          "14263"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/1A2CD71",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.60327,
+        102.60278
+      ],
+      "id": "73DDBB0FD468F8F231D7885750BC9AF57618469C",
+      "importIds": {
+        "hoyolab": [
+          "17_11554"
+        ],
+        "appsample": [
+          "14265"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/73DDBB0",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.0902,
+        102.6442
+      ],
+      "id": "95011EE8C032A8CAB41271B39318729B52616B42",
+      "importIds": {
+        "hoyolab": [
+          "17_11553"
+        ],
+        "appsample": [
+          "14266"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/95011EE",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.80011,
+        104.75119
+      ],
+      "id": "B218503BBAEB45DB2988C7080173AC60EBE877C3",
+      "importIds": {
+        "hoyolab": [
+          "17_11551"
+        ],
+        "appsample": [
+          "14268"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/B218503",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.41136,
+        104.10408
+      ],
+      "id": "9127F76253E6A6162BDDA7A0597EDC07EB5FB202",
+      "importIds": {
+        "hoyolab": [
+          "17_11550"
+        ],
+        "appsample": [
+          "14269"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/9127F76",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.96094,
+        94.59414
+      ],
+      "id": "01469CFB4126A870B101C3A55D996A092AB264D9",
+      "importIds": {
+        "hoyolab": [
+          "17_11548"
+        ],
+        "appsample": [
+          "14271"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/01469CF",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.68097,
+        91.10492
+      ],
+      "id": "B41441C4BA8FEFD5A5AF13919F371E27D07228D4",
+      "importIds": {
+        "hoyolab": [
+          "17_11547"
+        ],
+        "appsample": [
+          "14272"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.8159,
+        91.30682
+      ],
+      "id": "4B56B8F22971F265B9DE6B655620B55B0C5CDF33",
+      "importIds": {
+        "hoyolab": [
+          "17_11546"
+        ],
+        "appsample": [
+          "14273"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/4B56B8F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.59834,
+        91.3327
+      ],
+      "id": "4ED717AB984364322BD19C630912B652E63A322F",
+      "importIds": {
+        "hoyolab": [
+          "17_11545"
+        ],
+        "appsample": [
+          "14274"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/4ED717A",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.99745,
+        92.82882
+      ],
+      "id": "47BAD3F7A1A636E002B7836D403B3780454D9F48",
+      "importIds": {
+        "hoyolab": [
+          "17_11543"
+        ],
+        "appsample": [
+          "14276"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/47BAD3F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.94047,
+        93.07213
+      ],
+      "id": "E22C73EE0E0E63404299B1C59CC86ABE238AAB96",
+      "importIds": {
+        "hoyolab": [
+          "17_11542"
+        ],
+        "appsample": [
+          "14277"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/E22C73E",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.72291,
+        93.14461
+      ],
+      "id": "EEE083F6588E0C6DBC33E9A3AA5F60129892217B",
+      "importIds": {
+        "hoyolab": [
+          "17_11541"
+        ],
+        "appsample": [
+          "14278"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/EEE083F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.48981,
+        93.32062
+      ],
+      "id": "DA748536DE5BB336F5E8DC65AFB95501BFF855E9",
+      "importIds": {
+        "hoyolab": [
+          "17_11540"
+        ],
+        "appsample": [
+          "14279"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/DA74853",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.38103,
+        93.27403
+      ],
+      "id": "B24600FFFC23741226794A59AA231AAB145B7267",
+      "importIds": {
+        "hoyolab": [
+          "17_11539"
+        ],
+        "appsample": [
+          "14280"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/B24600F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -19.99252,
+        91.29129
+      ],
+      "id": "E9BF6C60F2443009B3D6BA856AB919A0FE5C559B",
+      "importIds": {
+        "hoyolab": [
+          "17_11538"
+        ],
+        "appsample": [
+          "14281"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/E9BF6C6",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.07022,
+        91.8245
+      ],
+      "id": "A40BD08E8F7E1ACCD1D8931363E432A0C0B36FAA",
+      "importIds": {
+        "hoyolab": [
+          "17_11537"
+        ],
+        "appsample": [
+          "14282"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/A40BD08",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -19.93036,
+        92.12994
+      ],
+      "id": "69CB2F19ABEBB51AB3DF9DA67F38A0B8252E1E6D",
+      "importIds": {
+        "hoyolab": [
+          "17_11536"
+        ],
+        "appsample": [
+          "14283"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/69CB2F1",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -18.71823,
+        92.70975
+      ],
+      "id": "7293C9066CE1BE78CE495673DDD9364FF3A02D99",
+      "importIds": {
+        "hoyolab": [
+          "17_11535"
+        ],
+        "appsample": [
+          "14284"
+        ]
+      },
+      "popupMedia": "",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -16.66693,
+        82.57341
+      ],
+      "id": "331D3986F781650F16E87516C8C0121F5C6CAE90",
+      "importIds": {
+        "hoyolab": [
+          "17_11533"
+        ],
+        "appsample": [
+          "14286"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/331D398",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -42.29369,
+        99.72858
+      ],
+      "id": "0C9B5A949C4B7AA1F8FD1C2BDDDC134D122F3B73",
+      "importIds": {
+        "hoyolab": [
+          "17_11515"
+        ],
+        "appsample": [
+          "14302"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/0C9B5A9",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -17.34551,
+        108.78399
+      ],
+      "id": "66F81B8D815D906A51056997962B257E6FD5ACC4",
+      "importIds": {
+        "hoyolab": [
+          "17_11514"
+        ],
+        "appsample": [
+          "14303"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/a98969e5e86a69b2d55b1294fcdddb6a_8096941343904506553.gif",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.30676,
+        107.50012
+      ],
+      "id": "A762DAD47383BDF5D300081703AF9CC2B27CBF5C",
+      "importIds": {
+        "hoyolab": [
+          "17_11505"
+        ],
+        "appsample": [
+          "14309"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/A762DAD",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.60964,
+        106.004
+      ],
+      "id": "BD3385FDEEDFE461602FEDB9DFB419663B247573",
+      "importIds": {
+        "hoyolab": [
+          "17_11499"
+        ],
+        "appsample": [
+          "14315"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/BD3385F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.42859,
+        105.30512
+      ],
+      "id": "FA5B313123D27F470E1469425F78082D8C190FE7",
+      "importIds": {
+        "hoyolab": [
+          "17_11497"
+        ],
+        "appsample": [
+          "14317"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/FA5B313",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.63579,
+        94.52166
+      ],
+      "id": "91E5876E67BE1176BA9A9844A451FFE801A6D201",
+      "importIds": {
+        "hoyolab": [
+          "17_11263"
+        ],
+        "appsample": [
+          "14008"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/91E5876",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.69108,
+        98.10407
+      ],
+      "id": "0F0DD2275B5BE13D6DBC2B74EB9962C23D9DD5EC",
+      "importIds": {
+        "hoyolab": [
+          "17_11253"
+        ],
+        "appsample": [
+          "14016"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/0F0DD22",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.20834,
+        93.37239
+      ],
+      "id": "A08F1342C72E61FA6035EFCC9BA762433C821C2F",
+      "importIds": {
+        "hoyolab": [
+          "17_11252"
+        ],
+        "appsample": [
+          "14017"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/A08F134",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.4772,
+        91.20846
+      ],
+      "id": "DADDBEB6F36782DF76AD11D4E2EC896ACC2DF801",
+      "importIds": {
+        "hoyolab": [
+          "17_11250"
+        ],
+        "appsample": [
+          "14018"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/DADDBEB",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.18418,
+        91.50871
+      ],
+      "id": "4A656EDFAAE9E8611462013110D31609C617C574",
+      "importIds": {
+        "hoyolab": [
+          "17_11249"
+        ],
+        "appsample": [
+          "14019"
+        ]
+      },
+      "popupMedia": "archipelago/common-chest/4A656ED",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.29908,
+        107.58812
+      ],
+      "id": "A802BEABEAB2CE529241FF3F17E1116B43D8EE51",
+      "tags": [
+        "painted-wall"
+      ],
+      "importIds": {
+        "hoyolab": [
+          "187_11458"
+        ],
+        "appsample": [
+          "14214"
+        ]
+      },
+      "popupTitle": {
+        "en": "Painted Wall"
+      },
+      "popupContent": {
+        "en": "Rewards a Common Chest"
+      },
+      "popupMedia": "archipelago/common-chest/A802BEA",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.90172,
+        107.75378
+      ],
+      "id": "F490ADE76156902B842C2FF7B8796E679BE2EF74",
+      "tags": [
+        "painted-wall",
+        "common-chest"
+      ],
+      "importIds": {
+        "hoyolab": [
+          "187_11430"
+        ],
+        "appsample": [
+          "14145"
+        ]
+      },
+      "popupTitle": {
+        "en": "Painted Wall"
+      },
+      "popupContent": {
+        "en": "Rewards a Common Chest"
+      },
+      "popupMedia": "archipelago/common-chest/F490ADE",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.85634,
+        106.17483
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "2DEA733CFC71F186845948469545B44CFAE97172",
+      "importIds": {
+        "hoyolab": [
+          "188_11408"
+        ],
+        "appsample": [
+          "14167"
+        ]
+      },
+      
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=882s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.1415,
+        107.526
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "B126FE9C583D686083C0EBBD8869631DEA058AF1",
+      "importIds": {
+        "hoyolab": [
+          "188_11405"
+        ],
+        "appsample": [
+          "14170"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=907s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.65975,
+        102.60278
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "F4E96723AACD138F27247757A10DB63FFA14598A",
+      "importIds": {
+        "hoyolab": [
+          "188_11403"
+        ],
+        "appsample": [
+          "14172"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=950s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.23025,
+        97.81416
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "27783185E283FCA64D4CD7D7D0170D902E3FC319",
+      "importIds": {
+        "hoyolab": [
+          "188_11445"
+        ],
+        "appsample": [
+          "14227"
+        ]
+      },
+      "popupContent": {
+        "en": "Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=587s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -42.99196,
+        95.76412
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "6CFEF4BE9CD0B6F55095DC24F126798F96468F78",
+      "importIds": {
+        "hoyolab": [
+          "188_11440"
+        ],
+        "appsample": [
+          "14135"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=505s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -33.25864,
+        109.00141
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "48912D66FA91DB507C069C329F022451D65FBBE9",
+      "importIds": {
+        "hoyolab": [
+          "188_11436"
+        ],
+        "appsample": [
+          "14139"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=729s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -39.95127,
+        107.7952
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "09DF892F9ECB29F478E90C74ED4CF1EE45017DEF",
+      "importIds": {
+        "hoyolab": [
+          "188_11465"
+        ],
+        "appsample": [
+          "14207"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=689s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.50604,
+        105.1084
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "F9EA5FED34C2B1B0AA18D033ABBF335A0D6134F9",
+      "importIds": {
+        "hoyolab": [
+          "188_11460"
+        ],
+        "appsample": [
+          "14212"
+        ]
+      },
+      "popupContent": {
+        "en":"Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/0d1m2KNelfU?t=648s",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.50385,
+        106.05059
+      ],
+      "tags": [
+        "harpastum-chest"
+      ],
+      "popupTitle": {
+        "en": "Harpastum Chest"
+      },
+      "id": "1ABDF9436D65E06A16E58D8916B2E330E23D6403",
+      "importIds": {
+        "hoyolab": [
+          "188_11566"
+        ],
+        "appsample": [
+          "14253"
+        ]
+      },
+      "popupContent": {
+        "en": "Rewards a Common Chest"
+      },
+      "popupMedia": "https://youtu.be/UP-yQ9OTfKI?t=299s",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

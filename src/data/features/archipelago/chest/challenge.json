@@ -1,0 +1,206 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "2134498146",
+    "zh": "限时到达",
+    "de": "Zeitherausforderung",
+    "en": "Time Trial",
+    "es": "Desafío contrarreloj",
+    "fr": "Contre-la-montre",
+    "id": "Waktu Tantangan",
+    "ja": "時間内到着",
+    "ko": "제한 시간 내에 도착하기",
+    "pt": "Contra o Tempo",
+    "ru": "Испытания на время",
+    "th": "บททดสอบจับเวลา",
+    "vi": "Đã đến giờ"
+  },
+  "description": {
+    "en": "Complete a race or challenge, or defeat a group of enemies, to receive a reward.",
+    "ru": "Завершите соревнование или вызов, или справьтесь с группой врагов для получения награды."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "challenge",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -21.29272,
+        108.59244
+      ],
+      "id": "C0BBA2D0D468C70117BA76952E303A9B76E529CE",
+      "importIds": {
+        "hoyolab": [
+          "64_11521"
+        ],
+        "appsample": [
+          "14296"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/C0BBA2D",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -17.6615,
+        88.85815
+      ],
+      "id": "9AD3084CFD1E7321CFFCC5D726478E4F3234D0F8",
+      "importIds": {
+        "hoyolab": [
+          "64_11382"
+        ],
+        "appsample": [
+          "14082"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/9AD3084",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.38521,
+        97.23953
+      ],
+      "id": "A238CD5CD4ED440A56E7F500875E687ED211806B",
+      "importIds": {
+        "hoyolab": [
+          "64_11377"
+        ],
+        "appsample": [
+          "14087"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/A238CD5",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.69108,
+        95.50527
+      ],
+      "id": "50ED1BCA4AC49142FC76D24261B66A4250281DC4",
+      "importIds": {
+        "hoyolab": [
+          "64_11376"
+        ],
+        "appsample": [
+          "14088"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/50ED1BC",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.63853,
+        89.75893
+      ],
+      "id": "885C5E032C22610D348BDBF6A521CD3F1915F326",
+      "importIds": {
+        "hoyolab": [
+          "64_11372"
+        ],
+        "appsample": [
+          "14092"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/885C5E0",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.31313,
+        97.33271
+      ],
+      "id": "601D36FD72204956104CE28385390C4D0AA42110",
+      "importIds": {
+        "hoyolab": [
+          "64_11368"
+        ],
+        "appsample": [
+          "14096"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/601D36F",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.74825,
+        100.16447
+      ],
+      "id": "4065CF0D621F365646F4BA99DC91948B1C060045",
+      "importIds": {
+        "hoyolab": [
+          "64_11366"
+        ],
+        "appsample": [
+          "14098"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/4065CF0",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.19005,
+        105.56396
+      ],
+      "id": "829C029E5210BA5D560B22F92D4E89B11F300400",
+      "importIds": {
+        "hoyolab": [
+          "64_11365"
+        ],
+        "appsample": [
+          "14099"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/829C029",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.81684,
+        109.57605
+      ],
+      "id": "708F552469CAF3FD3BC6BF6DA238C19C40D105F6",
+      "importIds": {
+        "hoyolab": [
+          "64_11364"
+        ],
+        "appsample": [
+          "14100"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/708F552",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.11059,
+        99.8384
+      ],
+      "id": "D2A60218469B6C59131FA7FAE72B74033A10A46F",
+      "importIds": {
+        "hoyolab": [
+          "64_11289"
+        ],
+        "appsample": [
+          "14000"
+        ]
+      },
+      "popupMedia": "archipelago/challenge/D2A6021",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

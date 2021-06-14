@@ -36,8 +36,9 @@ const useStyles = makeStyles((_theme) => ({
   },
   icon: {
     position: 'absolute',
-    top: 2,
-    left: 2,
+    top: '2px !important',
+    left: '2px !important',
+    clipPath: 'circle(35px)',
   },
   noselect: {
     // Prevent selecting the text.

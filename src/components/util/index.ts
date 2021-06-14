@@ -5,13 +5,13 @@ import { getKeys } from './Object';
 import { getApplicationVersion } from './Package';
 import { deleteRecord, getRecord, setRecord } from './Record';
 import { SafeHTML } from './SafeHtml';
+import { getUnixTimestamp } from './Time';
 import {
   canUseDOM,
   CloneProps,
   fromPairsToArrays,
   getPreviousDailyReset,
   getPreviousMondayReset,
-  getUnixTimestamp,
   getURLParameters,
   hashObject,
   importFromContext,

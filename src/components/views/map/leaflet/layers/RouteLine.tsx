@@ -77,9 +77,12 @@ const RouteMedia: FunctionComponent<RouteMediaProps> = ({ media, allowExternalMe
     const isYouTube = media.match(YOUTUBE_REGEX);
     if (isYouTube) {
       const match = YOUTUBE_REGEX.exec(media);
-      const videoId = match != null && match[1];
-      if (videoId != null && !!videoId) {
-        return <YouTubeEmbed id={videoId} width={560} height={315} />;
+      if (match != null) {
+        const videoId = match[1];
+        const videoTs = parseInt(match[2] ?? '0', 10);
+        if (videoId != null) {
+          return <YouTubeEmbed id={videoId} width={560} height={315} start={videoTs} />;
+        }
       }
     }
 

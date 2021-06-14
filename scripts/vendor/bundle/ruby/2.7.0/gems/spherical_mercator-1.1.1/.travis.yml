@@ -1,0 +1,18 @@
+language: ruby
+before_install: gem install bundler
+bundler_args: --without yard guard benchmarks
+script: "rake spec"
+rvm:
+  - 2.4
+  - 2.5
+  - 2.6
+  - 2.7
+  - 3.0
+  - jruby-9.0.5.0
+  - jruby-9.1.5.0
+  - jruby-9.1.6.0
+  - ruby-head
+env: JRUBY_OPTS="$JRUBY_OPTS --debug"
+matrix:
+  allow_failures:
+    - rvm: ruby-head

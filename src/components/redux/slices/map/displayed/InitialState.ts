@@ -18,6 +18,8 @@ const initialState: DisplayedState = {
     dragonspineTeleporter: true,
     dragonspineStatue: true,
     dragonspineDomain: true,
+
+    archipelagoTeleporter: true,
   },
   routes: {},
 };
