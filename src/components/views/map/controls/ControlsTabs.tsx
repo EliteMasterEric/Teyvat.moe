@@ -86,7 +86,7 @@ const _ControlsTabs: FunctionComponent<ControlsTabsProps> = ({
       },
       {
         enabled: !editorEnabled,
-        label: t('map-ui:features'),
+        label: t('map-ui:markers'),
         value: 'features' as TabValue,
         order: 31,
         icon: <PlaceIcon />,

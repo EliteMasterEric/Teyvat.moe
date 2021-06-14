@@ -1258,3 +1258,36 @@ The long-postponed feature is finally here!
 - Fixed a bug where certain external libraries would not load due to improper CORS configuration.
 - Fixed a bug where user data would not be loaded from local storage properly.
 - Fixed a visual bug with the switches in the Options tab.
+
+# 1.2.0 Archipelago Markers
+
+- Added 263 new markers for the Golden Apple Archipelago.
+  - Electro Crystal (Ore): Added 5 markers.
+    - Can be imported from AppSample.
+  - Sea Ganoderma (Nature): Added 52 markers.
+    - Can be imported from AppSample.
+  - Starconch (Nature): Added 4 markers.
+    - Can be imported from AppSample.
+  - Echoing Conch (Event): Added 28 markers.
+    - Can be imported from AppSample.
+  - Time Trial Challenge (Chest): Added 10 markers.
+    - Can be imported from AppSample.
+  - Common Chest (Chest): Added 38 markers.
+    - Can be imported from AppSample.
+    - 5 of these chests are not found on AppSample.
+  - Exquisite Chest (Chest): Added 29 markers.
+    - Can be imported from AppSample.
+  - Precious Chest (Chest): Added 4 markers.
+    - Can be imported from AppSample.
+  - Luxurious Chest (Chest): Added 2 markers.
+    - Can be imported from AppSample.
+  - Harpastum Chest (Chest): Added 19 markers.
+    - Can be imported from AppSample.
+  - Seelie (Chest): Added 1 marker.
+    - Not available in AppSample.
+  - Glimmering Beacon (Special): Added 56 markers.
+    - Not available in AppSample.
+  - Waverider Waypoint (Special): Added 15 markers.
+    - Not available in AppSample.
+- Yuanshen.site does not currently include the new regions from the 1.6 update and thus there are no new markers to import from it.
+- Replaced temporary icon for Sea Ganoderma.

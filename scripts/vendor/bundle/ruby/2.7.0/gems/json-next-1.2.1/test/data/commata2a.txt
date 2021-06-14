@@ -1,0 +1,23 @@
+ {
+  "nested": {
+    "name": "Alexander Grothendieck"
+    "fields": "mathematics"
+    "array": ["one" "two"]  }
+  "numbers": [1 2 3 4 5]
+  "more_numbers": [1.1 2.0 0.3 4.444 -5.1]
+  "mixed": [1 true false null]
+ }
+
+
+---
+
+{
+    "nested" => {
+      "name" => "Alexander Grothendieck",
+      "fields" => "mathematics",
+      "array" => ["one", "two"]
+    },
+    "numbers" => [1, 2, 3, 4, 5],
+    "more_numbers" => [1.1, 2.0, 0.3, 4.444, -5.1],
+    "mixed" => [1, true, false, nil]
+ }

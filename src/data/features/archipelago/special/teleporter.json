@@ -12,7 +12,8 @@
     "pt": "Ponto de Teleporte",
     "ru": "Точка телепортации",
     "th": "จุดเทเลพอร์ต",
-    "vi": "Điểm dịch chuyển"
+    "vi": "Điểm dịch chuyển",
+    "es": "Punto de teletransporte"
   },
   "description": {
     "_code": "2837951267",
@@ -37,20 +38,50 @@
     "base": {
       "marker": false,
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     },
     "done": {
       "marker": false,
       "key": "teleporter",
-      "iconSize": [25, 35],
-      "shadowSize": [50, 64],
-      "iconAnchor": [12, 36],
-      "shadowAnchor": [4, 62],
-      "popupAnchor": [0, -36]
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
     }
   },
   "data": [
@@ -63,6 +94,9 @@
       "importIds": {
         "appsample": [
           "14078"
+        ],
+        "hoyolab": [
+          "3_11185"
         ]
       },
       "popupTitle": {
@@ -80,6 +114,8 @@
         "th": "Pudding Isle",
         "vi": "Đảo Pudding"
       },
+      "popupContent": {
+      },
       "popupMedia": "",
       "popupAttribution": "AppSample.com"
     },
@@ -92,6 +128,9 @@
       "importIds": {
         "appsample": [
           "14079"
+        ],
+        "hoyolab": [
+          "3_11184"
         ]
       },
       "popupTitle": {
@@ -108,6 +147,8 @@
         "ru": "Опасный остров",
         "th": "Minacious Isle",
         "vi": "Đảo Nguy Nan"
+      },
+      "popupContent": {
       },
       "popupMedia": "",
       "popupAttribution": "AppSample.com"
@@ -141,6 +182,8 @@
         "th": "Broken Isle",
         "vi": "Đảo Vỡ Vụn"
       },
+      "popupContent": {
+      },
       "popupMedia": "",
       "popupAttribution": "AppSample.com"
     },
@@ -153,6 +196,9 @@
       "importIds": {
         "appsample": [
           "14236"
+        ],
+        "hoyolab": [
+          "3_11490"
         ]
       },
       "popupTitle": {
@@ -169,6 +215,8 @@
         "ru": "Парный остров",
         "th": "Twinning Isle",
         "vi": "Đảo Song Sinh"
+      },
+      "popupContent": {
       },
       "popupMedia": "",
       "popupAttribution": "AppSample.com"
@@ -188,6 +236,7 @@
         ]
       },
       "popupTitle": {
+        "en": "Center Island"
       },
       "popupContent": {
       },
@@ -203,6 +252,9 @@
       "importIds": {
         "appsample": [
           "14240"
+        ],
+        "hoyolab": [
+          "3_11486"
         ]
       },
       "popupTitle": {
@@ -221,6 +273,9 @@
       "importIds": {
         "appsample": [
           "14244"
+        ],
+        "hoyolab": [
+          "3_11482"
         ]
       },
       "popupTitle": {

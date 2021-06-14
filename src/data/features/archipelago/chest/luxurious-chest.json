@@ -1,0 +1,78 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "763988094",
+    "zh": "华丽的宝箱",
+    "de": "Luxuriöse Truhe",
+    "en": "Luxurious Chest",
+    "es": "Cofre lujoso",
+    "fr": "Coffre luxueux",
+    "id": "Luxurious Chest",
+    "ja": "豪華な宝箱",
+    "ko": "화려한 보물상자",
+    "pt": "Baú Luxuoso",
+    "ru": "Роскошный сундук",
+    "th": "Luxurious Chest",
+    "vi": "Rương Hiếm"
+  },
+  "description": {
+    "en": "A gorgeous porcelain chest framed with gold. Contains powerful rewards.",
+    "ru": "Прекрасный фарфоровый сундук обрамленный золотом. Содержит мощную награду."
+  },
+  "enabled": true,
+  "cluster": "on",
+  "respawn": "none",
+  "icons": {
+    "filter": "luxurious-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -21.28236,
+        92.34737
+      ],
+      "id": "2BA4F4AECD242CED03E3DB7212F10FBE5173909E",
+      "importIds": {
+        "hoyolab": [
+          "46_11544"
+        ],
+        "appsample": [
+          "14275"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/a1cccc03cd6c487e491b96bc97858319_3137893936014002836.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.57251,
+        89.91423
+      ],
+      "id": "30F20036A1CCFBDE46D433647DD24CAA93E56B1A",
+      "importIds": {
+        "hoyolab": [
+          "46_11529"
+        ],
+        "appsample": [
+          "14290"
+        ]
+      },
+      "popupTitle": {
+      },
+      "popupContent": {
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/8abfd35e0b576a495f54c7040e04d180_37847810836802077.png",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

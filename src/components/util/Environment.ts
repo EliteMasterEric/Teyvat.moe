@@ -19,6 +19,8 @@ export const isDevelopment = (): boolean => {
     console.debug('Running in development environment (NETLIFY).');
     development = true;
   } else {
+    console.debug('Running in production.');
+    console.debug(process.env);
     development = false;
   }
 

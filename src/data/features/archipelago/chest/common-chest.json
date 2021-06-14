@@ -1,0 +1,565 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "853807230",
+    "zh": "普通的宝箱",
+    "de": "Einfache Truhe",
+    "en": "Common Chest",
+    "es": "Cofre común",
+    "fr": "Coffre ordinaire",
+    "id": "Common Chest",
+    "ja": "普通の宝箱",
+    "ko": "평범한 보물상자",
+    "pt": "Baú Comum",
+    "ru": "Обычный сундук",
+    "th": "Common Chest",
+    "vi": "Rương Thường"
+  },
+  "description": {
+    "en": "A ragged wooden chest held together with iron. Contains meager rewards.",
+    "ru": "Дряхлый деревянный сундук скреплённый железом. Содержит скудную награду."
+  },
+  "enabled": true,
+  "cluster": "variable",
+  "respawn": "none",
+  "icons": {
+    "filter": "common-chest",
+    "base": {
+      "marker": true
+    },
+    "done": {
+      "marker": true
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -45.47042,
+        96.55307
+      ],
+      "id": "E9CDB495B8F8296BD9493F2840BF67F495E62AAD",
+      "importIds": {
+        "hoyolab": [
+          "17_11602"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/3b5e46efcbb9f3d91cf3f5d2e1bde2d7_2625141474114557094.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.80895,
+        94.21623
+      ],
+      "id": "1D082994BD2E6C833DA8E8D6266B42B194F84BA7",
+      "importIds": {
+        "hoyolab": [
+          "17_11601"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/59572a27421eb7e306dbddaf27e0bb48_9204306313207040337.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.03811,
+        91.99017
+      ],
+      "id": "B23F8C6A70E0A960C0BBF8B6F53364581C2313AB",
+      "importIds": {
+        "hoyolab": [
+          "17_11600"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/74fc5f9fcf71c909a7b42b04b4da6d02_2686879396061621933.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.93146,
+        91.93426
+      ],
+      "id": "C7C2B8C07990D2CD0878E0367DE6760BF8DC5C0A",
+      "importIds": {
+        "hoyolab": [
+          "17_11599"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.85971,
+        97.05627
+      ],
+      "id": "FB5BD0A71B52CA40BF31276046CB2060EFC60494",
+      "importIds": {
+        "hoyolab": [
+          "17_11597"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/24fce56c29244ad9f5bba00c7fbd91dc_6261797528855718744.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.71879,
+        96.58724
+      ],
+      "id": "9668C9A10B32EF90B419B3DC9F59F40EA92E561F",
+      "importIds": {
+        "hoyolab": [
+          "17_11596"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/e66d0bd50aabf9dae029c7b96b8d3dbb_4757754883971923323.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -43.41876,
+        96.13685
+      ],
+      "id": "925387A0F245589D1479CAA02AFD17FB4BB7C64D",
+      "importIds": {
+        "hoyolab": [
+          "17_11595"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210613/1a866d86fd2e4524bae95dfca2430c2c_7207330022472611515.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.99694,
+        94.04332
+      ],
+      "id": "92EC848FC3906FD4B93664BA40EDFDEC27711569",
+      "importIds": {
+        "hoyolab": [
+          "17_11580"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/7653df2e49f042631f0933dd54ce15b3_8284625803959088336.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.48737,
+        107.63989
+      ],
+      "id": "B81DE862BBB45A8872FB7280E35B81E4FDE5C387",
+      "importIds": {
+        "hoyolab": [
+          "17_11557"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/fffa9636220bffc46ae027381d399e3a_1890892874756217031.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -9.7412,
+        107.51565
+      ],
+      "id": "1A2CD7176C17AA7DEB4AAC7C3648E66420C2CC7B",
+      "importIds": {
+        "hoyolab": [
+          "17_11556"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/2806a519525eeb7d34a53432e9d7076d_733236105501632942.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.60327,
+        102.60278
+      ],
+      "id": "73DDBB0FD468F8F231D7885750BC9AF57618469C",
+      "importIds": {
+        "hoyolab": [
+          "17_11554"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/47fca697dcd8ba92680473cfc9b318f1_9125139303067534159.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.0902,
+        102.6442
+      ],
+      "id": "95011EE8C032A8CAB41271B39318729B52616B42",
+      "importIds": {
+        "hoyolab": [
+          "17_11553"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/c052cf76d371d73f3a5cbc620f4ec2f4_5075630968481343510.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.80011,
+        104.75119
+      ],
+      "id": "B218503BBAEB45DB2988C7080173AC60EBE877C3",
+      "importIds": {
+        "hoyolab": [
+          "17_11551"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/cf51bac6cfc0287170e27f15976e35a0_7309027458987639130.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.41136,
+        104.10408
+      ],
+      "id": "9127F76253E6A6162BDDA7A0597EDC07EB5FB202",
+      "importIds": {
+        "hoyolab": [
+          "17_11550"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/86d6459b70ee31f93bcf93bf43d31123_7548015493177192307.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.96094,
+        94.59414
+      ],
+      "id": "01469CFB4126A870B101C3A55D996A092AB264D9",
+      "importIds": {
+        "hoyolab": [
+          "17_11548"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/2737160216cd833f26d99a83a4f1ddc5_35103080361513291.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.68097,
+        91.10492
+      ],
+      "id": "B41441C4BA8FEFD5A5AF13919F371E27D07228D4",
+      "importIds": {
+        "hoyolab": [
+          "17_11547"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.8159,
+        91.30682
+      ],
+      "id": "4B56B8F22971F265B9DE6B655620B55B0C5CDF33",
+      "importIds": {
+        "hoyolab": [
+          "17_11546"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/c90c5f39fcd6c86ae74d823e0ada771b_6072637393826781614.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -21.59834,
+        91.3327
+      ],
+      "id": "4ED717AB984364322BD19C630912B652E63A322F",
+      "importIds": {
+        "hoyolab": [
+          "17_11545"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/d92dbb027474ada0ef5e993305513776_7542018016539101928.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.99745,
+        92.82882
+      ],
+      "id": "47BAD3F7A1A636E002B7836D403B3780454D9F48",
+      "importIds": {
+        "hoyolab": [
+          "17_11543"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/9c6d5cc4f9663604eef1968db4c2e037_4616614647342922579.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.94047,
+        93.07213
+      ],
+      "id": "E22C73EE0E0E63404299B1C59CC86ABE238AAB96",
+      "importIds": {
+        "hoyolab": [
+          "17_11542"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/cfad2a07673e1de39986ff0972c56192_3090600443178799391.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.72291,
+        93.14461
+      ],
+      "id": "EEE083F6588E0C6DBC33E9A3AA5F60129892217B",
+      "importIds": {
+        "hoyolab": [
+          "17_11541"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/f666c5bb8511602836eb0e7dafd3819a_8890682539009945046.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.48981,
+        93.32062
+      ],
+      "id": "DA748536DE5BB336F5E8DC65AFB95501BFF855E9",
+      "importIds": {
+        "hoyolab": [
+          "17_11540"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/78783c26cfb9cf4b288ac3c2c16a8e2e_1696500524239927279.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.38103,
+        93.27403
+      ],
+      "id": "B24600FFFC23741226794A59AA231AAB145B7267",
+      "importIds": {
+        "hoyolab": [
+          "17_11539"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/9cac0fe1fbf83389978a41d544f28eb6_61159563524268766.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -19.99252,
+        91.29129
+      ],
+      "id": "E9BF6C60F2443009B3D6BA856AB919A0FE5C559B",
+      "importIds": {
+        "hoyolab": [
+          "17_11538"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/76ae4c91b184b8bbf5ae22a09cbe936a_6848782435193741358.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.07022,
+        91.8245
+      ],
+      "id": "A40BD08E8F7E1ACCD1D8931363E432A0C0B36FAA",
+      "importIds": {
+        "hoyolab": [
+          "17_11537"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/f666c5bb8511602836eb0e7dafd3819a_8678759252406995150.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -19.93036,
+        92.12994
+      ],
+      "id": "69CB2F19ABEBB51AB3DF9DA67F38A0B8252E1E6D",
+      "importIds": {
+        "hoyolab": [
+          "17_11536"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/7138e8545acc7ddbcafa42e6f3b20090_5076294923002365172.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -18.71823,
+        92.70975
+      ],
+      "id": "7293C9066CE1BE78CE495673DDD9364FF3A02D99",
+      "importIds": {
+        "hoyolab": [
+          "17_11535"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -16.66693,
+        82.57341
+      ],
+      "id": "331D3986F781650F16E87516C8C0121F5C6CAE90",
+      "importIds": {
+        "hoyolab": [
+          "17_11533"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/a2367751b969cbfda75bb47999fac8a0_5757826314079775287.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -42.29369,
+        99.72858
+      ],
+      "id": "0C9B5A949C4B7AA1F8FD1C2BDDDC134D122F3B73",
+      "importIds": {
+        "hoyolab": [
+          "17_11515"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/e723148494e0e89aba6b371dc594669c_8752538644428464181.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -17.34551,
+        108.78399
+      ],
+      "id": "66F81B8D815D906A51056997962B257E6FD5ACC4",
+      "importIds": {
+        "hoyolab": [
+          "17_11514"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/a98969e5e86a69b2d55b1294fcdddb6a_8096941343904506553.gif",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.30676,
+        107.50012
+      ],
+      "id": "A762DAD47383BDF5D300081703AF9CC2B27CBF5C",
+      "importIds": {
+        "hoyolab": [
+          "17_11505"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/b63f82d5d7f6402b5ad42a81aba9e51c_1964213757128970810.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.60964,
+        106.004
+      ],
+      "id": "BD3385FDEEDFE461602FEDB9DFB419663B247573",
+      "importIds": {
+        "hoyolab": [
+          "17_11499"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/9e57ef064849b741cf26bd15f9462915_3113357239561152770.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.42859,
+        105.30512
+      ],
+      "id": "FA5B313123D27F470E1469425F78082D8C190FE7",
+      "importIds": {
+        "hoyolab": [
+          "17_11497"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/cd75099ec9b8930d23784a4969308d52_3322413426437090800.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.63579,
+        94.52166
+      ],
+      "id": "91E5876E67BE1176BA9A9844A451FFE801A6D201",
+      "importIds": {
+        "hoyolab": [
+          "17_11263"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210609/c42917ce812ed650bb7e0b3fd80a7e0b_3510774365624425149.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.69108,
+        98.10407
+      ],
+      "id": "0F0DD2275B5BE13D6DBC2B74EB9962C23D9DD5EC",
+      "importIds": {
+        "hoyolab": [
+          "17_11253"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210612/493a500a3a795d9d51aa9e9896d4e5f5_7431498408656867231.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.20834,
+        93.37239
+      ],
+      "id": "A08F1342C72E61FA6035EFCC9BA762433C821C2F",
+      "importIds": {
+        "hoyolab": [
+          "17_11252"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210609/a294204c81a64435aadc0e5577bf8957_1675435052091253701.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.4772,
+        91.20846
+      ],
+      "id": "DADDBEB6F36782DF76AD11D4E2EC896ACC2DF801",
+      "importIds": {
+        "hoyolab": [
+          "17_11250"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210609/b47c9ae711d7d45b9b9fadfa1e6c9c8f_4025286826983928358.png",
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -20.18418,
+        91.50871
+      ],
+      "id": "4A656EDFAAE9E8611462013110D31609C617C574",
+      "importIds": {
+        "hoyolab": [
+          "17_11249"
+        ]
+      },
+      "popupMedia": "https://uploadstatic-sea.mihoyo.com/map_manage/20210609/15706a8462929b36825f043b8dab231f_1051704963131818686.png",
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

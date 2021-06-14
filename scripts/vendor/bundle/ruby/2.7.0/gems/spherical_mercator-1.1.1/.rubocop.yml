@@ -1,0 +1,10 @@
+AllCops:
+  Exclude:
+    - 'spec/**/*'
+  DisplayCopNames: true
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 120
+Metrics/ClassLength:
+  Max: 110

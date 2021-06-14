@@ -1,0 +1,805 @@
+{
+  "format": 2,
+  "name": {
+    "en": "Glimmering Beacon"
+  },
+  "description": {
+    "_code": "2576270032",
+    "zh": "「烁光信标」的灯光将不断闪烁。驾驶「浪船」接触「烁光信标」后，「烁光信标」将被激活，进入常亮状态。\\n利用「烁光信标」即可避免迷失方向，找到迷雾中的各个岛屿，解锁传送锚点！",
+    "de": "Diese Flimmerbaken blinken ständig. Sobald du deinen Wellenreiter zu ihnen segelst und mit ihnen interagierst, wechseln sie von dem blinkenden zu dem stabil leuchtenden Modus.\\nBenutze diese Flimmerbaken, um auf dem richtigen Kurs zu bleiben und um die Inseln im Nebel zu finden und ihre Teleportationspunkte freizuschalten!",
+    "en": "The Glimmering Beacon's light will continuously twinkle. When you have reached the Beacon, it will be activated and become lit.\\nUse these Beacons to avoid getting lost, find the many islands within the fog, and unlock their Teleport Waypoints!",
+    "es": "Las luces de las balizas parpadeantes no dejarán de centellear hasta que, al acercarte a ellas, se activen. Entonces, su luz se volverá fija.\\nAprovéchalas para no perderte entre la bruma, encontrar todas las islas y desbloquear los Puntos de teletransporte.",
+    "fr": "La lumière des balises scintillantes clignote de façon continue, et ces dernières s'activent et s'allument lorsque vous les atteignez.\\nUtilisez ces balises scintillantes pour éviter de vous perdre et pour trouver les nombreuses îles cachées dans la brume et débloquer leurs points de téléportation !",
+    "id": "Sinar dari Suar Cahaya akan berkedip secara terus menerus. Saat kamu mencapai Suar, lampunya akan teraktifkan dan menyala.\\nManfaatkanlah Suar-Suar ini agar kamu tidak tersesat dan dapat menemukan pulau-pulau lainnya di tengah tebalnya kabut, kemudian bukalah Teleport Waypoint yang ada!",
+    "ja": "「煌めくビーコン」は持続的に点滅し続けます。「ウェーブボート」を操縦し「煌めくビーコン」に接触すると点滅状態から点灯状態に変わります。\\n「煌めくビーコン」を利用し、方向を失うことなく霧の中の島々を見つけ、ワープポイントを開放しましょう！",
+    "ko": "「반짝이는 비콘」의 불빛은 끊임없이 반짝입니다. 「파도 배」를 몰아 「반짝이는 비콘」에 접근하면, 「반짝이는 비콘」이 활성화돼 계속 빛나는 상태에 진입합니다.\\n「반짝이는 비콘」을 이용하면 방향을 잃지 않고 안개 속에서 섬들을 찾아 워프 포인트를 개방할 수 있습니다!",
+    "pt": "A iluminação do Sinal de Raios Luminosos é constante. Depois de tocar um Sinal de Raios Luminosos ao conduzir o Quebra-mar, tal Sinal de Raios Luminosos será ativado, passando a brilhar.\\nUse os Sinais de Raios Luminosos para evitar perder-se e para encontrar todas as ilhas na neblina e desbloquear o Ponto de Teleporte!",
+    "ru": "Свет мерцающего маячка будет постоянно мерцать. Когда вы достигнете маячка, он активируется и загорится ярким светом.\\nИспользуйте эти маяки, чтобы не заблудиться, найти острова в тумане и разблокировать точки телепортации!",
+    "th": "แสงไฟของ \"สัญญาณไฟกะพริบ\" จะกะพริบตลอดเวลา หลังจากขับ \"เรือเดินสมุทร\" ไปสัมผัส \"สัญญาณไฟกะพริบ\" \"สัญญาณไฟกะพริบ\" จะเปิดใช้งานและเข้าสู่สถานะแสงคงที่ \\nใช้ \"สัญญาณไฟกะพริบ\" เพื่อหลีกเลี่ยงการหลงทางในการค้นหาหมู่เกาะในหมอกหนาทึบและปลดล็อกจุดเทเลพอร์ต!",
+    "vi": "Ánh sáng của \"Đèn Hiệu Nhấp Nháy\" sẽ chớp tắt liên tục. Sau khi lái \"Thuyền Gió\" chạm vào \"Đèn Hiệu Nhấp Nháy\", \"Đèn Hiệu Nhấp Nháy\" sẽ được kích hoạt và vào trạng thái Cháy Sáng.\\nSử dụng \"Đèn Hiệu Nhấp Nháy\" có thể giúp bạn không bị lạc, tìm được chính xác các đảo trong sương mù, mở khóa điểm dịch chuyển!"
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "glimmering-beacon",
+    "base": {
+      "marker": false,
+      "key": "glimmering-beacon",
+      "iconSize": [
+        24,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
+    },
+    "done": {
+      "marker": false,
+      "key": "glimmering-beacon",
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -42.06991,
+        95.28784
+      ],
+      "id": "158F19E3BCA4F94419854EBDA0B580BF5986A552",
+      "importIds": {
+        "hoyolab": [
+          "192_11242"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -41.36543,
+        94.98758
+      ],
+      "id": "130F78EB801E4781F50F57E1ABF93E6327A81AE6",
+      "importIds": {
+        "hoyolab": [
+          "192_11241"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -41.04944,
+        95.5208
+      ],
+      "id": "A6739077AC304EFCCAADC7C0E57B091DA07349AF",
+      "importIds": {
+        "hoyolab": [
+          "192_11240"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -40.60914,
+        96.15238
+      ],
+      "id": "CD0DC5CA57197B84D3ADD5D8D0C0E1F4AB6B04AF",
+      "importIds": {
+        "hoyolab": [
+          "192_11239"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -40.88368,
+        97.34307
+      ],
+      "id": "07811B5A350E59DB65286B23BDC260BFD572027C",
+      "importIds": {
+        "hoyolab": [
+          "192_11238"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -39.73371,
+        97.90735
+      ],
+      "id": "67ACA70020DC96EE5158CB985A0D05C7AFD2A9E3",
+      "importIds": {
+        "hoyolab": [
+          "192_11237"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.98778,
+        97.40519
+      ],
+      "id": "2C1D2D7D687F0453B98840D0D9F3B571F2CE549C",
+      "importIds": {
+        "hoyolab": [
+          "192_11236"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.5682,
+        96.7529
+      ],
+      "id": "03DE52667B937A790AD1DA031D3410142BC2C385",
+      "importIds": {
+        "hoyolab": [
+          "192_11235"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.52158,
+        95.81588
+      ],
+      "id": "2010F44C7846AD8333B1A88C451FC2EFC81FD65A",
+      "importIds": {
+        "hoyolab": [
+          "192_11234"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.84274,
+        95.0963
+      ],
+      "id": "A99575BDE0E42F66DDA1F48376C7549E91FDA43D",
+      "importIds": {
+        "hoyolab": [
+          "192_11233"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -38.55266,
+        94.356
+      ],
+      "id": "F7397F290068565A7C22EFB8390DD4F3AB719EA3",
+      "importIds": {
+        "hoyolab": [
+          "192_11232"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.87407,
+        94.32494
+      ],
+      "id": "A0085857A14AAC582EB49327165C7643A42EABEA",
+      "importIds": {
+        "hoyolab": [
+          "192_11231"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.00382,
+        94.55272
+      ],
+      "id": "0CCEF818F730D0E875AD45225F3919E65367D897",
+      "importIds": {
+        "hoyolab": [
+          "192_11230"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -36.13875,
+        94.09198
+      ],
+      "id": "BCF16619BE7DF4179BA7F075D7695E0C3C921F91",
+      "importIds": {
+        "hoyolab": [
+          "192_11229"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -34.5174,
+        93.92114
+      ],
+      "id": "7C0F80BE451AFA1E1CDAAD91F13E5341C3BDA142",
+      "importIds": {
+        "hoyolab": [
+          "192_11228"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -33.39332,
+        93.28956
+      ],
+      "id": "0D189202C92BC10D11AE1AF10E472D5255A9ADEB",
+      "importIds": {
+        "hoyolab": [
+          "192_11227"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -32.13457,
+        92.88577
+      ],
+      "id": "402FBAA72A8552333DB13E6A90987E3583E010F4",
+      "importIds": {
+        "hoyolab": [
+          "192_11226"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.91208,
+        92.73564
+      ],
+      "id": "FE7A276EB30F70F1D9F6544A3FC5EDB4A2634F8A",
+      "importIds": {
+        "hoyolab": [
+          "192_11225"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.59609,
+        91.8918
+      ],
+      "id": "DBBD4E733EFAE480769C958C2227A3D9A612A6AE",
+      "importIds": {
+        "hoyolab": [
+          "192_11224"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.05737,
+        91.18257
+      ],
+      "id": "48B1D3CC00EDC4A59990D629CA31CBAD2E7E8845",
+      "importIds": {
+        "hoyolab": [
+          "192_11223"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.57562,
+        90.5717
+      ],
+      "id": "109FA65492B163BCE1325C018B28D442C244B394",
+      "importIds": {
+        "hoyolab": [
+          "192_11222"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.17676,
+        90.52511
+      ],
+      "id": "16C674290B9F162289DC6118B005BD3E74D94BBD",
+      "importIds": {
+        "hoyolab": [
+          "192_11221"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.10942,
+        92.37325
+      ],
+      "id": "FBD9AAB470A9AA0B2B0589C6918556D07CFA5A22",
+      "importIds": {
+        "hoyolab": [
+          "192_11220"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.53443,
+        92.94789
+      ],
+      "id": "C53909DC202DC91ED9A2D5B4CDACDF8B1FB3BD3E",
+      "importIds": {
+        "hoyolab": [
+          "192_11219"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.05787,
+        93.67265
+      ],
+      "id": "4511C08413777F5B9B57E991E6A25905BA182733",
+      "importIds": {
+        "hoyolab": [
+          "192_11218"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.5036,
+        94.0195
+      ],
+      "id": "32D4708DB99DB7A7CC90602739775300D8B35609",
+      "importIds": {
+        "hoyolab": [
+          "192_11217"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.76803,
+        94.6252
+      ],
+      "id": "38E3FB443751816E17E9B8CB2D1023762A92D0A6",
+      "importIds": {
+        "hoyolab": [
+          "192_11216"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.8408,
+        95.23607
+      ],
+      "id": "75062C218369EF043A1D6ECE2C90BECF39D6C59C",
+      "importIds": {
+        "hoyolab": [
+          "192_11215"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.03272,
+        95.9919
+      ],
+      "id": "CC4BC8FAB43DBFC2A83BE81AA452B865E661DE6F",
+      "importIds": {
+        "hoyolab": [
+          "192_11214"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.51471,
+        97.12046
+      ],
+      "id": "C08B4704B7BB1EE2B83DAEC2FD30380919AA5561",
+      "importIds": {
+        "hoyolab": [
+          "192_11213"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.13657,
+        97.95394
+      ],
+      "id": "4E982E1C260F68A837DECB3EF00EB8957F3663CD",
+      "importIds": {
+        "hoyolab": [
+          "192_11212"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.59266,
+        98.30079
+      ],
+      "id": "451DD187D03D6990DA489FD655AB7FEE2997990E",
+      "importIds": {
+        "hoyolab": [
+          "192_11211"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.02285,
+        98.72529
+      ],
+      "id": "A76620C894CB9B258294C18B4F6C408C2F5CF835",
+      "importIds": {
+        "hoyolab": [
+          "192_11210"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.77421,
+        99.53289
+      ],
+      "id": "50A76A0134F3F93A534521DC1FD4450167F7D340",
+      "importIds": {
+        "hoyolab": [
+          "192_11209"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.91925,
+        100.49579
+      ],
+      "id": "C7C50EBB37E37973D3BD8DC0ABECB7F9BF3DC0FE",
+      "importIds": {
+        "hoyolab": [
+          "192_11208"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.94515,
+        101.2775
+      ],
+      "id": "0E4E84A2002ECFA416D0798902458FC9B40ED229",
+      "importIds": {
+        "hoyolab": [
+          "192_11207"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.13682,
+        102.25075
+      ],
+      "id": "474C4E2AB5A21B019561512B798059DD962F7227",
+      "importIds": {
+        "hoyolab": [
+          "192_11206"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.05393,
+        103.38967
+      ],
+      "id": "72F558EF5672EDB33DB4EFA71F7C64BB21402819",
+      "importIds": {
+        "hoyolab": [
+          "192_11205"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.7118,
+        103.2706
+      ],
+      "id": "C5AB7AA78ABB5E040810BC2C6CA8594BCA7E829E",
+      "importIds": {
+        "hoyolab": [
+          "192_11204"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.22463,
+        103.05835
+      ],
+      "id": "963F9426274C276BEAD5A8749B765687EE354993",
+      "importIds": {
+        "hoyolab": [
+          "192_11203"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.02236,
+        102.62867
+      ],
+      "id": "FD557EE6021286152A3632491A6D6782D7C62481",
+      "importIds": {
+        "hoyolab": [
+          "192_11202"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -25.6854,
+        102.83574
+      ],
+      "id": "8605B8CF6DAF69E08F55D76B145A01ADC0862312",
+      "importIds": {
+        "hoyolab": [
+          "192_11201"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.54529,
+        103.29131
+      ],
+      "id": "7337E5F905A374CEC77C1FB554A14F1B45EBBC6C",
+      "importIds": {
+        "hoyolab": [
+          "192_11200"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.94934,
+        104.10408
+      ],
+      "id": "61244E176391E557AF3824B4C161CE3F85606059",
+      "importIds": {
+        "hoyolab": [
+          "192_11199"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.4,
+        104.21797
+      ],
+      "id": "C807F43360F3418DF6C1492DFEE691A6CE5CC2C0",
+      "importIds": {
+        "hoyolab": [
+          "192_11198"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.43083,
+        104.74601
+      ],
+      "id": "7FC1C80DC1C3FB526E9B70342BA057354CD01426",
+      "importIds": {
+        "hoyolab": [
+          "192_11197"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.07316,
+        104.76154
+      ],
+      "id": "B8975AE5C6AB31DEC9B267D36C7D54097BC07A88",
+      "importIds": {
+        "hoyolab": [
+          "192_11196"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -29.6585,
+        105.27923
+      ],
+      "id": "9BB97399314C7C8A12F08466D866C3A125C55501",
+      "importIds": {
+        "hoyolab": [
+          "192_11195"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.52875,
+        105.67785
+      ],
+      "id": "F21A5FBA037878FFF6B09693F1DCF3B6474B16C7",
+      "importIds": {
+        "hoyolab": [
+          "192_11194"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -31.34202,
+        106.10236
+      ],
+      "id": "1712C53B4BACA38EDD81DBDB79CCDD0C4E2D68D3",
+      "importIds": {
+        "hoyolab": [
+          "192_11193"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -33.12914,
+        105.91081
+      ],
+      "id": "730E31335B8AB8765282857958498944A890E7F1",
+      "importIds": {
+        "hoyolab": [
+          "192_11192"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -33.48656,
+        106.01435
+      ],
+      "id": "4A5A2E856F33DB16F669A2BB36C53762B8A115AE",
+      "importIds": {
+        "hoyolab": [
+          "192_11191"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -32.52825,
+        105.81763
+      ],
+      "id": "0DFF2A9F0A9CC1ED8F280A42E1365DEE89F207FB",
+      "importIds": {
+        "hoyolab": [
+          "192_11190"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -33.21202,
+        106.2266
+      ],
+      "id": "81CC9A438558C78BDD4EEFADA9081BB0AFF3AF35",
+      "importIds": {
+        "hoyolab": [
+          "192_11189"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -34.08745,
+        106.10236
+      ],
+      "id": "111D072A8C390717CE2C0EE516F7243DE5833428",
+      "importIds": {
+        "hoyolab": [
+          "192_11188"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.1385,
+        105.75551
+      ],
+      "id": "E2FAEE7D12DA0C105CC3A6BB7845B0705215AC6F",
+      "importIds": {
+        "hoyolab": [
+          "192_11187"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

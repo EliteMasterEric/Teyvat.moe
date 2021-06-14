@@ -1,0 +1,284 @@
+{
+  "format": 2,
+  "name": {
+    "_code": "3730776433",
+    "en": "Waverider Waypoint",
+    "zh": "浪船锚点",
+    "de": "Wellenreiter-Rufpunkt",
+    "es": "Punto de invocación del Rompeolas",
+    "fr": "Téléporteur de barge",
+    "id": "Waverider Waypoint",
+    "ja": "ボートポイント",
+    "ko": "파도 배 워프 포인트",
+    "pt": "Local de Ancoragem do Quebra-mar",
+    "ru": "Якорная стоянка",
+    "th": "จุดเทเลพอร์ตเรือเดินสมุทร",
+    "vi": "Điểm dịch chuyển Thuyền Gió"
+  },
+  "description": {
+    "_code": "999809320",
+    "zh": "「浪船」是非常神奇的水上载具，能通过「浪船锚点」召唤到船主的身边。靠近浪船以搭乘行驶。\\n尽管可以随时通过浪船锚点召唤，但每个人只能拥有一艘浪船。",
+    "de": "Der Wellenreiter ist ein sehr mysteriöses Wasserfahrzeug, das mithilfe eines Wellenreiter-Rufpunktes zu seinem Besitzer beschworen werden kann. Nähere dich dem Wellenreiter, um an Bord zu gehen und zu segeln.\\nDu kannst ihn jederzeit über einen Wellenreiter-Rufpunkt herbeirufen, aber eine Person kann nur einen Wellenreiter besitzen.",
+    "en": "The Waverider is a very mysterious waterborne vehicle that can be summoned to its skipper's side using a Waverider Waypoint. Get close to the Waverider to board and set sail.\\nYou can summon it from a Waverider Waypoint at any time, but one person can only own one Waverider.",
+    "es": "El Rompeolas es un misterioso medio de transporte marítimo que puede ser invocado al lado de su capitán mediante los Puntos de invocación del Rompeolas. Para empezar a navegar, solo tienes que acercarte y subirte a él.\\nAunque puede ser invocado con sus Puntos de invocación, cada persona solo puede tener un único Rompeolas.",
+    "fr": "La barge est un véhicule aquatique mystérieux qui peut être appelé par son capitaine à l'aide de téléporteurs de barge. Vous pouvez ensuite vous rapprocher de votre barge pour grimper à bord et mettre les voiles.\\nVous pouvez l'appeler depuis un téléporteur de barge à tout moment, mais vous ne pouvez posséder qu'une seule barge.",
+    "id": "Waverider adalah kendaraan air yang sangat misterius, yang dapat dipanggil ke sisi nakhodanya menggunakan Waverider Waypoint. Dekati Waverider untuk menaikinya dan pergi berlayar.\\nKamu bisa memanggilnya dari Waverider Waypoint kapan pun, tetapi satu orang hanya dapat memiliki satu Waverider.",
+    "ja": "「ウェーブボート」は不思議な海の乗り物。「ボートポイント」を通して主のところに戻ることができ、ウェーブボートに近寄ると乗ることができます。\\n1人につき1台しか所有できません。",
+    "ko": "「파도 배」는 신비한 수상 탈 것으로 「파도 배 워프 포인트」를 통해 배의 주인 곁으로 소환할 수 있습니다. 파도 배에 가까이 다가가면 탑승하여 조종할 수 있습니다.\\n수시로 파도 배 워프 포인트를 통해 소환할 수 있지만, 사람마다 파도 배를 1척만 보유할 수 있습니다",
+    "pt": "O Quebra-mar é um veículo muito misterioso que navega sobre as águas que pode ser invocado ao lado do seu capitão usando um Local de Ancoragem do Quebra-mar. Aproxime-se do Quebra-mar para embarcar e zarpar.\\nVocê pode invocá-lo de um Local de Ancoragem do Quebra-mar a qualquer momento, mas uma pessoa pode apenas possuir um Quebra-mar.",
+    "ru": "Волноход - это загадочное транспортное средство, которое можно призвать на якорной стоянке. Приблизьтесь к волноходу, чтобы подняться на борт и отправиться в плавание.\\nВы можете призвать волноход на якорной стоянке в любой момент, однако у одного человека может быть только один волноход.",
+    "th": "\"เรือเดินสมุทร\" เป็นยานพาหนะทางน้ำที่วิเศษ สามารถใช้ \"จุดเทเลพอร์ตเรือเดินสมุทร\" เพื่อเรียกเรือมาหาเจ้าของเรือได้ และเข้าใกล้เรือเดินสมุทรเพื่อทำการโดยสาร \\nแม้จะสามารถเรียกผ่าน \"จุดเทเลพอร์ตเรือเดินสมุทร\" ได้ตลอดเวลา แต่ละคนจะมีเรือเดินสมุทรได้เพียงลำเดียวเท่านั้น",
+    "vi": "\"Thuyền Gió\" là phương tiện vô cùng thần kỳ, có thể triệu hồi đến bên cạnh thuyền trưởng bằng \"Điểm dịch chuyển Thuyền Gió\". Đến gần Thuyền Gió để leo lên lái.\\nTuy có thể triệu hồi thông qua Điểm dịch chuyển Thuyền Gió bất cứ lúc nào, nhưng mỗi người chỉ được sở hữu 1 Thuyền Gió."
+  },
+  "enabled": true,
+  "cluster": "off",
+  "respawn": "none",
+  "icons": {
+    "filter": "waverider-waypoint",
+    "base": {
+      "marker": false,
+      "key": "waverider-waypoint",
+      "iconSize": [
+        35,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        6,
+        -36
+      ]
+    },
+    "done": {
+      "marker": false,
+      "key": "waverider-waypoint",
+      "iconSize": [
+        25,
+        35
+      ],
+      "shadowSize": [
+        50,
+        64
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ],
+      "shadowAnchor": [
+        4,
+        62
+      ],
+      "popupAnchor": [
+        0,
+        -36
+      ]
+    }
+  },
+  "data": [
+    {
+      "coordinates": [
+        -23.30672,
+        97.09975
+      ],
+      "id": "7C1A2E3C6344584F9CAEF99054CB839D3A7680F8",
+      "importIds": {
+        "hoyolab": [
+          "190_11495"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.55362,
+        107.59951
+      ],
+      "id": "3E3BC8D7D3224E0B5B50935F329FCCEA43C69CF9",
+      "importIds": {
+        "hoyolab": [
+          "190_11494"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -31.19387,
+        99.94083
+      ],
+      "id": "26ED51532C46643ECED19ACC1996255BCB0BD74B",
+      "importIds": {
+        "hoyolab": [
+          "190_11493"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -26.64268,
+        91.41657
+      ],
+      "id": "0722C2394ECE048FD7C833D12F58ABFD315E8932",
+      "importIds": {
+        "hoyolab": [
+          "190_11492"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -27.53468,
+        107.52186
+      ],
+      "id": "F459D3E9D5E03379314FF624C0D272F191B56179",
+      "importIds": {
+        "hoyolab": [
+          "190_11491"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -23.66311,
+        101.76102
+      ],
+      "id": "B1C8B0ECEDFF5A5ECA13A1F30A138795925CD46A",
+      "importIds": {
+        "hoyolab": [
+          "190_11489"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -36.97067,
+        105.77207
+      ],
+      "id": "018BA01D5D5E0955E413AA7F1D1FB1467B7D754D",
+      "importIds": {
+        "hoyolab": [
+          "190_11488"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -22.27589,
+        93.17567
+      ],
+      "id": "2985FC381E1EC38088BB9DB727A57364419BD336",
+      "importIds": {
+        "hoyolab": [
+          "190_11485"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -42.50711,
+        97.4259
+      ],
+      "id": "F6B9175ECB57837BAC6C41220E0A97E161846F94",
+      "importIds": {
+        "hoyolab": [
+          "190_11484"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -30.53497,
+        90.25798
+      ],
+      "id": "8E3B709146BCE8E357646DFB9139B4BFF4821651",
+      "importIds": {
+        "hoyolab": [
+          "190_11483"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -36.88364,
+        89.21018
+      ],
+      "id": "673CAB5336508FB103415D7BCAFDE60B63240111",
+      "importIds": {
+        "hoyolab": [
+          "190_11481"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -28.74163,
+        91.16186
+      ],
+      "id": "131EBAFD8C6A0ADBDB0B693756E75D1DF7B72BFF",
+      "importIds": {
+        "hoyolab": [
+          "190_11269"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -24.96537,
+        103.04282
+      ],
+      "id": "6565D4DA61089EF28700ABF24C220F00D842659C",
+      "importIds": {
+        "hoyolab": [
+          "190_11268"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -37.66687,
+        105.94187
+      ],
+      "id": "4E019BEC58C3F87D2F607B5CFEAD880966FF72D1",
+      "importIds": {
+        "hoyolab": [
+          "190_11267"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    },
+    {
+      "coordinates": [
+        -42.38072,
+        96.38534
+      ],
+      "id": "B30D12FAD7309278D6E0D133EA70739DEFA1CD67",
+      "importIds": {
+        "hoyolab": [
+          "190_11266"
+        ]
+      },
+      "popupAttribution": "Hoyolab"
+    }
+  ]
+}

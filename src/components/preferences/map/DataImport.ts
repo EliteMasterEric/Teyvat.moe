@@ -164,10 +164,10 @@ export const importMapMarkerDataFromGMLegacy = (
           missingEntries.push(importKey);
           return [];
         }
-        const result = _.map(dictionaryEntries, (dictEntry: MSFMarkerKey): [
-          MSFMarkerKey,
-          number
-        ] => [dictEntry, timestamp]);
+        const result = _.map(
+          dictionaryEntries,
+          (dictEntry: MSFMarkerKey): [MSFMarkerKey, number] => [dictEntry, timestamp]
+        );
         return result;
       }
     )
@@ -230,8 +230,7 @@ export const migrateMapData = (
   version: GenshinMapPreferencesVersion,
   defaultState: MapState = initialMapState
 ): GenshinMapPreferencesLatest | null => {
-  console.warn('Migrating data...');
-  console.warn(input);
+  console.debug('Migrating data...');
 
   // eslint-disable-next-line prefer-const
   let output: GenshinMapPreferences = input;

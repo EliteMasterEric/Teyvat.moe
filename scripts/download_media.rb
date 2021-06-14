@@ -8,6 +8,7 @@ require 'optparse'
 require 'object_hash_rb' # Made by yours truely for this project!
 require 'pathname'
 
+# bundle exec ruby ./download_media.rb --input ../src/data/features/archipelago --output ./output/media/
 
 def print_header(_options)
   puts('==================================')
