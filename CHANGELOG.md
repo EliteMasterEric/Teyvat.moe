@@ -1291,3 +1291,23 @@ The long-postponed feature is finally here!
     - Not available in AppSample.
 - Yuanshen.site does not currently include the new regions from the 1.6 update and thus there are no new markers to import from it.
 - Replaced temporary icon for Sea Ganoderma.
+
+# 1.2.1 More Chests
+- Added new markers.
+  - Added 16 Painted Wall markers to their respective Chest categories.
+    - Added 2 Common Chests.
+    - Added 13 Exquisite Chests.
+    - Added 1 Precious Chest.
+  - Added 1 Luxurious Chest, with video embed.
+  - Added 18 Harpastum Chests to their respective Chest categories, with video embeds for guides.
+    - Added 9 Common Chests.
+    - Added 7 Exquisite Chests.
+    - Added 2 Precious Chests.
+  - We are now more complete than AppSample or MapGenie, and only slightly less complete than HoyoLab.
+- Updated existing markers.
+  - Added 1 video guide for Seelie.
+- Imported media for chests.
+- Fixed a bug where the home page had no title set.
+- Fixed a bug where feature icons would clip outside the border of the image button
+- Fixed a bug where YouTube embeds would not initialize at a specific timestamp if was is provided.
+- Hid the Illumiscreen chests from the Event category in Liyue.

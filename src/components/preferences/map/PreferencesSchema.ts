@@ -18,7 +18,7 @@ import { MapRegionKey } from 'src/components/data/map/MapRegions';
 import { LanguageCode } from 'src/components/i18n/Localization';
 import { Notification } from 'src/components/redux/slices/common/notify/Types';
 
-export const PREFERENCES_VERSION = 'GM_007';
+export const PREFERENCES_VERSION = 'GM_008';
 
 export type MigrationData = MSFImportKey[];
 
@@ -123,7 +123,30 @@ export interface GM_007 {
   };
 }
 
-export type GenshinMapPreferences = GM_001 | GM_002 | GM_003 | GM_004 | GM_005 | GM_006 | GM_007;
-export type GenshinMapPreferencesLatest = GM_007;
+/**
+ * GM_007 adds a "last saved" unix timestamp.
+ *
+ * Also enables archipelagoTeleporter if it isn't already.
+ */
+export interface GM_008 {
+  version: 'GM_008';
+  timestamp: number; // Value saved is in seconds.
+  options: GM_007['options'];
+  displayed: GM_007['displayed'];
+  completed: GM_007['completed'];
+  editor: GM_007['editor'];
+  notify: GM_007['notify'];
+}
+
+export type GenshinMapPreferences =
+  | GM_001
+  | GM_002
+  | GM_003
+  | GM_004
+  | GM_005
+  | GM_006
+  | GM_007
+  | GM_008;
+export type GenshinMapPreferencesLatest = GM_008;
 
 export type GenshinMapPreferencesVersion = GenshinMapPreferences['version'];
