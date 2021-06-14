@@ -1307,6 +1307,7 @@ The long-postponed feature is finally here!
 - Updated existing markers.
   - Added 1 video guide for Seelie.
 - Imported media for chests.
+- Timestamp is now stored when saving preferences to local storage, or when exporting to clipboard or Google Drive.
 - Fixed a bug where the home page had no title set.
 - Fixed a bug where feature icons would clip outside the border of the image button
 - Fixed a bug where YouTube embeds would not initialize at a specific timestamp if was is provided.

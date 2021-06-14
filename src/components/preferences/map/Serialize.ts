@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { GenshinMapPreferencesLatest, PREFERENCES_VERSION } from './PreferencesSchema';
 import { MapState } from 'src/components/redux/slices/map/Types';
+import { getUnixTimestamp } from 'src/components/util';
 
 export const MAP_PREFERENCES_PERSISTENT_KEYS = [
   'completed',
@@ -9,12 +10,14 @@ export const MAP_PREFERENCES_PERSISTENT_KEYS = [
   'options',
 ] as const;
 
-export const buildMapPreferencesForStorage = (state: MapState): GenshinMapPreferencesLatest => {
+export type SerializedMapState = Omit<GenshinMapPreferencesLatest, 'notify'>;
+
+export const buildMapPreferencesForStorage = (state: MapState): SerializedMapState => {
   const persistentState = _.pick(state, MAP_PREFERENCES_PERSISTENT_KEYS);
   return {
     ...persistentState,
     version: PREFERENCES_VERSION,
-    // TODO: Add current unix timestamp here.
+    timestamp: getUnixTimestamp(),
   };
 };
 
