@@ -1,3 +1,5 @@
+# NOTICE: THE TEYVAT.MOE PROJECT HAS BEEN SHUT DOWN. THANK YOU FOR YOUR SUPPORT.
+
 <p align='center'><img src="https://raw.githubusercontent.com/Teyvat-Moe/teyvat.moe/master/assets/Social.png"></p>
 
 * * *
