@@ -43,7 +43,12 @@ const PageHeaders = memo(() => {
         integrity="sha512-gc3xjCmIy673V6MyOAZhIW93xhM9ei1I+gLbmFjUHIjocENRsLX/QUE1htk5q1XV2D/iie/VQ8DXI6Vu8bexvQ=="
         crossOrigin="anonymous"
       />
+
+      {/*
+       * PERSONAL STYLES
+       */}
       <link rel="stylesheet" href="/index.css" />
+      <link rel="stylesheet" href="/fonts/Teyvat.css" />
 
       {/*
        * ANALYSIS

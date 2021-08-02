@@ -71,7 +71,7 @@ def build_i18n_data
   return result
 end
 
-def localize_data_recursive(input_json, i18n_data)
+def localize_data_recursive(input_json, i18n_data, options)
   output_json = deep_dup(input_json)
 
   if output_json.is_a?(Hash)
@@ -79,16 +79,22 @@ def localize_data_recursive(input_json, i18n_data)
       code = output_json['_code']
       puts("Parsing LOCALIZED CODE #{code}...")
       localized = i18n_data[code]
-      output_json.merge!(localized)
+      
+      if options[:strip_code]
+        # Return the localized data instead of merging it in.
+        return localized
+      else
+        output_json.merge!(localized)
+      end
     else
       puts("Parsing subkeys...")
       output_json.each do |key, value|
-        output_json[key] = localize_data_recursive(output_json[key], i18n_data)
+        output_json[key] = localize_data_recursive(output_json[key], i18n_data, options)
       end
     end
   elsif output_json.is_a?(Array)
     puts("Parsing array element...")
-    output_json.map! {|value| localize_data_recursive(value, i18n_data)}
+    output_json.map! {|value| localize_data_recursive(value, i18n_data, options)}
   end
 
   # Else do nothing.
@@ -102,7 +108,7 @@ def print_header
   puts('')
 end
 
-def process_data_file(input, output, i18n_data)
+def process_data_file(input, output, i18n_data, options)
   begin
     input_data = File.open(input, 'r:UTF-8').read
     input_json = JSON.parse(input_data)
@@ -113,7 +119,7 @@ def process_data_file(input, output, i18n_data)
 
   output_path = File.directory?(output) ? File.join(output, File.basename(input)) : output
 
-  output_json = localize_data_recursive(input_json, i18n_data)
+  output_json = localize_data_recursive(input_json, i18n_data, options)
 
   write_file(output_path, JSON.pretty_generate(output_json))
 end
@@ -123,6 +129,12 @@ def validate_options(options)
   raise OptionParser::MissingArgument, "No 'output' file or folder specified." unless options.include?(:output)
 
   options[:dirmode] = File.directory?(options[:input])
+
+  if options[:strip_code] then
+    puts("[WARN] Stripping '_code' from output...")
+  else
+    puts("Merging '_code' into output...")
+  end
 
   options
 end
@@ -135,6 +147,7 @@ def parse_options
 
     opts.on('-i', '--input INPUT', 'Input file/folder to process') { |i| options[:input] = i }
     opts.on('-o', '--output OUTPUT', 'Output file/folder to place processed files') { |o| options[:output] = o }
+    opts.on('-c', '--strip-code', 'Strip the "_code" value after populating') { |o| options[:strip_code] = o }
   end.parse!
 
   # Validate and reorganize options.
@@ -153,7 +166,7 @@ def main_dirmode(options, i18n_data)
 
     # Display what is being processed.
     puts("Processing file #{input_path} into #{output_path}...")
-    process_data_file(input_full_path, output_path, i18n_data)
+    process_data_file(input_full_path, output_path, i18n_data, options)
   end
 end
 
@@ -161,14 +174,14 @@ def main_filemode(options, i18n_data)
   # Process a single file.
   puts("Processing file #{options[:input]}...")
   # Pipe the full input path to the full output path.
-  process_data_file(options[:input], options[:output], i18n_data)
+  process_data_file(options[:input], options[:output], i18n_data, options)
 end
 
 def main
   # Parse the options the user provided.
   # Options are stored in a global variable for easy access.
-  options = parse_options
   print_header
+  options = parse_options
 
   i18n_data = build_i18n_data
 

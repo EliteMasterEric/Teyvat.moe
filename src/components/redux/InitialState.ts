@@ -1,3 +1,4 @@
+import { initialState as achievementsInitialState } from 'src/components/redux/slices/achievements';
 import { initialState as commonInitialState } from 'src/components/redux/slices/common';
 import { initialState as mapInitialState } from 'src/components/redux/slices/map';
 
@@ -8,6 +9,7 @@ import { initialState as mapInitialState } from 'src/components/redux/slices/map
  */
 const initialState = {
   common: commonInitialState,
+  achievements: achievementsInitialState,
   map: mapInitialState,
 };
 

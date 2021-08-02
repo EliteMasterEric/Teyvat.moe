@@ -6,7 +6,6 @@
 
 import _ from 'lodash';
 
-import { MSFLocalizedField, MSFLocalizedString } from 'src/components/data/map/Element';
 import {
   DEFAULT_LOCALE_CODE,
   getLanguageName,
@@ -20,8 +19,8 @@ import {
  * @param field A dictionary containing {'locale': 'value'} fields.
  * @returns {value} The value from 'field' whose key matches the current locale, or the default locale.
  */
-export const localizeField = (field: MSFLocalizedField | undefined): MSFLocalizedString => {
-  if (_.isUndefined(field)) return <MSFLocalizedString>'';
+export const localizeField = (field?: { [key: string]: string }): string => {
+  if (_.isUndefined(field)) return '<ERROR: EMPTY FIELD>';
 
   const currentLanguage = getLocale();
 
@@ -35,7 +34,7 @@ export const localizeField = (field: MSFLocalizedField | undefined): MSFLocalize
     return defaultLanguageValue;
   }
   // Else, return null.
-  return <MSFLocalizedString>'';
+  return '';
 };
 
 export const getLanguageOptions = (

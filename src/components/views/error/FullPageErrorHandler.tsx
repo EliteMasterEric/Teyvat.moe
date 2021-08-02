@@ -105,21 +105,8 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} alignContent="center">
-              <NextImage
-                src="/images/brainjuice.png"
-                layout="intrinsic"
-                width={335}
-                height={302}
-                priority
-              />
-              <Typography variant="h1" className={classes.title}>
-                {t('error:error-handler-flavor')}
-              </Typography>
               <Typography variant="h2" className={classes.subtitle}>
                 {t('error:error-handler-message')}
-              </Typography>
-              <Typography variant="h3" className={classes.instruction}>
-                {t('error:error-handler-instruction')}
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -140,6 +127,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                   </CardContent>
                 ) : null}
 
+                {/*
                 <CardActions>
                   <Button
                     onClick={onSubmitError}
@@ -150,6 +138,7 @@ const FullPageErrorHandler: ErrorHandlerComponent = ({ error, errorInfo }) => {
                     {t('map-ui:submit-to-github')}
                   </Button>
                 </CardActions>
+                */}
               </Card>
             </Grid>
           </Grid>

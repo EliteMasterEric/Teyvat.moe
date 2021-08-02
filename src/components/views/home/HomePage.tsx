@@ -1,9 +1,10 @@
-import { Typography, CardContent, Card, Grid, Container, makeStyles } from '@material-ui/core';
+import { Typography, CardContent, Card, Grid, Container, makeStyles, Box } from '@material-ui/core';
 import clsx from 'clsx';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, { FunctionComponent } from 'react';
 import { f, t } from 'src/components/i18n/Localization';
+import Header from 'src/components/interface/Header';
 import { NextImage } from 'src/components/interface/Image';
 import { getApplicationVersion } from 'src/components/util';
 
@@ -17,13 +18,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
 
-  homeHeader: {
-    marginTop: theme.spacing(3),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
+  teyvatFont: {
+    fontFamily: 'Teyvat',
   },
+
   homeBody: {
     display: 'flex',
     flexDirection: 'column',
@@ -38,10 +36,6 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
   },
 
-  logo: {
-    margin: '0 8px 0 0',
-  },
-
   subtitle: {
     fontSize: 12,
     textAlign: 'center',
@@ -49,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     fontStyle: 'italic',
   },
 
-  pageButtonText: {
+  centerText: {
     textAlign: 'center',
   },
 
@@ -68,25 +62,17 @@ const HomePage: FunctionComponent = () => {
         <title>{t('pages:page-title')}</title>
       </Head>
       <Container maxWidth={false} className={clsx(classes.background)}>
-        <div className={classes.homeHeader}>
-          {/* Use a bare PNG image. No weird WEBP handling should prevent rendering this. */}
-          <NextImage
-            priority
-            src={'/images/logo.png'}
-            width={80}
-            height={80}
-            className={classes.logo}
-            alt={t('pages:page-title')}
-          />
-          <Typography variant="h3">{t('pages:page-title')}</Typography>
-        </div>
+        <Header pageTitle={t('pages:page-title')} showHomeButton={false} />
         <div className={classes.homeBody}>
           <Grid container justify="center" spacing={2}>
-            <Grid item xs={4} style={{ display: 'none' }}>
+            <Grid item xs={4}>
               <Link href="/achievements">
                 <Card className={classes.pageButtonLink}>
                   <CardContent>
-                    <Typography variant="h2" className={classes.pageButtonText}>
+                    <Typography
+                      variant="h2"
+                      className={clsx(classes.centerText, classes.teyvatFont)}
+                    >
                       {t('pages:page-achievements')}
                     </Typography>
                   </CardContent>
@@ -97,7 +83,10 @@ const HomePage: FunctionComponent = () => {
               <Link href="/map">
                 <Card className={classes.pageButtonLink}>
                   <CardContent>
-                    <Typography variant="h2" className={classes.pageButtonText}>
+                    <Typography
+                      variant="h2"
+                      className={clsx(classes.centerText, classes.teyvatFont)}
+                    >
                       {t('pages:page-map')}
                     </Typography>
                   </CardContent>
